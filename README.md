@@ -53,9 +53,10 @@ To build this yourself, do the following:
 ### Coding Guidelines
 This list is not exhaustive and generally applies to formatting. Your merge request may be rejected for other reasons including but not limited to: formatting issues not specified here, architectural concerns, or functionality concerns.
 
-- Identation must use tabs. This is non-negotiable.
+- Indentation must use tabs.
 - Variable assignment equal signs should be aligned using spaces.
 - Use `let` for all variable declarations unless unreasonable (e.g. `var` for scoping reasons or `const` for constants).
+- Variable names should be descriptive and not misspelled.
 - Variable names should be snake_case.
 - Function names should be camelCase.
 - Class names should be PascalCase.
