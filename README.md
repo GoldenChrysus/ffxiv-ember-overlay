@@ -8,6 +8,9 @@ React overlay for the OverlayPlugin add-on for Advanced Combat Tracker for use w
 ## Usage with OverlayPlugin
 Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
 
+## Features
+Information coming soon!
+
 ## Installation
 1. Ensure Advanced Combat Tracker (ACT) and OverlayPlugin are installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
 2. Within ACT, navigate to Plugins > OverlayPlugin.dll > Mini Parse.
