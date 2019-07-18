@@ -3,7 +3,7 @@ React overlay for the [OverlayPlugin add-on](https://github.com/hibiyasleep/Over
 
 [![GitHub](https://img.shields.io/github/license/GoldenChrysus/ffxiv-ember-overlay.svg)](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/master/LICENSE)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/ffxiv-ember-overlay/master.svg)
-[![Works with OverlayPlugin](https://img.shields.io/badge/Works%20With-OverlayPlugin-blue.svg)](https://github.com/hibiyasleep/OverlayPlugin)
+[![Works with OverlayPlugin](https://img.shields.io/badge/works%20with-OverlayPlugin-blue.svg)](https://github.com/hibiyasleep/OverlayPlugin)
 
 ## Usage with OverlayPlugin
 Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
