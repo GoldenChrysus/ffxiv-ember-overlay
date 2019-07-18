@@ -41,11 +41,11 @@ To build this yourself, do the following:
     3. Navigate to your.server.host/path/to/app to view the app.
 
 ## License
-[GPL 3.0 Only](/LICENSE)
+[GNU General Public License v3.0 only](/LICENSE)
 
 ## Copyright
 Copyright (C) 2019, Patrick Golden. All rights reserved.
 
-Copyrights licensed under GNU General Public License v3.0.
+Copyrights licensed under GNU General Public License v3.0 only.
 
 See the accompanying [LICENSE](/LICENSE) file for terms.
