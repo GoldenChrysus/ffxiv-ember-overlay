@@ -21,9 +21,13 @@ Information coming soon!
 To build this yourself, do the following:
 
 1. Checkout the repository using git, e.g. `git clone https://github.com/GoldenChrysus/ffxiv-ember-overlay.git`
+
+    - If new to or unfamiliar with git, reference GitHub's article on [cloning a repository](https://help.github.com/en/articles/cloning-a-repository).
+    - Alternatively, you can [download the ZIP file](https://github.com/GoldenChrysus/ffxiv-ember-overlay/archive/master.zip) for the repository.
+
 2. Add a property `homepage` to package.json if you intend to host the app on Web server and not at the root directory.
 
-    1. e.g. `"homepage": "https://username.github.io./path/to/app"`
+    - e.g. `"homepage": "https://username.github.io./path/to/app"`
 
 3. To launch the server immediately:
 
