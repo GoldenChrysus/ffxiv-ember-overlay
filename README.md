@@ -31,7 +31,7 @@ To build this yourself, do the following:
 
 3. To launch the server immediately:
 
-    1. Run `npm start` to start the React app on your server on port 3000.
+    1. Run `npm start` to start the React app on your machine on port 3000.
     2. Navigate to your.server.host:3000 to view the app.
     
 4. To build the app for usage on a Web server:
