@@ -34,4 +34,4 @@ To build this yourself, do the following:
     3. Navigate to your.server.host/path/to/app to view the app.
 
 ## License
-[MIT](/LICENSE)
+[GPL-3.0](/LICENSE)
