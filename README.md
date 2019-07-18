@@ -27,7 +27,7 @@ To build this yourself, do the following:
 
 2. Add a property `homepage` to package.json if you intend to host the app on Web server and not at the root directory.
 
-    - e.g. `"homepage": "https://username.github.io./path/to/app"`
+    - e.g. `"homepage": "https://username.github.io/path/to/app"`
 
 3. To launch the server immediately:
 
