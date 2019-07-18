@@ -66,7 +66,7 @@ This list is not exhaustive and generally applies to formatting. Your merge requ
 - Do not refactor surrounding code unless necessary for your change.
 - `return` statements should be as early or late in a function as possible; avoid `return` statements in the middle of a function.
 - Opening curly braces (`{`) for classes, functions, and control blocks should be on the same line as the block, e.g. `if (some_var === true) {`.
-- Use arrow functions unless needing to inherent the class or function context.
+- Use arrow functions unless needing to inherit the class or function context.
 - Ensure the final version of your code is free of debug code.
 
 ## Credits
