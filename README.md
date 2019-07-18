@@ -40,6 +40,31 @@ To build this yourself, do the following:
     2. Copy the contents of `/build` to the desired path on your Web server.
     3. Navigate to your.server.host/path/to/app to view the app.
 
+## Contributing
+
+### Process
+
+1. Create a fork.
+2. Make your changes and follow the coding guidelines.
+3. Commit with meaninful messages that describe your changes.
+4. Create a pull request.
+5. Ensure your pull request describes the nature and purpose of your changes.
+
+### Coding Guidelines
+This list is not exhaustive and generally applies to formatting. Your merge request may be rejected for other reasons including but not limited to: formatting issues not specified here, architectural concerns, or functionality concerns.
+
+- Identation must use tabs. This is non-negotiable.
+- Variable assignment equal signs should be aligned using spaces.
+- Use `let` for all variable declarations unless unreasonable (e.g. `var` for scoping reasons or `const` for constants).
+- Variable names should be snake_case.
+- Function names should be camelCase.
+- Class names should be PascalCase.
+- String quotation should be done with double-quotes, not single-quotes, except in cases of interpolation where backticks would be used.
+- Trailing whitespace should be stripped.
+- Do not refactor surrounding code unless necessary for your change.
+- `return` statements should be as early or late in a function as possible; avoid `return` statements in the middle of a function.
+- Use arrow functions unless needing to inherent the class or function context.
+
 ## Credits
 
 - [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - for CSS styling.
