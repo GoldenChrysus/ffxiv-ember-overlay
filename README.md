@@ -46,7 +46,7 @@ To build this yourself, do the following:
 
 1. Create a fork.
 2. Make your changes and follow the coding guidelines.
-3. Commit with meaninful messages that describe your changes.
+3. Commit with meaningful messages that describe your changes.
 4. Create a pull request.
 5. Ensure your pull request describes the nature and purpose of your changes.
 
