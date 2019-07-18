@@ -1,0 +1,413 @@
+html, body {
+	height      : 100%;
+	overflow    : hidden;
+	padding     : 3px;
+	margin      : 0;
+	user-select : none;
+}
+
+#root,
+#root-inner,
+.react-contextmenu-wrapper {
+	width  : 100%;
+	height : 100%;
+}
+
+.resizeHandle {
+	background-image    : url("/img/handle.png");
+	background-position : bottom right;
+	background-repeat   : no-repeat;
+	box-sizing          : border-box;
+}
+
+#container {
+	width            : calc(100% - 2px);
+	height           : calc(100% - 11px);
+	position         : relative;
+	box-sizing       : border-box;
+	background-color : rgb(85, 65, 33);
+	box-shadow       : inset 0 1px 1px 0 #cfc36e, inset 0 0 1px 0 hsla(53,50%,62%,.5), 0 0 1px 2px rgba(0,0,0,.5), 0 2px 2px 2px rgba(0,0,0,.5);
+	border-radius    : 8px;
+	padding          : 5px;
+	margin           : 0 auto;
+}
+
+#container #inner {
+	width            : 100%;
+	height           : 100%;
+	position         : relative;
+	box-sizing       : border-box;
+	display          : flex;
+	flex-direction   : column;
+	background-image : linear-gradient(rgb(58, 58, 58), rgb(30, 30, 30) 2rem);
+	box-shadow       : inset 0 0 0 1px hsla(0,0%,100%,.1), 0 0 0 2px #222, 0 3px 1px #cfc36e, 0 0 2px 1px rgba(0,0,0,.4);
+	border-radius    : 4px;
+	overflow         : hidden;
+}
+
+#container #inner .split {
+	width      : 100%;
+	border     : none;
+    height     : 1px;
+    min-height : 1px;
+    box-shadow : 0 -1px 0 rgba(0, 0, 0, 0.4), inset 0 -1px 0 hsla(0, 0%, 100%, 0.1);
+}
+
+#container #inner #header {
+	width      : 100%;
+	padding    : 8px;
+	position   : relative;
+}
+
+#container #inner #header .title {
+	color          : hsla(0, 0%, 100%, 0.7);
+	font-size      : 16px;
+	line-height    : 16px;
+	text-transform : uppercase;
+	font-weight    : bold;
+	float          : left;
+}
+
+#container #inner #header .subtitle {
+	color          : hsla(0, 0%, 100%, 0.5);
+	padding-right  : 16px;
+	font-size      : 12px;
+	line-height    : 16px;
+	text-transform : uppercase;
+	float          : right;
+	font-style     : italic;
+}
+
+#container #inner #header .toggle {
+	position      : absolute;
+	top           : 50%;
+	transform     : translateY(-50%);
+	width         : 0.7rem;
+	height        : 0.7rem;
+	border-radius : 50%;
+	background    : #554121;
+	box-shadow    : inset 0 2px 2px 0 #cfc36e, inset 0 0 2px 0 hsla(53,50%,62%,.5), 0 0 2px 2px rgba(0,0,0,.5), 0 2px 2px 2px rgba(0,0,0,.5);
+	cursor        : pointer;
+	cursor        : hand;
+	touch-action  : manipulation;
+	transition    : 0.5s;
+	opacity       : 0;
+}
+
+#container #inner #header .toggle.left {
+	left : 0.5rem;
+}
+
+#container #inner #header .toggle.right {
+	right : 1.4rem;
+}
+
+#container #inner #header .toggle:hover {
+	opacity : 1;
+}
+
+#container #inner #game-state {
+	background   : rgba(0, 0, 0, 0.4);
+	box-shadow   : inset 0 -1px 0 hsla(0, 0%, 100%, 0.1), inset 0 1px 0 #000;
+	padding      : 4px 8px;
+	color        : #bca98a;
+	font-size    : 14px;
+	line-height  : 18px;
+	font-variant : small-caps;
+}
+
+#container #inner #game-state .inactive {
+	font-style : italic;
+}
+
+#container #inner #content {
+	display     : block;
+	width       : 100%;
+	max-height  : 100%;
+	flex-basis  : 0%;
+	flex-grow   : 1;
+	flex-shrink : 1;
+	overflow-y  : scroll;
+}
+
+#container #inner #content #player-table {
+	width          : 100%;
+	display        : flex;
+	flex-direction : column;
+	padding        : 4px 8px;
+	box-sizing     : border-box;
+	margin         : 3px 0 4px 0;
+}
+
+#container #inner #content #player-table .row {
+	background     : rgba(255, 255, 255, 0.05);
+	width          : 100%;
+	display        : flex;
+	flex-direction : row;
+	flex-wrap      : wrap;
+	padding        : 4px 0;
+	color          : hsla(0, 0%, 100%, 0.4);
+	font-size      : 11px;
+	box-shadow     : inset 0 -1px 0 hsla(0, 0%, 100%, 0.05), inset 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#container #inner #content #player-table .row .column {
+	display         : flex;
+	flex-direction  : column;
+	flex-basis      : 100%;
+	flex            : 1 1;
+	text-overflow   : ellipsis;
+	white-space     : nowrap;
+	overflow        : hidden;
+	padding         : 0 3px 0 3px;
+	justify-content : center;
+}
+
+#container #inner #content #player-table .row.header {
+	background : rgba(255, 255, 255, 0.03);
+}
+
+#container #inner #content #player-table .row.header .column {
+	font-weight    : bold;
+	color          : hsla(0, 0%, 100%, 0.7);
+	text-transform : uppercase;
+}
+
+#container #inner #content #player-table .row.active {
+	background : rgba(255, 255, 255, 0.15);
+}
+
+#container #inner #content #player-table .row.player:hover {
+	cursor : pointer;
+}
+
+#container #inner #content #player-table .row.player:not(.active):hover {
+	background : rgba(255, 255, 255, 0.07);
+}
+
+#container #inner #content #player-table .row .column:first-child {
+	max-width : 20px;
+	padding   : 0 3px;
+}
+
+#container #inner #content #player-table .row.player .column:first-child img {
+	width  : 20px;
+	height : 20px;
+}
+
+#container #inner #content #player-table .row .column:nth-child(2) {
+	padding-left : 0;
+	margin-right : 3px;
+}
+
+#container #inner #content #player-table .row.player .column:nth-child(2) {
+	color : #bca98a;
+}
+
+#container #inner #content #player-detail {
+	padding        : 8px;
+	display        : flex;
+	flex-direction : column;
+}
+
+#container #inner #content #player-detail .header {
+	width          : 100%;
+	display        : flex;
+	flex-direction : row;
+}
+
+#container #inner #content #player-detail .header .job {
+	max-width : 32px;
+}
+
+#container #inner #content #player-detail .header .job,
+#container #inner #content #player-detail .header .name {
+	display        : flex;
+	flex-direction : column;
+	flex           : 1;
+	justify-content : center;
+}
+
+#container #inner #content #player-detail .header .job {
+	max-width : 32px;
+}
+
+#container #inner #content #player-detail .header .job img {
+	width  : 32px;
+	height : 32px;
+}
+
+#container #inner #content #player-detail .header .name {
+	padding-left : 8px;
+	color        : #bca98a;
+	font-size    : 28px;
+}
+
+#container #inner #content #player-detail .section {
+	padding : 4px 0;
+}
+
+#container #inner #content #player-detail .split {
+	margin-top : 8px;
+}
+
+#container #inner #content #player-detail .section > .title {
+	color          : rgba(255, 255, 255, 0.7);
+	text-transform : uppercase;
+	font-weight    : bold;
+	font-size      : 19px;
+	padding        : 6px 0 8px 0;
+}
+
+#container #inner #content #player-detail .section > .data {
+	display        : flex;
+	flex-direction : row;
+	flex-wrap      : wrap;
+}
+
+#container #inner #content #player-detail .section > .data .column {
+	display        : flex;
+	flex-direction : column;
+	flex           : 1;
+	margin         : 0 8px 8px 0;
+	flex-basis     : calc(50% - 16px);
+	padding        : 8px;
+	box-sizing     : border-box;
+	background     : rgba(0, 0, 0, 0.2);
+}
+
+#container #inner #content #player-detail .section > .data .column:nth-child(even),
+#container #inner #content #player-detail .section > .data .column:last-child {
+	margin-right : 0;
+}
+
+#container #inner #content #player-detail .section > .data .column > .title {
+	color       : rgba(255, 255, 255, 0.6);
+	font-weight : bold;
+	font-size   : 12px;
+}
+
+#container #inner #content #player-detail .section > .data .column .value {
+	color : rgba(255, 255, 255, 0.5);
+}
+
+#container #inner #content #player-detail .section:last-child {
+	margin-bottom : -8px;
+}
+
+#container #inner #footer {
+	width   : 100%;
+	padding : 3px 8px 5px 8px;
+}
+
+#container #inner #footer #role-links {
+	float : left;
+}
+
+#container #inner #footer #role-links .role-link,
+#container #inner #footer #navigation-links .navigation-link {
+	padding        : 4px 6px;
+	display        : inline-block;
+	border-radius  : 4px;
+	color          : hsla(0, 0%, 100%, 0.7);
+	text-transform : uppercase;
+	font-size      : 11px;
+	margin-right   : 5px;
+	transition     : 0.5s;
+	cursor         : pointer;
+	cursor         : hand;
+	touch-action   : manipulation;
+}
+
+#container #inner #footer #role-links .role-link.active {
+	background : rgba(255, 255, 255, 0.2);
+	box-shadow : inset 0 -1px 0 hsla(0, 0%, 100%, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+#container #inner #footer #role-links .role-link:not(.active):hover,
+#container #inner #footer #navigation-links .navigation-link:not(.active):hover {
+	background : rgba(255, 255, 255, 0.07);
+	box-shadow : inset 0 -1px 0 hsla(0, 0%, 100%, 0.07), inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.placeholder {
+	position      : absolute;
+	top           : 8px;
+	width         : 2.5rem;
+	height        : 2.5rem;
+	background    : #554121;
+	box-shadow    : inset 0 1px 1px 0 #cfc36e, inset 0 0 1px 0 hsla(53, 50%, 62%, 0.5), 0 0 1px 2px rgba(0, 0, 0, 0.5), 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+	border-radius : 50%;
+	padding       : 5px;
+	cursor        : pointer;
+	cursor        : hand;
+	touch-action  : manipulation;
+}
+
+.placeholder.left {
+	left : 8px;
+}
+
+.placeholder.right {
+	right : 8px;
+}
+
+.placeholder .inner {
+	width           : 100%;
+	height          : 100%;
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	overflow        : hidden;
+	background      : #1e1e1e;
+	box-shadow      : inset 0 0 0 1px hsla(0, 0%, 100%, 0.1), 0 0 0 2px #222, 0 3px 1px #cfc36e, 0 0 2px 1px rgba(0, 0, 0, 0.4);
+	border-radius   : 50%;
+}
+
+.placeholder .inner img {
+	width  : 2rem;
+	height : 2rem;
+	border : 2px solid transparent;
+}
+
+.container-context-menu {
+	z-index       : 50;
+    border-top    : 1px solid hsla(0, 0%, 100%, 0.1);
+    border-bottom : 1px solid rgba(0, 0, 0, 0.4);
+    background    : #282828;
+    border-radius : 4px;
+    text-shadow   : 0 1px rgba(0, 0, 0, 0.6);
+    box-shadow    : 0 0 1px rgba(0, 0, 0, 0.6), 0 2px 3px rgba(0, 0, 0, 0.6);
+    min-width     : 10rem;
+}
+
+.container-context-menu .item-group {
+	padding : 4px;
+}
+
+.container-context-menu .item-group .react-contextmenu-item {
+	display       : block;
+    margin        : 0.2rem 0;
+    padding       : 0.3rem 0.8rem;
+    border-radius : 1rem;
+    font-size     : 0.9rem;
+    line-height   : 1;
+    color         : #eee1c5;
+    cursor        : pointer;
+}
+
+.container-context-menu .item-group .react-contextmenu-item:hover {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.hidden {
+	display : none;
+}
+
+.auto-height {
+	height : auto !important;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
