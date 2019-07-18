@@ -9,7 +9,22 @@ React overlay for the [OverlayPlugin add-on](https://github.com/hibiyasleep/Over
 Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
 
 ## Features
-Information coming soon!
+### Informative tabs for damage, healing, and tanking.
+![DPS tab](https://i.imgur.com/iyPTQQa.png "DPS tab")
+![Healing tab](https://i.imgur.com/Lq1JcVw.png "Healing tab")
+![Tanking tab](https://i.imgur.com/yd7dXLe.png "Tanking tab")
+
+### Click on any player's name to view detailed statistics.
+![Detailed statistics](https://i.imgur.com/lSEnud8.gif "Detailed statistics")
+
+### Collapsable interface to save space and show only your stats.
+![Collapsable interface](https://i.imgur.com/b5UQcC6.gif "Collapsable interface")
+
+### Clear encounter data or load sample data to perfect your setup.
+![Clear encounter and load sample data](https://i.imgur.com/jImxkgU.gif "Clear encounter and load sample data")
+
+### Minimize the entire overlay to the left or right when not in use to free up screen space.
+![Minimize when not in use](https://i.imgur.com/FLhKdKH.gif "Minimize when not in use")
 
 ## Installation
 1. Ensure Advanced Combat Tracker (ACT) and OverlayPlugin are installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
