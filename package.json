@@ -2,7 +2,7 @@
 	"name": "ffxiv-ember-overlay",
 	"description": "React + Redux overlay for the OverlayPlugin add-on for Advanced Combat Tracker for use with Final Fantasy XIV.",
 	"license": "GPL-3.0-only",
-	"version": "0.1.0",
+	"version": "0.1.0-alpha",
 	"private": true,
 	"dependencies": {
 		"jquery": "^3.4.1",
