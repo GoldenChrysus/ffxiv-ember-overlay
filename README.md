@@ -37,7 +37,7 @@ To build this yourself, do the following:
 4. To build the app for usage on a Web server:
 
     1. Run `npm run build` to build the files to the `/build` directory.
-    2. Copy `/build` to your Web server.
+    2. Copy the contents of `/build` to the desired path on your Web server.
     3. Navigate to your.server.host/path/to/app to view the app.
 
 ## License
