@@ -40,6 +40,10 @@ To build this yourself, do the following:
     2. Copy the contents of `/build` to the desired path on your Web server.
     3. Navigate to your.server.host/path/to/app to view the app.
 
+## Credits
+
+- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - for CSS styling.
+
 ## License
 [GNU General Public License v3.0 only](/LICENSE)
 
