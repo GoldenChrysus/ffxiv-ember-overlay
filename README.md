@@ -42,3 +42,10 @@ To build this yourself, do the following:
 
 ## License
 [GPL 3.0 Only](/LICENSE)
+
+## Copyright
+Copyright (C) 2019, Patrick Golden. All rights reserved.
+
+Copyrights licensed under GNU General Public License v3.0.
+
+See the accompanying [LICENSE](/LICENSE) file for terms.
