@@ -2,10 +2,10 @@
 
 ## 0.1.2-alpha
 
-**Released: ?**
+**Released: 2019-07-19**
 
 ### Bugs
-- ?
+- IN PROGRESS: Inconsistent number formatting for certain regions
 
 ### Features
 - Navigation footer will not be shown in collapsed mode
