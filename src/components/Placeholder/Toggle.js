@@ -1,7 +1,7 @@
 import React from "react";
 import $ from "jquery";
 
-class PlaceholderToggle extends React.Component {
+class Toggle extends React.Component {
 	togglePlaceholders() {
 		let $container = $(document).find("#container");
 		let self       = this;
@@ -22,4 +22,4 @@ class PlaceholderToggle extends React.Component {
 	}
 }
 
-export default PlaceholderToggle;
+export default Toggle;

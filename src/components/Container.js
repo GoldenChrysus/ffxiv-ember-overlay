@@ -10,6 +10,7 @@ import PlayerTable from "./PlayerTable";
 import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
 import Placeholder from "./Placeholder";
+import PlaceholderToggle from "./Placeholder/Toggle";
 import SocketService from "../services/SocketService";
 
 class Container extends React.Component {
@@ -55,6 +56,8 @@ class Container extends React.Component {
 			<React.Fragment>
 				<ContextMenuTrigger id="right-click-menu">
 					<div id="container">
+						<PlaceholderToggle type="left"/>
+						<PlaceholderToggle type="right"/>
 						<div id="inner">
 							{header}
 							<GameState state={state} active={active}/>

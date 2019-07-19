@@ -1,6 +1,6 @@
 import React from "react";
 
-import PlaceholderToggle from "./PlaceholderToggle";
+import PlaceholderToggle from "./Placeholder/Toggle";
 
 class Header extends React.Component {
 	render() {

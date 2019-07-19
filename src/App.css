@@ -79,12 +79,11 @@ html, body {
 	font-style     : italic;
 }
 
-#container #inner #header .toggle {
+#container > .toggle {
 	position      : absolute;
-	top           : 50%;
-	transform     : translateY(-50%);
-	width         : 0.7rem;
-	height        : 0.7rem;
+	top           : 11px;
+	width         : 12px;
+	height        : 12px;
 	border-radius : 50%;
 	background    : #554121;
 	box-shadow    : inset 0 2px 2px 0 #cfc36e, inset 0 0 2px 0 hsla(53,50%,62%,.5), 0 0 2px 2px rgba(0,0,0,.5), 0 2px 2px 2px rgba(0,0,0,.5);
@@ -93,17 +92,18 @@ html, body {
 	touch-action  : manipulation;
 	transition    : 0.5s;
 	opacity       : 0;
+	z-index       : 2;
 }
 
-#container #inner #header .toggle.left {
-	left : 0.5rem;
+#container > .toggle.left {
+	left : 14px;
 }
 
-#container #inner #header .toggle.right {
-	right : 1.4rem;
+#container > .toggle.right {
+	right : 14px;
 }
 
-#container #inner #header .toggle:hover {
+#container > .toggle:hover {
 	opacity : 1;
 }
 
