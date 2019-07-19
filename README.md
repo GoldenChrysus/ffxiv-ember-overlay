@@ -150,7 +150,7 @@ This list is not exhaustive and generally applies to formatting. Your merge requ
 
 ## Credits
 
-- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - for CSS styling.
+- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) for CSS styling.
 
 ## License
 [GNU General Public License v3.0 only](/LICENSE)
