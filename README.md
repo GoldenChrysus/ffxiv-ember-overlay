@@ -32,13 +32,15 @@ Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overla
 ## Installation
 
 ### OverlayPlugin
-1. Ensure Advanced Combat Tracker (ACT) and OverlayPlugin are installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
+0. If you already have Advanced Combat Tracker (ACT) and OverlayPlugin setup and configured to your liking, skip to step 3.
+1. Ensure ACT and OverlayPlugin are installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
 2. Within ACT, navigate to Plugins > OverlayPlugin.dll > Mini Parse.
 3. Set the URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
 4. Click "Reload overlay," and the overlay should now be visible in your FFXIV game.
 
 ### ACTWebSocket
-1. Ensure Advanced Combat Tracker (ACT) is installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
+0. If you already have Advanced Combat Tracker (ACT), ACTWebSocket, and OverlayProc setup and configured to your liking, skip to step 15.
+1. Ensure ACT is installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
 2. Within ACT, navigate to Plugins > Plugin Listing.
 3. Delete the "FFXIV_ACT_Plugin.dll" entry by clicking the "X" in the top right of the entry.
 4. Download ACTWebSocket and OverlayProc from [here](https://github.com/GoldenChrysus/ffxiv-ember-overlay/raw/master/act/ACTWebSocket.zip).
