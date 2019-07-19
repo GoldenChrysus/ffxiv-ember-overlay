@@ -47,7 +47,7 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
     ✔️ Add the overlay to your OBS Studio scene or other stream/video feed where Web pages can be embedded.
     ✔️ More recent embedded browser.
     ❌ More difficult to set up.
-    ❌ No substantial benefit if not intending to use the overlay on a stream, view it in a separate browser or on your phone, etc.
+    ❌ No substantial benefit if not using it in one of the aforementioned ways.
 
 ### OverlayPlugin
 0. If you already have Advanced Combat Tracker (ACT) and OverlayPlugin setup and configured to your liking, skip to step 3.
