@@ -55,15 +55,16 @@ html, body {
 
 #container #inner #header {
 	width      : 100%;
-	padding    : 8px;
+	padding    : 4px 8px;
 	position   : relative;
 }
 
 #container #inner #header .title {
 	color          : hsla(0, 0%, 100%, 0.7);
-	font-size      : 16px;
-	line-height    : 16px;
+	font-size      : 8px;
+	line-height    : 8px;
 	text-transform : uppercase;
+	letter-spacing : 1px;
 	font-weight    : bold;
 	float          : left;
 }
@@ -71,8 +72,8 @@ html, body {
 #container #inner #header .subtitle {
 	color          : hsla(0, 0%, 100%, 0.5);
 	padding-right  : 16px;
-	font-size      : 12px;
-	line-height    : 16px;
+	font-size      : 8px;
+	line-height    : 8px;
 	text-transform : uppercase;
 	float          : right;
 	font-style     : italic;
@@ -116,8 +117,14 @@ html, body {
 	font-variant : small-caps;
 }
 
-#container #inner #game-state .inactive {
-	font-style : italic;
+#container #inner #game-state span {
+	display : block;
+}
+
+#container #inner #game-state .inactive:before {
+	display     : inline-block;
+	content     : 'Inactive: ';
+	white-space : pre;
 }
 
 #container #inner #content {
@@ -297,7 +304,7 @@ html, body {
 
 #container #inner #footer {
 	width   : 100%;
-	padding : 3px 8px 5px 8px;
+	padding : 0 8px 5px 8px;
 }
 
 #container #inner #footer #role-links {
@@ -306,12 +313,12 @@ html, body {
 
 #container #inner #footer #role-links .role-link,
 #container #inner #footer #navigation-links .navigation-link {
-	padding        : 4px 6px;
+	padding        : 2px 4px;
 	display        : inline-block;
 	border-radius  : 4px;
 	color          : hsla(0, 0%, 100%, 0.7);
 	text-transform : uppercase;
-	font-size      : 11px;
+	font-size      : 9px;
 	margin-right   : 5px;
 	transition     : 0.5s;
 	cursor         : pointer;
