@@ -117,7 +117,7 @@ To build this yourself, do the following:
     
 ## Changelog
 
-View the full changelog [here.](/CHANGELOG.md)
+View the full changelog [here](/CHANGELOG.md).
 
 ## Contributing
 
