@@ -1,5 +1,4 @@
-import store from "../redux/store/index";
-import { parseGameData, updateState } from "../redux/actions/index";
+import SocketMessageProcessor from "../processors/SocketMessageProcessor";
 
 const querystring = require("querystring");
 
@@ -18,54 +17,16 @@ class SocketService {
 			uri = uri + "/MiniParse";
 		}
 
-		this.uri    = uri;
-		this.socket = new WebSocket(this.uri);
+		this.message_processor = new SocketMessageProcessor();
+		this.uri               = uri;
+		this.socket            = new WebSocket(this.uri);
 
-		this.socket.onmessage = this.processEvent;
+		this.socket.onmessage = this.message_processor.processMessage;
 		this.socket.onclose   = this.reconnect;
 	}
 
 	reconnect() {
 		this.initialize();
-	}
-
-	processEvent(e) {
-		let data;
-
-		try {
-			data = JSON.parse(e.data);
-		} catch (e) { }
-
-		if (typeof data !== "object") {
-			return;
-		}
-
-		let type = data.msgtype;
-
-		if (["SendCharName", "CombatData"].indexOf(type) === -1) {
-			return;
-		}
-
-		switch (type) {
-			case "CombatData":
-				let detail = data.msg;
-
-				store.dispatch(parseGameData(detail));
-				break;
-
-			case "SendCharName":
-				let name       = data.msg.charName;
-				let state_data = {
-					key   : "character_name",
-					value : name
-				};
-
-				store.dispatch(updateState(state_data));
-				break;
-
-			default:
-				break;
-		}
 	}
 }
 
