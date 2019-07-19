@@ -114,6 +114,10 @@ To build this yourself, do the following:
     1. Run `npm run build` to build the files to the `/build` directory.
     2. Copy the contents of `/build` to the desired path on your Web server.
     3. Navigate to your.server.host/path/to/app to view the app.
+    
+## Changelog
+
+View the full changelog [here.](/CHANGELOG)
 
 ## Contributing
 
