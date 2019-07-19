@@ -30,30 +30,65 @@ Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overla
 ![Minimize when not in use](https://i.imgur.com/FLhKdKH.gif "Minimize when not in use")
 
 ## Installation
+
+### OverlayPlugin
 1. Ensure Advanced Combat Tracker (ACT) and OverlayPlugin are installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
 2. Within ACT, navigate to Plugins > OverlayPlugin.dll > Mini Parse.
 3. Set the URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
-4. Click "Reload overlay."
+4. Click "Reload overlay," and the overlay should now be visible in your FFXIV game.
+
+### ACTWebSocket
+1. Ensure Advanced Combat Tracker (ACT) is installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
+2. Within ACT, navigate to Plugins > Plugin Listing.
+3. Delete the "FFXIV_ACT_Plugin.dll" entry by clicking the "X" in the top right of the entry.
+4. Download ACTWebSocket and OverlayProc from _URL pending_.
+5. Before unzipping the previous file, ensure it is unblocked by right-clicking the file, choosing "Properties," and clicking "Unblock" at the bottom of the "General" tab.
+    - If the unblock option is not available at this stage, repeat this process for the ACTWebSocket.dll file after extracting in the next step.
+6. Extra the ZIP file to the location of your choosing.
+7. Within ACT, navigate to Plugins > Plugin Listing > Browse, and choose the ACTWebSocket.dll file from the extracted ZIP file.
+8. Navigate to Options > Show Startup Wizard, and follow the same process you used in step 1 to setup ACT. This will add the FFXIV_ACT_Plugin.dll that was removed in step 3.
+9. Navigate to Plugins > ACTWebSocket, and use the following configuration under "Start Options":
+    - Server Auto Start: checked
+    - Use UPNP: unchecked
+    - Use SSL: unchecked
+    - random URL: unchecked
+    - Skin Dir on Act/OverlaySkin: checked
+    - Use MobileProc Discovery: unchecked
+    - Update Plugin Address: checked
+10. Use the following configuration under "Host":
+    - Host: either the top-most option or "127.0.0.1"
+    - Port: 10501
+    - UPNP Port: 10501
+11. Use the following configuration under "Message Filter":
+    - Use Miniparse Data: checked
+    - Using OnLogLineRead: unchecked
+    - Using BeforeLogLineRead: unchecked
+    - Using Chat: unchecked
+12. Under "Server Status," click "On."
+13. In the middle of the screen, ensure you are on the tab entitled "HTML Based."
+14. Use the following configuration under "OverlayProc":
+    - OverlayProc Auto Start: checked
+    - In the drodpown (the only dropdown in this section), choose "x64_QT5.8.0" if on a 64-bit system or "x86_QT5.8.0" if on a 32-bit system.
+    - If the textbox to the right of the dropdown has text beginning with "0.0.0" then click "Download."
+15. In the section entitled "Web Skins," click "Add URL."
+16. Enter https://goldenchrysus.github.io/ffxiv/ember-overlay/ and click "Ok."
+17. In the section entitled "OverlayProc," click "Start/Stop OverlayProc."
+18. Click "Open Manager."
+19. In the section entitled "Overlay List," double click "Ember Overlay" _or_ select "Ember Overlay" and click "New." It should then appear in the section entitled "Overlay Windows" and should be visible in your FFXIV game.
 
 ## Building
 To build this yourself, do the following:
 
 1. Clone the repository using git, e.g. `git clone https://github.com/GoldenChrysus/ffxiv-ember-overlay.git`
-
     - If new to or unfamiliar with git, reference GitHub's article on [cloning a repository](https://help.github.com/en/articles/cloning-a-repository).
     - Alternatively, you can [download the ZIP file](https://github.com/GoldenChrysus/ffxiv-ember-overlay/archive/master.zip) for the repository.
-
 2. Add a property `homepage` to package.json if you intend to host the app on a Web server and not at the root directory.
-
     - e.g. `"homepage": "https://username.github.io/path/to/app"`
-
 3. To launch the server immediately:
-
     1. Run `npm start` to start the React app on your machine on port 3000.
     2. Navigate to your.server.host:3000 to view the app.
     
 4. To build the app for usage on a Web server:
-
     1. Run `npm run build` to build the files to the `/build` directory.
     2. Copy the contents of `/build` to the desired path on your Web server.
     3. Navigate to your.server.host/path/to/app to view the app.
