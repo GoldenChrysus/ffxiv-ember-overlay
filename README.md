@@ -46,7 +46,7 @@ Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overla
 4. Download ACTWebSocket and OverlayProc from [here](https://github.com/GoldenChrysus/ffxiv-ember-overlay/raw/master/act/ACTWebSocket.zip).
 5. Before unzipping the previous file, ensure it is unblocked by right-clicking the file, choosing "Properties," and clicking "Unblock" at the bottom of the "General" tab.
     - If the unblock option is not available at this stage, repeat this process for the ACTWebSocket.dll file after extracting in the next step.
-6. Extra the ZIP file to the location of your choosing.
+6. Extract the ZIP file to the location of your choosing.
 7. Within ACT, navigate to Plugins > Plugin Listing > Browse, and choose the ACTWebSocket.dll file from the extracted ZIP file.
 8. Navigate to Options > Show Startup Wizard, and follow the same process you used in step 1 to setup ACT. This will add the FFXIV_ACT_Plugin.dll that was removed in step 3.
 9. Navigate to Plugins > ACTWebSocket, and use the following configuration under "Start Options":
@@ -76,7 +76,7 @@ Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overla
 16. Enter https://goldenchrysus.github.io/ffxiv/ember-overlay/ and click "Ok."
 17. In the section entitled "OverlayProc," click "Start/Stop OverlayProc."
 18. Click "Open Manager."
-19. In the section entitled "Overlay List," double click "Ember Overlay" _or_ select "Ember Overlay" and click "New." It should then appear in the section entitled "Overlay Windows" and should be visible in your FFXIV game.
+19. In the section entitled "Overlay List," select "Ember Overlay" and click "New." It should then appear in the section entitled "Overlay Windows" and should be visible in your FFXIV game.
 
 ## Building
 To build this yourself, do the following:
