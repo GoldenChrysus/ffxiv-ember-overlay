@@ -8,10 +8,10 @@
 - ?
 
 ### Features
-- ?
+- Navigation footer will not be shown in collapsed mode
 
 ### UI Adjustments
-- Reduced size of title bar
+- Removed title bar
 - Removed italics from encounter info bar
     - Encounter info is now prefixed with "Inactive:" when the encounter is inactive
 - Made "DPS," "Heal," and "Tank," buttons at bottom of overlay smaller

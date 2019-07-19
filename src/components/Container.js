@@ -36,18 +36,32 @@ class Container extends React.Component {
 			content = <PlayerDetail player={this.props.detail_player} players={this.props.game.Combatant} encounter={encounter}/>;
 		}
 
+		let header;
+
+		if (false) {
+			header = <Header title="Ember Overlay"/>;
+		}
+
+		let footer = [];
+
+		if (!this.props.collapsed) {
+			footer = [
+					<div className="split"></div>,
+					<Footer/>
+			];
+		}
+
 		return (
 			<React.Fragment>
 				<ContextMenuTrigger id="right-click-menu">
 					<div id="container">
 						<div id="inner">
-							<Header title="Ember Overlay"/>
+							{header}
 							<GameState state={state} active={active}/>
 							<div id="content">
 								{content}
 							</div>
-							<div className="split"></div>
-							<Footer/>
+							{footer}
 						</div>
 					</div>
 				</ContextMenuTrigger>
