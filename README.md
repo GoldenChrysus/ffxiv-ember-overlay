@@ -1,5 +1,5 @@
 # FFXIV Ember Overlay
-React overlay for the [OverlayPlugin add-on](https://github.com/hibiyasleep/OverlayPlugin/releases) for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php) for use with Final Fantasy XIV.
+React overlay for the [OverlayPlugin](https://github.com/hibiyasleep/OverlayPlugin/releases) and [ACTWebSocket](https://github.com/ZCube/ACTWebSocket) plugins for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php) for use with Final Fantasy XIV.
 
 [![GitHub](https://img.shields.io/github/license/GoldenChrysus/ffxiv-ember-overlay.svg)](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/master/LICENSE)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/ffxiv-ember-overlay/master.svg)
@@ -8,6 +8,8 @@ React overlay for the [OverlayPlugin add-on](https://github.com/hibiyasleep/Over
 
 ## Usage with OverlayPlugin
 Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
+
+*WebSocket support has not yet been pushed to the above URL, but it is present in this repository.*
 
 ## Features
 ### Informative tabs for damage, healing, and tanking.
