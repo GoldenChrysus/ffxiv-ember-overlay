@@ -39,9 +39,9 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
     ❌ Displays "YOU" instead of your character name in the player list.
     ❌ Outdated embedded browser.
 
-**ACTWebSocket**
+**ACTWebSocket with OverlayProc**
 
-    ✔️ More configuration options.
+    ✔️ More configuration options (opacity, scale, more flexible auto-hide/-show, etc.).
     ✔️ Display your character name instead of "YOU" in the player list.
     ✔️ View the overlay in a regular browser or on your phone (when connected to the same network as your PC).
     ✔️ Add the overlay to your OBS Studio scene or other stream/video feed where Web pages can be embedded.
