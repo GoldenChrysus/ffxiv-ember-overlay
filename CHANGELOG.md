@@ -18,7 +18,10 @@
 
 ### Code
 - Changed some component file tree organization
+- Defined built environment variables in `.env-cmdrc`
+- Modified build commands to accommodate production and development build enviroments
 
 ### Miscellaneous
 - Added changelog
 - Added changelog info to readme
+- Updated README build steps
