@@ -1,12 +1,13 @@
 import Settings from "../../data/Settings";
 
 const initial_state = {
-	game          : {},
-	viewing       : "tables",
-	table_type    : "dps",
-	collapsed     : false,
-	detail_player : {},
-	settings      : new Settings()
+	character_name : "YOU",
+	game           : {},
+	viewing        : "tables",
+	table_type     : "dps",
+	collapsed      : false,
+	detail_player  : {},
+	settings       : new Settings()
 };
 
 function rootReducer(state, action) {

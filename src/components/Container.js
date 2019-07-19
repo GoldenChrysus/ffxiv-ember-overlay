@@ -10,11 +10,16 @@ import PlayerTable from "./PlayerTable";
 import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
 import Placeholder from "./Placeholder";
+import SocketService from "../services/SocketService";
 
 class Container extends React.Component {
 	componentDidMount() {
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
 		document.addEventListener("onOverlayDataUpdate", this.parseData.bind(this));
+
+		let socket_service = new SocketService();
+
+		socket_service.initialize();
 	}
 
 	render() {

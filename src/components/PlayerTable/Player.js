@@ -22,7 +22,7 @@ class Player extends React.Component {
 		return (
 			<div className={"row player " + player_type} onClick={this.props.onClick}>
 				<div className="column"><img src={"img/icons/jobs/" + job + ".png"} alt={job + " icon"}></img></div>
-				<div className="column">{player.name}</div>
+				<div className="column">{processor.getDataValue("name", player)}</div>
 				{columns}
 			</div>
 		);

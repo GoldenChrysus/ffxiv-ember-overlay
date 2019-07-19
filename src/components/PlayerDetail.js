@@ -53,7 +53,7 @@ class PlayerDetail extends React.Component {
 						<img src={"img/icons/jobs/" + job + ".png"} alt={job + " icon"}></img>
 					</div>
 					<div className="name">
-						{player.name}
+						{processor.getDataValue("name", player)}
 					</div>
 				</div>
 				{sections}
