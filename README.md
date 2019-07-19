@@ -112,8 +112,8 @@ To build this yourself, do the following:
     
 5. To build the app for usage on a Web server:
     1. Run one of the following build commands depending on your environment:
-        - `npm run build` to build the production environment
-        - `npm run build:development` to build the development environment
+        - `npm run build` to build the production environment.
+        - `npm run build:development` to build the development environment.
     2. Copy the contents of `/build` to the desired path on your Web server.
     3. Navigate to your.server.host/path/to/app to view the app.
     

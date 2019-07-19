@@ -18,7 +18,7 @@
 
 ### Code
 - Changed some component file tree organization
-- Defined built environment variables in `.env-cmdrc`
+- Defined build environment variables in `.env-cmdrc`
 - Modified build commands to accommodate production and development build enviroments
 
 ### Miscellaneous
