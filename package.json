@@ -3,6 +3,14 @@
 	"description": "React + Redux overlay for the OverlayPlugin and ACTWebSocket plugins for Advanced Combat Tracker for use with Final Fantasy XIV.",
 	"license": "GPL-3.0-only",
 	"version": "0.1.1-alpha",
+	"keywords": [
+		"ffxiv-overlays",
+		"ffxiv-act",
+		"ffxiv",
+		"overlayplugin",
+		"overlayplugin-skin",
+		"actwebsocket"
+	],
 	"private": true,
 	"dependencies": {
 		"jquery": "^3.4.1",
