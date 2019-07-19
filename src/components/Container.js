@@ -44,7 +44,7 @@ class Container extends React.Component {
 
 		let footer = [];
 
-		if (!this.props.collapsed) {
+		if (!this.props.collapsed || viewing !== "tables") {
 			footer = [
 					<div className="split"></div>,
 					<Footer/>
