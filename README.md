@@ -30,6 +30,24 @@ Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overla
 ![Minimize when not in use](https://i.imgur.com/FLhKdKH.gif "Minimize when not in use")
 
 ## Installation
+To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlugin or ACTWebSocket with OverlayProc. To determine which one to choose (OverlayPlugin vs ACTWebSocket), consider the following:
+
+**OverlayPlugin**
+
+    ✔️ Easy to set up.
+    ❌ Limited configuration.
+    ❌ Displays "YOU" instead of your character name in the player list.
+    ❌ Outdated embedded browser.
+
+**ACTWebSocket**
+
+    ✔️ More configuration options.
+    ✔️ Display your character name instead of "YOU" in the player list.
+    ✔️ View the overlay in a regular browser or on your phone (when connected to the same network as your PC).
+    ✔️ Add the overlay to your OBS Studio scene or other stream/video feed where Web pages can be embedded.
+    ✔️ More recent embedded browser.
+    ❌ More difficult to set up.
+    ❌ No substantial benefit if not intending to use the overlay on a stream, view it in a separate browser or on your phone, etc.
 
 ### OverlayPlugin
 0. If you already have Advanced Combat Tracker (ACT) and OverlayPlugin setup and configured to your liking, skip to step 3.
