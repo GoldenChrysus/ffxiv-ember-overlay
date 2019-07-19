@@ -17,7 +17,7 @@
 - Made "DPS," "Heal," and "Tank," buttons at bottom of overlay smaller
 
 ### Code
-- ?
+- Changed some component file tree organization
 
 ### Miscellaneous
 - Added changelog
