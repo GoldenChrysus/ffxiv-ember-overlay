@@ -32,6 +32,8 @@ Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and c
 ![Minimize when not in use](https://i.imgur.com/FLhKdKH.gif "Minimize when not in use")
 
 ## Installation
+**Note:** ACT overlay plugins (at least the ones listed below) cannot be used in full screen gameplay. Either "Windowed" or "Borderless Windowed" must be used in FFXIV.
+
 To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlugin or ACTWebSocket with OverlayProc. To determine which one to choose (OverlayPlugin vs ACTWebSocket), consider the following:
 
 **OverlayPlugin**
