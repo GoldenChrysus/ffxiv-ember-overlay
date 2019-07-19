@@ -9,7 +9,8 @@ React overlay for the [OverlayPlugin](https://github.com/hibiyasleep/OverlayPlug
 ## Usage with OverlayPlugin
 Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
 
-*WebSocket support has not yet been pushed to the above URL, but it is present in this repository.*
+## Usage with ACTWebSocket with OverlayProc
+Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and create a new overlay window from this skin.
 
 ## Features
 ### Informative tabs for damage, healing, and tanking.
