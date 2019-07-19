@@ -62,6 +62,9 @@ class SocketService {
 
 				store.dispatch(updateState(state_data));
 				break;
+
+			default:
+				break;
 		}
 	}
 }
