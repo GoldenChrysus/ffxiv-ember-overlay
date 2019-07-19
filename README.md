@@ -41,7 +41,7 @@ Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overla
 1. Ensure Advanced Combat Tracker (ACT) is installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
 2. Within ACT, navigate to Plugins > Plugin Listing.
 3. Delete the "FFXIV_ACT_Plugin.dll" entry by clicking the "X" in the top right of the entry.
-4. Download ACTWebSocket and OverlayProc from _URL pending_.
+4. Download ACTWebSocket and OverlayProc from [here](https://github.com/GoldenChrysus/ffxiv-ember-overlay/raw/master/act/ACTWebSocket.zip).
 5. Before unzipping the previous file, ensure it is unblocked by right-clicking the file, choosing "Properties," and clicking "Unblock" at the bottom of the "General" tab.
     - If the unblock option is not available at this stage, repeat this process for the ACTWebSocket.dll file after extracting in the next step.
 6. Extra the ZIP file to the location of your choosing.
