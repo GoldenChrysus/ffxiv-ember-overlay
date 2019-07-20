@@ -8,7 +8,8 @@
 - ?
 
 ### Features
-- ?
+- Added ability to split encounter when using OverlayProc
+    - Click the scissors icon in the bottom right of the overlay, or right-click and choose "Split Encounter"
 
 ### UI Changes
 - Improved automatic resizing of table columns

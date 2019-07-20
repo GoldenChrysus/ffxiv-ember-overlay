@@ -11,16 +11,13 @@ import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
 import Placeholder from "./Placeholder";
 import PlaceholderToggle from "./Placeholder/Toggle";
-import SocketService from "../../services/SocketService";
 
 class Container extends React.Component {
 	componentDidMount() {
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
 		document.addEventListener("onOverlayDataUpdate", this.parseData.bind(this));
 
-		let socket_service = new SocketService();
-
-		socket_service.initialize();
+		this.props.socket_service.initialize();
 	}
 
 	render() {

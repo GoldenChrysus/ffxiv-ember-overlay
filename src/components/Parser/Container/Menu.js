@@ -3,12 +3,12 @@ import { connect } from "react-redux";
 import { ContextMenu, MenuItem } from "react-contextmenu";
 import { updateState, loadSampleGameData, clearGameData } from "../../../redux/actions/index";
 
-import OverlayPluginService from "../../../services/OverlayPluginService";
+import PluginService from "../../../services/PluginService";
 
 class Menu extends React.Component {
 	render() {
 		let self           = this;
-		let plugin_service = new OverlayPluginService();
+		let plugin_service = new PluginService();
 
 		let collapse_item = function() {
 			let text = (self.props.collapsed) ? "Uncollapse" : "Collapse";
@@ -25,12 +25,8 @@ class Menu extends React.Component {
 		};
 
 		let plugin_actions = function() {
-			if (!self.props.overlayplugin) {
-				return;
-			}
-
 			return(
-				<MenuItem onClick={plugin_service.splitEncounter}>
+				<MenuItem onClick={plugin_service.splitEncounter.bind(plugin_service)}>
 					Split Encounter
 				</MenuItem>
 			);

@@ -4,14 +4,14 @@ import { changeTableType, changeViewing } from "../../redux/actions/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCut } from "@fortawesome/free-solid-svg-icons";
 
-import OverlayPluginService from "../../services/OverlayPluginService";
+import PluginService from "../../services/PluginService";
 
 class Footer extends React.Component {
 	render() {
 		let viewing        = this.props.viewing;
 		let table_type     = this.props.table_type;
 		let self           = this;
-		let plugin_service = new OverlayPluginService();
+		let plugin_service = new PluginService();
 
 		let navigation = function() {
 			if (viewing === "tables") {
@@ -48,11 +48,9 @@ class Footer extends React.Component {
 		let actions = function() {
 			let actions = [];
 
-			if (self.props.overlayplugin) {
-				actions.push(
-					<FontAwesomeIcon icon={faCut} alt="Split encounter" title="Split encounter" onClick={plugin_service.splitEncounter} key="split-encounter"/>
-				);
-			}
+			actions.push(
+				<FontAwesomeIcon icon={faCut} alt="Split encounter" title="Split encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)} key="split-encounter"/>
+			);
 
 			return actions;
 		}

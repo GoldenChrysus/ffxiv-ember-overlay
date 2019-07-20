@@ -34,10 +34,39 @@ class SocketService {
 
 		this.socket.onmessage = this.message_processor.processMessage;
 		this.socket.onclose   = this.reconnect.bind(this);
+		this.socket.onopen    = this.setId.bind(this);
 	}
 
 	reconnect() {
 		this.initialize();
+	}
+
+	setId() {
+		let id = Math.random().toString(36).substring(7);
+
+		this.id = id;
+
+		this.send("set_id", undefined, undefined, undefined, id);
+	}
+
+	splitEncounter() {
+		this.send("overlayAPI", this.id, "RequestEnd");
+	}
+
+	send(type, to, message_type, message, id) {
+		if (this.socket.readyState !== 1) {
+			return;
+		}
+
+		let data = {
+			type    : type,
+			to      : to,
+			msgtype : message_type,
+			msg     : message,
+			id      : id
+		};
+
+		this.socket.send(JSON.stringify(data));
 	}
 }
 

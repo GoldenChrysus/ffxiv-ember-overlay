@@ -1,4 +1,5 @@
 import Settings from "../../data/Settings";
+import SocketService from "../../services/SocketService";
 
 const initial_state = {
 	character_name : "YOU",
@@ -8,6 +9,7 @@ const initial_state = {
 	collapsed      : false,
 	detail_player  : {},
 	overlayplugin  : !!window.OverlayPluginApi,
+	socket_service : new SocketService(),
 	settings       : new Settings()
 };
 
