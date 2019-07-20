@@ -11,8 +11,8 @@ class PlayerProcessor  {
 			value = store.getState().character_name;
 		}
 
-		if (String(Number(value)) === String(value)) {
-			value = (+value).toLocaleString(undefined, { maximumFractionDigits: 2 });
+		if (!isNaN(value)) {
+			value = (+value).toLocaleString(undefined, { minimumFractionDigits : 2, maximumFractionDigits: 2 });
 		}
 
 		return value;

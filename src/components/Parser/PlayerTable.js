@@ -25,7 +25,7 @@ class PlayerTable extends React.Component {
 
 			if (this.props.sum_columns[table_type].indexOf(key) !== -1) {
 				footer.push(
-					<div className="column" key={key}>{(+this.props.encounter[key] || 0).toLocaleString()}</div>
+					<div className="column" key={key}>{(+this.props.encounter[key] || 0).toLocaleString(undefined, { minimumFractionDigits : 2, maximumFractionDigits: 2 })}</div>
 				);
 			} else {
 				footer.push(

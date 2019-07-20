@@ -1,3 +1,13 @@
+let calculateHealed = function(player) {
+	let value = player["healed%"];
+
+	if (value === "--") {
+		value = "0%";
+	}
+
+	return value;
+}
+
 let calculateEffectiveHealed = function(player, players) {
 	let total_effective_heals  = 0;
 	let player_effective_heals = 0;
@@ -13,7 +23,7 @@ let calculateEffectiveHealed = function(player, players) {
 		}
 	}
 
-	let effective_ratio = (player_effective_heals / total_effective_heals * 100).toFixed(0) + "%";
+	let effective_ratio = (((total_effective_heals) ? (player_effective_heals / total_effective_heals) : 0) * 100).toFixed(0) + "%";
 
 	return effective_ratio;
 };
@@ -37,7 +47,7 @@ let calculateTankedDamagePercent = function(player, players) {
 		}
 	}
 
-	let effective_ratio = (player_damage_taken / total_damage_taken * 100).toFixed(0) + "%";
+	let effective_ratio = (((total_damage_taken) ? (player_damage_taken / total_damage_taken) : 0) * 100).toFixed(0) + "%";
 
 	return effective_ratio;
 };
@@ -71,6 +81,7 @@ let formatMaxHeal = function(player) {
 }
 
 let PlayerDataCustomValues = {
+	"healed%"            : calculateHealed,
 	"effective_heal_pct" : calculateEffectiveHealed,
 	"effective_hps"      : calculateEffectiveHPS,
 	"damage_taken_pct"   : calculateTankedDamagePercent,

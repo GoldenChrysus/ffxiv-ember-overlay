@@ -8,6 +8,7 @@
 - Cursor will no longer change to a text cursor when hovering over text in an OverlayProc window
 - Corrected issues presented by React console errors
 - Resolved issue where socket disconnect would throw a JavaScript error
+- Resolved issue where numbers with decimals ending in 0 may be formatted differently than other numbers
 
 ### Features
 - Added ability to split encounter when using OverlayPlugin
