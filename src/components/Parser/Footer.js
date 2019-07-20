@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { changeTableType, changeViewing } from "../redux/actions/index";
+import { changeTableType, changeViewing } from "../../redux/actions/index";
 
 class Footer extends React.Component {
 	render() {
@@ -22,7 +22,7 @@ class Footer extends React.Component {
 					let active = (table_type === type_key) ? "active" : "";
 
 					links.push(
-						<div className={"role-link " + active} onClick={self.changeTableType.bind(self, type_key)}>{name}</div>
+						<div className={"role-link " + active} onClick={self.changeTableType.bind(self, type_key)} key={"navigation-link-" + type_key}>{name}</div>
 					);
 				}
 
@@ -34,7 +34,7 @@ class Footer extends React.Component {
 			} else if (viewing === "player") {
 				return(
 					<div id="navigation-links">
-						<span className="navigation-link" onClick={self.changeViewing.bind(self, "tables")}>&lsaquo; Back</span>
+						<span className="navigation-link" onClick={self.changeViewing.bind(self, "tables")} key="navigation-link-back">&lsaquo; Back</span>
 					</div>
 				);
 			}

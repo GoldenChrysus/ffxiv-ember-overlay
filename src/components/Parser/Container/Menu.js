@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { ContextMenu, MenuItem } from "react-contextmenu";
-import { updateState, loadSampleGameData, clearGameData } from "../../redux/actions/index";
+import { updateState, loadSampleGameData, clearGameData } from "../../../redux/actions/index";
 
 class Menu extends React.Component {
 	render() {

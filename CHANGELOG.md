@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.2.0-alpha
+
+**Released: ?**
+
+### Bugs
+- Prevent cursor from changing to a text cursor when hovering over text in an OverlayProc overlay
+- Correct issues presented by React console errors
+
+### Features
+- ?
+
+### UI Adjustments
+- ?
+
+### Code
+- Implement `react-router-dom` route matching in to support planned settings dialog
+- Restructure file tree of the `Parser` component
+
+### Miscellaneous
+- Semantic versioning
+
 ## 0.1.2-alpha
 
 **Released: 2019-07-19**

@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { parseGameData } from "../redux/actions/index";
+import { parseGameData } from "../../redux/actions/index";
 import { ContextMenuTrigger } from "react-contextmenu";
 
 import Header from "./Header";
@@ -11,7 +11,7 @@ import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
 import Placeholder from "./Placeholder";
 import PlaceholderToggle from "./Placeholder/Toggle";
-import SocketService from "../services/SocketService";
+import SocketService from "../../services/SocketService";
 
 class Container extends React.Component {
 	componentDidMount() {
@@ -47,8 +47,8 @@ class Container extends React.Component {
 
 		if (!this.props.collapsed || viewing !== "tables") {
 			footer = [
-					<div className="split"></div>,
-					<Footer/>
+					<div className="split" key="above-footer-split"></div>,
+					<Footer key="parser-footer"/>
 			];
 		}
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import PlayerProcessor from "../../processors/PlayerProcessor";
+import PlayerProcessor from "../../../processors/PlayerProcessor";
 
 class Player extends React.Component {
 	render() {

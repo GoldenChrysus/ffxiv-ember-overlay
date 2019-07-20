@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import Constants from "../constants/index";
-import PlayerProcessor from "../processors/PlayerProcessor";
+import Constants from "../../constants/index";
+import PlayerProcessor from "../../processors/PlayerProcessor";
 
 class PlayerDetail extends React.Component {
 	render() {

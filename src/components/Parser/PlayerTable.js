@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import { changeViewing, changeDetailPlayer } from "../redux/actions/index";
+import { changeViewing, changeDetailPlayer } from "../../redux/actions/index";
 
 import Player from "./PlayerTable/Player";
-import Constants from "../constants/index";
+import Constants from "../../constants/index";
 
 class PlayerTable extends React.Component {
 	render() {
@@ -20,16 +20,16 @@ class PlayerTable extends React.Component {
 			let title = Constants.PlayerDataTitles[key].short;
 
 			header.push(
-				<div className="column">{title}</div>
+				<div className="column" key={key}>{title}</div>
 			);
 
 			if (this.props.sum_columns[table_type].indexOf(key) !== -1) {
 				footer.push(
-					<div className="column">{(+this.props.encounter[key] || 0).toLocaleString()}</div>
+					<div className="column" key={key}>{(+this.props.encounter[key] || 0).toLocaleString()}</div>
 				);
 			} else {
 				footer.push(
-					<div className="column"></div>
+					<div className="column" key={key}></div>
 				);
 			}
 		}
@@ -85,7 +85,7 @@ class PlayerTable extends React.Component {
 				}
 
 				rows.push(
-					<Player player={player} players={sorted_players} columns={this.props.table_columns[table_type]} onClick={this.changeViewing.bind(this, "player", player)}/>
+					<Player key={player.name} player={player} players={sorted_players} columns={this.props.table_columns[table_type]} onClick={this.changeViewing.bind(this, "player", player)}/>
 				);
 			}
 		}

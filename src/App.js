@@ -1,26 +1,15 @@
 import React from "react";
-import { connect } from "react-redux";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
-import Container from "./components/Container";
+import Parser from "./components/Parser";
 
 class App extends React.Component {
 	render() {
-		let inner_class = (this.props.collapsed && this.props.viewing === "tables") ? "auto-height" : "";
-
 		return (
-			<div id="root-inner" className={inner_class}>
-				<Container/>
-			</div>
+			Parser
 		);
 	}
 }
 
-const mapStateToProps = (state) => {
-	return {
-		collapsed : state.collapsed,
-		viewing   : state.viewing
-	};
-};
-
-export default connect(mapStateToProps)(App);
+export default App;
