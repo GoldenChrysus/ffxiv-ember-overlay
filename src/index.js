@@ -15,10 +15,10 @@ import Parser from "./components/Parser";
 import Settings from "./components/Settings";
 
 ReactDOM.render(
-	<Router>
+	<Router basename={process.env.REACT_APP_ROUTER_BASE}>
 		<Provider store={store}>
 			<Route exact path="/" component={Parser}/>
-			<Route path="/settings" component={Settings}/>
+			<Route exact path="/settings" component={Settings}/>
 		</Provider>
 	</Router>,
 	document.getElementById("root")

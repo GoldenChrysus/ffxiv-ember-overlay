@@ -15,7 +15,7 @@
 - Added ability to split encounter when using OverlayPlugin
     - Click the scissors icon in the bottom right of the overlay, or right-click and choose "Split Encounter"
 
-### UI Adjustments
+### UI Changes
 - ?
 
 ### Code Changes
@@ -35,7 +35,7 @@
 ### Features
 - Navigation footer will not be shown in collapsed mode
 
-### UI Adjustments
+### UI Changes
 - Removed title bar
 - Removed italics from encounter info bar
     - Encounter info is now prefixed with "Inactive:" when the encounter is inactive

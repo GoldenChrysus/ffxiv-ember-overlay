@@ -138,13 +138,14 @@ body * {
 }
 
 #container #inner #content {
-	display     : block;
-	width       : 100%;
-	max-height  : 100%;
-	flex-basis  : 0%;
-	flex-grow   : 1;
-	flex-shrink : 1;
-	overflow-y  : scroll;
+	display         : block;
+	width           : 100%;
+	max-height      : 100%;
+	flex-basis      : 0%;
+	flex-grow       : 1;
+	flex-shrink     : 1;
+	overflow-y      : scroll;
+	scrollbar-width : none;
 }
 
 #container #inner #content #player-table {
