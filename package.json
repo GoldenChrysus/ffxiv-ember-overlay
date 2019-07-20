@@ -27,10 +27,10 @@
 		"redux": "^4.0.4"
 	},
 	"scripts": {
-		"start": "env-cmd -e development react-scripts start",
-		"build:development": "env-cmd -e development react-scripts build",
-		"build:staging": "env-cmd -e staging react-scripts build",
-		"build": "env-cmd -e production react-scripts build",
+		"start": "env-cmd -e default,development react-scripts start",
+		"build:development": "env-cmd -e default,development react-scripts build",
+		"build:staging": "env-cmd -e default,staging react-scripts build",
+		"build": "env-cmd -e default,production react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},

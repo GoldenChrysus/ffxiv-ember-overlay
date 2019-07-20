@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 // Redux
 import { Provider } from "react-redux";
@@ -13,6 +13,8 @@ import * as serviceWorker from "./serviceWorker";
 
 import Parser from "./components/Parser";
 import Settings from "./components/Settings";
+
+console.log(process.env.REACT_APP_VERSION);
 
 ReactDOM.render(
 	<Router basename={process.env.REACT_APP_ROUTER_BASE}>
