@@ -14,8 +14,6 @@ import * as serviceWorker from "./serviceWorker";
 import Parser from "./components/Parser";
 import Settings from "./components/Settings";
 
-console.log(process.env.REACT_APP_VERSION);
-
 ReactDOM.render(
 	<Router basename={process.env.REACT_APP_ROUTER_BASE}>
 		<Provider store={store}>
