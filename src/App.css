@@ -119,7 +119,7 @@ body * {
 
 #container #inner #game-state {
 	background   : rgba(0, 0, 0, 0.4);
-	box-shadow   : inset 0 -1px 0 hsla(0, 0%, 100%, 0.1), inset 0 1px 0 #000;
+	box-shadow   : inset 0 -1px 0 hsla(0, 0%, 100%, 0.1);
 	padding      : 4px 8px;
 	color        : #bca98a;
 	font-size    : 14px;
@@ -149,11 +149,12 @@ body * {
 }
 
 #container #inner #content #player-table {
-	width          : calc(100% - 16px);
-	display        : table;
-	box-sizing     : border-box;
-	margin         : 8px;
-	border-collapse: collapse;
+	width           : calc(100% - 16px);
+	display         : table;
+	box-sizing      : border-box;
+	margin          : 8px;
+	border-collapse : collapse;
+	position        : relative;
 }
 
 #container #inner #content #player-table .row {
@@ -172,7 +173,7 @@ body * {
 	content    : '';
 	background : hsla(0, 0%, 100%, 0.05);
 	height     : 1px;
-	width      : calc(100% - 16px);
+	width      : 100%;
 }
 
 #container #inner #content #player-table .row .column {
