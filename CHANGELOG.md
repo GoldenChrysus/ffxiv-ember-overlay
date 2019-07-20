@@ -6,7 +6,7 @@
 
 ### Bug Fixes
 - Resolved issue where encounter is always listed as inactive
-- Fixed table sorting where primary sort values for two players were equal
+- Fixed table sorting for scenarios when primary sort values for two players were equal
 
 ### Features
 - Added ability to split encounter when using OverlayProc
