@@ -14,7 +14,9 @@
 - ?
 
 ### Code Changes
-- ?
+- Updated router to `HashRouter`
+- Added default environment variables
+    - `package.json` and `.env-cmdrc.sample` files were updated to reflect this
 
 ### Miscellaneous
 - ?
