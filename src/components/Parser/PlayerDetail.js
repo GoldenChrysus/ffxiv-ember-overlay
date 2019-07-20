@@ -26,20 +26,20 @@ class PlayerDetail extends React.Component {
 				let value = processor.getDataValue(key, player, players);
 
 				columns.push(
-					<div className="column">
-						<div className="title">{title}</div>
-						<div className="value">{value}</div>
+					<div className="column" key={key}>
+						<div className="title" key={key + "-title"}>{title}</div>
+						<div className="value" key={key + "-value"}>{value}</div>
 					</div>
 				);
 			}
 
 			sections.push(
-				<div className="split"></div>
+				<div className="split" key={section_type + "-split"}></div>
 			);
 			sections.push(
-				<div className="section">
-					<div className="title">{section_type}</div>
-					<div className="data">
+				<div className="section" key={section_type}>
+					<div className="title" key={section_type + "-title"}>{section_type}</div>
+					<div className="data" key={section_type + "-data"}>
 						{columns}
 					</div>
 				</div>

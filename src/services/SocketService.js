@@ -3,16 +3,17 @@ import SocketMessageProcessor from "../processors/SocketMessageProcessor";
 const querystring = require("querystring");
 
 class SocketService {
-	constructor() {
+	constructor(uri) {
 		this.message_processor = new SocketMessageProcessor();
+		this.uri               = uri || this.processUri();
 	}
 
-	initialize() {
+	processUri() {
 		let params = new querystring.parse(window.location.search);
 		let uri    = params["?HOST_PORT"];
 
 		if (!uri) {
-			return;
+			return false;
 		}
 
 		uri = uri.replace(/\/$/, "");
@@ -21,7 +22,14 @@ class SocketService {
 			uri = uri + "/MiniParse";
 		}
 
-		this.uri    = uri;
+		return uri;
+	}
+
+	initialize() {
+		if (!this.uri) {
+			return;
+		}
+
 		this.socket = new WebSocket(this.uri);
 
 		this.socket.onmessage = this.message_processor.processMessage;

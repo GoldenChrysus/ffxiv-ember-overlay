@@ -15,7 +15,7 @@ class Player extends React.Component {
 			let value = processor.getDataValue(key, player, this.props.players);
 
 			columns.push(
-				<div className="column">{value}</div>
+				<div className="column" key={key}>{value}</div>
 			);
 		}
 
