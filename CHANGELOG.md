@@ -5,12 +5,13 @@
 **Released: ?**
 
 ### Bugs
-- Prevent cursor from changing to a text cursor when hovering over text in an OverlayProc overlay
+- Cursor will no longer change to a text cursor when hovering over text in an OverlayProc window
 - Corrected issues presented by React console errors
 - Resolved issue where socket disconnect would throw a JavaScript error
 
 ### Features
 - Added ability to split encounter when using OverlayPlugin
+    - Click the scissors icon in the bottom right of the overlay, or right-click and choose "Split Encounter"
 
 ### UI Adjustments
 - ?
