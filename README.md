@@ -2,6 +2,7 @@
 React overlay for the [OverlayPlugin](https://github.com/hibiyasleep/OverlayPlugin/releases) and [ACTWebSocket](https://github.com/ZCube/ACTWebSocket) plugins for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php) for use with Final Fantasy XIV.
 
 [![GitHub](https://img.shields.io/github/license/GoldenChrysus/ffxiv-ember-overlay.svg)](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/master/LICENSE)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/GoldenChrysus/ffxiv-ember-overlay.svg)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/ffxiv-ember-overlay/master.svg)
 [![Works with OverlayPlugin](https://img.shields.io/badge/works%20with-OverlayPlugin-blue.svg)](https://github.com/hibiyasleep/OverlayPlugin)
 [![Works with ACTWebSocket](https://img.shields.io/badge/works%20with-ACTWebSocket-blue.svg)](https://github.com/ZCube/ACTWebSocket)

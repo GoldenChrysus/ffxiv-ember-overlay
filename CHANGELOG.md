@@ -1,8 +1,8 @@
 # Changelog
 
-## 0.?.?-alpha
+## 0.3.0-alpha
 
-**Released: ?**
+**Released: in development**
 
 ### Bug Fixes
 - ?
@@ -11,7 +11,7 @@
 - ?
 
 ### UI Changes
-- ?
+- Improved automatic resizing of table columns
 
 ### Code Changes
 - Updated router to `HashRouter`
