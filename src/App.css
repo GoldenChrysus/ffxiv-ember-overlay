@@ -209,8 +209,8 @@ body * {
 }
 
 #container #inner #content #player-table .row .column:first-child {
-	max-width : 20px;
-	padding   : 3px 3px 0 3px;
+	width   : 23px;
+	padding : 3px 3px 0 3px;
 }
 
 #container #inner #content #player-table .row.player .column:first-child img {
