@@ -4,7 +4,7 @@
 
 **Released: ?**
 
-### Bugs
+### Bug Fixes
 - Cursor will no longer change to a text cursor when hovering over text in an OverlayProc window
 - Corrected issues presented by React console errors
 - Resolved issue where socket disconnect would throw a JavaScript error
@@ -17,7 +17,7 @@
 ### UI Adjustments
 - ?
 
-### Code
+### Code Changes
 - Implemented `react-router-dom` route matching in order to support planned settings dialog
 - Restructured file tree of the `Parser` component
 
@@ -28,7 +28,7 @@
 
 **Released: 2019-07-19**
 
-### Bugs
+### Bug Fixes
 - IN PROGRESS: Inconsistent number formatting for certain regions
 
 ### Features
@@ -40,7 +40,7 @@
     - Encounter info is now prefixed with "Inactive:" when the encounter is inactive
 - Made "DPS," "Heal," and "Tank," buttons at bottom of overlay smaller
 
-### Code
+### Code Changes
 - Changed some component file tree organization
 - Defined build environment variables in `.env-cmdrc`
 - Modified build commands to accommodate production and development build enviroments
