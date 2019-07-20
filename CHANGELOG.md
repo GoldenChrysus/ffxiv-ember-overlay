@@ -5,7 +5,7 @@
 **Released: in development**
 
 ### Bug Fixes
-- ?
+- Resolved issue where encounter is always listed as inactive
 
 ### Features
 - Added ability to split encounter when using OverlayProc

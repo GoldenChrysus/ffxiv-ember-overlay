@@ -22,7 +22,7 @@ class Container extends React.Component {
 
 	render() {
 		let encounter = this.props.game.Encounter || {};
-		let active    = (encounter.isActive === "true");
+		let active    = (this.props.game.isActive === true);
 		let state     = (encounter.title) ? `${encounter.title} - ${encounter.CurrentZoneName} - ${encounter.duration}` : "Awaiting encounter data...";
 		let viewing   = this.props.viewing;
 
