@@ -15,7 +15,7 @@
 - ?
 
 ### Code
-- Implement `react-router-dom` route matching in to support planned settings dialog
+- Implement `react-router-dom` route matching in order to support planned settings dialog
 - Restructure file tree of the `Parser` component
 
 ### Miscellaneous
