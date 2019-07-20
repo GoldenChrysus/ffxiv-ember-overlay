@@ -54,7 +54,7 @@ class SocketService {
 	}
 
 	send(type, to, message_type, message, id) {
-		if (this.socket.readyState !== 1) {
+		if (!this.socket || this.socket.readyState !== 1) {
 			return;
 		}
 
