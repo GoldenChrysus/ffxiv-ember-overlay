@@ -20,7 +20,7 @@
 - Restructured file tree of the `Parser` component
 
 ### Miscellaneous
-- Implement Semantic versioning
+- Implemented Semantic versioning
 
 ## 0.1.2-alpha
 
