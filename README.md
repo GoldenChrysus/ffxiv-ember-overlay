@@ -33,13 +33,14 @@ Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and c
 ![Minimize when not in use](https://i.imgur.com/FLhKdKH.gif "Minimize when not in use")
 
 ## Installation
-**Note:** Advanced Combat Tracker overlay plugins (at least the ones listed below) cannot be used in full screen gameplay. Either "Windowed" or "Borderless Windowed" must be used in FFXIV.
+**Note:** OverlayProc cannot be used when FFXIV is in full screen mode. If you wish to remain in full screen mode, you must use OverlayPlugin.
 
 To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlugin or ACTWebSocket with OverlayProc. To determine which one to choose (OverlayPlugin vs ACTWebSocket), consider the following:
 
 **OverlayPlugin**
 
     ✔️ Easy to set up.
+    ✔️ Can be used in full screen mode.
     ❌ Limited configuration.
     ❌ Displays "YOU" instead of your character name in the player list.
     ❌ Outdated embedded browser.
@@ -52,6 +53,7 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
     ✔️ Add the overlay to your OBS Studio scene or other stream/video feed where Web pages can be embedded.
     ✔️ More recent embedded browser.
     ❌ More difficult to set up.
+    ❌ Cannot be used in full screen mode.
     ❌ No substantial benefit if not using it in one of the aforementioned ways.
 
 ### OverlayPlugin
