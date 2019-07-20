@@ -4,17 +4,19 @@ import { changeViewing, changeDetailPlayer } from "../../redux/actions/index";
 
 import Player from "./PlayerTable/Player";
 import Constants from "../../constants/index";
+import PlayerProcessor from "../../processors/PlayerProcessor";
 
 class PlayerTable extends React.Component {
 	render() {
-		let header     = [];
-		let footer     = [];
-		let rows       = [];
-		let count      = 0;
-		let rank       = 0;
-		let found      = false;
-		let table_type = this.props.type;
-		let collapsed  = this.props.collapsed;
+		let header           = [];
+		let footer           = [];
+		let rows             = [];
+		let count            = 0;
+		let rank             = 0;
+		let found            = false;
+		let table_type       = this.props.type;
+		let collapsed        = this.props.collapsed;
+		let player_processor = new PlayerProcessor();
 
 		for (let key of this.props.table_columns[table_type]) {
 			let title = Constants.PlayerDataTitles[key].short;
@@ -53,7 +55,9 @@ class PlayerTable extends React.Component {
 					return 1;
 				} else {
 					if (a.Job && b.Job) {
-						return (a.name > b.name) ? 1 : -1;
+						return player_processor
+							.getDataValue("name", a)
+							.localeCompare(player_processor.getDataValue("name", b));
 					} else if (!a.job) {
 						return 1;
 					} else {

@@ -6,6 +6,7 @@
 
 ### Bug Fixes
 - Resolved issue where encounter is always listed as inactive
+- Fixed table sorting where primary sort values for two players were equal
 
 ### Features
 - Added ability to split encounter when using OverlayProc
@@ -20,7 +21,7 @@
     - `package.json` and `.env-cmdrc.sample` files were updated to reflect this
 
 ### Miscellaneous
-- ?
+- Updated README
 
 ## 0.2.0-alpha
 
