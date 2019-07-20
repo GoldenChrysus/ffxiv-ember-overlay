@@ -6,7 +6,8 @@
 
 ### Bugs
 - Prevent cursor from changing to a text cursor when hovering over text in an OverlayProc overlay
-- Correct issues presented by React console errors
+- Corrected issues presented by React console errors
+- Resolved issue where socket disconnect would throw a JavaScript error
 
 ### Features
 - ?
@@ -15,11 +16,11 @@
 - ?
 
 ### Code
-- Implement `react-router-dom` route matching in order to support planned settings dialog
-- Restructure file tree of the `Parser` component
+- Implemented `react-router-dom` route matching in order to support planned settings dialog
+- Restructured file tree of the `Parser` component
 
 ### Miscellaneous
-- Semantic versioning
+- Implement Semantic versioning
 
 ## 0.1.2-alpha
 

@@ -33,7 +33,7 @@ class SocketService {
 		this.socket = new WebSocket(this.uri);
 
 		this.socket.onmessage = this.message_processor.processMessage;
-		this.socket.onclose   = this.reconnect;
+		this.socket.onclose   = this.reconnect.bind(this);
 	}
 
 	reconnect() {
