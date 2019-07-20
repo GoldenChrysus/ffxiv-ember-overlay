@@ -1,8 +1,27 @@
 # Changelog
 
-## 0.2.0-alpha
+## 0.?.?-alpha
 
 **Released: ?**
+
+### Bug Fixes
+- ?
+
+### Features
+- ?
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
+## 0.2.0-alpha
+
+**Released: 2019-07-20**
 
 ### Bug Fixes
 - Cursor will no longer change to a text cursor when hovering over text in an OverlayProc window
@@ -16,7 +35,7 @@
     - Click the scissors icon in the bottom right of the overlay, or right-click and choose "Split Encounter"
 
 ### UI Changes
-- ?
+- Added Font Awesome icon package
 
 ### Code Changes
 - Implemented `react-router-dom` route matching in order to support planned settings dialog
