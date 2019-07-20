@@ -10,7 +10,7 @@
 - Resolved issue where socket disconnect would throw a JavaScript error
 
 ### Features
-- ?
+- Added ability to split encounter when using OverlayPlugin
 
 ### UI Adjustments
 - ?

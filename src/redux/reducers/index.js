@@ -7,6 +7,7 @@ const initial_state = {
 	table_type     : "dps",
 	collapsed      : false,
 	detail_player  : {},
+	overlayplugin  : !!window.OverlayPluginApi,
 	settings       : new Settings()
 };
 

@@ -1,14 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
 import { changeTableType, changeViewing } from "../../redux/actions/index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCut } from "@fortawesome/free-solid-svg-icons";
+
+import OverlayPluginService from "../../services/OverlayPluginService";
 
 class Footer extends React.Component {
 	render() {
-		let viewing    = this.props.viewing;
-		let table_type = this.props.table_type;
-		let self       = this;
+		let viewing        = this.props.viewing;
+		let table_type     = this.props.table_type;
+		let self           = this;
+		let plugin_service = new OverlayPluginService();
 
-		let links = function() {
+		let navigation = function() {
 			if (viewing === "tables") {
 				let types   = {
 					dps  : "DPS",
@@ -40,9 +45,24 @@ class Footer extends React.Component {
 			}
 		}
 
+		let actions = function() {
+			let actions = [];
+
+			if (self.props.overlayplugin) {
+				actions.push(
+					<FontAwesomeIcon icon={faCut} alt="Split encounter" title="Split encounter" onClick={plugin_service.splitEncounter} key="split-encounter"/>
+				);
+			}
+
+			return actions;
+		}
+
 		return (
 			<div id="footer">
-				{links()}
+				{navigation()}
+				<div id="footer-actions">
+					{actions()}
+				</div>
 			</div>
 		);
 	}
@@ -70,8 +90,9 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		table_type : state.table_type,
-		viewing    : state.viewing
+		table_type    : state.table_type,
+		viewing       : state.viewing,
+		overlayplugin : state.overlayplugin
 	};
 };
 

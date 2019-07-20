@@ -13,6 +13,9 @@
 	],
 	"private": true,
 	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.19",
+		"@fortawesome/free-solid-svg-icons": "^5.9.0",
+		"@fortawesome/react-fontawesome": "^0.1.4",
 		"env-cmd": "^9.0.3",
 		"jquery": "^3.4.1",
 		"react": "^16.8.6",
