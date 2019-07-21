@@ -8,7 +8,7 @@
 - ?
 
 ### Features
-- ?
+- Added 24-person overlay tab
 
 ### UI Changes
 - ?

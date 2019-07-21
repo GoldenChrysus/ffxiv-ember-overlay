@@ -157,6 +157,13 @@ body * {
 	position        : relative;
 }
 
+#container #inner #content #player-table.grid {
+	display        : flex;
+	flex-direction : row;
+	flex-wrap      : wrap;
+	flex           : 1;
+}
+
 #container #inner #content #player-table .row {
 	background    : rgba(255, 255, 255, 0.05);
 	width         : 100%;
@@ -167,7 +174,23 @@ body * {
 	border-bottom : 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#container #inner #content #player-table .row:before {
+#container #inner #content #player-table.grid .row {
+	display        : flex;
+	flex-direction : column;
+	flex           : 1 1 calc(25% - 8px);
+	width          : calc(25% - 8px) !important;
+	margin         : 0 4px 4px 0;
+	padding        : 4px;
+	box-sizing     : border-box;
+	background     : rgba(0, 0, 0, 0.2);
+}
+
+#container #inner #content #player-table.grid .row:nth-child(4n),
+#container #inner #content #player-table.grid .row:last-child {
+	margin-right : 0;
+}
+
+#container #inner #content #player-table:not(.grid) .row:before {
 	position   : absolute;
 	display    : block;
 	content    : '';
@@ -209,9 +232,25 @@ body * {
 	background : rgba(255, 255, 255, 0.07);
 }
 
-#container #inner #content #player-table .row .column:first-child {
+#container #inner #content #player-table .row > .column:first-child,
+#container #inner #content #player-table.grid .row .player-data > .column:first-child {
 	width   : 23px;
 	padding : 3px 3px 0 3px;
+}
+
+#container #inner #content #player-table.grid .row .player-data > .column:first-child {
+	width : 19px;
+}
+
+#container #inner #content #player-table.grid .row .player-data,
+#container #inner #content #player-table.grid .row .stat-data {
+	width    : 100% !important;
+	overflow : hidden;
+}
+
+#container #inner #content #player-table.grid .row .player-data .column:first-child {
+	padding : 0;
+	float   : left;
 }
 
 #container #inner #content #player-table .row.player .column:first-child img {
@@ -219,14 +258,45 @@ body * {
 	height : 20px;
 }
 
-#container #inner #content #player-table .row .column:nth-child(2) {
+#container #inner #content #player-table.grid .row .player-data .column:first-child img {
+	width  : 16px;
+	height : 16px;
+}
+
+#container #inner #content #player-table .row > .column:nth-child(2),
+#container #inner #content #player-table.grid .row .player-data > .column:nth-child(2) {
 	padding-left : 0;
+}
+
+#container #inner #content #player-table .row > .column:nth-child(2) {
 	margin-right : 3px;
 	max-width    : 100px;
 }
 
-#container #inner #content #player-table .row.player .column:nth-child(2) {
+#container #inner #content #player-table .row.player > .column:nth-child(2),
+#container #inner #content #player-table.grid .row.player .player-data > .column:nth-child(2),
+#container #inner #content #player-table.grid .row.player .stat-data > .column span {
 	color : #bca98a;
+}
+
+#container #inner #content #player-table.grid .row.player .player-data > .column:nth-child(2) {
+	margin-right : 0;
+	float        : left;
+	width        : calc(100% - 23px - 3px);
+	min-width    : 0;
+	padding      : 0;
+	height       : 16px;
+	line-height  : 16px;
+	overflow     : hidden;
+	text-overflow: ellipsis;
+	white-space  : nowrap;
+}
+
+#container #inner #content #player-table.grid .row.player .stat-data > .column {
+	font-size      : 9px;
+	padding-left   : 0;
+	padding-top    : 0;
+	padding-bottom : 0;
 }
 
 #container #inner #content #player-detail {

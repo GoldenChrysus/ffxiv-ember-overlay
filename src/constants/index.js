@@ -80,6 +80,90 @@ let formatMaxHeal = function(player) {
 	return value;
 }
 
+let GameJobs = {
+	ARC : {
+		role : "dps"
+	},
+	GLA : {
+		role : "tank"
+	},
+	LNC : {
+		role : "dps"
+	},
+	MRD : {
+		role : "tank"
+	},
+	PGL : {
+		role : "dps"
+	},
+	ACN : {
+		role : "dps"
+	},
+	CNJ : {
+		role : "heal"
+	},
+	THM : {
+		role : "dps"
+	},
+	ROG : {
+		role : "dps"
+	},
+	BRD : {
+		role : "dps"
+	},
+	DRG : {
+		role : "dps"
+	},
+	MNK : {
+		role : "dps"
+	},
+	PLD : {
+		role : "tank"
+	},
+	WAR : {
+		role : "tank"
+	},
+	BLM : {
+		role : "dps"
+	},
+	WHM : {
+		role : "heal"
+	},
+	SCH : {
+		role : "heal"
+	},
+	SMN : {
+		role : "dps"
+	},
+	NIN : {
+		role : "dps"
+	},
+	AST : {
+		role : "heal"
+	},
+	DRK : {
+		role : "tank"
+	},
+	MCH : {
+		role : "dps"
+	},
+	RDM : {
+		role : "dps"
+	},
+	SAM : {
+		role : "dps"
+	},
+	BLU : {
+		role : "dps"
+	},
+	GNB : {
+		role : "tank"
+	},
+	DNC : {
+		role : "dps"
+	},
+};
+
 let PlayerDataCustomValues = {
 	"healed%"            : calculateHealed,
 	"effective_heal_pct" : calculateEffectiveHealed,
@@ -202,6 +286,7 @@ const PlayerMetricTypeData = {
 };
 
 export default {
+	GameJobs,
 	PlayerDataCustomValues,
 	PlayerDataTitles,
 	PlayerMetricTypeData

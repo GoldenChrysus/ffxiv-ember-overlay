@@ -18,7 +18,8 @@ class Footer extends React.Component {
 				let types   = {
 					dps  : "DPS",
 					heal : "Heal",
-					tank : "Tank"
+					tank : "Tank",
+					raid : "24"
 				}
 				let links   = [];
 

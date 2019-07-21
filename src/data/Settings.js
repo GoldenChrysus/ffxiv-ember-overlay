@@ -21,7 +21,21 @@ const default_settings = {
 			"healstaken",
 			"BlockPct",
 			"deaths"
-		]
+		],
+		raid : {
+			dps  : [
+				"encdps",
+				"enchps"
+			],
+			heal : [
+				"enchps",
+				"encdps"
+			],
+			tank : [
+				"encdps",
+				"enchps"
+			]
+		}
 	},
 	sum_columns     : {
 		dps  : [
@@ -39,7 +53,8 @@ const default_settings = {
 	sort_columns    : {
 		dps  : "damage",
 		heal : "healed",
-		tank : "damagetaken"
+		tank : "damagetaken",
+		raid : "damage"
 	},
 	detail_data : {
 		dps  : [
