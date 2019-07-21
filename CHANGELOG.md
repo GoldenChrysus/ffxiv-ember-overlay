@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.4.0-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- ?
+
+### Features
+- ?
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.3.0-alpha
 
 **Released: 2019-07-20**
