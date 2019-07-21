@@ -2,27 +2,25 @@
 
 ## 0.4.0-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2019-07-21**
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
-- ! - Added 24-person overlay tab
+- Added 24-person overlay tab
     - Sorting is by total damage descending
     - Currently shows DPS and HPS as metrics
     - Metric types are prioritized by job role (i.e. healers display HPS before DPS)
 
 ### UI Changes
-- ?
+- N/A
 
 ### Code Changes
 - Added `GameJobs` constant comprising job data (roles, currently) indexed by class/job key
 
 ### Miscellaneous
-- ?
+- Corrected changelogs for previous versions
 
 ## 0.3.0-alpha
 
@@ -43,6 +41,7 @@
 - Updated router to `HashRouter`
 - Added default environment variables
     - `package.json` and `.env-cmdrc.sample` files were updated to reflect this
+- Added staging environment to build options
 
 ### Miscellaneous
 - Updated README
@@ -86,7 +85,7 @@
 - Removed title bar
 - Removed italics from encounter info bar
     - Encounter info is now prefixed with "Inactive:" when the encounter is inactive
-- Made "DPS," "Heal," and "Tank," buttons at bottom of overlay smaller
+- Made "DPS," "Heal," and "Tank" buttons at bottom of overlay smaller
 
 ### Code Changes
 - Changed some component file tree organization
