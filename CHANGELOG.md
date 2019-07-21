@@ -4,17 +4,19 @@
 
 **Released: [in development]**
 
+*! - indicates change is available on the staging site*
+
 ### Bug Fixes
 - ?
 
 ### Features
-- Added 24-person overlay tab
+- ! - Added 24-person overlay tab
 
 ### UI Changes
 - ?
 
 ### Code Changes
-- ?
+- Added `GameJobs` constant comprising job data (roles, currently) indexed by class/job key
 
 ### Miscellaneous
 - ?
