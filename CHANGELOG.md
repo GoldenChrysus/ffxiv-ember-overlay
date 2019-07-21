@@ -2,7 +2,7 @@
 
 ## 0.3.0-alpha
 
-**Released: in development**
+**Released: 2019-07-20**
 
 ### Bug Fixes
 - Resolved issue where encounter is always listed as inactive
