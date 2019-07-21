@@ -11,6 +11,9 @@
 
 ### Features
 - ! - Added 24-person overlay tab
+    - Sorting is by total damage descending
+    - Currently shows DPS and HPS as metrics
+    - Metric types are prioritized by job role (i.e. healers display HPS before DPS)
 
 ### UI Changes
 - ?
