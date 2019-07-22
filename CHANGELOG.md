@@ -10,13 +10,14 @@
 - ?
 
 ### Features
-- ?
+- IN PROGRESS: Adding settings system
 
 ### UI Changes
 - ?
 
 ### Code Changes
-- ?
+- Added `semantic-ui-less` and `semantic-ui-react`
+- Refactored all CSS colors into LESS variables for future light theme
 
 ### Miscellaneous
 - ?
