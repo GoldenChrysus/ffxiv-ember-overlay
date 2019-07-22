@@ -4,6 +4,7 @@ import { Grid, Menu } from "semantic-ui-react";
 import $ from "jquery";
 import Parser from "changelog-parser";
 
+import Screen from "./Settings/Screen";
 import About from "./Settings/About";
 
 import "./../styles/components/settings/settings-dark.less";
@@ -42,6 +43,7 @@ class Settings extends React.Component {
 								<Route exact path={base_url} render={() => (
 									<Redirect to={base_url + "/about"}/>
 								)}/>
+								<Route path={base_url + "/player-table"} component={Screen}/>
 								<Route path={base_url + "/about"} component={About}/>
 							</Grid.Column>
 						</Grid.Row>

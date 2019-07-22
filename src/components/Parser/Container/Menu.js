@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { ContextMenu, MenuItem } from "react-contextmenu";
-import { updateState, loadSampleGameData, clearGameData } from "../../../redux/actions/index";
+import { changeCollapse, loadSampleGameData, clearGameData } from "../../../redux/actions/index";
 
 import PluginService from "../../../services/PluginService";
 
@@ -12,13 +12,10 @@ class Menu extends React.Component {
 
 		let collapse_item = function() {
 			let text = (self.props.collapsed) ? "Uncollapse" : "Collapse";
-			let data = {
-				key   : "collapsed",
-				value : !self.props.collapsed
-			};
+			let data = { state: !self.props.collapsed };
 
 			return(
-				<MenuItem data={data} onClick={self.updateState.bind(self)}>
+				<MenuItem data={data} onClick={self.changeCollapse.bind(self)}>
 					{text}
 				</MenuItem>
 			);
@@ -48,8 +45,8 @@ class Menu extends React.Component {
 		);
 	}
 
-	updateState(e, data) {
-		this.props.updateState(data);
+	changeCollapse(e, data) {
+		this.props.changeCollapse(data.state);
 	}
 
 	loadSampleGameData() {
@@ -63,8 +60,8 @@ class Menu extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		updateState        : (data) => {
-			dispatch(updateState(data));
+		changeCollapse      : (data) => {
+			dispatch(changeCollapse(data));
 		},
 
 		loadSampleGameData : () => {
@@ -79,8 +76,8 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		collapsed     : state.collapsed,
-		overlayplugin : state.overlayplugin
+		collapsed     : state.settings.intrinsic.collapsed,
+		overlayplugin : state.internal.overlayplugin
 	};
 };
 

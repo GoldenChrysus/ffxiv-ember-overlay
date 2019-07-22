@@ -21,17 +21,17 @@ class Container extends React.Component {
 	}
 
 	render() {
-		let encounter = this.props.game.Encounter || {};
-		let active    = (this.props.game.isActive === true);
+		let encounter = this.props.internal.game.Encounter || {};
+		let active    = (this.props.internal.game.isActive === true);
 		let state     = (encounter.title) ? `${encounter.title} - ${encounter.CurrentZoneName} - ${encounter.duration}` : "Awaiting encounter data...";
-		let viewing   = this.props.viewing;
+		let viewing   = this.props.settings.intrinsic.viewing;
 
 		let content;
 
 		if (viewing === "tables") {
-			content = <PlayerTable players={this.props.game.Combatant} encounter={encounter} type={this.props.table_type}/>;
+			content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
 		} else if (viewing === "player") {
-			content = <PlayerDetail player={this.props.detail_player} players={this.props.game.Combatant} encounter={encounter}/>;
+			content = <PlayerDetail player={this.props.internal.detail_player} players={this.props.internal.game.Combatant} encounter={encounter}/>;
 		}
 
 		let header;
@@ -42,7 +42,7 @@ class Container extends React.Component {
 
 		let footer = [];
 
-		if (!this.props.collapsed || viewing !== "tables") {
+		if (!this.props.settings.intrinsic.collapsed || viewing !== "tables") {
 			footer = [
 					<div className="split" key="above-footer-split"></div>,
 					<Footer key="parser-footer"/>

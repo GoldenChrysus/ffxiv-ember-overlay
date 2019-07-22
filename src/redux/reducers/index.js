@@ -1,16 +1,19 @@
+import clone from "lodash.clonedeep";
+
 import Settings from "../../data/Settings";
 import SocketService from "../../services/SocketService";
+import ObjectService from "../../services/ObjectService";
 
 const initial_state = {
-	character_name : "YOU",
-	game           : {},
-	viewing        : "tables",
-	table_type     : "dps",
-	collapsed      : false,
-	detail_player  : {},
-	overlayplugin  : !!window.OverlayPluginApi,
 	socket_service : new SocketService(),
-	settings       : new Settings()
+	settings_data  : Settings,
+	internal       : {
+		character_name : "YOU",
+		game           : {},
+		detail_player  : {},
+		overlayplugin  : !!window.OverlayPluginApi
+	},
+	settings       : {}
 };
 
 function rootReducer(state, action) {
@@ -18,14 +21,24 @@ function rootReducer(state, action) {
 		state = initial_state;
 	}
 
-	let new_data = {};
+	let new_state = false;
+	let full_key  = action.key;
 
-	new_data[action.key] = action.payload;
+	if (action.type === "setSetting") {
+		state.settings_data.setSetting(action.key, action.payload);
+
+		full_key = `settings.${action.key}`;
+	}
+
+	if (full_key) {
+		new_state = clone(state);
+
+		ObjectService.setByKeyPath(new_state, full_key, action.payload);
+	}
 
 	return Object.assign(
 		{},
-		state,
-		new_data
+		new_state || state
 	);
 };
 

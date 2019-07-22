@@ -3,7 +3,7 @@ import SampleGameData from "../../constants/SampleGameData";
 export function parseGameData(payload) {
 	return {
 		type : "parseGameData",
-		key  : "game",
+		key  : "internal.game",
 		payload
 	};
 }
@@ -16,18 +16,26 @@ export function clearGameData() {
 	return parseGameData({});
 }
 
+export function changeCollapse(payload) {
+	return {
+		type : "setSetting",
+		key  : "intrinsic.collapsed",
+		payload
+	};
+}
+
 export function changeTableType(payload) {
 	return {
-		type : "changeTableType",
-		key  : "table_type",
+		type : "setSetting",
+		key  : "intrinsic.table_type",
 		payload
 	};
 }
 
 export function changeViewing(payload) {
 	return {
-		type : "changeViewing",
-		key  : "viewing",
+		type : "setSetting",
+		key  : "intrinsic.viewing",
 		payload
 	};
 }
@@ -35,7 +43,7 @@ export function changeViewing(payload) {
 export function changeDetailPlayer(payload) {
 	return {
 		type : "changeDetailPlayer",
-		key  : "detail_player",
+		key  : "internal.detail_player",
 		payload
 	};
 }

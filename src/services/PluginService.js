@@ -5,7 +5,7 @@ import OverlayProcService from "./PluginService/OverlayProcService";
 
 class PluginService {
 	constructor() {
-		let is_overlayplugin = store.getState().overlayplugin;
+		let is_overlayplugin = store.getState().internal.overlayplugin;
 
 		this.plugin_service = (is_overlayplugin) ? new OverlayPluginService() : new OverlayProcService();
 	}

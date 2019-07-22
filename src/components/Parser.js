@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import store from "../redux/store/index";
 
 import "./../styles/components/parser/parser-dark.less";
 
@@ -20,8 +19,8 @@ class Parser extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		collapsed : state.collapsed,
-		viewing   : state.viewing
+		collapsed : state.settings.intrinsic.collapsed,
+		viewing   : state.settings.intrinsic.viewing
 	};
 };
 

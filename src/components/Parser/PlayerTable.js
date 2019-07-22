@@ -114,10 +114,10 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		table_columns : state.settings.getSetting("table_columns"),
-		sort_columns  : state.settings.getSetting("sort_columns"),
-		sum_columns   : state.settings.getSetting("sum_columns"),
-		collapsed     : state.collapsed
+		table_columns : state.settings.table_columns,
+		sort_columns  : state.settings.sort_columns,
+		sum_columns   : state.settings.sum_columns,
+		collapsed     : state.settings.intrinsic.collapsed
 	};
 };
 

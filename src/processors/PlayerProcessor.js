@@ -8,7 +8,7 @@ class PlayerProcessor  {
 		let value        = (key_function) ? key_function(player, players) : player[key];
 
 		if (key === "name" && value === "YOU") {
-			value = store.getState().character_name;
+			value = store.getState().internal.character_name;
 		}
 
 		if (!isNaN(value)) {

@@ -64,7 +64,7 @@ class PlayerDetail extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		detail_data : state.settings.getSetting("detail_data")
+		detail_data : state.settings.detail_data
 	};
 };
 

@@ -29,7 +29,7 @@ class SocketMessageProcessor {
 			case "SendCharName":
 				let name       = data.msg.charName;
 				let state_data = {
-					key   : "character_name",
+					key   : "internal.character_name",
 					value : name
 				};
 

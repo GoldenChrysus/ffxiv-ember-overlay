@@ -90,9 +90,9 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		table_type    : state.table_type,
-		viewing       : state.viewing,
-		overlayplugin : state.overlayplugin
+		table_type    : state.settings.intrinsic.table_type,
+		viewing       : state.settings.intrinsic.viewing,
+		overlayplugin : state.internal.overlayplugin
 	};
 };
 

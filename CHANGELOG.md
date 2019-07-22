@@ -11,6 +11,7 @@
 
 ### Features
 - IN PROGRESS: Adding settings system
+    - Overlay will remember which tab you were viewing and if you had the overlay collapsed
 
 ### UI Changes
 - ?
@@ -18,6 +19,9 @@
 ### Code Changes
 - Added `semantic-ui-less` and `semantic-ui-react`
 - Refactored all CSS colors into LESS variables for future light theme
+- Added `changelog-parser` to help auto-create user-friendly changelogs based on user's last version
+- Added some `lodash` packages for easier state management
+- Refactored lots of code
 
 ### Miscellaneous
 - ?
