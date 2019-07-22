@@ -16,6 +16,14 @@ export function clearGameData() {
 	return parseGameData({});
 }
 
+export function updateSetting(payload) {
+	return {
+		type  : "setSetting",
+		key   : payload.key,
+		value : payload.value
+	};
+}
+
 export function changeCollapse(payload) {
 	return {
 		type : "setSetting",
