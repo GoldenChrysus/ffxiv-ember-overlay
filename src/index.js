@@ -15,11 +15,12 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
 // Custom
-import SettingsData from "./data/Settings";
 import Parser from "./components/Parser";
 import Settings from "./components/Settings";
 
-SettingsData
+store
+	.getState()
+	.settings_data
 	.loadSettings()
 	.then(() => {
 		ReactDOM.render(
