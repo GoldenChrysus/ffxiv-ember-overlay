@@ -1,8 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { changeTableType, changeViewing } from "../../redux/actions/index";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCut } from "@fortawesome/free-solid-svg-icons";
+import { Icon } from "semantic-ui-react";
 
 import PluginService from "../../services/PluginService";
 
@@ -50,7 +49,9 @@ class Footer extends React.Component {
 			let actions = [];
 
 			actions.push(
-				<FontAwesomeIcon icon={faCut} alt="Split encounter" title="Split encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)} key="split-encounter"/>
+				<div className="icon-container" key="icon-container-split-encounter">
+					<Icon name="cut" alt="Split encounter" title="Split encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)} key="split-encounter"/>
+				</div>
 			);
 
 			return actions;

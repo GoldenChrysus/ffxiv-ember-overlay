@@ -13,9 +13,6 @@
 	],
 	"private": true,
 	"dependencies": {
-		"@fortawesome/fontawesome-svg-core": "^1.2.19",
-		"@fortawesome/free-solid-svg-icons": "^5.9.0",
-		"@fortawesome/react-fontawesome": "^0.1.4",
 		"env-cmd": "^9.0.3",
 		"jquery": "^3.4.1",
 		"react": "^16.8.6",
@@ -24,25 +21,21 @@
 		"react-redux": "^7.1.0",
 		"react-router-dom": "^5.0.1",
 		"react-scripts": "3.0.1",
-		"redux": "^4.0.4"
+		"redux": "^4.0.4",
+		"semantic-ui-react": "^0.87.3"
 	},
 	"scripts": {
 		"copy:changelog": "cp CHANGELOG.md src/logs/",
-
 		"prestart": "npm run copy:changelog",
-		"start": "env-cmd -e default,development react-scripts start",
-
+		"start": "env-cmd -e default,development craco start",
 		"prebuild:development": "npm run copy:changelog",
-		"build:development": "env-cmd -e default,development react-scripts build",
-
+		"build:development": "env-cmd -e default,development craco build",
 		"prebuild:staging": "npm run copy:changelog",
-		"build:staging": "env-cmd -e default,staging react-scripts build",
-
+		"build:staging": "env-cmd -e default,staging craco build",
 		"prebuild": "npm run copy:changelog",
-		"build": "env-cmd -e default,production react-scripts build",
-
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"build": "env-cmd -e default,production craco build",
+		"test": "craco test",
+		"eject": "craco eject"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -59,5 +52,10 @@
 			"last 1 safari version"
 		]
 	},
-	"homepage": "."
+	"homepage": ".",
+	"devDependencies": {
+		"@craco/craco": "^5.2.4",
+		"craco-less": "^1.9.0",
+		"semantic-ui-less": "^2.4.1"
+	}
 }

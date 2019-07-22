@@ -1,4 +1,4 @@
-import store from "../redux/store/index"
+import store from "../redux/store/index";
 
 import OverlayPluginService from "./PluginService/OverlayPluginService";
 import OverlayProcService from "./PluginService/OverlayProcService";

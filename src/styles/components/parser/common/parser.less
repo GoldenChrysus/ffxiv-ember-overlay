@@ -1,23 +1,5 @@
-html, body {
-	height   : 100%;
-	overflow : hidden;
-	padding  : 3px;
-	margin   : 0;
-}
+@import "../../../../semantic-ui/site/globals/site.variables";
 
-html,
-body,
-html *,
-body * {
-	-ms-user-select     : none;
-	-moz-user-select    : none;
-	-webkit-user-select : none;
-	user-select         : none;
-	cursor              : default;
-}
-
-#root,
-#root-inner,
 .react-contextmenu-wrapper {
 	width  : 100%;
 	height : 100%;
@@ -31,15 +13,16 @@ body * {
 }
 
 #container {
-	width            : calc(100% - 2px);
-	height           : calc(100% - 11px);
+	width            : calc(100% - 8px);
+	height           : calc(100% - 8px);
 	position         : relative;
 	box-sizing       : border-box;
-	background-color : rgb(85, 65, 33);
-	box-shadow       : inset 0 1px 1px 0 #cfc36e, inset 0 0 1px 0 hsla(53,50%,62%,.5), 0 0 1px 2px rgba(0,0,0,.5), 0 2px 2px 2px rgba(0,0,0,.5);
+	background-color : @containerBackground;
+	box-shadow       : inset 0 1px 1px 0 @borderOuter, inset 0 0 1px 0 @borderOuterShadow, 0 0 1px 2px @borderOuterGlow, 0 2px 2px 2px @borderOuterGlow;
 	border-radius    : 8px;
 	padding          : 5px;
 	margin           : 0 auto;
+	margin-top       : 4px;
 }
 
 #container #inner {
@@ -49,8 +32,8 @@ body * {
 	box-sizing       : border-box;
 	display          : flex;
 	flex-direction   : column;
-	background-image : linear-gradient(rgb(58, 58, 58), rgb(30, 30, 30) 2rem);
-	box-shadow       : inset 0 0 0 1px hsla(0,0%,100%,.1), 0 0 0 2px #222, 0 3px 1px #cfc36e, 0 0 2px 1px rgba(0,0,0,.4);
+	background-image : @contentBackground;
+	box-shadow       : inset 0 0 0 1px @borderInner, 0 0 0 2px @borderInnerShadow, 0 3px 1px @borderOuter, 0 0 2px 1px @borderInnerGlow;
 	border-radius    : 4px;
 	overflow         : hidden;
 }
@@ -60,7 +43,7 @@ body * {
 	border     : none;
     height     : 1px;
     min-height : 1px;
-    box-shadow : 0 -1px 0 rgba(0, 0, 0, 0.4), inset 0 -1px 0 hsla(0, 0%, 100%, 0.1);
+    box-shadow : 0 -1px 0 @borderInnerGlow, inset 0 -1px 0 @borderInner;
 }
 
 #container #inner #header {
@@ -70,7 +53,7 @@ body * {
 }
 
 #container #inner #header .title {
-	color          : hsla(0, 0%, 100%, 0.7);
+	color          : @headerAndLinkText;
 	font-size      : 8px;
 	line-height    : 8px;
 	text-transform : uppercase;
@@ -80,7 +63,7 @@ body * {
 }
 
 #container #inner #header .subtitle {
-	color          : hsla(0, 0%, 100%, 0.5);
+	color          : @headerSubtitleText;
 	padding-right  : 16px;
 	font-size      : 8px;
 	line-height    : 8px;
@@ -95,8 +78,8 @@ body * {
 	width         : 12px;
 	height        : 12px;
 	border-radius : 50%;
-	background    : #554121;
-	box-shadow    : inset 0 2px 2px 0 #cfc36e, inset 0 0 2px 0 hsla(53,50%,62%,.5), 0 0 2px 2px rgba(0,0,0,.5), 0 2px 2px 2px rgba(0,0,0,.5);
+	background    : @toggleBackground;
+	box-shadow    : inset 0 2px 2px 0 @borderOuter, inset 0 0 2px 0 @placeholderInsetBorder, 0 0 2px 2px @toggleShadow, 0 2px 2px 2px @toggleShadow;
 	cursor        : pointer;
 	cursor        : hand;
 	touch-action  : manipulation;
@@ -118,10 +101,10 @@ body * {
 }
 
 #container #inner #game-state {
-	background   : rgba(0, 0, 0, 0.4);
-	box-shadow   : inset 0 -1px 0 hsla(0, 0%, 100%, 0.1);
+	background   : @borderInnerGlow;
+	box-shadow   : inset 0 -1px 0 @borderInner;
 	padding      : 4px 8px;
-	color        : #bca98a;
+	color        : @importantText;
 	font-size    : 14px;
 	line-height  : 18px;
 	font-variant : small-caps;
@@ -165,13 +148,13 @@ body * {
 }
 
 #container #inner #content #player-table .row {
-	background    : rgba(255, 255, 255, 0.05);
+	background    : @playerTableRowBackground;
 	width         : 100%;
 	display       : table-row;
 	padding       : 4px 0;
-	color         : hsla(0, 0%, 100%, 0.4);
+	color         : @playerTableRowText;
 	font-size     : 11px;
-	border-bottom : 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom : 1px solid @gridItemBackground;
 }
 
 #container #inner #content #player-table.grid .row {
@@ -182,7 +165,7 @@ body * {
 	margin         : 0 4px 4px 0;
 	padding        : 4px;
 	box-sizing     : border-box;
-	background     : rgba(0, 0, 0, 0.2);
+	background     : @gridItemBackground;
 }
 
 #container #inner #content #player-table.grid .row:nth-child(4n),
@@ -194,7 +177,7 @@ body * {
 	position   : absolute;
 	display    : block;
 	content    : '';
-	background : hsla(0, 0%, 100%, 0.05);
+	background : @playerTableRowBorderTop;
 	height     : 1px;
 	width      : 100%;
 }
@@ -210,17 +193,17 @@ body * {
 }
 
 #container #inner #content #player-table .row.header {
-	background : rgba(255, 255, 255, 0.03);
+	background : @playerTableHeaderRowBackground;
 }
 
 #container #inner #content #player-table .row.header .column {
 	font-weight    : bold;
-	color          : hsla(0, 0%, 100%, 0.7);
+	color          : @headerAndLinkText;
 	text-transform : uppercase;
 }
 
 #container #inner #content #player-table .row.active {
-	background : rgba(255, 255, 255, 0.15);
+	background : @playerTableActiveRowBackground;
 }
 
 #container #inner #content #player-table .row.player,
@@ -229,7 +212,7 @@ body * {
 }
 
 #container #inner #content #player-table .row.player:not(.active):hover {
-	background : rgba(255, 255, 255, 0.07);
+	background : @rowAndLinkHoverBackground;
 }
 
 #container #inner #content #player-table .row > .column:first-child,
@@ -276,7 +259,7 @@ body * {
 #container #inner #content #player-table .row.player > .column:nth-child(2),
 #container #inner #content #player-table.grid .row.player .player-data > .column:nth-child(2),
 #container #inner #content #player-table.grid .row.player .stat-data > .column span {
-	color : #bca98a;
+	color : @importantText;
 }
 
 #container #inner #content #player-table.grid .row.player .player-data > .column:nth-child(2) {
@@ -334,7 +317,7 @@ body * {
 
 #container #inner #content #player-detail .header .name {
 	padding-left : 8px;
-	color        : #bca98a;
+	color        : @importantText;
 	font-size    : 28px;
 }
 
@@ -347,7 +330,7 @@ body * {
 }
 
 #container #inner #content #player-detail .section > .title {
-	color          : rgba(255, 255, 255, 0.7);
+	color          : @playerDetailSectionTitleText;
 	text-transform : uppercase;
 	font-weight    : bold;
 	font-size      : 19px;
@@ -368,7 +351,7 @@ body * {
 	flex-basis     : calc(50% - 16px);
 	padding        : 8px;
 	box-sizing     : border-box;
-	background     : rgba(0, 0, 0, 0.2);
+	background     : @gridItemBackground;
 }
 
 #container #inner #content #player-detail .section > .data .column:nth-child(even),
@@ -377,13 +360,13 @@ body * {
 }
 
 #container #inner #content #player-detail .section > .data .column > .title {
-	color       : rgba(255, 255, 255, 0.6);
+	color       : @playerDetailSectionDataTitleText;
 	font-weight : bold;
 	font-size   : 12px;
 }
 
 #container #inner #content #player-detail .section > .data .column .value {
-	color : rgba(255, 255, 255, 0.5);
+	color : @playerDetailSectionDataValueText;
 }
 
 #container #inner #content #player-detail .section:last-child {
@@ -392,7 +375,7 @@ body * {
 
 #container #inner #footer {
 	width   : 100%;
-	padding : 0 8px 5px 8px;
+	padding : 2px 8px 2px 8px;
 }
 
 #container #inner #footer #role-links,
@@ -404,19 +387,18 @@ body * {
 	float       : right;
 	text-align  : right;
 	box-sizing  : border-box;
-	padding     : 0 16px 0 0;
-	position    : relative;
-	top         : 5px;
+	padding     : 0;
 	line-height : 13px;
 }
 
 #container #inner #footer #role-links .role-link,
 #container #inner #footer #navigation-links .navigation-link {
-	padding        : 2px 4px;
+	padding        : 4px 4px;
 	display        : inline-block;
 	border-radius  : 4px;
-	color          : hsla(0, 0%, 100%, 0.7);
+	color          : @headerAndLinkText;
 	text-transform : uppercase;
+	line-height    : 9px;
 	font-size      : 9px;
 	margin-right   : 5px;
 	transition     : 0.5s;
@@ -426,33 +408,38 @@ body * {
 }
 
 #container #inner #footer #role-links .role-link.active {
-	background : rgba(255, 255, 255, 0.2);
-	box-shadow : inset 0 -1px 0 hsla(0, 0%, 100%, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+	background : @footerActiveLinkBackground;
+	box-shadow : inset 0 -1px 0 @borderInner, inset 0 1px 2px @borderInnerGlow;
 }
 
 #container #inner #footer #role-links .role-link:not(.active):hover,
 #container #inner #footer #navigation-links .navigation-link:not(.active):hover {
-	background : rgba(255, 255, 255, 0.07);
-	box-shadow : inset 0 -1px 0 hsla(0, 0%, 100%, 0.07), inset 0 1px 2px rgba(0, 0, 0, 0.2);
+	background : @rowAndLinkHoverBackground;
+	box-shadow : inset 0 -1px 0 @footerLinkInnerShadow, inset 0 1px 2px @footerLinkOuterShadow;
 }
 
-#container #inner #footer #footer-actions svg {
-	padding        : 2px 4px;
+#container #inner #footer #footer-actions .icon-container {
+	padding        : 2px 2px;
 	border-radius  : 4px;
-	color          : hsla(0, 0%, 100%, 0.7);
+	color          : @headerAndLinkText;
 	transition     : 0.5s;
-	font-size      : 13px;
 }
 
-#container #inner #footer #footer-actions svg,
-#container #inner #footer #footer-actions svg * {
-	cursor : pointer;
-	cursor : hand;
+#container #inner #footer #footer-actions .icon-container,
+#container #inner #footer #footer-actions .icon-container * {
+	cursor : pointer !important;
+	cursor : hand !important;
 }
 
-#container #inner #footer #footer-actions svg:hover {
-	background : rgba(255, 255, 255, 0.07);
-	box-shadow : inset 0 -1px 0 hsla(0, 0%, 100%, 0.07), inset 0 1px 2px rgba(0, 0, 0, 0.2);
+#container #inner #footer #footer-actions .icon-container:hover {
+	background : @rowAndLinkHoverBackground;
+	box-shadow : inset 0 -1px 0 @footerLinkInnerShadow, inset 0 1px 2px @footerLinkOuterShadow;
+}
+
+#container #inner #footer #footer-actions .icon-container i.icon {
+	font-size   : 13px;
+	line-height : 13px;
+	margin      : 0 auto;
 }
 
 .placeholder {
@@ -460,8 +447,8 @@ body * {
 	top           : 8px;
 	width         : 2.5rem;
 	height        : 2.5rem;
-	background    : #554121;
-	box-shadow    : inset 0 1px 1px 0 #cfc36e, inset 0 0 1px 0 hsla(53, 50%, 62%, 0.5), 0 0 1px 2px rgba(0, 0, 0, 0.5), 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+	background    : @toggleBackground;
+	box-shadow    : inset 0 1px 1px 0 @borderOuter, inset 0 0 1px 0 @placeholderInsetBorder, 0 0 1px 2px @borderOuterGlow, 0 2px 2px 2px @borderOuterGlow;
 	border-radius : 50%;
 	padding       : 5px;
 	touch-action  : manipulation;
@@ -488,8 +475,8 @@ body * {
 	justify-content : center;
 	align-items     : center;
 	overflow        : hidden;
-	background      : #1e1e1e;
-	box-shadow      : inset 0 0 0 1px hsla(0, 0%, 100%, 0.1), 0 0 0 2px #222, 0 3px 1px #cfc36e, 0 0 2px 1px rgba(0, 0, 0, 0.4);
+	background      : @placeholderInnerBackground;
+	box-shadow      : inset 0 0 0 1px @borderInner, 0 0 0 2px @borderInnerShadow, 0 3px 1px @borderOuter, 0 0 2px 1px @borderInnerGlow;
 	border-radius   : 50%;
 }
 
@@ -501,12 +488,12 @@ body * {
 
 .container-context-menu {
 	z-index       : 50;
-    border-top    : 1px solid hsla(0, 0%, 100%, 0.1);
-    border-bottom : 1px solid rgba(0, 0, 0, 0.4);
-    background    : #282828;
+    border-top    : 1px solid @borderInner;
+    border-bottom : 1px solid @borderInnerGlow;
+    background    : @contextMenuBackground;
     border-radius : 4px;
-    text-shadow   : 0 1px rgba(0, 0, 0, 0.6);
-    box-shadow    : 0 0 1px rgba(0, 0, 0, 0.6), 0 2px 3px rgba(0, 0, 0, 0.6);
+    text-shadow   : 0 1px @contextMenuShadow;
+    box-shadow    : 0 0 1px @contextMenuShadow, 0 2px 3px @contextMenuShadow;
     min-width     : 10rem;
 }
 
@@ -521,12 +508,12 @@ body * {
     border-radius : 1rem;
     font-size     : 0.9rem;
     line-height   : 1;
-    color         : #eee1c5;
+    color         : @contextMenuItemBackground;
     cursor        : pointer;
 }
 
 .container-context-menu .item-group .react-contextmenu-item:hover {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), transparent);
+	background: linear-gradient(90deg, @borderInnerGlow, transparent);
 }
 
 .hidden {

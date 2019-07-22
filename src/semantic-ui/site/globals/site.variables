@@ -1,0 +1,6 @@
+/*******************************
+     User Global Variables
+*******************************/
+/* Backgrounds */
+@containerBackground: rgb(85, 65, 33);
+@contentBackground: linear-gradient(rgb(58, 58, 58), rgb(30, 30, 30) 2rem);
