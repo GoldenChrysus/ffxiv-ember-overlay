@@ -27,6 +27,8 @@
 - Refactored all CSS colors into LESS variables for future light theme
 - Added `changelog-parser` to help auto-create user-friendly changelogs based on user's last version
 - Added some `lodash` packages for easier state management
+- Added `jquery-ui` package for slider
+- Added `compare-versions` to perform version comparison logic
 - Refactored lots of code
 
 ### Miscellaneous
