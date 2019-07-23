@@ -107,6 +107,60 @@ const SettingsSchema = {
 			]
 		},
 		{
+			title    : "Player Detail",
+			path     : "player-detail",
+			sections : [
+				{
+					title    : "DPS",
+					settings : [
+						{
+							key_path : "detail_data.dps",
+							label    : "Player Metrics",
+							type     : "select",
+							multiple : true,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.detail_data.dps;
+							}
+						}
+					]
+				},
+				{
+					title    : "Heal",
+					settings : [
+						{
+							key_path : "detail_data.heal",
+							label    : "Player Metrics",
+							type     : "select",
+							multiple : true,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.detail_data.heal;
+							}
+						}
+					]
+				},
+				{
+					title    : "Tank",
+					settings : [
+						{
+							key_path : "detail_data.tank",
+							label    : "Player Metrics",
+							type     : "select",
+							multiple : true,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.detail_data.tank;
+							}
+						}
+					]
+				}
+			]
+		},
+		{
 			title    : "Raid View",
 			path     : "raid-view",
 			sections : [
