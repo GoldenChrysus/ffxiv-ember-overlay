@@ -13,6 +13,7 @@
 - IN PROGRESS: Adding settings system
     - Overlay will remember which tab user was viewing and if they had the overlay collapsed
     - User can specify the opacity (transparency) of the overlay
+    - User can specify if their party rank should display in the top-right corner
     - For each table tab, the user can specify the columns that appear, default sorting, and whether the footer row shows
     - For the player detail, the user can specify the metrics that appear for each role type
     - For the raid view, the user can specify the default sorting and the metrics that appear for each role type
