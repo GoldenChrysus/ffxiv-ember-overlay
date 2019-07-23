@@ -14,6 +14,7 @@
 	"private": true,
 	"dependencies": {
 		"changelog-parser": "^2.8.0",
+		"compare-versions": "^3.5.0",
 		"env-cmd": "^9.0.3",
 		"jquery": "^3.4.1",
 		"localforage": "^1.7.3",

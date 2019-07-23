@@ -220,7 +220,7 @@ let PlayerDataTitles = {
 	},
 	"effective_hps"      : {
 		short : "Ef HPS",
-		long  : "Effective Heals Per Second"
+		long  : "Effective Heal Per Second"
 	},
 	"encdps"             : {
 		short : "DPS",
