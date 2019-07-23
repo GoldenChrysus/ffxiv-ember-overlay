@@ -67,8 +67,9 @@
 	color: @importantText;
 }
 
-#settings-container #settings-screen .section-container .field label {
-	color: @playerDetailSectionTitleText;
+#settings-container #settings-screen .section-container .field label,
+#settings-container #settings-screen .section-container .field .ui.toggle.checkbox input:checked ~ label {
+	color: @playerDetailSectionTitleText !important;
 }
 
 #settings-container #settings-screen .section-container .field .ui.dropdown,

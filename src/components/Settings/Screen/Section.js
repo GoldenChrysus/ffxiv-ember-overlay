@@ -31,7 +31,7 @@ class Section extends React.Component {
 					break;
 
 				case "checkbox":
-					setting = <Checkbox label={label} defaultChecked={value} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>
+					setting = <Checkbox toggle label={label} defaultChecked={value} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>
 					label   = "";
 
 				default:
