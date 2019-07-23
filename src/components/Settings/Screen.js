@@ -35,6 +35,7 @@ class Screen extends React.Component {
 	}
 
 	handleSave() {
+		console.log(this.props.new_settings);
 		for (let key_path in this.props.new_settings) {
 			this.props.updateSetting({
 				key   : key_path,

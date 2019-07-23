@@ -11,6 +11,9 @@ const default_settings = {
 		table_type : "dps",
 		collapsed  : false,
 	},
+	custom        : {
+		css : ""
+	},
 	table_columns : {
 		dps  : [
 			"damage%",

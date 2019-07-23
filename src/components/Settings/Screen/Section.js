@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Form, Select } from "semantic-ui-react";
+import { Header, Form, Select, TextArea } from "semantic-ui-react";
 
 class Section extends React.Component {
 	render() {
@@ -8,19 +8,26 @@ class Section extends React.Component {
 		for (let setting_data of this.props.data.settings) {
 			let setting;
 
+			let label = (setting_data.label) ? <label>{setting_data.label}</label> : "";
+			let value = (typeof setting_data.value === "function") ? setting_data.value.call(this) : setting_data.value;
+
 			switch (setting_data.type) {
 				case "select":
-					let values = (typeof setting_data.values === "function") ? setting_data.values.call(this) : setting_data.values;
-
-					if (!values) {
-						values = [];
+					if (!value) {
+						value = [];
 					}
 
 					setting = <Select fluid labeled multiple={setting_data.multiple || false} search={setting_data.search || false}
 						options={setting_data.options}
-						defaultValue={values}
+						defaultValue={value}
 						key_path={setting_data.key_path}
-						onChange={this.props.changeCallback}/>
+						onChange={this.props.changeCallback}/>;
+
+					break;
+
+				case "textarea":
+					setting = <TextArea defaultValue={value} key_path={setting_data.key_path} rows={20} onChange={this.props.changeCallback}></TextArea>;
+
 					break;
 
 				default:
@@ -29,7 +36,7 @@ class Section extends React.Component {
 
 			settings.push(
 				<Form.Field inline key={setting_data.key_path}>
-					<label>{setting_data.label}</label>
+					{label}
 					{setting}
 				</Form.Field>
 			);

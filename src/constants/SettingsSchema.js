@@ -33,7 +33,7 @@ const SettingsSchema = {
 							multiple : true,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.table_columns.dps;
 							}
 						},
@@ -44,7 +44,7 @@ const SettingsSchema = {
 							multiple : false,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.sort_columns.dps;
 							}
 						}
@@ -60,7 +60,7 @@ const SettingsSchema = {
 							multiple : true,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.table_columns.heal;
 							}
 						},
@@ -71,7 +71,7 @@ const SettingsSchema = {
 							multiple : false,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.sort_columns.heal;
 							}
 						}
@@ -87,7 +87,7 @@ const SettingsSchema = {
 							multiple : true,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.table_columns.tank;
 							}
 						},
@@ -98,7 +98,7 @@ const SettingsSchema = {
 							multiple : false,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.sort_columns.tank;
 							}
 						}
@@ -120,7 +120,7 @@ const SettingsSchema = {
 							multiple : true,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.detail_data.dps;
 							}
 						}
@@ -136,7 +136,7 @@ const SettingsSchema = {
 							multiple : true,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.detail_data.heal;
 							}
 						}
@@ -152,7 +152,7 @@ const SettingsSchema = {
 							multiple : true,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.detail_data.tank;
 							}
 						}
@@ -168,13 +168,13 @@ const SettingsSchema = {
 					title    : "General",
 					settings : [
 						{
-							key_path : "sort_columns.dps",
+							key_path : "sort_columns.raid",
 							label    : "Default Sort Metric",
 							type     : "select",
 							multiple : false,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.sort_columns.raid;
 							}
 						}
@@ -190,7 +190,7 @@ const SettingsSchema = {
 							multiple : true,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.table_columns.raid.dps;
 							}
 						}
@@ -206,7 +206,7 @@ const SettingsSchema = {
 							multiple : true,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.table_columns.raid.heal;
 							}
 						}
@@ -222,7 +222,7 @@ const SettingsSchema = {
 							multiple : true,
 							search   : true,
 							options  : table_column_options,
-							values   : function() {
+							value    : function() {
 								return this.props.settings.table_columns.raid.tank;
 							}
 						}
@@ -233,7 +233,20 @@ const SettingsSchema = {
 		{
 			title    : "Custom CSS",
 			path     : "custom-css",
-			sections : []
+			sections : [
+				{
+					title    : "Custom CSS",
+					settings : [
+						{
+							key_path : "custom.css",
+							type     : "textarea",
+							value    : function() {
+								return this.props.settings.custom.css;
+							}
+						}
+					]
+				}
+			]
 		}
 	]
 }
