@@ -67,6 +67,7 @@
 	color: @importantText;
 }
 
+#settings-container #settings-screen .section-container p,
 #settings-container #settings-screen .section-container .field label,
 #settings-container #settings-screen .section-container .field .ui.toggle.checkbox input label {
 	font-style: normal;
@@ -75,6 +76,7 @@
 }
 
 #settings-container #settings-screen .section-container .field label,
+#settings-container #settings-screen .section-container p,
 #settings-container #settings-screen .section-container .field .ui.toggle.checkbox input:checked ~ label {
 	color: @playerDetailSectionTitleText !important;
 }
@@ -124,6 +126,19 @@
 
 #settings-container #settings-screen .section-container .field > .ui-slider > .ui-slider-handle.ui-state-active {
 	background: @borderOuter;
+}
+
+#settings-container #settings-screen .section-container p .discord {
+	width: 200px;
+}
+
+#settings-container #settings-screen .section-container p h3 {
+	margin-bottom: 5px;
+}
+
+#settings-container #settings-screen .section-container p a,
+#settings-container #settings-screen .section-container p a * {
+	cursor: pointer;
 }
 
 .clear {
