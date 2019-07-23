@@ -11,6 +11,9 @@ const default_settings = {
 		table_type : "dps",
 		collapsed  : false,
 	},
+	interface     : {
+		opacity : 100
+	},
 	custom        : {
 		css : ""
 	},

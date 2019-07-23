@@ -17,7 +17,24 @@ const SettingsSchema = {
 		{
 			title    : "Interface",
 			path     : "interface",
-			sections : []
+			sections : [
+				{
+					title    : "General",
+					settings : [
+						{
+							key_path : "interface.opacity",
+							label    : "Overlay Opacity",
+							type     : "slider",
+							range    : "min",
+							minimum  : 0,
+							maximum  : 100,
+							value    : function() {
+								return this.props.settings.interface.opacity;
+							}
+						}
+					]
+				}
+			]
 		},
 		{
 			title    : "Player Table",

@@ -7,11 +7,18 @@ import Container from "./Parser/Container";
 
 class Parser extends React.Component {
 	render() {
-		let inner_class = (this.props.collapsed && this.props.viewing === "tables") ? "auto-height" : "";
+		let inner_class   = (this.props.collapsed && this.props.viewing === "tables") ? "auto-height" : "";
+		let opacity       = this.props.opacity / 100;
+		let opacity_style = `
+			#container {
+				opacity: ${opacity};
+			}
+		`;
 
 		return (
 			<React.Fragment>
 				<style type="text/css">
+					{opacity_style}
 					{this.props.css}
 				</style>
 				<div id="root-inner" className={inner_class}>
@@ -26,7 +33,8 @@ const mapStateToProps = (state) => {
 	return {
 		collapsed : state.settings.intrinsic.collapsed,
 		viewing   : state.settings.intrinsic.viewing,
-		css       : state.settings.custom.css || ""
+		css       : state.settings.custom.css || "",
+		opacity   : state.settings.interface.opacity
 	};
 };
 

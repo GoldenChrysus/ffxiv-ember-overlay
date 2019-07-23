@@ -1,6 +1,8 @@
 import React from "react";
 import { Header, Form, Select, TextArea, Checkbox } from "semantic-ui-react";
 
+import Slider from "./Inputs/Slider";
+
 class Section extends React.Component {
 	render() {
 		let settings = [];
@@ -31,8 +33,17 @@ class Section extends React.Component {
 					break;
 
 				case "checkbox":
-					setting = <Checkbox toggle label={label} defaultChecked={value} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>
+					setting = <Checkbox toggle label={label} defaultChecked={value} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 					label   = "";
+
+					break;
+
+				case "slider":
+					let range = setting_data.range || "min";
+					let min   = setting_data.minimum || 0;
+					let max   = setting_data.maximum || 100;
+
+					setting = <Slider range={range} minimum={min} maximum ={max} key_path={setting_data.key_path} value={value} onChange={this.props.changeCallback}/>;
 
 					break;
 
