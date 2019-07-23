@@ -31,6 +31,14 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.interface.opacity;
 							}
+						},
+						{
+							key_path : "interface.top_right_rank",
+							label    : "Move Rank to Top Right",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.top_right_rank;
+							}
 						}
 					]
 				}

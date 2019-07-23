@@ -25,6 +25,10 @@ class Slider extends React.Component {
 		});
 	}
 
+	componentWillUnmount() {
+		this.$elem.slider("destroy");
+	}
+
 	shouldComponentUpdate() {
 		return false;
 	}
