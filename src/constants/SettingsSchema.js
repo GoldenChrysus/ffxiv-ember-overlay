@@ -47,6 +47,14 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.sort_columns.dps;
 							}
+						},
+						{
+							key_path : "table_settings.dps.show_footer",
+							label    : "Show Footer",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.dps.show_footer;
+							}
 						}
 					]
 				},
@@ -74,6 +82,14 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.sort_columns.heal;
 							}
+						},
+						{
+							key_path : "table_settings.heal.show_footer",
+							label    : "Show Footer",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.heal.show_footer;
+							}
 						}
 					]
 				},
@@ -100,6 +116,14 @@ const SettingsSchema = {
 							options  : table_column_options,
 							value    : function() {
 								return this.props.settings.sort_columns.tank;
+							}
+						},
+						{
+							key_path : "table_settings.tank.show_footer",
+							label    : "Show Footer",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.tank.show_footer;
 							}
 						}
 					]
@@ -239,6 +263,7 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "custom.css",
+							label    : "User-provided CSS is at your own risk.",
 							type     : "textarea",
 							value    : function() {
 								return this.props.settings.custom.css;

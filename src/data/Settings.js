@@ -14,6 +14,17 @@ const default_settings = {
 	custom        : {
 		css : ""
 	},
+	table_settings : {
+		dps  : {
+			show_footer : true
+		},
+		heal : {
+			show_footer : true
+		},
+		tank : {
+			show_footer : true
+		}
+	},
 	table_columns : {
 		dps  : [
 			"damage%",

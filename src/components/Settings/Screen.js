@@ -22,6 +22,7 @@ class Screen extends React.Component {
 		return(
 			<Form>
 				<Button floated="right" className="save" onClick={this.handleSave.bind(this)}>Save</Button>
+				<div className="clear"></div>
 				{sections}
 			</Form>
 		);
@@ -29,13 +30,12 @@ class Screen extends React.Component {
 
 	handleChange(e, data) {
 		let key_path  = data.key_path;
-		let new_value = data.value;
+		let new_value = data.value || data.checked;
 
 		this.props.new_settings[key_path] = new_value;
 	}
 
 	handleSave() {
-		console.log(this.props.new_settings);
 		for (let key_path in this.props.new_settings) {
 			this.props.updateSetting({
 				key   : key_path,

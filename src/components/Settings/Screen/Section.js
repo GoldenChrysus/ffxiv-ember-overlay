@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Form, Select, TextArea } from "semantic-ui-react";
+import { Header, Form, Select, TextArea, Checkbox } from "semantic-ui-react";
 
 class Section extends React.Component {
 	render() {
@@ -26,9 +26,13 @@ class Section extends React.Component {
 					break;
 
 				case "textarea":
-					setting = <TextArea defaultValue={value} key_path={setting_data.key_path} rows={20} onChange={this.props.changeCallback}></TextArea>;
+					setting = <TextArea defaultValue={value} key_path={setting_data.key_path} rows={20} onChange={this.props.changeCallback}/>;
 
 					break;
+
+				case "checkbox":
+					setting = <Checkbox label={label} defaultChecked={value} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>
+					label   = "";
 
 				default:
 					break;

@@ -2,12 +2,19 @@
 	height: 100%;
 	margin: 0;
 	background: @placeholderInnerBackground;
+	overflow-y: scroll;
+}
+
+#settings-container > .row {
+	height: 100%;
 }
 
 #settings-container #settings-sidebar {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+
+	position: fixed;
 }
 
 #settings-container #settings-sidebar #settings-menu {
@@ -38,6 +45,9 @@
 #settings-container #settings-screen {
 	background: @contextMenuBackground;
 	box-shadow: -1px 0 0 0 @borderInnerShadow;
+	position: absolute;
+	right: 0;
+	height: 100%;
 }
 
 #settings-container #settings-screen .ui.form button.save {
@@ -48,12 +58,16 @@
 	margin-bottom: 1.5rem;
 }
 
+#settings-container #settings-screen .section-container:nth-child(3) {
+	margin-top: -30px;
+}
+
 #settings-container #settings-screen .section-container > h2 {
 	margin-bottom: 0;
 	color: @importantText;
 }
 
-#settings-container #settings-screen .section-container .field > label {
+#settings-container #settings-screen .section-container .field label {
 	color: @playerDetailSectionTitleText;
 }
 
@@ -74,4 +88,8 @@
 #settings-container #settings-screen .section-container .field .ui.dropdown input.search,
 #settings-container #settings-screen .section-container .field .ui.dropdown div.text {
 	color: @playerDetailSectionTitleText;
+}
+
+.clear {
+	clear: both;
 }
