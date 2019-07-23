@@ -34,7 +34,7 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "interface.top_right_rank",
-							label    : "Move Rank to Top Right",
+							label    : "Display Rank in Top Right",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.interface.top_right_rank;
