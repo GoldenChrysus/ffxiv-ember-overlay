@@ -23,6 +23,8 @@
 - ?
 
 ### Code Changes
+- Added middleware to Redux store to listen for state changes from other instances of the same session
+    - For syncing setting changes from the settings interface to the active overlay
 - Added `semantic-ui-less` and `semantic-ui-react`
 - Refactored all CSS colors into LESS variables for future light theme
 - Added `changelog-parser` to help auto-create user-friendly changelogs based on user's last version
