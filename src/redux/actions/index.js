@@ -20,7 +20,8 @@ export function updateSetting(payload) {
 	return {
 		type    : "setSetting",
 		key     : payload.key,
-		payload : payload.value
+		payload : payload.value,
+		source  : payload.source
 	};
 }
 
