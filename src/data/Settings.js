@@ -7,9 +7,11 @@ import ObjectService from "../services/ObjectService";
 
 const default_settings = {
 	intrinsic     : {
-		viewing    : "tables",
-		table_type : "dps",
-		collapsed  : false,
+		viewing         : "tables",
+		table_type      : "dps",
+		collapsed       : false,
+		current_version : null,
+		last_version    : null
 	},
 	interface     : {
 		opacity        : 100,

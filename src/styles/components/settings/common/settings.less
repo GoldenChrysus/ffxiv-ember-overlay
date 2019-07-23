@@ -77,6 +77,7 @@
 
 #settings-container #settings-screen .section-container .field label,
 #settings-container #settings-screen .section-container p,
+#settings-container #settings-screen .section-container h3,
 #settings-container #settings-screen .section-container .field .ui.toggle.checkbox input:checked ~ label {
 	color: @playerDetailSectionTitleText !important;
 }
@@ -132,13 +133,25 @@
 	width: 200px;
 }
 
-#settings-container #settings-screen .section-container p h3 {
-	margin-bottom: 5px;
+#settings-container #settings-screen .section-container h3 {
+	margin-bottom: 0px;
+	margin-top: 5px;
 }
 
 #settings-container #settings-screen .section-container p a,
 #settings-container #settings-screen .section-container p a * {
 	cursor: pointer;
+}
+
+#settings-container #settings-screen .section-container .changelog-section h4 {
+	color: @borderOuterShadow;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#settings-container #settings-screen .section-container .changelog-section ul {
+	margin-top: 0;
+	color: @headerSubtitleText;
 }
 
 .clear {

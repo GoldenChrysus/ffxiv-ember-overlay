@@ -1,8 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Route, Redirect, NavLink } from "react-router-dom";
 import { Grid, Menu } from "semantic-ui-react";
-import $ from "jquery";
-import Parser from "changelog-parser";
 
 import SettingsSchema from "../constants/SettingsSchema";
 
@@ -12,18 +10,6 @@ import About from "./Settings/About";
 import "./../styles/components/settings/settings-dark.less";
 
 class Settings extends React.Component {
-	componentWillMount() {
-		$.get(process.env.REACT_APP_ROUTER_BASE + "/logs/CHANGELOG.md")
-			.done((data) => {
-				Parser({
-					text : data
-				})
-				.then((result) => {
-					console.log(result);
-				});
-			});
-	}
-
 	render() {
 		let base_url  = this.props.match.url;
 		let nav_links = [];
