@@ -15,11 +15,12 @@ class PlayerTable extends React.Component {
 		let rank             = 0;
 		let found            = false;
 		let table_type       = this.props.type;
+		let is_raid          = (table_type === "raid");
 		let collapsed        = this.props.collapsed;
 		let player_processor = new PlayerProcessor();
 		let sorted_players   = (this.props.players) ? player_processor.sortPlayers(this.props.players, this.props.sort_columns[table_type]) : [];
 
-		if (table_type !== "raid") {
+		if (!is_raid) {
 			for (let key of this.props.table_columns[table_type]) {
 				let title = Constants.PlayerDataTitles[key].short;
 
@@ -68,19 +69,22 @@ class PlayerTable extends React.Component {
 
 		let header_row, footer_row, table_class;
 
-		if (table_type !== "raid") {
+		if (!is_raid) {
 			header_row = 
 				<div className="row header">
 					<div className="column"></div>
 					<div className="column">Name</div>
 					{header}
 				</div>;
-			footer_row =
-				<div className="row footer">
-					<div className="column"></div>
-					<div className="column">{rank}/{count}</div>
-					{footer}
-				</div>;
+
+			if (this.props.table_settings[table_type].show_footer) {
+				footer_row =
+					<div className="row footer">
+						<div className="column"></div>
+						<div className="column">{rank}/{count}</div>
+						{footer}
+					</div>;
+			}
 		} else {
 			table_class = "grid";
 		}
@@ -114,10 +118,11 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		table_columns : state.settings.table_columns,
-		sort_columns  : state.settings.sort_columns,
-		sum_columns   : state.settings.sum_columns,
-		collapsed     : state.settings.intrinsic.collapsed
+		table_columns  : state.settings.table_columns,
+		sort_columns   : state.settings.sort_columns,
+		sum_columns    : state.settings.sum_columns,
+		collapsed      : state.settings.intrinsic.collapsed,
+		table_settings : state.settings.table_settings
 	};
 };
 

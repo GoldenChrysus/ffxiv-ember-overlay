@@ -34,6 +34,8 @@ class Section extends React.Component {
 					setting = <Checkbox toggle label={label} defaultChecked={value} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>
 					label   = "";
 
+					break;
+
 				default:
 					break;
 			}

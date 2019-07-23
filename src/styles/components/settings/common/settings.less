@@ -72,6 +72,18 @@
 	color: @playerDetailSectionTitleText !important;
 }
 
+#settings-container #settings-screen .section-container .field .ui.toggle.checkbox input ~ label:before {
+	background: @playerTableRowBackground !important;
+}
+
+#settings-container #settings-screen .section-container .field .ui.toggle.checkbox input ~ label:hover:before {
+	background: @rowAndLinkHoverBackground !important;
+}
+
+#settings-container #settings-screen .section-container .field .ui.toggle.checkbox input:checked ~ label:before {
+	background: @importantTextRGBA65 !important;
+}
+
 #settings-container #settings-screen .section-container .field .ui.dropdown,
 #settings-container #settings-screen .section-container .field textarea {
 	background: @footerActiveLinkBackground;
