@@ -1,7 +1,7 @@
 import store from "../redux/store/index";
 import { updateState } from "../redux/actions/index";
 import localForage from "localforage";
-import merge from "lodash.merge";
+import assign from "lodash.assign";
 
 import ObjectService from "../services/ObjectService";
 
@@ -110,10 +110,12 @@ class Settings {
 						json = JSON.parse(data);
 					} catch (e) {}
 
+					console.log(json);
+
 					if (!json) {
 						json = tmp_default_settings;
 					} else {
-						json = merge(tmp_default_settings, json);
+						json = assign(tmp_default_settings, json);
 					}
 
 					this.settings = json;
