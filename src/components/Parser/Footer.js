@@ -49,6 +49,11 @@ class Footer extends React.Component {
 			let actions = [];
 
 			actions.push(
+				<div className="icon-container" key="icon-container-settings">
+					<Icon name="cog" alt="Settings" title="Settings" key="settings" onClick={self.openSettingsWindow}/>
+				</div>
+			);
+			actions.push(
 				<div className="icon-container" key="icon-container-split-encounter">
 					<Icon name="cut" alt="Split encounter" title="Split encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)} key="split-encounter"/>
 				</div>
@@ -65,6 +70,10 @@ class Footer extends React.Component {
 				</div>
 			</div>
 		);
+	}
+
+	openSettingsWindow() {
+		window.open("/#/settings", "", "width=600,height=400,location=no,menubar=no");
 	}
 
 	changeTableType(type) {

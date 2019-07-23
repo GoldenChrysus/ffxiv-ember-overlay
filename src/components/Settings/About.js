@@ -13,22 +13,26 @@ class About extends React.Component {
 			.then((data) => {
 				let changelog = [];
 
-				for (let item_type in data) {
-					let count = 0;
-					let items = data[item_type].map((item) => {
-						count++;
+				if (typeof data === "string") {
+					changelog = <p>{data}</p>;
+				} else {
+					for (let item_type in data) {
+						let count = 0;
+						let items = data[item_type].map((item) => {
+							count++;
 
-						return <li key={item_type + "-" + count}>{item}</li>
-					});
+							return <li key={item_type + "-" + count}>{item}</li>
+						});
 
-					let ul = <ul>{items}</ul>
+						let ul = <ul>{items}</ul>
 
-					changelog.push(
-						<Container fluid className="changelog-section" key={item_type + "-section"}>
-							<h4>{item_type}</h4>
-							{ul}
-						</Container>
-					);
+						changelog.push(
+							<Container fluid className="changelog-section" key={item_type + "-section"}>
+								<h4>{item_type}</h4>
+								{ul}
+							</Container>
+						);
+					}
 				}
 
 				this.setState({
@@ -41,9 +45,11 @@ class About extends React.Component {
 	}
 
 	render() {
-		let github_url  = process.env.REACT_APP_GITHUB_URL;
-		let discord_url = process.env.REACT_APP_DISCORD_URL;
-		let state       = this.state || {};
+		let github_url    = process.env.REACT_APP_GITHUB_URL;
+		let discord_url   = process.env.REACT_APP_DISCORD_URL;
+		let changelog_url = process.env.REACT_APP_CHANGELOG_URL;
+
+		let state = this.state || {};
 
 		return(
 			<React.Fragment>
@@ -68,6 +74,7 @@ class About extends React.Component {
 				<Container fluid className="section-container">
 					<h2>Changelog</h2>
 					<p>The changelog listed here will show all the changes that have been made (if any) in the current version compared against the last version you used.</p>
+					<p>You can always see the latest changes and read the more detailed official changelog <a href={changelog_url} target="_blank" rel="noopener noreferrer">here.</a></p>
 
 					<h3>Latest Changes</h3>
 					{state.changelog}
