@@ -11,7 +11,12 @@
 
 ### Features
 - IN PROGRESS: Adding settings system
-    - Overlay will remember which tab you were viewing and if you had the overlay collapsed
+    - Overlay will remember which tab user was viewing and if they had the overlay collapsed
+    - For each table tab, the user can specify the columns that appear, default sorting, and whether the footer row shows
+    - For the player detail, the user can specify the metrics that appear for each role type
+    - For the raid view, the user can specify the default sorting and the metrics that appear for each role type
+    - User can provide custom CSS that will affect the overlay
+        - Will not affect settings page
 
 ### UI Changes
 - ?
