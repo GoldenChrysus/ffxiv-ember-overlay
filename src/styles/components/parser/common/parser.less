@@ -106,12 +106,24 @@
 	padding      : 4px 8px;
 	color        : @importantText;
 	font-size    : 14px;
-	line-height  : 18px;
+	line-height  : 14px;
 	font-variant : small-caps;
+	position     : relative;
 }
 
-#container #inner #game-state span {
-	display : block;
+#container #inner #game-state span:first-child {
+	display    : inline-block;
+	width      : calc(100% - 100px - 5px);
+	overflow-x : hidden;
+}
+
+#container #inner #game-state span:last-child {
+	display       : inline-block;
+	float         : right;
+	width         : 100px;
+	text-align    : right;
+	overflow-x    : hidden;
+	text-overflow : ellipsis;
 }
 
 #container #inner #game-state .inactive:before {
@@ -517,7 +529,7 @@
 }
 
 .hidden {
-	display : none;
+	display : none !important;
 }
 
 .auto-height {

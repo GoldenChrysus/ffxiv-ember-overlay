@@ -9,6 +9,7 @@ const initial_state = {
 	settings_data  : Settings,
 	internal       : {
 		character_name : "YOU",
+		rank           : "N/A",
 		game           : {},
 		detail_player  : {},
 		overlayplugin  : !!window.OverlayPluginApi

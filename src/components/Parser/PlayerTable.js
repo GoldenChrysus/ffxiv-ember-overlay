@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { changeViewing, changeDetailPlayer } from "../../redux/actions/index";
+import { changeViewing, changeDetailPlayer, updateState } from "../../redux/actions/index";
 
 import Player from "./PlayerTable/Player";
 import Constants from "../../constants/index";
@@ -69,6 +69,17 @@ class PlayerTable extends React.Component {
 
 		let header_row, footer_row, table_class;
 
+		let rank_text = (rank === 0) ? "N/A" : `${rank}/${count}`;
+
+		if (rank_text !== this.props.rank) {
+			let rank_data = {
+				key   : "internal.rank",
+				value : rank_text
+			};
+
+			this.props.updateState(rank_data);
+		}
+
 		if (!is_raid) {
 			header_row = 
 				<div className="row header">
@@ -81,7 +92,7 @@ class PlayerTable extends React.Component {
 				footer_row =
 					<div className="row footer">
 						<div className="column"></div>
-						<div className="column">{rank}/{count}</div>
+						<div className="column">{rank_text}</div>
 						{footer}
 					</div>;
 			}
@@ -112,6 +123,10 @@ const mapDispatchToProps = (dispatch) => {
 
 		changeDetailPlayer : (data) => {
 			dispatch(changeDetailPlayer(data));
+		},
+
+		updateState        : (data) => {
+			dispatch(updateState(data));
 		}
 	}
 };
@@ -122,7 +137,8 @@ const mapStateToProps = (state) => {
 		sort_columns   : state.settings.sort_columns,
 		sum_columns    : state.settings.sum_columns,
 		collapsed      : state.settings.intrinsic.collapsed,
-		table_settings : state.settings.table_settings
+		table_settings : state.settings.table_settings,
+		rank           : state.internal.rank
 	};
 };
 

@@ -57,7 +57,7 @@ class Container extends React.Component {
 						<PlaceholderToggle type="right"/>
 						<div id="inner">
 							{header}
-							<GameState state={state} active={active}/>
+							<GameState state={state} active={active} rank={this.props.internal.rank} show_rank={this.props.settings.interface.top_right_rank}/>
 							<div id="content">
 								{content}
 							</div>
