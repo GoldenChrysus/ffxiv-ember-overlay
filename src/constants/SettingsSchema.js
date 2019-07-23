@@ -109,7 +109,72 @@ const SettingsSchema = {
 		{
 			title    : "Raid View",
 			path     : "raid-view",
-			sections : []
+			sections : [
+				{
+					title    : "General",
+					settings : [
+						{
+							key_path : "sort_columns.dps",
+							label    : "Default Sort Metric",
+							type     : "select",
+							multiple : false,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.sort_columns.raid;
+							}
+						}
+					]
+				},
+				{
+					title    : "DPS",
+					settings : [
+						{
+							key_path : "table_columns.raid.dps",
+							label    : "Metrics",
+							type     : "select",
+							multiple : true,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.table_columns.raid.dps;
+							}
+						}
+					]
+				},
+				{
+					title    : "Heal",
+					settings : [
+						{
+							key_path : "table_columns.raid.heal",
+							label    : "Metrics",
+							type     : "select",
+							multiple : true,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.table_columns.raid.heal;
+							}
+						}
+					]
+				},
+				{
+					title    : "Tank",
+					settings : [
+						{
+							key_path : "table_columns.raid.tank",
+							label    : "Metrics",
+							type     : "select",
+							multiple : true,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.table_columns.raid.tank;
+							}
+						}
+					]
+				}
+			]
 		},
 		{
 			title    : "Custom CSS",
