@@ -24,7 +24,7 @@ export function createStorageListener(store) {
 	return () => {
 		const wrapped_action = JSON.parse(localStorage.getItem(storage_key));
 
-		if (wrapped_action.action.type === "setSetting" && wrapped_action.action.source === "screen-component") {
+		if (wrapped_action.action.type === "setSetting" && (wrapped_action.action.source === "screen-component" || !wrapped_action.action.source)) {
 			wrapped_action.action.source = "middleware";
 
 			store.dispatch(wrapped_action.action);
