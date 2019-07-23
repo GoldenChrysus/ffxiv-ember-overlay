@@ -2,7 +2,7 @@ class ObjectService {
 	setByKeyPath(object, key_path, value) {
 		if (typeof key_path === "string") {
 			return this.setByKeyPath(object, key_path.split("."), value);
-		} else if (key_path.length === 1 && value !== undefined) {
+		} else if (key_path.length === 1) {
 			return object[key_path[0]] = value;
 		} else {
 			if (!object[key_path[0]]) {

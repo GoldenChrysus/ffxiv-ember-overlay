@@ -10,9 +10,14 @@ class Parser extends React.Component {
 		let inner_class = (this.props.collapsed && this.props.viewing === "tables") ? "auto-height" : "";
 
 		return (
-			<div id="root-inner" className={inner_class}>
-				<Container/>
-			</div>
+			<React.Fragment>
+				<style type="text/css">
+					{this.props.css}
+				</style>
+				<div id="root-inner" className={inner_class}>
+					<Container/>
+				</div>
+			</React.Fragment>
 		);
 	}
 }
@@ -20,7 +25,8 @@ class Parser extends React.Component {
 const mapStateToProps = (state) => {
 	return {
 		collapsed : state.settings.intrinsic.collapsed,
-		viewing   : state.settings.intrinsic.viewing
+		viewing   : state.settings.intrinsic.viewing,
+		css       : state.settings.custom.css || ""
 	};
 };
 
