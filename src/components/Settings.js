@@ -4,6 +4,8 @@ import { Grid, Menu } from "semantic-ui-react";
 import $ from "jquery";
 import Parser from "changelog-parser";
 
+import SettingsSchema from "../constants/SettingsSchema";
+
 import Screen from "./Settings/Screen";
 import About from "./Settings/About";
 
@@ -23,7 +25,21 @@ class Settings extends React.Component {
 	}
 
 	render() {
-		let base_url = this.props.match.url;
+		let base_url  = this.props.match.url;
+		let nav_links = [];
+		let routes    = [];
+
+		for (let section of SettingsSchema.sections) {
+			let path = `${base_url}/${section.path}`;
+
+			nav_links.push(
+				<NavLink to={path} className="item" key={section.path}>{section.title}</NavLink>
+			);
+
+			routes.push(
+				<Route path={path} key={path} render={() => <Screen sections={section.sections}/>}/>
+			);
+		}
 
 		return (
 			<React.Fragment>
@@ -32,10 +48,7 @@ class Settings extends React.Component {
 						<Grid.Row>
 							<Grid.Column width={3} id="settings-sidebar">
 								<Menu vertical id="settings-menu">
-									<NavLink to={base_url + "/interface"} className="item">Interface</NavLink>
-									<NavLink to={base_url + "/player-table"} className="item">Player Table</NavLink>
-									<NavLink to={base_url + "/raid-view"} className="item">Raid View</NavLink>
-									<NavLink to={base_url + "/custom-css"} className="item">Custom CSS</NavLink>
+									{nav_links}
 									<NavLink to={base_url + "/about"} className="item">About</NavLink>
 								</Menu>
 							</Grid.Column>
@@ -43,7 +56,7 @@ class Settings extends React.Component {
 								<Route exact path={base_url} render={() => (
 									<Redirect to={base_url + "/about"}/>
 								)}/>
-								<Route path={base_url + "/player-table"} component={Screen}/>
+								{routes}
 								<Route path={base_url + "/about"} component={About}/>
 							</Grid.Column>
 						</Grid.Row>

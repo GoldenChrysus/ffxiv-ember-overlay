@@ -1,4 +1,17 @@
-class SettingsSchema {
+import Constants from "./index";
+
+let table_column_options = [];
+
+for (let data_key in Constants.PlayerDataTitles) {
+	let data = Constants.PlayerDataTitles[data_key];
+
+	table_column_options.push({
+		key   : data_key,
+		value : data_key,
+		text  : data.long
+	});
+}
+
 const SettingsSchema = {
 	sections : [
 		{
@@ -9,7 +22,24 @@ const SettingsSchema = {
 		{
 			title    : "Player Table",
 			path     : "player-table",
-			sections : []
+			sections : [
+				{
+					title    : "DPS",
+					settings : [
+						{
+							key_path : "table_columns.dps",
+							label    : "Table Columns",
+							type     : "select",
+							multiple : true,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.table_columns.dps;
+							}
+						}
+					]
+				}
+			]
 		},
 		{
 			title    : "Raid View",

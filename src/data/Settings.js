@@ -110,8 +110,6 @@ class Settings {
 						json = JSON.parse(data);
 					} catch (e) {}
 
-					console.log(json);
-
 					if (!json) {
 						json = tmp_default_settings;
 					} else {

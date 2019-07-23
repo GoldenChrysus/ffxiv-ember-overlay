@@ -5,39 +5,27 @@ import Constants from "../../constants/index";
 import { Container, Header, Form, Button, Label, Select, Dropdown } from "semantic-ui-react";
 import clone from "lodash.clonedeep";
 
+import Section from "./Screen/Section";
 import ObjectService from "../../services/ObjectService";
 
 class Screen extends React.Component {
 	render() {
-		let column_options = [];
-		let values         = [];
+		let sections = [];
 
-		for (let data_key in Constants.PlayerDataTitles) {
-			let data = Constants.PlayerDataTitles[data_key];
-
-			column_options.push({
-				key   : data_key,
-				value : data_key,
-				text  : data.long
-			});
+		for (let i in this.props.sections) {
+			let section_data = this.props.sections[i];
+			
+			sections.push(
+				<Container fluid key={section_data.title}>
+					<Section data={section_data} settings={this.props.settings} changeCallback={this.handleChange.bind(this)}/>
+				</Container>
+			)
 		}
 
 		return(
 			<Form>
 				<Button floated="right" className="save" onClick={this.handleSave.bind(this)}>Save</Button>
-				<Container fluid>
-					<Header as="h2">DPS</Header>
-					<div>
-						<Form.Field inline>
-							<label>Table Columns</label>
-							<Select fluid multiple search labeled
-								options={column_options}
-								defaultValue={this.props.settings.table_columns.dps}
-								key_path="table_columns.dps"
-								onChange={this.handleChange.bind(this)}/>
-						</Form.Field>
-					</div>
-				</Container>
+				{sections}
 			</Form>
 		);
 	}
