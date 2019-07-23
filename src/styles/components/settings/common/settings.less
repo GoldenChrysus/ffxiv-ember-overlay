@@ -1,6 +1,7 @@
 #settings-container {
 	height: 100%;
 	margin: 0;
+	background: @placeholderInnerBackground;
 }
 
 #settings-container #settings-sidebar {
@@ -14,4 +15,53 @@
 	box-shadow: none;
 	border: 0;
 	width: 100%;
+}
+
+#settings-container #settings-sidebar #settings-menu .item {
+	background: @placeholderInnerBackground;
+	color: @playerDetailSectionDataTitleText;
+	border-radius: 0;
+}
+
+#settings-container #settings-sidebar #settings-menu .item.active {
+	background-color: @toggleBackground;
+}
+
+#settings-container #settings-sidebar #settings-menu .item:before {
+	background: @playerTableRowBackground;
+}
+
+#settings-container #settings-sidebar #settings-menu .item:not(.active):hover {
+	background-color: @contextMenuShadow;
+}
+
+#settings-container #settings-screen {
+	background: @contextMenuBackground;
+	box-shadow: -1px 0 0 0 @borderInnerShadow;
+}
+
+#settings-container #settings-screen .section-container {
+	margin-bottom: 1.5rem;
+}
+
+#settings-container #settings-screen .section-container > h2 {
+	margin-bottom: 0;
+	color: @importantText;
+}
+
+#settings-container #settings-screen .section-container .field > label {
+	color: @playerDetailSectionTitleText;
+}
+
+#settings-container #settings-screen .section-container .field .ui.dropdown {
+	background: @footerActiveLinkBackground;
+}
+
+#settings-container #settings-screen .section-container .field .ui.dropdown a.ui.label {
+	background: @borderOuterShadow;
+}
+
+#settings-container #settings-screen .section-container .field .ui.dropdown input.search,
+#settings-container #settings-screen .section-container .field .ui.dropdown div.text {
+	color: @playerDetailSectionTitleText;
 }

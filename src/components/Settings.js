@@ -52,7 +52,7 @@ class Settings extends React.Component {
 									<NavLink to={base_url + "/about"} className="item">About</NavLink>
 								</Menu>
 							</Grid.Column>
-							<Grid.Column width={13}>
+							<Grid.Column width={13} id="settings-screen">
 								<Route exact path={base_url} render={() => (
 									<Redirect to={base_url + "/about"}/>
 								)}/>

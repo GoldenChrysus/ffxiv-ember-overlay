@@ -49,6 +49,60 @@ const SettingsSchema = {
 							}
 						}
 					]
+				},
+				{
+					title    : "Heal",
+					settings : [
+						{
+							key_path : "table_columns.heal",
+							label    : "Table Columns",
+							type     : "select",
+							multiple : true,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.table_columns.heal;
+							}
+						},
+						{
+							key_path : "sort_columns.heal",
+							label    : "Default Sort Column",
+							type     : "select",
+							multiple : false,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.sort_columns.heal;
+							}
+						}
+					]
+				},
+				{
+					title    : "Tank",
+					settings : [
+						{
+							key_path : "table_columns.tank",
+							label    : "Table Columns",
+							type     : "select",
+							multiple : true,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.table_columns.tank;
+							}
+						},
+						{
+							key_path : "sort_columns.tank",
+							label    : "Default Sort Column",
+							type     : "select",
+							multiple : false,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.sort_columns.tank;
+							}
+						}
+					]
 				}
 			]
 		},
