@@ -36,6 +36,17 @@ const SettingsSchema = {
 							values   : function() {
 								return this.props.settings.table_columns.dps;
 							}
+						},
+						{
+							key_path : "sort_columns.dps",
+							label    : "Default Sort Column",
+							type     : "select",
+							multiple : false,
+							search   : true,
+							options  : table_column_options,
+							values   : function() {
+								return this.props.settings.sort_columns.dps;
+							}
 						}
 					]
 				}
