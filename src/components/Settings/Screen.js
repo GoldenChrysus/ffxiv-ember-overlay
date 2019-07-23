@@ -1,12 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import { updateSetting } from "../../redux/actions/index";
-import Constants from "../../constants/index";
-import { Container, Header, Form, Button, Label, Select, Dropdown } from "semantic-ui-react";
-import clone from "lodash.clonedeep";
+import { Container, Form, Button } from "semantic-ui-react";
 
 import Section from "./Screen/Section";
-import ObjectService from "../../services/ObjectService";
 
 class Screen extends React.Component {
 	render() {

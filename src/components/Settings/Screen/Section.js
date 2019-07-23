@@ -1,6 +1,5 @@
 import React from "react";
-import Constants from "../../../constants/index";
-import { Container, Header, Form, Button, Label, Select, Dropdown } from "semantic-ui-react";
+import { Header, Form, Select } from "semantic-ui-react";
 
 class Section extends React.Component {
 	render() {
@@ -16,8 +15,6 @@ class Section extends React.Component {
 					if (!values) {
 						values = [];
 					}
-
-					let attributes = setting_data.attributes || "";
 
 					setting = <Select fluid labeled multiple={setting_data.multiple || false} search={setting_data.search || false}
 						options={setting_data.options}
