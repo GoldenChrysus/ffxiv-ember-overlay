@@ -7,7 +7,6 @@ import ObjectService from "../services/ObjectService";
 
 const default_settings = {
 	intrinsic     : {
-		viewing         : "tables",
 		table_type      : "dps",
 		collapsed       : false,
 		current_version : null,
@@ -154,6 +153,10 @@ class Settings {
 	}
 
 	saveSettings() {
+		if (!window.parser) {
+			return;
+		}
+
 		return new Promise((resolve, reject) => {
 			localForage.setItem("settings_cache", JSON.stringify(this.settings || default_settings))
 				.then(() => {
@@ -169,9 +172,12 @@ class Settings {
 		return this.settings[key] || default_settings[key];
 	}
 
-	setSetting(key_path, value) {
+	setSetting(key_path, value, skip_save) {
 		ObjectService.setByKeyPath(this.settings, key_path, value);
-		this.saveSettings();
+
+		if (!skip_save) {
+			this.saveSettings();
+		}
 	}
 }
 

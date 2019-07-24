@@ -8,11 +8,13 @@ const initial_state = {
 	socket_service : new SocketService(),
 	settings_data  : Settings,
 	internal       : {
+		viewing        : "tables",
 		character_name : "YOU",
 		rank           : "N/A",
 		game           : {},
 		detail_player  : {},
-		overlayplugin  : !!window.OverlayPluginApi
+		overlayplugin  : !!window.OverlayPluginApi,
+		new_version    : false
 	},
 	settings       : {}
 };

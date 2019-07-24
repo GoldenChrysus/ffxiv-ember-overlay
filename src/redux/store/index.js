@@ -15,7 +15,10 @@ function storageMiddleware() {
 	return () => next => action => {
 		const wrapped_action = wrapAction(action);
 
-		localStorage.setItem(storage_key, JSON.stringify(wrapped_action));
+		if (!window.parser) {
+			localStorage.setItem(storage_key, JSON.stringify(wrapped_action));
+		}
+
 		next(action);
 	}
 }
@@ -24,9 +27,26 @@ export function createStorageListener(store) {
 	return () => {
 		const wrapped_action = JSON.parse(localStorage.getItem(storage_key));
 
-		if (wrapped_action.action.type === "setSetting" && (wrapped_action.action.source === "screen-component" || !wrapped_action.action.source)) {
-			wrapped_action.action.source = "middleware";
+		let valid_action = false;
 
+		switch (wrapped_action.action.type) {
+			case "setSetting":
+				valid_action = true;
+
+				break;
+
+			case "updateState":
+				valid_action = (wrapped_action.action.key === "internal.new_version");
+
+				break;
+
+			default:
+				valid_action = false;
+
+				break;
+		}
+
+		if (valid_action && window.parser && (wrapped_action.action.source === "screen-component" || !wrapped_action.action.source)) {
 			store.dispatch(wrapped_action.action);
 		}
 	};

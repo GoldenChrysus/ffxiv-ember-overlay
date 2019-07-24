@@ -27,24 +27,27 @@ export function updateSetting(payload) {
 
 export function changeCollapse(payload) {
 	return {
-		type : "setSetting",
-		key  : "intrinsic.collapsed",
+		type   : "setSetting",
+		key    : "intrinsic.collapsed",
+		source : "parser",
 		payload
 	};
 }
 
 export function changeTableType(payload) {
 	return {
-		type : "setSetting",
-		key  : "intrinsic.table_type",
+		type   : "setSetting",
+		key    : "intrinsic.table_type",
+		source : "parser",
 		payload
 	};
 }
 
 export function changeViewing(payload) {
 	return {
-		type : "setSetting",
-		key  : "intrinsic.viewing",
+		type   : "changeViewing",
+		key    : "internal.viewing",
+		source : "parser",
 		payload
 	};
 }

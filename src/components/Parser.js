@@ -4,8 +4,15 @@ import { connect } from "react-redux";
 import "./../styles/components/parser/parser-dark.less";
 
 import Container from "./Parser/Container";
+import VersionService from "./../services/VersionService";
 
 class Parser extends React.Component {
+	componentWillMount() {
+		window.parser = true;
+
+		VersionService.determineIfNewer();
+	}
+
 	render() {
 		let inner_class   = (this.props.collapsed && this.props.viewing === "tables") ? "auto-height" : "";
 		let opacity       = this.props.opacity / 100;
@@ -32,7 +39,7 @@ class Parser extends React.Component {
 const mapStateToProps = (state) => {
 	return {
 		collapsed : state.settings.intrinsic.collapsed,
-		viewing   : state.settings.intrinsic.viewing,
+		viewing   : state.internal.viewing,
 		css       : state.settings.custom.css || "",
 		opacity   : state.settings.interface.opacity
 	};

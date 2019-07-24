@@ -46,10 +46,11 @@ class Footer extends React.Component {
 		}
 
 		let actions = function() {
-			let actions = [];
+			let actions        = [];
+			let version_notice = (self.props.new_version) ? "notice" : "";
 
 			actions.push(
-				<div className="icon-container" key="icon-container-settings">
+				<div className={"icon-container " + version_notice} key="icon-container-settings">
 					<Icon name="cog" alt="Settings" title="Settings" key="settings" onClick={self.openSettingsWindow}/>
 				</div>
 			);
@@ -100,8 +101,9 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
 	return {
 		table_type    : state.settings.intrinsic.table_type,
-		viewing       : state.settings.intrinsic.viewing,
-		overlayplugin : state.internal.overlayplugin
+		viewing       : state.internal.viewing,
+		overlayplugin : state.internal.overlayplugin,
+		new_version   : state.internal.new_version
 	};
 };
 

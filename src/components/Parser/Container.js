@@ -24,7 +24,7 @@ class Container extends React.Component {
 		let encounter = this.props.internal.game.Encounter || {};
 		let active    = (this.props.internal.game.isActive === true);
 		let state     = (encounter.title) ? `${encounter.title} - ${encounter.CurrentZoneName} - ${encounter.duration}` : "Awaiting encounter data...";
-		let viewing   = this.props.settings.intrinsic.viewing;
+		let viewing   = this.props.internal.viewing;
 
 		let content;
 
