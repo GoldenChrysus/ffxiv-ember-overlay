@@ -68,10 +68,16 @@ class About extends React.Component {
 
 					<h3>Discord</h3>
 					<p>
-						Join the Discord to receive live updates from the developer, submit feature suggestions, get help with a bug or issue, or discuss FFXIV in general with other users.<br/>
+						Join the Discord to receive live updates from the developer, submit feature suggestions, get help with a bug or issue, or discuss FFXIV in general with other users.
+					</p>
+					<p>
 						<a href={discord_url} target="_blank" rel="noopener noreferrer">
 							<img className="discord" src="img/buttons/discord.png" alt="Join our Discord server." title="Join our Discord server."/>
 						</a>
+					</p>
+
+					<p>
+						Link not working? Copy this link and paste it into your regular Web browser: <span className="discord-link">{discord_url}</span>
 					</p>
 
 					<h3>GitHub</h3>
