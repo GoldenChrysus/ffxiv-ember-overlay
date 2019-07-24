@@ -16,7 +16,7 @@ Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overla
 Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and create a new overlay window from this skin.
 
 ## Discord
-Join the Discord server to view live updates, report bugs, or request features at: [https://discord.io/emberoverlay](https://discord.io/emberoverlay)
+Join the Discord server to receive live updates, report bugs, or request features at: [https://discord.io/emberoverlay](https://discord.io/emberoverlay)
 
 ## Features
 ### Informative tabs for damage, healing, and tanking.
