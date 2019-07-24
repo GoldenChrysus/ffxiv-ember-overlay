@@ -74,7 +74,7 @@ class Footer extends React.Component {
 	}
 
 	openSettingsWindow() {
-		window.open("/#/settings", "", "width=600,height=400,location=no,menubar=no");
+		window.open("#/settings", "", "width=600,height=400,location=no,menubar=no");
 	}
 
 	changeTableType(type) {
