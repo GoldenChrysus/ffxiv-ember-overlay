@@ -6,6 +6,7 @@ React overlay for the [OverlayPlugin](https://github.com/hibiyasleep/OverlayPlug
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/ffxiv-ember-overlay/bleeding-edge.svg)
 [![Works with OverlayPlugin](https://img.shields.io/badge/works%20with-OverlayPlugin-blue.svg)](https://github.com/hibiyasleep/OverlayPlugin)
 [![Works with ACTWebSocket](https://img.shields.io/badge/works%20with-ACTWebSocket-blue.svg)](https://github.com/ZCube/ACTWebSocket)
+![Discord](https://img.shields.io/discord/603399999723929600.svg)
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/GoldenChrysus/ffxiv-ember-overlay.svg)
 
 ## Usage with OverlayPlugin
@@ -13,6 +14,9 @@ Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overla
 
 ## Usage with ACTWebSocket with OverlayProc
 Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and create a new overlay window from this skin.
+
+## Discord
+Join the Discord server to view live updates, report bugs, or request features at: [https://discord.io/emberoverlay](https://discord.io/emberoverlay)
 
 ## Features
 ### Informative tabs for damage, healing, and tanking.
