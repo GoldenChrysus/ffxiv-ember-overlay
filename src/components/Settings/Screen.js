@@ -6,8 +6,15 @@ import { Container, Form, Button } from "semantic-ui-react";
 import Section from "./Screen/Section";
 
 class Screen extends React.Component {
+	componentWillMount() {
+		this.setState({
+			saving : false
+		});
+	}
+
 	render() {
-		let sections = [];
+		let sections   = [];
+		let save_class = (this.state.saving) ? "loading" : "";
 
 		for (let i in this.props.sections) {
 			let section_data = this.props.sections[i];
@@ -21,7 +28,7 @@ class Screen extends React.Component {
 
 		return(
 			<Form>
-				<Button floated="right" className="save" onClick={this.handleSave.bind(this)}>Save</Button>
+				<Button floated="right" className={"save " + save_class} onClick={this.handleSave.bind(this)}>Save</Button>
 				<div className="clear"></div>
 				{sections}
 			</Form>
@@ -29,6 +36,8 @@ class Screen extends React.Component {
 	}
 
 	handleChange(e, data) {
+		this.state.saving = true;
+
 		let key_path  = data.key_path;
 		let new_value = data.value || data.checked;
 
@@ -36,6 +45,10 @@ class Screen extends React.Component {
 	}
 
 	handleSave() {
+		this.setState({
+			saving : true
+		});
+
 		for (let key_path in this.props.new_settings) {
 			this.props.updateSetting({
 				key    : key_path,
@@ -43,6 +56,15 @@ class Screen extends React.Component {
 				source : "screen-component"
 			});
 		}
+
+		setTimeout(
+			() => {
+				this.setState({
+					saving : false
+				});
+			},
+			400
+		);
 	}
 }
 
