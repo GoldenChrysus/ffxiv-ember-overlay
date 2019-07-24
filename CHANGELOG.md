@@ -10,7 +10,7 @@
 - ?
 
 ### Features
-- IN PROGRESS: Adding settings system
+- ! - Adding settings system
     - Overlay will remember which tab user was viewing and if they had the overlay collapsed
     - User can specify the opacity (transparency) of the overlay
     - User can specify if their party rank should display in the top-right corner

@@ -108,7 +108,7 @@ class VersionService {
 
 	parseChangelog() {
 		return new Promise((resolve, reject) => {
-			$.get(process.env.REACT_APP_ROUTER_BASE + "/logs/CHANGELOG.md")
+			$.get(process.env.REACT_APP_HTTP_BASE + "/logs/CHANGELOG.md")
 				.done((data) => {
 					Parser({
 						text : data
