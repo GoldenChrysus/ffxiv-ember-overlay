@@ -36,8 +36,6 @@ class Screen extends React.Component {
 	}
 
 	handleChange(e, data) {
-		this.state.saving = true;
-
 		let key_path  = data.key_path;
 		let new_value = data.value || data.checked;
 
