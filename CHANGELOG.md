@@ -19,6 +19,7 @@
     - For the raid view, the user can specify the default sorting and the metrics that appear for each role type
     - User can provide custom CSS that will affect the overlay
         - Will not affect settings page
+- ! - Updated sample data to eight players instead of four
 
 ### UI Changes
 - ?
