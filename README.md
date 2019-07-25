@@ -52,6 +52,7 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
 
     ✔️ Easy to set up.
     ✔️ Can be used in full screen mode.
+    ✔️ Add the overlay to your OBS Studio scene or other stream/video feed where Web pages can be embedded.
     ❌ Limited configuration.
     ❌ Displays "YOU" instead of your character name in the player list.
     ❌ Outdated embedded browser.
