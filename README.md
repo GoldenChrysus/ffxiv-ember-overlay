@@ -19,22 +19,29 @@ Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and c
 Join the Discord server to receive live updates, report bugs, or request features at: [https://discord.io/emberoverlay](https://discord.io/emberoverlay)
 
 ## Features
-### Informative tabs for damage, healing, and tanking.
-![DPS tab](https://i.imgur.com/iyPTQQa.png "DPS tab")
-![Healing tab](https://i.imgur.com/Lq1JcVw.png "Healing tab")
-![Tanking tab](https://i.imgur.com/yd7dXLe.png "Tanking tab")
+### Informative tabs for damage, healing, tanking, and raiding.
+![DPS tab](https://i.imgur.com/AXILqda.png "DPS tab")
+![Healing tab](https://i.imgur.com/k6IAXID.png "Healing tab")
+![Tanking tab](https://i.imgur.com/FV0tQRq.png "Tanking tab")
+![Raid tab](https://i.imgur.com/75DV6mX.png "Raid tab")
 
 ### Click on any player's name to view detailed statistics.
-![Detailed statistics](https://i.imgur.com/lSEnud8.gif "Detailed statistics")
+![Detailed statistics](https://i.imgur.com/ZUw1avo.gif "Detailed statistics")
+
+### Customize your experience.
+![Customizable overlay](https://i.imgur.com/3E3WA8L.gif "Customizable overlay")
 
 ### Collapsable interface to save space and show only your stats.
-![Collapsable interface](https://i.imgur.com/b5UQcC6.gif "Collapsable interface")
-
-### Clear encounter data or load sample data to perfect your setup.
-![Clear encounter and load sample data](https://i.imgur.com/jImxkgU.gif "Clear encounter and load sample data")
+![Collapsable interface](https://i.imgur.com/VLi8lw7.gif "Collapsable interface")
 
 ### Minimize the entire overlay to the left or right when not in use to free up screen space.
-![Minimize when not in use](https://i.imgur.com/FLhKdKH.gif "Minimize when not in use")
+![Minimize when not in use](https://i.imgur.com/zymL8Ch.gif "Minimize when not in use")
+
+### Easily see the recent changes since your last visit
+![About and changelog](https://i.imgur.com/dMesiHs.gif "About and changelog")
+
+### Clear encounter data or load sample data to perfect your setup.
+![Clear encounter and load sample data](https://i.imgur.com/6O9aKNE.gif "Clear encounter and load sample data")
 
 ## Installation
 **Note:** OverlayProc cannot be used when FFXIV is in full screen mode. If you wish to remain in full screen mode, you must use OverlayPlugin.
