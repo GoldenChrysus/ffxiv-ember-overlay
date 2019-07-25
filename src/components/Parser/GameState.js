@@ -8,7 +8,7 @@ class GameState extends React.Component {
 		return (
 			<div id="game-state">
 				<span className={encounter_class}>{this.props.state}</span>
-				<span className={rank_class}>Rank: {this.props.rank}</span>
+				<span className={rank_class}>{this.props.rank}</span>
 			</div>
 		);
 	}
