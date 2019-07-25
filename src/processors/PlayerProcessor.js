@@ -3,7 +3,7 @@ import store from "../redux/store/index";
 import Constants from "../constants/index";
 
 class PlayerProcessor  {
-	getDataValue(key, player, players, raw_value) {
+	getDataValue(key, player, players, return_sortable_value) {
 		let key_function = Constants.PlayerDataCustomValues[key];
 		let value        = (key_function) ? key_function(player, players) : player[key];
 
@@ -11,8 +11,14 @@ class PlayerProcessor  {
 			value = store.getState().internal.character_name;
 		}
 
-		if (!raw_value && !isNaN(value)) {
+		if (!return_sortable_value && !isNaN(value)) {
 			value = (+value).toLocaleString(undefined, { minimumFractionDigits : 2, maximumFractionDigits: 2 });
+		} else if (return_sortable_value) {
+			let number_regex = /((([\d]{1,3},)?(([\d]{3},)+)?[\d]{3})|[\d]+)(\.[\d]+)?(%)?$/;
+			let matches      = String(value).match(number_regex);
+			let match        = (matches && matches.length) ? matches[0] : 0;
+
+			value = +String(match).replace(/[%,]/g, "");
 		}
 
 		return value;
@@ -29,8 +35,8 @@ class PlayerProcessor  {
 		let players_copy = JSON.parse(JSON.stringify(sorted_players));
 
 		sorted_players = sorted_players.sort(function(a, b) {
-			let val_a = +String(self.getDataValue(sort_column, a, players_copy, true)).replace("%", "");
-			let val_b = +String(self.getDataValue(sort_column, b, players_copy, true)).replace("%", "");
+			let val_a = self.getDataValue(sort_column, a, players_copy, true)
+			let val_b = self.getDataValue(sort_column, b, players_copy, true);
 
 			if (val_a > val_b) {
 				return -1
