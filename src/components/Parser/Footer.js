@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { changeTableType, changeViewing } from "../../redux/actions/index";
+import { changeTableType, changeViewing, changePlayerBlur } from "../../redux/actions/index";
 import { Icon } from "semantic-ui-react";
 
 import PluginService from "../../services/PluginService";
@@ -50,6 +50,11 @@ class Footer extends React.Component {
 			let version_notice = (self.props.new_version) ? "notice" : "";
 
 			actions.push(
+				<div className="icon-container" key="icon-container-player-blur">
+					<Icon name="eye slash" alt="Blur player names" title="Blur player names" key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>
+				</div>
+			);
+			actions.push(
 				<div className={"icon-container " + version_notice} key="icon-container-settings">
 					<Icon name="cog" alt="Settings" title="Settings" key="settings" onClick={self.openSettingsWindow}/>
 				</div>
@@ -84,16 +89,24 @@ class Footer extends React.Component {
 	changeViewing(type) {
 		this.props.changeViewing(type);
 	}
+
+	togglePlayerBlur() {
+		this.props.changePlayerBlur(!this.props.player_blur);
+	}
 }
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		changeTableType : (data) => {
+		changeTableType  : (data) => {
 			dispatch(changeTableType(data));
 		},
 
-		changeViewing   : (data) => {
+		changeViewing    : (data) => {
 			dispatch(changeViewing(data));
+		},
+
+		changePlayerBlur : (data) => {
+			dispatch(changePlayerBlur(data));
 		}
 	}
 };
@@ -101,6 +114,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
 	return {
 		table_type    : state.settings.intrinsic.table_type,
+		player_blur   : state.settings.intrinsic.player_blur,
 		viewing       : state.internal.viewing,
 		overlayplugin : state.internal.overlayplugin,
 		new_version   : state.internal.new_version

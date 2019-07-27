@@ -17,6 +17,7 @@
     - For each table tab, the user can specify the columns that appear, default sorting, and whether the footer row shows
     - For the player detail, the user can specify the metrics that appear for each role type
     - For the raid view, the user can specify the default sorting and the metrics that appear for each role type
+    - User can blur other players' names (eye icon in bottom right of overlay)
     - User can provide custom CSS that will affect the overlay
         - Will not affect settings page
 - ! - Updated sample data to eight players instead of four

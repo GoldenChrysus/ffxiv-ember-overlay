@@ -10,7 +10,8 @@ const default_settings = {
 		table_type      : "dps",
 		collapsed       : false,
 		current_version : null,
-		last_version    : null
+		last_version    : null,
+		player_blur     : false
 	},
 	interface     : {
 		opacity        : 100,

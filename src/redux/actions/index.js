@@ -43,6 +43,15 @@ export function changeTableType(payload) {
 	};
 }
 
+export function changePlayerBlur(payload) {
+	return {
+		type   : "setSetting",
+		key    : "intrinsic.player_blur",
+		source : "parser",
+		payload
+	};
+}
+
 export function changeViewing(payload) {
 	return {
 		type   : "changeViewing",
