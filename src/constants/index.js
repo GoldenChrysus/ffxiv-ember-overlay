@@ -179,7 +179,7 @@ let PlayerDataTitles = {
 		long  : "Block %"
 	},
 	"CritDirectHitPct"   : {
-		short : "CH DH %",
+		short : "CDH %",
 		long  : "Critical Direct Hit %"
 	},
 	"critheal%"          : {
