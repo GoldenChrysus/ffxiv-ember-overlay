@@ -2,15 +2,13 @@
 
 ## 0.5.0-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2019-07-28**
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
-- ! - Adding settings system
+- Adding settings system
     - Overlay will remember which tab user was viewing and if they had the overlay collapsed
     - User can specify the opacity (transparency) of the overlay
     - User can specify if their party rank should display in the top-right corner
@@ -20,10 +18,10 @@
     - User can blur other players' names (eye icon in bottom right of overlay)
     - User can provide custom CSS that will affect the overlay
         - Will not affect settings page
-- ! - Updated sample data to eight players instead of four
+- Updated sample data to eight players instead of four
 
 ### UI Changes
-- ?
+- N/A
 
 ### Code Changes
 - Added middleware to Redux store to listen for state changes from other instances of the same session
@@ -37,7 +35,7 @@
 - Refactored lots of code
 
 ### Miscellaneous
-- ?
+- N/A
 
 ## 0.4.0-alpha
 
