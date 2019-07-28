@@ -13,7 +13,7 @@
 - ?
 
 ### UI Changes
-- Changed player table "CH DH %" header to "CDH %" for critical direct hits
+- ! - Changed player table "CH DH %" header to "CDH %" for critical direct hits
 
 ### Code Changes
 - ?
