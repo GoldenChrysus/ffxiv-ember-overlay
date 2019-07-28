@@ -7,7 +7,7 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- ?
+- Long-pressing left click will no longer trigger the context menu
 
 ### Features
 - ?

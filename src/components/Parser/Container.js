@@ -51,7 +51,7 @@ class Container extends React.Component {
 
 		return (
 			<React.Fragment>
-				<ContextMenuTrigger id="right-click-menu">
+				<ContextMenuTrigger id="right-click-menu" holdToDisplay={-1}>
 					<div id="container">
 						<PlaceholderToggle type="left"/>
 						<PlaceholderToggle type="right"/>
