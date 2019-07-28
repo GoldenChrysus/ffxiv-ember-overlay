@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.6.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- ?
+
+### Features
+- ?
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.5.0-alpha
 
 **Released: 2019-07-28**
