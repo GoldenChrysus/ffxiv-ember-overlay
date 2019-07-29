@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 - Long-pressing left click will no longer trigger the context menu
+- Numbers for max hit/heal in certain regions will no longer result in "NaN"
 
 ### Features
 - ?
