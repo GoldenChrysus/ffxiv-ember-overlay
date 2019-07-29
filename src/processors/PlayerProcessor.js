@@ -14,11 +14,17 @@ class PlayerProcessor  {
 		if (!return_sortable_value && !isNaN(value)) {
 			value = (+value).toLocaleString(undefined, { minimumFractionDigits : 2, maximumFractionDigits: 2 });
 		} else if (return_sortable_value) {
-			let number_regex = /((([\d]{1,3},)?(([\d]{3},)+)?[\d]{3})|[\d]+)(\.[\d]+)?(%)?$/;
+			let number_regex = /((([\d]{1,3},)?(([\d]{3},)+)?[\d]{3})|[\d]+)(\.[\d]+)?(%|K)?$/;
 			let matches      = String(value).match(number_regex);
 			let match        = (matches && matches.length) ? matches[0] : 0;
 
-			value = +String(match).replace(/[%,]/g, "");
+			value = String(match).replace(/[%,]/g, "");
+
+			if (value.indexOf("K") !== -1) {
+				value = +value.replace("K", "") * 1000;
+			}
+
+			value = +value;
 		}
 
 		return value;
