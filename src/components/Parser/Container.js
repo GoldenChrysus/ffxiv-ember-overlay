@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { parseGameData } from "../../redux/actions/index";
 import { ContextMenuTrigger } from "react-contextmenu";
+import ReactTooltip from "react-tooltip";
 
 import Header from "./Header";
 import ContextMenu from "./Container/Menu";
@@ -64,6 +65,7 @@ class Container extends React.Component {
 								{content}
 							</div>
 							{footer}
+							<ReactTooltip className="react-tooltip" effect="solid" multiline={false} place="left"/>
 						</div>
 					</div>
 				</ContextMenuTrigger>

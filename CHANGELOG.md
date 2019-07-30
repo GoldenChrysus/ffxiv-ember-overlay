@@ -19,11 +19,11 @@
 ### UI Changes
 - ! - Changed player table "CH DH %" header to "CDH %" for critical direct hits
 - Moved minimize buttons to the corners of the overlay
-- IN PROGRESS: Add tooltips on hover to all icon buttons to make their purpose clearer
+- Added tooltips on hover to all icon buttons to make their purpose clearer
 - IN PROGRESS: Make settings page accessible from right-click menu
 
 ### Code Changes
-- ?
+- Added `react-tooltip` package for icon button tooltips
 
 ### Miscellaneous
 - ?
