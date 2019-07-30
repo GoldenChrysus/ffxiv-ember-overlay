@@ -55,13 +55,13 @@ class Footer extends React.Component {
 				</div>
 			);
 			actions.push(
-				<div className={"icon-container " + version_notice} key="icon-container-settings">
-					<Icon name="cog" alt="Settings" title="Settings" key="settings" onClick={self.openSettingsWindow}/>
+				<div className="icon-container" key="icon-container-split-encounter">
+					<Icon name="cut" alt="Split encounter" title="Split encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)} key="split-encounter"/>
 				</div>
 			);
 			actions.push(
-				<div className="icon-container" key="icon-container-split-encounter">
-					<Icon name="cut" alt="Split encounter" title="Split encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)} key="split-encounter"/>
+				<div className={"icon-container " + version_notice} key="icon-container-settings">
+					<Icon name="cog" alt="Settings" title="Settings" key="settings" onClick={self.openSettingsWindow}/>
 				</div>
 			);
 
