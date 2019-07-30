@@ -1,7 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { changeCollapse } from "../../redux/actions/index";
-import { Icon } from "semantic-ui-react";
+
+import IconButton from "./Container/IconButton";
 
 class GameState extends React.Component {
 	render() {
@@ -12,9 +13,7 @@ class GameState extends React.Component {
 			let data = { state: !this.props.collapsed };
 
 			return(
-				<div className="icon-container" onClick={this.changeCollapse.bind(this, data)}>
-					<Icon name={icon} alt="Toggle collapse" title="Toggle collapse"/>
-				</div>
+				<IconButton icon={icon} title="Toggle collapse" key="toggle-collapsed" onClick={this.changeCollapse.bind(this, data)}/>
 			);
 		};
 

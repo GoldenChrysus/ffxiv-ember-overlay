@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import { changeTableType, changeViewing, changePlayerBlur } from "../../redux/actions/index";
-import { Icon } from "semantic-ui-react";
 
 import PluginService from "../../services/PluginService";
+import IconButton from "./Container/IconButton";
 
 class Footer extends React.Component {
 	render() {
@@ -46,24 +46,12 @@ class Footer extends React.Component {
 		}
 
 		let actions = function() {
-			let actions        = [];
 			let version_notice = (self.props.new_version) ? "notice" : "";
-
-			actions.push(
-				<div className="icon-container" key="icon-container-player-blur">
-					<Icon name="eye slash" alt="Blur player names" title="Blur player names" key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>
-				</div>
-			);
-			actions.push(
-				<div className="icon-container" key="icon-container-split-encounter">
-					<Icon name="cut" alt="Split encounter" title="Split encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)} key="split-encounter"/>
-				</div>
-			);
-			actions.push(
-				<div className={"icon-container " + version_notice} key="icon-container-settings">
-					<Icon name="cog" alt="Settings" title="Settings" key="settings" onClick={self.openSettingsWindow}/>
-				</div>
-			);
+			let actions        = [
+				<IconButton icon="eye slash" title="Blur player names" key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
+				<IconButton icon="cut" title="Split encounter" key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
+				<IconButton icon="cog" title="Settings" key="settings" class={version_notice} onClick={self.openSettingsWindow}/>
+			];
 
 			return actions;
 		}
