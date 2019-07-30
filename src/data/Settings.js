@@ -15,7 +15,8 @@ const default_settings = {
 	},
 	interface     : {
 		opacity        : 100,
-		top_right_rank : false
+		top_right_rank : false,
+		collapse_down  : false
 	},
 	custom        : {
 		css : ""

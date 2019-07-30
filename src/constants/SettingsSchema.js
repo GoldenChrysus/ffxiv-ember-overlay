@@ -39,6 +39,14 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.interface.top_right_rank;
 							}
+						},
+						{
+							key_path : "interface.collapse_down",
+							label    : "Collapse Downwards",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.collapse_down;
+							}
 						}
 					]
 				}

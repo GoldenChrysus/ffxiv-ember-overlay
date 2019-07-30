@@ -12,11 +12,13 @@
 - Changelog sections will no longer display in "About" if they contain no changes
 
 ### Features
-- ?
+- Added button to toggle collapsed state
+- Added setting to make overlay collapse downwards
+- Overlay can be minimized in the bottom corners
 
 ### UI Changes
 - ! - Changed player table "CH DH %" header to "CDH %" for critical direct hits
-- Added button to toggle collapsed state
+- Minimize buttons have been moved to the corners of the overlay
 - IN PROGRESS: Add tooltips on hover to all icon buttons to make their purpose clearer
 - IN PROGRESS: Make settings page accessible from right-click menu
 

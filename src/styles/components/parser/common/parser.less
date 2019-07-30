@@ -103,7 +103,6 @@
 
 #container > .toggle {
 	position      : absolute;
-	top           : 1px;
 	width         : 12px;
 	height        : 12px;
 	border-radius : 50%;
@@ -115,6 +114,14 @@
 	transition    : 0.5s;
 	opacity       : 0;
 	z-index       : 2;
+}
+
+#container > .toggle.top {
+	top : 1px;
+}
+
+#container > .toggle.bottom {
+	bottom : 1px;
 }
 
 #container > .toggle.left {
@@ -167,7 +174,8 @@
 }
 
 #container #inner #game-state > span:last-child > .icon-container > i.icon {
-	font-size : 11px;
+	font-weight : bold;
+	font-size   : 11px;
 }
 
 #container #inner #game-state .inactive:before {
@@ -481,7 +489,6 @@
 
 .placeholder {
 	position      : absolute;
-	top           : 1px;
 	width         : 2.5rem;
 	height        : 2.5rem;
 	background    : @toggleBackground;
@@ -495,6 +502,14 @@
 .placeholder * {
 	cursor : pointer;
 	cursor : hand;
+}
+
+.placeholder.top {
+	top : 1px;
+}
+
+.placeholder.bottom {
+	bottom : 1px;
 }
 
 .placeholder.left {
@@ -559,6 +574,11 @@
 
 .auto-height {
 	height : auto !important;
+}
+
+.auto-height.down {
+	position : absolute !important;
+	bottom   : 4px !important;
 }
 
 ::-webkit-scrollbar {

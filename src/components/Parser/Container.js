@@ -53,8 +53,10 @@ class Container extends React.Component {
 			<React.Fragment>
 				<ContextMenuTrigger id="right-click-menu" holdToDisplay={-1}>
 					<div id="container">
-						<PlaceholderToggle type="left"/>
-						<PlaceholderToggle type="right"/>
+						<PlaceholderToggle type="top left"/>
+						<PlaceholderToggle type="top right"/>
+						<PlaceholderToggle type="bottom left"/>
+						<PlaceholderToggle type="bottom right"/>
 						<div id="inner">
 							{header}
 							<GameState state={state} active={active} rank={this.props.internal.rank} show_rank={this.props.settings.interface.top_right_rank}/>
@@ -65,8 +67,10 @@ class Container extends React.Component {
 						</div>
 					</div>
 				</ContextMenuTrigger>
-				<Placeholder type="left"/>
-				<Placeholder type="right"/>
+				<Placeholder type="top left"/>
+				<Placeholder type="top right"/>
+				<Placeholder type="bottom left"/>
+				<Placeholder type="bottom right"/>
 				<ContextMenu/>
 			</React.Fragment>
 		);
