@@ -91,6 +91,10 @@ class VersionService {
 							if (!has_changes) {
 								has_changes = (final_data[item_type].length > 0);
 							}
+
+							if (final_data[item_type].length === 0) {
+								delete final_data[item_type];
+							}
 						}
 
 						resolve((has_changes) ? final_data : no_changes);

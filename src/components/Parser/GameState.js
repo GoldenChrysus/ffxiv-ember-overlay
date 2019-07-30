@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "semantic-ui-react";
 
 class GameState extends React.Component {
 	render() {
@@ -8,7 +9,12 @@ class GameState extends React.Component {
 		return (
 			<div id="game-state">
 				<span className={encounter_class}>{this.props.state}</span>
-				<span className={rank_class}>{this.props.rank}</span>
+				<span>
+					<span className={rank_class}>{this.props.rank}</span>
+					<div className="icon-container">
+						<Icon name="compress" alt="Toggle collapse" title="Toggle collapse"/>
+					</div>
+				</span>
 			</div>
 		);
 	}

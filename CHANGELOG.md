@@ -9,6 +9,7 @@
 ### Bug Fixes
 - Long-pressing left click will no longer trigger the context menu
 - Numbers for max hit/heal in certain regions will no longer result in "NaN"
+- Changelog sections will no longer display in "About" if they contain no changes
 
 ### Features
 - ?
