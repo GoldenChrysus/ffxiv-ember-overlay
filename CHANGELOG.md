@@ -18,7 +18,7 @@
 
 ### UI Changes
 - ! - Changed player table "CH DH %" header to "CDH %" for critical direct hits
-- Minimize buttons have been moved to the corners of the overlay
+- Moved minimize buttons to the corners of the overlay
 - IN PROGRESS: Add tooltips on hover to all icon buttons to make their purpose clearer
 - IN PROGRESS: Make settings page accessible from right-click menu
 
