@@ -16,7 +16,7 @@
 
 ### UI Changes
 - ! - Changed player table "CH DH %" header to "CDH %" for critical direct hits
-- IN PROGRESS: Add button to toggle collapsed state
+- Added button to toggle collapsed state
 - IN PROGRESS: Add tooltips on hover to all icon buttons to make their purpose clearer
 - IN PROGRESS: Make settings page accessible from right-click menu
 
