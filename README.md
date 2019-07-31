@@ -107,7 +107,7 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
 13. In the middle of the screen, ensure you are on the tab entitled "HTML Based."
 14. Use the following configuration under "OverlayProc":
     - OverlayProc Auto Start: checked
-    - In the drodpown (the only dropdown in this section), choose "x64_QT5.8.0" if on a 64-bit system or "x86_QT5.8.0" if on a 32-bit system.
+    - In the dropdown (the only dropdown in this section), choose "x64_QT5.8.0" if on a 64-bit system or "x86_QT5.8.0" if on a 32-bit system.
     - If the textbox to the right of the dropdown has text beginning with "0.0.0" then click "Download."
 15. In the section entitled "Web Skins," click "Add URL."
 16. Enter https://goldenchrysus.github.io/ffxiv/ember-overlay/ and click "Ok."
