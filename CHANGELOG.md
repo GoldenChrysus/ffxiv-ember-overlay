@@ -14,6 +14,8 @@
 ### Features
 - Added button to toggle collapsed state
 - Added setting to make overlay collapse downwards
+- IN PROGRESS: Add setting to change player names to short names
+- IN PROGRESS: Add setting for overlay zoom
 - Overlay can be minimized in the bottom corners
 
 ### UI Changes
@@ -21,6 +23,7 @@
 - Moved minimize buttons to the corners of the overlay
 - Added tooltips on hover to all icon buttons to make their purpose clearer
 - IN PROGRESS: Make settings page accessible from right-click menu
+- IN PROGRESS: Convert custom CSS input box to a code input box
 
 ### Code Changes
 - Added `react-tooltip` package for icon button tooltips
