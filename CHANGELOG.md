@@ -29,7 +29,7 @@
 - Added `react-tooltip` package for icon button tooltips
 
 ### Miscellaneous
-- ?
+- Added staging site info to README
 
 ## 0.5.0-alpha
 

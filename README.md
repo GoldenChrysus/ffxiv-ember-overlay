@@ -139,6 +139,14 @@ To build this yourself, do the following:
 
 View the full changelog [here](/CHANGELOG.md).
 
+## Staging Site
+
+You can access and test features in advance by using the staging site. Instead of the regular URL, set your overlay to https://goldenchrysus.github.io/ffxiv/ember-overlay-dev/
+
+Please note that the staging site is for pre-release testing, so you may encounter errors. Please report these errors as GitHub issues or in the #bug-reports channel on the [Discord](https://discord.io/emberoverlay).
+
+When viewing the [changelog](/CHANGELOG.md), you will be able to determine which changes are available on the staging site because they will be prefixed with "!" in the changelog for the latest development version.
+
 ## Contributing
 
 ### Process
