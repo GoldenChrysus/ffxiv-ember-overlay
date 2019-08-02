@@ -3,8 +3,9 @@ import { connect } from "react-redux";
 
 import "./../styles/components/parser/parser-dark.less";
 
-import Container from "./Parser/Container";
 import VersionService from "./../services/VersionService";
+import Container from "./Parser/Container";
+import Placeholder from "./Parser/Placeholder";
 
 class Parser extends React.Component {
 	componentWillMount() {
@@ -44,6 +45,10 @@ class Parser extends React.Component {
 					{setting_style}
 					{this.props.css}
 				</style>
+				<Placeholder type="top left"/>
+				<Placeholder type="top right"/>
+				<Placeholder type="bottom left"/>
+				<Placeholder type="bottom right"/>
 				<div id="root-inner" className={root_inner_classes}>
 					<Container/>
 				</div>

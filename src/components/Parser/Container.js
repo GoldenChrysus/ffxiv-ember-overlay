@@ -10,7 +10,6 @@ import GameState from "./GameState";
 import PlayerTable from "./PlayerTable";
 import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
-import Placeholder from "./Placeholder";
 import PlaceholderToggle from "./Placeholder/Toggle";
 
 class Container extends React.Component {
@@ -69,10 +68,6 @@ class Container extends React.Component {
 						</div>
 					</div>
 				</ContextMenuTrigger>
-				<Placeholder type="top left"/>
-				<Placeholder type="top right"/>
-				<Placeholder type="bottom left"/>
-				<Placeholder type="bottom right"/>
 				<ContextMenu/>
 			</React.Fragment>
 		);
