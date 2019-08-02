@@ -105,12 +105,22 @@
 
 #settings-container #settings-screen .section-container .field .ui.dropdown,
 #settings-container #settings-screen .section-container .field textarea {
-	background: @footerActiveLinkBackground;
+	background: @footerActiveLinkBackground !important;
 }
 
-#settings-container #settings-screen .section-container .field textarea {
-	color: @playerDetailSectionTitleText;
+#settings-container #settings-screen .section-container .field textarea,
+#settings-container #settings-screen .section-container .field .code pre {
+	color: @playerDetailSectionTitleText !important;
 	cursor: text;
+}
+
+#settings-container #settings-screen .section-container .field .code {
+	min-height: 300px;
+}
+
+#settings-container #settings-screen .section-container .field .code textarea,
+#settings-container #settings-screen .section-container .field .code pre {
+	padding: 4px !important;
 }
 
 #settings-container #settings-screen .section-container .field .ui.dropdown a.ui.label {

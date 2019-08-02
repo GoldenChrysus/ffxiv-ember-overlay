@@ -4,6 +4,7 @@ import { ContextMenu, MenuItem } from "react-contextmenu";
 import { changeCollapse, loadSampleGameData, clearGameData } from "../../../redux/actions/index";
 
 import PluginService from "../../../services/PluginService";
+import SettingsService from "../../../services/SettingsService";
 
 class Menu extends React.Component {
 	render() {
@@ -40,6 +41,9 @@ class Menu extends React.Component {
 						Clear Encounter Data
 					</MenuItem>
 					{plugin_actions()}
+					<MenuItem onClick={SettingsService.openSettingsWindow}>
+						Settings
+					</MenuItem>
 				</div>
 			</ContextMenu>
 		);

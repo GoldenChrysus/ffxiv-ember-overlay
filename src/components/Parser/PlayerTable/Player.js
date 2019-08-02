@@ -32,7 +32,13 @@ class Player extends React.Component {
 
 		let name_blur   = (this.props.blur) ? "blur" : "";
 		let icon        = <div className="column" key="player-data-icon"><img src={"img/icons/jobs/" + job + ".png"} alt={job + " icon"}></img></div>;
-		let name        = <div className={"column " + name_blur} key="player-data-name">{processor.getDataValue("name", player)}</div>;
+		let player_name = processor.getDataValue("name", player);
+
+		if (this.props.short_names) {
+			player_name = processor.getShortName(player_name);
+		}
+
+		let name        = <div className={"column " + name_blur} key="player-data-name">{player_name}</div>;
 		let player_data = function() {
 			if (!is_raid) {
 				return [

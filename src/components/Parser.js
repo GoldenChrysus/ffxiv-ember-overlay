@@ -17,7 +17,12 @@ class Parser extends React.Component {
 		let collapsed          = (this.props.collapsed && this.props.viewing === "tables");
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
-		let opacity_style      = `
+		let zoom               = this.props.zoom / 100;
+		let setting_style      = `
+			body {
+				zoom: ${zoom};
+			}
+
 			#container {
 				opacity: ${opacity};
 			}
@@ -36,7 +41,7 @@ class Parser extends React.Component {
 		return (
 			<React.Fragment>
 				<style type="text/css">
-					{opacity_style}
+					{setting_style}
 					{this.props.css}
 				</style>
 				<div id="root-inner" className={root_inner_classes}>
@@ -53,7 +58,8 @@ const mapStateToProps = (state) => {
 		collapse_down : state.settings.interface.collapse_down,
 		viewing       : state.internal.viewing,
 		css           : state.settings.custom.css || "",
-		opacity       : state.settings.interface.opacity
+		opacity       : state.settings.interface.opacity,
+		zoom          : state.settings.interface.zoom
 	};
 };
 

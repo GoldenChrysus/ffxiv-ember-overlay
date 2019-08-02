@@ -1,7 +1,7 @@
 import store from "../redux/store/index";
 import { updateState } from "../redux/actions/index";
 import localForage from "localforage";
-import assign from "lodash.assign";
+import merge from "lodash.merge";
 
 import ObjectService from "../services/ObjectService";
 
@@ -15,6 +15,7 @@ const default_settings = {
 	},
 	interface     : {
 		opacity        : 100,
+		zoom           : 100,
 		top_right_rank : false,
 		collapse_down  : false
 	},
@@ -22,13 +23,21 @@ const default_settings = {
 		css : ""
 	},
 	table_settings : {
-		dps  : {
+		general : {
+			table : {
+				short_names : false
+			},
+			raid  : {
+				short_names : false
+			}
+		},
+		dps     : {
 			show_footer : true
 		},
-		heal : {
+		heal    : {
 			show_footer : true
 		},
-		tank : {
+		tank    : {
 			show_footer : true
 		}
 	},
@@ -125,7 +134,7 @@ class Settings {
 			localForage.getItem("settings_cache")
 				.then((data) => {
 					let json                 = false;
-					let tmp_default_settings = Object.assign({}, default_settings);
+					let tmp_default_settings = Object.assign({}, JSON.parse(JSON.stringify(default_settings)));
 
 					try {
 						json = JSON.parse(data);
@@ -134,7 +143,7 @@ class Settings {
 					if (!json) {
 						json = tmp_default_settings;
 					} else {
-						json = assign(tmp_default_settings, json);
+						json = merge(tmp_default_settings, json);
 					}
 
 					this.settings = json;

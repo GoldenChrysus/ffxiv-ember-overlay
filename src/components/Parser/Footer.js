@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { changeTableType, changeViewing, changePlayerBlur } from "../../redux/actions/index";
 
 import PluginService from "../../services/PluginService";
+import SettingsService from "../../services/SettingsService";
 import IconButton from "./Container/IconButton";
 
 class Footer extends React.Component {
@@ -50,7 +51,7 @@ class Footer extends React.Component {
 			let actions        = [
 				<IconButton icon="eye slash" title="Blur player names" key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
 				<IconButton icon="cut" title="Split encounter" key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
-				<IconButton icon="cog" title="Settings" key="settings" class={version_notice} onClick={self.openSettingsWindow}/>
+				<IconButton icon="cog" title="Settings" key="settings" class={version_notice} onClick={SettingsService.openSettingsWindow}/>
 			];
 
 			return actions;
@@ -64,10 +65,6 @@ class Footer extends React.Component {
 				</div>
 			</div>
 		);
-	}
-
-	openSettingsWindow() {
-		window.open("#/settings", "", "width=600,height=400,location=no,menubar=no");
 	}
 
 	changeTableType(type) {

@@ -1,9 +1,28 @@
 import React from "react";
 import { Header, Form, Select, TextArea, Checkbox } from "semantic-ui-react";
+import Editor from "react-simple-code-editor";
 
 import Slider from "./Inputs/Slider";
 
 class Section extends React.Component {
+	getSettingValue(setting_data) {
+		return (typeof setting_data.value === "function") ? setting_data.value.call(this) : setting_data.value;
+	}
+
+	componentWillMount() {
+		this.state = {};
+
+		let state_data = {};
+
+		for (let setting_data of this.props.data.settings) {
+			let value = this.getSettingValue(setting_data);
+
+			state_data[setting_data.key_path] = value;
+		}
+
+		this.setState(state_data);
+	}
+
 	render() {
 		let settings = [];
 
@@ -11,7 +30,7 @@ class Section extends React.Component {
 			let setting;
 
 			let label = (setting_data.label) ? <label>{setting_data.label}</label> : "";
-			let value = (typeof setting_data.value === "function") ? setting_data.value.call(this) : setting_data.value;
+			let value = this.getSettingValue(setting_data);
 
 			switch (setting_data.type) {
 				case "select":
@@ -29,6 +48,27 @@ class Section extends React.Component {
 
 				case "textarea":
 					setting = <TextArea defaultValue={value} key_path={setting_data.key_path} rows={20} onChange={this.props.changeCallback}/>;
+
+					break;
+
+				case "code":
+					let state_data = {};
+					let key_path   = setting_data.key_path;
+
+					setting = <Editor
+						className="code"
+						value={this.state[key_path]}
+						key_path={setting_data.key_path}
+						onValueChange={(code) => {
+							this.props.changeCallback({}, {key_path : setting_data.key_path, value : code});
+
+							let state_data = {};
+
+							state_data[key_path] = code;
+
+							this.setState(state_data);
+						}}
+						highlight={code => code}/>;
 
 					break;
 

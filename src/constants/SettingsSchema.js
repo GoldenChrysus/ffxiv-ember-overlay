@@ -33,6 +33,17 @@ const SettingsSchema = {
 							}
 						},
 						{
+							key_path : "interface.zoom",
+							label    : "Overlay Zoom",
+							type     : "slider",
+							range    : "min",
+							minimum  : 1,
+							maximum  : 500,
+							value    : function() {
+								return this.props.settings.interface.zoom;
+							}
+						},
+						{
 							key_path : "interface.top_right_rank",
 							label    : "Display Rank in Top Right",
 							type     : "checkbox",
@@ -56,6 +67,19 @@ const SettingsSchema = {
 			title    : "Player Table",
 			path     : "player-table",
 			sections : [
+				{
+					title    : "General",
+					settings : [
+						{
+							key_path : "table_settings.general.table.short_names",
+							label    : "Shorten Player Names",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.general.table.short_names;
+							}
+						}
+					]
+				},
 				{
 					title    : "DPS",
 					settings : [
@@ -234,6 +258,14 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.sort_columns.raid;
 							}
+						},
+						{
+							key_path : "table_settings.general.raid.short_names",
+							label    : "Shorten Player Names",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.general.raid.short_names;
+							}
 						}
 					]
 				},
@@ -297,7 +329,7 @@ const SettingsSchema = {
 						{
 							key_path : "custom.css",
 							label    : "User-provided CSS is at your own risk.",
-							type     : "textarea",
+							type     : "code",
 							value    : function() {
 								return this.props.settings.custom.css;
 							}

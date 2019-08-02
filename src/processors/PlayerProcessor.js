@@ -3,6 +3,19 @@ import store from "../redux/store/index";
 import Constants from "../constants/index";
 
 class PlayerProcessor  {
+	getShortName(name) {
+		name = name.split(" ");
+
+		if (name.length === 1) {
+			return name;
+		}
+
+		let first_initial = name[0].slice(0, 1);
+		let last_name     = name.pop();
+
+		return `${first_initial} ${last_name}`;
+	}
+
 	getDataValue(key, player, players, return_sortable_value) {
 		let key_function = Constants.PlayerDataCustomValues[key];
 		let value        = (key_function) ? key_function(player, players) : player[key];
