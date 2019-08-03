@@ -56,6 +56,7 @@ class About extends React.Component {
 	render() {
 		let github_url    = process.env.REACT_APP_GITHUB_URL;
 		let discord_url   = process.env.REACT_APP_DISCORD_URL;
+		let author_url    = process.env.REACT_APP_AUTHOR_URL;
 		let changelog_url = process.env.REACT_APP_CHANGELOG_URL;
 
 		let state = this.state || {};
@@ -64,7 +65,7 @@ class About extends React.Component {
 			<React.Fragment>
 				<Container fluid className="section-container">
 					<h2>EMBER OVERLAY</h2>
-					<p>Developed by GoldenChrysus.</p>
+					<p>Developed by <a href={author_url} target="_blank" rel="noopener noreferrer">GoldenChrysus</a>.</p>
 
 					<h3>Discord</h3>
 					<p>

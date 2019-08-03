@@ -23,7 +23,6 @@ class Container extends React.Component {
 	render() {
 		let encounter = this.props.internal.game.Encounter || {};
 		let active    = (["true", true].indexOf(this.props.internal.game.isActive) !== -1);
-		let state     = (encounter.title) ? `${encounter.title} - ${encounter.CurrentZoneName} - ${encounter.duration}` : "Awaiting encounter data...";
 		let viewing   = this.props.internal.viewing;
 
 		let content;
@@ -59,7 +58,7 @@ class Container extends React.Component {
 						<PlaceholderToggle type="bottom right"/>
 						<div id="inner">
 							{header}
-							<GameState state={state} active={active} rank={this.props.internal.rank} show_rank={this.props.settings.interface.top_right_rank}/>
+							<GameState encounter={encounter} active={active} rank={this.props.internal.rank} show_rank={this.props.settings.interface.top_right_rank}/>
 							<div id="content">
 								{content}
 							</div>

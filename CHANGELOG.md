@@ -24,6 +24,8 @@
 - ! - Added tooltips on hover to all icon buttons to make their purpose clearer
 - ! - Made settings page accessible from right-click menu
 - ! - Converted custom CSS input box to a code input box
+- ! - Encounter time is now listed at the beginning of the encounter info
+- ! - Encounters titled "Encounter" will simply list the zone name rather than displaying "Encounter" first
 
 ### Code Changes
 - ! - Added `react-tooltip` package for icon button tooltips

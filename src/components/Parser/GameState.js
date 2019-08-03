@@ -17,9 +17,26 @@ class GameState extends React.Component {
 			);
 		};
 
+		let encounter       = this.props.encounter;
+		let encounter_state = [];
+
+		if (!encounter.title) {
+			encounter_state.push("Awaiting encounter data...");
+		} else {
+			encounter_state.push(encounter.duration);
+
+			if (encounter.title !== "Encounter") {
+				encounter_state.push(encounter.title);
+			}
+
+			encounter_state.push(encounter.CurrentZoneName);
+		}
+
+		encounter_state = encounter_state.join(" - ");
+
 		return (
 			<div id="game-state">
-				<span className={encounter_class}>{this.props.state}</span>
+				<span className={encounter_class}>{encounter_state}</span>
 				<span>
 					<span className={rank_class}>{this.props.rank}</span>
 					{collapse_item()}

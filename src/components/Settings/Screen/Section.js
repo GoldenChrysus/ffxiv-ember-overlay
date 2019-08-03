@@ -52,8 +52,7 @@ class Section extends React.Component {
 					break;
 
 				case "code":
-					let state_data = {};
-					let key_path   = setting_data.key_path;
+					let key_path = setting_data.key_path;
 
 					setting = <Editor
 						className="code"
