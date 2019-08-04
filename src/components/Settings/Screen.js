@@ -39,9 +39,6 @@ class Screen extends React.Component {
 		let key_path  = data.key_path;
 		let new_value = data.value || data.checked;
 
-		console.log(key_path);
-		console.log(new_value);
-
 		this.props.new_settings[key_path] = new_value;
 	}
 
