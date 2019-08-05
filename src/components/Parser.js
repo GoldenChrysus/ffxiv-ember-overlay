@@ -3,15 +3,12 @@ import { connect } from "react-redux";
 
 import "./../styles/components/parser/parser-dark.less";
 
-import VersionService from "./../services/VersionService";
 import Container from "./Parser/Container";
 import Placeholder from "./Parser/Placeholder";
 
 class Parser extends React.Component {
 	componentWillMount() {
-		window.parser = true;
-
-		VersionService.determineIfNewer();
+		window.parser = true;		
 	}
 
 	render() {

@@ -2,11 +2,20 @@ import React from "react";
 import { connect } from "react-redux";
 import { changeTableType, changeViewing, changePlayerBlur } from "../../redux/actions/index";
 
+import VersionService from "../../services/VersionService";
 import PluginService from "../../services/PluginService";
 import SettingsService from "../../services/SettingsService";
 import IconButton from "./Container/IconButton";
 
 class Footer extends React.Component {
+	componentDidMount() {
+		let new_version = VersionService.determineIfNewer();
+
+		this.setState({
+			new_version : new_version
+		});
+	}
+
 	render() {
 		let viewing        = this.props.viewing;
 		let table_type     = this.props.table_type;
@@ -47,7 +56,7 @@ class Footer extends React.Component {
 		}
 
 		let actions = function() {
-			let version_notice = (self.props.new_version) ? "notice" : "";
+			let version_notice = (self.state && self.state.new_version) ? "notice" : "";
 			let actions        = [
 				<IconButton icon="eye slash" title="Blur player names" key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
 				<IconButton icon="cut" title="Split encounter" key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
@@ -101,8 +110,7 @@ const mapStateToProps = (state) => {
 		table_type    : state.settings.intrinsic.table_type,
 		player_blur   : state.settings.intrinsic.player_blur,
 		viewing       : state.internal.viewing,
-		overlayplugin : state.internal.overlayplugin,
-		new_version   : state.internal.new_version
+		overlayplugin : state.internal.overlayplugin
 	};
 };
 
