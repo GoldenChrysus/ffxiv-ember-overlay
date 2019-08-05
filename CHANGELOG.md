@@ -7,7 +7,7 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- ?
+- IN PROGRESS: Table summation does not work for some regions
 
 ### Features
 - IN PROGRESS: Add settings import/export
