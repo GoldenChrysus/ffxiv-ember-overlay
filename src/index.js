@@ -23,7 +23,6 @@ store
 	.settings_data
 	.loadSettings()
 	.then(() => {
-
 		ReactDOM.render(
 			<Router basename={process.env.REACT_APP_ROUTER_BASE}>
 				<Provider store={store}>
