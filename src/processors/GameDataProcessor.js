@@ -14,6 +14,10 @@ class GameDataProcessor  {
 	}
 
 	normalizeLocales(data) {
+		if (!data.Encounter) {
+			return data;
+		}
+
 		for (let key in Constants.PlayerDataTitles) {
 			if (data.Encounter[key] !== undefined) {
 				data.Encounter[key] = this.normalizeFieldLocale(data.Encounter[key]);
