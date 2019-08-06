@@ -13,14 +13,15 @@
 - Added settings import/export
     - To export, open the settings window, navigate to the "Export" page, and copy the export key
     - To import, right click on the overlay, choose "Import," and paste the exported key
-- IN PROGRESS: Add streamers panel
+- Added streamers panel at Settings > Streamers
 - IN PROGRESS: Add light theme
 
 ### UI Changes
 - Right-click menu is now more organized with group dividers
 
 ### Code Changes
-- ?
+- Added `lodash.shuffle` as a convenient Fisher-Yates shuffle implementation
+    - Used to shuffle the streamer list for fair, random display orders
 
 ### Miscellaneous
 - ?
