@@ -20,8 +20,8 @@ class Import extends React.Component {
 						<div>
 							<Form>
 								<Form.Field>
-									<Button size="mini" className="import" onClick={this.handleImport.bind(this)}>Import</Button>
 									<Input/>
+									<Button size="mini" className="import" onClick={this.handleImport.bind(this)}>Import</Button>
 								</Form.Field>
 							</Form>
 						</div>
