@@ -149,11 +149,12 @@ class Settings {
 	}
 
 	saveSettings() {
-		if (!window.parser) {
-			return;
-		}
-
 		return new Promise((resolve, reject) => {
+			if (!window.parser) {
+				resolve();
+				return;
+			}
+
 			localForage.setItem("settings_cache", JSON.stringify(this.settings || default_settings))
 				.then(() => {
 					resolve();
@@ -185,13 +186,15 @@ class Settings {
 		let data = atob(settings_key);
 
 		this.mergeSettings(data);
-		this.saveSettings();
-		store.dispatch(
-			updateState({
-				key   : "settings",
-				value : this.settings
-			})
-		);
+		this.saveSettings()
+			.then(() => {
+				store.dispatch(
+					updateState({
+						key   : "settings",
+						value : this.settings
+					})
+				);
+			});
 	}
 
 	getSetting(key) {

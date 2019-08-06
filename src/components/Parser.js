@@ -8,7 +8,7 @@ import Placeholder from "./Parser/Placeholder";
 
 class Parser extends React.Component {
 	componentWillMount() {
-		window.parser = true;		
+		window.parser = true;
 	}
 
 	render() {
