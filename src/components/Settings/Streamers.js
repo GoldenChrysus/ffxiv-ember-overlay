@@ -9,6 +9,7 @@ class Streamers extends React.Component {
 		let streamer_names = shuffle(Object.keys(streamers));
 		let streamer_boxes = [];
 		let discord_url    = process.env.REACT_APP_DISCORD_URL;
+		let author_url     = process.env.REACT_APP_AUTHOR_URL;
 
 		for (let streamer_name of streamer_names) {
 			let thumbnail = streamers[streamer_name];
@@ -42,7 +43,8 @@ class Streamers extends React.Component {
 						<a className="info-link" onClick={this.toggleInfoDiv}>Are you a streamer or do you know a streamer who uses Ember Overlay?</a>
 						<span className="info-span hidden">
 							Have the stream added to this list by joining our Discord at <span className="discord-link">{discord_url}</span> and posting the stream in
-							#streamer-requests. The stream is only eligible for inclusion if Ember Overlay is used on stream (will be verified via VOD's).
+							#streamer-requests. You can also message <span className="author-link">{author_url}</span> with your stream info. 
+							The stream is only eligible for inclusion if Ember Overlay is used on stream (will be verified via VOD's).
 						</span>
 					</p>
 					{offline_text}

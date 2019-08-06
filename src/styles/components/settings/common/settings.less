@@ -159,7 +159,8 @@
 	width: 200px;
 }
 
-#settings-container #settings-screen .section-container p .discord-link {
+#settings-container #settings-screen .section-container p .discord-link,
+#settings-container #settings-screen .section-container p .author-link {
 	user-select: text !important;
 	font-weight: bold;
 	cursor: text;
@@ -208,8 +209,9 @@
 	flex-direction: column;
 	flex: 1 1 calc(25% - 8px);
 	width: calc(25% - 8px) !important;
+	max-width: calc(25% - 8px) !important;
 	margin: 0 4px 4px 0;
-	padding: 4px;
+	padding: 4px 8px;
 	box-sizing: border-box;
 	background: @gridItemBackground;
 }
