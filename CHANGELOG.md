@@ -17,7 +17,7 @@
 - IN PROGRESS: Add light theme
 
 ### UI Changes
-- ?
+- Right-click menu is now more organized with group dividers
 
 ### Code Changes
 - ?
