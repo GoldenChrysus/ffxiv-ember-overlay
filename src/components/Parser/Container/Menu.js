@@ -34,13 +34,15 @@ class Menu extends React.Component {
 			<ContextMenu id="right-click-menu" className="container-context-menu">
 				<div className="item-group">
 					{collapse_item()}
+					{plugin_actions()}
+					<div class="split"></div>
 					<MenuItem onClick={this.loadSampleGameData.bind(this)}>
 						Load Sample Data
 					</MenuItem>
 					<MenuItem onClick={this.clearGameData.bind(this)}>
 						Clear Encounter Data
 					</MenuItem>
-					{plugin_actions()}
+					<div class="split"></div>
 					<MenuItem onClick={SettingsService.openSettingsWindow}>
 						Settings
 					</MenuItem>
