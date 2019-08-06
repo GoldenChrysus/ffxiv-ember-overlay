@@ -358,13 +358,15 @@
 	text-shadow : 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
-#container #inner #content #player-detail {
+#container #inner #content #player-detail,
+#container #inner #content #import {
 	padding        : 8px;
 	display        : flex;
 	flex-direction : column;
 }
 
-#container #inner #content #player-detail .header {
+#container #inner #content #player-detail .header,
+#container #inner #content #import .header {
 	width          : 100%;
 	display        : flex;
 	flex-direction : row;
@@ -375,7 +377,8 @@
 }
 
 #container #inner #content #player-detail .header .job,
-#container #inner #content #player-detail .header .name {
+#container #inner #content #player-detail .header .name,
+#container #inner #content #import .header .name {
 	display        : flex;
 	flex-direction : column;
 	flex           : 1;
@@ -391,13 +394,19 @@
 	height : 32px;
 }
 
-#container #inner #content #player-detail .header .name {
+#container #inner #content #player-detail .header .name,
+#container #inner #content #import .header .name {
 	padding-left : 8px;
 	color        : @importantText;
 	font-size    : 28px;
 }
 
-#container #inner #content #player-detail .section {
+#container #inner #content #import .header .name {
+	padding-left : 0;
+}
+
+#container #inner #content #player-detail .section,
+#container #inner #content #import .section {
 	padding : 4px 0;
 }
 
@@ -441,12 +450,31 @@
 	font-size   : 12px;
 }
 
+#container #inner #content #import .section > p,
 #container #inner #content #player-detail .section > .data .column .value {
 	color : @playerDetailSectionDataValueText;
 }
 
 #container #inner #content #player-detail .section:last-child {
 	margin-bottom : -8px;
+}
+
+#container #inner #content #import .section input {
+	background : @footerActiveLinkBackground !important;
+}
+
+#container #inner #content #import .section input {
+	color  : @playerDetailSectionTitleText !important;
+	cursor : text;
+}
+
+#container #inner #content #import .section .ui.form button.import {
+	background    : @borderOuter;
+	margin-bottom : 4px;
+}
+
+#container #inner #content #import .section .ui.form button.import:active {
+	background : @importantText;
 }
 
 #container #inner #footer {

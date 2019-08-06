@@ -7,10 +7,12 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- IN PROGRESS: Table summation does not work for some regions
+- Resolved issue where table summation did not work for some regions
 
 ### Features
-- IN PROGRESS: Add settings import/export
+- Added settings import/export
+    - To export, open the settings window, navigate to the "Export" page, and copy the export key
+    - To import, right click on the overlay, choose "Import," and paste the exported key
 - IN PROGRESS: Add streamers panel
 - IN PROGRESS: Add light theme
 

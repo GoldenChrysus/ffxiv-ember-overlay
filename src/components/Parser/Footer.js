@@ -9,11 +9,7 @@ import IconButton from "./Container/IconButton";
 
 class Footer extends React.Component {
 	componentDidMount() {
-		let new_version = VersionService.determineIfNewer();
-
-		this.setState({
-			new_version : new_version
-		});
+		VersionService.determineIfNewer();
 	}
 
 	render() {
@@ -23,40 +19,42 @@ class Footer extends React.Component {
 		let plugin_service = new PluginService();
 
 		let navigation = function() {
-			if (viewing === "tables") {
-				let types   = {
-					dps  : "DPS",
-					heal : "Heal",
-					tank : "Tank",
-					raid : "24"
-				}
-				let links   = [];
-
-				for (let type_key in types) {
-					let name   = types[type_key];
-					let active = (table_type === type_key) ? "active" : "";
-
-					links.push(
-						<div className={"role-link " + active} onClick={self.changeTableType.bind(self, type_key)} key={"navigation-link-" + type_key}>{name}</div>
+			switch (viewing) {
+				case "player":
+					return(
+						<div id="navigation-links">
+							<span className="navigation-link" onClick={self.changeViewing.bind(self, "tables")} key="navigation-link-back">&lsaquo; Back</span>
+						</div>
 					);
-				}
 
-				return(
-					<div id="role-links">
-						{links}
-					</div>
-				);
-			} else if (viewing === "player") {
-				return(
-					<div id="navigation-links">
-						<span className="navigation-link" onClick={self.changeViewing.bind(self, "tables")} key="navigation-link-back">&lsaquo; Back</span>
-					</div>
-				);
+				default:
+					let types   = {
+						dps  : "DPS",
+						heal : "Heal",
+						tank : "Tank",
+						raid : "24"
+					}
+					let links   = [];
+
+					for (let type_key in types) {
+						let name   = types[type_key];
+						let active = (table_type === type_key && viewing === "tables") ? "active" : "";
+
+						links.push(
+							<div className={"role-link " + active} onClick={self.changeTableType.bind(self, type_key)} key={"navigation-link-" + type_key}>{name}</div>
+						);
+					}
+
+					return(
+						<div id="role-links">
+							{links}
+						</div>
+					);
 			}
 		}
 
 		let actions = function() {
-			let version_notice = (self.state && self.state.new_version) ? "notice" : "";
+			let version_notice = (self.props.new_version) ? "notice" : "";
 			let actions        = [
 				<IconButton icon="eye slash" title="Blur player names" key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
 				<IconButton icon="cut" title="Split encounter" key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
@@ -77,6 +75,10 @@ class Footer extends React.Component {
 	}
 
 	changeTableType(type) {
+		if (this.props.viewing !== "tables") {
+			this.changeViewing("tables");
+		}
+
 		this.props.changeTableType(type);
 	}
 
@@ -110,7 +112,8 @@ const mapStateToProps = (state) => {
 		table_type    : state.settings.intrinsic.table_type,
 		player_blur   : state.settings.intrinsic.player_blur,
 		viewing       : state.internal.viewing,
-		overlayplugin : state.internal.overlayplugin
+		overlayplugin : state.internal.overlayplugin,
+		new_version   : state.internal.new_version
 	};
 };
 

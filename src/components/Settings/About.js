@@ -1,6 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
-import { updateState } from "../../redux/actions/index";
 import { Container } from "semantic-ui-react";
 
 import VersionService from "../../services/VersionService";
@@ -44,13 +42,6 @@ class About extends React.Component {
 			.catch((e) => {
 				console.log(e);
 			});
-
-		let new_data = {
-			key   : "internal.new_version",
-			value : false
-		}
-
-		this.props.updateState(new_data);
 	}
 
 	render() {
@@ -100,12 +91,4 @@ class About extends React.Component {
 	}
 }
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		updateState : (data) => {
-			dispatch(updateState(data));
-		}
-	}
-};
-
-export default connect(null, mapDispatchToProps)(About);
+export default About;

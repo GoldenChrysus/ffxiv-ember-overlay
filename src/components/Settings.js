@@ -6,6 +6,7 @@ import SettingsSchema from "../constants/SettingsSchema";
 
 import Screen from "./Settings/Screen";
 import About from "./Settings/About";
+import Export from "./Settings/Export";
 
 import "./../styles/components/settings/settings-dark.less";
 
@@ -36,6 +37,7 @@ class Settings extends React.Component {
 								<Menu vertical id="settings-menu">
 									{nav_links}
 									<NavLink to={base_url + "/about"} className="item">About</NavLink>
+									<NavLink to={base_url + "/export"} className="item">Export</NavLink>
 								</Menu>
 							</Grid.Column>
 							<Grid.Column width={13} id="settings-screen">
@@ -44,6 +46,7 @@ class Settings extends React.Component {
 								)}/>
 								{routes}
 								<Route path={base_url + "/about"} component={About}/>
+								<Route path={base_url + "/export"} component={Export}/>
 							</Grid.Column>
 						</Grid.Row>
 					</Grid>

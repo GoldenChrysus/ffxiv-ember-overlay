@@ -55,11 +55,17 @@
 	overflow-y: scroll;
 }
 
-#settings-container #settings-screen .ui.form button.save {
+#settings-container #settings-screen .ui.form button.save,
+#settings-container #settings-screen .ui.form button.export {
 	background: @borderOuter;
 }
 
-#settings-container #settings-screen .ui.form button.save:active {
+#settings-container #settings-screen .ui.form button.export {
+	margin-bottom: 4px;
+}
+
+#settings-container #settings-screen .ui.form button.save:active,
+#settings-container #settings-screen .ui.form button.export:active {
 	background: @importantText;
 }
 
@@ -118,6 +124,7 @@
 	min-height: 300px;
 }
 
+#settings-container #settings-screen .section-container .field textarea,
 #settings-container #settings-screen .section-container .field .code textarea,
 #settings-container #settings-screen .section-container .field .code pre {
 	padding: 4px !important;

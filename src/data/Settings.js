@@ -133,28 +133,13 @@ class Settings {
 		return new Promise((resolve, reject) => {
 			localForage.getItem("settings_cache")
 				.then((data) => {
-					let json                 = false;
-					let tmp_default_settings = Object.assign({}, JSON.parse(JSON.stringify(default_settings)));
-
-					try {
-						json = JSON.parse(data);
-					} catch (e) {}
-
-					if (!json) {
-						json = tmp_default_settings;
-					} else {
-						json = merge(tmp_default_settings, json);
-					}
-
-					this.settings = json;
-
+					this.mergeSettings(data);
 					store.dispatch(
 						updateState({
 							key   : "settings",
 							value : this.settings
 						})
 					);
-
 					resolve();
 				})
 				.catch((e) => {
@@ -177,6 +162,36 @@ class Settings {
 					reject();
 				});
 		});
+	}
+
+	mergeSettings(data) {
+		let json                 = false;
+		let tmp_default_settings = Object.assign({}, JSON.parse(JSON.stringify(default_settings)));
+
+		try {
+			json = JSON.parse(data);
+		} catch (e) {}
+
+		if (!json) {
+			json = tmp_default_settings;
+		} else {
+			json = merge(tmp_default_settings, json);
+		}
+
+		this.settings = json;
+	}
+
+	importSettings(settings_key) {
+		let data = atob(settings_key);
+
+		this.mergeSettings(data);
+		this.saveSettings();
+		store.dispatch(
+			updateState({
+				key   : "settings",
+				value : this.settings
+			})
+		);
 	}
 
 	getSetting(key) {

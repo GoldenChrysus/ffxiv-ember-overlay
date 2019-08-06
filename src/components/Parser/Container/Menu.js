@@ -44,6 +44,9 @@ class Menu extends React.Component {
 					<MenuItem onClick={SettingsService.openSettingsWindow}>
 						Settings
 					</MenuItem>
+					<MenuItem onClick={SettingsService.openSettingsImport}>
+						Import
+					</MenuItem>
 				</div>
 			</ContextMenu>
 		);

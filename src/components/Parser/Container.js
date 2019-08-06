@@ -6,6 +6,7 @@ import ReactTooltip from "react-tooltip";
 
 import Header from "./Header";
 import ContextMenu from "./Container/Menu";
+import Import from "./Container/Import";
 import GameState from "./GameState";
 import PlayerTable from "./PlayerTable";
 import PlayerDetail from "./PlayerDetail";
@@ -27,10 +28,24 @@ class Container extends React.Component {
 
 		let content;
 
-		if (viewing === "tables") {
-			content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
-		} else if (viewing === "player") {
-			content = <PlayerDetail player={this.props.internal.detail_player} players={this.props.internal.game.Combatant} encounter={encounter}/>;
+		switch (viewing) {
+			case "tables":
+				content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
+
+				break;
+
+			case "player":
+				content = <PlayerDetail player={this.props.internal.detail_player} players={this.props.internal.game.Combatant} encounter={encounter}/>;
+
+				break;
+
+			case "import":
+				content = <Import/>;
+
+				break;
+
+			default:
+				break;
 		}
 
 		let header;
