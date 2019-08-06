@@ -3,6 +3,7 @@ import clone from "lodash.clonedeep";
 import Settings from "../../data/Settings";
 import SocketService from "../../services/SocketService";
 import ObjectService from "../../services/ObjectService";
+import GameDataProcessor from "../../processors/GameDataProcessor";
 
 const initial_state = {
 	socket_service : new SocketService(),
@@ -27,10 +28,21 @@ function rootReducer(state, action) {
 	let new_state = false;
 	let full_key  = action.key;
 
-	if (action.type === "setSetting") {
-		state.settings_data.setSetting(action.key, action.payload);
+	switch (action.type) {
+		case "setSetting":
+			state.settings_data.setSetting(action.key, action.payload);
 
-		full_key = `settings.${action.key}`;
+			full_key = `settings.${action.key}`;
+
+			break;
+
+		case "parseGameData":
+			action.payload = GameDataProcessor.normalizeLocales(action.payload);
+
+			break;
+
+		default:
+			break;
 	}
 
 	if (full_key) {
