@@ -14,6 +14,9 @@
     - To export, open the settings window, navigate to the "Export" page, and copy the export key
     - To import, right click on the overlay, choose "Import," and paste the exported key
 - Added streamers panel at Settings > Streamers
+    - If streamers are live, only live streamers are featured
+    - If all streamers are offline, all streamers are featured
+    - Streamer display order is random for fairness
 - IN PROGRESS: Add light theme
 
 ### UI Changes
