@@ -42,10 +42,10 @@ class Parser extends React.Component {
 					{setting_style}
 					{this.props.css}
 				</style>
-				<Placeholder type="top left"/>
-				<Placeholder type="top right"/>
-				<Placeholder type="bottom left"/>
-				<Placeholder type="bottom right"/>
+				<Placeholder type="top left" light_theme={this.props.light_theme}/>
+				<Placeholder type="top right" light_theme={this.props.light_theme}/>
+				<Placeholder type="bottom left" light_theme={this.props.light_theme}/>
+				<Placeholder type="bottom right" light_theme={this.props.light_theme}/>
 				<div id="root-inner" className={root_inner_classes}>
 					<Container/>
 				</div>
@@ -61,7 +61,8 @@ const mapStateToProps = (state) => {
 		viewing       : state.internal.viewing,
 		css           : state.settings.custom.css || "",
 		opacity       : state.settings.interface.opacity,
-		zoom          : state.settings.interface.zoom
+		zoom          : state.settings.interface.zoom,
+		light_theme   : state.settings.interface.light_theme
 	};
 };
 

@@ -14,10 +14,12 @@ class Placeholder extends React.Component {
 	}
 
 	render() {
+		let image_src = (this.props.light_theme) ? "img/icons/placeholder-light-theme.png" : "img/icons/placeholder-dark-theme.png";
+
 		return (
 			<div className={"placeholder " + this.props.type + " hidden"} onClick={this.togglePlaceholders.bind(this)}>
 				<div className="inner">
-					<img src="img/icons/placeholder.png" alt="Minimized button"></img>
+					<img src={image_src} alt="Minimized button"></img>
 				</div>
 			</div>
 		);
