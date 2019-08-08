@@ -17,7 +17,8 @@ const default_settings = {
 		opacity        : 100,
 		zoom           : 100,
 		top_right_rank : false,
-		collapse_down  : false
+		collapse_down  : false,
+		light_theme    : false
 	},
 	custom        : {
 		css : ""

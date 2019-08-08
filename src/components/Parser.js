@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import "./../styles/components/parser/parser-dark.less";
+import "./../styles/components/parser/parser-theme.less";
 
 import Container from "./Parser/Container";
 import Placeholder from "./Parser/Placeholder";

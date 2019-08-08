@@ -1,7 +1,15 @@
 #settings-container {
 	height: 100%;
 	margin: 0;
-	background: @dark_placeholderInnerBackground;
+
+	.setThemeStyle(
+		{
+			background: @dark_placeholderInnerBackground;
+		},
+		{
+			background: @light_placeholderInnerBackground;
+		}
+	);
 }
 
 #settings-container .ui.fluid.container {
@@ -29,35 +37,81 @@
 }
 
 #settings-container #settings-sidebar #settings-menu .item {
-	background: @dark_placeholderInnerBackground;
-	color: @dark_playerDetailSectionDataTitleText;
 	border-radius: 0;
+
+	.setThemeStyle(
+		{
+			background: @dark_placeholderInnerBackground;
+			color: @dark_playerDetailSectionDataTitleText;
+		},
+		{
+			background: @light_placeholderInnerBackground;
+			color: @light_playerDetailSectionDataTitleText;
+		}
+	);
 }
 
 #settings-container #settings-sidebar #settings-menu .item.active {
-	background-color: @dark_toggleBackground;
+	.setThemeStyle(
+		{
+			background-color: @dark_toggleBackground;
+		},
+		{
+			background-color: @light_toggleBackground;
+		}
+	);
 }
 
 #settings-container #settings-sidebar #settings-menu .item:before {
-	background: @dark_playerTableRowBackground;
+	.setThemeStyle(
+		{
+			background: @dark_playerTableRowBackground;
+		},
+		{
+			background: @light_playerTableRowBackground;
+		}
+	);
 }
 
 #settings-container #settings-sidebar #settings-menu .item:not(.active):hover {
-	background-color: @dark_contextMenuShadow;
+	.setThemeStyle(
+		{
+			background-color: @dark_contextMenuShadow;
+		},
+		{
+			background-color: @light_contextMenuShadow;
+		}
+	);	
 }
 
 #settings-container #settings-screen {
-	background: @dark_contextMenuBackground;
-	box-shadow: -1px 0 0 0 @dark_borderInnerShadow;
 	position: absolute;
 	right: 0;
 	height: 100%;
 	overflow-y: scroll;
+
+	.setThemeStyle(
+		{
+			background: @dark_contextMenuBackground;
+			box-shadow: -1px 0 0 0 @dark_borderInnerShadow;
+		},
+		{
+			background: @light_contextMenuBackground;
+			box-shadow: -1px 0 0 0 @light_borderInnerShadow;
+		}
+	);
 }
 
 #settings-container #settings-screen .ui.form button.save,
 #settings-container #settings-screen .ui.form button.export {
-	background: @dark_borderOuter;
+	.setThemeStyle(
+		{
+			background: @dark_borderOuter;
+		},
+		{
+			background: @light_borderOuter;
+		}
+	);
 }
 
 #settings-container #settings-screen .ui.form button.export {
@@ -66,7 +120,14 @@
 
 #settings-container #settings-screen .ui.form button.save:active,
 #settings-container #settings-screen .ui.form button.export:active {
-	background: @dark_importantText;
+	.setThemeStyle(
+		{
+			background: @dark_importantText;
+		},
+		{
+			background: @light_importantText;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container {
@@ -79,7 +140,15 @@
 
 #settings-container #settings-screen .section-container > h2 {
 	margin-bottom: 0;
-	color: @dark_importantText;
+
+	.setThemeStyle(
+		{
+			color: @dark_importantText;
+		},
+		{
+			color: @light_importantText;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container p,
@@ -94,30 +163,73 @@
 #settings-container #settings-screen .section-container p,
 #settings-container #settings-screen .section-container h3,
 #settings-container #settings-screen .section-container .field .ui.toggle.checkbox input:checked ~ label {
-	color: @dark_playerDetailSectionTitleText !important;
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionTitleText !important;
+		},
+		{
+			color: @light_playerDetailSectionTitleText !important;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .field .ui.toggle.checkbox input ~ label:before {
-	background: @dark_playerTableRowBackground !important;
+	.setThemeStyle(
+		{
+			background: @dark_playerTableRowBackground !important;
+		},
+		{
+			background: @light_playerTableRowBackground !important;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .field .ui.toggle.checkbox input ~ label:hover:before {
-	background: @dark_rowAndLinkHoverBackground !important;
+	.setThemeStyle(
+		{
+			background: @dark_rowAndLinkHoverBackground !important;
+		},
+		{
+			background: @light_rowAndLinkHoverBackground !important;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .field .ui.toggle.checkbox input:checked ~ label:before {
-	background: @dark_importantTextRGBA65 !important;
+	.setThemeStyle(
+		{
+			background: @dark_importantTextRGBA65 !important;
+		},
+		{
+			background: @light_importantTextRGBA65 !important;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .field .ui.dropdown,
 #settings-container #settings-screen .section-container .field textarea {
-	background: @dark_footerActiveLinkBackground !important;
+	.setThemeStyle(
+		{
+			background: @dark_footerActiveLinkBackground !important;
+		},
+		{
+			background: @light_footerActiveLinkBackground !important;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .field textarea,
 #settings-container #settings-screen .section-container .field .code pre {
-	color: @dark_playerDetailSectionTitleText !important;
 	cursor: text;
+
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionTitleText !important;
+		},
+		{
+			color: @light_playerDetailSectionTitleText !important;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .field .code {
@@ -131,28 +243,64 @@
 }
 
 #settings-container #settings-screen .section-container .field .ui.dropdown a.ui.label {
-	background: @dark_borderOuterShadow;
+	.setThemeStyle(
+		{
+			background: @dark_borderOuterShadow;
+		},
+		{
+			background: @light_borderOuterShadow;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .field .ui.dropdown input.search,
 #settings-container #settings-screen .section-container .field .ui.dropdown div.text {
-	color: @dark_playerDetailSectionTitleText;
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionTitleText;
+		},
+		{
+			color: @light_playerDetailSectionTitleText;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .field > .ui-slider {
-	background: @dark_footerActiveLinkBackground;
 	border: 0;
+
+	.setThemeStyle(
+		{
+			background: @dark_footerActiveLinkBackground;
+		},
+		{
+			background: @light_footerActiveLinkBackground;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .field > .ui-slider > .ui-widget-header {
-	background: @dark_borderOuterShadow;
+	.setThemeStyle(
+		{
+			background: @dark_borderOuterShadow;
+		},
+		{
+			background: @light_borderOuterShadow;
+		}
+	);
 }
 #settings-container #settings-screen .section-container .field > .ui-slider > .ui-slider-handle {
 	border-radius: 50%;
 }
 
 #settings-container #settings-screen .section-container .field > .ui-slider > .ui-slider-handle.ui-state-active {
-	background: @dark_borderOuter;
+	.setThemeStyle(
+		{
+			background: @dark_borderOuter;
+		},
+		{
+			background: @light_borderOuter;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container p .discord {
@@ -182,14 +330,30 @@
 }
 
 #settings-container #settings-screen .section-container .changelog-section h4 {
-	color: @dark_borderOuterShadow;
 	margin-bottom: 0;
 	padding: 0;
+
+	.setThemeStyle(
+		{
+			color: @dark_borderOuterShadow;
+		},
+		{
+			color: @light_borderOuterShadow;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .changelog-section ul {
 	margin-top: 0;
-	color: @dark_headerSubtitleText;
+
+	.setThemeStyle(
+		{
+			color: @dark_headerSubtitleText;
+		},
+		{
+			color: @light_headerSubtitleText;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container .info-span {
@@ -213,7 +377,15 @@
 	margin: 0 4px 4px 0;
 	padding: 4px 8px;
 	box-sizing: border-box;
-	background: @dark_gridItemBackground;
+
+	.setThemeStyle(
+		{
+			background: @dark_gridItemBackground;
+		},
+		{
+			background: @light_gridItemBackground;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container #streamers .row:nth-child(3n),
@@ -225,8 +397,16 @@
 	display: block;
 	width: 100%;
 	text-align: center;
-	color: @dark_playerDetailSectionTitleText !important;
 	user-select: text !important;
+
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionTitleText !important;
+		},
+		{
+			color: @light_playerDetailSectionTitleText !important;
+		}
+	);
 }
 
 #settings-container #settings-screen .section-container #streamers .row a .name {

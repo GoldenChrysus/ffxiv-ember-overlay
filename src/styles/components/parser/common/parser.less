@@ -63,29 +63,47 @@
 }
 
 #container {
-	width            : calc(100% - 8px);
-	height           : calc(100% - 8px);
-	position         : relative;
-	box-sizing       : border-box;
-	background-color : @dark_containerBackground;
-	box-shadow       : inset 0 1px 1px 0 @dark_borderOuter, inset 0 0 1px 0 @dark_borderOuterShadow, 0 0 1px 2px @dark_borderOuterGlow, 0 2px 2px 2px @dark_borderOuterGlow;
-	border-radius    : 8px;
-	padding          : 5px;
-	margin           : 0 auto;
-	margin-top       : 4px;
+	width         : calc(100% - 8px);
+	height        : calc(100% - 8px);
+	position      : relative;
+	box-sizing    : border-box;
+	border-radius : 8px;
+	padding       : 5px;
+	margin        : 0 auto;
+	margin-top    : 4px;
+
+	.setThemeStyle(
+		{
+			background-color: @dark_containerBackground;
+			box-shadow: inset 0 1px 1px 0 @dark_borderOuter, inset 0 0 1px 0 @dark_borderOuterShadow, 0 0 1px 2px @dark_borderOuterGlow, 0 2px 2px 2px @dark_borderOuterGlow;
+		},
+		{
+			background-color: @light_containerBackground;
+			box-shadow: inset 0 1px 1px 0 @light_borderOuter, inset 0 0 1px 0 @light_borderOuterShadow, 0 0 1px 2px @light_borderOuterGlow, 0 2px 2px 2px @light_borderOuterGlow;
+		}
+	);
 }
 
 #container #inner {
-	width            : 100%;
-	height           : 100%;
-	position         : relative;
-	box-sizing       : border-box;
-	display          : flex;
-	flex-direction   : column;
-	background-image : @dark_contentBackground;
-	box-shadow       : inset 0 0 0 1px @dark_borderInner, 0 0 0 2px @dark_borderInnerShadow, 0 3px 1px @dark_borderOuter, 0 0 2px 1px @dark_borderInnerGlow;
-	border-radius    : 4px;
-	overflow         : hidden;
+	width          : 100%;
+	height         : 100%;
+	position       : relative;
+	box-sizing     : border-box;
+	display        : flex;
+	flex-direction : column;
+	border-radius  : 4px;
+	overflow       : hidden;
+
+	.setThemeStyle(
+		{
+			background-image: @dark_contentBackground;
+			box-shadow: inset 0 0 0 1px @dark_borderInner, 0 0 0 2px @dark_borderInnerShadow, 0 3px 1px @dark_borderOuter, 0 0 2px 1px @dark_borderInnerGlow;
+		},
+		{
+			background-image: @light_contentBackground;
+			box-shadow: inset 0 0 0 1px @light_borderInner, 0 0 0 2px @light_borderInnerShadow, 0 3px 1px @light_borderOuter, 0 0 2px 1px @light_borderInnerGlow;
+		}
+	);
 }
 
 .container-context-menu .split,
@@ -95,6 +113,15 @@
     height     : 1px;
     min-height : 1px;
     box-shadow : 0 -1px 0 @dark_borderInnerGlow, inset 0 -1px 0 @dark_borderInner;
+
+    .setThemeStyle(
+		{
+			box-shadow: 0 -1px 0 @dark_borderInnerGlow, inset 0 -1px 0 @dark_borderInner;
+		},
+		{
+			box-shadow: 0 -1px 0 @dark_borderInnerGlow, inset 0 -1px 0 @light_borderInner;
+		}
+	);
 }
 
 #container #inner #header {
@@ -104,23 +131,39 @@
 }
 
 #container #inner #header .title {
-	color          : @dark_headerAndLinkText;
 	font-size      : 8px;
 	line-height    : 8px;
 	text-transform : uppercase;
 	letter-spacing : 1px;
 	font-weight    : bold;
 	float          : left;
+
+	 .setThemeStyle(
+		{
+			color: @dark_headerAndLinkText;
+		},
+		{
+			color: @light_headerAndLinkText;
+		}
+	);
 }
 
 #container #inner #header .subtitle {
-	color          : @dark_headerSubtitleText;
 	padding-right  : 16px;
 	font-size      : 8px;
 	line-height    : 8px;
 	text-transform : uppercase;
 	float          : right;
 	font-style     : italic;
+
+	.setThemeStyle(
+		{
+			color: @dark_headerSubtitleText;
+		},
+		{
+			color: @light_headerSubtitleText;
+		}
+	);
 }
 
 #container > .toggle {
@@ -128,14 +171,23 @@
 	width         : 12px;
 	height        : 12px;
 	border-radius : 50%;
-	background    : @dark_toggleBackground;
-	box-shadow    : inset 0 2px 2px 0 @dark_borderOuter, inset 0 0 2px 0 @dark_placeholderInsetBorder, 0 0 2px 2px @dark_toggleShadow, 0 2px 2px 2px @dark_toggleShadow;
 	cursor        : pointer;
 	cursor        : hand;
 	touch-action  : manipulation;
 	transition    : 0.5s;
 	opacity       : 0;
 	z-index       : 2;
+
+	.setThemeStyle(
+		{
+			background: @dark_toggleBackground;
+			box-shadow: inset 0 2px 2px 0 @dark_borderOuter, inset 0 0 2px 0 @dark_placeholderInsetBorder, 0 0 2px 2px @dark_toggleShadow, 0 2px 2px 2px @dark_toggleShadow;
+		},
+		{
+			background: @light_toggleBackground;
+			box-shadow: inset 0 2px 2px 0 @light_borderOuter, inset 0 0 2px 0 @light_placeholderInsetBorder, 0 0 2px 2px @light_toggleShadow, 0 2px 2px 2px @light_toggleShadow;
+		}
+	);
 }
 
 #container > .toggle.top {
@@ -251,13 +303,23 @@
 }
 
 #container #inner #content #player-table .row {
-	background    : @dark_playerTableRowBackground;
-	width         : 100%;
-	display       : table-row;
-	padding       : 4px 0;
-	color         : @dark_playerTableRowText;
-	font-size     : 11px;
-	border-bottom : 1px solid @dark_gridItemBackground;
+	width     : 100%;
+	display   : table-row;
+	padding   : 4px 0;
+	font-size : 11px;
+
+	.setThemeStyle(
+		{
+			background: @dark_playerTableRowBackground;
+			color: @dark_playerTableRowText;
+			border-bottom: 1px solid @dark_gridItemBackground;
+		},
+		{
+			background: @light_playerTableRowBackground;
+			color: @light_playerTableRowText;
+			border-bottom: 1px solid @light_gridItemBackground;
+		}
+	);
 }
 
 #container #inner #content #player-table.grid .row {
@@ -268,7 +330,15 @@
 	margin         : 0 4px 4px 0;
 	padding        : 4px;
 	box-sizing     : border-box;
-	background     : @dark_gridItemBackground;
+
+	.setThemeStyle(
+		{
+			background: @dark_gridItemBackground;
+		},
+		{
+			background: @light_gridItemBackground;
+		}
+	);
 }
 
 #container #inner #content #player-table.grid .row:nth-child(4n),
@@ -277,12 +347,20 @@
 }
 
 #container #inner #content #player-table:not(.grid) .row:before {
-	position   : absolute;
-	display    : block;
-	content    : '';
-	background : @dark_playerTableRowBorderTop;
-	height     : 1px;
-	width      : 100%;
+	position : absolute;
+	display  : block;
+	content  : '';
+	height   : 1px;
+	width    : 100%;
+
+	.setThemeStyle(
+		{
+			background: @dark_playerTableRowBorderTop;
+		},
+		{
+			background: @light_playerTableRowBorderTop;
+		}
+	);
 }
 
 #container #inner #content #player-table .row .column {
@@ -296,17 +374,39 @@
 }
 
 #container #inner #content #player-table .row.header {
-	background : @dark_playerTableHeaderRowBackground;
+	.setThemeStyle(
+		{
+			background: @dark_playerTableHeaderRowBackground;
+		},
+		{
+			background: @light_playerTableHeaderRowBackground;
+		}
+	);
 }
 
 #container #inner #content #player-table .row.header .column {
 	font-weight    : bold;
-	color          : @dark_headerAndLinkText;
 	text-transform : uppercase;
+
+	.setThemeStyle(
+		{
+			color: @dark_headerAndLinkText;
+		},
+		{
+			color: @light_headerAndLinkText;
+		}
+	);
 }
 
 #container #inner #content #player-table .row.active {
-	background : @dark_playerTableActiveRowBackground;
+	.setThemeStyle(
+		{
+			background: @dark_playerTableActiveRowBackground;
+		},
+		{
+			background: @light_playerTableActiveRowBackground;
+		}
+	);
 }
 
 #container #inner #content #player-table .row.player,
@@ -315,7 +415,14 @@
 }
 
 #container #inner #content #player-table .row.player:not(.active):hover {
-	background : @dark_rowAndLinkHoverBackground;
+	.setThemeStyle(
+		{
+			background: @dark_rowAndLinkHoverBackground;
+		},
+		{
+			background: @light_rowAndLinkHoverBackground;
+		}
+	);
 }
 
 #container #inner #content #player-table .row > .column:first-child,
@@ -362,7 +469,14 @@
 #container #inner #content #player-table .row.player > .column:nth-child(2),
 #container #inner #content #player-table.grid .row.player .player-data > .column:nth-child(2),
 #container #inner #content #player-table.grid .row.player .stat-data > .column span {
-	color : @dark_importantText;
+	.setThemeStyle(
+		{
+			color: @dark_importantText;
+		},
+		{
+			color: @light_importantText;
+		}
+	);
 }
 
 #container #inner #content #player-table.grid .row.player .player-data > .column:nth-child(2) {
@@ -411,9 +525,9 @@
 #container #inner #content #player-detail .header .job,
 #container #inner #content #player-detail .header .name,
 #container #inner #content #import .header .name {
-	display        : flex;
-	flex-direction : column;
-	flex           : 1;
+	display         : flex;
+	flex-direction  : column;
+	flex            : 1;
 	justify-content : center;
 }
 
@@ -429,8 +543,16 @@
 #container #inner #content #player-detail .header .name,
 #container #inner #content #import .header .name {
 	padding-left : 8px;
-	color        : @dark_importantText;
 	font-size    : 28px;
+
+	.setThemeStyle(
+		{
+			color: @dark_importantText;
+		},
+		{
+			color: @light_importantText;
+		}
+	);
 }
 
 #container #inner #content #import .header .name {
@@ -447,11 +569,19 @@
 }
 
 #container #inner #content #player-detail .section > .title {
-	color          : @dark_playerDetailSectionTitleText;
 	text-transform : uppercase;
 	font-weight    : bold;
 	font-size      : 19px;
 	padding        : 6px 0 8px 0;
+
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionTitleText;
+		},
+		{
+			color: @light_playerDetailSectionTitleText;
+		}
+	);
 }
 
 #container #inner #content #player-detail .section > .data {
@@ -468,7 +598,15 @@
 	flex-basis     : calc(50% - 16px);
 	padding        : 8px;
 	box-sizing     : border-box;
-	background     : @dark_gridItemBackground;
+
+	.setThemeStyle(
+		{
+			background: @dark_gridItemBackground;
+		},
+		{
+			background: @light_gridItemBackground;
+		}
+	);
 }
 
 #container #inner #content #player-detail .section > .data .column:nth-child(even),
@@ -477,14 +615,29 @@
 }
 
 #container #inner #content #player-detail .section > .data .column > .title {
-	color       : @dark_playerDetailSectionDataTitleText;
 	font-weight : bold;
 	font-size   : 12px;
+
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionDataTitleText;
+		},
+		{
+			color: @light_playerDetailSectionDataTitleText;
+		}
+	);
 }
 
 #container #inner #content #import .section > p,
 #container #inner #content #player-detail .section > .data .column .value {
-	color : @dark_playerDetailSectionDataValueText;
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionDataValueText;
+		},
+		{
+			color: @light_playerDetailSectionDataValueText;
+		}
+	);
 }
 
 #container #inner #content #player-detail .section:last-child {
@@ -492,21 +645,51 @@
 }
 
 #container #inner #content #import .section input {
-	background : @dark_footerActiveLinkBackground !important;
+	.setThemeStyle(
+		{
+			background: @dark_footerActiveLinkBackground !important;
+		},
+		{
+			background: @light_footerActiveLinkBackground !important;
+		}
+	);
 }
 
 #container #inner #content #import .section input {
-	color  : @dark_playerDetailSectionTitleText !important;
 	cursor : text;
+
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionTitleText !important;
+		},
+		{
+			color: @light_playerDetailSectionTitleText !important;
+		}
+	);
 }
 
 #container #inner #content #import .section .ui.form button.import {
-	background : @dark_borderOuter;
 	margin-top : 4px;
+
+	.setThemeStyle(
+		{
+			background: @dark_borderOuter;
+		},
+		{
+			background: @light_borderOuter;
+		}
+	);
 }
 
 #container #inner #content #import .section .ui.form button.import:active {
-	background : @dark_importantText;
+	.setThemeStyle(
+		{
+			background: @dark_importantText;
+		},
+		{
+			background: @light_importantText;
+		}
+	);
 }
 
 #container #inner #footer {
@@ -532,7 +715,6 @@
 	padding        : 4px 4px;
 	display        : inline-block;
 	border-radius  : 4px;
-	color          : @dark_headerAndLinkText;
 	text-transform : uppercase;
 	line-height    : 9px;
 	font-size      : 9px;
@@ -541,28 +723,62 @@
 	cursor         : pointer;
 	cursor         : hand;
 	touch-action   : manipulation;
+
+	.setThemeStyle(
+		{
+			color: @dark_headerAndLinkText;
+		},
+		{
+			color: @light_headerAndLinkText;
+		}
+	);
 }
 
 #container #inner #footer #role-links .role-link.active {
-	background : @dark_footerActiveLinkBackground;
-	box-shadow : inset 0 -1px 0 @dark_borderInner, inset 0 1px 2px @dark_borderInnerGlow;
+	.setThemeStyle(
+		{
+			background: @dark_footerActiveLinkBackground;
+			box-shadow: inset 0 -1px 0 @dark_borderInner, inset 0 1px 2px @dark_borderInnerGlow;
+		},
+		{
+			background: @light_footerActiveLinkBackground;
+			box-shadow: inset 0 -1px 0 @light_borderInner, inset 0 1px 2px @light_borderInnerGlow;
+		}
+	);
 }
 
 #container #inner #footer #role-links .role-link:not(.active):hover,
 #container #inner #footer #navigation-links .navigation-link:not(.active):hover {
-	background : @dark_rowAndLinkHoverBackground;
-	box-shadow : inset 0 -1px 0 @dark_footerLinkInnerShadow, inset 0 1px 2px @dark_footerLinkOuterShadow;
+	.setThemeStyle(
+		{
+			background: @dark_rowAndLinkHoverBackground;
+			box-shadow: inset 0 -1px 0 @dark_footerLinkInnerShadow, inset 0 1px 2px @dark_footerLinkOuterShadow;
+		},
+		{
+			background: @light_rowAndLinkHoverBackground;
+			box-shadow: inset 0 -1px 0 @light_footerLinkInnerShadow, inset 0 1px 2px @light_footerLinkOuterShadow;
+		}
+	);
 }
 
 .placeholder {
 	position      : absolute;
 	width         : 2.5rem;
 	height        : 2.5rem;
-	background    : @dark_toggleBackground;
-	box-shadow    : inset 0 1px 1px 0 @dark_borderOuter, inset 0 0 1px 0 @dark_placeholderInsetBorder, 0 0 1px 2px @dark_borderOuterGlow, 0 2px 2px 2px @dark_borderOuterGlow;
 	border-radius : 50%;
 	padding       : 5px;
 	touch-action  : manipulation;
+
+	.setThemeStyle(
+		{
+			background: @dark_toggleBackground;
+			box-shadow: inset 0 1px 1px 0 @dark_borderOuter, inset 0 0 1px 0 @dark_placeholderInsetBorder, 0 0 1px 2px @dark_borderOuterGlow, 0 2px 2px 2px @dark_borderOuterGlow;
+		},
+		{
+			background: @light_toggleBackground;
+			box-shadow: inset 0 1px 1px 0 @light_borderOuter, inset 0 0 1px 0 @light_placeholderInsetBorder, 0 0 1px 2px @light_borderOuterGlow, 0 2px 2px 2px @light_borderOuterGlow;
+		}
+	);
 }
 
 .placeholder,
@@ -594,9 +810,18 @@
 	justify-content : center;
 	align-items     : center;
 	overflow        : hidden;
-	background      : @dark_placeholderInnerBackground;
-	box-shadow      : inset 0 0 0 1px @dark_borderInner, 0 0 0 2px @dark_borderInnerShadow, 0 3px 1px @dark_borderOuter, 0 0 2px 1px @dark_borderInnerGlow;
 	border-radius   : 50%;
+
+	.setThemeStyle(
+		{
+			background: @dark_placeholderInnerBackground;
+			box-shadow: inset 0 0 0 1px @dark_borderInner, 0 0 0 2px @dark_borderInnerShadow, 0 3px 1px @dark_borderOuter, 0 0 2px 1px @dark_borderInnerGlow;
+		},
+		{
+			background: @light_placeholderInnerBackground;
+			box-shadow: inset 0 0 0 1px @light_borderInner, 0 0 0 2px @light_borderInnerShadow, 0 3px 1px @light_borderOuter, 0 0 2px 1px @light_borderInnerGlow;
+		}
+	);
 }
 
 .placeholder .inner img {
@@ -607,13 +832,25 @@
 
 .container-context-menu {
 	z-index       : 50;
-    border-top    : 1px solid @dark_borderInner;
-    border-bottom : 1px solid @dark_borderInnerGlow;
-    background    : @dark_contextMenuBackground;
-    border-radius : 4px;
-    text-shadow   : 0 1px @dark_contextMenuShadow;
-    box-shadow    : 0 0 1px @dark_contextMenuShadow, 0 2px 3px @dark_contextMenuShadow;
-    min-width     : 10rem;
+	border-radius : 4px;
+	min-width     : 10rem;
+
+	.setThemeStyle(
+		{
+			border-top: 1px solid @dark_borderInner;
+			border-bottom: 1px solid @dark_borderInnerGlow;
+			background: @dark_contextMenuBackground;
+			text-shadow: 0 1px @dark_contextMenuShadow;
+			box-shadow: 0 0 1px @dark_contextMenuShadow, 0 2px 3px @dark_contextMenuShadow;
+		},
+		{
+			border-top: 1px solid @light_borderInner;
+			border-bottom: 1px solid @light_borderInnerGlow;
+			background: @light_contextMenuBackground;
+			text-shadow: 0 1px @light_contextMenuShadow;
+			box-shadow: 0 0 1px @light_contextMenuShadow, 0 2px 3px @light_contextMenuShadow;
+		}
+	);
 }
 
 .container-context-menu .item-group {
@@ -622,17 +859,32 @@
 
 .container-context-menu .item-group .react-contextmenu-item {
 	display       : block;
-    margin        : 0.2rem 0;
-    padding       : 0.3rem 0.8rem;
-    border-radius : 1rem;
-    font-size     : 0.9rem;
-    line-height   : 1;
-    color         : @dark_contextMenuItemBackground;
-    cursor        : pointer;
+	margin        : 0.2rem 0;
+	padding       : 0.3rem 0.8rem;
+	border-radius : 1rem;
+	font-size     : 0.9rem;
+	line-height   : 1;
+	cursor        : pointer;
+
+	.setThemeStyle(
+		{
+			color: @dark_contextMenuItemBackground;
+		},
+		{
+			color: @light_contextMenuItemBackground;
+		}
+	);
 }
 
 .container-context-menu .item-group .react-contextmenu-item:hover {
-	background: linear-gradient(90deg, @dark_borderInnerGlow, transparent);
+	.setThemeStyle(
+		{
+			background: linear-gradient(90deg, @dark_borderInnerGlow, transparent);
+		},
+		{
+			background: linear-gradient(90deg, @light_borderInnerGlow, transparent);
+		}
+	);
 }
 
 .hidden {
@@ -649,13 +901,28 @@
 }
 
 .react-tooltip {
-	padding    : 3px 6px;
-	background : @dark_toggleBackground !important;
-	font-size  : 11px;
+	padding   : 3px 6px;
+	font-size : 11px;
+
+	.setThemeStyle(
+		{
+			background: @dark_toggleBackground !important;
+		},
+		{
+			background: @light_toggleBackground !important;
+		}
+	);
 }
 
 .react-tooltip:after {
-	border-left-color : @dark_toggleBackground !important;
+	.setThemeStyle(
+		{
+			border-left-color: @dark_toggleBackground !important;
+		},
+		{
+			border-left-color: @light_toggleBackground !important;
+		}
+	);
 }
 
 ::-webkit-scrollbar {

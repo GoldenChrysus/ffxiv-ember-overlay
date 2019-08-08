@@ -4,6 +4,7 @@ import Settings from "../../data/Settings";
 import SocketService from "../../services/SocketService";
 import ObjectService from "../../services/ObjectService";
 import GameDataProcessor from "../../processors/GameDataProcessor";
+import ThemeService from "../../services/ThemeService";
 
 const initial_state = {
 	socket_service : new SocketService(),
@@ -49,6 +50,12 @@ function rootReducer(state, action) {
 		new_state = clone(state);
 
 		ObjectService.setByKeyPath(new_state, full_key, action.payload);
+
+		if (["settings", "settings.interface.light_theme"].indexOf(full_key) !== -1) {
+			let light_theme = (full_key === "settings") ? action.payload.interface.light_theme : action.payload;
+
+			ThemeService.setTheme(light_theme);
+		}
 	}
 
 	return Object.assign(

@@ -58,6 +58,14 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.interface.collapse_down;
 							}
+						},
+						{
+							key_path : "interface.light_theme",
+							label    : "Use Light Theme",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.light_theme;
+							}
 						}
 					]
 				}

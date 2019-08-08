@@ -10,7 +10,7 @@ import Export from "./Settings/Export";
 import About from "./Settings/About";
 import Streamers from "./Settings/Streamers";
 
-import "./../styles/components/settings/settings-dark.less";
+import "./../styles/components/settings/settings-theme.less";
 
 class Settings extends React.Component {
 	componentWillMount() {
