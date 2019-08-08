@@ -55,6 +55,8 @@ function rootReducer(state, action) {
 				new_state = createNewState(new_state, full_key, setting);
 			}
 
+			new_state.settings_data.saveSettings();
+
 			break;
 
 		default:
