@@ -1,0 +1,7 @@
+.setThemeStyle(@defaultTheme: {}, @lightTheme: {}) {
+	& { @defaultTheme(); }
+
+	body.light & {
+		@lightTheme();
+	}
+}

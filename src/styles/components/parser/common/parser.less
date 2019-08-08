@@ -1,5 +1,3 @@
-@import "../../../../semantic-ui/site/globals/site.variables";
-
 .react-contextmenu-wrapper {
 	width  : 100%;
 	height : 100%;
@@ -13,11 +11,19 @@
 }
 
 .icon-container {
-	display        : inline-block;
-	padding        : 2px 2px;
-	border-radius  : 4px;
-	color          : @headerAndLinkText;
-	transition     : 0.5s;
+	display       : inline-block;
+	padding       : 2px 2px;
+	border-radius : 4px;
+	transition    : 0.5s;
+
+	.setThemeStyle(
+		{
+			color: @dark_headerAndLinkText;
+		},
+		{
+			color: @light_headerAndLinkText;
+		}
+	);
 }
 
 .icon-container,
@@ -27,8 +33,16 @@
 }
 
 .icon-container:hover {
-	background : @rowAndLinkHoverBackground;
-	box-shadow : inset 0 -1px 0 @footerLinkInnerShadow, inset 0 1px 2px @footerLinkOuterShadow;
+	.setThemeStyle(
+		{
+			background: @dark_rowAndLinkHoverBackground;
+			box-shadow: inset 0 -1px 0 @dark_footerLinkInnerShadow, inset 0 1px 2px @dark_footerLinkOuterShadow;
+		},
+		{
+			background: @light_rowAndLinkHoverBackground;
+			box-shadow: inset 0 -1px 0 @light_footerLinkInnerShadow, inset 0 1px 2px @light_footerLinkOuterShadow;
+		}
+	);
 }
 
 .icon-container i.icon {
@@ -38,7 +52,14 @@
 }
 
 .icon-container.notice {
-	color : @borderOuter;
+	.setThemeStyle(
+		{
+			color: @dark_borderOuter;
+		},
+		{
+			color: @light_borderOuter;
+		}
+	);
 }
 
 #container {
@@ -46,8 +67,8 @@
 	height           : calc(100% - 8px);
 	position         : relative;
 	box-sizing       : border-box;
-	background-color : @containerBackground;
-	box-shadow       : inset 0 1px 1px 0 @borderOuter, inset 0 0 1px 0 @borderOuterShadow, 0 0 1px 2px @borderOuterGlow, 0 2px 2px 2px @borderOuterGlow;
+	background-color : @dark_containerBackground;
+	box-shadow       : inset 0 1px 1px 0 @dark_borderOuter, inset 0 0 1px 0 @dark_borderOuterShadow, 0 0 1px 2px @dark_borderOuterGlow, 0 2px 2px 2px @dark_borderOuterGlow;
 	border-radius    : 8px;
 	padding          : 5px;
 	margin           : 0 auto;
@@ -61,8 +82,8 @@
 	box-sizing       : border-box;
 	display          : flex;
 	flex-direction   : column;
-	background-image : @contentBackground;
-	box-shadow       : inset 0 0 0 1px @borderInner, 0 0 0 2px @borderInnerShadow, 0 3px 1px @borderOuter, 0 0 2px 1px @borderInnerGlow;
+	background-image : @dark_contentBackground;
+	box-shadow       : inset 0 0 0 1px @dark_borderInner, 0 0 0 2px @dark_borderInnerShadow, 0 3px 1px @dark_borderOuter, 0 0 2px 1px @dark_borderInnerGlow;
 	border-radius    : 4px;
 	overflow         : hidden;
 }
@@ -73,7 +94,7 @@
 	border     : none;
     height     : 1px;
     min-height : 1px;
-    box-shadow : 0 -1px 0 @borderInnerGlow, inset 0 -1px 0 @borderInner;
+    box-shadow : 0 -1px 0 @dark_borderInnerGlow, inset 0 -1px 0 @dark_borderInner;
 }
 
 #container #inner #header {
@@ -83,7 +104,7 @@
 }
 
 #container #inner #header .title {
-	color          : @headerAndLinkText;
+	color          : @dark_headerAndLinkText;
 	font-size      : 8px;
 	line-height    : 8px;
 	text-transform : uppercase;
@@ -93,7 +114,7 @@
 }
 
 #container #inner #header .subtitle {
-	color          : @headerSubtitleText;
+	color          : @dark_headerSubtitleText;
 	padding-right  : 16px;
 	font-size      : 8px;
 	line-height    : 8px;
@@ -107,8 +128,8 @@
 	width         : 12px;
 	height        : 12px;
 	border-radius : 50%;
-	background    : @toggleBackground;
-	box-shadow    : inset 0 2px 2px 0 @borderOuter, inset 0 0 2px 0 @placeholderInsetBorder, 0 0 2px 2px @toggleShadow, 0 2px 2px 2px @toggleShadow;
+	background    : @dark_toggleBackground;
+	box-shadow    : inset 0 2px 2px 0 @dark_borderOuter, inset 0 0 2px 0 @dark_placeholderInsetBorder, 0 0 2px 2px @dark_toggleShadow, 0 2px 2px 2px @dark_toggleShadow;
 	cursor        : pointer;
 	cursor        : hand;
 	touch-action  : manipulation;
@@ -138,14 +159,24 @@
 }
 
 #container #inner #game-state {
-	background     : @borderInnerGlow;
-	box-shadow     : inset 0 -1px 0 @borderInner;
 	padding        : 0 8px 2px 8px;
-	color          : @importantText;
 	font-size      : 10px;
 	text-transform : uppercase;
 	font-weight    : 600;
 	position       : relative;
+
+	.setThemeStyle(
+		{
+			background: @dark_borderInnerGlow;
+			box-shadow: inset 0 -1px 0 @dark_borderInner;
+			color: @dark_importantText;
+		},
+		{
+			background: @light_borderInnerGlow;
+			box-shadow: inset 0 -1px 0 @light_borderInner;
+			color: @light_importantText;
+		}
+	);
 }
 
 #container #inner #game-state > span:first-child {
@@ -220,13 +251,13 @@
 }
 
 #container #inner #content #player-table .row {
-	background    : @playerTableRowBackground;
+	background    : @dark_playerTableRowBackground;
 	width         : 100%;
 	display       : table-row;
 	padding       : 4px 0;
-	color         : @playerTableRowText;
+	color         : @dark_playerTableRowText;
 	font-size     : 11px;
-	border-bottom : 1px solid @gridItemBackground;
+	border-bottom : 1px solid @dark_gridItemBackground;
 }
 
 #container #inner #content #player-table.grid .row {
@@ -237,7 +268,7 @@
 	margin         : 0 4px 4px 0;
 	padding        : 4px;
 	box-sizing     : border-box;
-	background     : @gridItemBackground;
+	background     : @dark_gridItemBackground;
 }
 
 #container #inner #content #player-table.grid .row:nth-child(4n),
@@ -249,7 +280,7 @@
 	position   : absolute;
 	display    : block;
 	content    : '';
-	background : @playerTableRowBorderTop;
+	background : @dark_playerTableRowBorderTop;
 	height     : 1px;
 	width      : 100%;
 }
@@ -265,17 +296,17 @@
 }
 
 #container #inner #content #player-table .row.header {
-	background : @playerTableHeaderRowBackground;
+	background : @dark_playerTableHeaderRowBackground;
 }
 
 #container #inner #content #player-table .row.header .column {
 	font-weight    : bold;
-	color          : @headerAndLinkText;
+	color          : @dark_headerAndLinkText;
 	text-transform : uppercase;
 }
 
 #container #inner #content #player-table .row.active {
-	background : @playerTableActiveRowBackground;
+	background : @dark_playerTableActiveRowBackground;
 }
 
 #container #inner #content #player-table .row.player,
@@ -284,7 +315,7 @@
 }
 
 #container #inner #content #player-table .row.player:not(.active):hover {
-	background : @rowAndLinkHoverBackground;
+	background : @dark_rowAndLinkHoverBackground;
 }
 
 #container #inner #content #player-table .row > .column:first-child,
@@ -331,7 +362,7 @@
 #container #inner #content #player-table .row.player > .column:nth-child(2),
 #container #inner #content #player-table.grid .row.player .player-data > .column:nth-child(2),
 #container #inner #content #player-table.grid .row.player .stat-data > .column span {
-	color : @importantText;
+	color : @dark_importantText;
 }
 
 #container #inner #content #player-table.grid .row.player .player-data > .column:nth-child(2) {
@@ -398,7 +429,7 @@
 #container #inner #content #player-detail .header .name,
 #container #inner #content #import .header .name {
 	padding-left : 8px;
-	color        : @importantText;
+	color        : @dark_importantText;
 	font-size    : 28px;
 }
 
@@ -416,7 +447,7 @@
 }
 
 #container #inner #content #player-detail .section > .title {
-	color          : @playerDetailSectionTitleText;
+	color          : @dark_playerDetailSectionTitleText;
 	text-transform : uppercase;
 	font-weight    : bold;
 	font-size      : 19px;
@@ -437,7 +468,7 @@
 	flex-basis     : calc(50% - 16px);
 	padding        : 8px;
 	box-sizing     : border-box;
-	background     : @gridItemBackground;
+	background     : @dark_gridItemBackground;
 }
 
 #container #inner #content #player-detail .section > .data .column:nth-child(even),
@@ -446,14 +477,14 @@
 }
 
 #container #inner #content #player-detail .section > .data .column > .title {
-	color       : @playerDetailSectionDataTitleText;
+	color       : @dark_playerDetailSectionDataTitleText;
 	font-weight : bold;
 	font-size   : 12px;
 }
 
 #container #inner #content #import .section > p,
 #container #inner #content #player-detail .section > .data .column .value {
-	color : @playerDetailSectionDataValueText;
+	color : @dark_playerDetailSectionDataValueText;
 }
 
 #container #inner #content #player-detail .section:last-child {
@@ -461,21 +492,21 @@
 }
 
 #container #inner #content #import .section input {
-	background : @footerActiveLinkBackground !important;
+	background : @dark_footerActiveLinkBackground !important;
 }
 
 #container #inner #content #import .section input {
-	color  : @playerDetailSectionTitleText !important;
+	color  : @dark_playerDetailSectionTitleText !important;
 	cursor : text;
 }
 
 #container #inner #content #import .section .ui.form button.import {
-	background : @borderOuter;
+	background : @dark_borderOuter;
 	margin-top : 4px;
 }
 
 #container #inner #content #import .section .ui.form button.import:active {
-	background : @importantText;
+	background : @dark_importantText;
 }
 
 #container #inner #footer {
@@ -501,7 +532,7 @@
 	padding        : 4px 4px;
 	display        : inline-block;
 	border-radius  : 4px;
-	color          : @headerAndLinkText;
+	color          : @dark_headerAndLinkText;
 	text-transform : uppercase;
 	line-height    : 9px;
 	font-size      : 9px;
@@ -513,22 +544,22 @@
 }
 
 #container #inner #footer #role-links .role-link.active {
-	background : @footerActiveLinkBackground;
-	box-shadow : inset 0 -1px 0 @borderInner, inset 0 1px 2px @borderInnerGlow;
+	background : @dark_footerActiveLinkBackground;
+	box-shadow : inset 0 -1px 0 @dark_borderInner, inset 0 1px 2px @dark_borderInnerGlow;
 }
 
 #container #inner #footer #role-links .role-link:not(.active):hover,
 #container #inner #footer #navigation-links .navigation-link:not(.active):hover {
-	background : @rowAndLinkHoverBackground;
-	box-shadow : inset 0 -1px 0 @footerLinkInnerShadow, inset 0 1px 2px @footerLinkOuterShadow;
+	background : @dark_rowAndLinkHoverBackground;
+	box-shadow : inset 0 -1px 0 @dark_footerLinkInnerShadow, inset 0 1px 2px @dark_footerLinkOuterShadow;
 }
 
 .placeholder {
 	position      : absolute;
 	width         : 2.5rem;
 	height        : 2.5rem;
-	background    : @toggleBackground;
-	box-shadow    : inset 0 1px 1px 0 @borderOuter, inset 0 0 1px 0 @placeholderInsetBorder, 0 0 1px 2px @borderOuterGlow, 0 2px 2px 2px @borderOuterGlow;
+	background    : @dark_toggleBackground;
+	box-shadow    : inset 0 1px 1px 0 @dark_borderOuter, inset 0 0 1px 0 @dark_placeholderInsetBorder, 0 0 1px 2px @dark_borderOuterGlow, 0 2px 2px 2px @dark_borderOuterGlow;
 	border-radius : 50%;
 	padding       : 5px;
 	touch-action  : manipulation;
@@ -563,8 +594,8 @@
 	justify-content : center;
 	align-items     : center;
 	overflow        : hidden;
-	background      : @placeholderInnerBackground;
-	box-shadow      : inset 0 0 0 1px @borderInner, 0 0 0 2px @borderInnerShadow, 0 3px 1px @borderOuter, 0 0 2px 1px @borderInnerGlow;
+	background      : @dark_placeholderInnerBackground;
+	box-shadow      : inset 0 0 0 1px @dark_borderInner, 0 0 0 2px @dark_borderInnerShadow, 0 3px 1px @dark_borderOuter, 0 0 2px 1px @dark_borderInnerGlow;
 	border-radius   : 50%;
 }
 
@@ -576,12 +607,12 @@
 
 .container-context-menu {
 	z-index       : 50;
-    border-top    : 1px solid @borderInner;
-    border-bottom : 1px solid @borderInnerGlow;
-    background    : @contextMenuBackground;
+    border-top    : 1px solid @dark_borderInner;
+    border-bottom : 1px solid @dark_borderInnerGlow;
+    background    : @dark_contextMenuBackground;
     border-radius : 4px;
-    text-shadow   : 0 1px @contextMenuShadow;
-    box-shadow    : 0 0 1px @contextMenuShadow, 0 2px 3px @contextMenuShadow;
+    text-shadow   : 0 1px @dark_contextMenuShadow;
+    box-shadow    : 0 0 1px @dark_contextMenuShadow, 0 2px 3px @dark_contextMenuShadow;
     min-width     : 10rem;
 }
 
@@ -596,12 +627,12 @@
     border-radius : 1rem;
     font-size     : 0.9rem;
     line-height   : 1;
-    color         : @contextMenuItemBackground;
+    color         : @dark_contextMenuItemBackground;
     cursor        : pointer;
 }
 
 .container-context-menu .item-group .react-contextmenu-item:hover {
-	background: linear-gradient(90deg, @borderInnerGlow, transparent);
+	background: linear-gradient(90deg, @dark_borderInnerGlow, transparent);
 }
 
 .hidden {
@@ -619,12 +650,12 @@
 
 .react-tooltip {
 	padding    : 3px 6px;
-	background : @toggleBackground !important;
+	background : @dark_toggleBackground !important;
 	font-size  : 11px;
 }
 
 .react-tooltip:after {
-	border-left-color : @toggleBackground !important;
+	border-left-color : @dark_toggleBackground !important;
 }
 
 ::-webkit-scrollbar {
