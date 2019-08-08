@@ -1,4 +1,3 @@
-import store from "../redux/store/index";
 import $ from "jquery";
 
 class ThemeService {

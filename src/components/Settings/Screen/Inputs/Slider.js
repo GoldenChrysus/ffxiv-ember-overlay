@@ -1,5 +1,7 @@
 import React from "react";
 import $ from "jquery";
+
+// eslint-disable-next-line
 import UISlider from "jquery-ui/ui/widgets/slider";
 
 import "jquery-ui/themes/base/theme.css";

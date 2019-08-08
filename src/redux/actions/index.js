@@ -18,10 +18,19 @@ export function clearGameData() {
 
 export function updateSetting(payload) {
 	return {
-		type    : "setSetting",
-		key     : payload.key,
-		payload : payload.value,
-		source  : payload.source
+		type      : "setSetting",
+		key       : payload.key,
+		payload   : payload.value,
+		source    : payload.source,
+		skip_save : payload.skip_save
+	};
+}
+
+export function updateSettings(payload) {
+	return {
+		type   : "setSettings",
+		data   : payload.data,
+		source : payload.source
 	};
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { updateSetting } from "../../redux/actions/index";
+import { updateSettings } from "../../redux/actions/index";
 import { Container, Form, Button } from "semantic-ui-react";
 
 import Section from "./Screen/Section";
@@ -47,13 +47,19 @@ class Screen extends React.Component {
 			saving : true
 		});
 
+		let data = [];
+
 		for (let key_path in this.props.new_settings) {
-			this.props.updateSetting({
-				key    : key_path,
-				value  : this.props.new_settings[key_path],
-				source : "screen-component"
+			data.push({
+				key     : key_path,
+				payload : this.props.new_settings[key_path]
 			});
 		}
+
+		this.props.updateSettings({
+			data   : data,
+			source : "screen-component"
+		});
 
 		setTimeout(
 			() => {
@@ -68,8 +74,8 @@ class Screen extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		updateSetting : (data) => {
-			dispatch(updateSetting(data));
+		updateSettings : (data) => {
+			dispatch(updateSettings(data));
 		}
 	}
 };

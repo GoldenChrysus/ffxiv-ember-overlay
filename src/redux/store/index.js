@@ -35,6 +35,11 @@ export function createStorageListener(store) {
 
 				break;
 
+			case "setSettings":
+				valid_action = true;
+
+				break;
+
 			case "updateState":
 				valid_action = (wrapped_action.action.key === "internal.new_version");
 
