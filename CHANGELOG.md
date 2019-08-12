@@ -10,7 +10,11 @@
 - ?
 
 ### Features
-- ?
+- IN PROGRESS: Add new metric "tanking per second"
+- IN PROGRESS: Add graphs to the player detail view
+- IN PROGRESS: Add setting to move table footer row to top of table
+- IN PROGRESS: Add setting to display total DPS in bottom right of overlay
+- IN PROGRESS: Add setting to show bottom of overlay when collapsed
 
 ### UI Changes
 - ?
