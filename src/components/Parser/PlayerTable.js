@@ -18,8 +18,7 @@ class PlayerTable extends React.Component {
 		let is_raid          = (table_type === "raid");
 		let player_blur      = (this.props.player_blur);
 		let collapsed        = this.props.collapsed;
-		let player_processor = new PlayerProcessor();
-		let sorted_players   = (this.props.players) ? player_processor.sortPlayers(this.props.players, this.props.sort_columns[table_type]) : [];
+		let sorted_players   = (this.props.players) ? PlayerProcessor.sortPlayers(this.props.players, this.props.sort_columns[table_type]) : [];
 		let short_names      = (is_raid) ? this.props.table_settings.general.raid.short_names : this.props.table_settings.general.table.short_names;
 
 		if (!is_raid) {

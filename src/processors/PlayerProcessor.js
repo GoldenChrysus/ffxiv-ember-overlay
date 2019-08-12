@@ -78,4 +78,4 @@ class PlayerProcessor  {
 	}
 }
 
-export default PlayerProcessor;
+export default new PlayerProcessor();

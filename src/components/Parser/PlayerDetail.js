@@ -6,7 +6,6 @@ import PlayerProcessor from "../../processors/PlayerProcessor";
 
 class PlayerDetail extends React.Component {
 	render() {
-		let processor   = new PlayerProcessor();
 		let player      = this.props.player;
 		let players     = [];
 		let job         = player.Job.toUpperCase() || "LMB";
@@ -23,7 +22,7 @@ class PlayerDetail extends React.Component {
 
 			for (let key of detail) {
 				let title = Constants.PlayerDataTitles[key].long;
-				let value = processor.getDataValue(key, player, players);
+				let value = PlayerProcessor.getDataValue(key, player, players);
 
 				columns.push(
 					<div className="column" key={key}>
@@ -53,7 +52,7 @@ class PlayerDetail extends React.Component {
 						<img src={"img/icons/jobs/" + job + ".png"} alt={job + " icon"}></img>
 					</div>
 					<div className="name">
-						{processor.getDataValue("name", player)}
+						{PlayerProcessor.getDataValue("name", player)}
 					</div>
 				</div>
 				{sections}

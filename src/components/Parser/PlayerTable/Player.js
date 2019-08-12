@@ -5,7 +5,6 @@ import Constants from "../../../constants/index";
 
 class Player extends React.Component {
 	render() {
-		let processor    = new PlayerProcessor();
 		let player       = this.props.player;
 		let player_type  = (player.name === "YOU") ? "active" : "other";
 		let job          = player.Job.toUpperCase() || "LMB";
@@ -22,7 +21,7 @@ class Player extends React.Component {
 		}
 
 		for (let key of stat_columns) {
-			let value  = processor.getDataValue(key, player, this.props.players);
+			let value  = PlayerProcessor.getDataValue(key, player, this.props.players);
 			let prefix = (is_raid) ? Constants.PlayerDataTitles[key].short + ": " : "";
 
 			columns.push(
@@ -32,10 +31,10 @@ class Player extends React.Component {
 
 		let name_blur   = (this.props.blur) ? "blur" : "";
 		let icon        = <div className="column" key="player-data-icon"><img src={"img/icons/jobs/" + job + ".png"} alt={job + " icon"}></img></div>;
-		let player_name = processor.getDataValue("name", player);
+		let player_name = PlayerProcessor.getDataValue("name", player);
 
 		if (this.props.short_names) {
-			player_name = processor.getShortName(player_name);
+			player_name = PlayerProcessor.getShortName(player_name);
 		}
 
 		let name        = <div className={"column " + name_blur} key="player-data-name">{player_name}</div>;

@@ -7,18 +7,19 @@ import GameDataProcessor from "../../processors/GameDataProcessor";
 import ThemeService from "../../services/ThemeService";
 
 const initial_state = {
-	socket_service : new SocketService(),
-	settings_data  : Settings,
-	internal       : {
+	socket_service    : new SocketService(),
+	settings_data     : Settings,
+	internal          : {
 		viewing        : "tables",
 		character_name : "YOU",
 		rank           : "N/A",
 		game           : {},
 		detail_player  : {},
 		overlayplugin  : !!window.OverlayPluginApi,
-		new_version    : false
+		new_version    : false,
 	},
-	settings       : {}
+	encounter_history : {},
+	settings          : {}
 };
 
 function rootReducer(state, action) {
@@ -40,6 +41,8 @@ function rootReducer(state, action) {
 
 		case "parseGameData":
 			action.payload = GameDataProcessor.normalizeLocales(action.payload);
+
+			GameDataProcessor.appendHistory(action.payload, state);
 
 			new_state = createNewState(state, full_key, action);
 
