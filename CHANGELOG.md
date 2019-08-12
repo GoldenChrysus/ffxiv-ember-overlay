@@ -2,27 +2,25 @@
 
 ## 0.7.0-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2019-08-11**
 
 ### Bug Fixes
-- ! - Resolved issue where table summation did not work for some regions
-- ! - Resolved issue where changing multiple settings simultaneously wouldn't update all settings
+- Resolved issue where table summation did not work for some regions
+- Resolved issue where changing multiple settings simultaneously wouldn't update all settings
 
 ### Features
-- ! - Added settings import/export
+- Added settings import/export
     - To export, open the settings window, navigate to the "Export" page, and copy the export key
     - To import, right click on the overlay, choose "Import," and paste the exported key
-- ! - Added streamers panel at Settings > Streamers
+- Added streamers panel at Settings > Streamers
     - If streamers are live, only live streamers are featured
     - If all streamers are offline, all streamers are featured
     - Streamer display order is random for fairness
-- ! - Added light theme
+- Added light theme
     - Setting to enable is located at Settings > Interface > "Use Light Theme"
 
 ### UI Changes
-- ! - Right-click menu is now more organized with group dividers
+- Right-click menu is now more organized with group dividers
 
 ### Code Changes
 - Added `lodash.shuffle` as a convenient Fisher-Yates shuffle implementation
