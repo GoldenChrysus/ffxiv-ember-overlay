@@ -32,3 +32,6 @@ package-lock.json
 
 # developer junkyard
 /misc
+
+# temporary ignores
+/src/constants/SampleHistoryData.js
