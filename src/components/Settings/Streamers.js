@@ -41,7 +41,7 @@ class Streamers extends React.Component {
 					</p>
 					<p>
 						<a className="info-link" onClick={this.toggleInfoDiv}>Are you a streamer or do you know a streamer who uses Ember Overlay?</a>
-						<span className="info-span hidden">
+						<span className="info-span" style={{ display: "none" }}>
 							Have the stream added to this list by joining our Discord at <span className="discord-link">{discord_url}</span> and posting the stream in
 							#streamer-requests. You can also message <span className="author-link">{author_url}</span> with your stream info. 
 							The stream is only eligible for inclusion if Ember Overlay is used on stream (will be verified via VOD's).
@@ -60,7 +60,7 @@ class Streamers extends React.Component {
 		let $link = $(e.target);
 		let $div  = $link.closest("p").find(".info-span");
 
-		$div.toggleClass("hidden");
+		$div.slideToggle();
 	}
 }
 
