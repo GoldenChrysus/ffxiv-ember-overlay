@@ -56,7 +56,7 @@ class PlayerDetail extends React.Component {
 						{PlayerProcessor.getDataValue("name", player)}
 					</div>
 				</div>
-				<HistoryChart player={player} history={this.props.history}/>
+				<HistoryChart player={player} history={this.props.history} light_theme={this.props.light_theme}/>
 				{sections}
 			</div>
 		);
@@ -66,7 +66,8 @@ class PlayerDetail extends React.Component {
 const mapStateToProps = (state) => {
 	return {
 		detail_data : state.settings.detail_data,
-		history     : state.internal.encounter_data_history
+		history     : state.internal.encounter_data_history,
+		light_theme : state.settings.interface.light_theme
 	};
 };
 
