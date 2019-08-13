@@ -69,8 +69,6 @@ class GameDataProcessor  {
 
 		current_history[current_time] = new_data;
 
-		console.log(JSON.stringify(current_history));
-
 		state.internal.encounter_data_history = current_history;
 	}
 }
