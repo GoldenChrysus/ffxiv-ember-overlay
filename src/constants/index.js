@@ -80,6 +80,12 @@ let formatMaxHeal = function(player) {
 	return value;
 }
 
+let tankingPerSecond = function(player, players, encounter) {
+	let duration = +encounter.DURATION || 1;
+
+	return (player.damagetaken / duration).toFixed(2);
+}
+
 let GameJobs = {
 	ARC : {
 		role : "dps"
@@ -170,7 +176,8 @@ let PlayerDataCustomValues = {
 	"effective_hps"      : calculateEffectiveHPS,
 	"damage_taken_pct"   : calculateTankedDamagePercent,
 	"max_heal_format"    : formatMaxHeal,
-	"max_hit_format"     : formatMaxHit
+	"max_hit_format"     : formatMaxHit,
+	"enctps"             : tankingPerSecond
 };
 
 let PlayerDataTitles = {
@@ -253,6 +260,10 @@ let PlayerDataTitles = {
 	"OverHealPct"        : {
 		short : "Ovr %",
 		long  : "Overheal %"
+	},
+	"enctps"             : {
+		short : "TPS",
+		long  : "Tank Per Second"
 	}
 };
 

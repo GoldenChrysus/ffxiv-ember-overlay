@@ -52,16 +52,18 @@ class GameDataProcessor  {
 		let new_data = {};
 
 		new_data["Encounter"] = {
-			encdps : PlayerProcessor.getDataValue("encdps", data.Encounter, undefined, true),
-			enchps : PlayerProcessor.getDataValue("enchps", data.Encounter, undefined, true)
+			encdps : PlayerProcessor.getDataValue("encdps", data.Encounter, undefined, undefined, true),
+			enchps : PlayerProcessor.getDataValue("enchps", data.Encounter, undefined, undefined, true),
+			enctps : PlayerProcessor.getDataValue("enctps", data.Encounter, undefined, data.Encounter, true)
 		};
 
 		for (let player_name in data.Combatant) {
 			let player = data.Combatant[player_name];
 
 			new_data[player_name] = {
-				encdps : PlayerProcessor.getDataValue("encdps", player, undefined, true),
-				enchps : PlayerProcessor.getDataValue("enchps", player, undefined, true)
+				encdps : PlayerProcessor.getDataValue("encdps", player, undefined, undefined, true),
+				enchps : PlayerProcessor.getDataValue("enchps", player, undefined, undefined, true),
+				enctps : PlayerProcessor.getDataValue("enctps", player, undefined, data.Encounter, true)
 			};
 		}
 

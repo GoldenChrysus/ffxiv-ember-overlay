@@ -60,6 +60,7 @@ const default_settings = {
 		],
 		tank : [
 			"damage_taken_pct",
+			"enctps",
 			"damagetaken",
 			"healstaken",
 			"BlockPct",
@@ -122,6 +123,7 @@ const default_settings = {
 		tank : [
 			"damage_taken_pct",
 			"damagetaken",
+			"enctps",
 			"healstaken",
 			"BlockPct",
 			"deaths"

@@ -21,7 +21,7 @@ class Player extends React.Component {
 		}
 
 		for (let key of stat_columns) {
-			let value  = PlayerProcessor.getDataValue(key, player, this.props.players);
+			let value  = PlayerProcessor.getDataValue(key, player, this.props.players, this.props.encounter);
 			let prefix = (is_raid) ? Constants.PlayerDataTitles[key].short + ": " : "";
 
 			columns.push(

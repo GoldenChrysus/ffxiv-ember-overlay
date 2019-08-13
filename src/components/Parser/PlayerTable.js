@@ -18,7 +18,7 @@ class PlayerTable extends React.Component {
 		let is_raid          = (table_type === "raid");
 		let player_blur      = (this.props.player_blur);
 		let collapsed        = this.props.collapsed;
-		let sorted_players   = (this.props.players) ? PlayerProcessor.sortPlayers(this.props.players, this.props.sort_columns[table_type]) : [];
+		let sorted_players   = (this.props.players) ? PlayerProcessor.sortPlayers(this.props.players, this.props.encounter, this.props.sort_columns[table_type]) : [];
 		let short_names      = (is_raid) ? this.props.table_settings.general.raid.short_names : this.props.table_settings.general.table.short_names;
 
 		if (!is_raid) {
@@ -66,7 +66,7 @@ class PlayerTable extends React.Component {
 			let blur = (player_blur && !is_current_player);
 
 			rows.push(
-				<Player key={player.name} player={player} players={sorted_players} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
+				<Player key={player.name} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
 			);
 		}
 

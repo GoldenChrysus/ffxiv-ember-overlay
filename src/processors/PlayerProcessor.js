@@ -16,9 +16,10 @@ class PlayerProcessor  {
 		return `${first_initial} ${last_name}`;
 	}
 
-	getDataValue(key, player, players, return_sortable_value) {
+	getDataValue(key, player, players, encounter, return_sortable_value) {
+		console.log(encounter);
 		let key_function = Constants.PlayerDataCustomValues[key];
-		let value        = (key_function) ? key_function(player, players) : player[key];
+		let value        = (key_function) ? key_function(player, players, encounter) : player[key];
 
 		if (key === "name" && value === "YOU") {
 			value = store.getState().internal.character_name;
@@ -43,7 +44,7 @@ class PlayerProcessor  {
 		return value;
 	}
 
-	sortPlayers(players, sort_column) {
+	sortPlayers(players, encounter, sort_column) {
 		let sorted_players = [];
 		let self           = this;
 
@@ -54,8 +55,8 @@ class PlayerProcessor  {
 		let players_copy = JSON.parse(JSON.stringify(sorted_players));
 
 		sorted_players = sorted_players.sort(function(a, b) {
-			let val_a = self.getDataValue(sort_column, a, players_copy, true)
-			let val_b = self.getDataValue(sort_column, b, players_copy, true);
+			let val_a = self.getDataValue(sort_column, a, players_copy, encounter, true)
+			let val_b = self.getDataValue(sort_column, b, players_copy, encounter, true);
 
 			if (val_a > val_b) {
 				return -1

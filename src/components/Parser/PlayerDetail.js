@@ -26,7 +26,7 @@ class PlayerDetail extends React.Component {
 
 			for (let key of detail) {
 				let title = Constants.PlayerDataTitles[key].long;
-				let value = PlayerProcessor.getDataValue(key, player, players);
+				let value = PlayerProcessor.getDataValue(key, player, players, this.props.encounter);
 
 				columns.push(
 					<div className="column" key={key}>
