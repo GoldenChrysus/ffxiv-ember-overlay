@@ -41,7 +41,7 @@ class GameDataProcessor  {
 
 		const interval = 15;
 
-		let current_history = state.encounter_history;
+		let current_history = state.internal.encounter_data_history;
 		let recent_time     = Object.keys(current_history).slice(-1)[0];
 		let current_time    = Math.round(new Date().getTime() / 1000);
 
@@ -68,6 +68,8 @@ class GameDataProcessor  {
 		}
 
 		current_history[current_time] = new_data;
+
+		console.log(JSON.stringify(current_history));
 
 		state.internal.encounter_data_history = current_history;
 	}

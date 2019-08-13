@@ -24,7 +24,7 @@
 - Added `lodash.mergewith` to customize the way arrays are merged for settings
 
 ### Miscellaneous
-- ?
+- Update sample data to add history data for charts
 
 ## 0.7.0-alpha
 
