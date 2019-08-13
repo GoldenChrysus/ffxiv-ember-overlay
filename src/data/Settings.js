@@ -1,7 +1,7 @@
 import store from "../redux/store/index";
 import { updateState } from "../redux/actions/index";
 import localForage from "localforage";
-import merge from "lodash.merge";
+import mergeWith from "lodash.mergewith";
 
 import ObjectService from "../services/ObjectService";
 
@@ -179,7 +179,11 @@ class Settings {
 		if (!json) {
 			json = tmp_default_settings;
 		} else {
-			json = merge(tmp_default_settings, json);
+			json = mergeWith(tmp_default_settings, json, function(obj_val, src_val) {
+				if (Array.isArray(obj_val)) {
+					return (src_val) ? src_val : obj_val;
+				}
+			});
 		}
 
 		this.settings = json;
