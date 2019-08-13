@@ -67,7 +67,7 @@ class GameDataProcessor  {
 
 		current_history[current_time] = new_data;
 
-		state.encounter_history = current_history;
+		state.internal.encounter_data_history = current_history;
 	}
 }
 

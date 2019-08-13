@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import Constants from "../../constants/index";
 import PlayerProcessor from "../../processors/PlayerProcessor";
+import HistoryChart from "./PlayerDetail/HistoryChart";
 
 class PlayerDetail extends React.Component {
 	render() {
@@ -55,6 +56,7 @@ class PlayerDetail extends React.Component {
 						{PlayerProcessor.getDataValue("name", player)}
 					</div>
 				</div>
+				<HistoryChart player={player} history={this.props.history}/>
 				{sections}
 			</div>
 		);
@@ -63,7 +65,8 @@ class PlayerDetail extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		detail_data : state.settings.detail_data
+		detail_data : state.settings.detail_data,
+		history     : state.internal.encounter_data_history
 	};
 };
 

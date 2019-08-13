@@ -1,5 +1,3 @@
-import SampleGameData from "../../constants/SampleGameData";
-
 export function parseGameData(payload) {
 	return {
 		type : "parseGameData",
@@ -9,7 +7,9 @@ export function parseGameData(payload) {
 }
 
 export function loadSampleGameData() {
-	return parseGameData(SampleGameData);
+	return {
+		type : "loadSampleData"
+	};
 }
 
 export function clearGameData() {

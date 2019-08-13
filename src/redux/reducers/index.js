@@ -5,20 +5,22 @@ import SocketService from "../../services/SocketService";
 import ObjectService from "../../services/ObjectService";
 import GameDataProcessor from "../../processors/GameDataProcessor";
 import ThemeService from "../../services/ThemeService";
+import SampleGameData from "../../constants/SampleGameData";
+import SampleHistoryData from "../../constants/SampleHistoryData";
 
 const initial_state = {
 	socket_service    : new SocketService(),
 	settings_data     : Settings,
 	internal          : {
-		viewing        : "tables",
-		character_name : "YOU",
-		rank           : "N/A",
-		game           : {},
-		detail_player  : {},
-		overlayplugin  : !!window.OverlayPluginApi,
-		new_version    : false,
+		viewing                : "tables",
+		character_name         : "YOU",
+		rank                   : "N/A",
+		game                   : {},
+		encounter_data_history : {},
+		detail_player          : {},
+		overlayplugin          : !!window.OverlayPluginApi,
+		new_version            : false,
 	},
-	encounter_history : {},
 	settings          : {}
 };
 
@@ -39,15 +41,6 @@ function rootReducer(state, action) {
 
 			break;
 
-		case "parseGameData":
-			action.payload = GameDataProcessor.normalizeLocales(action.payload);
-
-			GameDataProcessor.appendHistory(action.payload, state);
-
-			new_state = createNewState(state, full_key, action);
-
-			break;
-
 		case "setSettings":
 			new_state = clone(state);
 
@@ -59,6 +52,26 @@ function rootReducer(state, action) {
 			}
 
 			new_state.settings_data.saveSettings();
+
+			break;
+
+		case "parseGameData":
+			action.payload = GameDataProcessor.normalizeLocales(action.payload);
+
+			GameDataProcessor.appendHistory(action.payload, state);
+
+			new_state = createNewState(state, full_key, action);
+
+			break;
+
+		case "loadSampleData":
+			let tmp_action = {};
+
+			state.internal.encounter_data_history = SampleHistoryData;
+
+			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData);
+
+			new_state = createNewState(state, "internal.game", tmp_action);
 
 			break;
 
