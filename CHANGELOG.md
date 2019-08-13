@@ -10,7 +10,8 @@
 - ?
 
 ### Features
-- IN PROGRESS: Add new metric "tanking per second"
+- Added new metric "tank per second"
+    - Shows damage tanked per second
 - IN PROGRESS: Add graphs to the player detail view
 - IN PROGRESS: Add setting to move table footer row to top of table
 - IN PROGRESS: Add setting to display total DPS in bottom right of overlay
@@ -20,7 +21,7 @@
 - ?
 
 ### Code Changes
-- ?
+- Added `lodash.mergewith` to customize the way arrays are merged for settings
 
 ### Miscellaneous
 - ?
