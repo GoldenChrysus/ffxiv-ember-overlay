@@ -52,6 +52,12 @@ let calculateTankedDamagePercent = function(player, players) {
 	return effective_ratio;
 };
 
+let calculateTankPerSecond = function(player, players, encounter) {
+	let duration = +encounter.DURATION || 1;
+
+	return (player.damagetaken / duration).toFixed(2);
+}
+
 let formatMaxHit = function(player) {
 	if (!player["maxhit"]) {
 		return "N/A";
@@ -78,12 +84,6 @@ let formatMaxHeal = function(player) {
 	let value = parts.join(" - ");
 
 	return value;
-}
-
-let tankingPerSecond = function(player, players, encounter) {
-	let duration = +encounter.DURATION || 1;
-
-	return (player.damagetaken / duration).toFixed(2);
 }
 
 let GameJobs = {
@@ -177,7 +177,7 @@ let PlayerDataCustomValues = {
 	"damage_taken_pct"   : calculateTankedDamagePercent,
 	"max_heal_format"    : formatMaxHeal,
 	"max_hit_format"     : formatMaxHit,
-	"enctps"             : tankingPerSecond
+	"enctps"             : calculateTankPerSecond
 };
 
 let PlayerDataTitles = {

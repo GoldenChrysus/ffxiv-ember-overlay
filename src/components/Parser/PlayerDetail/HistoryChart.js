@@ -1,7 +1,24 @@
 import React from "react";
+import ChartComponent from "react-chartjs-2";
 import { Line } from "react-chartjs-2";
 
 class HistoryChart extends React.Component {
+	componentWillMount() {
+		ChartComponent.prototype.destroyChart = function() {
+			this.saveCurrentDatasets();
+
+			let datasets = [];
+
+			for (let i in this.datasets) {
+				datasets.push(this.datasets[i]);
+			}
+
+			this.chartInstance.config.data.datasets = datasets;
+
+			this.chartInstance.destroy();
+		}
+	}
+
 	render() {
 		const metrics               = [
 			{

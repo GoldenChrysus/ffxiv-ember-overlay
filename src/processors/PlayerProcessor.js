@@ -17,7 +17,6 @@ class PlayerProcessor  {
 	}
 
 	getDataValue(key, player, players, encounter, return_sortable_value) {
-		console.log(encounter);
 		let key_function = Constants.PlayerDataCustomValues[key];
 		let value        = (key_function) ? key_function(player, players, encounter) : player[key];
 
