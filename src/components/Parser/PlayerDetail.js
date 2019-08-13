@@ -11,7 +11,10 @@ class PlayerDetail extends React.Component {
 		let players     = [];
 		let job         = player.Job.toUpperCase() || "LMB";
 		let detail_data = this.props.detail_data;
-		let sections    = [];
+		let sections    = [
+			<div className="split" key="chart-split"></div>,
+			<HistoryChart player={player} history={this.props.history} light_theme={this.props.light_theme} key="chart"/>
+		];
 
 		for (let i in this.props.players) {
 			players.push(this.props.players[i]);
@@ -56,7 +59,6 @@ class PlayerDetail extends React.Component {
 						{PlayerProcessor.getDataValue("name", player)}
 					</div>
 				</div>
-				<HistoryChart player={player} history={this.props.history} light_theme={this.props.light_theme}/>
 				{sections}
 			</div>
 		);
