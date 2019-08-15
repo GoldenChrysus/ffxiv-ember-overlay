@@ -36,17 +36,17 @@ class HistoryChart extends React.Component {
 		];
 		const background_difference = 0.03;
 
-		let history               = this.props.history;
-		let player                = this.props.player;
-		let is_light_theme        = (this.props.light_theme);
-		let first_alpha           = (is_light_theme) ? 0.09 : 0.05;
-		let alpha_color           = (is_light_theme) ? 0 : 255;
-		let line_data             = {
+		let history        = this.props.history;
+		let player         = this.props.player;
+		let is_light_theme = (this.props.light_theme);
+		let first_alpha    = (is_light_theme) ? 0.09 : 0.05;
+		let alpha_color    = (is_light_theme) ? 0 : 255;
+		let line_data      = {
 			labels   : [],
 			datasets : []
 		};
-		let player_name = player.name;
-		let base_time   = +Object.keys(history)[0];
+		let player_name    = player.name;
+		let base_time      = +Object.keys(history)[0];
 
 		for (let i in metrics) {
 			let alpha = first_alpha + (background_difference * i);
