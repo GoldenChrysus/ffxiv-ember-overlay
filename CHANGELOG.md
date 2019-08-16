@@ -14,7 +14,7 @@
     - Shows damage tanked per second (TPS)
 - Added graphs to the player detail view
     - Graphs display DPS, HPS, and TPS
-- IN PROGRESS: Add setting to move table footer row to top of table
+- Added setting to move table footer row to top of table
 - IN PROGRESS: Add setting to display total DPS in bottom right of overlay
 - IN PROGRESS: Add setting to show bottom of overlay when collapsed
 

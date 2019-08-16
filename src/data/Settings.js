@@ -26,7 +26,8 @@ const default_settings = {
 	table_settings : {
 		general : {
 			table : {
-				short_names : false
+				short_names   : false,
+				footer_at_top : false
 			},
 			raid  : {
 				short_names : false

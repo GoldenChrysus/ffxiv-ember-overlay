@@ -85,6 +85,14 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.table_settings.general.table.short_names;
 							}
+						},
+						{
+							key_path : "table_settings.general.table.footer_at_top",
+							label    : "Move Totals (Footer) to Top of Table",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.general.table.footer_at_top;
+							}
 						}
 					]
 				},

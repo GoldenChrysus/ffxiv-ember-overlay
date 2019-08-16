@@ -20,6 +20,7 @@ class PlayerTable extends React.Component {
 		let collapsed        = this.props.collapsed;
 		let sorted_players   = (this.props.players) ? PlayerProcessor.sortPlayers(this.props.players, this.props.encounter, this.props.sort_columns[table_type]) : [];
 		let short_names      = (is_raid) ? this.props.table_settings.general.raid.short_names : this.props.table_settings.general.table.short_names;
+		let footer_at_top    = this.props.table_settings.general.table.footer_at_top;
 
 		if (!is_raid) {
 			for (let key of this.props.table_columns[table_type]) {
@@ -103,11 +104,16 @@ class PlayerTable extends React.Component {
 			table_class = "grid";
 		}
 
+		let getFooterRow = (location) => {
+			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
+		}
+
 		return (
 			<div id="player-table" className={table_class}>
 				{header_row}
+				{getFooterRow("top")}
 				{rows}
-				{footer_row}
+				{getFooterRow("bottom")}
 			</div>
 		);
 	}
