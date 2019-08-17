@@ -7,19 +7,19 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
-- Added new metric "tank per second"
+- ! - Added new metric "tank per second"
     - Shows damage tanked per second (TPS)
-- Added graphs to the player detail view
+- ! - Added graphs to the player detail view
     - Graphs display DPS, HPS, and TPS
-- Added setting to move table footer row to top of table
-- IN PROGRESS: Add setting to display total DPS in bottom right of overlay
-- IN PROGRESS: Add setting to show bottom of overlay when collapsed
+- ! - Added setting to move table footer row to top of table
+- ON HOLD: Add setting to display total DPS in bottom right of overlay
+- ON HOLD: Add setting to show bottom of overlay when collapsed
 
 ### UI Changes
-- ?
+- ! - Added "View Encounter Detail" to right-click menu
 
 ### Code Changes
 - Added `lodash.mergewith` to customize the way arrays are merged for settings

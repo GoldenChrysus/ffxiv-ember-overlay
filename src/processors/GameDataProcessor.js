@@ -19,6 +19,15 @@ class GameDataProcessor  {
 			return data;
 		}
 
+		data.Encounter.name             = "Encounter";
+		data.Encounter.Job              = "ENC";
+		data.Encounter.OverHealPct      = "0%";
+		data.Encounter.BlockPct         = "0%";
+		data.Encounter.DirectHitPct     = "0%";
+		data.Encounter.CritDirectHitPct = "0%";
+		data.Encounter["damage%"]       = "0%";
+		data.Encounter["healed%"]       = "0%";
+
 		for (let key in Constants.PlayerDataTitles) {
 			if (data.Encounter[key] !== undefined) {
 				data.Encounter[key] = this.normalizeFieldLocale(data.Encounter[key]);
@@ -49,21 +58,22 @@ class GameDataProcessor  {
 			return;
 		}
 
-		let new_data = {};
+		let new_data  = {};
+		let encounter = JSON.parse(JSON.stringify(data.Encounter));
 
 		new_data["Encounter"] = {
-			encdps : PlayerProcessor.getDataValue("encdps", data.Encounter, undefined, undefined, true),
-			enchps : PlayerProcessor.getDataValue("enchps", data.Encounter, undefined, undefined, true),
-			enctps : PlayerProcessor.getDataValue("enctps", data.Encounter, undefined, data.Encounter, true)
+			encdps : PlayerProcessor.getDataValue("encdps", encounter, undefined, undefined, true),
+			enchps : PlayerProcessor.getDataValue("enchps", encounter, undefined, undefined, true),
+			enctps : PlayerProcessor.getDataValue("enctps", encounter, undefined, encounter, true)
 		};
 
 		for (let player_name in data.Combatant) {
-			let player = data.Combatant[player_name];
+			let player = JSON.parse(JSON.stringify(data.Combatant[player_name]));
 
 			new_data[player_name] = {
 				encdps : PlayerProcessor.getDataValue("encdps", player, undefined, undefined, true),
 				enchps : PlayerProcessor.getDataValue("enchps", player, undefined, undefined, true),
-				enctps : PlayerProcessor.getDataValue("enctps", player, undefined, data.Encounter, true)
+				enctps : PlayerProcessor.getDataValue("enctps", player, undefined, encounter, true)
 			};
 		}
 

@@ -55,7 +55,7 @@ let calculateTankedDamagePercent = function(player, players) {
 let calculateTankPerSecond = function(player, players, encounter) {
 	let duration = +encounter.DURATION || 1;
 
-	return (player.damagetaken / duration).toFixed(2);
+	return (+player.damagetaken / duration).toFixed(2);
 }
 
 let formatMaxHit = function(player) {
@@ -64,8 +64,9 @@ let formatMaxHit = function(player) {
 	}
 
 	let parts = player["maxhit"].split("-");
+	let index = (parts[2]) ? 2 : 1;
 
-	parts[1] = (!isNaN(parts[1])) ? (+parts[1]).toLocaleString() : parts[1];
+	parts[index] = (!isNaN(parts[index])) ? (+parts[index]).toLocaleString() : parts[index];
 
 	let value = parts.join(" - ");
 
@@ -78,8 +79,9 @@ let formatMaxHeal = function(player) {
 	}
 
 	let parts = player["maxheal"].split("-");
+	let index = (parts[2]) ? 2 : 1;
 
-	parts[1] = (!isNaN(parts[1])) ? (+parts[1]).toLocaleString() : parts[1];
+	parts[index] = (!isNaN(parts[index])) ? (+parts[index]).toLocaleString() : parts[index];
 
 	let value = parts.join(" - ");
 
