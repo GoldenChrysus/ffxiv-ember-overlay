@@ -1,27 +1,5 @@
 # Changelog
 
-## 0.9.0-alpha
-
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
-
-### Bug Fixes
-- ?
-
-### Features
-- IN PROGRESS: Add setting to display total DPS in bottom right of overlay
-- IN PROGRESS: Add setting to show bottom of overlay when collapsed
-
-### UI Changes
-- ?
-
-### Code Changes
-- ?
-
-### Miscellaneous
-- ?
-
 ## 0.8.0-alpha
 
 **Released: 2019-08-18**
