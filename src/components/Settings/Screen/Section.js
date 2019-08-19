@@ -5,13 +5,17 @@ import Editor from "react-simple-code-editor";
 import Slider from "./Inputs/Slider";
 
 class Section extends React.Component {
+	constructor() {
+		super();
+
+		this.state = {};
+	}
+
 	getSettingValue(setting_data) {
 		return (typeof setting_data.value === "function") ? setting_data.value.call(this) : setting_data.value;
 	}
 
 	componentWillMount() {
-		this.state = {};
-
 		let state_data = {};
 
 		for (let setting_data of this.props.data.settings) {
