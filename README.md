@@ -10,7 +10,8 @@ React overlay for the [OverlayPlugin](https://github.com/hibiyasleep/OverlayPlug
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/GoldenChrysus/ffxiv-ember-overlay.svg)
 
 #### Funding
-<a href="https://ko-fi.com/S6S611OOG"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi" height="20"></a> [![Donate on StreamElements](https://img.shields.io/badge/Donate-on%20StreamElements-green)](https://streamelements.com/chrysus/tip)
+<a href="https://ko-fi.com/S6S611OOG"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi" height="23"></a>
+<a href="https://streamelements.com/chrysus/tip"><img src="https://img.shields.io/badge/Donate-on%20StreamElements-green" alt="Donate on StreamElements" height="23"></a>
 
 ## Usage with OverlayPlugin
 Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
