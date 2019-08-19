@@ -30,8 +30,6 @@ class Menu extends React.Component {
 			);
 		}
 
-		console.log(this.props);
-
 		return (
 			<ContextMenu id="right-click-menu" className="container-context-menu">
 				<div className="item-group">
