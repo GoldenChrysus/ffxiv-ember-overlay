@@ -21,7 +21,7 @@
 - ?
 
 ### Miscellaneous
-- ?
+- Updated README with OverlayPlugin version requirement.
 
 ## 0.8.0-alpha
 

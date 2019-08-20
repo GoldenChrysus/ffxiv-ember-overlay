@@ -74,6 +74,7 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
 
 ### OverlayPlugin
 0. If you already have Advanced Combat Tracker (ACT) and OverlayPlugin setup and configured to your liking, skip to step 3.
+    - OverlayPlugin version 0.3.4.0 is required.
 1. Ensure ACT and OverlayPlugin are installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
 2. Within ACT, navigate to Plugins > OverlayPlugin.dll > Mini Parse.
 3. Set the URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
