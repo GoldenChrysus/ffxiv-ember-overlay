@@ -16,6 +16,7 @@
 ### UI Changes
 - Renamed "TPS" (Tank Per Second) to "DTPS" (Damage Taken Per Second)
 - Changed blur intensity when blurring player names
+- Added value indicator to settings sliders
 
 ### Code Changes
 - ?

@@ -11,6 +11,8 @@ class Slider extends React.Component {
 	componentDidMount() {
 		this.$elem = $(this.refs.slider);
 
+		let $elem = this.$elem;
+
 		this.$elem.slider({
 			range : this.props.range,
 			min   : this.props.minimum,
@@ -23,6 +25,10 @@ class Slider extends React.Component {
 				}
 
 				this.props.onChange(e, change_data);
+				$elem
+					.closest("div.field")
+					.find(".value")
+					.text(ui.value);
 			}
 		});
 	}
