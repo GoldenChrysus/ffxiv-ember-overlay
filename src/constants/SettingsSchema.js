@@ -60,6 +60,14 @@ const SettingsSchema = {
 							}
 						},
 						{
+							key_path : "interface.footer_when_collapsed",
+							label    : "Show Overlay Footer When Collapsed",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.footer_when_collapsed;
+							}
+						},
+						{
 							key_path : "interface.light_theme",
 							label    : "Use Light Theme",
 							type     : "checkbox",

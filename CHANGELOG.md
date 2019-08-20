@@ -11,7 +11,7 @@
 
 ### Features
 - IN PROGRESS: Add setting to display total DPS in bottom right of overlay
-- IN PROGRESS: Add setting to show bottom of overlay when collapsed
+- Added setting to show bottom of overlay when collapsed
 
 ### UI Changes
 - Renamed "TPS" (Tank Per Second) to "DTPS" (Damage Taken Per Second)

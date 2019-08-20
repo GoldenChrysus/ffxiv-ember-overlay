@@ -14,11 +14,12 @@ const default_settings = {
 		player_blur     : false
 	},
 	interface     : {
-		opacity        : 100,
-		zoom           : 100,
-		top_right_rank : false,
-		collapse_down  : false,
-		light_theme    : false
+		opacity               : 100,
+		zoom                  : 100,
+		top_right_rank        : false,
+		collapse_down         : false,
+		light_theme           : false,
+		footer_when_collapsed : false
 	},
 	custom        : {
 		css : ""

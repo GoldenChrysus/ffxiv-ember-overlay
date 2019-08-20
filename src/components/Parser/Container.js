@@ -56,7 +56,7 @@ class Container extends React.Component {
 
 		let footer = [];
 
-		if (!this.props.settings.intrinsic.collapsed || viewing !== "tables") {
+		if (!this.props.settings.intrinsic.collapsed || viewing !== "tables" || this.props.settings.interface.footer_when_collapsed) {
 			footer = [
 					<div className="split" key="above-footer-split"></div>,
 					<Footer key="parser-footer"/>
