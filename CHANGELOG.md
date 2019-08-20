@@ -14,7 +14,8 @@
 - IN PROGRESS: Add setting to show bottom of overlay when collapsed
 
 ### UI Changes
-- ?
+- Renamed "TPS" (Tank Per Second) to "DTPS" (Damage Taken Per Second)
+- Changed blur intensity when blurring player names
 
 ### Code Changes
 - ?
