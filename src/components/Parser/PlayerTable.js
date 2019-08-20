@@ -154,6 +154,11 @@ class PlayerTable extends React.Component {
 			let $bar = $row.find(".percent-bar");
 
 			if (!$bar.length) {
+				if ($row.hasClass("active-with-bar")) {
+					$row.removeClass("active-with-bar");
+					$row.addClass("active");
+				}
+
 				return;
 			}
 

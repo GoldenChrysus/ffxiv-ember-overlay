@@ -72,14 +72,14 @@ class Player extends React.Component {
 
 			return (
 				<div className="percent-bar" style={{
-					backgroundSize : "60% 100%",
-					backgroundRepeat : "no-repeat",
+					backgroundSize      : "0% 100%",
+					backgroundRepeat    : "no-repeat",
 					backgroundPositionY : "1px",
-					position : "absolute",
-					top : "0",
-					left : "0",
-					width : "0",
-					height : "0"
+					position            : "absolute",
+					top                 : "0",
+					left                : "0",
+					width               : "0",
+					height              : "0"
 				}}></div>
 			);
 		}
