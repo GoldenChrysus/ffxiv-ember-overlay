@@ -10,8 +10,8 @@
 - Resolved issue where saved CSS would not appear in code editor on subsequent loads of the settings window
 
 ### Features
-- Added setting to display total DPS in overlay footer
-- Added setting to overlay footer when collapsed
+- Added setting to display total DPS (rDPS) in overlay footer
+- Added setting to show overlay footer when collapsed
 
 ### UI Changes
 - Renamed "TPS" (Tank Per Second) to "DTPS" (Damage Taken Per Second)
