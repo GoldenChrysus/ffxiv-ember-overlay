@@ -30,7 +30,7 @@ class HistoryChart extends React.Component {
 				key  : "enchps"
 			},
 			{
-				name : "TPS",
+				name : "DTPS",
 				key  : "enctps"
 			}
 		];

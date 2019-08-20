@@ -264,8 +264,8 @@ let PlayerDataTitles = {
 		long  : "Overheal %"
 	},
 	"enctps"             : {
-		short : "TPS",
-		long  : "Tank Per Second"
+		short : "DTPS",
+		long  : "Damage Taken Per Second"
 	}
 };
 
