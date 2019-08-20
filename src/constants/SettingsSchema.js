@@ -68,6 +68,14 @@ const SettingsSchema = {
 							}
 						},
 						{
+							key_path : "interface.footer_dps",
+							label    : "Display Raid DPS in Overlay Footer",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.footer_dps;
+							}
+						},
+						{
 							key_path : "interface.light_theme",
 							label    : "Use Light Theme",
 							type     : "checkbox",

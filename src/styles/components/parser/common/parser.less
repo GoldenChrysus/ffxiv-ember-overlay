@@ -711,6 +711,7 @@
 }
 
 #container #inner #footer #role-links .role-link,
+#container #inner #footer #role-links .info-item,
 #container #inner #footer #navigation-links .navigation-link {
 	padding        : 4px 4px;
 	display        : inline-block;
@@ -720,8 +721,6 @@
 	font-size      : 9px;
 	margin-right   : 5px;
 	transition     : 0.5s;
-	cursor         : pointer;
-	cursor         : hand;
 	touch-action   : manipulation;
 
 	.setThemeStyle(
@@ -732,6 +731,12 @@
 			color: @light_headerAndLinkText;
 		}
 	);
+}
+
+#container #inner #footer #role-links .role-link,
+#container #inner #footer #navigation-links .navigation-link {
+	cursor : pointer;
+	cursor : hand;
 }
 
 #container #inner #footer #role-links .role-link.active {

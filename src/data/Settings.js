@@ -19,7 +19,8 @@ const default_settings = {
 		top_right_rank        : false,
 		collapse_down         : false,
 		light_theme           : false,
-		footer_when_collapsed : false
+		footer_when_collapsed : false,
+		footer_dps            : false
 	},
 	custom        : {
 		css : ""

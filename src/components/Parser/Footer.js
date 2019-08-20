@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { changeTableType, changeViewing, changePlayerBlur } from "../../redux/actions/index";
 
+import PlayerProcessor from "../../processors/PlayerProcessor";
 import VersionService from "../../services/VersionService";
 import PluginService from "../../services/PluginService";
 import SettingsService from "../../services/SettingsService";
@@ -45,9 +46,18 @@ class Footer extends React.Component {
 						);
 					}
 
+					let dps;
+
+					if (self.props.show_dps) {
+						let dps_value = (self.props.encounter) ? PlayerProcessor.getDataValue("encdps", self.props.encounter) : "0.00";
+						
+						dps = <div className="info-item" key="info-item-dps">rDPS: {dps_value}</div>;
+					}
+
 					return(
 						<div id="role-links">
 							{links}
+							{dps}
 						</div>
 					);
 			}
@@ -113,7 +123,9 @@ const mapStateToProps = (state) => {
 		player_blur   : state.settings.intrinsic.player_blur,
 		viewing       : state.internal.viewing,
 		overlayplugin : state.internal.overlayplugin,
-		new_version   : state.internal.new_version
+		new_version   : state.internal.new_version,
+		encounter     : state.internal.game.Encounter,
+		show_dps      : state.settings.interface.footer_dps
 	};
 };
 

@@ -7,10 +7,10 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- Resolved issue where saved CSS would not appear in code editor on subsequent loads of the settings window.
+- Resolved issue where saved CSS would not appear in code editor on subsequent loads of the settings window
 
 ### Features
-- IN PROGRESS: Add setting to display total DPS in bottom right of overlay
+- Added setting to display total DPS in bottom right of overlay
 - Added setting to show bottom of overlay when collapsed
 
 ### UI Changes
@@ -22,7 +22,7 @@
 - ?
 
 ### Miscellaneous
-- Updated README with OverlayPlugin version requirement.
+- Updated README with OverlayPlugin version requirement
 
 ## 0.8.0-alpha
 
