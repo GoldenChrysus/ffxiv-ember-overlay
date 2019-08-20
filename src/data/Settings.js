@@ -29,10 +29,12 @@ const default_settings = {
 		general : {
 			table : {
 				short_names   : false,
-				footer_at_top : false
+				footer_at_top : false,
+				percent_bars  : false
 			},
 			raid  : {
-				short_names : false
+				short_names  : false,
+				percent_bars : false
 			}
 		},
 		dps     : {

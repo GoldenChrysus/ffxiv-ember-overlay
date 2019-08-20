@@ -109,6 +109,14 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.table_settings.general.table.footer_at_top;
 							}
+						},
+						{
+							key_path : "table_settings.general.table.percent_bars",
+							label    : "Show Performance Background Bars",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.general.table.percent_bars;
+							}
 						}
 					]
 				},
@@ -297,6 +305,14 @@ const SettingsSchema = {
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.table_settings.general.raid.short_names;
+							}
+						},
+						{
+							key_path : "table_settings.general.raid.percent_bars",
+							label    : "Show Performance Background Bars",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.general.raid.percent_bars;
 							}
 						}
 					]

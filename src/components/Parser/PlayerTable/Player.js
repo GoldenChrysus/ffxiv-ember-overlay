@@ -37,38 +37,58 @@ class Player extends React.Component {
 			player_name = PlayerProcessor.getShortName(player_name);
 		}
 
-		let name        = <div className={"column " + name_blur} key="player-data-name">{player_name}</div>;
-		let player_data = function() {
+		let name       = <div className={"column " + name_blur} key="player-data-name">{player_name}</div>;
+		let playerData = () => {
 			if (!is_raid) {
 				return [
 					icon,
 					name
 				];
-			} else {
-				return (
-					<div className="player-data">
-						{icon}
-						{name}
-					</div>
-				);
 			}
+
+			return (
+				<div className="player-data">
+					{icon}
+					{name}
+				</div>
+			);
 		}
-		let stat_data   = function() {
+		let statData   = () => {
 			if (!is_raid) {
 				return columns;
-			} else {
-				return(
-					<div className="stat-data">
-						{columns}
-					</div>
-				);
 			}
+
+
+			return(
+				<div className="stat-data">
+					{columns}
+				</div>
+			);
+		}
+		let percentBar = () => {
+			if (!this.props.percent_bars) {
+				return "";
+			}
+
+			return (
+				<div className="percent-bar" style={{
+					backgroundSize : "60% 100%",
+					backgroundRepeat : "no-repeat",
+					backgroundPositionY : "1px",
+					position : "absolute",
+					top : "0",
+					left : "0",
+					width : "0",
+					height : "0"
+				}}></div>
+			);
 		}
 
 		return (
-			<div className={"row player " + player_type} onClick={this.props.onClick}>
-				{player_data()}
-				{stat_data()}
+			<div className={"row player " + player_type} data-percent={this.props.percent} onClick={this.props.onClick}>
+				{playerData()}
+				{statData()}
+				{percentBar()}
 			</div>
 		);
 	}

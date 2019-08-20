@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import $ from "jquery";
 import { changeViewing, changeDetailPlayer, updateState } from "../../redux/actions/index";
 
 import Player from "./PlayerTable/Player";
@@ -7,20 +8,30 @@ import Constants from "../../constants/index";
 import PlayerProcessor from "../../processors/PlayerProcessor";
 
 class PlayerTable extends React.Component {
+	componentDidMount() {
+		this.updateBackgrounds();
+	}
+
+	componentDidUpdate() {
+		this.updateBackgrounds();
+	}
+
 	render() {
-		let header           = [];
-		let footer           = [];
-		let rows             = [];
-		let count            = 0;
-		let rank             = 0;
-		let found            = false;
-		let table_type       = this.props.type;
-		let is_raid          = (table_type === "raid");
-		let player_blur      = (this.props.player_blur);
-		let collapsed        = this.props.collapsed;
-		let sorted_players   = (this.props.players) ? PlayerProcessor.sortPlayers(this.props.players, this.props.encounter, this.props.sort_columns[table_type]) : [];
-		let short_names      = (is_raid) ? this.props.table_settings.general.raid.short_names : this.props.table_settings.general.table.short_names;
-		let footer_at_top    = this.props.table_settings.general.table.footer_at_top;
+		let header         = [];
+		let footer         = [];
+		let rows           = [];
+		let count          = 0;
+		let rank           = 0;
+		let found          = false;
+		let table_type     = this.props.type;
+		let is_raid        = (table_type === "raid");
+		let player_blur    = (this.props.player_blur);
+		let collapsed      = this.props.collapsed;
+		let sort_column    = this.props.sort_columns[table_type];
+		let sorted_players = (this.props.players) ? PlayerProcessor.sortPlayers(this.props.players, this.props.encounter, sort_column) : [];
+		let short_names    = (is_raid) ? this.props.table_settings.general.raid.short_names : this.props.table_settings.general.table.short_names;
+		let footer_at_top  = this.props.table_settings.general.table.footer_at_top;
+		let percent_bars   = (is_raid) ? this.props.table_settings.general.raid.percent_bars : this.props.table_settings.general.table.percent_bars;
 
 		if (!is_raid) {
 			for (let key of this.props.table_columns[table_type]) {
@@ -42,6 +53,8 @@ class PlayerTable extends React.Component {
 			}
 		}
 
+		let max_value = 0;
+
 		for (let player of sorted_players) {
 			if (player.Job === "" && player.name !== "Limit Break") {
 				continue;
@@ -60,6 +73,14 @@ class PlayerTable extends React.Component {
 				is_current_player = true;
 			}
 
+			let sort_value = PlayerProcessor.getDataValue(sort_column, player, sorted_players, this.props.encounter, true);
+
+			if (!max_value) {
+				max_value = PlayerProcessor.getDataValue(sort_column, player, sorted_players, this.props.encounter, true);
+			}
+
+			let percent = ((sort_value / max_value) * 100).toFixed(2);
+
 			if (collapsed && !is_current_player) {
 				continue;
 			}
@@ -67,7 +88,7 @@ class PlayerTable extends React.Component {
 			let blur = (player_blur && !is_current_player);
 
 			rows.push(
-				<Player key={player.name} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
+				<Player key={player.name} percent={percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
 			);
 		}
 
@@ -109,7 +130,7 @@ class PlayerTable extends React.Component {
 		}
 
 		return (
-			<div id="player-table" className={table_class}>
+			<div id="player-table" className={table_class} ref="player_table">
 				{header_row}
 				{getFooterRow("top")}
 				{rows}
@@ -121,6 +142,44 @@ class PlayerTable extends React.Component {
 	changeViewing(type, player) {
 		this.props.changeViewing(type);
 		this.props.changeDetailPlayer(player);
+	}
+
+	updateBackgrounds() {
+		let $table    = $(this.refs.player_table);
+		let is_grid   = $table.hasClass("grid");
+		let current_y = 0;
+
+		$table.find(".row").each(function() {
+			let $row = $(this);
+			let $bar = $row.find(".percent-bar");
+
+			if (!$bar.length) {
+				return;
+			}
+
+			let height   = $row.outerHeight();
+			let width    = $row.outerWidth();
+			let position = $row.position();
+
+			if (is_grid) {
+				height--;
+			}
+
+			if ($row.hasClass("active")) {
+				$row.removeClass("active");
+				$row.addClass("active-with-bar");
+			}
+
+			$bar
+				.css("top", position.top + "px")
+				.css("left", position.left + "px")
+				.css("width", "100%")
+				.css("height", height + "px")
+				.css("width", width + "px")
+				.css("backgroundSize", $row.attr("data-percent") + "% 100%");
+
+			current_y += height;
+		});
 	}
 }
 
