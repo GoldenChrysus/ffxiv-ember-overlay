@@ -413,7 +413,7 @@
 	);
 }
 
-#container #inner #content #player-table .row.active {
+#container #inner #content #player-table .row.active:not(.active-with-bar) {
 	.setThemeStyle(
 		{
 			background: @dark_playerTableActiveRowBackground;
@@ -424,7 +424,7 @@
 	);
 }
 
-#container #inner #content #player-table .row.active-with-bar .percent-bar {
+#container #inner #content #player-table .row.active.active-with-bar .percent-bar {
 	.setThemeStyle(
 		{
 			background-image: linear-gradient(@dark_playerTableActiveRowBackground, @dark_playerTableActiveRowBackground);

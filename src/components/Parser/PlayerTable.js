@@ -73,6 +73,8 @@ class PlayerTable extends React.Component {
 				is_current_player = true;
 
 				player._is_current = true;
+			} else if (player._is_current) {
+				player._is_current = false;
 			}
 
 			let sort_value = PlayerProcessor.getDataValue(sort_column, player, sorted_players, this.props.encounter, true);
@@ -157,7 +159,6 @@ class PlayerTable extends React.Component {
 			if (!$bar.length) {
 				if ($row.hasClass("active-with-bar")) {
 					$row.removeClass("active-with-bar");
-					$row.addClass("active");
 				}
 
 				return;
@@ -172,7 +173,6 @@ class PlayerTable extends React.Component {
 			}
 
 			if ($row.hasClass("active")) {
-				$row.removeClass("active");
 				$row.addClass("active-with-bar");
 			}
 
