@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 - Resolved issue where saved CSS would not appear in code editor on subsequent loads of the settings window
+- HOTFIX: Resolved issue where calculating effective healing metrics may cause an error
 
 ### Features
 - Added setting to display total DPS (rDPS) in overlay footer
