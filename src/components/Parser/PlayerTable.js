@@ -80,7 +80,7 @@ class PlayerTable extends React.Component {
 			let sort_value = PlayerProcessor.getDataValue(sort_column, player, sorted_players, this.props.encounter, true);
 
 			if (!max_value) {
-				max_value = PlayerProcessor.getDataValue(sort_column, player, sorted_players, this.props.encounter, true);
+				max_value = PlayerProcessor.getDataValue(sort_column, player, sorted_players, this.props.encounter, true) || 1;
 			}
 
 			let percent = ((sort_value / max_value) * 100).toFixed(2);
