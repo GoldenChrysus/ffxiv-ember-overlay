@@ -13,7 +13,7 @@ let calculateEffectiveHealed = function(player, players) {
 	let player_effective_heals = 0;
 
 	for (let tmp_player of players) {
-		let ratio           = 1 - (+tmp_player.OverHealPct.replace("%", "") / 100);
+		let ratio           = 1 - (+String(tmp_player.OverHealPct || 0).replace("%", "") / 100);
 		let effective_heals = +tmp_player.healed * ratio;
 
 		total_effective_heals += effective_heals;
@@ -29,7 +29,7 @@ let calculateEffectiveHealed = function(player, players) {
 };
 
 let calculateEffectiveHPS = function(player) {
-	let ratio = 1 - (+player.OverHealPct.replace("%", "") / 100);
+	let ratio = 1 - (+String(player.OverHealPct || 0).replace("%", "") / 100);
 	let hps   = +player.enchps * ratio;
 
 	return hps;
