@@ -22,6 +22,14 @@ const SettingsSchema = {
 					title    : "General",
 					settings : [
 						{
+							key_path : "interface.player_name",
+							label    : "Player Name",
+							type     : "textbox",
+							value    : function() {
+								return this.props.settings.interface.player_name;
+							}
+						},
+						{
 							key_path : "interface.opacity",
 							label    : "Overlay Opacity",
 							type     : "slider",

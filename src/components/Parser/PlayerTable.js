@@ -68,9 +68,11 @@ class PlayerTable extends React.Component {
 
 			count++;
 
-			if (player.name === "YOU") {
+			if (player.name === "YOU" || player.name === this.props.player_name) {
 				found             = true;
 				is_current_player = true;
+
+				player._is_current = true;
 			}
 
 			let sort_value = PlayerProcessor.getDataValue(sort_column, player, sorted_players, this.props.encounter, true);
@@ -206,6 +208,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
+		player_name    : state.settings.interface.player_name,
 		table_columns  : state.settings.table_columns,
 		sort_columns   : state.settings.sort_columns,
 		sum_columns    : state.settings.sum_columns,

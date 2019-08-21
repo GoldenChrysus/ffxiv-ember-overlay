@@ -14,6 +14,7 @@
 - Added setting to display total DPS (rDPS) in overlay footer
 - Added setting to show overlay footer when collapsed
 - Added setting to show performance background bars
+- Added setting to specify current character's name
 
 ### UI Changes
 - Renamed "TPS" (Tank Per Second) to "DTPS" (Damage Taken Per Second)

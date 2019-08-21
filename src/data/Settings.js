@@ -14,6 +14,7 @@ const default_settings = {
 		player_blur     : false
 	},
 	interface     : {
+		player_name           : "YOU",
 		opacity               : 100,
 		zoom                  : 100,
 		top_right_rank        : false,

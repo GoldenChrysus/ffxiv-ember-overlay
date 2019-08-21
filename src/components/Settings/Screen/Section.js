@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Form, Select, TextArea, Checkbox } from "semantic-ui-react";
+import { Header, Form, Select, Input, TextArea, Checkbox } from "semantic-ui-react";
 import Editor from "react-simple-code-editor";
 
 import Slider from "./Inputs/Slider";
@@ -47,6 +47,11 @@ class Section extends React.Component {
 						defaultValue={value}
 						key_path={setting_data.key_path}
 						onChange={this.props.changeCallback}/>;
+
+					break;
+
+				case "textbox":
+					setting = <Input defaultValue={value} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 
 					break;
 

@@ -6,7 +6,7 @@ import Constants from "../../../constants/index";
 class Player extends React.Component {
 	render() {
 		let player       = this.props.player;
-		let player_type  = (player.name === "YOU") ? "active" : "other";
+		let player_type  = (player._is_current) ? "active" : "other";
 		let job          = player.Job.toUpperCase() || "LMB";
 		let table_type   = this.props.type;
 		let is_raid      = (table_type === "raid");

@@ -21,7 +21,10 @@ class PlayerProcessor  {
 		let value        = (key_function) ? key_function(player, players, encounter) : player[key];
 
 		if (key === "name" && value === "YOU") {
-			value = store.getState().internal.character_name;
+			let state        = store.getState();
+			let setting_name = state.settings.interface.player_name;
+
+			value = (setting_name && setting_name === "YOU") ? state.internal.character_name : setting_name;
 		}
 
 		if (!return_sortable_value && !isNaN(value)) {
