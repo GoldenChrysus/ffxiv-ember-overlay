@@ -147,9 +147,8 @@ class PlayerTable extends React.Component {
 	}
 
 	updateBackgrounds() {
-		let $table    = $(this.refs.player_table);
-		let is_grid   = $table.hasClass("grid");
-		let current_y = 0;
+		let $table  = $(this.refs.player_table);
+		let is_grid = $table.hasClass("grid");
 
 		$table.find(".row").each(function() {
 			let $row = $(this);
@@ -184,8 +183,6 @@ class PlayerTable extends React.Component {
 				.css("height", height + "px")
 				.css("width", width + "px")
 				.css("backgroundSize", $row.attr("data-percent") + "% 100%");
-
-			current_y += height;
 		});
 	}
 }
