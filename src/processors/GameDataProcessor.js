@@ -25,8 +25,8 @@ class GameDataProcessor  {
 		data.Encounter.BlockPct         = "0%";
 		data.Encounter.DirectHitPct     = "0%";
 		data.Encounter.CritDirectHitPct = "0%";
-		data.Encounter["damage%"]       = "0%";
-		data.Encounter["healed%"]       = "0%";
+		data.Encounter["damage%"]       = "100%";
+		data.Encounter["healed%"]       = "100%";
 
 		for (let key in Constants.PlayerDataTitles) {
 			if (data.Encounter[key] !== undefined) {
