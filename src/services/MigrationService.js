@@ -32,6 +32,7 @@ class MigrationService {
 
 			await store.getState().settings_data.saveSettings(true);
 			await localForage.setItem("migration_history", JSON.stringify(history));
+
 			resolve();
 		});
 	}
