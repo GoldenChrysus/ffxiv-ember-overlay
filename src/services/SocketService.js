@@ -2,10 +2,13 @@ import SocketMessageProcessor from "../processors/SocketMessageProcessor";
 
 const querystring = require("querystring");
 
+const BASE_RECONNECT_DELAY = 300;
+
 class SocketService {
 	constructor(uri) {
 		this.message_processor = new SocketMessageProcessor();
 		this.uri               = uri || this.processUri();
+		this.reconnect_delay   = BASE_RECONNECT_DELAY;
 	}
 
 	processUri() {
@@ -33,15 +36,19 @@ class SocketService {
 		this.socket = new WebSocket(this.uri);
 
 		this.socket.onmessage = this.message_processor.processMessage;
-		this.socket.onclose   = this.reconnect.bind(this);
+		this.socket.onclose   = setTimeout(this.reconnect.bind(this), this.reconnect_delay);
 		this.socket.onopen    = this.setId.bind(this);
 	}
 
 	reconnect() {
+		this.reconnect_delay = Math.min(this.reconnect_delay * 2, 3000);
+
 		this.initialize();
 	}
 
 	setId() {
+		this.reconnect_delay = BASE_RECONNECT_DELAY;
+
 		let id = Math.random().toString(36).substring(7);
 
 		this.id = id;
