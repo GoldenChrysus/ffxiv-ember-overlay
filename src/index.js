@@ -17,12 +17,15 @@ import * as serviceWorker from "./serviceWorker";
 // Custom
 import Parser from "./components/Parser";
 import Settings from "./components/Settings";
+import MigrationService from "./services/MigrationService";
 
 store
 	.getState()
 	.settings_data
 	.loadSettings()
-	.then(() => {
+	.then(async () => {
+		await MigrationService.migrate();
+
 		ReactDOM.render(
 			<Router basename={process.env.REACT_APP_ROUTER_BASE}>
 				<Provider store={store}>

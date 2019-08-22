@@ -29,12 +29,12 @@ const default_settings = {
 	table_settings : {
 		general : {
 			table : {
-				short_names   : false,
+				short_names   : "no_short",
 				footer_at_top : false,
 				percent_bars  : false
 			},
 			raid  : {
-				short_names  : false,
+				short_names  : "no_short",
 				percent_bars : false
 			}
 		},
@@ -157,9 +157,9 @@ class Settings {
 		});
 	}
 
-	saveSettings() {
+	saveSettings(force) {
 		return new Promise((resolve, reject) => {
-			if (!window.parser) {
+			if (!window.parser && !force) {
 				resolve();
 				return;
 			}
@@ -211,7 +211,7 @@ class Settings {
 	}
 
 	getSetting(key) {
-		return this.settings[key] || default_settings[key];
+		return (key.indexOf(".") !== -1) ? ObjectService.getByKeyPath(this.settings, key) : this.settings[key] || default_settings[key];
 	}
 
 	setSetting(key_path, value, skip_save) {

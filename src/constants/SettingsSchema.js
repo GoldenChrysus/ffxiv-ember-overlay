@@ -12,6 +12,29 @@ for (let data_key in Constants.PlayerDataTitles) {
 	});
 }
 
+let short_name_options = [
+	{
+		key   : "no_short",
+		value : "no_short",
+		text  : "No"
+	},
+	{
+		key   : "short_first",
+		value : "short_first",
+		text  : "F. Last"
+	},
+	{
+		key   : "short_last",
+		value : "short_last",
+		text  : "First L."
+	},
+	{
+		key   : "short_both",
+		value : "short_both",
+		text  : "F. L."
+	}
+];
+
 const SettingsSchema = {
 	sections : [
 		{
@@ -105,7 +128,8 @@ const SettingsSchema = {
 						{
 							key_path : "table_settings.general.table.short_names",
 							label    : "Shorten Player Names",
-							type     : "checkbox",
+							type     : "select",
+							options  : short_name_options,
 							value    : function() {
 								return this.props.settings.table_settings.general.table.short_names;
 							}
@@ -310,7 +334,8 @@ const SettingsSchema = {
 						{
 							key_path : "table_settings.general.raid.short_names",
 							label    : "Shorten Player Names",
-							type     : "checkbox",
+							type     : "select",
+							options  : short_name_options,
 							value    : function() {
 								return this.props.settings.table_settings.general.raid.short_names;
 							}

@@ -15,6 +15,8 @@
 - Added setting to show overlay footer when collapsed
 - Added setting to show performance background bars
 - Added setting to specify current player's name
+- Converted on/off player name shortening setting to setting with four options
+    - Options are: No shortening, First L., F. Last, and F. L.
 
 ### UI Changes
 - Renamed "TPS" (Tank Per Second) to "DTPS" (Damage Taken Per Second)
@@ -22,7 +24,12 @@
 - Added value indicator to settings sliders
 
 ### Code Changes
-- ?
+- Added migration system to convert old data to new data
+    - File structure is as follows:
+        - `/src/constants/Migrations.js` lists the available migrations in order of creation
+        - `/src/migrations/*` contains each migration file and its logic
+        - `/src/services/MigrationService.js` handles running any pending migrations
+    - Migration process is initiated from `/src/index.js`
 
 ### Miscellaneous
 - Updated README with OverlayPlugin version requirement

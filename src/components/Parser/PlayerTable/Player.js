@@ -33,8 +33,8 @@ class Player extends React.Component {
 		let icon        = <div className="column" key="player-data-icon"><img src={"img/icons/jobs/" + job + ".png"} alt={job + " icon"}></img></div>;
 		let player_name = PlayerProcessor.getDataValue("name", player);
 
-		if (this.props.short_names) {
-			player_name = PlayerProcessor.getShortName(player_name);
+		if (this.props.short_names !== "no_short") {
+			player_name = PlayerProcessor.getShortName(player_name, this.props.short_names);
 		}
 
 		let name       = <div className={"column " + name_blur} key="player-data-name">{player_name}</div>;

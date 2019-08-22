@@ -3,17 +3,21 @@ import store from "../redux/store/index";
 import Constants from "../constants/index";
 
 class PlayerProcessor  {
-	getShortName(name) {
+	getShortName(name, type) {
 		name = name.split(" ");
 
 		if (name.length === 1) {
-			return name;
+			return (["short_first", "short_both"].indexOf(type) !== -1) ? name[0].slice(0, 1) + "." : name[0];
 		}
 
-		let first_initial = name[0].slice(0, 1);
-		let last_name     = name.pop();
+		let first_name = (["short_first", "short_both"].indexOf(type) !== -1) ? name[0].slice(0, 1) + "." : name[0];
+		let last_name  = name.pop();
 
-		return `${first_initial} ${last_name}`;
+		if ((["short_last", "short_both"].indexOf(type) !== -1)) {
+			last_name = last_name.slice(0, 1) + ".";
+		}
+
+		return `${first_name} ${last_name}`;
 	}
 
 	getDataValue(key, player, players, encounter, return_sortable_value) {
