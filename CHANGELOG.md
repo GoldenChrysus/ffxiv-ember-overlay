@@ -30,6 +30,7 @@
         - `/src/migrations/*` contains each migration file and its logic
         - `/src/services/MigrationService.js` handles running any pending migrations
     - Migration process is initiated from `/src/index.js`
+- Implemented reconnect delay when a connection to ACTWebSocket fails or closes
 
 ### Miscellaneous
 - Updated README with OverlayPlugin version requirement
