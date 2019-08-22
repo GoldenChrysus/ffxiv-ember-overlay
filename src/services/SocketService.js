@@ -37,7 +37,7 @@ class SocketService {
 
 		this.socket.onmessage = this.message_processor.processMessage;
 		this.socket.onclose   = setTimeout(this.reconnect.bind(this), this.reconnect_delay);
-		this.socket.onopen    = this.setId.bind(this);
+		this.socket.onopen    = this.connected.bind(this);
 	}
 
 	reconnect() {
@@ -46,9 +46,13 @@ class SocketService {
 		this.initialize();
 	}
 
-	setId() {
+	connected() {
 		this.reconnect_delay = BASE_RECONNECT_DELAY;
 
+		this.setId();
+	}
+
+	setId() {
 		let id = Math.random().toString(36).substring(7);
 
 		this.id = id;
