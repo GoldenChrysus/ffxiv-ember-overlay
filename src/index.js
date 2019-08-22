@@ -23,18 +23,20 @@ store
 	.getState()
 	.settings_data
 	.loadSettings()
-	.then(async () => {
-		await MigrationService.migrate();
-
-		ReactDOM.render(
-			<Router basename={process.env.REACT_APP_ROUTER_BASE}>
-				<Provider store={store}>
-					<Route exact path="/" component={Parser}/>
-					<Route path="/settings" component={Settings}/>
-				</Provider>
-			</Router>,
-			document.getElementById("root")
-		);
+	.then(() => {
+		MigrationService
+			.migrate()
+			.then(() => {
+				ReactDOM.render(
+					<Router basename={process.env.REACT_APP_ROUTER_BASE}>
+						<Provider store={store}>
+							<Route exact path="/" component={Parser}/>
+							<Route path="/settings" component={Settings}/>
+						</Provider>
+					</Router>,
+					document.getElementById("root")
+				);
+			});
 	})
 	.catch((e) => {
 

@@ -5,35 +5,63 @@ import Migrations from "../constants/Migrations";
 
 class MigrationService {
 	migrate() {
-		return new Promise(async (resolve, reject) => {
-			let history = await localForage.getItem("migration_history");
+		return new Promise((resolve, reject) => {
+			localForage.getItem("migration_history")
+				.then((history) => {
+					if (history) {
+						try {
+							history = JSON.parse(history);
+						} catch (e) {}
+					}
 
-			if (history) {
-				try {
-					history = JSON.parse(history);
-				} catch {}
+					if (!history) {
+						history = [];
+					}
+
+					this.history = history;
+
+					let promise = Migrations.reduce(
+						(last_promise, migration_name) => {
+							return last_promise.then(() => {
+								this.executeMigration(migration_name);
+							});
+						},
+						Promise.resolve()
+					);
+
+					promise.then(() => {
+						store
+							.getState()
+							.settings_data
+							.saveSettings(true)
+							.then(() => {
+								localForage
+									.setItem("migration_history", JSON.stringify(history))
+									.then(() => {
+										resolve();
+									})
+							});
+					});
+				});
+		});
+	}
+
+	executeMigration(migration_name) {
+		return new Promise((resolve, reject) => {
+			if (this.history.indexOf(migration_name) !== -1) {
+				resolve();
+				return;
 			}
 
-			if (!history) {
-				history = [];
-			}
+			let migration = require(`../migrations/${migration_name}.js`);
 
-			for (let migration_name of Migrations) {
-				if (history.indexOf(migration_name) !== -1) {
-					continue;
-				}
-
-				let migration = require(`../migrations/${migration_name}.js`);
-
-				await migration.default.migrate();
-
-				history.push(migration_name);
-			}
-
-			await store.getState().settings_data.saveSettings(true);
-			await localForage.setItem("migration_history", JSON.stringify(history));
-
-			resolve();
+			migration
+				.default
+				.migrate()
+				.then(() => {
+					this.history.push(migration_name);
+					resolve();
+				});
 		});
 	}
 }
