@@ -39,12 +39,12 @@ class OverlayInfo extends React.Component {
 	}
 
 	openFundingLink(rel) {
-		let search = window.location.search;
+		let search     = window.location.search || "";
 		let search_add = (search.slice(0, 1) === "?") ? "&" : "?";
 
 		search += search_add + `default=${rel}`;
 
-		window.open(window.location.path + search + "#/settings/donate", "", "width=600,height=430,location=yes,menubar=yes");
+		window.open(window.location.pathname + search + "#/settings/donate", "", "width=600,height=430,location=yes,menubar=yes");
 	}
 }
 

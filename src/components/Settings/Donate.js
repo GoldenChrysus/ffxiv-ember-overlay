@@ -5,13 +5,15 @@ import $ from "jquery";
 const querystring = require("querystring");
 
 class Donate extends React.Component {
-	componentWillMount() {
-		let params = new querystring.parse(window.location.search);
-		let type   = params["default"];
+	constructor() {
+		super();
 
-		this.setState({
+		let params = new querystring.parse(window.location.search);
+		let type   = params["default"] || params["?default"];
+
+		this.state = {
 			type : type
-		});
+		};
 	}
 
 	componentDidMount() {
