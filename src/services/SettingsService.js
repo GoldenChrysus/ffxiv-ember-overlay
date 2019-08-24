@@ -9,7 +9,7 @@ class SettingsService {
 		}
 
 		store.dispatch(updateState(new_data));
-		window.open("#/settings/about", "", "width=600,height=400,location=no,menubar=no");
+		window.open("#/settings/about", "", "width=600,height=430,location=no,menubar=no");
 	}
 
 	openSettingsImport() {

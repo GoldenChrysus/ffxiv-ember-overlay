@@ -4,7 +4,7 @@ import $ from "jquery";
 import { changeViewing, changeDetailPlayer, updateState } from "../../redux/actions/index";
 
 import Player from "./PlayerTable/Player";
-import Constants from "../../constants/index";
+import OverlayInfo from "./PlayerTable/OverlayInfo";
 import PlayerProcessor from "../../processors/PlayerProcessor";
 
 class PlayerTable extends React.Component {
@@ -133,13 +133,18 @@ class PlayerTable extends React.Component {
 			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
 		}
 
+		let overlay_info = (this.props.encounter && Object.keys(this.props.encounter).length) ? "" : <OverlayInfo/>
+
 		return (
-			<div id="player-table" className={table_class} ref="player_table">
-				{header_row}
-				{getFooterRow("top")}
-				{rows}
-				{getFooterRow("bottom")}
-			</div>
+			<React.Fragment>
+				<div id="player-table" className={table_class} ref="player_table">
+					{header_row}
+					{getFooterRow("top")}
+					{rows}
+					{getFooterRow("bottom")}
+				</div>
+				{overlay_info}
+			</React.Fragment>
 		);
 	}
 

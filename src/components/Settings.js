@@ -9,6 +9,7 @@ import Screen from "./Settings/Screen";
 import Export from "./Settings/Export";
 import About from "./Settings/About";
 import Streamers from "./Settings/Streamers";
+import Donate from "./Settings/Donate";
 
 import "./../styles/components/settings/settings-theme.less";
 
@@ -59,6 +60,7 @@ class Settings extends React.Component {
 									<NavLink to={base_url + "/export"} className="item">Export</NavLink>
 									<NavLink to={base_url + "/about"} className="item">About</NavLink>
 									<NavLink to={base_url + "/streamers"} className="streamers item">{streamer_text}</NavLink>
+									<NavLink to={base_url + "/donate"} className="item">Donate</NavLink>
 								</Menu>
 							</Grid.Column>
 							<Grid.Column width={13} id="settings-screen">
@@ -69,6 +71,7 @@ class Settings extends React.Component {
 								<Route path={base_url + "/export"} component={Export}/>
 								<Route path={base_url + "/about"} component={About}/>
 								<Route path={base_url + "/streamers"} render={() => <Streamers streamers={streamers} type={stream_type}/>}/>
+								<Route path={base_url + "/donate"} component={Donate}/>
 							</Grid.Column>
 						</Grid.Row>
 					</Grid>

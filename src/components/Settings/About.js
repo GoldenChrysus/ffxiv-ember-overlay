@@ -11,29 +11,7 @@ class About extends React.Component {
 
 		VersionService.getChangelogForUser()
 			.then((data) => {
-				let changelog = [];
-
-				if (typeof data === "string") {
-					changelog = <p>{data}</p>;
-				} else {
-					for (let item_type in data) {
-						let count = 0;
-						let items = data[item_type].map((item) => {
-							count++;
-
-							return <li key={item_type + "-" + count}>{item}</li>
-						});
-
-						let ul = <ul>{items}</ul>
-
-						changelog.push(
-							<Container fluid className="changelog-section" key={item_type + "-section"}>
-								<h4>{item_type}</h4>
-								{ul}
-							</Container>
-						);
-					}
-				}
+				let changelog = VersionService.formatChangelog(data);
 
 				this.setState({
 					changelog: changelog

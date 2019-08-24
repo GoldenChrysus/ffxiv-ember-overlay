@@ -34,6 +34,7 @@ body #settings-container p * {
 	padding: 0;
 	margin: 0;
 	position: fixed;
+	overflow-y: scroll;
 }
 
 #settings-container #settings-sidebar #settings-menu {
@@ -316,11 +317,66 @@ body #settings-container p * {
 	width: 200px;
 }
 
+#settings-container #settings-screen .section-container .donation-link {
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionTitleText;
+		},
+		{
+			color: @light_playerDetailSectionTitleText;
+		}
+	);
+}
+
 #settings-container #settings-screen .section-container p .discord-link,
-#settings-container #settings-screen .section-container p .author-link {
+#settings-container #settings-screen .section-container p .author-link,
+#settings-container #settings-screen .section-container .donation-link > span {
 	user-select: text !important;
 	font-weight: bold;
 	cursor: text;
+}
+
+#settings-container #settings-screen .section-container .donation-link > span {
+	.setThemeStyle(
+		{
+			color: @dark_importantText;
+		},
+		{
+			color: @light_importantText;
+		}
+	);
+}
+
+#settings-container #settings-screen .section-container .donation-link > span::selection {
+	.setThemeStyle(
+		{
+			color: @dark_contextMenuItemBackground;
+		},
+		{
+			color: @light_contextMenuItemBackground;
+		}
+	);
+}
+
+#settings-container #settings-screen .section-container .donation-link > span::before {
+	font-weight: normal;
+
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionTitleText;
+		},
+		{
+			color: @light_playerDetailSectionTitleText;
+		}
+	);
+}
+
+#settings-container #settings-screen .section-container .donation-link > span#donation-streamelements::before {
+	content: "StreamElements: ";
+}
+
+#settings-container #settings-screen .section-container .donation-link > span#donation-kofi::before {
+	content: "Ko-Fi: ";
 }
 
 #settings-container #settings-screen .section-container p .selectable-link {

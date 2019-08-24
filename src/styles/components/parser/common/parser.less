@@ -286,6 +286,83 @@
 	scrollbar-width : none;
 }
 
+#container #inner #content #overlay-info {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+#container #inner #content #overlay-info > h3 {
+	margin-bottom: 0;
+
+	.setThemeStyle(
+		{
+			color: @dark_importantText;
+		},
+		{
+			color: @light_importantText;
+		}
+	);
+}
+
+#container #inner #content #overlay-info > h3:not(:first-child) {
+	margin-top: 12px;
+}
+
+#container #inner #content #overlay-info p {
+	.setThemeStyle(
+		{
+			color: @dark_playerDetailSectionDataValueText;
+		},
+		{
+			color: @light_playerDetailSectionDataValueText;
+		}
+	);
+}
+
+#container #inner #content #overlay-info > #funding > span {
+	display: inline-block;
+	margin-right: 8px;
+	cursor: poiner;
+}
+
+#container #inner #content #overlay-info > #funding > span > img {
+	cursor: pointer;
+}
+
+#container #inner #content #overlay-info > .changelog-section {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+#container #inner #content #overlay-info > .changelog-section h4 {
+	margin-bottom: 0;
+	margin-left: 0;
+	padding: 0;
+
+	.setThemeStyle(
+		{
+			color: @dark_borderOuterShadow;
+		},
+		{
+			color: @light_borderOuterShadow;
+		}
+	);
+}
+
+#container #inner #content #overlay-info > .changelog-section ul {
+	margin-top: 0;
+
+	.setThemeStyle(
+		{
+			color: @dark_headerSubtitleText;
+		},
+		{
+			color: @light_headerSubtitleText;
+		}
+	);
+}
+
 #container #inner #content #player-table {
 	width           : calc(100% - 16px);
 	display         : table;
