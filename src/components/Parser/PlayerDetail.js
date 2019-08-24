@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import Constants from "../../constants/index";
 import PlayerProcessor from "../../processors/PlayerProcessor";
 import LocalizationService from "../../services/LocalizationService";
 import HistoryChart from "./PlayerDetail/HistoryChart";

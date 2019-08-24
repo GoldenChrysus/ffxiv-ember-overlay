@@ -1,4 +1,3 @@
-import Constants from "./index";
 import LocalizationService from "../services/LocalizationService";
 
 let short_name_options = [

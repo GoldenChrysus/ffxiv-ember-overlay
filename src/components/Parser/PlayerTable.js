@@ -4,7 +4,6 @@ import $ from "jquery";
 import { changeViewing, changeDetailPlayer, updateState } from "../../redux/actions/index";
 
 import Player from "./PlayerTable/Player";
-import Constants from "../../constants/index";
 import PlayerProcessor from "../../processors/PlayerProcessor";
 import LocalizationService from "../../services/LocalizationService";
 
