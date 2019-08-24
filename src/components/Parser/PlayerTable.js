@@ -6,6 +6,7 @@ import { changeViewing, changeDetailPlayer, updateState } from "../../redux/acti
 import Player from "./PlayerTable/Player";
 import Constants from "../../constants/index";
 import PlayerProcessor from "../../processors/PlayerProcessor";
+import LocalizationService from "../../services/LocalizationService";
 
 class PlayerTable extends React.Component {
 	componentDidMount() {
@@ -32,10 +33,11 @@ class PlayerTable extends React.Component {
 		let short_names    = (is_raid) ? this.props.table_settings.general.raid.short_names : this.props.table_settings.general.table.short_names;
 		let footer_at_top  = this.props.table_settings.general.table.footer_at_top;
 		let percent_bars   = (is_raid) ? this.props.table_settings.general.raid.percent_bars : this.props.table_settings.general.table.percent_bars;
+		let language       = this.props.language;
 
 		if (!is_raid) {
 			for (let key of this.props.table_columns[table_type]) {
-				let title = Constants.PlayerDataTitles[key].short;
+				let title = LocalizationService.getPlayerDataTitle(language, key, "short");
 
 				header.push(
 					<div className="column" key={key}>{title}</div>
@@ -92,7 +94,7 @@ class PlayerTable extends React.Component {
 			let blur = (player_blur && !is_current_player);
 
 			rows.push(
-				<Player key={player.name} percent={percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
+				<Player key={player.name} percent={percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} short_names={short_names} language={language} onClick={this.changeViewing.bind(this, "player", player)}/>
 			);
 		}
 
@@ -205,6 +207,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
+		language       : state.settings.interface.language,
 		player_name    : state.settings.interface.player_name,
 		table_columns  : state.settings.table_columns,
 		sort_columns   : state.settings.sort_columns,

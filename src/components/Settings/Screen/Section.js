@@ -12,7 +12,7 @@ class Section extends React.Component {
 	}
 
 	getSettingValue(setting_data) {
-		return (typeof setting_data.value === "function") ? setting_data.value.call(this) : setting_data.value;
+		return (typeof setting_data.value === "function") ? setting_data.value.call(this, this) : setting_data.value;
 	}
 
 	componentWillMount() {
@@ -29,6 +29,7 @@ class Section extends React.Component {
 
 	render() {
 		let settings = [];
+		let language = this.props.settings.interface.language;
 
 		for (let setting_data of this.props.data.settings) {
 			let setting;
@@ -42,8 +43,10 @@ class Section extends React.Component {
 						value = [];
 					}
 
+					let options = (typeof setting_data.options === "function") ? setting_data.options(language) : setting_data.options;
+
 					setting = <Select fluid labeled multiple={setting_data.multiple || false} search={setting_data.search || false}
-						options={setting_data.options}
+						options={options}
 						defaultValue={value}
 						key_path={setting_data.key_path}
 						onChange={this.props.changeCallback}/>;

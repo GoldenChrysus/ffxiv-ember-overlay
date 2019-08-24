@@ -21,7 +21,8 @@ const default_settings = {
 		collapse_down         : false,
 		light_theme           : false,
 		footer_when_collapsed : false,
-		footer_dps            : false
+		footer_dps            : false,
+		language              : "en"
 	},
 	custom        : {
 		css : ""

@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import Constants from "../../constants/index";
 import PlayerProcessor from "../../processors/PlayerProcessor";
+import LocalizationService from "../../services/LocalizationService";
 import HistoryChart from "./PlayerDetail/HistoryChart";
 
 class PlayerDetail extends React.Component {
@@ -11,6 +12,7 @@ class PlayerDetail extends React.Component {
 		let players     = [];
 		let job         = player.Job.toUpperCase() || "LMB";
 		let detail_data = this.props.detail_data;
+		let language    = this.props.language;
 		let sections    = [
 			<div className="split" key="chart-split"></div>,
 			<HistoryChart player={player} history={this.props.history} light_theme={this.props.light_theme} key="chart"/>
@@ -25,7 +27,7 @@ class PlayerDetail extends React.Component {
 			let columns = [];
 
 			for (let key of detail) {
-				let title = Constants.PlayerDataTitles[key].long;
+				let title = LocalizationService.getPlayerDataTitle(language, key, "long");
 				let value = PlayerProcessor.getDataValue(key, player, players, this.props.encounter);
 
 				columns.push(
@@ -67,6 +69,7 @@ class PlayerDetail extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
+		language    : state.settings.interface.language,
 		detail_data : state.settings.detail_data,
 		history     : state.internal.encounter_data_history,
 		light_theme : state.settings.interface.light_theme
