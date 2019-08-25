@@ -2,26 +2,24 @@
 
 ## 0.9.0-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2019-08-25**
 
 ### Bug Fixes
-- ! - Resolved issue where saved CSS would not appear in code editor on subsequent loads of the settings window
-- ! - HOTFIX: Resolved issue where calculating effective healing metrics may cause an error
+- Resolved issue where saved CSS would not appear in code editor on subsequent loads of the settings window
+- HOTFIX: Resolved issue where calculating effective healing metrics may cause an error
 
 ### Features
-- ! - Added setting to display total DPS (rDPS) in overlay footer
-- ! - Added setting to show overlay footer when collapsed
-- ! - Added setting to show performance background bars
-- ! - Added setting to specify current player's name
-- ! - Converted on/off player name shortening setting to setting with four options
+- Added setting to display total DPS (rDPS) in overlay footer
+- Added setting to show overlay footer when collapsed
+- Added setting to show performance background bars
+- Added setting to specify current player's name
+- Converted on/off player name shortening setting to setting with four options
     - Options are: No shortening, First L., F. Last, and F. L.
 
 ### UI Changes
-- ! - Renamed "TPS" (Tank Per Second) to "DTPS" (Damage Taken Per Second)
-- ! - Changed blur intensity when blurring player names
-- ! - Added value indicator to settings sliders
+- Renamed "TPS" (Tank Per Second) to "DTPS" (Damage Taken Per Second)
+- Changed blur intensity when blurring player names
+- Added value indicator to settings sliders
 - Added donation info to overlay startup screen and settings window
 
 ### Code Changes
