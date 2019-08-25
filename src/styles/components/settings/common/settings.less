@@ -317,26 +317,16 @@ body #settings-container p * {
 	width: 200px;
 }
 
-#settings-container #settings-screen .section-container .donation-link {
-	.setThemeStyle(
-		{
-			color: @dark_playerDetailSectionTitleText;
-		},
-		{
-			color: @light_playerDetailSectionTitleText;
-		}
-	);
-}
 
 #settings-container #settings-screen .section-container p .discord-link,
 #settings-container #settings-screen .section-container p .author-link,
-#settings-container #settings-screen .section-container .donation-link > span {
+#settings-container #settings-screen .section-container .donation-link {
 	user-select: text !important;
 	font-weight: bold;
 	cursor: text;
 }
 
-#settings-container #settings-screen .section-container .donation-link > span {
+#settings-container #settings-screen .section-container .donation-link {
 	.setThemeStyle(
 		{
 			color: @dark_importantText;
@@ -347,7 +337,7 @@ body #settings-container p * {
 	);
 }
 
-#settings-container #settings-screen .section-container .donation-link > span::selection {
+#settings-container #settings-screen .section-container .donation-link::selection {
 	.setThemeStyle(
 		{
 			color: @dark_contextMenuItemBackground;
@@ -358,7 +348,7 @@ body #settings-container p * {
 	);
 }
 
-#settings-container #settings-screen .section-container .donation-link > span::before {
+#settings-container #settings-screen .section-container .donation-link::before {
 	font-weight: normal;
 
 	.setThemeStyle(
@@ -371,12 +361,12 @@ body #settings-container p * {
 	);
 }
 
-#settings-container #settings-screen .section-container .donation-link > span#donation-streamelements::before {
+#settings-container #settings-screen .section-container .donation-link#donation-streamelements::before {
 	content: "StreamElements: ";
 }
 
-#settings-container #settings-screen .section-container .donation-link > span#donation-kofi::before {
-	content: "Ko-Fi: ";
+#settings-container #settings-screen .section-container .donation-link#donation-kofi::before {
+	content: "Ko-fi: ";
 }
 
 #settings-container #settings-screen .section-container p .selectable-link {

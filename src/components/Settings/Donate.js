@@ -32,10 +32,15 @@ class Donate extends React.Component {
 			<React.Fragment>
 				<Container fluid className="section-container">
 					<h2>Donate</h2>
-					<p>Copy one of the following URL's into your regular browser to make a donation.</p>
+					<p>
+						Copy one of the following URL's into your regular browser to make a donation. 
+						Donations are extremely appreciated, but this overlay will continue to be developed even without donations. 
+						If you would like your name to be included in the list of donors, please state this in the donation message. 
+						Thank you!
+					</p>
 
-					<div className="donation-link" data-type="streamelements" ref="streamelements"><span id="donation-streamelements">https://streamelements.com/chrysus/tip</span></div>
-					<div className="donation-link" data-type="kofi" ref="kofi"><span id="donation-kofi">https://ko-fi.com/S6S611OOG</span></div>
+					<div className="donation-link" data-type="streamelements" ref="streamelements" id="donation-streamelements">https://streamelements.com/chrysus/tip</div>
+					<div className="donation-link" data-type="kofi" ref="kofi" id="donation-kofi">https://ko-fi.com/goldenchrysus</div>
 				</Container>
 			</React.Fragment>
 		);
