@@ -353,10 +353,10 @@ body #settings-container p * {
 
 	.setThemeStyle(
 		{
-			color: @dark_playerDetailSectionTitleText;
+			color: @dark_placeholderInsetBorder;
 		},
 		{
-			color: @light_playerDetailSectionTitleText;
+			color: @light_borderOuterShadow;
 		}
 	);
 }
@@ -367,6 +367,10 @@ body #settings-container p * {
 
 #settings-container #settings-screen .section-container .donation-link#donation-kofi::before {
 	content: "Ko-fi: ";
+}
+
+#settings-container #settings-screen .section-container .donation-link#donation-patreon::before {
+	content: "Patreon: ";
 }
 
 #settings-container #settings-screen .section-container p .selectable-link {

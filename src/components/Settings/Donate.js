@@ -41,6 +41,7 @@ class Donate extends React.Component {
 
 					<div className="donation-link" data-type="streamelements" ref="streamelements" id="donation-streamelements">https://streamelements.com/chrysus/tip</div>
 					<div className="donation-link" data-type="kofi" ref="kofi" id="donation-kofi">https://ko-fi.com/goldenchrysus</div>
+					<div className="donation-link" data-type="patreon" ref="patreon" id="donation-patreon">https://www.patreon.com/Chrysus</div>
 				</Container>
 			</React.Fragment>
 		);
