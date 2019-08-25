@@ -19,7 +19,7 @@ class Donate extends React.Component {
 	componentDidMount() {
 		if (this.state.type) {
 			let type = this.state.type;
-			let $url = $(this.refs[type]).find("span");
+			let $url = $(this.refs[type]);
 
 			$url.focus();
 			this.selectText(`donation-${type}`);
