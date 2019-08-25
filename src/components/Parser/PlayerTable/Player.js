@@ -85,7 +85,7 @@ class Player extends React.Component {
 		}
 
 		return (
-			<div className={"row player " + player_type} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>
+			<div className={"row player " + player_type} data-job={job} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>
 				{playerData()}
 				{statData()}
 				{percentBar()}
