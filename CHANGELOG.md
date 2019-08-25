@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.10.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- ?
+
+### Features
+- IN PROGRESS: Add translation system
+    - Português
+    - 中文
+    - 日本語
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.9.0-alpha
 
 **Released: 2019-08-25**
