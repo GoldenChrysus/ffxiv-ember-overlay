@@ -7,7 +7,7 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- ?
+- Resolved issue where custom CSS code editor wouldn't expand vertically to accommodate several lines of CSS
 
 ### Features
 - IN PROGRESS: Add translation system
