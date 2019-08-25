@@ -71,7 +71,7 @@ class Player extends React.Component {
 			}
 
 			return (
-				<div className="percent-bar" style={{
+				<div className="percent-bar" key={"percent-bar-" + player_name} style={{
 					backgroundSize      : "0% 100%",
 					backgroundRepeat    : "no-repeat",
 					backgroundPositionY : "1px",
@@ -85,7 +85,7 @@ class Player extends React.Component {
 		}
 
 		return (
-			<div className={"row player " + player_type} data-percent={this.props.percent} onClick={this.props.onClick}>
+			<div className={"row player " + player_type} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>
 				{playerData()}
 				{statData()}
 				{percentBar()}
