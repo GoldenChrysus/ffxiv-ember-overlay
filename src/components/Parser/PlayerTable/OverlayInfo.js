@@ -28,8 +28,9 @@ class OverlayInfo extends React.Component {
 				<p>This section will disappear when an encounter begins.</p>
 
 				<div id="funding">
-					<span onClick={this.openFundingLink.bind(this, "streamelements")} ref="streamelements"><img src="https://img.shields.io/badge/Donate-on%20StreamElements-green" alt="Donate on StreamElements" height="20"/></span>
-					<span onClick={this.openFundingLink.bind(this, "kofi")} ref="kofi"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "streamelements")} ref="streamelements"><img src="https://img.shields.io/badge/Donate-at%20StreamElements-green" alt="Donate at StreamElements" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "kofi")} ref="kofi"><img src="img/buttons/funding/kofi.svg" alt="Donate at Ko-fi" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "patreon")} ref="patreon"><img src="img/buttons/funding/patreon.png" alt="Donate at Patreon" height="20"/></span>
 				</div>
 
 				<h3>Latest Changes</h3>
