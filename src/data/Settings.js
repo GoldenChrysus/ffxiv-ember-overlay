@@ -200,7 +200,7 @@ class Settings {
 		let data = atob(settings_key);
 
 		this.mergeSettings(data);
-		this.saveSettings()
+		this.saveSettings(true)
 			.then(() => {
 				store.dispatch(
 					updateState({
