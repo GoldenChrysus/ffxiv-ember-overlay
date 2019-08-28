@@ -35,6 +35,11 @@ const language_options = [
 		text  : "中文"
 	},
 	{
+		key   : "de",
+		value : "de",
+		text  : "Deutsch"
+	},
+	{
 		key   : "jp",
 		value : "jp",
 		text  : "日本語"
