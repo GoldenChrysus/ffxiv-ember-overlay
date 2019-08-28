@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 - Resolved issue where custom CSS code editor wouldn't expand vertically to accommodate several lines of CSS
+- HOTFIX: Resolved issue where overlay would instantiate infinite WebSocket clients, causing high CPU usage on some machines
 
 ### Features
 - IN PROGRESS: Add translation system
