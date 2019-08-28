@@ -36,7 +36,7 @@ class SocketService {
 		this.socket = new WebSocket(this.uri);
 
 		this.socket.onmessage = this.message_processor.processMessage;
-		this.socket.onclose   = setTimeout(this.reconnect.bind(this), this.reconnect_delay);
+		this.socket.onclose   = () => { setTimeout(this.reconnect.bind(this), this.reconnect_delay); }
 		this.socket.onopen    = this.connected.bind(this);
 	}
 
