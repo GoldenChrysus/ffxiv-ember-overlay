@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { changeCollapse } from "../../redux/actions/index";
 
 import IconButton from "./Container/IconButton";
+import LocalizationService from "../../services/LocalizationService";
 
 class GameState extends React.Component {
 	render() {
@@ -13,7 +14,7 @@ class GameState extends React.Component {
 			let data = { state: !this.props.collapsed };
 
 			return(
-				<IconButton icon={icon} title="Toggle collapse" key="toggle-collapsed" onClick={this.changeCollapse.bind(this, data)}/>
+				<IconButton icon={icon} title={LocalizationService.getOverlayText("toggle_collapse")} key="toggle-collapsed" onClick={this.changeCollapse.bind(this, data)}/>
 			);
 		};
 

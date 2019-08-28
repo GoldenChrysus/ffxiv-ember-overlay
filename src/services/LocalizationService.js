@@ -1,4 +1,5 @@
 import Constants from "../constants/index";
+import { OverlayLocales } from "../constants/Locales";
 import store from "../redux/store/index";
 
 class LocalizationService {
@@ -32,6 +33,10 @@ class LocalizationService {
 		}
 
 		return options;
+	}
+
+	getOverlayText(key) {
+		return OverlayLocales[key][this.getLanguage()] || OverlayLocales[key].en;
 	}
 }
 

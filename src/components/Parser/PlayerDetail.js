@@ -41,7 +41,7 @@ class PlayerDetail extends React.Component {
 			);
 			sections.push(
 				<div className="section" key={section_type}>
-					<div className="title" key={section_type + "-title"}>{section_type}</div>
+					<div className="title" key={section_type + "-title"}>{LocalizationService.getOverlayText(section_type)}</div>
 					<div className="data" key={section_type + "-data"}>
 						{columns}
 					</div>

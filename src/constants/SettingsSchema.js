@@ -184,7 +184,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : true,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.table_columns.dps;
 							}
@@ -195,7 +195,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : false,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.sort_columns.dps;
 							}
@@ -219,7 +219,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : true,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.table_columns.heal;
 							}
@@ -230,7 +230,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : false,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.sort_columns.heal;
 							}
@@ -254,7 +254,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : true,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.table_columns.tank;
 							}
@@ -265,7 +265,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : false,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.sort_columns.tank;
 							}
@@ -295,7 +295,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : true,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.detail_data.dps;
 							}
@@ -311,7 +311,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : true,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.detail_data.heal;
 							}
@@ -327,7 +327,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : true,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.detail_data.tank;
 							}
@@ -349,7 +349,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : false,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.sort_columns.raid;
 							}
@@ -382,7 +382,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : true,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.table_columns.raid.dps;
 							}
@@ -398,7 +398,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : true,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.table_columns.raid.heal;
 							}
@@ -414,7 +414,7 @@ const SettingsSchema = {
 							type     : "select",
 							multiple : true,
 							search   : true,
-							options  : LocalizationService.getPlayerDataTitles,
+							options  : () => LocalizationService.getPlayerDataTitles(),
 							value    : function() {
 								return this.props.settings.table_columns.raid.tank;
 							}

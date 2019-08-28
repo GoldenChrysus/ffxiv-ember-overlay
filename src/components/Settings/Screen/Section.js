@@ -43,7 +43,7 @@ class Section extends React.Component {
 						value = [];
 					}
 
-					let options = (typeof setting_data.options === "function") ? setting_data.options(language) : setting_data.options;
+					let options = (typeof setting_data.options === "function") ? setting_data.options() : setting_data.options;
 
 					setting = <Select fluid labeled multiple={setting_data.multiple || false} search={setting_data.search || false}
 						options={options}

@@ -4,6 +4,7 @@ import { Form, Input, Button } from "semantic-ui-react";
 import $ from "jquery";
 
 import Settings from "../../../data/Settings";
+import LocalizationService from "../../../services/LocalizationService";
 
 class Import extends React.Component {
 	render() {
@@ -15,13 +16,13 @@ class Import extends React.Component {
 					</div>
 					<div className="section">
 						<p>
-							Paste your exported setting key below and click "Import."
+							{LocalizationService.getOverlayText("import_instructions")}
 						</p>
 						<div>
 							<Form>
 								<Form.Field>
 									<Input/>
-									<Button size="mini" className="import" onClick={this.handleImport.bind(this)}>Import</Button>
+									<Button size="mini" className="import" onClick={this.handleImport.bind(this)}>{LocalizationService.getOverlayText("import")}</Button>
 								</Form.Field>
 							</Form>
 						</div>
@@ -39,4 +40,10 @@ class Import extends React.Component {
 	}
 }
 
-export default connect()(Import);
+const mapStateToProps = (state) => {
+	return {
+		language : state.settings.interface.language
+	};
+};
+
+export default connect(mapStateToProps)(Import);

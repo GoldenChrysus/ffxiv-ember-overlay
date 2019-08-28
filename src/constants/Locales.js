@@ -1,0 +1,1 @@
+export const OverlayLocales = require("../data/locales/overlay.json");
