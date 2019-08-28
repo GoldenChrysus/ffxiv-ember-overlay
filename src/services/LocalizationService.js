@@ -1,16 +1,22 @@
 import Constants from "../constants/index";
+import store from "../redux/store/index";
 
 class LocalizationService {
-	getPlayerDataTitle(language, key, type) {
+	getLanguage() {
+		return store.getState().settings.interface.language;
+	}
+
+	getPlayerDataTitle(key, type) {
 		let title = Constants.PlayerDataTitles[key];
 
-		title = title[language] || title.en;
+		title = title[this.getLanguage()] || title.en;
 
 		return title[type];
 	}
 
-	getPlayerDataTitles(language) {
-		let options = [];
+	getPlayerDataTitles() {
+		let language = this.getLanguage();
+		let options  = [];
 
 		for (let data_key in Constants.PlayerDataTitles) {
 			let data   = Constants.PlayerDataTitles[data_key];
