@@ -134,7 +134,7 @@ class PlayerTable extends React.Component {
 			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
 		}
 
-		let overlay_info = (this.props.encounter && Object.keys(this.props.encounter).length) ? "" : <OverlayInfo/>
+		let overlay_info = (collapsed || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
 
 		return (
 			<React.Fragment>
