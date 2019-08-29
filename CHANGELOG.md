@@ -16,6 +16,7 @@
     - Português
     - 中文
     - 日本語
+    - German
 
 ### UI Changes
 - ?
