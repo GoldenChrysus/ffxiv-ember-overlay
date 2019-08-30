@@ -34,8 +34,10 @@ class Settings extends React.Component {
 		let streamers          = (this.state && this.state.streamers) ? this.state.streamers : {};
 		let stream_type        = (this.state && this.state.stream_type) ? this.state.stream_type : "offline";
 		let streamer_count     = (streamers) ? Object.keys(streamers).length : 0;
-		let streamer_pluralize = (streamer_count > 1) ? "Streamers" : "Streamer";
-		let streamer_text      = (streamer_count && this.state.stream_type === "live") ? `${streamer_count} ${streamer_pluralize} Live` : "Streamers";
+		let streamer_base_text = (streamer_count && stream_type === "live")
+			? LocalizationService.getMisc((streamer_count > 1) ? "streamers_live" : "streamer_live")
+			: LocalizationService.getMisc("streamers");
+		let streamer_text      = streamer_base_text.replace("{{number}}", streamer_count);
 
 		for (let section of SettingsSchema.sections) {
 			let section_path = section.path;
@@ -59,8 +61,8 @@ class Settings extends React.Component {
 							<Grid.Column width={3} id="settings-sidebar">
 								<Menu vertical id="settings-menu">
 									{nav_links}
-									<NavLink to={base_url + "/export"} className="item">Export</NavLink>
-									<NavLink to={base_url + "/about"} className="item">About</NavLink>
+									<NavLink to={base_url + "/export"} className="item">{LocalizationService.getSettingsSectionText("export")}</NavLink>
+									<NavLink to={base_url + "/about"} className="item">{LocalizationService.getSettingsSectionText("about")}</NavLink>
 									<NavLink to={base_url + "/streamers"} className="streamers item">{streamer_text}</NavLink>
 								</Menu>
 							</Grid.Column>

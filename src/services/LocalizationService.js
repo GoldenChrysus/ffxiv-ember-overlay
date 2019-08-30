@@ -78,6 +78,12 @@ class LocalizationService {
 			}
 		];
 	}
+
+	getMisc(key) {
+		let language = this.getLanguage();
+
+		return SettingsLocales.misc[key][language] || SettingsLocales.misc[key].en;
+	}
 }
 
 export default new LocalizationService();

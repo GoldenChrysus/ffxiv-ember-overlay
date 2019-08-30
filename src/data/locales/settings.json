@@ -43,17 +43,17 @@
 				},
 				{
 					"en" : "Heal",
-					"pt" : "Heal",
-					"cn" : "Heal",
-					"jp" : "Heal",
-					"de" : "Heal"
+					"pt" : "Cura",
+					"cn" : "量",
+					"jp" : "復",
+					"de" : "Heilung"
 				},
 				{
 					"en" : "Tank",
-					"pt" : "Tank",
-					"cn" : "Tank",
-					"jp" : "Tank",
-					"de" : "Tank"
+					"pt" : "Tanque",
+					"cn" : "坦克",
+					"jp" : "タンク",
+					"de" : "Verteidiger"
 				}
 			]
 		},
@@ -75,17 +75,17 @@
 				},
 				{
 					"en" : "Heal",
-					"pt" : "Heal",
-					"cn" : "Heal",
-					"jp" : "Heal",
-					"de" : "Heal"
+					"pt" : "Cura",
+					"cn" : "量",
+					"jp" : "復",
+					"de" : "Heilung"
 				},
 				{
 					"en" : "Tank",
-					"pt" : "Tank",
-					"cn" : "Tank",
-					"jp" : "Tank",
-					"de" : "Tank"
+					"pt" : "Tanque",
+					"cn" : "坦克",
+					"jp" : "タンク",
+					"de" : "Verteidiger"
 				}
 			]
 		},
@@ -114,17 +114,17 @@
 				},
 				{
 					"en" : "Heal",
-					"pt" : "Heal",
-					"cn" : "Heal",
-					"jp" : "Heal",
-					"de" : "Heal"
+					"pt" : "Cura",
+					"cn" : "量",
+					"jp" : "復",
+					"de" : "Heilung"
 				},
 				{
 					"en" : "Tank",
-					"pt" : "Tank",
-					"cn" : "Tank",
-					"jp" : "Tank",
-					"de" : "Tank"
+					"pt" : "Tanque",
+					"cn" : "坦克",
+					"jp" : "タンク",
+					"de" : "Verteidiger"
 				}
 			]
 		},
@@ -143,6 +143,42 @@
 					"cn" : "自定义CSS",
 					"jp" : "カスタムＣＳＳ",
 					"de" : "Eigenes CSS"
+				}
+			]
+		},
+		"export"        : {
+			"title"       : {
+				"en" : "Export",
+				"pt" : "Exportar",
+				"cn" : "导出",
+				"jp" : "持ち出す",
+				"de" : "Exportieren"
+			},
+			"subsections" : [
+				{
+					"en" : "Export Settings",
+					"pt" : "Exportar Configurações",
+					"cn" : "导出设置",
+					"jp" : "設定を持ち出す",
+					"de" : "Einstellungen Exportieren"
+				}
+			]
+		},
+		"about"         : {
+			"title"       : {
+				"en" : "About",
+				"pt" : "Sobre",
+				"cn" : "关于",
+				"jp" : "問い合わせ",
+				"de" : "Über"
+			},
+			"subsections" : [
+				{
+					"en" : "Ember Overlay",
+					"pt" : "Ember Overlay",
+					"cn" : "Ember Overlay",
+					"jp" : "エンバーオーバーレイ",
+					"de" : "Ember Overlay"
 				}
 			]
 		}
@@ -398,6 +434,27 @@
 				"short_last"  : "Vorname N.",
 				"short_both"  : "V. N."
 			}
+		},
+		"streamers"          : {
+			"en" : "Streamers",
+			"pt" : "Streamers",
+			"cn" : "主播",
+			"jp" : "配信者",
+			"de" : "Streamer"
+		},
+		"streamer_live"      : {
+			"en" : "{{number}} Streamer Live",
+			"pt" : "{{number}} Streamer ao Vivo",
+			"cn" : "{{number}}位主播直播中",
+			"jp" : "{{number}}人配信中",
+			"de" : "{{number}} Streamer Live"
+		},
+		"streamers_live"     : {
+			"en" : "{{number}} Streamers Live",
+			"pt" : "{{number}} Streamers ao Vivo",
+			"cn" : "{{number}}位主播直播中",
+			"jp" : "{{number}}人配信中",
+			"de" : "{{number}} Streamer Live"
 		}
 	}
 }
