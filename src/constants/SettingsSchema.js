@@ -54,7 +54,6 @@ const language_options = [
 const SettingsSchema = {
 	sections : [
 		{
-			title    : "Interface",
 			path     : "interface",
 			sections : [
 				{
@@ -133,7 +132,6 @@ const SettingsSchema = {
 			]
 		},
 		{
-			title    : "Player Table",
 			path     : "player-table",
 			sections : [
 				{
@@ -262,7 +260,6 @@ const SettingsSchema = {
 			]
 		},
 		{
-			title    : "Player Detail",
 			path     : "player-detail",
 			sections : [
 				{
@@ -313,7 +310,6 @@ const SettingsSchema = {
 			]
 		},
 		{
-			title    : "Raid View",
 			path     : "raid-view",
 			sections : [
 				{
@@ -321,7 +317,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "sort_columns.raid",
-							label    : "Default Sort Metric",
 							type     : "select",
 							multiple : false,
 							search   : true,
@@ -332,7 +327,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "table_settings.general.raid.short_names",
-							label    : "Shorten Player Names",
 							type     : "select",
 							options  : short_name_options,
 							value    : function() {
@@ -341,7 +335,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "table_settings.general.raid.percent_bars",
-							label    : "Show Performance Background Bars",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.table_settings.general.raid.percent_bars;
@@ -354,7 +347,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "table_columns.raid.dps",
-							label    : "Metrics",
 							type     : "select",
 							multiple : true,
 							search   : true,
@@ -370,7 +362,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "table_columns.raid.heal",
-							label    : "Metrics",
 							type     : "select",
 							multiple : true,
 							search   : true,
@@ -386,7 +377,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "table_columns.raid.tank",
-							label    : "Metrics",
 							type     : "select",
 							multiple : true,
 							search   : true,
@@ -400,7 +390,6 @@ const SettingsSchema = {
 			]
 		},
 		{
-			title    : "Custom CSS",
 			path     : "custom-css",
 			sections : [
 				{
@@ -408,7 +397,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "custom.css",
-							label    : "User-provided CSS is at your own risk.",
 							type     : "code",
 							value    : function() {
 								return this.props.settings.custom.css;

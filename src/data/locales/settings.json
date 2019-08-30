@@ -1,5 +1,62 @@
 {
-	"settings" : {
+	"sections"       : {
+		"interface"     : {
+			"title"       : {
+				"en" : "Interface",
+				"pt" : "Interface",
+				"cn" : "界面",
+				"jp" : "インターフェース",
+				"de" : "Benutzeroberfläche"
+			},
+			"subsections" : [
+			]
+		},
+		"player-table"  : {
+			"title"       : {
+				"en" : "Player Table",
+				"pt" : "Tabela de Jogador",
+				"cn" : "玩家选项",
+				"jp" : "プレイヤー表",
+				"de" : "Spielertabelle"
+			},
+			"subsections" : [
+			]
+		},
+		"player-detail" : {
+			"title"       : {
+				"en" : "Player Detail",
+				"pt" : "Detalhes do Jogador",
+				"cn" : "玩家详情",
+				"jp" : "プレイヤー詳細",
+				"de" : "Spieler Detail"
+			},
+			"subsections" : [
+			]
+		},
+		"raid-view"     : {
+			"title"       : {
+				"en" : "Raid View",
+				"pt" : "Visão da Raid",
+				"cn" : "Raid视图",
+				"jp" : "レイドモード",
+				"de" : "Raid Ansicht"
+			},
+			"subsections" : [
+			]
+		},
+		"custom-css"    : {
+			"title"       : {
+				"en" : "Custom CSS",
+				"pt" : "CSS Customizado",
+				"cn" : "自定义CSS",
+				"jp" : "カスタムＣＳＳ",
+				"de" : "Eigenes CSS"
+			},
+			"subsections" : [
+			]
+		},
+	},
+	"setting_labels" : {
 		"interface.language" : {
 			"en" : "Language",
 			"pt" : "Language",
@@ -167,6 +224,55 @@
 			"cn" : "玩家数据元素",
 			"jp" : "プレイヤーメトリック",
 			"de" : "Spieler Metriken"
+		},
+		"sort_columns.raid" : {
+			"en" : "Default Sort Metric",
+			"pt" : "Organizar métricas (padrão)",
+			"cn" : "默认排序",
+			"jp" : "既定な並べ替え",
+			"de" : "Metrik nach Standard sortieren"
+		},
+		"table_settings.general.raid.short_names" : {
+			"en" : "Shorten Player Names",
+			"pt" : "Diminuir nomes dos Jogadores",
+			"cn" : "显示简单姓名(国服无效)",
+			"jp" : "プレイヤー名を略する",
+			"de" : "Spielernamen abkürzen"
+		},
+		"table_settings.general.raid.percent_bars" : {
+			"en" : "Show Performance Background Bars",
+			"pt" : "Mostrar barras de desempenho ao fundo",
+			"cn" : "显示背景计量条",
+			"jp" : "業績を背景に表示",
+			"de" : "Zeige Leistungsbalken im Hintergrund"
+		},
+		"table_columns.raid.dps" : {
+			"en" : "Metrics",
+			"pt" : "Métricas",
+			"cn" : "数据元素",
+			"jp" : "メトリック",
+			"de" : "Metrik"
+		},
+		"table_columns.raid.heal" : {
+			"en" : "Metrics",
+			"pt" : "Métricas",
+			"cn" : "数据元素",
+			"jp" : "メトリック",
+			"de" : "Metrik"
+		},
+		"table_columns.raid.tank" : {
+			"en" : "Metrics",
+			"pt" : "Métricas",
+			"cn" : "数据元素",
+			"jp" : "メトリック",
+			"de" : "Metrik"
+		},
+		"custom.css" : {
+			"en" : "User-provided CSS is at your own risk.",
+			"pt" : "Usar CSS de outros usuários é de responsabilidade própria.",
+			"cn" : "使用自定义CSS造成的风险由您自己承担",
+			"jp" : "カスタムＣＳＳは自己責任で使ってください",
+			"de" : "Verwenden von benutzerdefinierten CSS auf eigene Gefahr."
 		},
 	}
 }
