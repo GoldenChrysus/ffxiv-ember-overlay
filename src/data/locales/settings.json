@@ -435,6 +435,85 @@
 				"short_both"  : "V. N."
 			}
 		},
+
+		"developer_credit"   : {
+			"en" : "Developed by {{developer}}.",
+			"pt" : "Criado por {{developer}}.",
+			"cn" : "由{{developer}}开发。",
+			"jp" : "{{developer}}によって開発された。",
+			"de" : "Entwickelt von {{developer}}."
+		},
+		"changelog"          : {
+			"en" : "Changelog",
+			"pt" : "Registro de Alterações",
+			"cn" : "更新日志",
+			"jp" : "変更履歴",
+			"de" : "Änderungsprotokoll"
+		},
+		"discord_cta"        : {
+			"en" : "Join the Discord to receive live updates from the developer, submit feature suggestions, get help with a bug or issue, or discuss FFXIV in general with other users.",
+			"pt" : "Junte-se ao servidor do Discord para receber atualizações ao vivo pelo desenvolvedor, enviar sugestões, pedir ajuda com bugs ou problemas, ou discutir FFXIV no geral com outros jogadores.",
+			"cn" : "加入Discord以接收开发人员的实时更新、提交功能建议、获取有关错误或问题的帮助、或与其他用户讨论最终幻想XIV。",
+			"jp" : "バグ報告や機能要望、開発者からのお知らせなど、専用なDiscordを使用しますので、よろしくお願いします。",
+			"de" : "Trete dem Discord bei, um Aktualisierungen in Echtzeit vom Entwickler zu erhalten. Außerdem kannst du Feature Vorschläge abgeben, Hilfestellungen bei Bugs oder Problemen erhalten oder allgemein über FFXIV mit anderen Benutzern diskutieren."
+		},
+		"broken_link"        : {
+			"en" : "Link not working? Copy this link and paste it into your regular Web browser:",
+			"pt" : "Link não funciona? Clique neste endereço e copie no seu navegador da web:",
+			"cn" : "链接无效？ 复制此链接并粘贴到Web浏览器中:",
+			"jp" : "リンクが正しく動かない？このリンクをコピーして普段のブラウザーに貼りつけてみてください:",
+			"de" : "Funktioniert dein Link nicht? Kopiere diesen Link und füge ihn in einen Browser deiner Wahl ein:"
+		},
+		"github_cta"         : {
+			"en" : "See the latest code, changelog, and readme information on GitHub. You can also submit bug reports or feature requests.",
+			"pt" : "Confira o código mais recente, registro de atualizações e leiame no GitHub. Também é possível enviar relatórios de bugs ou solicitar implementações.",
+			"cn" : "您可以在GitHub上查阅最新代码、更新日志和自述信息，也可以提交错误报告或功能请求。",
+			"jp" : "最新の情報、ソース、認識されてるバグはすべてGitHubで見れます。",
+			"de" : "Sieh dir den neuesten Code, Änderungsprotokolle und Readme Informationen auf GitHub an. Du kannst außerdem Bugs melden oder ein Feature vorschlagen."
+		},
+		"changelog_info"     : {
+			"en" : "The changelog listed here will show all the changes that have been made (if any) in the current version compared against the last version you used.",
+			"pt" : "O registro de atualizações mostrado aqui informará todas as mudanças que foram feitas (se feitas) na versão atual comparada à versão anterior usada.",
+			"cn" : "此处列出的更改日志将显示当前版本相较于上一版本所做的所有变更（如果有）。",
+			"jp" : "ここで表示される変更履歴は前にお使いになったバージョンと最新バージョンの違いを表示します。",
+			"de" : "Dieses Änderungsprotokoll listet alle Änderungen auf, die in der aktuellen Version seit der von dir zuletzt verwendeten Version vorgenommen wurden (falls es welche gibt)."
+		},
+		"changelog_cta"      : {
+			"en" : "You can always see the latest changes and read the more detailed official changelog {{changelog_link_open}}here{{changelog_link_close}}.",
+			"pt" : "Você pode sempre ler as atualizações oficiais mais recentes de forma mais detalhada {{changelog_link_open}}aqui{{changelog_link_close}}.",
+			"cn" : "您可以{{changelog_link_open}}在此{{changelog_link_close}}处阅读最新更改和详细的更改历史记录。",
+			"jp" : "最新の変更や詳細的な変更履歴は{{changelog_link_open}}ここ{{changelog_link_close}}でお読みいただけます",
+			"de" : "Du kannst die aktuellsten Änderungen und das detailliertere Änderungsprotokoll jederzeit hier {{changelog_link_open}}ansehen{{changelog_link_close}}."
+		},
+		"latest_changes"     : {
+			"en" : "Latest Changes",
+			"pt" : "Últimas Atualizações",
+			"cn" : "最近变更",
+			"jp" : "最新変更",
+			"de" : "Aktuelle Änderungen"
+		},
+		"features"           : {
+			"en" : "Features",
+			"pt" : "Destaques",
+			"cn" : "新功能",
+			"jp" : "新機能",
+			"de" : "Features"
+		},
+		"ui_changes"         : {
+			"en" : "UI Changes",
+			"pt" : "Mudanças na Interface de Usuário (UI)",
+			"cn" : "UI变更",
+			"jp" : "UI変更",
+			"de" : "Änderungen an der Benutzeroberfläche"
+		},
+		"bug_fixes"          : {
+			"en" : "Bug Fixes",
+			"pt" : "Correção de Bugs",
+			"cn" : "错误修正",
+			"jp" : "バグ修正",
+			"de" : "Fehlerbehebungen"
+		},
+
 		"streamers"          : {
 			"en" : "Streamers",
 			"pt" : "Streamers",

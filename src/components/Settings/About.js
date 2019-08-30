@@ -1,7 +1,10 @@
 import React from "react";
 import { Container } from "semantic-ui-react";
 
+import LocalizationService from "../../services/LocalizationService";
 import VersionService from "../../services/VersionService";
+
+const reactStringReplace = require("react-string-replace");
 
 class About extends React.Component {
 	componentWillMount() {
@@ -50,40 +53,43 @@ class About extends React.Component {
 		let author_url    = process.env.REACT_APP_AUTHOR_URL;
 		let changelog_url = process.env.REACT_APP_CHANGELOG_URL;
 
-		let state = this.state || {};
+		let state                = this.state || {};
+		let author_link          = <a href={author_url} target="_blank" rel="noopener noreferrer">GoldenChrysus</a>;
+		let changelog_cta        = LocalizationService.getMisc("changelog_cta");
+		let changelog_link_match = changelog_cta.match(/{{changelog_link_open}}.+{{changelog_link_close}}/g)[0];
+		let changelog_link_text  = changelog_link_match
+			.replace("{{changelog_link_open}}", "")
+			.replace("{{changelog_link_close}}", "");
+		let changelog_link       = <a href={changelog_url} target="_blank" rel="noopener noreferrer">{changelog_link_text}</a>;
 
 		return(
 			<React.Fragment>
 				<Container fluid className="section-container">
-					<h2>EMBER OVERLAY</h2>
-					<p>Developed by <a href={author_url} target="_blank" rel="noopener noreferrer">GoldenChrysus</a>.</p>
+					<h2>{LocalizationService.getSettingsSubsectionText("about", 0)}</h2>
+					<p>{reactStringReplace(LocalizationService.getMisc("developer_credit"), "{{developer}}", () => author_link)}</p>
 
 					<h3>Discord</h3>
-					<p>
-						Join the Discord to receive live updates from the developer, submit feature suggestions, get help with a bug or issue, or discuss FFXIV in general with other users.
-					</p>
+					<p>{LocalizationService.getMisc("discord_cta")}</p>
 					<p>
 						<a href={discord_url} target="_blank" rel="noopener noreferrer">
 							<img className="discord" src="img/buttons/discord.png" alt="Join our Discord server." title="Join our Discord server."/>
 						</a>
 					</p>
 
-					<p>
-						Link not working? Copy this link and paste it into your regular Web browser: <span className="discord-link">{discord_url}</span>
-					</p>
+					<p>{LocalizationService.getMisc("broken_link")} <span className="discord-link">{discord_url}</span></p>
 
 					<h3>GitHub</h3>
 					<p>
-						See the latest code, changelog, and readme information GitHub. You can also submit bug reports or feature requests.<br/>
+						{LocalizationService.getMisc("github_cta")}<br/>
 						<a href={github_url} target="_blank" rel="noopener noreferrer">{github_url}</a>
 					</p>
 				</Container>
 				<Container fluid className="section-container">
-					<h2>Changelog</h2>
-					<p>The changelog listed here will show all the changes that have been made (if any) in the current version compared against the last version you used.</p>
-					<p>You can always see the latest changes and read the more detailed official changelog <a href={changelog_url} target="_blank" rel="noopener noreferrer">here.</a></p>
+					<h2>{LocalizationService.getMisc("changelog")}</h2>
+					<p>{LocalizationService.getMisc("changelog_info")}</p>
+					<p>{reactStringReplace(changelog_cta, changelog_link_match, () => changelog_link)}</p>
 
-					<h3>Latest Changes</h3>
+					<h3>{LocalizationService.getMisc("latest_changes")}</h3>
 					{state.changelog}
 				</Container>
 			</React.Fragment>
