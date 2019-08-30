@@ -436,6 +436,29 @@
 			}
 		},
 
+		"save"               : {
+			"en" : "Save",
+			"pt" : "Salvar",
+			"cn" : "保存",
+			"jp" : "保存",
+			"de" : "Speichern"
+		},
+
+		"export_info"        : {
+			"en" : "Select and copy the text below, then import it into your desired overlay by right-clicking on the overlay and choosing \"Import.\"",
+			"pt" : "Selecione e copie o texto abaixo, então importe para seu Overlay desejado clicando com o botão direito e escolhendo \"Importar.\"",
+			"cn" : "复制下面的文本，右键单击模板界面点击\"导入\"来导入您喜爱的模板样式。",
+			"jp" : "下のテキストをコピーして、好きなオーバーレイに右クリックで「取り込む」できます。",
+			"de" : "Den unteren Text auswählen und kopieren, um ihn in dein gewünschtes Overlay zu importieren. Klicke hierzu mit Rechtsklick auf das Overlay und wähle \"Importieren\" aus."
+		},
+		"select_all"         : {
+			"en" : "Select All",
+			"pt" : "Selecionar Tudo",
+			"cn" : "全选",
+			"jp" : "全てを選択",
+			"de" : "Alles Auswählen"
+		},
+
 		"developer_credit"   : {
 			"en" : "Developed by {{developer}}.",
 			"pt" : "Criado por {{developer}}.",
@@ -534,6 +557,27 @@
 			"cn" : "{{number}}位主播直播中",
 			"jp" : "{{number}}人配信中",
 			"de" : "{{number}} Streamer Live"
+		},
+		"streamer_info"      : {
+			"en" : "Twitch streamers who use Ember Overlay are featured here!",
+			"pt" : "Streamers do Twitch que utilizam o Ember Overlay estão em destaque aqui!",
+			"cn" : "这里展示的是正在使用Ember Overlay的Twitch主播！",
+			"jp" : "エンバーオーバーレイを使ってる配信者はここで特集しちゃいます！",
+			"de" : "Hier werden Twitch Streamer angezeigt, die Ember Overlay benutzen."
+		},
+		"streamer_short_cta" : {
+			"en" : "Are you a streamer or do you know a streamer who uses Ember Overlay?",
+			"pt" : "Você é um Streamer ou conhece um que use o Ember Overlay?",
+			"cn" : "您也或您知道其他主播也在使用Ember Overlay进行直播？",
+			"jp" : "貴方やご存じの方はエンバーオーバーレイを使って配信してますか？",
+			"de" : "Bist du ein Streamer oder kennst du einen Streamer, der Ember Overlay verwendet?"
+		},
+		"streamer_long_cta"  : {
+			"en" : "Have the stream added to this list by joining our Discord at {{discord_link}} and posting the stream in #streamer-requests. You can also message {{twitch_link}} with your stream info. The stream is only eligible for inclusion if Ember Overlay is used on stream (will be verified via VOD's).",
+			"pt" : "Tenha seu stream adicionado à essa lista se juntando ao nosso discord em {{discord_link}} e postando a stream em (channel_name). Também é possível enviar uma mensagem para {{twitch_link}} com seus dados de stream. O stream será autorizado apenas se o Ember Overlay estiver sendo utilizado (será verificado via VOD's)",
+			"cn" : "通过{{discord_link}}加入我们的Discord并在#streamer-requests中发布您的直播地址，可将您的直播添加到此列表中。 您也可以私信{{twitch_link}}发送你的直播信息。 您需要在直播中使用Ember Overlay（将通过直播录像验证）来获得在此显示的资格。",
+			"jp" : "{{discord_link}}のディスコの#streamer-requestsか{{twitch_link}}のDMで配信情報を教えてくれたらリストに加えます。エンバーオーバーレイが配信で見える必要があります（過去の配信で確認します）。",
+			"de" : "Füge den Stream dieser Liste hinzu, indem du unserem Discord unter {{discord_link}} beitrittst und den Stream in #streamer-requests postest. Du kannst außerdem {{twitch_link}} mit der Stream Info anschreiben. Der Stream wird jedoch nur in Betracht gezogen, falls das Ember Overlay im Stream benutzt wird (Verifizierung erfolgt über VODs)."
 		}
 	}
 }

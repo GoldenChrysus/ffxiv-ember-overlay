@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import { HashRouter as Router, Route, Redirect, NavLink } from "react-router-dom";
 import { Grid, Menu } from "semantic-ui-react";
 
@@ -83,4 +84,10 @@ class Settings extends React.Component {
 	}
 }
 
-export default Settings;
+const mapStateToProps = (state) => {
+	return {
+		language : state.settings.interface.language
+	};
+};
+
+export default connect(mapStateToProps)(Settings);

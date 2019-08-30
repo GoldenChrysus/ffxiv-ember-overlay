@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { Container, Form, TextArea, Button } from "semantic-ui-react";
 import $ from "jquery";
 
+import LocalizationService from "../../services/LocalizationService";
+
 class Export extends React.Component {
 	render() {
 		let settings = btoa(JSON.stringify(this.props.settings));
@@ -10,14 +12,12 @@ class Export extends React.Component {
 		return(
 			<React.Fragment>
 				<Container fluid className="section-container">
-					<h2>Export Settings</h2>
-					<p>
-						Select and copy the text below, then import it into your desired overlay by right-clicking on the overlay and choosing "Import."
-					</p>
+					<h2>{LocalizationService.getSettingsSubsectionText("export", 0)}</h2>
+					<p>{LocalizationService.getMisc("export_info")}</p>
 					<div>
 						<Form>
 							<Form.Field>
-								<Button size="mini" className="export" onClick={this.handleSelect.bind(this)}>Select All</Button>
+								<Button size="mini" className="export" onClick={this.handleSelect.bind(this)}>{LocalizationService.getMisc("select_all")}</Button>
 								<TextArea defaultValue={settings} rows={20} readOnly="readonly"/>
 							</Form.Field>
 						</Form>
