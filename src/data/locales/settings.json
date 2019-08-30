@@ -9,6 +9,13 @@
 				"de" : "Benutzeroberfläche"
 			},
 			"subsections" : [
+				{
+					"en" : "General",
+					"pt" : "Geral",
+					"cn" : "通用",
+					"jp" : "一般",
+					"de" : "Allgemein"
+				}
 			]
 		},
 		"player-table"  : {
@@ -20,6 +27,34 @@
 				"de" : "Spielertabelle"
 			},
 			"subsections" : [
+				{
+					"en" : "General",
+					"pt" : "Geral",
+					"cn" : "通用",
+					"jp" : "一般",
+					"de" : "Allgemein"
+				},
+				{
+					"en" : "DPS",
+					"pt" : "DPS",
+					"cn" : "DPS",
+					"jp" : "DPS",
+					"de" : "DPS"
+				},
+				{
+					"en" : "Heal",
+					"pt" : "Heal",
+					"cn" : "Heal",
+					"jp" : "Heal",
+					"de" : "Heal"
+				},
+				{
+					"en" : "Tank",
+					"pt" : "Tank",
+					"cn" : "Tank",
+					"jp" : "Tank",
+					"de" : "Tank"
+				}
 			]
 		},
 		"player-detail" : {
@@ -31,6 +66,27 @@
 				"de" : "Spieler Detail"
 			},
 			"subsections" : [
+				{
+					"en" : "DPS",
+					"pt" : "DPS",
+					"cn" : "DPS",
+					"jp" : "DPS",
+					"de" : "DPS"
+				},
+				{
+					"en" : "Heal",
+					"pt" : "Heal",
+					"cn" : "Heal",
+					"jp" : "Heal",
+					"de" : "Heal"
+				},
+				{
+					"en" : "Tank",
+					"pt" : "Tank",
+					"cn" : "Tank",
+					"jp" : "Tank",
+					"de" : "Tank"
+				}
 			]
 		},
 		"raid-view"     : {
@@ -42,6 +98,34 @@
 				"de" : "Raid Ansicht"
 			},
 			"subsections" : [
+				{
+					"en" : "General",
+					"pt" : "Geral",
+					"cn" : "通用",
+					"jp" : "一般",
+					"de" : "Allgemein"
+				},
+				{
+					"en" : "DPS",
+					"pt" : "DPS",
+					"cn" : "DPS",
+					"jp" : "DPS",
+					"de" : "DPS"
+				},
+				{
+					"en" : "Heal",
+					"pt" : "Heal",
+					"cn" : "Heal",
+					"jp" : "Heal",
+					"de" : "Heal"
+				},
+				{
+					"en" : "Tank",
+					"pt" : "Tank",
+					"cn" : "Tank",
+					"jp" : "Tank",
+					"de" : "Tank"
+				}
 			]
 		},
 		"custom-css"    : {
@@ -53,8 +137,15 @@
 				"de" : "Eigenes CSS"
 			},
 			"subsections" : [
+				{
+					"en" : "Custom CSS",
+					"pt" : "CSS Customizado",
+					"cn" : "自定义CSS",
+					"jp" : "カスタムＣＳＳ",
+					"de" : "Eigenes CSS"
+				}
 			]
-		},
+		}
 	},
 	"setting_labels" : {
 		"interface.language" : {
@@ -273,6 +364,40 @@
 			"cn" : "使用自定义CSS造成的风险由您自己承担",
 			"jp" : "カスタムＣＳＳは自己責任で使ってください",
 			"de" : "Verwenden von benutzerdefinierten CSS auf eigene Gefahr."
-		},
+		}
+	},
+	"misc" : {
+		"short_name_options" : {
+			"en" : {
+				"no_short"    : "No",
+				"short_first" : "F. Last",
+				"short_last"  : "First L.",
+				"short_both"  : "F. L."
+			},
+			"pt" : {
+				"no_short"    : "Nro",
+				"short_first" : "N. Sobrenome",
+				"short_last"  : "Nome S.",
+				"short_both"  : "N. S."
+			},
+			"cn" : {
+				"no_short"    : "全名",
+				"short_first" : "仅缩写名",
+				"short_last"  : "仅缩写姓",
+				"short_both"  : "全部缩写"
+			},
+			"jp" : {
+				"no_short"    : "フルネーム",
+				"short_first" : "名のみイニシャル",
+				"short_last"  : "姓のみイニシャル",
+				"short_both"  : "姓名ともにイニシャル"
+			},
+			"de" : {
+				"no_short"    : "Nein",
+				"short_first" : "V. Nachname",
+				"short_last"  : "Vorname N.",
+				"short_both"  : "V. N."
+			}
+		}
 	}
 }

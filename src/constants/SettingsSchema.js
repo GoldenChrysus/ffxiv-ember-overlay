@@ -1,28 +1,5 @@
 import LocalizationService from "../services/LocalizationService";
 
-let short_name_options = [
-	{
-		key   : "no_short",
-		value : "no_short",
-		text  : "No"
-	},
-	{
-		key   : "short_first",
-		value : "short_first",
-		text  : "F. Last"
-	},
-	{
-		key   : "short_last",
-		value : "short_last",
-		text  : "First L."
-	},
-	{
-		key   : "short_both",
-		value : "short_both",
-		text  : "F. L."
-	}
-];
-
 const language_options = [
 	{
 		key   : "en",
@@ -57,7 +34,6 @@ const SettingsSchema = {
 			path     : "interface",
 			sections : [
 				{
-					title    : "General",
 					settings : [
 						{
 							key_path : "interface.language",
@@ -135,12 +111,11 @@ const SettingsSchema = {
 			path     : "player-table",
 			sections : [
 				{
-					title    : "General",
 					settings : [
 						{
 							key_path : "table_settings.general.table.short_names",
 							type     : "select",
-							options  : short_name_options,
+							options  : () => LocalizationService.getPlayerShortNameOptions(),
 							value    : function() {
 								return this.props.settings.table_settings.general.table.short_names;
 							}
@@ -162,7 +137,6 @@ const SettingsSchema = {
 					]
 				},
 				{
-					title    : "DPS",
 					settings : [
 						{
 							key_path : "table_columns.dps",
@@ -194,7 +168,6 @@ const SettingsSchema = {
 					]
 				},
 				{
-					title    : "Heal",
 					settings : [
 						{
 							key_path : "table_columns.heal",
@@ -226,7 +199,6 @@ const SettingsSchema = {
 					]
 				},
 				{
-					title    : "Tank",
 					settings : [
 						{
 							key_path : "table_columns.tank",
@@ -263,7 +235,6 @@ const SettingsSchema = {
 			path     : "player-detail",
 			sections : [
 				{
-					title    : "DPS",
 					settings : [
 						{
 							key_path : "detail_data.dps",
@@ -278,7 +249,6 @@ const SettingsSchema = {
 					]
 				},
 				{
-					title    : "Heal",
 					settings : [
 						{
 							key_path : "detail_data.heal",
@@ -293,7 +263,6 @@ const SettingsSchema = {
 					]
 				},
 				{
-					title    : "Tank",
 					settings : [
 						{
 							key_path : "detail_data.tank",
@@ -313,7 +282,6 @@ const SettingsSchema = {
 			path     : "raid-view",
 			sections : [
 				{
-					title    : "General",
 					settings : [
 						{
 							key_path : "sort_columns.raid",
@@ -328,7 +296,7 @@ const SettingsSchema = {
 						{
 							key_path : "table_settings.general.raid.short_names",
 							type     : "select",
-							options  : short_name_options,
+							options  : () => LocalizationService.getPlayerShortNameOptions(),
 							value    : function() {
 								return this.props.settings.table_settings.general.raid.short_names;
 							}
@@ -343,7 +311,6 @@ const SettingsSchema = {
 					]
 				},
 				{
-					title    : "DPS",
 					settings : [
 						{
 							key_path : "table_columns.raid.dps",
@@ -358,7 +325,6 @@ const SettingsSchema = {
 					]
 				},
 				{
-					title    : "Heal",
 					settings : [
 						{
 							key_path : "table_columns.raid.heal",
@@ -373,7 +339,6 @@ const SettingsSchema = {
 					]
 				},
 				{
-					title    : "Tank",
 					settings : [
 						{
 							key_path : "table_columns.raid.tank",
@@ -393,7 +358,6 @@ const SettingsSchema = {
 			path     : "custom-css",
 			sections : [
 				{
-					title    : "Custom CSS",
 					settings : [
 						{
 							key_path : "custom.css",

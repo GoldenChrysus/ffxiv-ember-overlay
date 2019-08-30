@@ -21,7 +21,7 @@ class Screen extends React.Component {
 			
 			sections.push(
 				<Container fluid key={section_data.title} className="section-container">
-					<Section data={section_data} settings={this.props.settings} changeCallback={this.handleChange.bind(this)}/>
+					<Section data={section_data} parent_path={this.props.path} index={i} settings={this.props.settings} changeCallback={this.handleChange.bind(this)}/>
 				</Container>
 			)
 		}

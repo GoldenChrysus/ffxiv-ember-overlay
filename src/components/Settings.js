@@ -2,6 +2,7 @@ import React from "react";
 import { HashRouter as Router, Route, Redirect, NavLink } from "react-router-dom";
 import { Grid, Menu } from "semantic-ui-react";
 
+import LocalizationService from "../services/LocalizationService";
 import SettingsSchema from "../constants/SettingsSchema";
 import TwitchAPIService from "../services/TwitchAPIService";
 
@@ -37,14 +38,16 @@ class Settings extends React.Component {
 		let streamer_text      = (streamer_count && this.state.stream_type === "live") ? `${streamer_count} ${streamer_pluralize} Live` : "Streamers";
 
 		for (let section of SettingsSchema.sections) {
-			let path = `${base_url}/${section.path}`;
+			let section_path = section.path;
+			let path         = `${base_url}/${section_path}`;
+			let title        = LocalizationService.getSettingsSectionText(section_path);
 
 			nav_links.push(
-				<NavLink to={path} className="item" key={section.path}>{section.title}</NavLink>
+				<NavLink to={path} className="item" key={section_path}>{title}</NavLink>
 			);
 
 			routes.push(
-				<Route path={path} key={path} render={() => <Screen sections={section.sections}/>}/>
+				<Route path={path} key={path} render={() => <Screen sections={section.sections} path={section_path}/>}/>
 			);
 		}
 
