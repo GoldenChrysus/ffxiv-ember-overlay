@@ -1,0 +1,172 @@
+{
+	"settings" : {
+		"interface.language" : {
+			"en" : "Language",
+			"pt" : "Language",
+			"cn" : "Language",
+			"jp" : "Language",
+			"de" : "Language"
+		},
+		"interface.player_name" : {
+			"en" : "Player Name",
+			"pt" : "Nome do Jogador",
+			"cn" : "玩家姓名",
+			"jp" : "プレイヤー名",
+			"de" : "Spielername"
+		},
+		"interface.opacity" : {
+			"en" : "Overlay Opacity",
+			"pt" : "Opacidade do Overlay",
+			"cn" : "模板透明度",
+			"jp" : "オーバーレイの透明度",
+			"de" : "Overlay Deckkraft"
+		},
+		"interface.zoom" : {
+			"en" : "Overlay Zoom",
+			"pt" : "Zoom do Overlay",
+			"cn" : "模板缩放",
+			"jp" : "オーバーレイの拡大縮小",
+			"de" : "Overlay Zoom"
+		},
+		"interface.top_right_rank" : {
+			"en" : "Display Rank in Top Right",
+			"pt" : "Mostrar Ranque no canto superior direito",
+			"cn" : "在右上角显示排名",
+			"jp" : "ランクを右上に表示",
+			"de" : "Ranglistenplatz oben rechts anzeigen"
+		},
+		"interface.collapse_down" : {
+			"en" : "Collapse Downwards",
+			"pt" : "Minimize para baixo",
+			"cn" : "向下折叠",
+			"jp" : "下向きに最小化",
+			"de" : "Nach unten verkleinern"
+		},
+		"interface.footer_when_collapsed" : {
+			"en" : "Show Overlay Footer When Collapsed",
+			"pt" : "Mostrar rodapé quando minimizado",
+			"cn" : "折叠时显示页脚功能",
+			"jp" : "最小化状態でフッターを表示",
+			"de" : "Overlay Fußzeile beim Verkleinern anzeigen"
+		},
+		"interface.footer_dps" : {
+			"en" : "Display Raid DPS in Overlay Footer",
+			"pt" : "Mostrar DPS do grupo no rodapé",
+			"cn" : "在模板页脚显示RDPS",
+			"jp" : "レイドＤＰＳをフッターで表示",
+			"de" : "Raid DPS in der Overlay Fußzeile anzeigen"
+		},
+		"interface.light_theme" : {
+			"en" : "Use Light Theme",
+			"pt" : "Usar tema claro",
+			"cn" : "使用亮色主题",
+			"jp" : "ライトテーマを使用",
+			"de" : "Helles Farbschema benutzen"
+		},
+		"table_settings.general.table.short_names" : {
+			"en" : "Shorten Player Names",
+			"pt" : "Diminuir nomes dos Jogadores",
+			"cn" : "显示简单姓名(国服无效)",
+			"jp" : "プレイヤー名を略する",
+			"de" : "Spielernamen abkürzen"
+		},
+		"table_settings.general.table.footer_at_top" : {
+			"en" : "Move Totals (Footer) to Top of Table",
+			"pt" : "Mover totais da base para o topo da tabela",
+			"cn" : "总伤害移到列表最前",
+			"jp" : "総合を上に表示",
+			"de" : "Zusammenfassungen (Fußzeile) nach ganz oben in der Tabelle verschieben"
+		},
+		"table_settings.general.table.percent_bars" : {
+			"en" : "Show Performance Background Bars",
+			"pt" : "Mostrar barras de desempenho ao fundo",
+			"cn" : "显示背景计量条",
+			"jp" : "業績を背景に表示",
+			"de" : "Zeige Leistungsbalken im Hintergrund"
+		},
+		"table_columns.dps" : {
+			"en" : "Table Columns",
+			"pt" : "Colunas da Tabela",
+			"cn" : "标签选择",
+			"jp" : "列選択",
+			"de" : "Tabellenspalte"
+		},
+		"sort_columns.dps" : {
+			"en" : "Default Sort Column",
+			"pt" : "Organizar tabela (padrão)",
+			"cn" : "默认排序",
+			"jp" : "既定な並べ替え",
+			"de" : "Spalten nach Standard sortieren"
+		},
+		"table_settings.dps.show_footer" : {
+			"en" : "Show Footer",
+			"pt" : "Mostrar rodapé",
+			"cn" : "显示页脚选项",
+			"jp" : "フッターを表示",
+			"de" : "Fußzeile anzeigen"
+		},
+		"table_columns.heal" : {
+			"en" : "Table Columns",
+			"pt" : "Colunas da Tabela",
+			"cn" : "标签选择",
+			"jp" : "列選択",
+			"de" : "Tabellenspalte"
+		},
+		"sort_columns.heal" : {
+			"en" : "Default Sort Column",
+			"pt" : "Organizar tabela (padrão)",
+			"cn" : "默认排序",
+			"jp" : "既定な並べ替え",
+			"de" : "Spalten nach Standard sortieren"
+		},
+		"table_settings.heal.show_footer" : {
+			"en" : "Show Footer",
+			"pt" : "Mostrar rodapé",
+			"cn" : "显示页脚选项",
+			"jp" : "フッターを表示",
+			"de" : "Fußzeile anzeigen"
+		},
+		"table_columns.tank" : {
+			"en" : "Table Columns",
+			"pt" : "Colunas da Tabela",
+			"cn" : "标签选择",
+			"jp" : "列選択",
+			"de" : "Tabellenspalte"
+		},
+		"sort_columns.tank" : {
+			"en" : "Default Sort Column",
+			"pt" : "Organizar tabela (padrão)",
+			"cn" : "默认排序",
+			"jp" : "既定な並べ替え",
+			"de" : "Spalten nach Standard sortieren"
+		},
+		"table_settings.tank.show_footer" : {
+			"en" : "Show Footer",
+			"pt" : "Mostrar rodapé",
+			"cn" : "显示页脚选项",
+			"jp" : "フッターを表示",
+			"de" : "Fußzeile anzeigen"
+		},
+		"detail_data.dps" : {
+			"en" : "Player Metrics",
+			"pt" : "Métricas do Jogador",
+			"cn" : "玩家数据元素",
+			"jp" : "プレイヤーメトリック",
+			"de" : "Spieler Metriken"
+		},
+		"detail_data.heal" : {
+			"en" : "Player Metrics",
+			"pt" : "Métricas do Jogador",
+			"cn" : "玩家数据元素",
+			"jp" : "プレイヤーメトリック",
+			"de" : "Spieler Metriken"
+		},
+		"detail_data.tank" : {
+			"en" : "Player Metrics",
+			"pt" : "Métricas do Jogador",
+			"cn" : "玩家数据元素",
+			"jp" : "プレイヤーメトリック",
+			"de" : "Spieler Metriken"
+		},
+	}
+}

@@ -62,14 +62,12 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "interface.language",
-							label    : "Language",
 							type     : "select",
 							options  : language_options,
 							value    : obj => obj.props.settings.interface.language
 						},
 						{
 							key_path : "interface.player_name",
-							label    : "Player Name",
 							type     : "textbox",
 							value    : function() {
 								return this.props.settings.interface.player_name;
@@ -77,7 +75,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "interface.opacity",
-							label    : "Overlay Opacity",
 							type     : "slider",
 							range    : "min",
 							minimum  : 0,
@@ -88,7 +85,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "interface.zoom",
-							label    : "Overlay Zoom",
 							type     : "slider",
 							range    : "min",
 							minimum  : 1,
@@ -99,7 +95,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "interface.top_right_rank",
-							label    : "Display Rank in Top Right",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.interface.top_right_rank;
@@ -107,7 +102,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "interface.collapse_down",
-							label    : "Collapse Downwards",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.interface.collapse_down;
@@ -115,7 +109,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "interface.footer_when_collapsed",
-							label    : "Show Overlay Footer When Collapsed",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.interface.footer_when_collapsed;
@@ -123,7 +116,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "interface.footer_dps",
-							label    : "Display Raid DPS in Overlay Footer",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.interface.footer_dps;
@@ -131,7 +123,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "interface.light_theme",
-							label    : "Use Light Theme",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.interface.light_theme;
@@ -150,7 +141,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "table_settings.general.table.short_names",
-							label    : "Shorten Player Names",
 							type     : "select",
 							options  : short_name_options,
 							value    : function() {
@@ -159,7 +149,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "table_settings.general.table.footer_at_top",
-							label    : "Move Totals (Footer) to Top of Table",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.table_settings.general.table.footer_at_top;
@@ -167,7 +156,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "table_settings.general.table.percent_bars",
-							label    : "Show Performance Background Bars",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.table_settings.general.table.percent_bars;
@@ -180,7 +168,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "table_columns.dps",
-							label    : "Table Columns",
 							type     : "select",
 							multiple : true,
 							search   : true,
@@ -191,7 +178,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "sort_columns.dps",
-							label    : "Default Sort Column",
 							type     : "select",
 							multiple : false,
 							search   : true,
@@ -202,7 +188,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "table_settings.dps.show_footer",
-							label    : "Show Footer",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.table_settings.dps.show_footer;
@@ -215,7 +200,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "table_columns.heal",
-							label    : "Table Columns",
 							type     : "select",
 							multiple : true,
 							search   : true,
@@ -226,7 +210,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "sort_columns.heal",
-							label    : "Default Sort Column",
 							type     : "select",
 							multiple : false,
 							search   : true,
@@ -237,7 +220,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "table_settings.heal.show_footer",
-							label    : "Show Footer",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.table_settings.heal.show_footer;
@@ -250,7 +232,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "table_columns.tank",
-							label    : "Table Columns",
 							type     : "select",
 							multiple : true,
 							search   : true,
@@ -261,7 +242,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "sort_columns.tank",
-							label    : "Default Sort Column",
 							type     : "select",
 							multiple : false,
 							search   : true,
@@ -272,7 +252,6 @@ const SettingsSchema = {
 						},
 						{
 							key_path : "table_settings.tank.show_footer",
-							label    : "Show Footer",
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.table_settings.tank.show_footer;
@@ -291,7 +270,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "detail_data.dps",
-							label    : "Player Metrics",
 							type     : "select",
 							multiple : true,
 							search   : true,
@@ -307,7 +285,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "detail_data.heal",
-							label    : "Player Metrics",
 							type     : "select",
 							multiple : true,
 							search   : true,
@@ -323,7 +300,6 @@ const SettingsSchema = {
 					settings : [
 						{
 							key_path : "detail_data.tank",
-							label    : "Player Metrics",
 							type     : "select",
 							multiple : true,
 							search   : true,
