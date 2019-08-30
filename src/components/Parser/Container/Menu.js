@@ -13,7 +13,7 @@ class Menu extends React.Component {
 		let plugin_service = new PluginService();
 
 		let collapse_item = function() {
-			let text = (self.props.collapsed) ? "Uncollapse" : "Collapse";
+			let text = LocalizationService.getOverlayText((self.props.collapsed) ? "uncollapse" : "collapse");
 			let data = { state: !self.props.collapsed };
 
 			return(

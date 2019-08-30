@@ -12,7 +12,7 @@ class Import extends React.Component {
 			<React.Fragment>
 				<div id="import">
 					<div className="header">
-						<div className="name">Import Settings</div>
+						<div className="name">{LocalizationService.getOverlayText("import_settings")}</div>
 					</div>
 					<div className="section">
 						<p>

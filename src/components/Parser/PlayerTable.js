@@ -98,7 +98,7 @@ class PlayerTable extends React.Component {
 
 		let header_row, footer_row, table_class;
 
-		let rank_text = (rank === 0) ? "N/A" : `${rank}/${count}`;
+		let rank_text = (rank === 0) ? LocalizationService.getOverlayText("not_applicable") : `${rank}/${count}`;
 
 		if (rank_text !== this.props.rank) {
 			let rank_data = {
@@ -113,7 +113,7 @@ class PlayerTable extends React.Component {
 			header_row = 
 				<div className="row header">
 					<div className="column"></div>
-					<div className="column">Name</div>
+					<div className="column">{LocalizationService.getOverlayText("player_name")}</div>
 					{header}
 				</div>;
 

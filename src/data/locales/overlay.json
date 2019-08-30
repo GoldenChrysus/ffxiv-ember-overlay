@@ -6,6 +6,13 @@
 		"jp" : "最小化",
 		"de" : "Verkleinern"
 	},
+	"uncollapse"          : {
+		"en" : "Uncollapse",
+		"pt" : "Maximizar",
+		"cn" : "展开",
+		"jp" : "",
+		"de" : "Vergrößern"
+	},
 	"split_encounter"     : {
 		"en" : "Split Encounter",
 		"pt" : "Dividir encontro",
@@ -62,6 +69,13 @@
 		"jp" : "戻る",
 		"de" : "Zurück"
 	},
+	"not_applicable"      : {
+		"en" : "N/A",
+		"pt" : "N/A",
+		"cn" : "无数据",
+		"jp" : "",
+		"de" : "N/A"
+	},
 	"inactive"            : {
 		"en" : "Inactive",
 		"pt" : "Inativo",
@@ -75,6 +89,20 @@
 		"cn" : "战斗",
 		"jp" : "戦闘",
 		"de" : "Im Kampf"
+	},
+	"awaiting_encounter"  : {
+		"en" : "Awaiting encounter data...",
+		"pt" : "Aguardando informações do encontro...",
+		"cn" : "等待战斗数据...",
+		"jp" : "",
+		"de" : "Warte auf Kampfdaten..."
+	},
+	"player_name"         : {
+		"en" : "Nome",
+		"pt" : "Nome",
+		"cn" : "名称",
+		"jp" : "",
+		"de" : "Name"
 	},
 	"dps"                 : {
 		"en" : "DPS",
@@ -103,6 +131,13 @@
 		"cn" : "导入",
 		"jp" : "取り込む",
 		"de" : "Importieren"
+	},
+	"import_settings"     : {
+		"en" : "Import Settings",
+		"pt" : "Importar Configurações",
+		"cn" : "导入设置",
+		"jp" : "",
+		"de" : "Einstellungen Importieren"
 	},
 	"import_instructions" : {
 		"en" : "Paste your exported setting key below and click \"Import.\"",
