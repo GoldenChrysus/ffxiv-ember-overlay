@@ -4,6 +4,8 @@ import { Container } from "semantic-ui-react";
 import LocalizationService from "../../services/LocalizationService";
 import VersionService from "../../services/VersionService";
 
+import SocialLink from "./About/SocialLink";
+
 const reactStringReplace = require("react-string-replace");
 
 class About extends React.Component {
@@ -82,6 +84,18 @@ class About extends React.Component {
 					<p>
 						{LocalizationService.getMisc("github_cta")}<br/>
 						<a href={github_url} target="_blank" rel="noopener noreferrer">{github_url}</a>
+					</p>
+
+					<h3>Credits</h3>
+					<p id="credits">
+						<ul>
+							<li><strong>Bona</strong> - Portuguese translation</li>
+							<li><strong>ShadyWhite</strong> - Chinese translation</li>
+							<li><strong>Gusma</strong> - Portuguese translation</li>
+							<li><strong>The_X</strong> - Portuguese translation</li>
+							<li><strong>okuRaku</strong> <SocialLink name="okurakuu" type="twitter"/><SocialLink name="okuraku" type="twitch"/> - Japanese translation</li>
+							<li><strong>Astriel</strong> - German translation</li>
+						</ul>
 					</p>
 				</Container>
 				<Container fluid className="section-container">
