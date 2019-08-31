@@ -81,6 +81,14 @@ class GameDataProcessor  {
 
 		state.internal.encounter_data_history = current_history;
 	}
+
+	convertToLocaleFormat(key, value) {
+		let fraction_rules   = Constants.PlayerMetricFractionRules[key];
+		let minimum_fraction = (fraction_rules && fraction_rules.hasOwnProperty("min")) ? fraction_rules.min : 2;
+		let maximum_fraction = (fraction_rules && fraction_rules.hasOwnProperty("max")) ? fraction_rules.max : 2;
+
+		return (+value).toLocaleString(undefined, { minimumFractionDigits : minimum_fraction, maximumFractionDigits: maximum_fraction });
+	}
 }
 
 export default new GameDataProcessor();

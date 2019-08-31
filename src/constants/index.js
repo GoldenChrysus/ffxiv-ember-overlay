@@ -213,9 +213,17 @@ const PlayerMetricTypeData = {
 	]
 };
 
+const PlayerMetricFractionRules = {
+	deaths : {
+		min : 0,
+		max : 0
+	}
+}
+
 export default {
 	GameJobs,
 	PlayerDataCustomValues,
 	PlayerDataTitles,
-	PlayerMetricTypeData
+	PlayerMetricTypeData,
+	PlayerMetricFractionRules
 };
