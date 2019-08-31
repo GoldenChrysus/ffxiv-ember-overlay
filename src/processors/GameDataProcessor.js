@@ -1,6 +1,8 @@
 import Constants from "../constants/index";
 import PlayerProcessor from "./PlayerProcessor";
 
+import LocalizationService from "../services/LocalizationService";
+
 class GameDataProcessor  {
 	normalizeFieldLocale(value) {
 		let foreign_number_regex = /[\d]+,[\d]{2}(%|K)?$/;
@@ -14,12 +16,12 @@ class GameDataProcessor  {
 		return value.replace(match, String(match).replace(",", "."));
 	}
 
-	normalizeLocales(data) {
+	normalizeLocales(data, language) {
 		if (!data.Encounter) {
 			return data;
 		}
 
-		data.Encounter.name             = "Encounter";
+		data.Encounter.name             = LocalizationService.getOverlayText("encounter", language);
 		data.Encounter.Job              = "ENC";
 		data.Encounter.OverHealPct      = "0%";
 		data.Encounter.BlockPct         = "0%";

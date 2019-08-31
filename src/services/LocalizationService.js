@@ -35,8 +35,12 @@ class LocalizationService {
 		return options;
 	}
 
-	getOverlayText(key) {
-		return OverlayLocales[key][this.getLanguage()] || OverlayLocales[key].en;
+	getOverlayText(key, language) {
+		if (!language) {
+			language = this.getLanguage();
+		}
+
+		return OverlayLocales[key][language] || OverlayLocales[key].en;
 	}
 
 	getSettingsSectionText(section) {

@@ -56,7 +56,7 @@ function rootReducer(state, action) {
 			break;
 
 		case "parseGameData":
-			action.payload = GameDataProcessor.normalizeLocales(action.payload);
+			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language);
 
 			if (!action.payload.Encounter || !state.internal.game.Encounter || action.payload.Encounter.DURATION < state.internal.game.Encounter.DURATION) {
 				state.internal.encounter_data_history = {};
@@ -73,7 +73,7 @@ function rootReducer(state, action) {
 
 			state.internal.encounter_data_history = SampleHistoryData;
 
-			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData);
+			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language);
 
 			new_state = createNewState(state, "internal.game", tmp_action);
 

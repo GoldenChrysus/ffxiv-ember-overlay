@@ -2,17 +2,17 @@
 
 ## 0.10.0-alpha
 
-**Released: [in development]**
+**Released: 2019-08-30**
 
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- Resolved issue where custom CSS code editor wouldn't expand vertically to accommodate several lines of CSS
-- HOTFIX: Resolved issue where overlay would instantiate infinite WebSocket clients, causing high CPU usage on some machines
-- Resolved issue where the overlay couldn't be collapsed as normal upon first load before an encounter had begun
+- !- Resolved issue where custom CSS code editor wouldn't expand vertically to accommodate several lines of CSS
+- !- HOTFIX: Resolved issue where overlay would instantiate infinite WebSocket clients, causing high CPU usage on some machines
+- !- Resolved issue where the overlay couldn't be collapsed as normal upon first load before an encounter had begun
 
 ### Features
-- Added translation system
+- !- Added translation system
     - Languages
         - Português
         - 中文
@@ -25,7 +25,7 @@
         - New text added since the translation process began
 
 ### UI Changes
-- Removed decimals from death metric
+- !- Removed decimals from death metric
 
 ### Code Changes
 - Added translation data at `/src/data/locales/*.json`
