@@ -88,7 +88,7 @@ let formatMaxHeal = function(player) {
 	return value;
 }
 
-let GameJobs = {
+const GameJobs = {
 	ARC : {
 		role : "dps"
 	},
@@ -172,7 +172,7 @@ let GameJobs = {
 	},
 };
 
-let PlayerDataCustomValues = {
+const PlayerDataCustomValues = {
 	"healed%"            : calculateHealed,
 	"effective_heal_pct" : calculateEffectiveHealed,
 	"effective_hps"      : calculateEffectiveHPS,
@@ -182,92 +182,7 @@ let PlayerDataCustomValues = {
 	"enctps"             : calculateTankPerSecond
 };
 
-let PlayerDataTitles = {
-	"BlockPct"           : {
-		short : "Blk %",
-		long  : "Block %"
-	},
-	"CritDirectHitPct"   : {
-		short : "CDH %",
-		long  : "Critical Direct Hit %"
-	},
-	"critheal%"          : {
-		short : "CH %",
-		long  : "Critical Heal %"
-	},
-	"crithit%"           : {
-		short : "CH %",
-		long  : "Critical Hit %"
-	},
-	"damage"             : {
-		short : "Dmg",
-		long  : "Damage"
-	},
-	"damage%"            : {
-		short : "Dmg %",
-		long  : "Damage %"
-	},
-	"damage_taken_pct"   : {
-		short : "Dmg %",
-		long  : "Damage Taken %"
-	},
-	"damagetaken"        : {
-		short : "Dmg",
-		long  : "Damage Taken"
-	},
-	"deaths"             : {
-		short : "Death",
-		long  : "Deaths"
-	},
-	"DirectHitPct"       : {
-		short : "DH %",
-		long  : "Direct Hit %"
-	},
-	"effective_heal_pct" : {
-		short : "Ef H %",
-		long  : "Effective Heal %"
-	},
-	"effective_hps"      : {
-		short : "Ef HPS",
-		long  : "Effective Heal Per Second"
-	},
-	"encdps"             : {
-		short : "DPS",
-		long  : "Damage Per Second"
-	},
-	"enchps"             : {
-		short : "HPS",
-		long  : "Heal Per Second"
-	},
-	"healed"             : {
-		short : "Heal",
-		long  : "Total Heal"
-	},
-	"healed%"            : {
-		short : "Heal %",
-		long  : "Heal %"
-	},
-	"healstaken"         : {
-		short : "Heals",
-		long  : "Heals Received"
-	},
-	"max_heal_format"    : {
-		short : "Mx Heal",
-		long  : "Max Heal"
-	},
-	"max_hit_format"     : {
-		short : "Mx Hit",
-		long  : "Max Hit"
-	},
-	"OverHealPct"        : {
-		short : "Ovr %",
-		long  : "Overheal %"
-	},
-	"enctps"             : {
-		short : "DTPS",
-		long  : "Damage Taken Per Second"
-	}
-};
+const PlayerDataTitles = require("../data/locales/metrics.json");
 
 const PlayerMetricTypeData = {
 	dps  : [

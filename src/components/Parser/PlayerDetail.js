@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import Constants from "../../constants/index";
 import PlayerProcessor from "../../processors/PlayerProcessor";
+import LocalizationService from "../../services/LocalizationService";
 import HistoryChart from "./PlayerDetail/HistoryChart";
 
 class PlayerDetail extends React.Component {
@@ -25,7 +25,7 @@ class PlayerDetail extends React.Component {
 			let columns = [];
 
 			for (let key of detail) {
-				let title = Constants.PlayerDataTitles[key].long;
+				let title = LocalizationService.getPlayerDataTitle(key, "long");
 				let value = PlayerProcessor.getDataValue(key, player, players, this.props.encounter);
 
 				columns.push(
@@ -41,7 +41,7 @@ class PlayerDetail extends React.Component {
 			);
 			sections.push(
 				<div className="section" key={section_type}>
-					<div className="title" key={section_type + "-title"}>{section_type}</div>
+					<div className="title" key={section_type + "-title"}>{LocalizationService.getOverlayText(section_type)}</div>
 					<div className="data" key={section_type + "-data"}>
 						{columns}
 					</div>

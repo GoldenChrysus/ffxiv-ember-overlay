@@ -6,6 +6,7 @@ import PlayerProcessor from "../../processors/PlayerProcessor";
 import VersionService from "../../services/VersionService";
 import PluginService from "../../services/PluginService";
 import SettingsService from "../../services/SettingsService";
+import LocalizationService from "../../services/LocalizationService";
 import IconButton from "./Container/IconButton";
 
 class Footer extends React.Component {
@@ -24,21 +25,21 @@ class Footer extends React.Component {
 				case "player":
 					return(
 						<div id="navigation-links">
-							<span className="navigation-link" onClick={self.changeViewing.bind(self, "tables")} key="navigation-link-back">&lsaquo; Back</span>
+							<span className="navigation-link" onClick={self.changeViewing.bind(self, "tables")} key="navigation-link-back">&lsaquo; {LocalizationService.getOverlayText("back")}</span>
 						</div>
 					);
 
 				default:
 					let types   = {
-						dps  : "DPS",
-						heal : "Heal",
-						tank : "Tank",
+						dps  : "",
+						heal : "",
+						tank : "",
 						raid : "24"
 					}
 					let links   = [];
 
 					for (let type_key in types) {
-						let name   = types[type_key];
+						let name   = (type_key === "raid") ? types[type_key] : LocalizationService.getOverlayText(type_key);
 						let active = (table_type === type_key && viewing === "tables") ? "active" : "";
 
 						links.push(
@@ -66,9 +67,9 @@ class Footer extends React.Component {
 		let actions = function() {
 			let version_notice = (self.props.new_version) ? "notice" : "";
 			let actions        = [
-				<IconButton icon="eye slash" title="Blur player names" key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
-				<IconButton icon="cut" title="Split encounter" key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
-				<IconButton icon="cog" title="Settings" key="settings" class={version_notice} onClick={SettingsService.openSettingsWindow}/>
+				<IconButton icon="eye slash" title={LocalizationService.getOverlayText("blur_names")} key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
+				<IconButton icon="cut" title={LocalizationService.getOverlayText("split_encounter")} key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
+				<IconButton icon="cog" title={LocalizationService.getOverlayText("settings")} key="settings" class={version_notice} onClick={SettingsService.openSettingsWindow}/>
 			];
 
 			return actions;
@@ -119,6 +120,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
+		language      : state.settings.interface.language,
 		table_type    : state.settings.intrinsic.table_type,
 		player_blur   : state.settings.intrinsic.player_blur,
 		viewing       : state.internal.viewing,

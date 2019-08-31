@@ -5,6 +5,7 @@ import { changeCollapse, loadSampleGameData, clearGameData, changeViewing, chang
 
 import PluginService from "../../../services/PluginService";
 import SettingsService from "../../../services/SettingsService";
+import LocalizationService from "../../../services/LocalizationService";
 
 class Menu extends React.Component {
 	render() {
@@ -12,7 +13,7 @@ class Menu extends React.Component {
 		let plugin_service = new PluginService();
 
 		let collapse_item = function() {
-			let text = (self.props.collapsed) ? "Uncollapse" : "Collapse";
+			let text = LocalizationService.getOverlayText((self.props.collapsed) ? "uncollapse" : "collapse");
 			let data = { state: !self.props.collapsed };
 
 			return(
@@ -25,7 +26,7 @@ class Menu extends React.Component {
 		let plugin_actions = function() {
 			return(
 				<MenuItem onClick={plugin_service.splitEncounter.bind(plugin_service)}>
-					Split Encounter
+					{LocalizationService.getOverlayText("split_encounter")}
 				</MenuItem>
 			);
 		}
@@ -37,20 +38,20 @@ class Menu extends React.Component {
 					{plugin_actions()}
 					<div className="split"></div>
 					<MenuItem onClick={this.changeViewing.bind(this, "player", this.props.encounter)}>
-						View Encounter Detail
+						{LocalizationService.getOverlayText("view_encounter")}
 					</MenuItem>
 					<MenuItem onClick={this.loadSampleGameData.bind(this)}>
-						Load Sample Data
+						{LocalizationService.getOverlayText("load_sample")}
 					</MenuItem>
 					<MenuItem onClick={this.clearGameData.bind(this)}>
-						Clear Encounter Data
+						{LocalizationService.getOverlayText("clear_encounter")}
 					</MenuItem>
 					<div className="split"></div>
 					<MenuItem onClick={SettingsService.openSettingsWindow}>
-						Settings
+						{LocalizationService.getOverlayText("settings")}
 					</MenuItem>
 					<MenuItem onClick={SettingsService.openSettingsImport}>
-						Import
+						{LocalizationService.getOverlayText("import")}
 					</MenuItem>
 				</div>
 			</ContextMenu>
@@ -105,6 +106,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
+		language      : state.settings.interface.language,
 		collapsed     : state.settings.intrinsic.collapsed,
 		overlayplugin : state.internal.overlayplugin,
 		encounter     : state.internal.game.Encounter

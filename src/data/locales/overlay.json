@@ -1,0 +1,149 @@
+{
+	"collapse"            : {
+		"en" : "Collapse",
+		"pt" : "Diminuir",
+		"cn" : "折叠",
+		"jp" : "最小化",
+		"de" : "Verkleinern"
+	},
+	"uncollapse"          : {
+		"en" : "Uncollapse",
+		"pt" : "Maximizar",
+		"cn" : "展开",
+		"jp" : "元に戻す",
+		"de" : "Vergrößern"
+	},
+	"split_encounter"     : {
+		"en" : "Split Encounter",
+		"pt" : "Dividir encontro",
+		"cn" : "拆分战斗记录",
+		"jp" : "戦闘の区切り",
+		"de" : "Kampf aufteilen"
+	},
+	"view_encounter"      : {
+		"en" : "View Encounter Detail",
+		"pt" : "Ver detalhes de encontro",
+		"cn" : "查看战斗详情",
+		"jp" : "戦闘の詳細を表示",
+		"de" : "Kampf Details ansehen"
+	},
+	"load_sample"         : {
+		"en" : "Load Sample Data",
+		"pt" : "Carregar dados amostrais",
+		"cn" : "加载样本数据",
+		"jp" : "サンプルデーターを表示",
+		"de" : "Musterdaten laden"
+	},
+	"clear_encounter"     : {
+		"en" : "Clear Encounter Data",
+		"pt" : "Limpar dados de encontro",
+		"cn" : "清除战斗数据",
+		"jp" : "戦闘をリセットする",
+		"de" : "Kampfdaten beseitigen"
+	},
+	"settings"            : {
+		"en" : "Settings",
+		"pt" : "Configurações",
+		"cn" : "设置",
+		"jp" : "設定",
+		"de" : "Einstellungen"
+	},
+	"blur_names"          : {
+		"en" : "Blur player names",
+		"pt" : "Borrar nomes dos Jogadores",
+		"cn" : "隐藏姓名",
+		"jp" : "プレイヤー名を伏せる",
+		"de" : "Verwische Spielernamen"
+	},
+	"toggle_collapse"     : {
+		"en" : "Toggle collapse",
+		"pt" : "Mostrar/Esconder",
+		"cn" : "折叠",
+		"jp" : "最小化を切替",
+		"de" : "Verkleinern/Vergrößern"
+	},
+	"back"                : {
+		"en" : "Back",
+		"pt" : "Voltar",
+		"cn" : "返回",
+		"jp" : "戻る",
+		"de" : "Zurück"
+	},
+	"not_applicable"      : {
+		"en" : "N/A",
+		"pt" : "N/A",
+		"cn" : "无数据",
+		"jp" : "該当なし",
+		"de" : "N/A"
+	},
+	"inactive"            : {
+		"en" : "Inactive",
+		"pt" : "Inativo",
+		"cn" : "未生效",
+		"jp" : "未表示",
+		"de" : "Inaktiv"
+	},
+	"encounter"           : {
+		"en" : "Encounter",
+		"pt" : "Encontro",
+		"cn" : "战斗",
+		"jp" : "戦闘",
+		"de" : "Im Kampf"
+	},
+	"awaiting_encounter"  : {
+		"en" : "Awaiting encounter data...",
+		"pt" : "Aguardando informações do encontro...",
+		"cn" : "等待战斗数据...",
+		"jp" : "戦闘データを待ち中",
+		"de" : "Warte auf Kampfdaten..."
+	},
+	"player_name"         : {
+		"en" : "Nome",
+		"pt" : "Nome",
+		"cn" : "名称",
+		"jp" : "名前",
+		"de" : "Name"
+	},
+	"dps"                 : {
+		"en" : "DPS",
+		"pt" : "DPS",
+		"cn" : "DPS",
+		"jp" : "DPS",
+		"de" : "DPS"
+	},
+	"heal"                : {
+		"en" : "Heal",
+		"pt" : "Cura",
+		"cn" : "量",
+		"jp" : "復",
+		"de" : "Heilung"
+	},
+	"tank"                : {
+		"en" : "Tank",
+		"pt" : "Tanque",
+		"cn" : "坦克",
+		"jp" : "タンク",
+		"de" : "Verteidiger"
+	},
+	"import"              : {
+		"en" : "Import",
+		"pt" : "Importar",
+		"cn" : "导入",
+		"jp" : "取り込む",
+		"de" : "Importieren"
+	},
+	"import_settings"     : {
+		"en" : "Import Settings",
+		"pt" : "Importar Configurações",
+		"cn" : "导入设置",
+		"jp" : "設定を取り込む",
+		"de" : "Einstellungen Importieren"
+	},
+	"import_instructions" : {
+		"en" : "Paste your exported setting key below and click \"Import.\"",
+		"pt" : "Cole suas opções exportadas abaixo e clique \"Importar.\"",
+		"cn" : "粘贴您导出的数据并点击\"导入\"。",
+		"jp" : "持ち出した設定キーをこの下に貼付してから「取り込む」をクリックしてください。",
+		"de" : "Füge unten deinen exportierten Einstellungsschlüssel ein und klicke auf \"Importieren.\""
+	}
+}

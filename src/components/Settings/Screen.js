@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { updateSettings } from "../../redux/actions/index";
 import { Container, Form, Button } from "semantic-ui-react";
 
+import LocalizationService from "../../services/LocalizationService";
+
 import Section from "./Screen/Section";
 
 class Screen extends React.Component {
@@ -20,15 +22,15 @@ class Screen extends React.Component {
 			let section_data = this.props.sections[i];
 			
 			sections.push(
-				<Container fluid key={section_data.title} className="section-container">
-					<Section data={section_data} settings={this.props.settings} changeCallback={this.handleChange.bind(this)}/>
+				<Container fluid key={this.props.path + "-settings-" + i} className="section-container">
+					<Section data={section_data} parent_path={this.props.path} index={i} settings={this.props.settings} changeCallback={this.handleChange.bind(this)}/>
 				</Container>
 			)
 		}
 
 		return(
 			<Form>
-				<Button floated="right" className={"save " + save_class} onClick={this.handleSave.bind(this)}>Save</Button>
+				<Button floated="right" className={"save " + save_class} onClick={this.handleSave.bind(this)}>{LocalizationService.getMisc("save")}</Button>
 				<div className="clear"></div>
 				{sections}
 			</Form>
