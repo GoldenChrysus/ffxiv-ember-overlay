@@ -10,7 +10,7 @@
 		"en" : "Uncollapse",
 		"pt" : "Maximizar",
 		"cn" : "展开",
-		"jp" : "",
+		"jp" : "元に戻す",
 		"de" : "Vergrößern"
 	},
 	"split_encounter"     : {
@@ -73,7 +73,7 @@
 		"en" : "N/A",
 		"pt" : "N/A",
 		"cn" : "无数据",
-		"jp" : "",
+		"jp" : "該当なし",
 		"de" : "N/A"
 	},
 	"inactive"            : {
@@ -94,14 +94,14 @@
 		"en" : "Awaiting encounter data...",
 		"pt" : "Aguardando informações do encontro...",
 		"cn" : "等待战斗数据...",
-		"jp" : "",
+		"jp" : "戦闘データを待ち中",
 		"de" : "Warte auf Kampfdaten..."
 	},
 	"player_name"         : {
 		"en" : "Nome",
 		"pt" : "Nome",
 		"cn" : "名称",
-		"jp" : "",
+		"jp" : "名前",
 		"de" : "Name"
 	},
 	"dps"                 : {
@@ -136,7 +136,7 @@
 		"en" : "Import Settings",
 		"pt" : "Importar Configurações",
 		"cn" : "导入设置",
-		"jp" : "",
+		"jp" : "設定を取り込む",
 		"de" : "Einstellungen Importieren"
 	},
 	"import_instructions" : {
