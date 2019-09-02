@@ -2,17 +2,15 @@
 
 ## 0.10.0-alpha
 
-**Released: 2019-08-30**
-
-*! - indicates change is available on the staging site*
+**Released: 2019-09-02**
 
 ### Bug Fixes
-- ! - Resolved issue where custom CSS code editor wouldn't expand vertically to accommodate several lines of CSS
-- ! - HOTFIX: Resolved issue where overlay would instantiate infinite WebSocket clients, causing high CPU usage on some machines
-- ! - Resolved issue where the overlay couldn't be collapsed as normal upon first load before an encounter had begun
+- Resolved issue where custom CSS code editor wouldn't expand vertically to accommodate several lines of CSS
+- HOTFIX: Resolved issue where overlay would instantiate infinite WebSocket clients, causing high CPU usage on some machines
+- Resolved issue where the overlay couldn't be collapsed as normal upon first load before an encounter had begun
 
 ### Features
-- ! - Added translation system
+- Added translation system
     - Languages
         - Português
         - 中文
@@ -25,7 +23,7 @@
         - New text added since the translation process began
 
 ### UI Changes
-- ! - Removed decimals from death metric
+- Removed decimals from death metric
 
 ### Code Changes
 - Added translation data at `/src/data/locales/*.json`
@@ -33,7 +31,7 @@
 - Added `react-string-replace` to help dynamically replace placeholder text in translation templates with React components
 
 ### Miscellaneous
-- Added credits to "About" page in settings
+- Added credits to "About" and "Donate" pages in settings
 
 ## 0.9.0-alpha
 
