@@ -154,6 +154,25 @@ Please note that the staging site is for pre-release testing, so you may encount
 
 When viewing the [changelog](/CHANGELOG.md), you will be able to determine which changes are available on the staging site because they will be prefixed with "!" in the changelog for the latest development version.
 
+## Credits
+
+### Translations
+
+- **Bona** - Portuguese translation
+- **ShadyWhite** - Chinese translation
+- **Gusma** - Portuguese translation
+- **The_X** - Portuguese translation
+- **okuRaku** - [Twitter](https://twitter.com/okurakuu) [Twitch](https://www.twitch.tv/okuraku)  - Japanese translation
+- **Astriel** - German translation
+
+### Donors
+
+- Amneamnius
+
+### Misc.
+
+- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - CSS styling.
+
 ## Contributing
 
 ### Process
@@ -182,10 +201,6 @@ This list is not exhaustive and generally applies to formatting. Your merge requ
 - Opening curly braces (`{`) for classes, functions, and control blocks should be on the same line as the block, e.g. `if (some_var === true) {`.
 - Use arrow functions unless needing to inherit the class or function context.
 - Ensure the final version of your code is free of debug code.
-
-## Credits
-
-- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) for CSS styling.
 
 ## License
 [GNU General Public License v3.0 only](/LICENSE)
