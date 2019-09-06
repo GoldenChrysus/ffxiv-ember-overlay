@@ -162,7 +162,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 - **ShadyWhite** - Chinese translation
 - **Gusma** - Portuguese translation
 - **The_X** - Portuguese translation
-- **okuRaku** - [Twitter](https://twitter.com/okurakuu) [Twitch](https://www.twitch.tv/okuraku)  - Japanese translation
+- **okuRaku** - [Twitter](https://twitter.com/okurakuu), [Twitch](https://www.twitch.tv/okuraku)  - Japanese translation
 - **Astriel** - German translation
 
 ### Donors
