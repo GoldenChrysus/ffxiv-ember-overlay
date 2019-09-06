@@ -121,26 +121,6 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
 17. In the section entitled "OverlayProc," click "Start/Stop OverlayProc."
 18. Click "Open Manager."
 19. In the section entitled "Overlay List," select "Ember Overlay" and click "New." It should then appear in the section entitled "Overlay Windows" and should be visible in your FFXIV game.
-
-## Building
-To build this yourself, do the following:
-
-1. Clone the repository using git, e.g. `git clone https://github.com/GoldenChrysus/ffxiv-ember-overlay.git`
-    - If new to or unfamiliar with git, reference GitHub's article on [cloning a repository](https://help.github.com/en/articles/cloning-a-repository).
-    - Alternatively, you can [download the ZIP file](https://github.com/GoldenChrysus/ffxiv-ember-overlay/archive/bleeding-edge.zip) for the repository.
-2. Run `npm install` to install the Node packages.
-3. Make a file `.env-cmdrc` and provide environment variables as necessary, using `.env-cmdrc.sample` as a guide.
-4. To launch the server immediately:
-    1. Run `npm start` to start the React app on your machine on port 3000.
-    2. Navigate to your.server.host:3000 to view the app.
-    
-5. To build the app for usage on a Web server:
-    1. Run one of the following build commands depending on your environment:
-        - `npm run build:development` to build the development environment.
-        - `npm run build:staging` to build the staging environment.
-        - `npm run build` to build the production environment.
-    2. Copy the contents of `/build` to the desired path on your Web server.
-    3. Navigate to your.server.host/path/to/app to view the app.
     
 ## Changelog
 
@@ -172,6 +152,26 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 ### Misc.
 
 - [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - CSS styling.
+
+## Building
+To build this yourself, do the following:
+
+1. Clone the repository using git, e.g. `git clone https://github.com/GoldenChrysus/ffxiv-ember-overlay.git`
+    - If new to or unfamiliar with git, reference GitHub's article on [cloning a repository](https://help.github.com/en/articles/cloning-a-repository).
+    - Alternatively, you can [download the ZIP file](https://github.com/GoldenChrysus/ffxiv-ember-overlay/archive/bleeding-edge.zip) for the repository.
+2. Run `npm install` to install the Node packages.
+3. Make a file `.env-cmdrc` and provide environment variables as necessary, using `.env-cmdrc.sample` as a guide.
+4. To launch the server immediately:
+    1. Run `npm start` to start the React app on your machine on port 3000.
+    2. Navigate to your.server.host:3000 to view the app.
+    
+5. To build the app for usage on a Web server:
+    1. Run one of the following build commands depending on your environment:
+        - `npm run build:development` to build the development environment.
+        - `npm run build:staging` to build the staging environment.
+        - `npm run build` to build the production environment.
+    2. Copy the contents of `/build` to the desired path on your Web server.
+    3. Navigate to your.server.host/path/to/app to view the app.
 
 ## Contributing
 
