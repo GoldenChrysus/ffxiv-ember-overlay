@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.11.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- ?
+
+### Features
+- Added setting to specify decimal accuracy (0, 1, or 2 - default)
+- Added setting to shorten thousands to "K"
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.10.0-alpha
 
 **Released: 2019-09-02**

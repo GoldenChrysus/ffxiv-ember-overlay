@@ -240,6 +240,20 @@
 			"jp" : "レイドＤＰＳをフッターで表示",
 			"de" : "Raid DPS in der Overlay Fußzeile anzeigen"
 		},
+		"interface.decimal_accuracy" : {
+			"en" : "Decimal Accuracy",
+			"pt" : "Decimal Accuracy",
+			"cn" : "Decimal Accuracy",
+			"jp" : "Decimal Accuracy",
+			"de" : "Decimal Accuracy"
+		},
+		"interface.shorten_thousands" : {
+			"en" : "Shorten Thousands to 'K'",
+			"pt" : "Shorten Thousands to 'K'",
+			"cn" : "Shorten Thousands to 'K'",
+			"jp" : "Shorten Thousands to 'K'",
+			"de" : "Shorten Thousands to 'K'"
+		},
 		"interface.light_theme" : {
 			"en" : "Use Light Theme",
 			"pt" : "Usar tema claro",

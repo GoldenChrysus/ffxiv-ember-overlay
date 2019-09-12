@@ -27,6 +27,23 @@ const language_options = [
 		text  : "Português"
 	}
 ];
+const decimal_options  = [
+	{
+		key   : "0",
+		value : 0,
+		text  : "0"
+	},
+	{
+		key   : "1",
+		value : 1,
+		text  : "1"
+	},
+	{
+		key   : "2",
+		value : 2,
+		text  : "2"
+	},
+];
 
 const SettingsSchema = {
 	sections : [
@@ -94,6 +111,21 @@ const SettingsSchema = {
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.interface.footer_dps;
+							}
+						},
+						{
+							key_path : "interface.decimal_accuracy",
+							type     : "select",
+							options  : decimal_options,
+							value    : function() {
+								return this.props.settings.interface.decimal_accuracy;
+							}
+						},
+						{
+							key_path : "interface.shorten_thousands",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.shorten_thousands;
 							}
 						},
 						{

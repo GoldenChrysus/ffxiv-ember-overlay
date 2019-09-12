@@ -22,6 +22,7 @@ const default_settings = {
 		light_theme           : false,
 		footer_when_collapsed : false,
 		footer_dps            : false,
+		decimal_accuracy      : 2,
 		language              : "en"
 	},
 	custom        : {

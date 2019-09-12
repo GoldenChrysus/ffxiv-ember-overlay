@@ -1,3 +1,5 @@
+import store from "../redux/store/index";
+
 import Constants from "../constants/index";
 import PlayerProcessor from "./PlayerProcessor";
 
@@ -85,11 +87,29 @@ class GameDataProcessor  {
 	}
 
 	convertToLocaleFormat(key, value) {
-		let fraction_rules   = Constants.PlayerMetricFractionRules[key];
-		let minimum_fraction = (fraction_rules && fraction_rules.hasOwnProperty("min")) ? fraction_rules.min : 2;
-		let maximum_fraction = (fraction_rules && fraction_rules.hasOwnProperty("max")) ? fraction_rules.max : 2;
+		const state = store.getState();
 
-		return (+value).toLocaleString(undefined, { minimumFractionDigits : minimum_fraction, maximumFractionDigits: maximum_fraction });
+		let accuracy          = state.settings.interface.decimal_accuracy;
+		let shorten_thousands = state.settings.interface.shorten_thousands;
+		let over_thousand     = false;
+		let fraction_rules    = Constants.PlayerMetricFractionRules[key];
+		let minimum_fraction  = (fraction_rules && fraction_rules.hasOwnProperty("min")) ? fraction_rules.min : accuracy;
+		let maximum_fraction  = (fraction_rules && fraction_rules.hasOwnProperty("max")) ? fraction_rules.max : accuracy;
+		
+		value = +value;
+
+		if (shorten_thousands && value >= 1000) {
+			value         = +(value / 1000).toFixed(2);
+			over_thousand = true;
+		}
+
+		value = value.toLocaleString(undefined, { minimumFractionDigits : minimum_fraction, maximumFractionDigits: maximum_fraction });
+
+		if (over_thousand) {
+			value += "K";
+		}
+
+		return value;
 	}
 }
 
