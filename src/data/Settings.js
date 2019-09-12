@@ -23,6 +23,7 @@ const default_settings = {
 		footer_when_collapsed : false,
 		footer_dps            : false,
 		decimal_accuracy      : 2,
+		shorten_thousands     : false,
 		language              : "en"
 	},
 	custom        : {
