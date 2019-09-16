@@ -2,6 +2,8 @@ import store from "../redux/store/index";
 
 import Constants from "../constants/index";
 
+import GameDataProcessor from "./GameDataProcessor";
+
 class PlayerProcessor  {
 	getShortName(name, type) {
 		name = name.split(" ");
@@ -32,7 +34,7 @@ class PlayerProcessor  {
 		}
 
 		if (!return_sortable_value && !isNaN(value)) {
-			value = (+value).toLocaleString(undefined, { minimumFractionDigits : 2, maximumFractionDigits: 2 });
+			value = GameDataProcessor.convertToLocaleFormat(key, value);
 		} else if (return_sortable_value) {
 			let number_regex = /((([\d]{1,3},)?(([\d]{3},)+)?[\d]{3})|[\d]+)(\.[\d]+)?(%|K)?$/;
 			let matches      = String(value).match(number_regex);

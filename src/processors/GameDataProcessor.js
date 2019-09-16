@@ -1,5 +1,9 @@
+import store from "../redux/store/index";
+
 import Constants from "../constants/index";
 import PlayerProcessor from "./PlayerProcessor";
+
+import LocalizationService from "../services/LocalizationService";
 
 class GameDataProcessor  {
 	normalizeFieldLocale(value) {
@@ -14,12 +18,12 @@ class GameDataProcessor  {
 		return value.replace(match, String(match).replace(",", "."));
 	}
 
-	normalizeLocales(data) {
+	normalizeLocales(data, language) {
 		if (!data.Encounter) {
 			return data;
 		}
 
-		data.Encounter.name             = "Encounter";
+		data.Encounter.name             = LocalizationService.getOverlayText("encounter", language);
 		data.Encounter.Job              = "ENC";
 		data.Encounter.OverHealPct      = "0%";
 		data.Encounter.BlockPct         = "0%";
@@ -80,6 +84,32 @@ class GameDataProcessor  {
 		current_history[current_time] = new_data;
 
 		state.internal.encounter_data_history = current_history;
+	}
+
+	convertToLocaleFormat(key, value) {
+		const state = store.getState();
+
+		let accuracy          = state.settings.interface.decimal_accuracy;
+		let shorten_thousands = state.settings.interface.shorten_thousands;
+		let over_thousand     = false;
+		let fraction_rules    = Constants.PlayerMetricFractionRules[key];
+		let minimum_fraction  = (fraction_rules && fraction_rules.hasOwnProperty("min")) ? fraction_rules.min : accuracy;
+		let maximum_fraction  = (fraction_rules && fraction_rules.hasOwnProperty("max")) ? fraction_rules.max : accuracy;
+		
+		value = +value;
+
+		if (shorten_thousands && value >= 1000) {
+			value         = +(value / 1000).toFixed(2);
+			over_thousand = true;
+		}
+
+		value = value.toLocaleString(undefined, { minimumFractionDigits : minimum_fraction, maximumFractionDigits: maximum_fraction });
+
+		if (over_thousand) {
+			value += "K";
+		}
+
+		return value;
 	}
 }
 

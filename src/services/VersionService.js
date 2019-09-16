@@ -6,6 +6,8 @@ import $ from "jquery";
 import Parser from "changelog-parser";
 import compareVersions from "compare-versions";
 
+import LocalizationService from "./LocalizationService";
+
 const no_changes = "No changes since your last visit.";
 
 class VersionService {
@@ -150,6 +152,38 @@ class VersionService {
 
 			if (final_data[item_type].length === 0) {
 				delete final_data[item_type];
+			}
+
+			if (has_changes) {
+				for (let item_type in final_data) {
+					let translated_type = item_type;
+
+					switch (item_type) {
+						case "Features":
+							translated_type = LocalizationService.getMisc("features");
+
+							break;
+
+						case "UI Changes":
+							translated_type = LocalizationService.getMisc("ui_changes");
+
+							break;
+
+						case "Bug Fixes":
+							translated_type = LocalizationService.getMisc("bug_fixes");
+
+							break;
+
+						default:
+							break;
+					}
+
+					if (translated_type !== item_type) {
+						final_data[translated_type] = JSON.parse(JSON.stringify(final_data[item_type]));
+
+						delete final_data[item_type];
+					}
+				}
 			}
 		}
 

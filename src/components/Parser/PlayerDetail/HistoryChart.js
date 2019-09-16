@@ -2,6 +2,8 @@ import React from "react";
 import ChartComponent from "react-chartjs-2";
 import { Line } from "react-chartjs-2";
 
+import LocalizationService from "../../../services/LocalizationService";
+
 class HistoryChart extends React.Component {
 	componentWillMount() {
 		ChartComponent.prototype.destroyChart = function() {
@@ -22,15 +24,15 @@ class HistoryChart extends React.Component {
 	render() {
 		const metrics               = [
 			{
-				name : "DPS",
+				name : LocalizationService.getPlayerDataTitle("encdps", "short"),
 				key  : "encdps"
 			},
 			{
-				name : "HPS",
+				name : LocalizationService.getPlayerDataTitle("enchps", "short"),
 				key  : "enchps"
 			},
 			{
-				name : "DTPS",
+				name : LocalizationService.getPlayerDataTitle("enctps", "short"),
 				key  : "enctps"
 			}
 		];

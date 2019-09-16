@@ -3,10 +3,12 @@ import { connect } from "react-redux";
 import $ from "jquery";
 import { changeViewing, changeDetailPlayer, updateState } from "../../redux/actions/index";
 
-import Player from "./PlayerTable/Player";
-import Constants from "../../constants/index";
-import OverlayInfo from "./PlayerTable/OverlayInfo";
+import GameDataProcessor from "../../processors/GameDataProcessor";
 import PlayerProcessor from "../../processors/PlayerProcessor";
+import LocalizationService from "../../services/LocalizationService";
+
+import Player from "./PlayerTable/Player";
+import OverlayInfo from "./PlayerTable/OverlayInfo";
 
 class PlayerTable extends React.Component {
 	componentDidMount() {
@@ -36,7 +38,7 @@ class PlayerTable extends React.Component {
 
 		if (!is_raid) {
 			for (let key of this.props.table_columns[table_type]) {
-				let title = Constants.PlayerDataTitles[key].short;
+				let title = LocalizationService.getPlayerDataTitle(key, "short");
 
 				header.push(
 					<div className="column" key={key}>{title}</div>
@@ -44,7 +46,7 @@ class PlayerTable extends React.Component {
 
 				if (this.props.sum_columns[table_type].indexOf(key) !== -1) {
 					footer.push(
-						<div className="column" key={key}>{(+this.props.encounter[key] || 0).toLocaleString(undefined, { minimumFractionDigits : 2, maximumFractionDigits: 2 })}</div>
+						<div className="column" key={key}>{GameDataProcessor.convertToLocaleFormat(key, +this.props.encounter[key] || 0)}</div>
 					);
 				} else {
 					footer.push(
@@ -99,7 +101,7 @@ class PlayerTable extends React.Component {
 
 		let header_row, footer_row, table_class;
 
-		let rank_text = (rank === 0) ? "N/A" : `${rank}/${count}`;
+		let rank_text = (rank === 0) ? LocalizationService.getOverlayText("not_applicable") : `${rank}/${count}`;
 
 		if (rank_text !== this.props.rank) {
 			let rank_data = {
@@ -114,7 +116,7 @@ class PlayerTable extends React.Component {
 			header_row = 
 				<div className="row header">
 					<div className="column"></div>
-					<div className="column">Name</div>
+					<div className="column">{LocalizationService.getOverlayText("player_name")}</div>
 					{header}
 				</div>;
 
@@ -134,7 +136,7 @@ class PlayerTable extends React.Component {
 			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
 		}
 
-		let overlay_info = (this.props.encounter && Object.keys(this.props.encounter).length) ? "" : <OverlayInfo/>
+		let overlay_info = (collapsed || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
 
 		return (
 			<React.Fragment>

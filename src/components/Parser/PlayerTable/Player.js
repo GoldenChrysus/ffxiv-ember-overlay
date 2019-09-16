@@ -1,6 +1,7 @@
 import React from "react";
 
 import PlayerProcessor from "../../../processors/PlayerProcessor";
+import LocalizationService from "../../../services/LocalizationService";
 import Constants from "../../../constants/index";
 
 class Player extends React.Component {
@@ -22,7 +23,7 @@ class Player extends React.Component {
 
 		for (let key of stat_columns) {
 			let value  = PlayerProcessor.getDataValue(key, player, this.props.players, this.props.encounter);
-			let prefix = (is_raid) ? Constants.PlayerDataTitles[key].short + ": " : "";
+			let prefix = (is_raid) ? LocalizationService.getPlayerDataTitle(key, "short") + ": " : "";
 
 			columns.push(
 				<div className="column" key={key}><span>{prefix}</span>{value}</div>

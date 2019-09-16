@@ -121,6 +121,37 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
 17. In the section entitled "OverlayProc," click "Start/Stop OverlayProc."
 18. Click "Open Manager."
 19. In the section entitled "Overlay List," select "Ember Overlay" and click "New." It should then appear in the section entitled "Overlay Windows" and should be visible in your FFXIV game.
+    
+## Changelog
+
+View the full changelog [here](/CHANGELOG.md).
+
+## Staging Site
+
+You can access and test features in advance by using the staging site. Instead of the regular URL, set your overlay to https://goldenchrysus.github.io/ffxiv/ember-overlay-dev/
+
+Please note that the staging site is for pre-release testing, so you may encounter errors. Please report these errors as GitHub issues or in the #bug-reports channel on the [Discord](https://discord.io/emberoverlay).
+
+When viewing the [changelog](/CHANGELOG.md), you will be able to determine which changes are available on the staging site because they will be prefixed with "!" in the changelog for the latest development version.
+
+## Credits
+
+### Translations
+
+- **Bona** - Portuguese translation
+- **ShadyWhite** - Chinese translation
+- **Gusma** - Portuguese translation
+- **The_X** - Portuguese translation
+- **okuRaku** - [Twitter](https://twitter.com/okurakuu), [Twitch](https://www.twitch.tv/okuraku)  - Japanese translation
+- **Astriel** - German translation
+
+### Donors
+
+- Amneamnius
+
+### Misc.
+
+- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - CSS styling.
 
 ## Building
 To build this yourself, do the following:
@@ -141,18 +172,6 @@ To build this yourself, do the following:
         - `npm run build` to build the production environment.
     2. Copy the contents of `/build` to the desired path on your Web server.
     3. Navigate to your.server.host/path/to/app to view the app.
-    
-## Changelog
-
-View the full changelog [here](/CHANGELOG.md).
-
-## Staging Site
-
-You can access and test features in advance by using the staging site. Instead of the regular URL, set your overlay to https://goldenchrysus.github.io/ffxiv/ember-overlay-dev/
-
-Please note that the staging site is for pre-release testing, so you may encounter errors. Please report these errors as GitHub issues or in the #bug-reports channel on the [Discord](https://discord.io/emberoverlay).
-
-When viewing the [changelog](/CHANGELOG.md), you will be able to determine which changes are available on the staging site because they will be prefixed with "!" in the changelog for the latest development version.
 
 ## Contributing
 
@@ -182,10 +201,6 @@ This list is not exhaustive and generally applies to formatting. Your merge requ
 - Opening curly braces (`{`) for classes, functions, and control blocks should be on the same line as the block, e.g. `if (some_var === true) {`.
 - Use arrow functions unless needing to inherit the class or function context.
 - Ensure the final version of your code is free of debug code.
-
-## Credits
-
-- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) for CSS styling.
 
 ## License
 [GNU General Public License v3.0 only](/LICENSE)
