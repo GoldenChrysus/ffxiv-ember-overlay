@@ -30,7 +30,7 @@ const language_options = [
 const decimal_options  = [
 	{
 		key   : "0",
-		value : 0,
+		value : "0",
 		text  : "0"
 	},
 	{

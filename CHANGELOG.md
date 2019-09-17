@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.12.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- Resolved issue where decimal accuracy of 0 would not be saved.
+
+### Features
+- ?
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.11.0-alpha
 
 **Released: 2019-09-15**
