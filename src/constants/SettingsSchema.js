@@ -93,6 +93,13 @@ const SettingsSchema = {
 							}
 						},
 						{
+							key_path : "interface.blur_job_icons",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.blur_job_icons;
+							}
+						},
+						{
 							key_path : "interface.collapse_down",
 							type     : "checkbox",
 							value    : function() {

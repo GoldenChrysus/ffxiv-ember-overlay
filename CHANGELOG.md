@@ -10,10 +10,10 @@
 - Resolved issue where decimal accuracy of 0 would not be saved.
 
 ### Features
-- ?
+- Added setting to blur job icons when blurring player names
 
 ### UI Changes
-- ?
+- Updated some translations for Chinese.
 
 ### Code Changes
 - ?

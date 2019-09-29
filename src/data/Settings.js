@@ -18,6 +18,7 @@ const default_settings = {
 		opacity               : 100,
 		zoom                  : 100,
 		top_right_rank        : false,
+		blur_job_icons        : false,
 		collapse_down         : false,
 		light_theme           : false,
 		footer_when_collapsed : false,

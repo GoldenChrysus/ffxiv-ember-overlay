@@ -31,7 +31,9 @@ class Player extends React.Component {
 		}
 
 		let name_blur   = (this.props.blur) ? "blur" : "";
-		let icon        = <div className="column" key="player-data-icon"><img src={"img/icons/jobs/" + job + ".png"} alt={job + " icon"}></img></div>;
+		let icon_blur   = (this.props.blur && this.props.icon_blur) ? "blur" : "";
+		let icon_style  = (icon_blur) ? { WebkitFilter: "blur(4px)" } : {};
+		let icon        = <div className="column" key="player-data-icon"><img src={"img/icons/jobs/" + job + ".png"} className={"icon " + icon_blur} style={icon_style} alt={job + " icon"}></img></div>;
 		let player_name = PlayerProcessor.getDataValue("name", player);
 
 		if (this.props.short_names !== "no_short") {

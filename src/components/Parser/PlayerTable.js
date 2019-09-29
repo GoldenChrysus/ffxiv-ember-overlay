@@ -95,7 +95,7 @@ class PlayerTable extends React.Component {
 			let blur = (player_blur && !is_current_player);
 
 			rows.push(
-				<Player key={player.name} percent={percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
+				<Player key={player.name} percent={percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
 			);
 		}
 
@@ -214,6 +214,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
 	return {
 		player_name    : state.settings.interface.player_name,
+		icon_blur      : state.settings.interface.blur_job_icons,
 		table_columns  : state.settings.table_columns,
 		sort_columns   : state.settings.sort_columns,
 		sum_columns    : state.settings.sum_columns,
