@@ -2,9 +2,7 @@
 
 ## 0.12.0-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2019-09-29**
 
 ### Bug Fixes
 - Resolved issue where decimal accuracy of 0 would not be saved.
@@ -16,10 +14,10 @@
 - Updated some translations for Chinese.
 
 ### Code Changes
-- ?
+- N/A
 
 ### Miscellaneous
-- ?
+- N/A
 
 ## 0.11.0-alpha
 
