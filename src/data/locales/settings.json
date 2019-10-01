@@ -219,6 +219,13 @@
 			"jp" : "ランクを右上に表示",
 			"de" : "Ranglistenplatz oben rechts anzeigen"
 		},
+		"interface.blur_job_icons" : {
+			"en" : "Blur Job Icons When Blurring Player Names",
+			"pt" : "Blur Job Icons When Blurring Player Names",
+			"cn" : "Blur Job Icons When Blurring Player Names",
+			"jp" : "Blur Job Icons When Blurring Player Names",
+			"de" : "Blur Job Icons When Blurring Player Names"
+		},
 		"interface.collapse_down" : {
 			"en" : "Collapse Downwards",
 			"pt" : "Minimize para baixo",
@@ -243,14 +250,14 @@
 		"interface.decimal_accuracy" : {
 			"en" : "Decimal Accuracy",
 			"pt" : "Decimal Accuracy",
-			"cn" : "Decimal Accuracy",
+			"cn" : "小数精度",
 			"jp" : "Decimal Accuracy",
 			"de" : "Decimal Accuracy"
 		},
 		"interface.shorten_thousands" : {
 			"en" : "Shorten Thousands to 'K'",
 			"pt" : "Shorten Thousands to 'K'",
-			"cn" : "Shorten Thousands to 'K'",
+			"cn" : "缩略数字表示",
 			"jp" : "Shorten Thousands to 'K'",
 			"de" : "Shorten Thousands to 'K'"
 		},
