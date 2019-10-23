@@ -44,7 +44,7 @@ class Donate extends React.Component {
 					<div className="donation-link" data-type="patreon" ref="patreon" id="donation-patreon">https://www.patreon.com/Chrysus</div>
 
 					<h2>Donors</h2>
-					<p>Amneamnius</p>
+					<p>Amneamnius, Vulasuw</p>
 				</Container>
 			</React.Fragment>
 		);
