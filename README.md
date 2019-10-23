@@ -148,6 +148,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 ### Donors
 
 - Amneamnius
+- Vulasuw
 
 ### Misc.
 
