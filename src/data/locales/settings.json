@@ -222,7 +222,7 @@
 		"interface.blur_job_icons" : {
 			"en" : "Blur Job Icons When Blurring Player Names",
 			"pt" : "Blur Job Icons When Blurring Player Names",
-			"cn" : "Blur Job Icons When Blurring Player Names",
+			"cn" : "模糊姓名时同时模糊职业图标",
 			"jp" : "Blur Job Icons When Blurring Player Names",
 			"de" : "Blur Job Icons When Blurring Player Names"
 		},
