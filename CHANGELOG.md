@@ -2,9 +2,7 @@
 
 ## 0.12.1-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2019-11-04**
 
 ### Bug Fixes
 - Resolved issue where encounter history graph would reset after 100 seconds.
