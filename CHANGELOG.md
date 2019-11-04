@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.12.1-alpha
+
+**Released: 2019-11-04**
+
+### Bug Fixes
+- Resolved issue where encounter history graph would reset after 100 seconds.
+
+### Features
+- N/A
+
+### UI Changes
+- Updated some translations for Chinese.
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.12.0-alpha
 
 **Released: 2019-09-29**
