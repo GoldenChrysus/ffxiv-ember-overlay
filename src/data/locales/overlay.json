@@ -5,8 +5,8 @@
 		"cn" : "折叠",
 		"jp" : "最小化",
 		"de" : "Verkleinern",
-		"es" : "",
-		"fr" : ""
+		"es" : "Minimizar",
+		"fr" : "Minimiser"
 	},
 	"uncollapse"          : {
 		"en" : "Uncollapse",
@@ -14,44 +14,44 @@
 		"cn" : "展开",
 		"jp" : "元に戻す",
 		"de" : "Vergrößern",
-		"es" : "",
-		"fr" : ""
+		"es" : "Maximizar",
+		"fr" : "élargir"
 	},
 	"split_encounter"     : {
 		"en" : "Split Encounter",
-		"pt" : "Dividir encontro",
+		"pt" : "Dividir Encontro",
 		"cn" : "拆分战斗记录",
 		"jp" : "戦闘の区切り",
-		"de" : "Kampf aufteilen",
-		"es" : "",
-		"fr" : ""
+		"de" : "Kampf Aufteilen",
+		"es" : "Dividir Encuentro",
+		"fr" : "Sciendé le Combat"
 	},
 	"view_encounter"      : {
 		"en" : "View Encounter Detail",
-		"pt" : "Ver detalhes de encontro",
+		"pt" : "Ver Detalhes de Encontro",
 		"cn" : "查看战斗详情",
 		"jp" : "戦闘の詳細を表示",
-		"de" : "Kampf Details ansehen",
-		"es" : "",
-		"fr" : ""
+		"de" : "Kampf Details Ansehen",
+		"es" : "Ver Detalles del Encuentro",
+		"fr" : "Voir les Détails du Combat"
 	},
 	"load_sample"         : {
 		"en" : "Load Sample Data",
-		"pt" : "Carregar dados amostrais",
+		"pt" : "Carregar Dados Amostrais",
 		"cn" : "加载样本数据",
 		"jp" : "サンプルデーターを表示",
-		"de" : "Musterdaten laden",
-		"es" : "",
-		"fr" : ""
+		"de" : "Musterdaten Laden",
+		"es" : "Cargar Datos de Muestra",
+		"fr" : "Charger la Donnée d'échantillon"
 	},
 	"clear_encounter"     : {
 		"en" : "Clear Encounter Data",
-		"pt" : "Limpar dados de encontro",
+		"pt" : "Limpar Dados de Encontro",
 		"cn" : "清除战斗数据",
 		"jp" : "戦闘をリセットする",
-		"de" : "Kampfdaten beseitigen",
-		"es" : "",
-		"fr" : ""
+		"de" : "Kampfdaten Beseitigen",
+		"es" : "Borrar Datos del Encuentro",
+		"fr" : "Nettoyer les Données"
 	},
 	"settings"            : {
 		"en" : "Settings",
@@ -59,8 +59,8 @@
 		"cn" : "设置",
 		"jp" : "設定",
 		"de" : "Einstellungen",
-		"es" : "",
-		"fr" : ""
+		"es" : "Opciones",
+		"fr" : "Paramètres"
 	},
 	"blur_names"          : {
 		"en" : "Blur player names",
@@ -68,8 +68,8 @@
 		"cn" : "隐藏姓名",
 		"jp" : "プレイヤー名を伏せる",
 		"de" : "Verwische Spielernamen",
-		"es" : "",
-		"fr" : ""
+		"es" : "Difuminar Nombres de los Jugadores",
+		"fr" : "Cacher le nom des joueurs"
 	},
 	"toggle_collapse"     : {
 		"en" : "Toggle collapse",
@@ -77,8 +77,8 @@
 		"cn" : "折叠",
 		"jp" : "最小化を切替",
 		"de" : "Verkleinern/Vergrößern",
-		"es" : "",
-		"fr" : ""
+		"es" : "Minimizar/Maximizar",
+		"fr" : "Minimiser/Afficher"
 	},
 	"back"                : {
 		"en" : "Back",
@@ -86,8 +86,8 @@
 		"cn" : "返回",
 		"jp" : "戻る",
 		"de" : "Zurück",
-		"es" : "",
-		"fr" : ""
+		"es" : "Volver",
+		"fr" : "Revenir"
 	},
 	"not_applicable"      : {
 		"en" : "N/A",
@@ -95,8 +95,8 @@
 		"cn" : "无数据",
 		"jp" : "該当なし",
 		"de" : "N/A",
-		"es" : "",
-		"fr" : ""
+		"es" : "N/A",
+		"fr" : "N/A"
 	},
 	"inactive"            : {
 		"en" : "Inactive",
@@ -104,8 +104,8 @@
 		"cn" : "未生效",
 		"jp" : "未表示",
 		"de" : "Inaktiv",
-		"es" : "",
-		"fr" : ""
+		"es" : "Inactivo",
+		"fr" : "Inactif"
 	},
 	"encounter"           : {
 		"en" : "Encounter",
@@ -113,8 +113,8 @@
 		"cn" : "战斗",
 		"jp" : "戦闘",
 		"de" : "Im Kampf",
-		"es" : "",
-		"fr" : ""
+		"es" : "Encuentro",
+		"fr" : "Combat"
 	},
 	"awaiting_encounter"  : {
 		"en" : "Awaiting encounter data...",
@@ -122,8 +122,8 @@
 		"cn" : "等待战斗数据...",
 		"jp" : "戦闘データを待ち中",
 		"de" : "Warte auf Kampfdaten...",
-		"es" : "",
-		"fr" : ""
+		"es" : "Esperando datos del encuentro...",
+		"fr" : "En attente d'une donnée de combat..."
 	},
 	"player_name"         : {
 		"en" : "Name",
@@ -131,8 +131,8 @@
 		"cn" : "名称",
 		"jp" : "名前",
 		"de" : "Name",
-		"es" : "",
-		"fr" : ""
+		"es" : "Nombre",
+		"fr" : "Prénom"
 	},
 	"dps"                 : {
 		"en" : "DPS",
@@ -140,8 +140,8 @@
 		"cn" : "DPS",
 		"jp" : "DPS",
 		"de" : "DPS",
-		"es" : "",
-		"fr" : ""
+		"es" : "DPS",
+		"fr" : "DPS"
 	},
 	"heal"                : {
 		"en" : "Heal",
@@ -149,8 +149,8 @@
 		"cn" : "治疗",
 		"jp" : "復",
 		"de" : "Heilung",
-		"es" : "",
-		"fr" : ""
+		"es" : "Cura",
+		"fr" : "Soin"
 	},
 	"tank"                : {
 		"en" : "Tank",
@@ -158,8 +158,8 @@
 		"cn" : "坦克",
 		"jp" : "タンク",
 		"de" : "Verteidiger",
-		"es" : "",
-		"fr" : ""
+		"es" : "Tank",
+		"fr" : "Tank"
 	},
 	"import"              : {
 		"en" : "Import",
@@ -167,8 +167,8 @@
 		"cn" : "导入",
 		"jp" : "取り込む",
 		"de" : "Importieren",
-		"es" : "",
-		"fr" : ""
+		"es" : "Importar",
+		"fr" : "Importer"
 	},
 	"import_settings"     : {
 		"en" : "Import Settings",
@@ -176,8 +176,8 @@
 		"cn" : "导入设置",
 		"jp" : "設定を取り込む",
 		"de" : "Einstellungen Importieren",
-		"es" : "",
-		"fr" : ""
+		"es" : "Opciones de Importación",
+		"fr" : "Importer les Paramètres"
 	},
 	"import_instructions" : {
 		"en" : "Paste your exported setting key below and click \"Import.\"",
@@ -185,7 +185,7 @@
 		"cn" : "粘贴您导出的数据并点击\"导入\"。",
 		"jp" : "持ち出した設定キーをこの下に貼付してから「取り込む」をクリックしてください。",
 		"de" : "Füge unten deinen exportierten Einstellungsschlüssel ein und klicke auf \"Importieren.\"",
-		"es" : "",
-		"fr" : ""
+		"es" : "Pega tus configuraciones exportadas debajo y después presiona \"Importar.\"",
+		"fr" : "Collé votre clé de réglage exportée ci dessous et cliquer sur \"Importer.\""
 	}
 }
