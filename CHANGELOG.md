@@ -1,17 +1,38 @@
 # Changelog
 
+## 0.13.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- ?
+
+### Features
+- ?
+
+### UI Changes
+- Added French and Spanish translations
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- Corrected changelogs for previous versions
+
 ## 0.12.1-alpha
 
 **Released: 2019-11-04**
 
 ### Bug Fixes
-- Resolved issue where encounter history graph would reset after 100 seconds.
+- Resolved issue where encounter history graph would reset after 100 seconds
 
 ### Features
 - N/A
 
 ### UI Changes
-- Updated some translations for Chinese.
+- Updated some translations for Chinese
 
 ### Code Changes
 - N/A
@@ -24,13 +45,13 @@
 **Released: 2019-09-29**
 
 ### Bug Fixes
-- Resolved issue where decimal accuracy of 0 would not be saved.
+- Resolved issue where decimal accuracy of 0 would not be saved
 
 ### Features
 - Added setting to blur job icons when blurring player names
 
 ### UI Changes
-- Updated some translations for Chinese.
+- Updated some translations for Chinese
 
 ### Code Changes
 - N/A
