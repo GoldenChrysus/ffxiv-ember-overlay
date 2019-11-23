@@ -7,8 +7,8 @@
 				"cn" : "界面",
 				"jp" : "インターフェース",
 				"de" : "Benutzeroberfläche",
-				"es" : "",
-				"fr" : ""
+				"es" : "Interfaz",
+				"fr" : "Interface"
 			},
 			"subsections" : [
 				{
@@ -17,8 +17,8 @@
 					"cn" : "通用",
 					"jp" : "一般",
 					"de" : "Allgemein",
-					"es" : "",
-					"fr" : ""
+					"es" : "General",
+					"fr" : "Général"
 				}
 			]
 		},
@@ -29,8 +29,8 @@
 				"cn" : "玩家选项",
 				"jp" : "プレイヤー表",
 				"de" : "Spielertabelle",
-				"es" : "",
-				"fr" : ""
+				"es" : "Tabla de Jugadores",
+				"fr" : "Onglet Joueur"
 			},
 			"subsections" : [
 				{
@@ -39,8 +39,8 @@
 					"cn" : "通用",
 					"jp" : "一般",
 					"de" : "Allgemein",
-					"es" : "",
-					"fr" : ""
+					"es" : "General",
+					"fr" : "Général"
 				},
 				{
 					"en" : "DPS",
@@ -48,8 +48,8 @@
 					"cn" : "DPS",
 					"jp" : "DPS",
 					"de" : "DPS",
-					"es" : "",
-					"fr" : ""
+					"es" : "DPS",
+					"fr" : "DPS"
 				},
 				{
 					"en" : "Heal",
@@ -57,8 +57,8 @@
 					"cn" : "治疗",
 					"jp" : "復",
 					"de" : "Heilung",
-					"es" : "",
-					"fr" : ""
+					"es" : "Cura",
+					"fr" : "Soin"
 				},
 				{
 					"en" : "Tank",
@@ -66,8 +66,8 @@
 					"cn" : "坦克",
 					"jp" : "タンク",
 					"de" : "Verteidiger",
-					"es" : "",
-					"fr" : ""
+					"es" : "Tank",
+					"fr" : "Tank"
 				}
 			]
 		},
@@ -78,8 +78,8 @@
 				"cn" : "玩家详情",
 				"jp" : "プレイヤー詳細",
 				"de" : "Spieler Detail",
-				"es" : "",
-				"fr" : ""
+				"es" : "Detalles del Jugador",
+				"fr" : "Détails du Joueur"
 			},
 			"subsections" : [
 				{
@@ -88,8 +88,8 @@
 					"cn" : "DPS",
 					"jp" : "DPS",
 					"de" : "DPS",
-					"es" : "",
-					"fr" : ""
+					"es" : "DPS",
+					"fr" : "DPS"
 				},
 				{
 					"en" : "Heal",
@@ -97,8 +97,8 @@
 					"cn" : "治疗",
 					"jp" : "復",
 					"de" : "Heilung",
-					"es" : "",
-					"fr" : ""
+					"es" : "Cura",
+					"fr" : "Soin"
 				},
 				{
 					"en" : "Tank",
@@ -106,8 +106,8 @@
 					"cn" : "坦克",
 					"jp" : "タンク",
 					"de" : "Verteidiger",
-					"es" : "",
-					"fr" : ""
+					"es" : "Tank",
+					"fr" : "Tank"
 				}
 			]
 		},
@@ -118,8 +118,8 @@
 				"cn" : "Raid视图",
 				"jp" : "レイドモード",
 				"de" : "Raid Ansicht",
-				"es" : "",
-				"fr" : ""
+				"es" : "Vista de Raid",
+				"fr" : "Version Raid"
 			},
 			"subsections" : [
 				{
@@ -128,8 +128,8 @@
 					"cn" : "通用",
 					"jp" : "一般",
 					"de" : "Allgemein",
-					"es" : "",
-					"fr" : ""
+					"es" : "General",
+					"fr" : "Général"
 				},
 				{
 					"en" : "DPS",
@@ -137,8 +137,8 @@
 					"cn" : "DPS",
 					"jp" : "DPS",
 					"de" : "DPS",
-					"es" : "",
-					"fr" : ""
+					"es" : "DPS",
+					"fr" : "DPS"
 				},
 				{
 					"en" : "Heal",
@@ -146,8 +146,8 @@
 					"cn" : "治疗",
 					"jp" : "復",
 					"de" : "Heilung",
-					"es" : "",
-					"fr" : ""
+					"es" : "Cura",
+					"fr" : "Soin"
 				},
 				{
 					"en" : "Tank",
@@ -155,8 +155,8 @@
 					"cn" : "坦克",
 					"jp" : "タンク",
 					"de" : "Verteidiger",
-					"es" : "",
-					"fr" : ""
+					"es" : "Tank",
+					"fr" : "Tank"
 				}
 			]
 		},
@@ -167,8 +167,8 @@
 				"cn" : "自定义CSS",
 				"jp" : "カスタムＣＳＳ",
 				"de" : "Eigenes CSS",
-				"es" : "",
-				"fr" : ""
+				"es" : "CSS Personalizado",
+				"fr" : "CSS Personnalisé"
 			},
 			"subsections" : [
 				{
@@ -177,8 +177,8 @@
 					"cn" : "自定义CSS",
 					"jp" : "カスタムＣＳＳ",
 					"de" : "Eigenes CSS",
-					"es" : "",
-					"fr" : ""
+					"es" : "CSS Personalizado",
+					"fr" : "CSS Personnalisé"
 				}
 			]
 		},
@@ -189,8 +189,8 @@
 				"cn" : "导出",
 				"jp" : "持ち出す",
 				"de" : "Exportieren",
-				"es" : "",
-				"fr" : ""
+				"es" : "Exportación",
+				"fr" : "Exporter"
 			},
 			"subsections" : [
 				{
@@ -199,8 +199,8 @@
 					"cn" : "导出设置",
 					"jp" : "設定を持ち出す",
 					"de" : "Einstellungen Exportieren",
-					"es" : "",
-					"fr" : ""
+					"es" : "Opciones de Exportación",
+					"fr" : "Exporter les Configurations"
 				}
 			]
 		},
@@ -211,8 +211,8 @@
 				"cn" : "关于",
 				"jp" : "問い合わせ",
 				"de" : "Über",
-				"es" : "",
-				"fr" : ""
+				"es" : "Acerca de",
+				"fr" : "A propos de "
 			},
 			"subsections" : [
 				{
@@ -221,8 +221,8 @@
 					"cn" : "Ember Overlay",
 					"jp" : "エンバーオーバーレイ",
 					"de" : "Ember Overlay",
-					"es" : "",
-					"fr" : ""
+					"es" : "Ember Overlay",
+					"fr" : "Ember Overlay"
 				}
 			]
 		}
@@ -234,8 +234,8 @@
 			"cn" : "Language",
 			"jp" : "Language",
 			"de" : "Language",
-			"es" : "",
-			"fr" : ""
+			"es" : "Language",
+			"fr" : "Language"
 		},
 		"interface.player_name" : {
 			"en" : "Player Name",
@@ -243,8 +243,8 @@
 			"cn" : "玩家姓名",
 			"jp" : "プレイヤー名",
 			"de" : "Spielername",
-			"es" : "",
-			"fr" : ""
+			"es" : "Nombre del Jugador",
+			"fr" : "Prénom du Joueur"
 		},
 		"interface.opacity" : {
 			"en" : "Overlay Opacity",
@@ -252,8 +252,8 @@
 			"cn" : "模板透明度",
 			"jp" : "オーバーレイの透明度",
 			"de" : "Overlay Deckkraft",
-			"es" : "",
-			"fr" : ""
+			"es" : "Opacidad del Overlay",
+			"fr" : "Opacité de l'Overlay"
 		},
 		"interface.zoom" : {
 			"en" : "Overlay Zoom",
@@ -270,17 +270,17 @@
 			"cn" : "在右上角显示排名",
 			"jp" : "ランクを右上に表示",
 			"de" : "Ranglistenplatz oben rechts anzeigen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Zoom del Overlay",
+			"fr" : "Zoom de l'Overlay"
 		},
 		"interface.blur_job_icons" : {
 			"en" : "Blur Job Icons When Blurring Player Names",
 			"pt" : "Blur Job Icons When Blurring Player Names",
 			"cn" : "模糊姓名时同时模糊职业图标",
 			"jp" : "Blur Job Icons When Blurring Player Names",
-			"de" : "Blur Job Icons When Blurring Player Names",
-			"es" : "",
-			"fr" : ""
+			"de" : "Job Icons zusammen mit Spielernamen trüben",
+			"es" : "Blur Job Icons When Blurring Player Names",
+			"fr" : "Cacher les Icônes de Classe Quand les Noms des Autres Joueurs sont Cachés"
 		},
 		"interface.collapse_down" : {
 			"en" : "Collapse Downwards",
@@ -288,8 +288,8 @@
 			"cn" : "向下折叠",
 			"jp" : "下向きに最小化",
 			"de" : "Nach unten verkleinern",
-			"es" : "",
-			"fr" : ""
+			"es" : "Esconder hacia abajo",
+			"fr" : "Réduit vers le Bas"
 		},
 		"interface.footer_when_collapsed" : {
 			"en" : "Show Overlay Footer When Collapsed",
@@ -297,8 +297,8 @@
 			"cn" : "折叠时显示页脚功能",
 			"jp" : "最小化状態でフッターを表示",
 			"de" : "Overlay Fußzeile beim Verkleinern anzeigen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Mostrar parte inferior cuando el Overlay está Minimizado",
+			"fr" : "Afficher le Bas du Parse en ayant l'Affichage Réduit"
 		},
 		"interface.footer_dps" : {
 			"en" : "Display Raid DPS in Overlay Footer",
@@ -306,8 +306,8 @@
 			"cn" : "在模板页脚显示RDPS",
 			"jp" : "レイドＤＰＳをフッターで表示",
 			"de" : "Raid DPS in der Overlay Fußzeile anzeigen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Mostrar el DPS del raid en la parte Inferior del Overlay",
+			"fr" : "Afficher le Raid DPS sur le Bas du Parse"
 		},
 		"interface.decimal_accuracy" : {
 			"en" : "Decimal Accuracy",
@@ -315,17 +315,17 @@
 			"cn" : "小数精度",
 			"jp" : "Decimal Accuracy",
 			"de" : "Decimal Accuracy",
-			"es" : "",
-			"fr" : ""
+			"es" : "Decimal Accuracy",
+			"fr" : "Arrondir à combien de décimal"
 		},
 		"interface.shorten_thousands" : {
 			"en" : "Shorten Thousands to 'K'",
 			"pt" : "Shorten Thousands to 'K'",
 			"cn" : "缩略数字表示",
 			"jp" : "Shorten Thousands to 'K'",
-			"de" : "Shorten Thousands to 'K'",
-			"es" : "",
-			"fr" : ""
+			"de" : "Tausend durch 'K' abkürzen",
+			"es" : "Shorten Thousands to 'K'",
+			"fr" : "Remplacer les milliers par 'K'"
 		},
 		"interface.light_theme" : {
 			"en" : "Use Light Theme",
@@ -333,8 +333,8 @@
 			"cn" : "使用亮色主题",
 			"jp" : "ライトテーマを使用",
 			"de" : "Helles Farbschema benutzen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Usar Light Theme",
+			"fr" : "Utiliser le thème clair / la version clair de l'Overlay"
 		},
 		"table_settings.general.table.short_names" : {
 			"en" : "Shorten Player Names",
@@ -342,8 +342,8 @@
 			"cn" : "显示简单姓名(国服无效)",
 			"jp" : "プレイヤー名を略する",
 			"de" : "Spielernamen abkürzen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Acortar Nombres",
+			"fr" : "Raccourcir le prénom des joueurs "
 		},
 		"table_settings.general.table.footer_at_top" : {
 			"en" : "Move Totals (Footer) to Top of Table",
@@ -351,8 +351,8 @@
 			"cn" : "总伤害移到列表最前",
 			"jp" : "総合を上に表示",
 			"de" : "Zusammenfassungen (Fußzeile) nach ganz oben in der Tabelle verschieben",
-			"es" : "",
-			"fr" : ""
+			"es" : "Mover totales (parte inferior) a la parte superior de la tabla",
+			"fr" : "Mettre le 'Bas du Parse' en Haut"
 		},
 		"table_settings.general.table.percent_bars" : {
 			"en" : "Show Performance Background Bars",
@@ -360,8 +360,8 @@
 			"cn" : "显示背景计量条",
 			"jp" : "業績を背景に表示",
 			"de" : "Zeige Leistungsbalken im Hintergrund",
-			"es" : "",
-			"fr" : ""
+			"es" : "Mostrar Barras de desempeño del fondo",
+			"fr" : "Afficher les Barres de Performance en Arrière-Plan"
 		},
 		"table_columns.dps" : {
 			"en" : "Table Columns",
@@ -369,8 +369,8 @@
 			"cn" : "标签选择",
 			"jp" : "列選択",
 			"de" : "Tabellenspalte",
-			"es" : "",
-			"fr" : ""
+			"es" : "Columnas de Tabla",
+			"fr" : "Colonne de Tableau"
 		},
 		"sort_columns.dps" : {
 			"en" : "Default Sort Column",
@@ -378,8 +378,8 @@
 			"cn" : "默认排序",
 			"jp" : "既定な並べ替え",
 			"de" : "Spalten nach Standard sortieren",
-			"es" : "",
-			"fr" : ""
+			"es" : "Ordenar por Defecto",
+			"fr" : "Colonne de tri par défaut"
 		},
 		"table_settings.dps.show_footer" : {
 			"en" : "Show Footer",
@@ -387,8 +387,8 @@
 			"cn" : "显示页脚选项",
 			"jp" : "フッターを表示",
 			"de" : "Fußzeile anzeigen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Mostrar parte inferior",
+			"fr" : "Afficher le Bas du Parse"
 		},
 		"table_columns.heal" : {
 			"en" : "Table Columns",
@@ -396,8 +396,8 @@
 			"cn" : "标签选择",
 			"jp" : "列選択",
 			"de" : "Tabellenspalte",
-			"es" : "",
-			"fr" : ""
+			"es" : "Columnas de Tabla",
+			"fr" : "Colonne de Tableau"
 		},
 		"sort_columns.heal" : {
 			"en" : "Default Sort Column",
@@ -405,8 +405,8 @@
 			"cn" : "默认排序",
 			"jp" : "既定な並べ替え",
 			"de" : "Spalten nach Standard sortieren",
-			"es" : "",
-			"fr" : ""
+			"es" : "Ordenar por Defecto",
+			"fr" : "Colonne de tri par défaut"
 		},
 		"table_settings.heal.show_footer" : {
 			"en" : "Show Footer",
@@ -414,8 +414,8 @@
 			"cn" : "显示页脚选项",
 			"jp" : "フッターを表示",
 			"de" : "Fußzeile anzeigen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Mostrar parte inferior",
+			"fr" : "Afficher le Bas du Parse"
 		},
 		"table_columns.tank" : {
 			"en" : "Table Columns",
@@ -423,8 +423,8 @@
 			"cn" : "标签选择",
 			"jp" : "列選択",
 			"de" : "Tabellenspalte",
-			"es" : "",
-			"fr" : ""
+			"es" : "Columnas de Tabla",
+			"fr" : "Colonne de Tableau"
 		},
 		"sort_columns.tank" : {
 			"en" : "Default Sort Column",
@@ -432,8 +432,8 @@
 			"cn" : "默认排序",
 			"jp" : "既定な並べ替え",
 			"de" : "Spalten nach Standard sortieren",
-			"es" : "",
-			"fr" : ""
+			"es" : "Ordenar por Defecto",
+			"fr" : "Colonne de tri par défaut"
 		},
 		"table_settings.tank.show_footer" : {
 			"en" : "Show Footer",
@@ -441,8 +441,8 @@
 			"cn" : "显示页脚选项",
 			"jp" : "フッターを表示",
 			"de" : "Fußzeile anzeigen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Mostrar parte inferior",
+			"fr" : "Afficher le Bas du Parse"
 		},
 		"detail_data.dps" : {
 			"en" : "Player Metrics",
@@ -450,8 +450,8 @@
 			"cn" : "玩家数据元素",
 			"jp" : "プレイヤーメトリック",
 			"de" : "Spieler Metriken",
-			"es" : "",
-			"fr" : ""
+			"es" : "Métricas del Jugador",
+			"fr" : "Les Mesures du Joueur"
 		},
 		"detail_data.heal" : {
 			"en" : "Player Metrics",
@@ -459,8 +459,8 @@
 			"cn" : "玩家数据元素",
 			"jp" : "プレイヤーメトリック",
 			"de" : "Spieler Metriken",
-			"es" : "",
-			"fr" : ""
+			"es" : "Métricas del Jugador",
+			"fr" : "Les Mesures du Joueur"
 		},
 		"detail_data.tank" : {
 			"en" : "Player Metrics",
@@ -468,8 +468,8 @@
 			"cn" : "玩家数据元素",
 			"jp" : "プレイヤーメトリック",
 			"de" : "Spieler Metriken",
-			"es" : "",
-			"fr" : ""
+			"es" : "Métricas del Jugador",
+			"fr" : "Les Mesures du Joueur"
 		},
 		"sort_columns.raid" : {
 			"en" : "Default Sort Metric",
@@ -477,8 +477,8 @@
 			"cn" : "默认排序",
 			"jp" : "既定な並べ替え",
 			"de" : "Metrik nach Standard sortieren",
-			"es" : "",
-			"fr" : ""
+			"es" : "Organizar Métricas por Defecto",
+			"fr" : "Mesures de Tri par Défault"
 		},
 		"table_settings.general.raid.short_names" : {
 			"en" : "Shorten Player Names",
@@ -486,8 +486,8 @@
 			"cn" : "显示简单姓名(国服无效)",
 			"jp" : "プレイヤー名を略する",
 			"de" : "Spielernamen abkürzen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Acortar Nombres",
+			"fr" : "Raccourcir le prénom des joueurs"
 		},
 		"table_settings.general.raid.percent_bars" : {
 			"en" : "Show Performance Background Bars",
@@ -495,8 +495,8 @@
 			"cn" : "显示背景计量条",
 			"jp" : "業績を背景に表示",
 			"de" : "Zeige Leistungsbalken im Hintergrund",
-			"es" : "",
-			"fr" : ""
+			"es" : "Mostrar Barras de desempeño del fondo",
+			"fr" : "Afficher les Barres de Performance en Arrière-Plan"
 		},
 		"table_columns.raid.dps" : {
 			"en" : "Metrics",
@@ -504,8 +504,8 @@
 			"cn" : "数据元素",
 			"jp" : "メトリック",
 			"de" : "Metrik",
-			"es" : "",
-			"fr" : ""
+			"es" : "Métricas",
+			"fr" : "Les Mesures"
 		},
 		"table_columns.raid.heal" : {
 			"en" : "Metrics",
@@ -513,8 +513,8 @@
 			"cn" : "数据元素",
 			"jp" : "メトリック",
 			"de" : "Metrik",
-			"es" : "",
-			"fr" : ""
+			"es" : "Métricas",
+			"fr" : "Les Mesures"
 		},
 		"table_columns.raid.tank" : {
 			"en" : "Metrics",
@@ -522,8 +522,8 @@
 			"cn" : "数据元素",
 			"jp" : "メトリック",
 			"de" : "Metrik",
-			"es" : "",
-			"fr" : ""
+			"es" : "Métricas",
+			"fr" : "Les Mesures"
 		},
 		"custom.css" : {
 			"en" : "User-provided CSS is at your own risk.",
@@ -531,8 +531,8 @@
 			"cn" : "使用自定义CSS造成的风险由您自己承担",
 			"jp" : "カスタムＣＳＳは自己責任で使ってください",
 			"de" : "Verwenden von benutzerdefinierten CSS auf eigene Gefahr.",
-			"es" : "",
-			"fr" : ""
+			"es" : "Utilizar CSS proporcionado por usuarios es bajo tu propio riesgo.",
+			"fr" : "Utilisé Votre Propre CSS est à Votre Risque."
 		}
 	},
 	"misc" : {
@@ -568,16 +568,16 @@
 				"short_both"  : "V. N."
 			},
 			"es" : {
-				"no_short"    : "",
-				"short_first" : "",
-				"short_last"  : "",
-				"short_both"  : ""
+				"no_short"    : "No",
+				"short_first" : "N. Apellido",
+				"short_last"  : "Nombre A.",
+				"short_both"  : "N. A."
 			},
 			"fr" : {
-				"no_short"    : "",
-				"short_first" : "",
-				"short_last"  : "",
-				"short_both"  : ""
+				"no_short"    : "Non",
+				"short_first" : "P. Nom",
+				"short_last"  : "Prénom. N",
+				"short_both"  : "P. N."
 			}
 		},
 
@@ -587,8 +587,8 @@
 			"cn" : "保存",
 			"jp" : "保存",
 			"de" : "Speichern",
-			"es" : "",
-			"fr" : ""
+			"es" : "Guardar",
+			"fr" : "Sauvegarder"
 		},
 
 		"export_info"        : {
@@ -597,8 +597,8 @@
 			"cn" : "复制下面的文本，右键单击模板界面点击\"导入\"来导入您喜爱的模板样式。",
 			"jp" : "下のテキストをコピーして、好きなオーバーレイに右クリックで「取り込む」できます。",
 			"de" : "Den unteren Text auswählen und kopieren, um ihn in dein gewünschtes Overlay zu importieren. Klicke hierzu mit Rechtsklick auf das Overlay und wähle \"Importieren\" aus.",
-			"es" : "",
-			"fr" : ""
+			"es" : "Selecciona y copia el texto debajo, posteriormente impórtalo hacia tu overlay deseado haciendo click derecho en el Overlay y seleccionando \"Importar\".",
+			"fr" : "Sélectionné et copié le texte ci-dessous puis importé dans l'Overlay desiré avec un clique-droit sur l'Overlay et \"Importer.\""
 		},
 		"select_all"         : {
 			"en" : "Select All",
@@ -606,8 +606,8 @@
 			"cn" : "全选",
 			"jp" : "全てを選択",
 			"de" : "Alles Auswählen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Seleccionar Todo",
+			"fr" : "Tout Sélectionner"
 		},
 
 		"developer_credit"   : {
@@ -616,8 +616,8 @@
 			"cn" : "由{{developer}}开发。",
 			"jp" : "{{developer}}によって開発された。",
 			"de" : "Entwickelt von {{developer}}.",
-			"es" : "",
-			"fr" : ""
+			"es" : "Desarrollado por {{developer}}.",
+			"fr" : "Développé par {{developer}}."
 		},
 		"changelog"          : {
 			"en" : "Changelog",
@@ -625,8 +625,8 @@
 			"cn" : "更新日志",
 			"jp" : "変更履歴",
 			"de" : "Änderungsprotokoll",
-			"es" : "",
-			"fr" : ""
+			"es" : "Historial de Cambios",
+			"fr" : "Historique des Données"
 		},
 		"discord_cta"        : {
 			"en" : "Join the Discord to receive live updates from the developer, submit feature suggestions, get help with a bug or issue, or discuss FFXIV in general with other users.",
@@ -634,8 +634,8 @@
 			"cn" : "加入Discord以接收开发人员的实时更新、提交功能建议、获取有关错误或问题的帮助、或与其他用户讨论最终幻想XIV。",
 			"jp" : "バグ報告や機能要望、開発者からのお知らせなど、専用なDiscordを使用しますので、よろしくお願いします。",
 			"de" : "Trete dem Discord bei, um Aktualisierungen in Echtzeit vom Entwickler zu erhalten. Außerdem kannst du Feature Vorschläge abgeben, Hilfestellungen bei Bugs oder Problemen erhalten oder allgemein über FFXIV mit anderen Benutzern diskutieren.",
-			"es" : "",
-			"fr" : ""
+			"es" : "Únete al servidor de discord para recibir actualizaciones en vivo del desarrollador, ingresar sugerencias, obtener ayuda con algún problema o bug, o discute acerca de FFXIV en general con otros usuarios.",
+			"fr" : "Rejoint le Discord pour recevoir les mises à jours des développeurs et soumettre des suggestions pour améliorer l'Overlay ou discuter de FFXIV avec les autres joueurs. En cas de problème, demander de l'aide."
 		},
 		"broken_link"        : {
 			"en" : "Link not working? Copy this link and paste it into your regular Web browser:",
@@ -643,8 +643,8 @@
 			"cn" : "链接无效？ 复制此链接并粘贴到Web浏览器中:",
 			"jp" : "リンクが正しく動かない？このリンクをコピーして普段のブラウザーに貼りつけてみてください:",
 			"de" : "Funktioniert dein Link nicht? Kopiere diesen Link und füge ihn in einen Browser deiner Wahl ein:",
-			"es" : "",
-			"fr" : ""
+			"es" : "No funciona el link? Copia el siguiente link y pégalo en cualquier navegador de internet:",
+			"fr" : "Un lien mort? Copié-collé le lien dans votre barre de recherche et essayé:"
 		},
 		"github_cta"         : {
 			"en" : "See the latest code, changelog, and readme information on GitHub. You can also submit bug reports or feature requests.",
@@ -652,8 +652,8 @@
 			"cn" : "您可以在GitHub上查阅最新代码、更新日志和自述信息，也可以提交错误报告或功能请求。",
 			"jp" : "最新の情報、ソース、認識されてるバグはすべてGitHubで見れます。",
 			"de" : "Sieh dir den neuesten Code, Änderungsprotokolle und Readme Informationen auf GitHub an. Du kannst außerdem Bugs melden oder ein Feature vorschlagen.",
-			"es" : "",
-			"fr" : ""
+			"es" : "Ve la última versión del código, historial de cambios e Información del Readme en Github. Puedes también ingresar reportes de bugs o solicitar funcionalidades.",
+			"fr" : "Les infomations (code,modification) les plus récentes sont sur GitHub. Tu peux aussi reporter les bugs ou faire une demande sur les fonctionnalités."
 		},
 		"changelog_info"     : {
 			"en" : "The changelog listed here will show all the changes that have been made (if any) in the current version compared against the last version you used.",
@@ -661,8 +661,8 @@
 			"cn" : "此处列出的更改日志将显示当前版本相较于上一版本所做的所有变更（如果有）。",
 			"jp" : "ここで表示される変更履歴は前にお使いになったバージョンと最新バージョンの違いを表示します。",
 			"de" : "Dieses Änderungsprotokoll listet alle Änderungen auf, die in der aktuellen Version seit der von dir zuletzt verwendeten Version vorgenommen wurden (falls es welche gibt).",
-			"es" : "",
-			"fr" : ""
+			"es" : "El historial de cambios de aquí mostrará todos los cambios que se han realizado (de haberse realizado) en la versión actual en comparación a la última versión que utilizaste.",
+			"fr" : "La liste des modifications montrera tout les changements qui aura été faite (s'il y'en a eu) dans la version actuelle par rapport à la version que tu as utilisé."
 		},
 		"changelog_cta"      : {
 			"en" : "You can always see the latest changes and read the more detailed official changelog {{changelog_link_open}}here{{changelog_link_close}}.",
@@ -670,8 +670,8 @@
 			"cn" : "您可以{{changelog_link_open}}在此{{changelog_link_close}}处阅读最新更改和详细的更改历史记录。",
 			"jp" : "最新の変更や詳細的な変更履歴は{{changelog_link_open}}ここ{{changelog_link_close}}でお読みいただけます",
 			"de" : "Du kannst die aktuellsten Änderungen und das detailliertere Änderungsprotokoll jederzeit hier {{changelog_link_open}}ansehen{{changelog_link_close}}.",
-			"es" : "",
-			"fr" : ""
+			"es" : "Puedes revisar en cualquier momento los últimos cambios y leer el historial de cambios en mayor detalle {{changelog_link_open}}aquí{{changelog_link_close}}.",
+			"fr" : "Tu peux toujours voir les derniers changements et lire les détails {{changelog_link_open}}ici{{changelog_link_close}}."
 		},
 		"latest_changes"     : {
 			"en" : "Latest Changes",
@@ -679,8 +679,8 @@
 			"cn" : "最近变更",
 			"jp" : "最新変更",
 			"de" : "Aktuelle Änderungen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Últimas Actualizaciones",
+			"fr" : "Les Derniers Changements"
 		},
 		"features"           : {
 			"en" : "Features",
@@ -688,8 +688,8 @@
 			"cn" : "新功能",
 			"jp" : "新機能",
 			"de" : "Features",
-			"es" : "",
-			"fr" : ""
+			"es" : "Features",
+			"fr" : "Éléments"
 		},
 		"ui_changes"         : {
 			"en" : "UI Changes",
@@ -697,8 +697,8 @@
 			"cn" : "UI变更",
 			"jp" : "UI変更",
 			"de" : "Änderungen an der Benutzeroberfläche",
-			"es" : "",
-			"fr" : ""
+			"es" : "Cambios en la Interfaz de Usuario (UI)",
+			"fr" : "Changement d'Interface de l'Utilisateur (UI)"
 		},
 		"bug_fixes"          : {
 			"en" : "Bug Fixes",
@@ -706,8 +706,8 @@
 			"cn" : "错误修正",
 			"jp" : "バグ修正",
 			"de" : "Fehlerbehebungen",
-			"es" : "",
-			"fr" : ""
+			"es" : "Arreglo de Bugs",
+			"fr" : "Bug Fixé"
 		},
 
 		"streamers"          : {
@@ -716,8 +716,8 @@
 			"cn" : "主播",
 			"jp" : "配信者",
 			"de" : "Streamer",
-			"es" : "",
-			"fr" : ""
+			"es" : "Streamers",
+			"fr" : "Streamers"
 		},
 		"streamer_live"      : {
 			"en" : "{{number}} Streamer Live",
@@ -725,8 +725,8 @@
 			"cn" : "{{number}}位主播直播中",
 			"jp" : "{{number}}人配信中",
 			"de" : "{{number}} Streamer Live",
-			"es" : "",
-			"fr" : ""
+			"es" : "{{number}} Streamer en Vivo",
+			"fr" : "{{number}} Streamer en Live"
 		},
 		"streamers_live"     : {
 			"en" : "{{number}} Streamers Live",
@@ -734,8 +734,8 @@
 			"cn" : "{{number}}位主播直播中",
 			"jp" : "{{number}}人配信中",
 			"de" : "{{number}} Streamer Live",
-			"es" : "",
-			"fr" : ""
+			"es" : "{{number}} Streamers en Vivo",
+			"fr" : "{{number}} Streamers en Live "
 		},
 		"streamer_info"      : {
 			"en" : "Twitch streamers who use Ember Overlay are featured here!",
@@ -743,8 +743,8 @@
 			"cn" : "这里展示的是正在使用Ember Overlay的Twitch主播！",
 			"jp" : "エンバーオーバーレイを使ってる配信者はここで特集しちゃいます！",
 			"de" : "Hier werden Twitch Streamer angezeigt, die Ember Overlay benutzen.",
-			"es" : "",
-			"fr" : ""
+			"es" : "Los streamers de Twitch que utilizan Ember Overlay son mencionados aquí!",
+			"fr" : "Les streamers Twitch qui utilisent Ember Overlay sont ici!"
 		},
 		"streamer_short_cta" : {
 			"en" : "Are you a streamer or do you know a streamer who uses Ember Overlay?",
@@ -752,17 +752,17 @@
 			"cn" : "您也或您知道其他主播也在使用Ember Overlay进行直播？",
 			"jp" : "貴方やご存じの方はエンバーオーバーレイを使って配信してますか？",
 			"de" : "Bist du ein Streamer oder kennst du einen Streamer, der Ember Overlay verwendet?",
-			"es" : "",
-			"fr" : ""
+			"es" : "Eres un streamer o conoces a un streamer que utiliza Ember Overlay?",
+			"fr" : "Es-tu un streamer ou connais-tu un streamer utilisant Ember Overlay?"
 		},
 		"streamer_long_cta"  : {
 			"en" : "Have the stream added to this list by joining our Discord at {{discord_link}} and posting the stream in #streamer-requests. You can also message {{twitch_link}} with your stream info. The stream is only eligible for inclusion if Ember Overlay is used on stream (will be verified via VOD's).",
-			"pt" : "Tenha seu stream adicionado à essa lista se juntando ao nosso discord em {{discord_link}} e postando a stream em (channel_name). Também é possível enviar uma mensagem para {{twitch_link}} com seus dados de stream. O stream será autorizado apenas se o Ember Overlay estiver sendo utilizado (será verificado via VOD's)",
+			"pt" : "Tenha seu stream adicionado à essa lista se juntando ao nosso discord em {{discord_link}} e postando a stream em #streamer-requests. Também é possível enviar uma mensagem para {{twitch_link}} com seus dados de stream. O stream será autorizado apenas se o Ember Overlay estiver sendo utilizado (será verificado via VOD's)",
 			"cn" : "通过{{discord_link}}加入我们的Discord并在#streamer-requests中发布您的直播地址，可将您的直播添加到此列表中。 您也可以私信{{twitch_link}}发送你的直播信息。 您需要在直播中使用Ember Overlay（将通过直播录像验证）来获得在此显示的资格。",
 			"jp" : "{{discord_link}}のディスコの#streamer-requestsか{{twitch_link}}のDMで配信情報を教えてくれたらリストに加えます。エンバーオーバーレイが配信で見える必要があります（過去の配信で確認します）。",
 			"de" : "Füge den Stream dieser Liste hinzu, indem du unserem Discord unter {{discord_link}} beitrittst und den Stream in #streamer-requests postest. Du kannst außerdem {{twitch_link}} mit der Stream Info anschreiben. Der Stream wird jedoch nur in Betracht gezogen, falls das Ember Overlay im Stream benutzt wird (Verifizierung erfolgt über VODs).",
-			"es" : "",
-			"fr" : ""
+			"es" : "Haz que el stream sea agregado a esta lista entrando a nuestro discord en {{discord_link}} y posteando el stream en #streamer-requests. Puedes también mandar un mensaje a {{twitch_link}} Con la información de tu stream. El stream es elegible si Ember Overlay es utilizado en el stream (será verificado via VOD's).",
+			"fr" : "Pour avoir son stream ajouté à la liste, il faut rejoindre notre Discord sur {{discord_link}} et poster le stream sur #streamer-requests. Tu peux aussi envoyer un message {{twitch_link}} avec tes renseignements de stream. Le stream sera inclus si Ember Overlay est utilisé sur le stream (sera vérifié via la VOD)."
 		}
 	}
 }

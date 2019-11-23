@@ -14,6 +14,7 @@
 
 ### UI Changes
 - Added French and Spanish translations
+- Fixed some translation errors
 
 ### Code Changes
 - ?
