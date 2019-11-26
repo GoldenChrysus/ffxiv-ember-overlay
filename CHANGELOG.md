@@ -7,20 +7,20 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
-- ?
+- N/A
 
 ### UI Changes
-- Added French and Spanish translations
-- Fixed some translation errors
+- ! - Added French and Spanish translations
+- ! - Fixed some translation errors
 
 ### Code Changes
-- ?
+- N/A
 
 ### Miscellaneous
-- Corrected changelogs for previous versions
+- ! - Corrected changelogs for previous versions
 
 ## 0.12.1-alpha
 

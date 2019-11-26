@@ -261,8 +261,8 @@
 			"cn" : "模板缩放",
 			"jp" : "オーバーレイの拡大縮小",
 			"de" : "Overlay Zoom",
-			"es" : "",
-			"fr" : ""
+			"es" : "Zoom del Overlay",
+			"fr" : "Zoom sur l'Overlay"
 		},
 		"interface.top_right_rank" : {
 			"en" : "Display Rank in Top Right",
@@ -270,8 +270,8 @@
 			"cn" : "在右上角显示排名",
 			"jp" : "ランクを右上に表示",
 			"de" : "Ranglistenplatz oben rechts anzeigen",
-			"es" : "Zoom del Overlay",
-			"fr" : "Zoom de l'Overlay"
+			"es" : "Mostrar Rango en la esquina superior derecha",
+			"fr" : "Afficher le Classement en Haut à Droite"
 		},
 		"interface.blur_job_icons" : {
 			"en" : "Blur Job Icons When Blurring Player Names",
@@ -289,7 +289,7 @@
 			"jp" : "下向きに最小化",
 			"de" : "Nach unten verkleinern",
 			"es" : "Esconder hacia abajo",
-			"fr" : "Réduit vers le Bas"
+			"fr" : "Réduire vers le Bas"
 		},
 		"interface.footer_when_collapsed" : {
 			"en" : "Show Overlay Footer When Collapsed",
@@ -334,7 +334,7 @@
 			"jp" : "ライトテーマを使用",
 			"de" : "Helles Farbschema benutzen",
 			"es" : "Usar Light Theme",
-			"fr" : "Utiliser le thème clair / la version clair de l'Overlay"
+			"fr" : "Utiliser le thème clair/la version clair de l'Overlay"
 		},
 		"table_settings.general.table.short_names" : {
 			"en" : "Shorten Player Names",
@@ -532,7 +532,7 @@
 			"jp" : "カスタムＣＳＳは自己責任で使ってください",
 			"de" : "Verwenden von benutzerdefinierten CSS auf eigene Gefahr.",
 			"es" : "Utilizar CSS proporcionado por usuarios es bajo tu propio riesgo.",
-			"fr" : "Utilisé Votre Propre CSS est à Votre Risque."
+			"fr" : "Utilisé votre propre CSS est à vos risques."
 		}
 	},
 	"misc" : {
@@ -574,7 +574,7 @@
 				"short_both"  : "N. A."
 			},
 			"fr" : {
-				"no_short"    : "Non",
+				"no_short"    : "Nom",
 				"short_first" : "P. Nom",
 				"short_last"  : "Prénom. N",
 				"short_both"  : "P. N."
@@ -644,7 +644,7 @@
 			"jp" : "リンクが正しく動かない？このリンクをコピーして普段のブラウザーに貼りつけてみてください:",
 			"de" : "Funktioniert dein Link nicht? Kopiere diesen Link und füge ihn in einen Browser deiner Wahl ein:",
 			"es" : "No funciona el link? Copia el siguiente link y pégalo en cualquier navegador de internet:",
-			"fr" : "Un lien mort? Copié-collé le lien dans votre barre de recherche et essayé:"
+			"fr" : "Un lien mort? Copié-collé le lien dans votre barre de recherche:"
 		},
 		"github_cta"         : {
 			"en" : "See the latest code, changelog, and readme information on GitHub. You can also submit bug reports or feature requests.",
@@ -662,7 +662,7 @@
 			"jp" : "ここで表示される変更履歴は前にお使いになったバージョンと最新バージョンの違いを表示します。",
 			"de" : "Dieses Änderungsprotokoll listet alle Änderungen auf, die in der aktuellen Version seit der von dir zuletzt verwendeten Version vorgenommen wurden (falls es welche gibt).",
 			"es" : "El historial de cambios de aquí mostrará todos los cambios que se han realizado (de haberse realizado) en la versión actual en comparación a la última versión que utilizaste.",
-			"fr" : "La liste des modifications montrera tout les changements qui aura été faite (s'il y'en a eu) dans la version actuelle par rapport à la version que tu as utilisé."
+			"fr" : "L'historique des données montrera tous les changements qui ont été faites (s'il y'en a eu) dans la version actuelle par rapport à la version que tu as utilisé."
 		},
 		"changelog_cta"      : {
 			"en" : "You can always see the latest changes and read the more detailed official changelog {{changelog_link_open}}here{{changelog_link_close}}.",

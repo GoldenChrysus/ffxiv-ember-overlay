@@ -73,6 +73,8 @@ class About extends React.Component {
 							<li><strong>The_X</strong> - Portuguese translation</li>
 							<li><strong>okuRaku</strong> <SocialLink name="okurakuu" type="twitter"/><SocialLink name="okuraku" type="twitch"/> - Japanese translation</li>
 							<li><strong>Astriel</strong> - German translation</li>
+							<li><strong>Claud</strong> - Spanish translation</li>
+							<li><strong>Okâme</strong> - French translation</li>
 						</ul>
 					</p>
 				</Container>
