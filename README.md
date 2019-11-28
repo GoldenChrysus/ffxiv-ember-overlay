@@ -154,7 +154,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 
 ### Misc.
 
-- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - CSS styling.
+- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - CSS styling
 
 ## Building
 To build this yourself, do the following:
