@@ -7,7 +7,7 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- N/A
+- ! - Resolved issue where imported settings would sometimes not save
 
 ### Features
 - N/A
