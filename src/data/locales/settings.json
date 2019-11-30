@@ -275,11 +275,11 @@
 		},
 		"interface.blur_job_icons" : {
 			"en" : "Blur Job Icons When Blurring Player Names",
-			"pt" : "Blur Job Icons When Blurring Player Names",
+			"pt" : "Borrar Ícone de Classe ao Borrar Nome do Player",
 			"cn" : "模糊姓名时同时模糊职业图标",
-			"jp" : "Blur Job Icons When Blurring Player Names",
+			"jp" : "プレイヤー名を伏せてる時、ジョブアイコンも伏せる",
 			"de" : "Job Icons zusammen mit Spielernamen trüben",
-			"es" : "Blur Job Icons When Blurring Player Names",
+			"es" : "Difuminar Íconos de clase al difuminar los Nombres de los Jugadores",
 			"fr" : "Cacher les Icônes de Classe Quand les Noms des Autres Joueurs sont Cachés"
 		},
 		"interface.collapse_down" : {
@@ -311,21 +311,21 @@
 		},
 		"interface.decimal_accuracy" : {
 			"en" : "Decimal Accuracy",
-			"pt" : "Decimal Accuracy",
+			"pt" : "Precisão Decimal",
 			"cn" : "小数精度",
-			"jp" : "Decimal Accuracy",
-			"de" : "Decimal Accuracy",
-			"es" : "Decimal Accuracy",
-			"fr" : "Arrondir à combien de décimal"
+			"jp" : "小数点以下の桁数",
+			"de" : "Dezimale Genauigkeit",
+			"es" : "Precisión Decimal",
+			"fr" : "Arrondir à Combien de Décimal"
 		},
 		"interface.shorten_thousands" : {
 			"en" : "Shorten Thousands to 'K'",
-			"pt" : "Shorten Thousands to 'K'",
+			"pt" : "Encurtar Milhares para 'K'",
 			"cn" : "缩略数字表示",
-			"jp" : "Shorten Thousands to 'K'",
+			"jp" : "1000をKと略して表示",
 			"de" : "Tausend durch 'K' abkürzen",
-			"es" : "Shorten Thousands to 'K'",
-			"fr" : "Remplacer les milliers par 'K'"
+			"es" : "Acortar Unidad de mil con 'K'",
+			"fr" : "Remplacer les Milliers par 'K'"
 		},
 		"interface.light_theme" : {
 			"en" : "Use Light Theme",

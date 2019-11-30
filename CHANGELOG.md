@@ -15,6 +15,7 @@
 ### UI Changes
 - ! - Added French and Spanish translations
 - ! - Fixed some translation errors
+- ! - Updated some translation items for all languages
 
 ### Code Changes
 - N/A
