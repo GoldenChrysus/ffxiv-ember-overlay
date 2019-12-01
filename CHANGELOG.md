@@ -2,26 +2,24 @@
 
 ## 0.13.0-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2019-12-01**
 
 ### Bug Fixes
-- ! - Resolved issue where imported settings would sometimes not save
+- Resolved issue where imported settings would sometimes not save
 
 ### Features
 - N/A
 
 ### UI Changes
-- ! - Added French and Spanish translations
-- ! - Fixed some translation errors
-- ! - Updated some translation items for all languages
+- Added French and Spanish translations
+- Fixed some translation errors
+- Updated some translation items for all languages
 
 ### Code Changes
 - N/A
 
 ### Miscellaneous
-- ! - Corrected changelogs for previous versions
+- Corrected changelogs for previous versions
 
 ## 0.12.1-alpha
 
