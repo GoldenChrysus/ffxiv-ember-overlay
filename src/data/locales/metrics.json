@@ -19,6 +19,14 @@
 		"de" : {
 			"short" : "Blk",
 			"long"  : "Blockrate"
+		},
+		"es" : {
+			"short" : "Blk %",
+			"long"  : "% Bloqueo"
+		},
+		"fr" : {
+			"short" : "Blk %",
+			"long"  : "Blocage %"
 		}
 	},
 	"CritDirectHitPct"   : {
@@ -41,6 +49,14 @@
 		"de" : {
 			"short" : "KDR",
 			"long"  : "Kritische direkte Trefferrate"
+		},
+		"es" : {
+			"short" : "CDH %",
+			"long"  : "% Golpe Crítico Directo"
+		},
+		"fr" : {
+			"short" : "CDH %",
+			"long"  : "Coup Critique Direct %"
 		}
 	},
 	"critheal%"          : {
@@ -63,6 +79,14 @@
 		"de" : {
 			"short" : "KHR",
 			"long"  : "Kritische Heilungsrate"
+		},
+		"es" : {
+			"short" : "CH %",
+			"long"  : "% Cura Crítica"
+		},
+		"fr" : {
+			"short" : "SC %",
+			"long"  : "Soin Critique %"
 		}
 	},
 	"crithit%"           : {
@@ -85,6 +109,14 @@
 		"de" : {
 			"short" : "KTR",
 			"long"  : "Kritische Trefferrate"
+		},
+		"es" : {
+			"short" : "CH %",
+			"long"  : "Golpe Crítico %"
+		},
+		"fr" : {
+			"short" : "CH %",
+			"long"  : "Coup Critique %"
 		}
 	},
 	"damage"             : {
@@ -107,6 +139,14 @@
 		"de" : {
 			"short" : "Dmg",
 			"long"  : "Schaden"
+		},
+		"es" : {
+			"short" : "Dmg",
+			"long"  : "Daño"
+		},
+		"fr" : {
+			"short" : "Dmg",
+			"long"  : "Dégats"
 		}
 	},
 	"damage%"            : {
@@ -129,6 +169,14 @@
 		"de" : {
 			"short" : "Dmg %",
 			"long"  : "Schadensanteil"
+		},
+		"es" : {
+			"short" : "Dmg %",
+			"long"  : "% Daño"
+		},
+		"fr" : {
+			"short" : "Dmg %",
+			"long"  : "Dégats %"
 		}
 	},
 	"damage_taken_pct"   : {
@@ -151,6 +199,14 @@
 		"de" : {
 			"short" : "Erl Dmg %",
 			"long"  : "Erlittener Schadensanteil"
+		},
+		"es" : {
+			"short" : "Dmg %",
+			"long"  : "% Daño Recibido"
+		},
+		"fr" : {
+			"short" : "DmgR %",
+			"long"  : "Dégats Reçu %"
 		}
 	},
 	"damagetaken"        : {
@@ -173,6 +229,14 @@
 		"de" : {
 			"short" : "Dmg",
 			"long"  : "Schaden erlitten"
+		},
+		"es" : {
+			"short" : "Dmg",
+			"long"  : "Daño Recibido"
+		},
+		"fr" : {
+			"short" : "DmgR",
+			"long"  : "Dégats Reçu"
 		}
 	},
 	"deaths"             : {
@@ -195,6 +259,14 @@
 		"de" : {
 			"short" : "Tode",
 			"long"  : "Tode"
+		},
+		"es" : {
+			"short" : "Death",
+			"long"  : "Muertes"
+		},
+		"fr" : {
+			"short" : "Morts",
+			"long"  : "Morts"
 		}
 	},
 	"DirectHitPct"       : {
@@ -217,6 +289,14 @@
 		"de" : {
 			"short" : "DTR %",
 			"long"  : "Direkte Trefferrate"
+		},
+		"es" : {
+			"short" : "DH %",
+			"long"  : "% Golpe Directo"
+		},
+		"fr" : {
+			"short" : "DH %",
+			"long"  : "Coup Direct %"
 		}
 	},
 	"effective_heal_pct" : {
@@ -239,6 +319,14 @@
 		"de" : {
 			"short" : "EHR %",
 			"long"  : "Effektive Heilungsrate"
+		},
+		"es" : {
+			"short" : "Ef H %",
+			"long"  : "% Cura Efectiva"
+		},
+		"fr" : {
+			"short" : "Ef H %",
+			"long"  : "Soin Performant %"
 		}
 	},
 	"effective_hps"      : {
@@ -261,6 +349,14 @@
 		"de" : {
 			"short" : "EHPS",
 			"long"  : "Effektive Heilung pro Sekunde"
+		},
+		"es" : {
+			"short" : "Ef HPS",
+			"long"  : "Cura efectiva por Segundo"
+		},
+		"fr" : {
+			"short" : "Ef HPS",
+			"long"  : "Soin Performant par Seconde"
 		}
 	},
 	"encdps"             : {
@@ -283,6 +379,14 @@
 		"de" : {
 			"short" : "DPS",
 			"long"  : "Schaden pro Sekunde"
+		},
+		"es" : {
+			"short" : "DPS",
+			"long"  : "Daño por Segundo"
+		},
+		"fr" : {
+			"short" : "DPS",
+			"long"  : "Dégats Par Seconde"
 		}
 	},
 	"enchps"             : {
@@ -305,6 +409,14 @@
 		"de" : {
 			"short" : "HPS",
 			"long"  : "Heilung pro Sekunde"
+		},
+		"es" : {
+			"short" : "HPS",
+			"long"  : "Cura por Segundo"
+		},
+		"fr" : {
+			"short" : "SPS",
+			"long"  : "Soin Par Seconde"
 		}
 	},
 	"enctps"             : {
@@ -327,6 +439,14 @@
 		"de" : {
 			"short" : "Erl DPS",
 			"long"  : "Erlittener Schaden pro Sekunde"
+		},
+		"es" : {
+			"short" : "DTPS",
+			"long"  : "Daño Recibido por Segundo"
+		},
+		"fr" : {
+			"short" : "DRPS",
+			"long"  : "Dégats Reçu Par Seconde"
 		}
 	},
 	"healed"             : {
@@ -349,6 +469,14 @@
 		"de" : {
 			"short" : "Heilung",
 			"long"  : "Heilung insgesamt"
+		},
+		"es" : {
+			"short" : "Heal",
+			"long"  : "Cura Total"
+		},
+		"fr" : {
+			"short" : "Soin",
+			"long"  : "Soin Total"
 		}
 	},
 	"healed%"            : {
@@ -371,6 +499,14 @@
 		"de" : {
 			"short" : "Heilung %",
 			"long"  : "Heilungsanteil"
+		},
+		"es" : {
+			"short" : "Heal %",
+			"long"  : "% Cura"
+		},
+		"fr" : {
+			"short" : "Soin %",
+			"long"  : "Soin %"
 		}
 	},
 	"healstaken"         : {
@@ -393,6 +529,14 @@
 		"de" : {
 			"short" : "Heilung",
 			"long"  : "Erhaltene Heilung"
+		},
+		"es" : {
+			"short" : "Heals",
+			"long"  : "Curas Recibida"
+		},
+		"fr" : {
+			"short" : "SoinR",
+			"long"  : "Soin Reçu"
 		}
 	},
 	"max_heal_format"    : {
@@ -415,6 +559,14 @@
 		"de" : {
 			"short" : "Max Heilung",
 			"long"  : "Größter Heilungswert"
+		},
+		"es" : {
+			"short" : "Mx Heal",
+			"long"  : "Cura Máxima"
+		},
+		"fr" : {
+			"short" : "Soin Max",
+			"long"  : "Soin Maximal"
 		}
 	},
 	"max_hit_format"     : {
@@ -437,6 +589,14 @@
 		"de" : {
 			"short" : "Max Dmg",
 			"long"  : "Größter Schadenswert"
+		},
+		"es" : {
+			"short" : "Mx Hit",
+			"long"  : "Golpe Máximo"
+		},
+		"fr" : {
+			"short" : "Dgt Max",
+			"long"  : "Dégats Maximal"
 		}
 	},
 	"OverHealPct"        : {
@@ -459,6 +619,14 @@
 		"de" : {
 			"short" : "UHR %",
 			"long"  : "Überschüssige Heilungsrate"
+		},
+		"es" : {
+			"short" : "Ovr %",
+			"long"  : "% Overheal"
+		},
+		"fr" : {
+			"short" : "Ovr %",
+			"long"  : "Surplus de Soin %"
 		}
 	}
 }

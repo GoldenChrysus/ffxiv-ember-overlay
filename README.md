@@ -138,12 +138,14 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 
 ### Translations
 
-- **Bona** - Portuguese translation
-- **ShadyWhite** - Chinese translation
-- **Gusma** - Portuguese translation
-- **The_X** - Portuguese translation
-- **okuRaku** - [Twitter](https://twitter.com/okurakuu), [Twitch](https://www.twitch.tv/okuraku)  - Japanese translation
-- **Astriel** - German translation
+- **Bona** - Portuguese
+- [**ShadyWhite**](https://github.com/ShadyWhite) - Chinese
+- **Gusma** - Portuguese
+- **The_X** - Portuguese
+- **okuRaku** - [Twitter](https://twitter.com/okurakuu), [Twitch](https://www.twitch.tv/okuraku)  - Japanese
+- **Astriel** - German
+- **Claud** - Spanish
+- **Okâme** - French
 
 ### Donors
 
@@ -152,7 +154,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 
 ### Misc.
 
-- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - CSS styling.
+- [canisminor1990/ffxiv-cmskin](https://github.com/canisminor1990/ffxiv-cmskin) - CSS styling
 
 ## Building
 To build this yourself, do the following:

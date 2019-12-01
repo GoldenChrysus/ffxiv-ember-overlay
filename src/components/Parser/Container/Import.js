@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { Form, Input, Button } from "semantic-ui-react";
 import $ from "jquery";
 
-import Settings from "../../../data/Settings";
 import LocalizationService from "../../../services/LocalizationService";
 
 class Import extends React.Component {
@@ -36,13 +35,14 @@ class Import extends React.Component {
 		let $button = $(e.target);
 		let value   = $button.closest(".field").find("input").val();
 
-		Settings.importSettings(value);
+		this.props.settings_data.importSettings(value);
 	}
 }
 
 const mapStateToProps = (state) => {
 	return {
-		language : state.settings.interface.language
+		language      : state.settings.interface.language,
+		settings_data : state.settings_data
 	};
 };
 

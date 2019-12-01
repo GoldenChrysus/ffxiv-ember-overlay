@@ -17,6 +17,11 @@ const language_options = [
 		text  : "Deutsch"
 	},
 	{
+		key   : "fr",
+		value : "fr",
+		text  : "Français"
+	},
+	{
 		key   : "jp",
 		value : "jp",
 		text  : "日本語"
@@ -25,6 +30,11 @@ const language_options = [
 		key   : "pt",
 		value : "pt",
 		text  : "Português"
+	},
+	{
+		key   : "es",
+		value : "es",
+		text  : "Español"
 	}
 ];
 const decimal_options  = [
