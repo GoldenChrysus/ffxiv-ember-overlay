@@ -1,8 +1,8 @@
 # These are supported funding model platforms
 
+github: GoldenChrysus
 custom: ['streamelements.com/chrysus/tip']
 ko_fi: goldenchrysus
-github: # Replace with up to 4 GitHub Sponsors-enabled usernames e.g., [user1, user2]
 patreon: Chrysus
 open_collective: # Replace with a single Open Collective username
 tidelift: # Replace with a single Tidelift platform-name/package-name e.g., npm/babel
