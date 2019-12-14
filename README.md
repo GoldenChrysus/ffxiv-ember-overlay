@@ -85,15 +85,14 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
 0. If you already have Advanced Combat Tracker (ACT), ACTWebSocket, and OverlayProc setup and configured to your liking, skip to step 15.
     - ACTWebSocket version 1.3.3.9 is required. Images may not display correctly in earlier versions.
 1. Ensure ACT is installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
-2. Within ACT, navigate to Plugins > Plugin Listing.
-3. Delete the "FFXIV_ACT_Plugin.dll" entry by clicking the "X" in the top right of the entry.
-4. Download ACTWebSocket and OverlayProc from [here](https://github.com/GoldenChrysus/ffxiv-ember-overlay/raw/master/act/ACTWebSocket.zip).
-5. Before unzipping the previous file, ensure it is unblocked by right-clicking the file, choosing "Properties," and clicking "Unblock" at the bottom of the "General" tab.
+2. Download ACTWebSocket and OverlayProc from [here](https://github.com/GoldenChrysus/ffxiv-ember-overlay/raw/master/act/ACTWebSocket.zip).
+3. Before unzipping the previous file, ensure it is unblocked by right-clicking the file, choosing "Properties," and clicking "Unblock" at the bottom of the "General" tab.
     - If the unblock option is not available at this stage, repeat this process for the ACTWebSocket.dll file after extracting in the next step.
-6. Extract the ZIP file to the location of your choosing.
-7. Within ACT, navigate to Plugins > Plugin Listing > Browse, and choose the ACTWebSocket.dll file from the extracted ZIP file.
-8. Navigate to Options > Show Startup Wizard, and follow the same process you used in step 1 to setup ACT. This will add the FFXIV_ACT_Plugin.dll that was removed in step 3.
-9. Navigate to Plugins > ACTWebSocket, and use the following configuration under "Start Options":
+4. Extract the ZIP file to the location of your choosing.
+5. Within ACT, navigate to Plugins > Plugin Listing > Browse, and choose the ACTWebSocket.dll file from the extracted ZIP file.
+6. Within the plugin list, move the "FFXIV_ACT_Plugin.dll" entry to the top of the list by clicking the up arrow within the entry.
+7. Restart ACT.
+8. Navigate to Plugins > ACTWebSocket, and use the following configuration under "Start Options":
     - Server Auto Start: checked
     - Use UPNP: unchecked
     - Use SSL: unchecked
@@ -101,26 +100,26 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
     - Skin Dir on Act/OverlaySkin: checked
     - Use MobileProc Discovery: unchecked
     - Update Plugin Address: checked
-10. Use the following configuration under "Host":
+9. Use the following configuration under "Host":
     - Host: either the top-most option or "127.0.0.1"
     - Port: 10501
     - UPNP Port: 10501
-11. Use the following configuration under "Message Filter":
+10. Use the following configuration under "Message Filter":
     - Use Miniparse Data: checked
     - Using OnLogLineRead: unchecked
     - Using BeforeLogLineRead: unchecked
     - Using Chat: unchecked
-12. Under "Server Status," click "On."
-13. In the middle of the screen, ensure you are on the tab entitled "HTML Based."
-14. Use the following configuration under "OverlayProc":
+11. Under "Server Status," click "On."
+12. In the middle of the screen, ensure you are on the tab entitled "HTML Based."
+13. Use the following configuration under "OverlayProc":
     - OverlayProc Auto Start: checked
     - In the dropdown (the only dropdown in this section), choose "x64_QT5.8.0" if on a 64-bit system or "x86_QT5.8.0" if on a 32-bit system.
     - If the textbox to the right of the dropdown has text beginning with "0.0.0" then click "Download."
-15. In the section entitled "Web Skins," click "Add URL."
-16. Enter https://goldenchrysus.github.io/ffxiv/ember-overlay/ and click "Ok."
-17. In the section entitled "OverlayProc," click "Start/Stop OverlayProc."
-18. Click "Open Manager."
-19. In the section entitled "Overlay List," select "Ember Overlay" and click "New." It should then appear in the section entitled "Overlay Windows" and should be visible in your FFXIV game.
+14. In the section entitled "Web Skins," click "Add URL."
+15. Enter https://goldenchrysus.github.io/ffxiv/ember-overlay/ and click "Ok."
+16. In the section entitled "OverlayProc," click "Start/Stop OverlayProc."
+17. Click "Open Manager."
+18. In the section entitled "Overlay List," select "Ember Overlay" and click "New." It should then appear in the section entitled "Overlay Windows" and should be visible in your FFXIV game.
     
 ## Changelog
 
