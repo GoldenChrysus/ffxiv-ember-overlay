@@ -52,7 +52,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 #### Other Languages Available
 
-   - [日本語でOnlinegaming.life](https://onlinegaming.life/ff14/ember-overlay/)
+   - <a href="https://onlinegaming.life/ff14/ember-overlay/" target="_blank">日本語でOnlinegaming.life</a>
    
 To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlugin or ACTWebSocket with OverlayProc. To determine which one to choose (OverlayPlugin vs ACTWebSocket), consider the following:
 
