@@ -49,17 +49,20 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Clear encounter and load sample data](https://i.imgur.com/6O9aKNE.gif "Clear encounter and load sample data")
 
 ## Installation
-**Note:** OverlayProc cannot be used when FFXIV is in full screen mode. If you wish to remain in full screen mode, you must use OverlayPlugin.
 
+#### Other Languages Available
+
+   - [日本語でOnlinegaming.life](https://onlinegaming.life/ff14/ember-overlay/)
+   
 To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlugin or ACTWebSocket with OverlayProc. To determine which one to choose (OverlayPlugin vs ACTWebSocket), consider the following:
 
 **OverlayPlugin**
 
     ✔️ Easy to set up.
-    ✔️ Can be used in full screen mode.
-    ✔️ Add the overlay to your OBS Studio scene or other stream/video feed where Web pages can be embedded.
+    ✔️ Add the overlay to your OBS Studio scene or other stream/video feed by capturing your monitor.
+    ✔️ Displays "YOU" instead of your character name in the player list after configuring the overlay.
+    ❌ Cannot be used in full screen mode.
     ❌ Limited configuration.
-    ❌ Displays "YOU" instead of your character name in the player list.
     ❌ Outdated embedded browser.
 
 **ACTWebSocket with OverlayProc**
@@ -73,6 +76,8 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
     ❌ Cannot be used in full screen mode.
     ❌ No substantial benefit if not using it in one of the aforementioned ways.
 
+Only follow the instructions for the plugin you chose; do not follow both sets of instructions below.
+
 ### OverlayPlugin
 0. If you already have Advanced Combat Tracker (ACT) and OverlayPlugin setup and configured to your liking, skip to step 3.
     - OverlayPlugin version 0.3.4.0 is required. The overlay will not work in earlier versions.
@@ -81,7 +86,7 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
 3. Set the URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
 4. Click "Reload overlay," and the overlay should now be visible in your FFXIV game.
 
-### ACTWebSocket
+### ACTWebSocket with OverlayProc
 0. If you already have Advanced Combat Tracker (ACT), ACTWebSocket, and OverlayProc setup and configured to your liking, skip to step 15.
     - ACTWebSocket version 1.3.3.9 is required. Images may not display correctly in earlier versions.
 1. Ensure ACT is installed and working by following [these instructions](https://gist.github.com/TomRichter/e044a3dff5c50024cf514ffb20a201a9).
