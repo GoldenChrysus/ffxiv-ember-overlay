@@ -336,6 +336,24 @@
 			"es" : "Usar Light Theme",
 			"fr" : "Utiliser le thème clair/la version clair de l'Overlay"
 		},
+		"interface.auto_hide" : {
+			"en" : "Auto-Hide Overlay After Inactivity (Set Below)",
+			"pt" : "Auto-Hide Overlay After Inactivity (Set Below)",
+			"cn" : "Auto-Hide Overlay After Inactivity (Set Below)",
+			"jp" : "Auto-Hide Overlay After Inactivity (Set Below)",
+			"de" : "Auto-Hide Overlay After Inactivity (Set Below)",
+			"es" : "Auto-Hide Overlay After Inactivity (Set Below)",
+			"fr" : "Auto-Hide Overlay After Inactivity (Set Below)"
+		},
+		"interface.auto_hide_delay" : {
+			"en" : "Auto-Hide Delay in Seconds",
+			"pt" : "Auto-Hide Delay in Seconds",
+			"cn" : "Auto-Hide Delay in Seconds",
+			"jp" : "Auto-Hide Delay in Seconds",
+			"de" : "Auto-Hide Delay in Seconds",
+			"es" : "Auto-Hide Delay in Seconds",
+			"fr" : "Auto-Hide Delay in Seconds"
+		},
 		"table_settings.general.table.short_names" : {
 			"en" : "Shorten Player Names",
 			"pt" : "Diminuir nomes dos Jogadores",

@@ -25,7 +25,9 @@ const default_settings = {
 		footer_dps            : false,
 		decimal_accuracy      : 2,
 		shorten_thousands     : false,
-		language              : "en"
+		language              : "en",
+		auto_hide             : false,
+		auto_hide_delay       : 0
 	},
 	custom        : {
 		css : ""

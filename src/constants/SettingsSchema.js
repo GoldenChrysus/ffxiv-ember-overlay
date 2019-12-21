@@ -151,7 +151,24 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.interface.light_theme;
 							}
-						}
+						},
+						{
+							key_path : "interface.auto_hide",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.auto_hide;
+							}
+						},
+						{
+							key_path : "interface.auto_hide_delay",
+							type     : "slider",
+							range    : "min",
+							minimum  : 0,
+							maximum  : 600,
+							value    : function() {
+								return this.props.settings.interface.auto_hide_delay;
+							}
+						},
 					]
 				}
 			]

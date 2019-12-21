@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.14.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- ?
+
+### Features
+- Add setting to auto-hide the overlay after a period of inactivity
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.13.0-alpha
 
 **Released: 2019-12-01**

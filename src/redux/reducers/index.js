@@ -11,6 +11,7 @@ import SampleHistoryData from "../../constants/SampleHistoryData";
 const initial_state = {
 	socket_service    : new SocketService(),
 	settings_data     : Settings,
+	last_activity     : (new Date()).getTime() / 1000,
 	internal          : {
 		viewing                : "tables",
 		character_name         : "YOU",
@@ -69,7 +70,9 @@ function rootReducer(state, action) {
 			break;
 
 		case "loadSampleData":
-			let tmp_action = {};
+			let tmp_action = {
+				type : "loadSampleData"
+			};
 
 			state.internal.encounter_data_history = SampleHistoryData;
 
@@ -103,6 +106,10 @@ function createNewState(state, full_key, action) {
 		let light_theme = (full_key === "settings") ? action.payload.interface.light_theme : action.payload;
 
 		ThemeService.setTheme(light_theme);
+	}
+
+	if (["parseGameData", "loadSampleData"].includes(action.type)) {
+		new_state.last_activity = (new Date()).getTime() / 1000;
 	}
 
 	return new_state;
