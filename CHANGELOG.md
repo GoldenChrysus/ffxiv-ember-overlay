@@ -10,7 +10,7 @@
 - ?
 
 ### Features
-- Add setting to auto-hide the overlay after a period of inactivity
+- ! - Add setting to auto-hide the overlay after a period of inactivity
 
 ### UI Changes
 - ?

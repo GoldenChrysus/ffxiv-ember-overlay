@@ -36,7 +36,7 @@ class Parser extends React.Component {
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
 		let zoom               = this.props.zoom / 100;
-		let display            = (this.state.visible) ? "inherit" : "none";
+		let display            = (this.state.visible) ? "block" : "none";
 		let setting_style      = `
 			body {
 				zoom: ${zoom};

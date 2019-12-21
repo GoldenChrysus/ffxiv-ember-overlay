@@ -108,7 +108,7 @@ function createNewState(state, full_key, action) {
 		ThemeService.setTheme(light_theme);
 	}
 
-	if (["parseGameData", "loadSampleData"].includes(action.type)) {
+	if (["parseGameData", "loadSampleData"].indexOf(action.type) !== -1) {
 		new_state.last_activity = (new Date()).getTime() / 1000;
 	}
 
