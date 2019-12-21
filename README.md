@@ -60,9 +60,9 @@ To use this overlay skin, you need Advanced Combat Tracker and either OverlayPlu
 
     ✔️ Easy to set up.
     ✔️ Add the overlay to your OBS Studio scene or other stream/video feed by capturing your monitor.
-    ✔️ Displays "YOU" instead of your character name in the player list after configuring the overlay.
+    ✔️ Display your character name instead of "YOU" in the player list, but requires configuring the overlay.
     ❌ Cannot be used in full screen mode.
-    ❌ Limited configuration.
+    ❌ Limited plugin configuration.
     ❌ Outdated embedded browser.
 
 **ACTWebSocket with OverlayProc**
