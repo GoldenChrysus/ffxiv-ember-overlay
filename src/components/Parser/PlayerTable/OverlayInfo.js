@@ -26,6 +26,7 @@ class OverlayInfo extends React.Component {
 			<div id="overlay-info">
 				<h3>Ember Overlay</h3>
 				<p>This section will disappear when an encounter begins.</p>
+				<p>Seeking a translator for Korean. Please join the Discord if interested.</p>
 
 				<div id="funding">
 					<span onClick={this.openFundingLink.bind(this, "streamelements")} ref="streamelements"><img src="https://img.shields.io/badge/Donate-at%20StreamElements-green" alt="Donate at StreamElements" height="20"/></span>

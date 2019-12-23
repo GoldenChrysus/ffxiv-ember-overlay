@@ -9,6 +9,26 @@ import Placeholder from "./Parser/Placeholder";
 class Parser extends React.Component {
 	componentWillMount() {
 		window.parser = true;
+
+		this.setState({
+			visible : true
+		});
+
+		setInterval(this.processAutoHide.bind(this), 2000);
+	}
+
+	processAutoHide() {
+		let visible = true;
+
+		if (this.props.auto_hide && this.props.auto_hide_delay > 0 && ((new Date().getTime() / 1000) - this.props.last_activity) > this.props.auto_hide_delay) {
+			visible = false;
+		}
+
+		if (this.state.visible !== visible) {
+			this.setState({
+				visible : visible
+			});
+		}
 	}
 
 	render() {
@@ -16,9 +36,11 @@ class Parser extends React.Component {
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
 		let zoom               = this.props.zoom / 100;
+		let display            = (this.state.visible) ? "block" : "none";
 		let setting_style      = `
 			body {
 				zoom: ${zoom};
+				display: ${display};
 			}
 
 			#container {
@@ -56,13 +78,16 @@ class Parser extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		collapsed     : state.settings.intrinsic.collapsed,
-		collapse_down : state.settings.interface.collapse_down,
-		viewing       : state.internal.viewing,
-		css           : state.settings.custom.css || "",
-		opacity       : state.settings.interface.opacity,
-		zoom          : state.settings.interface.zoom,
-		light_theme   : state.settings.interface.light_theme
+		collapsed       : state.settings.intrinsic.collapsed,
+		collapse_down   : state.settings.interface.collapse_down,
+		viewing         : state.internal.viewing,
+		css             : state.settings.custom.css || "",
+		opacity         : state.settings.interface.opacity,
+		zoom            : state.settings.interface.zoom,
+		light_theme     : state.settings.interface.light_theme,
+		auto_hide       : state.settings.interface.auto_hide,
+		auto_hide_delay : state.settings.interface.auto_hide_delay,
+		last_activity   : state.last_activity
 	};
 };
 
