@@ -34,13 +34,13 @@
 			},
 			"subsections" : [
 				{
-					"en" : "Metric Names",
-					"pt" : "Metric Names",
-					"cn" : "Metric Names",
-					"jp" : "Metric Names",
-					"de" : "Metric Names",
-					"es" : "Metric Names",
-					"fr" : "Metric Names"
+					"en" : "Custom Metric Names",
+					"pt" : "Custom Metric Names",
+					"cn" : "Custom Metric Names",
+					"jp" : "Custom Metric Names",
+					"de" : "Custom Metric Names",
+					"es" : "Custom Metric Names",
+					"fr" : "Custom Metric Names"
 				}
 			]
 		},
