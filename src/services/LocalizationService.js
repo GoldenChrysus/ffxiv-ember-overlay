@@ -21,10 +21,18 @@ class LocalizationService {
 		return title[type];
 	}
 
-	getPlayerDataTitles(ignore_custom) {
+	getPlayerDataTitles(include_null, ignore_custom) {
 		let custom   = (ignore_custom) ? {} : store.getState().settings.custom.metric_names;
 		let language = this.getLanguage();
 		let options  = [];
+
+		if (include_null) {
+			options.push({
+				key   : "",
+				value : "",
+				text  : ""
+			});
+		}
 
 		for (let data_key in Constants.PlayerDataTitles) {
 			let data   = Constants.PlayerDataTitles[data_key];

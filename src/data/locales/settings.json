@@ -28,9 +28,9 @@
 				"pt" : "Metric Names",
 				"cn" : "Metric Names",
 				"jp" : "Metric Names",
-				"de" : "Metric Names",
+				"de" : "Metrik Namen",
 				"es" : "Metric Names",
-				"fr" : "Metric Names"
+				"fr" : "Noms des Mesures"
 			},
 			"subsections" : [
 				{
@@ -38,9 +38,9 @@
 					"pt" : "Custom Metric Names",
 					"cn" : "Custom Metric Names",
 					"jp" : "Custom Metric Names",
-					"de" : "Custom Metric Names",
+					"de" : "Benutzerdefinierte Metrik Namen",
 					"es" : "Custom Metric Names",
-					"fr" : "Custom Metric Names"
+					"fr" : "Noms des Mesures Personnalisés"
 				}
 			]
 		},
@@ -363,18 +363,18 @@
 			"pt" : "Auto-Hide Overlay After Inactivity (Set Below)",
 			"cn" : "脱战后自动隐藏战斗悬浮窗（设置如下）",
 			"jp" : "Auto-Hide Overlay After Inactivity (Set Below)",
-			"de" : "Auto-Hide Overlay After Inactivity (Set Below)",
+			"de" : "Overlay automatisch bei Inaktivität ausblenden (unten einstellen)",
 			"es" : "Auto-Hide Overlay After Inactivity (Set Below)",
-			"fr" : "Auto-Hide Overlay After Inactivity (Set Below)"
+			"fr" : "Cacher automatiquement l'Overlay après inactivité (à définir ci-dessous)"
 		},
 		"interface.auto_hide_delay" : {
 			"en" : "Auto-Hide Delay in Seconds",
 			"pt" : "Auto-Hide Delay in Seconds",
 			"cn" : "自动隐藏延迟（以秒为单位）",
 			"jp" : "Auto-Hide Delay in Seconds",
-			"de" : "Auto-Hide Delay in Seconds",
+			"de" : "Verzögerung für automatisches Ausblenden in Sekunden",
 			"es" : "Auto-Hide Delay in Seconds",
-			"fr" : "Auto-Hide Delay in Seconds"
+			"fr" : "Délai en Seconde"
 		},
 		"custom.metric_names" : {
 			"en" : "",
@@ -628,6 +628,52 @@
 				"short_last"  : "Prénom. N",
 				"short_both"  : "P. N."
 			}
+		},
+
+		"metric" : {
+			"en" : "Metric",
+			"pt" : "Metric",
+			"cn" : "Metric",
+			"jp" : "Metric",
+			"de" : "Metrik",
+			"es" : "Metric",
+			"fr" : "Mesure"
+		},
+		"short_name" : {
+			"en" : "Short Name",
+			"pt" : "Short Name",
+			"cn" : "Short Name",
+			"jp" : "Short Name",
+			"de" : "Abgekürzter Name",
+			"es" : "Short Name",
+			"fr" : "Abréviation"
+		},
+		"long_name" : {
+			"en" : "Long Name",
+			"pt" : "Long Name",
+			"cn" : "Long Name",
+			"jp" : "Long Name",
+			"de" : "Voller Name",
+			"es" : "Long Name",
+			"fr" : "Nom Complet"
+		},
+		"add" : {
+			"en" : "Add",
+			"pt" : "Add",
+			"cn" : "Add",
+			"jp" : "Add",
+			"de" : "Hinzufügen",
+			"es" : "Add",
+			"fr" : "Ajouter"
+		},
+		"delete" : {
+			"en" : "Delete",
+			"pt" : "Delete",
+			"cn" : "Delete",
+			"jp" : "Delete",
+			"de" : "Entfernen",
+			"es" : "Delete",
+			"fr" : "Supprimer"
 		},
 
 		"save"               : {

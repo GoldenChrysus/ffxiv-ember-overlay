@@ -48,7 +48,7 @@ class Streamers extends React.Component {
 					<h2>{LocalizationService.getMisc("streamers")}</h2>
 					<p>{LocalizationService.getMisc("streamer_info")}</p>
 					<p>
-						<a className="info-link" onClick={this.toggleInfoDiv}>{LocalizationService.getMisc("streamer_short_cta")}</a>
+						<a href="/" className="info-link" onClick={this.toggleInfoDiv}>{LocalizationService.getMisc("streamer_short_cta")}</a>
 						<span className="info-span" style={{ display: "none" }}>{long_cta}</span>
 					</p>
 					{offline_text}
@@ -61,10 +61,13 @@ class Streamers extends React.Component {
 	}
 
 	toggleInfoDiv(e) {
+		e.preventDefault();
+
 		let $link = $(e.target);
 		let $div  = $link.closest("p").find(".info-span");
 
 		$div.slideToggle();
+		return false;
 	}
 }
 

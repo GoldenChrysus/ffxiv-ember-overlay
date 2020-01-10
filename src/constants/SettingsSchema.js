@@ -181,7 +181,7 @@ const SettingsSchema = {
 						{
 							key_path : "custom.metric_names",
 							type     : "MetricNameTable",
-							options  : () => LocalizationService.getPlayerDataTitles(true),
+							options  : () => LocalizationService.getPlayerDataTitles(true, true),
 							value    : function() {
 								return this.props.settings.custom.metric_names;
 							}

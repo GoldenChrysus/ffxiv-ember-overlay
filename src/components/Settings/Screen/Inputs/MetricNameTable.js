@@ -5,10 +5,11 @@ import $ from "jquery";
 import LocalizationService from "../../../../services/LocalizationService";
 
 class MetricNameTable extends React.Component {
-	data = {
+	data        = {
 		key_path : this.props.key_path,
 		value    : {}
 	};
+	delete_text = LocalizationService.getMisc("delete");
 
 	componentWillMount() {
 		let rows = {
@@ -45,9 +46,9 @@ class MetricNameTable extends React.Component {
 			<table key="metric-name-table" ref="metric_name_table" className="ui unstackable inverted celled table">
 				<thead>
 					<tr>
-						<th>Metric</th>
-						<th>Short Name</th>
-						<th>Long Name</th>
+						<th>{LocalizationService.getMisc("metric")}</th>
+						<th>{LocalizationService.getMisc("short_name")}</th>
+						<th>{LocalizationService.getMisc("long_name")}</th>
 						<th className="collapsing"></th>
 					</tr>
 				</thead>
@@ -60,8 +61,8 @@ class MetricNameTable extends React.Component {
 
 	createRow(options) {
 		let button = (options.insert)
-			? <Button onClick={this.handleAdd.bind(this)}>Add</Button>
-			: <Button onClick={this.handleDelete.bind(this)}>Delete</Button>;
+			? <Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button>
+			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
 		let select = (!options.insert)
 			? options.select_text
 			: <Select fluid search options={this.props.options} onChange={this.handleSelectChange}/>;
