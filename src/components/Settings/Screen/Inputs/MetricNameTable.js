@@ -5,11 +5,15 @@ import $ from "jquery";
 import LocalizationService from "../../../../services/LocalizationService";
 
 class MetricNameTable extends React.Component {
-	data        = {
-		key_path : this.props.key_path,
-		value    : {}
-	};
-	delete_text = LocalizationService.getMisc("delete");
+	constructor(props) {
+		super(props);
+
+		this.data        = {
+			key_path : this.props.key_path,
+			value    : {}
+		};
+		this.delete_text = LocalizationService.getMisc("delete");
+	}
 
 	componentWillMount() {
 		let rows = {
@@ -40,7 +44,9 @@ class MetricNameTable extends React.Component {
 	}
 
 	render() {
-		let rows = (this.state && this.state.rows) ? Object.values(this.state.rows) : [];
+		let rows = (this.state && this.state.rows)
+			? Object.keys(this.state.rows).map(key => this.state.rows[key])
+			: [];
 
 		return(
 			<table key="metric-name-table" ref="metric_name_table" className="ui unstackable inverted celled table">
