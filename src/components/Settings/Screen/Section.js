@@ -105,8 +105,10 @@ class Section extends React.Component {
 					break;
 
 				case "MetricNameTable":
+					let metric_options = setting_data.options().sort((a, b) => (a.text > b.text) ? 1 : -1);
+
 					label   = "";
-					setting = <MetricNameTable value={value} options={setting_data.options()} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
+					setting = <MetricNameTable value={value} options={metric_options} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 
 					break;
 
