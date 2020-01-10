@@ -129,6 +129,10 @@ class MetricNameTable extends React.Component {
 			auto_add     : true
 		};
 
+		if (!options.select_value) {
+			return false;
+		}
+
 		this.data.value[options.select_value] = {
 			short : options.short_name,
 			long  : options.long_name
