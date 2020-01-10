@@ -30,7 +30,8 @@ const default_settings = {
 		auto_hide_delay       : 0
 	},
 	custom        : {
-		css : ""
+		css          : "",
+		metric_names : {}
 	},
 	table_settings : {
 		general : {

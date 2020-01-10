@@ -10,6 +10,7 @@ React overlay for the [OverlayPlugin](https://github.com/hibiyasleep/OverlayPlug
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/GoldenChrysus/ffxiv-ember-overlay.svg)
 
 #### Funding
+<a href="https://paypal.me/goldenchrysus"><img src="https://i.imgur.com/ugzarwk.png" alt="Donate at PayPal" height="23"></a>
 <a href="https://streamelements.com/chrysus/tip"><img src="https://img.shields.io/badge/Donate-at%20StreamElements-green" alt="Donate at StreamElements" height="23"></a>
 <a href="https://ko-fi.com/S6S611OOG"><img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Donate at Ko-fi" height="23"></a>
 <a href="https://patreon.com/Chrysus"><img src="https://i.imgur.com/cjMRY6Q.png" alt="Become a Patron" height="23"></a>

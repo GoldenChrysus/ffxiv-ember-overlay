@@ -22,6 +22,28 @@
 				}
 			]
 		},
+		"metric-names"  : {
+			"title"       : {
+				"en" : "Metric Names",
+				"pt" : "Metric Names",
+				"cn" : "Metric Names",
+				"jp" : "Metric Names",
+				"de" : "Metric Names",
+				"es" : "Metric Names",
+				"fr" : "Metric Names"
+			},
+			"subsections" : [
+				{
+					"en" : "Metric Names",
+					"pt" : "Metric Names",
+					"cn" : "Metric Names",
+					"jp" : "Metric Names",
+					"de" : "Metric Names",
+					"es" : "Metric Names",
+					"fr" : "Metric Names"
+				}
+			]
+		},
 		"player-table"  : {
 			"title"       : {
 				"en" : "Player Table",
@@ -353,6 +375,15 @@
 			"de" : "Auto-Hide Delay in Seconds",
 			"es" : "Auto-Hide Delay in Seconds",
 			"fr" : "Auto-Hide Delay in Seconds"
+		},
+		"custom.metric_names" : {
+			"en" : "",
+			"pt" : "",
+			"cn" : "",
+			"jp" : "",
+			"de" : "",
+			"es" : "",
+			"fr" : ""
 		},
 		"table_settings.general.table.short_names" : {
 			"en" : "Shorten Player Names",
