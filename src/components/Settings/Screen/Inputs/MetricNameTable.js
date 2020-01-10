@@ -66,7 +66,7 @@ class MetricNameTable extends React.Component {
 			? options.select_text
 			: <Select fluid search options={this.props.options} onChange={this.handleSelectChange}/>;
 		let row    = (
-			<tr key={"metric-key-" + (options.select_value || "_insert")} data-key={options.select_value}>
+			<tr id="insert-row" key={"metric-key-" + (options.select_value || "_insert")} data-key={options.select_value}>
 				<td>{select}</td>
 				<td><Input fluid key_path="short_name" defaultValue={options.short_name} onChange={this.handleInputChange.bind(this)}/></td>
 				<td><Input fluid key_path="long_name" defaultValue={options.long_name} onChange={this.handleInputChange.bind(this)}/></td>
@@ -88,7 +88,8 @@ class MetricNameTable extends React.Component {
 	}
 
 	handleSelectChange(e, data) {
-		let $target = $(e.currentTarget);
+		let $row    = $(document).find("#insert-row");
+		let $target = (e.currentTarget.tagName === "DIV") ? $(e.currentTarget) : $row.find(".active.selected.item");
 		let $select = $target.closest(".ui.dropdown");
 
 		$select

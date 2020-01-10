@@ -32,8 +32,8 @@ class Streamers extends React.Component {
 			);
 		}
 
-		let discord_link = <span className="discord-link">{discord_url}</span>;
-		let author_link  = <span className="author-link">{author_url}</span>;
+		let discord_link = <span key="discord-link" className="discord-link">{discord_url}</span>;
+		let author_link  = <span key="author-link" className="author-link">{author_url}</span>;
 		let offline_text = (this.props.type === "offline")
 			? <p className="offline">Looks like no one is live. Check out some Ember Overlay users below and follow them to receive notifications when they are live!</p>
 			: "";

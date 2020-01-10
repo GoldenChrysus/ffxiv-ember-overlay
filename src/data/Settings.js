@@ -6,14 +6,14 @@ import mergeWith from "lodash.mergewith";
 import ObjectService from "../services/ObjectService";
 
 const default_settings = {
-	intrinsic     : {
+	intrinsic : {
 		table_type      : "dps",
 		collapsed       : false,
 		current_version : null,
 		last_version    : null,
 		player_blur     : false
 	},
-	interface     : {
+	interface : {
 		player_name           : "YOU",
 		opacity               : 100,
 		zoom                  : 100,
@@ -29,7 +29,7 @@ const default_settings = {
 		auto_hide             : false,
 		auto_hide_delay       : 0
 	},
-	custom        : {
+	custom : {
 		css          : "",
 		metric_names : {}
 	},
@@ -56,7 +56,7 @@ const default_settings = {
 		}
 	},
 	table_columns : {
-		dps  : [
+		dps : [
 			"damage%",
 			"encdps",
 			"crithit%",
@@ -94,7 +94,7 @@ const default_settings = {
 			]
 		}
 	},
-	sum_columns     : {
+	sum_columns : {
 		dps  : [
 			"encdps"
 		],
@@ -107,14 +107,14 @@ const default_settings = {
 			"deaths"
 		]
 	},
-	sort_columns    : {
+	sort_columns : {
 		dps  : "damage",
 		heal : "healed",
 		tank : "damagetaken",
 		raid : "damage"
 	},
 	detail_data : {
-		dps  : [
+		dps : [
 			"damage%",
 			"encdps",
 			"damage",
