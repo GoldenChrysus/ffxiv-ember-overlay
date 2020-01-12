@@ -4,6 +4,7 @@ import Editor from "react-simple-code-editor";
 
 import LocalizationService from "../../../services/LocalizationService";
 
+import MetricNameTable from "./Inputs/MetricNameTable";
 import Slider from "./Inputs/Slider";
 
 class Section extends React.Component {
@@ -100,6 +101,14 @@ class Section extends React.Component {
 					label = <label>{label_text}: <span className="value">{value}</span></label>;
 
 					setting = <Slider range={range} minimum={min} maximum ={max} key_path={setting_data.key_path} value={value} onChange={this.props.changeCallback}/>;
+
+					break;
+
+				case "MetricNameTable":
+					let metric_options = setting_data.options().sort((a, b) => (a.text > b.text) ? 1 : -1);
+
+					label   = "";
+					setting = <MetricNameTable value={value} options={metric_options} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 
 					break;
 

@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.15.0-alpha
+
+**Released: 2020-01-12**
+
+### Bug Fixes
+- N/A
+
+### Features
+- Added setting page to rename metrics
+    - Accessible at Settings > Metric Names
+    - Add new metric name by choosing an existing metric, entering custom names, and clicking "Add"
+    - Custom names can be deleted by clicking "Delete" on the row
+    - Must click "Save" for your custom names to update
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Added PayPal donation option
+- Corrected changelogs for previous versions
+
 ## 0.14.0-alpha
 
 **Released: 2019-12-23**
@@ -8,7 +32,7 @@
 - N/A
 
 ### Features
-- Add setting to auto-hide the overlay after a period of inactivity
+- Added setting to auto-hide the overlay after a period of inactivity
     - The method for calculating inactivity is subject to change; please report issues in the Discord
 
 ### UI Changes

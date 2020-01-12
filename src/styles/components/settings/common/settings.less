@@ -318,6 +318,10 @@ body #settings-container p * {
 	);
 }
 
+#settings-container #settings-screen .section-container .field > .ui.table {
+	margin-top: 1em;
+}
+
 #settings-container #settings-screen .section-container p .discord {
 	width: 200px;
 }
@@ -332,6 +336,9 @@ body #settings-container p * {
 }
 
 #settings-container #settings-screen .section-container .donation-link {
+	font-size: 1.4em;
+	margin: 0.25em 0;
+
 	.setThemeStyle(
 		{
 			color: @dark_importantText;
@@ -364,6 +371,10 @@ body #settings-container p * {
 			color: @light_borderOuterShadow;
 		}
 	);
+}
+
+#settings-container #settings-screen .section-container .donation-link#donation-paypal::before {
+	content: "PayPal: ";
 }
 
 #settings-container #settings-screen .section-container .donation-link#donation-streamelements::before {

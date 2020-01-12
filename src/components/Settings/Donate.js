@@ -2,6 +2,8 @@ import React from "react";
 import { Container } from "semantic-ui-react";
 import $ from "jquery";
 
+import DonationService from "../../services/DonationService";
+
 const querystring = require("querystring");
 
 class Donate extends React.Component {
@@ -39,9 +41,10 @@ class Donate extends React.Component {
 						Thank you!
 					</p>
 
-					<div className="donation-link" data-type="streamelements" ref="streamelements" id="donation-streamelements">https://streamelements.com/chrysus/tip</div>
-					<div className="donation-link" data-type="kofi" ref="kofi" id="donation-kofi">https://ko-fi.com/goldenchrysus</div>
-					<div className="donation-link" data-type="patreon" ref="patreon" id="donation-patreon">https://www.patreon.com/Chrysus</div>
+					<div className="donation-link" data-type="paypal" ref="paypal" id="donation-paypal">{DonationService.getRealDonationLink("paypal")}</div>
+					<div className="donation-link" data-type="kofi" ref="kofi" id="donation-kofi">{DonationService.getRealDonationLink("kofi")}</div>
+					<div className="donation-link" data-type="patreon" ref="patreon" id="donation-patreon">{DonationService.getRealDonationLink("patreon")}</div>
+					<div className="donation-link" data-type="streamelements" ref="streamelements" id="donation-streamelements">{DonationService.getRealDonationLink("streamelements")}</div>
 
 					<h2>Donors</h2>
 					<p>Amneamnius, Vulasuw</p>

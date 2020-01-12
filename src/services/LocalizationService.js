@@ -7,17 +7,32 @@ class LocalizationService {
 		return store.getState().settings.interface.language;
 	}
 
-	getPlayerDataTitle(key, type) {
-		let title = Constants.PlayerDataTitles[key];
+	getPlayerDataTitle(key, type, ignore_custom) {
+		let custom = (ignore_custom) ? {} : store.getState().settings.custom.metric_names;
+
+		if (!ignore_custom && custom[key] && custom[key][type]) {
+			return custom[key][type];
+		}
+
+		let title  = Constants.PlayerDataTitles[key];
 
 		title = title[this.getLanguage()] || title.en;
 
 		return title[type];
 	}
 
-	getPlayerDataTitles() {
+	getPlayerDataTitles(include_null, ignore_custom) {
+		let custom   = (ignore_custom) ? {} : store.getState().settings.custom.metric_names;
 		let language = this.getLanguage();
 		let options  = [];
+
+		if (include_null) {
+			options.push({
+				key   : "",
+				value : "",
+				text  : ""
+			});
+		}
 
 		for (let data_key in Constants.PlayerDataTitles) {
 			let data   = Constants.PlayerDataTitles[data_key];
@@ -27,7 +42,11 @@ class LocalizationService {
 				text  : ""
 			};
 
-			option.text = (data[language]) ? data[language].long : data.en.long;
+			if (!ignore_custom && custom[data_key] && custom[data_key].long) {
+				option.text = custom[data_key].long
+			} else {
+				option.text = (data[language]) ? data[language].long : data.en.long;
+			}
 
 			options.push(option);
 		}

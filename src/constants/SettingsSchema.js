@@ -174,6 +174,23 @@ const SettingsSchema = {
 			]
 		},
 		{
+			path     : "metric-names",
+			sections : [
+				{
+					settings : [
+						{
+							key_path : "custom.metric_names",
+							type     : "MetricNameTable",
+							options  : () => LocalizationService.getPlayerDataTitles(true, true),
+							value    : function() {
+								return this.props.settings.custom.metric_names;
+							}
+						}
+					]
+				}
+			]
+		},
+		{
 			path     : "player-table",
 			sections : [
 				{
