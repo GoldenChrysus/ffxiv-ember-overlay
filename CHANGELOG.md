@@ -2,15 +2,13 @@
 
 ## 0.15.0-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2020-01-12**
 
 ### Bug Fixes
 - N/A
 
 ### Features
-- ! - Added setting page to rename metrics
+- Added setting page to rename metrics
     - Accessible at Settings > Metric Names
     - Add new metric name by choosing an existing metric, entering custom names, and clicking "Add"
     - Custom names can be deleted by clicking "Delete" on the row
