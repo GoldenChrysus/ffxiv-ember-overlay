@@ -7,20 +7,20 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
-- Added setting page to rename metrics
+- ! - Added setting page to rename metrics
     - Accessible at Settings > Metric Names
     - Add new metric name by choosing an existing metric, entering custom names, and clicking "Add"
     - Custom names can be deleted by clicking "Delete" on the row
     - Must click "Save" for your custom names to update
 
 ### UI Changes
-- ?
+- N/A
 
 ### Code Changes
-- ?
+- N/A
 
 ### Miscellaneous
 - Added PayPal donation option
