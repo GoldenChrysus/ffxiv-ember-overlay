@@ -62,11 +62,12 @@ ACT should always be run as administrator and excepted from Windows Firewall to 
 
 ## Installing OverlayPlugin
 
-OverlayPlugin allows ACT to show your DPS and other metrics in a visually-pleasing manner over your game (hence, overlay). You will need these in order to use overlays such as Ember Overlay.
+OverlayPlugin allows ACT to show your DPS and other metrics in a visually-pleasing manner over your game (hence, overlay). You will need this in order to use overlays such as Ember Overlay.
 
 1. Open the Windows file browser, right-click the address bar, choose "Edit Address," and enter `%APPDATA%\Advanced Combat Tracker` -- then hit enter.
 
 ![](https://i.imgur.com/8j1slAT.png)
+
 ![](https://i.imgur.com/6hWQMPX.png)
 
 2. You should now be in the folder `<your name>\AppData\Roaming\Advanced Combat Tracker`. We'll come back to this folder in a moment.
@@ -81,7 +82,7 @@ OverlayPlugin allows ACT to show your DPS and other metrics in a visually-pleasi
 
 ![](https://i.imgur.com/9kgy1Zs.png)
 
-6. In the window that opens, remove "OverlayPlugin" from the end of the destination path as in the following images:
+6. In the window that opens, remove the text "OverlayPlugin" from the end of the destination path as in the following images:
 
 ![](https://i.imgur.com/J9C2onU.png)
 ![](https://i.imgur.com/MwwaKnQ.png)
@@ -94,7 +95,7 @@ OverlayPlugin allows ACT to show your DPS and other metrics in a visually-pleasi
 
 ![](https://i.imgur.com/VM7S8mf.png)
 
-10. In the window that appears, edit the address as you did in step 1, but enter `%APPDATA%\Advanced Combat Tracker\Plugins\OverlayPlugin`. Then choose the `OverlayPlugin.dll` file and click "Open."
+10. In the window that appears, edit the address as you did in step 1, but enter `%APPDATA%\Advanced Combat Tracker\Plugins\OverlayPlugin` -- then choose the `OverlayPlugin.dll` file and click "Open."
 
 ![](https://i.imgur.com/qnpqTiq.png)
 
