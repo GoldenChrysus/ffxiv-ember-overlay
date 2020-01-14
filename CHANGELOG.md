@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.15.1-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- ?
+
+### Features
+- ?
+
+### UI Changes
+- ?
+
+### Code Changes
+- Added redirect to non-SSL site for Web socket users on ngld OverlayPlugin
+- Added build variants `nonssl` and `nonssl-staging` for building the non-SSL site code
+    - `npm run build:nonssl`
+    - `npm run build:nonssl-staging`
+
+### Miscellaneous
+- TO DO: Create new ACT/OverlayPlugin installation guide to remove usage of TomRichter guide
+
 ## 0.15.0-alpha
 
 **Released: 2020-01-12**
