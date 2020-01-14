@@ -97,7 +97,7 @@ OverlayPlugin allows ACT to show your DPS and other metrics in a visually-pleasi
 
 ![](https://i.imgur.com/VM7S8mf.png)
 
-10. In the window that appears, edit the address as you did in step 1, but enter `%APPDATA%\Advanced Combat Tracker\Plugins\OverlayPlugin` -- then choose the `OverlayPlugin.dll` file and click "Open."
+10. In the window that appears, right-click the address bar to edit the address as you did in step 1, but enter `%APPDATA%\Advanced Combat Tracker\Plugins\OverlayPlugin` -- then choose the `OverlayPlugin.dll` file and click "Open."
 
 ![](https://i.imgur.com/qnpqTiq.png)
 
