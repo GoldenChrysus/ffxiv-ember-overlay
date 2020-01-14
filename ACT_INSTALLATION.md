@@ -121,7 +121,7 @@ This section is only for people who wish to use the Web socket with an overlay. 
 
 1. In ACT, navigate to Plugins > OverlayPlugin WSServer. Ensure the IP address is set to `127.0.0.1` and the port is set to `10501`. Then click "Start."
 
-Note: If you know you want to use an IP address or port, change them accordingly. IPv6 users may want to use `[::1]` or you may want to bind the socket to all available IP's by using `0.0.0.0`
+Note: If you know you want to use a different IP address or port, change them accordingly. IPv6 users may want to use `[::1]` or you may want to bind the socket to all available IP's by using `0.0.0.0`
 
 ![](https://i.imgur.com/9RKV5U8.png)
 
