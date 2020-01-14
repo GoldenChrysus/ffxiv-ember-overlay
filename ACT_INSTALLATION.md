@@ -114,3 +114,17 @@ OverlayPlugin allows ACT to show your DPS and other metrics in a visually-pleasi
 14. If there is no overlay, simply click the "New" button, choose the "Ember" preset, and click "OK."
 
 ![](https://i.imgur.com/OQa349P.png)
+
+## Using the Web Socket
+
+This section is only for people who wish to use the Web socket with an overlay. This allows you to view the overlay in other ways, such as adding it as an OBS browser source, opening it on your phone, etc. If you don't need to do this, skip this section.
+
+1. In ACT, navigate to Plugins > OverlayPlugin WSServer. Ensure the IP address is set to `127.0.0.1` and the port is set to `10501`. Then click "Start."
+
+Note: If you know you want to use an IP address or port, change them accordingly. IPv6 users may want to use `[::1]` or you may want to bind the socket to all available IP's by using `0.0.0.0`
+
+![](https://i.imgur.com/9RKV5U8.png)
+
+2. Select your desired Web socket overlay from the "Overlay" dropdown. The URL provided in the text box is the URL you should use in OBS, on your phone, etc. This URL is different from the one that appears in your OverlayPlugin.dll tab.
+
+![](https://i.imgur.com/s79ArxT.png)
