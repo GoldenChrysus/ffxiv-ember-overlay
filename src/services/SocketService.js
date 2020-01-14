@@ -29,7 +29,7 @@ class SocketService {
 				uri = uri.substring(0, uri.length - 4);
 			}
 
-			window.location.href = process.env.REACT_APP_REDIRECT_URL + window.location.search.replace(original_uri, uri);
+			window.location.href = `${process.env.REACT_APP_REDIRECT_URL}${process.env.REACT_APP_HTTP_BASE}/` + window.location.search.replace(original_uri, uri);
 
 			return false;
 		}
