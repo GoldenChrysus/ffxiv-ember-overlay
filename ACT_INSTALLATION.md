@@ -62,7 +62,9 @@ ACT should always be run as administrator and excepted from Windows Firewall to 
 
 ## Installing OverlayPlugin
 
-OverlayPlugin allows ACT to show your DPS and other metrics in a visually-pleasing manner over your game (hence, overlay). You will need this in order to use overlays such as Ember Overlay.
+OverlayPlugin allows ACT to show your DPS and other metrics in a visually-pleasing manner over your game (hence, overlay). You will need this in order to use overlays such as Ember Overlay (pctured below):
+
+![](https://i.imgur.com/tye5cGJ.png)
 
 1. Open the Windows file browser, right-click the address bar, choose "Edit Address," and enter `%APPDATA%\Advanced Combat Tracker` -- then hit enter.
 
