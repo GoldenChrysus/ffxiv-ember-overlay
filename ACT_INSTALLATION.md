@@ -58,7 +58,7 @@ ACT should always be run as administrator and excepted from Windows Firewall to 
 
 6. In ACT, click "Plugins" then "FFXIV Settings" then "Test Game Connection." You should receive a message stating the memory signatures were detected and network data is available. This step must be done while FFXIV is running.
 
-![](https://i.imgur.com/oOGboYp.png)
+![](https://i.imgur.com/GyW8GAh.png)
 
 ## Installing OverlayPlugin
 
