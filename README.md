@@ -26,10 +26,10 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 ## Features
 ### Informative tabs for damage, healing, tanking, and raiding.
-![DPS tab](https://i.imgur.com/AXILqda.png "DPS tab")
-![Healing tab](https://i.imgur.com/k6IAXID.png "Healing tab")
-![Tanking tab](https://i.imgur.com/FV0tQRq.png "Tanking tab")
-![Raid tab](https://i.imgur.com/75DV6mX.png "Raid tab")
+![DPS tab](https://i.imgur.com/VkGsr4M.png "DPS tab")
+![Healing tab](https://i.imgur.com/hnpskJi.png "Healing tab")
+![Tanking tab](https://i.imgur.com/drIGeqE.png "Tanking tab")
+![Raid tab](https://i.imgur.com/WzZBNfC.png "Raid tab")
 
 ### Click on any player's name to view detailed statistics.
 ![Detailed statistics](https://i.imgur.com/ZUw1avo.gif "Detailed statistics")
