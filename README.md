@@ -133,7 +133,7 @@ Only follow the instructions for the plugin you chose; do not follow both sets o
 
    - [日本語でOnlinegaming.life](https://onlinegaming.life/ff14/ember-overlay/)
 
-To use this overlay skin, you need Advanced Combat Tracker (ACT) and OverlayPlugin. Please follow the guide based on your scenario:
+To use this overlay skin, you need Advanced Combat Tracker (ACT) and OverlayPlugin. Please follow the guide based on your situation:
 
 ### You don't have ACT or OverlayPlugin
 
@@ -150,7 +150,7 @@ Choose the guide based on your version of OverlayPlugin:
 #### ngld OverlayPlugin
 
 1. Within ACT, navigate to Plugins > OverlayPlugin.dll.
-2. Set your overlay URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ or add a new overlay with the Ember preset selected (presets available in ngld 0.13.0 or later).
+2. Set your overlay URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ or add a new overlay with the Ember preset selected (presets available in ngld OverlayPlugin 0.13.0 or later).
 
 #### hibiyasleep or RainbowMage OverlayPlugin
 
