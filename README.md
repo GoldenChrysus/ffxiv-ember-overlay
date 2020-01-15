@@ -35,7 +35,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Detailed statistics](https://i.imgur.com/Hslset9.gif "Detailed statistics")
 
 ### Customize your experience.
-![Customizable overlay](https://i.imgur.com/XhXqeNB.gif "Customizable overlay")
+![Customizable overlay](https://i.imgur.com/BvZqnNV.gif "Customizable overlay")
 
 ### Collapsible interface to save space and show only your stats.
 ![Collapsible interface](https://i.imgur.com/NI8lenF.gif "Collapsible interface")
