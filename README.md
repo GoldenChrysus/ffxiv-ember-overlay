@@ -160,7 +160,7 @@ Choose the guide based on your version of OverlayPlugin:
 
 ### Older Guides (ACTWebSocket and 0.3.4.0 OverlayPlugin)
 
-If you need to see the old 0.3.4.0 OverlayPlugin or ACTWebSocket guides, they can be accessed [here](https://github.com/GoldenChrysus/ffxiv-ember-overlay/tree/0.15.0-alpha#installation).
+If you need to see the old ACTWebSocket or 0.3.4.0 OverlayPlugin guides, they can be accessed [here](https://github.com/GoldenChrysus/ffxiv-ember-overlay/tree/0.15.0-alpha#installation).
 
 ## Changelog
 
