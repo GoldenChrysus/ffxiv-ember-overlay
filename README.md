@@ -32,7 +32,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Raid tab](https://i.imgur.com/x0x6a7A.png "Raid tab")
 
 ### Click on any player's name to view detailed statistics.
-![Detailed statistics](https://i.imgur.com/ZUw1avo.gif "Detailed statistics")
+![Detailed statistics](https://i.imgur.com/Hslset9.gif "Detailed statistics")
 
 ### Customize your experience.
 ![Customizable overlay](https://i.imgur.com/3E3WA8L.gif "Customizable overlay")
