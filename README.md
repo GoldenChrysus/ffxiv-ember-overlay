@@ -158,6 +158,10 @@ Choose the guide based on your version of OverlayPlugin:
 2. Set the URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
 3. Click "Reload overlay," and the overlay should now be visible in your FFXIV game.
 
+### Older Guides (ACTWebSocket and 0.3.4.0 OverlayPlugin)
+
+If you need to see the old 0.3.4.0 OverlayPlugin or ACTWebSocket guides, they can be accessed [here](https://github.com/GoldenChrysus/ffxiv-ember-overlay/tree/0.15.0-alpha#installation).
+
 ## Changelog
 
 View the full changelog [here](/CHANGELOG.md).
