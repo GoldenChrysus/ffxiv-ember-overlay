@@ -130,3 +130,7 @@ Note: If you know you want to use a different IP address or port, change them ac
 2. Select your desired Web socket overlay from the "Overlay" dropdown. The URL provided in the text box is the URL you should use in OBS, on your phone, etc. This URL is different from the one that appears in your OverlayPlugin.dll tab.
 
 ![](https://i.imgur.com/s79ArxT.png)
+
+3. Navigate to Plugins > OverlayPlugin.dll > Ember Overlay > ACTWS, and check the "This is an overlay that requires ACTWebSocket" option.
+
+![](https://i.imgur.com/8Tsvxux.png)
