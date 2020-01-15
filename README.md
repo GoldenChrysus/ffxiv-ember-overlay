@@ -147,7 +147,7 @@ Please follow [the OverlayPlugin installation guide](https://github.com/GoldenCh
 
 Choose the guide based on your version of OverlayPlugin:
 
-#### ngld's OverlayPlugin
+#### ngld OverlayPlugin
 
 1. Within ACT, navigate to Plugins > OverlayPlugin.dll.
 2. Set your overlay URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ or add a new overlay with the Ember preset selected (presets available in ngld 0.13.0 or later).
