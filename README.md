@@ -127,6 +127,37 @@ Only follow the instructions for the plugin you chose; do not follow both sets o
 17. Click "Open Manager."
 18. In the section entitled "Overlay List," select "Ember Overlay" and click "New." It should then appear in the section entitled "Overlay Windows" and should be visible in your FFXIV game.
     
+## New Installation Steps (DO NOT USE)
+
+#### Other Languages Available
+
+   - [日本語でOnlinegaming.life](https://onlinegaming.life/ff14/ember-overlay/)
+
+To use this overlay skin, you need Advanced Combat Tracker (ACT) and OverlayPlugin. Please follow the guide based on your scenario:
+
+### You don't have ACT or OverlayPlugin
+
+Please follow [the ACT + OverlayPlugin installation guide](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/bleeding-edge/ACT_INSTALLATION.md) from the beginning.
+
+### You already have ACT but need OverlayPlugin
+
+Please follow [the OverlayPlugin installation guide](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/bleeding-edge/ACT_INSTALLATION.md#installing-overlayplugin).
+
+### You already have ACT and OverlayPlugin
+
+Choose the guide based on your version of OverlayPlugin:
+
+#### ngld's OverlayPlugin
+
+1. Within ACT, navigate to Plugins > OverlayPlugin.dll.
+2. Set your overlay URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ or add a new overlay with the Ember preset selected (presets available in ngld 0.13.0 or later).
+
+#### hibiyasleep or RainbowMage OverlayPlugin
+
+1. Within ACT, navigate to Plugins > OverlayPlugin.dll > Mini Parse.
+2. Set the URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
+3. Click "Reload overlay," and the overlay should now be visible in your FFXIV game.
+
 ## Changelog
 
 View the full changelog [here](/CHANGELOG.md).
