@@ -2,18 +2,18 @@
 
 ## 0.15.1-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2020-01-15**
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
-- ?
+- Added better support for ngld OverlayPlugin Web sockets
+    - Alternative URL for Ember Overlay is `http://http.chrysus.xyz/ffxiv/ember-overlay/`
+    - Users on ngld OverlayPlugin using Web sockets will automatically redirect to this URL; no plugin setup changes are necessary
 
 ### UI Changes
-- ?
+- N/A
 
 ### Code Changes
 - Added redirect to non-SSL site for Web socket users on ngld OverlayPlugin
@@ -22,7 +22,7 @@
     - `npm run build:nonssl-staging`
 
 ### Miscellaneous
-- TO DO: Create new ACT/OverlayPlugin installation guide to remove usage of TomRichter guide
+- Created new ACT/OverlayPlugin installation guide
 
 ## 0.15.0-alpha
 
