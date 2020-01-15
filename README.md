@@ -47,7 +47,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![About and changelog](https://i.imgur.com/dMesiHs.gif "About and changelog")
 
 ### Clear encounter data or load sample data to perfect your setup.
-![Clear encounter and load sample data](https://i.imgur.com/6O9aKNE.gif "Clear encounter and load sample data")
+![Clear encounter and load sample data](https://i.imgur.com/MkmkyLm.gif "Clear encounter and load sample data")
 
 ## Installation
 
