@@ -38,7 +38,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Customizable overlay](https://i.imgur.com/3E3WA8L.gif "Customizable overlay")
 
 ### Collapsible interface to save space and show only your stats.
-![Collapsible interface](https://i.imgur.com/VLi8lw7.gif "Collapsible interface")
+![Collapsible interface](https://i.imgur.com/NI8lenF.gif "Collapsible interface")
 
 ### Minimize the entire overlay to the left or right when not in use to free up screen space.
 ![Minimize when not in use](https://i.imgur.com/zymL8Ch.gif "Minimize when not in use")
