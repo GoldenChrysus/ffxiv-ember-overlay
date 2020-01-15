@@ -41,7 +41,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Collapsible interface](https://i.imgur.com/NI8lenF.gif "Collapsible interface")
 
 ### Minimize the entire overlay to the left or right when not in use to free up screen space.
-![Minimize when not in use](https://i.imgur.com/zymL8Ch.gif "Minimize when not in use")
+![Minimize when not in use](https://i.imgur.com/ljo44Se.gif "Minimize when not in use")
 
 ### Easily see the recent changes since your last visit
 ![About and changelog](https://i.imgur.com/dMesiHs.gif "About and changelog")
