@@ -24,11 +24,7 @@ class SocketService {
 		uri = uri.replace(/\/$/, "");
 
 		// Redirect to non-SSL host if on SSL and using an insecure socket
-		if (window.location.protocol === "https:" && uri.split(":")[0] === "ws") {
-			if (uri.substring(uri.length - 4) === "fake") {
-				uri = uri.substring(0, uri.length - 4);
-			}
-
+		if (window.location.protocol === "https:" && uri.split(":")[0] === "ws" && uri.substring(uri.length - 4) !== "fake") {
 			window.location.href = `${process.env.REACT_APP_REDIRECT_URL}${process.env.REACT_APP_HTTP_BASE}/` + window.location.search.replace(original_uri, uri);
 
 			return false;
