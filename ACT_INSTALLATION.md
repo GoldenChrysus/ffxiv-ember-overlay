@@ -1,5 +1,13 @@
 # ACT + OverlayPlugin Installation
 
+## Navigation
+- <a href="#installing-act">Installing ACT</a>
+- <a href="#configuring-windows-permissions">Configuring Windows Permissions</a>
+    - <a href="#run-as-administrator">Run as Administrator</a>
+    - <a href="#add-firewall-exception">Add Firewall Exception</a>
+- <a href="#installing-overlayplugin">Installing OverlayPlugin</a>
+- <a href="#using-the-web-socket">Using the Web Socket</a>
+
 ## Installing ACT
 
 1. [Download ACT](https://advancedcombattracker.com/includes/page-download.php?id=56) and run through its installer.
