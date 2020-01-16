@@ -12,14 +12,23 @@ class SocketService {
 	}
 
 	processUri() {
-		let params = new querystring.parse(window.location.search);
-		let uri    = params["?HOST_PORT"];
+		let params = new querystring.parse(String(window.location.search).substring(1));
+		let uri    = params["HOST_PORT"];
 
 		if (!uri) {
 			return false;
 		}
 
+		let original_uri = uri;
+
 		uri = uri.replace(/\/$/, "");
+
+		// Redirect to non-SSL host if on SSL and using an insecure socket
+		if (window.location.protocol === "https:" && uri.split(":")[0] === "ws" && uri.substring(uri.length - 4) !== "fake") {
+			window.location.href = `${process.env.REACT_APP_REDIRECT_URL}${process.env.REACT_APP_HTTP_BASE}/` + window.location.search.replace(original_uri, uri);
+
+			return false;
+		}
 
 		if (uri.indexOf("MiniParse") === -1) {
 			uri = uri + "/MiniParse";
