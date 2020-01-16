@@ -1,5 +1,3 @@
-#### THIS GUIDE IN DEVELOPMENT. DO NOT USE AS AN OFFICIAL GUIDE UNTIL THIS MESSAGE IS GONE.
-
 # ACT + OverlayPlugin Installation
 
 ## Installing ACT
