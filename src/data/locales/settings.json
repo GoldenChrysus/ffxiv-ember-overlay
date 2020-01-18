@@ -26,7 +26,7 @@
 			"title"       : {
 				"en" : "Metric Names",
 				"pt" : "Metric Names",
-				"cn" : "Metric Names",
+				"cn" : "数据元素名称",
 				"jp" : "Metric Names",
 				"de" : "Metrik Namen",
 				"es" : "Metric Names",
@@ -36,7 +36,7 @@
 				{
 					"en" : "Custom Metric Names",
 					"pt" : "Custom Metric Names",
-					"cn" : "Custom Metric Names",
+					"cn" : "自定义数据元素名称",
 					"jp" : "Custom Metric Names",
 					"de" : "Benutzerdefinierte Metrik Namen",
 					"es" : "Custom Metric Names",
@@ -370,7 +370,7 @@
 		"interface.auto_hide_delay" : {
 			"en" : "Auto-Hide Delay in Seconds",
 			"pt" : "Auto-Hide Delay in Seconds",
-			"cn" : "自动隐藏延迟（以秒为单位）",
+			"cn" : "自动隐藏延迟（秒）",
 			"jp" : "Auto-Hide Delay in Seconds",
 			"de" : "Verzögerung für automatisches Ausblenden in Sekunden",
 			"es" : "Auto-Hide Delay in Seconds",
@@ -633,7 +633,7 @@
 		"metric" : {
 			"en" : "Metric",
 			"pt" : "Metric",
-			"cn" : "Metric",
+			"cn" : "数据元素",
 			"jp" : "Metric",
 			"de" : "Metrik",
 			"es" : "Metric",
@@ -642,7 +642,7 @@
 		"short_name" : {
 			"en" : "Short Name",
 			"pt" : "Short Name",
-			"cn" : "Short Name",
+			"cn" : "缩略名",
 			"jp" : "Short Name",
 			"de" : "Abgekürzter Name",
 			"es" : "Short Name",
@@ -651,7 +651,7 @@
 		"long_name" : {
 			"en" : "Long Name",
 			"pt" : "Long Name",
-			"cn" : "Long Name",
+			"cn" : "全名",
 			"jp" : "Long Name",
 			"de" : "Voller Name",
 			"es" : "Long Name",
@@ -660,7 +660,7 @@
 		"add" : {
 			"en" : "Add",
 			"pt" : "Add",
-			"cn" : "Add",
+			"cn" : "添加",
 			"jp" : "Add",
 			"de" : "Hinzufügen",
 			"es" : "Add",
@@ -669,7 +669,7 @@
 		"delete" : {
 			"en" : "Delete",
 			"pt" : "Delete",
-			"cn" : "Delete",
+			"cn" : "删除",
 			"jp" : "Delete",
 			"de" : "Entfernen",
 			"es" : "Delete",
