@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.15.2-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- Fixed issue causing DPS, HPS, damage taken, heals taken, and deaths to not always sum in the table footer depending on which overlay tab was active
+
+### Features
+- ?
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.15.1-alpha
 
 **Released: 2020-01-15**
