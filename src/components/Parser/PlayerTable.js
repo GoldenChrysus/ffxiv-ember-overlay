@@ -6,6 +6,7 @@ import { changeViewing, changeDetailPlayer, updateState } from "../../redux/acti
 import GameDataProcessor from "../../processors/GameDataProcessor";
 import PlayerProcessor from "../../processors/PlayerProcessor";
 import LocalizationService from "../../services/LocalizationService";
+import Constants from "../../constants/index";
 
 import Player from "./PlayerTable/Player";
 import OverlayInfo from "./PlayerTable/OverlayInfo";
@@ -44,7 +45,7 @@ class PlayerTable extends React.Component {
 					<div className="column" key={key}>{title}</div>
 				);
 
-				if (this.props.sum_columns[table_type].indexOf(key) !== -1) {
+				if (Constants.PlayerMetricsSummable.indexOf(key) !== -1) {
 					footer.push(
 						<div className="column" key={key}>{GameDataProcessor.convertToLocaleFormat(key, +this.props.encounter[key] || 0)}</div>
 					);
@@ -217,7 +218,6 @@ const mapStateToProps = (state) => {
 		icon_blur      : state.settings.interface.blur_job_icons,
 		table_columns  : state.settings.table_columns,
 		sort_columns   : state.settings.sort_columns,
-		sum_columns    : state.settings.sum_columns,
 		collapsed      : state.settings.intrinsic.collapsed,
 		player_blur    : state.settings.intrinsic.player_blur,
 		table_settings : state.settings.table_settings,
