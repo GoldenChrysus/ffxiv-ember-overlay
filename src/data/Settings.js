@@ -94,19 +94,6 @@ const default_settings = {
 			]
 		}
 	},
-	sum_columns : {
-		dps  : [
-			"encdps"
-		],
-		heal : [
-			"enchps"
-		],
-		tank : [
-			"damagetaken",
-			"healstaken",
-			"deaths"
-		]
-	},
 	sort_columns : {
 		dps  : "damage",
 		heal : "healed",

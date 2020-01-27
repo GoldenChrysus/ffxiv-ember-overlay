@@ -220,10 +220,19 @@ const PlayerMetricFractionRules = {
 	}
 }
 
+const PlayerMetricsSummable = [
+	"encdps",
+	"enchps",
+	"damagetaken",
+	"healstaken",
+	"deaths"
+];
+
 export default {
 	GameJobs,
 	PlayerDataCustomValues,
 	PlayerDataTitles,
 	PlayerMetricTypeData,
-	PlayerMetricFractionRules
+	PlayerMetricFractionRules,
+	PlayerMetricsSummable
 };
