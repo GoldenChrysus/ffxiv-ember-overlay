@@ -171,7 +171,7 @@ This list is not exhaustive and generally applies to formatting. Your merge requ
 [GNU General Public License v3.0 only](/LICENSE)
 
 ## Copyright
-Copyright (C) 2019, Patrick Golden. All rights reserved.
+Copyright (C) 2019-2020, Patrick Golden. All rights reserved.
 
 Copyrights licensed under GNU General Public License v3.0 only.
 
