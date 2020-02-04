@@ -8,12 +8,13 @@ class PlayerProcessor  {
 	getShortName(name, type) {
 		name = name.split(" ");
 
+		let first_name = (["short_first", "short_both"].indexOf(type) !== -1) ? name[0].slice(0, 1) + "." : name[0];
+
 		if (name.length === 1) {
-			return (["short_first", "short_both"].indexOf(type) !== -1) ? name[0].slice(0, 1) + "." : name[0];
+			return first_name;
 		}
 
-		let first_name = (["short_first", "short_both"].indexOf(type) !== -1) ? name[0].slice(0, 1) + "." : name[0];
-		let last_name  = name.pop();
+		let last_name = name.pop();
 
 		if ((["short_last", "short_both"].indexOf(type) !== -1)) {
 			last_name = last_name.slice(0, 1) + ".";
