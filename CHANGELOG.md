@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.15.3-alpha
+
+**Released: 2020-02-09**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- Updated translations for Portuguese and Japanese
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.15.2-alpha
 
 **Released: 2020-01-26**
