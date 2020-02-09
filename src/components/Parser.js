@@ -46,6 +46,10 @@ class Parser extends React.Component {
 			#container {
 				opacity: ${opacity};
 			}
+
+			.resizeHandle {
+				background-image: url("img/handle.png");
+			}
 		`;
 
 		if (collapsed) {
