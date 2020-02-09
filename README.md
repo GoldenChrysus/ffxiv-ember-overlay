@@ -175,4 +175,4 @@ Copyright (C) 2019-2020, Patrick Golden. All rights reserved.
 
 Copyrights licensed under GNU General Public License v3.0 only.
 
-See the accompanying [LICENSE](/LICENSE) file for terms. 
+See the accompanying [LICENSE](/LICENSE) file for terms.
