@@ -25,9 +25,9 @@
 		"metric-names"  : {
 			"title"       : {
 				"en" : "Metric Names",
-				"pt" : "Metric Names",
+				"pt" : "Métricos Personalizados",
 				"cn" : "数据元素名称",
-				"jp" : "Metric Names",
+				"jp" : "計量表示",
 				"de" : "Metrik Namen",
 				"es" : "Metric Names",
 				"fr" : "Noms des Mesures"
@@ -35,9 +35,9 @@
 			"subsections" : [
 				{
 					"en" : "Custom Metric Names",
-					"pt" : "Custom Metric Names",
+					"pt" : "Nomes Métricos Personalizados",
 					"cn" : "自定义数据元素名称",
-					"jp" : "Custom Metric Names",
+					"jp" : "カスタム計量名",
 					"de" : "Benutzerdefinierte Metrik Namen",
 					"es" : "Custom Metric Names",
 					"fr" : "Noms des Mesures Personnalisés"
@@ -360,18 +360,18 @@
 		},
 		"interface.auto_hide" : {
 			"en" : "Auto-Hide Overlay After Inactivity (Set Below)",
-			"pt" : "Auto-Hide Overlay After Inactivity (Set Below)",
+			"pt" : "Esconder Automáticamente o Overlay Após Inatividade (Defina Abaixo)",
 			"cn" : "脱战后自动隐藏战斗悬浮窗（设置如下）",
-			"jp" : "Auto-Hide Overlay After Inactivity (Set Below)",
+			"jp" : "自動的に隠す（以下で設定）",
 			"de" : "Overlay automatisch bei Inaktivität ausblenden (unten einstellen)",
 			"es" : "Auto-Hide Overlay After Inactivity (Set Below)",
 			"fr" : "Cacher automatiquement l'Overlay après inactivité (à définir ci-dessous)"
 		},
 		"interface.auto_hide_delay" : {
 			"en" : "Auto-Hide Delay in Seconds",
-			"pt" : "Auto-Hide Delay in Seconds",
+			"pt" : "Esconder Automáticamente em Segundos",
 			"cn" : "自动隐藏延迟（秒）",
-			"jp" : "Auto-Hide Delay in Seconds",
+			"jp" : "何秒で自動的に隠す",
 			"de" : "Verzögerung für automatisches Ausblenden in Sekunden",
 			"es" : "Auto-Hide Delay in Seconds",
 			"fr" : "Délai en Seconde"
@@ -641,36 +641,36 @@
 		},
 		"short_name" : {
 			"en" : "Short Name",
-			"pt" : "Short Name",
+			"pt" : "Abreviação",
 			"cn" : "缩略名",
-			"jp" : "Short Name",
+			"jp" : "短縮形",
 			"de" : "Abgekürzter Name",
 			"es" : "Short Name",
 			"fr" : "Abréviation"
 		},
 		"long_name" : {
 			"en" : "Long Name",
-			"pt" : "Long Name",
+			"pt" : "Nome Completo",
 			"cn" : "全名",
-			"jp" : "Long Name",
+			"jp" : "延長形",
 			"de" : "Voller Name",
 			"es" : "Long Name",
 			"fr" : "Nom Complet"
 		},
 		"add" : {
 			"en" : "Add",
-			"pt" : "Add",
+			"pt" : "Adicionar",
 			"cn" : "添加",
-			"jp" : "Add",
+			"jp" : "新規",
 			"de" : "Hinzufügen",
 			"es" : "Add",
 			"fr" : "Ajouter"
 		},
 		"delete" : {
 			"en" : "Delete",
-			"pt" : "Delete",
+			"pt" : "Deletar",
 			"cn" : "删除",
-			"jp" : "Delete",
+			"jp" : "削除",
 			"de" : "Entfernen",
 			"es" : "Delete",
 			"fr" : "Supprimer"
