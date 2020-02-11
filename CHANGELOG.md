@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.1?.?-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- Fixed 404 error for resize handle image
+
+### Features
+- TODO: Add "copy" and "paste" buttons for exporting/importing settings data
+
+### UI Changes
+- New-version indicator (colored gear) will no longer trigger when overlay is running in OBS
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.15.3-alpha
 
 **Released: 2020-02-09**
