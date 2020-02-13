@@ -20,6 +20,7 @@ const initial_state = {
 		encounter_data_history : {},
 		detail_player          : {},
 		overlayplugin          : !!window.OverlayPluginApi,
+		overlayplugin_author   : "hibiyasleep",
 		new_version            : false,
 	},
 	settings          : {}
