@@ -30,8 +30,10 @@ class SocketService {
 			return false;
 		}
 
+		console.log(uri);
+
 		if (uri.indexOf("MiniParse") === -1) {
-			uri = uri + "/MiniParse";
+			// uri = uri + "/MiniParse";
 		}
 
 		return uri;
@@ -59,6 +61,14 @@ class SocketService {
 		this.reconnect_delay = BASE_RECONNECT_DELAY;
 
 		this.setId();
+
+		this.socket.send(JSON.stringify({
+			call   : "subscribe",
+			events : [
+				"CombatData",
+				"EnmityAggroList"
+			]
+		}));
 	}
 
 	setId() {

@@ -13,17 +13,27 @@ class SocketMessageProcessor {
 			return;
 		}
 
-		let type = data.msgtype;
+		let type = data.msgtype || data.type;
 
-		if (["SendCharName", "CombatData"].indexOf(type) === -1) {
+		if (["SendCharName", "CombatData", "EnmityAggroList"].indexOf(type) === -1) {
 			return;
 		}
 
 		switch (type) {
 			case "CombatData":
-				let detail = data.msg;
+				let detail = data.msg || data;
+
+				console.log(detail);
 
 				store.dispatch(parseGameData(detail));
+				break;
+
+			case "EnmityAggroList":
+				if (!data.AggroList.length) {
+					break;
+				}
+
+				console.log(data);
 				break;
 
 			case "SendCharName":
