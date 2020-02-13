@@ -15,15 +15,13 @@ class SocketMessageProcessor {
 
 		let type = data.msgtype || data.type;
 
-		if (["SendCharName", "CombatData", "EnmityAggroList"].indexOf(type) === -1) {
+		if (["SendCharName", "CombatData", "EnmityAggroList", "ChangePrimaryPlayer"].indexOf(type) === -1) {
 			return;
 		}
 
 		switch (type) {
 			case "CombatData":
 				let detail = data.msg || data;
-
-				console.log(detail);
 
 				store.dispatch(parseGameData(detail));
 				break;
@@ -36,8 +34,9 @@ class SocketMessageProcessor {
 				console.log(data);
 				break;
 
+			case "ChangePrimaryPlayer":
 			case "SendCharName":
-				let name       = data.msg.charName;
+				let name       = (type === "ChangePrimaryPlayer") ? data.charName : data.msg.charName;
 				let state_data = {
 					key   : "internal.character_name",
 					value : name

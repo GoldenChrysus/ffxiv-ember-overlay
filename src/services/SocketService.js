@@ -66,7 +66,8 @@ class SocketService {
 			call   : "subscribe",
 			events : [
 				"CombatData",
-				"EnmityAggroList"
+				"EnmityAggroList",
+				"ChangePrimaryPlayer"
 			]
 		}));
 	}
