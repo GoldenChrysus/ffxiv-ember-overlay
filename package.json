@@ -39,25 +39,18 @@
 	},
 	"scripts": {
 		"copy:changelog": "cp CHANGELOG.md public/logs/",
-
 		"prestart": "npm run copy:changelog",
 		"start": "env-cmd -e default,development craco start",
-
 		"prebuild:development": "npm run copy:changelog",
 		"build:development": "env-cmd -e default,development craco build",
-
 		"prebuild:staging": "npm run copy:changelog",
 		"build:staging": "env-cmd -e default,staging craco build",
-
 		"prebuild:nonssl-staging": "npm run copy:changelog",
 		"build:nonssl-staging": "env-cmd -e default,staging,nonssl craco build",
-
 		"prebuild:nonssl": "npm run copy:changelog",
 		"build:nonssl": "env-cmd -e default,production,nonssl craco build",
-
 		"prebuild": "npm run copy:changelog",
 		"build": "env-cmd -e default,production craco build",
-
 		"test": "craco test",
 		"eject": "craco eject"
 	},
