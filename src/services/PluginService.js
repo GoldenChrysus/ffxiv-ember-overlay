@@ -18,7 +18,11 @@ class PluginService {
 	}
 
 	subscribe(callback) {
-		if (!this.is_overlayplugin ||!this.is_ngld) {
+		if (String(window.location.search).indexOf("HOST_PORT") === -1) {
+			document.addEventListener("onOverlayDataUpdate", callback);
+		}
+
+		if (!this.is_overlayplugin || !this.is_ngld) {
 			return;
 		}
 

@@ -17,9 +17,7 @@ import PluginService from "../../services/PluginService";
 class Container extends React.Component {
 	componentDidMount() {
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
-		document.addEventListener("onOverlayDataUpdate", this.parseData.bind(this));
-
-		(new PluginService()).subscribe();
+		(new PluginService()).subscribe(this.parseData.bind(this));
 		this.props.socket_service.initialize();
 	}
 
@@ -48,12 +46,6 @@ class Container extends React.Component {
 
 			default:
 				break;
-		}
-
-		let header;
-
-		if (false) {
-			header = <Header title="Ember Overlay"/>;
 		}
 
 		let footer = [];

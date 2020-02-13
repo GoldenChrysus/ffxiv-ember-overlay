@@ -3,7 +3,6 @@ import { parseGameData, updateState } from "../redux/actions/index";
 
 class SocketMessageProcessor {
 	processMessage(e) {
-		console.log(e);
 		let data;
 
 		try {

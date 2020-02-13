@@ -11,7 +11,7 @@ class SocketService {
 		this.message_processor = new SocketMessageProcessor();
 		this.uri               = uri || this.processUri();
 		this.reconnect_delay   = BASE_RECONNECT_DELAY;
-		this.try_for_ngld      = true;
+		this.try_for_ngld      = (String(window.location.search).indexOf("fake") === -1);
 	}
 
 	processUri() {
@@ -35,9 +35,7 @@ class SocketService {
 
 		console.log(uri);
 
-		if (this.try_for_ngld && store.getState().internal.overlayplugin_author === "ngld" && uri.indexOf("/fake") !== -1) {
-			uri.replace("/fake", ":10501/ws");
-		} else if (this.try_for_ngld && uri.indexOf("/ws") === -1) {
+		if (this.try_for_ngld && uri.indexOf("/ws") === -1) {
 			uri = uri + "/ws";
 		} else if (uri.indexOf("MiniParse") === -1) {
 			uri = uri + "/MiniParse";
