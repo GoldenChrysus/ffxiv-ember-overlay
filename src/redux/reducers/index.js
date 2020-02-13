@@ -9,10 +9,10 @@ import SampleGameData from "../../constants/SampleGameData";
 import SampleHistoryData from "../../constants/SampleHistoryData";
 
 const initial_state = {
-	socket_service    : new SocketService(),
-	settings_data     : Settings,
-	last_activity     : (new Date()).getTime() / 1000,
-	internal          : {
+	socket_service : new SocketService(),
+	settings_data  : Settings,
+	last_activity  : (new Date()).getTime() / 1000,
+	internal       : {
 		viewing                : "tables",
 		character_name         : "YOU",
 		rank                   : "N/A",
@@ -23,7 +23,7 @@ const initial_state = {
 		overlayplugin_author   : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
 		new_version            : false,
 	},
-	settings          : {}
+	settings : {}
 };
 
 function rootReducer(state, action) {

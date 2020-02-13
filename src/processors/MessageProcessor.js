@@ -1,21 +1,23 @@
 import store from "../redux/store/index";
 import { parseGameData, updateState } from "../redux/actions/index";
 
-class SocketMessageProcessor {
+class MessageProcessor {
 	processMessage(e) {
-		let data;
+		let data = e;
 
-		try {
-			data = JSON.parse(e.data);
-		} catch (e) { }
+		if (typeof data !== "object" || (data !== null && data.data)) {
+			try {
+				data = JSON.parse(e.data);
+			} catch (e) { }
+		}
 
-		if (typeof data !== "object") {
+		if (typeof data !== "object" || data === null) {
 			return;
 		}
 
 		let type = data.msgtype || data.type;
 
-		if (["SendCharName", "CombatData", "EnmityAggroList", "ChangePrimaryPlayer"].indexOf(type) === -1) {
+		if (["SendCharName", "CombatData", "EnmityAggroList", "EnmityTargetData", "ChangePrimaryPlayer"].indexOf(type) === -1) {
 			return;
 		}
 
@@ -51,4 +53,4 @@ class SocketMessageProcessor {
 	}
 }
 
-export default SocketMessageProcessor;
+export default new MessageProcessor();

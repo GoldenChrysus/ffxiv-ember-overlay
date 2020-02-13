@@ -4,7 +4,6 @@ import { parseGameData, updateState } from "../../redux/actions/index";
 import { ContextMenuTrigger } from "react-contextmenu";
 import ReactTooltip from "react-tooltip";
 
-import Header from "./Header";
 import ContextMenu from "./Container/Menu";
 import Import from "./Container/Import";
 import GameState from "./GameState";
@@ -17,7 +16,7 @@ import PluginService from "../../services/PluginService";
 class Container extends React.Component {
 	componentDidMount() {
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
-		(new PluginService()).subscribe(this.parseData.bind(this));
+		(new PluginService()).subscribe();
 		this.props.socket_service.initialize();
 	}
 
@@ -66,7 +65,6 @@ class Container extends React.Component {
 						<PlaceholderToggle type="bottom left"/>
 						<PlaceholderToggle type="bottom right"/>
 						<div id="inner">
-							{header}
 							<GameState encounter={encounter} active={active} rank={this.props.internal.rank} show_rank={this.props.settings.interface.top_right_rank}/>
 							<div id="content">
 								{content}
@@ -82,6 +80,8 @@ class Container extends React.Component {
 	}
 
 	parseData(e) {
+		console.log(e);
+		if (!e) return;
 		this.props.parseGameData(e.detail);
 	}
 

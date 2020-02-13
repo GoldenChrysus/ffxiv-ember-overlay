@@ -1,6 +1,5 @@
-import SocketMessageProcessor from "../processors/SocketMessageProcessor";
+import MessageProcessor from "../processors/MessageProcessor";
 import store from "../redux/store/index";
-import { updateState } from "../redux/actions/index";
 
 const querystring = require("querystring");
 
@@ -8,10 +7,9 @@ const BASE_RECONNECT_DELAY = 300;
 
 class SocketService {
 	constructor(uri) {
-		this.message_processor = new SocketMessageProcessor();
-		this.uri               = uri || this.processUri();
-		this.reconnect_delay   = BASE_RECONNECT_DELAY;
-		this.try_for_ngld      = (String(window.location.search).indexOf("fake") === -1);
+		this.reconnect_delay = BASE_RECONNECT_DELAY;
+		this.try_for_ngld    = (String(window.location.search).indexOf("fake") === -1);
+		this.uri             = uri || this.processUri();
 	}
 
 	processUri() {
@@ -33,8 +31,6 @@ class SocketService {
 			return false;
 		}
 
-		console.log(uri);
-
 		if (this.try_for_ngld && uri.indexOf("/ws") === -1) {
 			uri = uri + "/ws";
 		} else if (uri.indexOf("MiniParse") === -1) {
@@ -51,7 +47,7 @@ class SocketService {
 
 		this.socket = new WebSocket(this.uri);
 
-		this.socket.onmessage = this.message_processor.processMessage;
+		this.socket.onmessage = MessageProcessor.processMessage;
 		this.socket.onclose   = () => { setTimeout(this.reconnect.bind(this), this.reconnect_delay); }
 		this.socket.onopen    = this.connected.bind(this);
 	}
@@ -68,15 +64,6 @@ class SocketService {
 	}
 
 	connected() {
-		if (this.try_for_ngld) {
-			let state_data = {
-				key   : "internal.overlayplugin_author",
-				value : "ngld"
-			};
-
-			store.dispatch(updateState(state_data));
-		}
-
 		this.try_for_ngld    = false;
 		this.reconnect_delay = BASE_RECONNECT_DELAY;
 
@@ -93,6 +80,10 @@ class SocketService {
 	}
 
 	establishSubscriptions() {
+		if (store.getState().internal.overlayplugin) {
+			return;
+		}
+
 		this.socket.send(
 			JSON.stringify({
 				call   : "subscribe",

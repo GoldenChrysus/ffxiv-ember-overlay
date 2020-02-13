@@ -1,5 +1,6 @@
 import store from "../redux/store/index";
 
+import MessageProcessor from "../processors/MessageProcessor";
 import OverlayPluginService from "./PluginService/OverlayPluginService";
 import OverlayProcService from "./PluginService/OverlayProcService";
 
@@ -17,19 +18,23 @@ class PluginService {
 		this.plugin_service.splitEncounter();
 	}
 
-	subscribe(callback) {
-		if (String(window.location.search).indexOf("HOST_PORT") === -1) {
-			document.addEventListener("onOverlayDataUpdate", callback);
-		}
+	subscribe() {
+		let callback = MessageProcessor.processMessage;
 
 		if (!this.is_overlayplugin || !this.is_ngld) {
+			document.addEventListener("onOverlayDataUpdate", callback);
 			return;
 		}
+
+		console.log("got here");
+
+		window.__OverlayCallback = callback;
 
 		window.OverlayPluginApi.callHandler(
 			JSON.stringify({
 				call   : "subscribe",
 				events : [
+					"CombatData",
 					"EnmityAggroList",
 					"ChangePrimaryPlayer"
 				]
