@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { parseGameData } from "../../redux/actions/index";
+import { parseGameData, updateState } from "../../redux/actions/index";
 import { ContextMenuTrigger } from "react-contextmenu";
 import ReactTooltip from "react-tooltip";
 
@@ -12,12 +12,14 @@ import PlayerTable from "./PlayerTable";
 import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
 import PlaceholderToggle from "./Placeholder/Toggle";
+import PluginService from "../../services/PluginService";
 
 class Container extends React.Component {
 	componentDidMount() {
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
 		document.addEventListener("onOverlayDataUpdate", this.parseData.bind(this));
 
+		(new PluginService()).subscribe();
 		this.props.socket_service.initialize();
 	}
 

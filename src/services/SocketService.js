@@ -35,7 +35,9 @@ class SocketService {
 
 		console.log(uri);
 
-		if (this.try_for_ngld && uri.indexOf("/ws") === -1) {
+		if (this.try_for_ngld && store.getState().internal.overlayplugin_author === "ngld" && uri.indexOf("/fake") !== -1) {
+			uri.replace("/fake", ":10501/ws");
+		} else if (this.try_for_ngld && uri.indexOf("/ws") === -1) {
 			uri = uri + "/ws";
 		} else if (uri.indexOf("MiniParse") === -1) {
 			uri = uri + "/MiniParse";
