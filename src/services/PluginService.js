@@ -26,8 +26,6 @@ class PluginService {
 			return;
 		}
 
-		console.log("got here");
-
 		window.__OverlayCallback = callback;
 
 		window.OverlayPluginApi.callHandler(
