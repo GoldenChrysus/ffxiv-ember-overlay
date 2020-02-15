@@ -14,7 +14,7 @@ class SocketService {
 
 	processUri() {
 		let params = new querystring.parse(String(window.location.search).substring(1));
-		let uri    = params["HOST_PORT"];
+		let uri    = params["HOST_PORT"] || params["OVERLAY_WS"];
 
 		if (!uri) {
 			return false;
@@ -41,7 +41,7 @@ class SocketService {
 	}
 
 	initialize() {
-		if (!this.uri) {
+		if (!this.uri || store.getState().internal.overlayplugin) {
 			return;
 		}
 
@@ -80,10 +80,6 @@ class SocketService {
 	}
 
 	establishSubscriptions() {
-		if (store.getState().internal.overlayplugin) {
-			return;
-		}
-
 		this.socket.send(
 			JSON.stringify({
 				call   : "subscribe",
