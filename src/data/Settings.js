@@ -134,6 +134,13 @@ const default_settings = {
 class Settings {
 	loadSettings() {
 		return new Promise((resolve, reject) => {
+			const params = new URLSearchParams(window.location.search);
+			const s = params.get('settings');
+			if (s !== null) {
+				this.importSettings(s)
+				resolve();
+				return;
+			}
 			localForage.getItem("settings_cache")
 				.then((data) => {
 					this.mergeSettings(data);
