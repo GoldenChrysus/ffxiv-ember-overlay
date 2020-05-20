@@ -86,6 +86,7 @@ class SocketService {
 				events : [
 					"CombatData",
 					"EnmityAggroList",
+					"EnmityTargetData",
 					"ChangePrimaryPlayer"
 				]
 			})

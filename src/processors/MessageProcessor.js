@@ -29,11 +29,22 @@ class MessageProcessor {
 				break;
 
 			case "EnmityAggroList":
-				if (!data.AggroList.length) {
+				if (data.AggroList && !data.AggroList.length) {
 					break;
 				}
 
 				console.log(data);
+				// update aggro list
+				break;
+
+			case "EnmityTargetData":
+				if (!data.Entries || !data.Entries.length) {
+					break;
+				}
+
+				console.log(data);
+				// manipulate game data to update enmity
+				// other option is to store enmity separately and pull data into game data on CombatData event (probably less CPU-intensive)
 				break;
 
 			case "ChangePrimaryPlayer":

@@ -86,6 +86,24 @@ class GameDataProcessor  {
 		state.internal.encounter_data_history = current_history;
 	}
 
+	processEnmity(data) {
+		let sorted_players = PlayerProcessor.sortPlayers(data.Entries, undefined, "Enmity");
+		let max_value      = 0;
+		let players        = {};
+
+		for (let player of sorted_players) {
+			if (!max_value) {
+				max_value = player.Enmity || 100;
+			}
+
+			let percent = (player.Enmity / max_value) * 100;
+
+			players[player.Name] = percent;
+		}
+
+		return players;
+	}
+
 	convertToLocaleFormat(key, value) {
 		const state = store.getState();
 

@@ -34,6 +34,7 @@ class PluginService {
 				events : [
 					"CombatData",
 					"EnmityAggroList",
+					"EnmityTargetData",
 					"ChangePrimaryPlayer"
 				]
 			}),
