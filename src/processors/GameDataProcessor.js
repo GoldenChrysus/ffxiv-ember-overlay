@@ -96,7 +96,7 @@ class GameDataProcessor  {
 				max_value = player.Enmity || 100;
 			}
 
-			let percent = (player.Enmity / max_value) * 100;
+			let percent = ((player.Enmity / max_value) * 100).toFixed(2);
 
 			players[player.Name] = percent;
 		}
