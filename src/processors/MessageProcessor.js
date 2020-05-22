@@ -33,7 +33,7 @@ class MessageProcessor {
 					break;
 				}
 
-				console.log(data);
+				// console.log(data);
 				// update aggro list
 				break;
 

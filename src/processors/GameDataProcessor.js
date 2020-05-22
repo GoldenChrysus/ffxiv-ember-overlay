@@ -106,8 +106,16 @@ class GameDataProcessor  {
 
 	injectEnmity(data, state) {
 		for (let player_name in data.Combatant) {
-			data.Combatant[player_name].enmity_percent = state.internal.enmity[player_name] || 0;
+			let real_player_name = player_name;
+
+			if (player_name === "YOU") {
+				player_name = PlayerProcessor.getDataValue("name", data.Combatant[player_name], undefined, undefined, undefined, state);
+			}
+
+			data.Combatant[real_player_name].enmity_percent = state.internal.enmity[player_name] || 0;
 		}
+
+		console.log(data);
 
 		return data;
 	}
