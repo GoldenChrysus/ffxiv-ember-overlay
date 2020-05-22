@@ -1,5 +1,5 @@
 import store from "../redux/store/index";
-import { parseGameData, updateState } from "../redux/actions/index";
+import { parseGameData, parseEnmity, updateState } from "../redux/actions/index";
 
 class MessageProcessor {
 	processMessage(e) {
@@ -45,6 +45,7 @@ class MessageProcessor {
 				console.log(data);
 				// manipulate game data to update enmity
 				// other option is to store enmity separately and pull data into game data on CombatData event (probably less CPU-intensive)
+				store.dispatch(parseEnmity(data));
 				break;
 
 			case "ChangePrimaryPlayer":

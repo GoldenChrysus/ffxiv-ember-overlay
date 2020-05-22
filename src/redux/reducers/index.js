@@ -17,6 +17,7 @@ const initial_state = {
 		character_name         : "YOU",
 		rank                   : "N/A",
 		game                   : {},
+		enmity                 : {},
 		encounter_data_history : {},
 		detail_player          : {},
 		overlayplugin          : !!window.OverlayPluginApi,
@@ -59,6 +60,7 @@ function rootReducer(state, action) {
 
 		case "parseGameData":
 			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language);
+			action.payload = GameDataProcessor.injectEnmity(action.payload, state);
 
 			if (!action.payload.Encounter || !state.internal.game.Encounter || +action.payload.Encounter.DURATION < +state.internal.game.Encounter.DURATION) {
 				state.internal.encounter_data_history = {};
@@ -80,6 +82,13 @@ function rootReducer(state, action) {
 			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language);
 
 			new_state = createNewState(state, "internal.game", tmp_action);
+
+			break;
+
+		case "parseEnmity":
+			action.payload = GameDataProcessor.processEnmity(action.payload);
+
+			new_state = createNewState(state, full_key, action);
 
 			break;
 

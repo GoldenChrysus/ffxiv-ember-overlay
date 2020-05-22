@@ -104,6 +104,14 @@ class GameDataProcessor  {
 		return players;
 	}
 
+	injectEnmity(data, state) {
+		for (let player_name in data.Combatant) {
+			data.Combatant[player_name].enmity_percent = state.internal.enmity[player_name] || 0;
+		}
+
+		return data;
+	}
+
 	convertToLocaleFormat(key, value) {
 		const state = store.getState();
 

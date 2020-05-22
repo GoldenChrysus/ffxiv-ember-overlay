@@ -449,6 +449,36 @@
 			"long"  : "Dégats Reçu Par Seconde"
 		}
 	},
+	"enmity"             : {
+		"en" : {
+			"short" : "Enmity",
+			"long"  : "Enmity"
+		},
+		"pt" : {
+			"short" : "Enmity",
+			"long"  : "Enmity"
+		},
+		"cn" : {
+			"short" : "Enmity",
+			"long"  : "Enmity"
+		},
+		"jp" : {
+			"short" : "Enmity",
+			"long"  : "Enmity"
+		},
+		"de" : {
+			"short" : "Enmity",
+			"long"  : "Enmity"
+		},
+		"es" : {
+			"short" : "Enmity",
+			"long"  : "Enmity"
+		},
+		"fr" : {
+			"short" : "Enmity",
+			"long"  : "Enmity"
+		}
+	},
 	"healed"             : {
 		"en" : {
 			"short" : "Heal",
