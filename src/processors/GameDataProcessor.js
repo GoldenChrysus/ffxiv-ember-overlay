@@ -115,8 +115,6 @@ class GameDataProcessor  {
 			data.Combatant[real_player_name].enmity_percent = state.internal.enmity[player_name] || 0;
 		}
 
-		console.log(data);
-
 		return data;
 	}
 
