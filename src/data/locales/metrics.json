@@ -449,7 +449,7 @@
 			"long"  : "Dégats Reçu Par Seconde"
 		}
 	},
-	"enmity"             : {
+	"enmity_percent"     : {
 		"en" : {
 			"short" : "Enmity",
 			"long"  : "Enmity"
