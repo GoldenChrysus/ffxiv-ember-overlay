@@ -573,6 +573,18 @@
 	max-width    : 100px;
 }
 
+#container #inner #content #player-table .row.player > .column > .column-percent-bar {
+	width: 100%;
+	height: 7px;
+	box-sizing: border-box;
+	/* border: 1px solid #fff; */
+	background-image: linear-gradient(#3a6229, #3a6229);
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: bottom;
+	transition: background-size 0.25s ease-in-out;
+}
+
 #container #inner #content #player-table .row.player > .column:nth-child(2),
 #container #inner #content #player-table.grid .row.player .player-data > .column:nth-child(2),
 #container #inner #content #player-table.grid .row.player .stat-data > .column span {
