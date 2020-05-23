@@ -24,6 +24,14 @@ export function parseEnmity(payload) {
 	};
 }
 
+export function parseAggroList(payload) {
+	return {
+		type : "parseAggroList",
+		key  : "internal.aggro",
+		payload
+	};
+}
+
 export function updateSetting(payload) {
 	return {
 		type      : "setSetting",

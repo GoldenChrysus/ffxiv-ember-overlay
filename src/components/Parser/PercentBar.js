@@ -11,7 +11,7 @@ class PercentBar extends React.Component {
 		let percent = this.props.percent;
 
 		return(
-			<div className="column-percent-bar" style={{backgroundSize: `${percent}% 100%`}}></div>
+			<div className="column-percent-bar" key="column-percent-bar" style={{backgroundSize: `${percent}% 100%`}}></div>
 		);
 	}
 }
