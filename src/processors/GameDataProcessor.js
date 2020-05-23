@@ -87,6 +87,10 @@ class GameDataProcessor  {
 	}
 
 	processEnmity(data) {
+		for (let i in data.Entries) {
+			data.Entries[i].name = data.Entries[i].Name;
+		}
+
 		let sorted_players = PlayerProcessor.sortPlayers(data.Entries, undefined, "Enmity");
 		let max_value      = 0;
 		let players        = {};
