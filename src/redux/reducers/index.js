@@ -1,4 +1,5 @@
 import clone from "lodash.clonedeep";
+import isEqual from "lodash.isequal";
 
 import Settings from "../../data/Settings";
 import SocketService from "../../services/SocketService";
@@ -88,6 +89,10 @@ function rootReducer(state, action) {
 
 		case "parseEnmity":
 			action.payload = GameDataProcessor.processEnmity(action.payload);
+
+			if (isEqual(action.payload, state.internal.enmity)) {
+				return state;
+			}
 
 			new_state = createNewState(state, full_key, action);
 
