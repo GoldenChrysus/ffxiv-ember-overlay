@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import $ from "jquery";
-import { changeViewing, changeDetailPlayer, updateState } from "../../redux/actions/index";
 
 import GameDataProcessor from "../../processors/GameDataProcessor";
 import PlayerProcessor from "../../processors/PlayerProcessor";
@@ -17,7 +16,6 @@ class AggroTable extends React.Component {
 		let rows           = [];
 		let player_blur    = (this.props.player_blur);
 		let sort_column    = this.props.sort_columns[table_type];
-		let sorted_players = (this.props.players) ? PlayerProcessor.sortPlayers(this.props.players, this.props.encounter, sort_column) : [];
 		let short_names    = this.props.table_settings.general.table.short_names;
 		let percent_bars   = this.props.table_settings.general.table.percent_bars;
 
@@ -29,22 +27,21 @@ class AggroTable extends React.Component {
 			);
 		}
 
-		for (let player of sorted_players) {
+		for (let monster of this.props.monsters) {
 			let is_current_player = false;
 
-			if (player.name === "YOU" || player.name === this.props.player_name) {
-				found             = true;
+			if (monster.Target.Name === "YOU" || monster.Target.Name === this.props.player_name) {
 				is_current_player = true;
 
-				player._is_current = true;
-			} else if (player._is_current) {
-				player._is_current = false;
+				monster._is_current = true;
+			} else if (monster._is_current) {
+				monster._is_current = false;
 			}
 
 			let blur = (player_blur && !is_current_player);
 
 			rows.push(
-				<Player key={player.name} percent={percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
+				<Player key={monster.ID} player={player} columns={this.props.table_columns[table_type]} blur={blur} short_names={short_names}/>
 			);
 		}
 
@@ -70,18 +67,9 @@ class AggroTable extends React.Component {
 	}
 }
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		updateState        : (data) => {
-			dispatch(updateState(data));
-		}
-	}
-};
-
 const mapStateToProps = (state) => {
 	return {
 		player_name    : state.settings.interface.player_name,
-		icon_blur      : state.settings.interface.blur_job_icons,
 		table_columns  : state.settings.table_columns,
 		sort_columns   : state.settings.sort_columns,
 		collapsed      : state.settings.intrinsic.collapsed,
@@ -91,4 +79,4 @@ const mapStateToProps = (state) => {
 	};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(AggroTable);
+export default connect(mapStateToProps)(AggroTable);
