@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1?.?-alpha
+## 0.16.0-alpha
 
 **Released: [in development]**
 
@@ -10,6 +10,7 @@
 - Fixed 404 error for resize handle image
 
 ### Features
+- Added enmity and aggro data for ngld OverlayPlugin users
 - TODO: Add "copy" and "paste" buttons for exporting/importing settings data
 
 ### UI Changes
