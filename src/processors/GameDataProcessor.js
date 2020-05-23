@@ -19,10 +19,18 @@ class GameDataProcessor  {
 	}
 
 	normalizeLocales(data, language) {
-		if (!data.Encounter) {
-			return data;
+		if (data.Encounter) {
+			return this.normalizeGameData(data, language);
 		}
 
+		if (data.AggroList) {
+			return this.normalizeAggroList(data);
+		}
+
+		return data;
+	}
+
+	normalizeGameData(data, language) {
 		data.Encounter.name             = LocalizationService.getOverlayText("encounter", language);
 		data.Encounter.Job              = "ENC";
 		data.Encounter.OverHealPct      = "0%";
@@ -45,6 +53,18 @@ class GameDataProcessor  {
 		}
 
 		return data;
+	}
+
+	normalizeAggroList(data) {
+		for (let key of ["CurrentHP", "MaxHP"]) {
+			for (let i in data.AggroList) {
+				if (data.AggroList[i][key] !== undefined) {
+					data.AggroList[i][key] = this.normalizeFieldLocale(data.AggroList[i][key]);
+				}
+			}
+		}
+
+		return data.AggroList;
 	}
 
 	appendHistory(data, state) {

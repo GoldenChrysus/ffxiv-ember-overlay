@@ -60,7 +60,7 @@ class Player extends React.Component {
 					{name}
 				</div>
 			);
-		}
+		};
 		let statData   = () => {
 			if (!is_raid) {
 				return columns;
@@ -72,7 +72,7 @@ class Player extends React.Component {
 					{columns}
 				</div>
 			);
-		}
+		};
 		let percentBar = () => {
 			if (!this.props.percent_bars) {
 				return "";
@@ -90,7 +90,7 @@ class Player extends React.Component {
 					height              : "0"
 				}}></div>
 			);
-		}
+		};
 
 		return (
 			<div className={"row player " + player_type} data-job={job} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>

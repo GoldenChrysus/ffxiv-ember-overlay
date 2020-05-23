@@ -1,5 +1,5 @@
 import store from "../redux/store/index";
-import { parseGameData, parseEnmity, updateState } from "../redux/actions/index";
+import { parseGameData, parseEnmity, parseAggroList, updateState } from "../redux/actions/index";
 
 class MessageProcessor {
 	processMessage(e) {
@@ -34,7 +34,7 @@ class MessageProcessor {
 				}
 
 				// console.log(data);
-				// update aggro list
+				store.dispatch(parseAggroList(data));
 				break;
 
 			case "EnmityTargetData":

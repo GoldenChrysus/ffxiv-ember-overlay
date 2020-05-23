@@ -98,6 +98,13 @@ function rootReducer(state, action) {
 
 			break;
 
+		case "parseAggroList":
+			action.payload = GameDataProcessor.normalizeAggroList(action.payload);
+
+			new_state = createNewState(state, full_key, action);
+
+			break;
+
 		default:
 			new_state = createNewState(state, full_key, action);
 			break;
