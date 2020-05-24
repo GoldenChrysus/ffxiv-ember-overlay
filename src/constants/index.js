@@ -88,6 +88,10 @@ let formatMaxHeal = function(player) {
 	return value;
 }
 
+let calculateHealthPercent = function(unit) {
+	return (unit.CurrentHP / unit.MaxHP).toFixed(2);
+}
+
 const GameJobs = {
 	ARC : {
 		role : "dps"
@@ -182,7 +186,12 @@ const PlayerDataCustomValues = {
 	"enctps"             : calculateTankPerSecond
 };
 
-const PlayerDataTitles = require("../data/locales/metrics.json");
+const MonsterDataCustomDataValues = {
+	"health_percent" : calculateHealthPercent
+};
+
+const PlayerDataTitles  = require("../data/locales/player-metrics.json");
+const MonsterDataTitles = require("../data/locales/monster-metrics.json");
 
 const PlayerMetricTypeData = {
 	dps  : [
@@ -234,5 +243,7 @@ export default {
 	PlayerDataTitles,
 	PlayerMetricTypeData,
 	PlayerMetricFractionRules,
-	PlayerMetricsSummable
+	PlayerMetricsSummable,
+	MonsterDataCustomDataValues,
+	MonsterDataTitles
 };

@@ -1,0 +1,92 @@
+{
+	"Name"           : {
+		"en" : {
+			"short" : "Name",
+			"long"  : "Name"
+		},
+		"pt" : {
+			"short" : "Name",
+			"long"  : "Name"
+		},
+		"cn" : {
+			"short" : "Name",
+			"long"  : "Name"
+		},
+		"jp" : {
+			"short" : "Name",
+			"long"  : "Name"
+		},
+		"de" : {
+			"short" : "Name",
+			"long"  : "Name"
+		},
+		"es" : {
+			"short" : "Name",
+			"long"  : "Name"
+		},
+		"fr" : {
+			"short" : "Name",
+			"long"  : "Name"
+		}
+	},
+	"CurrentHP"      : {
+		"en" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"pt" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"cn" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"jp" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"de" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"es" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"fr" : {
+			"short" : "HP",
+			"long"  : "Health"
+		}
+	},
+	"health_percent" : {
+		"en" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"pt" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"cn" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"jp" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"de" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"es" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"fr" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		}
+	}
+}

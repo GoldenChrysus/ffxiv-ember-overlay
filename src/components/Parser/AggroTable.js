@@ -7,17 +7,15 @@ import PlayerProcessor from "../../processors/PlayerProcessor";
 import LocalizationService from "../../services/LocalizationService";
 import Constants from "../../constants/index";
 
-import Player from "./PlayerTable/Player";
+import Monster from "./AggroTable/Monster";
 import OverlayInfo from "./PlayerTable/OverlayInfo";
 
 class AggroTable extends React.Component {
 	render() {
-		let header         = [];
-		let rows           = [];
-		let player_blur    = (this.props.player_blur);
-		let sort_column    = this.props.sort_columns[table_type];
-		let short_names    = this.props.table_settings.general.table.short_names;
-		let percent_bars   = this.props.table_settings.general.table.percent_bars;
+		let header      = [];
+		let rows        = [];
+		let player_blur = (this.props.player_blur);
+		let short_names = this.props.table_settings.general.table.short_names;
 
 		for (let key of this.props.table_columns[table_type]) {
 			let title = LocalizationService.getPlayerDataTitle(key, "short");
@@ -41,7 +39,7 @@ class AggroTable extends React.Component {
 			let blur = (player_blur && !is_current_player);
 
 			rows.push(
-				<Player key={monster.ID} player={player} columns={this.props.table_columns[table_type]} blur={blur} short_names={short_names}/>
+				<Monster key={monster.ID} monster={monster} columns={this.props.table_columns[table_type]} blur={blur} short_names={short_names}/>
 			);
 		}
 
