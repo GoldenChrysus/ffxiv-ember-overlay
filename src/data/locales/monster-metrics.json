@@ -89,7 +89,7 @@
 			"long"  : "Health Percent"
 		}
 	},
-	"player_name"    : {
+	"player_Name"    : {
 		"en" : {
 			"short" : "Target",
 			"long"  : "Target"

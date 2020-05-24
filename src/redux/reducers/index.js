@@ -8,6 +8,7 @@ import GameDataProcessor from "../../processors/GameDataProcessor";
 import ThemeService from "../../services/ThemeService";
 import SampleGameData from "../../constants/SampleGameData";
 import SampleHistoryData from "../../constants/SampleHistoryData";
+import SampleAggroData from "../../constants/SampleAggroData";
 
 const initial_state = {
 	socket_service : new SocketService(),
@@ -83,7 +84,11 @@ function rootReducer(state, action) {
 
 			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language);
 
-			new_state = createNewState(state, "internal.game", tmp_action);
+			new_state  = createNewState(state, "internal.game", tmp_action);
+			tmp_action = {
+				payload : GameDataProcessor.normalizeAggroList(SampleAggroData)
+			};
+			new_state  = createNewState(new_state, "internal.aggro", tmp_action);
 
 			break;
 

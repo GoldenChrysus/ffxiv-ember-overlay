@@ -89,7 +89,7 @@ let formatMaxHeal = function(player) {
 }
 
 let calculateHealthPercent = function(unit) {
-	return (unit.CurrentHP / unit.MaxHP).toFixed(2);
+	return ((unit.CurrentHP / unit.MaxHP) * 100).toFixed(2);
 }
 
 const GameJobs = {

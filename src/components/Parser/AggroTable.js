@@ -21,12 +21,18 @@ class AggroTable extends React.Component {
 		let columns     = [
 			"Name",
 			"health_percent",
-			"player_name",
-			"CurrentHP"
+			"CurrentHP",
+			"player_Name"
 		];
 
 		for (let key of columns) {
 			let title = LocalizationService.getMonsterDataTitle(key, "short");
+
+			if (key === "player_Name") {
+				header.push(
+					<div className="column icon" key="job-icon"></div>
+				);
+			}
 
 			header.push(
 				<div className="column" key={key}>{title}</div>
@@ -39,7 +45,7 @@ class AggroTable extends React.Component {
 			let blur = (player_blur && !monster._is_current);
 
 			rows.push(
-				<Monster key={monster.ID} monster={monster} columns={columns} blur={blur} short_names={short_names}/>
+				<Monster key={monster.ID} monster={monster} columns={columns} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} encounter={this.props.encounter}/>
 			);
 		}
 
@@ -63,6 +69,7 @@ const mapStateToProps = (state) => {
 	return {
 		encounter      : state.internal.game,
 		player_blur    : state.settings.intrinsic.player_blur,
+		icon_blur      : state.settings.interface.blur_job_icons,
 		table_settings : state.settings.table_settings
 	};
 };
