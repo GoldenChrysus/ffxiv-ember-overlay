@@ -47,7 +47,7 @@ class AggroTable extends React.Component {
 
 		return (
 			<React.Fragment>
-				<div id="player-table" ref="aggro_table">
+				<div id="player-table" className="monster-table" ref="aggro_table">
 					<div className="row header">
 						{header}
 					</div>
@@ -61,6 +61,7 @@ class AggroTable extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
+		encounter      : state.internal.game,
 		player_blur    : state.settings.intrinsic.player_blur,
 		table_settings : state.settings.table_settings
 	};
