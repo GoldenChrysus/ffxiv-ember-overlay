@@ -4,7 +4,7 @@ React overlay for the [OverlayPlugin](https://github.com/hibiyasleep/OverlayPlug
 [![GitHub](https://img.shields.io/github/license/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/master/LICENSE)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/ffxiv-ember-overlay/bleeding-edge.svg?style=flat-square)
-[![Works with OverlayPlugin](https://img.shields.io/badge/works%20with-OverlayPlugin-blue.svg?style=flat-square)](https://github.com/hibiyasleep/OverlayPlugin)
+[![Works with OverlayPlugin](https://img.shields.io/badge/works%20with-OverlayPlugin-blue.svg?style=flat-square)](https://github.com/ngld/OverlayPlugin)
 [![Works with ACTWebSocket](https://img.shields.io/badge/works%20with-ACTWebSocket-blue.svg?style=flat-square)](https://github.com/ZCube/ACTWebSocket)
 [![Discord](https://img.shields.io/discord/603399999723929600.svg?style=flat-square&logo=discord)](https://discord.io/emberoverlay)
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)
