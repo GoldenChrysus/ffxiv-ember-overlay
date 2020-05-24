@@ -61,13 +61,8 @@ class AggroTable extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		player_name    : state.settings.interface.player_name,
-		table_columns  : state.settings.table_columns,
-		sort_columns   : state.settings.sort_columns,
-		collapsed      : state.settings.intrinsic.collapsed,
 		player_blur    : state.settings.intrinsic.player_blur,
-		table_settings : state.settings.table_settings,
-		rank           : state.internal.rank
+		table_settings : state.settings.table_settings
 	};
 };
 
