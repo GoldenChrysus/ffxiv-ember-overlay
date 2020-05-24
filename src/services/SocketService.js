@@ -34,7 +34,7 @@ class SocketService {
 
 		if (this.try_for_ngld && uri.indexOf("/ws") === -1) {
 			uri = uri + "/ws";
-		} else if (uri.indexOf("MiniParse") === -1) {
+		} else if (uri.indexOf("MiniParse") === -1 && uri.indexOf("/ws") === -1) {
 			uri = uri + "/MiniParse";
 		}
 
@@ -65,7 +65,7 @@ class SocketService {
 	}
 
 	connected() {
-		if (this.try_for_ngld) {
+		if (this.try_for_ngld || this.uri.indexOf("/ws") !== -1) {
 			store.dispatch(updateState({
 				key   : "internal.overlayplugin_author",
 				value : "ngld"
