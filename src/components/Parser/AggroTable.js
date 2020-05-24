@@ -34,17 +34,9 @@ class AggroTable extends React.Component {
 		}
 
 		for (let monster of this.props.monsters) {
-			let is_current_player = false;
+			monster._is_current = monster.Target.isMe;
 
-			if (monster.Target.Name === "YOU" || monster.Target.Name === this.props.player_name) {
-				is_current_player = true;
-
-				monster._is_current = true;
-			} else if (monster._is_current) {
-				monster._is_current = false;
-			}
-
-			let blur = (player_blur && !is_current_player);
+			let blur = (player_blur && !monster._is_current);
 
 			rows.push(
 				<Monster key={monster.ID} monster={monster} columns={columns} blur={blur} short_names={short_names}/>
