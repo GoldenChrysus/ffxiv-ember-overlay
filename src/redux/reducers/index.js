@@ -115,10 +115,6 @@ function rootReducer(state, action) {
 			break;
 	}
 
-	if (new_state) {
-		console.log(new_state.internal);
-	}
-
 	return Object.assign(
 		{},
 		new_state || state
