@@ -1,5 +1,3 @@
-import store from "../redux/store/index";
-
 import Constants from "../constants/index";
 
 import GameDataProcessor from "./GameDataProcessor";

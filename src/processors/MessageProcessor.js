@@ -17,13 +17,14 @@ class MessageProcessor {
 
 		let type = data.msgtype || data.type;
 
-		if (["SendCharName", "CombatData", "EnmityAggroList", "EnmityTargetData", "ChangePrimaryPlayer"].indexOf(type) === -1) {
+		if (["onOverlayDataUpdate", "SendCharName", "CombatData", "EnmityAggroList", "EnmityTargetData", "ChangePrimaryPlayer"].indexOf(type) === -1) {
 			return;
 		}
 
 		switch (type) {
+			case "onOverlayDataUpdate":
 			case "CombatData":
-				let detail = data.msg || data;
+				let detail = (type === "onOverlayDataUpdate") ? data.detail : data.msg || data;
 
 				store.dispatch(parseGameData(detail));
 				break;

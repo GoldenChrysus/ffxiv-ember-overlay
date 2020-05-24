@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import { parseGameData, updateState } from "../../redux/actions/index";
 import { ContextMenuTrigger } from "react-contextmenu";
 import ReactTooltip from "react-tooltip";
 
@@ -93,16 +92,8 @@ class Container extends React.Component {
 	}
 }
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		parseGameData : (data) => {
-			dispatch(parseGameData(data));
-		}
-	}
-};
-
 const mapStateToProps = (state) => {
 	return state;
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Container);
+export default connect(mapStateToProps)(Container);

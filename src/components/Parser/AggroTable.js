@@ -1,11 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import $ from "jquery";
 
-import GameDataProcessor from "../../processors/GameDataProcessor";
-import PlayerProcessor from "../../processors/PlayerProcessor";
 import LocalizationService from "../../services/LocalizationService";
-import Constants from "../../constants/index";
 
 import Monster from "./AggroTable/Monster";
 import OverlayInfo from "./PlayerTable/OverlayInfo";

@@ -2,8 +2,6 @@ import React from "react";
 
 import PlayerProcessor from "../../../processors/PlayerProcessor";
 import MonsterProcessor from "../../../processors/MonsterProcessor";
-import LocalizationService from "../../../services/LocalizationService";
-import Constants from "../../../constants/index";
 import PercentBar from "../PercentBar";
 
 class Monster extends React.Component {
