@@ -10,7 +10,7 @@ const SampleAggroData = {
 			"CurrentHP": 10556,
 			"MaxHP": 778420,
 			"Target": {
-				"ID": 275567323,
+				"ID": -1,
 				"OwnerID": 0,
 				"Name": "Maple",
 				"Enmity": 0,
@@ -30,21 +30,21 @@ const SampleAggroData = {
 					"BuffID": 725,
 					"Stack": 0,
 					"Timer": 16.262764,
-					"ActorID": 275567323,
+					"ActorID": -1,
 					"isOwner": false
 				},
 				{
 					"BuffID": 725,
 					"Stack": 0,
 					"Timer": 20.20478,
-					"ActorID": 275614939,
+					"ActorID": -2,
 					"isOwner": false
 				},
 				{
 					"BuffID": 248,
 					"Stack": 0,
 					"Timer": 8.200774,
-					"ActorID": 275614939,
+					"ActorID": -2,
 					"isOwner": false
 				},
 				{
@@ -58,14 +58,14 @@ const SampleAggroData = {
 					"BuffID": 843,
 					"Stack": 0,
 					"Timer": 26.829771,
-					"ActorID": 275466948,
+					"ActorID": -3,
 					"isOwner": false
 				},
 				{
 					"BuffID": 248,
 					"Stack": 0,
 					"Timer": 12.3677731,
-					"ActorID": 275567323,
+					"ActorID": -1,
 					"isOwner": false
 				}
 			]
