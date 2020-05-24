@@ -1,1083 +1,1370 @@
 const SampleHistoryData = {
-	"1565729902": {
+	"1590339444": {
 		"Encounter": {
-			"encdps": 13756.15,
-			"enchps": 10262.21,
-			"enctps": 2226.51
+			"encdps": 1636.59,
+			"enchps": 1321.2,
+			"enctps": 669.55
 		},
-		"Tamer": {
-			"encdps": 2541.05,
-			"enchps": 80.34,
-			"enctps": 121.4
+		"Yojimbo": {
+			"encdps": 377.17,
+			"enchps": 5.2,
+			"enctps": 76.56
 		},
-		"Edgeboi Supreme": {
-			"encdps": 2420.38,
-			"enchps": 491.41,
-			"enctps": 1396.3
-		},
-		"YOU": {
-			"encdps": 1953.56,
+		"Maple": {
+			"encdps": 281.77,
 			"enchps": 0,
-			"enctps": 134.76
-		},
-		"Uber Rage": {
-			"encdps": 1812.64,
-			"enchps": 323.31,
-			"enctps": 85.35
-		},
-		"Oui Oui": {
-			"encdps": 1775.98,
-			"enchps": 80.38,
-			"enctps": 123
-		},
-		"EXPLOSION": {
-			"encdps": 1311.53,
-			"enchps": 80.34,
-			"enctps": 117.52
-		},
-		"Rez Bot": {
-			"encdps": 1050.14,
-			"enchps": 3078.02,
-			"enctps": 126.64
-		},
-		"Other Rez Bot": {
-			"encdps": 890.87,
-			"enchps": 6128.41,
-			"enctps": 121.54
-		}
-	},
-	"1565729917": {
-		"Encounter": {
-			"encdps": 13876.34,
-			"enchps": 10933.27,
-			"enctps": 3121.06
-		},
-		"Tamer": {
-			"encdps": 2447.4,
-			"enchps": 72.38,
-			"enctps": 219.61
-		},
-		"Edgeboi Supreme": {
-			"encdps": 2389.15,
-			"enchps": 467.45,
-			"enctps": 1428.32
+			"enctps": 260.76
 		},
 		"YOU": {
-			"encdps": 2068.95,
+			"encdps": 245.32,
+			"enchps": 27.59,
+			"enctps": 75.71
+		},
+		"Brian O'Conner": {
+			"encdps": 219.08,
+			"enchps": 4.65,
+			"enctps": 111.17
+		},
+		"Jean Baptiste": {
+			"encdps": 173.74,
 			"enchps": 0,
-			"enctps": 241.59
+			"enctps": 20.4
 		},
-		"Uber Rage": {
-			"encdps": 1797.88,
-			"enchps": 313.74,
-			"enctps": 156.32
-		},
-		"Oui Oui": {
-			"encdps": 1778.56,
-			"enchps": 72.41,
-			"enctps": 219.29
-		},
-		"EXPLOSION": {
-			"encdps": 1557.04,
-			"enchps": 72.38,
-			"enctps": 218.83
-		},
-		"Rez Bot": {
-			"encdps": 946.07,
-			"enchps": 3623.3,
-			"enctps": 323.39
-		},
-		"Other Rez Bot": {
-			"encdps": 891.29,
-			"enchps": 6311.61,
-			"enctps": 313.73
-		}
-	},
-	"1565729932": {
-		"Encounter": {
-			"encdps": 13876.34,
-			"enchps": 12036.59,
-			"enctps": 3121.06
-		},
-		"Tamer": {
-			"encdps": 2447.4,
-			"enchps": 72.38,
-			"enctps": 219.61
-		},
-		"Edgeboi Supreme": {
-			"encdps": 2389.15,
-			"enchps": 467.45,
-			"enctps": 1428.32
-		},
-		"YOU": {
-			"encdps": 2068.95,
+		"Uther": {
+			"encdps": 163.73,
 			"enchps": 0,
-			"enctps": 241.59
+			"enctps": 17.34
 		},
-		"Uber Rage": {
-			"encdps": 1797.88,
-			"enchps": 313.74,
-			"enctps": 156.32
+		"Galileo": {
+			"encdps": 115.97,
+			"enchps": 478.31,
+			"enctps": 67.35
 		},
-		"Oui Oui": {
-			"encdps": 1778.56,
-			"enchps": 72.41,
-			"enctps": 219.29
+		"Gandalf": {
+			"encdps": 53.44,
+			"enchps": 721.49,
+			"enctps": 40.25
 		},
-		"EXPLOSION": {
-			"encdps": 1557.04,
-			"enchps": 72.38,
-			"enctps": 218.83
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 6.36,
+			"enchps": 0,
+			"enctps": 0
 		},
-		"Rez Bot": {
-			"encdps": 946.07,
-			"enchps": 4726.61,
-			"enctps": 323.39
-		},
-		"Other Rez Bot": {
-			"encdps": 891.29,
-			"enchps": 6311.61,
-			"enctps": 313.73
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 83.96,
+			"enctps": 0
 		}
 	},
-	"1565729951": {
+	"1590339459": {
 		"Encounter": {
-			"encdps": 13876.34,
-			"enchps": 13768.52,
-			"enctps": 4186.77
+			"encdps": 1673.3,
+			"enchps": 1338.28,
+			"enctps": 664.39
 		},
-		"Tamer": {
-			"encdps": 2447.4,
-			"enchps": 265.39,
-			"enctps": 219.61
+		"Yojimbo": {
+			"encdps": 365.93,
+			"enchps": 5.05,
+			"enctps": 74.28
 		},
-		"Edgeboi Supreme": {
-			"encdps": 2389.15,
-			"enchps": 467.45,
-			"enctps": 2494.02
+		"Maple": {
+			"encdps": 290.5,
+			"enchps": 0,
+			"enctps": 267.79
 		},
 		"YOU": {
-			"encdps": 2068.95,
-			"enchps": 212.32,
-			"enctps": 241.59
+			"encdps": 251.64,
+			"enchps": 26.76,
+			"enctps": 73.46
 		},
-		"Uber Rage": {
-			"encdps": 1797.88,
-			"enchps": 595.6,
-			"enctps": 156.32
+		"Brian O'Conner": {
+			"encdps": 222.54,
+			"enchps": 4.51,
+			"enctps": 107.85
 		},
-		"Oui Oui": {
-			"encdps": 1778.56,
-			"enchps": 265.53,
-			"enctps": 219.29
+		"Jean Baptiste": {
+			"encdps": 187.29,
+			"enchps": 0,
+			"enctps": 19.79
 		},
-		"EXPLOSION": {
-			"encdps": 1557.04,
-			"enchps": 265.39,
-			"enctps": 218.83
+		"Uther": {
+			"encdps": 173.7,
+			"enchps": 0,
+			"enctps": 16.83
 		},
-		"Rez Bot": {
-			"encdps": 946.07,
-			"enchps": 5195.3,
-			"enctps": 323.39
+		"Galileo": {
+			"encdps": 118.17,
+			"enchps": 474.71,
+			"enctps": 65.34
 		},
-		"Other Rez Bot": {
-			"encdps": 891.29,
-			"enchps": 6501.54,
-			"enctps": 313.73
+		"Gandalf": {
+			"encdps": 57.37,
+			"enchps": 745.79,
+			"enctps": 39.05
+		},
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 6.17,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 81.46,
+			"enctps": 0
 		}
 	},
-	"1565729966": {
+	"1590339474": {
 		"Encounter": {
-			"encdps": 10164.45,
-			"enchps": 9676.46,
-			"enctps": 2866.54
+			"encdps": 1700.15,
+			"enchps": 1334.08,
+			"enctps": 656.5
 		},
-		"Tamer": {
-			"encdps": 1931.88,
-			"enchps": 179.62,
-			"enctps": 148.64
+		"Yojimbo": {
+			"encdps": 358.49,
+			"enchps": 4.9,
+			"enctps": 72.13
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1617.05,
-			"enchps": 316.38,
-			"enctps": 1688.02
+		"Maple": {
+			"encdps": 293.74,
+			"enchps": 0,
+			"enctps": 268.63
 		},
 		"YOU": {
-			"encdps": 1516.84,
-			"enchps": 143.71,
-			"enctps": 163.51
+			"encdps": 254.62,
+			"enchps": 25.99,
+			"enctps": 71.33
 		},
-		"Oui Oui": {
-			"encdps": 1373.94,
-			"enchps": 179.72,
-			"enctps": 148.42
+		"Brian O'Conner": {
+			"encdps": 219.61,
+			"enchps": 4.38,
+			"enctps": 107.49
 		},
-		"Uber Rage": {
-			"encdps": 1348.04,
-			"enchps": 418.38,
-			"enctps": 138.61
+		"Jean Baptiste": {
+			"encdps": 194.1,
+			"enchps": 0,
+			"enctps": 19.22
 		},
-		"EXPLOSION": {
-			"encdps": 1073.65,
-			"enchps": 179.62,
-			"enctps": 148.11
+		"Uther": {
+			"encdps": 182.67,
+			"enchps": 0,
+			"enctps": 16.34
 		},
-		"Rez Bot": {
-			"encdps": 699.8,
-			"enchps": 3516.33,
-			"enctps": 218.88
+		"Galileo": {
+			"encdps": 127.7,
+			"enchps": 460.97,
+			"enctps": 63.45
 		},
-		"Other Rez Bot": {
-			"encdps": 603.25,
-			"enchps": 4742.7,
-			"enctps": 212.34
+		"Gandalf": {
+			"encdps": 63.22,
+			"enchps": 758.74,
+			"enctps": 37.92
+		},
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 5.99,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 79.1,
+			"enctps": 0
 		}
 	},
-	"1565729981": {
+	"1590339489": {
 		"Encounter": {
-			"encdps": 10098.21,
-			"enchps": 10239.28,
-			"enctps": 3407.42
+			"encdps": 1760.28,
+			"enchps": 1341.74,
+			"enctps": 644.36
 		},
-		"Tamer": {
-			"encdps": 2038.56,
-			"enchps": 165.49,
-			"enctps": 228.44
+		"Yojimbo": {
+			"encdps": 367.07,
+			"enchps": 4.76,
+			"enctps": 69.97
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1557.06,
-			"enchps": 311.12,
-			"enctps": 1567.21
+		"Maple": {
+			"encdps": 299.61,
+			"enchps": 0,
+			"enctps": 268.11
 		},
 		"YOU": {
-			"encdps": 1489.9,
-			"enchps": 132.4,
-			"enctps": 250.41
+			"encdps": 264.86,
+			"enchps": 25.21,
+			"enctps": 69.19
 		},
-		"Oui Oui": {
-			"encdps": 1394.93,
-			"enchps": 165.58,
-			"enctps": 228.06
+		"Brian O'Conner": {
+			"encdps": 224.93,
+			"enchps": 4.25,
+			"enctps": 104.27
 		},
-		"Uber Rage": {
-			"encdps": 1332.07,
-			"enchps": 399.76,
-			"enctps": 255.2
+		"Jean Baptiste": {
+			"encdps": 208.6,
+			"enchps": 0,
+			"enctps": 18.64
 		},
-		"EXPLOSION": {
-			"encdps": 1040.18,
-			"enchps": 165.49,
-			"enctps": 231.3
+		"Uther": {
+			"encdps": 190.56,
+			"enchps": 0,
+			"enctps": 15.85
 		},
-		"Rez Bot": {
-			"encdps": 689.71,
-			"enchps": 3935.51,
-			"enctps": 294.47
+		"Galileo": {
+			"encdps": 132.4,
+			"enchps": 460.42,
+			"enctps": 61.55
 		},
-		"Other Rez Bot": {
-			"encdps": 555.8,
-			"enchps": 4963.92,
-			"enctps": 352.31
+		"Gandalf": {
+			"encdps": 66.44,
+			"enchps": 770.38,
+			"enctps": 36.78
+		},
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 5.81,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 76.73,
+			"enctps": 0
 		}
 	},
-	"1565729996": {
+	"1590339504": {
 		"Encounter": {
-			"encdps": 10415.85,
-			"enchps": 9998.58,
-			"enctps": 3181.54
+			"encdps": 1836.91,
+			"enchps": 1351.65,
+			"enctps": 626.76
 		},
-		"Tamer": {
-			"encdps": 2108.51,
-			"enchps": 151.85,
-			"enctps": 209.6
+		"Yojimbo": {
+			"encdps": 382.14,
+			"enchps": 4.63,
+			"enctps": 68.05
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1563.9,
-			"enchps": 317.13,
-			"enctps": 1437.96
-		},
-		"Oui Oui": {
-			"encdps": 1546.41,
-			"enchps": 151.93,
-			"enctps": 209.25
+		"Maple": {
+			"encdps": 306.56,
+			"enchps": 0,
+			"enctps": 260.79
 		},
 		"YOU": {
-			"encdps": 1542.77,
-			"enchps": 121.48,
-			"enctps": 229.76
+			"encdps": 276.13,
+			"enchps": 24.52,
+			"enctps": 67.3
 		},
-		"Uber Rage": {
-			"encdps": 1386.31,
-			"enchps": 407.89,
-			"enctps": 289.3
+		"Brian O'Conner": {
+			"encdps": 234.53,
+			"enchps": 4.13,
+			"enctps": 101.42
 		},
-		"EXPLOSION": {
-			"encdps": 1095.01,
-			"enchps": 151.85,
-			"enctps": 212.23
+		"Jean Baptiste": {
+			"encdps": 215.69,
+			"enchps": 0,
+			"enctps": 18.13
 		},
-		"Rez Bot": {
-			"encdps": 662.97,
-			"enchps": 4063.27,
-			"enctps": 270.18
+		"Uther": {
+			"encdps": 199.98,
+			"enchps": 0,
+			"enctps": 15.42
 		},
-		"Other Rez Bot": {
-			"encdps": 509.96,
-			"enchps": 4633.19,
-			"enctps": 323.26
+		"Galileo": {
+			"encdps": 140.8,
+			"enchps": 447.84,
+			"enctps": 59.87
+		},
+		"Gandalf": {
+			"encdps": 74.26,
+			"enchps": 795.9,
+			"enctps": 35.78
+		},
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 6.83,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 74.63,
+			"enctps": 0
 		}
 	},
-	"1565730011": {
+	"1590339520": {
 		"Encounter": {
-			"encdps": 10611.92,
-			"enchps": 9714.56,
-			"enctps": 3329.3
+			"encdps": 1844.97,
+			"enchps": 1415.92,
+			"enctps": 643.18
 		},
-		"Tamer": {
-			"encdps": 2149.9,
-			"enchps": 141.63,
-			"enctps": 195.5
+		"Yojimbo": {
+			"encdps": 384.01,
+			"enchps": 8.18,
+			"enctps": 73.28
+		},
+		"Maple": {
+			"encdps": 304.89,
+			"enchps": 0,
+			"enctps": 259.37
 		},
 		"YOU": {
-			"encdps": 1669.7,
-			"enchps": 113.31,
-			"enctps": 214.29
+			"encdps": 274.63,
+			"enchps": 24.39,
+			"enctps": 75.55
 		},
-		"Oui Oui": {
-			"encdps": 1585.79,
-			"enchps": 141.7,
-			"enctps": 195.17
+		"Brian O'Conner": {
+			"encdps": 235.06,
+			"enchps": 4.11,
+			"enctps": 100.87
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1520.81,
-			"enchps": 295.78,
-			"enctps": 1377.33
+		"Jean Baptiste": {
+			"encdps": 221.62,
+			"enchps": 0,
+			"enctps": 18.03
 		},
-		"Uber Rage": {
-			"encdps": 1414.22,
-			"enchps": 404.5,
-			"enctps": 486
+		"Uther": {
+			"encdps": 198.89,
+			"enchps": 0,
+			"enctps": 15.33
 		},
-		"EXPLOSION": {
-			"encdps": 1177.51,
-			"enchps": 141.63,
-			"enctps": 225.63
+		"Galileo": {
+			"encdps": 140.03,
+			"enchps": 475.66,
+			"enctps": 59.54
 		},
-		"Rez Bot": {
-			"encdps": 618.35,
-			"enchps": 4154.68,
-			"enctps": 333.88
+		"Gandalf": {
+			"encdps": 77.93,
+			"enchps": 829.35,
+			"enctps": 41.2
 		},
-		"Other Rez Bot": {
-			"encdps": 475.64,
-			"enchps": 4321.34,
-			"enctps": 301.5
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.9,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 74.22,
+			"enctps": 0
 		}
 	},
-	"1565730026": {
+	"1590339535": {
 		"Encounter": {
-			"encdps": 10528.26,
-			"enchps": 9820.79,
-			"enctps": 3290.28
+			"encdps": 1856.18,
+			"enchps": 1396.99,
+			"enctps": 613.19
 		},
-		"Tamer": {
-			"encdps": 2130.38,
-			"enchps": 131.51,
-			"enctps": 181.53
+		"Yojimbo": {
+			"encdps": 388.26,
+			"enchps": 7.8,
+			"enctps": 69.86
+		},
+		"Maple": {
+			"encdps": 306.9,
+			"enchps": 0,
+			"enctps": 247.27
 		},
 		"YOU": {
-			"encdps": 1688.89,
-			"enchps": 105.21,
-			"enctps": 223.09
+			"encdps": 268.41,
+			"enchps": 23.25,
+			"enctps": 72.03
 		},
-		"Oui Oui": {
-			"encdps": 1594.98,
-			"enchps": 131.58,
-			"enctps": 181.23
+		"Brian O'Conner": {
+			"encdps": 232.69,
+			"enchps": 3.92,
+			"enctps": 96.17
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1493.97,
-			"enchps": 297.36,
-			"enctps": 1347.32
+		"Jean Baptiste": {
+			"encdps": 228.43,
+			"enchps": 0,
+			"enctps": 17.19
 		},
-		"Uber Rage": {
-			"encdps": 1450.21,
-			"enchps": 397.42,
-			"enctps": 508.95
+		"Uther": {
+			"encdps": 201.46,
+			"enchps": 0,
+			"enctps": 14.62
 		},
-		"EXPLOSION": {
-			"encdps": 1130.83,
-			"enchps": 131.51,
-			"enctps": 234.15
+		"Galileo": {
+			"encdps": 139.09,
+			"enchps": 457.21,
+			"enctps": 56.77
 		},
-		"Rez Bot": {
-			"encdps": 574.18,
-			"enchps": 4212.31,
-			"enctps": 310.03
+		"Gandalf": {
+			"encdps": 83.41,
+			"enchps": 834.04,
+			"enctps": 39.28
 		},
-		"Other Rez Bot": {
-			"encdps": 464.81,
-			"enchps": 4413.89,
-			"enctps": 303.97
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.53,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 70.76,
+			"enctps": 0
 		}
 	},
-	"1565730041": {
+	"1590339551": {
 		"Encounter": {
-			"encdps": 10760.99,
-			"enchps": 9952.72,
-			"enctps": 3434.34
+			"encdps": 1926.91,
+			"enchps": 1428.75,
+			"enctps": 632.42
 		},
-		"Tamer": {
-			"encdps": 2239.62,
-			"enchps": 123.26,
-			"enctps": 170.14
+		"Yojimbo": {
+			"encdps": 402.78,
+			"enchps": 7.68,
+			"enctps": 68.79
+		},
+		"Maple": {
+			"encdps": 315.22,
+			"enchps": 0,
+			"enctps": 246.52
 		},
 		"YOU": {
-			"encdps": 1810.71,
-			"enchps": 98.61,
-			"enctps": 274.04
+			"encdps": 280.55,
+			"enchps": 22.89,
+			"enctps": 72.63
 		},
-		"Oui Oui": {
-			"encdps": 1598.31,
-			"enchps": 123.32,
-			"enctps": 236.16
+		"Jean Baptiste": {
+			"encdps": 238.35,
+			"enchps": 0,
+			"enctps": 22.29
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1510.01,
-			"enchps": 302.19,
-			"enctps": 1283.83
+		"Brian O'Conner": {
+			"encdps": 237.3,
+			"enchps": 5.26,
+			"enctps": 99.66
 		},
-		"Uber Rage": {
-			"encdps": 1463.65,
-			"enchps": 383.02,
-			"enctps": 545.08
+		"Uther": {
+			"encdps": 209.99,
+			"enchps": 0,
+			"enctps": 17.38
 		},
-		"EXPLOSION": {
-			"encdps": 1122.69,
-			"enchps": 123.26,
-			"enctps": 219.46
+		"Galileo": {
+			"encdps": 147.18,
+			"enchps": 468.29,
+			"enctps": 61.26
 		},
-		"Rez Bot": {
-			"encdps": 580.36,
-			"enchps": 4318.76,
-			"enctps": 357.08
+		"Gandalf": {
+			"encdps": 88.11,
+			"enchps": 854.95,
+			"enctps": 43.9
 		},
-		"Other Rez Bot": {
-			"encdps": 435.64,
-			"enchps": 4480.3,
-			"enctps": 348.55
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.42,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 69.68,
+			"enctps": 0
 		}
 	},
-	"1565730056": {
+	"1590339566": {
 		"Encounter": {
-			"encdps": 10858.23,
-			"enchps": 10102.71,
-			"enctps": 3780.32
+			"encdps": 1880.4,
+			"enchps": 1410.69,
+			"enctps": 622.54
 		},
-		"Tamer": {
-			"encdps": 2261.2,
-			"enchps": 115.98,
-			"enctps": 261.9
+		"Yojimbo": {
+			"encdps": 396.04,
+			"enchps": 7.42,
+			"enctps": 71.85
+		},
+		"Maple": {
+			"encdps": 307.96,
+			"enchps": 0,
+			"enctps": 241.48
 		},
 		"YOU": {
-			"encdps": 1841.02,
-			"enchps": 92.79,
-			"enctps": 315.69
+			"encdps": 270.87,
+			"enchps": 22.11,
+			"enctps": 70.12
 		},
-		"Oui Oui": {
-			"encdps": 1634.68,
-			"enchps": 116.04,
-			"enctps": 276.18
+		"Brian O'Conner": {
+			"encdps": 232.45,
+			"enchps": 5.08,
+			"enctps": 96.22
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1561.69,
-			"enchps": 284.35,
-			"enctps": 1236.09
+		"Jean Baptiste": {
+			"encdps": 231.39,
+			"enchps": 0,
+			"enctps": 21.52
 		},
-		"Uber Rage": {
-			"encdps": 1466.33,
-			"enchps": 386.57,
-			"enctps": 613.77
+		"Uther": {
+			"encdps": 205.37,
+			"enchps": 0,
+			"enctps": 19.82
 		},
-		"EXPLOSION": {
-			"encdps": 1089.17,
-			"enchps": 115.98,
-			"enctps": 308.91
+		"Galileo": {
+			"encdps": 142.72,
+			"enchps": 457.12,
+			"enctps": 59.15
 		},
-		"Rez Bot": {
-			"encdps": 594.23,
-			"enchps": 4416.47,
-			"enctps": 387.8
+		"Gandalf": {
+			"encdps": 86.44,
+			"enchps": 851.68,
+			"enctps": 42.38
 		},
-		"Other Rez Bot": {
-			"encdps": 409.91,
-			"enchps": 4574.54,
-			"enctps": 379.98
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.16,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 67.28,
+			"enctps": 0
 		}
 	},
-	"1565730071": {
+	"1590339581": {
 		"Encounter": {
-			"encdps": 11117.24,
-			"enchps": 10441.84,
-			"enctps": 3711.72
+			"encdps": 1909.63,
+			"enchps": 1408.09,
+			"enctps": 621.02
 		},
-		"Tamer": {
-			"encdps": 2274.99,
-			"enchps": 109.51,
-			"enctps": 258.22
+		"Yojimbo": {
+			"encdps": 398.27,
+			"enchps": 7.23,
+			"enctps": 70.01
+		},
+		"Maple": {
+			"encdps": 311.64,
+			"enchps": 0,
+			"enctps": 247.04
 		},
 		"YOU": {
-			"encdps": 1895.17,
-			"enchps": 87.61,
-			"enctps": 309.7
+			"encdps": 275.33,
+			"enchps": 21.54,
+			"enctps": 68.33
 		},
-		"Oui Oui": {
-			"encdps": 1663.31,
-			"enchps": 109.57,
-			"enctps": 272.59
+		"Jean Baptiste": {
+			"encdps": 239.44,
+			"enchps": 0,
+			"enctps": 20.97
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1593.3,
-			"enchps": 286.76,
-			"enctps": 1173.17
+		"Brian O'Conner": {
+			"encdps": 232.45,
+			"enchps": 4.95,
+			"enctps": 94.74
 		},
-		"Uber Rage": {
-			"encdps": 1468.05,
-			"enchps": 388.51,
-			"enctps": 647.77
+		"Uther": {
+			"encdps": 206.91,
+			"enchps": 0,
+			"enctps": 21
 		},
-		"EXPLOSION": {
-			"encdps": 1208.86,
-			"enchps": 109.51,
-			"enctps": 302.82
+		"Galileo": {
+			"encdps": 148.48,
+			"enchps": 448.79,
+			"enctps": 57.63
 		},
-		"Rez Bot": {
-			"encdps": 588.7,
-			"enchps": 4700.45,
-			"enctps": 377.51
+		"Gandalf": {
+			"encdps": 90.13,
+			"enchps": 860.03,
+			"enctps": 41.3
 		},
-		"Other Rez Bot": {
-			"encdps": 424.86,
-			"enchps": 4649.91,
-			"enctps": 369.96
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 6.98,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 65.56,
+			"enctps": 0
 		}
 	},
-	"1565730086": {
+	"1590339596": {
 		"Encounter": {
-			"encdps": 11292.88,
-			"enchps": 10560.24,
-			"enctps": 3572.68
+			"encdps": 1938.87,
+			"enchps": 1416.29,
+			"enctps": 613.24
 		},
-		"Tamer": {
-			"encdps": 2284.58,
-			"enchps": 103.73,
-			"enctps": 244.58
+		"Yojimbo": {
+			"encdps": 407.6,
+			"enchps": 7.07,
+			"enctps": 68.8
+		},
+		"Maple": {
+			"encdps": 314.58,
+			"enchps": 0,
+			"enctps": 246.36
 		},
 		"YOU": {
-			"encdps": 1904,
-			"enchps": 82.99,
-			"enctps": 293.34
+			"encdps": 273.13,
+			"enchps": 21.07,
+			"enctps": 66.83
 		},
-		"Oui Oui": {
-			"encdps": 1665.82,
-			"enchps": 103.78,
-			"enctps": 258.19
+		"Jean Baptiste": {
+			"encdps": 249.69,
+			"enchps": 0,
+			"enctps": 20.51
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1612.23,
-			"enchps": 281.62,
-			"enctps": 1111.2
+		"Brian O'Conner": {
+			"encdps": 234.72,
+			"enchps": 4.84,
+			"enctps": 92.66
 		},
-		"Uber Rage": {
-			"encdps": 1504.06,
-			"enchps": 376.73,
-			"enctps": 670.56
+		"Uther": {
+			"encdps": 209.04,
+			"enchps": 0,
+			"enctps": 20.54
 		},
-		"EXPLOSION": {
-			"encdps": 1214.19,
-			"enchps": 103.73,
-			"enctps": 286.83
+		"Galileo": {
+			"encdps": 151.36,
+			"enchps": 441.88,
+			"enctps": 56.37
 		},
-		"Rez Bot": {
-			"encdps": 635.83,
-			"enchps": 4680.64,
-			"enctps": 357.57
+		"Gandalf": {
+			"encdps": 91.25,
+			"enchps": 877.31,
+			"enctps": 41.15
 		},
-		"Other Rez Bot": {
-			"encdps": 472.18,
-			"enchps": 4827.03,
-			"enctps": 350.42
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.51,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 64.12,
+			"enctps": 0
 		}
 	},
-	"1565730101": {
+	"1590339611": {
 		"Encounter": {
-			"encdps": 11568.72,
-			"enchps": 10381.48,
-			"enctps": 3610.55
+			"encdps": 1965.01,
+			"enchps": 1420.29,
+			"enctps": 614.01
 		},
-		"Tamer": {
-			"encdps": 2326.36,
-			"enchps": 98.52,
-			"enctps": 267.64
+		"Yojimbo": {
+			"encdps": 409.17,
+			"enchps": 6.9,
+			"enctps": 68.72
+		},
+		"Maple": {
+			"encdps": 320.12,
+			"enchps": 0,
+			"enctps": 250.53
 		},
 		"YOU": {
-			"encdps": 2001.1,
-			"enchps": 78.82,
-			"enctps": 278.62
+			"encdps": 277.13,
+			"enchps": 20.55,
+			"enctps": 65.2
 		},
-		"Oui Oui": {
-			"encdps": 1672.99,
-			"enchps": 116.7,
-			"enctps": 282.49
+		"Jean Baptiste": {
+			"encdps": 253.1,
+			"enchps": 0,
+			"enctps": 20.01
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1634.72,
-			"enchps": 291.84,
-			"enctps": 1055.46
+		"Brian O'Conner": {
+			"encdps": 235.89,
+			"enchps": 4.73,
+			"enctps": 93.62
 		},
-		"Uber Rage": {
-			"encdps": 1494.73,
-			"enchps": 374.71,
-			"enctps": 707.37
+		"Uther": {
+			"encdps": 214.88,
+			"enchps": 0,
+			"enctps": 20.04
 		},
-		"EXPLOSION": {
-			"encdps": 1296.93,
-			"enchps": 98.52,
-			"enctps": 272.44
+		"Galileo": {
+			"encdps": 152.43,
+			"enchps": 434.25,
+			"enctps": 54.99
 		},
-		"Rez Bot": {
-			"encdps": 654.44,
-			"enchps": 4631.97,
-			"enctps": 375.38
+		"Gandalf": {
+			"encdps": 94.97,
+			"enchps": 891.31,
+			"enctps": 40.9
 		},
-		"Other Rez Bot": {
-			"encdps": 487.43,
-			"enchps": 4690.4,
-			"enctps": 371.14
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.33,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 62.55,
+			"enctps": 0
 		}
 	},
-	"1565730116": {
+	"1590339626": {
 		"Encounter": {
-			"encdps": 11832.77,
-			"enchps": 10185.77,
-			"enctps": 3471.11
+			"encdps": 1985.95,
+			"enchps": 1428.52,
+			"enctps": 607.54
 		},
-		"Tamer": {
-			"encdps": 2355.99,
-			"enchps": 93.52,
-			"enctps": 254.05
+		"Yojimbo": {
+			"encdps": 414.04,
+			"enchps": 6.74,
+			"enctps": 68.76
+		},
+		"Maple": {
+			"encdps": 322.83,
+			"enchps": 0,
+			"enctps": 250.3
 		},
 		"YOU": {
-			"encdps": 2026.32,
-			"enchps": 74.82,
-			"enctps": 264.47
+			"encdps": 277.81,
+			"enchps": 20.09,
+			"enctps": 63.74
 		},
-		"Oui Oui": {
-			"encdps": 1733.25,
-			"enchps": 110.77,
-			"enctps": 268.15
+		"Jean Baptiste": {
+			"encdps": 256.02,
+			"enchps": 0,
+			"enctps": 19.56
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1667.18,
-			"enchps": 294.87,
-			"enctps": 1001.85
+		"Brian O'Conner": {
+			"encdps": 237.97,
+			"enchps": 4.62,
+			"enctps": 91.85
 		},
-		"Uber Rage": {
-			"encdps": 1521.25,
-			"enchps": 377.11,
-			"enctps": 715.39
+		"Uther": {
+			"encdps": 220.94,
+			"enchps": 0,
+			"enctps": 19.59
 		},
-		"EXPLOSION": {
-			"encdps": 1381.69,
-			"enchps": 93.52,
-			"enctps": 258.6
+		"Galileo": {
+			"encdps": 151.26,
+			"enchps": 436.43,
+			"enctps": 53.76
 		},
-		"Rez Bot": {
-			"encdps": 681.82,
-			"enchps": 4420.81,
-			"enctps": 356.32
+		"Gandalf": {
+			"encdps": 97.04,
+			"enchps": 899.48,
+			"enctps": 39.98
 		},
-		"Other Rez Bot": {
-			"encdps": 465.25,
-			"enchps": 4720.35,
-			"enctps": 352.29
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 8.05,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 61.15,
+			"enctps": 0
 		}
 	},
-	"1565730131": {
+	"1590339641": {
 		"Encounter": {
-			"encdps": 12046.38,
-			"enchps": 10229.82,
-			"enctps": 3363.03
+			"encdps": 2000.38,
+			"enchps": 1432.25,
+			"enctps": 608.92
 		},
-		"Tamer": {
-			"encdps": 2380.51,
-			"enchps": 89.54,
-			"enctps": 243.24
+		"Yojimbo": {
+			"encdps": 419.55,
+			"enchps": 6.6,
+			"enctps": 71.82
+		},
+		"Maple": {
+			"encdps": 321.43,
+			"enchps": 0,
+			"enctps": 254.31
 		},
 		"YOU": {
-			"encdps": 2030.68,
-			"enchps": 71.64,
-			"enctps": 253.22
+			"encdps": 278.73,
+			"enchps": 19.65,
+			"enctps": 62.34
 		},
-		"Oui Oui": {
-			"encdps": 1724.86,
-			"enchps": 106.06,
-			"enctps": 256.74
+		"Jean Baptiste": {
+			"encdps": 257.92,
+			"enchps": 0,
+			"enctps": 19.13
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1682.98,
-			"enchps": 298.99,
-			"enctps": 959.22
+		"Brian O'Conner": {
+			"encdps": 240.01,
+			"enchps": 4.52,
+			"enctps": 90.16
 		},
-		"Uber Rage": {
-			"encdps": 1534.25,
-			"enchps": 368.6,
-			"enctps": 724.57
+		"Uther": {
+			"encdps": 223.59,
+			"enchps": 0,
+			"enctps": 19.16
 		},
-		"EXPLOSION": {
-			"encdps": 1494.35,
-			"enchps": 89.54,
-			"enctps": 247.6
+		"Galileo": {
+			"encdps": 155.53,
+			"enchps": 433.04,
+			"enctps": 52.59
 		},
-		"Rez Bot": {
-			"encdps": 689.19,
-			"enchps": 4497.68,
-			"enctps": 341.16
+		"Gandalf": {
+			"encdps": 95.76,
+			"enchps": 908.62,
+			"enctps": 39.41
 		},
-		"Other Rez Bot": {
-			"encdps": 509.56,
-			"enchps": 4707.78,
-			"enctps": 337.3
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.87,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 59.81,
+			"enctps": 0
 		}
 	},
-	"1565730146": {
+	"1590339656": {
 		"Encounter": {
-			"encdps": 12108.24,
-			"enchps": 10737.64,
-			"enctps": 3870.43
+			"encdps": 2022.77,
+			"enchps": 1416.5,
+			"enctps": 597.78
 		},
-		"Tamer": {
-			"encdps": 2347.78,
-			"enchps": 85.63,
-			"enctps": 331.13
+		"Yojimbo": {
+			"encdps": 425.44,
+			"enchps": 6.45,
+			"enctps": 70.28
+		},
+		"Maple": {
+			"encdps": 320.58,
+			"enchps": 0,
+			"enctps": 250.77
 		},
 		"YOU": {
-			"encdps": 1991.41,
-			"enchps": 68.51,
-			"enctps": 324.55
+			"encdps": 288.13,
+			"enchps": 19.23,
+			"enctps": 61.01
 		},
-		"Oui Oui": {
-			"encdps": 1721.84,
-			"enchps": 101.43,
-			"enctps": 321.43
+		"Jean Baptiste": {
+			"encdps": 260.34,
+			"enchps": 0,
+			"enctps": 18.72
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1715.65,
-			"enchps": 293.9,
-			"enctps": 944.9
+		"Brian O'Conner": {
+			"encdps": 241.69,
+			"enchps": 4.42,
+			"enctps": 88.23
 		},
-		"EXPLOSION": {
-			"encdps": 1578.74,
-			"enchps": 85.63,
-			"enctps": 332.47
+		"Uther": {
+			"encdps": 225.67,
+			"enchps": 0,
+			"enctps": 18.75
 		},
-		"Uber Rage": {
-			"encdps": 1558.36,
-			"enchps": 370.16,
-			"enctps": 775.31
+		"Galileo": {
+			"encdps": 155.15,
+			"enchps": 426.82,
+			"enctps": 51.46
 		},
-		"Rez Bot": {
-			"encdps": 665.93,
-			"enchps": 4750.65,
-			"enctps": 420.7
+		"Gandalf": {
+			"encdps": 98.06,
+			"enchps": 901.04,
+			"enctps": 38.56
 		},
-		"Other Rez Bot": {
-			"encdps": 528.52,
-			"enchps": 4981.72,
-			"enctps": 419.96
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.7,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 58.53,
+			"enctps": 0
 		}
 	},
-	"1565730161": {
+	"1590339671": {
 		"Encounter": {
-			"encdps": 12136,
-			"enchps": 10820.18,
-			"enctps": 3800.45
+			"encdps": 2021.73,
+			"enchps": 1448.14,
+			"enctps": 622.29
 		},
-		"Tamer": {
-			"encdps": 2377.38,
-			"enchps": 82.06,
-			"enctps": 325.42
+		"Yojimbo": {
+			"encdps": 425.74,
+			"enchps": 6.44,
+			"enctps": 71.06
+		},
+		"Maple": {
+			"encdps": 320.8,
+			"enchps": 0,
+			"enctps": 250.06
 		},
 		"YOU": {
-			"encdps": 1955.67,
-			"enchps": 65.65,
-			"enctps": 319.8
+			"encdps": 287.31,
+			"enchps": 19.18,
+			"enctps": 65.23
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1744.51,
-			"enchps": 289.58,
-			"enctps": 911.17
+		"Jean Baptiste": {
+			"encdps": 259.6,
+			"enchps": 0,
+			"enctps": 22.94
 		},
-		"Oui Oui": {
-			"encdps": 1719.99,
-			"enchps": 97.19,
-			"enctps": 316.52
+		"Brian O'Conner": {
+			"encdps": 242.07,
+			"enchps": 4.41,
+			"enctps": 92.68
 		},
-		"EXPLOSION": {
-			"encdps": 1586.31,
-			"enchps": 82.06,
-			"enctps": 326.75
+		"Uther": {
+			"encdps": 225.63,
+			"enchps": 0,
+			"enctps": 22.01
 		},
-		"Uber Rage": {
-			"encdps": 1553.41,
-			"enchps": 361.83,
-			"enctps": 778.53
+		"Galileo": {
+			"encdps": 154.71,
+			"enchps": 425.6,
+			"enctps": 55.65
 		},
-		"Rez Bot": {
-			"encdps": 674.23,
-			"enchps": 4816.3,
-			"enctps": 411.44
+		"Gandalf": {
+			"encdps": 98.19,
+			"enchps": 934.15,
+			"enctps": 42.66
 		},
-		"Other Rez Bot": {
-			"encdps": 524.49,
-			"enchps": 5025.51,
-			"enctps": 410.82
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.68,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 58.36,
+			"enctps": 0
 		}
 	},
-	"1565730176": {
+	"1590339686": {
 		"Encounter": {
-			"encdps": 12533.14,
-			"enchps": 10698.05,
-			"enctps": 3690.58
+			"encdps": 1966.67,
+			"enchps": 1435.3,
+			"enctps": 624.06
 		},
-		"Tamer": {
-			"encdps": 2377.34,
-			"enchps": 78.76,
-			"enctps": 312.37
+		"Yojimbo": {
+			"encdps": 414.19,
+			"enchps": 6.19,
+			"enctps": 72.44
+		},
+		"Maple": {
+			"encdps": 311.17,
+			"enchps": 0,
+			"enctps": 243.02
 		},
 		"YOU": {
-			"encdps": 2055.56,
-			"enchps": 63.02,
-			"enctps": 306.97
+			"encdps": 279.49,
+			"enchps": 18.44,
+			"enctps": 65.9
 		},
-		"Oui Oui": {
-			"encdps": 1813.73,
-			"enchps": 93.3,
-			"enctps": 303.82
+		"Jean Baptiste": {
+			"encdps": 253.98,
+			"enchps": 0,
+			"enctps": 26.29
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1781.82,
-			"enchps": 304.96,
-			"enctps": 874.62
+		"Brian O'Conner": {
+			"encdps": 235.76,
+			"enchps": 5.41,
+			"enctps": 91.84
 		},
-		"EXPLOSION": {
-			"encdps": 1664.12,
-			"enchps": 78.76,
-			"enctps": 313.65
+		"Uther": {
+			"encdps": 220.82,
+			"enchps": 0,
+			"enctps": 24.13
 		},
-		"Uber Rage": {
-			"encdps": 1568.99,
-			"enchps": 365.05,
-			"enctps": 789.87
+		"Galileo": {
+			"encdps": 149.46,
+			"enchps": 421.9,
+			"enctps": 56.37
 		},
-		"Rez Bot": {
-			"encdps": 719.24,
-			"enchps": 4758.06,
-			"enctps": 394.94
+		"Gandalf": {
+			"encdps": 94.42,
+			"enchps": 927.23,
+			"enctps": 44.07
 		},
-		"Other Rez Bot": {
-			"encdps": 552.35,
-			"enchps": 4956.14,
-			"enctps": 394.34
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.39,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 56.13,
+			"enctps": 0
 		}
 	},
-	"1565730191": {
+	"1590339701": {
 		"Encounter": {
-			"encdps": 12577.63,
-			"enchps": 10645.24,
-			"enctps": 3845.16
+			"encdps": 1965.15,
+			"enchps": 1457.14,
+			"enctps": 618.26
 		},
-		"Tamer": {
-			"encdps": 2424.22,
-			"enchps": 75.73,
-			"enctps": 331.54
+		"Yojimbo": {
+			"encdps": 415.5,
+			"enchps": 6.06,
+			"enctps": 70.98
+		},
+		"Maple": {
+			"encdps": 310.94,
+			"enchps": 0,
+			"enctps": 238.13
 		},
 		"YOU": {
-			"encdps": 2052.24,
-			"enchps": 60.59,
-			"enctps": 361.98
+			"encdps": 278.6,
+			"enchps": 18.07,
+			"enctps": 64.57
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1783.08,
-			"enchps": 307.58,
-			"enctps": 886.14
+		"Jean Baptiste": {
+			"encdps": 253.15,
+			"enchps": 0,
+			"enctps": 25.76
 		},
-		"Oui Oui": {
-			"encdps": 1782.24,
-			"enchps": 89.7,
-			"enctps": 292.11
+		"Brian O'Conner": {
+			"encdps": 235.05,
+			"enchps": 5.3,
+			"enctps": 89.99
 		},
-		"EXPLOSION": {
-			"encdps": 1685.63,
-			"enchps": 75.73,
-			"enctps": 301.55
+		"Uther": {
+			"encdps": 221.15,
+			"enchps": 0,
+			"enctps": 30.41
 		},
-		"Uber Rage": {
-			"encdps": 1579.13,
-			"enchps": 363.74,
-			"enctps": 856.38
+		"Galileo": {
+			"encdps": 149.2,
+			"enchps": 433.8,
+			"enctps": 55.24
 		},
-		"Rez Bot": {
-			"encdps": 734.38,
-			"enchps": 4699.18,
-			"enctps": 407.78
+		"Gandalf": {
+			"encdps": 94.23,
+			"enchps": 938.91,
+			"enctps": 43.18
 		},
-		"Other Rez Bot": {
-			"encdps": 536.7,
-			"enchps": 4973,
-			"enctps": 407.67
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.33,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 55,
+			"enctps": 0
 		}
 	},
-	"1565730206": {
+	"1590339716": {
 		"Encounter": {
-			"encdps": 12532.63,
-			"enchps": 10630.8,
-			"enctps": 3864.75
+			"encdps": 1960.99,
+			"enchps": 1472.61,
+			"enctps": 638.41
 		},
-		"Tamer": {
-			"encdps": 2431.5,
-			"enchps": 72.92,
-			"enctps": 319.24
+		"Yojimbo": {
+			"encdps": 413.49,
+			"enchps": 5.94,
+			"enctps": 69.58
+		},
+		"Maple": {
+			"encdps": 309.06,
+			"enchps": 0,
+			"enctps": 235.66
 		},
 		"YOU": {
-			"encdps": 2031.81,
-			"enchps": 58.34,
-			"enctps": 361.81
+			"encdps": 279.78,
+			"enchps": 17.71,
+			"enctps": 69.43
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1777.18,
-			"enchps": 296.16,
-			"enctps": 853.24
+		"Jean Baptiste": {
+			"encdps": 254.58,
+			"enchps": 0,
+			"enctps": 31.5
 		},
-		"Oui Oui": {
-			"encdps": 1777.17,
-			"enchps": 86.37,
-			"enctps": 281.26
+		"Brian O'Conner": {
+			"encdps": 233.96,
+			"enchps": 5.2,
+			"enctps": 91.38
 		},
-		"EXPLOSION": {
-			"encdps": 1698.51,
-			"enchps": 72.92,
-			"enctps": 303.7
+		"Uther": {
+			"encdps": 219.85,
+			"enchps": 0,
+			"enctps": 37.86
 		},
-		"Uber Rage": {
-			"encdps": 1578.41,
-			"enchps": 362.7,
-			"enctps": 932.23
+		"Galileo": {
+			"encdps": 148.3,
+			"enchps": 444.21,
+			"enctps": 60.68
 		},
-		"Rez Bot": {
-			"encdps": 721.29,
-			"enchps": 4707.93,
-			"enctps": 420.73
+		"Gandalf": {
+			"encdps": 94.2,
+			"enchps": 945.63,
+			"enctps": 42.33
 		},
-		"Other Rez Bot": {
-			"encdps": 516.77,
-			"enchps": 4973.48,
-			"enctps": 392.53
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.76,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 53.91,
+			"enctps": 0
 		}
 	},
-	"1565730221": {
+	"1590339731": {
 		"Encounter": {
-			"encdps": 12605.42,
-			"enchps": 10639.44,
-			"enctps": 3767.4
+			"encdps": 1985.55,
+			"enchps": 1470.35,
+			"enctps": 627.41
 		},
-		"Tamer": {
-			"encdps": 2450.82,
-			"enchps": 70.31,
-			"enctps": 307.81
+		"Yojimbo": {
+			"encdps": 418.18,
+			"enchps": 5.84,
+			"enctps": 68.32
+		},
+		"Maple": {
+			"encdps": 311.47,
+			"enchps": 0,
+			"enctps": 231.39
 		},
 		"YOU": {
-			"encdps": 2037.2,
-			"enchps": 56.25,
-			"enctps": 348.86
+			"encdps": 281.4,
+			"enchps": 17.39,
+			"enctps": 68.17
 		},
-		"Oui Oui": {
-			"encdps": 1815.87,
-			"enchps": 83.28,
-			"enctps": 271.19
+		"Jean Baptiste": {
+			"encdps": 258.36,
+			"enchps": 0,
+			"enctps": 30.93
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1794.18,
-			"enchps": 292.08,
-			"enctps": 844.63
+		"Brian O'Conner": {
+			"encdps": 235.74,
+			"enchps": 5.1,
+			"enctps": 89.73
 		},
-		"EXPLOSION": {
-			"encdps": 1714.42,
-			"enchps": 70.31,
-			"enctps": 292.83
+		"Uther": {
+			"encdps": 222.79,
+			"enchps": 0,
+			"enctps": 37.72
 		},
-		"Uber Rage": {
-			"encdps": 1532.35,
-			"enchps": 349.71,
-			"enctps": 898.86
+		"Galileo": {
+			"encdps": 152.12,
+			"enchps": 436.18,
+			"enctps": 59.58
 		},
-		"Rez Bot": {
-			"encdps": 745.84,
-			"enchps": 4651.23,
-			"enctps": 424.75
+		"Gandalf": {
+			"encdps": 97.87,
+			"enchps": 952.91,
+			"enctps": 41.56
 		},
-		"Other Rez Bot": {
-			"encdps": 514.74,
-			"enchps": 5066.28,
-			"enctps": 378.48
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.62,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 52.94,
+			"enctps": 0
 		}
 	},
-	"1565730237": {
+	"1590339746": {
 		"Encounter": {
-			"encdps": 12629.75,
-			"enchps": 10619.68,
-			"enctps": 3748.83
+			"encdps": 2041.6,
+			"enchps": 1459.87,
+			"enctps": 620.97
 		},
-		"Tamer": {
-			"encdps": 2447.43,
-			"enchps": 69.81,
-			"enctps": 305.62
+		"Yojimbo": {
+			"encdps": 433.13,
+			"enchps": 5.72,
+			"enctps": 66.94
+		},
+		"Maple": {
+			"encdps": 315.57,
+			"enchps": 0,
+			"enctps": 226.71
 		},
 		"YOU": {
-			"encdps": 2046.62,
-			"enchps": 55.85,
-			"enctps": 346.38
+			"encdps": 298.53,
+			"enchps": 17.04,
+			"enctps": 66.79
 		},
-		"Edgeboi Supreme": {
-			"encdps": 1811.99,
-			"enchps": 304.42,
-			"enctps": 846.84
+		"Jean Baptiste": {
+			"encdps": 263.18,
+			"enchps": 0,
+			"enctps": 32.65
 		},
-		"Oui Oui": {
-			"encdps": 1802.96,
-			"enchps": 82.68,
-			"enctps": 269.27
+		"Brian O'Conner": {
+			"encdps": 238.84,
+			"enchps": 5,
+			"enctps": 87.91
 		},
-		"EXPLOSION": {
-			"encdps": 1718.82,
-			"enchps": 69.81,
-			"enctps": 290.74
+		"Uther": {
+			"encdps": 226.95,
+			"enchps": 0,
+			"enctps": 36.95
 		},
-		"Uber Rage": {
-			"encdps": 1528.42,
-			"enchps": 351.68,
-			"enctps": 892.47
+		"Galileo": {
+			"encdps": 155.89,
+			"enchps": 427.34,
+			"enctps": 62.29
 		},
-		"Rez Bot": {
-			"encdps": 762.41,
-			"enchps": 4618.16,
-			"enctps": 421.73
+		"Gandalf": {
+			"encdps": 101.32,
+			"enchps": 952.91,
+			"enctps": 40.72
 		},
-		"Other Rez Bot": {
-			"encdps": 511.08,
-			"enchps": 5067.28,
-			"enctps": 375.79
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 8.18,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 51.86,
+			"enctps": 0
+		}
+	},
+	"1590339761": {
+		"Encounter": {
+			"encdps": 2015.4,
+			"enchps": 1447.69,
+			"enctps": 645.33
+		},
+		"Yojimbo": {
+			"encdps": 427.78,
+			"enchps": 5.62,
+			"enctps": 65.77
+		},
+		"Maple": {
+			"encdps": 312.22,
+			"enchps": 0,
+			"enctps": 222.76
+		},
+		"YOU": {
+			"encdps": 293.33,
+			"enchps": 16.74,
+			"enctps": 73.44
+		},
+		"Jean Baptiste": {
+			"encdps": 258.6,
+			"enchps": 0,
+			"enctps": 36.13
+		},
+		"Brian O'Conner": {
+			"encdps": 236.95,
+			"enchps": 4.91,
+			"enctps": 90.38
+		},
+		"Uther": {
+			"encdps": 225.74,
+			"enchps": 0,
+			"enctps": 39.48
+		},
+		"Galileo": {
+			"encdps": 153.18,
+			"enchps": 419.9,
+			"enctps": 69.52
+		},
+		"Gandalf": {
+			"encdps": 99.55,
+			"enchps": 949.55,
+			"enctps": 47.85
+		},
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 8.04,
+			"enchps": 0,
+			"enctps": 0
+		},
+		"Limit Break": {
+			"encdps": 0,
+			"enchps": 50.96,
+			"enctps": 0
+		}
+	},
+	"1590339776": {
+		"Encounter": {
+			"encdps": 2056.75,
+			"enchps": 1465.67,
+			"enctps": 632.74
+		},
+		"Yojimbo": {
+			"encdps": 431.55,
+			"enchps": 5.51,
+			"enctps": 64.49
+		},
+		"Maple": {
+			"encdps": 315.63,
+			"enchps": 0,
+			"enctps": 218.41
+		},
+		"YOU": {
+			"encdps": 291.24,
+			"enchps": 20.43,
+			"enctps": 72.01
+		},
+		"Jean Baptiste": {
+			"encdps": 263.97,
+			"enchps": 0,
+			"enctps": 35.42
+		},
+		"Brian O'Conner": {
+			"encdps": 236.53,
+			"enchps": 4.82,
+			"enctps": 88.61
+		},
+		"Uther": {
+			"encdps": 229.04,
+			"enchps": 0,
+			"enctps": 38.7
+		},
+		"Galileo": {
+			"encdps": 150.53,
+			"enchps": 430.34,
+			"enctps": 68.17
+		},
+		"Gandalf": {
+			"encdps": 97.61,
+			"enchps": 954.61,
+			"enctps": 46.92
+		},
+		"Limit Break": {
+			"encdps": 32.77,
+			"enchps": 49.97,
+			"enctps": 0
+		},
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.89,
+			"enchps": 0,
+			"enctps": 0
+		}
+	},
+	"1590339791": {
+		"Encounter": {
+			"encdps": 2062.31,
+			"enchps": 1478.75,
+			"enctps": 631.2
+		},
+		"Yojimbo": {
+			"encdps": 431.04,
+			"enchps": 5.5,
+			"enctps": 64.33
+		},
+		"Maple": {
+			"encdps": 317.55,
+			"enchps": 0,
+			"enctps": 217.88
+		},
+		"YOU": {
+			"encdps": 292.41,
+			"enchps": 20.38,
+			"enctps": 71.83
+		},
+		"Jean Baptiste": {
+			"encdps": 264.77,
+			"enchps": 0,
+			"enctps": 35.34
+		},
+		"Brian O'Conner": {
+			"encdps": 236.92,
+			"enchps": 4.8,
+			"enctps": 88.4
+		},
+		"Uther": {
+			"encdps": 231.18,
+			"enchps": 0,
+			"enctps": 38.61
+		},
+		"Galileo": {
+			"encdps": 150.51,
+			"enchps": 429.29,
+			"enctps": 68
+		},
+		"Gandalf": {
+			"encdps": 97.37,
+			"enchps": 968.93,
+			"enctps": 46.8
+		},
+		"Limit Break": {
+			"encdps": 32.69,
+			"enchps": 49.84,
+			"enctps": 0
+		},
+		"Rook Autoturret (Brian O'Conner)": {
+			"encdps": 7.87,
+			"enchps": 0,
+			"enctps": 0
 		}
 	}
 };

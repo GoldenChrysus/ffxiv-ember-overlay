@@ -41,7 +41,7 @@ class AggroTable extends React.Component {
 		}
 
 		for (let monster of monsters) {
-			monster._is_current = monster.Target.isMe;
+			monster._is_current = (monster.Target && monster.Target.isMe);
 
 			let blur = (player_blur && !monster._is_current);
 

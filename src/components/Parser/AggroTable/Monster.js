@@ -9,7 +9,7 @@ import PercentBar from "../PercentBar";
 class Monster extends React.Component {
 	render() {
 		let monster      = this.props.monster;
-		let player       = monster.Target;
+		let player       = monster.Target || { Job : "", Name : "", name : ""};
 		let player_type  = (monster._is_current) ? "active" : "other";
 		let columns      = [];
 		let stat_columns = this.props.columns;
@@ -43,7 +43,8 @@ class Monster extends React.Component {
 					let job        = player.Job.toUpperCase();
 					let icon_blur  = (this.props.blur && this.props.icon_blur) ? "blur" : "";
 					let icon_style = (icon_blur) ? { WebkitFilter: "blur(4px)" } : {};
-					let icon       = <div className="column icon" key="player-data-icon"><img src={"img/icons/jobs/" + job + ".png"} className={"icon " + icon_blur} style={icon_style} alt={job + " icon"}></img></div>;
+					let icon_image = (job) ? <img src={"img/icons/jobs/" + job + ".png"} className={"icon " + icon_blur} style={icon_style} alt={job + " icon"}></img> : "";
+					let icon       = <div className="column icon" key="player-data-icon">{icon_image}</div>;
 
 					if (this.props.short_names !== "no_short") {
 						value = PlayerProcessor.getShortName(value, this.props.short_names);
