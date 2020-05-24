@@ -1,5 +1,6 @@
 import MessageProcessor from "../processors/MessageProcessor";
 import store from "../redux/store/index";
+import { updateState } from "../redux/actions/index";
 
 const querystring = require("querystring");
 
@@ -64,6 +65,13 @@ class SocketService {
 	}
 
 	connected() {
+		if (this.try_for_ngld) {
+			store.dispatch(updateState({
+				key   : "internal.overlayplugin_author",
+				value : "ngld"
+			}));
+		}
+
 		this.try_for_ngld    = false;
 		this.reconnect_delay = BASE_RECONNECT_DELAY;
 

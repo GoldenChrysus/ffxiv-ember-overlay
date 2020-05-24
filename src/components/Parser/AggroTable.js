@@ -24,7 +24,7 @@ class AggroTable extends React.Component {
 			"CurrentHP",
 			"player_Name"
 		];
-		let monsters    = (!this.props.encounter.Combatant) ? [] : this.props.monsters;
+		let monsters    = (!this.props.encounter.Combatant || this.props.overlayplugin_author !== "ngld") ? [] : this.props.monsters;
 
 		for (let key of columns) {
 			let title = LocalizationService.getMonsterDataTitle(key, "short");
@@ -68,10 +68,11 @@ class AggroTable extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		encounter      : state.internal.game,
-		player_blur    : state.settings.intrinsic.player_blur,
-		icon_blur      : state.settings.interface.blur_job_icons,
-		table_settings : state.settings.table_settings
+		encounter            : state.internal.game,
+		overlayplugin_author : state.internal.overlayplugin_author,
+		player_blur          : state.settings.intrinsic.player_blur,
+		icon_blur            : state.settings.interface.blur_job_icons,
+		table_settings       : state.settings.table_settings
 	};
 };
 
