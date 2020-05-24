@@ -17,6 +17,8 @@ class Monster extends React.Component {
 		for (let key of stat_columns) {
 			let processor = MonsterProcessor;
 			let object    = monster;
+			let raw_key   = key;
+			let name_blur = (this.props.blur && key === "player_name") ? "blur" : "";
 
 			if (key.substring(0, 7) === "player_") {
 				key       = key.substring(7);
@@ -26,14 +28,24 @@ class Monster extends React.Component {
 
 			let value = processor.getDataValue(key, object);
 
+			if (raw_key === "player_name" && this.props.short_names !== "no_short") {
+				value = PlayerProcessor.getShortName(value, this.props.short_names);
+			}
+
 			if (key === "health_percent") {
-				columns.push(<div className="column" key={key}><PercentBar percent={value}/></div>);
+				columns.push(<div className="column" key={raw_key}><PercentBar percent={value}/></div>);
 			} else {
 				columns.push(
-					<div className="column" key={key}><span>{prefix}</span>{value}</div>
+					<div className={"column " + name_blur} key={raw_key}>{value}</div>
 				);
 			}
 		}
+
+		return (
+			<div className={"row player " + player_type} key={"monster-" + monster.ID}>
+				{columns}
+			</div>
+		);
 	}
 }
 
