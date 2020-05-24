@@ -19,10 +19,18 @@ class GameDataProcessor  {
 	}
 
 	normalizeLocales(data, language) {
-		if (!data.Encounter) {
-			return data;
+		if (data.Encounter) {
+			return this.normalizeGameData(data, language);
 		}
 
+		if (data.AggroList) {
+			return this.normalizeAggroList(data);
+		}
+
+		return data;
+	}
+
+	normalizeGameData(data, language) {
 		data.Encounter.name             = LocalizationService.getOverlayText("encounter", language);
 		data.Encounter.Job              = "ENC";
 		data.Encounter.OverHealPct      = "0%";
@@ -45,6 +53,18 @@ class GameDataProcessor  {
 		}
 
 		return data;
+	}
+
+	normalizeAggroList(data) {
+		for (let key of ["CurrentHP", "MaxHP"]) {
+			for (let i in data.AggroList) {
+				if (data.AggroList[i][key] !== undefined) {
+					data.AggroList[i][key] = this.normalizeFieldLocale(data.AggroList[i][key]);
+				}
+			}
+		}
+
+		return data.AggroList;
 	}
 
 	appendHistory(data, state) {
@@ -84,6 +104,42 @@ class GameDataProcessor  {
 		current_history[current_time] = new_data;
 
 		state.internal.encounter_data_history = current_history;
+	}
+
+	processEnmity(data) {
+		for (let i in data.Entries) {
+			data.Entries[i].name = data.Entries[i].Name;
+		}
+
+		let sorted_players = PlayerProcessor.sortPlayers(data.Entries, undefined, "Enmity");
+		let max_value      = 0;
+		let players        = {};
+
+		for (let player of sorted_players) {
+			if (!max_value) {
+				max_value = player.Enmity || 100;
+			}
+
+			let percent = ((player.Enmity / max_value) * 100).toFixed(2);
+
+			players[player.Name] = percent;
+		}
+
+		return players;
+	}
+
+	injectEnmity(data, state) {
+		for (let player_name in data.Combatant) {
+			let real_player_name = player_name;
+
+			if (player_name === "YOU") {
+				player_name = PlayerProcessor.getDataValue("name", data.Combatant[player_name], undefined, undefined, undefined, state);
+			}
+
+			data.Combatant[real_player_name].enmity_percent = state.internal.enmity[player_name] || 0;
+		}
+
+		return data;
 	}
 
 	convertToLocaleFormat(key, value) {

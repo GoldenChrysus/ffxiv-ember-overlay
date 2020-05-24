@@ -31,12 +31,17 @@ class Footer extends React.Component {
 
 				default:
 					let types   = {
-						dps  : "",
-						heal : "",
-						tank : "",
-						raid : "24"
+						dps   : "",
+						heal  : "",
+						tank  : "",
+						raid  : "24",
+						aggro : ""
 					}
 					let links   = [];
+
+					if (self.props.overlayplugin_author !== "ngld") {
+						delete types.aggro;
+					}
 
 					for (let type_key in types) {
 						let name   = (type_key === "raid") ? types[type_key] : LocalizationService.getOverlayText(type_key);
@@ -120,14 +125,15 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		language      : state.settings.interface.language,
-		table_type    : state.settings.intrinsic.table_type,
-		player_blur   : state.settings.intrinsic.player_blur,
-		viewing       : state.internal.viewing,
-		overlayplugin : state.internal.overlayplugin,
-		new_version   : state.internal.new_version,
-		encounter     : state.internal.game.Encounter,
-		show_dps      : state.settings.interface.footer_dps
+		language             : state.settings.interface.language,
+		table_type           : state.settings.intrinsic.table_type,
+		player_blur          : state.settings.intrinsic.player_blur,
+		viewing              : state.internal.viewing,
+		overlayplugin        : state.internal.overlayplugin,
+		overlayplugin_author : state.internal.overlayplugin_author,
+		new_version          : state.internal.new_version,
+		encounter            : state.internal.game.Encounter,
+		show_dps             : state.settings.interface.footer_dps
 	};
 };
 

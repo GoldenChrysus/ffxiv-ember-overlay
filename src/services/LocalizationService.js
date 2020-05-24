@@ -54,6 +54,14 @@ class LocalizationService {
 		return options;
 	}
 
+	getMonsterDataTitle(key, type) {
+		let title = Constants.MonsterDataTitles[key];
+
+		title = title[this.getLanguage()] || title.en;
+
+		return title[type];
+	}
+
 	getOverlayText(key, language) {
 		if (!language) {
 			language = this.getLanguage();
