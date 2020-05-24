@@ -24,6 +24,7 @@ class AggroTable extends React.Component {
 			"CurrentHP",
 			"player_Name"
 		];
+		let monsters    = (!this.props.encounter.Combatant) ? [] : this.props.monsters;
 
 		for (let key of columns) {
 			let title = LocalizationService.getMonsterDataTitle(key, "short");
@@ -39,7 +40,7 @@ class AggroTable extends React.Component {
 			);
 		}
 
-		for (let monster of this.props.monsters) {
+		for (let monster of monsters) {
 			monster._is_current = monster.Target.isMe;
 
 			let blur = (player_blur && !monster._is_current);
