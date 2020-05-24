@@ -33,7 +33,6 @@ class MessageProcessor {
 					break;
 				}
 
-				// console.log(data);
 				store.dispatch(parseAggroList(data));
 				break;
 
@@ -42,9 +41,6 @@ class MessageProcessor {
 					break;
 				}
 
-				console.log(data);
-				// manipulate game data to update enmity
-				// other option is to store enmity separately and pull data into game data on CombatData event (probably less CPU-intensive)
 				store.dispatch(parseEnmity(data));
 				break;
 

@@ -84,12 +84,6 @@ class Container extends React.Component {
 		);
 	}
 
-	parseData(e) {
-		console.log(e);
-		if (!e) return;
-		this.props.parseGameData(e.detail);
-	}
-
 	toggleHandle(e) {
 		if (!e.detail.isLocked) {
 			document.getElementsByTagName("body")[0].classList.add("resizeHandle");
