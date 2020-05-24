@@ -12,6 +12,7 @@ import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
 import PlaceholderToggle from "./Placeholder/Toggle";
 import PluginService from "../../services/PluginService";
+import AggroTable from "./AggroTable";
 
 class Container extends React.Component {
 	componentDidMount() {
@@ -29,7 +30,11 @@ class Container extends React.Component {
 
 		switch (viewing) {
 			case "tables":
-				content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
+				if (this.props.settings.intrinsic.table_type !== "aggro") {
+					content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
+				} else {
+					content = <AggroTable monsters={this.props.internal.aggro}/>
+				}
 
 				break;
 

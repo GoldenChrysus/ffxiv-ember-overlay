@@ -31,10 +31,11 @@ class Footer extends React.Component {
 
 				default:
 					let types   = {
-						dps  : "",
-						heal : "",
-						tank : "",
-						raid : "24"
+						dps   : "",
+						heal  : "",
+						tank  : "",
+						raid  : "24",
+						aggro : ""
 					}
 					let links   = [];
 

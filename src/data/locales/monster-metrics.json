@@ -5,28 +5,28 @@
 			"long"  : "Name"
 		},
 		"pt" : {
-			"short" : "Name",
-			"long"  : "Name"
+			"short" : "Nome",
+			"long"  : "Nome"
 		},
 		"cn" : {
-			"short" : "Name",
-			"long"  : "Name"
+			"short" : "名称",
+			"long"  : "名称"
 		},
 		"jp" : {
-			"short" : "Name",
-			"long"  : "Name"
+			"short" : "名前",
+			"long"  : "名前"
 		},
 		"de" : {
 			"short" : "Name",
 			"long"  : "Name"
 		},
 		"es" : {
-			"short" : "Name",
-			"long"  : "Name"
+			"short" : "Nombre",
+			"long"  : "Nombre"
 		},
 		"fr" : {
-			"short" : "Name",
-			"long"  : "Name"
+			"short" : "Prénom",
+			"long"  : "Prénom"
 		}
 	},
 	"CurrentHP"      : {
@@ -87,6 +87,36 @@
 		"fr" : {
 			"short" : "HP %",
 			"long"  : "Health Percent"
+		}
+	},
+	"player_name"    : {
+		"en" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"pt" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"cn" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"jp" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"de" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"es" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"fr" : {
+			"short" : "Target",
+			"long"  : "Target"
 		}
 	}
 }

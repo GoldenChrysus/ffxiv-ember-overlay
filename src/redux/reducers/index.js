@@ -19,7 +19,7 @@ const initial_state = {
 		rank                   : "N/A",
 		game                   : {},
 		enmity                 : {},
-		aggro                  : {},
+		aggro                  : [],
 		encounter_data_history : {},
 		detail_player          : {},
 		overlayplugin          : !!window.OverlayPluginApi,

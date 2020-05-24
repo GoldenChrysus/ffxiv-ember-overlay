@@ -12,13 +12,21 @@ import OverlayInfo from "./PlayerTable/OverlayInfo";
 
 class AggroTable extends React.Component {
 	render() {
-		let header      = [];
+		let header      = [
+			<div className="column" key="icon"></div>
+		];
 		let rows        = [];
 		let player_blur = (this.props.player_blur);
 		let short_names = this.props.table_settings.general.table.short_names;
+		let columns     = [
+			"Name",
+			"health_percent",
+			"player_name",
+			"CurrentHP"
+		];
 
-		for (let key of this.props.table_columns[table_type]) {
-			let title = LocalizationService.getPlayerDataTitle(key, "short");
+		for (let key of columns) {
+			let title = LocalizationService.getMonsterDataTitle(key, "short");
 
 			header.push(
 				<div className="column" key={key}>{title}</div>
@@ -39,24 +47,18 @@ class AggroTable extends React.Component {
 			let blur = (player_blur && !is_current_player);
 
 			rows.push(
-				<Monster key={monster.ID} monster={monster} columns={this.props.table_columns[table_type]} blur={blur} short_names={short_names}/>
+				<Monster key={monster.ID} monster={monster} columns={columns} blur={blur} short_names={short_names}/>
 			);
 		}
 
-		let header_row, table_class;
-
-		header_row = 
-			<div className="row header">
-				<div className="column">{LocalizationService.getOverlayText("player_name")}</div>
-				{header}
-			</div>;
-
-		let overlay_info = (collapsed || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
+		let overlay_info = (this.props.monsters && this.props.monsters.length) ? "" : <OverlayInfo/>
 
 		return (
 			<React.Fragment>
-				<div id="aggro-table" className={table_class} ref="aggro_table">
-					{header_row}
+				<div id="player-table" ref="aggro_table">
+					<div className="row header">
+						{header}
+					</div>
 					{rows}
 				</div>
 				{overlay_info}
