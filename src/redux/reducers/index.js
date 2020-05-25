@@ -80,7 +80,10 @@ function rootReducer(state, action) {
 			}
 
 			if (new_history) {
-				new_state.internal.encounter_history.pop();
+				if (new_state.internal.encounter_history.length === 5) {
+					new_state.internal.encounter_history.pop();
+				}
+
 				new_state.internal.encounter_history.unshift({
 					game         : {},
 					aggro        : {},
