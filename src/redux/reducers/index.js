@@ -22,6 +22,7 @@ const initial_state = {
 		enmity                 : {},
 		aggro                  : [],
 		encounter_data_history : {},
+		encounter_history      : [],
 		detail_player          : {},
 		overlayplugin          : !!window.OverlayPluginApi,
 		overlayplugin_author   : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
@@ -65,13 +66,35 @@ function rootReducer(state, action) {
 			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language);
 			action.payload = GameDataProcessor.injectEnmity(action.payload, state);
 
-			if (!action.payload.Encounter || !state.internal.game.Encounter || +action.payload.Encounter.DURATION < +state.internal.game.Encounter.DURATION) {
-				state.internal.encounter_data_history = {};
+			let new_history = false;
+
+			new_state = clone(state);
+
+			if (
+				!action.payload.Encounter ||
+				!state.internal.encounter_history.length ||
+				!state.internal.encounter_history[0].game.Encounter ||
+				+action.payload.Encounter.DURATION < +state.internal.encounter_history[0].game.Encounter.DURATION)
+			{
+				new_history = true;
 			}
 
-			GameDataProcessor.appendHistory(action.payload, state);
+			if (new_history) {
+				new_state.internal.encounter_history.pop();
+				new_state.internal.encounter_history.unshift({
+					game                   : {},
+					encounter_data_history : {}
+				});
+			}
 
-			new_state = createNewState(state, full_key, action);
+			GameDataProcessor.appendHistory(action.payload, new_state);
+
+			new_state.internal.encounter_history[0].game = action.payload;
+
+			if (new_history) {
+				new_state.internal.game                   = new_state.internal.encounter_history[0].game;
+				new_state.internal.encounter_data_history = new_state.internal.encounter_history[0].encounter_data_history;
+			}
 
 			break;
 
