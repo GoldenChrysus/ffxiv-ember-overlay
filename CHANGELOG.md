@@ -7,16 +7,16 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- Fixed 404 error for resize handle image
+- ! - Fixed 404 error for resize handle image
 
 ### Features
-- Added enmity and aggro data for ngld OverlayPlugin users
+- ! - Added enmity and aggro data for ngld OverlayPlugin users
     - Added "Enmity" metric to table and detail settings
     - "Aggro" tab automatically available for ngld OverlayPlugin users
 - TODO: Add "copy" and "paste" buttons for exporting/importing settings data
 
 ### UI Changes
-- New-version indicator (colored gear) will no longer trigger when overlay is running in OBS
+- ! - New-version indicator (colored gear) will no longer trigger when overlay is running in OBS
 
 ### Code Changes
 - `/src/data/locales/metrics.json` renamed to `player-metrics.json`
