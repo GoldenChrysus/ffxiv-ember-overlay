@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { ContextMenuTrigger } from "react-contextmenu";
 import { changeTableType, changeViewing, changePlayerBlur } from "../../redux/actions/index";
 
 import PlayerProcessor from "../../processors/PlayerProcessor";
@@ -8,6 +9,7 @@ import PluginService from "../../services/PluginService";
 import SettingsService from "../../services/SettingsService";
 import LocalizationService from "../../services/LocalizationService";
 import IconButton from "./Container/IconButton";
+import EncounterMenu from "./Container/EncounterMenu";
 
 class Footer extends React.Component {
 	componentDidMount() {
@@ -69,10 +71,18 @@ class Footer extends React.Component {
 			}
 		}
 
-		let actions = function() {
+		let trigger    = null;
+		let toggleMenu = e => {
+			if (trigger) {
+				trigger.handleContextClick(e);
+			}
+		};
+		let actions    = function() {
 			let version_notice = (self.props.new_version && !window.obsstudio) ? "notice" : "";
 			let actions        = [
-				<IconButton icon="history" key="encounter-history-button"/>,
+				<ContextMenuTrigger id="encounter-history-menu" key="encounter-history-trigger" ref={c => trigger = c} attributes={{className: "icon-container"}}>
+					<IconButton icon="history" key="encounter-history-button" no_container={true} onClick={toggleMenu}/>
+				</ContextMenuTrigger>,
 				<IconButton icon="eye slash" title={LocalizationService.getOverlayText("blur_names")} key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
 				<IconButton icon="cut" title={LocalizationService.getOverlayText("split_encounter")} key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
 				<IconButton icon="cog" title={LocalizationService.getOverlayText("settings")} key="settings" class={version_notice} onClick={SettingsService.openSettingsWindow}/>
@@ -86,6 +96,7 @@ class Footer extends React.Component {
 				{navigation()}
 				<div id="footer-actions">
 					{actions()}
+					<EncounterMenu/>
 				</div>
 			</div>
 		);
