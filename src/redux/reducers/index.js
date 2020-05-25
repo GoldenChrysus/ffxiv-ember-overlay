@@ -24,6 +24,7 @@ const initial_state = {
 		data_history         : {},
 		encounter_history    : [],
 		detail_player        : {},
+		viewing_history      : false,
 		overlayplugin        : !!window.OverlayPluginApi,
 		overlayplugin_author : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
 		new_version          : false,
@@ -96,7 +97,7 @@ function rootReducer(state, action) {
 
 			new_state.internal.encounter_history[0].game = action.payload;
 
-			if (new_history) {
+			if (new_history || !new_state.internal.viewing_history) {
 				new_state.internal.game         = new_state.internal.encounter_history[0].game;
 				new_state.internal.data_history = new_state.internal.encounter_history[0].data_history;
 			}
@@ -142,6 +143,8 @@ function rootReducer(state, action) {
 			new_state = createNewState(state, full_key, action);
 			break;
 	}
+
+	console.log(new_state.internal);
 
 	return Object.assign(
 		{},
