@@ -86,7 +86,7 @@ function rootReducer(state, action) {
 
 				new_state.internal.encounter_history.unshift({
 					game         : {},
-					aggro        : {},
+					aggro        : [],
 					enmity       : {},
 					data_history : {}
 				});
