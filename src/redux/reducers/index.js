@@ -82,8 +82,10 @@ function rootReducer(state, action) {
 			if (new_history) {
 				new_state.internal.encounter_history.pop();
 				new_state.internal.encounter_history.unshift({
-					game                   : {},
-					encounter_data_history : {}
+					game         : {},
+					aggro        : {},
+					enmity       : {},
+					data_history : {}
 				});
 			}
 
@@ -93,7 +95,7 @@ function rootReducer(state, action) {
 
 			if (new_history) {
 				new_state.internal.game                   = new_state.internal.encounter_history[0].game;
-				new_state.internal.encounter_data_history = new_state.internal.encounter_history[0].encounter_data_history;
+				new_state.internal.encounter_data_history = new_state.internal.encounter_history[0].data_history;
 			}
 
 			break;
