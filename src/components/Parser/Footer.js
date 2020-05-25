@@ -72,6 +72,7 @@ class Footer extends React.Component {
 		let actions = function() {
 			let version_notice = (self.props.new_version && !window.obsstudio) ? "notice" : "";
 			let actions        = [
+				<IconButton icon="history" key="encounter-history-button"/>,
 				<IconButton icon="eye slash" title={LocalizationService.getOverlayText("blur_names")} key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
 				<IconButton icon="cut" title={LocalizationService.getOverlayText("split_encounter")} key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
 				<IconButton icon="cog" title={LocalizationService.getOverlayText("settings")} key="settings" class={version_notice} onClick={SettingsService.openSettingsWindow}/>
