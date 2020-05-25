@@ -15,18 +15,18 @@ const initial_state = {
 	settings_data  : Settings,
 	last_activity  : (new Date()).getTime() / 1000,
 	internal       : {
-		viewing                : "tables",
-		character_name         : "YOU",
-		rank                   : "N/A",
-		game                   : {},
-		enmity                 : {},
-		aggro                  : [],
-		encounter_data_history : {},
-		encounter_history      : [],
-		detail_player          : {},
-		overlayplugin          : !!window.OverlayPluginApi,
-		overlayplugin_author   : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
-		new_version            : false,
+		viewing              : "tables",
+		character_name       : "YOU",
+		rank                 : "N/A",
+		game                 : {},
+		enmity               : {},
+		aggro                : [],
+		data_history         : {},
+		encounter_history    : [],
+		detail_player        : {},
+		overlayplugin        : !!window.OverlayPluginApi,
+		overlayplugin_author : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
+		new_version          : false,
 	},
 	settings : {}
 };
@@ -97,8 +97,8 @@ function rootReducer(state, action) {
 			new_state.internal.encounter_history[0].game = action.payload;
 
 			if (new_history) {
-				new_state.internal.game                   = new_state.internal.encounter_history[0].game;
-				new_state.internal.encounter_data_history = new_state.internal.encounter_history[0].data_history;
+				new_state.internal.game         = new_state.internal.encounter_history[0].game;
+				new_state.internal.data_history = new_state.internal.encounter_history[0].data_history;
 			}
 
 			break;
@@ -108,7 +108,7 @@ function rootReducer(state, action) {
 				type : "loadSampleData"
 			};
 
-			state.internal.encounter_data_history = SampleHistoryData;
+			state.internal.data_history = SampleHistoryData;
 
 			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language);
 
