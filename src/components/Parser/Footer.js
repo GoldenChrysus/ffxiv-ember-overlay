@@ -80,7 +80,7 @@ class Footer extends React.Component {
 		let actions    = function() {
 			let version_notice = (self.props.new_version && !window.obsstudio) ? "notice" : "";
 			let actions        = [
-				<ContextMenuTrigger id="encounter-history-menu" key="encounter-history-trigger" ref={c => trigger = c} attributes={{className: "icon-container"}}>
+				<ContextMenuTrigger id="encounter-history-menu" key="encounter-history-trigger" ref={c => trigger = c} attributes={{className: "icon-container"}} holdToDisplay="-1">
 					<IconButton icon="history" key="encounter-history-button" no_container={true} onClick={toggleMenu}/>
 				</ContextMenuTrigger>,
 				<IconButton icon="eye slash" title={LocalizationService.getOverlayText("blur_names")} key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
