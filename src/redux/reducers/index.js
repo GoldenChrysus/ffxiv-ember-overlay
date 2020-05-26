@@ -118,20 +118,39 @@ function rootReducer(state, action) {
 			break;
 
 		case "parseEnmity":
-			action.payload = GameDataProcessor.processEnmity(action.payload);
-
-			if (isEqual(action.payload, state.internal.enmity)) {
+			if (!state.internal.encounter_history.length) {
 				return state;
 			}
 
-			new_state = createNewState(state, full_key, action);
+			action.payload = GameDataProcessor.processEnmity(action.payload);
+
+			if (isEqual(action.payload, state.internal.encounter_history[0].enmity)) {
+				return state;
+			}
+
+			new_state = clone(state);
+
+			new_state.internal.encounter_history[0].enmity = action.payload;
+
+			if (!new_state.internal.viewing_history) {
+				new_state.internal.enmity = action.payload;
+			}
 
 			break;
 
 		case "parseAggroList":
-			action.payload = GameDataProcessor.normalizeAggroList(action.payload);
+			if (!state.internal.encounter_history.length) {
+				return state;
+			}
 
-			new_state = createNewState(state, full_key, action);
+			action.payload = GameDataProcessor.normalizeAggroList(action.payload);
+			new_state      = clone(state);
+
+			new_state.internal.encounter_history[0].aggro = action.payload;
+
+			if (!new_state.internal.viewing_history) {
+				new_state.internal.aggro = action.payload;
+			}
 
 			break;
 
