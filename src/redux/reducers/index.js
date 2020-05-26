@@ -93,7 +93,7 @@ function rootReducer(state, action) {
 
 			new_state.internal.encounter_history[0].game = action.payload;
 
-			if (new_history && !new_state.internal.viewing_history) {
+			if ((new_history && !new_state.internal.viewing_history) || !new_state.internal.viewing_history) {
 				new_state.internal.game         = new_state.internal.encounter_history[0].game;
 				new_state.internal.data_history = new_state.internal.encounter_history[0].data_history;
 			}
@@ -114,6 +114,19 @@ function rootReducer(state, action) {
 				payload : GameDataProcessor.normalizeAggroList(SampleAggroData)
 			};
 			new_state  = createNewState(new_state, "internal.aggro", tmp_action);
+
+			break;
+
+		case "loadHistoryEntry":
+			let index = action.payload;
+
+			new_state = clone(state);
+
+			new_state.internal.viewing_history = (index !== 0);
+
+			for (let key in new_state.internal.encounter_history[index]) {
+				new_state.internal[key] = new_state.internal.encounter_history[index][key];
+			}
 
 			break;
 
