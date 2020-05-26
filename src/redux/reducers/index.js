@@ -67,18 +67,14 @@ function rootReducer(state, action) {
 			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language);
 			action.payload = GameDataProcessor.injectEnmity(action.payload, state);
 
-			let new_history = false;
+			new_state = createNewState(state, full_key, action);
 
-			new_state = clone(state);
-
-			if (
+			let new_history = (
 				!action.payload.Encounter ||
 				!state.internal.encounter_history.length ||
 				!state.internal.encounter_history[0].game.Encounter ||
-				+action.payload.Encounter.DURATION < +state.internal.encounter_history[0].game.Encounter.DURATION)
-			{
-				new_history = true;
-			}
+				+action.payload.Encounter.DURATION < +state.internal.encounter_history[0].game.Encounter.DURATION
+			);
 
 			if (new_history) {
 				if (new_state.internal.encounter_history.length === 5) {
@@ -159,16 +155,18 @@ function createNewState(state, full_key, action) {
 
 	let new_state = clone(state);
 
+	if (["parseGameData", "loadSampleData"].indexOf(action.type) !== -1) {
+		new_state.last_activity = (new Date()).getTime() / 1000;
+
+		return new_state;
+	}
+
 	ObjectService.setByKeyPath(new_state, full_key, action.payload);
 
 	if (["settings", "settings.interface.light_theme"].indexOf(full_key) !== -1) {
 		let light_theme = (full_key === "settings") ? action.payload.interface.light_theme : action.payload;
 
 		ThemeService.setTheme(light_theme);
-	}
-
-	if (["parseGameData", "loadSampleData"].indexOf(action.type) !== -1) {
-		new_state.last_activity = (new Date()).getTime() / 1000;
 	}
 
 	return new_state;
