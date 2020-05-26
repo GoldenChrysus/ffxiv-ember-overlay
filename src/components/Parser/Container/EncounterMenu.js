@@ -9,9 +9,16 @@ class EncounterMenu extends React.Component {
 		let i       = 0;
 
 		for (let encounter of this.props.history) {
+			let title = [];
+
+			title.push((encounter.game.Encounter.title !== "Encounter") ? encounter.game.Encounter.title : encounter.game.Encounter.CurrentZoneName);
+			title.push(encounter.game.Encounter.duration);
+
+			title = title.join(" - ");
+
 			options.push(
 				<MenuItem key={"encounter-history-item-" + i} onClick={this.loadHistoryEntry.bind(this, i)}>
-					{encounter.game.Encounter.title} - {encounter.game.Encounter.duration}
+					{title}
 				</MenuItem>
 			);
 
