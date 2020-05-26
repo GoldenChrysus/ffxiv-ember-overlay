@@ -97,7 +97,7 @@ function rootReducer(state, action) {
 
 			new_state.internal.encounter_history[0].game = action.payload;
 
-			if (new_history || !new_state.internal.viewing_history) {
+			if (new_history && !new_state.internal.viewing_history) {
 				new_state.internal.game         = new_state.internal.encounter_history[0].game;
 				new_state.internal.data_history = new_state.internal.encounter_history[0].data_history;
 			}
