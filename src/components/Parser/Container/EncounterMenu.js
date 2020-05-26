@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { ContextMenu, MenuItem } from "react-contextmenu";
+import { loadHistoryEntry } from "../../../redux/actions/index";
 
 class EncounterMenu extends React.Component {
 	render() {
@@ -9,7 +10,7 @@ class EncounterMenu extends React.Component {
 
 		for (let encounter of this.props.history) {
 			options.push(
-				<MenuItem key={"encounter-history-item-" + i}>
+				<MenuItem key={"encounter-history-item-" + i} onClick={this.loadHistoryEntry.bind(this, i)}>
 					{encounter.game.Encounter.title} - {encounter.game.Encounter.duration}
 				</MenuItem>
 			);
@@ -33,7 +34,19 @@ class EncounterMenu extends React.Component {
 			</ContextMenu>
 		);
 	}
+
+	loadHistoryEntry(index) {
+		this.props.loadHistoryEntry(index);
+	}
 }
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		loadHistoryEntry : (data) => {
+			dispatch(loadHistoryEntry(data));
+		}
+	}
+};
 
 const mapStateToProps = (state) => {
 	return {
@@ -41,4 +54,4 @@ const mapStateToProps = (state) => {
 	};
 };
 
-export default connect(mapStateToProps)(EncounterMenu);
+export default connect(mapStateToProps, mapDispatchToProps)(EncounterMenu);

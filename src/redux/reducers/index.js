@@ -190,7 +190,9 @@ function createNewState(state, full_key, action) {
 	if (["parseGameData", "loadSampleData"].indexOf(action.type) !== -1) {
 		new_state.last_activity = (new Date()).getTime() / 1000;
 
-		return new_state;
+		if (action.type === "parseGameData") {
+			return new_state;
+		}
 	}
 
 	ObjectService.setByKeyPath(new_state, full_key, action.payload);
