@@ -12,7 +12,7 @@
 ### Features
 - ! - Adds encounter history
     - Encounter history can be accessed by clicking the rewind clock icon in the bottom-right of the overlay
-    - Up to five encounters will be stored at a time
+    - Up to five encounters will be stored at a time, including the active encounter
     - If viewing a previous encounter while in an active encounter, the previous encounter will continue to display until the user manually switches back to the active encounter
         - Active encounter will continue to accurately parse in the background when viewing a previous encounter
     - Previous encounters store: table data, player detail (including graphs), enmity data, and the aggro list
