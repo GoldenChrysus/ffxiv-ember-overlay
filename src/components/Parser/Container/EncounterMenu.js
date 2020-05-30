@@ -9,6 +9,10 @@ class EncounterMenu extends React.Component {
 		let i       = 0;
 
 		for (let encounter of this.props.history) {
+			if (!encounter.game.Encounter) {
+				continue;
+			}
+
 			let title = [];
 
 			title.push((encounter.game.Encounter.title !== "Encounter") ? encounter.game.Encounter.title : encounter.game.Encounter.CurrentZoneName);
