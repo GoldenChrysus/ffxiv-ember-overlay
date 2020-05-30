@@ -1,10 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { parseGameData } from "../../redux/actions/index";
 import { ContextMenuTrigger } from "react-contextmenu";
 import ReactTooltip from "react-tooltip";
 
-import Header from "./Header";
 import ContextMenu from "./Container/Menu";
 import Import from "./Container/Import";
 import GameState from "./GameState";
@@ -12,12 +10,13 @@ import PlayerTable from "./PlayerTable";
 import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
 import PlaceholderToggle from "./Placeholder/Toggle";
+import PluginService from "../../services/PluginService";
+import AggroTable from "./AggroTable";
 
 class Container extends React.Component {
 	componentDidMount() {
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
-		document.addEventListener("onOverlayDataUpdate", this.parseData.bind(this));
-
+		(new PluginService()).subscribe();
 		this.props.socket_service.initialize();
 	}
 
@@ -30,7 +29,11 @@ class Container extends React.Component {
 
 		switch (viewing) {
 			case "tables":
-				content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
+				if (this.props.settings.intrinsic.table_type !== "aggro") {
+					content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
+				} else {
+					content = <AggroTable monsters={this.props.internal.aggro}/>
+				}
 
 				break;
 
@@ -46,12 +49,6 @@ class Container extends React.Component {
 
 			default:
 				break;
-		}
-
-		let header;
-
-		if (false) {
-			header = <Header title="Ember Overlay"/>;
 		}
 
 		let footer = [];
@@ -72,7 +69,6 @@ class Container extends React.Component {
 						<PlaceholderToggle type="bottom left"/>
 						<PlaceholderToggle type="bottom right"/>
 						<div id="inner">
-							{header}
 							<GameState encounter={encounter} active={active} rank={this.props.internal.rank} show_rank={this.props.settings.interface.top_right_rank}/>
 							<div id="content">
 								{content}
@@ -87,10 +83,6 @@ class Container extends React.Component {
 		);
 	}
 
-	parseData(e) {
-		this.props.parseGameData(e.detail);
-	}
-
 	toggleHandle(e) {
 		if (!e.detail.isLocked) {
 			document.getElementsByTagName("body")[0].classList.add("resizeHandle");
@@ -100,16 +92,8 @@ class Container extends React.Component {
 	}
 }
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		parseGameData : (data) => {
-			dispatch(parseGameData(data));
-		}
-	}
-};
-
 const mapStateToProps = (state) => {
 	return state;
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Container);
+export default connect(mapStateToProps)(Container);

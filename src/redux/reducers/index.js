@@ -1,4 +1,5 @@
 import clone from "lodash.clonedeep";
+import isEqual from "lodash.isequal";
 
 import Settings from "../../data/Settings";
 import SocketService from "../../services/SocketService";
@@ -7,22 +8,26 @@ import GameDataProcessor from "../../processors/GameDataProcessor";
 import ThemeService from "../../services/ThemeService";
 import SampleGameData from "../../constants/SampleGameData";
 import SampleHistoryData from "../../constants/SampleHistoryData";
+import SampleAggroData from "../../constants/SampleAggroData";
 
 const initial_state = {
-	socket_service    : new SocketService(),
-	settings_data     : Settings,
-	last_activity     : (new Date()).getTime() / 1000,
-	internal          : {
+	socket_service : new SocketService(),
+	settings_data  : Settings,
+	last_activity  : (new Date()).getTime() / 1000,
+	internal       : {
 		viewing                : "tables",
 		character_name         : "YOU",
 		rank                   : "N/A",
 		game                   : {},
+		enmity                 : {},
+		aggro                  : [],
 		encounter_data_history : {},
 		detail_player          : {},
 		overlayplugin          : !!window.OverlayPluginApi,
+		overlayplugin_author   : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
 		new_version            : false,
 	},
-	settings          : {}
+	settings : {}
 };
 
 function rootReducer(state, action) {
@@ -58,6 +63,7 @@ function rootReducer(state, action) {
 
 		case "parseGameData":
 			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language);
+			action.payload = GameDataProcessor.injectEnmity(action.payload, state);
 
 			if (!action.payload.Encounter || !state.internal.game.Encounter || +action.payload.Encounter.DURATION < +state.internal.game.Encounter.DURATION) {
 				state.internal.encounter_data_history = {};
@@ -78,7 +84,29 @@ function rootReducer(state, action) {
 
 			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language);
 
-			new_state = createNewState(state, "internal.game", tmp_action);
+			new_state  = createNewState(state, "internal.game", tmp_action);
+			tmp_action = {
+				payload : GameDataProcessor.normalizeAggroList(SampleAggroData)
+			};
+			new_state  = createNewState(new_state, "internal.aggro", tmp_action);
+
+			break;
+
+		case "parseEnmity":
+			action.payload = GameDataProcessor.processEnmity(action.payload);
+
+			if (isEqual(action.payload, state.internal.enmity)) {
+				return state;
+			}
+
+			new_state = createNewState(state, full_key, action);
+
+			break;
+
+		case "parseAggroList":
+			action.payload = GameDataProcessor.normalizeAggroList(action.payload);
+
+			new_state = createNewState(state, full_key, action);
 
 			break;
 

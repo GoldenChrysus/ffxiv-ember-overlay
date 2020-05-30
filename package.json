@@ -2,7 +2,7 @@
 	"name": "ffxiv-ember-overlay",
 	"description": "React + Redux overlay for the OverlayPlugin and ACTWebSocket plugins for Advanced Combat Tracker for use with Final Fantasy XIV.",
 	"license": "GPL-3.0-only",
-	"version": "0.15.3-alpha",
+	"version": "0.16.0-alpha",
 	"keywords": [
 		"ffxiv-overlays",
 		"ffxiv-act",
@@ -21,6 +21,7 @@
 		"jquery-ui": "^1.12.1",
 		"localforage": "^1.7.3",
 		"lodash.clonedeep": "^4.5.0",
+		"lodash.isequal": "^4.5.0",
 		"lodash.mergewith": "^4.6.2",
 		"lodash.shuffle": "^4.2.0",
 		"react": "^16.8.6",
@@ -39,25 +40,18 @@
 	},
 	"scripts": {
 		"copy:changelog": "cp CHANGELOG.md public/logs/",
-
 		"prestart": "npm run copy:changelog",
 		"start": "env-cmd -e default,development craco start",
-
 		"prebuild:development": "npm run copy:changelog",
 		"build:development": "env-cmd -e default,development craco build",
-
 		"prebuild:staging": "npm run copy:changelog",
 		"build:staging": "env-cmd -e default,staging craco build",
-
 		"prebuild:nonssl-staging": "npm run copy:changelog",
 		"build:nonssl-staging": "env-cmd -e default,staging,nonssl craco build",
-
 		"prebuild:nonssl": "npm run copy:changelog",
 		"build:nonssl": "env-cmd -e default,production,nonssl craco build",
-
 		"prebuild": "npm run copy:changelog",
 		"build": "env-cmd -e default,production craco build",
-
 		"test": "craco test",
 		"eject": "craco eject"
 	},

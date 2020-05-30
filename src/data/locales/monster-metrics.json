@@ -1,0 +1,122 @@
+{
+	"Name"           : {
+		"en" : {
+			"short" : "Name",
+			"long"  : "Name"
+		},
+		"pt" : {
+			"short" : "Nome",
+			"long"  : "Nome"
+		},
+		"cn" : {
+			"short" : "名称",
+			"long"  : "名称"
+		},
+		"jp" : {
+			"short" : "名前",
+			"long"  : "名前"
+		},
+		"de" : {
+			"short" : "Name",
+			"long"  : "Name"
+		},
+		"es" : {
+			"short" : "Nombre",
+			"long"  : "Nombre"
+		},
+		"fr" : {
+			"short" : "Prénom",
+			"long"  : "Prénom"
+		}
+	},
+	"CurrentHP"      : {
+		"en" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"pt" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"cn" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"jp" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"de" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"es" : {
+			"short" : "HP",
+			"long"  : "Health"
+		},
+		"fr" : {
+			"short" : "HP",
+			"long"  : "Health"
+		}
+	},
+	"health_percent" : {
+		"en" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"pt" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"cn" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"jp" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"de" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"es" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		},
+		"fr" : {
+			"short" : "HP %",
+			"long"  : "Health Percent"
+		}
+	},
+	"player_Name"    : {
+		"en" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"pt" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"cn" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"jp" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"de" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"es" : {
+			"short" : "Target",
+			"long"  : "Target"
+		},
+		"fr" : {
+			"short" : "Target",
+			"long"  : "Target"
+		}
+	}
+}

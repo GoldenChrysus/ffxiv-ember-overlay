@@ -3,6 +3,7 @@ import React from "react";
 import PlayerProcessor from "../../../processors/PlayerProcessor";
 import LocalizationService from "../../../services/LocalizationService";
 import Constants from "../../../constants/index";
+import PercentBar from "../PercentBar";
 
 class Player extends React.Component {
 	render() {
@@ -25,9 +26,13 @@ class Player extends React.Component {
 			let value  = PlayerProcessor.getDataValue(key, player, this.props.players, this.props.encounter);
 			let prefix = (is_raid) ? LocalizationService.getPlayerDataTitle(key, "short") + ": " : "";
 
-			columns.push(
-				<div className="column" key={key}><span>{prefix}</span>{value}</div>
-			);
+			if (key === "enmity_percent") {
+				columns.push(<div className="column" key={key}><PercentBar percent={value}/></div>);
+			} else {
+				columns.push(
+					<div className="column" key={key}><span>{prefix}</span>{value}</div>
+				);
+			}
 		}
 
 		let name_blur   = (this.props.blur) ? "blur" : "";
@@ -55,7 +60,7 @@ class Player extends React.Component {
 					{name}
 				</div>
 			);
-		}
+		};
 		let statData   = () => {
 			if (!is_raid) {
 				return columns;
@@ -67,7 +72,7 @@ class Player extends React.Component {
 					{columns}
 				</div>
 			);
-		}
+		};
 		let percentBar = () => {
 			if (!this.props.percent_bars) {
 				return "";
@@ -85,7 +90,7 @@ class Player extends React.Component {
 					height              : "0"
 				}}></div>
 			);
-		}
+		};
 
 		return (
 			<div className={"row player " + player_type} data-job={job} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>

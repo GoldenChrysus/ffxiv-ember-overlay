@@ -161,6 +161,15 @@
 		"es" : "Tank",
 		"fr" : "Tank"
 	},
+	"aggro"              : {
+		"en" : "Aggro",
+		"pt" : "Aggro",
+		"cn" : "Aggro",
+		"jp" : "Aggro",
+		"de" : "Aggro",
+		"es" : "Aggro",
+		"fr" : "Aggro"
+	},
 	"import"              : {
 		"en" : "Import",
 		"pt" : "Importar",

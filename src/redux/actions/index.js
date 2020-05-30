@@ -16,6 +16,22 @@ export function clearGameData() {
 	return parseGameData({});
 }
 
+export function parseEnmity(payload) {
+	return {
+		type : "parseEnmity",
+		key  : "internal.enmity",
+		payload
+	};
+}
+
+export function parseAggroList(payload) {
+	return {
+		type : "parseAggroList",
+		key  : "internal.aggro",
+		payload
+	};
+}
+
 export function updateSetting(payload) {
 	return {
 		type      : "setSetting",
