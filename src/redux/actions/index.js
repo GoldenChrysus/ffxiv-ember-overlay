@@ -12,6 +12,13 @@ export function loadSampleGameData() {
 	};
 }
 
+export function loadHistoryEntry(payload) {
+	return {
+		type : "loadHistoryEntry",
+		payload
+	};
+}
+
 export function clearGameData() {
 	return parseGameData({});
 }
