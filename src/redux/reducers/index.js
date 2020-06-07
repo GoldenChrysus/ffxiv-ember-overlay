@@ -15,17 +15,19 @@ const initial_state = {
 	settings_data  : Settings,
 	last_activity  : (new Date()).getTime() / 1000,
 	internal       : {
-		viewing                : "tables",
-		character_name         : "YOU",
-		rank                   : "N/A",
-		game                   : {},
-		enmity                 : {},
-		aggro                  : [],
-		encounter_data_history : {},
-		detail_player          : {},
-		overlayplugin          : !!window.OverlayPluginApi,
-		overlayplugin_author   : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
-		new_version            : false,
+		viewing              : "tables",
+		character_name       : "YOU",
+		rank                 : "N/A",
+		game                 : {},
+		enmity               : {},
+		aggro                : [],
+		data_history         : {},
+		encounter_history    : [],
+		detail_player        : {},
+		viewing_history      : false,
+		overlayplugin        : !!window.OverlayPluginApi,
+		overlayplugin_author : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
+		new_version          : false,
 	},
 	settings : {}
 };
@@ -65,13 +67,36 @@ function rootReducer(state, action) {
 			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language);
 			action.payload = GameDataProcessor.injectEnmity(action.payload, state);
 
-			if (!action.payload.Encounter || !state.internal.game.Encounter || +action.payload.Encounter.DURATION < +state.internal.game.Encounter.DURATION) {
-				state.internal.encounter_data_history = {};
+			new_state = createNewState(state, full_key, action);
+
+			let new_history = (
+				!action.payload.Encounter ||
+				!state.internal.encounter_history.length ||
+				!state.internal.encounter_history[0].game.Encounter ||
+				+action.payload.Encounter.DURATION < +state.internal.encounter_history[0].game.Encounter.DURATION
+			);
+
+			if (new_history) {
+				if (new_state.internal.encounter_history.length === 5) {
+					new_state.internal.encounter_history.pop();
+				}
+
+				new_state.internal.encounter_history.unshift({
+					game         : {},
+					aggro        : [],
+					enmity       : {},
+					data_history : {}
+				});
 			}
 
-			GameDataProcessor.appendHistory(action.payload, state);
+			GameDataProcessor.appendHistory(action.payload, new_state);
 
-			new_state = createNewState(state, full_key, action);
+			new_state.internal.encounter_history[0].game = action.payload;
+
+			if ((new_history && !new_state.internal.viewing_history) || !new_state.internal.viewing_history) {
+				new_state.internal.game         = new_state.internal.encounter_history[0].game;
+				new_state.internal.data_history = new_state.internal.encounter_history[0].data_history;
+			}
 
 			break;
 
@@ -80,7 +105,7 @@ function rootReducer(state, action) {
 				type : "loadSampleData"
 			};
 
-			state.internal.encounter_data_history = SampleHistoryData;
+			state.internal.data_history = SampleHistoryData;
 
 			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language);
 
@@ -92,21 +117,53 @@ function rootReducer(state, action) {
 
 			break;
 
-		case "parseEnmity":
-			action.payload = GameDataProcessor.processEnmity(action.payload);
+		case "loadHistoryEntry":
+			let index = action.payload;
 
-			if (isEqual(action.payload, state.internal.enmity)) {
+			new_state = clone(state);
+
+			new_state.internal.viewing_history = (index !== 0);
+
+			for (let key in new_state.internal.encounter_history[index]) {
+				new_state.internal[key] = new_state.internal.encounter_history[index][key];
+			}
+
+			break;
+
+		case "parseEnmity":
+			if (!state.internal.encounter_history.length) {
 				return state;
 			}
 
-			new_state = createNewState(state, full_key, action);
+			action.payload = GameDataProcessor.processEnmity(action.payload);
+
+			if (isEqual(action.payload, state.internal.encounter_history[0].enmity)) {
+				return state;
+			}
+
+			new_state = clone(state);
+
+			new_state.internal.encounter_history[0].enmity = action.payload;
+
+			if (!new_state.internal.viewing_history) {
+				new_state.internal.enmity = action.payload;
+			}
 
 			break;
 
 		case "parseAggroList":
-			action.payload = GameDataProcessor.normalizeAggroList(action.payload);
+			if (!state.internal.encounter_history.length) {
+				return state;
+			}
 
-			new_state = createNewState(state, full_key, action);
+			action.payload = GameDataProcessor.normalizeAggroList(action.payload);
+			new_state      = clone(state);
+
+			new_state.internal.encounter_history[0].aggro = action.payload;
+
+			if (!new_state.internal.viewing_history) {
+				new_state.internal.aggro = action.payload;
+			}
 
 			break;
 
@@ -128,16 +185,20 @@ function createNewState(state, full_key, action) {
 
 	let new_state = clone(state);
 
+	if (["parseGameData", "loadSampleData"].indexOf(action.type) !== -1) {
+		new_state.last_activity = (new Date()).getTime() / 1000;
+
+		if (action.type === "parseGameData") {
+			return new_state;
+		}
+	}
+
 	ObjectService.setByKeyPath(new_state, full_key, action.payload);
 
 	if (["settings", "settings.interface.light_theme"].indexOf(full_key) !== -1) {
 		let light_theme = (full_key === "settings") ? action.payload.interface.light_theme : action.payload;
 
 		ThemeService.setTheme(light_theme);
-	}
-
-	if (["parseGameData", "loadSampleData"].indexOf(action.type) !== -1) {
-		new_state.last_activity = (new Date()).getTime() / 1000;
 	}
 
 	return new_state;

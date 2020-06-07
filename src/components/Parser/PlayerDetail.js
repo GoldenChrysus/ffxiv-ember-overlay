@@ -68,7 +68,7 @@ class PlayerDetail extends React.Component {
 const mapStateToProps = (state) => {
 	return {
 		detail_data : state.settings.detail_data,
-		history     : state.internal.encounter_data_history,
+		history     : state.internal.data_history,
 		light_theme : state.settings.interface.light_theme
 	};
 };
