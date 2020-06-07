@@ -162,13 +162,13 @@
 		"fr" : "Tank"
 	},
 	"aggro"              : {
-		"en" : "Aggro",
-		"pt" : "Aggro",
-		"cn" : "Aggro",
-		"jp" : "Aggro",
-		"de" : "Aggro",
-		"es" : "Aggro",
-		"fr" : "Aggro"
+		"en" : "Agg",
+		"pt" : "Agg",
+		"cn" : "Agg",
+		"jp" : "Agg",
+		"de" : "Agg",
+		"es" : "Agg",
+		"fr" : "Agg"
 	},
 	"import"              : {
 		"en" : "Import",
