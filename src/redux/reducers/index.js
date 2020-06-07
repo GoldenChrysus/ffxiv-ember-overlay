@@ -172,8 +172,6 @@ function rootReducer(state, action) {
 			break;
 	}
 
-	console.log(new_state.internal);
-
 	return Object.assign(
 		{},
 		new_state || state

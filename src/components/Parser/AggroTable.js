@@ -46,7 +46,7 @@ class AggroTable extends React.Component {
 			);
 		}
 
-		let overlay_info = (this.props.monsters && this.props.monsters.length) ? "" : <OverlayInfo/>
+		let overlay_info = (this.props.collapsed || (this.props.monsters && this.props.monsters.length)) ? "" : <OverlayInfo/>
 
 		return (
 			<React.Fragment>
@@ -68,7 +68,8 @@ const mapStateToProps = (state) => {
 		overlayplugin_author : state.internal.overlayplugin_author,
 		player_blur          : state.settings.intrinsic.player_blur,
 		icon_blur            : state.settings.interface.blur_job_icons,
-		table_settings       : state.settings.table_settings
+		table_settings       : state.settings.table_settings,
+		collapsed            : state.settings.intrinsic.collapsed
 	};
 };
 
