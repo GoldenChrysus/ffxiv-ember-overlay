@@ -47,7 +47,7 @@ class OverlayInfo extends React.Component {
 			<div id="overlay-info">
 				<h3>Ember Overlay</h3>
 				<p>This section will disappear when an encounter begins.</p>
-				<p>Seeking a translator for Korean. Please join the Discord if interested.</p>
+				<p>Try out the new minimal theme in Settings -> Interface!</p>
 
 				<div id="funding">
 					<span onClick={this.openFundingLink.bind(this, "paypal")} ref="paypal"><img src="img/buttons/funding/paypal.png" alt="Donate at PayPal" height="20"/></span>

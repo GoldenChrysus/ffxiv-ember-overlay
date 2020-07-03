@@ -73,8 +73,6 @@ class Footer extends React.Component {
 
 		let trigger    = null;
 		let toggleMenu = e => {
-			console.log(trigger);
-			console.log(e);
 			if (trigger) {
 				trigger.handleContextClick(e);
 			}
