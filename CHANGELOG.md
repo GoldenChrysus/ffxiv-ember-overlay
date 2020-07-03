@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.18.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- ?
+
+### Features
+- Added minimal theme
+
+### UI Changes
+- Shortened English "Death" table title to "Dth"
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- Reorganized "Interface" settings section
+
 ## 0.17.0-alpha
 
 **Released: 2020-06-07**

@@ -1,8 +1,10 @@
 import $ from "jquery";
 
 class ThemeService {
-	setTheme(light_theme) {
-		$("body").toggleClass("light", light_theme);
+	setTheme(options) {
+		for (let key of Object.keys(options)) {
+			$("body").toggleClass(key, options[key]);
+		}
 	}
 }
 

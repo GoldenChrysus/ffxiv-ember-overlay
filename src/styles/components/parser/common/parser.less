@@ -79,6 +79,13 @@
 		{
 			background-color: @light_containerBackground;
 			box-shadow: inset 0 1px 1px 0 @light_borderOuter, inset 0 0 1px 0 @light_borderOuterShadow, 0 0 1px 2px @light_borderOuterGlow, 0 2px 2px 2px @light_borderOuterGlow;
+		},
+		{
+			width: calc(100% - 5px);
+			height: calc(100% - 5px);
+			box-shadow: none;
+			padding: 0;
+			margin-top: 1px;
 		}
 	);
 }
@@ -101,6 +108,9 @@
 		{
 			background-image: @light_contentBackground;
 			box-shadow: inset 0 0 0 1px @light_borderInner, 0 0 0 2px @light_borderInnerShadow, 0 3px 1px @light_borderOuter, 0 0 2px 1px @light_borderInnerGlow;
+		},
+		{
+			box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2), -1px 1px 1px 0px rgba(0, 0, 0, 0.2);
 		}
 	);
 }
@@ -369,6 +379,15 @@
 	margin          : 8px;
 	border-collapse : collapse;
 	position        : relative;
+
+	.setThemeStyle(
+		{},
+		{},
+		{
+			width: 100%;
+			margin: 0;
+		}
+	);
 }
 
 #container #inner #content #player-table.grid {
@@ -465,6 +484,14 @@
 	overflow        : hidden;
 	padding         : 4px 3px;
 	vertical-align  : middle;
+
+	.setThemeStyle(
+		{},
+		{},
+		{
+			padding: 2px; 
+		}
+	);
 }
 
 #container #inner #content #player-table .row.header {
@@ -535,10 +562,28 @@
 #container #inner #content #player-table.grid .row .player-data > .column:first-child {
 	width: 23px;
 	padding: 3px 3px 0 3px;
+	position: relative;
+
+	.setThemeStyle(
+		{},
+		{},
+		{
+			width: 20px;
+			padding: 2px 2px 0 2px;
+		}
+	);
 }
 
 #container #inner #content #player-table.grid .row .player-data > .column:first-child {
 	width : 19px;
+
+	.setThemeStyle(
+		{},
+		{},
+		{
+			padding: 1px 2px 0 0px;
+		}
+	);
 }
 
 #container #inner #content #player-table.grid .row .player-data,
@@ -558,11 +603,29 @@
 	height: 20px;
 	position: relative;
 	z-index: 1;
+
+	.setThemeStyle(
+		{},
+		{},
+		{
+			width: 16px;
+			height: 16px;
+			top: 1px;
+		}
+	);
 }
 
 #container #inner #content #player-table.grid .row .player-data .column:first-child img {
 	width  : 16px;
 	height : 16px;
+
+	.setThemeStyle(
+		{},
+		{},
+		{
+			top: 0;
+		}
+	);
 }
 
 #container #inner #content #player-table .row > .column:nth-child(2),

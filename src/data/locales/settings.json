@@ -19,6 +19,24 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général"
+				},
+				{
+					"en" : "Data",
+					"pt" : "Dadas",
+					"cn" : "数据",
+					"jp" : "データ",
+					"de" : "Daten",
+					"es" : "Datos",
+					"fr" : "Données"
+				},
+				{
+					"en" : "Theme",
+					"pt" : "Tema",
+					"cn" : "主题",
+					"jp" : "テーマ",
+					"de" : "Farbschema",
+					"es" : "Theme",
+					"fr" : "Thème"
 				}
 			]
 		},
@@ -357,6 +375,15 @@
 			"de" : "Helles Farbschema benutzen",
 			"es" : "Usar Light Theme",
 			"fr" : "Utiliser le thème clair/la version clair de l'Overlay"
+		},
+		"interface.minimal_theme" : {
+			"en" : "Use Minimal Theme",
+			"pt" : "Usar tema mínima",
+			"cn" : "使用最小的主题",
+			"jp" : "ミニマルテーマを使用",
+			"de" : "Minimal Farbschema benutzen",
+			"es" : "Usar Mínimo Theme",
+			"fr" : "Utiliser le thème minimale/la version minimale de l'Overlay"
 		},
 		"interface.auto_hide" : {
 			"en" : "Auto-Hide Overlay After Inactivity (Set Below)",

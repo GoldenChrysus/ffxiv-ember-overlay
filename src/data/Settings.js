@@ -21,6 +21,7 @@ const default_settings = {
 		blur_job_icons        : false,
 		collapse_down         : false,
 		light_theme           : false,
+		minimal_theme         : false,
 		footer_when_collapsed : false,
 		footer_dps            : false,
 		decimal_accuracy      : 2,

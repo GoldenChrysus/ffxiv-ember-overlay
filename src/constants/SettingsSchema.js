@@ -76,33 +76,6 @@ const SettingsSchema = {
 							}
 						},
 						{
-							key_path : "interface.opacity",
-							type     : "slider",
-							range    : "min",
-							minimum  : 0,
-							maximum  : 100,
-							value    : function() {
-								return this.props.settings.interface.opacity;
-							}
-						},
-						{
-							key_path : "interface.zoom",
-							type     : "slider",
-							range    : "min",
-							minimum  : 1,
-							maximum  : 500,
-							value    : function() {
-								return this.props.settings.interface.zoom;
-							}
-						},
-						{
-							key_path : "interface.top_right_rank",
-							type     : "checkbox",
-							value    : function() {
-								return this.props.settings.interface.top_right_rank;
-							}
-						},
-						{
 							key_path : "interface.blur_job_icons",
 							type     : "checkbox",
 							value    : function() {
@@ -121,6 +94,34 @@ const SettingsSchema = {
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.interface.footer_when_collapsed;
+							}
+						},
+						{
+							key_path : "interface.auto_hide",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.auto_hide;
+							}
+						},
+						{
+							key_path : "interface.auto_hide_delay",
+							type     : "slider",
+							range    : "min",
+							minimum  : 0,
+							maximum  : 600,
+							value    : function() {
+								return this.props.settings.interface.auto_hide_delay;
+							}
+						}
+					]
+				},
+				{
+					settings : [
+						{
+							key_path : "interface.top_right_rank",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.interface.top_right_rank;
 							}
 						},
 						{
@@ -144,6 +145,30 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.interface.shorten_thousands;
 							}
+						}
+					]
+				},
+				{
+					settings : [
+						{
+							key_path : "interface.opacity",
+							type     : "slider",
+							range    : "min",
+							minimum  : 0,
+							maximum  : 100,
+							value    : function() {
+								return this.props.settings.interface.opacity;
+							}
+						},
+						{
+							key_path : "interface.zoom",
+							type     : "slider",
+							range    : "min",
+							minimum  : 1,
+							maximum  : 500,
+							value    : function() {
+								return this.props.settings.interface.zoom;
+							}
 						},
 						{
 							key_path : "interface.light_theme",
@@ -153,22 +178,12 @@ const SettingsSchema = {
 							}
 						},
 						{
-							key_path : "interface.auto_hide",
+							key_path : "interface.minimal_theme",
 							type     : "checkbox",
 							value    : function() {
-								return this.props.settings.interface.auto_hide;
+								return this.props.settings.interface.minimal_theme;
 							}
-						},
-						{
-							key_path : "interface.auto_hide_delay",
-							type     : "slider",
-							range    : "min",
-							minimum  : 0,
-							maximum  : 600,
-							value    : function() {
-								return this.props.settings.interface.auto_hide_delay;
-							}
-						},
+						}
 					]
 				}
 			]
