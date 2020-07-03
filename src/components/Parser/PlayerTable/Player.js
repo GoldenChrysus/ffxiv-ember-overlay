@@ -14,11 +14,10 @@ class Player extends React.Component {
 		let is_raid      = (table_type === "raid");
 		let columns      = [];
 		let stat_columns = this.props.columns;
+		let job_data     = Constants.GameJobs[job];
+		let role         = (job_data) ? job_data.role : "dps";
 
 		if (is_raid) {
-			let job_data = Constants.GameJobs[job];
-			let role     = (job_data) ? job_data.role : "dps";
-
 			stat_columns = stat_columns[role];
 		}
 
@@ -93,7 +92,7 @@ class Player extends React.Component {
 		};
 
 		return (
-			<div className={"row player " + player_type} data-job={job} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>
+			<div className={"row player " + player_type} data-job={job} data-role={role} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>
 				{playerData()}
 				{statData()}
 				{percentBar()}

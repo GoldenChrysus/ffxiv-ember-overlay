@@ -16,7 +16,7 @@
 - Shortened English "Death" table title to "Dth"
 
 ### Code Changes
-- ?
+- Added `data-role` attribute (enum: `dps`, `heal`, `tank`) to player row `<div>` for easier role-wide CSS styling
 
 ### Miscellaneous
 - Reorganized "Interface" settings section
