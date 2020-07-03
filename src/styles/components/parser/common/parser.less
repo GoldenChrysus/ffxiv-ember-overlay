@@ -405,12 +405,10 @@
 
 	.setThemeStyle(
 		{
-			background: @dark_playerTableRowBackground;
 			color: @dark_playerTableRowText;
 			border-bottom: 1px solid @dark_gridItemBackground;
 		},
 		{
-			background: @light_playerTableRowBackground;
 			color: @light_playerTableRowText;
 			border-bottom: 1px solid @light_gridItemBackground;
 		}
@@ -494,6 +492,18 @@
 	);
 }
 
+#container #inner #content #player-table:not(.grid) .row:not(.header) .column {
+	.setThemeStyle(
+		{
+			background: @dark_playerTableRowBackground;
+		},
+		{
+			background: @light_playerTableRowBackground;
+		},
+		{}
+	);
+}
+
 #container #inner #content #player-table .row.header {
 	.setThemeStyle(
 		{
@@ -515,6 +525,9 @@
 		},
 		{
 			color: @light_headerAndLinkText;
+		},
+		{
+			font-size: 10px;
 		}
 	);
 }
