@@ -7,6 +7,7 @@
     - <a href="#add-firewall-exception">Add Firewall Exception</a>
 - <a href="#installing-overlayplugin">Installing OverlayPlugin</a>
 - <a href="#using-the-web-socket">Using the Web Socket</a>
+- <a href="#using-in-obs">Using in OBS</a>
 
 ## Installing ACT
 
