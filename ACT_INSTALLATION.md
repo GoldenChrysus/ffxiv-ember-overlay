@@ -7,6 +7,7 @@
     - <a href="#add-firewall-exception">Add Firewall Exception</a>
 - <a href="#installing-overlayplugin">Installing OverlayPlugin</a>
 - <a href="#using-the-web-socket">Using the Web Socket</a>
+- <a href="#using-in-obs">Using in OBS</a>
 
 ## Installing ACT
 
@@ -136,3 +137,41 @@ Note: If you know you want to use a different IP address or port, change them ac
 2. Select your desired Web socket overlay from the "Overlay" dropdown. The URL provided in the text box is the URL you should use in OBS, on your phone, etc. This URL is different from the one that appears in your OverlayPlugin.dll tab.
 
 ![](https://i.imgur.com/s79ArxT.png)
+
+## Using in OBS
+
+If you are a streamer, you can display the overlay in OBS. The easiest way to do this is by using window capture to capture your overlay along with your game. However, if you're using game capture or if you want your OBS overlay to have different settings than your personal overlay, follow the instructions below.
+
+1. Ensure you have completed the [Using the Web Socket](#using-the-web-socket) steps above.
+
+2. Add an OBS Browser Source using the URL you copied from the Using the Web Socket section.
+
+![](https://i.imgur.com/AZHouEn.png)
+
+![](https://i.imgur.com/IuyOAoF.png)
+
+3. If you wish to resize the source, modify the width/height values directly in the source properties (the window where you enter the URL) instead of resizing the source visually in your scene.
+
+![](https://i.imgur.com/cJxfmNy.png)
+
+4. You can interact with the overlay (to change tabs, etc.) by right-clicking the overlay in your OBS scene stage and choosing "Interact."
+
+![](https://i.imgur.com/hpK4XtP.png)
+
+5. To import settings into the overlay (if you have your tables, CSS, etc. customized):
+
+    1. Export the settings from a non-OBS overlay (gear icon > Export > copy big block of text).
+
+    ![](https://i.imgur.com/ZG2DHB2.png)
+
+    2. Interact with the OBS overlay. Once interacting, right-click the overlay, and choose "Import."
+
+    ![](https://i.imgur.com/OytsHEB.png)
+
+    3. Paste the text you just copied and click the "Import" button.
+
+    ![](https://i.imgur.com/8HjM5P9.png)
+
+    4. Done! In this example, I imported an overlay with the zoom setting at 150% so that it appears more clearly in OBS.
+
+    ![](https://i.imgur.com/NgiggHz.png)

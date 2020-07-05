@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.18.0-alpha
+
+**Released: 2020-07-05**
+
+### Bug Fixes
+- N/A
+
+### Features
+- Added minimal theme
+    - Enable the minimal theme in Settings > Interface > Theme
+
+### UI Changes
+- Shortened English "Death" table title to "Dth"
+
+### Code Changes
+- Added `data-role` attribute (enum: `dps`, `heal`, `tank`) to player row `<div>` for easier role-wide CSS styling
+
+### Miscellaneous
+- Reorganized "Interface" settings section
+
 ## 0.17.0-alpha
 
 **Released: 2020-06-07**

@@ -198,7 +198,13 @@ function createNewState(state, full_key, action) {
 	if (["settings", "settings.interface.light_theme"].indexOf(full_key) !== -1) {
 		let light_theme = (full_key === "settings") ? action.payload.interface.light_theme : action.payload;
 
-		ThemeService.setTheme(light_theme);
+		ThemeService.setTheme({light : light_theme});
+	}
+
+	if (["settings", "settings.interface.minimal_theme"].indexOf(full_key) !== -1) {
+		let minimal_theme = (full_key === "settings") ? action.payload.interface.minimal_theme : action.payload;
+
+		ThemeService.setTheme({minimal : minimal_theme});
 	}
 
 	return new_state;

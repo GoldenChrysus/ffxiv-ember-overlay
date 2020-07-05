@@ -1,7 +1,11 @@
-.setThemeStyle(@defaultTheme: {}, @lightTheme: {}) {
+.setThemeStyle(@defaultTheme: {}, @lightTheme: {}, @minimalTheme: {}) {
 	& { @defaultTheme(); }
 
 	body.light & {
 		@lightTheme();
+	}
+
+	body.minimal & {
+		@minimalTheme();
 	}
 }
