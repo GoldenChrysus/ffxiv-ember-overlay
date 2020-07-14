@@ -10,7 +10,7 @@
 - Fixed issue with Twitch streamers list not loading in settings menu
 
 ### Features
-- ?
+- TODO: Add "Heal Count" player metric
 
 ### UI Changes
 - ?
