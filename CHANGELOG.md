@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.19.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- Fixed issue with Twitch streamers list not loading in settings menu
+
+### Features
+- ?
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.18.0-alpha
 
 **Released: 2020-07-05**
