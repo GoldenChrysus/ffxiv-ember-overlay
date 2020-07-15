@@ -78,6 +78,7 @@ const default_settings = {
 			"damagetaken",
 			"healstaken",
 			"BlockPct",
+			"ParryPct",
 			"deaths"
 		],
 		raid : {
