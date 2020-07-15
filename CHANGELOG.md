@@ -10,7 +10,10 @@
 - Fixed issue with Twitch streamers list not loading in settings menu
 
 ### Features
-- TODO: Add "Heal Count" player metric
+- Added new player metrics: Heal Count, Shields, and Parry %.
+    - "Heal Count" is the number of heals (not the health value of heals) casted
+    - "Shields" is health value of shielding casted
+    - "Parry %" is the frequency of parrying, similar to "Block %"
 
 ### UI Changes
 - ?
