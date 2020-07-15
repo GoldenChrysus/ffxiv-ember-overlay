@@ -299,6 +299,36 @@
 			"long"  : "Coup Direct %"
 		}
 	},
+	"damageShield"       : {
+		"en" : {
+			"short" : "Shields",
+			"long"  : "Shields"
+		},
+		"pt" : {
+			"short" : "Shields",
+			"long"  : "Shields"
+		},
+		"cn" : {
+			"short" : "Shields",
+			"long"  : "Shields"
+		},
+		"jp" : {
+			"short" : "Shields",
+			"long"  : "Shields"
+		},
+		"de" : {
+			"short" : "Shields",
+			"long"  : "Shields"
+		},
+		"es" : {
+			"short" : "Shields",
+			"long"  : "Shields"
+		},
+		"fr" : {
+			"short" : "Shields",
+			"long"  : "Shields"
+		}
+	},
 	"effective_heal_pct" : {
 		"en" : {
 			"short" : "Ef H %",
@@ -539,6 +569,36 @@
 			"long"  : "Soin %"
 		}
 	},
+	"heals"              : {
+		"en" : {
+			"short" : "Heal Ct",
+			"long"  : "Heal Count"
+		},
+		"pt" : {
+			"short" : "Heal Ct",
+			"long"  : "Heal Count"
+		},
+		"cn" : {
+			"short" : "Heal Ct",
+			"long"  : "Heal Count"
+		},
+		"jp" : {
+			"short" : "Heal Ct",
+			"long"  : "Heal Count"
+		},
+		"de" : {
+			"short" : "Heal Ct",
+			"long"  : "Heal Count"
+		},
+		"es" : {
+			"short" : "Heal Ct",
+			"long"  : "Heal Count"
+		},
+		"fr" : {
+			"short" : "Heal Ct",
+			"long"  : "Heal Count"
+		}
+	},
 	"healstaken"         : {
 		"en" : {
 			"short" : "Heals",
@@ -657,6 +717,36 @@
 		"fr" : {
 			"short" : "Ovr %",
 			"long"  : "Surplus de Soin %"
+		}
+	},
+	"ParryPct"           : {
+		"en" : {
+			"short" : "Par %",
+			"long"  : "Parry %"
+		},
+		"pt" : {
+			"short" : "Par %",
+			"long"  : "Parry %"
+		},
+		"cn" : {
+			"short" : "Par %",
+			"long"  : "Parry %"
+		},
+		"jp" : {
+			"short" : "Par %",
+			"long"  : "Parry %"
+		},
+		"de" : {
+			"short" : "Par %",
+			"long"  : "Parry %"
+		},
+		"es" : {
+			"short" : "Par %",
+			"long"  : "Parry %"
+		},
+		"fr" : {
+			"short" : "Par %",
+			"long"  : "Parry %"
 		}
 	}
 }
