@@ -16,7 +16,7 @@
     - "Parry %" is the frequency of parrying, similar to "Block %"
 
 ### UI Changes
-- ?
+- Renamed "Select All" in Settings > Export to "Copy" -- button now automatically initiates a copy of all of the export text
 
 ### Code Changes
 - ?
