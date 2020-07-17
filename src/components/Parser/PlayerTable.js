@@ -69,7 +69,7 @@ class PlayerTable extends React.Component {
 				let name    = player.name;
 				let matches = name.match(/[^()]+\(([^()]+)\)/i);
 
-				if (!matches.length || !matches[1]) {
+				if (!matches || !matches.length || !matches[1]) {
 					continue;
 				}
 
@@ -153,6 +153,14 @@ class PlayerTable extends React.Component {
 		let getFooterRow = (location) => {
 			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
 		}
+		let petRows      = () => {
+			return (pet_rows.length)
+				? <React.Fragment>
+					<br></br>
+					{pet_rows}
+				</React.Fragment>
+				: null;
+		}
 
 		let overlay_info = (collapsed || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
 
@@ -163,8 +171,7 @@ class PlayerTable extends React.Component {
 					{getFooterRow("top")}
 					{rows}
 					{getFooterRow("bottom")}
-					<br></br>
-					{pet_rows}
+					{petRows()}
 				</div>
 				{overlay_info}
 			</React.Fragment>
