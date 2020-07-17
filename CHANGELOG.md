@@ -22,7 +22,7 @@
 - ?
 
 ### Miscellaneous
-- ?
+- Added welcome message in OverlayPlugin logs
 
 ## 0.18.0-alpha
 

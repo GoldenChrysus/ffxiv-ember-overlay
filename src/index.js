@@ -19,6 +19,8 @@ import Parser from "./components/Parser";
 import Settings from "./components/Settings";
 import MigrationService from "./services/MigrationService";
 
+console.info(`Welcome and thank you for using Ember Overlay! Join the Discord at ${process.env.REACT_APP_DISCORD_URL}. GitHub is located at ${process.env.REACT_APP_GITHUB_URL}.`);
+
 store
 	.getState()
 	.settings_data
