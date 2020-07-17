@@ -7,22 +7,22 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- Fixed issue with Twitch streamers list not loading in settings menu
+- ! - Fixed issue with Twitch streamers list not loading in settings menu
 
 ### Features
-- Added new player metrics: Heal Count, Shields, and Parry %.
+- ! - Added new player metrics: Heal Count, Shields, and Parry %.
     - "Heal Count" is the number of heals (not the health value of heals) casted
     - "Shields" is health value of shielding casted
     - "Parry %" is the frequency of parrying, similar to "Block %"
 
 ### UI Changes
-- Renamed "Select All" in Settings > Export to "Copy" -- button now automatically initiates a copy of all of the export text
+- ! - Renamed "Select All" in Settings > Export to "Copy" -- button now automatically initiates a copy of all of the export text
 
 ### Code Changes
 - ?
 
 ### Miscellaneous
-- Added welcome message in OverlayPlugin logs
+- ! - Added welcome message in OverlayPlugin logs
 
 ## 0.18.0-alpha
 
