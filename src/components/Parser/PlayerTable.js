@@ -79,12 +79,6 @@ class PlayerTable extends React.Component {
 				player._name   = pet_owner;
 			}
 
-			if (!found) {
-				rank++;
-			}
-
-			count++;
-
 			if (player._name === "YOU" || player._name === this.props.player_name || (player._name === this.props.internal_name && this.props.player_name === "YOU")) {
 				if (!player._is_pet) {
 					found = true;
@@ -94,6 +88,16 @@ class PlayerTable extends React.Component {
 			} else if (player._is_current) {
 				player._is_current = false;
 			}
+
+			if (player._is_pet && !player._is_current && !this.props.players[player._name]) {
+				continue;
+			}
+
+			if (!found) {
+				rank++;
+			}
+
+			count++;
 
 			let sort_value = PlayerProcessor.getDataValue(sort_column, player, sorted_players, this.props.encounter, true);
 
