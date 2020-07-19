@@ -236,8 +236,7 @@ const PlayerMetricsSummable = [
 	"damagetaken",
 	"healstaken",
 	"deaths",
-	"heals",
-	"max_enc_dps"
+	"heals"
 ];
 
 export default {
