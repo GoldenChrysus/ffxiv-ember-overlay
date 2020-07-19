@@ -52,6 +52,18 @@ class GameDataProcessor  {
 			}
 		}
 
+		let can_calculate_max = (data.Encounter.DURATION >= 30);
+
+		for (let player_name in data.Combatant) {
+			if (data.Combatant[player_name].max_enc_dps === undefined) {
+				data.Combatant[player_name].max_enc_dps = 0;
+			}
+
+			if (can_calculate_max && data.Combatant[player_name].encdps > data.Combatant[player_name].max_enc_dps) {
+				data.Combatant[player_name].max_enc_dps = data.Combatant[player_name].encdps;
+			}
+		}
+
 		return data;
 	}
 
