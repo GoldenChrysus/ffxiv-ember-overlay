@@ -64,7 +64,7 @@ function rootReducer(state, action) {
 			break;
 
 		case "parseGameData":
-			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language);
+			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language, state);
 			action.payload = GameDataProcessor.injectEnmity(action.payload, state);
 
 			new_state = createNewState(state, full_key, action);
