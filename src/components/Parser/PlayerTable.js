@@ -24,6 +24,7 @@ class PlayerTable extends React.Component {
 		let header         = [];
 		let footer         = [];
 		let rows           = [];
+		let pet_rows       = [];
 		let count          = 0;
 		let rank           = 0;
 		let found          = false;
@@ -60,26 +61,39 @@ class PlayerTable extends React.Component {
 		let max_value = 0;
 
 		for (let player of sorted_players) {
+			let pet_owner = null;
+
+			player._name = player.name;
+
 			if (player.Job === "" && player.name !== "Limit Break") {
-				continue;
+				let name    = player.name;
+				let matches = name.match(/[^()]+\(([^()]+)\)/i);
+
+				if (!matches || !matches.length || !matches[1]) {
+					continue;
+				}
+
+				pet_owner = matches[1];
+
+				player._is_pet = true;
+				player._name   = pet_owner;
 			}
 
-			let is_current_player = false;
+			player._is_current = (player.name === "YOU" || player._name === this.props.player_name || (player._name === this.props.internal_name && this.props.player_name === "YOU"));
+
+			if (player._is_pet && !player._is_current && !this.props.players[player._name]) {
+				continue;
+			}
 
 			if (!found) {
 				rank++;
 			}
 
-			count++;
-
-			if (player.name === "YOU" || player.name === this.props.player_name) {
-				found             = true;
-				is_current_player = true;
-
-				player._is_current = true;
-			} else if (player._is_current) {
-				player._is_current = false;
+			if (player._is_current && !player._is_pet) {
+				found = true;
 			}
+
+			count++;
 
 			let sort_value = PlayerProcessor.getDataValue(sort_column, player, sorted_players, this.props.encounter, true);
 
@@ -89,15 +103,18 @@ class PlayerTable extends React.Component {
 
 			let percent = ((sort_value / max_value) * 100).toFixed(2);
 
-			if (collapsed && !is_current_player) {
+			if (collapsed && !player._is_current) {
 				continue;
 			}
 
-			let blur = (player_blur && !is_current_player);
+			let blur       = (player_blur && !player._is_current);
+			let player_obj = <Player key={player.name} percent={percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>;
 
-			rows.push(
-				<Player key={player.name} percent={percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
-			);
+			if (player._is_pet) {
+				pet_rows.push(player_obj);
+			} else {
+				rows.push(player_obj);
+			}
 		}
 
 		let header_row, footer_row, table_class;
@@ -136,6 +153,14 @@ class PlayerTable extends React.Component {
 		let getFooterRow = (location) => {
 			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
 		}
+		let petRows      = () => {
+			return (pet_rows.length)
+				? <React.Fragment>
+					<br></br>
+					{pet_rows}
+				</React.Fragment>
+				: null;
+		}
 
 		let overlay_info = (collapsed || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
 
@@ -146,6 +171,7 @@ class PlayerTable extends React.Component {
 					{getFooterRow("top")}
 					{rows}
 					{getFooterRow("bottom")}
+					{petRows()}
 				</div>
 				{overlay_info}
 			</React.Fragment>
@@ -214,6 +240,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
+		internal_name  : state.internal.character_name,
 		player_name    : state.settings.interface.player_name,
 		icon_blur      : state.settings.interface.blur_job_icons,
 		table_columns  : state.settings.table_columns,
