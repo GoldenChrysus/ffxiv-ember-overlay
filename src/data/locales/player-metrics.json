@@ -635,28 +635,28 @@
 			"long"  : "Max Damage Per Second"
 		},
 		"pt" : {
-			"short" : "Mx DPS",
-			"long"  : "Max Damage Per Second"
+			"short" : "DPS Mx",
+			"long"  : "Dano Por Segundo Máxima"
 		},
 		"cn" : {
-			"short" : "Mx DPS",
-			"long"  : "Max Damage Per Second"
+			"short" : "最大DPS",
+			"long"  : "最大每秒伤害量"
 		},
 		"jp" : {
-			"short" : "Mx DPS",
-			"long"  : "Max Damage Per Second"
+			"short" : "最大DPS",
+			"long"  : "最大毎秒与ダメージ量"
 		},
 		"de" : {
-			"short" : "Mx DPS",
-			"long"  : "Max Damage Per Second"
+			"short" : "Max DPS",
+			"long"  : "Größter Schaden pro Sekunde"
 		},
 		"es" : {
 			"short" : "Mx DPS",
-			"long"  : "Max Damage Per Second"
+			"long"  : "Daño por Segundo Máxima"
 		},
 		"fr" : {
-			"short" : "Mx DPS",
-			"long"  : "Max Damage Per Second"
+			"short" : "DPS Max",
+			"long"  : "Dégats Par Seconde Maximal"
 		}
 	},
 	"max_heal_format"    : {
