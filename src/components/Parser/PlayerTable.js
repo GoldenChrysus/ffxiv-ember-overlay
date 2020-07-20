@@ -79,15 +79,7 @@ class PlayerTable extends React.Component {
 				player._name   = pet_owner;
 			}
 
-			if (player._name === "YOU" || player._name === this.props.player_name || (player._name === this.props.internal_name && this.props.player_name === "YOU")) {
-				if (!player._is_pet) {
-					found = true;
-				}
-
-				player._is_current = true;
-			} else if (player._is_current) {
-				player._is_current = false;
-			}
+			player._is_current = (player.name === "YOU" || player._name === this.props.player_name || (player._name === this.props.internal_name && this.props.player_name === "YOU"));
 
 			if (player._is_pet && !player._is_current && !this.props.players[player._name]) {
 				continue;
@@ -95,6 +87,10 @@ class PlayerTable extends React.Component {
 
 			if (!found) {
 				rank++;
+			}
+
+			if (player._is_current && !player._is_pet) {
+				found = true;
 			}
 
 			count++;
