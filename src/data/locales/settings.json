@@ -722,6 +722,15 @@
 			"es" : "Selecciona y copia el texto debajo, posteriormente impórtalo hacia tu overlay deseado haciendo click derecho en el Overlay y seleccionando \"Importar\".",
 			"fr" : "Sélectionné et copié le texte ci-dessous puis importé dans l'Overlay desiré avec un clique-droit sur l'Overlay et \"Importer.\""
 		},
+		"copy"               : {
+			"en" : "Copy",
+			"pt" : "Copy",
+			"cn" : "Copy",
+			"jp" : "Copy",
+			"de" : "Copy",
+			"es" : "Copy",
+			"fr" : "Copy"
+		},
 		"select_all"         : {
 			"en" : "Select All",
 			"pt" : "Selecionar Tudo",

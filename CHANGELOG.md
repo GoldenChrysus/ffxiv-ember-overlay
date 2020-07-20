@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.19.0-alpha
+
+**Released: 2020-07-19**
+
+### Bug Fixes
+- Fixed issue with Twitch streamers list not loading in settings menu
+
+### Features
+- Added new player metrics: Heal Count, Shields, and Parry %.
+    - "Heal Count" is the number of heals (not the health value of heals) casted
+    - "Shields" is health value of shielding casted
+    - "Parry %" is the frequency of parrying, similar to "Block %"
+
+### UI Changes
+- Renamed "Select All" in Settings > Export to "Copy" -- button now automatically initiates a copy of all of the export text
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Added welcome message in OverlayPlugin logs
+
 ## 0.18.0-alpha
 
 **Released: 2020-07-05**

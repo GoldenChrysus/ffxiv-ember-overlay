@@ -196,5 +196,14 @@
 		"de" : "Füge unten deinen exportierten Einstellungsschlüssel ein und klicke auf \"Importieren.\"",
 		"es" : "Pega tus configuraciones exportadas debajo y después presiona \"Importar.\"",
 		"fr" : "Collé votre clé de réglage exportée ci dessous et cliquer sur \"Importer.\""
+	},
+	"paste"               : {
+		"en" : "Paste",
+		"pt" : "Paste",
+		"cn" : "Paste",
+		"jp" : "Paste",
+		"de" : "Paste",
+		"es" : "Paste",
+		"fr" : "Paste"
 	}
 }

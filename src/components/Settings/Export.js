@@ -17,7 +17,7 @@ class Export extends React.Component {
 					<div>
 						<Form>
 							<Form.Field>
-								<Button size="mini" className="export" onClick={this.handleSelect.bind(this)}>{LocalizationService.getMisc("select_all")}</Button>
+								<Button size="mini" className="export" onClick={this.handleCopy.bind(this)}>{LocalizationService.getMisc("copy")}</Button>
 								<TextArea defaultValue={settings} rows={20} readOnly="readonly"/>
 							</Form.Field>
 						</Form>
@@ -27,12 +27,13 @@ class Export extends React.Component {
 		);
 	}
 
-	handleSelect(e, f, g) {
+	handleCopy(e, f, g) {
 		let $button = $(e.target);
 		let text    = $button.closest(".field").find("textarea")[0];
 
 		text.focus();
 		text.select();
+		document.execCommand("copy");
 	}
 }
 

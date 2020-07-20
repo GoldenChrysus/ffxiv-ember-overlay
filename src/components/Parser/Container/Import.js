@@ -31,9 +31,21 @@ class Import extends React.Component {
 		);
 	}
 
-	handleImport(e, f, g) {
+	getInput(e) {
 		let $button = $(e.target);
-		let value   = $button.closest(".field").find("input").val();
+		
+		return $button.closest(".field").find("input");
+	}
+
+	handlePaste(e, f, g) {
+		let $input = this.getInput(e);
+
+		$input[0].focus();
+		document.execCommand("paste");
+	}
+
+	handleImport(e, f, g) {
+		let value = this.getInput(e).val();
 
 		this.props.settings_data.importSettings(value);
 	}

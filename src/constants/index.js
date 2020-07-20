@@ -215,6 +215,7 @@ const PlayerMetricTypeData = {
 	],
 	tank : [
 		"BlockPct",
+		"ParryPct",
 		"damage_taken_pct",
 		"damagetaken",
 		"deaths",
@@ -234,7 +235,8 @@ const PlayerMetricsSummable = [
 	"enchps",
 	"damagetaken",
 	"healstaken",
-	"deaths"
+	"deaths",
+	"heals"
 ];
 
 export default {
