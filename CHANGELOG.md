@@ -7,7 +7,7 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- ?
+- Fixed issue where rank was higher than it should be if player is in last place
 
 ### Features
 - Added new player metric: Max Damage Per Second
