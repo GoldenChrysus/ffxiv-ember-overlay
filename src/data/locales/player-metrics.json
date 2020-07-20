@@ -636,7 +636,7 @@
 		},
 		"pt" : {
 			"short" : "DPS Mx",
-			"long"  : "Dano Por Segundo Máxima"
+			"long"  : "Dano Máximo Por Segundo"
 		},
 		"cn" : {
 			"short" : "最大DPS",
@@ -652,11 +652,11 @@
 		},
 		"es" : {
 			"short" : "Mx DPS",
-			"long"  : "Daño por Segundo Máxima"
+			"long"  : "Daño Máximo por Segundo"
 		},
 		"fr" : {
 			"short" : "DPS Max",
-			"long"  : "Dégats Par Seconde Maximal"
+			"long"  : "Dégats Maximal Par Seconde"
 		}
 	},
 	"max_heal_format"    : {
