@@ -57,9 +57,9 @@ class GameDataProcessor  {
 		for (let player_name in data.Combatant) {
 			data.Combatant[player_name].max_enc_dps = 0;
 
-			if (can_calculate_max && (!current_state || !current_state.internal.game.Combatant || data.Combatant[player_name].encdps > current_state.internal.game.Combatant[player_name].max_enc_dps)) {
+			if (can_calculate_max && (!current_state || !current_state.internal.game.Combatant || !current_state.internal.game.Combatant[player_name] || data.Combatant[player_name].encdps > current_state.internal.game.Combatant[player_name].max_enc_dps)) {
 				data.Combatant[player_name].max_enc_dps = data.Combatant[player_name].encdps;
-			} else if (current_state && current_state.internal.game.Combatant[player_name]) {
+			} else if (current_state && current_state.internal.game.Combatant && current_state.internal.game.Combatant[player_name]) {
 				data.Combatant[player_name].max_enc_dps = current_state.internal.game.Combatant[player_name].max_enc_dps;
 			}
 		}
@@ -126,6 +126,8 @@ class GameDataProcessor  {
 		let sorted_players = PlayerProcessor.sortPlayers(data.Entries, undefined, "Enmity");
 		let max_value      = 0;
 		let players        = {};
+
+		console.log(data);
 
 		for (let player of sorted_players) {
 			if (!max_value) {

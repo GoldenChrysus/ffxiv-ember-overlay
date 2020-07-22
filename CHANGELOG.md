@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 - Fixed issue where rank was higher than it should be if player is in last place
+- Fixed issue with overlay crashing in some cases when an monster's target had not yet been processed in the combatant tables
 
 ### Features
 - Added new player metric: Max Damage Per Second

@@ -6,8 +6,10 @@ import PercentBar from "../PercentBar";
 
 class Monster extends React.Component {
 	render() {
+		const fallback_player = { Job : "", Name : "", name : ""};
+
 		let monster      = this.props.monster;
-		let player       = monster.Target || { Job : "", Name : "", name : ""};
+		let player       = monster.Target || fallback_player;
 		let player_type  = (monster._is_current) ? "active" : "other";
 		let columns      = [];
 		let stat_columns = this.props.columns;
@@ -36,6 +38,10 @@ class Monster extends React.Component {
 
 					if (monster._is_current && !player) {
 						player = this.props.encounter.Combatant.YOU;
+					}
+
+					if (!player) {
+						player = fallback_player;
 					}
 
 					let job        = player.Job.toUpperCase();
