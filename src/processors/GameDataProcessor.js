@@ -127,8 +127,6 @@ class GameDataProcessor  {
 		let max_value      = 0;
 		let players        = {};
 
-		console.log(data);
-
 		for (let player of sorted_players) {
 			if (!max_value) {
 				max_value = player.Enmity || 100;
