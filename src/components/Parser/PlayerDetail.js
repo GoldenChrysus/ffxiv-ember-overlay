@@ -9,7 +9,7 @@ class PlayerDetail extends React.Component {
 	render() {
 		let player      = this.props.player;
 		let players     = [];
-		let job         = player.Job.toUpperCase() || "LMB";
+		let job         = (!player.Job && player.name !== "Limit Break") ? "PET" : player.Job.toUpperCase() || "LMB";
 		let detail_data = this.props.detail_data;
 		let sections    = [
 			<div className="split" key="chart-split"></div>,

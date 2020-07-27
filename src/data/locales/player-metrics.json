@@ -629,6 +629,36 @@
 			"long"  : "Soin Reçu"
 		}
 	},
+	"max_enc_dps"        : {
+		"en" : {
+			"short" : "Mx DPS",
+			"long"  : "Max Damage Per Second"
+		},
+		"pt" : {
+			"short" : "DPS Mx",
+			"long"  : "Dano Máximo Por Segundo"
+		},
+		"cn" : {
+			"short" : "最大DPS",
+			"long"  : "最大每秒伤害量"
+		},
+		"jp" : {
+			"short" : "最大DPS",
+			"long"  : "最大毎秒与ダメージ量"
+		},
+		"de" : {
+			"short" : "Max DPS",
+			"long"  : "Größter Schaden pro Sekunde"
+		},
+		"es" : {
+			"short" : "Mx DPS",
+			"long"  : "Daño Máximo por Segundo"
+		},
+		"fr" : {
+			"short" : "DPS Max",
+			"long"  : "Dégats Maximal Par Seconde"
+		}
+	},
 	"max_heal_format"    : {
 		"en" : {
 			"short" : "Mx Heal",
