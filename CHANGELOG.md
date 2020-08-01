@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.20.1-alpha
+
+**Released: 2020-08-01**
+
+### Bug Fixes
+- Fixed issue where max DPS is sometimes not registered correctly due to incorrect data types
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.20.0-alpha
 
 **Released: 2020-07-26**
