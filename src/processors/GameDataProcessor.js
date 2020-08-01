@@ -18,9 +18,9 @@ class GameDataProcessor  {
 		return value.replace(match, String(match).replace(",", "."));
 	}
 
-	normalizeLocales(data, language, current_state) {
+	normalizeLocales(data, language, current_state, loading_sample) {
 		if (data.Encounter) {
-			return this.normalizeGameData(data, language, current_state);
+			return this.normalizeGameData(data, language, current_state, loading_sample);
 		}
 
 		if (data.AggroList) {
@@ -30,7 +30,7 @@ class GameDataProcessor  {
 		return data;
 	}
 
-	normalizeGameData(data, language, current_state) {
+	normalizeGameData(data, language, current_state, loading_sample) {
 		data.Encounter.name             = LocalizationService.getOverlayText("encounter", language);
 		data.Encounter.Job              = "ENC";
 		data.Encounter.OverHealPct      = "0%";
@@ -52,10 +52,10 @@ class GameDataProcessor  {
 			}
 		}
 
-		let can_calculate_max = (data.Encounter.DURATION >= 30);
+		let can_calculate_max = (!loading_sample && data.Encounter.DURATION >= 30);
 
 		for (let player_name in data.Combatant) {
-			data.Combatant[player_name].max_enc_dps = 0;
+			data.Combatant[player_name].max_enc_dps = data.Combatant[player_name].max_enc_dps || 0;
 
 			if (can_calculate_max && (!current_state || !current_state.internal.game.Combatant || !current_state.internal.game.Combatant[player_name] || +data.Combatant[player_name].encdps > current_state.internal.game.Combatant[player_name].max_enc_dps)) {
 				data.Combatant[player_name].max_enc_dps = +data.Combatant[player_name].encdps;

@@ -107,7 +107,7 @@ function rootReducer(state, action) {
 
 			state.internal.data_history = SampleHistoryData;
 
-			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language);
+			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language, state, true);
 
 			new_state  = createNewState(state, "internal.game", tmp_action);
 			tmp_action = {
