@@ -73,56 +73,25 @@ OverlayPlugin allows ACT to show your DPS and other metrics in a visually-pleasi
 
 ![](https://i.imgur.com/tye5cGJ.png)
 
-1. Open the Windows file browser, right-click the address bar, choose "Edit Address," and enter `%APPDATA%\Advanced Combat Tracker` -- then hit enter.
+1. In ACT, navigate to Plugins > Plugin Listing and choose "Get Plugins..."
 
-![](https://i.imgur.com/8j1slAT.png)
+![](https://i.imgur.com/hPj8ysg.png)
 
-![](https://i.imgur.com/6hWQMPX.png)
+2. Choose the "[FFXIV+others] Overlay Plugin" option, then click "Download and Enable."
 
-2. You should now be in the folder `<your name>\AppData\Roaming\Advanced Combat Tracker`. We'll come back to this folder in a moment.
+![](https://i.imgur.com/u5y6KTe.png)
 
-3. [Download OverlayPlugin](https://github.com/GoldenChrysus/ffxiv-ember-overlay/raw/bleeding-edge/act/OverlayPlugin.zip) from the Ember GitHub repository.
-
-4. Move (or copy) the file downloaded from step 3 into the folder you opened in step 1. You should now have a file called `OverlayPlugin.zip` in the folder from step 1.
-
-![](https://i.imgur.com/n9mcZW7.png)
-
-5. Right-click `OverlayPlugin.zip` and choose "Extract All..."
-
-![](https://i.imgur.com/9kgy1Zs.png)
-
-6. In the window that opens, remove the text "OverlayPlugin" from the end of the destination path as in the following images:
-
-![](https://i.imgur.com/J9C2onU.png)
-![](https://i.imgur.com/MwwaKnQ.png)
-
-7. Click "Extract" at the bottom of the window.
-
-8. Open ACT. If you receive a notice about blocked files, choose "Yes."
-
-9. Go to Plugins > Plugin Listing and choose "Browse."
-
-![](https://i.imgur.com/VM7S8mf.png)
-
-10. In the window that appears, right-click the address bar to edit the address as you did in step 1, but enter `%APPDATA%\Advanced Combat Tracker\Plugins\OverlayPlugin` -- then choose the `OverlayPlugin.dll` file and click "Open."
-
-![](https://i.imgur.com/qnpqTiq.png)
-
-11. The plugin should now be listed in the file path box. Click "Add/Enable Plugin" to finish adding the plugin. If you receive a notice about blocked files, choose "Yes."
-
-![](https://i.imgur.com/D7AWg23.png)
-
-12. Your plugin list should list `OverlayPlugin.dll` below `FFXIV_ACT_Plugin.dll`. If it does not, use the up/down arrows to rearrange them accordingly. Rearranging the plugins will require a restart of ACT.
+3. Your plugin list should list `OverlayPlugin.dll` below `FFXIV_ACT_Plugin.dll`. If it does not, use the up/down arrows to rearrange them accordingly. Rearranging the plugins will require a restart of ACT.
 
 ![](https://i.imgur.com/B6EnhwP.png)
 
-13. Ember Overlay should be visible at this point. Navigate to Plugins > OverlayPlugin.dll > Ember Overlay and ensure the settings panel has the appropriate settings.
-
-![](https://i.imgur.com/1L4cVwo.png)
-
-14. If there is no overlay, simply click the "New" button, choose the "Ember" preset, and click "OK."
+4. Navigate to Plugins > OverlayPlugin.dll, click the "New" button, choose the "Ember" preset, and click "OK."
 
 ![](https://i.imgur.com/OQa349P.png)
+
+5. Ember Overlay should be visible at this point. Ensure the settings panel for the overlay has the appropriate settings.
+
+![](https://i.imgur.com/1L4cVwo.png)
 
 ## Using the Web Socket
 
