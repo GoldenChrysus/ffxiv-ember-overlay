@@ -25,29 +25,34 @@ Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and c
 Join the Discord server to receive live updates, report bugs, or request features at: [https://discord.io/emberoverlay](https://discord.io/emberoverlay)
 
 ## Features
-### Informative tabs for damage, healing, tanking, and raiding.
-![DPS tab](https://i.imgur.com/3PAshNq.png "DPS tab")
-![Healing tab](https://i.imgur.com/jOnlhE5.png "Healing tab")
-![Tanking tab](https://i.imgur.com/m3LrYDg.png "Tanking tab")
-![Raid tab](https://i.imgur.com/x0x6a7A.png "Raid tab")
+### Informative tabs for damage, healing, tanking, raiding, and aggro.
+![DPS tab](https://i.imgur.com/EjRWhdU.png "DPS tab")
+![Healing tab](https://i.imgur.com/TxqEJ1t.png "Healing tab")
+![Tanking tab](https://i.imgur.com/uMXYkyu.png "Tanking tab")
+![Raid tab](https://i.imgur.com/8pKG0uC.png "Raid tab")
+![Aggro tab](https://i.imgur.com/dP79Es6.png "Aggro tab")
 
 ### Click on any player's name to view detailed statistics.
-![Detailed statistics](https://i.imgur.com/Hslset9.gif "Detailed statistics")
+![Detailed statistics](https://i.imgur.com/G3UOoFR.gif "Detailed statistics")
+
+### Optional minimal and light themes (can be combined).
+![Minimal theme](https://i.imgur.com/psPV5yL.png "Minimal theme")
+![Light theme](https://i.imgur.com/dmMrMFa.png "Light theme")
 
 ### Customize your experience.
-![Customizable overlay](https://i.imgur.com/BvZqnNV.gif "Customizable overlay")
+![Customizable overlay](https://i.imgur.com/W7DWVmu.gif "Customizable overlay")
 
 ### Collapsible interface to save space and show only your stats.
-![Collapsible interface](https://i.imgur.com/NI8lenF.gif "Collapsible interface")
+![Collapsible interface](https://i.imgur.com/AzHilQt.gif "Collapsible interface")
 
 ### Minimize the entire overlay to the left or right when not in use to free up screen space.
-![Minimize when not in use](https://i.imgur.com/ljo44Se.gif "Minimize when not in use")
+![Minimize when not in use](https://i.imgur.com/HSiTNCF.gif "Minimize when not in use")
 
 ### Easily see the recent changes since your last visit
-![About and changelog](https://i.imgur.com/dMesiHs.gif "About and changelog")
+![About and changelog](https://i.imgur.com/fgZgoN4.gif "About and changelog")
 
 ### Clear encounter data or load sample data to perfect your setup.
-![Clear encounter and load sample data](https://i.imgur.com/MkmkyLm.gif "Clear encounter and load sample data")
+![Clear encounter and load sample data](https://i.imgur.com/doMR26F.gif "Clear encounter and load sample data")
 
 ## Installation
 
