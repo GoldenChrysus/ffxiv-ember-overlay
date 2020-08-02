@@ -11,7 +11,7 @@
 - N/A
 
 ### UI Changes
-- N/A
+- Made performance bar backgrounds slightly lighter in the light theme
 
 ### Code Changes
 - N/A
