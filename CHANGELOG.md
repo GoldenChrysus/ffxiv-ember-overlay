@@ -20,6 +20,7 @@
 
 ### Miscellaneous
 - Updated sample data
+- Updated README feature images
 
 ## 0.20.1-alpha
 
