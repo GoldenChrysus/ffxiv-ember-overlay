@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.20.2-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- ?
+
+### Features
+- ?
+
+### UI Changes
+- Made performance bar backgrounds slightly lighter in the light theme
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- Updated sample data
+
 ## 0.20.1-alpha
 
 **Released: 2020-08-01**
@@ -11,7 +32,7 @@
 - N/A
 
 ### UI Changes
-- Made performance bar backgrounds slightly lighter in the light theme
+- N/A
 
 ### Code Changes
 - N/A
