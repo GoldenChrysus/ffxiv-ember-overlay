@@ -42,10 +42,21 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ### Customize your experience.
 ![Customizable overlay](https://i.imgur.com/W7DWVmu.gif "Customizable overlay")
 
-### Collapsible interface to save space and show only your stats.
-![Collapsible interface](https://i.imgur.com/AzHilQt.gif "Collapsible interface")
+### Quality of life features.
+**Collapsible interface to save space and show only your stats.**
 
-### Minimize the entire overlay to the left or right when not in use to free up screen space.
+![Collapsible interface](https://i.imgur.com/eS8h0KS.gif "Collapsible interface")
+
+**Blur player names for privacy (optionally blur job icons).**
+
+![Blur player names](https://i.imgur.com/AWHwZ03.gif "Blur player names")
+
+**Browse encounter history (up to five encounters).**
+
+![View encounter history](https://i.imgur.com/HfAq3kc.png "View encounter history")
+
+**Minimize the entire overlay to the left or right when not in use to free up screen space.**
+
 ![Minimize when not in use](https://i.imgur.com/HSiTNCF.gif "Minimize when not in use")
 
 ### Easily see the recent changes since your last visit
