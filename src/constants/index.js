@@ -68,6 +68,8 @@ let formatMaxHit = function(player) {
 
 	parts[index] = (!isNaN(parts[index])) ? (+parts[index]).toLocaleString() : parts[index];
 
+	parts.unshift(parts.pop());
+	
 	let value = parts.join(" - ");
 
 	return value;
@@ -83,6 +85,8 @@ let formatMaxHeal = function(player) {
 
 	parts[index] = (!isNaN(parts[index])) ? (+parts[index]).toLocaleString() : parts[index];
 
+	parts.unshift(parts.pop());
+	
 	let value = parts.join(" - ");
 
 	return value;

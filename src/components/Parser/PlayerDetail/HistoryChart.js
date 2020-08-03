@@ -22,27 +22,29 @@ class HistoryChart extends React.Component {
 	}
 
 	render() {
-		const metrics               = [
+		const metrics = [
 			{
-				name : LocalizationService.getPlayerDataTitle("encdps", "short"),
-				key  : "encdps"
+				name       : LocalizationService.getPlayerDataTitle("encdps", "short"),
+				key        : "encdps",
+				background : "rgba(116, 51, 51, 0.40)",
+				border     : "rgba(116, 51, 51, 0.20)"
 			},
 			{
-				name : LocalizationService.getPlayerDataTitle("enchps", "short"),
-				key  : "enchps"
+				name       : LocalizationService.getPlayerDataTitle("enchps", "short"),
+				key        : "enchps",
+				background : "rgba(60, 103, 47, 0.40)",
+				border     : "rgba(60, 103, 47, 0.20)"
 			},
 			{
-				name : LocalizationService.getPlayerDataTitle("enctps", "short"),
-				key  : "enctps"
+				name       : LocalizationService.getPlayerDataTitle("enctps", "short"),
+				key        : "enctps",
+				background : "rgba(59, 78, 171, 0.40)",
+				border     : "rgba(59, 78, 171, 0.20)"
 			}
 		];
-		const background_difference = 0.03;
 
 		let history        = this.props.history;
 		let player         = this.props.player;
-		let is_light_theme = (this.props.light_theme);
-		let first_alpha    = (is_light_theme) ? 0.09 : 0.05;
-		let alpha_color    = (is_light_theme) ? 0 : 255;
 		let line_data      = {
 			labels   : [],
 			datasets : []
@@ -51,13 +53,11 @@ class HistoryChart extends React.Component {
 		let base_time      = +Object.keys(history)[0];
 
 		for (let i in metrics) {
-			let alpha = first_alpha + (background_difference * i);
-
 			line_data.datasets.push(
 				{
 					label           : metrics[i].name,
-					backgroundColor : `rgba(${alpha_color}, ${alpha_color}, ${alpha_color}, ${alpha})`,
-					borderColor     : `rgba(${alpha_color}, ${alpha_color}, ${alpha_color}, ` + (alpha - 0.03) + `)`,
+					backgroundColor : metrics[i].background,
+					borderColor     : metrics[i].border,
 					data            : []
 				}
 			);
