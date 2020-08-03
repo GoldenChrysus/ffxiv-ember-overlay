@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.20.4-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- Updated translations for Chinese
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Updated README feature images
+
 ## 0.20.3-alpha
 
 **Released: 2020-08-02**
