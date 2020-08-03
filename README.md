@@ -158,6 +158,7 @@ To build this yourself, do the following:
 
 ### Process
 
+0. For new features, it would be best to first discuss your plans in an issue. This is to ensure that I haven't already completed a similar feature locally, that I agree with your approach, and that your feature aligns with the overall vision of the project. Bypassing this and sending new features straight to pull may result in pull rejection.
 1. Create a fork.
 2. Make your changes and follow the coding guidelines.
 3. Commit with meaningful messages that describe your changes.
