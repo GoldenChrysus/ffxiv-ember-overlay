@@ -39,8 +39,8 @@
 			"long"  : "Health"
 		},
 		"cn" : {
-			"short" : "HP",
-			"long"  : "Health"
+			"short" : "血量",
+			"long"  : "血量"
 		},
 		"jp" : {
 			"short" : "HP",
@@ -69,8 +69,8 @@
 			"long"  : "Health Percent"
 		},
 		"cn" : {
-			"short" : "HP %",
-			"long"  : "Health Percent"
+			"short" : "血量%",
+			"long"  : "血量百分比"
 		},
 		"jp" : {
 			"short" : "HP %",
@@ -99,8 +99,8 @@
 			"long"  : "Target"
 		},
 		"cn" : {
-			"short" : "Target",
-			"long"  : "Target"
+			"short" : "目标",
+			"long"  : "目标"
 		},
 		"jp" : {
 			"short" : "Target",
