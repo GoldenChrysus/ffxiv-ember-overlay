@@ -8,7 +8,7 @@
 - N/A
 
 ### Features
-- Added ability to drag and drop player table columns, player detail metrics, and raid view metrics to allow easy reordering
+- Added ability to drag and drop player table columns, player detail metrics, and raid view metrics in settings to allow easy reordering
 - TODO: Add shields per second metric
 
 ### UI Changes
