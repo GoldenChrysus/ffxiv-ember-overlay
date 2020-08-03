@@ -1,6 +1,7 @@
 import React from "react";
 import { Header, Form, Select, Input, TextArea, Checkbox } from "semantic-ui-react";
 import Editor from "react-simple-code-editor";
+import Sortable from "sortablejs/modular/sortable.core.esm.js";
 
 import LocalizationService from "../../../services/LocalizationService";
 
@@ -29,6 +30,12 @@ class Section extends React.Component {
 
 		this.setState(state_data);
 	}
+	
+	componentDidMount() {
+		Array.prototype.forEach.call(document.querySelectorAll(".multiple.selection"), (el) => {
+			Sortable.create(el, {draggable: "a", onUpdate: (evt, originalEvent) => { this.handleChange(evt); }});
+		});
+	}
 
 	render() {
 		let settings = [];
@@ -53,6 +60,7 @@ class Section extends React.Component {
 						options={options}
 						defaultValue={value}
 						key_path={setting_data.key_path}
+						id={setting_data.key_path}
 						onChange={this.props.changeCallback}/>;
 
 					break;
@@ -132,6 +140,13 @@ class Section extends React.Component {
 				</div>
 			</React.Fragment>
 		);
+	}
+	
+	handleChange(e) {
+		e.target.key_path  = e.target.id;
+		e.target.selection = true;
+		
+		this.props.changeCallback(e.target, e.target);
 	}
 }
 
