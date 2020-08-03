@@ -7,7 +7,7 @@
 *! - indicates change is available on the staging site*
 
 ### Bug Fixes
-- ?
+- Fixed issue where max DPS would carry over from previous encounter
 
 ### Features
 - ?
