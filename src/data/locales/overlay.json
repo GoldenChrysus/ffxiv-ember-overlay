@@ -164,7 +164,7 @@
 	"aggro"              : {
 		"en" : "Agg",
 		"pt" : "Agg",
-		"cn" : "Agg",
+		"cn" : "仇恨",
 		"jp" : "Agg",
 		"de" : "Agg",
 		"es" : "Agg",
@@ -200,7 +200,7 @@
 	"paste"               : {
 		"en" : "Paste",
 		"pt" : "Paste",
-		"cn" : "Paste",
+		"cn" : "粘贴",
 		"jp" : "Paste",
 		"de" : "Paste",
 		"es" : "Paste",
