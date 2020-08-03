@@ -64,17 +64,17 @@ function rootReducer(state, action) {
 			break;
 
 		case "parseGameData":
-			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language, state);
-			action.payload = GameDataProcessor.injectEnmity(action.payload, state);
-
-			new_state = createNewState(state, full_key, action);
-
 			let new_history = (
 				!action.payload.Encounter ||
 				!state.internal.encounter_history.length ||
 				!state.internal.encounter_history[0].game.Encounter ||
 				+action.payload.Encounter.DURATION < +state.internal.encounter_history[0].game.Encounter.DURATION
 			);
+
+			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language, (new_history) ? undefined : state);
+			action.payload = GameDataProcessor.injectEnmity(action.payload, state);
+
+			new_state = createNewState(state, full_key, action);
 
 			if (new_history) {
 				if (new_state.internal.encounter_history.length === 5) {
