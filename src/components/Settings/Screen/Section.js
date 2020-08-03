@@ -143,8 +143,9 @@ class Section extends React.Component {
 	}
 	
 	handleChange(e) {
-		e.target.key_path = e.target.id;
+		e.target.key_path  = e.target.id;
 		e.target.selection = true;
+		
 		this.props.changeCallback(e.target, e.target);
 	}
 }

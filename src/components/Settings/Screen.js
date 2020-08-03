@@ -37,7 +37,7 @@ class Screen extends React.Component {
 			</Form>
 		);
 	}
-	
+
 	handleChange(e, data) {
 		let key_path  = data.key_path;
 		if (data.selection) {
@@ -50,7 +50,6 @@ class Screen extends React.Component {
 					});
 					
 					this.props.new_settings[key_path] = new_value;
-					console.log(this.props.new_settings[key_path]);
 				},
 				100
 			);
