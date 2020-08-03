@@ -249,7 +249,7 @@
 			"long"  : "Mortes"
 		},
 		"cn" : {
-			"short" : "死",
+			"short" : "死亡数",
 			"long"  : "死亡次数"
 		},
 		"jp" : {
