@@ -9,7 +9,7 @@
 			"long"  : "% Bloqueio"
 		},
 		"cn" : {
-			"short" : "格挡率",
+			"short" : "格挡%",
 			"long"  : "格挡百分比"
 		},
 		"jp" : {
@@ -39,7 +39,7 @@
 			"long"  : "% Ataque Certeiro Crítico"
 		},
 		"cn" : {
-			"short" : "直爆率",
+			"short" : "直爆%",
 			"long"  : "直击且暴击百分比"
 		},
 		"jp" : {
@@ -69,8 +69,8 @@
 			"long"  : "% Cura Crítica"
 		},
 		"cn" : {
-			"short" : "治疗暴击率",
-			"long"  : "暴击治疗百分比"
+			"short" : "治疗暴击%",
+			"long"  : "治疗暴击百分比"
 		},
 		"jp" : {
 			"short" : "回復クリ率",
@@ -99,7 +99,7 @@
 			"long"  : "% Ataque Crítico"
 		},
 		"cn" : {
-			"short" : "暴击率",
+			"short" : "暴击%",
 			"long"  : "暴击百分比"
 		},
 		"jp" : {
@@ -159,7 +159,7 @@
 			"long"  : "% Dano"
 		},
 		"cn" : {
-			"short" : "伤害率",
+			"short" : "伤害%",
 			"long"  : "伤害百分比"
 		},
 		"jp" : {
@@ -189,7 +189,7 @@
 			"long"  : "% Dano Recebido"
 		},
 		"cn" : {
-			"short" : "承伤率",
+			"short" : "承伤%",
 			"long"  : "承受伤害百分比"
 		},
 		"jp" : {
@@ -249,7 +249,7 @@
 			"long"  : "Mortes"
 		},
 		"cn" : {
-			"short" : "死亡数",
+			"short" : "死",
 			"long"  : "死亡次数"
 		},
 		"jp" : {
@@ -279,7 +279,7 @@
 			"long"  : "% Ataque Certeiro"
 		},
 		"cn" : {
-			"short" : "直击率",
+			"short" : "直击%",
 			"long"  : "直击百分比"
 		},
 		"jp" : {
@@ -309,8 +309,8 @@
 			"long"  : "Shields"
 		},
 		"cn" : {
-			"short" : "Shields",
-			"long"  : "Shields"
+			"short" : "盾",
+			"long"  : "护盾值"
 		},
 		"jp" : {
 			"short" : "Shields",
@@ -339,7 +339,7 @@
 			"long"  : "% Cura Eficaz"
 		},
 		"cn" : {
-			"short" : "秒疗比",
+			"short" : "秒疗%",
 			"long"  : "有效治疗百分比"
 		},
 		"jp" : {
@@ -489,8 +489,8 @@
 			"long"  : "Enmity"
 		},
 		"cn" : {
-			"short" : "Enmity",
-			"long"  : "Enmity"
+			"short" : "仇恨",
+			"long"  : "仇恨"
 		},
 		"jp" : {
 			"short" : "Enmity",
@@ -549,7 +549,7 @@
 			"long"  : "% Cura"
 		},
 		"cn" : {
-			"short" : "治疗率",
+			"short" : "治疗%",
 			"long"  : "总治疗百分比"
 		},
 		"jp" : {
@@ -579,8 +579,8 @@
 			"long"  : "Heal Count"
 		},
 		"cn" : {
-			"short" : "Heal Ct",
-			"long"  : "Heal Count"
+			"short" : "治疗数",
+			"long"  : "治疗计数"
 		},
 		"jp" : {
 			"short" : "Heal Ct",
@@ -729,7 +729,7 @@
 			"long"  : "% Cura Excessiva"
 		},
 		"cn" : {
-			"short" : "过量治疗率",
+			"short" : "过量%",
 			"long"  : "过量治疗百分比"
 		},
 		"jp" : {
@@ -759,8 +759,8 @@
 			"long"  : "Parry %"
 		},
 		"cn" : {
-			"short" : "Par %",
-			"long"  : "Parry %"
+			"short" : "回避%",
+			"long"  : "回避率"
 		},
 		"jp" : {
 			"short" : "Par %",
