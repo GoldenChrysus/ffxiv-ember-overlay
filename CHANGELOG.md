@@ -2,21 +2,19 @@
 
 ## 0.20.2-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2020-08-02**
 
 ### Bug Fixes
 - Fixed issue where max DPS would carry over from previous encounter
 
 ### Features
-- ?
+- N/A
 
 ### UI Changes
 - Made performance bar backgrounds slightly lighter in the light theme
 
 ### Code Changes
-- ?
+- N/A
 
 ### Miscellaneous
 - Updated sample data
