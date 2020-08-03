@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.20.4-alpha
+## 0.21.0-alpha
 
 **Released: [in development]**
 
@@ -8,7 +8,7 @@
 - N/A
 
 ### Features
-- N/A
+- TODO: Add shields per second metric
 
 ### UI Changes
 - Updated translations for Chinese
