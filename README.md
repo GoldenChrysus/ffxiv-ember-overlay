@@ -37,7 +37,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 ### Optional minimal and light themes (can be combined).
 ![Minimal theme](https://i.imgur.com/psPV5yL.png "Minimal theme")
-![Light theme](https://i.imgur.com/dmMrMFa.png "Light theme")
+![Light theme](https://i.imgur.com/HJTyGqJ.png "Light theme")
 
 ### Customize your experience.
 ![Customizable overlay](https://i.imgur.com/W7DWVmu.gif "Customizable overlay")
