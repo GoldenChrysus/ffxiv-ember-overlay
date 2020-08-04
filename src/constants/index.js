@@ -96,6 +96,12 @@ let calculateHealthPercent = function(unit) {
 	return ((unit.CurrentHP / unit.MaxHP) * 100).toFixed(2);
 }
 
+let calculateShieldPerSecond = function(player, players, encounter) {
+	let duration = +encounter.DURATION || 1;
+
+	return (+player.damageShield / duration).toFixed(2);
+}
+
 const GameJobs = {
 	ARC : {
 		role : "dps"
@@ -187,7 +193,8 @@ const PlayerDataCustomValues = {
 	"damage_taken_pct"   : calculateTankedDamagePercent,
 	"max_heal_format"    : formatMaxHeal,
 	"max_hit_format"     : formatMaxHit,
-	"enctps"             : calculateTankPerSecond
+	"enctps"             : calculateTankPerSecond,
+	"shield_per_second"  : calculateShieldPerSecond
 };
 
 const MonsterDataCustomDataValues = {

@@ -778,5 +778,35 @@
 			"short" : "Par %",
 			"long"  : "Parry %"
 		}
+	},
+	"shield_per_second"  : {
+		"en" : {
+			"short" : "SPS",
+			"long"  : "Shield Per Second"
+		},
+		"pt" : {
+			"short" : "SPS",
+			"long"  : "Shield Per Second"
+		},
+		"cn" : {
+			"short" : "SPS",
+			"long"  : "Shield Per Second"
+		},
+		"jp" : {
+			"short" : "SPS",
+			"long"  : "Shield Per Second"
+		},
+		"de" : {
+			"short" : "SPS",
+			"long"  : "Shield Per Second"
+		},
+		"es" : {
+			"short" : "SPS",
+			"long"  : "Shield Per Second"
+		},
+		"fr" : {
+			"short" : "SPS",
+			"long"  : "Shield Per Second"
+		}
 	}
 }

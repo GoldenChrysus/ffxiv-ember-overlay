@@ -9,7 +9,7 @@
 
 ### Features
 - Added ability to drag and drop player table columns, player detail metrics, and raid view metrics in settings to allow easy reordering
-- TODO: Add shields per second metric
+- Added shield per second metric
 
 ### UI Changes
 - Updated translations for Chinese
