@@ -1,7 +1,7 @@
 # These are supported funding model platforms
 
 github: GoldenChrysus
-custom: ['streamelements.com/chrysus/tip']
+custom: ['https://cash.app/$chrysus', 'streamelements.com/chrysus/tip']
 ko_fi: goldenchrysus
 patreon: Chrysus
 open_collective: # Replace with a single Open Collective username
