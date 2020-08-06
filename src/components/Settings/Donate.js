@@ -41,6 +41,8 @@ class Donate extends React.Component {
 						Thank you!
 					</p>
 
+
+					<div className="donation-link" data-type="cash" ref="cash" id="donation-cash">{DonationService.getRealDonationLink("cash")}</div>
 					<div className="donation-link" data-type="paypal" ref="paypal" id="donation-paypal">{DonationService.getRealDonationLink("paypal")}</div>
 					<div className="donation-link" data-type="kofi" ref="kofi" id="donation-kofi">{DonationService.getRealDonationLink("kofi")}</div>
 					<div className="donation-link" data-type="patreon" ref="patreon" id="donation-patreon">{DonationService.getRealDonationLink("patreon")}</div>

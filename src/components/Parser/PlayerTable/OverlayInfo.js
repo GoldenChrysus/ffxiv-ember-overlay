@@ -50,10 +50,11 @@ class OverlayInfo extends React.Component {
 				<p>Try out the new minimal theme in Settings -> Interface!</p>
 
 				<div id="funding">
-					<span onClick={this.openFundingLink.bind(this, "paypal")} ref="paypal"><img src="img/buttons/funding/paypal.png" alt="Donate at PayPal" height="20"/></span>
-					<span onClick={this.openFundingLink.bind(this, "kofi")} ref="kofi"><img src="img/buttons/funding/kofi.svg" alt="Donate at Ko-fi" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "cash")} ref="cash"><img src="img/buttons/funding/cash.png" alt="Donate on Cash App" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "paypal")} ref="paypal"><img src="img/buttons/funding/paypal-resized.png" alt="Donate at PayPal" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "kofi")} ref="kofi"><img src="img/buttons/funding/kofi.png" alt="Donate at Ko-fi" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "patreon")} ref="patreon"><img src="img/buttons/funding/patreon.png" alt="Donate at Patreon" height="20"/></span>
-					<span onClick={this.openFundingLink.bind(this, "streamelements")} ref="streamelements"><img src="https://img.shields.io/badge/Donate-at%20StreamElements-green" alt="Donate at StreamElements" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "streamelements")} ref="streamelements"><img src="img/buttons/funding/streamelements.png" alt="Donate at StreamElements" height="20"/></span>
 				</div>
 
 				<h3>Latest Changes</h3>
