@@ -52,7 +52,7 @@ class OverlayInfo extends React.Component {
 				<div id="funding">
 					<span onClick={this.openFundingLink.bind(this, "cash")} ref="cash"><img src="img/buttons/funding/cash.svg" alt="Donate on Cash App" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "paypal")} ref="paypal"><img src="img/buttons/funding/paypal-resized.png" alt="Donate at PayPal" height="20"/></span>
-					<span onClick={this.openFundingLink.bind(this, "kofi")} ref="kofi"><img src="img/buttons/funding/kofi.png" alt="Donate at Ko-fi" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "kofi")} ref="kofi"><img src="img/buttons/funding/kofi.svg" alt="Donate at Ko-fi" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "patreon")} ref="patreon"><img src="img/buttons/funding/patreon.png" alt="Donate at Patreon" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "streamelements")} ref="streamelements"><img src="img/buttons/funding/streamelements.svg" alt="Donate at StreamElements" height="20"/></span>
 				</div>
