@@ -76,6 +76,7 @@ class OverlayInfo extends React.Component {
 				switch (rel) {
 					case "paypal":
 					case "kofi":
+					case "cash":
 						url = DonationService.getRealDonationLink(rel);
 
 						break;
@@ -95,7 +96,7 @@ class OverlayInfo extends React.Component {
 				break;
 		}
 
-		window.open(url, "", "width=600,height=430,location=yes,menubar=yes");
+		window.open(url, "", "width=600,height=530,location=yes,menubar=yes");
 	}
 }
 
