@@ -10,11 +10,11 @@ React overlay for the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/rele
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)
 
 #### Funding
-<a href="https://cash.app/$chrysus"><img src="https://i.imgur.com/XolTmnx.png" alt="Donate on Cash App" height="23"></a>
+<a href="https://cash.app/$chrysus"><img src="https://chrysus.xyz/projects/ffxiv-ember-overlay/public/img/buttons/funding/cash.svg" alt="Donate on Cash App" height="23"></a>
 <a href="https://paypal.me/goldenchrysus"><img src="https://i.imgur.com/BSwN4CJ.png" alt="Donate at PayPal" height="23"></a>
 <a href="https://ko-fi.com/S6S611OOG"><img src="https://i.imgur.com/txi1yLu.png" alt="Donate at Ko-fi" height="23"></a>
 <a href="https://patreon.com/Chrysus"><img src="https://i.imgur.com/y4z22XP.png" alt="Become a Patron" height="23"></a>
-<a href="https://streamelements.com/chrysus/tip"><img src="https://i.imgur.com/YKdGs4F.png" alt="Donate at StreamElements" height="23"></a>
+<a href="https://streamelements.com/chrysus/tip"><img src="https://chrysus.xyz/projects/ffxiv-ember-overlay/public/img/buttons/funding/streamelements.svg" alt="Donate at StreamElements" height="23"></a>
 
 ## Usage with OverlayPlugin
 Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
