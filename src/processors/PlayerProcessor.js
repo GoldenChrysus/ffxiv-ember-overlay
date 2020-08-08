@@ -6,7 +6,7 @@ import GameDataProcessor from "./GameDataProcessor";
 
 class PlayerProcessor  {
 	getShortName(name, type) {
-		name = name.split(" ");
+		name = (name || "").split(" ");
 
 		let first_name = (["short_first", "short_both"].indexOf(type) !== -1) ? name[0].slice(0, 1) + "." : name[0];
 

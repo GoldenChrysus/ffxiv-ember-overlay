@@ -29,7 +29,7 @@
 			"long"  : "Blocage %"
 		},
 		"kr" : {
-			"short" : "방막 %",
+			"short" : "방막",
 			"long"  : "방패 막기 %"
 		}
 	},
@@ -63,7 +63,7 @@
 			"long"  : "Coup Critique Direct %"
 		},
 		"kr" : {
-			"short" : "극직 %",
+			"short" : "극직",
 			"long"  : "극대 직격 %"
 		}
 	},
@@ -97,7 +97,7 @@
 			"long"  : "Soin Critique %"
 		},
 		"kr" : {
-			"short" : "극힐 %",
+			"short" : "극힐",
 			"long"  : "극대 치유 %"
 		}
 	},
@@ -131,7 +131,7 @@
 			"long"  : "Coup Critique %"
 		},
 		"kr" : {
-			"short" : "극대 %",
+			"short" : "극대",
 			"long"  : "극대 %"
 		}
 	},
@@ -165,8 +165,8 @@
 			"long"  : "Dégats"
 		},
 		"kr" : {
-			"short" : "피해",
-			"long"  : "피해량"
+			"short" : "총피해",
+			"long"  : "총 피해량"
 		}
 	},
 	"damage%"            : {
@@ -199,8 +199,8 @@
 			"long"  : "Dégats %"
 		},
 		"kr" : {
-			"short" : "피해 %",
-			"long"  : "피해량 %"
+			"short" : "기여도",
+			"long"  : "딜 기여도"
 		}
 	},
 	"damage_taken_pct"   : {
@@ -233,8 +233,8 @@
 			"long"  : "Dégats Reçu %"
 		},
 		"kr" : {
-			"short" : "받은뎀 %",
-			"long"  : "받은 피해량 %"
+			"short" : "분산률",
+			"long"  : "피격량 분산률"
 		}
 	},
 	"damagetaken"        : {
@@ -267,7 +267,7 @@
 			"long"  : "Dégats Reçu"
 		},
 		"kr" : {
-			"short" : "받은뎀",
+			"short" : "피격량",
 			"long"  : "받은 피해량"
 		}
 	},
@@ -335,7 +335,7 @@
 			"long"  : "Coup Direct %"
 		},
 		"kr" : {
-			"short" : "직격 %",
+			"short" : "직격",
 			"long"  : "직격 %"
 		}
 	},
@@ -403,7 +403,7 @@
 			"long"  : "Soin Performant %"
 		},
 		"kr" : {
-			"short" : "유효 힐 %",
+			"short" : "유효힐",
 			"long"  : "유효 치유량"
 		}
 	},
@@ -641,7 +641,7 @@
 			"long"  : "Soin %"
 		},
 		"kr" : {
-			"short" : "힐 %",
+			"short" : "힐",
 			"long"  : "치유량 %"
 		}
 	},
@@ -845,8 +845,8 @@
 			"long"  : "Surplus de Soin %"
 		},
 		"kr" : {
-			"short" : "오버힐 %",
-			"long"  : "오버힐 %"
+			"short" : "오버힐",
+			"long"  : "오버힐 비율"
 		}
 	},
 	"ParryPct"           : {

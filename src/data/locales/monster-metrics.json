@@ -97,7 +97,7 @@
 			"long"  : "Health Percent"
 		},
 		"kr" : {
-			"short" : "HP %",
+			"short" : "HP",
 			"long"  : "체력 비율"
 		}
 	},

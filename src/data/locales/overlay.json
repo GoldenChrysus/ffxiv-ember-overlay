@@ -27,7 +27,7 @@
 		"de" : "Kampf Aufteilen",
 		"es" : "Dividir Encuentro",
 		"fr" : "Sciendé le Combat",
-		"kr" : "전투 나눠 저장"
+		"kr" : "전투 휴식 구간 추가"
 	},
 	"view_encounter"      : {
 		"en" : "View Encounter Detail",
@@ -57,7 +57,7 @@
 		"de" : "Kampfdaten Beseitigen",
 		"es" : "Borrar Datos del Encuentro",
 		"fr" : "Nettoyer les Données",
-		"kr" : "전투 기록 삭제"
+		"kr" : "전투 데이터 삭제"
 	},
 	"settings"            : {
 		"en" : "Settings",
@@ -197,7 +197,7 @@
 		"de" : "Importieren",
 		"es" : "Importar",
 		"fr" : "Importer",
-		"kr" : "불러오기"
+		"kr" : "설정 불러오기"
 	},
 	"import_settings"     : {
 		"en" : "Import Settings",
@@ -217,7 +217,7 @@
 		"de" : "Füge unten deinen exportierten Einstellungsschlüssel ein und klicke auf \"Importieren.\"",
 		"es" : "Pega tus configuraciones exportadas debajo y después presiona \"Importar.\"",
 		"fr" : "Collé votre clé de réglage exportée ci dessous et cliquer sur \"Importer.\"",
-		"kr" : "설정 키를 불러오신 후 \"불러오기\"를 누르십시오."
+		"kr" : "설정의 고유 키 텍스트를 붙여넣으신 후 \"불러오기\"를 누르십시오."
 	},
 	"paste"               : {
 		"en" : "Paste",

@@ -53,7 +53,7 @@
 				"de" : "Metrik Namen",
 				"es" : "Metric Names",
 				"fr" : "Noms des Mesures",
-				"kr" : "임의 항목 설정"
+				"kr" : "항목 이름"
 			},
 			"subsections" : [
 				{
@@ -342,7 +342,7 @@
 			"de" : "Ranglistenplatz oben rechts anzeigen",
 			"es" : "Mostrar Rango en la esquina superior derecha",
 			"fr" : "Afficher le Classement en Haut à Droite",
-			"kr" : "상단 우측에 랭킹 표시"
+			"kr" : "상단 우측에 기여도 랭킹 표시"
 		},
 		"interface.blur_job_icons" : {
 			"en" : "Blur Job Icons When Blurring Player Names",
@@ -422,7 +422,7 @@
 			"de" : "Minimal Farbschema benutzen",
 			"es" : "Usar Mínimo Theme",
 			"fr" : "Utiliser le thème minimale/la version minimale de l'Overlay",
-			"kr" : "최소한의 테마 사용하기"
+			"kr" : "간소화 테마 사용하기"
 		},
 		"interface.auto_hide" : {
 			"en" : "Auto-Hide Overlay After Inactivity (Set Below)",
@@ -492,7 +492,7 @@
 			"de" : "Tabellenspalte",
 			"es" : "Columnas de Tabla",
 			"fr" : "Colonne de Tableau",
-			"kr" : "열"
+			"kr" : "항목열"
 		},
 		"sort_columns.dps" : {
 			"en" : "Default Sort Column",
@@ -502,7 +502,7 @@
 			"de" : "Spalten nach Standard sortieren",
 			"es" : "Ordenar por Defecto",
 			"fr" : "Colonne de tri par défaut",
-			"kr" : "열 순서를 기본으로 설정"
+			"kr" : "순서 기준"
 		},
 		"table_settings.dps.show_footer" : {
 			"en" : "Show Footer",
@@ -512,7 +512,7 @@
 			"de" : "Fußzeile anzeigen",
 			"es" : "Mostrar parte inferior",
 			"fr" : "Afficher le Bas du Parse",
-			"kr" : "하단 표기하기"
+			"kr" : "하단 표시"
 		},
 		"table_columns.heal" : {
 			"en" : "Table Columns",
@@ -807,7 +807,7 @@
 			"de" : "Copy",
 			"es" : "Copy",
 			"fr" : "Copy",
-			"kr" : "복사하다"
+			"kr" : "복사"
 		},
 		"select_all"         : {
 			"en" : "Select All",
@@ -828,7 +828,7 @@
 			"de" : "Entwickelt von {{developer}}.",
 			"es" : "Desarrollado por {{developer}}.",
 			"fr" : "Développé par {{developer}}.",
-			"kr" : "만든 사람 {{developer}}."
+			"kr" : "만든이: {{developer}}."
 		},
 		"changelog"          : {
 			"en" : "Changelog",
@@ -858,7 +858,7 @@
 			"de" : "Funktioniert dein Link nicht? Kopiere diesen Link und füge ihn in einen Browser deiner Wahl ein:",
 			"es" : "No funciona el link? Copia el siguiente link y pégalo en cualquier navegador de internet:",
 			"fr" : "Un lien mort? Copié-collé le lien dans votre barre de recherche:",
-			"kr" : "링크가 연결되지 않습니까? 링크 복사 후 웹 브라우저를 통해 시도해보세요."
+			"kr" : "링크가 연결되지 않습니까? 다음 링크 복사 후 웹 브라우저를 통해 시도해보세요."
 		},
 		"github_cta"         : {
 			"en" : "See the latest code, changelog, and readme information on GitHub. You can also submit bug reports or feature requests.",
