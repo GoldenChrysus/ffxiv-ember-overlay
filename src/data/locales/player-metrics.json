@@ -27,6 +27,10 @@
 		"fr" : {
 			"short" : "Blk %",
 			"long"  : "Blocage %"
+		},
+		"kr" : {
+			"short" : "방막 %",
+			"long"  : "방패 막기 %"
 		}
 	},
 	"CritDirectHitPct"   : {
@@ -57,6 +61,10 @@
 		"fr" : {
 			"short" : "CDH %",
 			"long"  : "Coup Critique Direct %"
+		},
+		"kr" : {
+			"short" : "극직 %",
+			"long"  : "극대 직격 %"
 		}
 	},
 	"critheal%"          : {
@@ -87,6 +95,10 @@
 		"fr" : {
 			"short" : "SC %",
 			"long"  : "Soin Critique %"
+		},
+		"kr" : {
+			"short" : "극힐 %",
+			"long"  : "극대 치유 %"
 		}
 	},
 	"crithit%"           : {
@@ -117,6 +129,10 @@
 		"fr" : {
 			"short" : "CH %",
 			"long"  : "Coup Critique %"
+		},
+		"kr" : {
+			"short" : "극대 %",
+			"long"  : "극대 %"
 		}
 	},
 	"damage"             : {
@@ -147,6 +163,10 @@
 		"fr" : {
 			"short" : "Dmg",
 			"long"  : "Dégats"
+		},
+		"kr" : {
+			"short" : "피해",
+			"long"  : "피해량"
 		}
 	},
 	"damage%"            : {
@@ -177,6 +197,10 @@
 		"fr" : {
 			"short" : "Dmg %",
 			"long"  : "Dégats %"
+		},
+		"kr" : {
+			"short" : "피해 %",
+			"long"  : "피해량 %"
 		}
 	},
 	"damage_taken_pct"   : {
@@ -207,6 +231,10 @@
 		"fr" : {
 			"short" : "DmgR %",
 			"long"  : "Dégats Reçu %"
+		},
+		"kr" : {
+			"short" : "받은뎀 %",
+			"long"  : "받은 피해량 %"
 		}
 	},
 	"damagetaken"        : {
@@ -237,6 +265,10 @@
 		"fr" : {
 			"short" : "DmgR",
 			"long"  : "Dégats Reçu"
+		},
+		"kr" : {
+			"short" : "받은뎀",
+			"long"  : "받은 피해량"
 		}
 	},
 	"deaths"             : {
@@ -267,6 +299,10 @@
 		"fr" : {
 			"short" : "Morts",
 			"long"  : "Morts"
+		},
+		"kr" : {
+			"short" : "사망",
+			"long"  : "사망"
 		}
 	},
 	"DirectHitPct"       : {
@@ -297,6 +333,10 @@
 		"fr" : {
 			"short" : "DH %",
 			"long"  : "Coup Direct %"
+		},
+		"kr" : {
+			"short" : "직격 %",
+			"long"  : "직격 %"
 		}
 	},
 	"damageShield"       : {
@@ -327,6 +367,10 @@
 		"fr" : {
 			"short" : "Shields",
 			"long"  : "Shields"
+		},
+		"kr" : {
+			"short" : "실드",
+			"long"  : "보호막"
 		}
 	},
 	"effective_heal_pct" : {
@@ -357,6 +401,10 @@
 		"fr" : {
 			"short" : "Ef H %",
 			"long"  : "Soin Performant %"
+		},
+		"kr" : {
+			"short" : "유효 힐 %",
+			"long"  : "유효 치유량"
 		}
 	},
 	"effective_hps"      : {
@@ -387,6 +435,10 @@
 		"fr" : {
 			"short" : "Ef HPS",
 			"long"  : "Soin Performant par Seconde"
+		},
+		"kr" : {
+			"short" : "유효 HPS",
+			"long"  : "유효 도트힐"
 		}
 	},
 	"encdps"             : {
@@ -417,6 +469,10 @@
 		"fr" : {
 			"short" : "DPS",
 			"long"  : "Dégats Par Seconde"
+		},
+		"kr" : {
+			"short" : "DPS",
+			"long"  : "초당 피해량"
 		}
 	},
 	"enchps"             : {
@@ -447,6 +503,10 @@
 		"fr" : {
 			"short" : "SPS",
 			"long"  : "Soin Par Seconde"
+		},
+		"kr" : {
+			"short" : "HPS",
+			"long"  : "초당 치유량"
 		}
 	},
 	"enctps"             : {
@@ -477,6 +537,10 @@
 		"fr" : {
 			"short" : "DRPS",
 			"long"  : "Dégats Reçu Par Seconde"
+		},
+		"kr" : {
+			"short" : "DTPS",
+			"long"  : "초당 받은 피해량"
 		}
 	},
 	"enmity_percent"     : {
@@ -507,6 +571,10 @@
 		"fr" : {
 			"short" : "Enmity",
 			"long"  : "Enmity"
+		},
+		"kr" : {
+			"short" : "적개심",
+			"long"  : "적개심"
 		}
 	},
 	"healed"             : {
@@ -537,6 +605,10 @@
 		"fr" : {
 			"short" : "Soin",
 			"long"  : "Soin Total"
+		},
+		"kr" : {
+			"short" : "합산 힐",
+			"long"  : "합산 치유량"
 		}
 	},
 	"healed%"            : {
@@ -567,6 +639,10 @@
 		"fr" : {
 			"short" : "Soin %",
 			"long"  : "Soin %"
+		},
+		"kr" : {
+			"short" : "힐 %",
+			"long"  : "치유량 %"
 		}
 	},
 	"heals"              : {
@@ -597,6 +673,10 @@
 		"fr" : {
 			"short" : "Heal Ct",
 			"long"  : "Heal Count"
+		},
+		"kr" : {
+			"short" : "힐 횟수",
+			"long"  : "치유 횟수"
 		}
 	},
 	"healstaken"         : {
@@ -627,6 +707,10 @@
 		"fr" : {
 			"short" : "SoinR",
 			"long"  : "Soin Reçu"
+		},
+		"kr" : {
+			"short" : "받은 힐",
+			"long"  : "받은 치유량"
 		}
 	},
 	"max_enc_dps"        : {
@@ -657,6 +741,10 @@
 		"fr" : {
 			"short" : "DPS Max",
 			"long"  : "Dégats Maximal Par Seconde"
+		},
+		"kr" : {
+			"short" : "최대 DPS",
+			"long"  : "최대 초당 피해량"
 		}
 	},
 	"max_heal_format"    : {
@@ -687,6 +775,10 @@
 		"fr" : {
 			"short" : "Soin Max",
 			"long"  : "Soin Maximal"
+		},
+		"kr" : {
+			"short" : "최대 힐",
+			"long"  : "최대 치유량"
 		}
 	},
 	"max_hit_format"     : {
@@ -717,6 +809,10 @@
 		"fr" : {
 			"short" : "Dgt Max",
 			"long"  : "Dégats Maximal"
+		},
+		"kr" : {
+			"short" : "최대 딜",
+			"long"  : "최대 피해량"
 		}
 	},
 	"OverHealPct"        : {
@@ -747,6 +843,10 @@
 		"fr" : {
 			"short" : "Ovr %",
 			"long"  : "Surplus de Soin %"
+		},
+		"kr" : {
+			"short" : "오버힐 %",
+			"long"  : "오버힐 %"
 		}
 	},
 	"ParryPct"           : {
@@ -777,6 +877,10 @@
 		"fr" : {
 			"short" : "Par %",
 			"long"  : "Parry %"
+		},
+		"kr" : {
+			"short" : "받넘 %",
+			"long"  : "받아 넘기기 %"
 		}
 	},
 	"shield_per_second"  : {
@@ -807,6 +911,10 @@
 		"fr" : {
 			"short" : "SPS",
 			"long"  : "Shield Per Second"
+		},
+		"kr" : {
+			"short" : "SPS",
+			"long"  : "초당 보호막"
 		}
 	}
 }

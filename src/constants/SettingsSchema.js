@@ -27,6 +27,11 @@ const language_options = [
 		text  : "日本語"
 	},
 	{
+		key   : "kr",
+		value : "kr",
+		text  : "한국어"
+	},
+	{
 		key   : "pt",
 		value : "pt",
 		text  : "Português"

@@ -12,6 +12,7 @@
 - Added shield per second metric
 
 ### UI Changes
+- Added translations for Korean
 - Updated translations for Chinese
 - Changed colors of player detail chart
     - Red for DPS

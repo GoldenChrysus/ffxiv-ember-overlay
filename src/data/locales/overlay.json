@@ -6,7 +6,8 @@
 		"jp" : "最小化",
 		"de" : "Verkleinern",
 		"es" : "Minimizar",
-		"fr" : "Minimiser"
+		"fr" : "Minimiser",
+		"kr" : "최소화"
 	},
 	"uncollapse"          : {
 		"en" : "Uncollapse",
@@ -15,7 +16,8 @@
 		"jp" : "元に戻す",
 		"de" : "Vergrößern",
 		"es" : "Maximizar",
-		"fr" : "élargir"
+		"fr" : "élargir",
+		"kr" : "최대화"
 	},
 	"split_encounter"     : {
 		"en" : "Split Encounter",
@@ -24,7 +26,8 @@
 		"jp" : "戦闘の区切り",
 		"de" : "Kampf Aufteilen",
 		"es" : "Dividir Encuentro",
-		"fr" : "Sciendé le Combat"
+		"fr" : "Sciendé le Combat",
+		"kr" : "전투 나눠 저장"
 	},
 	"view_encounter"      : {
 		"en" : "View Encounter Detail",
@@ -33,7 +36,8 @@
 		"jp" : "戦闘の詳細を表示",
 		"de" : "Kampf Details Ansehen",
 		"es" : "Ver Detalles del Encuentro",
-		"fr" : "Voir les Détails du Combat"
+		"fr" : "Voir les Détails du Combat",
+		"kr" : "전투 상세 정보"
 	},
 	"load_sample"         : {
 		"en" : "Load Sample Data",
@@ -42,7 +46,8 @@
 		"jp" : "サンプルデーターを表示",
 		"de" : "Musterdaten Laden",
 		"es" : "Cargar Datos de Muestra",
-		"fr" : "Charger la Donnée d'échantillon"
+		"fr" : "Charger la Donnée d'échantillon",
+		"kr" : "예제 전투 불러오기"
 	},
 	"clear_encounter"     : {
 		"en" : "Clear Encounter Data",
@@ -51,7 +56,8 @@
 		"jp" : "戦闘をリセットする",
 		"de" : "Kampfdaten Beseitigen",
 		"es" : "Borrar Datos del Encuentro",
-		"fr" : "Nettoyer les Données"
+		"fr" : "Nettoyer les Données",
+		"kr" : "전투 기록 삭제"
 	},
 	"settings"            : {
 		"en" : "Settings",
@@ -60,16 +66,18 @@
 		"jp" : "設定",
 		"de" : "Einstellungen",
 		"es" : "Opciones",
-		"fr" : "Paramètres"
+		"fr" : "Paramètres",
+		"kr" : "설정"
 	},
 	"blur_names"          : {
 		"en" : "Blur player names",
 		"pt" : "Borrar nomes dos Jogadores",
 		"cn" : "隐藏姓名",
 		"jp" : "プレイヤー名を伏せる",
-		"de" : "Verwische Spielernamen",
+		"de" : "Spielernamen Trüben",
 		"es" : "Difuminar Nombres de los Jugadores",
-		"fr" : "Cacher le nom des joueurs"
+		"fr" : "Cacher le nom des joueurs",
+		"kr" : "플레이어 이름 가리기"
 	},
 	"toggle_collapse"     : {
 		"en" : "Toggle collapse",
@@ -78,7 +86,8 @@
 		"jp" : "最小化を切替",
 		"de" : "Verkleinern/Vergrößern",
 		"es" : "Minimizar/Maximizar",
-		"fr" : "Minimiser/Afficher"
+		"fr" : "Minimiser/Afficher",
+		"kr" : "최소화 토글"
 	},
 	"back"                : {
 		"en" : "Back",
@@ -87,7 +96,8 @@
 		"jp" : "戻る",
 		"de" : "Zurück",
 		"es" : "Volver",
-		"fr" : "Revenir"
+		"fr" : "Revenir",
+		"kr" : "뒤로가기"
 	},
 	"not_applicable"      : {
 		"en" : "N/A",
@@ -96,7 +106,8 @@
 		"jp" : "該当なし",
 		"de" : "N/A",
 		"es" : "N/A",
-		"fr" : "N/A"
+		"fr" : "N/A",
+		"kr" : "N/A"
 	},
 	"inactive"            : {
 		"en" : "Inactive",
@@ -105,7 +116,8 @@
 		"jp" : "未表示",
 		"de" : "Inaktiv",
 		"es" : "Inactivo",
-		"fr" : "Inactif"
+		"fr" : "Inactif",
+		"kr" : "비활성화"
 	},
 	"encounter"           : {
 		"en" : "Encounter",
@@ -114,7 +126,8 @@
 		"jp" : "戦闘",
 		"de" : "Im Kampf",
 		"es" : "Encuentro",
-		"fr" : "Combat"
+		"fr" : "Combat",
+		"kr" : "전투"
 	},
 	"awaiting_encounter"  : {
 		"en" : "Awaiting encounter data...",
@@ -123,7 +136,8 @@
 		"jp" : "戦闘データを待ち中",
 		"de" : "Warte auf Kampfdaten...",
 		"es" : "Esperando datos del encuentro...",
-		"fr" : "En attente d'une donnée de combat..."
+		"fr" : "En attente d'une donnée de combat...",
+		"kr" : "전투 기록 대기 중..."
 	},
 	"player_name"         : {
 		"en" : "Name",
@@ -132,7 +146,8 @@
 		"jp" : "名前",
 		"de" : "Name",
 		"es" : "Nombre",
-		"fr" : "Prénom"
+		"fr" : "Prénom",
+		"kr" : "이름"
 	},
 	"dps"                 : {
 		"en" : "DPS",
@@ -141,7 +156,8 @@
 		"jp" : "DPS",
 		"de" : "DPS",
 		"es" : "DPS",
-		"fr" : "DPS"
+		"fr" : "DPS",
+		"kr" : "DPS"
 	},
 	"heal"                : {
 		"en" : "Heal",
@@ -150,7 +166,8 @@
 		"jp" : "復",
 		"de" : "Heilung",
 		"es" : "Cura",
-		"fr" : "Soin"
+		"fr" : "Soin",
+		"kr" : "치유"
 	},
 	"tank"                : {
 		"en" : "Tank",
@@ -159,7 +176,8 @@
 		"jp" : "タンク",
 		"de" : "Verteidiger",
 		"es" : "Tank",
-		"fr" : "Tank"
+		"fr" : "Tank",
+		"kr" : "탱커"
 	},
 	"aggro"              : {
 		"en" : "Agg",
@@ -168,7 +186,8 @@
 		"jp" : "Agg",
 		"de" : "Agg",
 		"es" : "Agg",
-		"fr" : "Agg"
+		"fr" : "Agg",
+		"kr" : "적개심"
 	},
 	"import"              : {
 		"en" : "Import",
@@ -177,7 +196,8 @@
 		"jp" : "取り込む",
 		"de" : "Importieren",
 		"es" : "Importar",
-		"fr" : "Importer"
+		"fr" : "Importer",
+		"kr" : "불러오기"
 	},
 	"import_settings"     : {
 		"en" : "Import Settings",
@@ -186,7 +206,8 @@
 		"jp" : "設定を取り込む",
 		"de" : "Einstellungen Importieren",
 		"es" : "Opciones de Importación",
-		"fr" : "Importer les Paramètres"
+		"fr" : "Importer les Paramètres",
+		"kr" : "설정 불러오기"
 	},
 	"import_instructions" : {
 		"en" : "Paste your exported setting key below and click \"Import.\"",
@@ -195,7 +216,8 @@
 		"jp" : "持ち出した設定キーをこの下に貼付してから「取り込む」をクリックしてください。",
 		"de" : "Füge unten deinen exportierten Einstellungsschlüssel ein und klicke auf \"Importieren.\"",
 		"es" : "Pega tus configuraciones exportadas debajo y después presiona \"Importar.\"",
-		"fr" : "Collé votre clé de réglage exportée ci dessous et cliquer sur \"Importer.\""
+		"fr" : "Collé votre clé de réglage exportée ci dessous et cliquer sur \"Importer.\"",
+		"kr" : "설정 키를 불러오신 후 \"불러오기\"를 누르십시오."
 	},
 	"paste"               : {
 		"en" : "Paste",
@@ -204,6 +226,7 @@
 		"jp" : "Paste",
 		"de" : "Paste",
 		"es" : "Paste",
-		"fr" : "Paste"
+		"fr" : "Paste",
+		"kr" : "붙여넣기"
 	}
 }

@@ -39,8 +39,9 @@ class Screen extends React.Component {
 	}
 
 	handleChange(e, data) {
-		let key_path  = data.key_path;
-		if (data.selection) {
+		let key_path = data.key_path;
+
+		if (data.selection && data.multiple) {
 			setTimeout(
 				() => {
 					let new_value = []
