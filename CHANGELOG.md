@@ -2,7 +2,7 @@
 
 ## 0.21.0-alpha
 
-**Released: [in development]**
+**Released: 2020-08-09**
 
 ### Bug Fixes
 - N/A
