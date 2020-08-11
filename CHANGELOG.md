@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.22.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- ?
+
+### Features
+- Settings page now works independently of the main overlay (parser)
+    - Previously, settings would only save if you opened the settings page from the parser and kept the parser open
+    - Can navigate directly to `https://goldenchrysus.github.io/ffxiv/ember-overlay/#/settings/about` without the parser open to make changes
+    - Useful in programs like Streamlabs OBS where pasting usually does not work so settings are difficult to import; can modify settings directly in the Browser Source now
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.21.0-alpha
 
 **Released: 2020-08-09**

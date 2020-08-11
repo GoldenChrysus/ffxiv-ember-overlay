@@ -36,8 +36,9 @@ export function createStorageListener(store) {
 				break;
 
 			case "setSettings":
-				valid_action = true;
+				valid_action = false;
 
+				store.getState().settings_data.loadSettings();
 				break;
 
 			case "updateState":
