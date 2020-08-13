@@ -2,12 +2,12 @@
 
 ## 0.22.0-alpha
 
-**Released: [in development]**
+**Released: [in staging]**
 
-*! - indicates change is available on the staging site*
+*changes are available on the staging site*
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
 - Settings page now works independently of the main overlay (parser)
@@ -20,13 +20,13 @@
     - Accessible at Settings > Player Table > Prioritize Party Members at Top of List or Settings > Raid View > Prioritize Party Members at Top of List
 
 ### UI Changes
-- ?
+- N/A
 
 ### Code Changes
 - Player rows now have HTML attributes `data-party="1"` or `data-party="0"` to indicate if a given player is or isn't in your party, respectively
 
 ### Miscellaneous
-- ?
+- N/A
 
 ## 0.21.0-alpha
 

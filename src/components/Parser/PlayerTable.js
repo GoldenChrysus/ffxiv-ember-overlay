@@ -116,7 +116,7 @@ class PlayerTable extends React.Component {
 
 		let resorted_players = Array.from(sorted_players);
 
-		if (prioritize_pt) {
+		if (prioritize_pt && this.props.party.length > 1) {
 			resorted_players.sort((a, b) => {
 				let party_has_a = (a._is_current || this.props.party.indexOf(a._name) !== -1);
 				let party_has_b = (b._is_current || this.props.party.indexOf(b._name) !== -1);

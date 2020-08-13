@@ -92,7 +92,7 @@ class Player extends React.Component {
 		};
 
 		return (
-			<div className={"row player " + player_type} data-job={job} data-role={role} data-party={+player._party} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>
+			<div className={"row player " + player_type} data-job={job} data-role={role} data-party={+(player._party || 0)} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>
 				{playerData()}
 				{statData()}
 				{percentBar()}
