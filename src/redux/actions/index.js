@@ -39,6 +39,14 @@ export function parseAggroList(payload) {
 	};
 }
 
+export function parseParty(payload) {
+	return {
+		type : "parseParty",
+		key  : "internal.party",
+		payload
+	}
+}
+
 export function updateSetting(payload) {
 	return {
 		type      : "setSetting",

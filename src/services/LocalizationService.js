@@ -14,7 +14,7 @@ class LocalizationService {
 			return custom[key][type];
 		}
 
-		let title  = Constants.PlayerDataTitles[key];
+		let title = Constants.PlayerDataTitles[key];
 
 		title = title[this.getLanguage()] || title.en;
 

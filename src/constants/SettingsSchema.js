@@ -236,6 +236,13 @@ const SettingsSchema = {
 							value    : function() {
 								return this.props.settings.table_settings.general.table.percent_bars;
 							}
+						},
+						{
+							key_path : "table_settings.general.table.prioritize_party",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.general.table.prioritize_party;
+							}
 						}
 					]
 				},
@@ -409,6 +416,13 @@ const SettingsSchema = {
 							type     : "checkbox",
 							value    : function() {
 								return this.props.settings.table_settings.general.raid.percent_bars;
+							}
+						},
+						{
+							key_path : "table_settings.general.raid.prioritize_party",
+							type     : "checkbox",
+							value    : function() {
+								return this.props.settings.table_settings.general.raid.prioritize_party;
 							}
 						}
 					]

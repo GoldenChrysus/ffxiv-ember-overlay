@@ -154,6 +154,22 @@ class GameDataProcessor  {
 		return data;
 	}
 
+	processParty(data) {
+		let party = [];
+
+		if (!data || !data.party) {
+			return party;
+		}
+
+		for (let i in data.party) {
+			if (data.party[i].inParty) {
+				party.push(data.party[i].name);
+			}
+		}
+
+		return party;
+	}
+
 	convertToLocaleFormat(key, value) {
 		const state = store.getState();
 

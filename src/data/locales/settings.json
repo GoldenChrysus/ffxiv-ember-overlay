@@ -484,6 +484,16 @@
 			"fr" : "Afficher les Barres de Performance en Arrière-Plan",
 			"kr" : "플레이어 뒤에 기여도 비율 표기"
 		},
+		"table_settings.general.table.prioritize_party" : {
+			"en" : "Prioritize Party Members at Top of List",
+			"pt" : "Prioritize Party Members at Top of List",
+			"cn" : "Prioritize Party Members at Top of List",
+			"jp" : "Prioritize Party Members at Top of List",
+			"de" : "Prioritize Party Members at Top of List",
+			"es" : "Prioritize Party Members at Top of List",
+			"fr" : "Prioritize Party Members at Top of List",
+			"kr" : "Prioritize Party Members at Top of List"
+		},
 		"table_columns.dps" : {
 			"en" : "Table Columns",
 			"pt" : "Colunas da Tabela",
@@ -633,6 +643,16 @@
 			"es" : "Mostrar Barras de desempeño del fondo",
 			"fr" : "Afficher les Barres de Performance en Arrière-Plan",
 			"kr" : "플레이어 뒤에 기여도 비율 표기"
+		},
+		"table_settings.general.raid.prioritize_party" : {
+			"en" : "Prioritize Party Members at Top of List",
+			"pt" : "Prioritize Party Members at Top of List",
+			"cn" : "Prioritize Party Members at Top of List",
+			"jp" : "Prioritize Party Members at Top of List",
+			"de" : "Prioritize Party Members at Top of List",
+			"es" : "Prioritize Party Members at Top of List",
+			"fr" : "Prioritize Party Members at Top of List",
+			"kr" : "Prioritize Party Members at Top of List"
 		},
 		"table_columns.raid.dps" : {
 			"en" : "Metrics",

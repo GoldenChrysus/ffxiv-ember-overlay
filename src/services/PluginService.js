@@ -35,7 +35,8 @@ class PluginService {
 					"CombatData",
 					"EnmityAggroList",
 					"EnmityTargetData",
-					"ChangePrimaryPlayer"
+					"ChangePrimaryPlayer",
+					"PartyChanged"
 				]
 			}),
 			callback

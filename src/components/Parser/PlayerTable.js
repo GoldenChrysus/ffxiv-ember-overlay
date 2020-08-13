@@ -37,6 +37,7 @@ class PlayerTable extends React.Component {
 		let short_names    = (is_raid) ? this.props.table_settings.general.raid.short_names : this.props.table_settings.general.table.short_names;
 		let footer_at_top  = this.props.table_settings.general.table.footer_at_top;
 		let percent_bars   = (is_raid) ? this.props.table_settings.general.raid.percent_bars : this.props.table_settings.general.table.percent_bars;
+		let prioritize_pt  = (is_raid) ? this.props.table_settings.general.raid.prioritize_party : this.props.table_settings.general.table.prioritize_party;
 
 		if (!is_raid) {
 			for (let key of this.props.table_columns[table_type]) {
@@ -64,6 +65,7 @@ class PlayerTable extends React.Component {
 			let pet_owner = null;
 
 			player._name = player.name;
+			player._skip = false;
 
 			if (player.Job === "" && player.name !== "Limit Break") {
 				let name    = player.name;
@@ -82,6 +84,8 @@ class PlayerTable extends React.Component {
 			player._is_current = (player.name === "YOU" || player._name === this.props.player_name || (player._name === this.props.internal_name && this.props.player_name === "YOU"));
 
 			if (player._is_pet && !player._is_current && !this.props.players[player._name]) {
+				player._skip = true;
+
 				continue;
 			}
 
@@ -103,12 +107,42 @@ class PlayerTable extends React.Component {
 
 			let percent = ((sort_value / max_value) * 100).toFixed(2);
 
+			player._percent = percent;
+
 			if (collapsed && !player._is_current) {
+				player._skip = true;
+			}
+		}
+
+		let resorted_players = Array.from(sorted_players);
+
+		if (prioritize_pt) {
+			resorted_players.sort((a, b) => {
+				let party_has_a = (a._is_current || this.props.party.indexOf(a._name) !== -1);
+				let party_has_b = (b._is_current || this.props.party.indexOf(b._name) !== -1);
+
+				a._party = party_has_a;
+				b._party = party_has_b;
+
+				if (party_has_a && !party_has_b) {
+					return -1;
+				}
+
+				if (party_has_b && !party_has_a) {
+					return 1;
+				}
+
+				return 0;
+			});
+		}
+
+		for (let player of resorted_players) {
+			if (player._skip) {
 				continue;
 			}
 
 			let blur       = (player_blur && !player._is_current);
-			let player_obj = <Player key={player.name} percent={percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>;
+			let player_obj = <Player key={player.name} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
 
 			if (player._is_pet) {
 				pet_rows.push(player_obj);
@@ -116,6 +150,8 @@ class PlayerTable extends React.Component {
 				rows.push(player_obj);
 			}
 		}
+
+		resorted_players = undefined;
 
 		let header_row, footer_row, table_class;
 
@@ -248,7 +284,8 @@ const mapStateToProps = (state) => {
 		collapsed      : state.settings.intrinsic.collapsed,
 		player_blur    : state.settings.intrinsic.player_blur,
 		table_settings : state.settings.table_settings,
-		rank           : state.internal.rank
+		rank           : state.internal.rank,
+		party          : state.internal.party
 	};
 };
 

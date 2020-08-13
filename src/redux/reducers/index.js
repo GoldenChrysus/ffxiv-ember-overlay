@@ -24,6 +24,7 @@ const initial_state = {
 		data_history         : {},
 		encounter_history    : [],
 		detail_player        : {},
+		party                : [],
 		viewing_history      : false,
 		overlayplugin        : !!window.OverlayPluginApi,
 		overlayplugin_author : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
@@ -164,6 +165,13 @@ function rootReducer(state, action) {
 			if (!new_state.internal.viewing_history) {
 				new_state.internal.aggro = action.payload;
 			}
+
+			break;
+
+		case "parseParty":
+			new_state = clone(state);
+			
+			new_state.internal.party = GameDataProcessor.processParty(action.payload);
 
 			break;
 

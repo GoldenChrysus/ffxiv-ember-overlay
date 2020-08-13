@@ -95,7 +95,8 @@ class SocketService {
 					"CombatData",
 					"EnmityAggroList",
 					"EnmityTargetData",
-					"ChangePrimaryPlayer"
+					"ChangePrimaryPlayer",
+					"PartyChanged"
 				]
 			})
 		);
