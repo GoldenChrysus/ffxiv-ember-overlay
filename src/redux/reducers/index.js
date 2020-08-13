@@ -59,8 +59,6 @@ function rootReducer(state, action) {
 				new_state = createNewState(new_state, full_key, setting);
 			}
 
-			console.log(action);
-
 			new_state.settings_data.saveSettings(true);
 
 			break;
