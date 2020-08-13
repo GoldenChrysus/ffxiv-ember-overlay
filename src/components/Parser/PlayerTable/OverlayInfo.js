@@ -54,7 +54,7 @@ class OverlayInfo extends React.Component {
 					<span onClick={this.openFundingLink.bind(this, "paypal")} ref="paypal"><img src="img/buttons/funding/paypal-resized.png" alt="Donate at PayPal" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "kofi")} ref="kofi"><img src="img/buttons/funding/kofi.svg" alt="Donate at Ko-fi" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "patreon")} ref="patreon"><img src="img/buttons/funding/patreon.png" alt="Donate at Patreon" height="20"/></span>
-					<span onClick={this.openFundingLink.bind(this, "streamelements")} ref="streamelements"><img src="img/buttons/funding/streamelements.svg" alt="Donate at StreamElements" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "streamlabs")} ref="streamlabs"><img src="img/buttons/funding/streamlabs.svg" alt="Donate at Streamlabs" height="20"/></span>
 				</div>
 
 				<h3>Latest Changes</h3>
@@ -67,7 +67,7 @@ class OverlayInfo extends React.Component {
 		let url = "";
 
 		// Min for PayPal: Hibiya
-		// Min for StreamElements: ngld
+		// Min for Streamlabs: ngld
 		// Min for Ko-fi: Hibiya
 		// Min for Patreon: ngld
 		switch (this.state.chrome) {
