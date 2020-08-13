@@ -1,4 +1,5 @@
 import React from "react";
+import EmberComponent from "../EmberComponent";
 import { connect } from "react-redux";
 import $ from "jquery";
 import { changeViewing, changeDetailPlayer, updateState } from "../../redux/actions/index";
@@ -11,7 +12,7 @@ import Constants from "../../constants/index";
 import Player from "./PlayerTable/Player";
 import OverlayInfo from "./PlayerTable/OverlayInfo";
 
-class PlayerTable extends React.Component {
+class PlayerTable extends EmberComponent {
 	componentDidMount() {
 		this.updateBackgrounds();
 	}

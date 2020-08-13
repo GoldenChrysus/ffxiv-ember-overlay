@@ -58,7 +58,7 @@ export function createStorageListener(store) {
 	};
 }
 
-const middleware = applyMiddleware(promise, storageMiddleware());
+const middleware = applyMiddleware(storageMiddleware());
 const store      = createStore(rootReducer, middleware);
 
 window.addEventListener("storage", createStorageListener(store));

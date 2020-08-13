@@ -1,11 +1,12 @@
 import React from "react";
+import EmberComponent from "../../EmberComponent";
 
 import PlayerProcessor from "../../../processors/PlayerProcessor";
 import LocalizationService from "../../../services/LocalizationService";
 import Constants from "../../../constants/index";
 import PercentBar from "../PercentBar";
 
-class Player extends React.Component {
+class Player extends EmberComponent {
 	render() {
 		let player       = this.props.player;
 		let player_type  = (player._is_current) ? "active" : "other";
