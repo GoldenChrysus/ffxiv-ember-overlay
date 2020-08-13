@@ -37,13 +37,15 @@ const default_settings = {
 	table_settings : {
 		general : {
 			table : {
-				short_names   : "no_short",
-				footer_at_top : false,
-				percent_bars  : false
+				short_names      : "no_short",
+				footer_at_top    : false,
+				percent_bars     : true,
+				prioritize_party : false
 			},
 			raid  : {
-				short_names  : "no_short",
-				percent_bars : false
+				short_names      : "no_short",
+				percent_bars     : true,
+				prioritize_party : false
 			}
 		},
 		dps     : {
