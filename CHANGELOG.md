@@ -14,12 +14,16 @@
     - Previously, settings would only save if you opened the settings page from the parser and kept the parser open
     - Can navigate directly to `https://goldenchrysus.github.io/ffxiv/ember-overlay/#/settings/about` without the parser open to make changes
     - Useful in programs like Streamlabs OBS where pasting usually does not work so settings are difficult to import; can modify settings directly in the Browser Source now
+- Added setting to prioritize party at top of player list
+    - Intended for alliance raids, your party will be listed before all other raid members
+    - Rankings and performance bars will still be relative to the entire raid's performance
+    - Accessible at Settings > Player Table > Prioritize Party Members at Top of List or Settings > Raid View > Prioritize Party Members at Top of List
 
 ### UI Changes
 - ?
 
 ### Code Changes
-- ?
+- Player rows now have HTML attributes `data-party="1"` or `data-party="0"` to indicate if a given player is or isn't in your party, respectively
 
 ### Miscellaneous
 - ?
