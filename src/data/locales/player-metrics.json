@@ -357,16 +357,16 @@
 			"long"  : "Shields"
 		},
 		"de" : {
-			"short" : "Shields",
-			"long"  : "Shields"
+			"short" : "Schilde",
+			"long"  : "Schilde"
 		},
 		"es" : {
 			"short" : "Shields",
 			"long"  : "Shields"
 		},
 		"fr" : {
-			"short" : "Shields",
-			"long"  : "Shields"
+			"short" : "Boucliers",
+			"long"  : "Boucliers"
 		},
 		"kr" : {
 			"short" : "실드",
@@ -562,7 +562,7 @@
 		},
 		"de" : {
 			"short" : "Enmity",
-			"long"  : "Enmity"
+			"long"  : "Feindseligkeit"
 		},
 		"es" : {
 			"short" : "Enmity",
@@ -664,7 +664,7 @@
 		},
 		"de" : {
 			"short" : "Heal Ct",
-			"long"  : "Heal Count"
+			"long"  : "Heilungsmenge"
 		},
 		"es" : {
 			"short" : "Heal Ct",
@@ -732,7 +732,7 @@
 		},
 		"de" : {
 			"short" : "Max DPS",
-			"long"  : "Größter Schaden pro Sekunde"
+			"long"  : "Max Schaden pro Sekunde"
 		},
 		"es" : {
 			"short" : "Mx DPS",
@@ -868,7 +868,7 @@
 		},
 		"de" : {
 			"short" : "Par %",
-			"long"  : "Parry %"
+			"long"  : "Paraden in %"
 		},
 		"es" : {
 			"short" : "Par %",
@@ -902,7 +902,7 @@
 		},
 		"de" : {
 			"short" : "SPS",
-			"long"  : "Shield Per Second"
+			"long"  : "Schilde pro Sekunde"
 		},
 		"es" : {
 			"short" : "SPS",

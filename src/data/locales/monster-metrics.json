@@ -52,15 +52,15 @@
 		},
 		"de" : {
 			"short" : "HP",
-			"long"  : "Health"
+			"long"  : "Leben"
 		},
 		"es" : {
 			"short" : "HP",
 			"long"  : "Health"
 		},
 		"fr" : {
-			"short" : "HP",
-			"long"  : "Health"
+			"short" : "PV",
+			"long"  : "Point de Vie"
 		},
 		"kr" : {
 			"short" : "HP",
@@ -86,7 +86,7 @@
 		},
 		"de" : {
 			"short" : "HP %",
-			"long"  : "Health Percent"
+			"long"  : "Leben in Prozent"
 		},
 		"es" : {
 			"short" : "HP %",
@@ -119,16 +119,16 @@
 			"long"  : "Target"
 		},
 		"de" : {
-			"short" : "Target",
-			"long"  : "Target"
+			"short" : "Ziel",
+			"long"  : "Ziel"
 		},
 		"es" : {
 			"short" : "Target",
 			"long"  : "Target"
 		},
 		"fr" : {
-			"short" : "Target",
-			"long"  : "Target"
+			"short" : "Cible",
+			"long"  : "Cible"
 		},
 		"kr" : {
 			"short" : "대상",

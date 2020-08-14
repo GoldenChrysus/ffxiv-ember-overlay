@@ -487,12 +487,12 @@
 		"table_settings.general.table.prioritize_party" : {
 			"en" : "Prioritize Party Members at Top of List",
 			"pt" : "Prioritize Party Members at Top of List",
-			"cn" : "Prioritize Party Members at Top of List",
+			"cn" : "优先显示小队成员",
 			"jp" : "Prioritize Party Members at Top of List",
 			"de" : "Prioritize Party Members at Top of List",
 			"es" : "Prioritize Party Members at Top of List",
 			"fr" : "Prioritize Party Members at Top of List",
-			"kr" : "Prioritize Party Members at Top of List"
+			"kr" : "같은 파티 멤버를 최우선으로 정렬"
 		},
 		"table_columns.dps" : {
 			"en" : "Table Columns",
@@ -647,12 +647,12 @@
 		"table_settings.general.raid.prioritize_party" : {
 			"en" : "Prioritize Party Members at Top of List",
 			"pt" : "Prioritize Party Members at Top of List",
-			"cn" : "Prioritize Party Members at Top of List",
+			"cn" : "优先显示小队成员",
 			"jp" : "Prioritize Party Members at Top of List",
 			"de" : "Prioritize Party Members at Top of List",
 			"es" : "Prioritize Party Members at Top of List",
 			"fr" : "Prioritize Party Members at Top of List",
-			"kr" : "Prioritize Party Members at Top of List"
+			"kr" : "같은 파티 멤버를 최우선으로 정렬"
 		},
 		"table_columns.raid.dps" : {
 			"en" : "Metrics",
