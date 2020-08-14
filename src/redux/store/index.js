@@ -1,6 +1,5 @@
 import { applyMiddleware, createStore } from "redux";
 import rootReducer from "../reducers/index";
-import promise from "redux-promise-middleware";
 
 const storage_key = "redux-local-tab-sync";
 

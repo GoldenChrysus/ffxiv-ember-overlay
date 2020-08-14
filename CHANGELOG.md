@@ -24,6 +24,7 @@
 
 ### Code Changes
 - Player rows now have HTML attributes `data-party="1"` or `data-party="0"` to indicate if a given player is or isn't in your party, respectively
+- Performance improvements
 
 ### Miscellaneous
 - N/A
