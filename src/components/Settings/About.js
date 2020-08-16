@@ -75,6 +75,7 @@ class About extends React.Component {
 							<li><strong>Astriel</strong> - German translation</li>
 							<li><strong>Claud</strong> - Spanish translation</li>
 							<li><strong>Okâme</strong> - French translation</li>
+							<li><strong>Tsunari96</strong> - Tsunari96#8491 (Discord) - Korean translation</li>
 						</ul>
 					</p>
 				</Container>

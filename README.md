@@ -125,6 +125,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 - **Astriel** - German
 - **Claud** - Spanish
 - **Okâme** - French
+- **Tsunari96** - Tsunari96#8491 (Discord) - Korean
 
 ### Donors
 
