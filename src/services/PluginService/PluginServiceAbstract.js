@@ -5,6 +5,8 @@ class PluginServiceAbstract {
 		if (settings && Object.keys(settings).length) {
 			Object.assign(this, settings);
 		}
+
+		this.subscribed = false;
 	}
 
 	splitEncounter() {
@@ -12,20 +14,33 @@ class PluginServiceAbstract {
 	}
 
 	subscribe(events) {
+		this.subscribed = true;
+
 		let callback = MessageProcessor.processMessage;
 
 		if (!this.is_overlayplugin || !this.is_ngld) {
+			if (this.subscribed) {
+				return;
+			}
+
 			document.addEventListener("onOverlayDataUpdate", callback);
 			return;
 		}
 
-		window.__OverlayCallback = callback;
+		if (!this.subscribed) {
+			window.__OverlayCallback = callback;
+		}
 
+		this.callHandler(this.plugin_service.createMessage("subscribe", "events", events), callback);
+	}
+
+	unsubscribe(events) {
+		this.callHandler(this.plugin_service.createMessage("unsubscribe", "events", events));
+	}
+
+	callHandler(message, callback) {
 		window.OverlayPluginApi.callHandler(
-			JSON.stringify({
-				call   : "subscribe",
-				events : events
-			}),
+			message,
 			callback
 		);
 	}

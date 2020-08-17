@@ -1,3 +1,4 @@
+import OverlayPluginService from "../../services/PluginService/OverlayPluginService";
 import MessageProcessor from "../../processors/MessageProcessor";
 import store from "../../redux/store/index";
 import { updateState } from "../../redux/actions/index";
@@ -11,6 +12,10 @@ class SocketService {
 		this.reconnect_delay = BASE_RECONNECT_DELAY;
 		this.try_for_ngld    = (String(window.location.search).indexOf("fake") === -1);
 		this.uri             = uri || this.processUri();
+		this.plugin_service  = new OverlayPluginService();
+		this.events          = [];
+		this.subscribed      = false;
+		this.is_connected    = false;
 	}
 
 	processUri() {
@@ -59,6 +64,7 @@ class SocketService {
 			this.uri          = this.processUri();
 		}
 
+		this.subscribed      = false;
 		this.reconnect_delay = Math.min(this.reconnect_delay * 2, 3000);
 
 		this.initialize();
@@ -72,11 +78,14 @@ class SocketService {
 			}));
 		}
 
+		this.is_connected    = true;
 		this.try_for_ngld    = false;
 		this.reconnect_delay = BASE_RECONNECT_DELAY;
 
 		this.setId();
 		this.establishSubscriptions();
+
+		this.subscribed = true;
 	}
 
 	setId() {
@@ -88,17 +97,26 @@ class SocketService {
 	}
 
 	subscribe(events) {
-		this.events = events;
+		events = events.filter(e => (this.events.indexOf(e) === -1));
 
-		return this.initialize();
+		this.new_events = events;
+
+		if (events.length) {
+			this.events = this.events.concat(events);
+		}
+
+		return (!this.is_connected) ? this.initialize() : this.establishSubscriptions();
 	}
 
 	establishSubscriptions() {
+		let events = (this.subscribed) ? this.new_events : this.events;
+
+		if (!events.length) {
+			return;
+		}
+
 		this.socket.send(
-			JSON.stringify({
-				call   : "subscribe",
-				events : this.events
-			})
+			this.plugin_service.createMessage("subscribe", "events", events)
 		);
 	}
 

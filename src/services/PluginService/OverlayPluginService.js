@@ -16,6 +16,18 @@ class OverlayPluginService extends PluginServiceAbstract {
 	isOverlayPlugin() {
 		return (!!window.OverlayPluginApi);
 	}
+
+	createMessage(type, key, data) {
+		let call = {
+			call : type
+		};
+
+		if (key) {
+			call[key] = data;
+		}
+
+		return JSON.stringify(call);
+	}
 }
 
 export default OverlayPluginService;
