@@ -20,6 +20,7 @@ class PluginService extends PluginServiceAbstract {
 		
 		Object.assign(this, settings);
 
+		this.events         = [];
 		this.plugin_service = (socket_service.isSocketRequested() && this.is_overlayplugin)
 			? socket_service
 			: ((this.is_overlayplugin)
@@ -28,12 +29,26 @@ class PluginService extends PluginServiceAbstract {
 			);
 	}
 
-	subscribe() {
-		this.plugin_service.subscribe(this.getSubscriptions());
+	subscribe(events) {
+		if (!events) {
+			events = this.getSubscriptions();
+		}
+
+		this.reprocessSubscriptions(events);
+
+		if (this.new_events.length) {
+			this.plugin_service.subscribe(this.new_events);
+		}
 	}
 
-	reprocessSubscriptions() {
-		// TODO
+	reprocessSubscriptions(events) {
+		events = events.filter(e => (this.events.indexOf(e) === -1));
+
+		this.new_events = events;
+
+		if (events.length) {
+			this.events = this.events.concat(events);
+		}
 	}
 
 	unsubscribe() {
@@ -55,8 +70,6 @@ class PluginService extends PluginServiceAbstract {
 		if (data.enmity) {
 			events.push("EnmityTargetData");
 		}
-
-		this.events = events;
 
 		return events;
 	}

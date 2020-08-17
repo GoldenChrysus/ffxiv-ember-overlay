@@ -13,8 +13,6 @@ class SocketService {
 		this.try_for_ngld    = (String(window.location.search).indexOf("fake") === -1);
 		this.uri             = uri || this.processUri();
 		this.plugin_service  = new OverlayPluginService();
-		this.events          = [];
-		this.subscribed      = false;
 		this.is_connected    = false;
 	}
 
@@ -64,7 +62,6 @@ class SocketService {
 			this.uri          = this.processUri();
 		}
 
-		this.subscribed      = false;
 		this.reconnect_delay = Math.min(this.reconnect_delay * 2, 3000);
 
 		this.initialize();
@@ -84,8 +81,6 @@ class SocketService {
 
 		this.setId();
 		this.establishSubscriptions();
-
-		this.subscribed = true;
 	}
 
 	setId() {
@@ -97,26 +92,14 @@ class SocketService {
 	}
 
 	subscribe(events) {
-		events = events.filter(e => (this.events.indexOf(e) === -1));
-
 		this.new_events = events;
-
-		if (events.length) {
-			this.events = this.events.concat(events);
-		}
 
 		return (!this.is_connected) ? this.initialize() : this.establishSubscriptions();
 	}
 
 	establishSubscriptions() {
-		let events = (this.subscribed) ? this.new_events : this.events;
-
-		if (!events.length) {
-			return;
-		}
-
 		this.socket.send(
-			this.plugin_service.createMessage("subscribe", "events", events)
+			this.plugin_service.createMessage("subscribe", "events", this.new_events)
 		);
 	}
 
