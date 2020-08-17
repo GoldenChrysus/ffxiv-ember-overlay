@@ -2,9 +2,7 @@
 
 ## 0.22.0-alpha
 
-**Released: [in staging]**
-
-*changes are available on the staging site*
+**Released: 2020-08-16**
 
 ### Bug Fixes
 - N/A
