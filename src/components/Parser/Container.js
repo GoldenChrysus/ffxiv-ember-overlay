@@ -10,14 +10,12 @@ import PlayerTable from "./PlayerTable";
 import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
 import PlaceholderToggle from "./Placeholder/Toggle";
-import PluginService from "../../services/PluginService";
 import AggroTable from "./AggroTable";
 
 class Container extends React.Component {
 	componentDidMount() {
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
-		(new PluginService()).subscribe();
-		this.props.socket_service.initialize();
+		this.props.plugin_service.subscribe();
 	}
 
 	render() {

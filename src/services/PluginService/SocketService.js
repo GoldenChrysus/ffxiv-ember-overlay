@@ -1,6 +1,6 @@
-import MessageProcessor from "../processors/MessageProcessor";
-import store from "../redux/store/index";
-import { updateState } from "../redux/actions/index";
+import MessageProcessor from "../../processors/MessageProcessor";
+import store from "../../redux/store/index";
+import { updateState } from "../../redux/actions/index";
 
 const querystring = require("querystring");
 
@@ -87,17 +87,17 @@ class SocketService {
 		this.send("set_id", undefined, undefined, undefined, id);
 	}
 
+	subscribe(events) {
+		this.events = events;
+
+		return this.initialize();
+	}
+
 	establishSubscriptions() {
 		this.socket.send(
 			JSON.stringify({
 				call   : "subscribe",
-				events : [
-					"CombatData",
-					"EnmityAggroList",
-					"EnmityTargetData",
-					"ChangePrimaryPlayer",
-					"PartyChanged"
-				]
+				events : this.events
 			})
 		);
 	}
@@ -120,6 +120,10 @@ class SocketService {
 		};
 
 		this.socket.send(JSON.stringify(data));
+	}
+
+	isSocketRequested() {
+		return (!!this.uri);
 	}
 }
 

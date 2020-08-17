@@ -2,7 +2,8 @@ import clone from "lodash.clonedeep";
 import isEqual from "lodash.isequal";
 
 import Settings from "../../data/Settings";
-import SocketService from "../../services/SocketService";
+import PluginService from "../../services/PluginService";
+import OverlayPluginService from "../../services/PluginService/OverlayPluginService";
 import ObjectService from "../../services/ObjectService";
 import GameDataProcessor from "../../processors/GameDataProcessor";
 import ThemeService from "../../services/ThemeService";
@@ -10,8 +11,10 @@ import SampleGameData from "../../constants/SampleGameData";
 import SampleHistoryData from "../../constants/SampleHistoryData";
 import SampleAggroData from "../../constants/SampleAggroData";
 
+let overlayplugin_service = new OverlayPluginService();
+
 const initial_state = {
-	socket_service : new SocketService(),
+	plugin_service : new PluginService(),
 	settings_data  : Settings,
 	last_activity  : (new Date()).getTime() / 1000,
 	internal       : {
@@ -26,8 +29,8 @@ const initial_state = {
 		detail_player        : {},
 		party                : [],
 		viewing_history      : false,
-		overlayplugin        : !!window.OverlayPluginApi,
-		overlayplugin_author : (window.OverlayPluginApi && window.OverlayPluginApi.callHandler) ? "ngld" : "hibiyasleep",
+		overlayplugin        : overlayplugin_service.isOverlayPlugin(),
+		overlayplugin_author : overlayplugin_service.getAuthor(),
 		new_version          : false,
 	},
 	settings : {}

@@ -1,46 +1,64 @@
-import store from "../redux/store/index";
+import store from "../redux/store";
 
-import MessageProcessor from "../processors/MessageProcessor";
+import PluginServiceAbstract from "./PluginService/PluginServiceAbstract";
 import OverlayPluginService from "./PluginService/OverlayPluginService";
 import OverlayProcService from "./PluginService/OverlayProcService";
+import SocketService from "./PluginService/SocketService";
+import UsageService from "./UsageService";
 
-class PluginService {
+class PluginService extends PluginServiceAbstract {
 	constructor() {
-		let state = store.getState();
+		super();
 
-		this.is_overlayplugin = state.internal.overlayplugin;
-		this.is_ngld          = (state.internal.overlayplugin_author === "ngld");
+		let socket_service        = new SocketService();
+		let overlayplugin_service = new OverlayPluginService();
+		let settings              = {
+			is_overlayplugin : overlayplugin_service.isOverlayPlugin(),
+			is_ngld          : overlayplugin_service.isNgld(),
+			socket_service   : socket_service
+		};
+		
+		Object.assign(this, settings);
 
-		this.plugin_service = (this.is_overlayplugin) ? new OverlayPluginService() : new OverlayProcService();
-	}
-
-	splitEncounter() {
-		this.plugin_service.splitEncounter();
+		this.plugin_service = (socket_service.isSocketRequested() && this.is_overlayplugin)
+			? socket_service
+			: ((this.is_overlayplugin)
+				? new OverlayPluginService(settings)
+				: new OverlayProcService(settings)
+			);
 	}
 
 	subscribe() {
-		let callback = MessageProcessor.processMessage;
+		this.plugin_service.subscribe(this.getSubscriptions());
+	}
 
-		if (!this.is_overlayplugin || !this.is_ngld) {
-			document.addEventListener("onOverlayDataUpdate", callback);
-			return;
+	reprocessSubscriptions() {
+		// TODO
+	}
+
+	unsubscribe() {
+		// TODO
+	}
+
+	getSubscriptions() {
+		let settings = store.getState().settings_data;
+		let data     = {
+			enmity : UsageService.usingEnmity(settings)
+		};
+		let events   = [
+			"CombatData",
+			"EnmityAggroList",
+			"ChangePrimaryPlayer",
+			"PartyChanged"
+		];
+
+		if (data.enmity) {
+			events.push("EnmityTargetData");
 		}
 
-		window.__OverlayCallback = callback;
+		this.events = events;
 
-		window.OverlayPluginApi.callHandler(
-			JSON.stringify({
-				call   : "subscribe",
-				events : [
-					"CombatData",
-					"EnmityAggroList",
-					"EnmityTargetData",
-					"ChangePrimaryPlayer",
-					"PartyChanged"
-				]
-			}),
-			callback
-		);
+		return events;
 	}
 }
 

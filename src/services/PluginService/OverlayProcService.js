@@ -1,12 +1,12 @@
-import store from "../../redux/store/index"
+import PluginServiceAbstract from "./PluginServiceAbstract";
 
-class OverlayProcService {
-	constructor() {
-		this.socket_service = store.getState().socket_service;
-	}
-
+class OverlayProcService extends PluginServiceAbstract {
 	splitEncounter() {
 		this.socket_service.splitEncounter();
+	}
+
+	subscribe(events) {
+		this.socket_service.subscribe(events);
 	}
 }
 

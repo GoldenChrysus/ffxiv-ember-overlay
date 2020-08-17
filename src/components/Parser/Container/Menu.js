@@ -3,14 +3,13 @@ import { connect } from "react-redux";
 import { ContextMenu, MenuItem } from "react-contextmenu";
 import { changeCollapse, loadSampleGameData, clearGameData, changeViewing, changeDetailPlayer } from "../../../redux/actions/index";
 
-import PluginService from "../../../services/PluginService";
 import SettingsService from "../../../services/SettingsService";
 import LocalizationService from "../../../services/LocalizationService";
 
 class Menu extends React.Component {
 	render() {
 		let self           = this;
-		let plugin_service = new PluginService();
+		let plugin_service = this.props.plugin_service;
 
 		let collapse_item = function() {
 			let text = LocalizationService.getOverlayText((self.props.collapsed) ? "uncollapse" : "collapse");
@@ -106,10 +105,11 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		language      : state.settings.interface.language,
-		collapsed     : state.settings.intrinsic.collapsed,
-		overlayplugin : state.internal.overlayplugin,
-		encounter     : state.internal.game.Encounter
+		plugin_service : state.plugin_service,
+		language       : state.settings.interface.language,
+		collapsed      : state.settings.intrinsic.collapsed,
+		overlayplugin  : state.internal.overlayplugin,
+		encounter      : state.internal.game.Encounter
 	};
 };
 

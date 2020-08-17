@@ -5,7 +5,6 @@ import { changeTableType, changeViewing, changePlayerBlur } from "../../redux/ac
 
 import PlayerProcessor from "../../processors/PlayerProcessor";
 import VersionService from "../../services/VersionService";
-import PluginService from "../../services/PluginService";
 import SettingsService from "../../services/SettingsService";
 import LocalizationService from "../../services/LocalizationService";
 import IconButton from "./Container/IconButton";
@@ -20,7 +19,7 @@ class Footer extends React.Component {
 		let viewing        = this.props.viewing;
 		let table_type     = this.props.table_type;
 		let self           = this;
-		let plugin_service = new PluginService();
+		let plugin_service = this.props.plugin_service;
 
 		let navigation = function() {
 			switch (viewing) {
@@ -137,6 +136,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
+		plugin_service       : state.plugin_service,
 		language             : state.settings.interface.language,
 		table_type           : state.settings.intrinsic.table_type,
 		player_blur          : state.settings.intrinsic.player_blur,
