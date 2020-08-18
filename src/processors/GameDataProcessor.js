@@ -4,6 +4,7 @@ import Constants from "../constants/index";
 import PlayerProcessor from "./PlayerProcessor";
 
 import LocalizationService from "../services/LocalizationService";
+import UsageService from "../services/UsageService";
 
 class GameDataProcessor  {
 	normalizeFieldLocale(value) {
@@ -50,6 +51,16 @@ class GameDataProcessor  {
 					data.Combatant[player_name][key] = this.normalizeFieldLocale(data.Combatant[player_name][key]);
 				}
 			}
+		}
+
+		data = this.injectMaxDPS(data, current_state, loading_sample);
+
+		return data;
+	}
+
+	injectMaxDPS(data, current_state, loading_sample) {
+		if (!UsageService.usingMaxDPS(current_state.settings_data)) {
+			return data;
 		}
 
 		let can_calculate_max = (!loading_sample && data.Encounter.DURATION >= 30);
