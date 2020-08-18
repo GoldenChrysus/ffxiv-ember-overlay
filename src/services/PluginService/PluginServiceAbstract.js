@@ -6,7 +6,8 @@ class PluginServiceAbstract {
 			Object.assign(this, settings);
 		}
 
-		this.subscribed = false;
+		this.subscribed   = false;
+		this.is_connected = true;
 	}
 
 	splitEncounter() {
@@ -35,6 +36,10 @@ class PluginServiceAbstract {
 	}
 
 	unsubscribe(events) {
+		if (!this.is_overlayplugin || !this.is_ngld) {
+			return;
+		}
+
 		this.callHandler(this.plugin_service.createMessage("unsubscribe", "events", events));
 	}
 

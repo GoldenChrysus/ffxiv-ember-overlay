@@ -29,19 +29,21 @@ class PluginService extends PluginServiceAbstract {
 			);
 	}
 
-	subscribe(events) {
-		if (!events) {
-			events = this.getSubscriptions();
-		}
+	isConnected() {
+		return this.plugin_service.is_connected;
+	}
 
-		this.reprocessSubscriptions(events);
+	subscribe(events) {
+		events = events || this.getSubscriptions();
+
+		this.processSubscriptionAdditions(events);
 
 		if (this.new_events.length) {
 			this.plugin_service.subscribe(this.new_events);
 		}
 	}
 
-	reprocessSubscriptions(events) {
+	processSubscriptionAdditions(events) {
 		events = events.filter(e => (this.events.indexOf(e) === -1));
 
 		this.new_events = events;
@@ -51,12 +53,33 @@ class PluginService extends PluginServiceAbstract {
 		}
 	}
 
-	unsubscribe() {
-		// TODO
+	unsubscribe(events) {
+		events = events || this.getSubscriptions();
+
+		this.processSubscriptionRemovals(events);
+
+		this.events = events;
+
+		if (this.old_events.length) {
+			this.plugin_service.unsubscribe(this.old_events);
+		}
 	}
 
-	getSubscriptions() {
-		let settings = store.getState().settings_data;
+	processSubscriptionRemovals(events) {
+		events = this.events.filter(e => (events.indexOf(e) === -1));
+
+		this.old_events = events;
+	}
+
+	updateSubscriptions(settings_object) {
+		let events = this.getSubscriptions(settings_object);
+
+		this.subscribe(events);
+		this.unsubscribe(events);
+	}
+
+	getSubscriptions(settings_object) {
+		let settings = settings_object || store.getState().settings_data;
 		let data     = {
 			enmity : UsageService.usingEnmity(settings)
 		};

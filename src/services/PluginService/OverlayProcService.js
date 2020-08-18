@@ -8,6 +8,10 @@ class OverlayProcService extends PluginServiceAbstract {
 	subscribe(events) {
 		this.socket_service.subscribe(events);
 	}
+
+	unsubscribe(events) {
+		this.socket_service.unsubscribe(events);
+	}
 }
 
 export default OverlayProcService;

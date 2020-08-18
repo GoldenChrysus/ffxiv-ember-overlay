@@ -37,7 +37,14 @@ export function createStorageListener(store) {
 			case "setSettings":
 				valid_action = false;
 
-				store.getState().settings_data.loadSettings();
+				let state = store.getState();
+
+				state
+					.settings_data
+					.loadSettings()
+					.then(() => {
+						state.plugin_service.updateSubscriptions(state.settings_data);
+					});
 				break;
 
 			case "updateState":

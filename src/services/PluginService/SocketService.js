@@ -103,6 +103,16 @@ class SocketService {
 		);
 	}
 
+	unsubscribe(events) {
+		return this.removeSubscriptions(events);
+	}
+
+	removeSubscriptions(events) {
+		this.socket.send(
+			this.plugin_service.createMessage("unsubscribe", "events", events)
+		);
+	}
+
 	splitEncounter() {
 		this.send("overlayAPI", this.id, "RequestEnd");
 	}

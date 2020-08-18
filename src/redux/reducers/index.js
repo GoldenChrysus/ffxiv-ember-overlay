@@ -64,7 +64,6 @@ function rootReducer(state, action) {
 			}
 
 			new_state.settings_data.saveSettings(true);
-
 			break;
 
 		case "parseGameData":
@@ -195,6 +194,8 @@ function createNewState(state, full_key, action) {
 	}
 
 	let new_state = clone(state);
+
+	new_state.plugin_service = state.plugin_service;
 
 	if (["parseGameData", "loadSampleData"].indexOf(action.type) !== -1) {
 		new_state.last_activity = (new Date()).getTime() / 1000;
