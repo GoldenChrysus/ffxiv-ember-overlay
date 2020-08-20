@@ -21,23 +21,29 @@ import MigrationService from "./services/MigrationService";
 
 console.info(`Welcome and thank you for using Ember Overlay! Join the Discord at ${process.env.REACT_APP_DISCORD_URL}. GitHub is located at ${process.env.REACT_APP_GITHUB_URL}.`);
 
-store
-	.getState()
+let state = store.getState();
+
+state
 	.settings_data
 	.loadSettings()
-	.then(() => {
+	.then((settings_result) => {
 		MigrationService
 			.migrate()
 			.then(() => {
-				ReactDOM.render(
-					<Router basename={process.env.REACT_APP_ROUTER_BASE}>
-						<Provider store={store}>
-							<Route exact path="/" component={Parser}/>
-							<Route path="/settings" component={Settings}/>
-						</Provider>
-					</Router>,
-					document.getElementById("root")
-				);
+				state
+					.settings_data
+					.restoreFromOverlayPluginIfNecessary(settings_result.used_default)
+					.then(() => {
+						ReactDOM.render(
+							<Router basename={process.env.REACT_APP_ROUTER_BASE}>
+								<Provider store={store}>
+									<Route exact path="/" component={Parser}/>
+									<Route path="/settings" component={Settings}/>
+								</Provider>
+							</Router>,
+							document.getElementById("root")
+						);
+					});
 			});
 	})
 	.catch((e) => {

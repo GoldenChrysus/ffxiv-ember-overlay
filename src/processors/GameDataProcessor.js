@@ -59,7 +59,7 @@ class GameDataProcessor  {
 	}
 
 	injectMaxDPS(data, current_state, loading_sample) {
-		if (!UsageService.usingMaxDPS(current_state.settings_data)) {
+		if (!current_state || !UsageService.usingMaxDPS(current_state.settings_data)) {
 			return data;
 		}
 
@@ -71,7 +71,7 @@ class GameDataProcessor  {
 			if (can_calculate_max && (!current_state || !current_state.internal.game.Combatant || !current_state.internal.game.Combatant[player_name] || +data.Combatant[player_name].encdps > current_state.internal.game.Combatant[player_name].max_enc_dps)) {
 				data.Combatant[player_name].max_enc_dps = +data.Combatant[player_name].encdps;
 			} else if (current_state && current_state.internal.game.Combatant && current_state.internal.game.Combatant[player_name]) {
-				data.Combatant[player_name].max_enc_dps = current_state.internal.game.Combatant[player_name].max_enc_dps;
+				data.Combatant[player_name].max_enc_dps = current_state.internal.game.Combatant[player_name].max_enc_dps || 0;
 			}
 		}
 

@@ -1,4 +1,5 @@
 import MessageProcessor from "../../processors/MessageProcessor";
+import { call } from "lodash.mergewith";
 
 class PluginServiceAbstract {
 	constructor(settings) {
@@ -15,14 +16,14 @@ class PluginServiceAbstract {
 	}
 
 	subscribe(events) {
-		this.subscribed = true;
-
 		let callback = MessageProcessor.processMessage;
 
 		if (!this.is_overlayplugin || !this.is_ngld) {
 			if (this.subscribed) {
 				return;
 			}
+
+			this.subscribed = true;
 
 			document.addEventListener("onOverlayDataUpdate", callback);
 			return;
@@ -32,7 +33,9 @@ class PluginServiceAbstract {
 			window.__OverlayCallback = callback;
 		}
 
-		this.callHandler(this.plugin_service.createMessage("subscribe", "events", events), callback);
+		this.subscribed = true;
+
+		this.callHandler(this.createMessage("subscribe", "events", events), callback);
 	}
 
 	unsubscribe(events) {
@@ -40,7 +43,7 @@ class PluginServiceAbstract {
 			return;
 		}
 
-		this.callHandler(this.plugin_service.createMessage("unsubscribe", "events", events));
+		this.callHandler(this.createMessage("unsubscribe", "events", events));
 	}
 
 	callHandler(message, callback) {

@@ -7,8 +7,6 @@ import LocalizationService from "../../services/LocalizationService";
 
 class Export extends React.Component {
 	render() {
-		let settings = btoa(JSON.stringify(this.props.settings));
-
 		return(
 			<React.Fragment>
 				<Container fluid className="section-container">
@@ -18,7 +16,7 @@ class Export extends React.Component {
 						<Form>
 							<Form.Field>
 								<Button size="mini" className="export" onClick={this.handleCopy.bind(this)}>{LocalizationService.getMisc("copy")}</Button>
-								<TextArea defaultValue={settings} rows={20} readOnly="readonly"/>
+								<TextArea defaultValue={this.props.settings_data.getExportKey()} rows={20} readOnly="readonly"/>
 							</Form.Field>
 						</Form>
 					</div>
@@ -39,7 +37,7 @@ class Export extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		settings : state.settings
+		settings_data : state.settings_data
 	};
 };
 

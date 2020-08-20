@@ -12,6 +12,10 @@ class OverlayProcService extends PluginServiceAbstract {
 	unsubscribe(events) {
 		this.socket_service.unsubscribe(events);
 	}
+
+	isNgld() {
+		return false;
+	}
 }
 
 export default OverlayProcService;

@@ -24,6 +24,9 @@ class OverlayPluginService extends PluginServiceAbstract {
 
 		if (key) {
 			call[key] = data;
+
+			call.key  = key;
+			call.data = data;
 		}
 
 		return JSON.stringify(call);

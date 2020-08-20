@@ -14,6 +14,7 @@ class SocketService {
 		this.uri             = uri || this.processUri();
 		this.plugin_service  = new OverlayPluginService();
 		this.is_connected    = false;
+		this.is_ngld         = false;
 	}
 
 	processUri() {
@@ -69,6 +70,8 @@ class SocketService {
 
 	connected() {
 		if (this.try_for_ngld || this.uri.indexOf("/ws") !== -1) {
+			this.is_ngld = true;
+
 			store.dispatch(updateState({
 				key   : "internal.overlayplugin_author",
 				value : "ngld"
@@ -135,6 +138,10 @@ class SocketService {
 
 	isSocketRequested() {
 		return (!!this.uri);
+	}
+
+	isNgld() {
+		return this.is_ngld;
 	}
 }
 

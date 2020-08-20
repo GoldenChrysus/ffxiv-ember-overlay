@@ -140,14 +140,15 @@ class Settings {
 		return new Promise((resolve, reject) => {
 			localForage.getItem("settings_cache")
 				.then((data) => {
-					this.mergeSettings(data);
+					let result = this.mergeSettings(data);
+
 					store.dispatch(
 						updateState({
 							key   : "settings",
 							value : this.settings
 						})
 					);
-					resolve();
+					resolve(result);
 				})
 				.catch((e) => {
 					reject();
@@ -164,6 +165,7 @@ class Settings {
 
 			localForage.setItem("settings_cache", JSON.stringify(this.settings || default_settings))
 				.then(() => {
+					this.saveToOverlayPlugin();
 					resolve();
 				})
 				.catch((e) => {
@@ -175,6 +177,9 @@ class Settings {
 	mergeSettings(data) {
 		let json                 = false;
 		let tmp_default_settings = Object.assign({}, JSON.parse(JSON.stringify(default_settings)));
+		let result               = {
+			used_default : false
+		};
 
 		try {
 			json = JSON.parse(data);
@@ -182,6 +187,8 @@ class Settings {
 
 		if (!json) {
 			json = tmp_default_settings;
+
+			result.used_default = true;
 		} else {
 			json = mergeWith(tmp_default_settings, json, function(obj_val, src_val) {
 				if (Array.isArray(obj_val)) {
@@ -191,21 +198,26 @@ class Settings {
 		}
 
 		this.settings = json;
+
+		return result;
 	}
 
 	importSettings(settings_key) {
-		let data = atob(settings_key);
+		return new Promise((resolve, reject) => {
+			let data = atob(settings_key);
 
-		this.mergeSettings(data);
-		this.saveSettings(true)
-			.then(() => {
-				store.dispatch(
-					updateState({
-						key   : "settings",
-						value : this.settings
-					})
-				);
-			});
+			this.mergeSettings(data);
+			this.saveSettings(true)
+				.then(() => {
+					store.dispatch(
+						updateState({
+							key   : "settings",
+							value : this.settings
+						})
+					);
+					resolve();
+				});
+		});
 	}
 
 	getSetting(key) {
@@ -218,6 +230,72 @@ class Settings {
 		if (!skip_save) {
 			this.saveSettings();
 		}
+	}
+
+	getExportKey() {
+		return btoa(JSON.stringify(this.settings));
+	}
+
+	getOverlayPluginKey() {
+		return `ember-settings-${process.env.REACT_APP_ENV}`;
+	}
+
+	saveToOverlayPlugin() {
+		let service = store.getState().plugin_service;
+
+		if (!service.plugin_service.isNgld()) {
+			return false;
+		}
+
+		let key     = this.getOverlayPluginKey();
+		let message = service.plugin_service.createMessage("saveData", key, this.getExportKey());
+
+		service.callHandler(message);
+	}
+
+	restoreFromOverlayPlugin() {
+		return new Promise((resolve, reject) => {
+			let service = store.getState().plugin_service;
+
+			if (!service.plugin_service.isNgld()) {
+				resolve();
+				return;
+			}
+
+			let key     = this.getOverlayPluginKey();
+			let message = service.plugin_service.createMessage("loadData", key);
+
+			service
+				.callHandler(message, (data) => {
+					data = JSON.parse(data || {})
+
+					if (!data.data) {
+						resolve();
+						return;
+					}
+
+					this
+						.importSettings(data.data)
+						.then(() => {
+							resolve();
+						});
+				});
+		});
+	}
+
+	restoreFromOverlayPluginIfNecessary(necessary) {
+		return new Promise((resolve, reject) => {
+			if (!necessary) {
+				resolve();
+				return;
+			}
+
+			this
+				.restoreFromOverlayPlugin()
+				.then(() => {
+					resolve();
+				});
+		});
 	}
 }
 
