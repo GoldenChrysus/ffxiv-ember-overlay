@@ -29,7 +29,7 @@ class OverlayInfo extends React.Component {
 			chrome    : browser_version
 		});
 
-		VersionService.getLatestChangelogs(3)
+		VersionService.getLatestChangelogs(5)
 			.then((data) => {
 				let changelog = VersionService.formatChangelog(data);
 

@@ -107,7 +107,7 @@ class VersionService {
 		return new Promise((resolve, reject) => {
 			this.parseChangelog()
 				.then((data) => {
-					resolve(this.processChangelog(data, undefined, 3));
+					resolve(this.processChangelog(data, undefined, count));
 				})
 				.catch((e) => {
 					reject();
@@ -122,11 +122,14 @@ class VersionService {
 			"Bug Fixes"  : []
 		};
 
+		console.log(data.versions);
+		console.log(max_version_count);
+
 		for (let i in data.versions) {
 			let version_data = data.versions[i];
 			let version      = version_data.version;
 
-			if ((minimum_version && compareVersions.compare(version, minimum_version, "<=")) || (max_version_count && i === (max_version_count - 1))) {
+			if ((minimum_version && compareVersions.compare(version, minimum_version, "<=")) || (max_version_count && +i === (max_version_count - 1))) {
 				break;
 			}
 

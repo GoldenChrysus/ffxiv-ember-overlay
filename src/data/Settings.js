@@ -271,13 +271,19 @@ class Settings {
 
 				data = JSON.parse(data.data || {})
 
+				if (data["$isNull"]) {
+					service.plugin_service.resetCallback();
+					reject();
+					return;
+				}
+
 				if (!data.key || data.key !== key) {
 					return;
 				}
 
 				if (!data.data) {
 					service.plugin_service.resetCallback();
-					resolve();
+					reject();
 					return;
 				}
 
