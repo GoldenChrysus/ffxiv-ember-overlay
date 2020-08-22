@@ -8,6 +8,7 @@
 
 ### Bug Fixes
 - Resolved issue where table header language did not update immedidately upon changing language
+- Resolved issue where changelog on overlay load would show changes from every existing version instead of only the most recent versions
 
 ### Features
 - Settings silently restore from OverlayPlugin's data store (if present) when settings cannot be found in browser cache
