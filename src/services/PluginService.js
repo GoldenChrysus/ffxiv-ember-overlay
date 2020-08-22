@@ -13,6 +13,7 @@ class PluginService extends PluginServiceAbstract {
 		let socket_service        = new SocketService();
 		let overlayplugin_service = new OverlayPluginService();
 		let settings              = {
+			is_websocket     : socket_service.isSocketRequested(),
 			is_overlayplugin : overlayplugin_service.isOverlayPlugin(),
 			is_ngld          : overlayplugin_service.isNgld(),
 			socket_service   : socket_service
@@ -21,7 +22,7 @@ class PluginService extends PluginServiceAbstract {
 		Object.assign(this, settings);
 
 		this.events         = [];
-		this.plugin_service = (socket_service.isSocketRequested() && this.is_overlayplugin)
+		this.plugin_service = (this.is_websocket && this.is_overlayplugin)
 			? socket_service
 			: ((this.is_overlayplugin)
 				? new OverlayPluginService(settings)

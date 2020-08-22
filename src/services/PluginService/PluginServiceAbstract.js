@@ -1,5 +1,4 @@
 import MessageProcessor from "../../processors/MessageProcessor";
-import { call } from "lodash.mergewith";
 
 class PluginServiceAbstract {
 	constructor(settings) {

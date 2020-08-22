@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.23.0-alpha
+
+**Released: [in development]**
+
+*! - indicates change is available on the staging site*
+
+### Bug Fixes
+- Resolved issue where table header language did not update immedidately upon changing language
+
+### Features
+- Settings silently restore from OverlayPlugin's data store (if present) when settings cannot be found in browser cache
+- Added "Import from OverlayPlugin" button for Web socket users at right-click > Import
+    - Will pull current settings from OverlayPlugin (if present) and import them into the current overlay
+    - Will only pull settings from like-enviroments (i.e. a production overlay will only pull production settings and a staging overlay only pulls staging settings)
+
+### UI Changes
+- ?
+
+### Code Changes
+- Refactored event subscription logic for performance
+- Settings now back up to OverlayPlugin's own data store
+
+### Miscellaneous
+- ?
+
 ## 0.22.0-alpha
 
 **Released: 2020-08-16**

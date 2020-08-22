@@ -14,7 +14,7 @@ class OverlayProcService extends PluginServiceAbstract {
 	}
 
 	isNgld() {
-		return false;
+		return this.socket_service.isNgld();
 	}
 }
 

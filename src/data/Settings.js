@@ -243,7 +243,7 @@ class Settings {
 	saveToOverlayPlugin() {
 		let service = store.getState().plugin_service;
 
-		if (!service.plugin_service.isNgld()) {
+		if (!service.plugin_service.isNgld() || service.is_websocket) {
 			return false;
 		}
 
@@ -262,24 +262,40 @@ class Settings {
 				return;
 			}
 
-			let key     = this.getOverlayPluginKey();
-			let message = service.plugin_service.createMessage("loadData", key);
+			let key      = this.getOverlayPluginKey();
+			let message  = service.plugin_service.createMessage("loadData", key);
+			let callback = (data) => {
+				if (!data.data) {
+					return;
+				}
+
+				data = JSON.parse(data.data || {})
+
+				if (!data.key || data.key !== key) {
+					return;
+				}
+
+				if (!data.data) {
+					service.plugin_service.resetCallback();
+					resolve();
+					return;
+				}
+
+				this
+					.importSettings(data.data)
+					.then(() => {
+						service.plugin_service.resetCallback();
+						resolve();
+					})
+					.catch(() => {
+						service.plugin_service.resetCallback();
+						reject();
+					});
+			};
 
 			service
-				.callHandler(message, (data) => {
-					data = JSON.parse(data || {})
-
-					if (!data.data) {
-						resolve();
-						return;
-					}
-
-					this
-						.importSettings(data.data)
-						.then(() => {
-							resolve();
-						});
-				});
+				.plugin_service
+				.callHandler(message, callback);
 		});
 	}
 

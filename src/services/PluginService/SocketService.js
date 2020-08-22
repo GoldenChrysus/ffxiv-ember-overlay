@@ -52,9 +52,10 @@ class SocketService {
 
 		this.socket = new WebSocket(this.uri);
 
-		this.socket.onmessage = MessageProcessor.processMessage;
-		this.socket.onclose   = () => { setTimeout(this.reconnect.bind(this), this.reconnect_delay); }
-		this.socket.onopen    = this.connected.bind(this);
+		this.resetCallback();
+
+		this.socket.onclose = () => { setTimeout(this.reconnect.bind(this), this.reconnect_delay); }
+		this.socket.onopen  = this.connected.bind(this);
 	}
 
 	reconnect() {
@@ -71,6 +72,8 @@ class SocketService {
 	connected() {
 		if (this.try_for_ngld || this.uri.indexOf("/ws") !== -1) {
 			this.is_ngld = true;
+
+			store.getState().plugin_service.plugin_service = this;
 
 			store.dispatch(updateState({
 				key   : "internal.overlayplugin_author",
@@ -100,9 +103,13 @@ class SocketService {
 		return (!this.is_connected) ? this.initialize() : this.establishSubscriptions();
 	}
 
+	createMessage(type, key, data) {
+		return this.plugin_service.createMessage(type, key, data);
+	}
+
 	establishSubscriptions() {
-		this.socket.send(
-			this.plugin_service.createMessage("subscribe", "events", this.new_events)
+		this.callHandler(
+			this.createMessage("subscribe", "events", this.new_events)
 		);
 	}
 
@@ -111,13 +118,25 @@ class SocketService {
 	}
 
 	removeSubscriptions(events) {
-		this.socket.send(
-			this.plugin_service.createMessage("unsubscribe", "events", events)
+		this.callHandler(
+			this.createMessage("unsubscribe", "events", events)
 		);
 	}
 
 	splitEncounter() {
 		this.send("overlayAPI", this.id, "RequestEnd");
+	}
+
+	resetCallback() {
+		this.socket.onmessage = MessageProcessor.processMessage;
+	}
+
+	callHandler(message, callback) {
+		if (callback) {
+			this.socket.onmessage = callback;
+		}
+
+		this.socket.send(message);
 	}
 
 	send(type, to, message_type, message, id) {

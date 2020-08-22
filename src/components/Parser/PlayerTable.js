@@ -278,6 +278,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
 	return {
 		internal_name  : state.internal.character_name,
+		language       : state.settings.interface.language,
 		player_name    : state.settings.interface.player_name,
 		icon_blur      : state.settings.interface.blur_job_icons,
 		table_columns  : state.settings.table_columns,
