@@ -122,9 +122,6 @@ class VersionService {
 			"Bug Fixes"  : []
 		};
 
-		console.log(data.versions);
-		console.log(max_version_count);
-
 		for (let i in data.versions) {
 			let version_data = data.versions[i];
 			let version      = version_data.version;
