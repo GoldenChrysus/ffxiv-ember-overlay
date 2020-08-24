@@ -2,9 +2,9 @@
 
 ## 0.23.0-alpha
 
-**Released: [in development]**
+**Released: [in staging]**
 
-*! - indicates change is available on the staging site*
+*Changes are available on the staging site*
 
 ### Bug Fixes
 - Resolved issue where table header language did not update immedidately upon changing language
@@ -17,14 +17,14 @@
     - Will only pull settings from like-enviroments (i.e. a production overlay will only pull production settings and a staging overlay only pulls staging settings)
 
 ### UI Changes
-- ?
+- Updated translations for Japanese
 
 ### Code Changes
 - Refactored event subscription logic for performance
 - Settings now back up to OverlayPlugin's own data store
 
 ### Miscellaneous
-- ?
+- N/A
 
 ## 0.22.0-alpha
 

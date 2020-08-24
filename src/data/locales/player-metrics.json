@@ -353,8 +353,8 @@
 			"long"  : "护盾值"
 		},
 		"jp" : {
-			"short" : "Shields",
-			"long"  : "Shields"
+			"short" : "バリア",
+			"long"  : "バリア"
 		},
 		"de" : {
 			"short" : "Schilde",
@@ -557,8 +557,8 @@
 			"long"  : "仇恨"
 		},
 		"jp" : {
-			"short" : "Enmity",
-			"long"  : "Enmity"
+			"short" : "敵視",
+			"long"  : "敵視"
 		},
 		"de" : {
 			"short" : "Enmity",
@@ -659,8 +659,8 @@
 			"long"  : "治疗计数"
 		},
 		"jp" : {
-			"short" : "Heal Ct",
-			"long"  : "Heal Count"
+			"short" : "回復数",
+			"long"  : "回復回数"
 		},
 		"de" : {
 			"short" : "Heal Ct",
@@ -727,8 +727,8 @@
 			"long"  : "最大每秒伤害量"
 		},
 		"jp" : {
-			"short" : "最大DPS",
-			"long"  : "最大毎秒与ダメージ量"
+			"short" : "最高DPS",
+			"long"  : "最高毎秒与ダメージ量"
 		},
 		"de" : {
 			"short" : "Max DPS",
@@ -863,8 +863,8 @@
 			"long"  : "回避率"
 		},
 		"jp" : {
-			"short" : "Par %",
-			"long"  : "Parry %"
+			"short" : "受流し%",
+			"long"  : "受け流しの発動率"
 		},
 		"de" : {
 			"short" : "Par %",
@@ -898,7 +898,7 @@
 		},
 		"jp" : {
 			"short" : "SPS",
-			"long"  : "Shield Per Second"
+			"long"  : "毎秒バリア量"
 		},
 		"de" : {
 			"short" : "SPS",

@@ -48,7 +48,7 @@
 		},
 		"jp" : {
 			"short" : "HP",
-			"long"  : "Health"
+			"long"  : "HP"
 		},
 		"de" : {
 			"short" : "HP",
@@ -82,7 +82,7 @@
 		},
 		"jp" : {
 			"short" : "HP %",
-			"long"  : "Health Percent"
+			"long"  : "HP %"
 		},
 		"de" : {
 			"short" : "HP %",
@@ -115,8 +115,8 @@
 			"long"  : "目标"
 		},
 		"jp" : {
-			"short" : "Target",
-			"long"  : "Target"
+			"short" : "タゲ",
+			"long"  : "ターゲット"
 		},
 		"de" : {
 			"short" : "Ziel",
