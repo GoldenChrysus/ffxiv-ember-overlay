@@ -1,12 +1,11 @@
 import React from "react";
-import EmberComponent from "../../EmberComponent";
 
 import PlayerProcessor from "../../../processors/PlayerProcessor";
 import LocalizationService from "../../../services/LocalizationService";
 import Constants from "../../../constants/index";
 import PercentBar from "../PercentBar";
 
-class Player extends EmberComponent {
+class Player extends React.Component {
 	render() {
 		let player       = this.props.player;
 		let player_type  = (player._is_current) ? "active" : "other";
@@ -38,8 +37,8 @@ class Player extends EmberComponent {
 		let name_blur   = (this.props.blur) ? "blur" : "";
 		let icon_blur   = (this.props.blur && this.props.icon_blur) ? "blur" : "";
 		let icon_style  = (icon_blur) ? { WebkitFilter: "blur(4px)" } : {};
-		let icon        = <div className="column" key="player-data-icon"><img src={"img/icons/jobs/" + job + ".png"} className={"icon " + icon_blur} style={icon_style} alt={job + " icon"}></img></div>;
 		let player_name = PlayerProcessor.getDataValue("name", player);
+		let icon        = <div className="column" key={"player-data-icon-" + player_name}><img src={"img/icons/jobs/" + job + ".png"} className={"icon " + icon_blur} style={icon_style} alt={job + " icon"}></img></div>;
 
 		if (this.props.short_names !== "no_short") {
 			player_name = PlayerProcessor.getShortName(player_name, this.props.short_names);
