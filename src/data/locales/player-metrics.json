@@ -893,8 +893,8 @@
 			"long"  : "Shield Per Second"
 		},
 		"cn" : {
-			"short" : "SPS",
-			"long"  : "Shield Per Second"
+			"short" : "秒盾值",
+			"long"  : "每秒护盾值"
 		},
 		"jp" : {
 			"short" : "SPS",
