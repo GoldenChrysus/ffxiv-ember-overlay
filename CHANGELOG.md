@@ -2,9 +2,7 @@
 
 ## 0.23.0-alpha
 
-**Released: [in staging]**
-
-*Changes are available on the staging site*
+**Released: 2020-09-06**
 
 ### Bug Fixes
 - Resolved issue where table header language did not update immedidately upon changing language
@@ -17,7 +15,7 @@
     - Will only pull settings from like-enviroments (i.e. a production overlay will only pull production settings and a staging overlay only pulls staging settings)
 
 ### UI Changes
-- Updated translations for Japanese
+- Updated translations for Japanese and Chinese
 
 ### Code Changes
 - Refactored event subscription logic for performance
