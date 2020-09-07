@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.23.1-alpha
+
+**Released: 2020-09-06**
+
+### Bug Fixes
+- Resolved issue where overlay may crash if a metric rename uses an emoji
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.23.0-alpha
 
 **Released: 2020-09-06**

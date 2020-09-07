@@ -4,6 +4,7 @@ import localForage from "localforage";
 import mergeWith from "lodash.mergewith";
 
 import ObjectService from "../services/ObjectService";
+import StringHelper from "../helpers/StringHelper";
 
 const default_settings = {
 	intrinsic : {
@@ -204,7 +205,7 @@ class Settings {
 
 	importSettings(settings_key) {
 		return new Promise((resolve, reject) => {
-			let data = atob(settings_key);
+			let data = StringHelper.fromBinary(atob(settings_key));
 
 			this.mergeSettings(data);
 			this.saveSettings(true)
@@ -233,7 +234,7 @@ class Settings {
 	}
 
 	getExportKey() {
-		return btoa(JSON.stringify(this.settings));
+		return btoa(StringHelper.toBinary(JSON.stringify(this.settings)));
 	}
 
 	getOverlayPluginKey() {
