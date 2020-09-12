@@ -127,10 +127,15 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 - **Okâme** - French
 - **Tsunari96** - Tsunari96#8491 (Discord) - Korean
 
+### Featured Donors
+
+- Pimpy Shortstocking
+
 ### Donors
 
 - Amneamnius
 - Vulasuw
+- Jessica
 
 ### Misc.
 

@@ -48,8 +48,11 @@ class Donate extends React.Component {
 					<div className="donation-link" data-type="patreon" ref="patreon" id="donation-patreon">{DonationService.getRealDonationLink("patreon")}</div>
 					<div className="donation-link" data-type="streamlabs" ref="streamlabs" id="donation-streamlabs">{DonationService.getRealDonationLink("streamlabs")}</div>
 
+					<h2>Featured Donors</h2>
+					<p>Pimpy Shortstocking</p>
+
 					<h2>Donors</h2>
-					<p>Amneamnius, Vulasuw</p>
+					<p>Amneamnius, Vulasuw, Jessica</p>
 				</Container>
 			</React.Fragment>
 		);

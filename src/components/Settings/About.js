@@ -67,6 +67,10 @@ class About extends React.Component {
 					<h3>Credits</h3>
 					<p id="credits">
 						<ul>
+							<li><strong class="featured">Pimpy Shortstocking</strong> - Featured donor</li>
+						</ul>
+
+						<ul>
 							<li><strong>Bona</strong> - Portuguese translation</li>
 							<li><strong>ShadyWhite</strong> - Chinese translation</li>
 							<li><strong>Gusma</strong> - Portuguese translation</li>
@@ -76,6 +80,12 @@ class About extends React.Component {
 							<li><strong>Claud</strong> - Spanish translation</li>
 							<li><strong>Okâme</strong> - French translation</li>
 							<li><strong>Tsunari96</strong> - Tsunari96#8491 (Discord) - Korean translation</li>
+						</ul>
+
+						<ul>
+							<li><strong>Amneamnius</strong> - Donor</li>
+							<li><strong>Vulasuw</strong> - Donor</li>
+							<li><strong>Jessica</strong> - Donor</li>
 						</ul>
 					</p>
 				</Container>
