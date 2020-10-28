@@ -130,6 +130,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 ### Featured Donors
 
 - Pimpy Shortstocking
+- FortiusTTV - [Twitch](https://www.twitch.tv/fortiusttv)
 
 ### Donors
 

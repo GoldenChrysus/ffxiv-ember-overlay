@@ -68,6 +68,7 @@ class About extends React.Component {
 					<p id="credits">
 						<ul>
 							<li><strong class="featured">Pimpy Shortstocking</strong> - Featured donor</li>
+							<li><strong class="featured">FortiusTTV</strong> - <SocialLink name="fortiusttv" type="twitch"/> - Featured donor</li>
 						</ul>
 
 						<ul>
