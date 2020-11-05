@@ -1,25 +1,23 @@
 # Changelog
 
-## 0.??.?-alpha
+## 0.23.2-alpha
 
-**Released: [in development]**
-
-*! - indicates change is available on the staging site*
+**Released: 2020-11-05**
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
-- ?
+- N/A
 
 ### UI Changes
 - Player names are now layered above the performance bars in the DOM for style and color consistency
 
 ### Code Changes
-- ?
+- N/A
 
 ### Miscellaneous
-- ?
+- Updated donor credits
 
 ## 0.23.1-alpha
 
