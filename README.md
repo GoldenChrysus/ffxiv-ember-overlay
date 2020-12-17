@@ -121,7 +121,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 - [**ShadyWhite**](https://github.com/ShadyWhite) - Chinese
 - **Gusma** - Portuguese
 - **The_X** - Portuguese
-- **okuRaku** - [Twitter](https://twitter.com/okurakuu), [Twitch](https://www.twitch.tv/okuraku)  - Japanese
+- [**okuRaku**](https://github.com/okuRaku) - Japanese
 - **Astriel** - German
 - **Claud** - Spanish
 - **Okâme** - French
