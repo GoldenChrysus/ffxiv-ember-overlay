@@ -53,7 +53,7 @@ class Donate extends React.Component {
 					<p>Pimpy Shortstocking, FortiusTTV <SocialLink name="fortiusttv" type="twitch"/></p>
 
 					<h2>Donors</h2>
-					<p>Amneamnius, Vulasuw, Jessica</p>
+					<p>Amneamnius, Vulasuw, Jessica, Rari Wolfheart</p>
 				</Container>
 			</React.Fragment>
 		);

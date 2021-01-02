@@ -137,6 +137,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 - Amneamnius
 - Vulasuw
 - Jessica
+- Rari Wolfheart
 
 ### Misc.
 
