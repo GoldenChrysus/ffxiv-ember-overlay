@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.23.3-alpha
+
+**Released: 2020-01-02**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Updated donor credits
+
 ## 0.23.2-alpha
 
 **Released: 2020-11-05**
