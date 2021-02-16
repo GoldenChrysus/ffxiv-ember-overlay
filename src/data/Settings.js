@@ -266,11 +266,13 @@ class Settings {
 			let key      = this.getOverlayPluginKey();
 			let message  = service.plugin_service.createMessage("loadData", key);
 			let callback = (data) => {
-				if (!data.data) {
+				if (data === null || (typeof data === "object" && !data.data)) {
+					service.plugin_service.resetCallback();
+					resolve();
 					return;
 				}
 
-				data = JSON.parse(data.data || {})
+				data = JSON.parse((typeof data === "object") ? data.data || "{}" : data);
 
 				if (data["$isNull"]) {
 					service.plugin_service.resetCallback();
@@ -279,6 +281,8 @@ class Settings {
 				}
 
 				if (!data.key || data.key !== key) {
+					service.plugin_service.resetCallback();
+					resolve();
 					return;
 				}
 

@@ -31,6 +31,9 @@ class OverlayPluginService extends PluginServiceAbstract {
 
 		return JSON.stringify(call);
 	}
+
+	resetCallback() {
+	}
 }
 
 export default OverlayPluginService;
