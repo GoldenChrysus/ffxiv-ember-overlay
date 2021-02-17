@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.23.4-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- Resolved issue where overlay would sometimes crash when restoring settings from OverlayPlugin
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Updated donor credits
+
 ## 0.23.3-alpha
 
 **Released: 2020-01-02**
