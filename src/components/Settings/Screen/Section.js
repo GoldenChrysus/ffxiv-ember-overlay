@@ -5,7 +5,7 @@ import Sortable from "sortablejs/modular/sortable.core.esm.js";
 
 import LocalizationService from "../../../services/LocalizationService";
 
-import MetricNameTable from "./Inputs/MetricNameTable";
+import MetricNameTable from "./Inputs/Table/MetricNameTable";
 import Slider from "./Inputs/Slider";
 
 class Section extends React.Component {

@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.23.4-alpha
+## 0.24.0-alpha
 
 **Released: [in development]**
 
@@ -8,16 +8,17 @@
 - Resolved issue where overlay would sometimes crash when restoring settings from OverlayPlugin
 
 ### Features
-- N/A
+- TODO: TTS alerts
 
 ### UI Changes
 - N/A
 
 ### Code Changes
-- N/A
+- Abstracted some `MetricNameTable` logic to `Table` in order to share it with the TTS rules table
 
 ### Miscellaneous
 - Updated donor credits
+- Added PayPay donation option
 
 ## 0.23.3-alpha
 
