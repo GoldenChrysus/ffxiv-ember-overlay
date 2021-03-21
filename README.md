@@ -13,7 +13,7 @@ React overlay for the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/rele
 <a href="https://cash.app/$chrysus"><img src="https://chrysus.xyz/projects/ffxiv-ember-overlay/public/img/buttons/funding/cash.svg" alt="Donate on Cash App" height="23"></a>
 <a href="https://paypal.me/goldenchrysus"><img src="https://i.imgur.com/BSwN4CJ.png" alt="Donate at PayPal" height="23"></a>
 <a href="https://qr.paypay.ne.jp/puGJFKNoSOgPSKqX"><img src="https://chrysus.xyz/projects/ffxiv-ember-overlay/public/img/buttons/funding/paypay.svg" alt="ペイペイで施してください" height="23"></a>
-<a href="https://ko-fi.com/S6S611OOG"><img src="https://i.imgur.com/txi1yLu.png" alt="Donate at Ko-fi" height="23"></a>
+<a href="https://chrysus.xyz/paypay"><img src="https://i.imgur.com/txi1yLu.png" alt="Donate at Ko-fi" height="23"></a>
 <a href="https://patreon.com/Chrysus"><img src="https://i.imgur.com/y4z22XP.png" alt="Become a Patron" height="23"></a>
 <a href="https://chrysus.live/tip"><img src="https://chrysus.xyz/projects/ffxiv-ember-overlay/public/img/buttons/funding/streamlabs.svg" alt="Donate at Streamlabs" height="23"></a>
 
