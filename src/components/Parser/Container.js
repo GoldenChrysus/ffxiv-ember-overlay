@@ -12,8 +12,11 @@ import Footer from "./Footer";
 import PlaceholderToggle from "./Placeholder/Toggle";
 import AggroTable from "./AggroTable";
 
+import TTSService from "../../services/TTSService";
+
 class Container extends React.Component {
 	componentDidMount() {
+		TTSService.start();
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
 		this.props.plugin_service.subscribe();
 	}

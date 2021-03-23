@@ -101,6 +101,7 @@ function rootReducer(state, action) {
 				new_state.internal.data_history = new_state.internal.encounter_history[0].data_history;
 			}
 
+			GameDataProcessor.processCombatDataTTS(new_state.internal.game);
 			break;
 
 		case "loadSampleData":
@@ -168,6 +169,7 @@ function rootReducer(state, action) {
 				new_state.internal.aggro = action.payload;
 			}
 
+			GameDataProcessor.processAggroTTS(new_state.internal.aggro);
 			break;
 
 		case "parseParty":

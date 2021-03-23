@@ -59,7 +59,8 @@ class PlayerTable extends React.Component {
 			}
 		}
 
-		let max_value = 0;
+		let max_value          = 0;
+		let valid_player_names = PlayerProcessor.getValidPlayerNames();
 
 		for (let player of sorted_players) {
 			let pet_owner = null;
@@ -81,7 +82,7 @@ class PlayerTable extends React.Component {
 				player._name   = pet_owner;
 			}
 
-			player._is_current = (player.name === "YOU" || player._name === this.props.player_name || (player._name === this.props.internal_name && this.props.player_name === "YOU"));
+			player._is_current = valid_player_names.includes(player._name);
 
 			if (player._is_pet && !player._is_current && !this.props.players[player._name]) {
 				player._skip = true;

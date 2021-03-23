@@ -4,6 +4,7 @@ import Constants from "../constants/index";
 import PlayerProcessor from "./PlayerProcessor";
 
 import LocalizationService from "../services/LocalizationService";
+import TTSService from "../services/TTSService";
 import UsageService from "../services/UsageService";
 
 class GameDataProcessor  {
@@ -205,6 +206,64 @@ class GameDataProcessor  {
 		}
 
 		return value;
+	}
+
+	processCombatDataTTS(data) {
+		if (data.Combatant) {
+			TTSService.updateCombatants(data.Combatant);
+		}
+
+		if (!data.Encounter) {
+			return;
+		}
+
+		let valid_player_names = PlayerProcessor.getValidPlayerNames();
+
+		if (UsageService.usingTopDPSTTS()) {
+			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "encdps");
+			let rank   = 0;
+
+			for (let player of sorted) {
+				rank++;
+
+				if (valid_player_names.includes(player.name)) {
+					TTSService.processRank(rank, "dps");
+					break;
+				}
+			}
+		}
+
+		if (UsageService.usingTopHPSTTS()) {
+			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enchps");
+			let rank   = 0;
+
+			for (let player of sorted) {
+				rank++;
+
+				if (valid_player_names.includes(player.name)) {
+					TTSService.processRank(rank, "hps");
+					break;
+				}
+			}
+		}
+
+		if (UsageService.usingTopTPSTTS()) {
+			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enctps");
+			let rank   = 0;
+
+			for (let player of sorted) {
+				rank++;
+
+				if (valid_player_names.includes(player.name)) {
+					TTSService.processRank(rank, "tps");
+					break;
+				}
+			}
+		}
+	}
+
+	processAggroTTS(data) {
+		TTSService.processAggro(data);
 	}
 }
 

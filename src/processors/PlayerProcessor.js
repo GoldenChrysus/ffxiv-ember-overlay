@@ -5,6 +5,21 @@ import Constants from "../constants/index";
 import GameDataProcessor from "./GameDataProcessor";
 
 class PlayerProcessor  {
+	getValidPlayerNames() {
+		let state = store.getState();
+
+		let valid_player_names = [
+			"YOU",
+			state.settings.interface.player_name
+		];
+
+		if (state.settings.interface.player_name === "YOU") {
+			valid_player_names.push(state.internal.character_name);
+		}
+
+		return valid_player_names;
+	}
+
 	getShortName(name, type) {
 		name = (name || "").split(" ");
 

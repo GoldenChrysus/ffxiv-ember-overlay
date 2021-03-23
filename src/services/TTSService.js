@@ -1,11 +1,13 @@
 import store from "../redux/store";
+import GameJobs from "../constants/index";
 
 class TTSService {
-	rules = {};
 	state = {
-		top      : false,
-		critical : [],
-		aggro    : []
+		top        : {},
+		critical   : [],
+		aggro      : [],
+		combatants : {},
+		rules      : {}
 	};
 	queue = {
 		critical  : {},
@@ -16,39 +18,77 @@ class TTSService {
 
 	start() {
 		setInterval(
-			this.processQueue,
+			this.processQueue.bind(this),
 			1500
 		);
 	}
 
 	updateRules() {
-		this.rules = store.getState.settings_data.getSetting("tts");
+		this.state.rules = store.getState.settings_data.getSetting("tts");
+	}
+
+	updateCombatants(combatants) {
+		this.state.combatants = combatants;
 	}
 
 	processLogLine(data) {
-		let player     = "";
-		let hp_percent = 0;
+		let player_data = {};
 
-		if (hp_percent < 0 && !this.state.critical.includes(player)) {
-			this.state.critical.push(player);
+		switch (data[0]) {
+			case 38:
+				player_data.name       = data[3];
+				player_data.hp_percent = (data[5] / data[6]) * 100;
 
-			this.queue.critical[player] = true;
-		} else if (hp_percent > 0 && this.state.critical.includes(player)) {
-			this.state.critical.splice(this.state.critical.indexOf(player), 1);
+				break;
+
+			case 39:
+				player_data.name       = data[3];
+				player_data.hp_percent = (data[4] / data[5]) * 100;
+				
+				break;
+
+			default:
+				return;
+		}
+
+		if (!this.state.combatants[player_data.name]) {
+			return;
+		}
+
+		player_data.job_type = GameJobs[this.state.combatants[player_data.name].Job];
+
+		if (!player_data.job_type) {
+			return;
+		}
+
+		if (player_data.hp_percent < this.state.critical[player_data.job_type] && !this.state.critical.includes(player_data.name)) {
+			this.state.critical.push(player_data.name);
+
+			this.queue.critical[player_data.name] = true;
+		} else if (player_data.hp_percent > this.state.critical[player_data.job_type] && this.state.critical.includes(player_data.name)) {
+			this.state.critical.splice(this.state.critical.indexOf(player_data.name), 1);
 		}
 	}
 
-	processRank(rank) {
-		if (rank === 1 & !this.state.top) {
-			this.state.top = true;
+	processRank(rank, type) {
+		if (rank === 1 & !this.state.top[type]) {
+			this.state.top[type] = true;
 
-			this.queue.top.dps = "You are top DPS.";
-		} else if (rank !== 1 && this.state.top) {
-			this.state.top = false;
+			this.queue.top.dps = `You are top ${type}.`;
+		} else if (rank !== 1 && this.state.top[type]) {
+			this.state.top[type] = false;
 		}
 	}
 
-	processAggro(mobs) {
+	processAggro(data) {
+		let mobs = [];
+
+		for (let monster of data.AggroList) {
+			if (monster.Target && monster.Target.isMe) {
+				mobs.push(monster.Name);
+			}
+		}
+
 		let old_mobs = this.aggro;
 
 		this.aggro = mobs;
@@ -88,15 +128,19 @@ class TTSService {
 		if (Object.keys(this.queue.aggro).length) {
 			let monsters = Object.keys(this.queue.aggro).join(", ");
 
-			messages.push(`You have been aggroed by ${monsters}.`);
+			messages.push(`Received aggro from ${monsters}.`);
 
 			this.queue.aggro = {};
 		}
 
-		if (this.encounter.length) {
+		if (this.queue.encounter.length) {
 			messages = messages.concat(this.queue.encounter);
 
 			this.queue.encounter = [];
+		}
+
+		if (messages.length) {
+			store.getState().plugin_service.tts(messages);
 		}
 	}
 }

@@ -82,7 +82,8 @@ class PluginService extends PluginServiceAbstract {
 	getSubscriptions(settings_object) {
 		let settings = settings_object || store.getState().settings_data;
 		let data     = {
-			enmity : UsageService.usingEnmity(settings)
+			enmity : UsageService.usingEnmity(settings),
+			log    : UsageService.usingLogTTS(settings)
 		};
 		let events   = [
 			"CombatData",
@@ -95,7 +96,15 @@ class PluginService extends PluginServiceAbstract {
 			events.push("EnmityTargetData");
 		}
 
+		if (data.log) {
+			events.push("LogLine");
+		}
+
 		return events;
+	}
+
+	tts(messages) {
+		this.plugin_service.tts(messages);
 	}
 }
 

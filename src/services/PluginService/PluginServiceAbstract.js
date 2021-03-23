@@ -51,6 +51,14 @@ class PluginServiceAbstract {
 			callback
 		);
 	}
+
+	tts(messages) {
+		if (!this.is_overlayplugin || !this.is_ngld) {
+			return;
+		}
+
+		this.callHandler(this.createMessage("say", "text", messages));
+	}
 }
 
 export default PluginServiceAbstract;
