@@ -9,6 +9,7 @@
 
 ### Features
 - TODO: TTS alerts
+- Added numeric-only max hit metric
 
 ### UI Changes
 - N/A

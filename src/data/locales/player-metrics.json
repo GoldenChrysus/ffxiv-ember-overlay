@@ -815,6 +815,40 @@
 			"long"  : "최대 피해량"
 		}
 	},
+	"max_hit_numeric"    : {
+		"en" : {
+			"short" : "Mx Hit (#)",
+			"long"  : "Max Hit (#)"
+		},
+		"pt" : {
+			"short" : "Atq Mx (#)",
+			"long"  : "Ataque Máximo (#)"
+		},
+		"cn" : {
+			"short" : "最强伤害(#)",
+			"long"  : "最强伤害(#)"
+		},
+		"jp" : {
+			"short" : "最大与ダメ(#)",
+			"long"  : "最大与ダメージ(#)"
+		},
+		"de" : {
+			"short" : "Max Dmg (#)",
+			"long"  : "Größter Schadenswert (#)"
+		},
+		"es" : {
+			"short" : "Mx Hit (#)",
+			"long"  : "Golpe Máximo (#)"
+		},
+		"fr" : {
+			"short" : "Dgt Max (#)",
+			"long"  : "Dégats Maximal (#)"
+		},
+		"kr" : {
+			"short" : "최대 딜 (#)",
+			"long"  : "최대 피해량 (#)"
+		}
+	},
 	"OverHealPct"        : {
 		"en" : {
 			"short" : "Ovr %",

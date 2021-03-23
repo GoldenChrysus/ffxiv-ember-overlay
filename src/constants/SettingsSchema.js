@@ -211,6 +211,29 @@ const SettingsSchema = {
 			]
 		},
 		{
+			path     : "tts",
+			sections : [
+				{
+					settings : [
+						{
+							key_path : "tts.language",
+							type     : "select",
+							options  : language_options,
+							value    : obj => obj.props.settings.tts.language
+						},
+						{
+							key_path : "tts.rules",
+							type     : "TTSRulesTable",
+							options  : () => LocalizationService.getPlayerDataTitles(true, true),
+							value    : function() {
+								return this.props.settings.tts.rules;
+							}
+						}
+					]
+				}
+			]
+		},
+		{
 			path     : "player-table",
 			sections : [
 				{

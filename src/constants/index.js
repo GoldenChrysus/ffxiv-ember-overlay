@@ -58,7 +58,7 @@ let calculateTankPerSecond = function(player, players, encounter) {
 	return (+player.damagetaken / duration).toFixed(2);
 }
 
-let formatMaxHit = function(player) {
+let formatMaxHit = function(player, players, encounter, only_number) {
 	if (!player["maxhit"]) {
 		return "N/A";
 	}
@@ -68,11 +68,19 @@ let formatMaxHit = function(player) {
 
 	parts[index] = (!isNaN(parts[index])) ? (+parts[index]).toLocaleString() : parts[index];
 
+	if (only_number) {
+		return parts[index];
+	}
+
 	parts.unshift(parts.pop());
 	
 	let value = parts.join(" - ");
 
 	return value;
+}
+
+let formatNumericMaxHit = function(player) {
+	return formatMaxHit(player, undefined, undefined, true);
 }
 
 let formatMaxHeal = function(player) {
@@ -193,6 +201,7 @@ const PlayerDataCustomValues = {
 	"damage_taken_pct"   : calculateTankedDamagePercent,
 	"max_heal_format"    : formatMaxHeal,
 	"max_hit_format"     : formatMaxHit,
+	"max_hit_numeric"    : formatNumericMaxHit,
 	"enctps"             : calculateTankPerSecond,
 	"shield_per_second"  : calculateShieldPerSecond
 };
@@ -212,7 +221,8 @@ const PlayerMetricTypeData = {
 		"damage%",
 		"DirectHitPct",
 		"encdps",
-		"max_hit_format"
+		"max_hit_format",
+		"max_hit_numeric"
 	],
 	heal : [
 		"critheal%",

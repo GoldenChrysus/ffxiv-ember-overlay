@@ -68,6 +68,30 @@
 				}
 			]
 		},
+		"tts"  : {
+			"title"       : {
+				"en" : "Text to Speech",
+				"pt" : "Text to Speech",
+				"cn" : "Text to Speech",
+				"jp" : "Text to Speech",
+				"de" : "Text to Speech",
+				"es" : "Text to Speech",
+				"fr" : "Text to Speech",
+				"kr" : "Text to Speech"
+			},
+			"subsections" : [
+				{
+					"en" : "Text to Speech Setup",
+					"pt" : "Text to Speech Setup",
+					"cn" : "Text to Speech Setup",
+					"jp" : "Text to Speech Setup",
+					"de" : "Text to Speech Setup",
+					"es" : "Text to Speech Setup",
+					"fr" : "Text to Speech Setup",
+					"kr" : "Text to Speech Setup"
+				}
+			]
+		},
 		"player-table"  : {
 			"title"       : {
 				"en" : "Player Table",

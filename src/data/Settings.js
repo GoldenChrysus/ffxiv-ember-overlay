@@ -35,6 +35,27 @@ const default_settings = {
 		css          : "",
 		metric_names : {}
 	},
+	tts : {
+		language : "en",
+		rules    : {
+			critical  : {
+				tank : 0,
+				heal : 0,
+				dps  : 0,
+				all  : 0
+			},
+			top       : {
+				dps : false,
+				hps : false,
+				tps : false
+			},
+			aggro     : false,
+			encounter : {
+				start : false,
+				end   : false
+			}
+		}
+	},
 	table_settings : {
 		general : {
 			table : {
