@@ -208,7 +208,7 @@ class GameDataProcessor  {
 		return value;
 	}
 
-	processCombatDataTTS(data) {
+	processCombatDataTTS(data, current_state) {
 		if (data.Combatant) {
 			TTSService.updateCombatants(data.Combatant);
 		}
@@ -217,9 +217,9 @@ class GameDataProcessor  {
 			return;
 		}
 
-		let valid_player_names = PlayerProcessor.getValidPlayerNames();
+		let valid_player_names = PlayerProcessor.getValidPlayerNames(current_state);
 
-		if (UsageService.usingTopDPSTTS()) {
+		if (UsageService.usingTopDPSTTS(current_state.settings_data)) {
 			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "encdps");
 			let rank   = 0;
 
@@ -233,7 +233,7 @@ class GameDataProcessor  {
 			}
 		}
 
-		if (UsageService.usingTopHPSTTS()) {
+		if (UsageService.usingTopHPSTTS(current_state.settings_data)) {
 			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enchps");
 			let rank   = 0;
 
@@ -247,7 +247,7 @@ class GameDataProcessor  {
 			}
 		}
 
-		if (UsageService.usingTopTPSTTS()) {
+		if (UsageService.usingTopTPSTTS(current_state.settings_data)) {
 			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enctps");
 			let rank   = 0;
 
@@ -262,8 +262,10 @@ class GameDataProcessor  {
 		}
 	}
 
-	processAggroTTS(data) {
-		TTSService.processAggro(data);
+	processAggroTTS(data, current_state) {
+		if (UsageService.usingAggroTTS(current_state.settings_data)) {
+			TTSService.processAggro(data);
+		}
 	}
 }
 

@@ -5,8 +5,8 @@ import Constants from "../constants/index";
 import GameDataProcessor from "./GameDataProcessor";
 
 class PlayerProcessor  {
-	getValidPlayerNames() {
-		let state = store.getState();
+	getValidPlayerNames(current_state) {
+		let state = current_state || store.getState();
 
 		let valid_player_names = [
 			"YOU",

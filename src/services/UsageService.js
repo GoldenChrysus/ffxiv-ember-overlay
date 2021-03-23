@@ -41,6 +41,10 @@ class UsageService {
 		return this.usingTopTTS(settings, "tps");
 	}
 
+	usingAggroTTS(settings) {
+		return settings.getSetting("tts.rules.aggro");
+	}
+
 	usingEnmity(settings) {
 		return (this.getMetricsInUse(settings).indexOf("enmity_percent") !== -1);
 	}

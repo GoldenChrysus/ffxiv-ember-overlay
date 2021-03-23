@@ -47,6 +47,14 @@ export function parseParty(payload) {
 	}
 }
 
+export function parseLogLine(payload) {
+	return {
+		type : "parseLogLine",
+		key  : false,
+		payload
+	}
+}
+
 export function updateSetting(payload) {
 	return {
 		type      : "setSetting",

@@ -1,5 +1,5 @@
 import store from "../redux/store/index";
-import { parseGameData, parseEnmity, parseAggroList, parseParty, updateState } from "../redux/actions/index";
+import { parseGameData, parseEnmity, parseAggroList, parseParty, parseLogLine, updateState } from "../redux/actions/index";
 
 class MessageProcessor {
 	processMessage(e) {
@@ -17,7 +17,7 @@ class MessageProcessor {
 
 		let type = data.msgtype || data.type;
 
-		if (["onOverlayDataUpdate", "SendCharName", "CombatData", "EnmityAggroList", "EnmityTargetData", "ChangePrimaryPlayer", "PartyChanged"].indexOf(type) === -1) {
+		if (["onOverlayDataUpdate", "SendCharName", "CombatData", "EnmityAggroList", "EnmityTargetData", "ChangePrimaryPlayer", "PartyChanged", "LogLine"].indexOf(type) === -1) {
 			return;
 		}
 
@@ -58,6 +58,10 @@ class MessageProcessor {
 
 			case "PartyChanged":
 				store.dispatch(parseParty(data));
+				break;
+
+			case "LogLine":
+				store.dispatch(parseLogLine(data));
 				break;
 
 			default:

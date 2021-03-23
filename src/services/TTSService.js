@@ -1,5 +1,6 @@
 import store from "../redux/store";
 import GameJobs from "../constants/index";
+import UsageService from "./UsageService";
 
 class TTSService {
 	state = {
@@ -31,7 +32,11 @@ class TTSService {
 		this.state.combatants = combatants;
 	}
 
-	processLogLine(data) {
+	processLogLine(data, current_state) {
+		if (!UsageService.usingLogTTS(current_state)) {
+			return;
+		}
+
 		let player_data = {};
 
 		switch (data[0]) {

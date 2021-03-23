@@ -10,6 +10,7 @@ import ThemeService from "../../services/ThemeService";
 import SampleGameData from "../../constants/SampleGameData";
 import SampleHistoryData from "../../constants/SampleHistoryData";
 import SampleAggroData from "../../constants/SampleAggroData";
+import TTSService from "../../services/TTSService";
 
 let overlayplugin_service = new OverlayPluginService();
 
@@ -101,7 +102,7 @@ function rootReducer(state, action) {
 				new_state.internal.data_history = new_state.internal.encounter_history[0].data_history;
 			}
 
-			GameDataProcessor.processCombatDataTTS(new_state.internal.game);
+			GameDataProcessor.processCombatDataTTS(new_state.internal.game, new_state);
 			break;
 
 		case "loadSampleData":
@@ -169,7 +170,7 @@ function rootReducer(state, action) {
 				new_state.internal.aggro = action.payload;
 			}
 
-			GameDataProcessor.processAggroTTS(new_state.internal.aggro);
+			GameDataProcessor.processAggroTTS(new_state.internal.aggro, new_state);
 			break;
 
 		case "parseParty":
@@ -178,6 +179,10 @@ function rootReducer(state, action) {
 			new_state.internal.party = GameDataProcessor.processParty(action.payload);
 
 			break;
+
+		case "parseLogLine":
+			TTSService.processLogLine(action.payload, state);
+			return;
 
 		default:
 			new_state = createNewState(state, full_key, action);
