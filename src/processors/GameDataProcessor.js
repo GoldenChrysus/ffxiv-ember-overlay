@@ -209,15 +209,15 @@ class GameDataProcessor  {
 	}
 
 	processCombatDataTTS(data, current_state) {
+		let valid_player_names = PlayerProcessor.getValidPlayerNames(current_state);
+
 		if (data.Combatant) {
-			TTSService.updateCombatants(data.Combatant);
+			TTSService.updateCombatants(data.Combatant, valid_player_names);
 		}
 
 		if (!data.Encounter) {
 			return;
 		}
-
-		let valid_player_names = PlayerProcessor.getValidPlayerNames(current_state);
 
 		if (UsageService.usingTopDPSTTS(current_state.settings_data)) {
 			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "encdps");

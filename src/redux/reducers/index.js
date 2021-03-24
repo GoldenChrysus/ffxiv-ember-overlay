@@ -182,7 +182,7 @@ function rootReducer(state, action) {
 
 		case "parseLogLine":
 			TTSService.processLogLine(action.payload, state);
-			return;
+			break;
 
 		default:
 			new_state = createNewState(state, full_key, action);
@@ -224,6 +224,10 @@ function createNewState(state, full_key, action) {
 		let minimal_theme = (full_key === "settings") ? action.payload.interface.minimal_theme : action.payload;
 
 		ThemeService.setTheme({minimal : minimal_theme});
+	}
+
+	if (full_key === "settings") {
+		TTSService.updateRules(action.payload.tts);
 	}
 
 	return new_state;

@@ -76,8 +76,8 @@ const tts_rule_options = [
 		text  : "A healer's HP is below:"
 	},
 	{
-		key   : "critical.any",
-		value : "critical.any",
+		key   : "critical.all",
+		value : "critical.all",
 		text  : "Anyone's HP is below:"
 	},
 	{
