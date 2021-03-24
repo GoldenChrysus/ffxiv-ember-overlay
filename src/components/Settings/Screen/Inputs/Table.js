@@ -24,7 +24,7 @@ class Table extends React.Component {
 		let $row    = $(document).find("#insert-row");
 		let $target = (e.currentTarget.tagName === "DIV") ? $(e.currentTarget) : $row.find(".active.selected.item");
 		let $select = $target.closest(".ui.dropdown");
-		let type    = data.value.split("_")[0];
+		let type    = data.value.split(".")[0];
 
 		if (this.data_types[type]) {
 			let data_type = this.data_types[type].type;
@@ -78,11 +78,17 @@ class Table extends React.Component {
 	}
 
 	handleDelete(e) {
-		let key  = $(e.currentTarget).closest("tr").attr("data-key");
-		let rows = this.state.rows;
+		let key      = $(e.currentTarget).closest("tr").attr("data-select-value") || $(e.currentTarget).closest("tr").attr("data-key");
+		let rows     = this.state.rows;
+		let key_data = key.split(".");
 
 		delete rows[key];
-		delete this.data.value[key];
+
+		if (key_data.length === 2) {
+			delete this.data.value[key_data[0]][key_data[1]];
+		} else {
+			delete this.data.value[key];
+		}
 
 		this.setState({
 			rows : rows

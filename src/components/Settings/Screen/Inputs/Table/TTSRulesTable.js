@@ -70,9 +70,9 @@ class TTSRulesTable extends Table {
 			? options.select_text
 			: <Select fluid search options={this.props.options} onChange={this.handleSelectChange.bind(this)}/>;
 		let row    = (
-			<tr id="insert-row" key={"metric-key-" + (options.select_value || "_insert")} data-key={options.rule_type}>
+			<tr id="insert-row" key={"metric-key-" + (options.select_value || "_insert")} data-key={options.rule_type} data-select-value={options.select_value}>
 				<td>{select}</td>
-				<td><Input fluid className="rule-value disablable-input" key_path={options.rule_key} defaultValue={options.rule_value} onChange={this.handleInputChange.bind(this)}/></td>
+				<td><Input fluid className="rule-value disablable-input" key_path={options.rule_key} defaultValue={options.rule_value} onChange={this.handleInputChange.bind(this)} label={{content: "%"}} labelPosition="right"/></td>
 				<td>{button}</td>
 			</tr>
 		);
@@ -101,7 +101,7 @@ class TTSRulesTable extends Table {
 			auto_add     : true
 		};
 
-		let rule_data = options.select_value.split("_");
+		let rule_data = options.select_value.split(".");
 
 		options.rule_type = rule_data[0];
 		options.rule_key  = rule_data[1] || "";
@@ -148,10 +148,10 @@ class TTSRulesTable extends Table {
 							continue;
 						}
 			
-						let key = `${rule_type}_${rule_key}`;
+						let key = `${rule_type}.${rule_key}`;
 			
 						rows[key] = this.createRow({
-							select_text  : this.props.options[key].text,
+							select_text  : "na", //this.props.options[key].text,
 							select_value : key,
 							rule_type    : rule_type,
 							rule_key     : rule_key,

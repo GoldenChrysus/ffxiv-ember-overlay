@@ -114,6 +114,10 @@ class SocketService {
 	}
 
 	unsubscribe(events) {
+		if (!this.is_connected) {
+			return false;
+		}
+
 		return this.removeSubscriptions(events);
 	}
 

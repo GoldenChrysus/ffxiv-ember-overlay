@@ -61,23 +61,23 @@ const decimal_options  = [
 ];
 const tts_rule_options = [
 	{
-		key   : "critical_tank",
-		value : "critical_tank",
+		key   : "critical.tank",
+		value : "critical.tank",
 		text  : "A tank's HP is below:"
 	},
 	{
-		key   : "critical_dps",
-		value : "critical_dps",
+		key   : "critical.dps",
+		value : "critical.dps",
 		text  : "A DPS' HP is below:"
 	},
 	{
-		key   : "critical_heal",
-		value : "critical_heal",
+		key   : "critical.heal",
+		value : "critical.heal",
 		text  : "A healer's HP is below:"
 	},
 	{
-		key   : "critical_any",
-		value : "critical_any",
+		key   : "critical.any",
+		value : "critical.any",
 		text  : "Anyone's HP is below:"
 	},
 	{
@@ -86,28 +86,28 @@ const tts_rule_options = [
 		text  : "You obtain aggro"
 	},
 	{
-		key   : "top_dps",
-		value : "top_dps",
+		key   : "top.dps",
+		value : "top.dps",
 		text  : "You obtain top DPS"
 	},
 	{
-		key   : "top_hps",
-		value : "top_hps",
+		key   : "top.hps",
+		value : "top.hps",
 		text  : "You obtain top HPS"
 	},
 	{
-		key   : "top_tps",
-		value : "top_tps",
+		key   : "top.tps",
+		value : "top.tps",
 		text  : "You obtain top DTPS"
 	},
 	{
-		key   : "encounter_start",
-		value : "encounter_start",
+		key   : "encounter.start",
+		value : "encounter.start",
 		text  : "An encounter starts"
 	},
 	{
-		key   : "encounter_end",
-		value : "encounter_end",
+		key   : "encounter.end",
+		value : "encounter.end",
 		text  : "An encounter ends"
 	},
 ];
