@@ -478,6 +478,26 @@
 			"fr" : "",
 			"kr" : ""
 		},
+		"tts.language" : {
+			"en" : "Language",
+			"pt" : "Language",
+			"cn" : "Language",
+			"jp" : "Language",
+			"de" : "Language",
+			"es" : "Language",
+			"fr" : "Language",
+			"kr" : "Language"
+		},
+		"tts.rules" : {
+			"en" : "Rules",
+			"pt" : "Rules",
+			"cn" : "Rules",
+			"jp" : "Rules",
+			"de" : "Rules",
+			"es" : "Rules",
+			"fr" : "Rules",
+			"kr" : "Rules"
+		},
 		"table_settings.general.table.short_names" : {
 			"en" : "Shorten Player Names",
 			"pt" : "Diminuir nomes dos Jogadores",

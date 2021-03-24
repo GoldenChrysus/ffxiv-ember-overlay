@@ -4,6 +4,8 @@ import $ from "jquery";
 import LocalizationService from "../../../../services/LocalizationService";
 
 class Table extends React.Component {
+	data_types = {};
+
 	constructor(props) {
 		super(props);
 
@@ -14,10 +16,31 @@ class Table extends React.Component {
 		this.delete_text = LocalizationService.getMisc("delete");
 	}
 
+	provideDataTypes(types) {
+		this.data_types = types;
+	}
+
 	handleSelectChange(e, data) {
 		let $row    = $(document).find("#insert-row");
 		let $target = (e.currentTarget.tagName === "DIV") ? $(e.currentTarget) : $row.find(".active.selected.item");
 		let $select = $target.closest(".ui.dropdown");
+		let type    = data.value.split("_")[0];
+
+		if (this.data_types[type]) {
+			let data_type = this.data_types[type].type;
+			let disabled  = (data_type === "bool");
+			let $inputs   = $select
+				.closest("tr")
+				.find(".disablable-input > input");
+
+			$inputs.attr("disabled", disabled);
+
+			if (disabled) {
+				$inputs
+					.val("")
+					.trigger("change");
+			}
+		}
 
 		$select
 			.attr("data-value", data.value)
@@ -39,7 +62,17 @@ class Table extends React.Component {
 			return true;
 		}
 
-		this.data.value[row_key][input_key] = $this.val();
+		let value = $this.val();
+
+		if (this.data_types[row_key]) {
+			value = this.normalizeData(row_key, value, true);
+		}
+
+		if (input_key) {
+			this.data.value[row_key][input_key] = value;
+		} else {
+			this.data.value[row_key] = value;
+		}
 
 		this.syncData();
 	}
@@ -59,6 +92,41 @@ class Table extends React.Component {
 
 	syncData() {
 		this.props.onChange(undefined, this.data);
+	}
+
+	normalizeData(key, value, revert_on_bad) {
+		let data_type = this.data_types[key];
+		let new_value = undefined;
+
+		switch (data_type.type) {
+			case "numeric":
+				if (isNaN(value)) {
+					new_value = undefined;
+				}
+
+				new_value = +value;
+
+				if (
+					(data_type.hasOwnProperty("min") && new_value < data_type.min) ||
+					(data_type.hasOwnProperty("max") && new_value > data_type.max)
+				) {
+					new_value = undefined;
+				}
+
+				break;
+
+			case "bool":
+				new_value = true;
+
+				break;
+
+			default:
+				new_value = value;
+
+				break;
+		}
+
+		return (revert_on_bad && new_value === undefined) ? value : new_value;
 	}
 }
 

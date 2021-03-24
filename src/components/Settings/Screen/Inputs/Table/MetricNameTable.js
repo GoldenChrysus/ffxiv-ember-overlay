@@ -62,7 +62,7 @@ class MetricNameTable extends Table {
 			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
 		let select = (!options.insert)
 			? options.select_text
-			: <Select fluid search options={this.props.options} onChange={this.handleSelectChange}/>;
+			: <Select fluid search options={this.props.options} onChange={this.handleSelectChange.bind(this)}/>;
 		let row    = (
 			<tr id="insert-row" key={"metric-key-" + (options.select_value || "_insert")} data-key={options.select_value}>
 				<td>{select}</td>

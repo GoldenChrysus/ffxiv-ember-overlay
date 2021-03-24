@@ -6,6 +6,7 @@ import Sortable from "sortablejs/modular/sortable.core.esm.js";
 import LocalizationService from "../../../services/LocalizationService";
 
 import MetricNameTable from "./Inputs/Table/MetricNameTable";
+import TTSRulesTable from "./Inputs/Table/TTSRulesTable";
 import Slider from "./Inputs/Slider";
 
 class Section extends React.Component {
@@ -117,6 +118,14 @@ class Section extends React.Component {
 
 					label   = "";
 					setting = <MetricNameTable value={value} options={metric_options} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
+
+					break;
+
+				case "TTSRulesTable":
+					let rule_options = setting_data.options;
+
+					label   = "";
+					setting = <TTSRulesTable value={value} options={rule_options} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 
 					break;
 
