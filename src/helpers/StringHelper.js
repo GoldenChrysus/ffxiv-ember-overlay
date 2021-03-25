@@ -6,7 +6,7 @@ class StringHelper {
 			units[i] = string.charCodeAt(i);
 		}
 
-		return String.fromCharCode(...new Uint8Array(units.buffer));
+		return String.fromCharCode.apply(null, new Uint8Array(units.buffer));
 	}
 
 	fromBinary(binary) {
@@ -16,7 +16,7 @@ class StringHelper {
 			bytes[i] = binary.charCodeAt(i);
 		}
 
-		return String.fromCharCode(...new Uint16Array(bytes.buffer));
+		return String.fromCharCode.apply(null, new Uint16Array(bytes.buffer));
 	}
 }
 

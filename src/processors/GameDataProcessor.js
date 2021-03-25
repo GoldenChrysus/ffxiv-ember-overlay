@@ -228,7 +228,7 @@ class GameDataProcessor  {
 			for (let player of sorted) {
 				rank++;
 
-				if (valid_player_names.includes(player.name)) {
+				if (valid_player_names.indexOf(player.name) !== -1) {
 					TTSService.processRank(rank, "dps", current_state);
 					break;
 				}
@@ -242,7 +242,7 @@ class GameDataProcessor  {
 			for (let player of sorted) {
 				rank++;
 
-				if (valid_player_names.includes(player.name)) {
+				if (valid_player_names.indexOf(player.name) !== -1) {
 					TTSService.processRank(rank, "hps", current_state);
 					break;
 				}
@@ -256,7 +256,7 @@ class GameDataProcessor  {
 			for (let player of sorted) {
 				rank++;
 
-				if (valid_player_names.includes(player.name)) {
+				if (valid_player_names.indexOf(player.name) !== -1) {
 					TTSService.processRank(rank, "tps", current_state);
 					break;
 				}

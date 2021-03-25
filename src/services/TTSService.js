@@ -78,8 +78,6 @@ class TTSService {
 			return;
 		}
 
-		console.log(this.state.critical);
-
 		let critical_threshold = Math.max(
 			this.state.rules.critical[player_data.job_type] ? this.state.rules.critical[player_data.job_type] : 0,
 			this.state.rules.critical.all ? this.state.rules.critical.all : 0
@@ -88,7 +86,7 @@ class TTSService {
 		if (
 			critical_threshold &&
 			player_data.hp_percent < critical_threshold &&
-			!this.state.critical.includes(player_data.name)
+			!this.state.critical.indexOf(player_data.name) !== -1
 		) {
 			this.state.critical.push(player_data.name);
 
@@ -96,7 +94,7 @@ class TTSService {
 		} else if (
 			critical_threshold &&
 			player_data.hp_percent >= critical_threshold &&
-			this.state.critical.includes(player_data.name)
+			this.state.critical.indexOf(player_data.name) !== -1
 		) {
 			this.state.critical.splice(this.state.critical.indexOf(player_data.name), 1);
 		}
@@ -129,7 +127,7 @@ class TTSService {
 		this.aggro = mobs;
 
 		for (let mob of this.aggro) {
-			if (!old_mobs.includes(mob)) {
+			if (old_mobs.indexOf(mob) === -1) {
 				this.queue.aggro[mob] = true;
 			}
 		}

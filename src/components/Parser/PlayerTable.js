@@ -82,7 +82,7 @@ class PlayerTable extends React.Component {
 				player._name   = pet_owner;
 			}
 
-			player._is_current = valid_player_names.includes(player._name);
+			player._is_current = (valid_player_names.indexOf(player._name) !== -1);
 
 			if (player._is_pet && !player._is_current && !this.props.players[player._name]) {
 				player._skip = true;
