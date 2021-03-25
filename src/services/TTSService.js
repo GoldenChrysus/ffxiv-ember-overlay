@@ -70,52 +70,46 @@ class TTSService {
 			return;
 		}
 
-		player_data.job_type = Constants.GameJobs[this.state.combatants[player_data.name].Job.toUpperCase()].role;
+		let job_data = Constants.GameJobs[this.state.combatants[player_data.name].Job.toUpperCase()];
+
+		player_data.job_type = (job_data) ? job_data.role : false;
 
 		if (!player_data.job_type) {
 			return;
 		}
 
+		console.log(this.state.critical);
+
+		let critical_threshold = Math.max(
+			this.state.rules.critical[player_data.job_type] ? this.state.rules.critical[player_data.job_type] : 0,
+			this.state.rules.critical.all ? this.state.rules.critical.all : 0
+		);
+
 		if (
-			(
-				(
-					player_data.hp_percent < this.state.rules.critical[player_data.job_type] &&
-					this.state.rules.critical[player_data.job_type]
-				) ||
-				(
-					player_data.hp_percent < this.state.rules.critical.all &&
-					this.state.rules.critical.all
-				)
-		 	) &&
+			critical_threshold &&
+			player_data.hp_percent < critical_threshold &&
 			!this.state.critical.includes(player_data.name)
 		) {
 			this.state.critical.push(player_data.name);
 
 			this.queue.critical[player_data.name] = true;
 		} else if (
-			(
-				(
-					player_data.hp_percent >= this.state.rules.critical[player_data.job_type] &&
-					this.state.rules.critical[player_data.job_type]
-				) ||
-				(
-					player_data.hp_percent >= this.state.rules.critical.all &&
-					this.state.rules.critical.all
-				)
-			) &&
+			critical_threshold &&
+			player_data.hp_percent >= critical_threshold &&
 			this.state.critical.includes(player_data.name)
 		) {
 			this.state.critical.splice(this.state.critical.indexOf(player_data.name), 1);
 		}
 	}
 
-	processRank(rank, type) {
+	processRank(rank, type, current_state) {
 		if (rank === 1 & !this.state.top[type]) {
 			this.state.top[type] = true;
 
-			let locale_data = LocalizationService.getTTSTextData("top");
+			let locale_data    = LocalizationService.getTTSTextData("top", current_state);
+			let corrected_type = (type === "tps") ? "dtps" : type;
 
-			this.queue.top.dps = locale_data.text.replace("{{metric}}", type.toUpperCase());
+			this.queue.top[type] = locale_data.text.replace("{{metric}}", corrected_type.toUpperCase());
 		} else if (rank !== 1 && this.state.top[type]) {
 			this.state.top[type] = false;
 		}
@@ -153,7 +147,7 @@ class TTSService {
 		this.state.encounter = active;
 
 		if (UsageService.usingEncounterTTS(current_state.settings_data, type)) {
-			let locale_data = TTSService.getTTSTextData("encounter");
+			let locale_data = LocalizationService.getTTSTextData("encounter", current_state);
 			let title       = (game.Encounter) ? game.Encounter.title : locale_data.default_title;
 
 			this.queue.encounter.push(
@@ -169,12 +163,20 @@ class TTSService {
 		let messages = [];
 
 		if (Object.keys(this.queue.critical).length) {
-			let locale_data = TTSService.getTTSTextData("critical");
-			let keys        = Object.keys(this.queue.critical);
-			let players     = (keys.length <= 2)
+			let locale_data = LocalizationService.getTTSTextData("critical");
+			let has_you     = (this.queue.critical.YOU);
+
+			if (has_you) {
+				delete this.queue.critical.YOU;
+
+				this.queue.critical[locale_data.you] = true;
+			}
+
+			let keys      = Object.keys(this.queue.critical);
+			let connector = (has_you || keys.length > 1) ? locale_data.plural : locale_data.singular;
+			let players   = (keys.length <= 2)
 				? keys.join(locale_data.joiner)
 				: locale_data.several;
-			let connector   = (keys.length > 1) ? locale_data.plural : locale_data.singular;
 
 			messages.push(
 				locale_data
@@ -193,7 +195,7 @@ class TTSService {
 		}
 
 		if (Object.keys(this.queue.aggro).length) {
-			let locale_data = TTSService.getTTSTextData("aggro");
+			let locale_data = LocalizationService.getTTSTextData("aggro");
 			let monsters    = Object.keys(this.queue.aggro).join(locale_data.joiner);
 
 			messages.push(locale_data.text.replace("{{monsters}}", monsters));

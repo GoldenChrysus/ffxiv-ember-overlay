@@ -236,6 +236,7 @@
 				"several"  : "Several players",
 				"plural"   : " are ",
 				"singular" : " is ",
+				"you"      : "You",
 				"text"     : "{{players}}{{connector}}critical health."
 			},
 			"pt" : {
@@ -243,6 +244,7 @@
 				"several"  : "Several players",
 				"plural"   : " are ",
 				"singular" : " is ",
+				"you"      : "You",
 				"text"     : "critical health."
 			},
 			"cn" : {
@@ -250,6 +252,7 @@
 				"several"  : "Several players",
 				"plural"   : " are ",
 				"singular" : " is ",
+				"you"      : "You",
 				"text"     : "critical health."
 			},
 			"jp" : {
@@ -257,6 +260,7 @@
 				"several"  : "多くの人",
 				"plural"   : "は",
 				"singular" : "は",
+				"you"      : "あなた",
 				"text"     : "{{players}}{{connector}}クリティカルHPです."
 			},
 			"de" : {
@@ -264,6 +268,7 @@
 				"several"  : "Several players",
 				"plural"   : " are ",
 				"singular" : " is ",
+				"you"      : "You",
 				"text"     : "critical health."
 			},
 			"es" : {
@@ -271,6 +276,7 @@
 				"several"  : "Several players",
 				"plural"   : " are ",
 				"singular" : " is ",
+				"you"      : "You",
 				"text"     : "critical health."
 			},
 			"fr" : {
@@ -278,6 +284,7 @@
 				"several"  : "Several players",
 				"plural"   : " are ",
 				"singular" : " is ",
+				"you"      : "You",
 				"text"     : "critical health."
 			},
 			"kr" : {
@@ -285,6 +292,7 @@
 				"several"  : "Several players",
 				"plural"   : " are ",
 				"singular" : " is ",
+				"you"      : "You",
 				"text"     : "critical health."
 			}
 		},

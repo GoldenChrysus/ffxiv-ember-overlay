@@ -87,8 +87,10 @@ class LocalizationService {
 		return SettingsLocales.misc.tts[key][language];
 	}
 
-	getTTSTextData(type) {
-		return OverlayLocales.tts[type][this.getTTSLanguage()];
+	getTTSTextData(type, current_state) {
+		let language = (current_state) ? current_state.settings_data.getSetting("tts.language") : this.getTTSLanguage();
+
+		return OverlayLocales.tts[type][language];
 	}
 
 	getOverlayText(key, language) {

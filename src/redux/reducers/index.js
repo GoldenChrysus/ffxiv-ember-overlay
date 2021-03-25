@@ -227,7 +227,9 @@ function createNewState(state, full_key, action) {
 	}
 
 	if (["settings", "settings.tts.rules"].indexOf(full_key) !== -1) {
-		TTSService.updateRules(action.payload);
+		let rules = (full_key === "settings") ? action.payload.tts.rules : action.payload;
+
+		TTSService.updateRules(rules);
 	}
 
 	return new_state;

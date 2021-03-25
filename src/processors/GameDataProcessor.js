@@ -229,7 +229,7 @@ class GameDataProcessor  {
 				rank++;
 
 				if (valid_player_names.includes(player.name)) {
-					TTSService.processRank(rank, "dps");
+					TTSService.processRank(rank, "dps", current_state);
 					break;
 				}
 			}
@@ -243,7 +243,7 @@ class GameDataProcessor  {
 				rank++;
 
 				if (valid_player_names.includes(player.name)) {
-					TTSService.processRank(rank, "hps");
+					TTSService.processRank(rank, "hps", current_state);
 					break;
 				}
 			}
@@ -257,7 +257,7 @@ class GameDataProcessor  {
 				rank++;
 
 				if (valid_player_names.includes(player.name)) {
-					TTSService.processRank(rank, "tps");
+					TTSService.processRank(rank, "tps", current_state);
 					break;
 				}
 			}
