@@ -97,7 +97,6 @@ class Table extends React.Component {
 	}
 
 	syncData() {
-		console.log(this.data);
 		this.props.onChange(undefined, this.data);
 	}
 

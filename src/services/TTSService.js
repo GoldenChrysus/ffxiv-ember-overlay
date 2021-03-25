@@ -86,7 +86,7 @@ class TTSService {
 		if (
 			critical_threshold &&
 			player_data.hp_percent < critical_threshold &&
-			!this.state.critical.indexOf(player_data.name) !== -1
+			this.state.critical.indexOf(player_data.name) === -1
 		) {
 			this.state.critical.push(player_data.name);
 
