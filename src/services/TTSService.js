@@ -180,7 +180,7 @@ class TTSService {
 				locale_data
 					.text
 					.replace("{{players}}", players)
-					.replace("{{conector}}", connector)
+					.replace("{{connector}}", connector)
 			);
 
 			this.queue.critical = {};
