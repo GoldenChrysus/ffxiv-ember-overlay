@@ -7,6 +7,10 @@ class LocalizationService {
 		return store.getState().settings.interface.language;
 	}
 
+	getTTSLanguage() {
+		return store.getState().settings.tts.language;
+	}
+
 	getPlayerDataTitle(key, type, ignore_custom) {
 		let custom = (ignore_custom) ? {} : store.getState().settings.custom.metric_names;
 
@@ -81,6 +85,10 @@ class LocalizationService {
 		language = language || this.getLanguage();
 
 		return SettingsLocales.misc.tts[key][language];
+	}
+
+	getTTSTextData(type) {
+		return OverlayLocales.tts[type][this.getTTSLanguage()];
 	}
 
 	getOverlayText(key, language) {

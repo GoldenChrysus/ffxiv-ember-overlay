@@ -1,5 +1,6 @@
 import store from "../redux/store";
 import Constants from "../constants/index";
+import LocalizationService from "./LocalizationService";
 import UsageService from "./UsageService";
 
 class TTSService {
@@ -112,7 +113,9 @@ class TTSService {
 		if (rank === 1 & !this.state.top[type]) {
 			this.state.top[type] = true;
 
-			this.queue.top.dps = `You are top ${type}.`;
+			let locale_data = LocalizationService.getTTSTextData("top");
+
+			this.queue.top.dps = locale_data.text.replace("{{metric}}", type.toUpperCase());
 		} else if (rank !== 1 && this.state.top[type]) {
 			this.state.top[type] = false;
 		}
@@ -150,9 +153,15 @@ class TTSService {
 		this.state.encounter = active;
 
 		if (UsageService.usingEncounterTTS(current_state.settings_data, type)) {
-			let title = (game.Encounter) ? game.Encounter.title : "Encounter";
+			let locale_data = TTSService.getTTSTextData("encounter");
+			let title       = (game.Encounter) ? game.Encounter.title : locale_data.default_title;
 
-			this.queue.encounter.push(`${title} has ${type}ed.`);
+			this.queue.encounter.push(
+				locale_data
+					.text
+					.replace("{{encounter}}", title)
+					.replace("{{verb}}", locale_data[type])
+			);
 		}
 	}
 
@@ -160,13 +169,19 @@ class TTSService {
 		let messages = [];
 
 		if (Object.keys(this.queue.critical).length) {
-			let keys      = Object.keys(this.queue.critical);
-			let players   = (keys.length <= 2)
-				? keys.join(" and ")
-				: "Several players";
-			let connector = (keys.length > 1) ? "are" : "is";
+			let locale_data = TTSService.getTTSTextData("critical");
+			let keys        = Object.keys(this.queue.critical);
+			let players     = (keys.length <= 2)
+				? keys.join(locale_data.joiner)
+				: locale_data.several;
+			let connector   = (keys.length > 1) ? locale_data.plural : locale_data.singular;
 
-			messages.push(`${players} ${connector} critical health.`);
+			messages.push(
+				locale_data
+					.text
+					.replace("{{players}}", players)
+					.replace("{{conector}}", connector)
+			);
 
 			this.queue.critical = {};
 		}
@@ -178,9 +193,10 @@ class TTSService {
 		}
 
 		if (Object.keys(this.queue.aggro).length) {
-			let monsters = Object.keys(this.queue.aggro).join(", ");
+			let locale_data = TTSService.getTTSTextData("aggro");
+			let monsters    = Object.keys(this.queue.aggro).join(locale_data.joiner);
 
-			messages.push(`Received aggro from ${monsters}.`);
+			messages.push(locale_data.text.replace("{{monsters}}", monsters));
 
 			this.queue.aggro = {};
 		}

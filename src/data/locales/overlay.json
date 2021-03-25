@@ -350,44 +350,52 @@
 		},
 		"encounter" : {
 			"en" : {
-				"start" : "started",
-				"end"   : "ended",
-				"text"  : "{{encounter}} has {{verb}}."
+				"start"         : "started",
+				"end"           : "ended",
+				"default_title" : "Encounter",
+				"text"          : "{{encounter}} has {{verb}}."
 			},
 			"pt" : {
-				"start" : "started",
-				"end"   : "ended",
-				"text"  : "{{encounter}} has {{verb}}."
+				"start"         : "started",
+				"end"           : "ended",
+				"default_title" : "Encontro",
+				"text"          : "{{encounter}} has {{verb}}."
 			},
 			"cn" : {
-				"start" : "started",
-				"end"   : "ended",
-				"text"  : "{{encounter}} has {{verb}}."
+				"start"         : "started",
+				"end"           : "ended",
+				"default_title" : "战斗",
+				"text"          : "{{encounter}} has {{verb}}."
 			},
 			"jp" : {
-				"start" : "始まりました",
-				"end"   : "終わりました",
-				"text"  : "{{encounter}}が{{verb}}."
+				"start"         : "始まりました",
+				"end"           : "終わりました",
+				"default_title" : "戦闘",
+				"text"          : "{{encounter}}が{{verb}}."
 			},
 			"de" : {
-				"start" : "started",
-				"end"   : "ended",
-				"text"  : "{{encounter}} has {{verb}}."
+				"start"         : "started",
+				"end"           : "ended",
+				"default_title" : "Kampf",
+				"text"          : "{{encounter}} has {{verb}}."
 			},
 			"es" : {
-				"start" : "started",
-				"end"   : "ended",
-				"text"  : "{{encounter}} has {{verb}}."
+				"start"         : "started",
+				"end"           : "ended",
+				"default_title" : "Encuentro",
+				"text"          : "{{encounter}} has {{verb}}."
 			},
 			"fr" : {
-				"start" : "started",
-				"end"   : "ended",
-				"text"  : "{{encounter}} has {{verb}}."
+				"start"         : "started",
+				"end"           : "ended",
+				"default_title" : "Combat",
+				"text"          : "{{encounter}} has {{verb}}."
 			},
 			"kr" : {
-				"start" : "started",
-				"end"   : "ended",
-				"text"  : "{{encounter}} has {{verb}}."
+				"start"         : "started",
+				"end"           : "ended",
+				"default_title" : "전투",
+				"text"          : "{{encounter}} has {{verb}}."
 			}
 		}
 	}
