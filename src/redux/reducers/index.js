@@ -226,8 +226,8 @@ function createNewState(state, full_key, action) {
 		ThemeService.setTheme({minimal : minimal_theme});
 	}
 
-	if (full_key === "settings") {
-		TTSService.updateRules(action.payload.tts);
+	if (["settings", "settings.tts.rules"].indexOf(full_key) !== -1) {
+		TTSService.updateRules(action.payload);
 	}
 
 	return new_state;

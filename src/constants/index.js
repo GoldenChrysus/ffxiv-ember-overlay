@@ -260,6 +260,19 @@ const PlayerMetricsSummable = [
 	"heals"
 ];
 
+const TTSRules = [
+	"critical.tank",
+	"critical.dps",
+	"critical.heal",
+	"critical.all",
+	"aggro",
+	"top.dps",
+	"top.hps",
+	"top.tps",
+	"encounter.start",
+	"encounter.end"
+];
+
 export default {
 	GameJobs,
 	PlayerDataCustomValues,
@@ -268,5 +281,6 @@ export default {
 	PlayerMetricFractionRules,
 	PlayerMetricsSummable,
 	MonsterDataCustomDataValues,
-	MonsterDataTitles
+	MonsterDataTitles,
+	TTSRules
 };

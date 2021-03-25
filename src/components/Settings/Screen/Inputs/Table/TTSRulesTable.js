@@ -154,7 +154,7 @@ class TTSRulesTable extends Table {
 						let key = `${rule_type}.${rule_key}`;
 			
 						rows[key] = this.createRow({
-							select_text  : "na", //this.props.options[key].text,
+							select_text  : LocalizationService.getTTSRuleTitle(key),
 							select_value : key,
 							rule_type    : rule_type,
 							rule_key     : rule_key,
@@ -174,7 +174,7 @@ class TTSRulesTable extends Table {
 					}
 
 					rows[rule_type] = this.createRow({
-						select_text  : "ag", // this.props.options.aggro.text,
+						select_text  : LocalizationService.getTTSRuleTitle(rule_type),
 						select_value : rule_type,
 						rule_type    : rule_type,
 						rule_key     : "",

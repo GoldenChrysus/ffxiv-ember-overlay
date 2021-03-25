@@ -122,7 +122,7 @@ class Section extends React.Component {
 					break;
 
 				case "TTSRulesTable":
-					let rule_options = setting_data.options;
+					let rule_options = setting_data.options();
 
 					setting = <TTSRulesTable value={value} options={rule_options} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 

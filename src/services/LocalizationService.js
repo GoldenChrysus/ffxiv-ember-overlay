@@ -62,6 +62,27 @@ class LocalizationService {
 		return title[type];
 	}
 
+	getTTSRuleOptions() {
+		let language = this.getLanguage();
+		let options  = [];
+
+		for (let data_key of Constants.TTSRules) {
+			options.push({
+				key   : data_key,
+				value : data_key,
+				text  : this.getTTSRuleTitle(data_key, language)
+			});
+		}
+
+		return options;
+	}
+
+	getTTSRuleTitle(key, language) {
+		language = language || this.getLanguage();
+
+		return SettingsLocales.misc.tts[key][language];
+	}
+
 	getOverlayText(key, language) {
 		if (!language) {
 			language = this.getLanguage();

@@ -228,5 +228,167 @@
 		"es" : "Paste",
 		"fr" : "Paste",
 		"kr" : "붙여넣기"
+	},
+	"tts" : {
+		"critical" : {
+			"en" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"text"     : "{{players}}{{connector}}critical health."
+			},
+			"pt" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"text"     : "critical health."
+			},
+			"cn" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"text"     : "critical health."
+			},
+			"jp" : {
+				"joiner"   : "と",
+				"several"  : "多くの人",
+				"plural"   : "は",
+				"singular" : "は",
+				"text"     : "{{players}}{{connector}}クリティカルHPです."
+			},
+			"de" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"text"     : "critical health."
+			},
+			"es" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"text"     : "critical health."
+			},
+			"fr" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"text"     : "critical health."
+			},
+			"kr" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"text"     : "critical health."
+			}
+		},
+		"aggro" : {
+			"en" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			},
+			"pt" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			},
+			"cn" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			},
+			"jp" : {
+				"joiner" : "と",
+				"text"   : "{{monsters}}はあなたと戦います."
+			},
+			"de" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			},
+			"es" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			},
+			"fr" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			},
+			"kr" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			}
+		},
+		"top" : {
+			"en" : {
+				"text" : "You are top {{metric}}."
+			},
+			"pt" : {
+				"text" : "You are top {{metric}}."
+			},
+			"cn" : {
+				"text" : "You are top {{metric}}."
+			},
+			"jp" : {
+				"text" : "あなたは最高な{{metric}}です."
+			},
+			"de" : {
+				"text" : "You are top {{metric}}."
+			},
+			"es" : {
+				"text" : "You are top {{metric}}."
+			},
+			"fr" : {
+				"text" : "You are top {{metric}}."
+			},
+			"kr" : {
+				"text" : "You are top {{metric}}."
+			}
+		},
+		"encounter" : {
+			"en" : {
+				"start" : "started",
+				"end"   : "ended",
+				"text"  : "{{encounter}} has {{verb}}."
+			},
+			"pt" : {
+				"start" : "started",
+				"end"   : "ended",
+				"text"  : "{{encounter}} has {{verb}}."
+			},
+			"cn" : {
+				"start" : "started",
+				"end"   : "ended",
+				"text"  : "{{encounter}} has {{verb}}."
+			},
+			"jp" : {
+				"start" : "始まりました",
+				"end"   : "終わりました",
+				"text"  : "{{encounter}}が{{verb}}."
+			},
+			"de" : {
+				"start" : "started",
+				"end"   : "ended",
+				"text"  : "{{encounter}} has {{verb}}."
+			},
+			"es" : {
+				"start" : "started",
+				"end"   : "ended",
+				"text"  : "{{encounter}} has {{verb}}."
+			},
+			"fr" : {
+				"start" : "started",
+				"end"   : "ended",
+				"text"  : "{{encounter}} has {{verb}}."
+			},
+			"kr" : {
+				"start" : "started",
+				"end"   : "ended",
+				"text"  : "{{encounter}} has {{verb}}."
+			}
+		}
 	}
 }

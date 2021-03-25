@@ -791,6 +791,109 @@
 			}
 		},
 
+		"tts" : {
+			"critical.tank" : {
+				"en" : "A tank's HP is below:",
+				"pt" : "A tank's HP is below:",
+				"cn" : "A tank's HP is below:",
+				"jp" : "A tank's HP is below:",
+				"de" : "A tank's HP is below:",
+				"es" : "A tank's HP is below:",
+				"fr" : "A tank's HP is below:",
+				"kr" : "A tank's HP is below:"
+			},
+			"critical.dps" : {
+				"en" : "A DPS' HP is below:",
+				"pt" : "A DPS' HP is below:",
+				"cn" : "A DPS' HP is below:",
+				"jp" : "A DPS' HP is below:",
+				"de" : "A DPS' HP is below:",
+				"es" : "A DPS' HP is below:",
+				"fr" : "A DPS' HP is below:",
+				"kr" : "A DPS' HP is below:"
+			},
+			"critical.heal" : {
+				"en" : "A healer's HP is below:",
+				"pt" : "A healer's HP is below:",
+				"cn" : "A healer's HP is below:",
+				"jp" : "A healer's HP is below:",
+				"de" : "A healer's HP is below:",
+				"es" : "A healer's HP is below:",
+				"fr" : "A healer's HP is below:",
+				"kr" : "A healer's HP is below:"
+			},
+			"critical.all" : {
+				"en" : "Anyone's HP is below:",
+				"pt" : "Anyone's HP is below:",
+				"cn" : "Anyone's HP is below:",
+				"jp" : "Anyone's HP is below:",
+				"de" : "Anyone's HP is below:",
+				"es" : "Anyone's HP is below:",
+				"fr" : "Anyone's HP is below:",
+				"kr" : "Anyone's HP is below:"
+			},
+			"aggro" : {
+				"en" : "You obtain aggro",
+				"pt" : "You obtain aggro",
+				"cn" : "You obtain aggro",
+				"jp" : "You obtain aggro",
+				"de" : "You obtain aggro",
+				"es" : "You obtain aggro",
+				"fr" : "You obtain aggro",
+				"kr" : "You obtain aggro"
+			},
+			"top.dps" : {
+				"en" : "You obtain top DPS",
+				"pt" : "You obtain top DPS",
+				"cn" : "You obtain top DPS",
+				"jp" : "You obtain top DPS",
+				"de" : "You obtain top DPS",
+				"es" : "You obtain top DPS",
+				"fr" : "You obtain top DPS",
+				"kr" : "You obtain top DPS"
+			},
+			"top.hps" : {
+				"en" : "You obtain top HPS",
+				"pt" : "You obtain top HPS",
+				"cn" : "You obtain top HPS",
+				"jp" : "You obtain top HPS",
+				"de" : "You obtain top HPS",
+				"es" : "You obtain top HPS",
+				"fr" : "You obtain top HPS",
+				"kr" : "You obtain top HPS"
+			},
+			"top.tps" : {
+				"en" : "You obtain top DTPS",
+				"pt" : "You obtain top DTPS",
+				"cn" : "You obtain top DTPS",
+				"jp" : "You obtain top DTPS",
+				"de" : "You obtain top DTPS",
+				"es" : "You obtain top DTPS",
+				"fr" : "You obtain top DTPS",
+				"kr" : "You obtain top DTPS"
+			},
+			"encounter.start" : {
+				"en" : "An encounter starts",
+				"pt" : "An encounter starts",
+				"cn" : "An encounter starts",
+				"jp" : "An encounter starts",
+				"de" : "An encounter starts",
+				"es" : "An encounter starts",
+				"fr" : "An encounter starts",
+				"kr" : "An encounter starts"
+			},
+			"encounter.end" : {
+				"en" : "An encounter ends",
+				"pt" : "An encounter ends",
+				"cn" : "An encounter ends",
+				"jp" : "An encounter ends",
+				"de" : "An encounter ends",
+				"es" : "An encounter ends",
+				"fr" : "An encounter ends",
+				"kr" : "An encounter ends"
+			}
+		},
+
 		"metric" : {
 			"en" : "Metric",
 			"pt" : "Metric",

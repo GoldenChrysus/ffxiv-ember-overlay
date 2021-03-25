@@ -8,6 +8,7 @@ class TTSService {
 		critical           : [],
 		aggro              : [],
 		combatants         : {},
+		encounter          : false,
 		valid_player_names : [],
 		rules              : {}
 	};
@@ -25,8 +26,8 @@ class TTSService {
 		);
 	}
 
-	updateRules(tts) {
-		this.state.rules = tts.rules;
+	updateRules(rules) {
+		this.state.rules = rules;
 	}
 
 	updateCombatants(combatants, valid_player_names) {
@@ -137,8 +138,22 @@ class TTSService {
 		}
 	}
 
-	processEncounter(encounter, type) {
-		this.queue.encounter.push(`${encounter} has ${type}ed.`);
+	processEncounter(game, current_state) {
+		let active = ([true, "true"].indexOf(game.isActive) !== -1);
+
+		if (active === this.state.encounter) {
+			return false;
+		}
+
+		let type = (active) ? "start" : "end";
+
+		this.state.encounter = active;
+
+		if (UsageService.usingEncounterTTS(current_state.settings_data, type)) {
+			let title = (game.Encounter) ? game.Encounter.title : "Encounter";
+
+			this.queue.encounter.push(`${title} has ${type}ed.`);
+		}
 	}
 
 	processQueue() {

@@ -215,6 +215,8 @@ class GameDataProcessor  {
 			TTSService.updateCombatants(data.Combatant, valid_player_names);
 		}
 
+		TTSService.processEncounter(data, current_state);
+
 		if (!data.Encounter) {
 			return;
 		}

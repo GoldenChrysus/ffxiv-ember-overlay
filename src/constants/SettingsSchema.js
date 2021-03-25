@@ -59,58 +59,6 @@ const decimal_options  = [
 		text  : "2"
 	},
 ];
-const tts_rule_options = [
-	{
-		key   : "critical.tank",
-		value : "critical.tank",
-		text  : "A tank's HP is below:"
-	},
-	{
-		key   : "critical.dps",
-		value : "critical.dps",
-		text  : "A DPS' HP is below:"
-	},
-	{
-		key   : "critical.heal",
-		value : "critical.heal",
-		text  : "A healer's HP is below:"
-	},
-	{
-		key   : "critical.all",
-		value : "critical.all",
-		text  : "Anyone's HP is below:"
-	},
-	{
-		key   : "aggro",
-		value : "aggro",
-		text  : "You obtain aggro"
-	},
-	{
-		key   : "top.dps",
-		value : "top.dps",
-		text  : "You obtain top DPS"
-	},
-	{
-		key   : "top.hps",
-		value : "top.hps",
-		text  : "You obtain top HPS"
-	},
-	{
-		key   : "top.tps",
-		value : "top.tps",
-		text  : "You obtain top DTPS"
-	},
-	{
-		key   : "encounter.start",
-		value : "encounter.start",
-		text  : "An encounter starts"
-	},
-	{
-		key   : "encounter.end",
-		value : "encounter.end",
-		text  : "An encounter ends"
-	},
-];
 
 const SettingsSchema = {
 	sections : [
@@ -276,7 +224,7 @@ const SettingsSchema = {
 						{
 							key_path : "tts.rules",
 							type     : "TTSRulesTable",
-							options  : tts_rule_options,
+							options  : () => LocalizationService.getTTSRuleOptions(),
 							value    : function() {
 								return this.props.settings.tts.rules;
 							}
