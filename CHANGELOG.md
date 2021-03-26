@@ -2,13 +2,13 @@
 
 ## 0.24.0-alpha
 
-**Released: [in development]**
+**Released: [in staging]**
 
 ### Bug Fixes
 - Resolved issue where overlay would sometimes crash when restoring settings from OverlayPlugin
 
 ### Features
-- TODO: TTS alerts
+- Add text-to-speech alerts at Settings > Text to Speech
 - Added numeric-only max hit metric
 
 ### UI Changes
