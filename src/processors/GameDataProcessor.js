@@ -222,7 +222,7 @@ class GameDataProcessor  {
 		}
 
 		if (UsageService.usingTopDPSTTS(current_state.settings_data)) {
-			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "encdps");
+			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "encdps", current_state);
 			let rank   = 0;
 
 			for (let player of sorted) {
@@ -236,7 +236,7 @@ class GameDataProcessor  {
 		}
 
 		if (UsageService.usingTopHPSTTS(current_state.settings_data)) {
-			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enchps");
+			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enchps", current_state);
 			let rank   = 0;
 
 			for (let player of sorted) {
@@ -250,7 +250,7 @@ class GameDataProcessor  {
 		}
 
 		if (UsageService.usingTopTPSTTS(current_state.settings_data)) {
-			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enctps");
+			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enctps", current_state);
 			let rank   = 0;
 
 			for (let player of sorted) {

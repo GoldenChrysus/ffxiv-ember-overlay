@@ -116,17 +116,17 @@ class TTSService {
 	processAggro(data) {
 		let mobs = [];
 
-		for (let monster of data.AggroList) {
+		for (let monster of data) {
 			if (monster.Target && monster.Target.isMe) {
 				mobs.push(monster.Name);
 			}
 		}
 
-		let old_mobs = this.aggro;
+		let old_mobs = this.state.aggro;
 
-		this.aggro = mobs;
+		this.state.aggro = mobs;
 
-		for (let mob of this.aggro) {
+		for (let mob of this.state.aggro) {
 			if (old_mobs.indexOf(mob) === -1) {
 				this.queue.aggro[mob] = true;
 			}

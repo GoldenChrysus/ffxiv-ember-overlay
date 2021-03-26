@@ -131,6 +131,14 @@ class SocketService {
 		this.send("overlayAPI", this.id, "RequestEnd");
 	}
 
+	tts(messages) {
+		if (!this.is_ngld) {
+			return;
+		}
+
+		this.callHandler(this.createMessage("say", "text", messages));
+	}
+
 	resetCallback() {
 		this.socket.onmessage = MessageProcessor.processMessage;
 	}

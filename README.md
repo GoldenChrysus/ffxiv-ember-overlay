@@ -71,9 +71,9 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 #### Other Languages Available
 
-   - [日本語でOnlinegaming.life](https://onlinegaming.life/ff14/ember-overlay/)
+   - [日本語：Onlinegaming.life](https://onlinegaming.life/ff14/ember-overlay/)
 
-To use this overlay skin, you need Advanced Combat Tracker (ACT) and OverlayPlugin. Please follow the guide based on your situation:
+To use this overlay, you need Advanced Combat Tracker (ACT) and OverlayPlugin. Please follow the guide based on your situation:
 
 ### You don't have ACT or OverlayPlugin
 
