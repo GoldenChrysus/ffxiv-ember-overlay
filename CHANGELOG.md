@@ -2,13 +2,13 @@
 
 ## 0.24.0-alpha
 
-**Released: [in staging]**
+**Released: 2021-03-28**
 
 ### Bug Fixes
 - Resolved issue where overlay would sometimes crash when restoring settings from OverlayPlugin
 
 ### Features
-- Add text-to-speech alerts at Settings > Text to Speech
+- Added text-to-speech alerts at Settings > Text to Speech
 - Added numeric-only max hit metric
 
 ### UI Changes
@@ -23,7 +23,7 @@
 
 ## 0.23.3-alpha
 
-**Released: 2020-01-02**
+**Released: 2021-01-02**
 
 ### Bug Fixes
 - N/A
