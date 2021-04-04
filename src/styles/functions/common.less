@@ -1,4 +1,4 @@
-.setThemeStyle(@defaultTheme: {}, @lightTheme: {}, @minimalTheme: {}) {
+.setThemeStyle(@defaultTheme: {}, @lightTheme: {}, @minimalTheme: {}, @spellsMode: {}) {
 	& { @defaultTheme(); }
 
 	body.light & {
@@ -7,5 +7,9 @@
 
 	body.minimal & {
 		@minimalTheme();
+	}
+
+	body.mode-spells & {
+		@spellsMode();
 	}
 }

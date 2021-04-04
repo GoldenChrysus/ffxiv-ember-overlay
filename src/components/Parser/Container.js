@@ -15,6 +15,10 @@ import AggroTable from "./AggroTable";
 import TTSService from "../../services/TTSService";
 
 class Container extends React.Component {
+	no_footer_modes = [
+		"spells"
+	];
+
 	componentDidMount() {
 		TTSService.start();
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
@@ -28,23 +32,36 @@ class Container extends React.Component {
 
 		let content;
 
-		switch (viewing) {
-			case "tables":
-				if (this.props.settings.intrinsic.table_type !== "aggro") {
-					content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
-				} else {
-					content = <AggroTable monsters={this.props.internal.aggro}/>
+		switch (this.props.internal.mode) {
+			case "stats":
+				switch (viewing) {
+					case "tables":
+						if (this.props.settings.intrinsic.table_type !== "aggro") {
+							content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
+						} else {
+							content = <AggroTable monsters={this.props.internal.aggro}/>
+						}
+
+						break;
+
+					case "player":
+						content = <PlayerDetail player={this.props.internal.detail_player} players={this.props.internal.game.Combatant} encounter={encounter}/>;
+
+						break;
+
+					case "import":
+						content = <Import/>;
+
+						break;
+
+					default:
+						break;
 				}
 
 				break;
 
-			case "player":
-				content = <PlayerDetail player={this.props.internal.detail_player} players={this.props.internal.game.Combatant} encounter={encounter}/>;
-
-				break;
-
-			case "import":
-				content = <Import/>;
+			case "spells":
+				content = "";
 
 				break;
 
@@ -54,7 +71,14 @@ class Container extends React.Component {
 
 		let footer = [];
 
-		if (!this.props.settings.intrinsic.collapsed || viewing !== "tables" || this.props.settings.interface.footer_when_collapsed) {
+		if (
+			this.no_footer_modes.indexOf(this.props.internal.mode) === -1 && 
+			(
+				!this.props.settings.intrinsic.collapsed ||
+				viewing !== "tables" ||
+				this.props.settings.interface.footer_when_collapsed
+			)
+		) {
 			footer = [
 					<div className="split" key="above-footer-split"></div>,
 					<Footer key="parser-footer"/>

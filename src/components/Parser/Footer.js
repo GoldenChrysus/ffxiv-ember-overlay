@@ -77,14 +77,13 @@ class Footer extends React.Component {
 			}
 		};
 		let actions    = function() {
-			let version_notice = (self.props.new_version && !window.obsstudio) ? "notice" : "";
-			let actions        = [
+			let actions = [
 				<ContextMenuTrigger id="encounter-history-menu" key="encounter-history-trigger" ref={c => trigger = c} attributes={{className: "icon-container"}} holdToDisplay={-1}>
 					<IconButton icon="history" key="encounter-history-button" no_container={true} onClick={toggleMenu}/>
 				</ContextMenuTrigger>,
 				<IconButton icon="eye slash" title={LocalizationService.getOverlayText("blur_names")} key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
 				<IconButton icon="cut" title={LocalizationService.getOverlayText("split_encounter")} key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
-				<IconButton icon="cog" title={LocalizationService.getOverlayText("settings")} key="settings" class={version_notice} onClick={SettingsService.openSettingsWindow}/>
+				<IconButton icon="cog" title={LocalizationService.getOverlayText("settings")} key="settings" class={SettingsService.getNoticeClass()} onClick={SettingsService.openSettingsWindow}/>
 			];
 
 			return actions;
@@ -143,7 +142,6 @@ const mapStateToProps = (state) => {
 		viewing              : state.internal.viewing,
 		overlayplugin        : state.internal.overlayplugin,
 		overlayplugin_author : state.internal.overlayplugin_author,
-		new_version          : state.internal.new_version,
 		encounter            : state.internal.game.Encounter,
 		show_dps             : state.settings.interface.footer_dps
 	};

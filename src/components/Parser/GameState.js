@@ -4,19 +4,31 @@ import { changeCollapse } from "../../redux/actions/index";
 
 import IconButton from "./Container/IconButton";
 import LocalizationService from "../../services/LocalizationService";
+import SettingsService from "../../services/SettingsService";
 
 class GameState extends React.Component {
 	render() {
 		let encounter_class = (this.props.active) ? "active" : "inactive";
 		let rank_class      = (this.props.show_rank) ? "" : "hidden";
 		let rank            = (this.props.rank === "N/A") ? LocalizationService.getOverlayText("not_applicable") : this.props.rank;
-		let collapse_item   = () => {
-			let icon = (this.props.collapsed) ? "expand" : "compress";
-			let data = { state: !this.props.collapsed };
+		let button          = () => {
+			switch (this.props.mode) {
+				case "stats":
+					let icon = (this.props.collapsed) ? "expand" : "compress";
+					let data = { state: !this.props.collapsed };
 
-			return(
-				<IconButton icon={icon} title={LocalizationService.getOverlayText("toggle_collapse")} key="toggle-collapsed" onClick={this.changeCollapse.bind(this, data)}/>
-			);
+					return(
+						<IconButton icon={icon} title={LocalizationService.getOverlayText("toggle_collapse")} key="toggle-collapsed" onClick={this.changeCollapse.bind(this, data)}/>
+					);
+
+				case "spells":
+					return(
+						<IconButton icon="cog" title={LocalizationService.getOverlayText("settings")} key="settings" class={SettingsService.getNoticeClass()} onClick={SettingsService.openSettingsWindow}/>
+					);
+
+				default:
+					break;
+			}
 		};
 
 		let encounter       = this.props.encounter;
@@ -41,7 +53,7 @@ class GameState extends React.Component {
 				<span className={encounter_class}>{encounter_state}</span>
 				<span>
 					<span className={rank_class}>{rank}</span>
-					{collapse_item()}
+					{button()}
 				</span>
 			</div>
 		);
@@ -62,7 +74,8 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		collapsed : state.settings.intrinsic.collapsed
+		collapsed : state.settings.intrinsic.collapsed,
+		mode      : state.internal.mode,
 	};
 };
 

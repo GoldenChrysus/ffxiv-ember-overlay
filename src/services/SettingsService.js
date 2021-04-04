@@ -20,6 +20,10 @@ class SettingsService {
 
 		store.dispatch(updateState(new_data));
 	}
+
+	getNoticeClass() {
+		return (!window.obsstudio && store.getState().internal.new_version) ? "notice" : "";
+	}
 }
 
 export default new SettingsService();
