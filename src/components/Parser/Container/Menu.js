@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { ContextMenu, MenuItem } from "react-contextmenu";
-import { changeCollapse, loadSampleGameData, clearGameData, changeViewing, changeDetailPlayer } from "../../../redux/actions/index";
+import { changeCollapse, loadSampleGameData, clearGameData, changeViewing, changeDetailPlayer, changeMode } from "../../../redux/actions/index";
 
 import SettingsService from "../../../services/SettingsService";
 import LocalizationService from "../../../services/LocalizationService";
@@ -52,6 +52,13 @@ class Menu extends React.Component {
 					<MenuItem onClick={SettingsService.openSettingsImport}>
 						{LocalizationService.getOverlayText("import")}
 					</MenuItem>
+					<div className="split"></div>
+					<MenuItem onClick={this.changeMode.bind(this, "stats")}>
+						Mode: Parser
+					</MenuItem>
+					<MenuItem onClick={this.changeMode.bind(this, "spells")}>
+						Mode: Spell Timer
+					</MenuItem>
 				</div>
 			</ContextMenu>
 		);
@@ -69,6 +76,10 @@ class Menu extends React.Component {
 		this.props.clearGameData();
 	}
 
+	changeMode(mode) {
+		this.props.changeMode(mode);
+	}
+
 	changeViewing(type, player) {
 		if (!player) {
 			return;
@@ -81,7 +92,7 @@ class Menu extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		changeCollapse      : (data) => {
+		changeCollapse : (data) => {
 			dispatch(changeCollapse(data));
 		},
 
@@ -89,17 +100,21 @@ const mapDispatchToProps = (dispatch) => {
 			dispatch(loadSampleGameData());
 		},
 
-		clearGameData      : () => {
+		clearGameData : () => {
 			dispatch(clearGameData());
 		},
 
-		changeViewing      : (data) => {
+		changeViewing : (data) => {
 			dispatch(changeViewing(data));
 		},
 
 		changeDetailPlayer : (data) => {
 			dispatch(changeDetailPlayer(data));
-		}
+		},
+
+		changeMode : (data) => {
+			dispatch(changeMode(data));
+		},
 	}
 };
 
@@ -109,7 +124,7 @@ const mapStateToProps = (state) => {
 		language       : state.settings.interface.language,
 		collapsed      : state.settings.intrinsic.collapsed,
 		overlayplugin  : state.internal.overlayplugin,
-		encounter      : state.internal.game.Encounter
+		encounter      : state.internal.game.Encounter,
 	};
 };
 

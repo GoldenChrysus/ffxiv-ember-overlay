@@ -44,7 +44,15 @@ export function parseParty(payload) {
 		type : "parseParty",
 		key  : "internal.party",
 		payload
-	}
+	};
+}
+
+export function changeMode(payload) {
+	return {
+		type : "changeMode",
+		key  : "internal.mode",
+		payload
+	};
 }
 
 export function parseLogLine(payload) {
@@ -52,7 +60,7 @@ export function parseLogLine(payload) {
 		type : "parseLogLine",
 		key  : false,
 		payload
-	}
+	};
 }
 
 export function updateSetting(payload) {

@@ -11,8 +11,10 @@ import SampleGameData from "../../constants/SampleGameData";
 import SampleHistoryData from "../../constants/SampleHistoryData";
 import SampleAggroData from "../../constants/SampleAggroData";
 import TTSService from "../../services/TTSService";
+import TabSyncService from "../../services/TabSyncService";
 
 let overlayplugin_service = new OverlayPluginService();
+let uuid                  = (window.OverlayPluginApi) ? window.OverlayPluginApi.overlayUuid : "browser";
 
 const initial_state = {
 	plugin_service : new PluginService(),
@@ -33,6 +35,7 @@ const initial_state = {
 		overlayplugin        : overlayplugin_service.isOverlayPlugin(),
 		overlayplugin_author : overlayplugin_service.getAuthor(),
 		new_version          : false,
+		mode                 : localStorage.getItem(`${uuid}-mode`) || "stats",
 	},
 	settings : {}
 };
@@ -40,6 +43,8 @@ const initial_state = {
 function rootReducer(state, action) {
 	if (!state) {
 		state = initial_state;
+
+		ThemeService.setMode(state.internal.mode);
 	}
 
 	let new_state = false;
@@ -64,7 +69,7 @@ function rootReducer(state, action) {
 				new_state = createNewState(new_state, full_key, setting);
 			}
 
-			new_state.settings_data.saveSettings(true);
+			new_state.settings_data.saveSettings(true).then(() => TabSyncService.saveAction(action));
 			break;
 
 		case "parseGameData":
@@ -180,6 +185,12 @@ function rootReducer(state, action) {
 
 			break;
 
+		case "changeMode":
+			new_state = createNewState(state, full_key, action);
+
+			localStorage.setItem(`${uuid}-mode`, new_state.internal.mode);
+			break;
+
 		case "parseLogLine":
 			TTSService.processLogLine(action.payload, state);
 			break;
@@ -224,6 +235,10 @@ function createNewState(state, full_key, action) {
 		let minimal_theme = (full_key === "settings") ? action.payload.interface.minimal_theme : action.payload;
 
 		ThemeService.setTheme({minimal : minimal_theme});
+	}
+
+	if (full_key === "internal.mode") {
+		ThemeService.setMode(action.payload);
 	}
 
 	if (["settings", "settings.tts.rules"].indexOf(full_key) !== -1) {
