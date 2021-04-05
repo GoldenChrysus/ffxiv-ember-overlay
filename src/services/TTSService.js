@@ -180,6 +180,10 @@ class TTSService {
 				? keys.join(locale_data.joiner)
 				: locale_data.several;
 
+			if (has_you && locale_data.you_no_connector && keys.length === 1) {
+				connector = "";
+			}
+
 			messages.push(
 				locale_data
 					.text

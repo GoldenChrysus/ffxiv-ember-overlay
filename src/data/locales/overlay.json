@@ -240,12 +240,12 @@
 				"text"     : "{{players}}{{connector}}critical health."
 			},
 			"pt" : {
-				"joiner"   : " and ",
-				"several"  : "Several players",
-				"plural"   : " are ",
-				"singular" : " is ",
-				"you"      : "You",
-				"text"     : "critical health."
+				"joiner"   : " e ",
+				"several"  : "Vários jogadores",
+				"plural"   : " estão ",
+				"singular" : " está ",
+				"you"      : "Você",
+				"text"     : "{{players}}{{connector}}critical health."
 			},
 			"cn" : {
 				"joiner"   : " and ",
@@ -253,7 +253,7 @@
 				"plural"   : " are ",
 				"singular" : " is ",
 				"you"      : "You",
-				"text"     : "critical health."
+				"text"     : "{{players}}{{connector}}critical health."
 			},
 			"jp" : {
 				"joiner"   : "と",
@@ -264,12 +264,13 @@
 				"text"     : "{{players}}{{connector}}クリティカルHPです."
 			},
 			"de" : {
-				"joiner"   : " and ",
-				"several"  : "Several players",
-				"plural"   : " are ",
-				"singular" : " is ",
-				"you"      : "You",
-				"text"     : "critical health."
+				"joiner"           : " und ",
+				"several"          : "Etliche Spieler",
+				"plural"           : " sind ",
+				"singular"         : " ist ",
+				"you"              : "Du bist ",
+				"you_no_connector" : true,
+				"text"             : "{{players}}{{connector}}in einem kritischen Gesundheitszustand."
 			},
 			"es" : {
 				"joiner"   : " and ",
@@ -277,7 +278,7 @@
 				"plural"   : " are ",
 				"singular" : " is ",
 				"you"      : "You",
-				"text"     : "critical health."
+				"text"     : "{{players}}{{connector}}critical health."
 			},
 			"fr" : {
 				"joiner"   : " and ",
@@ -285,7 +286,7 @@
 				"plural"   : " are ",
 				"singular" : " is ",
 				"you"      : "You",
-				"text"     : "critical health."
+				"text"     : "{{players}}{{connector}}critical health."
 			},
 			"kr" : {
 				"joiner"   : " and ",
@@ -293,7 +294,7 @@
 				"plural"   : " are ",
 				"singular" : " is ",
 				"you"      : "You",
-				"text"     : "critical health."
+				"text"     : "{{players}}{{connector}}critical health."
 			}
 		},
 		"aggro" : {
@@ -311,11 +312,11 @@
 			},
 			"jp" : {
 				"joiner" : "と",
-				"text"   : "{{monsters}}はあなたと戦います."
+				"text"   : "{{monsters}}のタゲを取りました."
 			},
 			"de" : {
 				"joiner" : ", ",
-				"text"   : "You have aggro from {{monsters}}."
+				"text"   : "Du erhälst Aggro von {{monsters}}."
 			},
 			"es" : {
 				"joiner" : ", ",
@@ -335,7 +336,7 @@
 				"text" : "You are top {{metric}}."
 			},
 			"pt" : {
-				"text" : "You are top {{metric}}."
+				"text" : "Você está no topo do {{metric}}."
 			},
 			"cn" : {
 				"text" : "You are top {{metric}}."
@@ -344,7 +345,7 @@
 				"text" : "あなたは最高な{{metric}}です."
 			},
 			"de" : {
-				"text" : "You are top {{metric}}."
+				"text" : "Du bist Topreiter in {{metric}}."
 			},
 			"es" : {
 				"text" : "You are top {{metric}}."
@@ -364,10 +365,10 @@
 				"text"          : "{{encounter}} has {{verb}}."
 			},
 			"pt" : {
-				"start"         : "started",
-				"end"           : "ended",
+				"start"         : "começou",
+				"end"           : "terminou",
 				"default_title" : "Encontro",
-				"text"          : "{{encounter}} has {{verb}}."
+				"text"          : "{{encounter}} {{verb}}."
 			},
 			"cn" : {
 				"start"         : "started",
@@ -382,10 +383,10 @@
 				"text"          : "{{encounter}}が{{verb}}."
 			},
 			"de" : {
-				"start"         : "started",
-				"end"           : "ended",
+				"start"         : "hat begonnen",
+				"end"           : "wurde beendet",
 				"default_title" : "Kampf",
-				"text"          : "{{encounter}} has {{verb}}."
+				"text"          : "{{encounter}} {{verb}}."
 			},
 			"es" : {
 				"start"         : "started",

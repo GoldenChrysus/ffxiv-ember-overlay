@@ -71,10 +71,10 @@
 		"tts"  : {
 			"title"       : {
 				"en" : "Text to Speech",
-				"pt" : "Text to Speech",
+				"pt" : "Texto em Voz",
 				"cn" : "Text to Speech",
-				"jp" : "Text to Speech",
-				"de" : "Text to Speech",
+				"jp" : "音声読み上げ",
+				"de" : "Text zu Sprache",
 				"es" : "Text to Speech",
 				"fr" : "Text to Speech",
 				"kr" : "Text to Speech"
@@ -82,10 +82,10 @@
 			"subsections" : [
 				{
 					"en" : "Text to Speech Setup",
-					"pt" : "Text to Speech Setup",
+					"pt" : "Texto em Voz Setup",
 					"cn" : "Text to Speech Setup",
-					"jp" : "Text to Speech Setup",
-					"de" : "Text to Speech Setup",
+					"jp" : "音声読み上げ Setup",
+					"de" : "Text zu Sprache Setup",
 					"es" : "Text to Speech Setup",
 					"fr" : "Text to Speech Setup",
 					"kr" : "Text to Speech Setup"
@@ -319,10 +319,10 @@
 		"spells-mode" : {
 			"title" : {
 				"en" : "Spell Timers",
-				"pt" : "Spell Timers",
+				"pt" : "Temporizadores das Magias",
 				"cn" : "Spell Timers",
-				"jp" : "Spell Timers",
-				"de" : "Spell Timers",
+				"jp" : "スペルタイマー",
+				"de" : "Zauber Timer",
 				"es" : "Spell Timers",
 				"fr" : "Spell Timers",
 				"kr" : "Spell Timers"
@@ -514,10 +514,10 @@
 		},
 		"tts.rules" : {
 			"en" : "Rules",
-			"pt" : "Rules",
+			"pt" : "Regras",
 			"cn" : "Rules",
-			"jp" : "Rules",
-			"de" : "Rules",
+			"jp" : "ルール",
+			"de" : "Regeln",
 			"es" : "Rules",
 			"fr" : "Rules",
 			"kr" : "Rules"
@@ -764,60 +764,60 @@
 		},
 		"spells_mode.spells" : {
 			"en" : "Spells to Track",
-			"pt" : "Spells to Track",
+			"pt" : "Magias a Rastrear",
 			"cn" : "Spells to Track",
-			"jp" : "Spells to Track",
-			"de" : "Spells to Track",
+			"jp" : "選択中スペル",
+			"de" : "Zauber im Überblick",
 			"es" : "Spells to Track",
 			"fr" : "Spells to Track",
 			"kr" : "Spells to Track"
 		},
 		"spells_mode.effects" : {
 			"en" : "Effects to Track",
-			"pt" : "Effects to Track",
+			"pt" : "Efeitos a Rastrear",
 			"cn" : "Effects to Track",
 			"jp" : "Effects to Track",
-			"de" : "Effects to Track",
+			"de" : "Effekte im Überblick",
 			"es" : "Effects to Track",
 			"fr" : "Effects to Track",
 			"kr" : "Effects to Track"
 		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
-			"pt" : "Spells Per Row",
+			"pt" : "Magias Por Coluna",
 			"cn" : "Spells Per Row",
-			"jp" : "Spells Per Row",
-			"de" : "Spells Per Row",
+			"jp" : "一列のスペル数",
+			"de" : "Zauber pro Reihe",
 			"es" : "Spells Per Row",
 			"fr" : "Spells Per Row",
 			"kr" : "Spells Per Row"
 		},
 		"spells_mode.show_icon" : {
 			"en" : "Show Spell Icon",
-			"pt" : "Show Spell Icon",
+			"pt" : "Mostrar Ícone da Magia",
 			"cn" : "Show Spell Icon",
-			"jp" : "Show Spell Icon",
-			"de" : "Show Spell Icon",
+			"jp" : "スペルアイコンを表示",
+			"de" : "Zaubericons anzeigen",
 			"es" : "Show Spell Icon",
 			"fr" : "Show Spell Icon",
 			"kr" : "Show Spell Icon"
 		},
 		"spells_mode.use_tts" : {
 			"en" : "Use Text to Speech",
-			"pt" : "Use Text to Speech",
+			"pt" : "Usar Texto em Voz",
 			"cn" : "Use Text to Speech",
-			"jp" : "Use Text to Speech",
-			"de" : "Use Text to Speech",
+			"jp" : "音声読み上げ",
+			"de" : "Text zu Sprache verwenden",
 			"es" : "Use Text to Speech",
 			"fr" : "Use Text to Speech",
 			"kr" : "Use Text to Speech"
 		},
 		"spells_mode.minimal_layout" : {
 			"en" : "Minimal Layout",
-			"pt" : "Minimal Layout",
+			"pt" : "Layout Minimalista",
 			"cn" : "Minimal Layout",
-			"jp" : "Minimal Layout",
-			"de" : "Minimal Layout",
+			"jp" : "ミニマルレイアウト",
+			"de" : "Mimimales Layout",
 			"es" : "Minimal Layout",
 			"fr" : "Minimal Layout",
 			"kr" : "Minimal Layout"
@@ -827,7 +827,7 @@
 			"pt" : "Reverse Indicator for Spells",
 			"cn" : "Reverse Indicator for Spells",
 			"jp" : "Reverse Indicator for Spells",
-			"de" : "Reverse Indicator for Spells",
+			"de" : "Indikator für Zauber umdrehen",
 			"es" : "Reverse Indicator for Spells",
 			"fr" : "Reverse Indicator for Spells",
 			"kr" : "Reverse Indicator for Spells"
@@ -837,7 +837,7 @@
 			"pt" : "Reverse Indicator for Effects",
 			"cn" : "Reverse Indicator for Effects",
 			"jp" : "Reverse Indicator for Effects",
-			"de" : "Reverse Indicator for Effects",
+			"de" : "Idikator für Effekte umdrehen",
 			"es" : "Reverse Indicator for Effects",
 			"fr" : "Reverse Indicator for Effects",
 			"kr" : "Reverse Indicator for Effects"
@@ -908,40 +908,40 @@
 		"tts" : {
 			"critical.tank" : {
 				"en" : "A tank's HP is below:",
-				"pt" : "A tank's HP is below:",
+				"pt" : "O PV de um tank está abaixo de:",
 				"cn" : "A tank's HP is below:",
-				"jp" : "A tank's HP is below:",
-				"de" : "A tank's HP is below:",
+				"jp" : "HPが%以下になっているタンクがいます:",
+				"de" : "HP eines Verteidigers beträgt weniger als:",
 				"es" : "A tank's HP is below:",
 				"fr" : "A tank's HP is below:",
 				"kr" : "A tank's HP is below:"
 			},
 			"critical.dps" : {
 				"en" : "A DPS' HP is below:",
-				"pt" : "A DPS' HP is below:",
+				"pt" : "O PV de um DPS está abaixo de:",
 				"cn" : "A DPS' HP is below:",
-				"jp" : "A DPS' HP is below:",
-				"de" : "A DPS' HP is below:",
+				"jp" : "HPが%以下になっているDPSがいます:",
+				"de" : "HP eines DPS beträgt weniger als:",
 				"es" : "A DPS' HP is below:",
 				"fr" : "A DPS' HP is below:",
 				"kr" : "A DPS' HP is below:"
 			},
 			"critical.heal" : {
 				"en" : "A healer's HP is below:",
-				"pt" : "A healer's HP is below:",
+				"pt" : "O PV de um healer está abaixo de:",
 				"cn" : "A healer's HP is below:",
-				"jp" : "A healer's HP is below:",
-				"de" : "A healer's HP is below:",
+				"jp" : "HPが%以下になっているヒーラーがいます:",
+				"de" : "HP eines Heilers beträgt weniger als:",
 				"es" : "A healer's HP is below:",
 				"fr" : "A healer's HP is below:",
 				"kr" : "A healer's HP is below:"
 			},
 			"critical.all" : {
 				"en" : "Anyone's HP is below:",
-				"pt" : "Anyone's HP is below:",
+				"pt" : "O PV de alguém está abaixo de:",
 				"cn" : "Anyone's HP is below:",
-				"jp" : "Anyone's HP is below:",
-				"de" : "Anyone's HP is below:",
+				"jp" : "HPが%以下になっている人がいます:",
+				"de" : "HP eines beliebigen Spielers beträgt unter:",
 				"es" : "Anyone's HP is below:",
 				"fr" : "Anyone's HP is below:",
 				"kr" : "Anyone's HP is below:"
@@ -950,58 +950,58 @@
 				"en" : "You obtain aggro",
 				"pt" : "You obtain aggro",
 				"cn" : "You obtain aggro",
-				"jp" : "You obtain aggro",
-				"de" : "You obtain aggro",
+				"jp" : "タゲを取りました",
+				"de" : "Du hast Aggro erhalten",
 				"es" : "You obtain aggro",
 				"fr" : "You obtain aggro",
 				"kr" : "You obtain aggro"
 			},
 			"top.dps" : {
 				"en" : "You obtain top DPS",
-				"pt" : "You obtain top DPS",
+				"pt" : "Você está no topo do DPS",
 				"cn" : "You obtain top DPS",
-				"jp" : "You obtain top DPS",
-				"de" : "You obtain top DPS",
+				"jp" : "DPSトップになりました",
+				"de" : "Du hast den meisten DPS",
 				"es" : "You obtain top DPS",
 				"fr" : "You obtain top DPS",
 				"kr" : "You obtain top DPS"
 			},
 			"top.hps" : {
 				"en" : "You obtain top HPS",
-				"pt" : "You obtain top HPS",
+				"pt" : "Você está no topo do CPS",
 				"cn" : "You obtain top HPS",
-				"jp" : "You obtain top HPS",
-				"de" : "You obtain top HPS",
+				"jp" : "HPSトップになりました",
+				"de" : "Du hast die meisten HPS",
 				"es" : "You obtain top HPS",
 				"fr" : "You obtain top HPS",
 				"kr" : "You obtain top HPS"
 			},
 			"top.tps" : {
 				"en" : "You obtain top DTPS",
-				"pt" : "You obtain top DTPS",
+				"pt" : "Você está no topo do DRPS",
 				"cn" : "You obtain top DTPS",
-				"jp" : "You obtain top DTPS",
-				"de" : "You obtain top DTPS",
+				"jp" : "被DPSトップになりました",
+				"de" : "Du hast den meisten erlittenen DPS",
 				"es" : "You obtain top DTPS",
 				"fr" : "You obtain top DTPS",
 				"kr" : "You obtain top DTPS"
 			},
 			"encounter.start" : {
 				"en" : "An encounter starts",
-				"pt" : "An encounter starts",
+				"pt" : "Um encontro começou",
 				"cn" : "An encounter starts",
-				"jp" : "An encounter starts",
-				"de" : "An encounter starts",
+				"jp" : "戦闘開始",
+				"de" : "Kampf hat begonnen",
 				"es" : "An encounter starts",
 				"fr" : "An encounter starts",
 				"kr" : "An encounter starts"
 			},
 			"encounter.end" : {
 				"en" : "An encounter ends",
-				"pt" : "An encounter ends",
+				"pt" : "Um encontro terminou",
 				"cn" : "An encounter ends",
-				"jp" : "An encounter ends",
-				"de" : "An encounter ends",
+				"jp" : "戦闘終了",
+				"de" : "Kampf wurde beendet",
 				"es" : "An encounter ends",
 				"fr" : "An encounter ends",
 				"kr" : "An encounter ends"
@@ -1058,7 +1058,6 @@
 			"fr" : "Supprimer",
 			"kr" : "삭제"
 		},
-
 		"save"               : {
 			"en" : "Save",
 			"pt" : "Salvar",
@@ -1069,7 +1068,6 @@
 			"fr" : "Sauvegarder",
 			"kr" : "저장"
 		},
-
 		"export_info"        : {
 			"en" : "Select and copy the text below, then import it into your desired overlay by right-clicking on the overlay and choosing \"Import.\"",
 			"pt" : "Selecione e copie o texto abaixo, então importe para seu Overlay desejado clicando com o botão direito e escolhendo \"Importar.\"",
@@ -1271,6 +1269,26 @@
 			"es" : "Haz que el stream sea agregado a esta lista entrando a nuestro discord en {{discord_link}} y posteando el stream en #streamer-requests. Puedes también mandar un mensaje a {{twitch_link}} Con la información de tu stream. El stream es elegible si Ember Overlay es utilizado en el stream (será verificado via VOD's).",
 			"fr" : "Pour avoir son stream ajouté à la liste, il faut rejoindre notre Discord sur {{discord_link}} et poster le stream sur #streamer-requests. Tu peux aussi envoyer un message {{twitch_link}} avec tes renseignements de stream. Le stream sera inclus si Ember Overlay est utilisé sur le stream (sera vérifié via la VOD).",
 			"kr" : "엠버 오버레이 디스코드 링크 {{discord_link}} 에 들어오셔셔 #streamer-requests을 통해 알려주세요. 혹은 트위치 내에서 {{twitch_link}}를 통해 직접 메세지를 보내주셔도 좋스니다. 이는 오직 엠버 오버레이를 사용해주실 때만 적용됩니다. (방송 기록으로 확인 가능)"
+		},
+		"criteria" : {
+			"en" : "Criteria",
+			"pt" : "Critério",
+			"cn" : "Criteria",
+			"jp" : "条件",
+			"de" : "Kriterien",
+			"es" : "Criteria",
+			"fr" : "Criteria",
+			"kr" : "Criteria"
+		},
+		"value" : {
+			"en" : "Value",
+			"pt" : "Valor",
+			"cn" : "Value",
+			"jp" : "価値",
+			"de" : "Wert",
+			"es" : "Value",
+			"fr" : "Value",
+			"kr" : "Value"
 		}
 	}
 }

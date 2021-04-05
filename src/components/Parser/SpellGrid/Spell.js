@@ -45,7 +45,7 @@ class Spell extends React.Component {
 				return this.props.spell.name || LocalizationService.getoGCDSkillName(this.props.spell.id);
 
 			case "effect":
-				return this.props.spell.name || LocalizationService.getEffectOptions(this.props.spell.id);
+				return this.props.spell.name || LocalizationService.getEffectName(this.props.spell.id);
 
 			default:
 				return this.props.spell.name;

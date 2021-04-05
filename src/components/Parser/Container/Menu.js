@@ -11,27 +11,35 @@ class Menu extends React.Component {
 		return (
 			<ContextMenu id="right-click-menu" className="container-context-menu">
 				<div className="item-group">
-					{this.getFirstSection()}
-					{this.getSecondSection()}
+					{this.getModesSection()}
+					{this.getQuickCommandsSection()}
+					{this.getEncounterSection()}
 					<MenuItem onClick={SettingsService.openSettingsWindow}>
 						{LocalizationService.getOverlayText("settings")}
 					</MenuItem>
 					<MenuItem onClick={SettingsService.openSettingsImport}>
 						{LocalizationService.getOverlayText("import")}
 					</MenuItem>
-					<div className="split"></div>
-					<MenuItem onClick={this.changeMode.bind(this, "stats")}>
-						Mode: Parser
-					</MenuItem>
-					<MenuItem onClick={this.changeMode.bind(this, "spells")}>
-						Mode: Spell Timer
-					</MenuItem>
 				</div>
 			</ContextMenu>
 		);
 	}
 
-	getFirstSection() {
+	getModesSection() {
+		let modes = [
+			<MenuItem key="menu-mode-stats" onClick={this.changeMode.bind(this, "stats")}>
+				Mode: Parser
+			</MenuItem>,
+			<MenuItem key="menu-mode-spells" onClick={this.changeMode.bind(this, "spells")}>
+				Mode: Spell Timer
+			</MenuItem>,
+			<div key="menu-modes-section-split" className="split"></div>
+		];
+
+		return modes;
+	}
+
+	getQuickCommandsSection() {
 		let plugin_service = this.props.plugin_service;
 
 		let collapse_item = () => {
@@ -70,7 +78,7 @@ class Menu extends React.Component {
 		return items;
 	}
 
-	getSecondSection() {
+	getEncounterSection() {
 		let items = [];
 
 		if (this.props.mode === "stats") {

@@ -50,8 +50,8 @@ class TTSRulesTable extends Table {
 			<table key="tts-rules-table" ref="tts_rules_table" className="ui unstackable inverted celled table">
 				<thead>
 					<tr>
-						<th>Criteria</th>
-						<th>Value</th>
+						<th>{LocalizationService.getMisc("criteria")}</th>
+						<th>{LocalizationService.getMisc("value")}</th>
 						<th className="collapsing"></th>
 					</tr>
 				</thead>

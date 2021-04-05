@@ -159,6 +159,18 @@ function rootReducer(state, action) {
 								type : "skill",
 								id   : 16482,
 								time : timestamp
+							},
+							"effect-1298" : {
+								type     : "effect",
+								id       : 1298,
+								time     : timestamp,
+								duration : 40
+							},
+							"effect-1299" : {
+								type     : "effect",
+								id       : 1299,
+								time     : timestamp,
+								duration : 40
 							}
 						}
 					};
