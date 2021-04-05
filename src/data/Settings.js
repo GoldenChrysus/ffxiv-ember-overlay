@@ -156,11 +156,15 @@ const default_settings = {
 		]
 	},
 	spells_mode : {
-		spells         : [],
-		spells_per_row : 1,
-		show_icon      : true,
-		use_tts        : false,
-		minimal_layout : false
+		spells            : [],
+		effects           : [],
+		reverse_effect    : false,
+		reverse_skill     : false,
+		warning_threshold : 0,
+		spells_per_row    : 1,
+		show_icon         : true,
+		use_tts           : false,
+		minimal_layout    : false
 	}
 };
 

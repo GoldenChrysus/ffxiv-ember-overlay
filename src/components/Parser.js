@@ -7,9 +7,7 @@ import Container from "./Parser/Container";
 import Placeholder from "./Parser/Placeholder";
 
 class Parser extends React.Component {
-	collapsed_modes = [
-		"spells"
-	];
+	collapsed_modes = [];
 
 	componentWillMount() {
 		window.parser = true;

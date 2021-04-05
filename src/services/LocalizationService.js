@@ -172,6 +172,40 @@ class LocalizationService {
 
 		return options;
 	}
+
+	getEffectName(id, language) {
+		language = language || this.getLanguage();
+
+		return SkillData.Effects[id].locales.name[language] || SkillData.Effects[id].locales.name.en;
+	}
+
+	getEffectOptions() {
+		let language = this.getLanguage();
+		let options  = [];
+		let used     = {};
+
+		for (let id in SkillData.Effects) {
+			let name = this.getEffectName(id, "en");
+
+			if (used[name]) {
+				continue;
+			}
+
+			options.push({
+				key   : id,
+				value : id,
+				text  : this.getEffectName(id, language)
+			});
+
+			used[name] = true;
+		}
+
+		options.sort((a, b) => {
+			return (a.text < b.text) ? -1 : 1;
+		});
+
+		return options;
+	}
 }
 
 export default new LocalizationService();

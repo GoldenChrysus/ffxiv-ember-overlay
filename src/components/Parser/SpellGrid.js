@@ -27,9 +27,9 @@ class SpellGrid extends React.Component {
 	componentDidUpdate(prev_props) {
 		let new_spells = {};
 
-		for (let id in this.props.spells) {
-			if (!prev_props.spells[id]) {
-				new_spells[id] = this.props.spells[id];
+		for (let i in this.props.spells) {
+			if (!prev_props.spells[i] || prev_props.spells[i].time < this.props.spells[i].time) {
+				new_spells[i] = this.props.spells[i];
 			}
 		}
 
@@ -98,8 +98,8 @@ class SpellGrid extends React.Component {
 			return (+this.state.spells[a] < +this.state.spells[b]) ? -1 : 1;
 		});
 
-		for (let id of spells) {
-			items.push(<Spell key={"spell-" + id} id={id} cooldown={this.state.spells[id]} name={this.spells[id].name} settings={this.props.settings}/>);
+		for (let i of spells) {
+			items.push(<Spell key={i} spell={this.spells[i]} cooldown={this.state.spells[i]} settings={this.props.settings}/>);
 		}
 
 		return items;
@@ -108,18 +108,36 @@ class SpellGrid extends React.Component {
 	processSpells(spells) {
 		let state = this.state;
 
-		for (let id in spells) {
-			let date  = new Date(spells[id].time);
-			let skill = SkillData.oGCDSkills[id];
+		for (let i in spells) {
+			let date   = new Date(spells[i].time);
+			let recast = 0;
 
-			date.setSeconds(date.getSeconds() + skill.recast);
+			switch (spells[i].type) {
+				case "skill":
+					recast = SkillData.oGCDSkills[spells[i].id].recast
 
-			this.spells[id] = {
-				time : date,
-				name : spells[id].name
+					break;
+
+				case "effect":
+					recast = spells[i].duration;
+
+					break;
+
+				default:
+					break;
+			}
+
+			date.setSeconds(date.getSeconds() + recast);
+
+			this.spells[i] = {
+				type   : spells[i].type,
+				id     : spells[i].id,
+				time   : date,
+				name   : spells[i].name,
+				recast : recast
 			};
 
-			state.spells[id] = skill.recast;
+			state.spells[i] = recast;
 		}
 		
 		if (this.mounted) {
@@ -148,20 +166,37 @@ class SpellGrid extends React.Component {
 		let now   = new Date();
 		let state = this.state;
 
-		for (let id in this.spells) {
-			let diff = this.spells[id].time - now;
+		for (let i in this.spells) {
+			let diff = this.spells[i].time - now;
 
 			if (diff <= 0) {
 				if (this.props.settings.use_tts) {
-					TTSService.sayNow(this.spells[id].name || LocalizationService.getoGCDSkillName(id));
+					let name = this.spells[i].name;
+
+					if (!name) {
+						switch (this.spells[i].type) {
+							case "skill":
+								TTSService.sayNow(LocalizationService.getoGCDSkillName(this.spells[i].id));
+								break;
+
+							case "effect":
+								TTSService.sayNow(LocalizationService.getEffectOptions(this.spells[i].id));
+								break;
+
+							default:
+								break;
+						}
+					}
+
+					TTSService.sayNow(name);
 				}
 
-				delete this.spells[id];
-				delete this.state.spells[id];
+				delete this.spells[i];
+				delete this.state.spells[i];
 				continue;
 			}
 
-			state.spells[id] = (diff / 1000).toFixed(1);
+			state.spells[i] = (diff / 1000).toFixed(1);
 		}
 
 		this.setState(state);

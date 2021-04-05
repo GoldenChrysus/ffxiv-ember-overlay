@@ -276,9 +276,9 @@ class GameDataProcessor  {
 		switch (+data[0]) {
 			case 21:
 			case 22:
-				let skill_id = parseInt(data[4], 16);
+				let skill_id = String(parseInt(data[4], 16));
 
-				if (state.internal.character_name !== data[3]) {
+				if (state.internal.character_id !== parseInt(data[2], 16)) {
 					return state;
 				}
 
@@ -286,9 +286,37 @@ class GameDataProcessor  {
 					return state;
 				}
 
-				state.internal.spells.in_use[skill_id] = {
+				state.internal.spells.in_use[`skill-${skill_id}`] = {
+					type : "skill",
+					id   : skill_id,
 					time : data[1],
 					name : data[5]
+				};
+
+				return state;
+
+			case 26:
+				let effect_id   = String(parseInt(data[2], 16));
+				let valid_names = [];
+
+				if (state.internal.character_id !== parseInt(data[7], 16)) {
+					return state;
+				}
+
+				for (let id of state.settings.spells_mode.effects) {
+					valid_names.push(LocalizationService.getEffectName(id, "en"));
+				}
+
+				if (valid_names.indexOf(LocalizationService.getEffectName(effect_id, "en")) === -1) {
+					return state;
+				}
+
+				state.internal.spells.in_use[`effect-${effect_id}`] = {
+					type     : "effect",
+					id       : effect_id,
+					time     : data[1],
+					name     : data[3],
+					duration : +data[4]
 				};
 
 				return state;

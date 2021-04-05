@@ -27,6 +27,7 @@ const initial_state = {
 	internal       : {
 		viewing              : "tables",
 		character_name       : "YOU",
+		character_id         : null,
 		rank                 : "N/A",
 		game                 : {},
 		enmity               : {},
@@ -144,13 +145,19 @@ function rootReducer(state, action) {
 
 					tmp_action = {
 						payload : {
-							7499  : {
+							"spell-7499"  : {
+								type : "skill",
+								id   : 7499,
 								time : timestamp
 							},
-							16481 :  {
+							"spell-16481" :  {
+								type : "skill",
+								id   : 16481,
 								time : timestamp
 							},
-							16482 : {
+							"spell-16482" : {
+								type : "skill",
+								id   : 16482,
 								time : timestamp
 							}
 						}

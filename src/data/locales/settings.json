@@ -772,6 +772,16 @@
 			"fr" : "Spells to Track",
 			"kr" : "Spells to Track"
 		},
+		"spells_mode.effects" : {
+			"en" : "Effects to Track",
+			"pt" : "Effects to Track",
+			"cn" : "Effects to Track",
+			"jp" : "Effects to Track",
+			"de" : "Effects to Track",
+			"es" : "Effects to Track",
+			"fr" : "Effects to Track",
+			"kr" : "Effects to Track"
+		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
 			"pt" : "Spells Per Row",
@@ -811,6 +821,36 @@
 			"es" : "Minimal Layout",
 			"fr" : "Minimal Layout",
 			"kr" : "Minimal Layout"
+		},
+		"spells_mode.reverse_skill" : {
+			"en" : "Reverse Indicator for Spells",
+			"pt" : "Reverse Indicator for Spells",
+			"cn" : "Reverse Indicator for Spells",
+			"jp" : "Reverse Indicator for Spells",
+			"de" : "Reverse Indicator for Spells",
+			"es" : "Reverse Indicator for Spells",
+			"fr" : "Reverse Indicator for Spells",
+			"kr" : "Reverse Indicator for Spells"
+		},
+		"spells_mode.reverse_effect" : {
+			"en" : "Reverse Indicator for Effects",
+			"pt" : "Reverse Indicator for Effects",
+			"cn" : "Reverse Indicator for Effects",
+			"jp" : "Reverse Indicator for Effects",
+			"de" : "Reverse Indicator for Effects",
+			"es" : "Reverse Indicator for Effects",
+			"fr" : "Reverse Indicator for Effects",
+			"kr" : "Reverse Indicator for Effects"
+		},
+		"spells_mode.warning_threshold" : {
+			"en" : "Warning Threshold (In Seconds)",
+			"pt" : "Warning Threshold (In Seconds)",
+			"cn" : "Warning Threshold (In Seconds)",
+			"jp" : "Warning Threshold (In Seconds)",
+			"de" : "Warning Threshold (In Seconds)",
+			"es" : "Warning Threshold (In Seconds)",
+			"fr" : "Warning Threshold (In Seconds)",
+			"kr" : "Warning Threshold (In Seconds)"
 		}
 	},
 	"misc" : {

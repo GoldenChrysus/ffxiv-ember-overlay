@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.25.0-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- Resolved issue where settings did not simultaneously distribute if multiple overlays were open
+
+### Features
+- Added spell timers
+    - Right-click on overlay and choose "Mode: Spell Timer"
+    - Setup can be accessed at Settings > Spell Timers
+        - Settings cog is moved to the top right of the overlay when in spell timer mode
+    - "Text to Speech" setting causes the spell name to be said when it's ready
+    - "Minimal Layout" setting turns the spell timers into compact bars
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.24.0-alpha
 
 **Released: 2021-03-28**

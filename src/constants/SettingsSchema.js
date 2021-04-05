@@ -519,10 +519,44 @@ const SettingsSchema = {
 								}
 							},
 							{
+								key_path : "spells_mode.effects",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getEffectOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.effects;
+								}
+							},
+							{
 								key_path : "spells_mode.show_icon",
 								type     : "checkbox",
 								value    : function() {
 									return this.props.settings.spells_mode.show_icon;
+								}
+							},
+							{
+								key_path : "spells_mode.reverse_skill",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.reverse_skill;
+								}
+							},
+							{
+								key_path : "spells_mode.reverse_effect",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.reverse_effect;
+								}
+							},
+							{
+								key_path : "spells_mode.warning_threshold",
+								type     : "slider",
+								range    : "min",
+								minimum  : 0,
+								maximum  : 10,
+								value    : function() {
+									return this.props.settings.spells_mode.warning_threshold;
 								}
 							},
 							{

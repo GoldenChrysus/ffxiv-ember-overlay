@@ -54,6 +54,15 @@ class MessageProcessor {
 				};
 
 				store.dispatch(updateState(state_data));
+
+				let id = (type === "ChangePrimaryPlayer") ? data.charID : data.msg.charID;
+				
+				state_data = {
+					key   : "internal.character_id",
+					value : id
+				};
+
+				store.dispatch(updateState(state_data));
 				break;
 
 			case "PartyChanged":

@@ -1,0 +1,7872 @@
+{
+	"8" : {
+		"locales" : {
+			"name" : {
+				"en" : "Haste",
+				"de" : "Hast",
+				"fr" : "Hâte",
+				"jp" : "ヘイスト"
+			}
+		}
+	},
+	"21" : {
+		"locales" : {
+			"name" : {
+				"en" : "HP Boost",
+				"de" : "LP-Bonus",
+				"fr" : "Bonus de PV",
+				"jp" : "最大ＨＰアップ"
+			}
+		}
+	},
+	"23" : {
+		"locales" : {
+			"name" : {
+				"en" : "MP Boost",
+				"de" : "MP-Bonus",
+				"fr" : "Bonus de PM",
+				"jp" : "最大ＭＰアップ"
+			}
+		}
+	},
+	"25" : {
+		"locales" : {
+			"name" : {
+				"en" : "Attack Up",
+				"de" : "Attacke-Bonus",
+				"fr" : "Bonus d'attaque",
+				"jp" : "物理攻撃力アップ"
+			}
+		}
+	},
+	"27" : {
+		"locales" : {
+			"name" : {
+				"en" : "Accuracy Up",
+				"de" : "Präzisions-Bonus",
+				"fr" : "Bonus de précision",
+				"jp" : "命中率アップ"
+			}
+		}
+	},
+	"29" : {
+		"locales" : {
+			"name" : {
+				"en" : "Defense Up",
+				"de" : "Verteidigungs-Bonus",
+				"fr" : "Bonus de défense",
+				"jp" : "物理防御力アップ"
+			}
+		}
+	},
+	"31" : {
+		"locales" : {
+			"name" : {
+				"en" : "Evasion Up",
+				"de" : "Ausweich-Bonus",
+				"fr" : "Bonus d'esquive",
+				"jp" : "回避力アップ"
+			}
+		}
+	},
+	"33" : {
+		"locales" : {
+			"name" : {
+				"en" : "Attack Magic Potency Up",
+				"de" : "Offensivmagie-Bonus",
+				"fr" : "Bonus de puissance magique",
+				"jp" : "魔法攻撃力アップ"
+			}
+		}
+	},
+	"35" : {
+		"locales" : {
+			"name" : {
+				"en" : "Healing Potency Up",
+				"de" : "Heilmagie-Bonus",
+				"fr" : "Bonus de magie curative",
+				"jp" : "魔法回復力アップ"
+			}
+		}
+	},
+	"37" : {
+		"locales" : {
+			"name" : {
+				"en" : "Magic Defense Up",
+				"de" : "Magieabwehr-Bonus",
+				"fr" : "Bonus de défense magique",
+				"jp" : "魔法防御力アップ"
+			}
+		}
+	},
+	"41" : {
+		"locales" : {
+			"name" : {
+				"en" : "Crafting Facility",
+				"de" : "Werkstattstimmung",
+				"fr" : "Installation d'artisanat",
+				"jp" : "製作設備"
+			}
+		}
+	},
+	"45" : {
+		"locales" : {
+			"name" : {
+				"en" : "Crafter's Grace",
+				"de" : "Sternstunde der Handwerker",
+				"fr" : "Grâce de l'artisan",
+				"jp" : "経験値アップ（クラフター専用）"
+			}
+		}
+	},
+	"46" : {
+		"locales" : {
+			"name" : {
+				"en" : "Gatherer's Grace",
+				"de" : "Sternstunde der Sammler",
+				"fr" : "Grâce du récolteur",
+				"jp" : "経験値アップ（ギャザラー専用）"
+			}
+		}
+	},
+	"48" : {
+		"locales" : {
+			"name" : {
+				"en" : "Well Fed",
+				"de" : "Gut gesättigt",
+				"fr" : "Repu",
+				"jp" : "食事"
+			}
+		}
+	},
+	"49" : {
+		"locales" : {
+			"name" : {
+				"en" : "Medicated",
+				"de" : "Stärkung",
+				"fr" : "Médicamenté",
+				"jp" : "強化薬"
+			}
+		}
+	},
+	"50" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sprint",
+				"de" : "Sprint",
+				"fr" : "Sprint",
+				"jp" : "スプリント"
+			}
+		}
+	},
+	"53" : {
+		"locales" : {
+			"name" : {
+				"en" : "Physical Damage Up",
+				"de" : "Schadenswert +",
+				"fr" : "Bonus de dégâts physiques",
+				"jp" : "物理ダメージ上昇"
+			}
+		}
+	},
+	"55" : {
+		"locales" : {
+			"name" : {
+				"en" : "Physical Vulnerability Down",
+				"de" : "Verringerte physische Verwundbarkeit",
+				"fr" : "Vulnérabilité physique diminuée",
+				"jp" : "被物理ダメージ軽減"
+			}
+		}
+	},
+	"57" : {
+		"locales" : {
+			"name" : {
+				"en" : "Magic Damage Up",
+				"de" : "Magieschaden +",
+				"fr" : "Bonus de dégâts magiques",
+				"jp" : "魔法ダメージ上昇"
+			}
+		}
+	},
+	"59" : {
+		"locales" : {
+			"name" : {
+				"en" : "Magic Vulnerability Down",
+				"de" : "Verringerte Magie-Verwundbarkeit",
+				"fr" : "Vulnérabilité magique diminuée",
+				"jp" : "被魔法ダメージ軽減"
+			}
+		}
+	},
+	"61" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"63" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Down",
+				"de" : "Verringerte Verwundbarkeit",
+				"fr" : "Vulnérabilité diminuée",
+				"jp" : "被ダメージ低下"
+			}
+		}
+	},
+	"65" : {
+		"locales" : {
+			"name" : {
+				"en" : "Critical Skill",
+				"de" : "Kritisches Potenzial",
+				"fr" : "Maîtrise critique",
+				"jp" : "ウェポンスキル強化：クリティカル"
+			}
+		}
+	},
+	"68" : {
+		"locales" : {
+			"name" : {
+				"en" : "Drainstrikes",
+				"de" : "Auszehren",
+				"fr" : "Coups drainants",
+				"jp" : "オートアタック強化：ＨＰ吸収"
+			}
+		}
+	},
+	"69" : {
+		"locales" : {
+			"name" : {
+				"en" : "Aspirstrikes",
+				"de" : "Auslaugen",
+				"fr" : "Coups aspirants",
+				"jp" : "オートアタック強化：ＴＰ吸収"
+			}
+		}
+	},
+	"70" : {
+		"locales" : {
+			"name" : {
+				"en" : "Stunstrikes",
+				"de" : "Ausschalten",
+				"fr" : "Coups étourdissants",
+				"jp" : "オートアタック強化：スタン"
+			}
+		}
+	},
+	"71" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rampart",
+				"de" : "Schutzwall",
+				"fr" : "Rempart",
+				"jp" : "ランパート"
+			}
+		}
+	},
+	"72" : {
+		"locales" : {
+			"name" : {
+				"en" : "Convalescence",
+				"de" : "Konvaleszenz",
+				"fr" : "Convalescence",
+				"jp" : "コンバレセンス"
+			}
+		}
+	},
+	"73" : {
+		"locales" : {
+			"name" : {
+				"en" : "Awareness",
+				"de" : "Achtsamkeit",
+				"fr" : "Diligence",
+				"jp" : "アウェアネス"
+			}
+		}
+	},
+	"74" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sentinel",
+				"de" : "Sentinel",
+				"fr" : "Sentinelle",
+				"jp" : "センチネル"
+			}
+		}
+	},
+	"75" : {
+		"locales" : {
+			"name" : {
+				"en" : "Tempered Will",
+				"de" : "Eherner Wille",
+				"fr" : "Volonté d'acier",
+				"jp" : "鋼の意志"
+			}
+		}
+	},
+	"76" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fight or Flight",
+				"de" : "Verwegenheit",
+				"fr" : "Combat acharné",
+				"jp" : "ファイト・オア・フライト"
+			}
+		}
+	},
+	"77" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bulwark",
+				"de" : "Bollwerk",
+				"fr" : "Forteresse",
+				"jp" : "ブルワーク"
+			}
+		}
+	},
+	"80" : {
+		"locales" : {
+			"name" : {
+				"en" : "Cover",
+				"de" : "Deckung",
+				"fr" : "Couverture",
+				"jp" : "かばう"
+			}
+		}
+	},
+	"81" : {
+		"locales" : {
+			"name" : {
+				"en" : "Covered",
+				"de" : "Gedeckt",
+				"fr" : "Couvert",
+				"jp" : "かばう［被］"
+			}
+		}
+	},
+	"82" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hallowed Ground",
+				"de" : "Heiliger Boden",
+				"fr" : "Invincible",
+				"jp" : "インビンシブル"
+			}
+		}
+	},
+	"83" : {
+		"locales" : {
+			"name" : {
+				"en" : "Foresight",
+				"de" : "Vorahnung",
+				"fr" : "Aguet",
+				"jp" : "フォーサイト"
+			}
+		}
+	},
+	"84" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bloodbath",
+				"de" : "Blutbad",
+				"fr" : "Bain de sang",
+				"jp" : "ブラッドバス"
+			}
+		}
+	},
+	"85" : {
+		"locales" : {
+			"name" : {
+				"en" : "Maim",
+				"de" : "Verstümmelung",
+				"fr" : "Mutilation",
+				"jp" : "メイム"
+			}
+		}
+	},
+	"86" : {
+		"locales" : {
+			"name" : {
+				"en" : "Berserk",
+				"de" : "Tollwut",
+				"fr" : "Berserk",
+				"jp" : "バーサク"
+			}
+		}
+	},
+	"87" : {
+		"locales" : {
+			"name" : {
+				"en" : "Thrill of Battle",
+				"de" : "Kampfrausch",
+				"fr" : "Frisson de la bataille",
+				"jp" : "スリル・オブ・バトル"
+			}
+		}
+	},
+	"89" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vengeance",
+				"de" : "Rache",
+				"fr" : "Représailles",
+				"jp" : "ヴェンジェンス"
+			}
+		}
+	},
+	"90" : {
+		"locales" : {
+			"name" : {
+				"en" : "Storm's Eye",
+				"de" : "Sturmbrecher",
+				"fr" : "Œil de la tempête",
+				"jp" : "シュトルムブレハ"
+			}
+		}
+	},
+	"92" : {
+		"locales" : {
+			"name" : {
+				"en" : "Unchained",
+				"de" : "Entfesselt",
+				"fr" : "Affranchissement",
+				"jp" : "アンチェインド"
+			}
+		}
+	},
+	"93" : {
+		"locales" : {
+			"name" : {
+				"en" : "Wrath",
+				"de" : "Zorn",
+				"fr" : "Rage",
+				"jp" : "ラース"
+			}
+		}
+	},
+	"94" : {
+		"locales" : {
+			"name" : {
+				"en" : "Wrath II",
+				"de" : "Zorn II",
+				"fr" : "Rage II",
+				"jp" : "ラースII"
+			}
+		}
+	},
+	"95" : {
+		"locales" : {
+			"name" : {
+				"en" : "Wrath III",
+				"de" : "Zorn III",
+				"fr" : "Rage III",
+				"jp" : "ラースIII"
+			}
+		}
+	},
+	"96" : {
+		"locales" : {
+			"name" : {
+				"en" : "Wrath IV",
+				"de" : "Zorn IV",
+				"fr" : "Rage IV",
+				"jp" : "ラースIV"
+			}
+		}
+	},
+	"97" : {
+		"locales" : {
+			"name" : {
+				"en" : "Infuriated",
+				"de" : "Zorn V",
+				"fr" : "Rage V",
+				"jp" : "ラースV"
+			}
+		}
+	},
+	"99" : {
+		"locales" : {
+			"name" : {
+				"en" : "Featherfoot",
+				"de" : "Leichtfuß",
+				"fr" : "Pieds légers",
+				"jp" : "フェザーステップ"
+			}
+		}
+	},
+	"100" : {
+		"locales" : {
+			"name" : {
+				"en" : "Internal Release",
+				"de" : "Innere Gelöstheit",
+				"fr" : "Relâchement intérieur",
+				"jp" : "発勁"
+			}
+		}
+	},
+	"101" : {
+		"locales" : {
+			"name" : {
+				"en" : "Twin Snakes",
+				"de" : "Doppelviper",
+				"fr" : "Serpents jumeaux",
+				"jp" : "双掌打"
+			}
+		}
+	},
+	"102" : {
+		"locales" : {
+			"name" : {
+				"en" : "Mantra",
+				"de" : "Mantra",
+				"fr" : "Mantra",
+				"jp" : "マントラ"
+			}
+		}
+	},
+	"107" : {
+		"locales" : {
+			"name" : {
+				"en" : "Opo-opo Form",
+				"de" : "Opo-Opo-Form",
+				"fr" : "Posture de l'opo-opo",
+				"jp" : "壱の型：魔猿"
+			}
+		}
+	},
+	"108" : {
+		"locales" : {
+			"name" : {
+				"en" : "Raptor Form",
+				"de" : "Raptor-Form",
+				"fr" : "Posture du raptor",
+				"jp" : "弐の型：走竜"
+			}
+		}
+	},
+	"109" : {
+		"locales" : {
+			"name" : {
+				"en" : "Coeurl Form",
+				"de" : "Coeurl-Form",
+				"fr" : "Posture du coeurl",
+				"jp" : "参の型：猛虎"
+			}
+		}
+	},
+	"110" : {
+		"locales" : {
+			"name" : {
+				"en" : "Perfect Balance",
+				"de" : "Improvisation",
+				"fr" : "Équilibre parfait",
+				"jp" : "踏鳴"
+			}
+		}
+	},
+	"111" : {
+		"locales" : {
+			"name" : {
+				"en" : "Greased Lightning",
+				"de" : "Geölter Blitz",
+				"fr" : "Vitesse de l'éclair",
+				"jp" : "疾風迅雷"
+			}
+		}
+	},
+	"112" : {
+		"locales" : {
+			"name" : {
+				"en" : "Greased Lightning II",
+				"de" : "Geölter Blitz II",
+				"fr" : "Vitesse de l'éclair II",
+				"jp" : "疾風迅雷II"
+			}
+		}
+	},
+	"113" : {
+		"locales" : {
+			"name" : {
+				"en" : "Greased Lightning III",
+				"de" : "Geölter Blitz III",
+				"fr" : "Vitesse de l'éclair III",
+				"jp" : "疾風迅雷III"
+			}
+		}
+	},
+	"114" : {
+		"locales" : {
+			"name" : {
+				"en" : "Keen Flurry",
+				"de" : "Auge des Sturms",
+				"fr" : "Volée défensive",
+				"jp" : "キーンフラーリ"
+			}
+		}
+	},
+	"115" : {
+		"locales" : {
+			"name" : {
+				"en" : "Heavy Thrust",
+				"de" : "Gewaltiger Stoß",
+				"fr" : "Percée puissante",
+				"jp" : "ヘヴィスラスト"
+			}
+		}
+	},
+	"116" : {
+		"locales" : {
+			"name" : {
+				"en" : "Life Surge",
+				"de" : "Vitalwallung",
+				"fr" : "Souffle de vie",
+				"jp" : "ライフサージ"
+			}
+		}
+	},
+	"117" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blood for Blood",
+				"de" : "Zahn um Zahn",
+				"fr" : "Du sang pour du sang",
+				"jp" : "捨身"
+			}
+		}
+	},
+	"120" : {
+		"locales" : {
+			"name" : {
+				"en" : "Power Surge",
+				"de" : "Drachenklaue",
+				"fr" : "Souffle de puissance",
+				"jp" : "竜槍"
+			}
+		}
+	},
+	"122" : {
+		"locales" : {
+			"name" : {
+				"en" : "Straight Shot Ready",
+				"de" : "Direktschussbereit",
+				"fr" : "Tir droit préparé",
+				"jp" : "ストレートショット実行可"
+			}
+		}
+	},
+	"123" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hawk's Eye",
+				"de" : "Falkenauge",
+				"fr" : "Œil de faucon",
+				"jp" : "ホークアイ"
+			}
+		}
+	},
+	"125" : {
+		"locales" : {
+			"name" : {
+				"en" : "Raging Strikes",
+				"de" : "Wütende Attacke",
+				"fr" : "Tir furieux",
+				"jp" : "猛者の撃"
+			}
+		}
+	},
+	"127" : {
+		"locales" : {
+			"name" : {
+				"en" : "Diversion",
+				"de" : "Ablenkung",
+				"fr" : "Diversion",
+				"jp" : "ディヴァージョン"
+			}
+		}
+	},
+	"128" : {
+		"locales" : {
+			"name" : {
+				"en" : "Barrage",
+				"de" : "Sperrfeuer",
+				"fr" : "Rafale de coups",
+				"jp" : "乱れ撃ち"
+			}
+		}
+	},
+	"130" : {
+		"locales" : {
+			"name" : {
+				"en" : "Straight Shot",
+				"de" : "Direkter Schuss",
+				"fr" : "Tir droit",
+				"jp" : "ストレートショット"
+			}
+		}
+	},
+	"131" : {
+		"locales" : {
+			"name" : {
+				"en" : "Downpour of Death",
+				"de" : "Tödlicher Regen +",
+				"fr" : "Déluge mortel",
+				"jp" : "レイン・オブ・デス効果アップ"
+			}
+		}
+	},
+	"132" : {
+		"locales" : {
+			"name" : {
+				"en" : "Quicker Nock",
+				"de" : "Pfeilsalve +",
+				"fr" : "Salve fulgurante améliorée",
+				"jp" : "クイックノック効果アップ"
+			}
+		}
+	},
+	"134" : {
+		"locales" : {
+			"name" : {
+				"en" : "Swiftsong",
+				"de" : "Schmissiger Song",
+				"fr" : "Chant rapide",
+				"jp" : "スウィフトソング：効果"
+			}
+		}
+	},
+	"136" : {
+		"locales" : {
+			"name" : {
+				"en" : "Mage's Ballad",
+				"de" : "Ballade des Weisen",
+				"fr" : "Ballade du mage",
+				"jp" : "賢人のバラード：効果"
+			}
+		}
+	},
+	"138" : {
+		"locales" : {
+			"name" : {
+				"en" : "Army's Paeon",
+				"de" : "Hymne der Krieger",
+				"fr" : "Péan martial",
+				"jp" : "軍神のパイオン：効果"
+			}
+		}
+	},
+	"141" : {
+		"locales" : {
+			"name" : {
+				"en" : "Battle Voice",
+				"de" : "Ode an die Seele",
+				"fr" : "Voix de combat",
+				"jp" : "バトルボイス"
+			}
+		}
+	},
+	"145" : {
+		"locales" : {
+			"name" : {
+				"en" : "Cleric Stance",
+				"de" : "Bußprediger",
+				"fr" : "Prestance du prêtre",
+				"jp" : "クルセードスタンス"
+			}
+		}
+	},
+	"146" : {
+		"locales" : {
+			"name" : {
+				"en" : "Protect",
+				"de" : "Protes",
+				"fr" : "Bouclier",
+				"jp" : "プロテス"
+			}
+		}
+	},
+	"147" : {
+		"locales" : {
+			"name" : {
+				"en" : "Protect",
+				"de" : "Protes",
+				"fr" : "Bouclier",
+				"jp" : "プロテス"
+			}
+		}
+	},
+	"148" : {
+		"locales" : {
+			"name" : {
+				"en" : "Raise",
+				"de" : "Wiederbeleben",
+				"fr" : "Vie",
+				"jp" : "蘇生"
+			}
+		}
+	},
+	"150" : {
+		"locales" : {
+			"name" : {
+				"en" : "Medica II",
+				"de" : "Resedra",
+				"fr" : "Extra Médica",
+				"jp" : "メディカラ"
+			}
+		}
+	},
+	"151" : {
+		"locales" : {
+			"name" : {
+				"en" : "Stoneskin",
+				"de" : "Steinhaut",
+				"fr" : "Cuirasse",
+				"jp" : "ストンスキン"
+			}
+		}
+	},
+	"154" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shroud of Saints",
+				"de" : "Fispelstimme",
+				"fr" : "Voile des saints",
+				"jp" : "女神の加護"
+			}
+		}
+	},
+	"155" : {
+		"locales" : {
+			"name" : {
+				"en" : "Freecure",
+				"de" : "Vitra +",
+				"fr" : "Extra Soin amélioré",
+				"jp" : "ケアルラ効果アップ"
+			}
+		}
+	},
+	"156" : {
+		"locales" : {
+			"name" : {
+				"en" : "Overcure",
+				"de" : "Vitaga +",
+				"fr" : "Méga Soin amélioré",
+				"jp" : "ケアルガ効果アップ"
+			}
+		}
+	},
+	"157" : {
+		"locales" : {
+			"name" : {
+				"en" : "Presence of Mind",
+				"de" : "Geistesgegenwart",
+				"fr" : "Présence d'esprit",
+				"jp" : "神速魔"
+			}
+		}
+	},
+	"158" : {
+		"locales" : {
+			"name" : {
+				"en" : "Regen",
+				"de" : "Regena",
+				"fr" : "Récup",
+				"jp" : "リジェネ"
+			}
+		}
+	},
+	"159" : {
+		"locales" : {
+			"name" : {
+				"en" : "Divine Seal",
+				"de" : "Göttliches Siegel",
+				"fr" : "Sceau divin",
+				"jp" : "ディヴァインシール"
+			}
+		}
+	},
+	"160" : {
+		"locales" : {
+			"name" : {
+				"en" : "Surecast",
+				"de" : "Unbeirrbarkeit",
+				"fr" : "Stoïcisme",
+				"jp" : "堅実魔"
+			}
+		}
+	},
+	"164" : {
+		"locales" : {
+			"name" : {
+				"en" : "Thundercloud",
+				"de" : "Blitz +",
+				"fr" : "Nuage d'orage",
+				"jp" : "サンダー系魔法効果アップ"
+			}
+		}
+	},
+	"165" : {
+		"locales" : {
+			"name" : {
+				"en" : "Firestarter",
+				"de" : "Feuga +",
+				"fr" : "Pyromane",
+				"jp" : "ファイガ効果アップ"
+			}
+		}
+	},
+	"166" : {
+		"locales" : {
+			"name" : {
+				"en" : "Succor",
+				"de" : "Kurieren +",
+				"fr" : "Grand soulagement",
+				"jp" : "士気高揚の策効果アップ"
+			}
+		}
+	},
+	"167" : {
+		"locales" : {
+			"name" : {
+				"en" : "Swiftcast",
+				"de" : "Spontaneität",
+				"fr" : "Magie prompte",
+				"jp" : "迅速魔"
+			}
+		}
+	},
+	"168" : {
+		"locales" : {
+			"name" : {
+				"en" : "Manaward",
+				"de" : "Mana-Schild",
+				"fr" : "Barrière de mana",
+				"jp" : "マバリア"
+			}
+		}
+	},
+	"169" : {
+		"locales" : {
+			"name" : {
+				"en" : "Manawall",
+				"de" : "Mana-Wand",
+				"fr" : "Mur de mana",
+				"jp" : "ウォール"
+			}
+		}
+	},
+	"170" : {
+		"locales" : {
+			"name" : {
+				"en" : "Apocatastasis",
+				"de" : "Apokatastasis",
+				"fr" : "Apocatastase",
+				"jp" : "アポカタスタシス"
+			}
+		}
+	},
+	"173" : {
+		"locales" : {
+			"name" : {
+				"en" : "Astral Fire",
+				"de" : "Lichtfeuer",
+				"fr" : "Feu astral",
+				"jp" : "アストラルファイア"
+			}
+		}
+	},
+	"174" : {
+		"locales" : {
+			"name" : {
+				"en" : "Astral Fire II",
+				"de" : "Lichtfeuer II",
+				"fr" : "Feu astral II",
+				"jp" : "アストラルファイアII"
+			}
+		}
+	},
+	"175" : {
+		"locales" : {
+			"name" : {
+				"en" : "Astral Fire III",
+				"de" : "Lichtfeuer III",
+				"fr" : "Feu astral III",
+				"jp" : "アストラルファイアIII"
+			}
+		}
+	},
+	"176" : {
+		"locales" : {
+			"name" : {
+				"en" : "Umbral Ice",
+				"de" : "Schatteneis",
+				"fr" : "Glace ombrale",
+				"jp" : "アンブラルブリザード"
+			}
+		}
+	},
+	"177" : {
+		"locales" : {
+			"name" : {
+				"en" : "Umbral Ice II",
+				"de" : "Schatteneis II",
+				"fr" : "Glace ombrale II",
+				"jp" : "アンブラルブリザードII"
+			}
+		}
+	},
+	"178" : {
+		"locales" : {
+			"name" : {
+				"en" : "Umbral Ice III",
+				"de" : "Schatteneis III",
+				"fr" : "Glace ombrale III",
+				"jp" : "アンブラルブリザードIII"
+			}
+		}
+	},
+	"184" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sustain",
+				"de" : "Erhaltung",
+				"fr" : "Transfusion",
+				"jp" : "サステイン"
+			}
+		}
+	},
+	"185" : {
+		"locales" : {
+			"name" : {
+				"en" : "Eye for an Eye",
+				"de" : "Auge um Auge",
+				"fr" : "Œil pour œil",
+				"jp" : "アイ・フォー・アイ"
+			}
+		}
+	},
+	"187" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rouse",
+				"de" : "Aufmuntern",
+				"fr" : "Stimulation",
+				"jp" : "ラウズ"
+			}
+		}
+	},
+	"190" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shadow Flare",
+				"de" : "Schattenflamme",
+				"fr" : "Éruption ténébreuse",
+				"jp" : "シャドウフレア"
+			}
+		}
+	},
+	"192" : {
+		"locales" : {
+			"name" : {
+				"en" : "Spur",
+				"de" : "Ansporn",
+				"fr" : "Encouragement",
+				"jp" : "スパー"
+			}
+		}
+	},
+	"194" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shield Wall",
+				"de" : "Schutzschild",
+				"fr" : "Mur protecteur",
+				"jp" : "シールドウォール"
+			}
+		}
+	},
+	"195" : {
+		"locales" : {
+			"name" : {
+				"en" : "Stronghold",
+				"de" : "Bastion",
+				"fr" : "Citadelle",
+				"jp" : "ストロングホールド"
+			}
+		}
+	},
+	"196" : {
+		"locales" : {
+			"name" : {
+				"en" : "Last Bastion",
+				"de" : "Letzte Bastion",
+				"fr" : "Dernier bastion",
+				"jp" : "ラストバスティオン"
+			}
+		}
+	},
+	"197" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blaze Spikes",
+				"de" : "Feuerstachel",
+				"fr" : "Pointes de feu",
+				"jp" : "ブレイズスパイク"
+			}
+		}
+	},
+	"198" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ice Spikes",
+				"de" : "Eisstachel",
+				"fr" : "Pointes de glace",
+				"jp" : "アイススパイク"
+			}
+		}
+	},
+	"199" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shock Spikes",
+				"de" : "Schockstachel",
+				"fr" : "Pointes de foudre",
+				"jp" : "ショックスパイク"
+			}
+		}
+	},
+	"203" : {
+		"locales" : {
+			"name" : {
+				"en" : "Boost",
+				"de" : "Akkumulation",
+				"fr" : "Accumulation",
+				"jp" : "力溜め"
+			}
+		}
+	},
+	"204" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enfire",
+				"de" : "Runenwaffe: Feuer",
+				"fr" : "EndoFeu",
+				"jp" : "魔法剣・火"
+			}
+		}
+	},
+	"205" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enblizzard",
+				"de" : "Runenwaffe: Eis",
+				"fr" : "EndoGlace",
+				"jp" : "魔法剣・氷"
+			}
+		}
+	},
+	"206" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enaero",
+				"de" : "Runenwaffe: Wind",
+				"fr" : "EndoVent",
+				"jp" : "魔法剣・風"
+			}
+		}
+	},
+	"207" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enstone",
+				"de" : "Runenwaffe: Erde",
+				"fr" : "EndoPierre",
+				"jp" : "魔法剣・土"
+			}
+		}
+	},
+	"208" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enthunder",
+				"de" : "Runenwaffe: Blitz",
+				"fr" : "EndoFoudre",
+				"jp" : "魔法剣・雷"
+			}
+		}
+	},
+	"209" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enwater",
+				"de" : "Runenwaffe: Wasser",
+				"fr" : "EndoEau",
+				"jp" : "魔法剣・水"
+			}
+		}
+	},
+	"214" : {
+		"locales" : {
+			"name" : {
+				"en" : "Agitation",
+				"de" : "Aufstachelung",
+				"fr" : "Énervement",
+				"jp" : "懐柔失敗"
+			}
+		}
+	},
+	"233" : {
+		"locales" : {
+			"name" : {
+				"en" : "Arbor Call",
+				"de" : "Ruf des Waldes",
+				"fr" : "Dendrologie",
+				"jp" : "アーバーコール"
+			}
+		}
+	},
+	"234" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lay of the Land",
+				"de" : "Bodenbefund",
+				"fr" : "Géologie",
+				"jp" : "ランドサーベイ"
+			}
+		}
+	},
+	"237" : {
+		"locales" : {
+			"name" : {
+				"en" : "Choco Regen",
+				"de" : "Chocobo-Regena",
+				"fr" : "Choco-récup",
+				"jp" : "チョコリジェネ"
+			}
+		}
+	},
+	"238" : {
+		"locales" : {
+			"name" : {
+				"en" : "Choco Surge",
+				"de" : "Chocobo-Quelle",
+				"fr" : "Choco-ardeur",
+				"jp" : "チョコサージ"
+			}
+		}
+	},
+	"242" : {
+		"locales" : {
+			"name" : {
+				"en" : "Arbor Call II",
+				"de" : "Ruf des Waldes II",
+				"fr" : "Dendrologie II",
+				"jp" : "アーバーコールII"
+			}
+		}
+	},
+	"243" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lay of the Land II",
+				"de" : "Bodenbefund II",
+				"fr" : "Géologie II",
+				"jp" : "ランドサーベイII"
+			}
+		}
+	},
+	"245" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sanction",
+				"de" : "Ermächtigung",
+				"fr" : "Sanction",
+				"jp" : "サンクション"
+			}
+		}
+	},
+	"249" : {
+		"locales" : {
+			"name" : {
+				"en" : "Flaming Arrow",
+				"de" : "Flammenpfeil",
+				"fr" : "Flèche enflammée",
+				"jp" : "フレイミングアロー"
+			}
+		}
+	},
+	"263" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"274" : {
+		"locales" : {
+			"name" : {
+				"en" : "Recuperation",
+				"de" : "Segnung",
+				"fr" : "Rétablissement",
+				"jp" : "治癒"
+			}
+		}
+	},
+	"276" : {
+		"locales" : {
+			"name" : {
+				"en" : "Voice of Valor",
+				"de" : "Lob des Kämpen",
+				"fr" : "Voix de la valeur",
+				"jp" : "勇戦の誉れ：効果"
+			}
+		}
+	},
+	"277" : {
+		"locales" : {
+			"name" : {
+				"en" : "Voice of Fortitude",
+				"de" : "Stimme der Stärke",
+				"fr" : "Voix de la ténacité",
+				"jp" : "堅忍の誉れ：効果"
+			}
+		}
+	},
+	"278" : {
+		"locales" : {
+			"name" : {
+				"en" : "Relentless March",
+				"de" : "無敵の進撃マーチ：効果",
+				"fr" : "Marche implacable",
+				"jp" : "無敵の進撃マーチ：効果"
+			}
+		}
+	},
+	"291" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hundred Fists",
+				"de" : "100 Fäuste",
+				"fr" : "Cent poings",
+				"jp" : "百烈拳"
+			}
+		}
+	},
+	"293" : {
+		"locales" : {
+			"name" : {
+				"en" : "Skill Speed Up",
+				"de" : "Schnelligkeit +",
+				"fr" : "Bonus de vivacité",
+				"jp" : "スキルスピード上昇"
+			}
+		}
+	},
+	"294" : {
+		"locales" : {
+			"name" : {
+				"en" : "Spell Speed Up",
+				"de" : "Zaubertempo +",
+				"fr" : "Bonus de célérité",
+				"jp" : "スペルスピード上昇"
+			}
+		}
+	},
+	"297" : {
+		"locales" : {
+			"name" : {
+				"en" : "Galvanize",
+				"de" : "Dynamisieren",
+				"fr" : "Réconfort",
+				"jp" : "鼓舞"
+			}
+		}
+	},
+	"298" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sacred Soil",
+				"de" : "Geweihte Erde",
+				"fr" : "Dogme de survie",
+				"jp" : "野戦治療の陣"
+			}
+		}
+	},
+	"299" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sacred Soil",
+				"de" : "Geweihte Erde",
+				"fr" : "Dogme de survie",
+				"jp" : "野戦治療の陣：効果"
+			}
+		}
+	},
+	"301" : {
+		"locales" : {
+			"name" : {
+				"en" : "Critical Strikes",
+				"de" : "Kritische Attacke",
+				"fr" : "Coups critiques",
+				"jp" : "クリティカル攻撃"
+			}
+		}
+	},
+	"310" : {
+		"locales" : {
+			"name" : {
+				"en" : "Curl",
+				"de" : "Einrollen",
+				"fr" : "Pelotonnement",
+				"jp" : "かたまり"
+			}
+		}
+	},
+	"311" : {
+		"locales" : {
+			"name" : {
+				"en" : "Earthen Ward",
+				"de" : "Erdengewahrsam",
+				"fr" : "Barrière terrestre",
+				"jp" : "大地の守り"
+			}
+		}
+	},
+	"312" : {
+		"locales" : {
+			"name" : {
+				"en" : "Razed Earth",
+				"de" : "Gaias Zorn",
+				"fr" : "Fureur tellurique",
+				"jp" : "大地の怒り"
+			}
+		}
+	},
+	"313" : {
+		"locales" : {
+			"name" : {
+				"en" : "Radiant Shield",
+				"de" : "Glühender Schild",
+				"fr" : "Bouclier radiant",
+				"jp" : "光輝の盾"
+			}
+		}
+	},
+	"315" : {
+		"locales" : {
+			"name" : {
+				"en" : "Whispering Dawn",
+				"de" : "Erhebendes Flüstern",
+				"fr" : "Murmure de l'aurore",
+				"jp" : "光の囁き"
+			}
+		}
+	},
+	"316" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fey Covenant",
+				"de" : "Feenverheißung",
+				"fr" : "Alliance féerique",
+				"jp" : "フェイコヴナント"
+			}
+		}
+	},
+	"317" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fey Illumination",
+				"de" : "Illumination",
+				"fr" : "Illumination féerique",
+				"jp" : "フェイイルミネーション"
+			}
+		}
+	},
+	"318" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fey Glow",
+				"de" : "Sprühender Glanz",
+				"fr" : "Lueur féerique",
+				"jp" : "フェイグロウ"
+			}
+		}
+	},
+	"319" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fey Light",
+				"de" : "Feenlicht",
+				"fr" : "Lumière féerique",
+				"jp" : "フェイライト"
+			}
+		}
+	},
+	"321" : {
+		"locales" : {
+			"name" : {
+				"en" : "Gungnir",
+				"de" : "Gungnir",
+				"fr" : "Gungnir",
+				"jp" : "グングニルの槍"
+			}
+		}
+	},
+	"346" : {
+		"locales" : {
+			"name" : {
+				"en" : "Waxen Flesh",
+				"de" : "Wächserne Haut",
+				"fr" : "Chair fondue",
+				"jp" : "帯炎"
+			}
+		}
+	},
+	"358" : {
+		"locales" : {
+			"name" : {
+				"en" : "Snowman",
+				"de" : "Schneemann",
+				"fr" : "Bonhomme de neige",
+				"jp" : "雪だるま"
+			}
+		}
+	},
+	"383" : {
+		"locales" : {
+			"name" : {
+				"en" : "Growing",
+				"de" : "Wachstumsschub",
+				"fr" : "En pleine croissance",
+				"jp" : "生長中"
+			}
+		}
+	},
+	"384" : {
+		"locales" : {
+			"name" : {
+				"en" : "Full-grown",
+				"de" : "Ausgewachsen",
+				"fr" : "Mature",
+				"jp" : "成形"
+			}
+		}
+	},
+	"390" : {
+		"locales" : {
+			"name" : {
+				"en" : "Growing",
+				"de" : "Wachstumsschub",
+				"fr" : "En pleine croissance",
+				"jp" : "生長中"
+			}
+		}
+	},
+	"391" : {
+		"locales" : {
+			"name" : {
+				"en" : "Full-grown",
+				"de" : "Ausgewachsen",
+				"fr" : "Mature",
+				"jp" : "成形"
+			}
+		}
+	},
+	"394" : {
+		"locales" : {
+			"name" : {
+				"en" : "Invincibility",
+				"de" : "Unverwundbar",
+				"fr" : "Invulnérable",
+				"jp" : "無敵"
+			}
+		}
+	},
+	"396" : {
+		"locales" : {
+			"name" : {
+				"en" : "Concentration",
+				"de" : "Gleichmut",
+				"fr" : "Concentration",
+				"jp" : "集中"
+			}
+		}
+	},
+	"397" : {
+		"locales" : {
+			"name" : {
+				"en" : "Safeguard",
+				"de" : "Einstimmung",
+				"fr" : "Sauvegarde",
+				"jp" : "堅守"
+			}
+		}
+	},
+	"403" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"404" : {
+		"locales" : {
+			"name" : {
+				"en" : "Transporting",
+				"de" : "Transport",
+				"fr" : "Chargé",
+				"jp" : "運搬"
+			}
+		}
+	},
+	"409" : {
+		"locales" : {
+			"name" : {
+				"en" : "Holmgang",
+				"de" : "Holmgang",
+				"fr" : "Holmgang",
+				"jp" : "ホルムギャング"
+			}
+		}
+	},
+	"410" : {
+		"locales" : {
+			"name" : {
+				"en" : "Antibody",
+				"de" : "Antikörper",
+				"fr" : "Réaction antivirale",
+				"jp" : "ウイルス抗体"
+			}
+		}
+	},
+	"411" : {
+		"locales" : {
+			"name" : {
+				"en" : "Inner Beast",
+				"de" : "Tier in dir",
+				"fr" : "Bête intérieure",
+				"jp" : "原初の魂"
+			}
+		}
+	},
+	"415" : {
+		"locales" : {
+			"name" : {
+				"en" : "Regain",
+				"de" : "Erholen",
+				"fr" : "Regain",
+				"jp" : "ＴＰ継続回復"
+			}
+		}
+	},
+	"416" : {
+		"locales" : {
+			"name" : {
+				"en" : "Transparent",
+				"de" : "Transparenz",
+				"fr" : "Transparence",
+				"jp" : "透明"
+			}
+		}
+	},
+	"417" : {
+		"locales" : {
+			"name" : {
+				"en" : "Protect",
+				"de" : "Protes",
+				"fr" : "Bouclier",
+				"jp" : "プロテス"
+			}
+		}
+	},
+	"418" : {
+		"locales" : {
+			"name" : {
+				"en" : "Transcendent",
+				"de" : "Temporäre Unverwundbarkeit",
+				"fr" : "Résurrection récente",
+				"jp" : "生還"
+			}
+		}
+	},
+	"426" : {
+		"locales" : {
+			"name" : {
+				"en" : "Noctoshield",
+				"de" : "Nachtschild",
+				"fr" : "Nocto-bouclier",
+				"jp" : "ノクトシールド"
+			}
+		}
+	},
+	"428" : {
+		"locales" : {
+			"name" : {
+				"en" : "Haste+",
+				"de" : "Hast +",
+				"fr" : "Hâte +",
+				"jp" : "ヘイスト＋"
+			}
+		}
+	},
+	"440" : {
+		"locales" : {
+			"name" : {
+				"en" : "Minimum",
+				"de" : "Wicht",
+				"fr" : "Mini",
+				"jp" : "ミニマム"
+			}
+		}
+	},
+	"441" : {
+		"locales" : {
+			"name" : {
+				"en" : "Toad",
+				"de" : "Frosch",
+				"fr" : "Crapaud",
+				"jp" : "トード"
+			}
+		}
+	},
+	"474" : {
+		"locales" : {
+			"name" : {
+				"en" : "Royal Rouse",
+				"de" : "Mogul-Fanfare",
+				"fr" : "Mogtivation",
+				"jp" : "闘魂"
+			}
+		}
+	},
+	"488" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shade Shift",
+				"de" : "Superkniff",
+				"fr" : "Décalage d'ombre",
+				"jp" : "残影"
+			}
+		}
+	},
+	"495" : {
+		"locales" : {
+			"name" : {
+				"en" : "Goad",
+				"de" : "Dampf",
+				"fr" : "Aiguillonnement",
+				"jp" : "叱咤"
+			}
+		}
+	},
+	"496" : {
+		"locales" : {
+			"name" : {
+				"en" : "Mudra",
+				"de" : "Mudra",
+				"fr" : "Mudrâ",
+				"jp" : "印"
+			}
+		}
+	},
+	"497" : {
+		"locales" : {
+			"name" : {
+				"en" : "Kassatsu",
+				"de" : "Kassatsu",
+				"fr" : "Kassatsu",
+				"jp" : "活殺自在"
+			}
+		}
+	},
+	"500" : {
+		"locales" : {
+			"name" : {
+				"en" : "Huton",
+				"de" : "Huton",
+				"fr" : "Fûton",
+				"jp" : "風遁の術"
+			}
+		}
+	},
+	"501" : {
+		"locales" : {
+			"name" : {
+				"en" : "Doton",
+				"de" : "Doton",
+				"fr" : "Doton",
+				"jp" : "土遁の術"
+			}
+		}
+	},
+	"505" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"507" : {
+		"locales" : {
+			"name" : {
+				"en" : "Suiton",
+				"de" : "Suiton",
+				"fr" : "Suiton",
+				"jp" : "水遁の術"
+			}
+		}
+	},
+	"529" : {
+		"locales" : {
+			"name" : {
+				"en" : "Invincibility",
+				"de" : "Unverwundbar",
+				"fr" : "Invulnérable",
+				"jp" : "無敵"
+			}
+		}
+	},
+	"547" : {
+		"locales" : {
+			"name" : {
+				"en" : "Facility Access: Production",
+				"de" : "Arbeitsstätte: Herstellung",
+				"fr" : "Installation: production",
+				"jp" : "製作施設：部材工作"
+			}
+		}
+	},
+	"548" : {
+		"locales" : {
+			"name" : {
+				"en" : "Facility Access: Finishing",
+				"de" : "Arbeitsstätte: Veredelung",
+				"fr" : "Installation: finition",
+				"jp" : "製作施設：精密工作"
+			}
+		}
+	},
+	"549" : {
+		"locales" : {
+			"name" : {
+				"en" : "Facility Access: Detailing",
+				"de" : "Arbeitsstätte: Feinarbeit",
+				"fr" : "Installation: minutie",
+				"jp" : "製作施設：難関工作"
+			}
+		}
+	},
+	"550" : {
+		"locales" : {
+			"name" : {
+				"en" : "Facility Access: Production II",
+				"de" : "Arbeitsstätte: Herstellung II",
+				"fr" : "Installation: production II",
+				"jp" : "製作施設：部材工作II"
+			}
+		}
+	},
+	"551" : {
+		"locales" : {
+			"name" : {
+				"en" : "Facility Access: Specialization",
+				"de" : "Arbeitsstätte: Spezialisierung",
+				"fr" : "Installation: spécialité",
+				"jp" : "製作施設：専門工作"
+			}
+		}
+	},
+	"552" : {
+		"locales" : {
+			"name" : {
+				"en" : "Facility Access: Specialization II",
+				"de" : "Arbeitsstätte: Spezialisierung II",
+				"fr" : "Installation: spécialité II",
+				"jp" : "製作施設：専門工作II"
+			}
+		}
+	},
+	"553" : {
+		"locales" : {
+			"name" : {
+				"en" : "Facility Access: Detailing II",
+				"de" : "Arbeitsstätte: Feinarbeit II",
+				"fr" : "Installation: minutie II",
+				"jp" : "製作施設：難関工作II"
+			}
+		}
+	},
+	"554" : {
+		"locales" : {
+			"name" : {
+				"en" : "Facility Access: Finishing II",
+				"de" : "Arbeitsstätte: Veredelung II",
+				"fr" : "Installation: finition II",
+				"jp" : "製作施設：精密工作II"
+			}
+		}
+	},
+	"557" : {
+		"locales" : {
+			"name" : {
+				"en" : "Repelling Spray",
+				"de" : "Reflektorschild",
+				"fr" : "Réplique",
+				"jp" : "応射"
+			}
+		}
+	},
+	"558" : {
+		"locales" : {
+			"name" : {
+				"en" : "Repelling Spray",
+				"de" : "Reflektorschild",
+				"fr" : "Réplique",
+				"jp" : "応射"
+			}
+		}
+	},
+	"565" : {
+		"locales" : {
+			"name" : {
+				"en" : "Transfiguration",
+				"de" : "Verwandlung",
+				"fr" : "Transformation",
+				"jp" : "変身"
+			}
+		}
+	},
+	"566" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"568" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fisher's Intuition",
+				"de" : "Petri Heil",
+				"fr" : "Instinct du pêcheur",
+				"jp" : "漁師の直感"
+			}
+		}
+	},
+	"579" : {
+		"locales" : {
+			"name" : {
+				"en" : "Critical Strikes",
+				"de" : "Kritische Attacke",
+				"fr" : "Coups critiques",
+				"jp" : "クリティカル攻撃"
+			}
+		}
+	},
+	"617" : {
+		"locales" : {
+			"name" : {
+				"en" : "Irradiated",
+				"de" : "Erstrahlend",
+				"fr" : "Irradiation",
+				"jp" : "帯光"
+			}
+		}
+	},
+	"618" : {
+		"locales" : {
+			"name" : {
+				"en" : "Area of Influence Up",
+				"de" : "Erweiterter Radius",
+				"fr" : "Aire d'effet augmentée",
+				"jp" : "アクション効果範囲拡大"
+			}
+		}
+	},
+	"631" : {
+		"locales" : {
+			"name" : {
+				"en" : "Tireless",
+				"de" : "Beflügelt",
+				"fr" : "Infatigable",
+				"jp" : "体力消耗無効"
+			}
+		}
+	},
+	"640" : {
+		"locales" : {
+			"name" : {
+				"en" : "Poison Resistance Up",
+				"de" : "Giftresistenz +",
+				"fr" : "Résistance au poison accrue",
+				"jp" : "毒耐性向上"
+			}
+		}
+	},
+	"641" : {
+		"locales" : {
+			"name" : {
+				"en" : "Choco Reflect",
+				"de" : "Chocobo-Reflektion",
+				"fr" : "Chocoboomerang",
+				"jp" : "弱体効果反射"
+			}
+		}
+	},
+	"648" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rehabilitation",
+				"de" : "Rehabilitation",
+				"fr" : "Recouvrement",
+				"jp" : "徐々にＨＰ回復"
+			}
+		}
+	},
+	"649" : {
+		"locales" : {
+			"name" : {
+				"en" : "Attack Up",
+				"de" : "Attacke-Bonus",
+				"fr" : "Bonus d'attaque",
+				"jp" : "物理攻撃力アップ"
+			}
+		}
+	},
+	"650" : {
+		"locales" : {
+			"name" : {
+				"en" : "Attack Magic Potency Up",
+				"de" : "Offensivmagie-Bonus",
+				"fr" : "Bonus de puissance magique",
+				"jp" : "魔法攻撃力アップ"
+			}
+		}
+	},
+	"651" : {
+		"locales" : {
+			"name" : {
+				"en" : "Haste",
+				"de" : "Hast",
+				"fr" : "Hâte",
+				"jp" : "ヘイスト"
+			}
+		}
+	},
+	"652" : {
+		"locales" : {
+			"name" : {
+				"en" : "HP & MP Boost",
+				"de" : "LP-/MP-Bonus",
+				"fr" : "Bonus de PV et PM",
+				"jp" : "最大ＨＰアップ＆最大ＭＰアップ"
+			}
+		}
+	},
+	"655" : {
+		"locales" : {
+			"name" : {
+				"en" : "Aegis Boon",
+				"de" : "Ägidensegen",
+				"fr" : "Égide",
+				"jp" : "イージスブーン"
+			}
+		}
+	},
+	"656" : {
+		"locales" : {
+			"name" : {
+				"en" : "Invincibility",
+				"de" : "Unverwundbar",
+				"fr" : "Invulnérable",
+				"jp" : "無敵"
+			}
+		}
+	},
+	"669" : {
+		"locales" : {
+			"name" : {
+				"en" : "Movement Speed Up",
+				"de" : "Geschwindigkeit +",
+				"fr" : "Vitesse de déplacement accrue",
+				"jp" : "移動速度上昇"
+			}
+		}
+	},
+	"672" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"678" : {
+		"locales" : {
+			"name" : {
+				"en" : "Tailwind",
+				"de" : "Rückenwind",
+				"fr" : "Vent arrière",
+				"jp" : "帯風"
+			}
+		}
+	},
+	"680" : {
+		"locales" : {
+			"name" : {
+				"en" : "Directional Parry",
+				"de" : "Gerichtete Parade",
+				"fr" : "Parade directionnelle",
+				"jp" : "受け流し"
+			}
+		}
+	},
+	"683" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blessing of Earth",
+				"de" : "Segen der Erde",
+				"fr" : "Bénédiction de la terre",
+				"jp" : "土の加護"
+			}
+		}
+	},
+	"684" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blessing of Fire",
+				"de" : "Segen des Feuers",
+				"fr" : "Bénédiction du feu",
+				"jp" : "火の加護"
+			}
+		}
+	},
+	"687" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"688" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hypercharge",
+				"de" : "Hyperladung",
+				"fr" : "Hypercharge",
+				"jp" : "ハイパーチャージ"
+			}
+		}
+	},
+	"689" : {
+		"locales" : {
+			"name" : {
+				"en" : "Mana Capacitor",
+				"de" : "Mana-Kondensator",
+				"fr" : "Condensateur d'éther",
+				"jp" : "マナキャパシター"
+			}
+		}
+	},
+	"690" : {
+		"locales" : {
+			"name" : {
+				"en" : "Muscle Activator",
+				"de" : "Muskelaktivator",
+				"fr" : "Activateur de muscle",
+				"jp" : "マッスルアクティベーター"
+			}
+		}
+	},
+	"705" : {
+		"locales" : {
+			"name" : {
+				"en" : "Transfiguration",
+				"de" : "Verwandlung",
+				"fr" : "Transformation",
+				"jp" : "変身"
+			}
+		}
+	},
+	"720" : {
+		"locales" : {
+			"name" : {
+				"en" : "Slashing Resistance Up",
+				"de" : "Hiebresistenz +",
+				"fr" : "Résistance au tranchant accrue",
+				"jp" : "斬属性耐性向上"
+			}
+		}
+	},
+	"721" : {
+		"locales" : {
+			"name" : {
+				"en" : "Piercing Resistance Up",
+				"de" : "Stichresistenz +",
+				"fr" : "Résistance au perforant accrue",
+				"jp" : "突属性耐性向上"
+			}
+		}
+	},
+	"722" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blunt Resistance Up",
+				"de" : "Schlagresistenz +",
+				"fr" : "Résistance au contondant accrue",
+				"jp" : "打属性耐性向上"
+			}
+		}
+	},
+	"726" : {
+		"locales" : {
+			"name" : {
+				"en" : "Divine Veil",
+				"de" : "Heiliger Quell",
+				"fr" : "Voile divin",
+				"jp" : "ディヴァインヴェール"
+			}
+		}
+	},
+	"727" : {
+		"locales" : {
+			"name" : {
+				"en" : "Divine Veil",
+				"de" : "Heiliger Quell (Barriere)",
+				"fr" : "Voile divin",
+				"jp" : "ディヴァインヴェール［バリア］"
+			}
+		}
+	},
+	"728" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sheltron",
+				"de" : "Schiltron",
+				"fr" : "Schiltron",
+				"jp" : "シェルトロン"
+			}
+		}
+	},
+	"730" : {
+		"locales" : {
+			"name" : {
+				"en" : "Abandon",
+				"de" : "Abkehr",
+				"fr" : "Abandonnement",
+				"jp" : "アバンドン"
+			}
+		}
+	},
+	"731" : {
+		"locales" : {
+			"name" : {
+				"en" : "Abandon II",
+				"de" : "Abkehr II",
+				"fr" : "Abandonnement II",
+				"jp" : "アバンドンII"
+			}
+		}
+	},
+	"732" : {
+		"locales" : {
+			"name" : {
+				"en" : "Abandon III",
+				"de" : "Abkehr III",
+				"fr" : "Abandonnement III",
+				"jp" : "アバンドンIII"
+			}
+		}
+	},
+	"733" : {
+		"locales" : {
+			"name" : {
+				"en" : "Abandon IV",
+				"de" : "Abkehr IV",
+				"fr" : "Abandonnement IV",
+				"jp" : "アバンドンIV"
+			}
+		}
+	},
+	"734" : {
+		"locales" : {
+			"name" : {
+				"en" : "Uncontrollable",
+				"de" : "Abkehr V",
+				"fr" : "Abandonnement V",
+				"jp" : "アバンドンV"
+			}
+		}
+	},
+	"735" : {
+		"locales" : {
+			"name" : {
+				"en" : "Raw Intuition",
+				"de" : "Ur-Instinkt",
+				"fr" : "Intuition pure",
+				"jp" : "原初の直感"
+			}
+		}
+	},
+	"736" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blood of the Dragon",
+				"de" : "Drachenherz",
+				"fr" : "Sang du dragon",
+				"jp" : "蒼の竜血"
+			}
+		}
+	},
+	"737" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ley Lines",
+				"de" : "Ley-Linien",
+				"fr" : "Manalignements",
+				"jp" : "黒魔紋"
+			}
+		}
+	},
+	"738" : {
+		"locales" : {
+			"name" : {
+				"en" : "Circle of Power",
+				"de" : "Ley-Linien",
+				"fr" : "Manalignements",
+				"jp" : "黒魔紋：効果"
+			}
+		}
+	},
+	"739" : {
+		"locales" : {
+			"name" : {
+				"en" : "Asylum",
+				"de" : "Refugium",
+				"fr" : "Asile",
+				"jp" : "アサイラム"
+			}
+		}
+	},
+	"740" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shadowskin",
+				"de" : "Schattenhaut",
+				"fr" : "Peau d'ombre",
+				"jp" : "シャドウスキン"
+			}
+		}
+	},
+	"742" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blood Weapon",
+				"de" : "Blutwaffe",
+				"fr" : "Arme de sang",
+				"jp" : "ブラッドウェポン"
+			}
+		}
+	},
+	"744" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dark Dance",
+				"de" : "Dunkler Tanz",
+				"fr" : "Danse ténébreuse",
+				"jp" : "ダークダンス"
+			}
+		}
+	},
+	"745" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blood Price",
+				"de" : "Blutzoll",
+				"fr" : "Prix du sang",
+				"jp" : "ブラッドプライス"
+			}
+		}
+	},
+	"746" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dark Mind",
+				"de" : "Dunkler Geist",
+				"fr" : "Esprit ténébreux",
+				"jp" : "ダークマインド"
+			}
+		}
+	},
+	"747" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shadow Wall",
+				"de" : "Schattenwand",
+				"fr" : "Mur d'ombre",
+				"jp" : "シャドウウォール"
+			}
+		}
+	},
+	"749" : {
+		"locales" : {
+			"name" : {
+				"en" : "Salted Earth",
+				"de" : "Salzige Erde",
+				"fr" : "Terre salée",
+				"jp" : "ソルトアース"
+			}
+		}
+	},
+	"752" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dark Arts",
+				"de" : "Dunkle Künste",
+				"fr" : "Arts ténébreux",
+				"jp" : "ダークアーツ"
+			}
+		}
+	},
+	"762" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fish Eyes",
+				"de" : "Fischaugen",
+				"fr" : "Yeux de poisson",
+				"jp" : "フィッシュアイ"
+			}
+		}
+	},
+	"765" : {
+		"locales" : {
+			"name" : {
+				"en" : "Catch and Release",
+				"de" : "Fangen und Freilassen",
+				"fr" : "Pêche et remise à l'eau",
+				"jp" : "最小サイズ向上"
+			}
+		}
+	},
+	"773" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enliven",
+				"de" : "Überschwang",
+				"fr" : "Remotivation",
+				"jp" : "奮起"
+			}
+		}
+	},
+	"776" : {
+		"locales" : {
+			"name" : {
+				"en" : "Invincibility",
+				"de" : "Unverwundbar",
+				"fr" : "Invulnérable",
+				"jp" : "無敵"
+			}
+		}
+	},
+	"786" : {
+		"locales" : {
+			"name" : {
+				"en" : "Battle Litany",
+				"de" : "Litanei der Schlacht",
+				"fr" : "Litanie combattante",
+				"jp" : "バトルリタニー"
+			}
+		}
+	},
+	"787" : {
+		"locales" : {
+			"name" : {
+				"en" : "Silhouette",
+				"de" : "Schattenwandler",
+				"fr" : "Silhouette",
+				"jp" : "影渡［被］"
+			}
+		}
+	},
+	"788" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shadewalker",
+				"de" : "Schattenwandler",
+				"fr" : "Manipulateur d'ombre",
+				"jp" : "影渡"
+			}
+		}
+	},
+	"789" : {
+		"locales" : {
+			"name" : {
+				"en" : "Smoke Screen",
+				"de" : "Rauchschwaden",
+				"fr" : "Écran de fumée",
+				"jp" : "煙玉"
+			}
+		}
+	},
+	"790" : {
+		"locales" : {
+			"name" : {
+				"en" : "Duality",
+				"de" : "Dualität",
+				"fr" : "Dualité",
+				"jp" : "一双"
+			}
+		}
+	},
+	"791" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dissipation",
+				"de" : "Dissipation",
+				"fr" : "Dissipation",
+				"jp" : "転化"
+			}
+		}
+	},
+	"792" : {
+		"locales" : {
+			"name" : {
+				"en" : "Emergency Tactics",
+				"de" : "Apotropaion",
+				"fr" : "Stratagème de l'urgence",
+				"jp" : "応急戦術"
+			}
+		}
+	},
+	"799" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fey Wind",
+				"de" : "Feenwind",
+				"fr" : "Vent féerique",
+				"jp" : "フェイウィンド"
+			}
+		}
+	},
+	"802" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sharper Fang and Claw",
+				"de" : "Fang und Klaue",
+				"fr" : "Croc-et-griffe préparé",
+				"jp" : "竜牙竜爪効果アップ"
+			}
+		}
+	},
+	"803" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Wheeling Thrust",
+				"de" : "Fächerstoß",
+				"fr" : "Percée tournante préparée",
+				"jp" : "竜尾大車輪効果アップ"
+			}
+		}
+	},
+	"804" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Down",
+				"de" : "Verringerte Verwundbarkeit",
+				"fr" : "Vulnérabilité diminuée",
+				"jp" : "被ダメージ低下"
+			}
+		}
+	},
+	"807" : {
+		"locales" : {
+			"name" : {
+				"en" : "Aethertrail Attunement",
+				"de" : "Bahamut-Äther",
+				"fr" : "Éther de Bahamut",
+				"jp" : "バハムートエーテル"
+			}
+		}
+	},
+	"808" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dreadwyrm Trance",
+				"de" : "Bahamut-Trance",
+				"fr" : "Transe-Bahamut",
+				"jp" : "トランス・バハムート"
+			}
+		}
+	},
+	"810" : {
+		"locales" : {
+			"name" : {
+				"en" : "Living Dead",
+				"de" : "Totenerweckung",
+				"fr" : "Mort-vivant",
+				"jp" : "リビングデッド"
+			}
+		}
+	},
+	"812" : {
+		"locales" : {
+			"name" : {
+				"en" : "Magic Vulnerability Down",
+				"de" : "Verringerte Magie-Verwundbarkeit",
+				"fr" : "Vulnérabilité magique diminuée",
+				"jp" : "被魔法ダメージ軽減"
+			}
+		}
+	},
+	"813" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dark Dance",
+				"de" : "Dunkler Tanz",
+				"fr" : "Danse ténébreuse",
+				"jp" : "ダークダンス"
+			}
+		}
+	},
+	"814" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Unleash",
+				"de" : "Entfesselung",
+				"fr" : "Déchaînement déchaîné",
+				"jp" : "アンリーシュ効果アップ"
+			}
+		}
+	},
+	"815" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Benefic II",
+				"de" : "Harmonie",
+				"fr" : "Bienfaisance II bénéfique",
+				"jp" : "ベネフィラ効果アップ"
+			}
+		}
+	},
+	"826" : {
+		"locales" : {
+			"name" : {
+				"en" : "Card Drawn",
+				"de" : "Gezogene Karte",
+				"fr" : "Tirage",
+				"jp" : "ドロー"
+			}
+		}
+	},
+	"827" : {
+		"locales" : {
+			"name" : {
+				"en" : "Royal Road",
+				"de" : "Königsweg",
+				"fr" : "Voie royale",
+				"jp" : "ロイヤルロード"
+			}
+		}
+	},
+	"828" : {
+		"locales" : {
+			"name" : {
+				"en" : "Card Held",
+				"de" : "Abgelegte Karte",
+				"fr" : "Ajout",
+				"jp" : "キープ"
+			}
+		}
+	},
+	"829" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Balance",
+				"de" : "Kraft der Waage",
+				"fr" : "La Balance",
+				"jp" : "アーゼマの均衡"
+			}
+		}
+	},
+	"830" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Bole",
+				"de" : "Kraft der Eiche",
+				"fr" : "Le Tronc",
+				"jp" : "世界樹の幹"
+			}
+		}
+	},
+	"831" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Arrow",
+				"de" : "Kraft des Pfeils",
+				"fr" : "La Flèche",
+				"jp" : "オシュオンの矢"
+			}
+		}
+	},
+	"832" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Spear",
+				"de" : "Kraft des Speers",
+				"fr" : "L'Épieu",
+				"jp" : "ハルオーネの槍"
+			}
+		}
+	},
+	"833" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Ewer",
+				"de" : "Kraft des Krugs",
+				"fr" : "L'Aiguière",
+				"jp" : "サリャクの水瓶"
+			}
+		}
+	},
+	"834" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Spire",
+				"de" : "Kraft des Turms",
+				"fr" : "La Tour",
+				"jp" : "ビエルゴの塔"
+			}
+		}
+	},
+	"835" : {
+		"locales" : {
+			"name" : {
+				"en" : "Aspected Benefic",
+				"de" : "Harmonischer Orbis",
+				"fr" : "Bienfaisance aspectée",
+				"jp" : "アスペクト・ベネフィク"
+			}
+		}
+	},
+	"836" : {
+		"locales" : {
+			"name" : {
+				"en" : "Aspected Helios",
+				"de" : "Aspektierter Helios",
+				"fr" : "Hélios aspecté",
+				"jp" : "アスペクト・ヘリオス"
+			}
+		}
+	},
+	"837" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nocturnal Field",
+				"de" : "Nocturnales Feld",
+				"fr" : "Champ nocturne",
+				"jp" : "ノクターナルフィールド"
+			}
+		}
+	},
+	"841" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lightspeed",
+				"de" : "Lichtgeschwindigkeit",
+				"fr" : "Vitesse de la lumière",
+				"jp" : "ライトスピード"
+			}
+		}
+	},
+	"842" : {
+		"locales" : {
+			"name" : {
+				"en" : "Luminiferous Aether",
+				"de" : "Lichtäther",
+				"fr" : "Éther luminifère",
+				"jp" : "ルミナスエーテル"
+			}
+		}
+	},
+	"845" : {
+		"locales" : {
+			"name" : {
+				"en" : "Synastry",
+				"de" : "Synastrie",
+				"fr" : "Synastrie",
+				"jp" : "シナストリー"
+			}
+		}
+	},
+	"846" : {
+		"locales" : {
+			"name" : {
+				"en" : "Synastry",
+				"de" : "Synastrie",
+				"fr" : "Synastrie",
+				"jp" : "シナストリー［被］"
+			}
+		}
+	},
+	"847" : {
+		"locales" : {
+			"name" : {
+				"en" : "Collective Unconscious",
+				"de" : "Numinosum",
+				"fr" : "Inconscient collectif",
+				"jp" : "運命の輪"
+			}
+		}
+	},
+	"848" : {
+		"locales" : {
+			"name" : {
+				"en" : "Collective Unconscious",
+				"de" : "Numinosum",
+				"fr" : "Inconscient collectif",
+				"jp" : "運命の輪"
+			}
+		}
+	},
+	"849" : {
+		"locales" : {
+			"name" : {
+				"en" : "Collective Unconscious",
+				"de" : "Numinosum",
+				"fr" : "Inconscient collectif (effet)",
+				"jp" : "運命の輪：効果"
+			}
+		}
+	},
+	"850" : {
+		"locales" : {
+			"name" : {
+				"en" : "Gathering Fortune Up",
+				"de" : "Sammelglück erhöht",
+				"fr" : "Récolte de qualité",
+				"jp" : "採集HQ獲得率アップ"
+			}
+		}
+	},
+	"851" : {
+		"locales" : {
+			"name" : {
+				"en" : "Reassembled",
+				"de" : "Justiert",
+				"fr" : "Réassemblage",
+				"jp" : "整備"
+			}
+		}
+	},
+	"853" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rapid Fire",
+				"de" : "Schnellfeuer",
+				"fr" : "Feu rapide",
+				"jp" : "ラピッドファイア"
+			}
+		}
+	},
+	"855" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hot Shot",
+				"de" : "Explosivgeschoss",
+				"fr" : "Tir déchaîné",
+				"jp" : "ホットショット"
+			}
+		}
+	},
+	"856" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Slug Shot",
+				"de" : "Verbessertes Flintenlaufgeschoss",
+				"fr" : "Tir de balle amélioré",
+				"jp" : "スラッグショット効果アップ"
+			}
+		}
+	},
+	"857" : {
+		"locales" : {
+			"name" : {
+				"en" : "Cleaner Shot",
+				"de" : "Verbesserter Sauberer Schuss",
+				"fr" : "Tir net amélioré",
+				"jp" : "クリーンショット効果アップ"
+			}
+		}
+	},
+	"863" : {
+		"locales" : {
+			"name" : {
+				"en" : "Land Waker",
+				"de" : "Erdbrecher",
+				"fr" : "Terre vierge",
+				"jp" : "原初の大地"
+			}
+		}
+	},
+	"864" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dark Force",
+				"de" : "Dunkle Macht",
+				"fr" : "Force des ténèbres",
+				"jp" : "ダークフォース"
+			}
+		}
+	},
+	"866" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Warden's Paean",
+				"de" : "Päan des Hüters",
+				"fr" : "Péan du Contemplateur",
+				"jp" : "時神のピーアン"
+			}
+		}
+	},
+	"867" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sharpcast",
+				"de" : "Augmentierung",
+				"fr" : "Dynamisation",
+				"jp" : "激成魔"
+			}
+		}
+	},
+	"870" : {
+		"locales" : {
+			"name" : {
+				"en" : "Push Back",
+				"de" : "Abstoßung",
+				"fr" : "Repoussée",
+				"jp" : "プッシュバック"
+			}
+		}
+	},
+	"899" : {
+		"locales" : {
+			"name" : {
+				"en" : "Physical Vulnerability Down",
+				"de" : "Verringerte physische Verwundbarkeit",
+				"fr" : "Vulnérabilité physique diminuée",
+				"jp" : "被物理ダメージ軽減"
+			}
+		}
+	},
+	"906" : {
+		"locales" : {
+			"name" : {
+				"en" : "Darkness",
+				"de" : "Dunkelheit",
+				"fr" : "Pouvoir des ténèbres",
+				"jp" : "暗黒の力"
+			}
+		}
+	},
+	"907" : {
+		"locales" : {
+			"name" : {
+				"en" : "Arcanum Blessing",
+				"de" : "Kraft der Arkana",
+				"fr" : "Bénédiction des arcanes",
+				"jp" : "アルカナの祝福"
+			}
+		}
+	},
+	"909" : {
+		"locales" : {
+			"name" : {
+				"en" : "Refresh",
+				"de" : "MP-Regeneration",
+				"fr" : "Recharge",
+				"jp" : "MP持続回復"
+			}
+		}
+	},
+	"912" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Down",
+				"de" : "Verringerte Verwundbarkeit",
+				"fr" : "Vulnérabilité diminuée",
+				"jp" : "被ダメージ低下"
+			}
+		}
+	},
+	"928" : {
+		"locales" : {
+			"name" : {
+				"en" : "Black Menace",
+				"de" : "Dunkle Drohung",
+				"fr" : "Menace fulgurante",
+				"jp" : "ブラックメナス"
+			}
+		}
+	},
+	"929" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Down",
+				"de" : "Verringerte Verwundbarkeit",
+				"fr" : "Vulnérabilité diminuée",
+				"jp" : "被ダメージ低下"
+			}
+		}
+	},
+	"941" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ranged Resistance",
+				"de" : "Immun gegen Fernattacken",
+				"fr" : "Invincibilité à distance",
+				"jp" : "遠隔無効"
+			}
+		}
+	},
+	"942" : {
+		"locales" : {
+			"name" : {
+				"en" : "Magic Resistance",
+				"de" : "Immun gegen Magieattacken",
+				"fr" : "Invincibilité magique",
+				"jp" : "魔法無効"
+			}
+		}
+	},
+	"955" : {
+		"locales" : {
+			"name" : {
+				"en" : "Healing Potency Up",
+				"de" : "Heilmagie-Bonus",
+				"fr" : "Bonus de magie curative",
+				"jp" : "回復魔法効果上昇"
+			}
+		}
+	},
+	"956" : {
+		"locales" : {
+			"name" : {
+				"en" : "Wheel of Fortune",
+				"de" : "Numinosum",
+				"fr" : "Inconscient collectif",
+				"jp" : "運命の輪"
+			}
+		}
+	},
+	"962" : {
+		"locales" : {
+			"name" : {
+				"en" : "ATK Up",
+				"de" : "ATT +",
+				"fr" : "Bonus d'attaque",
+				"jp" : "ATK上昇"
+			}
+		}
+	},
+	"964" : {
+		"locales" : {
+			"name" : {
+				"en" : "DEF Up",
+				"de" : "ABW +",
+				"fr" : "Bonus de défense",
+				"jp" : "DEF上昇"
+			}
+		}
+	},
+	"966" : {
+		"locales" : {
+			"name" : {
+				"en" : "SPD Up",
+				"de" : "GSW +",
+				"fr" : "Bonus de vitesse",
+				"jp" : "SPD上昇"
+			}
+		}
+	},
+	"968" : {
+		"locales" : {
+			"name" : {
+				"en" : "Arcana Breaker",
+				"de" : "Arkana-Stein",
+				"fr" : "Destruction arcanique",
+				"jp" : "アルカナ特効"
+			}
+		}
+	},
+	"969" : {
+		"locales" : {
+			"name" : {
+				"en" : "Invincibility",
+				"de" : "Unverwundbar",
+				"fr" : "Invulnérable",
+				"jp" : "無敵"
+			}
+		}
+	},
+	"970" : {
+		"locales" : {
+			"name" : {
+				"en" : "Critter Resistance",
+				"de" : "Tier-Resistenz",
+				"fr" : "Immunité aux créatures",
+				"jp" : "アニマル無効"
+			}
+		}
+	},
+	"971" : {
+		"locales" : {
+			"name" : {
+				"en" : "Monster Resistance",
+				"de" : "Monster-Resistenz",
+				"fr" : "Immunité aux monstres",
+				"jp" : "モンスター無効"
+			}
+		}
+	},
+	"972" : {
+		"locales" : {
+			"name" : {
+				"en" : "Poppet Resistance",
+				"de" : "Puppen-Resistenz",
+				"fr" : "Immunité aux poupées",
+				"jp" : "ドール無効"
+			}
+		}
+	},
+	"973" : {
+		"locales" : {
+			"name" : {
+				"en" : "Gadget Resistance",
+				"de" : "Apparat-Resistenz",
+				"fr" : "Immunité aux mécanismes",
+				"jp" : "ガジェット無効"
+			}
+		}
+	},
+	"978" : {
+		"locales" : {
+			"name" : {
+				"en" : "ATK & DEF Up",
+				"de" : "Schlachttrabant",
+				"fr" : "Bonus d'attaque et de défense",
+				"jp" : "攻防上昇"
+			}
+		}
+	},
+	"980" : {
+		"locales" : {
+			"name" : {
+				"en" : "Expanded Attack",
+				"de" : "Flächenwirkung",
+				"fr" : "Aire d'effet",
+				"jp" : "範囲攻撃"
+			}
+		}
+	},
+	"989" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rehabilitation",
+				"de" : "Rehabilitation",
+				"fr" : "Recouvrement",
+				"jp" : "徐々にＨＰ回復"
+			}
+		}
+	},
+	"992" : {
+		"locales" : {
+			"name" : {
+				"en" : "Offense Kit",
+				"de" : "Offensiv-Set",
+				"fr" : "Stimulant offensif",
+				"jp" : "オフェンスキット"
+			}
+		}
+	},
+	"993" : {
+		"locales" : {
+			"name" : {
+				"en" : "Defense Kit",
+				"de" : "Defensiv-Set",
+				"fr" : "Stimulant défensif",
+				"jp" : "ディフェンスキット"
+			}
+		}
+	},
+	"998" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bigbulge Goblixer",
+				"de" : "Gobtrank für Stark",
+				"fr" : "Gobsérum de force",
+				"jp" : "ゴブリポーション：マッスル"
+			}
+		}
+	},
+	"999" : {
+		"locales" : {
+			"name" : {
+				"en" : "Swiftkicks Goblixer",
+				"de" : "Gobtrank für Schnell",
+				"fr" : "Gobsérum de vitesse",
+				"jp" : "ゴブリポーション：スピード"
+			}
+		}
+	},
+	"1000" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blankface Goblixer",
+				"de" : "Gobtrank für Schleichen",
+				"fr" : "Gobsérum de furtivité",
+				"jp" : "ゴブリポーション：ステルス"
+			}
+		}
+	},
+	"1007" : {
+		"locales" : {
+			"name" : {
+				"en" : "Invisible",
+				"de" : "Unsichtbar",
+				"fr" : "Invisible",
+				"jp" : "インビジブル"
+			}
+		}
+	},
+	"1008" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nohurts Goblixer",
+				"de" : "Gobtrank für Sund",
+				"fr" : "Gobsérum de soin",
+				"jp" : "ゴブリポーション：ヒール"
+			}
+		}
+	},
+	"1012" : {
+		"locales" : {
+			"name" : {
+				"en" : "High Wire",
+				"de" : "Hochstimmung",
+				"fr" : "Excitation",
+				"jp" : "ハイテンション"
+			}
+		}
+	},
+	"1014" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rehabilitation",
+				"de" : "Rehabilitation",
+				"fr" : "Recouvrement",
+				"jp" : "徐々にＨＰ回復"
+			}
+		}
+	},
+	"1056" : {
+		"locales" : {
+			"name" : {
+				"en" : "Mimic",
+				"de" : "Windschatten",
+				"fr" : "Mime",
+				"jp" : "ものまね"
+			}
+		}
+	},
+	"1057" : {
+		"locales" : {
+			"name" : {
+				"en" : "Feather Field",
+				"de" : "Daunenpuffer",
+				"fr" : "Champ de plumes",
+				"jp" : "フェザーフィールド"
+			}
+		}
+	},
+	"1061" : {
+		"locales" : {
+			"name" : {
+				"en" : "Priority Aetheryte Pass",
+				"de" : "Vergünstigter Teleport",
+				"fr" : "Téléportation au rabais",
+				"jp" : "テレポ割引"
+			}
+		}
+	},
+	"1078" : {
+		"locales" : {
+			"name" : {
+				"en" : "Priority Seal Allowance",
+				"de" : "Staatstaler-Bonus",
+				"fr" : "Solde accrue",
+				"jp" : "軍票アップ"
+			}
+		}
+	},
+	"1079" : {
+		"locales" : {
+			"name" : {
+				"en" : "Gold Saucer VIP Card",
+				"de" : "MGP-Bonus",
+				"fr" : "Gros lot",
+				"jp" : "MGPアップ"
+			}
+		}
+	},
+	"1080" : {
+		"locales" : {
+			"name" : {
+				"en" : "Squadron Battle Manual",
+				"de" : "Kampfroutine-Bonus",
+				"fr" : "Feu du combat",
+				"jp" : "討伐経験値アップ"
+			}
+		}
+	},
+	"1081" : {
+		"locales" : {
+			"name" : {
+				"en" : "Squadron Survival Manual",
+				"de" : "Sammelroutine-Bonus",
+				"fr" : "Terre et eau",
+				"jp" : "採集経験値アップ"
+			}
+		}
+	},
+	"1082" : {
+		"locales" : {
+			"name" : {
+				"en" : "Squadron Engineering Manual",
+				"de" : "Syntheseroutine-Bonus",
+				"fr" : "Être en bonnes mains",
+				"jp" : "製作経験値アップ"
+			}
+		}
+	},
+	"1083" : {
+		"locales" : {
+			"name" : {
+				"en" : "Squadron Spiritbonding Manual",
+				"de" : "Bindungsbonus",
+				"fr" : "Union parfaite",
+				"jp" : "錬精度上昇量アップ"
+			}
+		}
+	},
+	"1084" : {
+		"locales" : {
+			"name" : {
+				"en" : "Squadron Rationing Manual",
+				"de" : "Längere Nahrungseffekte",
+				"fr" : "À boire et à manger",
+				"jp" : "食事効果時間延長"
+			}
+		}
+	},
+	"1085" : {
+		"locales" : {
+			"name" : {
+				"en" : "Squadron Gear Maintenance Manual",
+				"de" : "Verminderter Verschleiß",
+				"fr" : "Protections protégées",
+				"jp" : "装備品劣化低減"
+			}
+		}
+	},
+	"1099" : {
+		"locales" : {
+			"name" : {
+				"en" : "Healing Potency Up",
+				"de" : "Heilmagie-Bonus",
+				"fr" : "Bonus de magie curative",
+				"jp" : "回復魔法効果上昇"
+			}
+		}
+	},
+	"1100" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Down",
+				"de" : "Verringerte Verwundbarkeit",
+				"fr" : "Vulnérabilité diminuée",
+				"jp" : "被ダメージ低下"
+			}
+		}
+	},
+	"1104" : {
+		"locales" : {
+			"name" : {
+				"en" : "Obfuscated",
+				"de" : "Getarnt",
+				"fr" : "Offuscation",
+				"jp" : "隠れ身"
+			}
+		}
+	},
+	"1106" : {
+		"locales" : {
+			"name" : {
+				"en" : "Obfuscated",
+				"de" : "Getarnt",
+				"fr" : "Offuscation",
+				"jp" : "隠れ身"
+			}
+		}
+	},
+	"1116" : {
+		"locales" : {
+			"name" : {
+				"en" : "Haste",
+				"de" : "Hast",
+				"fr" : "Hâte",
+				"jp" : "ヘイスト"
+			}
+		}
+	},
+	"1139" : {
+		"locales" : {
+			"name" : {
+				"en" : "Physical Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"1149" : {
+		"locales" : {
+			"name" : {
+				"en" : "Wolf's Heart Kit",
+				"de" : "Wolfsherz-Set",
+				"fr" : "Stimulant cœur-de-loup",
+				"jp" : "ウルフハートキット"
+			}
+		}
+	},
+	"1151" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fae Cloak",
+				"de" : "Fae-Mantel",
+				"fr" : "Charme anti-Pixie",
+				"jp" : "妖精除け"
+			}
+		}
+	},
+	"1152" : {
+		"locales" : {
+			"name" : {
+				"en" : "Darksight",
+				"de" : "Thancreds Eulenblick",
+				"fr" : "Yeux de chat",
+				"jp" : "暗視"
+			}
+		}
+	},
+	"1156" : {
+		"locales" : {
+			"name" : {
+				"en" : "Magic Damage Up",
+				"de" : "Magieschaden +",
+				"fr" : "Bonus de dégâts magiques",
+				"jp" : "魔法ダメージ上昇"
+			}
+		}
+	},
+	"1167" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shark Eye",
+				"de" : "Hai-Auge",
+				"fr" : "Œil de requin",
+				"jp" : "シャークアイ"
+			}
+		}
+	},
+	"1168" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shark Eye II",
+				"de" : "Hai-Auge II",
+				"fr" : "Œil de requin II",
+				"jp" : "シャークアイII"
+			}
+		}
+	},
+	"1174" : {
+		"locales" : {
+			"name" : {
+				"en" : "Intervention",
+				"de" : "Intervention",
+				"fr" : "Intervention",
+				"jp" : "インターベンション"
+			}
+		}
+	},
+	"1175" : {
+		"locales" : {
+			"name" : {
+				"en" : "Passage of Arms",
+				"de" : "Waffengang",
+				"fr" : "Passe d'armes",
+				"jp" : "パッセージ・オブ・アームズ"
+			}
+		}
+	},
+	"1176" : {
+		"locales" : {
+			"name" : {
+				"en" : "Arms Up",
+				"de" : "Waffengang",
+				"fr" : "Armes dressées",
+				"jp" : "パッセージ・オブ・アームズ：効果"
+			}
+		}
+	},
+	"1177" : {
+		"locales" : {
+			"name" : {
+				"en" : "Inner Release",
+				"de" : "Urbefreiung",
+				"fr" : "Relâchement bestial",
+				"jp" : "原初の解放"
+			}
+		}
+	},
+	"1178" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blackest Night",
+				"de" : "Schwärzeste Nacht",
+				"fr" : "Nuit noirissime",
+				"jp" : "ブラックナイト"
+			}
+		}
+	},
+	"1179" : {
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Earth",
+				"de" : "Steinernes Enigma",
+				"fr" : "Énigme de la terre",
+				"jp" : "金剛の極意"
+			}
+		}
+	},
+	"1180" : {
+		"locales" : {
+			"name" : {
+				"en" : "Earth's Reply",
+				"de" : "Steinerne Klarheit",
+				"fr" : "Réaction de la terre",
+				"jp" : "金剛の決意"
+			}
+		}
+	},
+	"1181" : {
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Fire",
+				"de" : "Flammendes Enigma",
+				"fr" : "Énigme du feu",
+				"jp" : "紅蓮の極意"
+			}
+		}
+	},
+	"1182" : {
+		"locales" : {
+			"name" : {
+				"en" : "Meditative Brotherhood",
+				"de" : "Meditative Bruderschaft",
+				"fr" : "Fraternité méditative",
+				"jp" : "桃園結義：闘気"
+			}
+		}
+	},
+	"1183" : {
+		"locales" : {
+			"name" : {
+				"en" : "Right Eye",
+				"de" : "Rechtes Drachenauge",
+				"fr" : "Œil droit",
+				"jp" : "竜の右眼"
+			}
+		}
+	},
+	"1184" : {
+		"locales" : {
+			"name" : {
+				"en" : "Left Eye",
+				"de" : "Linkes Drachenauge",
+				"fr" : "Œil gauche",
+				"jp" : "竜の左眼"
+			}
+		}
+	},
+	"1185" : {
+		"locales" : {
+			"name" : {
+				"en" : "Brotherhood",
+				"de" : "Bruderschaft",
+				"fr" : "Fraternité",
+				"jp" : "桃園結義：攻撃"
+			}
+		}
+	},
+	"1186" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ten Chi Jin",
+				"de" : "Ten Chi Jin",
+				"fr" : "Ten Chi Jin",
+				"jp" : "天地人"
+			}
+		}
+	},
+	"1187" : {
+		"locales" : {
+			"name" : {
+				"en" : "Troubadour's Ballad",
+				"de" : "Ballade des Troubadours",
+				"fr" : "Ballade du troubadour",
+				"jp" : "トルバドゥール：バラード"
+			}
+		}
+	},
+	"1188" : {
+		"locales" : {
+			"name" : {
+				"en" : "Critical Up",
+				"de" : "Kritische Treffer +",
+				"fr" : "Critiques augmentés",
+				"jp" : "クリティカル上昇"
+			}
+		}
+	},
+	"1189" : {
+		"locales" : {
+			"name" : {
+				"en" : "Troubadour's Paeon",
+				"de" : "Päan des Troubadours",
+				"fr" : "Péan du troubadour",
+				"jp" : "トルバドゥール：パイオン"
+			}
+		}
+	},
+	"1190" : {
+		"locales" : {
+			"name" : {
+				"en" : "Troubadour's Minuet",
+				"de" : "Menuett des Troubadours",
+				"fr" : "Menuet du troubadour",
+				"jp" : "トルバドゥール：メヌエット"
+			}
+		}
+	},
+	"1191" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rampart",
+				"de" : "Schutzwall",
+				"fr" : "Rempart",
+				"jp" : "ランパート"
+			}
+		}
+	},
+	"1192" : {
+		"locales" : {
+			"name" : {
+				"en" : "Convalescence",
+				"de" : "Konvaleszenz",
+				"fr" : "Convalescence",
+				"jp" : "コンバレセンス"
+			}
+		}
+	},
+	"1194" : {
+		"locales" : {
+			"name" : {
+				"en" : "Anticipation",
+				"de" : "Vorausahnung",
+				"fr" : "Anticipation",
+				"jp" : "見切り"
+			}
+		}
+	},
+	"1196" : {
+		"locales" : {
+			"name" : {
+				"en" : "Palisade",
+				"de" : "Palisade",
+				"fr" : "Palissade",
+				"jp" : "パリセード"
+			}
+		}
+	},
+	"1197" : {
+		"locales" : {
+			"name" : {
+				"en" : "Tactician",
+				"de" : "Taktiker",
+				"fr" : "Tacticien",
+				"jp" : "タクティシャン"
+			}
+		}
+	},
+	"1198" : {
+		"locales" : {
+			"name" : {
+				"en" : "Refresh",
+				"de" : "Erfrischung",
+				"fr" : "Revigoration",
+				"jp" : "リフレッシュ"
+			}
+		}
+	},
+	"1199" : {
+		"locales" : {
+			"name" : {
+				"en" : "Peloton",
+				"de" : "Peloton",
+				"fr" : "Peloton",
+				"jp" : "プロトン"
+			}
+		}
+	},
+	"1202" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nature's Minne",
+				"de" : "Nophicas Minne",
+				"fr" : "Minne de la nature",
+				"jp" : "地神のミンネ"
+			}
+		}
+	},
+	"1204" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lucid Dreaming",
+				"de" : "Klartraum",
+				"fr" : "Rêve lucide",
+				"jp" : "ルーシッドドリーム"
+			}
+		}
+	},
+	"1205" : {
+		"locales" : {
+			"name" : {
+				"en" : "Flamethrower",
+				"de" : "Flammenwerfer",
+				"fr" : "Lance-flammes",
+				"jp" : "フレイムスロアー"
+			}
+		}
+	},
+	"1206" : {
+		"locales" : {
+			"name" : {
+				"en" : "Wheel of Fortune",
+				"de" : "Numinosum",
+				"fr" : "Inconscient collectif (effet)",
+				"jp" : "運命の輪：効果"
+			}
+		}
+	},
+	"1207" : {
+		"locales" : {
+			"name" : {
+				"en" : "Largesse",
+				"de" : "Huld",
+				"fr" : "Largesse",
+				"jp" : "慈愛"
+			}
+		}
+	},
+	"1209" : {
+		"locales" : {
+			"name" : {
+				"en" : "Arm's Length",
+				"de" : "Abtausch",
+				"fr" : "Portée de bras",
+				"jp" : "アームズレングス"
+			}
+		}
+	},
+	"1211" : {
+		"locales" : {
+			"name" : {
+				"en" : "Triplecast",
+				"de" : "Tripelzauber",
+				"fr" : "Triple sort",
+				"jp" : "三連魔"
+			}
+		}
+	},
+	"1213" : {
+		"locales" : {
+			"name" : {
+				"en" : "Devotion",
+				"de" : "Hingabe",
+				"fr" : "Dévouement",
+				"jp" : "エギの加護"
+			}
+		}
+	},
+	"1217" : {
+		"locales" : {
+			"name" : {
+				"en" : "Thin Air",
+				"de" : "Ex Machina",
+				"fr" : "Sponte",
+				"jp" : "シンエアー"
+			}
+		}
+	},
+	"1218" : {
+		"locales" : {
+			"name" : {
+				"en" : "Divine Benison",
+				"de" : "Göttlicher Segen",
+				"fr" : "Faveur divine",
+				"jp" : "ディヴァインベニゾン"
+			}
+		}
+	},
+	"1219" : {
+		"locales" : {
+			"name" : {
+				"en" : "Confession",
+				"de" : "Bekenntnis",
+				"fr" : "Indulgence plénière",
+				"jp" : "インドゥルゲンティア"
+			}
+		}
+	},
+	"1220" : {
+		"locales" : {
+			"name" : {
+				"en" : "Excogitation",
+				"de" : "Weise Voraussicht",
+				"fr" : "Traité de l'excogitation",
+				"jp" : "深謀遠慮の策"
+			}
+		}
+	},
+	"1224" : {
+		"locales" : {
+			"name" : {
+				"en" : "Earthly Dominance",
+				"de" : "Irdische Herrschaft",
+				"fr" : "Domination terrestre",
+				"jp" : "星の支配者"
+			}
+		}
+	},
+	"1225" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"1226" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Down",
+				"de" : "Verringerte Verwundbarkeit",
+				"fr" : "Vulnérabilité diminuée",
+				"jp" : "被ダメージ低下"
+			}
+		}
+	},
+	"1229" : {
+		"locales" : {
+			"name" : {
+				"en" : "Kaiten",
+				"de" : "Klinge: Kaiten",
+				"fr" : "Kaiten",
+				"jp" : "必殺剣・回天"
+			}
+		}
+	},
+	"1230" : {
+		"locales" : {
+			"name" : {
+				"en" : "Recuperation",
+				"de" : "Segnung",
+				"fr" : "Rétablissement",
+				"jp" : "治癒"
+			}
+		}
+	},
+	"1231" : {
+		"locales" : {
+			"name" : {
+				"en" : "Meditate",
+				"de" : "Meditieren",
+				"fr" : "Mokusô",
+				"jp" : "黙想"
+			}
+		}
+	},
+	"1232" : {
+		"locales" : {
+			"name" : {
+				"en" : "Third Eye",
+				"de" : "Drittes Auge",
+				"fr" : "Troisième œil",
+				"jp" : "心眼"
+			}
+		}
+	},
+	"1233" : {
+		"locales" : {
+			"name" : {
+				"en" : "Meikyo Shisui",
+				"de" : "Meikyo Shisui",
+				"fr" : "Meikyô Shisui",
+				"jp" : "明鏡止水"
+			}
+		}
+	},
+	"1234" : {
+		"locales" : {
+			"name" : {
+				"en" : "Verfire Ready",
+				"de" : "Erzfeuer-bereit",
+				"fr" : "VerFeu préparé",
+				"jp" : "ヴァルファイア効果アップ"
+			}
+		}
+	},
+	"1235" : {
+		"locales" : {
+			"name" : {
+				"en" : "Verstone Ready",
+				"de" : "Erzstein-bereit",
+				"fr" : "VerTerre préparée",
+				"jp" : "ヴァルストーン効果アップ"
+			}
+		}
+	},
+	"1236" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Enpi",
+				"de" : "Verbessertes Enpi",
+				"fr" : "Enpi amélioré",
+				"jp" : "燕飛効果アップ"
+			}
+		}
+	},
+	"1237" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Scatter",
+				"de" : "Verbessertes Zerstreuen",
+				"fr" : "Éparpillement amélioré",
+				"jp" : "スキャッター効果アップ"
+			}
+		}
+	},
+	"1238" : {
+		"locales" : {
+			"name" : {
+				"en" : "Acceleration",
+				"de" : "Präparation",
+				"fr" : "Accélération",
+				"jp" : "アクセラレーション"
+			}
+		}
+	},
+	"1239" : {
+		"locales" : {
+			"name" : {
+				"en" : "Embolden",
+				"de" : "Ermutigen",
+				"fr" : "Enhardissement",
+				"jp" : "エンボルデン"
+			}
+		}
+	},
+	"1240" : {
+		"locales" : {
+			"name" : {
+				"en" : "Chiten",
+				"de" : "Hissatsu: Chiten",
+				"fr" : "Hissatsu: Chiten",
+				"jp" : "必殺剣・地天"
+			}
+		}
+	},
+	"1243" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dive Ready",
+				"de" : "Sprungbereit",
+				"fr" : "Piqué mirage préparé",
+				"jp" : "ミラージュダイブ実行可"
+			}
+		}
+	},
+	"1244" : {
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Wind",
+				"de" : "Stürmendes Enigma",
+				"fr" : "Énigme du vent",
+				"jp" : "疾風の極意"
+			}
+		}
+	},
+	"1247" : {
+		"locales" : {
+			"name" : {
+				"en" : "Diurnal Balance",
+				"de" : "Neutral (Diurnal)",
+				"fr" : "Adepte de la neutralité (diurne)",
+				"jp" : "ニュートラルセクト［日］"
+			}
+		}
+	},
+	"1248" : {
+		"locales" : {
+			"name" : {
+				"en" : "Giant Dominance",
+				"de" : "Planetare Herrschaft",
+				"fr" : "Domination stellaire",
+				"jp" : "巨星の支配者"
+			}
+		}
+	},
+	"1249" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dualcast",
+				"de" : "Doppelzauber",
+				"fr" : "Chaîne de sorts",
+				"jp" : "連続魔"
+			}
+		}
+	},
+	"1250" : {
+		"locales" : {
+			"name" : {
+				"en" : "True North",
+				"de" : "Neuausrichtung",
+				"fr" : "Vrai Nord",
+				"jp" : "トゥルーノース"
+			}
+		}
+	},
+	"1252" : {
+		"locales" : {
+			"name" : {
+				"en" : "Eyes Open",
+				"de" : "Offene Augen",
+				"fr" : "Yeux ouverts",
+				"jp" : "開眼"
+			}
+		}
+	},
+	"1266" : {
+		"locales" : {
+			"name" : {
+				"en" : "Transparent II",
+				"de" : "Supertransparenz",
+				"fr" : "Transparence+",
+				"jp" : "透明［強］"
+			}
+		}
+	},
+	"1290" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vril",
+				"de" : "Vril",
+				"fr" : "Vril",
+				"jp" : "ラクシュミエーテル"
+			}
+		}
+	},
+	"1297" : {
+		"locales" : {
+			"name" : {
+				"en" : "Embolden",
+				"de" : "Ermutigen",
+				"fr" : "Enhardissement",
+				"jp" : "エンボルデン"
+			}
+		}
+	},
+	"1298" : {
+		"locales" : {
+			"name" : {
+				"en" : "Jinpu",
+				"de" : "Jinpu",
+				"fr" : "Jinpû",
+				"jp" : "陣風"
+			}
+		}
+	},
+	"1299" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shifu",
+				"de" : "Shifu",
+				"fr" : "Shifû",
+				"jp" : "士風"
+			}
+		}
+	},
+	"1300" : {
+		"locales" : {
+			"name" : {
+				"en" : "Cover",
+				"de" : "Deckung",
+				"fr" : "Couverture",
+				"jp" : "かばう"
+			}
+		}
+	},
+	"1301" : {
+		"locales" : {
+			"name" : {
+				"en" : "Covered",
+				"de" : "Gedeckt",
+				"fr" : "Couvert",
+				"jp" : "かばう［被］"
+			}
+		}
+	},
+	"1302" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hallowed Ground",
+				"de" : "Heiliger Boden",
+				"fr" : "Invincible",
+				"jp" : "インビンシブル"
+			}
+		}
+	},
+	"1303" : {
+		"locales" : {
+			"name" : {
+				"en" : "Inner Release",
+				"de" : "Urbefreiung",
+				"fr" : "Relâchement bestial",
+				"jp" : "原初の解放"
+			}
+		}
+	},
+	"1308" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blackest Night",
+				"de" : "Schwärzeste Nacht",
+				"fr" : "Nuit noirissime",
+				"jp" : "ブラックナイト"
+			}
+		}
+	},
+	"1310" : {
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Earth",
+				"de" : "Steinernes Enigma",
+				"fr" : "Énigme de la terre",
+				"jp" : "金剛の極意"
+			}
+		}
+	},
+	"1311" : {
+		"locales" : {
+			"name" : {
+				"en" : "Earth's Reply",
+				"de" : "Steinerne Klarheit",
+				"fr" : "Réaction de la terre",
+				"jp" : "金剛の決意"
+			}
+		}
+	},
+	"1315" : {
+		"locales" : {
+			"name" : {
+				"en" : "Kakuremi",
+				"de" : "Kakuremi",
+				"fr" : "Kakuremi",
+				"jp" : "隠身の術"
+			}
+		}
+	},
+	"1316" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hidden",
+				"de" : "Versteckt",
+				"fr" : "Dissimulation",
+				"jp" : "かくれる"
+			}
+		}
+	},
+	"1317" : {
+		"locales" : {
+			"name" : {
+				"en" : "Three Mudra",
+				"de" : "Tri-Mudra",
+				"fr" : "Trimudrâ",
+				"jp" : "三印自在"
+			}
+		}
+	},
+	"1320" : {
+		"locales" : {
+			"name" : {
+				"en" : "Meikyo Shisui",
+				"de" : "Meikyo Shisui",
+				"fr" : "Meikyô Shisui",
+				"jp" : "明鏡止水"
+			}
+		}
+	},
+	"1325" : {
+		"locales" : {
+			"name" : {
+				"en" : "Swiftcast",
+				"de" : "Spontaneität",
+				"fr" : "Magie prompte",
+				"jp" : "迅速魔"
+			}
+		}
+	},
+	"1330" : {
+		"locales" : {
+			"name" : {
+				"en" : "Regen",
+				"de" : "Regena",
+				"fr" : "Récup",
+				"jp" : "リジェネ"
+			}
+		}
+	},
+	"1331" : {
+		"locales" : {
+			"name" : {
+				"en" : "Galvanize",
+				"de" : "Dynamisieren",
+				"fr" : "Réconfort",
+				"jp" : "鼓舞"
+			}
+		}
+	},
+	"1333" : {
+		"locales" : {
+			"name" : {
+				"en" : "Eye for an Eye",
+				"de" : "Auge um Auge",
+				"fr" : "Œil pour œil",
+				"jp" : "アイ・フォー・アイ"
+			}
+		}
+	},
+	"1335" : {
+		"locales" : {
+			"name" : {
+				"en" : "Abridged",
+				"de" : "Kurzfassung",
+				"fr" : "Incantation abrégée",
+				"jp" : "略式詠唱"
+			}
+		}
+	},
+	"1338" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Balance",
+				"de" : "Waage",
+				"fr" : "La Balance",
+				"jp" : "アーゼマの均衡"
+			}
+		}
+	},
+	"1339" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Bole",
+				"de" : "Eiche",
+				"fr" : "Le Tronc",
+				"jp" : "世界樹の幹"
+			}
+		}
+	},
+	"1340" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Ewer",
+				"de" : "Krug",
+				"fr" : "L'Aiguière",
+				"jp" : "サリャクの水瓶"
+			}
+		}
+	},
+	"1341" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Spire",
+				"de" : "Turm",
+				"fr" : "La Tour",
+				"jp" : "ビエルゴの塔"
+			}
+		}
+	},
+	"1342" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bolt",
+				"de" : "Laufschritt",
+				"fr" : "Galopade",
+				"jp" : "疾走"
+			}
+		}
+	},
+	"1349" : {
+		"locales" : {
+			"name" : {
+				"en" : "Stun Resistance",
+				"de" : "Betäubungsresistenz",
+				"fr" : "Résistance à Étourdissement",
+				"jp" : "スタン無効"
+			}
+		}
+	},
+	"1350" : {
+		"locales" : {
+			"name" : {
+				"en" : "Heavy Resistance",
+				"de" : "Gewicht-Resistenz",
+				"fr" : "Résistance à Pesanteur",
+				"jp" : "ヘヴィ無効"
+			}
+		}
+	},
+	"1351" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bind Resistance",
+				"de" : "Fessel-Resistenz",
+				"fr" : "Résistance à Entrave",
+				"jp" : "バインド無効"
+			}
+		}
+	},
+	"1352" : {
+		"locales" : {
+			"name" : {
+				"en" : "Slow Resistance",
+				"de" : "Gemach-Resistenz",
+				"fr" : "Résistance à Lenteur",
+				"jp" : "スロウ無効"
+			}
+		}
+	},
+	"1353" : {
+		"locales" : {
+			"name" : {
+				"en" : "Silence Resistance",
+				"de" : "Stumm-Resistenz",
+				"fr" : "Résistance à Silence",
+				"jp" : "沈黙無効"
+			}
+		}
+	},
+	"1354" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sleep Resistance",
+				"de" : "Schlafresistenz",
+				"fr" : "Résistance à Sommeil",
+				"jp" : "睡眠無効"
+			}
+		}
+	},
+	"1355" : {
+		"locales" : {
+			"name" : {
+				"en" : "Knockback Penalty",
+				"de" : "Rückstoß unwirksam",
+				"fr" : "Résistance aux projections/attractions",
+				"jp" : "ノックバック無効"
+			}
+		}
+	},
+	"1364" : {
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Wind",
+				"de" : "Stürmendes Enigma",
+				"fr" : "Énigme du vent",
+				"jp" : "疾風の極意"
+			}
+		}
+	},
+	"1365" : {
+		"locales" : {
+			"name" : {
+				"en" : "Thundercloud",
+				"de" : "Blitzga-bereit",
+				"fr" : "Nuage d'orage",
+				"jp" : "サンダー系魔法効果アップ"
+			}
+		}
+	},
+	"1367" : {
+		"locales" : {
+			"name" : {
+				"en" : "Impactful",
+				"de" : "Impaktbereit",
+				"fr" : "Impact préparé",
+				"jp" : "インパクト詠唱可"
+			}
+		}
+	},
+	"1368" : {
+		"locales" : {
+			"name" : {
+				"en" : "Requiescat",
+				"de" : "Requiescat",
+				"fr" : "Requiescat",
+				"jp" : "レクイエスカット"
+			}
+		}
+	},
+	"1369" : {
+		"locales" : {
+			"name" : {
+				"en" : "Requiescat",
+				"de" : "Requiescat",
+				"fr" : "Requiescat",
+				"jp" : "レクイエスカット"
+			}
+		}
+	},
+	"1387" : {
+		"locales" : {
+			"name" : {
+				"en" : "Altered States",
+				"de" : "Veränderte Reichweite",
+				"fr" : "Portée d'action changée",
+				"jp" : "アクション効果範囲変更"
+			}
+		}
+	},
+	"1392" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shining Moonstone",
+				"de" : "Glanzmondstein",
+				"fr" : "Hécatolite scintillante",
+				"jp" : "ムーンストーンの輝き"
+			}
+		}
+	},
+	"1393" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dualcast",
+				"de" : "Doppelzauber",
+				"fr" : "Chaîne de sorts",
+				"jp" : "連続魔"
+			}
+		}
+	},
+	"1398" : {
+		"locales" : {
+			"name" : {
+				"en" : "Inner Beast",
+				"de" : "Tier in dir",
+				"fr" : "Bête intérieure",
+				"jp" : "原初の魂"
+			}
+		}
+	},
+	"1403" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lightspeed",
+				"de" : "Lichtgeschwindigkeit",
+				"fr" : "Vitesse de la lumière",
+				"jp" : "ライトスピード"
+			}
+		}
+	},
+	"1404" : {
+		"locales" : {
+			"name" : {
+				"en" : "Divine Benison",
+				"de" : "Göttlicher Segen",
+				"fr" : "Faveur divine",
+				"jp" : "ディヴァインベニゾン"
+			}
+		}
+	},
+	"1407" : {
+		"locales" : {
+			"name" : {
+				"en" : "Barrage",
+				"de" : "Sperrfeuer",
+				"fr" : "Rafale de coups",
+				"jp" : "乱れ撃ち"
+			}
+		}
+	},
+	"1413" : {
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Fire",
+				"de" : "Flammendes Enigma",
+				"fr" : "Énigme du feu",
+				"jp" : "紅蓮の極意"
+			}
+		}
+	},
+	"1414" : {
+		"locales" : {
+			"name" : {
+				"en" : "Battle Litany",
+				"de" : "Litanei der Schlacht",
+				"fr" : "Litanie combattante",
+				"jp" : "バトルリタニー"
+			}
+		}
+	},
+	"1415" : {
+		"locales" : {
+			"name" : {
+				"en" : "Protect",
+				"de" : "Protes",
+				"fr" : "Bouclier",
+				"jp" : "プロテス"
+			}
+		}
+	},
+	"1448" : {
+		"locales" : {
+			"name" : {
+				"en" : "Transfiguration",
+				"de" : "Verwandlung",
+				"fr" : "Transformation",
+				"jp" : "変身"
+			}
+		}
+	},
+	"1449" : {
+		"locales" : {
+			"name" : {
+				"en" : "Troubadour's Minuet",
+				"de" : "Menuett des Troubadours",
+				"fr" : "Menuet du troubadour",
+				"jp" : "トルバドゥール：メヌエット"
+			}
+		}
+	},
+	"1450" : {
+		"locales" : {
+			"name" : {
+				"en" : "Troubadour's Paeon",
+				"de" : "Päan des Troubadours",
+				"fr" : "Péan du troubadour",
+				"jp" : "トルバドゥール：パイオン"
+			}
+		}
+	},
+	"1451" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lord of Crowns",
+				"de" : "König der Kronen",
+				"fr" : "Roi des couronnes",
+				"jp" : "クラウンロード"
+			}
+		}
+	},
+	"1452" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lady of Crowns",
+				"de" : "Königin der Kronen",
+				"fr" : "Reine des couronnes",
+				"jp" : "クラウンレディ"
+			}
+		}
+	},
+	"1453" : {
+		"locales" : {
+			"name" : {
+				"en" : "Right Eye",
+				"de" : "Rechtes Drachenauge",
+				"fr" : "Œil droit",
+				"jp" : "竜の右眼"
+			}
+		}
+	},
+	"1454" : {
+		"locales" : {
+			"name" : {
+				"en" : "Left Eye",
+				"de" : "Linkes Drachenauge",
+				"fr" : "Œil gauche",
+				"jp" : "竜の左眼"
+			}
+		}
+	},
+	"1455" : {
+		"locales" : {
+			"name" : {
+				"en" : "Flamethrower",
+				"de" : "Flammenwerfer",
+				"fr" : "Lance-flammes",
+				"jp" : "フレイムスロアー"
+			}
+		}
+	},
+	"1456" : {
+		"locales" : {
+			"name" : {
+				"en" : "Thrill of War",
+				"de" : "Schlachtrausch",
+				"fr" : "Frisson de la guerre",
+				"jp" : "スリル・オブ・ウォー"
+			}
+		}
+	},
+	"1457" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shake It Off",
+				"de" : "Abschütteln",
+				"fr" : "Débarrassage",
+				"jp" : "シェイクオフ"
+			}
+		}
+	},
+	"1461" : {
+		"locales" : {
+			"name" : {
+				"en" : "Elemental Blessing: EXP",
+				"de" : "Elementarer Segen: Routine",
+				"fr" : "Bénédiction des esprits: bonus d'expérience",
+				"jp" : "精霊の加護：経験値アップ"
+			}
+		}
+	},
+	"1463" : {
+		"locales" : {
+			"name" : {
+				"en" : "Elemental Blessing: Damage",
+				"de" : "Elementarer Segen: Schaden",
+				"fr" : "Bénédiction des esprits: bonus de combativité",
+				"jp" : "精霊の加護：戦闘能力アップ"
+			}
+		}
+	},
+	"1494" : {
+		"locales" : {
+			"name" : {
+				"en" : "Face in the Crowd",
+				"de" : "Superfan",
+				"fr" : "Fan club",
+				"jp" : "公演参加"
+			}
+		}
+	},
+	"1496" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vanished",
+				"de" : "Verschwunden",
+				"fr" : "Invisibilité",
+				"jp" : "バニシュ"
+			}
+		}
+	},
+	"1514" : {
+		"locales" : {
+			"name" : {
+				"en" : "スリル・オブ・ウォー：効果",
+				"de" : "スリル・オブ・ウォー：効果",
+				"fr" : "スリル・オブ・ウォー：効果",
+				"jp" : "スリル・オブ・ウォー：効果"
+			}
+		}
+	},
+	"1517" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fire Resistance Up",
+				"de" : "Feuerresistenz +",
+				"fr" : "Résistance au feu accrue",
+				"jp" : "火属性耐性向上"
+			}
+		}
+	},
+	"1523" : {
+		"locales" : {
+			"name" : {
+				"en" : "Haste+",
+				"de" : "Hast +",
+				"fr" : "Hâte +",
+				"jp" : "ヘイスト＋"
+			}
+		}
+	},
+	"1526" : {
+		"locales" : {
+			"name" : {
+				"en" : "Thermal High",
+				"de" : "Hochdruck",
+				"fr" : "Haute pression",
+				"jp" : "高気圧"
+			}
+		}
+	},
+	"1531" : {
+		"locales" : {
+			"name" : {
+				"en" : "Down the Rabbit Hole",
+				"de" : "Immer dem Hasen nach",
+				"fr" : "Lapinou!",
+				"jp" : "財宝誘導"
+			}
+		}
+	},
+	"1567" : {
+		"locales" : {
+			"name" : {
+				"en" : "Primal Rage",
+				"de" : "Primae-Wahn",
+				"fr" : "Patronage primordial",
+				"jp" : "召喚獣の加護"
+			}
+		}
+	},
+	"1570" : {
+		"locales" : {
+			"name" : {
+				"en" : "Invincibility",
+				"de" : "Unverwundbar",
+				"fr" : "Invulnérable",
+				"jp" : "無敵"
+			}
+		}
+	},
+	"1571" : {
+		"locales" : {
+			"name" : {
+				"en" : "Temporal Barrier",
+				"de" : "Lauf der Zeit",
+				"fr" : "Barrière anti-stase",
+				"jp" : "時間停止無効"
+			}
+		}
+	},
+	"1572" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"1584" : {
+		"locales" : {
+			"name" : {
+				"en" : "Komainu's Favor",
+				"de" : "Komainus Gunst",
+				"fr" : "Grâce de Koma-inu",
+				"jp" : "コマイヌの神通力"
+			}
+		}
+	},
+	"1585" : {
+		"locales" : {
+			"name" : {
+				"en" : "Inugami's Favor",
+				"de" : "Inugamis Gunst",
+				"fr" : "Grâce d'Inugami",
+				"jp" : "イヌガミの神通力"
+			}
+		}
+	},
+	"1586" : {
+		"locales" : {
+			"name" : {
+				"en" : "Senri's Favor",
+				"de" : "Senris Gunst",
+				"fr" : "Grâce de Senri",
+				"jp" : "センリの神通力"
+			}
+		}
+	},
+	"1587" : {
+		"locales" : {
+			"name" : {
+				"en" : "Elemental Harmony",
+				"de" : "Elementare Harmonie",
+				"fr" : "Harmonie élémentaire",
+				"jp" : "静魔薬"
+			}
+		}
+	},
+	"1594" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hundred Fists",
+				"de" : "100 Fäuste",
+				"fr" : "Cent poings",
+				"jp" : "百烈拳"
+			}
+		}
+	},
+	"1611" : {
+		"locales" : {
+			"name" : {
+				"en" : "Arcane Bulwark",
+				"de" : "Magische Barriere",
+				"fr" : "Barrière magique",
+				"jp" : "魔法障壁"
+			}
+		}
+	},
+	"1615" : {
+		"locales" : {
+			"name" : {
+				"en" : "Crumbling Bulwark",
+				"de" : "Zerstörung der magischen Barriere",
+				"fr" : "Barrière magique détériorée",
+				"jp" : "魔法障壁：崩壊"
+			}
+		}
+	},
+	"1623" : {
+		"locales" : {
+			"name" : {
+				"en" : "Live Wire",
+				"de" : "Elektrische Ladung",
+				"fr" : "Charge électrique",
+				"jp" : "雷気充填"
+			}
+		}
+	},
+	"1641" : {
+		"locales" : {
+			"name" : {
+				"en" : "Spirit of the Remembered",
+				"de" : "Segen des Helden",
+				"fr" : "Protection d'un héros vaillant",
+				"jp" : "英傑の加護"
+			}
+		}
+	},
+	"1642" : {
+		"locales" : {
+			"name" : {
+				"en" : "Protect L",
+				"de" : "Logos-Protes",
+				"fr" : "Évocation Logos: Bouclier",
+				"jp" : "ロゴス・プロテス"
+			}
+		}
+	},
+	"1643" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shell L",
+				"de" : "Logos-Vallum",
+				"fr" : "Évocation Logos: Barrière",
+				"jp" : "ロゴス・シェル"
+			}
+		}
+	},
+	"1644" : {
+		"locales" : {
+			"name" : {
+				"en" : "Swift L",
+				"de" : "Logos-Eile",
+				"fr" : "Évocation Logos: Vélocité",
+				"jp" : "ロゴス・スウィフト"
+			}
+		}
+	},
+	"1645" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rapid Recast",
+				"de" : "Velocitas",
+				"fr" : "Recharge rapide",
+				"jp" : "ファストリキャスト"
+			}
+		}
+	},
+	"1646" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bravery L",
+				"de" : "Logos-Courage",
+				"fr" : "Évocation Logos: Bravoure",
+				"jp" : "ロゴス・ブレイブ"
+			}
+		}
+	},
+	"1647" : {
+		"locales" : {
+			"name" : {
+				"en" : "Solid Shield",
+				"de" : "Physischer Schild",
+				"fr" : "Protection physique",
+				"jp" : "フィジカルシールド"
+			}
+		}
+	},
+	"1648" : {
+		"locales" : {
+			"name" : {
+				"en" : "Spell Shield",
+				"de" : "Magischer Schild",
+				"fr" : "Protection magique",
+				"jp" : "マジックシールド"
+			}
+		}
+	},
+	"1649" : {
+		"locales" : {
+			"name" : {
+				"en" : "Reflect L",
+				"de" : "Logos-Reflektion",
+				"fr" : "Évocation Logos: Miroir",
+				"jp" : "ロゴス・リフレク"
+			}
+		}
+	},
+	"1651" : {
+		"locales" : {
+			"name" : {
+				"en" : "Refresh L",
+				"de" : "Logos-Erfrischung",
+				"fr" : "Évocation Logos: Tonification",
+				"jp" : "ロゴス・リフレッシュ"
+			}
+		}
+	},
+	"1652" : {
+		"locales" : {
+			"name" : {
+				"en" : "Magic Burst L",
+				"de" : "Logos-Magieexplosion",
+				"fr" : "Évocation Logos: Explosion magique",
+				"jp" : "ロゴス・マジックバースト"
+			}
+		}
+	},
+	"1653" : {
+		"locales" : {
+			"name" : {
+				"en" : "Double Edge L",
+				"de" : "Logos-Zweischneid",
+				"fr" : "Évocation Logos: Double tranchant",
+				"jp" : "ロゴス・ダブルエッジ"
+			}
+		}
+	},
+	"1656" : {
+		"locales" : {
+			"name" : {
+				"en" : "Boost",
+				"de" : "Starksammeln",
+				"fr" : "Accumulation",
+				"jp" : "力溜め"
+			}
+		}
+	},
+	"1657" : {
+		"locales" : {
+			"name" : {
+				"en" : "Incense L",
+				"de" : "Logos-Hohn",
+				"fr" : "Évocation Logos: Incitation",
+				"jp" : "ロゴス・エンミティ"
+			}
+		}
+	},
+	"1662" : {
+		"locales" : {
+			"name" : {
+				"en" : "Local Resonance",
+				"de" : "Resonanzprogramm: Nah",
+				"fr" : "Programme de résonance: proximité",
+				"jp" : "レゾナンスプログラム：ニアー"
+			}
+		}
+	},
+	"1663" : {
+		"locales" : {
+			"name" : {
+				"en" : "Remote Resonance",
+				"de" : "Resonanzprogramm: Fern",
+				"fr" : "Programme de résonance: distance",
+				"jp" : "レゾナンスプログラム：ファー"
+			}
+		}
+	},
+	"1677" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bloodbath L",
+				"de" : "Logos-Blutbad",
+				"fr" : "Évocation Logos: Bain de sang",
+				"jp" : "ロゴス・ブラッドバス"
+			}
+		}
+	},
+	"1684" : {
+		"locales" : {
+			"name" : {
+				"en" : "Break III Edict",
+				"de" : "Kommando: Stillstandga",
+				"fr" : "Ordre: Méga Brèche",
+				"jp" : "号令：ブレクガ"
+			}
+		}
+	},
+	"1685" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rush Edict",
+				"de" : "Kommando: Sturm",
+				"fr" : "Ordre: Plongeon",
+				"jp" : "号令：ラッシュ"
+			}
+		}
+	},
+	"1686" : {
+		"locales" : {
+			"name" : {
+				"en" : "Tornado Edict",
+				"de" : "Kommando: Tornado",
+				"fr" : "Ordre: Tornade",
+				"jp" : "号令：トルネド"
+			}
+		}
+	},
+	"1687" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rehabilitation",
+				"de" : "Rehabilitation",
+				"fr" : "Recouvrement",
+				"jp" : "徐々にＨＰ回復"
+			}
+		}
+	},
+	"1706" : {
+		"locales" : {
+			"name" : {
+				"en" : "Evasion Up",
+				"de" : "Ausweich-Bonus",
+				"fr" : "Bonus d'esquive",
+				"jp" : "回避力アップ"
+			}
+		}
+	},
+	"1716" : {
+		"locales" : {
+			"name" : {
+				"en" : "Boost",
+				"de" : "Starksammeln",
+				"fr" : "Accumulation",
+				"jp" : "力溜め"
+			}
+		}
+	},
+	"1718" : {
+		"locales" : {
+			"name" : {
+				"en" : "Waxing Nocturne",
+				"de" : "Ekstatischer Kampf",
+				"fr" : "Forcené",
+				"jp" : "狂戦士化"
+			}
+		}
+	},
+	"1720" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ice Spikes",
+				"de" : "Eisstachel",
+				"fr" : "Pointes de glace",
+				"jp" : "アイススパイク"
+			}
+		}
+	},
+	"1722" : {
+		"locales" : {
+			"name" : {
+				"en" : "Diamondback",
+				"de" : "Diamantrücken",
+				"fr" : "Blindage",
+				"jp" : "超硬化"
+			}
+		}
+	},
+	"1724" : {
+		"locales" : {
+			"name" : {
+				"en" : "Veil of the Whorl",
+				"de" : "Wogenschleier",
+				"fr" : "Voile du Déchaîneur",
+				"jp" : "水神のヴェール"
+			}
+		}
+	},
+	"1737" : {
+		"locales" : {
+			"name" : {
+				"en" : "Toad Oil",
+				"de" : "Schleimiges Sekret",
+				"fr" : "Huile de crapaud",
+				"jp" : "ガマの脂"
+			}
+		}
+	},
+	"1747" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fearless",
+				"de" : "Furchtlos",
+				"fr" : "Brave",
+				"jp" : "勇気"
+			}
+		}
+	},
+	"1749" : {
+		"locales" : {
+			"name" : {
+				"en" : "Area of Influence Up",
+				"de" : "Erweiterter Radius",
+				"fr" : "Aire d'effet augmentée",
+				"jp" : "アクション効果範囲拡大"
+			}
+		}
+	},
+	"1754" : {
+		"locales" : {
+			"name" : {
+				"en" : "Aetherially Primed",
+				"de" : "Teleportaffinität",
+				"fr" : "Préparatifs de téléportation terminés",
+				"jp" : "転送準備"
+			}
+		}
+	},
+	"1756" : {
+		"locales" : {
+			"name" : {
+				"en" : "Elemental Blessing",
+				"de" : "Elementarer Segen",
+				"fr" : "Bénédiction des esprits",
+				"jp" : "精霊の加護"
+			}
+		}
+	},
+	"1759" : {
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Down",
+				"de" : "Verringerte Verwundbarkeit",
+				"fr" : "Vulnérabilité diminuée",
+				"jp" : "被ダメージ低下"
+			}
+		}
+	},
+	"1761" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ice Resistance Up",
+				"de" : "Eisresistenz +",
+				"fr" : "Résistance à la glace accrue",
+				"jp" : "氷属性耐性向上"
+			}
+		}
+	},
+	"1763" : {
+		"locales" : {
+			"name" : {
+				"en" : "HP Boost",
+				"de" : "LP-Bonus",
+				"fr" : "Bonus de PV",
+				"jp" : "最大ＨＰアップ"
+			}
+		}
+	},
+	"1770" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"1791" : {
+		"locales" : {
+			"name" : {
+				"en" : "Magic Infusion",
+				"de" : "Magieinjektion",
+				"fr" : "Injection magique",
+				"jp" : "魔力注入"
+			}
+		}
+	},
+	"1814" : {
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Cascade",
+				"de" : "Invertierte Cascade",
+				"fr" : "Cascade inversée préparée",
+				"jp" : "リバースカスケード実行可"
+			}
+		}
+	},
+	"1815" : {
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Fountain",
+				"de" : "Fallende Fontäne",
+				"fr" : "Fontaine en cascade préparée",
+				"jp" : "ファウンテンフォール実行可"
+			}
+		}
+	},
+	"1816" : {
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Windmill",
+				"de" : "Steigende Windmühle",
+				"fr" : "Moulin à vent ascendant préparé",
+				"jp" : "ライジングウィンドミル実行可"
+			}
+		}
+	},
+	"1817" : {
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Shower",
+				"de" : "Blutklingen",
+				"fr" : "Averse de sang préparée",
+				"jp" : "ブラッドシャワー実行可"
+			}
+		}
+	},
+	"1818" : {
+		"locales" : {
+			"name" : {
+				"en" : "Standard Step",
+				"de" : "Einfache Choreographie",
+				"fr" : "Pas classique",
+				"jp" : "スタンダードステップ"
+			}
+		}
+	},
+	"1819" : {
+		"locales" : {
+			"name" : {
+				"en" : "Technical Step",
+				"de" : "Komplexe Choreographie",
+				"fr" : "Pas technique",
+				"jp" : "テクニカルステップ"
+			}
+		}
+	},
+	"1820" : {
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Fan Dance",
+				"de" : "Fächertanz III",
+				"fr" : "Danse de l'éventail III préparée",
+				"jp" : "扇の舞い【急】実行可"
+			}
+		}
+	},
+	"1821" : {
+		"locales" : {
+			"name" : {
+				"en" : "Standard Finish",
+				"de" : "Einfaches Finale",
+				"fr" : "Final classique",
+				"jp" : "スタンダードフィニッシュ"
+			}
+		}
+	},
+	"1822" : {
+		"locales" : {
+			"name" : {
+				"en" : "Technical Finish",
+				"de" : "Komplexes Finale",
+				"fr" : "Final technique",
+				"jp" : "テクニカルフィニッシュ"
+			}
+		}
+	},
+	"1825" : {
+		"locales" : {
+			"name" : {
+				"en" : "Devilment",
+				"de" : "Todestango",
+				"fr" : "Tango endiablé",
+				"jp" : "攻めのタンゴ"
+			}
+		}
+	},
+	"1826" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shield Samba",
+				"de" : "Schildsamba",
+				"fr" : "Samba protectrice",
+				"jp" : "守りのサンバ"
+			}
+		}
+	},
+	"1827" : {
+		"locales" : {
+			"name" : {
+				"en" : "Improvisation",
+				"de" : "Tanzimprovisation",
+				"fr" : "Improvisation",
+				"jp" : "インプロビゼーション"
+			}
+		}
+	},
+	"1828" : {
+		"locales" : {
+			"name" : {
+				"en" : "Improvisation",
+				"de" : "Tanzimprovisation (Heilung)",
+				"fr" : "Improvisation (bonus)",
+				"jp" : "インプロビゼーション：効果"
+			}
+		}
+	},
+	"1831" : {
+		"locales" : {
+			"name" : {
+				"en" : "No Mercy",
+				"de" : "Ohne Gnade",
+				"fr" : "Sans pitié",
+				"jp" : "ノー・マーシー"
+			}
+		}
+	},
+	"1832" : {
+		"locales" : {
+			"name" : {
+				"en" : "Camouflage",
+				"de" : "Camouflage",
+				"fr" : "Camouflage",
+				"jp" : "カモフラージュ"
+			}
+		}
+	},
+	"1834" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nebula",
+				"de" : "Nebula",
+				"fr" : "Nébuleuse",
+				"jp" : "ネビュラ"
+			}
+		}
+	},
+	"1835" : {
+		"locales" : {
+			"name" : {
+				"en" : "Aurora",
+				"de" : "Aurora",
+				"fr" : "Aurore",
+				"jp" : "オーロラ"
+			}
+		}
+	},
+	"1836" : {
+		"locales" : {
+			"name" : {
+				"en" : "Superbolide",
+				"de" : "Meteoritenfall",
+				"fr" : "Bolide",
+				"jp" : "ボーライド"
+			}
+		}
+	},
+	"1839" : {
+		"locales" : {
+			"name" : {
+				"en" : "Heart of Light",
+				"de" : "Wackeres Herz",
+				"fr" : "Cœur de Lumière",
+				"jp" : "ハート・オブ・ライト"
+			}
+		}
+	},
+	"1840" : {
+		"locales" : {
+			"name" : {
+				"en" : "Heart of Stone",
+				"de" : "Steinernes Herz",
+				"fr" : "Cœur de pierre",
+				"jp" : "ハート・オブ・ストーン"
+			}
+		}
+	},
+	"1842" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ready to Rip",
+				"de" : "Hungernde Fänge",
+				"fr" : "Arrachage de la jugulaire préparé",
+				"jp" : "ジャギュラーリップ実行可"
+			}
+		}
+	},
+	"1843" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ready to Tear",
+				"de" : "Geschärfte Klauen",
+				"fr" : "Lacération de l'abdomen préparée",
+				"jp" : "アブドメンテアー実行可"
+			}
+		}
+	},
+	"1844" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ready to Gouge",
+				"de" : "Blutige Krallen",
+				"fr" : "Perforation des yeux préparée",
+				"jp" : "アイガウジ実行可"
+			}
+		}
+	},
+	"1847" : {
+		"locales" : {
+			"name" : {
+				"en" : "Esprit",
+				"de" : "Tanzfieber",
+				"fr" : "Fascination",
+				"jp" : "エスプリ"
+			}
+		}
+	},
+	"1848" : {
+		"locales" : {
+			"name" : {
+				"en" : "Esprit",
+				"de" : "Tanzfieber",
+				"fr" : "Fascination",
+				"jp" : "エスプリ"
+			}
+		}
+	},
+	"1856" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sheltron",
+				"de" : "Schiltron",
+				"fr" : "Schiltron",
+				"jp" : "シェルトロン"
+			}
+		}
+	},
+	"1857" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nascent Flash",
+				"de" : "Urflackern",
+				"fr" : "Exaltation naissante",
+				"jp" : "原初の猛り"
+			}
+		}
+	},
+	"1858" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nascent Glint",
+				"de" : "Urglimmen",
+				"fr" : "Exaltation communicative",
+				"jp" : "原初の猛り［被］"
+			}
+		}
+	},
+	"1861" : {
+		"locales" : {
+			"name" : {
+				"en" : "Leaden Fist",
+				"de" : "Verbesserter Schlag auf Schlag",
+				"fr" : "Poings de plomb",
+				"jp" : "連撃効果アップ"
+			}
+		}
+	},
+	"1862" : {
+		"locales" : {
+			"name" : {
+				"en" : "Anatman",
+				"de" : "Anatman",
+				"fr" : "Anatman",
+				"jp" : "無我"
+			}
+		}
+	},
+	"1863" : {
+		"locales" : {
+			"name" : {
+				"en" : "Raiden Thrust Ready",
+				"de" : "Überfallsstoß bereit",
+				"fr" : "Percée Raiden préparée",
+				"jp" : "竜眼雷電実行可"
+			}
+		}
+	},
+	"1864" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lance Charge",
+				"de" : "Lanzenschärfung",
+				"fr" : "Lance acérée",
+				"jp" : "ランスチャージ"
+			}
+		}
+	},
+	"1867" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hellish Conduit",
+				"de" : "Innerer Quell",
+				"fr" : "Feu spirituel",
+				"jp" : "霊泉"
+			}
+		}
+	},
+	"1868" : {
+		"locales" : {
+			"name" : {
+				"en" : "Everlasting Flight",
+				"de" : "Schwingen der Unsterblichkeit",
+				"fr" : "Vol éternel",
+				"jp" : "不死鳥の翼"
+			}
+		}
+	},
+	"1869" : {
+		"locales" : {
+			"name" : {
+				"en" : "Gale Enforcer",
+				"de" : "Wirbelströmung",
+				"fr" : "Vents tourbillonnants",
+				"jp" : "螺旋気流"
+			}
+		}
+	},
+	"1872" : {
+		"locales" : {
+			"name" : {
+				"en" : "Temperance",
+				"de" : "Linderung",
+				"fr" : "Tempérance",
+				"jp" : "テンパランス"
+			}
+		}
+	},
+	"1873" : {
+		"locales" : {
+			"name" : {
+				"en" : "Temperance",
+				"de" : "Linderung",
+				"fr" : "Tempérance",
+				"jp" : "テンパランス：効果"
+			}
+		}
+	},
+	"1874" : {
+		"locales" : {
+			"name" : {
+				"en" : "Angel's Whisper",
+				"de" : "Hauch der Seraphim",
+				"fr" : "Murmure des anges",
+				"jp" : "光輝の囁き"
+			}
+		}
+	},
+	"1875" : {
+		"locales" : {
+			"name" : {
+				"en" : "Seraphic Illumination",
+				"de" : "Seraphische Illumination",
+				"fr" : "Illumination séraphique",
+				"jp" : "セラフィックイルミネーション"
+			}
+		}
+	},
+	"1876" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lord of Crowns",
+				"de" : "König der Kronen",
+				"fr" : "Roi des couronnes",
+				"jp" : "クラウンロード"
+			}
+		}
+	},
+	"1877" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lady of Crowns",
+				"de" : "Königin der Kronen",
+				"fr" : "Reine des couronnes",
+				"jp" : "クラウンレディ"
+			}
+		}
+	},
+	"1878" : {
+		"locales" : {
+			"name" : {
+				"en" : "Divination",
+				"de" : "Weissagung",
+				"fr" : "Divination",
+				"jp" : "ディヴィネーション"
+			}
+		}
+	},
+	"1879" : {
+		"locales" : {
+			"name" : {
+				"en" : "Diurnal Opposition",
+				"de" : "Opposition (Diurnal)",
+				"fr" : "Opposition céleste (diurne)",
+				"jp" : "星天対抗［日］"
+			}
+		}
+	},
+	"1880" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nocturnal Opposition",
+				"de" : "Opposition (Nocturnal)",
+				"fr" : "Opposition céleste (nocturne)",
+				"jp" : "星天対抗［夜］"
+			}
+		}
+	},
+	"1882" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Balance",
+				"de" : "Kraft der Waage",
+				"fr" : "La Balance",
+				"jp" : "アーゼマの均衡"
+			}
+		}
+	},
+	"1883" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Bole",
+				"de" : "Kraft der Eiche",
+				"fr" : "Le Tronc",
+				"jp" : "世界樹の幹"
+			}
+		}
+	},
+	"1884" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Arrow",
+				"de" : "Kraft des Pfeils",
+				"fr" : "La Flèche",
+				"jp" : "オシュオンの矢"
+			}
+		}
+	},
+	"1885" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Spear",
+				"de" : "Kraft des Speers",
+				"fr" : "L'Épieu",
+				"jp" : "ハルオーネの槍"
+			}
+		}
+	},
+	"1886" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Ewer",
+				"de" : "Kraft des Krugs",
+				"fr" : "L'Aiguière",
+				"jp" : "サリャクの水瓶"
+			}
+		}
+	},
+	"1887" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Spire",
+				"de" : "Kraft des Turms",
+				"fr" : "La Tour",
+				"jp" : "ビエルゴの塔"
+			}
+		}
+	},
+	"1888" : {
+		"locales" : {
+			"name" : {
+				"en" : "Diurnal Intersection",
+				"de" : "Kongruenz (Diurnal)",
+				"fr" : "Rencontre céleste (diurne)",
+				"jp" : "星天交差［日］"
+			}
+		}
+	},
+	"1889" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nocturnal Intersection",
+				"de" : "Kongruenz (Nocturnal)",
+				"fr" : "Rencontre céleste (nocturne)",
+				"jp" : "星天交差［夜］"
+			}
+		}
+	},
+	"1890" : {
+		"locales" : {
+			"name" : {
+				"en" : "Horoscope",
+				"de" : "Horoskop",
+				"fr" : "Horoscope",
+				"jp" : "ホロスコープ"
+			}
+		}
+	},
+	"1891" : {
+		"locales" : {
+			"name" : {
+				"en" : "Horoscope Helios",
+				"de" : "Helios-Horoskop",
+				"fr" : "Horoscope Hélios",
+				"jp" : "ホロスコープ・ヘリオス"
+			}
+		}
+	},
+	"1892" : {
+		"locales" : {
+			"name" : {
+				"en" : "Neutral Sect",
+				"de" : "Neutral",
+				"fr" : "Adepte de la neutralité",
+				"jp" : "ニュートラルセクト"
+			}
+		}
+	},
+	"1894" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dark Missionary",
+				"de" : "Dunkler Bote",
+				"fr" : "Missionnaire des Ténèbres",
+				"jp" : "ダークミッショナリー"
+			}
+		}
+	},
+	"1896" : {
+		"locales" : {
+			"name" : {
+				"en" : "Recitation",
+				"de" : "Raffinesse",
+				"fr" : "Récitation",
+				"jp" : "秘策"
+			}
+		}
+	},
+	"1897" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nascent Chaos",
+				"de" : "Saat des Chaos",
+				"fr" : "Chaos naissant",
+				"jp" : "原初の混沌"
+			}
+		}
+	},
+	"1898" : {
+		"locales" : {
+			"name" : {
+				"en" : "Brutal Shell",
+				"de" : "Brutaler Einschlag",
+				"fr" : "Impact brutal",
+				"jp" : "ブルータルシェル"
+			}
+		}
+	},
+	"1900" : {
+		"locales" : {
+			"name" : {
+				"en" : "Winged Shield",
+				"de" : "Flügelschild",
+				"fr" : "Bouclier ailé",
+				"jp" : "ウィングシールド"
+			}
+		}
+	},
+	"1901" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enshielded",
+				"de" : "Flügelschild",
+				"fr" : "Bouclier ailé",
+				"jp" : "ウィングシールド：効果"
+			}
+		}
+	},
+	"1902" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sword Oath",
+				"de" : "Schwert-Eid",
+				"fr" : "Serment de l'épée",
+				"jp" : "忠義の剣"
+			}
+		}
+	},
+	"1903" : {
+		"locales" : {
+			"name" : {
+				"en" : "Phantasmal",
+				"de" : "Phantomgestalt",
+				"fr" : "Illusion",
+				"jp" : "幻影"
+			}
+		}
+	},
+	"1909" : {
+		"locales" : {
+			"name" : {
+				"en" : "Area of Influence Up",
+				"de" : "Erweiterter Radius",
+				"fr" : "Aire d'effet augmentée",
+				"jp" : "アクション効果範囲拡大"
+			}
+		}
+	},
+	"1910" : {
+		"locales" : {
+			"name" : {
+				"en" : "Right Eye",
+				"de" : "Rechtes Drachenauge",
+				"fr" : "Œil droit",
+				"jp" : "竜の右眼"
+			}
+		}
+	},
+	"1911" : {
+		"locales" : {
+			"name" : {
+				"en" : "Asylum",
+				"de" : "Refugium",
+				"fr" : "Asile",
+				"jp" : "アサイラム"
+			}
+		}
+	},
+	"1912" : {
+		"locales" : {
+			"name" : {
+				"en" : "Asylum",
+				"de" : "Refugium",
+				"fr" : "Asile",
+				"jp" : "アサイラム：効果"
+			}
+		}
+	},
+	"1914" : {
+		"locales" : {
+			"name" : {
+				"en" : "Disembowel",
+				"de" : "Drachengriff",
+				"fr" : "Éventration",
+				"jp" : "ディセムボウル"
+			}
+		}
+	},
+	"1915" : {
+		"locales" : {
+			"name" : {
+				"en" : "Summon Order",
+				"de" : "Egi-Attacke I",
+				"fr" : "Action en attente: 1",
+				"jp" : "アクション実行待機I"
+			}
+		}
+	},
+	"1917" : {
+		"locales" : {
+			"name" : {
+				"en" : "Seraphic Veil",
+				"de" : "Schleier der Seraphim",
+				"fr" : "Voile séraphique",
+				"jp" : "セラフィックヴェール"
+			}
+		}
+	},
+	"1918" : {
+		"locales" : {
+			"name" : {
+				"en" : "Catalyze",
+				"de" : "Katalyse",
+				"fr" : "Exhortation",
+				"jp" : "激励"
+			}
+		}
+	},
+	"1920" : {
+		"locales" : {
+			"name" : {
+				"en" : "Diurnal Balance",
+				"de" : "Neutral (Diurnal)",
+				"fr" : "Adepte de la neutralité (diurne)",
+				"jp" : "ニュートラルセクト［日］"
+			}
+		}
+	},
+	"1921" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nocturnal Balance",
+				"de" : "Neutral (Nocturnal)",
+				"fr" : "Adepte de la neutralité (nocturne)",
+				"jp" : "ニュートラルセクト［夜］"
+			}
+		}
+	},
+	"1926" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sleeve Draw",
+				"de" : "Legeschema",
+				"fr" : "Grand sabot",
+				"jp" : "スリーヴドロー"
+			}
+		}
+	},
+	"1931" : {
+		"locales" : {
+			"name" : {
+				"en" : "Gunmetal Soul",
+				"de" : "Cermet-Matrix",
+				"fr" : "Âme de métal",
+				"jp" : "ソウルガンメタル"
+			}
+		}
+	},
+	"1932" : {
+		"locales" : {
+			"name" : {
+				"en" : "Army's Muse",
+				"de" : "Gunst des Schlachtensängers",
+				"fr" : "Bénédiction martiale",
+				"jp" : "軍神の加護"
+			}
+		}
+	},
+	"1933" : {
+		"locales" : {
+			"name" : {
+				"en" : "Army's Ethos",
+				"de" : "Beistand des Schlachtensängers",
+				"fr" : "Pacte martial",
+				"jp" : "軍神の契約"
+			}
+		}
+	},
+	"1934" : {
+		"locales" : {
+			"name" : {
+				"en" : "Troubadour",
+				"de" : "Troubadour",
+				"fr" : "Troubadour",
+				"jp" : "トルバドゥール"
+			}
+		}
+	},
+	"1936" : {
+		"locales" : {
+			"name" : {
+				"en" : "Stone Wall",
+				"de" : "Gaia-Panzer",
+				"fr" : "Armure tellurique",
+				"jp" : "防護障壁"
+			}
+		}
+	},
+	"1942" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ranging",
+				"de" : "Auf Erkundung",
+				"fr" : "Reconnaissance",
+				"jp" : "偵察中"
+			}
+		}
+	},
+	"1944" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sacred Soil",
+				"de" : "Geweihte Erde",
+				"fr" : "Dogme de survie",
+				"jp" : "野戦治療の陣"
+			}
+		}
+	},
+	"1946" : {
+		"locales" : {
+			"name" : {
+				"en" : "Wildfire",
+				"de" : "Wildfeuer",
+				"fr" : "Flambée",
+				"jp" : "ワイルドファイア"
+			}
+		}
+	},
+	"1951" : {
+		"locales" : {
+			"name" : {
+				"en" : "Tactician",
+				"de" : "Taktiker",
+				"fr" : "Tacticien",
+				"jp" : "タクティシャン"
+			}
+		}
+	},
+	"1954" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bunshin",
+				"de" : "Doppeltes Ich",
+				"fr" : "Bunshin",
+				"jp" : "分身の術"
+			}
+		}
+	},
+	"1955" : {
+		"locales" : {
+			"name" : {
+				"en" : "Assassinate Ready",
+				"de" : "Meuchelsprungbereit",
+				"fr" : "Assassinement préparé",
+				"jp" : "終撃実行可"
+			}
+		}
+	},
+	"1964" : {
+		"locales" : {
+			"name" : {
+				"en" : "Summon Order II",
+				"de" : "Egi-Attacke II",
+				"fr" : "Actions en attente: 2",
+				"jp" : "アクション実行待機II"
+			}
+		}
+	},
+	"1965" : {
+		"locales" : {
+			"name" : {
+				"en" : "Summon Order III",
+				"de" : "Egi-Attacke III",
+				"fr" : "Actions en attente: 3",
+				"jp" : "アクション実行待機III"
+			}
+		}
+	},
+	"1966" : {
+		"locales" : {
+			"name" : {
+				"en" : "Summon Order IV",
+				"de" : "Egi-Attacke IV",
+				"fr" : "Actions en attente: 4",
+				"jp" : "アクション実行待機IV"
+			}
+		}
+	},
+	"1971" : {
+		"locales" : {
+			"name" : {
+				"en" : "Manafication",
+				"de" : "Manafizierung",
+				"fr" : "Manafication",
+				"jp" : "マナフィケーション"
+			}
+		}
+	},
+	"1972" : {
+		"locales" : {
+			"name" : {
+				"en" : "Delirium",
+				"de" : "Blutdelirium",
+				"fr" : "Delirium de sang",
+				"jp" : "ブラッドデリリアム"
+			}
+		}
+	},
+	"1975" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enlarged",
+				"de" : "Rasantes Wachstum",
+				"fr" : "Grossissement",
+				"jp" : "巨大化"
+			}
+		}
+	},
+	"1976" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fully Enlarged",
+				"de" : "Maximalwachstum",
+				"fr" : "Gigantisme",
+				"jp" : "最大化"
+			}
+		}
+	},
+	"1978" : {
+		"locales" : {
+			"name" : {
+				"en" : "Rampart",
+				"de" : "Schutzwall",
+				"fr" : "Rempart",
+				"jp" : "ランパート"
+			}
+		}
+	},
+	"1981" : {
+		"locales" : {
+			"name" : {
+				"en" : "Blood for Blood",
+				"de" : "Zahn um Zahn",
+				"fr" : "Du sang pour du sang",
+				"jp" : "捨身"
+			}
+		}
+	},
+	"1982" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bloodbath",
+				"de" : "Blutbad",
+				"fr" : "Bain de sang",
+				"jp" : "ブラッドバス"
+			}
+		}
+	},
+	"1983" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fetter Ward",
+				"de" : "Obhut",
+				"fr" : "Émancipation",
+				"jp" : "フェターウォード"
+			}
+		}
+	},
+	"1984" : {
+		"locales" : {
+			"name" : {
+				"en" : "Arm's Length",
+				"de" : "Abtausch",
+				"fr" : "Portée de bras",
+				"jp" : "アームズレングス"
+			}
+		}
+	},
+	"1985" : {
+		"locales" : {
+			"name" : {
+				"en" : "Peloton",
+				"de" : "Peloton",
+				"fr" : "Peloton",
+				"jp" : "プロトン"
+			}
+		}
+	},
+	"1987" : {
+		"locales" : {
+			"name" : {
+				"en" : "Swiftcast",
+				"de" : "Spontaneität",
+				"fr" : "Magie prompte",
+				"jp" : "迅速魔"
+			}
+		}
+	},
+	"1989" : {
+		"locales" : {
+			"name" : {
+				"en" : "Manaward",
+				"de" : "Mana-Schild",
+				"fr" : "Barrière de mana",
+				"jp" : "マバリア"
+			}
+		}
+	},
+	"1990" : {
+		"locales" : {
+			"name" : {
+				"en" : "Attunement",
+				"de" : "Gleichgewicht",
+				"fr" : "Harmonie",
+				"jp" : "調和"
+			}
+		}
+	},
+	"1991" : {
+		"locales" : {
+			"name" : {
+				"en" : "Sword Oath",
+				"de" : "Schwert-Eid",
+				"fr" : "Serment de l'épée",
+				"jp" : "忠義の剣"
+			}
+		}
+	},
+	"1992" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nascent Chaos",
+				"de" : "Saat des Chaos",
+				"fr" : "Chaos naissant",
+				"jp" : "原初の混沌"
+			}
+		}
+	},
+	"1993" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shake It Off",
+				"de" : "Abschütteln",
+				"fr" : "Débarrassage",
+				"jp" : "シェイクオフ"
+			}
+		}
+	},
+	"1996" : {
+		"locales" : {
+			"name" : {
+				"en" : "Delirium",
+				"de" : "Blutdelirium",
+				"fr" : "Delirium de sang",
+				"jp" : "ブラッドデリリアム"
+			}
+		}
+	},
+	"1997" : {
+		"locales" : {
+			"name" : {
+				"en" : "Brutal Shell",
+				"de" : "Brutaler Einschlag",
+				"fr" : "Impact brutal",
+				"jp" : "ブルータルシェル"
+			}
+		}
+	},
+	"2000" : {
+		"locales" : {
+			"name" : {
+				"en" : "Heart of Light",
+				"de" : "Wackeres Herz",
+				"fr" : "Cœur de Lumière",
+				"jp" : "ハート・オブ・ライト"
+			}
+		}
+	},
+	"2001" : {
+		"locales" : {
+			"name" : {
+				"en" : "無敵",
+				"de" : "無敵",
+				"fr" : "無敵",
+				"jp" : "無敵"
+			}
+		}
+	},
+	"2002" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ready to Rip",
+				"de" : "Hungernde Fänge",
+				"fr" : "Arrachage de la jugulaire préparé",
+				"jp" : "ジャギュラーリップ実行可"
+			}
+		}
+	},
+	"2003" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ready to Tear",
+				"de" : "Geschärfte Klauen",
+				"fr" : "Lacération de l'abdomen préparée",
+				"jp" : "アブドメンテアー実行可"
+			}
+		}
+	},
+	"2004" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ready to Gouge",
+				"de" : "Blutige Krallen",
+				"fr" : "Perforation des yeux préparée",
+				"jp" : "アイガウジ実行可"
+			}
+		}
+	},
+	"2005" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fists of Fire",
+				"de" : "Sengende Aura",
+				"fr" : "Poings de feu",
+				"jp" : "紅蓮の構え"
+			}
+		}
+	},
+	"2006" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fists of Earth",
+				"de" : "Steinerne Aura",
+				"fr" : "Poings de terre",
+				"jp" : "金剛の構え"
+			}
+		}
+	},
+	"2008" : {
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Earth",
+				"de" : "Steinernes Enigma",
+				"fr" : "Énigme de la terre",
+				"jp" : "金剛の極意"
+			}
+		}
+	},
+	"2009" : {
+		"locales" : {
+			"name" : {
+				"en" : "Wanderer's Minuet",
+				"de" : "Menuett des Wanderers",
+				"fr" : "Chant guerrier",
+				"jp" : "戦歌"
+			}
+		}
+	},
+	"2010" : {
+		"locales" : {
+			"name" : {
+				"en" : "Bunshin",
+				"de" : "Doppeltes Ich",
+				"fr" : "Bunshin",
+				"jp" : "分身の術"
+			}
+		}
+	},
+	"2011" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shade Shift",
+				"de" : "Superkniff",
+				"fr" : "Décalage d'ombre",
+				"jp" : "残影"
+			}
+		}
+	},
+	"2012" : {
+		"locales" : {
+			"name" : {
+				"en" : "Corps-a-corps",
+				"de" : "Corps-a-corps",
+				"fr" : "Corps-à-corps",
+				"jp" : "コル・ア・コル"
+			}
+		}
+	},
+	"2013" : {
+		"locales" : {
+			"name" : {
+				"en" : "Displacement",
+				"de" : "Körperparade",
+				"fr" : "Déplacement",
+				"jp" : "デプラスマン"
+			}
+		}
+	},
+	"2015" : {
+		"locales" : {
+			"name" : {
+				"en" : "陣風",
+				"de" : "陣風",
+				"fr" : "陣風",
+				"jp" : "陣風"
+			}
+		}
+	},
+	"2016" : {
+		"locales" : {
+			"name" : {
+				"en" : "士風",
+				"de" : "士風",
+				"fr" : "士風",
+				"jp" : "士風"
+			}
+		}
+	},
+	"2017" : {
+		"locales" : {
+			"name" : {
+				"en" : "Repelling Shot",
+				"de" : "Mannstopper",
+				"fr" : "Tir repoussant",
+				"jp" : "リペリングショット"
+			}
+		}
+	},
+	"2018" : {
+		"locales" : {
+			"name" : {
+				"en" : "ワイルドファイア",
+				"de" : "ワイルドファイア",
+				"fr" : "ワイルドファイア",
+				"jp" : "ワイルドファイア"
+			}
+		}
+	},
+	"2020" : {
+		"locales" : {
+			"name" : {
+				"en" : "Intervention",
+				"de" : "Intervention",
+				"fr" : "Intervention",
+				"jp" : "インターベンション"
+			}
+		}
+	},
+	"2021" : {
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Fan Dance",
+				"de" : "Fächertanz III",
+				"fr" : "Danse de l'éventail III préparée",
+				"jp" : "扇の舞い【急】実行可"
+			}
+		}
+	},
+	"2022" : {
+		"locales" : {
+			"name" : {
+				"en" : "Saber Dance",
+				"de" : "Schwerttanz",
+				"fr" : "Danse du sabre",
+				"jp" : "剣の舞い"
+			}
+		}
+	},
+	"2023" : {
+		"locales" : {
+			"name" : {
+				"en" : "Standard Step",
+				"de" : "Einfache Choreographie",
+				"fr" : "Pas classique",
+				"jp" : "スタンダードステップ"
+			}
+		}
+	},
+	"2024" : {
+		"locales" : {
+			"name" : {
+				"en" : "Standard Finish",
+				"de" : "Einfaches Finale",
+				"fr" : "Final classique",
+				"jp" : "スタンダードフィニッシュ"
+			}
+		}
+	},
+	"2025" : {
+		"locales" : {
+			"name" : {
+				"en" : "Esprit",
+				"de" : "Tanzfieber",
+				"fr" : "Fascination",
+				"jp" : "エスプリ"
+			}
+		}
+	},
+	"2028" : {
+		"locales" : {
+			"name" : {
+				"en" : "三連魔",
+				"de" : "三連魔",
+				"fr" : "三連魔",
+				"jp" : "三連魔"
+			}
+		}
+	},
+	"2030" : {
+		"locales" : {
+			"name" : {
+				"en" : "Everlasting Flight",
+				"de" : "Schwingen der Unsterblichkeit",
+				"fr" : "Vol éternel",
+				"jp" : "不死鳥の翼"
+			}
+		}
+	},
+	"2033" : {
+		"locales" : {
+			"name" : {
+				"en" : "Engagement",
+				"de" : "Arret-Stoß",
+				"fr" : "Engagement",
+				"jp" : "アンガジェマン"
+			}
+		}
+	},
+	"2034" : {
+		"locales" : {
+			"name" : {
+				"en" : "Divination",
+				"de" : "Weissagung",
+				"fr" : "Divination",
+				"jp" : "ディヴィネーション"
+			}
+		}
+	},
+	"2036" : {
+		"locales" : {
+			"name" : {
+				"en" : "Afflatus Solace",
+				"de" : "Afflatus solatii",
+				"fr" : "Offrande de réconfort",
+				"jp" : "ハート・オブ・ソラス"
+			}
+		}
+	},
+	"2037" : {
+		"locales" : {
+			"name" : {
+				"en" : "Temperance",
+				"de" : "Linderung",
+				"fr" : "Tempérance",
+				"jp" : "テンパランス"
+			}
+		}
+	},
+	"2038" : {
+		"locales" : {
+			"name" : {
+				"en" : "Temperance",
+				"de" : "Linderung",
+				"fr" : "Tempérance",
+				"jp" : "テンパランス：効果"
+			}
+		}
+	},
+	"2040" : {
+		"locales" : {
+			"name" : {
+				"en" : "Seraphic Veil",
+				"de" : "Schleier der Seraphim",
+				"fr" : "Voile séraphique",
+				"jp" : "セラフィックヴェール"
+			}
+		}
+	},
+	"2042" : {
+		"locales" : {
+			"name" : {
+				"en" : "Diurnal Balance",
+				"de" : "Neutral (Diurnal)",
+				"fr" : "Adepte de la neutralité (diurne)",
+				"jp" : "ニュートラルセクト［日］"
+			}
+		}
+	},
+	"2043" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nocturnal Balance",
+				"de" : "Neutral (Nocturnal)",
+				"fr" : "Adepte de la neutralité (nocturne)",
+				"jp" : "ニュートラルセクト［夜］"
+			}
+		}
+	},
+	"2044" : {
+		"locales" : {
+			"name" : {
+				"en" : "Neutral Sect",
+				"de" : "Neutral",
+				"fr" : "Adepte de la neutralité",
+				"jp" : "ニュートラルセクト"
+			}
+		}
+	},
+	"2046" : {
+		"locales" : {
+			"name" : {
+				"en" : "シャーク[被]",
+				"de" : "シャーク[被]",
+				"fr" : "シャーク[被]",
+				"jp" : "シャーク[被]"
+			}
+		}
+	},
+	"2048" : {
+		"locales" : {
+			"name" : {
+				"en" : "En Avant",
+				"de" : "En Avant",
+				"fr" : "En avant",
+				"jp" : "アン・アヴァン"
+			}
+		}
+	},
+	"2049" : {
+		"locales" : {
+			"name" : {
+				"en" : "Technical Step",
+				"de" : "Komplexe Choreographie",
+				"fr" : "Pas technique",
+				"jp" : "テクニカルステップ"
+			}
+		}
+	},
+	"2050" : {
+		"locales" : {
+			"name" : {
+				"en" : "Technical Finish",
+				"de" : "Komplexes Finale",
+				"fr" : "Final technique",
+				"jp" : "テクニカルフィニッシュ"
+			}
+		}
+	},
+	"2051" : {
+		"locales" : {
+			"name" : {
+				"en" : "Esprit",
+				"de" : "Tanzfieber",
+				"fr" : "Fascination",
+				"jp" : "エスプリ"
+			}
+		}
+	},
+	"2052" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fan Dance III",
+				"de" : "Fächertanz III",
+				"fr" : "Danse de l'éventail III",
+				"jp" : "扇の舞い【急】"
+			}
+		}
+	},
+	"2053" : {
+		"locales" : {
+			"name" : {
+				"en" : "Protect",
+				"de" : "Protes",
+				"fr" : "Bouclier",
+				"jp" : "プロテス"
+			}
+		}
+	},
+	"2061" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nascent Flash",
+				"de" : "Urflackern",
+				"fr" : "Exaltation naissante",
+				"jp" : "原初の猛り"
+			}
+		}
+	},
+	"2062" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nascent Glint",
+				"de" : "Urglimmen",
+				"fr" : "Exaltation communicative",
+				"jp" : "原初の猛り[被]"
+			}
+		}
+	},
+	"2063" : {
+		"locales" : {
+			"name" : {
+				"en" : "Draw Power",
+				"de" : "Blut-Erda (nah)",
+				"fr" : "Giclée de sang (mêlée)",
+				"jp" : "ブラッドドロー[近]"
+			}
+		}
+	},
+	"2064" : {
+		"locales" : {
+			"name" : {
+				"en" : "Draw Fortitude",
+				"de" : "Blut-Erda (fern)",
+				"fr" : "Giclée de sang (distance)",
+				"jp" : "ブラッドドロー[遠]"
+			}
+		}
+	},
+	"2065" : {
+		"locales" : {
+			"name" : {
+				"en" : "Aurora",
+				"de" : "Aurora",
+				"fr" : "Aurore",
+				"jp" : "オーロラ"
+			}
+		}
+	},
+	"2068" : {
+		"locales" : {
+			"name" : {
+				"en" : "Smackdown",
+				"de" : "Niederschmetternd",
+				"fr" : "Amour paternel",
+				"jp" : "スマックダウン"
+			}
+		}
+	},
+	"2069" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dissipation",
+				"de" : "Dissipation",
+				"fr" : "Dissipation",
+				"jp" : "転化"
+			}
+		}
+	},
+	"2070" : {
+		"locales" : {
+			"name" : {
+				"en" : "Diurnal Opposition",
+				"de" : "Opposition (Diurnal)",
+				"fr" : "Opposition céleste (diurne)",
+				"jp" : "星天対抗［日］"
+			}
+		}
+	},
+	"2071" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nocturnal Opposition",
+				"de" : "Opposition (Nocturnal)",
+				"fr" : "Opposition céleste (nocturne)",
+				"jp" : "星天対抗［夜］"
+			}
+		}
+	},
+	"2072" : {
+		"locales" : {
+			"name" : {
+				"en" : "Focalization",
+				"de" : "Lege Artis",
+				"fr" : "Traité de la focalisation",
+				"jp" : "精神統一の策"
+			}
+		}
+	},
+	"2074" : {
+		"locales" : {
+			"name" : {
+				"en" : "Physical Damage Up",
+				"de" : "Schadenswert +",
+				"fr" : "Bonus de dégâts physiques",
+				"jp" : "物理ダメージ上昇"
+			}
+		}
+	},
+	"2105" : {
+		"locales" : {
+			"name" : {
+				"en" : "Standard Finish",
+				"de" : "Einfaches Finale",
+				"fr" : "Final classique",
+				"jp" : "スタンダードフィニッシュ"
+			}
+		}
+	},
+	"2113" : {
+		"locales" : {
+			"name" : {
+				"en" : "Standard Finish",
+				"de" : "Einfaches Finale",
+				"fr" : "Final classique",
+				"jp" : "スタンダードフィニッシュ"
+			}
+		}
+	},
+	"2114" : {
+		"locales" : {
+			"name" : {
+				"en" : "Gobskin",
+				"de" : "Gobhaut",
+				"fr" : "Gobépiderme",
+				"jp" : "ゴブスキン"
+			}
+		}
+	},
+	"2116" : {
+		"locales" : {
+			"name" : {
+				"en" : "Meatily Shielded",
+				"de" : "Absichern",
+				"fr" : "Ordre défensif",
+				"jp" : "防御指示"
+			}
+		}
+	},
+	"2117" : {
+		"locales" : {
+			"name" : {
+				"en" : "Meat Shield",
+				"de" : "Absichern",
+				"fr" : "Cible d'ordre défensif",
+				"jp" : "防御指示［被］"
+			}
+		}
+	},
+	"2118" : {
+		"locales" : {
+			"name" : {
+				"en" : "Harmonized",
+				"de" : "Angriffsbereit",
+				"fr" : "Attaque préméditée",
+				"jp" : "攻撃準備"
+			}
+		}
+	},
+	"2119" : {
+		"locales" : {
+			"name" : {
+				"en" : "Cactguard",
+				"de" : "Sukkulentenschild",
+				"fr" : "Cactugarde",
+				"jp" : "カクトガード"
+			}
+		}
+	},
+	"2120" : {
+		"locales" : {
+			"name" : {
+				"en" : "HP Boost",
+				"de" : "LP-Bonus",
+				"fr" : "PV maximum augmentés",
+				"jp" : "最大ＨＰ増加"
+			}
+		}
+	},
+	"2130" : {
+		"locales" : {
+			"name" : {
+				"en" : "Surpanakha's Fury",
+				"de" : "Verbessertes Surpanakha",
+				"fr" : "Surpanakha renforcée",
+				"jp" : "徹甲散弾強化"
+			}
+		}
+	},
+	"2166" : {
+		"locales" : {
+			"name" : {
+				"en" : "Magitek Field",
+				"de" : "Magitek-Feld",
+				"fr" : "Champ de force magitek",
+				"jp" : "魔導フィールド"
+			}
+		}
+	},
+	"2168" : {
+		"locales" : {
+			"name" : {
+				"en" : "Divine Veil",
+				"de" : "Heiliger Quell",
+				"fr" : "Voile divin",
+				"jp" : "ディヴァインヴェール"
+			}
+		}
+	},
+	"2169" : {
+		"locales" : {
+			"name" : {
+				"en" : "Divine Veil",
+				"de" : "Heiliger Quell (Barriere)",
+				"fr" : "Voile divin",
+				"jp" : "ディヴァインヴェール［バリア］"
+			}
+		}
+	},
+	"2171" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dark Missionary",
+				"de" : "Dunkler Bote",
+				"fr" : "Missionnaire des Ténèbres",
+				"jp" : "ダークミッショナリー"
+			}
+		}
+	},
+	"2172" : {
+		"locales" : {
+			"name" : {
+				"en" : "Arm's Length",
+				"de" : "Abtausch",
+				"fr" : "Portée de bras",
+				"jp" : "アームズレングス"
+			}
+		}
+	},
+	"2173" : {
+		"locales" : {
+			"name" : {
+				"en" : "Meditative Brotherhood",
+				"de" : "Meditative Bruderschaft",
+				"fr" : "Fraternité méditative",
+				"jp" : "桃園結義：闘気"
+			}
+		}
+	},
+	"2174" : {
+		"locales" : {
+			"name" : {
+				"en" : "Brotherhood",
+				"de" : "Bruderschaft",
+				"fr" : "Fraternité",
+				"jp" : "桃園結義：攻撃"
+			}
+		}
+	},
+	"2175" : {
+		"locales" : {
+			"name" : {
+				"en" : "Life Surge",
+				"de" : "Vitalwallung",
+				"fr" : "Souffle de vie",
+				"jp" : "ライフサージ"
+			}
+		}
+	},
+	"2176" : {
+		"locales" : {
+			"name" : {
+				"en" : "Meditation",
+				"de" : "Meditationsebene",
+				"fr" : "Tension de la lame",
+				"jp" : "剣圧"
+			}
+		}
+	},
+	"2177" : {
+		"locales" : {
+			"name" : {
+				"en" : "Tactician",
+				"de" : "Taktiker",
+				"fr" : "Tacticien",
+				"jp" : "タクティシャン"
+			}
+		}
+	},
+	"2178" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nature's Minne",
+				"de" : "Nophicas Minne",
+				"fr" : "Minne de la nature",
+				"jp" : "地神のミンネ"
+			}
+		}
+	},
+	"2179" : {
+		"locales" : {
+			"name" : {
+				"en" : "Testudo",
+				"de" : "Testudo",
+				"fr" : "Testudo",
+				"jp" : "テストゥド"
+			}
+		}
+	},
+	"2180" : {
+		"locales" : {
+			"name" : {
+				"en" : "Fast Draw",
+				"de" : "Triggerwut",
+				"fr" : "Fou de la gâchette",
+				"jp" : "トリガーハッピー"
+			}
+		}
+	},
+	"2182" : {
+		"locales" : {
+			"name" : {
+				"en" : "Excogitation",
+				"de" : "Weise Voraussicht",
+				"fr" : "Traité de l'excogitation",
+				"jp" : "深謀遠慮の策"
+			}
+		}
+	},
+	"2183" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nocturnal Field",
+				"de" : "ノクターナルフィールド",
+				"fr" : "ノクターナルフィールド",
+				"jp" : "ノクターナルフィールド"
+			}
+		}
+	},
+	"2184" : {
+		"locales" : {
+			"name" : {
+				"en" : "Retaliation",
+				"de" : "Gegenangriff",
+				"fr" : "Vengeance",
+				"jp" : "逆襲"
+			}
+		}
+	},
+	"2186" : {
+		"locales" : {
+			"name" : {
+				"en" : "Concentrate",
+				"de" : "Konzentration",
+				"fr" : "Concentration",
+				"jp" : "集中"
+			}
+		}
+	},
+	"2188" : {
+		"locales" : {
+			"name" : {
+				"en" : "Largesse",
+				"de" : "Huld",
+				"fr" : "Largesse",
+				"jp" : "慈愛"
+			}
+		}
+	},
+	"2214" : {
+		"locales" : {
+			"name" : {
+				"en" : "Army's Paeon",
+				"de" : "Hymne der Krieger",
+				"fr" : "Péan martial",
+				"jp" : "軍神のパイオン"
+			}
+		}
+	},
+	"2215" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Wanderer's Minuet",
+				"de" : "Menuett des Wanderers",
+				"fr" : "Menuet du Vagabond",
+				"jp" : "旅神のメヌエット"
+			}
+		}
+	},
+	"2216" : {
+		"locales" : {
+			"name" : {
+				"en" : "The Wanderer's Minuet",
+				"de" : "Menuett des Wanderers",
+				"fr" : "Menuet du Vagabond",
+				"jp" : "旅神のメヌエット"
+			}
+		}
+	},
+	"2217" : {
+		"locales" : {
+			"name" : {
+				"en" : "Mage's Ballad",
+				"de" : "Ballade des Weisen",
+				"fr" : "Ballade du mage",
+				"jp" : "賢人のバラード"
+			}
+		}
+	},
+	"2218" : {
+		"locales" : {
+			"name" : {
+				"en" : "Army's Paeon",
+				"de" : "Hymne der Krieger",
+				"fr" : "Péan martial",
+				"jp" : "軍神のパイオン"
+			}
+		}
+	},
+	"2220" : {
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"2227" : {
+		"locales" : {
+			"name" : {
+				"en" : "Nascent Flash",
+				"de" : "Urflackern",
+				"fr" : "Exaltation naissante",
+				"jp" : "原初の猛り"
+			}
+		}
+	},
+	"2262" : {
+		"locales" : {
+			"name" : {
+				"en" : "Grace of Light",
+				"de" : "Segen des Lichts",
+				"fr" : "Bénédiction de la Lumière",
+				"jp" : "光の祝福"
+			}
+		}
+	},
+	"2263" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shock Spikes",
+				"de" : "Schockstachel",
+				"fr" : "Pointes de foudre",
+				"jp" : "ショックスパイク"
+			}
+		}
+	},
+	"2269" : {
+		"locales" : {
+			"name" : {
+				"en" : "FATE Participant",
+				"de" : "In FATE",
+				"fr" : "En ALÉA",
+				"jp" : "F.A.T.E.参加"
+			}
+		}
+	},
+	"2276" : {
+		"locales" : {
+			"name" : {
+				"en" : "In Costume",
+				"de" : "In Verkleidung",
+				"fr" : "Costume",
+				"jp" : "着ぐるみ着用"
+			}
+		}
+	},
+	"2280" : {
+		"locales" : {
+			"name" : {
+				"en" : "Enlarged",
+				"de" : "Rasantes Wachstum",
+				"fr" : "Grossissement",
+				"jp" : "巨大化"
+			}
+		}
+	},
+	"2282" : {
+		"locales" : {
+			"name" : {
+				"en" : "Embolden",
+				"de" : "Ermutigen",
+				"fr" : "Enhardissement",
+				"jp" : "エンボルデン"
+			}
+		}
+	},
+	"2284" : {
+		"locales" : {
+			"name" : {
+				"en" : "Running Wild",
+				"de" : "Volle Kraft",
+				"fr" : "Déchaîne-toi!",
+				"jp" : "ふりしぼれ"
+			}
+		}
+	},
+	"2287" : {
+		"locales" : {
+			"name" : {
+				"en" : "True Hallowed Ground",
+				"de" : "Vollkommene Unbesiegbarkeit",
+				"fr" : "Invincibilité véritable",
+				"jp" : "トゥルー・インビンシブル"
+			}
+		}
+	},
+	"2326" : {
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Noble Ends",
+				"de" : "Gemüt der Verdrossenheit",
+				"fr" : "Seuil de la frénésie",
+				"jp" : "背水の境地"
+			}
+		}
+	},
+	"2327" : {
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Honored Sacrifice",
+				"de" : "Gemüt der Ungehaltenheit",
+				"fr" : "Seuil de l'abnégation",
+				"jp" : "捨身の境地"
+			}
+		}
+	},
+	"2328" : {
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Tireless Conviction",
+				"de" : "Gemüt der Beharrlichkeit",
+				"fr" : "Seuil de la patience",
+				"jp" : "忍耐の境地"
+			}
+		}
+	},
+	"2329" : {
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Firm Resolve",
+				"de" : "Gemüt der Folgsamkeit",
+				"fr" : "Seuil de la préservation",
+				"jp" : "堅守の境地"
+			}
+		}
+	},
+	"2330" : {
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Solemn Clarity",
+				"de" : "Gemüt der Besinnlichkeit",
+				"fr" : "Seuil de la contemplation",
+				"jp" : "瞑想の境地"
+			}
+		}
+	},
+	"2331" : {
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Honed Acuity",
+				"de" : "Gemüt der Empfindsamkeit",
+				"fr" : "Seuil de la perception",
+				"jp" : "鋭敏の境地"
+			}
+		}
+	},
+	"2332" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Font of Magic",
+				"de" : "Verschollene Magiefontäne",
+				"fr" : "Fontaine de magie oubliée",
+				"jp" : "ロスト・マジックフォント"
+			}
+		}
+	},
+	"2333" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Protect",
+				"de" : "Verschollenes Protes",
+				"fr" : "Bouclier oublié",
+				"jp" : "ロスト・プロテス"
+			}
+		}
+	},
+	"2334" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Shell",
+				"de" : "Verschollenes Vallum",
+				"fr" : "Barrière oubliée",
+				"jp" : "ロスト・シェル"
+			}
+		}
+	},
+	"2335" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Swift",
+				"de" : "Verschollene Eile",
+				"fr" : "Vélocité oubliée",
+				"jp" : "ロスト・スウィフト"
+			}
+		}
+	},
+	"2337" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Reflect",
+				"de" : "Verschollene Reflektion",
+				"fr" : "Miroir oublié",
+				"jp" : "ロスト・リフレク"
+			}
+		}
+	},
+	"2338" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Spellforge",
+				"de" : "Verschollene Zauberschmiede",
+				"fr" : "Forgesort oublié",
+				"jp" : "ロスト・スペルフォージ"
+			}
+		}
+	},
+	"2339" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Steelsting",
+				"de" : "Verschollener Stahlstachel",
+				"fr" : "Morsure de l'acier oubliée",
+				"jp" : "ロスト・スチールスティング"
+			}
+		}
+	},
+	"2341" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Bravery",
+				"de" : "Verschollene Courage",
+				"fr" : "Bravoure oubliée",
+				"jp" : "ロスト・ブレイブ"
+			}
+		}
+	},
+	"2342" : {
+		"locales" : {
+			"name" : {
+				"en" : "Auto-potion",
+				"de" : "Auto-Heiltrank",
+				"fr" : "Auto-potion",
+				"jp" : "オートポーション"
+			}
+		}
+	},
+	"2343" : {
+		"locales" : {
+			"name" : {
+				"en" : "Auto-ether",
+				"de" : "Auto-Äther",
+				"fr" : "Auto-éther",
+				"jp" : "オートエーテル"
+			}
+		}
+	},
+	"2344" : {
+		"locales" : {
+			"name" : {
+				"en" : "Auto-remedy",
+				"de" : "Auto-Remedium",
+				"fr" : "Auto-remède",
+				"jp" : "オートレメディ"
+			}
+		}
+	},
+	"2345" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Manawall",
+				"de" : "Verschollene Mana-Wand",
+				"fr" : "Mur de mana oublié",
+				"jp" : "ロスト・ウォール"
+			}
+		}
+	},
+	"2346" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Font of Power",
+				"de" : "Verschollene Machtfontäne",
+				"fr" : "Fontaine de puissance oubliée",
+				"jp" : "ロスト・パワーフォント"
+			}
+		}
+	},
+	"2349" : {
+		"locales" : {
+			"name" : {
+				"en" : "Deep Essence of the Victor",
+				"de" : "Wundertrank des Siegers",
+				"fr" : "Breuvage des conquérants",
+				"jp" : "覇者の霊薬"
+			}
+		}
+	},
+	"2350" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hastilude",
+				"de" : "Hastiludia",
+				"fr" : "Hastilude",
+				"jp" : "ハスティルード"
+			}
+		}
+	},
+	"2351" : {
+		"locales" : {
+			"name" : {
+				"en" : "Hastilude Heartened",
+				"de" : "Hastiludia",
+				"fr" : "Hastilude (effet)",
+				"jp" : "ハスティルード：効果"
+			}
+		}
+	},
+	"2352" : {
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Unyielding Defense",
+				"de" : "Gemüt der Standhaftigkeit",
+				"fr" : "Seuil de l'indestructibilité",
+				"jp" : "鉄壁の境地"
+			}
+		}
+	},
+	"2353" : {
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Limitless Grace",
+				"de" : "Gemüt der Selbstlosigkeit",
+				"fr" : "Seuil de l'anatman",
+				"jp" : "無我の境地"
+			}
+		}
+	},
+	"2354" : {
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Transcendent Finesse",
+				"de" : "Gemüt der Vehemenz",
+				"fr" : "Seuil de la célérité",
+				"jp" : "神速の境地"
+			}
+		}
+	},
+	"2355" : {
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Reraiser",
+				"de" : "Lebensfeder des Widerstands",
+				"fr" : "Vitaplume de la résistance",
+				"jp" : "レジスタンスリレイザー"
+			}
+		}
+	},
+	"2356" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Incense",
+				"de" : "Verschollener Hohn",
+				"fr" : "Incitation oubliée",
+				"jp" : "ロスト・エンミティ"
+			}
+		}
+	},
+	"2358" : {
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders",
+				"de" : "Hilfsgesuch",
+				"fr" : "Passe-droit d'interception",
+				"jp" : "攻撃要請"
+			}
+		}
+	},
+	"2359" : {
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: Vigil for the Lost",
+				"de" : "Hilfsgesuch: Vigil, Feuerkraft hoch zehn",
+				"fr" : "Passe-droit d'interception: Vigile de feu",
+				"jp" : "攻撃要請：高火力陸戦魔導兵器「ヴィジル」"
+			}
+		}
+	},
+	"2360" : {
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: Kill It with Fire",
+				"de" : "Hilfsgesuch: Peeriefool, das faule Gemüse",
+				"fr" : "Passe-droit d'interception: Grandeur et pestilence",
+				"jp" : "攻撃要請：腐乱野菜「ピーリフール」"
+			}
+		}
+	},
+	"2361" : {
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: The Hunt for Red Choctober",
+				"de" : "Hilfsgesuch: Der Rote Meteor und seine Meute",
+				"fr" : "Passe-droit d'interception: Une ruée en rouge",
+				"jp" : "攻撃要請：赤チョコボのヌシ「レッドコメット」"
+			}
+		}
+	},
+	"2362" : {
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: The Final Furlong",
+				"de" : "Hilfsgesuch: Spartoi der Gefürchtete",
+				"fr" : "Passe-droit d'interception: Menace spectrale",
+				"jp" : "攻撃要請：怨念の死霊「スパルトイ」"
+			}
+		}
+	},
+	"2363" : {
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: Rise of the Robots",
+				"de" : "Hilfsgesuch: Im Schatten von Modell X",
+				"fr" : "Passe-droit d'interception: Le soulèvement des machines",
+				"jp" : "攻撃要請：新たなる鉄巨人「魔導レイバーX型」"
+			}
+		}
+	},
+	"2364" : {
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: Metal Fox Chaos",
+				"de" : "Hilfsgesuch: Dáinsleif, Bestie aus Eisen",
+				"fr" : "Passe-droit d'interception: Le guerrier de métal",
+				"jp" : "攻撃要請：鋼鉄の魔獣「ダーインスレイヴ」"
+			}
+		}
+	},
+	"2365" : {
+		"locales" : {
+			"name" : {
+				"en" : "High Morale",
+				"de" : "Kampfgeist",
+				"fr" : "Clameur des vaillants",
+				"jp" : "士気高揚"
+			}
+		}
+	},
+	"2368" : {
+		"locales" : {
+			"name" : {
+				"en" : "Warmonger",
+				"de" : "Feuer der Schlacht",
+				"fr" : "Frénésie de la bataille",
+				"jp" : "戦場の熱狂"
+			}
+		}
+	},
+	"2372" : {
+		"locales" : {
+			"name" : {
+				"en" : "Absolute Protect",
+				"de" : "Absolutes Protes",
+				"fr" : "Bouclier absolu",
+				"jp" : "アブソリュートプロテス"
+			}
+		}
+	},
+	"2378" : {
+		"locales" : {
+			"name" : {
+				"en" : "Haste+",
+				"de" : "Hast +",
+				"fr" : "Hâte +",
+				"jp" : "ヘイスト＋"
+			}
+		}
+	},
+	"2380" : {
+		"locales" : {
+			"name" : {
+				"en" : "Warmonger",
+				"de" : "Feuer der Schlacht",
+				"fr" : "Frénésie de la bataille",
+				"jp" : "戦場の熱狂"
+			}
+		}
+	},
+	"2392" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lightning Shot",
+				"de" : "Donnerkugel",
+				"fr" : "Barillet tonnerre",
+				"jp" : "サンダーバレット"
+			}
+		}
+	},
+	"2402" : {
+		"locales" : {
+			"name" : {
+				"en" : "Evasion Up",
+				"de" : "Ausweich-Bonus",
+				"fr" : "Esquive augmentée",
+				"jp" : "回避率アップ"
+			}
+		}
+	},
+	"2406" : {
+		"locales" : {
+			"name" : {
+				"en" : "Shock Spikes",
+				"de" : "Schockstachel",
+				"fr" : "Pointes de foudre",
+				"jp" : "ショックスパイク"
+			}
+		}
+	},
+	"2412" : {
+		"locales" : {
+			"name" : {
+				"en" : "Cover",
+				"de" : "Deckung",
+				"fr" : "Couverture",
+				"jp" : "かばう"
+			}
+		}
+	},
+	"2413" : {
+		"locales" : {
+			"name" : {
+				"en" : "Covered",
+				"de" : "Gedeckt",
+				"fr" : "Couvert",
+				"jp" : "かばう［被］"
+			}
+		}
+	},
+	"2443" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Aethershield",
+				"de" : "Verschollener Ätherschild",
+				"fr" : "Égide d'éther oubliée",
+				"jp" : "ロスト・エーテルシールド"
+			}
+		}
+	},
+	"2444" : {
+		"locales" : {
+			"name" : {
+				"en" : "Lost Dervish",
+				"de" : "Verschollener Rapidus",
+				"fr" : "Célérité extrême oubliée",
+				"jp" : "ロスト・スピードスター"
+			}
+		}
+	},
+	"2448" : {
+		"locales" : {
+			"name" : {
+				"en" : "Boosted",
+				"de" : "Gesammelte Kraft",
+				"fr" : "Renforcement",
+				"jp" : "ためる"
+			}
+		}
+	},
+	"2450" : {
+		"locales" : {
+			"name" : {
+				"en" : "Mimicry",
+				"de" : "Nachahmung",
+				"fr" : "Mime",
+				"jp" : "ものまね"
+			}
+		}
+	},
+	"2467" : {
+		"locales" : {
+			"name" : {
+				"en" : "Pride of the Lioness",
+				"de" : "Segen der Löwin",
+				"fr" : "Bénédiction de la Lionne",
+				"jp" : "雌獅子の加護"
+			}
+		}
+	},
+	"2484" : {
+		"locales" : {
+			"name" : {
+				"en" : "Cleric Stance",
+				"de" : "Bußprediger",
+				"fr" : "Prestance du prêtre",
+				"jp" : "クルセードスタンス"
+			}
+		}
+	},
+	"2492" : {
+		"locales" : {
+			"name" : {
+				"en" : "Tingling",
+				"de" : "Kribbeln",
+				"fr" : "Fourmillement",
+				"jp" : "ビリビリ"
+			}
+		}
+	},
+	"2493" : {
+		"locales" : {
+			"name" : {
+				"en" : "Cold Fog",
+				"de" : "Eisiger Nebel",
+				"fr" : "Brume glaciale",
+				"jp" : "冷たい霧"
+			}
+		}
+	},
+	"2494" : {
+		"locales" : {
+			"name" : {
+				"en" : "Touch of Frost",
+				"de" : "Weißer Tod",
+				"fr" : "Mort blanche",
+				"jp" : "氷霧"
+			}
+		}
+	},
+	"2495" : {
+		"locales" : {
+			"name" : {
+				"en" : "Angel's Snack",
+				"de" : "Engelspeise",
+				"fr" : "Angélique",
+				"jp" : "天使のおやつ"
+			}
+		}
+	},
+	"2496" : {
+		"locales" : {
+			"name" : {
+				"en" : "Chelonian Gate",
+				"de" : "Barriere",
+				"fr" : "Barrière mystique",
+				"jp" : "玄結界"
+			}
+		}
+	},
+	"2500" : {
+		"locales" : {
+			"name" : {
+				"en" : "Dragon Force",
+				"de" : "Drachenkraft",
+				"fr" : "Dracoforce",
+				"jp" : "ドラゴンフォース"
+			}
+		}
+	},
+	"2502" : {
+		"locales" : {
+			"name" : {
+				"en" : "Phantom Flurry",
+				"de" : "Phantomhast",
+				"fr" : "Frénésie spectrale",
+				"jp" : "鬼宿脚"
+			}
+		}
+	},
+	"2503" : {
+		"locales" : {
+			"name" : {
+				"en" : "Aetherial Ward",
+				"de" : "Magische Barriere",
+				"fr" : "Barrière magique",
+				"jp" : "魔法障壁"
+			}
+		}
+	},
+	"2513" : {
+		"locales" : {
+			"name" : {
+				"en" : "Formless Fist",
+				"de" : "Freie Form",
+				"fr" : "Poing informe",
+				"jp" : "零の型"
+			}
+		}
+	},
+	"2514" : {
+		"locales" : {
+			"name" : {
+				"en" : "Six-sided Star",
+				"de" : "Sechsstern-Tritt",
+				"fr" : "Étoile à six branches",
+				"jp" : "六合星導脚"
+			}
+		}
+	},
+	"2528" : {
+		"locales" : {
+			"name" : {
+				"en" : "Ice Spikes",
+				"de" : "Eisstachel",
+				"fr" : "Pointes de glace",
+				"jp" : "アイススパイク"
+			}
+		}
+	}
+}
