@@ -269,6 +269,34 @@ class GameDataProcessor  {
 			TTSService.processAggro(data);
 		}
 	}
+
+	parseSpellLogLine(data, state) {
+		data = data.line;
+
+		switch (+data[0]) {
+			case 21:
+			case 22:
+				let skill_id = parseInt(data[4], 16);
+
+				if (state.internal.character_name !== data[3]) {
+					return state;
+				}
+
+				if (state.settings.spells_mode.spells.indexOf(skill_id) === -1) {
+					return state;
+				}
+
+				state.internal.spells.in_use[skill_id] = {
+					time : data[1],
+					name : data[5]
+				};
+
+				return state;
+
+			default:
+				return state;
+		}
+	}
 }
 
 export default new GameDataProcessor();

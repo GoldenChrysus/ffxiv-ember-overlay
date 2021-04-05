@@ -1,6 +1,8 @@
 import React from "react";
 
 import SkillData from "../../constants/SkillData";
+import LocalizationService from "../../services/LocalizationService";
+import TTSService from "../../services/TTSService";
 
 import OverlayInfo from "./PlayerTable/OverlayInfo";
 import Spell from "./SpellGrid/Spell";
@@ -97,7 +99,7 @@ class SpellGrid extends React.Component {
 		});
 
 		for (let id of spells) {
-			items.push(<Spell key={"spell-" + id} id={id} cooldown={this.state.spells[id]} settings={this.props.settings}/>);
+			items.push(<Spell key={"spell-" + id} id={id} cooldown={this.state.spells[id]} name={this.spells[id].name} settings={this.props.settings}/>);
 		}
 
 		return items;
@@ -107,12 +109,15 @@ class SpellGrid extends React.Component {
 		let state = this.state;
 
 		for (let id in spells) {
-			let date  = new Date(spells[id]);
+			let date  = new Date(spells[id].time);
 			let skill = SkillData.oGCDSkills[id];
 
 			date.setSeconds(date.getSeconds() + skill.recast);
 
-			this.spells[id] = date;
+			this.spells[id] = {
+				time : date,
+				name : spells[id].name
+			};
 
 			state.spells[id] = skill.recast;
 		}
@@ -144,9 +149,14 @@ class SpellGrid extends React.Component {
 		let state = this.state;
 
 		for (let id in this.spells) {
-			let diff = this.spells[id] - now;
+			let diff = this.spells[id].time - now;
 
 			if (diff <= 0) {
+				if (this.props.settings.use_tts) {
+					TTSService.sayNow(this.spells[id].name || LocalizationService.getoGCDSkillName(id));
+				}
+
+				delete this.spells[id];
 				delete this.state.spells[id];
 				continue;
 			}

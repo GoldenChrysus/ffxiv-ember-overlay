@@ -158,7 +158,9 @@ const default_settings = {
 	spells_mode : {
 		spells         : [],
 		spells_per_row : 1,
-		show_icon      : true
+		show_icon      : true,
+		use_tts        : false,
+		minimal_layout : false
 	}
 };
 

@@ -157,6 +157,10 @@ class TTSService {
 		}
 	}
 
+	sayNow(message) {
+		store.getState().plugin_service.tts(message);
+	}
+
 	processQueue() {
 		let messages = [];
 

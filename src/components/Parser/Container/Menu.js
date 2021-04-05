@@ -43,7 +43,7 @@ class Menu extends React.Component {
 			let data = { state: !this.props.collapsed };
 
 			return(
-				<MenuItem data={data} onClick={this.changeCollapse.bind(this)}>
+				<MenuItem key="menu-collapse" data={data} onClick={this.changeCollapse.bind(this)}>
 					{text}
 				</MenuItem>
 			);
@@ -55,7 +55,7 @@ class Menu extends React.Component {
 			}
 
 			return(
-				<MenuItem onClick={plugin_service.splitEncounter.bind(plugin_service)}>
+				<MenuItem key="menu-split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}>
 					{LocalizationService.getOverlayText("split_encounter")}
 				</MenuItem>
 			);
@@ -64,7 +64,7 @@ class Menu extends React.Component {
 		let items = [collapse_item(), plugin_actions()].filter(x => !!x);
 
 		if (items.length) {
-			items.push(<div className="split"></div>);
+			items.push(<div key="menu-group1-split" className="split"></div>);
 		}
 
 		return items;
@@ -75,23 +75,23 @@ class Menu extends React.Component {
 
 		if (this.props.mode === "stats") {
 			items.push(
-				<MenuItem onClick={this.changeViewing.bind(this, "player", this.props.encounter)}>
+				<MenuItem key="menu-view-encounter" onClick={this.changeViewing.bind(this, "player", this.props.encounter)}>
 					{LocalizationService.getOverlayText("view_encounter")}
 				</MenuItem>
 			);
 		}
 
 		items.push(
-			<MenuItem onClick={this.loadSampleGameData.bind(this)}>
+			<MenuItem key="menu-load-sample" onClick={this.loadSampleGameData.bind(this)}>
 				{LocalizationService.getOverlayText("load_sample")}
 			</MenuItem>
 		);
 		items.push(
-			<MenuItem onClick={this.clearGameData.bind(this)}>
+			<MenuItem key="menu-clear-encounter" onClick={this.clearGameData.bind(this)}>
 				{LocalizationService.getOverlayText("clear_encounter")}
 			</MenuItem>
 		);
-		items.push(<div className="split"></div>);
+		items.push(<div key="menu-group2-split" className="split"></div>);
 		return items;
 	}
 

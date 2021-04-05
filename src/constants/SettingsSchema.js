@@ -529,10 +529,24 @@ const SettingsSchema = {
 								key_path : "spells_mode.spells_per_row",
 								type     : "slider",
 								range    : "min",
-								minimum  : 0,
+								minimum  : 1,
 								maximum  : 5,
 								value    : function() {
 									return this.props.settings.spells_mode.spells_per_row;
+								}
+							},
+							{
+								key_path : "spells_mode.minimal_layout",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.minimal_layout;
+								}
+							},
+							{
+								key_path : "spells_mode.use_tts",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.use_tts;
 								}
 							}
 						]

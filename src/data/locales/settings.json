@@ -791,6 +791,26 @@
 			"es" : "Show Spell Icon",
 			"fr" : "Show Spell Icon",
 			"kr" : "Show Spell Icon"
+		},
+		"spells_mode.use_tts" : {
+			"en" : "Use Text to Speech",
+			"pt" : "Use Text to Speech",
+			"cn" : "Use Text to Speech",
+			"jp" : "Use Text to Speech",
+			"de" : "Use Text to Speech",
+			"es" : "Use Text to Speech",
+			"fr" : "Use Text to Speech",
+			"kr" : "Use Text to Speech"
+		},
+		"spells_mode.minimal_layout" : {
+			"en" : "Minimal Layout",
+			"pt" : "Minimal Layout",
+			"cn" : "Minimal Layout",
+			"jp" : "Minimal Layout",
+			"de" : "Minimal Layout",
+			"es" : "Minimal Layout",
+			"fr" : "Minimal Layout",
+			"kr" : "Minimal Layout"
 		}
 	},
 	"misc" : {

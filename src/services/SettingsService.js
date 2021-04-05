@@ -14,8 +14,6 @@ class SettingsService {
 		
 		querystring = `${querystring}${joiner}mode=${state.internal.mode}`;
 
-		console.log(querystring);
-
 		store.dispatch(updateState(new_data));
 		window.open(`${querystring}#/settings/about`, "", "width=600,height=430,location=no,menubar=no");
 	}

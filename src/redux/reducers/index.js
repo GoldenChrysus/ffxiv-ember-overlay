@@ -36,7 +36,7 @@ const initial_state = {
 		detail_player        : {},
 		party                : [],
 		spells               : {
-			in_use : []
+			in_use : {}
 		},
 		viewing_history      : false,
 		overlayplugin        : overlayplugin_service.isOverlayPlugin(),
@@ -144,9 +144,15 @@ function rootReducer(state, action) {
 
 					tmp_action = {
 						payload : {
-							7499  : timestamp,
-							16481 : timestamp,
-							16482 : timestamp
+							7499  : {
+								time : timestamp
+							},
+							16481 :  {
+								time : timestamp
+							},
+							16482 : {
+								time : timestamp
+							}
 						}
 					};
 					new_state  = createNewState(state, "internal.spells.in_use", tmp_action);
@@ -232,6 +238,8 @@ function rootReducer(state, action) {
 					break;
 
 				case "spells":
+					new_state = clone(state);
+					new_state = GameDataProcessor.parseSpellLogLine(action.payload, new_state);
 					break;
 				
 				default:
