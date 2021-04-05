@@ -7,6 +7,10 @@ import Container from "./Parser/Container";
 import Placeholder from "./Parser/Placeholder";
 
 class Parser extends React.Component {
+	collapsed_modes = [
+		"spells"
+	];
+
 	componentWillMount() {
 		window.parser = true;
 
@@ -32,7 +36,8 @@ class Parser extends React.Component {
 	}
 
 	render() {
-		let collapsed          = (this.props.collapsed && this.props.viewing === "tables");
+		let collapsed          = ((this.props.collapsed && this.props.viewing === "tables") || this.collapsed_modes.indexOf(this.props.mode) !== -1);
+		let collapse_down      = (this.props.collapse_down && this.collapsed_modes.indexOf(this.props.mode) === -1);
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
 		let zoom               = this.props.zoom / 100;
@@ -55,7 +60,7 @@ class Parser extends React.Component {
 		if (collapsed) {
 			root_inner_classes.push("auto-height");
 
-			if (this.props.collapse_down) {
+			if (collapse_down) {
 				root_inner_classes.push("down");
 			}
 		}
@@ -91,7 +96,8 @@ const mapStateToProps = (state) => {
 		light_theme     : state.settings.interface.light_theme,
 		auto_hide       : state.settings.interface.auto_hide,
 		auto_hide_delay : state.settings.interface.auto_hide_delay,
-		last_activity   : state.last_activity
+		last_activity   : state.last_activity,
+		mode            : state.internal.mode,
 	};
 };
 

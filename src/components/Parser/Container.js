@@ -13,6 +13,7 @@ import PlaceholderToggle from "./Placeholder/Toggle";
 import AggroTable from "./AggroTable";
 
 import TTSService from "../../services/TTSService";
+import SpellGrid from "./SpellGrid";
 
 class Container extends React.Component {
 	no_footer_modes = [
@@ -61,7 +62,16 @@ class Container extends React.Component {
 				break;
 
 			case "spells":
-				content = "";
+				switch (viewing) {
+					case "import":
+						content = <Import/>;
+
+						break;
+
+					default:
+						content = <SpellGrid encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode}/>
+						break;
+				}
 
 				break;
 

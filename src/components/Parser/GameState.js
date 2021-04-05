@@ -8,7 +8,7 @@ import SettingsService from "../../services/SettingsService";
 
 class GameState extends React.Component {
 	render() {
-		let encounter_class = (this.props.active) ? "active" : "inactive";
+		let encounter_class = (this.props.active || this.props.mode === "spells") ? "active" : "inactive";
 		let rank_class      = (this.props.show_rank) ? "" : "hidden";
 		let rank            = (this.props.rank === "N/A") ? LocalizationService.getOverlayText("not_applicable") : this.props.rank;
 		let button          = () => {
@@ -34,19 +34,32 @@ class GameState extends React.Component {
 		let encounter       = this.props.encounter;
 		let encounter_state = [];
 
-		if (!encounter.title) {
-			encounter_state.push(LocalizationService.getOverlayText("awaiting_encounter"));
-		} else {
-			encounter_state.push(encounter.duration);
+		switch (this.props.mode) {
+			case "stats":
+				if (!encounter.title) {
+					encounter_state.push(LocalizationService.getOverlayText("awaiting_encounter"));
+				} else {
+					encounter_state.push(encounter.duration);
 
-			if (encounter.title !== "Encounter") {
-				encounter_state.push(encounter.title);
-			}
+					if (encounter.title !== "Encounter") {
+						encounter_state.push(encounter.title);
+					}
 
-			encounter_state.push(encounter.CurrentZoneName);
+					encounter_state.push(encounter.CurrentZoneName);
+				}
+
+				encounter_state = encounter_state.join(" - ");
+
+				break;
+
+			case "spells":
+				encounter_state = "Spell Timers";
+
+				break;
+
+			default:
+				break;
 		}
-
-		encounter_state = encounter_state.join(" - ");
 
 		return (
 			<div id="game-state">

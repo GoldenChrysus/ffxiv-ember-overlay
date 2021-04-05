@@ -8,44 +8,11 @@ import LocalizationService from "../../../services/LocalizationService";
 
 class Menu extends React.Component {
 	render() {
-		let self           = this;
-		let plugin_service = this.props.plugin_service;
-
-		let collapse_item = function() {
-			let text = LocalizationService.getOverlayText((self.props.collapsed) ? "uncollapse" : "collapse");
-			let data = { state: !self.props.collapsed };
-
-			return(
-				<MenuItem data={data} onClick={self.changeCollapse.bind(self)}>
-					{text}
-				</MenuItem>
-			);
-		};
-
-		let plugin_actions = function() {
-			return(
-				<MenuItem onClick={plugin_service.splitEncounter.bind(plugin_service)}>
-					{LocalizationService.getOverlayText("split_encounter")}
-				</MenuItem>
-			);
-		}
-
 		return (
 			<ContextMenu id="right-click-menu" className="container-context-menu">
 				<div className="item-group">
-					{collapse_item()}
-					{plugin_actions()}
-					<div className="split"></div>
-					<MenuItem onClick={this.changeViewing.bind(this, "player", this.props.encounter)}>
-						{LocalizationService.getOverlayText("view_encounter")}
-					</MenuItem>
-					<MenuItem onClick={this.loadSampleGameData.bind(this)}>
-						{LocalizationService.getOverlayText("load_sample")}
-					</MenuItem>
-					<MenuItem onClick={this.clearGameData.bind(this)}>
-						{LocalizationService.getOverlayText("clear_encounter")}
-					</MenuItem>
-					<div className="split"></div>
+					{this.getFirstSection()}
+					{this.getSecondSection()}
 					<MenuItem onClick={SettingsService.openSettingsWindow}>
 						{LocalizationService.getOverlayText("settings")}
 					</MenuItem>
@@ -62,6 +29,70 @@ class Menu extends React.Component {
 				</div>
 			</ContextMenu>
 		);
+	}
+
+	getFirstSection() {
+		let plugin_service = this.props.plugin_service;
+
+		let collapse_item = () => {
+			if (this.props.mode === "spells") {
+				return "";
+			}
+
+			let text = LocalizationService.getOverlayText((this.props.collapsed) ? "uncollapse" : "collapse");
+			let data = { state: !this.props.collapsed };
+
+			return(
+				<MenuItem data={data} onClick={this.changeCollapse.bind(this)}>
+					{text}
+				</MenuItem>
+			);
+		};
+
+		let plugin_actions = () => {
+			if (this.props.mode === "spells") {
+				return "";
+			}
+
+			return(
+				<MenuItem onClick={plugin_service.splitEncounter.bind(plugin_service)}>
+					{LocalizationService.getOverlayText("split_encounter")}
+				</MenuItem>
+			);
+		}
+
+		let items = [collapse_item(), plugin_actions()].filter(x => !!x);
+
+		if (items.length) {
+			items.push(<div className="split"></div>);
+		}
+
+		return items;
+	}
+
+	getSecondSection() {
+		let items = [];
+
+		if (this.props.mode === "stats") {
+			items.push(
+				<MenuItem onClick={this.changeViewing.bind(this, "player", this.props.encounter)}>
+					{LocalizationService.getOverlayText("view_encounter")}
+				</MenuItem>
+			);
+		}
+
+		items.push(
+			<MenuItem onClick={this.loadSampleGameData.bind(this)}>
+				{LocalizationService.getOverlayText("load_sample")}
+			</MenuItem>
+		);
+		items.push(
+			<MenuItem onClick={this.clearGameData.bind(this)}>
+				{LocalizationService.getOverlayText("clear_encounter")}
+			</MenuItem>
+		);
+		items.push(<div className="split"></div>);
+		return items;
 	}
 
 	changeCollapse(e, data) {
@@ -125,6 +156,7 @@ const mapStateToProps = (state) => {
 		collapsed      : state.settings.intrinsic.collapsed,
 		overlayplugin  : state.internal.overlayplugin,
 		encounter      : state.internal.game.Encounter,
+		mode           : state.internal.mode,
 	};
 };
 

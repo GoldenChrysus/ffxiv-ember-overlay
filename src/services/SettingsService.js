@@ -6,10 +6,18 @@ class SettingsService {
 		let new_data = {
 			key   : "internal.new_version",
 			value : false
-		}
+		};
+
+		let state       = store.getState();
+		let querystring = String(window.location.search);
+		let joiner      = (querystring.indexOf("?") !== -1) ? "&" : "?";
+		
+		querystring = `${querystring}${joiner}mode=${state.internal.mode}`;
+
+		console.log(querystring);
 
 		store.dispatch(updateState(new_data));
-		window.open("#/settings/about", "", "width=600,height=430,location=no,menubar=no");
+		window.open(`${querystring}#/settings/about`, "", "width=600,height=430,location=no,menubar=no");
 	}
 
 	openSettingsImport() {

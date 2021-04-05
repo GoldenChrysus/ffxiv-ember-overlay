@@ -23,7 +23,7 @@ class TabSyncService {
 						.loadSettings()
 						.then(() => {
 							state.settings_data.saveToOverlayPlugin();
-							state.plugin_service.updateSubscriptions(state.settings_data);
+							state.plugin_service.updateSubscriptions(state.settings_data, state.internal);
 						});
 					break;
 	

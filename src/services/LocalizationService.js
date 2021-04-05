@@ -1,4 +1,5 @@
 import Constants from "../constants/index";
+import SkillData from "../constants/SkillData";
 import { OverlayLocales, SettingsLocales } from "../constants/Locales";
 import store from "../redux/store/index";
 
@@ -145,6 +146,12 @@ class LocalizationService {
 		let language = this.getLanguage();
 
 		return SettingsLocales.misc[key][language] || SettingsLocales.misc[key].en;
+	}
+
+	getoGCDSkillName(id) {
+		let language = this.getLanguage();
+
+		return SkillData.oGCDSkills[id].locales.name[language] || SkillData.oGCDSkills[id].locales.name.en;
 	}
 }
 

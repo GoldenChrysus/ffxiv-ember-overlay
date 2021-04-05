@@ -154,6 +154,11 @@ const default_settings = {
 			"BlockPct",
 			"deaths"
 		]
+	},
+	spells_mode : {
+		spells         : [],
+		spells_per_row : 1,
+		show_icon      : true
 	}
 };
 

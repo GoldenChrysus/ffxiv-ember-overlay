@@ -41,7 +41,13 @@ class Settings extends React.Component {
 			: LocalizationService.getMisc("streamers");
 		let streamer_text      = streamer_base_text.replace("{{number}}", streamer_count);
 
-		for (let section of SettingsSchema[this.props.mode].sections) {
+		for (
+			let section of 
+			SettingsSchema.all_before.sections.concat(
+				SettingsSchema[this.props.mode].sections.concat(
+					SettingsSchema.all_after.sections)
+				)
+		) {
 			let section_path = section.path;
 			let path         = `${base_url}/${section_path}`;
 			let title        = LocalizationService.getSettingsSectionText(section_path);

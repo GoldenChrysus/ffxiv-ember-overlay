@@ -245,10 +245,7 @@
 			box-shadow: inset 0 -1px 0 @light_borderInner;
 			color: @light_importantText;
 		},
-		{},
-		{
-			background-color: black;
-		}
+		{}
 	);
 }
 
@@ -730,6 +727,17 @@
 	text-shadow : 3px 0 6px rgba(255, 255, 255, 0.7);
 }
 
+#container #inner #content #import {
+	.setThemeStyle(
+		{},
+		{},
+		{},
+		{
+			background-color: black;
+		}
+	);
+}
+
 #container #inner #content #player-detail,
 #container #inner #content #import {
 	padding        : 8px;
@@ -988,6 +996,78 @@
 		{
 			background: @light_rowAndLinkHoverBackground;
 			box-shadow: inset 0 -1px 0 @light_footerLinkInnerShadow, inset 0 1px 2px @light_footerLinkOuterShadow;
+		}
+	);
+}
+
+#container #inner #content #spell-grid .spell-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 40px;
+	margin: 3px 0 2px 0;
+	width: 33%;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	.setThemeStyle(
+		{
+			background-image: @dark_contentBackground;
+			color: @dark_importantText;
+		},
+		{
+			background-image: @light_contentBackground;
+			color: @light_importantText;
+		}
+	);
+}
+
+#container #inner #content #spell-grid .spell-container .icon {
+	flex: 0 0 100%;
+	width: 40px;
+}
+
+#container #inner #content #spell-grid .spell-container .row {
+	flex: 0 0 100%;
+	position: relative;
+	width: calc(100% - 43px);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 0 0 0 6px;
+
+	.setThemeStyle(
+		{
+			background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+		},
+		{
+			background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+		}
+	);
+}
+
+#container #inner #content #spell-grid .spell-container .row:nth-child(1) {
+	width: 100%;
+}
+
+#container #inner #content #spell-grid .spell-container .row span {
+	display: block;
+}
+
+#container #inner #content #spell-grid .spell-container .row .name {
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#container #inner #content #spell-grid .spell-container .row .cooldown {
+	.setThemeStyle(
+		{
+			color: @dark_headerAndLinkText
+		},
+		{
+			color: @light_headerAndLinkText
 		}
 	);
 }

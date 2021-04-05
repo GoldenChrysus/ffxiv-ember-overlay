@@ -72,31 +72,35 @@ class PluginService extends PluginServiceAbstract {
 		this.old_events = events;
 	}
 
-	updateSubscriptions(settings_object) {
-		let events = this.getSubscriptions(settings_object);
+	updateSubscriptions(settings_object, internal) {
+		let events = this.getSubscriptions(settings_object, internal);
 
 		this.subscribe(events);
 		this.unsubscribe(events);
 	}
 
-	getSubscriptions(settings_object) {
+	getSubscriptions(settings_object, internal) {
 		let settings = settings_object || store.getState().settings_data;
+		let mode     = (internal || store.getState().internal).mode;
 		let data     = {
 			enmity : UsageService.usingEnmity(settings),
 			log    : UsageService.usingLogTTS(settings)
 		};
 		let events   = [
-			"CombatData",
-			"EnmityAggroList",
-			"ChangePrimaryPlayer",
-			"PartyChanged"
+			"ChangePrimaryPlayer"
 		];
+
+		if (mode === "stats") {
+			events.push("CombatData");
+			events.push("EnmityAggroList");
+			events.push("PartyChanged");
+		}
 
 		if (data.enmity) {
 			events.push("EnmityTargetData");
 		}
 
-		if (data.log) {
+		if (data.log || mode === "spells") {
 			events.push("LogLine");
 		}
 

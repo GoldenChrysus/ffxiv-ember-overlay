@@ -1,5 +1,6 @@
 import clone from "lodash.clonedeep";
 import isEqual from "lodash.isequal";
+import moment from "moment";
 
 import Settings from "../../data/Settings";
 import PluginService from "../../services/PluginService";
@@ -13,6 +14,9 @@ import SampleAggroData from "../../constants/SampleAggroData";
 import TTSService from "../../services/TTSService";
 import TabSyncService from "../../services/TabSyncService";
 
+const querystring = require("querystring");
+
+let params                = new querystring.parse(String(window.location.search).substring(1));
 let overlayplugin_service = new OverlayPluginService();
 let uuid                  = (window.OverlayPluginApi) ? window.OverlayPluginApi.overlayUuid : "browser";
 
@@ -31,11 +35,14 @@ const initial_state = {
 		encounter_history    : [],
 		detail_player        : {},
 		party                : [],
+		spells               : {
+			in_use : []
+		},
 		viewing_history      : false,
 		overlayplugin        : overlayplugin_service.isOverlayPlugin(),
 		overlayplugin_author : overlayplugin_service.getAuthor(),
 		new_version          : false,
-		mode                 : localStorage.getItem(`${uuid}-mode`) || "stats",
+		mode                 : params["mode"] || localStorage.getItem(`${uuid}-mode`) || "stats",
 	},
 	settings : {}
 };
@@ -111,19 +118,44 @@ function rootReducer(state, action) {
 			break;
 
 		case "loadSampleData":
-			let tmp_action = {
-				type : "loadSampleData"
-			};
+			let tmp_action;
 
-			state.internal.data_history = SampleHistoryData;
+			switch (state.internal.mode) {
+				case "stats":
+					tmp_action = {
+						type : "loadSampleData"
+					};
 
-			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language, state, true);
+					state.internal.data_history = SampleHistoryData;
 
-			new_state  = createNewState(state, "internal.game", tmp_action);
-			tmp_action = {
-				payload : GameDataProcessor.normalizeAggroList(SampleAggroData)
-			};
-			new_state  = createNewState(new_state, "internal.aggro", tmp_action);
+					tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language, state, true);
+
+					new_state  = createNewState(state, "internal.game", tmp_action);
+					tmp_action = {
+						payload : GameDataProcessor.normalizeAggroList(SampleAggroData)
+					};
+					new_state  = createNewState(new_state, "internal.aggro", tmp_action);
+
+					break;
+
+				case "spells":
+					let date      = new Date();
+					let timestamp = moment(date).format("YYYY-MM-DDTHH:mm:ss.SSSSSSSZ");
+
+					tmp_action = {
+						payload : {
+							7499  : timestamp,
+							16481 : timestamp,
+							16482 : timestamp
+						}
+					};
+					new_state  = createNewState(state, "internal.spells.in_use", tmp_action);
+
+					break;
+
+				default:
+					break;
+			}
 
 			break;
 
@@ -187,6 +219,8 @@ function rootReducer(state, action) {
 
 		case "changeMode":
 			new_state = createNewState(state, full_key, action);
+
+			new_state.plugin_service.updateSubscriptions(new_state.settings_data, new_state.internal);
 
 			localStorage.setItem(`${uuid}-mode`, new_state.internal.mode);
 			break;

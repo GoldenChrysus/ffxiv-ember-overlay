@@ -300,7 +300,7 @@
 				"jp" : "問い合わせ",
 				"de" : "Über",
 				"es" : "Acerca de",
-				"fr" : "A propos de ",
+				"fr" : "A propos de",
 				"kr" : "오버레이 정보"
 			},
 			"subsections" : [
@@ -313,6 +313,30 @@
 					"es" : "Ember Overlay",
 					"fr" : "Ember Overlay",
 					"kr" : "엠버 오버레이"
+				}
+			]
+		},
+		"spells-mode" : {
+			"title" : {
+				"en" : "Spell Timers",
+				"pt" : "Spell Timers",
+				"cn" : "Spell Timers",
+				"jp" : "Spell Timers",
+				"de" : "Spell Timers",
+				"es" : "Spell Timers",
+				"fr" : "Spell Timers",
+				"kr" : "Spell Timers"
+			},
+			"subsections" : [
+				{
+					"en" : "General",
+					"pt" : "Geral",
+					"cn" : "通用",
+					"jp" : "一般",
+					"de" : "Allgemein",
+					"es" : "General",
+					"fr" : "Général",
+					"kr" : "일반 설정"
 				}
 			]
 		}
@@ -737,6 +761,26 @@
 			"es" : "Utilizar CSS proporcionado por usuarios es bajo tu propio riesgo.",
 			"fr" : "Utilisé votre propre CSS est à vos risques.",
 			"kr" : "임의로 만들어진 CSS는 책임질 수 없습니다."
+		},
+		"spells_mode.spells_per_row" : {
+			"en" : "Spells Per Row",
+			"pt" : "Spells Per Row",
+			"cn" : "Spells Per Row",
+			"jp" : "Spells Per Row",
+			"de" : "Spells Per Row",
+			"es" : "Spells Per Row",
+			"fr" : "Spells Per Row",
+			"kr" : "Spells Per Row"
+		},
+		"spells_mode.show_icon" : {
+			"en" : "Show Spell Icon",
+			"pt" : "Show Spell Icon",
+			"cn" : "Show Spell Icon",
+			"jp" : "Show Spell Icon",
+			"de" : "Show Spell Icon",
+			"es" : "Show Spell Icon",
+			"fr" : "Show Spell Icon",
+			"kr" : "Show Spell Icon"
 		}
 	},
 	"misc" : {

@@ -61,7 +61,7 @@ const decimal_options  = [
 ];
 
 const SettingsSchema = {
-	stats : {
+	all_before : {
 		sections : [
 			{
 				path     : "interface",
@@ -193,7 +193,11 @@ const SettingsSchema = {
 						]
 					}
 				]
-			},
+			}
+		]
+	},
+	stats : {
+		sections : [
 			{
 				path     : "metric-names",
 				sections : [
@@ -494,7 +498,41 @@ const SettingsSchema = {
 						]
 					}
 				]
-			},
+			}
+		]
+	},
+	spells : {
+		sections : [
+			{
+				path : "spells-mode",
+				sections : [
+					{
+						settings : [
+							{
+								key_path : "spells_mode.show_icon",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.show_icon;
+								}
+							},
+							{
+								key_path : "spells_mode.spells_per_row",
+								type     : "slider",
+								range    : "min",
+								minimum  : 0,
+								maximum  : 5,
+								value    : function() {
+									return this.props.settings.spells_mode.spells_per_row;
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	all_after : {
+		sections : [
 			{
 				path     : "custom-css",
 				sections : [
@@ -511,11 +549,6 @@ const SettingsSchema = {
 					}
 				]
 			}
-		]
-	},
-	spells : {
-		sections : [
-			
 		]
 	}
 }
