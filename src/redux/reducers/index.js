@@ -226,7 +226,18 @@ function rootReducer(state, action) {
 			break;
 
 		case "parseLogLine":
-			TTSService.processLogLine(action.payload, state);
+			switch (state.internal.mode) {
+				case "stats":
+					TTSService.processLogLine(action.payload, state);
+					break;
+
+				case "spells":
+					break;
+				
+				default:
+					break;
+			}
+
 			break;
 
 		default:

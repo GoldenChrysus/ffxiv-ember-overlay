@@ -509,6 +509,16 @@ const SettingsSchema = {
 					{
 						settings : [
 							{
+								key_path : "spells_mode.spells",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getoGCDSkillOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.spells;
+								}
+							},
+							{
 								key_path : "spells_mode.show_icon",
 								type     : "checkbox",
 								value    : function() {

@@ -762,6 +762,16 @@
 			"fr" : "Utilisé votre propre CSS est à vos risques.",
 			"kr" : "임의로 만들어진 CSS는 책임질 수 없습니다."
 		},
+		"spells_mode.spells" : {
+			"en" : "Spells to Track",
+			"pt" : "Spells to Track",
+			"cn" : "Spells to Track",
+			"jp" : "Spells to Track",
+			"de" : "Spells to Track",
+			"es" : "Spells to Track",
+			"fr" : "Spells to Track",
+			"kr" : "Spells to Track"
+		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
 			"pt" : "Spells Per Row",

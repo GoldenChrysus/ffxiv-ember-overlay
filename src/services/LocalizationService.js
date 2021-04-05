@@ -148,10 +148,29 @@ class LocalizationService {
 		return SettingsLocales.misc[key][language] || SettingsLocales.misc[key].en;
 	}
 
-	getoGCDSkillName(id) {
-		let language = this.getLanguage();
+	getoGCDSkillName(id, language) {
+		language = language || this.getLanguage();
 
 		return SkillData.oGCDSkills[id].locales.name[language] || SkillData.oGCDSkills[id].locales.name.en;
+	}
+
+	getoGCDSkillOptions() {
+		let language = this.getLanguage();
+		let options  = [];
+
+		for (let id in SkillData.oGCDSkills) {
+			options.push({
+				key   : id,
+				value : id,
+				text  : this.getoGCDSkillName(id, language)
+			});
+		}
+
+		options.sort((a, b) => {
+			return (a.text < b.text) ? -1 : 1;
+		});
+
+		return options;
 	}
 }
 
