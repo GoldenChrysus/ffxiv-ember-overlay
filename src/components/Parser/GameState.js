@@ -5,8 +5,15 @@ import { changeCollapse } from "../../redux/actions/index";
 import IconButton from "./Container/IconButton";
 import LocalizationService from "../../services/LocalizationService";
 import SettingsService from "../../services/SettingsService";
+import VersionService from "../../services/VersionService";
 
 class GameState extends React.Component {
+	componentDidMount() {
+		if (this.props.mode === "spells") {
+			VersionService.determineIfNewer();
+		}
+	}
+
 	render() {
 		let encounter_class = (this.props.active || this.props.mode === "spells") ? "active" : "inactive";
 		let rank_class      = (this.props.show_rank) ? "" : "hidden";
@@ -53,7 +60,7 @@ class GameState extends React.Component {
 				break;
 
 			case "spells":
-				encounter_state = "Spell Timers";
+				encounter_state = "Ember Spell Timers";
 
 				break;
 

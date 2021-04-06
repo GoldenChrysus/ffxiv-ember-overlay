@@ -26,12 +26,13 @@ class Menu extends React.Component {
 	}
 
 	getModesSection() {
-		let modes = [
+		let mode_text = LocalizationService.getOverlayText("mode");
+		let modes     = [
 			<MenuItem key="menu-mode-stats" onClick={this.changeMode.bind(this, "stats")}>
-				Mode: Parser
+				{mode_text}: {LocalizationService.getOverlayText("parser")}
 			</MenuItem>,
 			<MenuItem key="menu-mode-spells" onClick={this.changeMode.bind(this, "spells")}>
-				Mode: Spell Timer
+				{mode_text}: {LocalizationService.getOverlayText("spell_timers")}
 			</MenuItem>,
 			<div key="menu-modes-section-split" className="split"></div>
 		];
@@ -94,11 +95,15 @@ class Menu extends React.Component {
 				{LocalizationService.getOverlayText("load_sample")}
 			</MenuItem>
 		);
-		items.push(
-			<MenuItem key="menu-clear-encounter" onClick={this.clearGameData.bind(this)}>
-				{LocalizationService.getOverlayText("clear_encounter")}
-			</MenuItem>
-		);
+		
+		if (this.props.mode === "stats") {
+			items.push(
+				<MenuItem key="menu-clear-encounter" onClick={this.clearGameData.bind(this)}>
+					{LocalizationService.getOverlayText("clear_encounter")}
+				</MenuItem>
+			);
+		}
+
 		items.push(<div key="menu-group2-split" className="split"></div>);
 		return items;
 	}

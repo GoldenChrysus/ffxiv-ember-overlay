@@ -47,7 +47,7 @@ class OverlayInfo extends React.Component {
 			<div id="overlay-info">
 				<h3>Ember Overlay</h3>
 				<p>This section will disappear when an encounter begins.</p>
-				<p>Try out the new minimal theme in Settings -> Interface!</p>
+				<p>Try the new spell timers by right-clicking and choosing "Mode: Spell Timers"!</p>
 
 				<div id="funding">
 					<span onClick={this.openFundingLink.bind(this, "cash")} ref="cash"><img src="img/buttons/funding/cash.svg" alt="Donate on Cash App" height="20"/></span>

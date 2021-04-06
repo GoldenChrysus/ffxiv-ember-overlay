@@ -12,8 +12,10 @@
     - Right-click on overlay and choose "Mode: Spell Timer"
     - Setup can be accessed at Settings > Spell Timers
         - Settings cog is moved to the top right of the overlay when in spell timer mode
-    - "Text to Speech" setting causes the spell name to be said when it's ready
+    - "Use Text to Speech" setting causes the spell name to be said when it's ready
     - "Minimal Layout" setting turns the spell timers into compact bars
+    - "Warning Threshold" setting causes the spell to begin flashing when the duration is expiring
+    - The "Reverse" options cause the cooldown bar to deplete left-to-right instead of right-to-left
 
 ### UI Changes
 - N/A

@@ -325,7 +325,7 @@
 				"de" : "Zauber Timer",
 				"es" : "Spell Timers",
 				"fr" : "Spell Timers",
-				"kr" : "Spell Timers"
+				"kr" : "스펠 타이머"
 			},
 			"subsections" : [
 				{
@@ -770,7 +770,7 @@
 			"de" : "Zauber im Überblick",
 			"es" : "Spells to Track",
 			"fr" : "Spells to Track",
-			"kr" : "Spells to Track"
+			"kr" : "확인할 스펠들"
 		},
 		"spells_mode.effects" : {
 			"en" : "Effects to Track",
@@ -780,7 +780,7 @@
 			"de" : "Effekte im Überblick",
 			"es" : "Effects to Track",
 			"fr" : "Effects to Track",
-			"kr" : "Effects to Track"
+			"kr" : "확인할 이펙트들"
 		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
@@ -800,7 +800,7 @@
 			"de" : "Zaubericons anzeigen",
 			"es" : "Show Spell Icon",
 			"fr" : "Show Spell Icon",
-			"kr" : "Show Spell Icon"
+			"kr" : "스펠 아이콘 표시"
 		},
 		"spells_mode.use_tts" : {
 			"en" : "Use Text to Speech",
@@ -847,7 +847,7 @@
 			"pt" : "Warning Threshold (In Seconds)",
 			"cn" : "Warning Threshold (In Seconds)",
 			"jp" : "Warning Threshold (In Seconds)",
-			"de" : "Warning Threshold (In Seconds)",
+			"de" : "Warnungen maximal anzeigen für (in Sekunden)",
 			"es" : "Warning Threshold (In Seconds)",
 			"fr" : "Warning Threshold (In Seconds)",
 			"kr" : "Warning Threshold (In Seconds)"

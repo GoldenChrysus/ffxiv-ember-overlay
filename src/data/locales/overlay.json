@@ -229,6 +229,37 @@
 		"fr" : "Paste",
 		"kr" : "붙여넣기"
 	},
+	"mode" : {
+		"en" : "Mode",
+		"pt" : "Modo",
+		"cn" : "模式",
+		"jp" : "モード",
+		"de" : "Modus",
+		"es" : "Modo",
+		"fr" : "Mode",
+		"kr" : "방법"
+	},
+	"parser" : {
+		"en" : "Parser",
+		"pt" : "Parser",
+		"cn" : "解析器",
+		"jp" : "パーサー",
+		"de" : "Parser",
+		"es" : "Analizador",
+		"fr" : "Analyseur",
+		"kr" : "파서"
+	},
+	"spell_timers" : {
+		"en" : "Spell Timers",
+		"pt" : "Temporizadores das Magias",
+		"cn" : "Spell Timers",
+		"jp" : "スペルタイマー",
+		"de" : "Zauber Timer",
+		"es" : "Spell Timers",
+		"fr" : "Spell Timers",
+		"kr" : "스펠 타이머"
+	},
+	
 	"tts" : {
 		"critical" : {
 			"en" : {
@@ -345,7 +376,7 @@
 				"text" : "あなたは最高な{{metric}}です."
 			},
 			"de" : {
-				"text" : "Du bist Topreiter in {{metric}}."
+				"text" : "Du bist Spitzenreiter in {{metric}}."
 			},
 			"es" : {
 				"text" : "You are top {{metric}}."
