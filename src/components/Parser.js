@@ -7,7 +7,11 @@ import Container from "./Parser/Container";
 import Placeholder from "./Parser/Placeholder";
 
 class Parser extends React.Component {
-	collapsed_modes = [];
+	constructor(props) {
+		super(props);
+
+		this.collapsed_modes = [];
+	}
 
 	componentWillMount() {
 		window.parser = true;

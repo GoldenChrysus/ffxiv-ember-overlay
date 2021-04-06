@@ -16,9 +16,13 @@ import TTSService from "../../services/TTSService";
 import SpellGrid from "./SpellGrid";
 
 class Container extends React.Component {
-	no_footer_modes = [
-		"spells"
-	];
+	constructor(props) {
+		super(props);
+
+		this.no_footer_modes = [
+			"spells"
+		];
+	}
 
 	componentDidMount() {
 		TTSService.start();

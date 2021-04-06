@@ -16,7 +16,7 @@ class GameState extends React.Component {
 
 	render() {
 		let encounter_class = (this.props.active || this.props.mode === "spells") ? "active" : "inactive";
-		let rank_class      = (this.props.show_rank) ? "" : "hidden";
+		let rank_class      = (this.props.show_rank && this.props.mode === "stats") ? "" : "hidden";
 		let rank            = (this.props.rank === "N/A") ? LocalizationService.getOverlayText("not_applicable") : this.props.rank;
 		let button          = () => {
 			switch (this.props.mode) {
