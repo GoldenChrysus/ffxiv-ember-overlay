@@ -297,16 +297,16 @@ function createNewState(state, full_key, action) {
 
 	ObjectService.setByKeyPath(new_state, full_key, action.payload);
 
-	if (["settings", "settings.interface.light_theme"].indexOf(full_key) !== -1) {
-		let light_theme = (full_key === "settings") ? action.payload.interface.light_theme : action.payload;
+	if (["settings", "settings.interface.theme"].indexOf(full_key) !== -1) {
+		let theme = (full_key === "settings") ? action.payload.interface.theme : action.payload;
 
-		ThemeService.setTheme({light : light_theme});
+		ThemeService.setTheme(theme);
 	}
 
 	if (["settings", "settings.interface.minimal_theme"].indexOf(full_key) !== -1) {
 		let minimal_theme = (full_key === "settings") ? action.payload.interface.minimal_theme : action.payload;
 
-		ThemeService.setTheme({minimal : minimal_theme});
+		ThemeService.toggleMinimal(minimal_theme);
 	}
 
 	if (full_key === "internal.mode") {

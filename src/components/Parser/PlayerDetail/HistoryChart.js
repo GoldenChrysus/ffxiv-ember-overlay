@@ -1,11 +1,15 @@
 import React from "react";
 import ChartComponent from "react-chartjs-2";
-import { Line } from "react-chartjs-2";
+import { Line, defaults } from "react-chartjs-2";
 
 import LocalizationService from "../../../services/LocalizationService";
 
 class HistoryChart extends React.Component {
 	componentWillMount() {
+		if (this.props.theme === "ffxiv-classic") {
+			defaults.global.defaultFontColor = "#d9d6dd";
+		}
+
 		ChartComponent.prototype.destroyChart = function() {
 			this.saveCurrentDatasets();
 
@@ -96,7 +100,7 @@ class HistoryChart extends React.Component {
 
 		return (
 			<div>
-				<Line data={line_data} height={125}/>
+				<Line options={{color: "#fff", borderColor: "#fff"}} data={line_data} height={125}/>
 			</div>
 		);
 	}

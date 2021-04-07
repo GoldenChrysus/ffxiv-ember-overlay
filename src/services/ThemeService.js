@@ -6,10 +6,12 @@ class ThemeService {
 		"spells"
 	];
 	
-	setTheme(options) {
-		for (let key of Object.keys(options)) {
-			$("body").toggleClass(key, options[key]);
-		}
+	setTheme(theme) {
+		$("body").attr("theme", theme);
+	}
+
+	toggleMinimal(active) {
+		$("body").toggleClass("minimal", active);
 	}
 
 	setMode(new_mode) {

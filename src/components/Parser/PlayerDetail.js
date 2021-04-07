@@ -13,7 +13,7 @@ class PlayerDetail extends React.Component {
 		let detail_data = this.props.detail_data;
 		let sections    = [
 			<div className="split" key="chart-split"></div>,
-			<HistoryChart player={player} history={this.props.history} light_theme={this.props.light_theme} key="chart"/>
+			<HistoryChart player={player} history={this.props.history} theme={this.props.theme} key="chart"/>
 		];
 
 		for (let i in this.props.players) {
@@ -69,7 +69,7 @@ const mapStateToProps = (state) => {
 	return {
 		detail_data : state.settings.detail_data,
 		history     : state.internal.data_history,
-		light_theme : state.settings.interface.light_theme
+		theme       : state.settings.interface.theme
 	};
 };
 

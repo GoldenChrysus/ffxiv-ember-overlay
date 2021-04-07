@@ -59,6 +59,23 @@ const decimal_options  = [
 		text  : "2"
 	},
 ];
+const theme_options = [
+	{
+		key   : "ffxiv-dark",
+		value : "ffxiv-dark",
+		text  : "FFXIV Dark"
+	},
+	{
+		key   : "ffxiv-light",
+		value : "ffxiv-light",
+		text  : "FFXIV Light"
+	},
+	{
+		key   : "ffxiv-classic",
+		value : "ffxiv-classic",
+		text  : "FFXIV Classic"
+	}
+];
 
 const SettingsSchema = {
 	all_before : {
@@ -208,10 +225,11 @@ const SettingsSchema = {
 								}
 							},
 							{
-								key_path : "interface.light_theme",
-								type     : "checkbox",
+								key_path : "interface.theme",
+								type     : "select",
+								options  : theme_options,
 								value    : function() {
-									return this.props.settings.interface.light_theme;
+									return this.props.settings.interface.theme;
 								}
 							},
 							{

@@ -21,6 +21,9 @@
 		},
 		{
 			color: @light_headerAndLinkText;
+		},
+		@classicTheme: {
+			color: @classic_headerAndLinkText;
 		}
 	);
 }
@@ -40,6 +43,10 @@
 		{
 			background: @light_rowAndLinkHoverBackground;
 			box-shadow: inset 0 -1px 0 @light_footerLinkInnerShadow, inset 0 1px 2px @light_footerLinkOuterShadow;
+		},
+		@classicTheme: {
+			background: @classic_rowAndLinkHoverBackground;
+			box-shadow: inset 0 -1px 0 @classic_footerLinkInnerShadow, inset 0 1px 2px @classic_footerLinkOuterShadow;
 		}
 	);
 }
@@ -57,6 +64,9 @@
 		},
 		{
 			color: @light_borderOuterShadow;
+		},
+		@classicTheme: {
+			color: @classic_borderOuter;
 		}
 	);
 }
@@ -72,24 +82,28 @@
 	margin-top    : 4px;
 
 	.setThemeStyle(
-		{
+		@defaultTheme: {
 			background-color: @dark_containerBackground;
 			box-shadow: inset 0 1px 1px 0 @dark_borderOuter, inset 0 0 1px 0 @dark_borderOuterShadow, 0 0 1px 2px @dark_borderOuterGlow, 0 2px 2px 2px @dark_borderOuterGlow;
 		},
-		{
+		@lightTheme: {
 			background-color: @light_containerBackground;
 			box-shadow: inset 0 1px 1px 0 @light_borderOuter, inset 0 0 1px 0 @light_borderOuterShadow, 0 0 1px 2px @light_borderOuterGlow, 0 2px 2px 2px @light_borderOuterGlow;
 		},
-		{
+		@minimalTheme: {
 			width: calc(100% - 5px);
 			height: calc(100% - 5px);
 			box-shadow: none;
 			padding: 0;
 			margin-top: 1px;
 		},
-		{
+		@spellsMode: {
 			background-color: initial;
 			box-shadow: initial;
+		},
+		@classicTheme: {
+			background-color: @classic_containerBackground;
+			box-shadow: inset 0 1px 1px 0 @classic_borderOuter, inset 0 0 1px 0 @classic_borderOuterShadow, 0 0 1px 1px @classic_borderOuterGlow, 0 1px 1px 1px @classic_borderOuterGlow;
 		}
 	);
 }
@@ -119,6 +133,10 @@
 		{
 			background-image: none;
 			box-shadow: initial;
+		},
+		@classicTheme: {
+			background-image: @classic_contentBackground;
+			box-shadow: inset 0 0 0 1px @classic_borderInner, 0 0 0 2px @classic_borderInnerShadow, 0 3px 1px @classic_borderOuter, 0 0 2px 1px @classic_borderInnerGlow;
 		}
 	);
 }
@@ -137,6 +155,9 @@
 		},
 		{
 			box-shadow: 0 -1px 0 @dark_borderInnerGlow, inset 0 -1px 0 @light_borderInner;
+		},
+		@classicTheme: {
+			box-shadow: 0 -1px 0 @classic_borderInnerGlow, inset 0 -1px 0 @classic_footerBorderInner;
 		}
 	);
 }
@@ -161,6 +182,9 @@
 		},
 		{
 			color: @light_headerAndLinkText;
+		},
+		@classicTheme: {
+			color: @classic_headerAndLinkText;
 		}
 	);
 }
@@ -179,6 +203,9 @@
 		},
 		{
 			color: @light_headerSubtitleText;
+		},
+		@classicTheme: {
+			color: @classic_headerSubtitleText;
 		}
 	);
 }
@@ -203,6 +230,10 @@
 		{
 			background: @light_toggleBackground;
 			box-shadow: inset 0 2px 2px 0 @light_borderOuter, inset 0 0 2px 0 @light_placeholderInsetBorder, 0 0 2px 2px @light_toggleShadow, 0 2px 2px 2px @light_toggleShadow;
+		},
+		@classicTheme: {
+			background: @classic_toggleBackground;
+			box-shadow: inset 0 2px 2px 0 @classic_borderOuter, inset 0 0 2px 0 @classic_placeholderInsetBorder, 0 0 2px 2px @classic_toggleShadow, 0 2px 2px 2px @classic_toggleShadow;
 		}
 	);
 }
@@ -245,7 +276,11 @@
 			box-shadow: inset 0 -1px 0 @light_borderInner;
 			color: @light_importantText;
 		},
-		{}
+		@classicTheme: {
+			background: @classic_borderInnerGlow;
+			box-shadow: inset 0 -1px 0 @classic_borderInner;
+			color: @classic_importantText;
+		}
 	);
 }
 
@@ -310,17 +345,18 @@
 	box-sizing: border-box;
 
 	.setThemeStyle(
-		{},
-		{},
-		{},
-		{
+		@spellsMode: {
 			background-image: @dark_contentBackground;
 		}
 	);
 }
 
-.mode-spells.light #container #inner #content #overlay-info {
+.mode-spells[theme=ffxiv-light] #container #inner #content #overlay-info {
 	background-image: @light_contentBackground;
+}
+
+.mode-spells[theme=ffxiv-classic] #container #inner #content #overlay-info {
+	background-image: @classic_contentBackground;
 }
 
 #container #inner #content #overlay-info > h3 {
@@ -332,6 +368,9 @@
 		},
 		{
 			color: @light_importantText;
+		},
+		@classicTheme: {
+			color: @classic_importantText;
 		}
 	);
 }
@@ -347,6 +386,9 @@
 		},
 		{
 			color: @light_playerDetailSectionDataValueText;
+		},
+		@classicTheme: {
+			color: @classic_aboutTopText;
 		}
 	);
 }
@@ -377,6 +419,9 @@
 		},
 		{
 			color: @light_borderOuterShadow;
+		},
+		@classicTheme: {
+			color: @classic_borderOuterShadow;
 		}
 	);
 }
@@ -390,6 +435,9 @@
 		},
 		{
 			color: @light_headerSubtitleText;
+		},
+		@classicTheme: {
+			color: @classic_headerSubtitleText;
 		}
 	);
 }
@@ -403,9 +451,7 @@
 	position        : relative;
 
 	.setThemeStyle(
-		{},
-		{},
-		{
+		@minimalTheme: {
 			width: 100%;
 			margin: 0;
 		}
@@ -433,6 +479,10 @@
 		{
 			color: @light_playerTableRowText;
 			border-bottom: 1px solid @light_gridItemBackground;
+		},
+		@classicTheme: {
+			color: @classic_playerTableRowText;
+			border-bottom: none;
 		}
 	);
 }
@@ -447,6 +497,9 @@
 		},
 		{
 			background-image: linear-gradient(@light_playerTableRowBarBackground, @light_playerTableRowBarBackground);
+		},
+		@classicTheme: {
+			background-image: linear-gradient(@classic_playerTableRowBackground, @classic_playerTableRowBackground);
 		}
 	);
 }
@@ -466,6 +519,9 @@
 		},
 		{
 			background: @light_gridItemBackground;
+		},
+		@classicTheme: {
+			background: @classic_gridItemBackground;
 		}
 	);
 }
@@ -492,6 +548,9 @@
 		},
 		{
 			background: @light_playerTableRowBorderTop;
+		},
+		@classicTheme: {
+			background: @classic_playerTableRowBorderTop;
 		}
 	);
 }
@@ -506,9 +565,7 @@
 	vertical-align  : middle;
 
 	.setThemeStyle(
-		{},
-		{},
-		{
+		@minimalTheme: {
 			padding: 2px; 
 		}
 	);
@@ -522,7 +579,9 @@
 		{
 			background: @light_playerTableRowBackground;
 		},
-		{}
+		@classicTheme: {
+			background: @classic_playerTableRowBackground;
+		}
 	);
 }
 
@@ -533,6 +592,9 @@
 		},
 		{
 			background: @light_playerTableHeaderRowBackground;
+		},
+		@classicTheme: {
+			background: @classic_playerTableHeaderRowBackground;
 		}
 	);
 }
@@ -550,6 +612,9 @@
 		},
 		{
 			font-size: 10px;
+		},
+		@classicTheme: {
+			color: @classic_headerAndLinkText;
 		}
 	);
 }
@@ -561,6 +626,9 @@
 		},
 		{
 			background: @light_playerTableActiveRowBackground;
+		},
+		@classicTheme: {
+			background: @classic_playerTableActiveRowBackground;
 		}
 	);
 }
@@ -572,6 +640,9 @@
 		},
 		{
 			background-image: linear-gradient(@light_playerTableActiveRowBarBackground, @light_playerTableActiveRowBarBackground);
+		},
+		@classicTheme: {
+			background-image: linear-gradient(@classic_playerTableActiveRowBackground, @classic_playerTableActiveRowBackground);
 		}
 	);
 }
@@ -588,6 +659,9 @@
 		},
 		{
 			background: @light_rowAndLinkHoverBackground;
+		},
+		@classicTheme: {
+			background: @classic_rowAndLinkHoverBackground;
 		}
 	);
 }
@@ -600,9 +674,7 @@
 	position: relative;
 
 	.setThemeStyle(
-		{},
-		{},
-		{
+		@minimalTheme: {
 			width: 20px;
 			padding: 2px 2px 0 2px;
 		}
@@ -613,9 +685,7 @@
 	width : 19px;
 
 	.setThemeStyle(
-		{},
-		{},
-		{
+		@minimalTheme: {
 			padding: 1px 2px 0 0px;
 		}
 	);
@@ -640,9 +710,7 @@
 	z-index: 1;
 
 	.setThemeStyle(
-		{},
-		{},
-		{
+		@minimalTheme: {
 			width: 16px;
 			height: 16px;
 			top: 1px;
@@ -655,9 +723,7 @@
 	height : 16px;
 
 	.setThemeStyle(
-		{},
-		{},
-		{
+		@minimalTheme: {
 			top: 0;
 		}
 	);
@@ -697,6 +763,9 @@
 		},
 		{
 			color: @light_importantText;
+		},
+		@classicTheme: {
+			color: @classic_importantText;
 		}
 	);
 }
@@ -735,8 +804,12 @@
 	background: @dark_borderInnerGlow;
 }
 
-.mode-spells.light #container #inner #content #import {
+.mode-spells[theme=ffxiv-light] #container #inner #content #import {
 	background: @light_borderInnerGlow;
+}
+
+.mode-spells[theme=ffxiv-classic] #container #inner #content #import {
+	background: @classic_borderInnerGlow;
 }
 
 #container #inner #content #player-detail,
@@ -786,6 +859,9 @@
 		},
 		{
 			color: @light_importantText;
+		},
+		@classicTheme: {
+			color: @classic_importantText;
 		}
 	);
 }
@@ -815,6 +891,9 @@
 		},
 		{
 			color: @light_playerDetailSectionTitleText;
+		},
+		@minimalTheme: {
+			color: @classic_playerDetailSectionTitleText;
 		}
 	);
 }
@@ -840,6 +919,9 @@
 		},
 		{
 			background: @light_gridItemBackground;
+		},
+		@classicTheme: {
+			background: @classic_detailItemBackground;
 		}
 	);
 }
@@ -859,6 +941,9 @@
 		},
 		{
 			color: @light_playerDetailSectionDataTitleText;
+		},
+		@classicTheme: {
+			color: @classic_playerDetailSectionDataTitleText;
 		}
 	);
 }
@@ -871,6 +956,17 @@
 		},
 		{
 			color: @light_playerDetailSectionDataValueText;
+		},
+		@classicTheme: {
+			color: @classic_playerDetailSectionDataValueText;
+		}
+	);
+}
+
+#container #inner #content #import .section > p {
+	.setThemeStyle(
+		@classicTheme: {
+			color: @classic_aboutTopText;
 		}
 	);
 }
@@ -886,6 +982,9 @@
 		},
 		{
 			background: @light_footerActiveLinkBackground !important;
+		},
+		@classicTheme: {
+			background: @classic_footerActiveLinkBackground !important;
 		}
 	);
 }
@@ -899,6 +998,9 @@
 		},
 		{
 			color: @light_playerDetailSectionTitleText !important;
+		},
+		@classicTheme: {
+			color: @classic_playerDetailSectionTitleText !important;
 		}
 	);
 }
@@ -912,6 +1014,9 @@
 		},
 		{
 			background: @light_borderOuter;
+		},
+		@classicTheme: {
+			background: @classic_borderOuter;
 		}
 	);
 }
@@ -923,6 +1028,9 @@
 		},
 		{
 			background: @light_importantText;
+		},
+		@classicTheme: {
+			background: @classic_importantText;
 		}
 	);
 }
@@ -964,6 +1072,9 @@
 		},
 		{
 			color: @light_headerAndLinkText;
+		},
+		@classicTheme: {
+			color: @classic_headerAndLinkText;
 		}
 	);
 }
@@ -983,6 +1094,10 @@
 		{
 			background: @light_footerActiveLinkBackground;
 			box-shadow: inset 0 -1px 0 @light_borderInner, inset 0 1px 2px @light_borderInnerGlow;
+		},
+		@classicTheme: {
+			background: @classic_footerActiveLinkBackground;
+			box-shadow: inset 0 -1px 0 @classic_borderInner, inset 0 1px 2px @classic_borderInnerGlow;
 		}
 	);
 }
@@ -997,6 +1112,10 @@
 		{
 			background: @light_rowAndLinkHoverBackground;
 			box-shadow: inset 0 -1px 0 @light_footerLinkInnerShadow, inset 0 1px 2px @light_footerLinkOuterShadow;
+		},
+		@classicTheme: {
+			background: @classic_rowAndLinkHoverBackground;
+			box-shadow: inset 0 -1px 0 @classic_footerLinkInnerShadow, inset 0 1px 2px @classic_footerLinkOuterShadow;
 		}
 	);
 }
@@ -1031,6 +1150,10 @@
 		{
 			background-image: @light_contentBackground;
 			color: @light_importantText;
+		},
+		@classicTheme: {
+			background-image: @classic_contentBackground;
+			color: @classic_importantText;
 		}
 	);
 }
@@ -1092,6 +1215,9 @@
 		},
 		{
 			background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+		},
+		@classicTheme: {
+			background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
 		}
 	);
 }
@@ -1107,6 +1233,9 @@
 		},
 		{
 			background-image: @light_spellWarningBackground;
+		},
+		@classicTheme: {
+			background-image: @classic_spellWarningBackground;
 		}
 	);
 }
@@ -1138,6 +1267,9 @@
 		},
 		{
 			color: @light_headerAndLinkText
+		},
+		@classicTheme: {
+			color: @classic_headerAndLinkText
 		}
 	);
 }
@@ -1163,6 +1295,10 @@
 		{
 			background: @light_toggleBackground;
 			box-shadow: inset 0 1px 1px 0 @light_borderOuter, inset 0 0 1px 0 @light_placeholderInsetBorder, 0 0 1px 2px @light_borderOuterGlow, 0 2px 2px 2px @light_borderOuterGlow;
+		},
+		@classicTheme: {
+			background: @classic_toggleBackground;
+			box-shadow: inset 0 1px 1px 0 @classic_borderOuter, inset 0 0 1px 0 @classic_placeholderInsetBorder, 0 0 1px 2px @classic_borderOuterGlow, 0 2px 2px 2px @classic_borderOuterGlow;
 		}
 	);
 }
@@ -1206,6 +1342,10 @@
 		{
 			background: @light_placeholderInnerBackground;
 			box-shadow: inset 0 0 0 1px @light_borderInner, 0 0 0 2px @light_borderInnerShadow, 0 3px 1px @light_borderOuter, 0 0 2px 1px @light_borderInnerGlow;
+		},
+		@classicTheme: {
+			background: @classic_placeholderInnerBackground;
+			box-shadow: inset 0 0 0 1px @classic_borderInner, 0 0 0 2px @classic_borderInnerShadow, 0 3px 1px @classic_borderOuter, 0 0 2px 1px @classic_borderInnerGlow;
 		}
 	);
 }
@@ -1235,6 +1375,13 @@
 			background: @light_contextMenuBackground;
 			text-shadow: 0 1px @light_contextMenuShadow;
 			box-shadow: 0 0 1px @light_contextMenuShadow, 0 2px 3px @light_contextMenuShadow;
+		},
+		@classicTheme: {
+			border-top: 1px solid @classic_borderInner;
+			border-bottom: 1px solid @classic_borderInnerGlow;
+			background: @classic_contextMenuBackground;
+			text-shadow: 0 1px @classic_contextMenuShadow;
+			box-shadow: 0 0 1px @classic_contextMenuShadow, 0 2px 3px @classic_contextMenuShadow;
 		}
 	);
 }
@@ -1258,6 +1405,9 @@
 		},
 		{
 			color: @light_contextMenuItemBackground;
+		},
+		@classicTheme: {
+			color: @classic_contextMenuItemBackground;
 		}
 	);
 }
@@ -1269,6 +1419,9 @@
 		},
 		{
 			background: linear-gradient(90deg, @light_borderInnerGlow, transparent);
+		},
+		@classicTheme: {
+			background: linear-gradient(90deg, @classic_borderInnerGlow, transparent);
 		}
 	);
 }
@@ -1296,6 +1449,9 @@
 		},
 		{
 			background: @light_toggleBackground !important;
+		},
+		@classicTheme: {
+			background: @classic_toggleBackground !important;
 		}
 	);
 }
@@ -1307,6 +1463,9 @@
 		},
 		{
 			border-left-color: @light_toggleBackground !important;
+		},
+		@classicTheme: {
+			border-left-color: @classic_toggleBackground !important;
 		}
 	);
 }

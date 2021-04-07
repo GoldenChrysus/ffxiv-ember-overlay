@@ -482,15 +482,15 @@
 			"fr" : "Remplacer les Milliers par 'K'",
 			"kr" : "천단위를 'K'로 축약하기"
 		},
-		"interface.light_theme" : {
-			"en" : "Use Light Theme",
-			"pt" : "Usar tema claro",
-			"cn" : "使用亮色主题",
-			"jp" : "ライトテーマを使用",
-			"de" : "Helles Farbschema benutzen",
-			"es" : "Usar Light Theme",
-			"fr" : "Utiliser le thème clair/la version clair de l'Overlay",
-			"kr" : "밝은 테마 사용하기"
+		"interface.theme" : {
+			"en" : "Theme",
+			"pt" : "Tema",
+			"cn" : "主题",
+			"jp" : "テーマ",
+			"de" : "Farbschema",
+			"es" : "Theme",
+			"fr" : "Thème",
+			"kr" : "테마"
 		},
 		"interface.minimal_theme" : {
 			"en" : "Use Minimal Theme",
