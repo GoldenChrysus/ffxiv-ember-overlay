@@ -21,7 +21,7 @@ const default_settings = {
 		top_right_rank        : false,
 		blur_job_icons        : false,
 		collapse_down         : false,
-		theme                 : "dark",
+		theme                 : "ffxiv-dark",
 		minimal_theme         : false,
 		footer_when_collapsed : false,
 		footer_dps            : false,
