@@ -40,9 +40,13 @@ class Section extends React.Component {
 
 	render() {
 		let settings = [];
-		let language = this.props.settings.interface.language;
+		// let language = this.props.settings.interface.language;
 
 		for (let setting_data of this.props.data.settings) {
+			if (setting_data.exclude_modes && setting_data.exclude_modes.indexOf(this.props.mode) !== -1) {
+				continue;
+			}
+
 			let setting;
 
 			let label_text = LocalizationService.getSettingText(setting_data.key_path) || "";

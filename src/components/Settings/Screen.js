@@ -21,10 +21,14 @@ class Screen extends React.Component {
 
 		for (let i in this.props.sections) {
 			let section_data = this.props.sections[i];
+
+			if (section_data.exclude_modes && section_data.exclude_modes.indexOf(this.props.mode) !== -1) {
+				continue;
+			}
 			
 			sections.push(
 				<Container fluid key={this.props.path + "-settings-" + i} className="section-container">
-					<Section data={section_data} parent_path={this.props.path} index={i} settings={this.props.settings} changeCallback={this.handleChange.bind(this)}/>
+					<Section data={section_data} parent_path={this.props.path} index={i} settings={this.props.settings} mode={this.props.mode} changeCallback={this.handleChange.bind(this)}/>
 				</Container>
 			)
 		}

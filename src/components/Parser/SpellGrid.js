@@ -51,9 +51,7 @@ class SpellGrid extends React.Component {
 	}
 
 	componentWillUnmount() {
-		if (this.timer) {
-			clearInterval(this.timer);
-		}
+		this.cancelTimer();
 	}
 
 	render() {
@@ -62,14 +60,24 @@ class SpellGrid extends React.Component {
 		let width        = (100 / row_limit);
 		let spells       = this.buildSpells();
 		let style        = `
-			#container #inner #content #spell-grid .spell-container {
+			#root-inner:not(.down) #container #inner #content #spell-grid .spell-container {
 				width: calc(${width}% - 5px);
 				margin-right: 5px;
 			}
 
-			#container #inner #content #spell-grid .spell-container:nth-of-type(${row_limit}n) {
+			#root-inner:not(.down) #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
 				width: ${width}%;
 				margin-right: 0;
+			}
+
+			#root-inner.down #container #inner #content #spell-grid .spell-container {
+				width: calc(${width}% - 5px);
+				margin-left: 5px;
+			}
+
+			#root-inner.down #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
+				width: ${width}%;
+				margin-left: 0px;
 			}
 		`;
 
@@ -98,8 +106,10 @@ class SpellGrid extends React.Component {
 			return (+this.state.spells[a] < +this.state.spells[b]) ? -1 : 1;
 		});
 
-		for (let i of spells) {
-			items.push(<Spell key={i} spell={this.spells[i]} cooldown={this.state.spells[i]} settings={this.props.settings}/>);
+		for (let i in spells) {
+			let key = spells[i];
+
+			items.push(<Spell key={key} order={+i + 1} spell={this.spells[key]} cooldown={this.state.spells[key]} settings={this.props.settings}/>);
 		}
 
 		return items;
@@ -127,6 +137,7 @@ class SpellGrid extends React.Component {
 					break;
 			}
 
+
 			date.setSeconds(date.getSeconds() + recast);
 
 			this.spells[i] = {
@@ -152,11 +163,15 @@ class SpellGrid extends React.Component {
 	}
 
 	cancelTimer() {
+		if (this.timer) {
+			clearInterval(this.timer);
 
+			this.timer = null;
+		}
 	}
 
 	startTimer() {
-		setInterval(
+		this.timer = setInterval(
 			this.updateCooldowns.bind(this),
 			100
 		);
@@ -180,7 +195,7 @@ class SpellGrid extends React.Component {
 								break;
 
 							case "effect":
-								TTSService.sayNow(LocalizationService.getEffectOptions(this.spells[i].id));
+								TTSService.sayNow(LocalizationService.getEffectName(this.spells[i].id));
 								break;
 
 							default:
@@ -197,6 +212,10 @@ class SpellGrid extends React.Component {
 			}
 
 			state.spells[i] = (diff / 1000).toFixed(1);
+		}
+
+		if (!Object.keys(this.state.spells)) {
+			this.cancelTimer();
 		}
 
 		this.setState(state);

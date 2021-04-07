@@ -10,7 +10,15 @@ class Parser extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.collapsed_modes = [];
+		this.state = {
+			collapsed_modes : {
+				stats  : false,
+				spells : false,
+			},
+			always_visible : {
+				spells : true
+			}
+		};
 	}
 
 	componentWillMount() {
@@ -23,8 +31,24 @@ class Parser extends React.Component {
 		setInterval(this.processAutoHide.bind(this), 2000);
 	}
 
+	componentDidUpdate() {
+		if (this.props.mode === "spells") {
+			if (this.props.has_spells !== this.state.collapsed_modes.spells) {
+				let state = this.state;
+
+				state.collapsed_modes.spells = this.props.has_spells;
+
+				this.setState(state);
+			}
+		}
+	}
+
 	processAutoHide() {
 		let visible = true;
+
+		if (this.state.always_visible[this.props.mode]) {
+			return;
+		}
 
 		if (this.props.auto_hide && this.props.auto_hide_delay > 0 && ((new Date().getTime() / 1000) - this.props.last_activity) > this.props.auto_hide_delay) {
 			visible = false;
@@ -38,8 +62,8 @@ class Parser extends React.Component {
 	}
 
 	render() {
-		let collapsed          = ((this.props.collapsed && this.props.viewing === "tables") || this.collapsed_modes.indexOf(this.props.mode) !== -1);
-		let collapse_down      = (this.props.collapse_down && this.collapsed_modes.indexOf(this.props.mode) === -1);
+		let collapsed          = ((this.props.collapsed && this.props.viewing === "tables") || this.state.collapsed_modes[this.props.mode]);
+		let collapse_down      = this.shouldCollapseDown();
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
 		let zoom               = this.props.zoom / 100;
@@ -85,6 +109,10 @@ class Parser extends React.Component {
 			</React.Fragment>
 		);
 	}
+
+	shouldCollapseDown() {
+		return ((this.props.mode === "stats" && this.props.collapse_down) || (this.props.mode === "spells" && this.props.invert_spells));
+	}
 }
 
 const mapStateToProps = (state) => {
@@ -100,6 +128,8 @@ const mapStateToProps = (state) => {
 		auto_hide_delay : state.settings.interface.auto_hide_delay,
 		last_activity   : state.last_activity,
 		mode            : state.internal.mode,
+		invert_spells   : state.settings.spells_mode.invert,
+		has_spells      : (Object.keys(state.internal.spells.in_use).length > 0),
 	};
 };
 

@@ -75,53 +75,74 @@ const SettingsSchema = {
 								value    : obj => obj.props.settings.interface.language
 							},
 							{
-								key_path : "interface.player_name",
-								type     : "textbox",
-								value    : function() {
+								key_path      : "interface.player_name",
+								type          : "textbox",
+								exclude_modes : [
+									"spells"
+								],
+								value : function() {
 									return this.props.settings.interface.player_name;
 								}
 							},
 							{
-								key_path : "interface.blur_job_icons",
-								type     : "checkbox",
-								value    : function() {
+								key_path      : "interface.blur_job_icons",
+								type          : "checkbox",
+								exclude_modes : [
+									"spells"
+								],
+								value : function() {
 									return this.props.settings.interface.blur_job_icons;
 								}
 							},
 							{
-								key_path : "interface.collapse_down",
-								type     : "checkbox",
-								value    : function() {
+								key_path      : "interface.collapse_down",
+								type          : "checkbox",
+								exclude_modes : [
+									"spells"
+								],
+								value : function() {
 									return this.props.settings.interface.collapse_down;
 								}
 							},
 							{
-								key_path : "interface.footer_when_collapsed",
-								type     : "checkbox",
-								value    : function() {
+								key_path      : "interface.footer_when_collapsed",
+								type          : "checkbox",
+								exclude_modes : [
+									"spells"
+								],
+								value : function() {
 									return this.props.settings.interface.footer_when_collapsed;
 								}
 							},
 							{
-								key_path : "interface.auto_hide",
-								type     : "checkbox",
-								value    : function() {
+								key_path      : "interface.auto_hide",
+								type          : "checkbox",
+								exclude_modes : [
+									"spells"
+								],
+								value : function() {
 									return this.props.settings.interface.auto_hide;
 								}
 							},
 							{
-								key_path : "interface.auto_hide_delay",
-								type     : "slider",
-								range    : "min",
-								minimum  : 0,
-								maximum  : 600,
-								value    : function() {
+								key_path      : "interface.auto_hide_delay",
+								type          : "slider",
+								exclude_modes : [
+									"spells"
+								],
+								range   : "min",
+								minimum : 0,
+								maximum : 600,
+								value   : function() {
 									return this.props.settings.interface.auto_hide_delay;
 								}
 							}
 						]
 					},
 					{
+						exclude_modes : [
+							"spells"
+						],
 						settings : [
 							{
 								key_path : "interface.top_right_rank",
@@ -184,9 +205,12 @@ const SettingsSchema = {
 								}
 							},
 							{
-								key_path : "interface.minimal_theme",
-								type     : "checkbox",
-								value    : function() {
+								key_path      : "interface.minimal_theme",
+								type          : "checkbox",
+								exclude_modes : [
+									"spells"
+								],
+								value : function() {
 									return this.props.settings.interface.minimal_theme;
 								}
 							}
@@ -574,6 +598,13 @@ const SettingsSchema = {
 								type     : "checkbox",
 								value    : function() {
 									return this.props.settings.spells_mode.minimal_layout;
+								}
+							},
+							{
+								key_path : "spells_mode.invert",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.invert;
 								}
 							},
 							{

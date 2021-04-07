@@ -822,6 +822,16 @@
 			"fr" : "Minimal Layout",
 			"kr" : "Minimal Layout"
 		},
+		"spells_mode.invert" : {
+			"en" : "Invert",
+			"pt" : "Invert",
+			"cn" : "Invert",
+			"jp" : "Invert",
+			"de" : "Invert",
+			"es" : "Invert",
+			"fr" : "Invert",
+			"kr" : "Invert"
+		},
 		"spells_mode.reverse_skill" : {
 			"en" : "Reverse Indicator for Spells",
 			"pt" : "Reverse Indicator for Spells",

@@ -174,6 +174,10 @@ class LocalizationService {
 	}
 
 	getEffectName(id, language) {
+		if (!SkillData.Effects[id]) {
+			return "";
+		}
+
 		language = language || this.getLanguage();
 
 		return SkillData.Effects[id].locales.name[language] || SkillData.Effects[id].locales.name.en;

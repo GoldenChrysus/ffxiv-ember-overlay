@@ -57,7 +57,7 @@ class Settings extends React.Component {
 			);
 
 			routes.push(
-				<Route path={path} key={path} render={() => <Screen sections={section.sections} path={section_path}/>}/>
+				<Route path={path} key={path} render={() => <Screen sections={section.sections} path={section_path} mode={this.props.mode}/>}/>
 			);
 		}
 

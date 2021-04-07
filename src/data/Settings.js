@@ -164,7 +164,8 @@ const default_settings = {
 		spells_per_row    : 1,
 		show_icon         : true,
 		use_tts           : false,
-		minimal_layout    : false
+		minimal_layout    : false,
+		invert            : false
 	}
 };
 

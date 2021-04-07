@@ -1001,6 +1001,17 @@
 	);
 }
 
+#container #inner #content #spell-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#root-inner.down #container #inner #content #spell-grid {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	flex-direction: row-reverse;
+}
+
 #container #inner #content #spell-grid .spell-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -1073,6 +1084,7 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	padding: 0 0 0 6px;
+	transition: background-size 0.25s ease-out;
 
 	.setThemeStyle(
 		{

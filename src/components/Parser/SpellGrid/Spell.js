@@ -29,7 +29,7 @@ class Spell extends React.Component {
 		}
 
 		return(
-			<div className={classes.join(" ")}>
+			<div className={classes.join(" ")} style={{order: this.props.order}}>
 				{icon()}
 				<div className="row" style={{backgroundSize: width + " 100%", backgroundPosition: bg_x + " 0"}}>
 					<span className="name">{this.getName()}</span>
