@@ -115,6 +115,16 @@ const SettingsSchema = {
 								}
 							},
 							{
+								key_path      : "interface.hide_top_bar",
+								type          : "checkbox",
+								exclude_modes : [
+									"stats"
+								],
+								value : function() {
+									return this.props.settings.interface.hide_top_bar;
+								}
+							},
+							{
 								key_path      : "interface.auto_hide",
 								type          : "checkbox",
 								exclude_modes : [
@@ -543,6 +553,17 @@ const SettingsSchema = {
 								}
 							},
 							{
+								key_path : "spells_mode.reverse_skill",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.reverse_skill;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
 								key_path : "spells_mode.effects",
 								type     : "select",
 								multiple : true,
@@ -553,6 +574,17 @@ const SettingsSchema = {
 								}
 							},
 							{
+								key_path : "spells_mode.reverse_effect",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.reverse_effect;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
 								key_path : "spells_mode.show_icon",
 								type     : "checkbox",
 								value    : function() {
@@ -560,17 +592,10 @@ const SettingsSchema = {
 								}
 							},
 							{
-								key_path : "spells_mode.reverse_skill",
+								key_path : "spells_mode.use_tts",
 								type     : "checkbox",
 								value    : function() {
-									return this.props.settings.spells_mode.reverse_skill;
-								}
-							},
-							{
-								key_path : "spells_mode.reverse_effect",
-								type     : "checkbox",
-								value    : function() {
-									return this.props.settings.spells_mode.reverse_effect;
+									return this.props.settings.spells_mode.use_tts;
 								}
 							},
 							{
@@ -605,13 +630,6 @@ const SettingsSchema = {
 								type     : "checkbox",
 								value    : function() {
 									return this.props.settings.spells_mode.invert;
-								}
-							},
-							{
-								key_path : "spells_mode.use_tts",
-								type     : "checkbox",
-								value    : function() {
-									return this.props.settings.spells_mode.use_tts;
 								}
 							}
 						]

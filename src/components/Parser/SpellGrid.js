@@ -137,7 +137,6 @@ class SpellGrid extends React.Component {
 					break;
 			}
 
-
 			date.setSeconds(date.getSeconds() + recast);
 
 			this.spells[i] = {

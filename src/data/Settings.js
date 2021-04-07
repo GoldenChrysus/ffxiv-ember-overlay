@@ -25,6 +25,7 @@ const default_settings = {
 		minimal_theme         : false,
 		footer_when_collapsed : false,
 		footer_dps            : false,
+		hide_top_bar          : false,
 		decimal_accuracy      : 2,
 		shorten_thousands     : false,
 		language              : "en",

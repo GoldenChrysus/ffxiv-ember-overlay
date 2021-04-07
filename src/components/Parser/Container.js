@@ -108,7 +108,7 @@ class Container extends React.Component {
 						<PlaceholderToggle type="bottom left"/>
 						<PlaceholderToggle type="bottom right"/>
 						<div id="inner">
-							<GameState encounter={encounter} active={active} rank={this.props.internal.rank} show_rank={this.props.settings.interface.top_right_rank}/>
+							{this.getGameState(encounter, active)}
 							<div id="content">
 								{content}
 							</div>
@@ -119,6 +119,16 @@ class Container extends React.Component {
 				</ContextMenuTrigger>
 				<ContextMenu/>
 			</React.Fragment>
+		);
+	}
+
+	getGameState(encounter, active) {
+		if (this.props.internal.mode === "spells" && this.props.settings.interface.hide_top_bar) {
+			return "";
+		}
+
+		return(
+			<GameState encounter={encounter} active={active} rank={this.props.internal.rank} show_rank={this.props.settings.interface.top_right_rank}/>
 		);
 	}
 

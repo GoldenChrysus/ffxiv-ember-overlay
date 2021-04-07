@@ -329,6 +329,26 @@
 			},
 			"subsections" : [
 				{
+					"en" : "Spells",
+					"pt" : "Magias",
+					"cn" : "法术",
+					"jp" : "スペル",
+					"de" : "Zauber",
+					"es" : "Hechizos",
+					"fr" : "Sorts",
+					"kr" : "스펠"
+				},
+				{
+					"en" : "Effects/Buffs",
+					"pt" : "Efeitos/Buffs",
+					"cn" : "特效/Buffs",
+					"jp" : "効果/バフ",
+					"de" : "Effekte/Buffs",
+					"es" : "Efectos/Buffs",
+					"fr" : "Effets/Buffs",
+					"kr" : "이펙트/Buffs"
+				},
+				{
 					"en" : "General",
 					"pt" : "Geral",
 					"cn" : "通用",
@@ -344,13 +364,13 @@
 	"setting_labels" : {
 		"interface.language" : {
 			"en" : "Language",
-			"pt" : "Language",
-			"cn" : "Language",
-			"jp" : "Language",
-			"de" : "Language",
-			"es" : "Language",
-			"fr" : "Language",
-			"kr" : "Language"
+			"pt" : "Língua",
+			"cn" : "语",
+			"jp" : "言語",
+			"de" : "Sprache",
+			"es" : "Idioma",
+			"fr" : "Langue",
+			"kr" : "언어"
 		},
 		"interface.player_name" : {
 			"en" : "Player Name",
@@ -432,6 +452,16 @@
 			"fr" : "Afficher le Raid DPS sur le Bas du Parse",
 			"kr" : "오버레이 하단에 파티 합산딜 표시하기"
 		},
+		"interface.hide_top_bar" : {
+			"en" : "Hide Top Bar",
+			"pt" : "Hide Top Bar",
+			"cn" : "Hide Top Bar",
+			"jp" : "Hide Top Bar",
+			"de" : "Hide Top Bar",
+			"es" : "Hide Top Bar",
+			"fr" : "Hide Top Bar",
+			"kr" : "Hide Top Bar"
+		},
 		"interface.decimal_accuracy" : {
 			"en" : "Decimal Accuracy",
 			"pt" : "Precisão Decimal",
@@ -504,13 +534,13 @@
 		},
 		"tts.language" : {
 			"en" : "Language",
-			"pt" : "Language",
-			"cn" : "Language",
-			"jp" : "Language",
-			"de" : "Language",
-			"es" : "Language",
-			"fr" : "Language",
-			"kr" : "Language"
+			"pt" : "Língua",
+			"cn" : "语",
+			"jp" : "言語",
+			"de" : "Sprache",
+			"es" : "Idioma",
+			"fr" : "Langue",
+			"kr" : "언어"
 		},
 		"tts.rules" : {
 			"en" : "Rules",
