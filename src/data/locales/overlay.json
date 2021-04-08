@@ -252,7 +252,7 @@
 	"spell_timers" : {
 		"en" : "Spell Timers",
 		"pt" : "Temporizadores das Magias",
-		"cn" : "Spell Timers",
+		"cn" : "冷却监控",
 		"jp" : "スペルタイマー",
 		"de" : "Zauber Timer",
 		"es" : "Spell Timers",
@@ -279,12 +279,12 @@
 				"text"     : "{{players}}{{connector}}critical health."
 			},
 			"cn" : {
-				"joiner"   : " and ",
-				"several"  : "Several players",
-				"plural"   : " are ",
-				"singular" : " is ",
-				"you"      : "You",
-				"text"     : "{{players}}{{connector}}critical health."
+				"joiner"   : "和",
+				"several"  : "多个角色",
+				"plural"   : "处于",
+				"singular" : "处于",
+				"you"      : "你",
+				"text"     : "{{players}}{{connector}}临界血量."
 			},
 			"jp" : {
 				"joiner"   : "と",
@@ -339,7 +339,7 @@
 			},
 			"cn" : {
 				"joiner" : ", ",
-				"text"   : "You have aggro from {{monsters}}."
+				"text"   : "你拉到了{{monsters}}的仇恨."
 			},
 			"jp" : {
 				"joiner" : "と",
@@ -370,7 +370,7 @@
 				"text" : "Você está no topo do {{metric}}."
 			},
 			"cn" : {
-				"text" : "You are top {{metric}}."
+				"text" : "你当前{{metric}}最高."
 			},
 			"jp" : {
 				"text" : "あなたは最高な{{metric}}です."
@@ -402,10 +402,10 @@
 				"text"          : "{{encounter}} {{verb}}."
 			},
 			"cn" : {
-				"start"         : "started",
-				"end"           : "ended",
+				"start"         : "开始",
+				"end"           : "结束",
 				"default_title" : "战斗",
-				"text"          : "{{encounter}} has {{verb}}."
+				"text"          : "{{encounter}}已{{verb}}."
 			},
 			"jp" : {
 				"start"         : "始まりました",
