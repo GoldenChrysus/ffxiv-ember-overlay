@@ -795,7 +795,7 @@
 		"spells_mode.spells" : {
 			"en" : "Spells to Track",
 			"pt" : "Magias a Rastrear",
-			"cn" : "Spells to Track",
+			"cn" : "监控的技能",
 			"jp" : "選択中スペル",
 			"de" : "Zauber im Überblick",
 			"es" : "Spells to Track",
