@@ -644,10 +644,17 @@ const SettingsSchema = {
 								}
 							},
 							{
-								key_path : "spells_mode.invert",
+								key_path : "spells_mode.invert_vertical",
 								type     : "checkbox",
 								value    : function() {
-									return this.props.settings.spells_mode.invert;
+									return this.props.settings.spells_mode.invert_vertical;
+								}
+							},
+							{
+								key_path : "spells_mode.invert_horizontal",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.invert_horizontal;
 								}
 							}
 						]

@@ -166,7 +166,8 @@ const default_settings = {
 		show_icon         : true,
 		use_tts           : false,
 		minimal_layout    : false,
-		invert            : false
+		invert_vertical   : false,
+		invert_horizontal : false
 	}
 };
 

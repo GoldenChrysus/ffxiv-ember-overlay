@@ -60,22 +60,22 @@ class SpellGrid extends React.Component {
 		let width        = (100 / row_limit);
 		let spells       = this.buildSpells();
 		let style        = `
-			#root-inner:not(.down) #container #inner #content #spell-grid .spell-container {
+			#root-inner:not(.right) #container #inner #content #spell-grid .spell-container {
 				width: calc(${width}% - 5px);
 				margin-right: 5px;
 			}
 
-			#root-inner:not(.down) #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
+			#root-inner:not(.right) #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
 				width: ${width}%;
 				margin-right: 0;
 			}
 
-			#root-inner.down #container #inner #content #spell-grid .spell-container {
+			#root-inner.right #container #inner #content #spell-grid .spell-container {
 				width: calc(${width}% - 5px);
 				margin-left: 5px;
 			}
 
-			#root-inner.down #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
+			#root-inner.right #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
 				width: ${width}%;
 				margin-left: 0px;
 			}

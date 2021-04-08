@@ -852,15 +852,25 @@
 			"fr" : "Minimal Layout",
 			"kr" : "Minimal Layout"
 		},
-		"spells_mode.invert" : {
-			"en" : "Invert",
-			"pt" : "Invert",
-			"cn" : "Invert",
-			"jp" : "Invert",
-			"de" : "Invert",
-			"es" : "Invert",
-			"fr" : "Invert",
-			"kr" : "Invert"
+		"spells_mode.invert_vertical" : {
+			"en" : "Invert Vertical",
+			"pt" : "Invert Vertical",
+			"cn" : "Invert Vertical",
+			"jp" : "Invert Vertical",
+			"de" : "Invert Vertical",
+			"es" : "Invert Vertical",
+			"fr" : "Invert Vertical",
+			"kr" : "Invert Vertical"
+		},
+		"spells_mode.invert_horizontal" : {
+			"en" : "Invert Horizontal",
+			"pt" : "Invert Horizontal",
+			"cn" : "Invert Horizontal",
+			"jp" : "Invert Horizontal",
+			"de" : "Invert Horizontal",
+			"es" : "Invert Horizontal",
+			"fr" : "Invert Horizontal",
+			"kr" : "Invert Horizontal"
 		},
 		"spells_mode.reverse_skill" : {
 			"en" : "Reverse Indicator for Spells",

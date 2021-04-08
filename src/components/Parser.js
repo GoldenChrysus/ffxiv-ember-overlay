@@ -63,7 +63,8 @@ class Parser extends React.Component {
 
 	render() {
 		let collapsed          = ((this.props.collapsed && this.props.viewing === "tables") || this.state.collapsed_modes[this.props.mode]);
-		let collapse_down      = this.shouldCollapseDown();
+		let is_spells          = (this.props.mode === "spells");
+		let collapse_down      = this.shouldCollapseDown(is_spells);
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
 		let zoom               = this.props.zoom / 100;
@@ -89,6 +90,10 @@ class Parser extends React.Component {
 			if (collapse_down) {
 				root_inner_classes.push("down");
 			}
+
+			if (is_spells && this.props.invert_spells_horizontal) {
+				root_inner_classes.push("right");
+			}
 		}
 
 		root_inner_classes = root_inner_classes.join(" ");
@@ -110,26 +115,27 @@ class Parser extends React.Component {
 		);
 	}
 
-	shouldCollapseDown() {
-		return ((this.props.mode === "stats" && this.props.collapse_down) || (this.props.mode === "spells" && this.props.invert_spells));
+	shouldCollapseDown(is_spells) {
+		return ((this.props.mode === "stats" && this.props.collapse_down) || (is_spells && this.props.invert_spells_vertical));
 	}
 }
 
 const mapStateToProps = (state) => {
 	return {
-		collapsed       : state.settings.intrinsic.collapsed,
-		collapse_down   : state.settings.interface.collapse_down,
-		viewing         : state.internal.viewing,
-		css             : state.settings.custom.css || "",
-		opacity         : state.settings.interface.opacity,
-		zoom            : state.settings.interface.zoom,
-		theme           : state.settings.interface.theme,
-		auto_hide       : state.settings.interface.auto_hide,
-		auto_hide_delay : state.settings.interface.auto_hide_delay,
-		last_activity   : state.last_activity,
-		mode            : state.internal.mode,
-		invert_spells   : state.settings.spells_mode.invert,
-		has_spells      : (Object.keys(state.internal.spells.in_use).length > 0),
+		collapsed                : state.settings.intrinsic.collapsed,
+		collapse_down            : state.settings.interface.collapse_down,
+		viewing                  : state.internal.viewing,
+		css                      : state.settings.custom.css || "",
+		opacity                  : state.settings.interface.opacity,
+		zoom                     : state.settings.interface.zoom,
+		theme                    : state.settings.interface.theme,
+		auto_hide                : state.settings.interface.auto_hide,
+		auto_hide_delay          : state.settings.interface.auto_hide_delay,
+		last_activity            : state.last_activity,
+		mode                     : state.internal.mode,
+		invert_spells_vertical   : state.settings.spells_mode.invert_vertical,
+		invert_spells_horizontal : state.settings.spells_mode.invert_horizontal,
+		has_spells               : (Object.keys(state.internal.spells.in_use).length > 0),
 	};
 };
 
