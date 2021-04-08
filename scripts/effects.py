@@ -1,9 +1,12 @@
 import json
+import os.path
 import requests
 import shutil
 
+from os import path
+
 def getPage(page_num):
-	url = "https://xivapi.com/search?page=" + str(page_num) + "&indexes=Status&filters=InflictedByActor=0,Category=1"
+	url = "https://xivapi.com/search?page=" + str(page_num) + "&indexes=Status&filters=InflictedByActor=0"
 	res = requests.get(url = url)
 
 	return res.json()
@@ -15,13 +18,18 @@ def getEffect(id):
 	return res.json()
 
 def saveImage(id, xiv_path):
+	local_path = "../public/img/icons/effects/" + str(id) + ".jpg"
+
+	if (path.exists(local_path)):
+		return
+
 	url = "https://xivapi.com/" + xiv_path
 	res = requests.get(url, stream = True)
 
 	if res.status_code == 200:
 		res.raw.decode_content = True
 
-		with open("../public/img/icons/effects/" + str(id) + ".jpg", "wb") as file:
+		with open(local_path, "wb") as file:
 			shutil.copyfileobj(res.raw, file)
 			file.close()
 
@@ -41,8 +49,16 @@ while (True):
 		id = effect["ID"]
 
 		effect_data = getEffect(id)
+		dot         = False
+
+		if (effect_data["Category"] == 2):
+			if ("over time" not in effect_data["Description_en"]):
+				continue
+			else:
+				dot = True
 
 		effects[id] = {
+			"dot"     : dot,
 			"locales" : {
 				"name" : {
 					"en" : effect_data["Name_en"],

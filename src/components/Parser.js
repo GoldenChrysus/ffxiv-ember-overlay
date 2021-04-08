@@ -116,7 +116,7 @@ class Parser extends React.Component {
 	}
 
 	shouldCollapseDown(is_spells) {
-		return ((this.props.mode === "stats" && this.props.collapse_down) || (is_spells && this.props.invert_spells_vertical));
+		return ((!is_spells && this.props.collapse_down) || (is_spells && this.props.invert_spells_vertical));
 	}
 }
 

@@ -121,15 +121,17 @@ class SpellGrid extends React.Component {
 		for (let i in spells) {
 			let date   = new Date(spells[i].time);
 			let recast = 0;
+			let dot    = false;
 
 			switch (spells[i].type) {
 				case "skill":
-					recast = SkillData.oGCDSkills[spells[i].id].recast
+					recast = SkillData.oGCDSkills[spells[i].id].recast;
 
 					break;
 
 				case "effect":
 					recast = spells[i].duration;
+					dot    = SkillData.Effects[spells[i].id].dot;
 
 					break;
 
@@ -144,7 +146,8 @@ class SpellGrid extends React.Component {
 				id     : spells[i].id,
 				time   : date,
 				name   : spells[i].name,
-				recast : recast
+				recast : recast,
+				dot    : dot
 			};
 
 			state.spells[i] = recast;

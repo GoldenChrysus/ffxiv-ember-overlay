@@ -1,6 +1,7 @@
 import store from "../redux/store/index";
 
 import Constants from "../constants/index";
+import SkillData from "../constants/SkillData";
 import PlayerProcessor from "./PlayerProcessor";
 
 import LocalizationService from "../services/LocalizationService";
@@ -296,14 +297,22 @@ class GameDataProcessor  {
 				return state;
 
 			case 26:
-				let effect_id   = String(parseInt(data[2], 16));
-				let valid_names = [];
+				let effect_id = String(parseInt(data[2], 16));
 
-				if (state.internal.character_id !== parseInt(data[7], 16)) {
+				if (!SkillData.Effects[effect_id]) {
 					return state;
 				}
 
-				for (let id of state.settings.spells_mode.effects) {
+				let valid_names  = [];
+				let dot          = SkillData.Effects[effect_id].dot;
+				let player_index = (dot) ? 5 : 7;
+				let setting_key  = (dot) ? "dots" : "effects";
+
+				if (state.internal.character_id !== parseInt(data[player_index], 16)) {
+					return state;
+				}
+
+				for (let id of state.settings.spells_mode[setting_key]) {
 					valid_names.push(LocalizationService.getEffectName(id, "en"));
 				}
 

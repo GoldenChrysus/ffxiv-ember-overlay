@@ -1,5 +1,6 @@
 {
 	"8" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Haste",
@@ -9,7 +10,30 @@
 			}
 		}
 	},
+	"18" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Poison",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
+	"20" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "TP Bleed",
+				"de" : "TP-Verlust",
+				"fr" : "Saignée de PT",
+				"jp" : "ＴＰ継続ダメージ"
+			}
+		}
+	},
 	"21" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "HP Boost",
@@ -20,6 +44,7 @@
 		}
 	},
 	"23" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "MP Boost",
@@ -30,6 +55,7 @@
 		}
 	},
 	"25" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Attack Up",
@@ -40,6 +66,7 @@
 		}
 	},
 	"27" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Accuracy Up",
@@ -50,6 +77,7 @@
 		}
 	},
 	"29" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Defense Up",
@@ -60,6 +88,7 @@
 		}
 	},
 	"31" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Evasion Up",
@@ -70,6 +99,7 @@
 		}
 	},
 	"33" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Attack Magic Potency Up",
@@ -80,6 +110,7 @@
 		}
 	},
 	"35" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Healing Potency Up",
@@ -90,6 +121,7 @@
 		}
 	},
 	"37" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Defense Up",
@@ -100,6 +132,7 @@
 		}
 	},
 	"41" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Crafting Facility",
@@ -110,6 +143,7 @@
 		}
 	},
 	"45" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Crafter's Grace",
@@ -120,6 +154,7 @@
 		}
 	},
 	"46" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Gatherer's Grace",
@@ -130,6 +165,7 @@
 		}
 	},
 	"48" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Well Fed",
@@ -140,6 +176,7 @@
 		}
 	},
 	"49" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Medicated",
@@ -150,6 +187,7 @@
 		}
 	},
 	"50" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sprint",
@@ -160,6 +198,7 @@
 		}
 	},
 	"53" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Physical Damage Up",
@@ -170,6 +209,7 @@
 		}
 	},
 	"55" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Physical Vulnerability Down",
@@ -180,6 +220,7 @@
 		}
 	},
 	"57" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Damage Up",
@@ -190,6 +231,7 @@
 		}
 	},
 	"59" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Vulnerability Down",
@@ -200,6 +242,7 @@
 		}
 	},
 	"61" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -210,6 +253,7 @@
 		}
 	},
 	"63" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vulnerability Down",
@@ -220,6 +264,7 @@
 		}
 	},
 	"65" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Critical Skill",
@@ -230,6 +275,7 @@
 		}
 	},
 	"68" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Drainstrikes",
@@ -240,6 +286,7 @@
 		}
 	},
 	"69" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Aspirstrikes",
@@ -250,6 +297,7 @@
 		}
 	},
 	"70" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Stunstrikes",
@@ -260,6 +308,7 @@
 		}
 	},
 	"71" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rampart",
@@ -270,6 +319,7 @@
 		}
 	},
 	"72" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Convalescence",
@@ -280,6 +330,7 @@
 		}
 	},
 	"73" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Awareness",
@@ -290,6 +341,7 @@
 		}
 	},
 	"74" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sentinel",
@@ -300,6 +352,7 @@
 		}
 	},
 	"75" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Tempered Will",
@@ -310,6 +363,7 @@
 		}
 	},
 	"76" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fight or Flight",
@@ -320,6 +374,7 @@
 		}
 	},
 	"77" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bulwark",
@@ -330,6 +385,7 @@
 		}
 	},
 	"80" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Cover",
@@ -340,6 +396,7 @@
 		}
 	},
 	"81" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Covered",
@@ -350,6 +407,7 @@
 		}
 	},
 	"82" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hallowed Ground",
@@ -360,6 +418,7 @@
 		}
 	},
 	"83" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Foresight",
@@ -370,6 +429,7 @@
 		}
 	},
 	"84" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bloodbath",
@@ -380,6 +440,7 @@
 		}
 	},
 	"85" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Maim",
@@ -390,6 +451,7 @@
 		}
 	},
 	"86" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Berserk",
@@ -400,6 +462,7 @@
 		}
 	},
 	"87" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Thrill of Battle",
@@ -410,6 +473,7 @@
 		}
 	},
 	"89" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vengeance",
@@ -420,6 +484,7 @@
 		}
 	},
 	"90" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Storm's Eye",
@@ -430,6 +495,7 @@
 		}
 	},
 	"92" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Unchained",
@@ -440,6 +506,7 @@
 		}
 	},
 	"93" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Wrath",
@@ -450,6 +517,7 @@
 		}
 	},
 	"94" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Wrath II",
@@ -460,6 +528,7 @@
 		}
 	},
 	"95" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Wrath III",
@@ -470,6 +539,7 @@
 		}
 	},
 	"96" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Wrath IV",
@@ -480,6 +550,7 @@
 		}
 	},
 	"97" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Infuriated",
@@ -490,6 +561,7 @@
 		}
 	},
 	"99" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Featherfoot",
@@ -500,6 +572,7 @@
 		}
 	},
 	"100" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Internal Release",
@@ -510,6 +583,7 @@
 		}
 	},
 	"101" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Twin Snakes",
@@ -520,6 +594,7 @@
 		}
 	},
 	"102" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Mantra",
@@ -529,7 +604,19 @@
 			}
 		}
 	},
+	"106" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Touch of Death",
+				"de" : "Hauch des Todes",
+				"fr" : "Toucher mortel",
+				"jp" : "秘孔拳"
+			}
+		}
+	},
 	"107" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Opo-opo Form",
@@ -540,6 +627,7 @@
 		}
 	},
 	"108" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Raptor Form",
@@ -550,6 +638,7 @@
 		}
 	},
 	"109" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Coeurl Form",
@@ -560,6 +649,7 @@
 		}
 	},
 	"110" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Perfect Balance",
@@ -570,6 +660,7 @@
 		}
 	},
 	"111" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Greased Lightning",
@@ -580,6 +671,7 @@
 		}
 	},
 	"112" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Greased Lightning II",
@@ -590,6 +682,7 @@
 		}
 	},
 	"113" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Greased Lightning III",
@@ -600,6 +693,7 @@
 		}
 	},
 	"114" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Keen Flurry",
@@ -610,6 +704,7 @@
 		}
 	},
 	"115" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Heavy Thrust",
@@ -620,6 +715,7 @@
 		}
 	},
 	"116" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Life Surge",
@@ -630,6 +726,7 @@
 		}
 	},
 	"117" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blood for Blood",
@@ -639,7 +736,30 @@
 			}
 		}
 	},
+	"118" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Chaos Thrust",
+				"de" : "Chaotischer Tjost",
+				"fr" : "Percée chaotique",
+				"jp" : "桜華狂咲"
+			}
+		}
+	},
+	"119" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Phlebotomize",
+				"de" : "Phlebotomie",
+				"fr" : "Double percée",
+				"jp" : "二段突き"
+			}
+		}
+	},
 	"120" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Power Surge",
@@ -650,6 +770,7 @@
 		}
 	},
 	"122" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Straight Shot Ready",
@@ -660,6 +781,7 @@
 		}
 	},
 	"123" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hawk's Eye",
@@ -669,7 +791,19 @@
 			}
 		}
 	},
+	"124" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Venomous Bite",
+				"de" : "Infizierte Wunde",
+				"fr" : "Morsure venimeuse",
+				"jp" : "ベノムバイト"
+			}
+		}
+	},
 	"125" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Raging Strikes",
@@ -680,6 +814,7 @@
 		}
 	},
 	"127" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Diversion",
@@ -690,6 +825,7 @@
 		}
 	},
 	"128" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Barrage",
@@ -699,7 +835,19 @@
 			}
 		}
 	},
+	"129" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Windbite",
+				"de" : "Beißender Wind",
+				"fr" : "Morsure du vent",
+				"jp" : "ウィンドバイト"
+			}
+		}
+	},
 	"130" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Straight Shot",
@@ -710,6 +858,7 @@
 		}
 	},
 	"131" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Downpour of Death",
@@ -720,6 +869,7 @@
 		}
 	},
 	"132" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Quicker Nock",
@@ -730,6 +880,7 @@
 		}
 	},
 	"134" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Swiftsong",
@@ -740,6 +891,7 @@
 		}
 	},
 	"136" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Mage's Ballad",
@@ -750,6 +902,7 @@
 		}
 	},
 	"138" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Army's Paeon",
@@ -760,6 +913,7 @@
 		}
 	},
 	"141" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Battle Voice",
@@ -769,7 +923,30 @@
 			}
 		}
 	},
+	"143" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Aero",
+				"de" : "Wind",
+				"fr" : "Vent",
+				"jp" : "エアロ"
+			}
+		}
+	},
+	"144" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Aero II",
+				"de" : "Windra",
+				"fr" : "Extra Vent",
+				"jp" : "エアロラ"
+			}
+		}
+	},
 	"145" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Cleric Stance",
@@ -780,6 +957,7 @@
 		}
 	},
 	"146" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Protect",
@@ -790,6 +968,7 @@
 		}
 	},
 	"147" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Protect",
@@ -800,6 +979,7 @@
 		}
 	},
 	"148" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Raise",
@@ -810,6 +990,7 @@
 		}
 	},
 	"150" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Medica II",
@@ -820,6 +1001,7 @@
 		}
 	},
 	"151" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Stoneskin",
@@ -830,6 +1012,7 @@
 		}
 	},
 	"154" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shroud of Saints",
@@ -840,6 +1023,7 @@
 		}
 	},
 	"155" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Freecure",
@@ -850,6 +1034,7 @@
 		}
 	},
 	"156" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Overcure",
@@ -860,6 +1045,7 @@
 		}
 	},
 	"157" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Presence of Mind",
@@ -870,6 +1056,7 @@
 		}
 	},
 	"158" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Regen",
@@ -880,6 +1067,7 @@
 		}
 	},
 	"159" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Divine Seal",
@@ -890,6 +1078,7 @@
 		}
 	},
 	"160" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Surecast",
@@ -899,7 +1088,41 @@
 			}
 		}
 	},
+	"161" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Thunder",
+				"de" : "Blitz",
+				"fr" : "Foudre",
+				"jp" : "サンダー"
+			}
+		}
+	},
+	"162" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Thunder II",
+				"de" : "Blitzra",
+				"fr" : "Extra Foudre",
+				"jp" : "サンダラ"
+			}
+		}
+	},
+	"163" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Thunder III",
+				"de" : "Blitzga",
+				"fr" : "Méga Foudre",
+				"jp" : "サンダガ"
+			}
+		}
+	},
 	"164" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Thundercloud",
@@ -910,6 +1133,7 @@
 		}
 	},
 	"165" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Firestarter",
@@ -920,6 +1144,7 @@
 		}
 	},
 	"166" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Succor",
@@ -930,6 +1155,7 @@
 		}
 	},
 	"167" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Swiftcast",
@@ -940,6 +1166,7 @@
 		}
 	},
 	"168" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Manaward",
@@ -950,6 +1177,7 @@
 		}
 	},
 	"169" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Manawall",
@@ -960,6 +1188,7 @@
 		}
 	},
 	"170" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Apocatastasis",
@@ -970,6 +1199,7 @@
 		}
 	},
 	"173" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Astral Fire",
@@ -980,6 +1210,7 @@
 		}
 	},
 	"174" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Astral Fire II",
@@ -990,6 +1221,7 @@
 		}
 	},
 	"175" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Astral Fire III",
@@ -1000,6 +1232,7 @@
 		}
 	},
 	"176" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Umbral Ice",
@@ -1010,6 +1243,7 @@
 		}
 	},
 	"177" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Umbral Ice II",
@@ -1020,6 +1254,7 @@
 		}
 	},
 	"178" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Umbral Ice III",
@@ -1029,7 +1264,30 @@
 			}
 		}
 	},
+	"179" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bio",
+				"de" : "Bio",
+				"fr" : "Bactérie",
+				"jp" : "バイオ"
+			}
+		}
+	},
+	"180" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Miasma",
+				"de" : "Miasma",
+				"fr" : "Miasmes",
+				"jp" : "ミアズマ"
+			}
+		}
+	},
 	"184" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sustain",
@@ -1040,6 +1298,7 @@
 		}
 	},
 	"185" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Eye for an Eye",
@@ -1050,6 +1309,7 @@
 		}
 	},
 	"187" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rouse",
@@ -1059,7 +1319,30 @@
 			}
 		}
 	},
+	"188" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Miasma II",
+				"de" : "Miasra",
+				"fr" : "Extra Miasmes",
+				"jp" : "ミアズラ"
+			}
+		}
+	},
+	"189" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bio II",
+				"de" : "Biora",
+				"fr" : "Extra Bactérie",
+				"jp" : "バイオラ"
+			}
+		}
+	},
 	"190" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shadow Flare",
@@ -1070,6 +1353,7 @@
 		}
 	},
 	"192" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Spur",
@@ -1080,6 +1364,7 @@
 		}
 	},
 	"194" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shield Wall",
@@ -1090,6 +1375,7 @@
 		}
 	},
 	"195" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Stronghold",
@@ -1100,6 +1386,7 @@
 		}
 	},
 	"196" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Last Bastion",
@@ -1110,6 +1397,7 @@
 		}
 	},
 	"197" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blaze Spikes",
@@ -1120,6 +1408,7 @@
 		}
 	},
 	"198" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ice Spikes",
@@ -1130,6 +1419,7 @@
 		}
 	},
 	"199" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shock Spikes",
@@ -1140,6 +1430,7 @@
 		}
 	},
 	"203" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Boost",
@@ -1150,6 +1441,7 @@
 		}
 	},
 	"204" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enfire",
@@ -1160,6 +1452,7 @@
 		}
 	},
 	"205" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enblizzard",
@@ -1170,6 +1463,7 @@
 		}
 	},
 	"206" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enaero",
@@ -1180,6 +1474,7 @@
 		}
 	},
 	"207" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enstone",
@@ -1190,6 +1485,7 @@
 		}
 	},
 	"208" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enthunder",
@@ -1200,6 +1496,7 @@
 		}
 	},
 	"209" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enwater",
@@ -1210,6 +1507,7 @@
 		}
 	},
 	"214" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Agitation",
@@ -1220,6 +1518,7 @@
 		}
 	},
 	"233" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Arbor Call",
@@ -1230,6 +1529,7 @@
 		}
 	},
 	"234" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lay of the Land",
@@ -1239,7 +1539,30 @@
 			}
 		}
 	},
+	"235" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Windburn",
+				"de" : "Beißender Wind",
+				"fr" : "Brûlure du vent",
+				"jp" : "裂傷"
+			}
+		}
+	},
+	"236" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Choco Beak",
+				"de" : "Chocobo-Schnabel",
+				"fr" : "Choco-bec",
+				"jp" : "チョコビーク"
+			}
+		}
+	},
 	"237" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Choco Regen",
@@ -1250,6 +1573,7 @@
 		}
 	},
 	"238" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Choco Surge",
@@ -1260,6 +1584,7 @@
 		}
 	},
 	"242" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Arbor Call II",
@@ -1270,6 +1595,7 @@
 		}
 	},
 	"243" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lay of the Land II",
@@ -1279,7 +1605,19 @@
 			}
 		}
 	},
+	"244" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Fracture",
+				"de" : "Knochenbrecher",
+				"fr" : "Fracture",
+				"jp" : "フラクチャー"
+			}
+		}
+	},
 	"245" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sanction",
@@ -1289,7 +1627,30 @@
 			}
 		}
 	},
+	"246" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Demolish",
+				"de" : "Demolieren",
+				"fr" : "Démolition",
+				"jp" : "破砕拳"
+			}
+		}
+	},
+	"248" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Circle of Scorn",
+				"de" : "Kreis der Verachtung",
+				"fr" : "Cercle du destin",
+				"jp" : "サークル・オブ・ドゥーム"
+			}
+		}
+	},
 	"249" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Flaming Arrow",
@@ -1299,7 +1660,19 @@
 			}
 		}
 	},
+	"250" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
 	"263" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -1309,7 +1682,118 @@
 			}
 		}
 	},
+	"264" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Flesh Wound",
+				"de" : "Fleischwunde",
+				"fr" : "Blessure physique",
+				"jp" : "切傷"
+			}
+		}
+	},
+	"265" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Stab Wound",
+				"de" : "Stichwunde",
+				"fr" : "Perforation",
+				"jp" : "刺傷"
+			}
+		}
+	},
+	"266" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Concussion",
+				"de" : "Prellung",
+				"fr" : "Concussion",
+				"jp" : "打撲傷"
+			}
+		}
+	},
+	"267" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
+	"268" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Frostbite",
+				"de" : "Erfrierung",
+				"fr" : "Gelure",
+				"jp" : "凍傷"
+			}
+		}
+	},
+	"269" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Windburn",
+				"de" : "Beißender Wind",
+				"fr" : "Brûlure du vent",
+				"jp" : "裂傷"
+			}
+		}
+	},
+	"270" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Sludge",
+				"de" : "Schlamm",
+				"fr" : "Emboué",
+				"jp" : "汚泥"
+			}
+		}
+	},
+	"271" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Electrocution",
+				"de" : "Stromschlag",
+				"fr" : "Électrocution",
+				"jp" : "感電"
+			}
+		}
+	},
+	"272" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Dropsy",
+				"de" : "Wassersucht",
+				"fr" : "Œdème",
+				"jp" : "水毒"
+			}
+		}
+	},
+	"273" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Blutung",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
 	"274" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Recuperation",
@@ -1319,7 +1803,19 @@
 			}
 		}
 	},
+	"275" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Poison +1",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
 	"276" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Voice of Valor",
@@ -1330,6 +1826,7 @@
 		}
 	},
 	"277" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Voice of Fortitude",
@@ -1340,6 +1837,7 @@
 		}
 	},
 	"278" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Relentless March",
@@ -1349,7 +1847,19 @@
 			}
 		}
 	},
+	"283" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Dropsy",
+				"de" : "Wassersucht",
+				"fr" : "Œdème",
+				"jp" : "水毒"
+			}
+		}
+	},
 	"291" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hundred Fists",
@@ -1360,6 +1870,7 @@
 		}
 	},
 	"293" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Skill Speed Up",
@@ -1370,6 +1881,7 @@
 		}
 	},
 	"294" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Spell Speed Up",
@@ -1380,6 +1892,7 @@
 		}
 	},
 	"297" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Galvanize",
@@ -1390,6 +1903,7 @@
 		}
 	},
 	"298" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sacred Soil",
@@ -1400,6 +1914,7 @@
 		}
 	},
 	"299" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sacred Soil",
@@ -1410,6 +1925,7 @@
 		}
 	},
 	"301" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Critical Strikes",
@@ -1420,6 +1936,7 @@
 		}
 	},
 	"310" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Curl",
@@ -1430,6 +1947,7 @@
 		}
 	},
 	"311" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Earthen Ward",
@@ -1440,6 +1958,7 @@
 		}
 	},
 	"312" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Razed Earth",
@@ -1450,6 +1969,7 @@
 		}
 	},
 	"313" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Radiant Shield",
@@ -1459,7 +1979,19 @@
 			}
 		}
 	},
+	"314" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Inferno",
+				"de" : "Inferno",
+				"fr" : "Flammes de l'enfer",
+				"jp" : "地獄の火炎"
+			}
+		}
+	},
 	"315" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Whispering Dawn",
@@ -1470,6 +2002,7 @@
 		}
 	},
 	"316" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fey Covenant",
@@ -1480,6 +2013,7 @@
 		}
 	},
 	"317" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fey Illumination",
@@ -1490,6 +2024,7 @@
 		}
 	},
 	"318" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fey Glow",
@@ -1500,6 +2035,7 @@
 		}
 	},
 	"319" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fey Light",
@@ -1510,6 +2046,7 @@
 		}
 	},
 	"321" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Gungnir",
@@ -1519,7 +2056,30 @@
 			}
 		}
 	},
+	"335" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Firestream",
+				"de" : "Feuerstrahlen",
+				"fr" : "Courants de feu",
+				"jp" : "ファイアストリーム"
+			}
+		}
+	},
+	"339" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Blutung",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
 	"346" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Waxen Flesh",
@@ -1529,7 +2089,19 @@
 			}
 		}
 	},
+	"352" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Spjot",
+				"de" : "Gungnirs Zauber",
+				"fr" : "Spjot",
+				"jp" : "グングニルの魔力"
+			}
+		}
+	},
 	"358" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Snowman",
@@ -1539,7 +2111,41 @@
 			}
 		}
 	},
+	"376" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Searing Wind",
+				"de" : "Gluthitze",
+				"fr" : "Fournaise",
+				"jp" : "灼熱"
+			}
+		}
+	},
+	"377" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Infernal Fetters",
+				"de" : "Infernofesseln",
+				"fr" : "Chaînes infernales",
+				"jp" : "炎獄の鎖"
+			}
+		}
+	},
+	"379" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Thermal Low",
+				"de" : "Tiefdruck",
+				"fr" : "Basse pression",
+				"jp" : "低気圧"
+			}
+		}
+	},
 	"383" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Growing",
@@ -1550,6 +2156,7 @@
 		}
 	},
 	"384" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Full-grown",
@@ -1560,6 +2167,7 @@
 		}
 	},
 	"390" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Growing",
@@ -1570,6 +2178,7 @@
 		}
 	},
 	"391" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Full-grown",
@@ -1580,6 +2189,7 @@
 		}
 	},
 	"394" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Invincibility",
@@ -1590,6 +2200,7 @@
 		}
 	},
 	"396" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Concentration",
@@ -1600,6 +2211,7 @@
 		}
 	},
 	"397" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Safeguard",
@@ -1610,6 +2222,7 @@
 		}
 	},
 	"403" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -1620,6 +2233,7 @@
 		}
 	},
 	"404" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Transporting",
@@ -1630,6 +2244,7 @@
 		}
 	},
 	"409" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Holmgang",
@@ -1640,6 +2255,7 @@
 		}
 	},
 	"410" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Antibody",
@@ -1650,6 +2266,7 @@
 		}
 	},
 	"411" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Inner Beast",
@@ -1660,6 +2277,7 @@
 		}
 	},
 	"415" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Regain",
@@ -1670,6 +2288,7 @@
 		}
 	},
 	"416" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Transparent",
@@ -1680,6 +2299,7 @@
 		}
 	},
 	"417" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Protect",
@@ -1690,6 +2310,7 @@
 		}
 	},
 	"418" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Transcendent",
@@ -1700,6 +2321,7 @@
 		}
 	},
 	"426" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Noctoshield",
@@ -1710,6 +2332,7 @@
 		}
 	},
 	"428" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Haste+",
@@ -1720,6 +2343,7 @@
 		}
 	},
 	"440" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Minimum",
@@ -1730,6 +2354,7 @@
 		}
 	},
 	"441" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Toad",
@@ -1739,7 +2364,30 @@
 			}
 		}
 	},
+	"445" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Thorny Vine",
+				"de" : "Dornenranken",
+				"fr" : "Sarment de ronces",
+				"jp" : "茨の蔓"
+			}
+		}
+	},
+	"453" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Allagan Venom",
+				"de" : "Allagisches Gift",
+				"fr" : "Venin allagois",
+				"jp" : "アラガンポイズン"
+			}
+		}
+	},
 	"474" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Royal Rouse",
@@ -1749,7 +2397,41 @@
 			}
 		}
 	},
+	"484" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Ink",
+				"de" : "Toxische Tinte",
+				"fr" : "Sépia venimeux",
+				"jp" : "毒墨"
+			}
+		}
+	},
+	"485" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Dropsy",
+				"de" : "Wassersucht",
+				"fr" : "Œdème",
+				"jp" : "水毒"
+			}
+		}
+	},
+	"487" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Deep Freeze",
+				"de" : "Tiefkühlung",
+				"fr" : "Congélation",
+				"jp" : "氷結"
+			}
+		}
+	},
 	"488" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shade Shift",
@@ -1759,7 +2441,19 @@
 			}
 		}
 	},
+	"492" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Mutilation",
+				"de" : "Verstümmeln",
+				"fr" : "Attaque mutilante",
+				"jp" : "無双旋"
+			}
+		}
+	},
 	"495" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Goad",
@@ -1770,6 +2464,7 @@
 		}
 	},
 	"496" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Mudra",
@@ -1780,6 +2475,7 @@
 		}
 	},
 	"497" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Kassatsu",
@@ -1790,6 +2486,7 @@
 		}
 	},
 	"500" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Huton",
@@ -1800,6 +2497,7 @@
 		}
 	},
 	"501" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Doton",
@@ -1809,7 +2507,19 @@
 			}
 		}
 	},
+	"503" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
 	"505" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -1820,6 +2530,7 @@
 		}
 	},
 	"507" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Suiton",
@@ -1829,7 +2540,19 @@
 			}
 		}
 	},
+	"508" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Shadow Fang",
+				"de" : "Schattenfang",
+				"fr" : "Croc d'ombre",
+				"jp" : "影牙"
+			}
+		}
+	},
 	"529" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Invincibility",
@@ -1840,6 +2563,7 @@
 		}
 	},
 	"547" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Facility Access: Production",
@@ -1850,6 +2574,7 @@
 		}
 	},
 	"548" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Facility Access: Finishing",
@@ -1860,6 +2585,7 @@
 		}
 	},
 	"549" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Facility Access: Detailing",
@@ -1870,6 +2596,7 @@
 		}
 	},
 	"550" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Facility Access: Production II",
@@ -1880,6 +2607,7 @@
 		}
 	},
 	"551" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Facility Access: Specialization",
@@ -1890,6 +2618,7 @@
 		}
 	},
 	"552" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Facility Access: Specialization II",
@@ -1900,6 +2629,7 @@
 		}
 	},
 	"553" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Facility Access: Detailing II",
@@ -1910,6 +2640,7 @@
 		}
 	},
 	"554" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Facility Access: Finishing II",
@@ -1920,6 +2651,7 @@
 		}
 	},
 	"557" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Repelling Spray",
@@ -1930,6 +2662,7 @@
 		}
 	},
 	"558" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Repelling Spray",
@@ -1939,7 +2672,30 @@
 			}
 		}
 	},
+	"559" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Poison",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
+	"560" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Poison",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
 	"565" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Transfiguration",
@@ -1950,6 +2706,7 @@
 		}
 	},
 	"566" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -1960,6 +2717,7 @@
 		}
 	},
 	"568" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fisher's Intuition",
@@ -1969,7 +2727,30 @@
 			}
 		}
 	},
+	"569" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Slime",
+				"de" : "Schleim",
+				"fr" : "Mucus",
+				"jp" : "粘液"
+			}
+		}
+	},
+	"574" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Erratic Blaster",
+				"de" : "Erratischer Puls",
+				"fr" : "Électrochoc imprévisible",
+				"jp" : "エラティックブラスター"
+			}
+		}
+	},
 	"579" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Critical Strikes",
@@ -1979,7 +2760,19 @@
 			}
 		}
 	},
+	"605" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Frostbite",
+				"de" : "Erfrierung",
+				"fr" : "Gelure",
+				"jp" : "凍傷"
+			}
+		}
+	},
 	"617" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Irradiated",
@@ -1990,6 +2783,7 @@
 		}
 	},
 	"618" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Area of Influence Up",
@@ -1999,7 +2793,19 @@
 			}
 		}
 	},
+	"619" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
 	"631" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Tireless",
@@ -2010,6 +2816,7 @@
 		}
 	},
 	"640" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Poison Resistance Up",
@@ -2020,6 +2827,7 @@
 		}
 	},
 	"641" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Choco Reflect",
@@ -2029,7 +2837,41 @@
 			}
 		}
 	},
+	"642" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Blutung",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
+	"643" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Blutung",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
+	"645" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Digesting",
+				"de" : "Verdauung",
+				"fr" : "Digestion",
+				"jp" : "消化中"
+			}
+		}
+	},
 	"648" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rehabilitation",
@@ -2040,6 +2882,7 @@
 		}
 	},
 	"649" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Attack Up",
@@ -2050,6 +2893,7 @@
 		}
 	},
 	"650" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Attack Magic Potency Up",
@@ -2060,6 +2904,7 @@
 		}
 	},
 	"651" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Haste",
@@ -2070,6 +2915,7 @@
 		}
 	},
 	"652" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "HP & MP Boost",
@@ -2080,6 +2926,7 @@
 		}
 	},
 	"655" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Aegis Boon",
@@ -2090,6 +2937,7 @@
 		}
 	},
 	"656" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Invincibility",
@@ -2099,7 +2947,30 @@
 			}
 		}
 	},
+	"659" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Blight",
+				"de" : "Pesthauch",
+				"fr" : "Supplice",
+				"jp" : "クラウダ"
+			}
+		}
+	},
+	"666" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Electrocution",
+				"de" : "Stromschlag",
+				"fr" : "Électrocution",
+				"jp" : "感電"
+			}
+		}
+	},
 	"669" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Movement Speed Up",
@@ -2110,6 +2981,7 @@
 		}
 	},
 	"672" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -2120,6 +2992,7 @@
 		}
 	},
 	"678" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Tailwind",
@@ -2130,6 +3003,7 @@
 		}
 	},
 	"680" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Directional Parry",
@@ -2140,6 +3014,7 @@
 		}
 	},
 	"683" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blessing of Earth",
@@ -2150,6 +3025,7 @@
 		}
 	},
 	"684" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blessing of Fire",
@@ -2159,7 +3035,19 @@
 			}
 		}
 	},
+	"686" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Poison",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
 	"687" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -2170,6 +3058,7 @@
 		}
 	},
 	"688" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hypercharge",
@@ -2180,6 +3069,7 @@
 		}
 	},
 	"689" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Mana Capacitor",
@@ -2190,6 +3080,7 @@
 		}
 	},
 	"690" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Muscle Activator",
@@ -2200,6 +3091,7 @@
 		}
 	},
 	"705" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Transfiguration",
@@ -2209,7 +3101,19 @@
 			}
 		}
 	},
+	"716" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Turbulence",
+				"de" : "Turbulenzen",
+				"fr" : "Turbulence",
+				"jp" : "乱気流"
+			}
+		}
+	},
 	"720" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Slashing Resistance Up",
@@ -2220,6 +3124,7 @@
 		}
 	},
 	"721" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Piercing Resistance Up",
@@ -2230,6 +3135,7 @@
 		}
 	},
 	"722" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blunt Resistance Up",
@@ -2239,7 +3145,19 @@
 			}
 		}
 	},
+	"725" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Goring Blade",
+				"de" : "Ausweiden",
+				"fr" : "Lame étripante",
+				"jp" : "ゴアブレード"
+			}
+		}
+	},
 	"726" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Divine Veil",
@@ -2250,6 +3168,7 @@
 		}
 	},
 	"727" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Divine Veil",
@@ -2260,6 +3179,7 @@
 		}
 	},
 	"728" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sheltron",
@@ -2270,6 +3190,7 @@
 		}
 	},
 	"730" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Abandon",
@@ -2280,6 +3201,7 @@
 		}
 	},
 	"731" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Abandon II",
@@ -2290,6 +3212,7 @@
 		}
 	},
 	"732" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Abandon III",
@@ -2300,6 +3223,7 @@
 		}
 	},
 	"733" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Abandon IV",
@@ -2310,6 +3234,7 @@
 		}
 	},
 	"734" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Uncontrollable",
@@ -2320,6 +3245,7 @@
 		}
 	},
 	"735" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Raw Intuition",
@@ -2330,6 +3256,7 @@
 		}
 	},
 	"736" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blood of the Dragon",
@@ -2340,6 +3267,7 @@
 		}
 	},
 	"737" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ley Lines",
@@ -2350,6 +3278,7 @@
 		}
 	},
 	"738" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Circle of Power",
@@ -2360,6 +3289,7 @@
 		}
 	},
 	"739" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Asylum",
@@ -2370,6 +3300,7 @@
 		}
 	},
 	"740" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shadowskin",
@@ -2379,7 +3310,19 @@
 			}
 		}
 	},
+	"741" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Scourge",
+				"de" : "Geißel",
+				"fr" : "Fatalité",
+				"jp" : "スカージ"
+			}
+		}
+	},
 	"742" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blood Weapon",
@@ -2390,6 +3333,7 @@
 		}
 	},
 	"744" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dark Dance",
@@ -2400,6 +3344,7 @@
 		}
 	},
 	"745" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blood Price",
@@ -2410,6 +3355,7 @@
 		}
 	},
 	"746" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dark Mind",
@@ -2420,6 +3366,7 @@
 		}
 	},
 	"747" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shadow Wall",
@@ -2430,6 +3377,7 @@
 		}
 	},
 	"749" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Salted Earth",
@@ -2440,6 +3388,7 @@
 		}
 	},
 	"752" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dark Arts",
@@ -2450,6 +3399,7 @@
 		}
 	},
 	"762" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fish Eyes",
@@ -2460,6 +3410,7 @@
 		}
 	},
 	"765" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Catch and Release",
@@ -2469,7 +3420,19 @@
 			}
 		}
 	},
+	"769" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burning Chains",
+				"de" : "Brennende Ketten",
+				"fr" : "Chaînes brûlantes",
+				"jp" : "炎の鎖"
+			}
+		}
+	},
 	"773" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enliven",
@@ -2480,6 +3443,7 @@
 		}
 	},
 	"776" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Invincibility",
@@ -2490,6 +3454,7 @@
 		}
 	},
 	"786" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Battle Litany",
@@ -2500,6 +3465,7 @@
 		}
 	},
 	"787" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Silhouette",
@@ -2510,6 +3476,7 @@
 		}
 	},
 	"788" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shadewalker",
@@ -2520,6 +3487,7 @@
 		}
 	},
 	"789" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Smoke Screen",
@@ -2530,6 +3498,7 @@
 		}
 	},
 	"790" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Duality",
@@ -2540,6 +3509,7 @@
 		}
 	},
 	"791" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dissipation",
@@ -2550,6 +3520,7 @@
 		}
 	},
 	"792" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Emergency Tactics",
@@ -2559,7 +3530,19 @@
 			}
 		}
 	},
+	"798" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Aero III",
+				"de" : "Windga",
+				"fr" : "Méga Vent",
+				"jp" : "エアロガ"
+			}
+		}
+	},
 	"799" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fey Wind",
@@ -2569,7 +3552,19 @@
 			}
 		}
 	},
+	"801" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Poison",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
 	"802" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sharper Fang and Claw",
@@ -2580,6 +3575,7 @@
 		}
 	},
 	"803" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Wheeling Thrust",
@@ -2590,6 +3586,7 @@
 		}
 	},
 	"804" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vulnerability Down",
@@ -2600,6 +3597,7 @@
 		}
 	},
 	"807" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Aethertrail Attunement",
@@ -2610,6 +3608,7 @@
 		}
 	},
 	"808" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dreadwyrm Trance",
@@ -2620,6 +3619,7 @@
 		}
 	},
 	"810" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Living Dead",
@@ -2630,6 +3630,7 @@
 		}
 	},
 	"812" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Vulnerability Down",
@@ -2640,6 +3641,7 @@
 		}
 	},
 	"813" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dark Dance",
@@ -2650,6 +3652,7 @@
 		}
 	},
 	"814" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Unleash",
@@ -2660,6 +3663,7 @@
 		}
 	},
 	"815" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Benefic II",
@@ -2670,6 +3674,7 @@
 		}
 	},
 	"826" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Card Drawn",
@@ -2680,6 +3685,7 @@
 		}
 	},
 	"827" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Royal Road",
@@ -2690,6 +3696,7 @@
 		}
 	},
 	"828" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Card Held",
@@ -2700,6 +3707,7 @@
 		}
 	},
 	"829" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Balance",
@@ -2710,6 +3718,7 @@
 		}
 	},
 	"830" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Bole",
@@ -2720,6 +3729,7 @@
 		}
 	},
 	"831" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Arrow",
@@ -2730,6 +3740,7 @@
 		}
 	},
 	"832" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Spear",
@@ -2740,6 +3751,7 @@
 		}
 	},
 	"833" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Ewer",
@@ -2750,6 +3762,7 @@
 		}
 	},
 	"834" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Spire",
@@ -2760,6 +3773,7 @@
 		}
 	},
 	"835" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Aspected Benefic",
@@ -2770,6 +3784,7 @@
 		}
 	},
 	"836" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Aspected Helios",
@@ -2780,6 +3795,7 @@
 		}
 	},
 	"837" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nocturnal Field",
@@ -2789,7 +3805,19 @@
 			}
 		}
 	},
+	"838" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Combust",
+				"de" : "Konjunktion",
+				"fr" : "Conjonction supérieure",
+				"jp" : "コンバス"
+			}
+		}
+	},
 	"841" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lightspeed",
@@ -2800,6 +3828,7 @@
 		}
 	},
 	"842" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Luminiferous Aether",
@@ -2809,7 +3838,19 @@
 			}
 		}
 	},
+	"843" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Combust II",
+				"de" : "Konjunktion II",
+				"fr" : "Conjonction supérieure II",
+				"jp" : "コンバラ"
+			}
+		}
+	},
 	"845" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Synastry",
@@ -2820,6 +3861,7 @@
 		}
 	},
 	"846" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Synastry",
@@ -2830,6 +3872,7 @@
 		}
 	},
 	"847" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Collective Unconscious",
@@ -2840,6 +3883,7 @@
 		}
 	},
 	"848" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Collective Unconscious",
@@ -2850,6 +3894,7 @@
 		}
 	},
 	"849" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Collective Unconscious",
@@ -2860,6 +3905,7 @@
 		}
 	},
 	"850" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Gathering Fortune Up",
@@ -2870,6 +3916,7 @@
 		}
 	},
 	"851" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Reassembled",
@@ -2880,6 +3927,7 @@
 		}
 	},
 	"853" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rapid Fire",
@@ -2889,7 +3937,19 @@
 			}
 		}
 	},
+	"854" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Lead Shot",
+				"de" : "Parabelschuss",
+				"fr" : "Tir de plombs",
+				"jp" : "レッドショット"
+			}
+		}
+	},
 	"855" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hot Shot",
@@ -2900,6 +3960,7 @@
 		}
 	},
 	"856" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Slug Shot",
@@ -2910,6 +3971,7 @@
 		}
 	},
 	"857" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Cleaner Shot",
@@ -2920,6 +3982,7 @@
 		}
 	},
 	"863" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Land Waker",
@@ -2930,6 +3993,7 @@
 		}
 	},
 	"864" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dark Force",
@@ -2940,6 +4004,7 @@
 		}
 	},
 	"866" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Warden's Paean",
@@ -2950,6 +4015,7 @@
 		}
 	},
 	"867" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sharpcast",
@@ -2960,6 +4026,7 @@
 		}
 	},
 	"870" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Push Back",
@@ -2970,6 +4037,7 @@
 		}
 	},
 	"899" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Physical Vulnerability Down",
@@ -2980,6 +4048,7 @@
 		}
 	},
 	"906" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Darkness",
@@ -2990,6 +4059,7 @@
 		}
 	},
 	"907" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Arcanum Blessing",
@@ -3000,6 +4070,7 @@
 		}
 	},
 	"909" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Refresh",
@@ -3010,6 +4081,7 @@
 		}
 	},
 	"912" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vulnerability Down",
@@ -3020,6 +4092,7 @@
 		}
 	},
 	"928" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Black Menace",
@@ -3030,6 +4103,7 @@
 		}
 	},
 	"929" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vulnerability Down",
@@ -3040,6 +4114,7 @@
 		}
 	},
 	"941" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ranged Resistance",
@@ -3050,6 +4125,7 @@
 		}
 	},
 	"942" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Resistance",
@@ -3060,6 +4136,7 @@
 		}
 	},
 	"955" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Healing Potency Up",
@@ -3070,6 +4147,7 @@
 		}
 	},
 	"956" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Wheel of Fortune",
@@ -3079,7 +4157,19 @@
 			}
 		}
 	},
+	"961" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Seized",
+				"de" : "Umklammert",
+				"fr" : "Étreinte mortelle",
+				"jp" : "捕獲"
+			}
+		}
+	},
 	"962" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "ATK Up",
@@ -3090,6 +4180,7 @@
 		}
 	},
 	"964" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "DEF Up",
@@ -3100,6 +4191,7 @@
 		}
 	},
 	"966" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "SPD Up",
@@ -3110,6 +4202,7 @@
 		}
 	},
 	"968" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Arcana Breaker",
@@ -3120,6 +4213,7 @@
 		}
 	},
 	"969" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Invincibility",
@@ -3130,6 +4224,7 @@
 		}
 	},
 	"970" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Critter Resistance",
@@ -3140,6 +4235,7 @@
 		}
 	},
 	"971" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Monster Resistance",
@@ -3150,6 +4246,7 @@
 		}
 	},
 	"972" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Poppet Resistance",
@@ -3160,6 +4257,7 @@
 		}
 	},
 	"973" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Gadget Resistance",
@@ -3170,6 +4268,7 @@
 		}
 	},
 	"978" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "ATK & DEF Up",
@@ -3179,7 +4278,19 @@
 			}
 		}
 	},
+	"979" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Damage Over Time",
+				"de" : "Schleichender Schaden",
+				"fr" : "Dégâts périodiques",
+				"jp" : "スリップダメージ"
+			}
+		}
+	},
 	"980" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Expanded Attack",
@@ -3190,6 +4301,7 @@
 		}
 	},
 	"989" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rehabilitation",
@@ -3200,6 +4312,7 @@
 		}
 	},
 	"992" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Offense Kit",
@@ -3210,6 +4323,7 @@
 		}
 	},
 	"993" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Defense Kit",
@@ -3220,6 +4334,7 @@
 		}
 	},
 	"998" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bigbulge Goblixer",
@@ -3230,6 +4345,7 @@
 		}
 	},
 	"999" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Swiftkicks Goblixer",
@@ -3240,6 +4356,7 @@
 		}
 	},
 	"1000" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blankface Goblixer",
@@ -3250,6 +4367,7 @@
 		}
 	},
 	"1007" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Invisible",
@@ -3260,6 +4378,7 @@
 		}
 	},
 	"1008" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nohurts Goblixer",
@@ -3270,6 +4389,7 @@
 		}
 	},
 	"1012" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "High Wire",
@@ -3280,6 +4400,7 @@
 		}
 	},
 	"1014" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rehabilitation",
@@ -3290,6 +4411,7 @@
 		}
 	},
 	"1056" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Mimic",
@@ -3300,6 +4422,7 @@
 		}
 	},
 	"1057" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Feather Field",
@@ -3310,6 +4433,7 @@
 		}
 	},
 	"1061" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Priority Aetheryte Pass",
@@ -3319,7 +4443,30 @@
 			}
 		}
 	},
+	"1074" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Blutung",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
+	"1077" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Lightning Chain",
+				"de" : "Blitzkette",
+				"fr" : "Chaîne d'éclairs",
+				"jp" : "雷の鎖"
+			}
+		}
+	},
 	"1078" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Priority Seal Allowance",
@@ -3330,6 +4477,7 @@
 		}
 	},
 	"1079" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Gold Saucer VIP Card",
@@ -3340,6 +4488,7 @@
 		}
 	},
 	"1080" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Squadron Battle Manual",
@@ -3350,6 +4499,7 @@
 		}
 	},
 	"1081" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Squadron Survival Manual",
@@ -3360,6 +4510,7 @@
 		}
 	},
 	"1082" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Squadron Engineering Manual",
@@ -3370,6 +4521,7 @@
 		}
 	},
 	"1083" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Squadron Spiritbonding Manual",
@@ -3380,6 +4532,7 @@
 		}
 	},
 	"1084" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Squadron Rationing Manual",
@@ -3390,6 +4543,7 @@
 		}
 	},
 	"1085" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Squadron Gear Maintenance Manual",
@@ -3399,7 +4553,19 @@
 			}
 		}
 	},
+	"1087" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Accursed Pox",
+				"de" : "Verwünschung",
+				"fr" : "Maléfice",
+				"jp" : "呪詛"
+			}
+		}
+	},
 	"1099" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Healing Potency Up",
@@ -3410,6 +4576,7 @@
 		}
 	},
 	"1100" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vulnerability Down",
@@ -3420,6 +4587,7 @@
 		}
 	},
 	"1104" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Obfuscated",
@@ -3430,6 +4598,7 @@
 		}
 	},
 	"1106" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Obfuscated",
@@ -3440,6 +4609,7 @@
 		}
 	},
 	"1116" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Haste",
@@ -3450,6 +4620,7 @@
 		}
 	},
 	"1139" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Physical Damage Up",
@@ -3459,7 +4630,19 @@
 			}
 		}
 	},
+	"1147" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Shadow Links",
+				"de" : "Schattenfessel",
+				"fr" : "Chaînes d'ombre",
+				"jp" : "影の足枷"
+			}
+		}
+	},
 	"1149" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Wolf's Heart Kit",
@@ -3470,6 +4653,7 @@
 		}
 	},
 	"1151" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fae Cloak",
@@ -3480,6 +4664,7 @@
 		}
 	},
 	"1152" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Darksight",
@@ -3490,6 +4675,7 @@
 		}
 	},
 	"1156" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Damage Up",
@@ -3499,7 +4685,30 @@
 			}
 		}
 	},
+	"1159" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Infinite Anguish",
+				"de" : "Siegel der Qual",
+				"fr" : "Agonie infinie",
+				"jp" : "苦悶の刻印"
+			}
+		}
+	},
+	"1160" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Enfeebled",
+				"de" : "Debilitans",
+				"fr" : "Anémie",
+				"jp" : "弱化の試薬"
+			}
+		}
+	},
 	"1167" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shark Eye",
@@ -3510,6 +4719,7 @@
 		}
 	},
 	"1168" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shark Eye II",
@@ -3520,6 +4730,7 @@
 		}
 	},
 	"1174" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Intervention",
@@ -3530,6 +4741,7 @@
 		}
 	},
 	"1175" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Passage of Arms",
@@ -3540,6 +4752,7 @@
 		}
 	},
 	"1176" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Arms Up",
@@ -3550,6 +4763,7 @@
 		}
 	},
 	"1177" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Inner Release",
@@ -3560,6 +4774,7 @@
 		}
 	},
 	"1178" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blackest Night",
@@ -3570,6 +4785,7 @@
 		}
 	},
 	"1179" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Earth",
@@ -3580,6 +4796,7 @@
 		}
 	},
 	"1180" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Earth's Reply",
@@ -3590,6 +4807,7 @@
 		}
 	},
 	"1181" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Fire",
@@ -3600,6 +4818,7 @@
 		}
 	},
 	"1182" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Meditative Brotherhood",
@@ -3610,6 +4829,7 @@
 		}
 	},
 	"1183" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Right Eye",
@@ -3620,6 +4840,7 @@
 		}
 	},
 	"1184" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Left Eye",
@@ -3630,6 +4851,7 @@
 		}
 	},
 	"1185" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Brotherhood",
@@ -3640,6 +4862,7 @@
 		}
 	},
 	"1186" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ten Chi Jin",
@@ -3650,6 +4873,7 @@
 		}
 	},
 	"1187" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Troubadour's Ballad",
@@ -3660,6 +4884,7 @@
 		}
 	},
 	"1188" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Critical Up",
@@ -3670,6 +4895,7 @@
 		}
 	},
 	"1189" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Troubadour's Paeon",
@@ -3680,6 +4906,7 @@
 		}
 	},
 	"1190" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Troubadour's Minuet",
@@ -3690,6 +4917,7 @@
 		}
 	},
 	"1191" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rampart",
@@ -3700,6 +4928,7 @@
 		}
 	},
 	"1192" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Convalescence",
@@ -3710,6 +4939,7 @@
 		}
 	},
 	"1194" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Anticipation",
@@ -3720,6 +4950,7 @@
 		}
 	},
 	"1196" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Palisade",
@@ -3730,6 +4961,7 @@
 		}
 	},
 	"1197" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Tactician",
@@ -3740,6 +4972,7 @@
 		}
 	},
 	"1198" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Refresh",
@@ -3750,6 +4983,7 @@
 		}
 	},
 	"1199" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Peloton",
@@ -3759,7 +4993,30 @@
 			}
 		}
 	},
+	"1200" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Caustic Bite",
+				"de" : "Kaustischer Biss",
+				"fr" : "Morsure caustique",
+				"jp" : "コースティックバイト"
+			}
+		}
+	},
+	"1201" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Stormbite",
+				"de" : "Sturmbiss",
+				"fr" : "Morsure de la tempête",
+				"jp" : "ストームバイト"
+			}
+		}
+	},
 	"1202" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nature's Minne",
@@ -3770,6 +5027,7 @@
 		}
 	},
 	"1204" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lucid Dreaming",
@@ -3780,6 +5038,7 @@
 		}
 	},
 	"1205" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Flamethrower",
@@ -3790,6 +5049,7 @@
 		}
 	},
 	"1206" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Wheel of Fortune",
@@ -3800,6 +5060,7 @@
 		}
 	},
 	"1207" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Largesse",
@@ -3810,6 +5071,7 @@
 		}
 	},
 	"1209" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Arm's Length",
@@ -3819,7 +5081,19 @@
 			}
 		}
 	},
+	"1210" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Thunder IV",
+				"de" : "Blitzka",
+				"fr" : "Giga Foudre",
+				"jp" : "サンダジャ"
+			}
+		}
+	},
 	"1211" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Triplecast",
@@ -3830,6 +5104,7 @@
 		}
 	},
 	"1213" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Devotion",
@@ -3839,7 +5114,30 @@
 			}
 		}
 	},
+	"1214" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bio III",
+				"de" : "Bioga",
+				"fr" : "Méga Bactérie",
+				"jp" : "バイオガ"
+			}
+		}
+	},
+	"1215" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Miasma III",
+				"de" : "Miasga",
+				"fr" : "Méga Miasmes",
+				"jp" : "ミアズガ"
+			}
+		}
+	},
 	"1217" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Thin Air",
@@ -3850,6 +5148,7 @@
 		}
 	},
 	"1218" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Divine Benison",
@@ -3860,6 +5159,7 @@
 		}
 	},
 	"1219" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Confession",
@@ -3870,6 +5170,7 @@
 		}
 	},
 	"1220" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Excogitation",
@@ -3880,6 +5181,7 @@
 		}
 	},
 	"1224" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Earthly Dominance",
@@ -3890,6 +5192,7 @@
 		}
 	},
 	"1225" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -3900,6 +5203,7 @@
 		}
 	},
 	"1226" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vulnerability Down",
@@ -3909,7 +5213,19 @@
 			}
 		}
 	},
+	"1228" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Higanbana",
+				"de" : "Higanbana",
+				"fr" : "Higanbana",
+				"jp" : "彼岸花"
+			}
+		}
+	},
 	"1229" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Kaiten",
@@ -3920,6 +5236,7 @@
 		}
 	},
 	"1230" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Recuperation",
@@ -3930,6 +5247,7 @@
 		}
 	},
 	"1231" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Meditate",
@@ -3940,6 +5258,7 @@
 		}
 	},
 	"1232" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Third Eye",
@@ -3950,6 +5269,7 @@
 		}
 	},
 	"1233" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Meikyo Shisui",
@@ -3960,6 +5280,7 @@
 		}
 	},
 	"1234" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Verfire Ready",
@@ -3970,6 +5291,7 @@
 		}
 	},
 	"1235" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Verstone Ready",
@@ -3980,6 +5302,7 @@
 		}
 	},
 	"1236" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Enpi",
@@ -3990,6 +5313,7 @@
 		}
 	},
 	"1237" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Scatter",
@@ -4000,6 +5324,7 @@
 		}
 	},
 	"1238" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Acceleration",
@@ -4010,6 +5335,7 @@
 		}
 	},
 	"1239" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Embolden",
@@ -4020,6 +5346,7 @@
 		}
 	},
 	"1240" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Chiten",
@@ -4030,6 +5357,7 @@
 		}
 	},
 	"1243" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dive Ready",
@@ -4040,6 +5368,7 @@
 		}
 	},
 	"1244" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Wind",
@@ -4050,6 +5379,7 @@
 		}
 	},
 	"1247" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Diurnal Balance",
@@ -4060,6 +5390,7 @@
 		}
 	},
 	"1248" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Giant Dominance",
@@ -4070,6 +5401,7 @@
 		}
 	},
 	"1249" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dualcast",
@@ -4080,6 +5412,7 @@
 		}
 	},
 	"1250" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "True North",
@@ -4090,6 +5423,7 @@
 		}
 	},
 	"1252" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Eyes Open",
@@ -4099,7 +5433,19 @@
 			}
 		}
 	},
+	"1254" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Deep Freeze",
+				"de" : "Tiefkühlung",
+				"fr" : "Congélation",
+				"jp" : "氷結"
+			}
+		}
+	},
 	"1266" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Transparent II",
@@ -4110,6 +5456,7 @@
 		}
 	},
 	"1290" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vril",
@@ -4120,6 +5467,7 @@
 		}
 	},
 	"1297" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Embolden",
@@ -4130,6 +5478,7 @@
 		}
 	},
 	"1298" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Jinpu",
@@ -4140,6 +5489,7 @@
 		}
 	},
 	"1299" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shifu",
@@ -4150,6 +5500,7 @@
 		}
 	},
 	"1300" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Cover",
@@ -4160,6 +5511,7 @@
 		}
 	},
 	"1301" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Covered",
@@ -4170,6 +5522,7 @@
 		}
 	},
 	"1302" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hallowed Ground",
@@ -4180,6 +5533,7 @@
 		}
 	},
 	"1303" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Inner Release",
@@ -4190,6 +5544,7 @@
 		}
 	},
 	"1308" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blackest Night",
@@ -4199,7 +5554,19 @@
 			}
 		}
 	},
+	"1309" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Demolish",
+				"de" : "Demolieren",
+				"fr" : "Démolition",
+				"jp" : "破砕拳"
+			}
+		}
+	},
 	"1310" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Earth",
@@ -4210,6 +5577,7 @@
 		}
 	},
 	"1311" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Earth's Reply",
@@ -4219,7 +5587,41 @@
 			}
 		}
 	},
+	"1312" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Chaos Thrust",
+				"de" : "Chaotischer Tjost",
+				"fr" : "Percée chaotique",
+				"jp" : "桜華狂咲"
+			}
+		}
+	},
+	"1313" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Shadow Fang",
+				"de" : "Schattenfang",
+				"fr" : "Croc d'ombre",
+				"jp" : "影牙"
+			}
+		}
+	},
+	"1314" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Assassinated",
+				"de" : "Meuchelsprung",
+				"fr" : "Assassinement",
+				"jp" : "終撃"
+			}
+		}
+	},
 	"1315" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Kakuremi",
@@ -4230,6 +5632,7 @@
 		}
 	},
 	"1316" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hidden",
@@ -4240,6 +5643,7 @@
 		}
 	},
 	"1317" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Three Mudra",
@@ -4249,7 +5653,19 @@
 			}
 		}
 	},
+	"1319" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Higanbana",
+				"de" : "Higanbana",
+				"fr" : "Higanbana",
+				"jp" : "彼岸花"
+			}
+		}
+	},
 	"1320" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Meikyo Shisui",
@@ -4259,7 +5675,41 @@
 			}
 		}
 	},
+	"1321" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Caustic Bite",
+				"de" : "Kaustischer Biss",
+				"fr" : "Morsure caustique",
+				"jp" : "コースティックバイト"
+			}
+		}
+	},
+	"1322" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Stormbite",
+				"de" : "Sturmbiss",
+				"fr" : "Morsure de la tempête",
+				"jp" : "ストームバイト"
+			}
+		}
+	},
+	"1324" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Thunder",
+				"de" : "Blitz",
+				"fr" : "Foudre",
+				"jp" : "サンダー"
+			}
+		}
+	},
 	"1325" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Swiftcast",
@@ -4269,7 +5719,41 @@
 			}
 		}
 	},
+	"1326" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bio III",
+				"de" : "Bioga",
+				"fr" : "Méga Bactérie",
+				"jp" : "バイオガ"
+			}
+		}
+	},
+	"1327" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Miasma III",
+				"de" : "Miasga",
+				"fr" : "Méga Miasmes",
+				"jp" : "ミアズガ"
+			}
+		}
+	},
+	"1328" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Electrocution",
+				"de" : "Stromschlag",
+				"fr" : "Électrocution",
+				"jp" : "感電"
+			}
+		}
+	},
 	"1330" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Regen",
@@ -4280,6 +5764,7 @@
 		}
 	},
 	"1331" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Galvanize",
@@ -4290,6 +5775,7 @@
 		}
 	},
 	"1333" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Eye for an Eye",
@@ -4300,6 +5786,7 @@
 		}
 	},
 	"1335" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Abridged",
@@ -4310,6 +5797,7 @@
 		}
 	},
 	"1338" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Balance",
@@ -4320,6 +5808,7 @@
 		}
 	},
 	"1339" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Bole",
@@ -4330,6 +5819,7 @@
 		}
 	},
 	"1340" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Ewer",
@@ -4340,6 +5830,7 @@
 		}
 	},
 	"1341" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Spire",
@@ -4350,6 +5841,7 @@
 		}
 	},
 	"1342" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bolt",
@@ -4360,6 +5852,7 @@
 		}
 	},
 	"1349" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Stun Resistance",
@@ -4370,6 +5863,7 @@
 		}
 	},
 	"1350" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Heavy Resistance",
@@ -4380,6 +5874,7 @@
 		}
 	},
 	"1351" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bind Resistance",
@@ -4390,6 +5885,7 @@
 		}
 	},
 	"1352" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Slow Resistance",
@@ -4400,6 +5896,7 @@
 		}
 	},
 	"1353" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Silence Resistance",
@@ -4410,6 +5907,7 @@
 		}
 	},
 	"1354" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sleep Resistance",
@@ -4420,6 +5918,7 @@
 		}
 	},
 	"1355" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Knockback Penalty",
@@ -4430,6 +5929,7 @@
 		}
 	},
 	"1364" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Wind",
@@ -4440,6 +5940,7 @@
 		}
 	},
 	"1365" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Thundercloud",
@@ -4450,6 +5951,7 @@
 		}
 	},
 	"1367" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Impactful",
@@ -4460,6 +5962,7 @@
 		}
 	},
 	"1368" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Requiescat",
@@ -4470,6 +5973,7 @@
 		}
 	},
 	"1369" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Requiescat",
@@ -4479,7 +5983,30 @@
 			}
 		}
 	},
+	"1379" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Almagest",
+				"de" : "Almagest",
+				"fr" : "Almageste",
+				"jp" : "アルマゲスト"
+			}
+		}
+	},
+	"1386" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Sludge",
+				"de" : "Schlamm",
+				"fr" : "Emboué",
+				"jp" : "汚泥"
+			}
+		}
+	},
 	"1387" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Altered States",
@@ -4490,6 +6017,7 @@
 		}
 	},
 	"1392" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shining Moonstone",
@@ -4500,6 +6028,7 @@
 		}
 	},
 	"1393" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dualcast",
@@ -4510,6 +6039,7 @@
 		}
 	},
 	"1398" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Inner Beast",
@@ -4520,6 +6050,7 @@
 		}
 	},
 	"1403" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lightspeed",
@@ -4530,6 +6061,7 @@
 		}
 	},
 	"1404" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Divine Benison",
@@ -4540,6 +6072,7 @@
 		}
 	},
 	"1407" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Barrage",
@@ -4550,6 +6083,7 @@
 		}
 	},
 	"1413" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Fire",
@@ -4560,6 +6094,7 @@
 		}
 	},
 	"1414" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Battle Litany",
@@ -4570,6 +6105,7 @@
 		}
 	},
 	"1415" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Protect",
@@ -4579,7 +6115,19 @@
 			}
 		}
 	},
+	"1428" : {
+		"dot" : false,
+		"locales" : {
+			"name" : {
+				"en" : "削除予定",
+				"de" : "削除予定",
+				"fr" : "削除予定",
+				"jp" : "削除予定"
+			}
+		}
+	},
 	"1448" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Transfiguration",
@@ -4590,6 +6138,7 @@
 		}
 	},
 	"1449" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Troubadour's Minuet",
@@ -4600,6 +6149,7 @@
 		}
 	},
 	"1450" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Troubadour's Paeon",
@@ -4610,6 +6160,7 @@
 		}
 	},
 	"1451" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lord of Crowns",
@@ -4620,6 +6171,7 @@
 		}
 	},
 	"1452" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lady of Crowns",
@@ -4630,6 +6182,7 @@
 		}
 	},
 	"1453" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Right Eye",
@@ -4640,6 +6193,7 @@
 		}
 	},
 	"1454" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Left Eye",
@@ -4650,6 +6204,7 @@
 		}
 	},
 	"1455" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Flamethrower",
@@ -4660,6 +6215,7 @@
 		}
 	},
 	"1456" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Thrill of War",
@@ -4670,6 +6226,7 @@
 		}
 	},
 	"1457" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shake It Off",
@@ -4679,7 +6236,19 @@
 			}
 		}
 	},
+	"1458" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Flamethrower Flames",
+				"de" : "Flammenwerfer",
+				"fr" : "Cible de Lance-flammes",
+				"jp" : "フレイムスロアー：効果"
+			}
+		}
+	},
 	"1461" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Elemental Blessing: EXP",
@@ -4690,6 +6259,7 @@
 		}
 	},
 	"1463" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Elemental Blessing: Damage",
@@ -4699,7 +6269,30 @@
 			}
 		}
 	},
+	"1466" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Stab Wound",
+				"de" : "Stichwunde",
+				"fr" : "Perforation",
+				"jp" : "刺傷"
+			}
+		}
+	},
+	"1474" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Filthy",
+				"de" : "Dreck",
+				"fr" : "Embourbement",
+				"jp" : "汚泥"
+			}
+		}
+	},
 	"1494" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Face in the Crowd",
@@ -4710,6 +6303,7 @@
 		}
 	},
 	"1496" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vanished",
@@ -4719,7 +6313,41 @@
 			}
 		}
 	},
+	"1498" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Shocked",
+				"de" : "Schock",
+				"fr" : "Commotion",
+				"jp" : "ショック"
+			}
+		}
+	},
+	"1507" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Pollen",
+				"de" : "Giftpollen",
+				"fr" : "Poison violent",
+				"jp" : "猛毒"
+			}
+		}
+	},
+	"1508" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Windburn",
+				"de" : "Beißender Wind",
+				"fr" : "Brûlure du vent",
+				"jp" : "裂傷"
+			}
+		}
+	},
 	"1514" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "スリル・オブ・ウォー：効果",
@@ -4730,6 +6358,7 @@
 		}
 	},
 	"1517" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fire Resistance Up",
@@ -4740,6 +6369,7 @@
 		}
 	},
 	"1523" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Haste+",
@@ -4750,6 +6380,7 @@
 		}
 	},
 	"1526" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Thermal High",
@@ -4759,7 +6390,19 @@
 			}
 		}
 	},
+	"1527" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Accursed Flame",
+				"de" : "Fluchflamme",
+				"fr" : "Flammes maudites",
+				"jp" : "呪いの炎"
+			}
+		}
+	},
 	"1531" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Down the Rabbit Hole",
@@ -4770,6 +6413,7 @@
 		}
 	},
 	"1567" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Primal Rage",
@@ -4780,6 +6424,7 @@
 		}
 	},
 	"1570" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Invincibility",
@@ -4790,6 +6435,7 @@
 		}
 	},
 	"1571" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Temporal Barrier",
@@ -4800,6 +6446,7 @@
 		}
 	},
 	"1572" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -4809,7 +6456,30 @@
 			}
 		}
 	},
+	"1577" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
+	"1578" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Searing Wind",
+				"de" : "Gluthitze",
+				"fr" : "Fournaise",
+				"jp" : "灼熱"
+			}
+		}
+	},
 	"1584" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Komainu's Favor",
@@ -4820,6 +6490,7 @@
 		}
 	},
 	"1585" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Inugami's Favor",
@@ -4830,6 +6501,7 @@
 		}
 	},
 	"1586" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Senri's Favor",
@@ -4840,6 +6512,7 @@
 		}
 	},
 	"1587" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Elemental Harmony",
@@ -4850,6 +6523,7 @@
 		}
 	},
 	"1594" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hundred Fists",
@@ -4860,6 +6534,7 @@
 		}
 	},
 	"1611" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Arcane Bulwark",
@@ -4870,6 +6545,7 @@
 		}
 	},
 	"1615" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Crumbling Bulwark",
@@ -4880,6 +6556,7 @@
 		}
 	},
 	"1623" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Live Wire",
@@ -4890,6 +6567,7 @@
 		}
 	},
 	"1641" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Spirit of the Remembered",
@@ -4900,6 +6578,7 @@
 		}
 	},
 	"1642" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Protect L",
@@ -4910,6 +6589,7 @@
 		}
 	},
 	"1643" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shell L",
@@ -4920,6 +6600,7 @@
 		}
 	},
 	"1644" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Swift L",
@@ -4930,6 +6611,7 @@
 		}
 	},
 	"1645" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rapid Recast",
@@ -4940,6 +6622,7 @@
 		}
 	},
 	"1646" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bravery L",
@@ -4950,6 +6633,7 @@
 		}
 	},
 	"1647" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Solid Shield",
@@ -4960,6 +6644,7 @@
 		}
 	},
 	"1648" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Spell Shield",
@@ -4970,6 +6655,7 @@
 		}
 	},
 	"1649" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Reflect L",
@@ -4979,7 +6665,19 @@
 			}
 		}
 	},
+	"1650" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Poison L",
+				"de" : "Logos-Gift",
+				"fr" : "Évocation Logos: Poison",
+				"jp" : "ロゴス・ポイズン"
+			}
+		}
+	},
 	"1651" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Refresh L",
@@ -4990,6 +6688,7 @@
 		}
 	},
 	"1652" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Burst L",
@@ -5000,6 +6699,7 @@
 		}
 	},
 	"1653" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Double Edge L",
@@ -5010,6 +6710,7 @@
 		}
 	},
 	"1656" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Boost",
@@ -5020,6 +6721,7 @@
 		}
 	},
 	"1657" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Incense L",
@@ -5030,6 +6732,7 @@
 		}
 	},
 	"1662" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Local Resonance",
@@ -5040,6 +6743,7 @@
 		}
 	},
 	"1663" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Remote Resonance",
@@ -5050,6 +6754,7 @@
 		}
 	},
 	"1677" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bloodbath L",
@@ -5060,6 +6765,7 @@
 		}
 	},
 	"1684" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Break III Edict",
@@ -5070,6 +6776,7 @@
 		}
 	},
 	"1685" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rush Edict",
@@ -5080,6 +6787,7 @@
 		}
 	},
 	"1686" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Tornado Edict",
@@ -5090,6 +6798,7 @@
 		}
 	},
 	"1687" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rehabilitation",
@@ -5100,6 +6809,7 @@
 		}
 	},
 	"1706" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Evasion Up",
@@ -5109,7 +6819,19 @@
 			}
 		}
 	},
+	"1714" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Blutung",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
 	"1716" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Boost",
@@ -5120,6 +6842,7 @@
 		}
 	},
 	"1718" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Waxing Nocturne",
@@ -5130,6 +6853,7 @@
 		}
 	},
 	"1720" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ice Spikes",
@@ -5140,6 +6864,7 @@
 		}
 	},
 	"1722" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Diamondback",
@@ -5149,7 +6874,19 @@
 			}
 		}
 	},
+	"1723" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Windburn",
+				"de" : "Beißender Wind",
+				"fr" : "Brûlure du vent",
+				"jp" : "裂傷"
+			}
+		}
+	},
 	"1724" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Veil of the Whorl",
@@ -5159,7 +6896,19 @@
 			}
 		}
 	},
+	"1736" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Dropsy",
+				"de" : "Wassersucht",
+				"fr" : "Œdème",
+				"jp" : "水毒"
+			}
+		}
+	},
 	"1737" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Toad Oil",
@@ -5170,6 +6919,7 @@
 		}
 	},
 	"1747" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fearless",
@@ -5180,6 +6930,7 @@
 		}
 	},
 	"1749" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Area of Influence Up",
@@ -5190,6 +6941,7 @@
 		}
 	},
 	"1754" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Aetherially Primed",
@@ -5200,6 +6952,7 @@
 		}
 	},
 	"1756" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Elemental Blessing",
@@ -5209,7 +6962,19 @@
 			}
 		}
 	},
+	"1758" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Deep Freeze",
+				"de" : "Tiefkühlung",
+				"fr" : "Congélation",
+				"jp" : "氷結"
+			}
+		}
+	},
 	"1759" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Vulnerability Down",
@@ -5220,6 +6985,7 @@
 		}
 	},
 	"1761" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ice Resistance Up",
@@ -5230,6 +6996,7 @@
 		}
 	},
 	"1763" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "HP Boost",
@@ -5240,6 +7007,7 @@
 		}
 	},
 	"1770" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -5249,7 +7017,52 @@
 			}
 		}
 	},
+	"1779" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Ajisai",
+				"de" : "Ajisai",
+				"fr" : "Ajisai",
+				"jp" : "紫陽花"
+			}
+		}
+	},
+	"1787" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
+	"1788" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Frostbite",
+				"de" : "Erfrierung",
+				"fr" : "Gelure",
+				"jp" : "凍傷"
+			}
+		}
+	},
+	"1790" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Shadow Links",
+				"de" : "Schattenfessel",
+				"fr" : "Chaînes d'ombre",
+				"jp" : "影の足枷"
+			}
+		}
+	},
 	"1791" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Infusion",
@@ -5259,7 +7072,19 @@
 			}
 		}
 	},
+	"1813" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Flesh Wound",
+				"de" : "Fleischwunde",
+				"fr" : "Blessure physique",
+				"jp" : "切傷"
+			}
+		}
+	},
 	"1814" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Cascade",
@@ -5270,6 +7095,7 @@
 		}
 	},
 	"1815" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Fountain",
@@ -5280,6 +7106,7 @@
 		}
 	},
 	"1816" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Windmill",
@@ -5290,6 +7117,7 @@
 		}
 	},
 	"1817" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Shower",
@@ -5300,6 +7128,7 @@
 		}
 	},
 	"1818" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Standard Step",
@@ -5310,6 +7139,7 @@
 		}
 	},
 	"1819" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Technical Step",
@@ -5320,6 +7150,7 @@
 		}
 	},
 	"1820" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Fan Dance",
@@ -5330,6 +7161,7 @@
 		}
 	},
 	"1821" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Standard Finish",
@@ -5340,6 +7172,7 @@
 		}
 	},
 	"1822" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Technical Finish",
@@ -5350,6 +7183,7 @@
 		}
 	},
 	"1825" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Devilment",
@@ -5360,6 +7194,7 @@
 		}
 	},
 	"1826" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shield Samba",
@@ -5370,6 +7205,7 @@
 		}
 	},
 	"1827" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Improvisation",
@@ -5380,6 +7216,7 @@
 		}
 	},
 	"1828" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Improvisation",
@@ -5390,6 +7227,7 @@
 		}
 	},
 	"1831" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "No Mercy",
@@ -5400,6 +7238,7 @@
 		}
 	},
 	"1832" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Camouflage",
@@ -5410,6 +7249,7 @@
 		}
 	},
 	"1834" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nebula",
@@ -5420,6 +7260,7 @@
 		}
 	},
 	"1835" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Aurora",
@@ -5430,6 +7271,7 @@
 		}
 	},
 	"1836" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Superbolide",
@@ -5439,7 +7281,30 @@
 			}
 		}
 	},
+	"1837" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Sonic Break",
+				"de" : "Schallbrecher",
+				"fr" : "Rupture sonique",
+				"jp" : "ソニックブレイク"
+			}
+		}
+	},
+	"1838" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bow Shock",
+				"de" : "Schockpatrone",
+				"fr" : "Arc de choc",
+				"jp" : "バウショック"
+			}
+		}
+	},
 	"1839" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Heart of Light",
@@ -5450,6 +7315,7 @@
 		}
 	},
 	"1840" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Heart of Stone",
@@ -5460,6 +7326,7 @@
 		}
 	},
 	"1842" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Rip",
@@ -5470,6 +7337,7 @@
 		}
 	},
 	"1843" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Tear",
@@ -5480,6 +7348,7 @@
 		}
 	},
 	"1844" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Gouge",
@@ -5490,6 +7359,7 @@
 		}
 	},
 	"1847" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Esprit",
@@ -5500,6 +7370,7 @@
 		}
 	},
 	"1848" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Esprit",
@@ -5510,6 +7381,7 @@
 		}
 	},
 	"1856" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sheltron",
@@ -5520,6 +7392,7 @@
 		}
 	},
 	"1857" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Flash",
@@ -5530,6 +7403,7 @@
 		}
 	},
 	"1858" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Glint",
@@ -5540,6 +7414,7 @@
 		}
 	},
 	"1861" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Leaden Fist",
@@ -5550,6 +7425,7 @@
 		}
 	},
 	"1862" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Anatman",
@@ -5560,6 +7436,7 @@
 		}
 	},
 	"1863" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Raiden Thrust Ready",
@@ -5570,6 +7447,7 @@
 		}
 	},
 	"1864" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lance Charge",
@@ -5579,7 +7457,19 @@
 			}
 		}
 	},
+	"1866" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bioblaster",
+				"de" : "Bioblaster",
+				"fr" : "Lance-toxine",
+				"jp" : "バイオブラスト"
+			}
+		}
+	},
 	"1867" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hellish Conduit",
@@ -5590,6 +7480,7 @@
 		}
 	},
 	"1868" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Everlasting Flight",
@@ -5600,6 +7491,7 @@
 		}
 	},
 	"1869" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Gale Enforcer",
@@ -5609,7 +7501,19 @@
 			}
 		}
 	},
+	"1871" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Dia",
+				"de" : "Dia",
+				"fr" : "Lumen",
+				"jp" : "ディア"
+			}
+		}
+	},
 	"1872" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Temperance",
@@ -5620,6 +7524,7 @@
 		}
 	},
 	"1873" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Temperance",
@@ -5630,6 +7535,7 @@
 		}
 	},
 	"1874" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Angel's Whisper",
@@ -5640,6 +7546,7 @@
 		}
 	},
 	"1875" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Seraphic Illumination",
@@ -5650,6 +7557,7 @@
 		}
 	},
 	"1876" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lord of Crowns",
@@ -5660,6 +7568,7 @@
 		}
 	},
 	"1877" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lady of Crowns",
@@ -5670,6 +7579,7 @@
 		}
 	},
 	"1878" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Divination",
@@ -5680,6 +7590,7 @@
 		}
 	},
 	"1879" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Diurnal Opposition",
@@ -5690,6 +7601,7 @@
 		}
 	},
 	"1880" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nocturnal Opposition",
@@ -5699,7 +7611,19 @@
 			}
 		}
 	},
+	"1881" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Combust III",
+				"de" : "Konjunktion III",
+				"fr" : "Conjonction supérieure III",
+				"jp" : "コンバガ"
+			}
+		}
+	},
 	"1882" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Balance",
@@ -5710,6 +7634,7 @@
 		}
 	},
 	"1883" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Bole",
@@ -5720,6 +7645,7 @@
 		}
 	},
 	"1884" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Arrow",
@@ -5730,6 +7656,7 @@
 		}
 	},
 	"1885" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Spear",
@@ -5740,6 +7667,7 @@
 		}
 	},
 	"1886" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Ewer",
@@ -5750,6 +7678,7 @@
 		}
 	},
 	"1887" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Spire",
@@ -5760,6 +7689,7 @@
 		}
 	},
 	"1888" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Diurnal Intersection",
@@ -5770,6 +7700,7 @@
 		}
 	},
 	"1889" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nocturnal Intersection",
@@ -5780,6 +7711,7 @@
 		}
 	},
 	"1890" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Horoscope",
@@ -5790,6 +7722,7 @@
 		}
 	},
 	"1891" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Horoscope Helios",
@@ -5800,6 +7733,7 @@
 		}
 	},
 	"1892" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Neutral Sect",
@@ -5810,6 +7744,7 @@
 		}
 	},
 	"1894" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dark Missionary",
@@ -5819,7 +7754,19 @@
 			}
 		}
 	},
+	"1895" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Biolysis",
+				"de" : "Causae et Curae",
+				"fr" : "Loi de l'infection",
+				"jp" : "蠱毒法"
+			}
+		}
+	},
 	"1896" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Recitation",
@@ -5830,6 +7777,7 @@
 		}
 	},
 	"1897" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Chaos",
@@ -5840,6 +7788,7 @@
 		}
 	},
 	"1898" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Brutal Shell",
@@ -5850,6 +7799,7 @@
 		}
 	},
 	"1900" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Winged Shield",
@@ -5860,6 +7810,7 @@
 		}
 	},
 	"1901" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enshielded",
@@ -5870,6 +7821,7 @@
 		}
 	},
 	"1902" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sword Oath",
@@ -5880,6 +7832,7 @@
 		}
 	},
 	"1903" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Phantasmal",
@@ -5890,6 +7843,7 @@
 		}
 	},
 	"1909" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Area of Influence Up",
@@ -5900,6 +7854,7 @@
 		}
 	},
 	"1910" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Right Eye",
@@ -5910,6 +7865,7 @@
 		}
 	},
 	"1911" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Asylum",
@@ -5920,6 +7876,7 @@
 		}
 	},
 	"1912" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Asylum",
@@ -5930,6 +7887,7 @@
 		}
 	},
 	"1914" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Disembowel",
@@ -5940,6 +7898,7 @@
 		}
 	},
 	"1915" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Summon Order",
@@ -5950,6 +7909,7 @@
 		}
 	},
 	"1917" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Seraphic Veil",
@@ -5960,6 +7920,7 @@
 		}
 	},
 	"1918" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Catalyze",
@@ -5970,6 +7931,7 @@
 		}
 	},
 	"1920" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Diurnal Balance",
@@ -5980,6 +7942,7 @@
 		}
 	},
 	"1921" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nocturnal Balance",
@@ -5990,6 +7953,7 @@
 		}
 	},
 	"1926" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sleeve Draw",
@@ -6000,6 +7964,7 @@
 		}
 	},
 	"1931" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Gunmetal Soul",
@@ -6010,6 +7975,7 @@
 		}
 	},
 	"1932" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Army's Muse",
@@ -6020,6 +7986,7 @@
 		}
 	},
 	"1933" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Army's Ethos",
@@ -6030,6 +7997,7 @@
 		}
 	},
 	"1934" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Troubadour",
@@ -6040,6 +8008,7 @@
 		}
 	},
 	"1936" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Stone Wall",
@@ -6049,7 +8018,19 @@
 			}
 		}
 	},
+	"1941" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Accursed Poison",
+				"de" : "Verhexung von Ronka",
+				"fr" : "Vénéfice de Ronka",
+				"jp" : "ロンカの呪毒"
+			}
+		}
+	},
 	"1942" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ranging",
@@ -6060,6 +8041,7 @@
 		}
 	},
 	"1944" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sacred Soil",
@@ -6070,6 +8052,7 @@
 		}
 	},
 	"1946" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Wildfire",
@@ -6080,6 +8063,7 @@
 		}
 	},
 	"1951" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Tactician",
@@ -6090,6 +8074,7 @@
 		}
 	},
 	"1954" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bunshin",
@@ -6100,6 +8085,7 @@
 		}
 	},
 	"1955" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Assassinate Ready",
@@ -6110,6 +8096,7 @@
 		}
 	},
 	"1964" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Summon Order II",
@@ -6120,6 +8107,7 @@
 		}
 	},
 	"1965" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Summon Order III",
@@ -6130,6 +8118,7 @@
 		}
 	},
 	"1966" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Summon Order IV",
@@ -6140,6 +8129,7 @@
 		}
 	},
 	"1971" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Manafication",
@@ -6150,6 +8140,7 @@
 		}
 	},
 	"1972" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Delirium",
@@ -6160,6 +8151,7 @@
 		}
 	},
 	"1975" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enlarged",
@@ -6170,6 +8162,7 @@
 		}
 	},
 	"1976" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fully Enlarged",
@@ -6180,6 +8173,7 @@
 		}
 	},
 	"1978" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Rampart",
@@ -6190,6 +8184,7 @@
 		}
 	},
 	"1981" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Blood for Blood",
@@ -6200,6 +8195,7 @@
 		}
 	},
 	"1982" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bloodbath",
@@ -6210,6 +8206,7 @@
 		}
 	},
 	"1983" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fetter Ward",
@@ -6220,6 +8217,7 @@
 		}
 	},
 	"1984" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Arm's Length",
@@ -6230,6 +8228,7 @@
 		}
 	},
 	"1985" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Peloton",
@@ -6240,6 +8239,7 @@
 		}
 	},
 	"1987" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Swiftcast",
@@ -6250,6 +8250,7 @@
 		}
 	},
 	"1989" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Manaward",
@@ -6260,6 +8261,7 @@
 		}
 	},
 	"1990" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Attunement",
@@ -6270,6 +8272,7 @@
 		}
 	},
 	"1991" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Sword Oath",
@@ -6280,6 +8283,7 @@
 		}
 	},
 	"1992" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Chaos",
@@ -6290,6 +8294,7 @@
 		}
 	},
 	"1993" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shake It Off",
@@ -6300,6 +8305,7 @@
 		}
 	},
 	"1996" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Delirium",
@@ -6310,6 +8316,7 @@
 		}
 	},
 	"1997" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Brutal Shell",
@@ -6320,6 +8327,7 @@
 		}
 	},
 	"2000" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Heart of Light",
@@ -6330,6 +8338,7 @@
 		}
 	},
 	"2001" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "無敵",
@@ -6340,6 +8349,7 @@
 		}
 	},
 	"2002" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Rip",
@@ -6350,6 +8360,7 @@
 		}
 	},
 	"2003" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Tear",
@@ -6360,6 +8371,7 @@
 		}
 	},
 	"2004" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Gouge",
@@ -6370,6 +8382,7 @@
 		}
 	},
 	"2005" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fists of Fire",
@@ -6380,6 +8393,7 @@
 		}
 	},
 	"2006" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fists of Earth",
@@ -6390,6 +8404,7 @@
 		}
 	},
 	"2008" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Earth",
@@ -6400,6 +8415,7 @@
 		}
 	},
 	"2009" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Wanderer's Minuet",
@@ -6410,6 +8426,7 @@
 		}
 	},
 	"2010" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Bunshin",
@@ -6420,6 +8437,7 @@
 		}
 	},
 	"2011" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shade Shift",
@@ -6430,6 +8448,7 @@
 		}
 	},
 	"2012" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Corps-a-corps",
@@ -6440,6 +8459,7 @@
 		}
 	},
 	"2013" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Displacement",
@@ -6450,6 +8470,7 @@
 		}
 	},
 	"2015" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "陣風",
@@ -6460,6 +8481,7 @@
 		}
 	},
 	"2016" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "士風",
@@ -6470,6 +8492,7 @@
 		}
 	},
 	"2017" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Repelling Shot",
@@ -6480,6 +8503,7 @@
 		}
 	},
 	"2018" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "ワイルドファイア",
@@ -6490,6 +8514,7 @@
 		}
 	},
 	"2020" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Intervention",
@@ -6500,6 +8525,7 @@
 		}
 	},
 	"2021" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Fan Dance",
@@ -6510,6 +8536,7 @@
 		}
 	},
 	"2022" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Saber Dance",
@@ -6520,6 +8547,7 @@
 		}
 	},
 	"2023" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Standard Step",
@@ -6530,6 +8558,7 @@
 		}
 	},
 	"2024" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Standard Finish",
@@ -6540,6 +8569,7 @@
 		}
 	},
 	"2025" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Esprit",
@@ -6550,6 +8580,7 @@
 		}
 	},
 	"2028" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "三連魔",
@@ -6559,7 +8590,19 @@
 			}
 		}
 	},
+	"2029" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Fountain of Fire",
+				"de" : "Quell des Feuers",
+				"fr" : "Flamme de la vie",
+				"jp" : "霊泉の炎"
+			}
+		}
+	},
 	"2030" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Everlasting Flight",
@@ -6570,6 +8613,7 @@
 		}
 	},
 	"2033" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Engagement",
@@ -6580,6 +8624,7 @@
 		}
 	},
 	"2034" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Divination",
@@ -6590,6 +8635,7 @@
 		}
 	},
 	"2036" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Afflatus Solace",
@@ -6600,6 +8646,7 @@
 		}
 	},
 	"2037" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Temperance",
@@ -6610,6 +8657,7 @@
 		}
 	},
 	"2038" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Temperance",
@@ -6620,6 +8668,7 @@
 		}
 	},
 	"2040" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Seraphic Veil",
@@ -6630,6 +8679,7 @@
 		}
 	},
 	"2042" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Diurnal Balance",
@@ -6640,6 +8690,7 @@
 		}
 	},
 	"2043" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nocturnal Balance",
@@ -6650,6 +8701,7 @@
 		}
 	},
 	"2044" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Neutral Sect",
@@ -6660,6 +8712,7 @@
 		}
 	},
 	"2046" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "シャーク[被]",
@@ -6670,6 +8723,7 @@
 		}
 	},
 	"2048" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "En Avant",
@@ -6680,6 +8734,7 @@
 		}
 	},
 	"2049" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Technical Step",
@@ -6690,6 +8745,7 @@
 		}
 	},
 	"2050" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Technical Finish",
@@ -6700,6 +8756,7 @@
 		}
 	},
 	"2051" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Esprit",
@@ -6710,6 +8767,7 @@
 		}
 	},
 	"2052" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fan Dance III",
@@ -6720,6 +8778,7 @@
 		}
 	},
 	"2053" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Protect",
@@ -6730,6 +8789,7 @@
 		}
 	},
 	"2061" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Flash",
@@ -6740,6 +8800,7 @@
 		}
 	},
 	"2062" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Glint",
@@ -6750,6 +8811,7 @@
 		}
 	},
 	"2063" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Draw Power",
@@ -6760,6 +8822,7 @@
 		}
 	},
 	"2064" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Draw Fortitude",
@@ -6770,6 +8833,7 @@
 		}
 	},
 	"2065" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Aurora",
@@ -6780,6 +8844,7 @@
 		}
 	},
 	"2068" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Smackdown",
@@ -6790,6 +8855,7 @@
 		}
 	},
 	"2069" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dissipation",
@@ -6800,6 +8866,7 @@
 		}
 	},
 	"2070" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Diurnal Opposition",
@@ -6810,6 +8877,7 @@
 		}
 	},
 	"2071" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nocturnal Opposition",
@@ -6820,6 +8888,7 @@
 		}
 	},
 	"2072" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Focalization",
@@ -6829,7 +8898,19 @@
 			}
 		}
 	},
+	"2073" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Acidic Bite",
+				"de" : "Beißende Säure",
+				"fr" : "Morsure acide",
+				"jp" : "アシディックバイト"
+			}
+		}
+	},
 	"2074" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Physical Damage Up",
@@ -6839,7 +8920,162 @@
 			}
 		}
 	},
+	"2075" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Thunder II",
+				"de" : "Blitzra",
+				"fr" : "Extra Foudre",
+				"jp" : "サンダラ"
+			}
+		}
+	},
+	"2079" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Flesh Wound",
+				"de" : "Fleischwunde",
+				"fr" : "Blessure physique",
+				"jp" : "切傷"
+			}
+		}
+	},
+	"2080" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Stab Wound",
+				"de" : "Stichwunde",
+				"fr" : "Perforation",
+				"jp" : "刺傷"
+			}
+		}
+	},
+	"2081" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Concussion",
+				"de" : "Prellung",
+				"fr" : "Concussion",
+				"jp" : "打撲傷"
+			}
+		}
+	},
+	"2082" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
+	"2083" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Frostbite",
+				"de" : "Erfrierung",
+				"fr" : "Gelure",
+				"jp" : "凍傷"
+			}
+		}
+	},
+	"2084" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Windburn",
+				"de" : "Beißender Wind",
+				"fr" : "Brûlure du vent",
+				"jp" : "裂傷"
+			}
+		}
+	},
+	"2085" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Sludge",
+				"de" : "Schlamm",
+				"fr" : "Emboué",
+				"jp" : "汚泥"
+			}
+		}
+	},
+	"2086" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Electrocution",
+				"de" : "Stromschlag",
+				"fr" : "Électrocution",
+				"jp" : "感電"
+			}
+		}
+	},
+	"2087" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Dropsy",
+				"de" : "Wassersucht",
+				"fr" : "Œdème",
+				"jp" : "水毒"
+			}
+		}
+	},
+	"2088" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Blutung",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
+	"2089" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Poison",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
+	"2103" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Concussion",
+				"de" : "Prellung",
+				"fr" : "Concussion",
+				"jp" : "打撲傷"
+			}
+		}
+	},
+	"2104" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Poison",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
 	"2105" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Standard Finish",
@@ -6850,6 +9086,7 @@
 		}
 	},
 	"2113" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Standard Finish",
@@ -6860,6 +9097,7 @@
 		}
 	},
 	"2114" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Gobskin",
@@ -6870,6 +9108,7 @@
 		}
 	},
 	"2116" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Meatily Shielded",
@@ -6880,6 +9119,7 @@
 		}
 	},
 	"2117" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Meat Shield",
@@ -6890,6 +9130,7 @@
 		}
 	},
 	"2118" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Harmonized",
@@ -6900,6 +9141,7 @@
 		}
 	},
 	"2119" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Cactguard",
@@ -6910,6 +9152,7 @@
 		}
 	},
 	"2120" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "HP Boost",
@@ -6920,6 +9163,7 @@
 		}
 	},
 	"2130" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Surpanakha's Fury",
@@ -6930,6 +9174,7 @@
 		}
 	},
 	"2166" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Magitek Field",
@@ -6940,6 +9185,7 @@
 		}
 	},
 	"2168" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Divine Veil",
@@ -6950,6 +9196,7 @@
 		}
 	},
 	"2169" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Divine Veil",
@@ -6960,6 +9207,7 @@
 		}
 	},
 	"2171" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dark Missionary",
@@ -6970,6 +9218,7 @@
 		}
 	},
 	"2172" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Arm's Length",
@@ -6980,6 +9229,7 @@
 		}
 	},
 	"2173" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Meditative Brotherhood",
@@ -6990,6 +9240,7 @@
 		}
 	},
 	"2174" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Brotherhood",
@@ -7000,6 +9251,7 @@
 		}
 	},
 	"2175" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Life Surge",
@@ -7010,6 +9262,7 @@
 		}
 	},
 	"2176" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Meditation",
@@ -7020,6 +9273,7 @@
 		}
 	},
 	"2177" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Tactician",
@@ -7030,6 +9284,7 @@
 		}
 	},
 	"2178" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nature's Minne",
@@ -7040,6 +9295,7 @@
 		}
 	},
 	"2179" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Testudo",
@@ -7050,6 +9306,7 @@
 		}
 	},
 	"2180" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Fast Draw",
@@ -7060,6 +9317,7 @@
 		}
 	},
 	"2182" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Excogitation",
@@ -7070,6 +9328,7 @@
 		}
 	},
 	"2183" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nocturnal Field",
@@ -7080,6 +9339,7 @@
 		}
 	},
 	"2184" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Retaliation",
@@ -7090,6 +9350,7 @@
 		}
 	},
 	"2186" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Concentrate",
@@ -7100,6 +9361,7 @@
 		}
 	},
 	"2188" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Largesse",
@@ -7109,7 +9371,41 @@
 			}
 		}
 	},
+	"2192" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Blight",
+				"de" : "Pesthauch",
+				"fr" : "Supplice",
+				"jp" : "クラウダ"
+			}
+		}
+	},
+	"2199" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
+	"2200" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Electrocution",
+				"de" : "Stromschlag",
+				"fr" : "Électrocution",
+				"jp" : "感電"
+			}
+		}
+	},
 	"2214" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Army's Paeon",
@@ -7120,6 +9416,7 @@
 		}
 	},
 	"2215" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Wanderer's Minuet",
@@ -7130,6 +9427,7 @@
 		}
 	},
 	"2216" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "The Wanderer's Minuet",
@@ -7140,6 +9438,7 @@
 		}
 	},
 	"2217" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Mage's Ballad",
@@ -7150,6 +9449,7 @@
 		}
 	},
 	"2218" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Army's Paeon",
@@ -7160,6 +9460,7 @@
 		}
 	},
 	"2220" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Damage Up",
@@ -7170,6 +9471,7 @@
 		}
 	},
 	"2227" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Flash",
@@ -7180,6 +9482,7 @@
 		}
 	},
 	"2262" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Grace of Light",
@@ -7190,6 +9493,7 @@
 		}
 	},
 	"2263" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shock Spikes",
@@ -7200,6 +9504,7 @@
 		}
 	},
 	"2269" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "FATE Participant",
@@ -7210,6 +9515,7 @@
 		}
 	},
 	"2276" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "In Costume",
@@ -7220,6 +9526,7 @@
 		}
 	},
 	"2280" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Enlarged",
@@ -7230,6 +9537,7 @@
 		}
 	},
 	"2282" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Embolden",
@@ -7240,6 +9548,7 @@
 		}
 	},
 	"2284" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Running Wild",
@@ -7250,6 +9559,7 @@
 		}
 	},
 	"2287" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "True Hallowed Ground",
@@ -7260,6 +9570,7 @@
 		}
 	},
 	"2326" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Noble Ends",
@@ -7270,6 +9581,7 @@
 		}
 	},
 	"2327" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Honored Sacrifice",
@@ -7280,6 +9592,7 @@
 		}
 	},
 	"2328" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Tireless Conviction",
@@ -7290,6 +9603,7 @@
 		}
 	},
 	"2329" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Firm Resolve",
@@ -7300,6 +9614,7 @@
 		}
 	},
 	"2330" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Solemn Clarity",
@@ -7310,6 +9625,7 @@
 		}
 	},
 	"2331" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Honed Acuity",
@@ -7320,6 +9636,7 @@
 		}
 	},
 	"2332" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Font of Magic",
@@ -7330,6 +9647,7 @@
 		}
 	},
 	"2333" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Protect",
@@ -7340,6 +9658,7 @@
 		}
 	},
 	"2334" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Shell",
@@ -7350,6 +9669,7 @@
 		}
 	},
 	"2335" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Swift",
@@ -7360,6 +9680,7 @@
 		}
 	},
 	"2337" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Reflect",
@@ -7370,6 +9691,7 @@
 		}
 	},
 	"2338" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Spellforge",
@@ -7380,6 +9702,7 @@
 		}
 	},
 	"2339" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Steelsting",
@@ -7390,6 +9713,7 @@
 		}
 	},
 	"2341" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Bravery",
@@ -7400,6 +9724,7 @@
 		}
 	},
 	"2342" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Auto-potion",
@@ -7410,6 +9735,7 @@
 		}
 	},
 	"2343" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Auto-ether",
@@ -7420,6 +9746,7 @@
 		}
 	},
 	"2344" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Auto-remedy",
@@ -7430,6 +9757,7 @@
 		}
 	},
 	"2345" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Manawall",
@@ -7440,6 +9768,7 @@
 		}
 	},
 	"2346" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Font of Power",
@@ -7450,6 +9779,7 @@
 		}
 	},
 	"2349" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Deep Essence of the Victor",
@@ -7460,6 +9790,7 @@
 		}
 	},
 	"2350" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hastilude",
@@ -7470,6 +9801,7 @@
 		}
 	},
 	"2351" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Hastilude Heartened",
@@ -7480,6 +9812,7 @@
 		}
 	},
 	"2352" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Unyielding Defense",
@@ -7490,6 +9823,7 @@
 		}
 	},
 	"2353" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Limitless Grace",
@@ -7500,6 +9834,7 @@
 		}
 	},
 	"2354" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Transcendent Finesse",
@@ -7510,6 +9845,7 @@
 		}
 	},
 	"2355" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Resistance Reraiser",
@@ -7520,6 +9856,7 @@
 		}
 	},
 	"2356" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Incense",
@@ -7530,6 +9867,7 @@
 		}
 	},
 	"2358" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Marching Orders",
@@ -7540,6 +9878,7 @@
 		}
 	},
 	"2359" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Marching Orders: Vigil for the Lost",
@@ -7550,6 +9889,7 @@
 		}
 	},
 	"2360" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Marching Orders: Kill It with Fire",
@@ -7560,6 +9900,7 @@
 		}
 	},
 	"2361" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Marching Orders: The Hunt for Red Choctober",
@@ -7570,6 +9911,7 @@
 		}
 	},
 	"2362" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Marching Orders: The Final Furlong",
@@ -7580,6 +9922,7 @@
 		}
 	},
 	"2363" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Marching Orders: Rise of the Robots",
@@ -7590,6 +9933,7 @@
 		}
 	},
 	"2364" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Marching Orders: Metal Fox Chaos",
@@ -7600,6 +9944,7 @@
 		}
 	},
 	"2365" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "High Morale",
@@ -7610,6 +9955,7 @@
 		}
 	},
 	"2368" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Warmonger",
@@ -7620,6 +9966,7 @@
 		}
 	},
 	"2372" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Absolute Protect",
@@ -7630,6 +9977,7 @@
 		}
 	},
 	"2378" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Haste+",
@@ -7640,6 +9988,7 @@
 		}
 	},
 	"2380" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Warmonger",
@@ -7650,6 +9999,7 @@
 		}
 	},
 	"2392" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lightning Shot",
@@ -7659,7 +10009,19 @@
 			}
 		}
 	},
+	"2401" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
 	"2402" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Evasion Up",
@@ -7670,6 +10032,7 @@
 		}
 	},
 	"2406" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Shock Spikes",
@@ -7680,6 +10043,7 @@
 		}
 	},
 	"2412" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Cover",
@@ -7690,6 +10054,7 @@
 		}
 	},
 	"2413" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Covered",
@@ -7699,7 +10064,30 @@
 			}
 		}
 	},
+	"2432" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Blutung",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
+	"2440" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Flare Star",
+				"de" : "Verschollener Flare-Stern",
+				"fr" : "Astre flamboyant oublié",
+				"jp" : "ロスト・フレアスター"
+			}
+		}
+	},
 	"2443" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Aethershield",
@@ -7710,6 +10098,7 @@
 		}
 	},
 	"2444" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Dervish",
@@ -7720,6 +10109,7 @@
 		}
 	},
 	"2448" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Boosted",
@@ -7730,6 +10120,7 @@
 		}
 	},
 	"2450" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Mimicry",
@@ -7740,6 +10131,7 @@
 		}
 	},
 	"2467" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Pride of the Lioness",
@@ -7750,6 +10142,7 @@
 		}
 	},
 	"2484" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Cleric Stance",
@@ -7760,6 +10153,7 @@
 		}
 	},
 	"2492" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Tingling",
@@ -7770,6 +10164,7 @@
 		}
 	},
 	"2493" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Cold Fog",
@@ -7780,6 +10175,7 @@
 		}
 	},
 	"2494" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Touch of Frost",
@@ -7790,6 +10186,7 @@
 		}
 	},
 	"2495" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Angel's Snack",
@@ -7800,6 +10197,7 @@
 		}
 	},
 	"2496" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Chelonian Gate",
@@ -7809,7 +10207,19 @@
 			}
 		}
 	},
+	"2499" : {
+		"dot" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Incendiary Burns",
+				"de" : "Senfbombe",
+				"fr" : "Brûlure d'ypérite",
+				"jp" : "マスタードペイン"
+			}
+		}
+	},
 	"2500" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Dragon Force",
@@ -7820,6 +10230,7 @@
 		}
 	},
 	"2502" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Phantom Flurry",
@@ -7830,6 +10241,7 @@
 		}
 	},
 	"2503" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Aetherial Ward",
@@ -7840,6 +10252,7 @@
 		}
 	},
 	"2513" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Formless Fist",
@@ -7850,6 +10263,7 @@
 		}
 	},
 	"2514" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Six-sided Star",
@@ -7860,6 +10274,7 @@
 		}
 	},
 	"2528" : {
+		"dot" : false,
 		"locales" : {
 			"name" : {
 				"en" : "Ice Spikes",

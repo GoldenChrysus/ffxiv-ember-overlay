@@ -586,7 +586,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(),
+								options  : () => LocalizationService.getEffectOptions(false),
 								value    : function() {
 									return this.props.settings.spells_mode.effects;
 								}
@@ -596,6 +596,27 @@ const SettingsSchema = {
 								type     : "checkbox",
 								value    : function() {
 									return this.props.settings.spells_mode.reverse_effect;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.dots",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getEffectOptions(true),
+								value    : function() {
+									return this.props.settings.spells_mode.dots;
+								}
+							},
+							{
+								key_path : "spells_mode.reverse_dot",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.reverse_dot;
 								}
 							}
 						]
