@@ -72,7 +72,7 @@
 			"title"       : {
 				"en" : "Text to Speech",
 				"pt" : "Texto em Voz",
-				"cn" : "Text to Speech",
+				"cn" : "TTS",
 				"jp" : "音声読み上げ",
 				"de" : "Text zu Sprache",
 				"es" : "Text to Speech",
@@ -83,7 +83,7 @@
 				{
 					"en" : "Text to Speech Setup",
 					"pt" : "Texto em Voz Setup",
-					"cn" : "Text to Speech Setup",
+					"cn" : "TTS设置",
 					"jp" : "音声読み上げ Setup",
 					"de" : "Text zu Sprache Setup",
 					"es" : "Text to Speech Setup",
@@ -320,7 +320,7 @@
 			"title" : {
 				"en" : "Spell Timers",
 				"pt" : "Temporizadores das Magias",
-				"cn" : "Spell Timers",
+				"cn" : "冷却监控",
 				"jp" : "スペルタイマー",
 				"de" : "Zauber Timer",
 				"es" : "Spell Timers",
@@ -331,7 +331,7 @@
 				{
 					"en" : "Spells",
 					"pt" : "Magias",
-					"cn" : "法术",
+					"cn" : "技能",
 					"jp" : "スペル",
 					"de" : "Zauber",
 					"es" : "Hechizos",
@@ -341,7 +341,7 @@
 				{
 					"en" : "Effects/Buffs",
 					"pt" : "Efeitos/Buffs",
-					"cn" : "特效/Buffs",
+					"cn" : "效果/Buff",
 					"jp" : "効果/バフ",
 					"de" : "Effekte/Buffs",
 					"es" : "Efectos/Buffs",
@@ -365,7 +365,7 @@
 		"interface.language" : {
 			"en" : "Language",
 			"pt" : "Língua",
-			"cn" : "语",
+			"cn" : "语言",
 			"jp" : "言語",
 			"de" : "Sprache",
 			"es" : "Idioma",
@@ -455,7 +455,7 @@
 		"interface.hide_top_bar" : {
 			"en" : "Hide Top Bar",
 			"pt" : "Hide Top Bar",
-			"cn" : "Hide Top Bar",
+			"cn" : "隐藏顶栏",
 			"jp" : "Hide Top Bar",
 			"de" : "Hide Top Bar",
 			"es" : "Hide Top Bar",
@@ -535,7 +535,7 @@
 		"tts.language" : {
 			"en" : "Language",
 			"pt" : "Língua",
-			"cn" : "语",
+			"cn" : "语言",
 			"jp" : "言語",
 			"de" : "Sprache",
 			"es" : "Idioma",
@@ -545,7 +545,7 @@
 		"tts.rules" : {
 			"en" : "Rules",
 			"pt" : "Regras",
-			"cn" : "Rules",
+			"cn" : "规则",
 			"jp" : "ルール",
 			"de" : "Regeln",
 			"es" : "Rules",
@@ -805,7 +805,7 @@
 		"spells_mode.effects" : {
 			"en" : "Effects to Track",
 			"pt" : "Efeitos a Rastrear",
-			"cn" : "Effects to Track",
+			"cn" : "监控的效果",
 			"jp" : "Effects to Track",
 			"de" : "Effekte im Überblick",
 			"es" : "Effects to Track",
@@ -815,7 +815,7 @@
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
 			"pt" : "Magias Por Coluna",
-			"cn" : "Spells Per Row",
+			"cn" : "每行显示数",
 			"jp" : "一列のスペル数",
 			"de" : "Zauber pro Reihe",
 			"es" : "Spells Per Row",
@@ -825,7 +825,7 @@
 		"spells_mode.show_icon" : {
 			"en" : "Show Spell Icon",
 			"pt" : "Mostrar Ícone da Magia",
-			"cn" : "Show Spell Icon",
+			"cn" : "显示技能图标",
 			"jp" : "スペルアイコンを表示",
 			"de" : "Zaubericons anzeigen",
 			"es" : "Show Spell Icon",
@@ -835,7 +835,7 @@
 		"spells_mode.use_tts" : {
 			"en" : "Use Text to Speech",
 			"pt" : "Usar Texto em Voz",
-			"cn" : "Use Text to Speech",
+			"cn" : "开启TTS",
 			"jp" : "音声読み上げ",
 			"de" : "Text zu Sprache verwenden",
 			"es" : "Use Text to Speech",
@@ -845,7 +845,7 @@
 		"spells_mode.minimal_layout" : {
 			"en" : "Minimal Layout",
 			"pt" : "Layout Minimalista",
-			"cn" : "Minimal Layout",
+			"cn" : "紧凑布局",
 			"jp" : "ミニマルレイアウト",
 			"de" : "Mimimales Layout",
 			"es" : "Minimal Layout",
@@ -855,7 +855,7 @@
 		"spells_mode.invert_vertical" : {
 			"en" : "Invert Vertical",
 			"pt" : "Invert Vertical",
-			"cn" : "Invert Vertical",
+			"cn" : "上下颠倒",
 			"jp" : "Invert Vertical",
 			"de" : "Invert Vertical",
 			"es" : "Invert Vertical",
@@ -865,7 +865,7 @@
 		"spells_mode.invert_horizontal" : {
 			"en" : "Invert Horizontal",
 			"pt" : "Invert Horizontal",
-			"cn" : "Invert Horizontal",
+			"cn" : "左右颠倒",
 			"jp" : "Invert Horizontal",
 			"de" : "Invert Horizontal",
 			"es" : "Invert Horizontal",
@@ -875,7 +875,7 @@
 		"spells_mode.reverse_skill" : {
 			"en" : "Reverse Indicator for Spells",
 			"pt" : "Reverse Indicator for Spells",
-			"cn" : "Reverse Indicator for Spells",
+			"cn" : "反向指示技能进度条",
 			"jp" : "Reverse Indicator for Spells",
 			"de" : "Indikator für Zauber umdrehen",
 			"es" : "Reverse Indicator for Spells",
@@ -885,7 +885,7 @@
 		"spells_mode.reverse_effect" : {
 			"en" : "Reverse Indicator for Effects",
 			"pt" : "Reverse Indicator for Effects",
-			"cn" : "Reverse Indicator for Effects",
+			"cn" : "反向指示效果进度条",
 			"jp" : "Reverse Indicator for Effects",
 			"de" : "Idikator für Effekte umdrehen",
 			"es" : "Reverse Indicator for Effects",
@@ -895,7 +895,7 @@
 		"spells_mode.warning_threshold" : {
 			"en" : "Warning Threshold (In Seconds)",
 			"pt" : "Warning Threshold (In Seconds)",
-			"cn" : "Warning Threshold (In Seconds)",
+			"cn" : "提示阈值（秒）",
 			"jp" : "Warning Threshold (In Seconds)",
 			"de" : "Warnungen maximal anzeigen für (in Sekunden)",
 			"es" : "Warning Threshold (In Seconds)",
@@ -959,7 +959,7 @@
 			"critical.tank" : {
 				"en" : "A tank's HP is below:",
 				"pt" : "O PV de um tank está abaixo de:",
-				"cn" : "A tank's HP is below:",
+				"cn" : "坦克血量低于：",
 				"jp" : "HPが%以下になっているタンクがいます:",
 				"de" : "HP eines Verteidigers beträgt weniger als:",
 				"es" : "A tank's HP is below:",
@@ -969,7 +969,7 @@
 			"critical.dps" : {
 				"en" : "A DPS' HP is below:",
 				"pt" : "O PV de um DPS está abaixo de:",
-				"cn" : "A DPS' HP is below:",
+				"cn" : "DPS血量低于：",
 				"jp" : "HPが%以下になっているDPSがいます:",
 				"de" : "HP eines DPS beträgt weniger als:",
 				"es" : "A DPS' HP is below:",
@@ -979,7 +979,7 @@
 			"critical.heal" : {
 				"en" : "A healer's HP is below:",
 				"pt" : "O PV de um healer está abaixo de:",
-				"cn" : "A healer's HP is below:",
+				"cn" : "治疗血量低于：",
 				"jp" : "HPが%以下になっているヒーラーがいます:",
 				"de" : "HP eines Heilers beträgt weniger als:",
 				"es" : "A healer's HP is below:",
@@ -989,7 +989,7 @@
 			"critical.all" : {
 				"en" : "Anyone's HP is below:",
 				"pt" : "O PV de alguém está abaixo de:",
-				"cn" : "Anyone's HP is below:",
+				"cn" : "任何角色血量低于：",
 				"jp" : "HPが%以下になっている人がいます:",
 				"de" : "HP eines beliebigen Spielers beträgt unter:",
 				"es" : "Anyone's HP is below:",
@@ -999,7 +999,7 @@
 			"aggro" : {
 				"en" : "You obtain aggro",
 				"pt" : "You obtain aggro",
-				"cn" : "You obtain aggro",
+				"cn" : "你拉到了仇恨",
 				"jp" : "タゲを取りました",
 				"de" : "Du hast Aggro erhalten",
 				"es" : "You obtain aggro",
@@ -1009,7 +1009,7 @@
 			"top.dps" : {
 				"en" : "You obtain top DPS",
 				"pt" : "Você está no topo do DPS",
-				"cn" : "You obtain top DPS",
+				"cn" : "你的DPS处于最高",
 				"jp" : "DPSトップになりました",
 				"de" : "Du hast den meisten DPS",
 				"es" : "You obtain top DPS",
@@ -1019,7 +1019,7 @@
 			"top.hps" : {
 				"en" : "You obtain top HPS",
 				"pt" : "Você está no topo do CPS",
-				"cn" : "You obtain top HPS",
+				"cn" : "你的HPS处于最高",
 				"jp" : "HPSトップになりました",
 				"de" : "Du hast die meisten HPS",
 				"es" : "You obtain top HPS",
@@ -1029,7 +1029,7 @@
 			"top.tps" : {
 				"en" : "You obtain top DTPS",
 				"pt" : "Você está no topo do DRPS",
-				"cn" : "You obtain top DTPS",
+				"cn" : "你的承伤处于最高",
 				"jp" : "被DPSトップになりました",
 				"de" : "Du hast den meisten erlittenen DPS",
 				"es" : "You obtain top DTPS",
@@ -1039,7 +1039,7 @@
 			"encounter.start" : {
 				"en" : "An encounter starts",
 				"pt" : "Um encontro começou",
-				"cn" : "An encounter starts",
+				"cn" : "战斗开始",
 				"jp" : "戦闘開始",
 				"de" : "Kampf hat begonnen",
 				"es" : "An encounter starts",
@@ -1049,7 +1049,7 @@
 			"encounter.end" : {
 				"en" : "An encounter ends",
 				"pt" : "Um encontro terminou",
-				"cn" : "An encounter ends",
+				"cn" : "战斗结束",
 				"jp" : "戦闘終了",
 				"de" : "Kampf wurde beendet",
 				"es" : "An encounter ends",
@@ -1182,7 +1182,7 @@
 		"broken_link"        : {
 			"en" : "Link not working? Copy this link and paste it into your regular Web browser:",
 			"pt" : "Link não funciona? Clique neste endereço e copie no seu navegador da web:",
-			"cn" : "链接无效？ 复制此链接并粘贴到Web浏览器中:",
+			"cn" : "链接无效？ 复制此链接并粘贴到网页浏览器中:",
 			"jp" : "リンクが正しく動かない？このリンクをコピーして普段のブラウザーに貼りつけてみてください:",
 			"de" : "Funktioniert dein Link nicht? Kopiere diesen Link und füge ihn in einen Browser deiner Wahl ein:",
 			"es" : "No funciona el link? Copia el siguiente link y pégalo en cualquier navegador de internet:",
@@ -1323,7 +1323,7 @@
 		"criteria" : {
 			"en" : "Criteria",
 			"pt" : "Critério",
-			"cn" : "Criteria",
+			"cn" : "条件",
 			"jp" : "条件",
 			"de" : "Kriterien",
 			"es" : "Criteria",
@@ -1333,7 +1333,7 @@
 		"value" : {
 			"en" : "Value",
 			"pt" : "Valor",
-			"cn" : "Value",
+			"cn" : "值",
 			"jp" : "価値",
 			"de" : "Wert",
 			"es" : "Value",
