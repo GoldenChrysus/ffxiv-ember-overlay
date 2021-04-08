@@ -349,14 +349,14 @@
 					"kr" : "이펙트/Buffs"
 				},
 				{
-					"en" : "DoT's",
-					"pt" : "DoT's",
-					"cn" : "DoT's",
-					"jp" : "DoT's",
-					"de" : "DoT's",
-					"es" : "DoT's",
-					"fr" : "DoT's",
-					"kr" : "DoT's"
+					"en" : "DOT's",
+					"pt" : "DOT's",
+					"cn" : "DOT's",
+					"jp" : "DOT's",
+					"de" : "DOT's",
+					"es" : "DOT's",
+					"fr" : "DOT's",
+					"kr" : "DOT's"
 				},
 				{
 					"en" : "General",
@@ -823,14 +823,14 @@
 			"kr" : "확인할 이펙트들"
 		},
 		"spells_mode.dots" : {
-			"en" : "DoT'S to Track",
-			"pt" : "DoT's to Track",
-			"cn" : "监控的DoT",
-			"jp" : "DoT'S to Track",
-			"de" : "DoT's to Track",
-			"es" : "DoT'S to Track",
-			"fr" : "DoT'S to Track",
-			"kr" : "DoT's to Track"
+			"en" : "DOT'S to Track",
+			"pt" : "DOT's to Track",
+			"cn" : "监控的DOT",
+			"jp" : "DOT'S to Track",
+			"de" : "DOT's to Track",
+			"es" : "DOT'S to Track",
+			"fr" : "DOT'S to Track",
+			"kr" : "DOT's to Track"
 		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
@@ -913,14 +913,14 @@
 			"kr" : "Reverse Indicator for Effects"
 		},
 		"spells_mode.reverse_dot" : {
-			"en" : "Reverse Indicator for DoT's",
-			"pt" : "Reverse Indicator for DoT's",
-			"cn" : "反向指示DoT进度条",
-			"jp" : "Reverse Indicator for DoT's",
-			"de" : "Idikator für DoT umdrehen",
-			"es" : "Reverse Indicator for DoT's",
-			"fr" : "Reverse Indicator for DoT's",
-			"kr" : "Reverse Indicator for DoT's"
+			"en" : "Reverse Indicator for DOT's",
+			"pt" : "Reverse Indicator for DOT's",
+			"cn" : "反向指示DOT进度条",
+			"jp" : "Reverse Indicator for DOT's",
+			"de" : "Idikator für DOT umdrehen",
+			"es" : "Reverse Indicator for DOT's",
+			"fr" : "Reverse Indicator for DOT's",
+			"kr" : "Reverse Indicator for DOT's"
 		},
 		"spells_mode.warning_threshold" : {
 			"en" : "Warning Threshold (In Seconds)",
