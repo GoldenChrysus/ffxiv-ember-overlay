@@ -1,4 +1,26 @@
 {
+	"3" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Sprint",
+				"de" : "Sprint",
+				"fr" : "Sprint",
+				"jp" : "スプリント"
+			}
+		}
+	},
+	"6" : {
+		"recast" : 900.0,
+		"locales" : {
+			"name" : {
+				"en" : "Return",
+				"de" : "Rückführung",
+				"fr" : "Rapatriement",
+				"jp" : "デジョン"
+			}
+		}
+	},
 	"17" : {
 		"recast" : 120.0,
 		"locales" : {
@@ -494,6 +516,28 @@
 			}
 		}
 	},
+	"1695" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dig",
+				"de" : "Ausgraben",
+				"fr" : "Excavation",
+				"jp" : "ディグ"
+			}
+		}
+	},
+	"2238" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Spindly Finger",
+				"de" : "Bombastik-Bombe",
+				"fr" : "Boulet-torpille",
+				"jp" : "雷撃弾"
+			}
+		}
+	},
 	"2241" : {
 		"recast" : 120.0,
 		"locales" : {
@@ -656,6 +700,50 @@
 				"de" : "Rikoschettschuss",
 				"fr" : "Ricochet",
 				"jp" : "リコシェット"
+			}
+		}
+	},
+	"2894" : {
+		"recast" : 600.0,
+		"locales" : {
+			"name" : {
+				"en" : "Eternity Ring",
+				"de" : "Ring der Ewigkeit",
+				"fr" : "Anneau du lien éternel",
+				"jp" : "エターナルリング"
+			}
+		}
+	},
+	"3378" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Spindly Finger",
+				"de" : "Bombastik-Bombe",
+				"fr" : "Boulet-torpille",
+				"jp" : "雷撃弾"
+			}
+		}
+	},
+	"3379" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Pitch Bomb",
+				"de" : "Pechbombe",
+				"fr" : "Obus gluant",
+				"jp" : "粘着弾"
+			}
+		}
+	},
+	"3506" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Low Voltage",
+				"de" : "Niedrigstrom",
+				"fr" : "Basse tension",
+				"jp" : "低圧電流"
 			}
 		}
 	},
@@ -1132,6 +1220,17 @@
 			}
 		}
 	},
+	"5136" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Starry Heavens",
+				"de" : "Funkelnder Himmel",
+				"fr" : "Pétard céleste",
+				"jp" : "ヘヴンスクラッカー"
+			}
+		}
+	},
 	"7382" : {
 		"recast" : 10.0,
 		"locales" : {
@@ -1272,6 +1371,17 @@
 				"de" : "Drachenblick",
 				"fr" : "Vue de dragon",
 				"jp" : "ドラゴンサイト"
+			}
+		}
+	},
+	"7400" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Nastrond",
+				"de" : "Nastrond",
+				"fr" : "Naströnd",
+				"jp" : "ナーストレンド"
 			}
 		}
 	},
@@ -1814,6 +1924,28 @@
 			}
 		}
 	},
+	"7621" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Diffractive Magitek Cannon",
+				"de" : "Diffraktive Magitek-Kanone",
+				"fr" : "Canon diffractif magitek",
+				"jp" : "拡散魔導カノン"
+			}
+		}
+	},
+	"7622" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "High-powered Magitek Cannon",
+				"de" : "Hochenergie-Magitek-Kanone",
+				"fr" : "Canon surpuissant magitek",
+				"jp" : "高出力魔導カノン"
+			}
+		}
+	},
 	"7863" : {
 		"recast" : 40.0,
 		"locales" : {
@@ -1844,6 +1976,17 @@
 				"de" : "Hai-Auge II",
 				"fr" : "Œil de requin II",
 				"jp" : "シャークアイII"
+			}
+		}
+	},
+	"8624" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Magitek Pulse",
+				"de" : "Magitek-Puls",
+				"fr" : "Impulsion magitek",
+				"jp" : "魔導パルス"
 			}
 		}
 	},
@@ -1932,6 +2075,402 @@
 				"de" : "Wogenschleier",
 				"fr" : "Voile du Déchaîneur",
 				"jp" : "水神のヴェール"
+			}
+		}
+	},
+	"12958" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Aetherweaver",
+				"de" : "Vermächtnis des Zauberers",
+				"fr" : "Mémoire d'un prêtre guerrier",
+				"jp" : "術士の記憶"
+			}
+		}
+	},
+	"12959" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Martialist",
+				"de" : "Vermächtnis des Kämpfers",
+				"fr" : "Mémoire d'un protecteur intrépide",
+				"jp" : "闘士の記憶"
+			}
+		}
+	},
+	"12960" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Platebearer",
+				"de" : "Vermächtnis des Ritters",
+				"fr" : "Mémoire d'un soldat cuirassé",
+				"jp" : "重騎兵の記憶"
+			}
+		}
+	},
+	"12961" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Guardian",
+				"de" : "Vermächtnis des Wächters",
+				"fr" : "Mémoire d'un gardien",
+				"jp" : "守護者の記憶"
+			}
+		}
+	},
+	"12962" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Ordained",
+				"de" : "Vermächtnis des Priesters",
+				"fr" : "Mémoire d'un prêtre",
+				"jp" : "司祭の記憶"
+			}
+		}
+	},
+	"12963" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Skirmisher",
+				"de" : "Vermächtnis des Kampfkünstlers",
+				"fr" : "Mémoire d'un combattant",
+				"jp" : "武人の記憶"
+			}
+		}
+	},
+	"12964" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Watcher",
+				"de" : "Vermächtnis des Spähers",
+				"fr" : "Mémoire d'un éclaireur",
+				"jp" : "斥候の記憶"
+			}
+		}
+	},
+	"12965" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Templar",
+				"de" : "Vermächtnis des heiligen Ritters",
+				"fr" : "Mémoire d'un chevalier sacré",
+				"jp" : "聖騎士の記憶"
+			}
+		}
+	},
+	"12966" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Irregular",
+				"de" : "Vermächtnis des Berserkers",
+				"fr" : "Mémoire d'un guerrier enragé",
+				"jp" : "狂戦士の記憶"
+			}
+		}
+	},
+	"12967" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Breathtaker",
+				"de" : "Vermächtnis des Diebes",
+				"fr" : "Mémoire d'un voleur",
+				"jp" : "盗賊の記憶"
+			}
+		}
+	},
+	"12968" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Spirit of the Remembered",
+				"de" : "Segen des Helden",
+				"fr" : "Égide des héros vaillants",
+				"jp" : "英傑の加護"
+			}
+		}
+	},
+	"12971" : {
+		"recast" : 300.0,
+		"locales" : {
+			"name" : {
+				"en" : "Death L",
+				"de" : "Logos-Tod",
+				"fr" : "Évocation Logos : Mort",
+				"jp" : "ロゴス・デス"
+			}
+		}
+	},
+	"12975" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Swift L",
+				"de" : "Logos-Eile",
+				"fr" : "Évocation Logos : Vélocité",
+				"jp" : "ロゴス・スウィフト"
+			}
+		}
+	},
+	"12976" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Featherfoot L",
+				"de" : "Logos-Leichtfuß",
+				"fr" : "Évocation Logos : Pieds légers",
+				"jp" : "ロゴス・フェザーステップ"
+			}
+		}
+	},
+	"12978" : {
+		"recast" : 300.0,
+		"locales" : {
+			"name" : {
+				"en" : "Catastrophe L",
+				"de" : "Logos-Magieexplosion",
+				"fr" : "Évocation Logos : Catastrophe",
+				"jp" : "ロゴス・カタスト"
+			}
+		}
+	},
+	"12981" : {
+		"recast" : 15.0,
+		"locales" : {
+			"name" : {
+				"en" : "Stealth L",
+				"de" : "Logos-Tarnung",
+				"fr" : "Évocation Logos : Furtivité",
+				"jp" : "ロゴス・ステルス"
+			}
+		}
+	},
+	"12984" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Tranquilizer L",
+				"de" : "Logos-Betäubung",
+				"fr" : "Évocation Logos : Tranquillisant",
+				"jp" : "ロゴス・トランキライザー"
+			}
+		}
+	},
+	"12985" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Bloodbath L",
+				"de" : "Logos-Blutbad",
+				"fr" : "Évocation Logos : Bain de sang",
+				"jp" : "ロゴス・ブラッドバス"
+			}
+		}
+	},
+	"12986" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Rejuvenate L",
+				"de" : "Logos-Aufladung",
+				"fr" : "Évocation Logos : Restauration",
+				"jp" : "ロゴス・リチャージ"
+			}
+		}
+	},
+	"12987" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Haymaker L",
+				"de" : "Logos-Konter",
+				"fr" : "Évocation Logos : Haymaker",
+				"jp" : "ロゴス・カウンター"
+			}
+		}
+	},
+	"12988" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Rapid Recast L",
+				"de" : "Logos-Velocitas",
+				"fr" : "Évocation Logos : Recharge rapide",
+				"jp" : "ロゴス・ファストリキャスト"
+			}
+		}
+	},
+	"12995" : {
+		"recast" : 20.0,
+		"locales" : {
+			"name" : {
+				"en" : "Incense L",
+				"de" : "Logos-Hohn",
+				"fr" : "Évocation Logos : Incitation",
+				"jp" : "ロゴス・エンミティ"
+			}
+		}
+	},
+	"12998" : {
+		"recast" : 300.0,
+		"locales" : {
+			"name" : {
+				"en" : "Solid Shield L",
+				"de" : "Logos-Schild",
+				"fr" : "Évocation Logos : Protection physique",
+				"jp" : "ロゴス・フィジカルシールド"
+			}
+		}
+	},
+	"12999" : {
+		"recast" : 300.0,
+		"locales" : {
+			"name" : {
+				"en" : "Spell Shield L",
+				"de" : "Logos-Magieschild",
+				"fr" : "Évocation Logos : Protection magique",
+				"jp" : "ロゴス・マジックシールド"
+			}
+		}
+	},
+	"13001" : {
+		"recast" : 45.0,
+		"locales" : {
+			"name" : {
+				"en" : "Smite L",
+				"de" : "Logos-Schattenhieb",
+				"fr" : "Évocation Logos : Châtiment",
+				"jp" : "ロゴス・スマイト"
+			}
+		}
+	},
+	"13005" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Magic Burst L",
+				"de" : "Logos-Magieexplosion",
+				"fr" : "Évocation Logos : Explosion magique",
+				"jp" : "ロゴス・マジックバースト"
+			}
+		}
+	},
+	"13006" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Double Edge L",
+				"de" : "Logos-Zweischneid",
+				"fr" : "Évocation Logos : Double tranchant",
+				"jp" : "ロゴス・ダブルエッジ"
+			}
+		}
+	},
+	"13426" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Aetherwell",
+				"de" : "Ätherquell",
+				"fr" : "Concentration d'éther",
+				"jp" : "マナチャージ"
+			}
+		}
+	},
+	"14477" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Elder",
+				"de" : "Vermächtnis des Weisen",
+				"fr" : "Mémoire d'un sage",
+				"jp" : "賢者の記憶"
+			}
+		}
+	},
+	"14478" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Duelist",
+				"de" : "Vermächtnis des Fechtmeisters",
+				"fr" : "Mémoire d'une fine lame",
+				"jp" : "剣豪の記憶"
+			}
+		}
+	},
+	"14479" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Fiendhunter",
+				"de" : "Vermächtnis des Bogengeweihten",
+				"fr" : "Mémoire d'un archer émérite",
+				"jp" : "弓聖の記憶"
+			}
+		}
+	},
+	"14480" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Indomitable",
+				"de" : "Vermächtnis des Helden",
+				"fr" : "Mémoire d'un héros illustre",
+				"jp" : "豪傑の記憶"
+			}
+		}
+	},
+	"14842" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Hissatsu: Gyoten",
+				"de" : "Hissatsu: Gyoten",
+				"fr" : "Hissatsu : Gyôten",
+				"jp" : "必殺剣・暁天"
+			}
+		}
+	},
+	"14843" : {
+		"recast" : 15.0,
+		"locales" : {
+			"name" : {
+				"en" : "冥界恐叫打",
+				"de" : "Jenseitsschrei",
+				"fr" : "Cri de l'au-delà",
+				"jp" : "冥界恐叫打"
+			}
+		}
+	},
+	"15375" : {
+		"recast" : 120.0,
+		"locales" : {
+			"name" : {
+				"en" : "Second Wind",
+				"de" : "Chakra",
+				"fr" : "Second souffle",
+				"jp" : "内丹"
+			}
+		}
+	},
+	"15870" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Fight or Flight",
+				"de" : "Verwegenheit",
+				"fr" : "Combat acharné",
+				"jp" : "ファイト・オア・フライト"
 			}
 		}
 	},
@@ -2199,6 +2738,17 @@
 			}
 		}
 	},
+	"16436" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Soothing Potion",
+				"de" : "Kristalltrank",
+				"fr" : "Potion parfumée",
+				"jp" : "セントポーション"
+			}
+		}
+	},
 	"16461" : {
 		"recast" : 30.0,
 		"locales" : {
@@ -2306,6 +2856,39 @@
 				"de" : "Tsubamegaeshi",
 				"fr" : "Tsubamegaeshi",
 				"jp" : "燕返し"
+			}
+		}
+	},
+	"16484" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Kaeshi: Higanbana",
+				"de" : "Kaeshi Higanbana",
+				"fr" : "Kaeshi Higanbana",
+				"jp" : "返し彼岸花"
+			}
+		}
+	},
+	"16485" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Kaeshi: Goken",
+				"de" : "Kaeshi Goken",
+				"fr" : "Kaeshi Goken",
+				"jp" : "返し五剣"
+			}
+		}
+	},
+	"16486" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Kaeshi: Setsugekka",
+				"de" : "Kaeshi Setsugekka",
+				"fr" : "Kaeshi Setsugekka",
+				"jp" : "返し雪月花"
 			}
 		}
 	},
@@ -2441,6 +3024,28 @@
 			}
 		}
 	},
+	"16513" : {
+		"recast" : 55.0,
+		"locales" : {
+			"name" : {
+				"en" : "Firebird Trance",
+				"de" : "Phönix-Trance",
+				"fr" : "Transe-Phénix",
+				"jp" : "トランス・フェニックス"
+			}
+		}
+	},
+	"16516" : {
+		"recast" : 10.0,
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle Phoenix",
+				"de" : "Phönix-Entflammung",
+				"fr" : "Galvanisation Phénix",
+				"jp" : "エンキンドル・フェニックス"
+			}
+		}
+	},
 	"16527" : {
 		"recast" : 35.0,
 		"locales" : {
@@ -2529,6 +3134,17 @@
 			}
 		}
 	},
+	"16549" : {
+		"recast" : 55.0,
+		"locales" : {
+			"name" : {
+				"en" : "Firebird Trance",
+				"de" : "Phönix-Trance",
+				"fr" : "Transe-Phénix",
+				"jp" : "トランス・フェニックス"
+			}
+		}
+	},
 	"16552" : {
 		"recast" : 120.0,
 		"locales" : {
@@ -2584,6 +3200,160 @@
 			}
 		}
 	},
+	"16791" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Glittering Topaz",
+				"de" : "Egi-Attacke I: Glimmertopas",
+				"fr" : "Frappe Egi I : Éclat de topaze",
+				"jp" : "エギアサルトI：トパーズの煌き"
+			}
+		}
+	},
+	"16792" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Shining Topaz",
+				"de" : "Egi-Attacke II: Glanztopas",
+				"fr" : "Frappe Egi II : Topaze scintillante",
+				"jp" : "エギアサルトII：トパーズの輝き"
+			}
+		}
+	},
+	"16793" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Downburst",
+				"de" : "Egi-Attacke I: Fallböe",
+				"fr" : "Frappe Egi I : Rafale descendante",
+				"jp" : "エギアサルトI：ダウンバースト"
+			}
+		}
+	},
+	"16794" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Glittering Emerald",
+				"de" : "Egi-Attacke II: Glimmersmaragd",
+				"fr" : "Frappe Egi II : Éclat d'émeraude",
+				"jp" : "エギアサルトII：エメラルドの煌き"
+			}
+		}
+	},
+	"16795" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Earthen Armor",
+				"de" : "Egi-Attacke I: Gaia-Panzer",
+				"fr" : "Frappe Egi I : Armure tellurique",
+				"jp" : "エギアサルトI：大地の鎧"
+			}
+		}
+	},
+	"16796" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Mountain Buster",
+				"de" : "Egi-Attacke II: Bergsprenger",
+				"fr" : "Frappe Egi II : Casse-montagnes",
+				"jp" : "エギアサルトII：マウンテンバスター"
+			}
+		}
+	},
+	"16797" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Aerial Slash",
+				"de" : "Egi-Attacke I: Lufthieb",
+				"fr" : "Frappe Egi I : Taillade aérienne",
+				"jp" : "エギアサルトI：エリアルスラッシュ"
+			}
+		}
+	},
+	"16798" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Slipstream",
+				"de" : "Egi-Attacke II: Wirbelströmung",
+				"fr" : "Frappe Egi II : Sillage",
+				"jp" : "エギアサルトII：スリップストリーム"
+			}
+		}
+	},
+	"16799" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Crimson Cyclone",
+				"de" : "Egi-Attacke I: Zinnober-Zyklon",
+				"fr" : "Frappe Egi I : Cyclone écarlate",
+				"jp" : "エギアサルトI：クリムゾンサイクロン"
+			}
+		}
+	},
+	"16800" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Flaming Crush",
+				"de" : "Egi-Attacke II: Flammenstoß",
+				"fr" : "Frappe Egi II : Fracassement flamboyant",
+				"jp" : "エギアサルトII：フレイミングクラッシュ"
+			}
+		}
+	},
+	"16801" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle: Earthen Fury",
+				"de" : "Entflammung: Gaias Zorn",
+				"fr" : "Galvanisation : Fureur tellurique",
+				"jp" : "エンキンドル：大地の怒り"
+			}
+		}
+	},
+	"16802" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle: Aerial Blast",
+				"de" : "Entflammung: Windschlag",
+				"fr" : "Galvanisation : Rafale aérienne",
+				"jp" : "エンキンドル：エリアルブラスト"
+			}
+		}
+	},
+	"16803" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle: Inferno",
+				"de" : "Entflammung: Inferno",
+				"fr" : "Galvanisation : Flammes de l'enfer",
+				"jp" : "エンキンドル：地獄の火炎"
+			}
+		}
+	},
+	"16804" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Rough Divide",
+				"de" : "Grobspalter",
+				"fr" : "Lamineur",
+				"jp" : "ラフディバイド"
+			}
+		}
+	},
 	"16889" : {
 		"recast" : 120.0,
 		"locales" : {
@@ -2595,6 +3365,28 @@
 			}
 		}
 	},
+	"17004" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Ronkan Renew",
+				"de" : "Ronka-Erneuerung",
+				"fr" : "Maxi Soin ronka",
+				"jp" : "ロンカ・フルケア"
+			}
+		}
+	},
+	"17124" : {
+		"recast" : 25.0,
+		"locales" : {
+			"name" : {
+				"en" : "Radiant Arrow",
+				"de" : "Strahlenpfeil",
+				"fr" : "Flèche radiante",
+				"jp" : "レディアントアロー"
+			}
+		}
+	},
 	"17209" : {
 		"recast" : 10.0,
 		"locales" : {
@@ -2603,6 +3395,39 @@
 				"de" : "Hyperladung",
 				"fr" : "Hypercharge",
 				"jp" : "ハイパーチャージ"
+			}
+		}
+	},
+	"17596" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Hunter's Prudence",
+				"de" : "Jägerweisheit",
+				"fr" : "Sagesse du chasseur",
+				"jp" : "狩人の知恵"
+			}
+		}
+	},
+	"17839" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Nebula",
+				"de" : "Nebula",
+				"fr" : "Nébuleuse",
+				"jp" : "ネビュラ"
+			}
+		}
+	},
+	"17901" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Smackdown",
+				"de" : "Niederschmetterung",
+				"fr" : "Amour paternel",
+				"jp" : "スマックダウン"
 			}
 		}
 	},
@@ -2691,6 +3516,413 @@
 				"de" : "Gewissenstritt",
 				"fr" : "Pied justicier",
 				"jp" : "ジャスティスキック"
+			}
+		}
+	},
+	"18775" : {
+		"recast" : 15.0,
+		"locales" : {
+			"name" : {
+				"en" : "Skydragon Dive",
+				"de" : "Azurner Drachensturz",
+				"fr" : "Piqué du Dragon céleste",
+				"jp" : "蒼空のドラゴンダイブ"
+			}
+		}
+	},
+	"19218" : {
+		"recast" : 25.0,
+		"locales" : {
+			"name" : {
+				"en" : "Aqua Vitae",
+				"de" : "Aqua Vitae",
+				"fr" : "Aqua Vitae",
+				"jp" : "アクアヴィッテ"
+			}
+		}
+	},
+	"20496" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Aether Mine",
+				"de" : "Äthergranate",
+				"fr" : "Mine éthérée",
+				"jp" : "エーテルマイン"
+			}
+		}
+	},
+	"20692" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20693" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20694" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20695" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20696" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20697" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20698" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20699" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20700" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20703" : {
+		"recast" : 360.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Manawall",
+				"de" : "Verschollene Mana-Wand",
+				"fr" : "Mur de mana oublié",
+				"jp" : "ロスト・ウォール"
+			}
+		}
+	},
+	"20705" : {
+		"recast" : 15.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Stealth",
+				"de" : "Verschollene Coeurl-Pfoten",
+				"fr" : "Furtivité oubliée",
+				"jp" : "ロスト・ステルス"
+			}
+		}
+	},
+	"20708" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Swift",
+				"de" : "Verschollene Eile",
+				"fr" : "Vélocité oubliée",
+				"jp" : "ロスト・スウィフト"
+			}
+		}
+	},
+	"20715" : {
+		"recast" : 120.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Font of Magic",
+				"de" : "Verschollene Magiefontäne",
+				"fr" : "Fontaine de magie oubliée",
+				"jp" : "ロスト・マジックフォント"
+			}
+		}
+	},
+	"20716" : {
+		"recast" : 300.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Font of Skill",
+				"de" : "Verschollene Technikfontäne",
+				"fr" : "Fontaine de technique oubliée",
+				"jp" : "ロスト・スキルフォント"
+			}
+		}
+	},
+	"20717" : {
+		"recast" : 120.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Font of Power",
+				"de" : "Verschollene Machtfontäne",
+				"fr" : "Fontaine de puissance oubliée",
+				"jp" : "ロスト・パワーフォント"
+			}
+		}
+	},
+	"20718" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Slash",
+				"de" : "Verschollener Schlitzer",
+				"fr" : "Taillade oubliée",
+				"jp" : "ロスト・スラッシュ"
+			}
+		}
+	},
+	"20719" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Death",
+				"de" : "Verschollener Tod",
+				"fr" : "Mort oubliée",
+				"jp" : "ロスト・デス"
+			}
+		}
+	},
+	"20720" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Noble Ends",
+				"de" : "Gemüt der Verdrossenheit",
+				"fr" : "Seuil de la frénésie",
+				"jp" : "背水の境地"
+			}
+		}
+	},
+	"20721" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Honored Sacrifice",
+				"de" : "Gemüt der Ungehaltenheit",
+				"fr" : "Seuil de l'abnégation",
+				"jp" : "捨身の境地"
+			}
+		}
+	},
+	"20722" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Tireless Conviction",
+				"de" : "Gemüt der Beharrlichkeit",
+				"fr" : "Seuil de la patience",
+				"jp" : "忍耐の境地"
+			}
+		}
+	},
+	"20723" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Firm Resolve",
+				"de" : "Gemüt der Folgsamkeit",
+				"fr" : "Seuil de la préservation",
+				"jp" : "堅守の境地"
+			}
+		}
+	},
+	"20724" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Solemn Clarity",
+				"de" : "Gemüt der Besinnlichkeit",
+				"fr" : "Seuil de la contemplation",
+				"jp" : "瞑想の境地"
+			}
+		}
+	},
+	"20725" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Honed Acuity",
+				"de" : "Gemüt der Empfindsamkeit",
+				"fr" : "Seuil de la perception",
+				"jp" : "鋭敏の境地"
+			}
+		}
+	},
+	"20731" : {
+		"recast" : 20.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Incense",
+				"de" : "Verschollener Hohn",
+				"fr" : "Incitation oubliée",
+				"jp" : "ロスト・エンミティ"
+			}
+		}
+	},
+	"20734" : {
+		"recast" : 180.0,
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20737" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Potion Kit",
+				"de" : "Tränkesammlung des Widerstands",
+				"fr" : "Kit de potion de la résistance",
+				"jp" : "レジスタンスポーションキット"
+			}
+		}
+	},
+	"20738" : {
+		"recast" : 30.0,
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Ether Kit",
+				"de" : "Äthersammlung des Widerstands",
+				"fr" : "Kit d'éther de la résistance",
+				"jp" : "レジスタンスエーテルキット"
+			}
+		}
+	},
+	"20739" : {
+		"recast" : 45.0,
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Medikit",
+				"de" : "Kräutersammlung des Widerstands",
+				"fr" : "Kit médical de la résistance",
+				"jp" : "レジスタンスレメディキット"
+			}
+		}
+	},
+	"20740" : {
+		"recast" : 40.0,
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Potion",
+				"de" : "Heiltrank des Widerstands",
+				"fr" : "Potion de la résistance",
+				"jp" : "レジスタンスポーション"
+			}
+		}
+	},
+	"20940" : {
+		"recast" : 25.0,
+		"locales" : {
+			"name" : {
+				"en" : "Auto Restoration",
+				"de" : "Selbstheilung",
+				"fr" : "Auto-réparation",
+				"jp" : "自己修復"
+			}
+		}
+	},
+	"22353" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Rend Armor",
+				"de" : "Verschollener Panzerbruch",
+				"fr" : "Brise-armure oublié",
+				"jp" : "ロスト・アーマーブレイク"
+			}
+		}
+	},
+	"22354" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Seraph Strike",
+				"de" : "Verschollener Seraphenschlag",
+				"fr" : "Frappe séraphine oubliée",
+				"jp" : "ロスト・セラフストライク"
+			}
+		}
+	},
+	"22355" : {
+		"recast" : 60.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Aethershield",
+				"de" : "Verschollener Ätherschild",
+				"fr" : "Égide d'éther oubliée",
+				"jp" : "ロスト・エーテルシールド"
+			}
+		}
+	},
+	"22356" : {
+		"recast" : 90.0,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Dervish",
+				"de" : "Verschollener Rapidus",
+				"fr" : "Célérité extrême oubliée",
+				"jp" : "ロスト・スピードスター"
 			}
 		}
 	},

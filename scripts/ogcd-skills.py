@@ -1,9 +1,12 @@
 import json
+import os.path
 import requests
 import shutil
 
+from os import path
+
 def getPage(page_num):
-	url = "https://xivapi.com/search?page=" + str(page_num) + "&filters=Recast100ms>=100,IsPlayerAction=1,IsPvP=0"
+	url = "https://xivapi.com/search?page=" + str(page_num) + "&filters=ClassJobCategory!,Recast100ms>=100,IsPvP=0"
 	res = requests.get(url = url)
 
 	return res.json()
@@ -15,13 +18,18 @@ def getSkill(id):
 	return res.json()
 
 def saveImage(id, xiv_path):
+	local_path = "../public/img/icons/skills/" + str(id) + ".jpg"
+
+	if (path.exists(local_path)):
+		return
+
 	url = "https://xivapi.com/" + xiv_path
 	res = requests.get(url, stream = True)
 
 	if res.status_code == 200:
 		res.raw.decode_content = True
 
-		with open("../public/img/icons/skills/" + str(id) + ".jpg", "wb") as file:
+		with open(local_path, "wb") as file:
 			shutil.copyfileobj(res.raw, file)
 			file.close()
 
