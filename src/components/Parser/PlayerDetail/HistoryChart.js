@@ -30,20 +30,20 @@ class HistoryChart extends React.Component {
 			{
 				name       : LocalizationService.getPlayerDataTitle("encdps", "short"),
 				key        : "encdps",
-				background : "rgba(116, 51, 51, 0.40)",
-				border     : "rgba(116, 51, 51, 0.20)"
+				background : "rgba(116, 51, 51, 0.85)",
+				border     : "rgba(0, 0, 0, 0.2)"
 			},
 			{
 				name       : LocalizationService.getPlayerDataTitle("enchps", "short"),
 				key        : "enchps",
-				background : "rgba(60, 103, 47, 0.40)",
-				border     : "rgba(60, 103, 47, 0.20)"
+				background : "rgba(60, 103, 47, 0.85)",
+				border     : "rgba(0, 0, 0, 0.2)"
 			},
 			{
 				name       : LocalizationService.getPlayerDataTitle("enctps", "short"),
 				key        : "enctps",
-				background : "rgba(59, 78, 171, 0.40)",
-				border     : "rgba(59, 78, 171, 0.20)"
+				background : "rgba(59, 78, 171, 0.85)",
+				border     : "rgba(0, 0, 0, 0.2)"
 			}
 		];
 
@@ -55,10 +55,14 @@ class HistoryChart extends React.Component {
 		};
 		let player_name    = player.name;
 		let base_time      = +Object.keys(history)[0];
+		let max_values     = {};
 
 		for (let i in metrics) {
+			max_values[i] = 0;
+
 			line_data.datasets.push(
 				{
+					i               : i,
 					label           : metrics[i].name,
 					backgroundColor : metrics[i].background,
 					borderColor     : metrics[i].border,
@@ -94,13 +98,25 @@ class HistoryChart extends React.Component {
 					value = player[key];
 				}
 
+				if (value > max_values[i]) {
+					max_values[i] = value;
+				}
+
 				line_data.datasets[i].data.push(value);
 			}
 		}
 
+		line_data.datasets.sort((a, b) => {
+			if (max_values[a.i] === max_values[b.i]) {
+				return 0;
+			}
+
+			return (max_values[a.i] < max_values[b.i]) ? -1 : 1;
+		});
+
 		return (
 			<div>
-				<Line options={{color: "#fff", borderColor: "#fff"}} data={line_data} height={125}/>
+				<Line data={line_data} height={125}/>
 			</div>
 		);
 	}

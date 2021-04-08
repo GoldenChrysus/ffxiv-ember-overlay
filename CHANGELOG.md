@@ -8,7 +8,7 @@
 - Resolved issue where settings did not simultaneously distribute if multiple overlays were open
 
 ### Features
-- Added spell timers
+- Added spell timers (for skills, buffs, and DOT's)
     - Right-click on overlay and choose "Mode: Spell Timers"
     - Setup can be accessed at Settings > Spell Timers
         - Settings cog is moved to the top right of the overlay when in spell timer mode

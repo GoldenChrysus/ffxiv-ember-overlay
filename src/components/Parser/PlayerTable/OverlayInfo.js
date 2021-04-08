@@ -75,7 +75,6 @@ class OverlayInfo extends React.Component {
 						<p>This section will disappear when a tracked spell/effect is used.</p>
 					</React.Fragment>
 				);
-				break;
 
 			default:
 				return(
