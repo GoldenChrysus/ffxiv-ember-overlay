@@ -55,7 +55,7 @@ class SpellGrid extends React.Component {
 	}
 
 	render() {
-		let overlay_info = ((this.props.encounter && Object.keys(this.props.encounter).length) || Object.keys(this.props.spells).length) ? "" : <OverlayInfo/>;
+		let overlay_info = ((this.props.encounter && Object.keys(this.props.encounter).length) || Object.keys(this.props.spells).length) ? "" : <OverlayInfo mode="spells" settings={this.props.settings}/>;
 		let row_limit    = this.props.settings.spells_per_row;
 		let width        = (100 / row_limit);
 		let spells       = this.buildSpells();

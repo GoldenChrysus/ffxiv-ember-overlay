@@ -46,8 +46,7 @@ class OverlayInfo extends React.Component {
 		return (
 			<div id="overlay-info">
 				<h3>Ember Overlay</h3>
-				<p>This section will disappear when an encounter begins.</p>
-				<p>Try the new spell timers by right-clicking and choosing "Mode: Spell Timers"!</p>
+				{this.getInfoText()}
 
 				<div id="funding">
 					<span onClick={this.openFundingLink.bind(this, "cash")} ref="cash"><img src="img/buttons/funding/cash.svg" alt="Donate on Cash App" height="20"/></span>
@@ -62,6 +61,30 @@ class OverlayInfo extends React.Component {
 				{this.state.changelog}
 			</div>
 		);
+	}
+
+	getInfoText() {
+		switch (this.props.mode) {
+			case "spells":
+				let configure_text = (!this.props.settings.spells.length && !this.props.settings.effects.length)
+					? <p>You are not tracking any spells or effects. Please add some at Settings > Spell Timers.</p>
+					: "";
+				return(
+					<React.Fragment>
+						{configure_text}
+						<p>This section will disappear when a tracked spell/effect is used.</p>
+					</React.Fragment>
+				);
+				break;
+
+			default:
+				return(
+					<React.Fragment>
+						<p>This section will disappear when an encounter begins.</p>
+						<p>Try the new spell timers by right-clicking and choosing "Mode: Spell Timers"!</p>
+					</React.Fragment>
+				);
+		}
 	}
 
 	openFundingLink(rel) {

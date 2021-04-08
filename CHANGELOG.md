@@ -16,9 +16,15 @@
     - "Minimal Layout" setting turns the spell timers into compact bars
     - "Warning Threshold" setting causes the spell to begin flashing when the duration is expiring
     - The "Reverse" options cause the cooldown bar to deplete left-to-right instead of right-to-left
+    - "Invert" causes the spells to stack from bottom-to-top, right-to-left instead of top-to-bottom, left-to-right
+- Added classic theme
+    - Setting to enable is located at Settings > Interface > Theme
 
 ### UI Changes
-- N/A
+- Theme setting (Settings > Interface > Theme) is now a select dropdown
+    - Default theme is "FFXIV Dark"
+    - Previous "Use Light Theme" setting now corresponds to "FFXIV Light"
+    - New classic theme is "FFXIV Classic"
 
 ### Code Changes
 - N/A
