@@ -1,5 +1,5 @@
 # FFXIV Ember Overlay & Spell Timers
-Powerful, data-driven DPS overlay and spell timers for Final Fantasy XIV. Can be used with the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/releases) and [ACTWebSocket](https://github.com/ZCube/ACTWebSocket) plugins for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php).
+Powerful, data-focused DPS overlay and spell timers for Final Fantasy XIV. Can be used with the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/releases) and [ACTWebSocket](https://github.com/ZCube/ACTWebSocket) plugins for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php).
 
 [![GitHub](https://img.shields.io/github/license/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/master/LICENSE)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)
@@ -44,15 +44,19 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 ### Spell Timers (coming soon)
 **Spell, buff, and DOT timers.**
-![Spell, buff, and DOT timers](https://i.imgur.com/yqEnnnq.gif "Spell, buff, and DOT timers")
+
+![Spell, buff, and DOT timers](https://i.imgur.com/ujxgqwv.gif "Spell, buff, and DOT timers")
 
 **Optional minimal layout.**
+
 ![Minimal layout](https://i.imgur.com/KM1bQdr.png "Minimal layout")
 
 **Flexible layout options.**
+
 ![Flexible layout](https://i.imgur.com/eluTIe2.png "Flexible layout")
 
 **Powerful but easy spell timer setup.**
+
 ![Powerful but easy setup](https://i.imgur.com/ck5o09j.png "Powerful but easy setup")
 
 ### Text to Speech Alerts (coming soon)
@@ -63,15 +67,19 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 ### Quality of life features.
 **Collapsible interface to save space and show only your stats.**
+
 ![Collapsible interface](https://i.imgur.com/7MDEnJm.gif "Collapsible interface")
 
 **Blur player names for privacy (optionally blur job icons).**
+
 ![Blur player names](https://i.imgur.com/AWHwZ03.gif "Blur player names")
 
 **Browse encounter history (up to five encounters).**
+
 ![View encounter history](https://i.imgur.com/HfAq3kc.png "View encounter history")
 
 **Minimize the entire overlay to the left or right when not in use to free up screen space.**
+
 ![Minimize when not in use](https://i.imgur.com/HSiTNCF.gif "Minimize when not in use")
 
 ### Easily see the recent changes since your last visit
