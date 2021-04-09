@@ -18,7 +18,7 @@ Powerful, data-focused DPS overlay and spell timers for Final Fantasy XIV. Can b
 <a href="https://chrysus.live/tip"><img src="https://chrysus.xyz/projects/ffxiv-ember-overlay/public/img/buttons/funding/streamlabs.svg" alt="Donate at Streamlabs" height="23"></a>
 
 ## Usage with OverlayPlugin
-Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
+Create a new overlay from one of the Ember presets. Alternatively, set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
 
 ## Usage with ACTWebSocket with OverlayProc
 Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and create a new overlay window from this skin.
@@ -32,7 +32,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Healing tab](https://i.imgur.com/TxqEJ1t.png "Healing tab")
 ![Tanking tab](https://i.imgur.com/uMXYkyu.png "Tanking tab")
 ![Raid tab](https://i.imgur.com/8pKG0uC.png "Raid tab")
-![Aggro tab](https://i.imgur.com/dP79Es6.png "Aggro tab")
+![Aggro tab](https://i.imgur.com/H79KkfB.png "Aggro tab")
 
 ### Click on any player's name to view detailed statistics.
 ![Detailed statistics](https://i.imgur.com/G3UOoFR.gif "Detailed statistics")
