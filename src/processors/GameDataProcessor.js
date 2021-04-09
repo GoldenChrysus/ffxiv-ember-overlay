@@ -273,6 +273,9 @@ class GameDataProcessor  {
 
 	parseSpellLogLine(data, state) {
 		data = data.line;
+		
+		let in_use = false;
+
 
 		switch (+data[0]) {
 			case 21:
@@ -280,27 +283,31 @@ class GameDataProcessor  {
 				let skill_id = String(parseInt(data[4], 16));
 
 				if (state.internal.character_id !== parseInt(data[2], 16)) {
-					return state;
+					return in_use;
 				}
 
 				if (state.settings.spells_mode.spells.indexOf(skill_id) === -1) {
-					return state;
+					return in_use;
 				}
 
-				state.internal.spells.in_use[`skill-${skill_id}`] = {
+				if (in_use === false) {
+					in_use = {};
+				}
+
+				in_use[`skill-${skill_id}`] = {
 					type : "skill",
 					id   : skill_id,
 					time : data[1],
 					name : data[5]
 				};
 
-				return state;
+				return in_use;
 
 			case 26:
 				let effect_id = String(parseInt(data[2], 16));
 
 				if (!SkillData.Effects[effect_id]) {
-					return state;
+					return in_use;
 				}
 
 				let valid_names  = [];
@@ -309,7 +316,7 @@ class GameDataProcessor  {
 				let setting_key  = (dot) ? "dots" : "effects";
 
 				if (state.internal.character_id !== parseInt(data[player_index], 16)) {
-					return state;
+					return in_use;
 				}
 
 				for (let id of state.settings.spells_mode[setting_key]) {
@@ -317,10 +324,14 @@ class GameDataProcessor  {
 				}
 
 				if (valid_names.indexOf(LocalizationService.getEffectName(effect_id, "en")) === -1) {
-					return state;
+					return in_use;
 				}
 
-				state.internal.spells.in_use[`effect-${effect_id}`] = {
+				if (in_use === false) {
+					in_use = {};
+				}
+
+				in_use[`effect-${effect_id}`] = {
 					type     : "effect",
 					id       : effect_id,
 					time     : data[1],
@@ -328,10 +339,10 @@ class GameDataProcessor  {
 					duration : +data[4]
 				};
 
-				return state;
+				return in_use;
 
 			default:
-				return state;
+				return in_use;
 		}
 	}
 }

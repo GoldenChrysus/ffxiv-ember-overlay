@@ -257,8 +257,14 @@ function rootReducer(state, action) {
 					break;
 
 				case "spells":
-					new_state = clone(state);
-					new_state = GameDataProcessor.parseSpellLogLine(action.payload, new_state);
+					let in_use = GameDataProcessor.parseSpellLogLine(action.payload, state);
+
+					if (in_use !== false) {
+						new_state = clone(state);
+
+						new_state.internal.spells.in_use = in_use;
+					}
+
 					break;
 				
 				default:
