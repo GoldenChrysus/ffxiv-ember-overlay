@@ -45,7 +45,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ### Spell Timers (coming soon)
 **Spell, buff, and DOT timers.**
 
-![Spell, buff, and DOT timers](https://i.imgur.com/ujxgqwv.gif "Spell, buff, and DOT timers")
+![Spell, buff, and DOT timers](https://i.imgur.com/otZV384.gif "Spell, buff, and DOT timers")
 
 **Optional minimal layout.**
 
