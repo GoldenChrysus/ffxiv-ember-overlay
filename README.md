@@ -57,7 +57,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 **Powerful but easy spell timer setup.**
 
-![Powerful but easy setup](https://i.imgur.com/ck5o09j.png "Powerful but easy setup")
+![Powerful but easy setup](https://i.imgur.com/z8UPg7u.png "Powerful but easy setup")
 
 ### Text to speech alerts (coming soon).
 ![Customizable text to speech alerts](https://i.imgur.com/cMj0OJF.png "Customizable text to speech alerts")

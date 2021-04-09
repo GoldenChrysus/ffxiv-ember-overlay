@@ -823,13 +823,13 @@
 			"kr" : "확인할 이펙트들"
 		},
 		"spells_mode.dots" : {
-			"en" : "DOT'S to Track",
+			"en" : "DOT's to Track",
 			"pt" : "DOT's to Track",
 			"cn" : "监控的DOT",
-			"jp" : "DOT'S to Track",
+			"jp" : "DOT's to Track",
 			"de" : "DOT's to Track",
-			"es" : "DOT'S to Track",
-			"fr" : "DOT'S to Track",
+			"es" : "DOT's to Track",
+			"fr" : "DOT's to Track",
 			"kr" : "DOT's to Track"
 		},
 		"spells_mode.spells_per_row" : {
