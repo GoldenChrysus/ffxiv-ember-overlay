@@ -1,5 +1,5 @@
-# FFXIV Ember Overlay
-React overlay for the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/releases) and [ACTWebSocket](https://github.com/ZCube/ACTWebSocket) plugins for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php) for use with Final Fantasy XIV.
+# FFXIV Ember Overlay & Spell Timers
+Powerful, data-driven DPS overlay and spell timers for Final Fantasy XIV. Can be used with the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/releases) and [ACTWebSocket](https://github.com/ZCube/ACTWebSocket) plugins for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php).
 
 [![GitHub](https://img.shields.io/github/license/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/master/LICENSE)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)
@@ -37,35 +37,49 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ### Click on any player's name to view detailed statistics.
 ![Detailed statistics](https://i.imgur.com/G3UOoFR.gif "Detailed statistics")
 
-### Optional minimal and light themes (can be combined).
+### Optional minimal, light, and classic themes (minimal can be combined with any theme).
 ![Minimal theme](https://i.imgur.com/psPV5yL.png "Minimal theme")
 ![Light theme](https://i.imgur.com/HJTyGqJ.png "Light theme")
+![Classic theme](https://i.imgur.com/wq65hM7.png "Classic theme") (coming soon)
 
-### Customize your experience.
-![Customizable overlay](https://i.imgur.com/W7DWVmu.gif "Customizable overlay")
+### Spell Timers (coming soon)
+**Spell, buff, and DOT timers.**
+![Spell, buff, and DOT timers](https://i.imgur.com/yqEnnnq.gif "Spell, buff, and DOT timers")
+
+**Optional minimal layout.**
+![Minimal layout](https://i.imgur.com/KM1bQdr.png "Minimal layout")
+
+**Flexible layout options.**
+![Flexible layout](https://i.imgur.com/eluTIe2.png "Flexible layout")
+
+**Powerful but easy spell timer setup.**
+![Powerful but easy setup](https://i.imgur.com/ck5o09j.png "Powerful but easy setup")
+
+### Text to Speech Alerts (coming soon)
+![Customizable text to speech alerts](https://i.imgur.com/cMj0OJF.png "Customizable text to speech alerts")
+
+### Powerful overlay and data settings.
+![Customizable overlay](https://i.imgur.com/Kpq8ZPb.gif "Customizable overlay")
 
 ### Quality of life features.
 **Collapsible interface to save space and show only your stats.**
-
-![Collapsible interface](https://i.imgur.com/eS8h0KS.gif "Collapsible interface")
+![Collapsible interface](https://i.imgur.com/7MDEnJm.gif "Collapsible interface")
 
 **Blur player names for privacy (optionally blur job icons).**
-
 ![Blur player names](https://i.imgur.com/AWHwZ03.gif "Blur player names")
 
 **Browse encounter history (up to five encounters).**
-
 ![View encounter history](https://i.imgur.com/HfAq3kc.png "View encounter history")
 
 **Minimize the entire overlay to the left or right when not in use to free up screen space.**
-
 ![Minimize when not in use](https://i.imgur.com/HSiTNCF.gif "Minimize when not in use")
 
 ### Easily see the recent changes since your last visit
 ![About and changelog](https://i.imgur.com/fgZgoN4.gif "About and changelog")
 
 ### Clear encounter data or load sample data to perfect your setup.
-![Clear encounter and load sample data](https://i.imgur.com/doMR26F.gif "Clear encounter and load sample data")
+![Clear encounter and load sample data](https://i.imgur.com/hfvn80v.gif "Clear encounter and load sample data")
+![Load sample spell data](https://i.imgur.com/FTVyfGt.gif "Load sample spell data") (coming soon)
 
 ## Installation
 
