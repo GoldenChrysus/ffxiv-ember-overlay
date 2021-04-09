@@ -42,10 +42,10 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Light theme](https://i.imgur.com/HJTyGqJ.png "Light theme")
 ![Classic theme](https://i.imgur.com/wq65hM7.png "Classic theme") (coming soon)
 
-### Spell Timers (coming soon)
+### Spell timers (coming soon).
 **Spell, buff, and DOT timers.**
 
-![Spell, buff, and DOT timers](https://i.imgur.com/otZV384.gif "Spell, buff, and DOT timers")
+![Spell, buff, and DOT timers](https://i.imgur.com/7qNwV06.gif "Spell, buff, and DOT timers")
 
 **Optional minimal layout.**
 
@@ -59,7 +59,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 ![Powerful but easy setup](https://i.imgur.com/ck5o09j.png "Powerful but easy setup")
 
-### Text to Speech Alerts (coming soon)
+### Text to speech alerts (coming soon).
 ![Customizable text to speech alerts](https://i.imgur.com/cMj0OJF.png "Customizable text to speech alerts")
 
 ### Powerful overlay and data settings.
@@ -82,7 +82,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 ![Minimize when not in use](https://i.imgur.com/HSiTNCF.gif "Minimize when not in use")
 
-### Easily see the recent changes since your last visit
+### Easily see the recent changes since your last visit.
 ![About and changelog](https://i.imgur.com/fgZgoN4.gif "About and changelog")
 
 ### Clear encounter data or load sample data to perfect your setup.
