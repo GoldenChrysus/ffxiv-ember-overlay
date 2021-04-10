@@ -2,7 +2,7 @@
 
 ## 0.25.0-alpha
 
-**Released: [in staging]**
+**Released: 2021-04-10**
 
 ### Bug Fixes
 - Resolved issue where settings did not simultaneously distribute if multiple overlays were open

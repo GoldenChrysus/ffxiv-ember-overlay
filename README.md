@@ -40,9 +40,9 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ### Optional minimal, light, and classic themes (minimal can be combined with any theme).
 ![Minimal theme](https://i.imgur.com/psPV5yL.png "Minimal theme")
 ![Light theme](https://i.imgur.com/HJTyGqJ.png "Light theme")
-![Classic theme](https://i.imgur.com/wq65hM7.png "Classic theme") (coming soon)
+![Classic theme](https://i.imgur.com/wq65hM7.png "Classic theme")
 
-### Spell timers (coming soon).
+### Spell timers.
 **Spell, buff, and DOT timers.**
 
 ![Spell, buff, and DOT timers](https://i.imgur.com/7qNwV06.gif "Spell, buff, and DOT timers")
@@ -59,7 +59,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 ![Powerful but easy setup](https://i.imgur.com/z8UPg7u.png "Powerful but easy setup")
 
-### Text to speech alerts (coming soon).
+### Text to speech alerts.
 ![Customizable text to speech alerts](https://i.imgur.com/cMj0OJF.png "Customizable text to speech alerts")
 
 ### Powerful overlay and data settings.
@@ -87,7 +87,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 ### Clear encounter data or load sample data to perfect your setup.
 ![Clear encounter and load sample data](https://i.imgur.com/hfvn80v.gif "Clear encounter and load sample data")
-![Load sample spell data](https://i.imgur.com/FTVyfGt.gif "Load sample spell data") (coming soon)
+![Load sample spell data](https://i.imgur.com/FTVyfGt.gif "Load sample spell data")
 
 ## Installation
 
