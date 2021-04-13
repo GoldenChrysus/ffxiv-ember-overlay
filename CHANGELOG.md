@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.26.0-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- ?
+
+### Features
+- UI builder
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.25.0-alpha
 
 **Released: 2021-04-10**
