@@ -4,6 +4,10 @@ class TabSyncService {
 	createStorageListener(store) {
 		return () => {
 			const wrapped_action = JSON.parse(localStorage.getItem(this.storage_key));
+
+			if (!wrapped_action || typeof wrapped_action !== "object" || !wrapped_action.action) {
+				return;
+			}
 	
 			let valid_action = false;
 	
