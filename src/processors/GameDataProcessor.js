@@ -287,7 +287,7 @@ class GameDataProcessor  {
 				let skill_suffix    = "";
 
 				if (!skill_char_type) {
-					if (!state.settings.spells_mode.ui.use || !state.internal.game.Combatant || !state.internal.game.Combatant[data[3]]) {
+					if (!state.internal.game.Combatant || !state.internal.game.Combatant[data[3]]) {
 						return in_use;
 					}
 
@@ -297,7 +297,7 @@ class GameDataProcessor  {
 						return in_use;
 					}
 
-					skill_char_type = Constants.GameJobs[job].role;
+					skill_char_type = (state.settings.spells_mode.ui.use) ? Constants.GameJobs[job].role : "party";
 					skill_suffix    = "-party";
 				}
 
@@ -318,7 +318,8 @@ class GameDataProcessor  {
 					id       : skill_id,
 					time     : date,
 					name     : data[5],
-					log_type : `${skill_char_type}-skill`
+					log_type : `${skill_char_type}-skill`,
+					party    : (skill_char_type === "you")
 				};
 
 				return in_use;
@@ -341,7 +342,7 @@ class GameDataProcessor  {
 				let effect_suffix     = "";
 
 				if (!effect_char_type) {
-					if (!state.settings.spells_mode.ui.use || !state.internal.game.Combatant || !state.internal.game.Combatant[data[player_name_index]]) {
+					if (!state.internal.game.Combatant || !state.internal.game.Combatant[data[player_name_index]]) {
 						return in_use;
 					}
 
@@ -351,7 +352,7 @@ class GameDataProcessor  {
 						return in_use;
 					}
 
-					effect_char_type = Constants.GameJobs[job].role;
+					effect_char_type = (state.settings.spells_mode.ui.use) ? Constants.GameJobs[job].role : "party";
 					effect_key       = `party_${effect_key}`;
 					effect_suffix    = "-party";
 				}
@@ -378,7 +379,8 @@ class GameDataProcessor  {
 					time     : date,
 					name     : data[3],
 					duration : +data[4],
-					log_type : effect_char_type + "-" + ((dot) ? "dot" : "effect")
+					log_type : effect_char_type + "-" + ((dot) ? "dot" : "effect"),
+					party    : (effect_char_type === "you")
 				};
 
 				return in_use;
@@ -390,9 +392,18 @@ class GameDataProcessor  {
 
 	getAllowedSpellTypes(state) {
 		let types = {
-			skill  : {},
-			effect : {},
-			dot    : {}
+			skill  : {
+				you   : true,
+				party : true
+			},
+			effect : {
+				you   : true,
+				party : true
+			},
+			dot    : {
+				you   : true,
+				party : true
+			}
 		};
 
 		for (let uuid in state.settings.spells_mode.ui.sections) {

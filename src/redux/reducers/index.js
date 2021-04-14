@@ -42,15 +42,9 @@ const initial_state = {
 		spells               : {
 			in_use        : {},
 			allowed_types : {
-				skill  : {
-					you : true
-				},
-				effect : {
-					you : true
-				},
-				dot    : {
-					you : true
-				}
+				skill  : {},
+				effect : {},
+				dot    : {}
 			}
 		},
 		viewing_history      : false,
@@ -155,36 +149,44 @@ function rootReducer(state, action) {
 					break;
 
 				case "spells":
-					let date = new Date();
-
 					tmp_action = {
 						payload : {
 							"spell-7499"  : {
-								type : "skill",
-								id   : 7499,
-								time : date
+								type     : "skill",
+								id       : 7499,
+								time     : new Date(),
+								log_type : "you-skill",
+								party    : false,
 							},
 							"spell-16481" :  {
-								type : "skill",
-								id   : 16481,
-								time : date
+								type     : "skill",
+								id       : 16481,
+								time     : new Date(),
+								log_type : "you-skill",
+								party    : false,
 							},
 							"spell-16482" : {
-								type : "skill",
-								id   : 16482,
-								time : date
+								type     : "skill",
+								id       : 16482,
+								time     : new Date(),
+								log_type : "you-skill",
+								party    : false,
 							},
 							"effect-1298" : {
 								type     : "effect",
 								id       : 1298,
-								time     : date,
-								duration : 40
+								time     : new Date(),
+								duration : 40,
+								log_type : "you-effect",
+								party    : false,
 							},
 							"effect-1299" : {
 								type     : "effect",
 								id       : 1299,
-								time     : date,
-								duration : 40
+								time     : new Date(),
+								duration : 40,
+								log_type : "you-effect",
+								party    : false,
 							}
 						}
 					};

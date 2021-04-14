@@ -28,6 +28,10 @@ class SpellGrid extends React.Component {
 	componentDidUpdate(prev_props) {
 		let new_spells = {};
 
+		if (!prev_props.is_draggable && this.props.is_draggable) {
+			this.resetData();
+		}
+
 		for (let i in this.props.spells) {
 			if (!prev_props.spells[i] || prev_props.spells[i].time < this.props.spells[i].time) {
 				new_spells[i] = this.props.spells[i];
@@ -53,6 +57,15 @@ class SpellGrid extends React.Component {
 
 	componentWillUnmount() {
 		this.cancelTimer();
+		this.resetData();
+	}
+
+	resetData() {
+		this.spells = {};
+
+		this.setState({
+			spells : {}
+		});
 	}
 
 	render() {
@@ -162,9 +175,10 @@ class SpellGrid extends React.Component {
 				continue;
 			}
 
-			let date   = spells[i].time;
-			let recast = 0;
-			let dot    = false;
+			let date     = spells[i].time;
+			let new_date = new Date(date);
+			let recast   = 0;
+			let dot      = false;
 
 			switch (spells[i].type) {
 				case "skill":
@@ -181,16 +195,17 @@ class SpellGrid extends React.Component {
 				default:
 					break;
 			}
-
-			date.setSeconds(date.getSeconds() + recast);
+			
+			new_date.setSeconds(date.getSeconds() + recast);
 
 			this.spells[i] = {
 				type   : spells[i].type,
 				id     : spells[i].id,
-				time   : date,
+				time   : new_date,
 				name   : spells[i].name,
 				recast : recast,
-				dot    : dot
+				dot    : dot,
+				party  : spells[i].party
 			};
 
 			state.spells[i] = recast;

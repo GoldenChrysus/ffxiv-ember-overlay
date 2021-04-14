@@ -370,6 +370,50 @@
 				}
 			]
 		},
+		"spells-mode-party" : {
+			"title" : {
+				"en" : "Party Spell Timers",
+				"pt" : "Party Temporizadores das Magias",
+				"cn" : "Party 冷却监控",
+				"jp" : "Party スペルタイマー",
+				"de" : "Party Zauber Timer",
+				"es" : "Party Spell Timers",
+				"fr" : "Party Spell Timers",
+				"kr" : "Party 스펠 타이머"
+			},
+			"subsections" : [
+				{
+					"en" : "Spells",
+					"pt" : "Magias",
+					"cn" : "技能",
+					"jp" : "スペル",
+					"de" : "Zauber",
+					"es" : "Hechizos",
+					"fr" : "Sorts",
+					"kr" : "스펠"
+				},
+				{
+					"en" : "Effects/Buffs",
+					"pt" : "Efeitos/Buffs",
+					"cn" : "效果/Buff",
+					"jp" : "効果/バフ",
+					"de" : "Effekte/Buffs",
+					"es" : "Efectos/Buffs",
+					"fr" : "Effets/Buffs",
+					"kr" : "이펙트/Buffs"
+				},
+				{
+					"en" : "DOT's",
+					"pt" : "DOT's",
+					"cn" : "DOT's",
+					"jp" : "DOT's",
+					"de" : "DOT's",
+					"es" : "DOT's",
+					"fr" : "DOT's",
+					"kr" : "DOT's"
+				}
+			]
+		},
 		"spells-ui" : {
 			"title" : {
 				"en" : "UI Builder",
@@ -866,6 +910,36 @@
 			"fr" : "DOT's to Track",
 			"kr" : "DOT's to Track"
 		},
+		"spells_mode.party_spells" : {
+			"en" : "Spells to Track",
+			"pt" : "Magias a Rastrear",
+			"cn" : "监控的技能",
+			"jp" : "選択中スペル",
+			"de" : "Zauber im Überblick",
+			"es" : "Spells to Track",
+			"fr" : "Spells to Track",
+			"kr" : "확인할 스펠들"
+		},
+		"spells_mode.party_effects" : {
+			"en" : "Effects to Track",
+			"pt" : "Efeitos a Rastrear",
+			"cn" : "监控的效果",
+			"jp" : "Effects to Track",
+			"de" : "Effekte im Überblick",
+			"es" : "Effects to Track",
+			"fr" : "Effects to Track",
+			"kr" : "확인할 이펙트들"
+		},
+		"spells_mode.party_dots" : {
+			"en" : "DOT's to Track",
+			"pt" : "DOT's to Track",
+			"cn" : "监控的DOT",
+			"jp" : "DOT's to Track",
+			"de" : "DOT's to Track",
+			"es" : "DOT's to Track",
+			"fr" : "DOT's to Track",
+			"kr" : "DOT's to Track"
+		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
 			"pt" : "Magias Por Coluna",
@@ -947,6 +1021,36 @@
 			"kr" : "Reverse Indicator for Effects"
 		},
 		"spells_mode.reverse_dot" : {
+			"en" : "Reverse Indicator for DOT's",
+			"pt" : "Reverse Indicator for DOT's",
+			"cn" : "反向指示DOT进度条",
+			"jp" : "Reverse Indicator for DOT's",
+			"de" : "Idikator für DOT umdrehen",
+			"es" : "Reverse Indicator for DOT's",
+			"fr" : "Reverse Indicator for DOT's",
+			"kr" : "Reverse Indicator for DOT's"
+		},
+		"spells_mode.party_reverse_skill" : {
+			"en" : "Reverse Indicator for Spells",
+			"pt" : "Reverse Indicator for Spells",
+			"cn" : "反向指示技能进度条",
+			"jp" : "Reverse Indicator for Spells",
+			"de" : "Indikator für Zauber umdrehen",
+			"es" : "Reverse Indicator for Spells",
+			"fr" : "Reverse Indicator for Spells",
+			"kr" : "Reverse Indicator for Spells"
+		},
+		"spells_mode.party_reverse_effect" : {
+			"en" : "Reverse Indicator for Effects",
+			"pt" : "Reverse Indicator for Effects",
+			"cn" : "反向指示效果进度条",
+			"jp" : "Reverse Indicator for Effects",
+			"de" : "Idikator für Effekte umdrehen",
+			"es" : "Reverse Indicator for Effects",
+			"fr" : "Reverse Indicator for Effects",
+			"kr" : "Reverse Indicator for Effects"
+		},
+		"spells_mode.party_reverse_dot" : {
 			"en" : "Reverse Indicator for DOT's",
 			"pt" : "Reverse Indicator for DOT's",
 			"cn" : "反向指示DOT进度条",

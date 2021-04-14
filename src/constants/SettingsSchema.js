@@ -683,6 +683,74 @@ const SettingsSchema = {
 				]
 			},
 			{
+				path : "spells-mode-party",
+				sections : [
+					{
+						settings : [
+							{
+								key_path : "spells_mode.party_spells",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getoGCDSkillOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.party_spells;
+								}
+							},
+							{
+								key_path : "spells_mode.party_reverse_skill",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.party_reverse_skill;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.party_effects",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getEffectOptions(false),
+								value    : function() {
+									return this.props.settings.spells_mode.party_effects;
+								}
+							},
+							{
+								key_path : "spells_mode.party_reverse_effect",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.party_reverse_effect;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.party_dots",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getEffectOptions(true),
+								value    : function() {
+									return this.props.settings.spells_mode.party_dots;
+								}
+							},
+							{
+								key_path : "spells_mode.party_reverse_dot",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.party_reverse_dot;
+								}
+							}
+						]
+					}
+				]
+			},
+			{
 				path : "spells-ui",
 				sections : [
 					{
