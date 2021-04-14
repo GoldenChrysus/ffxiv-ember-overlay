@@ -369,6 +369,40 @@
 					"kr" : "일반 설정"
 				}
 			]
+		},
+		"spells-ui" : {
+			"title" : {
+				"en" : "UI Builder",
+				"pt" : "UI Builder",
+				"cn" : "UI Builder",
+				"jp" : "UI Builder",
+				"de" : "UI Builder",
+				"es" : "UI Builder",
+				"fr" : "UI Builder",
+				"kr" : "UI Builder"
+			},
+			"subsections" : [
+				{
+					"en" : "General",
+					"pt" : "Geral",
+					"cn" : "通用",
+					"jp" : "一般",
+					"de" : "Allgemein",
+					"es" : "General",
+					"fr" : "Général",
+					"kr" : "일반 설정"
+				},
+				{
+					"en" : "UI Sections",
+					"pt" : "UI Sections",
+					"cn" : "UI Sections",
+					"jp" : "UI Sections",
+					"de" : "UI Sections",
+					"es" : "UI Sections",
+					"fr" : "UI Sections",
+					"kr" : "UI Sections"
+				}
+			]
 		}
 	},
 	"setting_labels" : {
@@ -931,6 +965,26 @@
 			"es" : "Warning Threshold (In Seconds)",
 			"fr" : "Warning Threshold (In Seconds)",
 			"kr" : "Warning Threshold (In Seconds)"
+		},
+		"spells_mode.ui.use" : {
+			"en" : "Use UI Builder",
+			"pt" : "Use UI Builder",
+			"cn" : "Use UI Builder",
+			"jp" : "Use UI Builder",
+			"de" : "Use UI Builder",
+			"es" : "Use UI Builder",
+			"fr" : "Use UI Builder",
+			"kr" : "Use UI Builder"
+		},
+		"spells_mode.ui.sections" : {
+			"en" : "",
+			"pt" : "",
+			"cn" : "",
+			"jp" : "",
+			"de" : "",
+			"es" : "",
+			"fr" : "",
+			"kr" : ""
 		}
 	},
 	"misc" : {
@@ -1085,6 +1139,83 @@
 				"es" : "An encounter ends",
 				"fr" : "An encounter ends",
 				"kr" : "An encounter ends"
+			}
+		},
+
+		"spells" : {
+			"roles" : {
+				"you" : {
+					"en" : "You",
+					"pt" : "You",
+					"cn" : "You",
+					"jp" : "You",
+					"de" : "You",
+					"es" : "You",
+					"fr" : "You",
+					"kr" : "You"
+				},
+				"dps" : {
+					"en" : "DPS",
+					"pt" : "DPS",
+					"cn" : "DPS",
+					"jp" : "DPS",
+					"de" : "DPS",
+					"es" : "DPS",
+					"fr" : "DPS",
+					"kr" : "DPS"
+				},
+				"healer" : {
+					"en" : "Healer",
+					"pt" : "Healer",
+					"cn" : "Healer",
+					"jp" : "Healer",
+					"de" : "Healer",
+					"es" : "Healer",
+					"fr" : "Healer",
+					"kr" : "Healer"
+				},
+				"tank" : {
+					"en" : "Tank",
+					"pt" : "Tanque",
+					"cn" : "坦克",
+					"jp" : "タンク",
+					"de" : "Verteidiger",
+					"es" : "Tank",
+					"fr" : "Tank",
+					"kr" : "탱커"
+				}
+			},
+			"types" : {
+				"skill" : {
+					"en" : "Spell",
+					"pt" : "Spell",
+					"cn" : "Spell",
+					"jp" : "Spell",
+					"de" : "Spell",
+					"es" : "Spell",
+					"fr" : "Spell",
+					"kr" : "Spell"
+				},
+				"effect" : {
+					"en" : "Buff",
+					"pt" : "Buff",
+					"cn" : "Buff",
+					"jp" : "Buff",
+					"de" : "Buff",
+					"es" : "Buff",
+					"fr" : "Buff",
+					"kr" : "Buff"
+				},
+				"dot" : {
+					"en" : "DOT",
+					"pt" : "DOT",
+					"cn" : "DOT",
+					"jp" : "DOT",
+					"de" : "DOT",
+					"es" : "DOT",
+					"fr" : "DOT",
+					"kr" : "DOT"
+				}
 			}
 		},
 

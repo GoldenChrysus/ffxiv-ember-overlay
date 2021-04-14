@@ -1,11 +1,20 @@
 import React from "react";
-import { Button, Select, Input } from "semantic-ui-react";
+import { Button, Select } from "semantic-ui-react";
 import $ from "jquery";
 
 import LocalizationService from "../../../../../services/LocalizationService";
 import Table from "../Table";
 
 class SpellsUITable extends Table {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			rows    : {},
+			_insert : {}
+		};
+	}
+
 	componentWillMount() {
 		let rows = {
 			_insert : this.createRow({insert: true})
@@ -15,6 +24,7 @@ class SpellsUITable extends Table {
 			let data = this.props.value[uuid];
 
 			rows[uuid] = this.createRow({
+				key          : uuid,
 				select_value : data.types
 			});
 
@@ -50,7 +60,7 @@ class SpellsUITable extends Table {
 		let button = (options.insert)
 			? <Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button>
 			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
-		let select = <Select fluid multiple search options={this.props.options} onChange={this.handleSelectChange.bind(this)}/>;
+		let select = <Select fluid multiple search options={this.props.options} defaultValue={options.select_value} onChange={this.handleSelectChange.bind(this)}/>;
 		let row    = (
 			<tr id="insert-row" key={"spells-ui-key-" + (options.key || "_insert")} data-key={options.key || "_insert"}>
 				<td>{select}</td>
@@ -71,12 +81,9 @@ class SpellsUITable extends Table {
 		});
 	}
 
-	handleAdd(e) {
-		let $target = $(e.currentTarget);
-		let $row    = $target.closest("tr");
-		let $select = $row.find(".ui.dropdown");
+	handleAdd() {
 		let options = {
-			select_value : $select.attr("data-value"), // fix
+			select_value : this.state._insert,
 			key          : null,
 			auto_add     : true
 		};
@@ -103,8 +110,19 @@ class SpellsUITable extends Table {
 		this.syncData();
 	}
 
-	getSelectValues(e) {
+	handleSelectChange(e, select) {
+		let value = select.value;
+		let key   = this.getDeleteKey(e);
 
+		if (key === "_insert") {
+			let state = this.state;
+
+			state._insert = value;
+
+			this.setState(state);
+		} else {
+			this.data.value[key].types = value;
+		}
 	}
 
 	getDeleteKey(e) {

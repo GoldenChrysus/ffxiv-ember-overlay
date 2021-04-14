@@ -210,6 +210,36 @@ class LocalizationService {
 
 		return options;
 	}
+
+	getSpellTrackingOption(role, type, language) {
+		language = language || this.getLanguage();
+
+		let misc = SettingsLocales.misc.spells;
+
+		role = misc.roles[role][language] || misc.roles[role].en;
+		type = misc.types[type][language] || misc.types[type].en;
+
+		return `${role}: ${type}`;
+	}
+
+	getSpellTrackingOptions() {
+		let language = this.getLanguage();
+		let options  = [];
+
+		for (let role in SettingsLocales.misc.spells.roles) {
+			for (let type in SettingsLocales.misc.spells.types) {
+				let key = `${role}-${type}`;
+
+				options.push({
+					key   : key,
+					value : key,
+					text  : this.getSpellTrackingOption(role, type, language)
+				});
+			}
+		}
+
+		return options;
+	}
 }
 
 export default new LocalizationService();

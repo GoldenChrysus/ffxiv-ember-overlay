@@ -169,7 +169,11 @@ const default_settings = {
 		use_tts           : false,
 		minimal_layout    : false,
 		invert_vertical   : false,
-		invert_horizontal : false
+		invert_horizontal : false,
+		ui                : {
+			use      : false,
+			sections : {}
+		}
 	}
 };
 

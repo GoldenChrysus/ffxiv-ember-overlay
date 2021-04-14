@@ -681,6 +681,34 @@ const SettingsSchema = {
 						]
 					}
 				]
+			},
+			{
+				path : "spells-ui",
+				sections : [
+					{
+						settings : [
+							{
+								key_path : "spells_mode.ui.use",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.ui.use;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.ui.sections",
+								type     : "SpellsUITable",
+								options  : () => LocalizationService.getSpellTrackingOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.ui.sections;
+								}
+							}
+						]
+					}
+				]
 			}
 		]
 	},

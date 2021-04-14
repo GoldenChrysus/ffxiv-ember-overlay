@@ -7,6 +7,7 @@ import LocalizationService from "../../../services/LocalizationService";
 
 import MetricNameTable from "./Inputs/Table/MetricNameTable";
 import TTSRulesTable from "./Inputs/Table/TTSRulesTable";
+import SpellsUITable from "./Inputs/Table/SpellsUITable";
 import Slider from "./Inputs/Slider";
 
 class Section extends React.Component {
@@ -129,6 +130,12 @@ class Section extends React.Component {
 					let rule_options = setting_data.options();
 
 					setting = <TTSRulesTable value={value} options={rule_options} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
+
+					break;
+
+				case "SpellsUITable":
+					label   = "";
+					setting = <SpellsUITable value={value} options={setting_data.options()} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 
 					break;
 
