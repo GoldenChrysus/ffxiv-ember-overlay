@@ -139,35 +139,33 @@ function rootReducer(state, action) {
 					break;
 
 				case "spells":
-					let date = new Date();
-
 					tmp_action = {
 						payload : {
 							"spell-7499"  : {
 								type : "skill",
 								id   : 7499,
-								time : date
+								time : new Date()
 							},
 							"spell-16481" :  {
 								type : "skill",
 								id   : 16481,
-								time : date
+								time : new Date()
 							},
 							"spell-16482" : {
 								type : "skill",
 								id   : 16482,
-								time : date
+								time : new Date()
 							},
 							"effect-1298" : {
 								type     : "effect",
 								id       : 1298,
-								time     : date,
+								time     : new Date(),
 								duration : 40
 							},
 							"effect-1299" : {
 								type     : "effect",
 								id       : 1299,
-								time     : date,
+								time     : new Date(),
 								duration : 40
 							}
 						}

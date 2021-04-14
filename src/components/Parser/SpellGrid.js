@@ -119,9 +119,10 @@ class SpellGrid extends React.Component {
 		let state = this.state;
 
 		for (let i in spells) {
-			let date   = spells[i].time;
-			let recast = 0;
-			let dot    = false;
+			let date     = spells[i].time;
+			let new_date = new Date(date);
+			let recast   = 0;
+			let dot      = false;
 
 			switch (spells[i].type) {
 				case "skill":
@@ -139,12 +140,12 @@ class SpellGrid extends React.Component {
 					break;
 			}
 
-			date.setSeconds(date.getSeconds() + recast);
+			new_date.setSeconds(date.getSeconds() + recast);
 
 			this.spells[i] = {
 				type   : spells[i].type,
 				id     : spells[i].id,
-				time   : date,
+				time   : new_date,
 				name   : spells[i].name,
 				recast : recast,
 				dot    : dot
