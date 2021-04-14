@@ -26,6 +26,10 @@ class Menu extends React.Component {
 	}
 
 	getModesSection() {
+		if (this.props.overlayplugin_author !== "ngld") {
+			return;
+		}
+
 		let mode_text = LocalizationService.getOverlayText("mode");
 		let modes     = [
 			<MenuItem key="menu-mode-stats" onClick={this.changeMode.bind(this, "stats")}>
@@ -164,12 +168,13 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		plugin_service : state.plugin_service,
-		language       : state.settings.interface.language,
-		collapsed      : state.settings.intrinsic.collapsed,
-		overlayplugin  : state.internal.overlayplugin,
-		encounter      : state.internal.game.Encounter,
-		mode           : state.internal.mode,
+		plugin_service       : state.plugin_service,
+		language             : state.settings.interface.language,
+		collapsed            : state.settings.intrinsic.collapsed,
+		overlayplugin        : state.internal.overlayplugin,
+		overlayplugin_author : state.internal.overlayplugin_author,
+		encounter            : state.internal.game.Encounter,
+		mode                 : state.internal.mode,
 	};
 };
 

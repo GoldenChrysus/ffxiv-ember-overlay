@@ -20,6 +20,10 @@ let params                = new querystring.parse(String(window.location.search)
 let overlayplugin_service = new OverlayPluginService();
 let uuid                  = (window.OverlayPluginApi) ? window.OverlayPluginApi.overlayUuid : "browser";
 
+if (typeof params.mode === "object") {
+	params.mode = params.mode[0];
+}
+
 const initial_state = {
 	plugin_service : new PluginService(),
 	settings_data  : Settings,
@@ -43,7 +47,7 @@ const initial_state = {
 		overlayplugin        : overlayplugin_service.isOverlayPlugin(),
 		overlayplugin_author : overlayplugin_service.getAuthor(),
 		new_version          : false,
-		mode                 : params["mode"] || localStorage.getItem(`${uuid}-mode`) || "stats",
+		mode                 : params.mode || localStorage.getItem(`${uuid}-mode`) || "stats",
 	},
 	settings : {}
 };

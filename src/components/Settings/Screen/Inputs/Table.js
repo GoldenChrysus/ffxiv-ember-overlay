@@ -78,7 +78,7 @@ class Table extends React.Component {
 	}
 
 	handleDelete(e) {
-		let key      = $(e.currentTarget).closest("tr").attr("data-select-value") || $(e.currentTarget).closest("tr").attr("data-key");
+		let key      = this.getDeleteKey(e);
 		let rows     = this.state.rows;
 		let key_data = key.split(".");
 
@@ -94,6 +94,10 @@ class Table extends React.Component {
 			rows : rows
 		});
 		this.syncData();
+	}
+
+	getDeleteKey(e) {
+		return $(e.currentTarget).closest("tr").attr("data-select-value")
 	}
 
 	syncData() {

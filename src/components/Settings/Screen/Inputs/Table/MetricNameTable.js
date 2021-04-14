@@ -109,6 +109,10 @@ class MetricNameTable extends Table {
 		this.createRow(options);
 		this.syncData();
 	}
+
+	getDeleteKey(e) {
+		return $(e.currentTarget).closest("tr").attr("data-key");
+	}
 }
 
 export default MetricNameTable;
