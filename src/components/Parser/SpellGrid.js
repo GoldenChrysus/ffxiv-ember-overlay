@@ -28,10 +28,6 @@ class SpellGrid extends React.Component {
 	componentDidUpdate(prev_props) {
 		let new_spells = {};
 
-		if (!prev_props.is_draggable && this.props.is_draggable) {
-			this.resetData();
-		}
-
 		for (let i in this.props.spells) {
 			if (!prev_props.spells[i] || prev_props.spells[i].time < this.props.spells[i].time) {
 				new_spells[i] = this.props.spells[i];
@@ -57,15 +53,6 @@ class SpellGrid extends React.Component {
 
 	componentWillUnmount() {
 		this.cancelTimer();
-		this.resetData();
-	}
-
-	resetData() {
-		this.spells = {};
-
-		this.setState({
-			spells : {}
-		});
 	}
 
 	render() {
@@ -167,8 +154,9 @@ class SpellGrid extends React.Component {
 			return;
 		}
 
-		let state   = this.state;
-		let builder = (this.props.from_builder === "true");
+		let state     = this.state;
+		let builder   = (this.props.from_builder === "true");
+		let true_date = new Date();
 
 		for (let i in spells) {
 			if (builder && this.props.section.types.indexOf(spells[i].log_type) === -1) {
@@ -197,6 +185,10 @@ class SpellGrid extends React.Component {
 			}
 			
 			new_date.setSeconds(date.getSeconds() + recast);
+
+			if (new_date < true_date) {
+				continue;
+			}
 
 			this.spells[i] = {
 				type   : spells[i].type,

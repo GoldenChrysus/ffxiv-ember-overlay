@@ -85,7 +85,9 @@ class Parser extends React.Component {
 		`;
 
 		if (collapsed) {
-			// root_inner_classes.push("auto-height");
+			if (!this.props.using_ui_builder) {
+				root_inner_classes.push("auto-height");
+			}
 
 			if (collapse_down) {
 				root_inner_classes.push("down");
@@ -136,6 +138,7 @@ const mapStateToProps = (state) => {
 		invert_spells_vertical   : state.settings.spells_mode.invert_vertical,
 		invert_spells_horizontal : state.settings.spells_mode.invert_horizontal,
 		has_spells               : (Object.keys(state.internal.spells.in_use).length > 0),
+		using_ui_builder         : state.settings.spells_mode.ui.use,
 	};
 };
 
