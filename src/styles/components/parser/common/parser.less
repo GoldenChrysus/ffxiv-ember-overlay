@@ -1146,11 +1146,20 @@ body.mode-spells {
 }
 
 #root-inner #container #inner #content .spell-grid.draggable {
-	background-color: @dark_borderOuterShadow;
 	opacity: 0.7;
 	padding: 5px;
-	font-weight: bold;
-	color: @dark_headerAndLinkText;
+
+	.setThemeStyle(
+		@defaultTheme: {
+			background-color: @dark_borderOuterShadow;
+		},
+		@lightTheme: {
+			background-color: @light_containerBackground;
+		},
+		@classicTheme: {
+			background-color: @classic_borderOuterShadow;
+		}
+	)
 }
 
 #root-inner #container #inner #content .spell-grid.draggable span {
@@ -1159,8 +1168,24 @@ body.mode-spells {
 	height: 100%;
 	box-sizing: border-box;
 	padding: 5px;
-	background-image: @dark_contentBackground;
+	font-weight: bold;
+	font-size: 12px;
 	overflow: hidden;
+
+	.setThemeStyle(
+		@defaultTheme: {
+			background-image: @dark_contentBackground;
+			color: @dark_headerAndLinkText;
+		},
+		@lightTheme: {
+			background-image: @light_contentBackground;
+			color: @light_headerAndLinkText;
+		},
+		@classicTheme: {
+			background-image: @classic_contentBackground;
+			color: @classic_headerAndLinkText;
+		}
+	);
 }
 
 #container #inner #content .spell-grid .spell-container {

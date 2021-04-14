@@ -351,6 +351,10 @@ function createNewState(state, full_key, action) {
 	if (["settings", "settings.interface.minimal_theme"].indexOf(full_key) !== -1) {
 		let minimal_theme = (full_key === "settings") ? action.payload.interface.minimal_theme : action.payload;
 
+		if (new_state.internal.mode === "spells") {
+			minimal_theme = true;
+		}
+
 		ThemeService.toggleMinimal(minimal_theme);
 	}
 
