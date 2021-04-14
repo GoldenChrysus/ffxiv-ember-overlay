@@ -111,7 +111,7 @@ class Container extends React.Component {
 
 								if (this.props.internal.ui_builder) {
 									content.push(
-										<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[1, 1]} dragGrid={[1, 1]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)} data-key={uuid}>
+										<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[10, 10]} dragGrid={[10, 10]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)} data-key={uuid}>
 											<SpellGrid key={"spell-grid-" + uuid} from_builder="true" is_draggable={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode} style={{position: "absolute", width: "100%", height: "100%"}}/>
 										</Rnd>
 									);
@@ -150,10 +150,16 @@ class Container extends React.Component {
 			];
 		}
 
+		let container_classes = [];
+
+		if (this.props.internal.ui_builder) {
+			container_classes.push("ui-builder-active");
+		}
+
 		return (
 			<React.Fragment>
 				<ContextMenuTrigger id="right-click-menu" holdToDisplay={-1}>
-					<div id="container">
+					<div id="container" className={container_classes.join(" ")}>
 						<PlaceholderToggle type="top left"/>
 						<PlaceholderToggle type="top right"/>
 						<PlaceholderToggle type="bottom left"/>
@@ -176,8 +182,8 @@ class Container extends React.Component {
 	onDrag(uuid, e, data) {
 		let state = this.state;
 
-		state.spells_sections[uuid].layout.x = data.x;
-		state.spells_sections[uuid].layout.y = data.y;
+		state.spells_sections[uuid].layout.x = Math.round(data.x / 10) * 10;
+		state.spells_sections[uuid].layout.y = Math.round(data.y / 10) * 10;
 
 		this.setState(state);
 	}
@@ -185,8 +191,11 @@ class Container extends React.Component {
 	onResize(uuid, e, side, elem, delta) {
 		let state = this.state;
 
-		state.spells_sections[uuid].layout.width += delta.width;
+		state.spells_sections[uuid].layout.width  += delta.width;
 		state.spells_sections[uuid].layout.height += delta.height;
+
+		state.spells_sections[uuid].layout.width  = Math.round(state.spells_sections[uuid].layout.width / 10) * 10;
+		state.spells_sections[uuid].layout.height = Math.round(state.spells_sections[uuid].layout.height / 10) * 10;
 
 		this.setState(state);
 	}
