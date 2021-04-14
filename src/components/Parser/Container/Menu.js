@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { ContextMenu, MenuItem } from "react-contextmenu";
-import { changeCollapse, loadSampleGameData, clearGameData, changeViewing, changeDetailPlayer, changeMode } from "../../../redux/actions/index";
+import { changeCollapse, loadSampleGameData, clearGameData, changeViewing, changeDetailPlayer, changeMode, changeUIBuilder } from "../../../redux/actions/index";
 
 import SettingsService from "../../../services/SettingsService";
 import LocalizationService from "../../../services/LocalizationService";
@@ -14,6 +14,7 @@ class Menu extends React.Component {
 					{this.getModesSection()}
 					{this.getQuickCommandsSection()}
 					{this.getEncounterSection()}
+					{this.getUIBuilderSection()}
 					<MenuItem onClick={SettingsService.openSettingsWindow}>
 						{LocalizationService.getOverlayText("settings")}
 					</MenuItem>
@@ -23,6 +24,22 @@ class Menu extends React.Component {
 				</div>
 			</ContextMenu>
 		);
+	}
+
+	getUIBuilderSection() {
+		if (this.props.overlayplugin_author !== "ngld" || !this.props.use_ui_builder) {
+			return;
+		}
+
+		let text  = (this.props.ui_builder) ? "Save UI" : "Edit UI";
+		let items = [
+			<MenuItem key="menu-spell-ui-builder" onClick={this.changeUIBuilder.bind(this)}>
+				{text}
+			</MenuItem>,
+			<div key="menu-ui-builder-section-split" className="split"></div>
+		];
+
+		return items;
 	}
 
 	getModesSection() {
@@ -136,6 +153,10 @@ class Menu extends React.Component {
 		this.props.changeViewing(type);
 		this.props.changeDetailPlayer(player);
 	}
+
+	changeUIBuilder() {
+		this.props.changeUIBuilder(this.props.getUIData());
+	}
 }
 
 const mapDispatchToProps = (dispatch) => {
@@ -163,6 +184,10 @@ const mapDispatchToProps = (dispatch) => {
 		changeMode : (data) => {
 			dispatch(changeMode(data));
 		},
+
+		changeUIBuilder : (data) => {
+			dispatch(changeUIBuilder(data));
+		},
 	}
 };
 
@@ -175,6 +200,8 @@ const mapStateToProps = (state) => {
 		overlayplugin_author : state.internal.overlayplugin_author,
 		encounter            : state.internal.game.Encounter,
 		mode                 : state.internal.mode,
+		ui_builder           : state.internal.ui_builder,
+		use_ui_builder       : state.settings.spells_mode.ui.use,
 	};
 };
 

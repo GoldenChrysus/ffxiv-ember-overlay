@@ -275,18 +275,37 @@ class GameDataProcessor  {
 		data = data.line;
 		
 		let in_use = false;
-
+		let date   = new Date();
 
 		switch (+data[0]) {
 			case 21:
 			case 22:
-				let skill_id = String(parseInt(data[4], 16));
+				let skill_id        = String(parseInt(data[4], 16));
+				let skill_char_id   = parseInt(data[2], 16);
+				let skill_char_type = (state.internal.character_id === skill_char_id) ? "you" : false;
+				let skill_key       = (skill_char_type) ? "spells" : "party_spells";
+				let skill_suffix    = "";
 
-				if (state.internal.character_id !== parseInt(data[2], 16)) {
+				if (!skill_char_type) {
+					if (!state.settings.spells_mode.ui.use || !state.internal.game.Combatant || !state.internal.game.Combatant[data[3]]) {
+						return in_use;
+					}
+
+					let job = state.internal.game.Combatant[data[3]].Job;
+
+					if (!Constants.GameJobs[job]) {
+						return in_use;
+					}
+
+					skill_char_type = Constants.GameJobs[job].role;
+					skill_suffix    = "-party";
+				}
+
+				if (!state.internal.spells.allowed_types.skill[skill_char_type]) {
 					return in_use;
 				}
 
-				if (state.settings.spells_mode.spells.indexOf(skill_id) === -1) {
+				if (state.settings.spells_mode[skill_key].indexOf(skill_id) === -1) {
 					return in_use;
 				}
 
@@ -294,11 +313,12 @@ class GameDataProcessor  {
 					in_use = {};
 				}
 
-				in_use[`skill-${skill_id}`] = {
-					type : "skill",
-					id   : skill_id,
-					time : data[1],
-					name : data[5]
+				in_use[`skill-${skill_id}${skill_suffix}`] = {
+					type     : "skill",
+					id       : skill_id,
+					time     : date,
+					name     : data[5],
+					log_type : `${skill_char_type}-skill`
 				};
 
 				return in_use;
@@ -310,16 +330,37 @@ class GameDataProcessor  {
 					return in_use;
 				}
 
-				let valid_names  = [];
-				let dot          = SkillData.Effects[effect_id].dot;
-				let player_index = (dot) ? 5 : 7;
-				let setting_key  = (dot) ? "dots" : "effects";
+				let valid_names       = [];
+				let dot               = SkillData.Effects[effect_id].dot;
+				let player_index      = (dot) ? 5 : 7;
+				let player_name_index = player_index + 1;
+				let effect_char_id    = parseInt(data[player_index], 16);
+				let effect_char_type  = (state.internal.character_id === effect_char_id) ? "you" : false;
+				let effect_type       = (dot) ? "dot" : "effect";
+				let effect_key        = (dot) ? "dots" : "effects";
+				let effect_suffix     = "";
 
-				if (state.internal.character_id !== parseInt(data[player_index], 16)) {
+				if (!effect_char_type) {
+					if (!state.settings.spells_mode.ui.use || !state.internal.game.Combatant || !state.internal.game.Combatant[data[player_name_index]]) {
+						return in_use;
+					}
+
+					let job = state.internal.game.Combatant[data[player_name_index]].Job;
+
+					if (!Constants.GameJobs[job]) {
+						return in_use;
+					}
+
+					effect_char_type = Constants.GameJobs[job].role;
+					effect_key       = `party_${effect_key}`;
+					effect_suffix    = "-party";
+				}
+
+				if (!state.internal.spells.allowed_types[effect_type][effect_char_type]) {
 					return in_use;
 				}
 
-				for (let id of state.settings.spells_mode[setting_key]) {
+				for (let id of state.settings.spells_mode[effect_key]) {
 					valid_names.push(LocalizationService.getEffectName(id, "en"));
 				}
 
@@ -331,12 +372,13 @@ class GameDataProcessor  {
 					in_use = {};
 				}
 
-				in_use[`effect-${effect_id}`] = {
+				in_use[`effect-${effect_id}${effect_suffix}`] = {
 					type     : "effect",
 					id       : effect_id,
-					time     : data[1],
+					time     : date,
 					name     : data[3],
-					duration : +data[4]
+					duration : +data[4],
+					log_type : effect_char_type + "-" + ((dot) ? "dot" : "effect")
 				};
 
 				return in_use;
@@ -344,6 +386,26 @@ class GameDataProcessor  {
 			default:
 				return in_use;
 		}
+	}
+
+	getAllowedSpellTypes(state) {
+		let types = {
+			skill  : {},
+			effect : {},
+			dot    : {}
+		};
+
+		for (let uuid in state.settings.spells_mode.ui.sections) {
+			let section = state.settings.spells_mode.ui.sections[uuid];
+
+			for (let type of section.types) {
+				let data = type.split("-");
+
+				types[data[1]][data[0]] = true;
+			}
+		}
+
+		return types;
 	}
 }
 

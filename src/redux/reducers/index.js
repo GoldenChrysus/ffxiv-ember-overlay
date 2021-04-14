@@ -1,6 +1,5 @@
 import clone from "lodash.clonedeep";
 import isEqual from "lodash.isequal";
-import moment from "moment";
 
 import Settings from "../../data/Settings";
 import PluginService from "../../services/PluginService";
@@ -41,13 +40,25 @@ const initial_state = {
 		detail_player        : {},
 		party                : [],
 		spells               : {
-			in_use : {}
+			in_use        : {},
+			allowed_types : {
+				skill  : {
+					you : true
+				},
+				effect : {
+					you : true
+				},
+				dot    : {
+					you : true
+				}
+			}
 		},
 		viewing_history      : false,
 		overlayplugin        : overlayplugin_service.isOverlayPlugin(),
 		overlayplugin_author : overlayplugin_service.getAuthor(),
 		new_version          : false,
 		mode                 : params.mode || localStorage.getItem(`${uuid}-mode`) || "stats",
+		ui_builder           : false,
 	},
 	settings : {}
 };
@@ -144,36 +155,35 @@ function rootReducer(state, action) {
 					break;
 
 				case "spells":
-					let date      = new Date();
-					let timestamp = moment(date).format("YYYY-MM-DDTHH:mm:ss.SSSSSSSZ");
+					let date = new Date();
 
 					tmp_action = {
 						payload : {
 							"spell-7499"  : {
 								type : "skill",
 								id   : 7499,
-								time : timestamp
+								time : date
 							},
 							"spell-16481" :  {
 								type : "skill",
 								id   : 16481,
-								time : timestamp
+								time : date
 							},
 							"spell-16482" : {
 								type : "skill",
 								id   : 16482,
-								time : timestamp
+								time : date
 							},
 							"effect-1298" : {
 								type     : "effect",
 								id       : 1298,
-								time     : timestamp,
+								time     : date,
 								duration : 40
 							},
 							"effect-1299" : {
 								type     : "effect",
 								id       : 1299,
-								time     : timestamp,
+								time     : date,
 								duration : 40
 							}
 						}
@@ -277,6 +287,29 @@ function rootReducer(state, action) {
 
 			break;
 
+		case "changeUIBuilder":
+			if (state.internal.ui_builder) {
+				for (let uuid in action.payload) {
+					for (let dimension of ["x", "y"]) {
+						let dim_key = `_${dimension}`;
+
+						if (action.payload[uuid].layout.hasOwnProperty(dim_key)) {
+							action.payload[uuid].layout[dimension] = action.payload[uuid].layout[dim_key];
+
+							delete action.payload[uuid].layout[dim_key];
+						}
+					}
+				}
+
+				state.settings_data.setSetting("spells_mode.ui.sections", action.payload);
+			}
+
+			new_state = (state.internal.ui_builder) ? createNewState(state, "settings.spells_mode.ui.sections", action) : clone(state);
+
+			new_state.internal.ui_builder = !new_state.internal.ui_builder;
+
+			break;
+
 		default:
 			new_state = createNewState(state, full_key, action);
 			break;
@@ -327,6 +360,16 @@ function createNewState(state, full_key, action) {
 		let rules = (full_key === "settings") ? action.payload.tts.rules : action.payload;
 
 		TTSService.updateRules(rules);
+	}
+
+	if (["settings", "settings.spells_mode.ui.use"].indexOf(full_key) !== -1) {
+		if (!new_state.settings.spells_mode.ui.use) {
+			document.getElementsByTagName("body")[0].classList.remove("white-background");
+		}
+	}
+
+	if (["settings", "settings.spells_mode.ui.sections"].indexOf(full_key) !== -1) {
+		new_state.internal.spells.allowed_types = GameDataProcessor.getAllowedSpellTypes(new_state);
 	}
 
 	return new_state;

@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { ContextMenuTrigger } from "react-contextmenu";
 import ReactTooltip from "react-tooltip";
-import Draggable from "react-draggable";
+import { Rnd } from "react-rnd";
 
 import ContextMenu from "./Container/Menu";
 import Import from "./Container/Import";
@@ -23,6 +23,29 @@ class Container extends React.Component {
 		this.no_footer_modes = [
 			"spells"
 		];
+
+		this.state = {
+			spells_sections : this.props.settings.spells_mode.ui.sections
+		};
+	}
+
+	componentDidUpdate(prev_props) {
+		let state      = this.state;
+		let need_state = false;
+
+		for (let uuid in this.props.settings.spells_mode.ui.sections) {
+			if (!state.spells_sections[uuid]) {
+				need_state = true;
+
+				break;
+			}
+		}
+
+		state.spells_sections = this.props.settings.spells_mode.ui.sections;
+
+		if (need_state) {
+			this.setState(state);
+		}
 	}
 
 	componentDidMount() {
@@ -74,7 +97,33 @@ class Container extends React.Component {
 						break;
 
 					default:
-						content = <SpellGrid key="spell-grid" encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode}/>;
+						if (this.props.settings.spells_mode.ui.use) {
+							content = [];
+
+							for (let uuid in this.props.settings.spells_mode.ui.sections) {
+								let section = this.state.spells_sections[uuid];
+
+								if (!section) {
+									continue;
+								}
+
+								let layout = section.layout;
+
+								if (this.props.internal.ui_builder) {
+									content.push(
+										<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[1, 1]} dragGrid={[1, 1]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)} data-key={uuid}>
+											<SpellGrid key={"spell-grid-" + uuid} from_builder="true" is_draggable={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode} style={{position: "absolute", width: "100%", height: "100%"}}/>
+										</Rnd>
+									);
+								} else {
+									content.push(
+										<SpellGrid key={"spell-grid-" + uuid} from_builder="true" section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
+									);
+								}
+							}
+						} else {
+							content = <SpellGrid key="spell-grid" encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode}/>;
+						}
 
 						break;
 				}
@@ -119,13 +168,35 @@ class Container extends React.Component {
 						</div>
 					</div>
 				</ContextMenuTrigger>
-				<ContextMenu/>
+				<ContextMenu getUIData={this.getUIData.bind(this)}/>
 			</React.Fragment>
 		);
 	}
 
+	onDrag(uuid, e, data) {
+		let state = this.state;
+
+		state.spells_sections[uuid].layout.x = data.x;
+		state.spells_sections[uuid].layout.y = data.y;
+
+		this.setState(state);
+	}
+
+	onResize(uuid, e, side, elem, delta) {
+		let state = this.state;
+
+		state.spells_sections[uuid].layout.width += delta.width;
+		state.spells_sections[uuid].layout.height += delta.height;
+
+		this.setState(state);
+	}
+
+	getUIData() {
+		return this.state.spells_sections;
+	}
+
 	getGameState(encounter, active) {
-		if (this.props.internal.mode === "spells" && this.props.settings.interface.hide_top_bar) {
+		if (this.props.internal.mode === "spells" && (this.props.settings.interface.hide_top_bar || this.props.settings.spells_mode.ui.use)) {
 			return "";
 		}
 
@@ -135,10 +206,20 @@ class Container extends React.Component {
 	}
 
 	toggleHandle(e) {
+		let body = document.getElementsByTagName("body")[0];
+
 		if (!e.detail.isLocked) {
-			document.getElementsByTagName("body")[0].classList.add("resizeHandle");
+			body.classList.add("resizeHandle");
+
+			if (this.props.settings.spells_mode.ui.use) {
+				body.classList.add("white-background");
+			}
 		} else {
-			document.getElementsByTagName("body")[0].classList.remove("resizeHandle");
+			body.classList.remove("resizeHandle");
+
+			if (this.props.settings.spells_mode.ui.use || body.classList.contains("white-background")) {
+				body.classList.remove("white-background");
+			}
 		}
 	}
 }

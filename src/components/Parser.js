@@ -85,7 +85,7 @@ class Parser extends React.Component {
 		`;
 
 		if (collapsed) {
-			root_inner_classes.push("auto-height");
+			// root_inner_classes.push("auto-height");
 
 			if (collapse_down) {
 				root_inner_classes.push("down");

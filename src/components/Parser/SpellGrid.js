@@ -56,7 +56,13 @@ class SpellGrid extends React.Component {
 	}
 
 	render() {
-		let overlay_info = ((this.props.encounter && Object.keys(this.props.encounter).length) || Object.keys(this.props.spells).length) ? "" : <OverlayInfo mode="spells" settings={this.props.settings}/>;
+		let overlay_info = (
+			this.props.from_builder === "true" ||
+			(this.props.encounter && Object.keys(this.props.encounter).length) ||
+			Object.keys(this.props.spells).length
+		)
+			? ""
+			: <OverlayInfo mode="spells" settings={this.props.settings}/>;
 		let row_limit    = this.props.settings.spells_per_row;
 		let width        = (100 / row_limit);
 		let spells       = this.buildSpells();
@@ -87,16 +93,22 @@ class SpellGrid extends React.Component {
 
 		classes.push("spell-grid");
 
+		if (this.props.is_draggable) {
+			classes.push("draggable");
+		}
+
 		delete props.spells;
 		delete props.encounter;
 		delete props.settings;
+		delete props.section;
+		delete props.is_draggable;
 
 		return (
 			<React.Fragment>
 				<style type="text/css">
 					{style}
 				</style>
-				<div className={classes.join(" ")} {...props} ref="spell_grid">
+				<div {...props} className={classes.join(" ")} ref="spell_grid">
 					{spells}
 				</div>
 				{overlay_info}
@@ -105,6 +117,18 @@ class SpellGrid extends React.Component {
 	}
 
 	buildSpells() {
+		if (this.props.is_draggable) {
+			let text = [];
+
+			for (let value of this.props.section.types) {
+				value = value.split("-");
+
+				text.push(LocalizationService.getSpellTrackingOption(value[0], value[1]))
+			}
+
+			return <span>{text.join(", ")}</span>;
+		}
+
 		let spells = Object.keys(this.state.spells);
 		let items  = [];
 
@@ -126,10 +150,19 @@ class SpellGrid extends React.Component {
 	}
 
 	processSpells(spells) {
-		let state = this.state;
+		if (this.props.is_draggable) {
+			return;
+		}
+
+		let state   = this.state;
+		let builder = (this.props.from_builder === "true");
 
 		for (let i in spells) {
-			let date   = new Date(spells[i].time);
+			if (builder && this.props.section.types.indexOf(spells[i].log_type) === -1) {
+				continue;
+			}
+
+			let date   = spells[i].time;
 			let recast = 0;
 			let dot    = false;
 
