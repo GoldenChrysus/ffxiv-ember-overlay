@@ -275,7 +275,7 @@ class GameDataProcessor  {
 		data = data.line;
 		
 		let in_use = false;
-
+		let date   = new Date();
 
 		switch (+data[0]) {
 			case 21:
@@ -297,7 +297,7 @@ class GameDataProcessor  {
 				in_use[`skill-${skill_id}`] = {
 					type : "skill",
 					id   : skill_id,
-					time : data[1],
+					time : date,
 					name : data[5]
 				};
 
@@ -334,7 +334,7 @@ class GameDataProcessor  {
 				in_use[`effect-${effect_id}`] = {
 					type     : "effect",
 					id       : effect_id,
-					time     : data[1],
+					time     : date,
 					name     : data[3],
 					duration : +data[4]
 				};

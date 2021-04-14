@@ -119,7 +119,7 @@ class SpellGrid extends React.Component {
 		let state = this.state;
 
 		for (let i in spells) {
-			let date   = new Date(spells[i].time);
+			let date   = spells[i].time;
 			let recast = 0;
 			let dot    = false;
 

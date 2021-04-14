@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.25.1-alpha
+
+**Released: 2021-04-14**
+
+### Bug Fixes
+- Resolved issue where spell timer cooldowns are incorrect when system time does not match game time
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.25.0-alpha
 
 **Released: 2021-04-10**

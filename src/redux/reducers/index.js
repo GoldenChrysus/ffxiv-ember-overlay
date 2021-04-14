@@ -1,6 +1,5 @@
 import clone from "lodash.clonedeep";
 import isEqual from "lodash.isequal";
-import moment from "moment";
 
 import Settings from "../../data/Settings";
 import PluginService from "../../services/PluginService";
@@ -140,36 +139,35 @@ function rootReducer(state, action) {
 					break;
 
 				case "spells":
-					let date      = new Date();
-					let timestamp = moment(date).format("YYYY-MM-DDTHH:mm:ss.SSSSSSSZ");
+					let date = new Date();
 
 					tmp_action = {
 						payload : {
 							"spell-7499"  : {
 								type : "skill",
 								id   : 7499,
-								time : timestamp
+								time : date
 							},
 							"spell-16481" :  {
 								type : "skill",
 								id   : 16481,
-								time : timestamp
+								time : date
 							},
 							"spell-16482" : {
 								type : "skill",
 								id   : 16482,
-								time : timestamp
+								time : date
 							},
 							"effect-1298" : {
 								type     : "effect",
 								id       : 1298,
-								time     : timestamp,
+								time     : date,
 								duration : 40
 							},
 							"effect-1299" : {
 								type     : "effect",
 								id       : 1299,
-								time     : timestamp,
+								time     : date,
 								duration : 40
 							}
 						}
