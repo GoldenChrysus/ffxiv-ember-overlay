@@ -1124,20 +1124,20 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid {
+#container #inner #content .spell-grid {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-#root-inner.down #container #inner #content #spell-grid {
+#root-inner.down #container #inner #content .spell-grid {
 	flex-wrap: wrap-reverse;
 }
 
-#root-inner.right #container #inner #content #spell-grid {
+#root-inner.right #container #inner #content .spell-grid {
 	flex-direction: row-reverse;
 }
 
-#container #inner #content #spell-grid .spell-container {
+#container #inner #content .spell-grid .spell-container {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -1164,18 +1164,18 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid .spell-container.minimal {
+#container #inner #content .spell-grid .spell-container.minimal {
 	height: 20px;
 }
 
-#container #inner #content #spell-grid .spell-container .icon {
+#container #inner #content .spell-grid .spell-container .icon {
 	flex: 0 0 100%;
 	width: 40px;
 	height: 40px;
 	position: relative;
 }
 
-#container #inner #content #spell-grid .spell-container .icon img {
+#container #inner #content .spell-grid .spell-container .icon img {
 	max-width: 100%;
 	max-height: 40px;
 	display: block;
@@ -1185,24 +1185,24 @@ body.mode-spells {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-#container #inner #content #spell-grid .spell-container .icon.effect img {
+#container #inner #content .spell-grid .spell-container .icon.effect img {
 	transform: translateX(-50% + 4px) translateY(-50% + 6px);
 }
 
-#container #inner #content #spell-grid .spell-container .icon.dot img {
+#container #inner #content .spell-grid .spell-container .icon.dot img {
 	transform: translateX(-50% + 4px) translateY(-50% - 6px);
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .icon {
+#container #inner #content .spell-grid .spell-container.minimal .icon {
 	width: 20px;
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .icon img {
+#container #inner #content .spell-grid .spell-container.minimal .icon img {
 	max-height: 20px;
 }
 
-#container #inner #content #spell-grid .spell-container.warning .icon,
-#container #inner #content #spell-grid .spell-container.warning .row {
+#container #inner #content .spell-grid .spell-container.warning .icon,
+#container #inner #content .spell-grid .spell-container.warning .row {
 	animation-name: pulsate;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -1210,7 +1210,7 @@ body.mode-spells {
 	animation-delay: 0s;
 }
 
-#container #inner #content #spell-grid .spell-container .row {
+#container #inner #content .spell-grid .spell-container .row {
 	flex: 0 0 100%;
 	position: relative;
 	width: calc(100% - 43px);
@@ -1232,11 +1232,11 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .row {
+#container #inner #content .spell-grid .spell-container.minimal .row {
 	width: calc(100% - 23px);
 }
 
-#container #inner #content #spell-grid .spell-container.warning .row {
+#container #inner #content .spell-grid .spell-container.warning .row {
 	.setThemeStyle(
 		{
 			background-image: @dark_spellWarningBackground;
@@ -1250,27 +1250,27 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid .spell-container .row:nth-child(1) {
+#container #inner #content .spell-grid .spell-container .row:nth-child(1) {
 	width: 100%;
 }
 
-#container #inner #content #spell-grid .spell-container .row span {
+#container #inner #content .spell-grid .spell-container .row span {
 	display: block;
 }
 
-#container #inner #content #spell-grid .spell-container .row .name {
+#container #inner #content .spell-grid .spell-container .row .name {
 	font-weight: bold;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .row .name {
+#container #inner #content .spell-grid .spell-container.minimal .row .name {
 	float: left;
 	max-width: 50%;
 }
 
-#container #inner #content #spell-grid .spell-container .row .cooldown {
+#container #inner #content .spell-grid .spell-container .row .cooldown {
 	.setThemeStyle(
 		{
 			color: @dark_headerAndLinkText
@@ -1284,7 +1284,7 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .row .cooldown {
+#container #inner #content .spell-grid .spell-container.minimal .row .cooldown {
 	float: right;
 	padding-right: 6px;
 }

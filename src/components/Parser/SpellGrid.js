@@ -1,4 +1,5 @@
 import React from "react";
+import clone from "lodash.clonedeep";
 
 import SkillData from "../../constants/SkillData";
 import LocalizationService from "../../services/LocalizationService";
@@ -60,33 +61,42 @@ class SpellGrid extends React.Component {
 		let width        = (100 / row_limit);
 		let spells       = this.buildSpells();
 		let style        = `
-			#root-inner:not(.right) #container #inner #content #spell-grid .spell-container {
+			#root-inner:not(.right) #container #inner #content .spell-grid .spell-container {
 				width: calc(${width}% - 5px);
 				margin-right: 5px;
 			}
 
-			#root-inner:not(.right) #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
+			#root-inner:not(.right) #container #inner #content .spell-grid .spell-container:nth-child(${row_limit}n) {
 				width: ${width}%;
 				margin-right: 0;
 			}
 
-			#root-inner.right #container #inner #content #spell-grid .spell-container {
+			#root-inner.right #container #inner #content .spell-grid .spell-container {
 				width: calc(${width}% - 5px);
 				margin-left: 5px;
 			}
 
-			#root-inner.right #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
+			#root-inner.right #container #inner #content .spell-grid .spell-container:nth-child(${row_limit}n) {
 				width: ${width}%;
 				margin-left: 0px;
 			}
 		`;
+
+		let props   = clone(this.props);
+		let classes = [props.className || ""];
+
+		classes.push("spell-grid");
+
+		delete props.spells;
+		delete props.encounter;
+		delete props.settings;
 
 		return (
 			<React.Fragment>
 				<style type="text/css">
 					{style}
 				</style>
-				<div id="spell-grid" className="spell-grid" ref="spell_grid">
+				<div className={classes.join(" ")} {...props} ref="spell_grid">
 					{spells}
 				</div>
 				{overlay_info}
@@ -156,7 +166,7 @@ class SpellGrid extends React.Component {
 		if (this.mounted) {
 			this.setState(state);
 
-			if (this.timer === null) {
+			if (this.timer === null && Object.keys(this.state.spells).length) {
 				this.startTimer();
 			}
 		} else {
@@ -216,7 +226,7 @@ class SpellGrid extends React.Component {
 			state.spells[i] = (diff / 1000).toFixed(1);
 		}
 
-		if (!Object.keys(this.state.spells)) {
+		if (!Object.keys(this.state.spells).length) {
 			this.cancelTimer();
 		}
 

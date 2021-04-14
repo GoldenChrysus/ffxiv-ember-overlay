@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { ContextMenuTrigger } from "react-contextmenu";
 import ReactTooltip from "react-tooltip";
+import Draggable from "react-draggable";
 
 import ContextMenu from "./Container/Menu";
 import Import from "./Container/Import";
@@ -73,7 +74,8 @@ class Container extends React.Component {
 						break;
 
 					default:
-						content = <SpellGrid encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode}/>
+						content = <SpellGrid key="spell-grid" encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode}/>;
+
 						break;
 				}
 
