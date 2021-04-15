@@ -25,6 +25,7 @@ class Container extends React.Component {
 		];
 
 		this.state = {
+			locked          : true,
 			spells_sections : this.props.settings.spells_mode.ui.sections
 		};
 	}
@@ -110,11 +111,20 @@ class Container extends React.Component {
 								let layout = section.layout;
 
 								if (this.props.internal.ui_builder) {
-									content.push(
-										<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[10, 10]} dragGrid={[10, 10]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)} data-key={uuid}>
-											<SpellGrid key={"spell-grid-" + uuid} from_builder="true" is_draggable={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode} style={{position: "absolute", width: "100%", height: "100%"}}/>
-										</Rnd>
-									);
+									if (this.state.locked) {
+										content.push(
+											<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[10, 10]} dragGrid={[10, 10]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)} data-key={uuid}>
+												<SpellGrid key={"spell-grid-" + uuid} from_builder="true" is_draggable={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode} style={{position: "absolute", width: "100%", height: "100%"}}/>
+											</Rnd>
+										);
+									} else {
+										content =
+											<div id="lock-warning">
+												<span>Please lock the overlay in OverlayPlugin.</span>
+											</div>;
+
+										break;
+									}
 								} else {
 									content.push(
 										<SpellGrid key={"spell-grid-" + uuid} from_builder="true" section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
@@ -215,7 +225,12 @@ class Container extends React.Component {
 	}
 
 	toggleHandle(e) {
-		let body = document.getElementsByTagName("body")[0];
+		let state = this.state;
+		let body  = document.getElementsByTagName("body")[0];
+
+		state.locked = e.detail.isLocked;
+
+		this.setState(state);
 
 		if (!e.detail.isLocked) {
 			body.classList.add("resizeHandle");

@@ -26,16 +26,31 @@ class SpellGrid extends React.Component {
 	}
 
 	componentDidUpdate(prev_props) {
-		let new_spells = {};
+		let new_spells  = false;
+		let lost_spells = false;
 
 		for (let i in this.props.spells) {
 			if (!prev_props.spells[i] || prev_props.spells[i].time < this.props.spells[i].time) {
+				if (!new_spells) {
+					new_spells = {};
+				}
+
 				new_spells[i] = this.props.spells[i];
 			}
 		}
 
-		if (Object.keys(new_spells).length) {
-			this.processSpells(new_spells);
+		for (let i in prev_props.spells) {
+			if (!this.props.spells[i]) {
+				if (!lost_spells) {
+					lost_spells = {};
+				}
+
+				lost_spells[i] = true;
+			}
+		}
+
+		if (new_spells || lost_spells) {
+			this.processSpells(new_spells, lost_spells);
 		}
 	}
 
@@ -149,7 +164,7 @@ class SpellGrid extends React.Component {
 		return items;
 	}
 
-	processSpells(spells) {
+	processSpells(spells, lost_spells) {
 		if (this.props.is_draggable) {
 			return;
 		}
@@ -158,49 +173,60 @@ class SpellGrid extends React.Component {
 		let builder   = (this.props.from_builder === "true");
 		let true_date = new Date();
 
-		for (let i in spells) {
-			if (builder && this.props.section.types.indexOf(spells[i].log_type) === -1) {
-				continue;
+		if (lost_spells) {
+			for (let i in lost_spells) {
+				this.doTTS(i);
+
+				delete this.spells[i];
+				delete state.spells[i];
 			}
+		}
 
-			let date     = spells[i].time;
-			let new_date = new Date(date);
-			let recast   = 0;
-			let dot      = false;
+		if (spells) {
+			for (let i in spells) {
+				if (builder && this.props.section.types.indexOf(spells[i].log_type) === -1) {
+					continue;
+				}
 
-			switch (spells[i].type) {
-				case "skill":
-					recast = SkillData.oGCDSkills[spells[i].id].recast;
+				let date     = spells[i].time;
+				let new_date = new Date(date);
+				let recast   = 0;
+				let dot      = false;
 
-					break;
+				switch (spells[i].type) {
+					case "skill":
+						recast = SkillData.oGCDSkills[spells[i].id].recast;
 
-				case "effect":
-					recast = spells[i].duration;
-					dot    = SkillData.Effects[spells[i].id].dot;
+						break;
 
-					break;
+					case "effect":
+						recast = spells[i].duration;
+						dot    = SkillData.Effects[spells[i].id].dot;
 
-				default:
-					break;
+						break;
+
+					default:
+						break;
+				}
+				
+				new_date.setSeconds(date.getSeconds() + recast);
+
+				if (new_date < true_date) {
+					continue;
+				}
+
+				this.spells[i] = {
+					type   : spells[i].type,
+					id     : spells[i].id,
+					time   : new_date,
+					name   : spells[i].name,
+					recast : recast,
+					dot    : dot,
+					party  : spells[i].party
+				};
+
+				state.spells[i] = recast;
 			}
-			
-			new_date.setSeconds(date.getSeconds() + recast);
-
-			if (new_date < true_date) {
-				continue;
-			}
-
-			this.spells[i] = {
-				type   : spells[i].type,
-				id     : spells[i].id,
-				time   : new_date,
-				name   : spells[i].name,
-				recast : recast,
-				dot    : dot,
-				party  : spells[i].party
-			};
-
-			state.spells[i] = recast;
 		}
 		
 		if (this.mounted) {
@@ -238,24 +264,7 @@ class SpellGrid extends React.Component {
 
 			if (diff <= 0) {
 				if (this.props.settings.use_tts) {
-					let name = this.spells[i].name;
-
-					if (!name) {
-						switch (this.spells[i].type) {
-							case "skill":
-								TTSService.sayNow(LocalizationService.getoGCDSkillName(this.spells[i].id));
-								break;
-
-							case "effect":
-								TTSService.sayNow(LocalizationService.getEffectName(this.spells[i].id));
-								break;
-
-							default:
-								break;
-						}
-					}
-
-					TTSService.sayNow(name);
+					this.doTTS(i);
 				}
 
 				delete this.spells[i];
@@ -271,6 +280,33 @@ class SpellGrid extends React.Component {
 		}
 
 		this.setState(state);
+	}
+
+	doTTS(i) {
+		if (!this.spells[i] || this.spells[i].tts) {
+			return;
+		}
+
+		this.spells[i].tts = true;
+
+		let name = this.spells[i].name;
+
+		if (!name) {
+			switch (this.spells[i].type) {
+				case "skill":
+					TTSService.sayNow(LocalizationService.getoGCDSkillName(this.spells[i].id));
+					break;
+
+				case "effect":
+					TTSService.sayNow(LocalizationService.getEffectName(this.spells[i].id));
+					break;
+
+				default:
+					break;
+			}
+		}
+
+		TTSService.sayNow(name);
 	}
 }
 

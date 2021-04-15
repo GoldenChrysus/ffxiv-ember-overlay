@@ -1,4 +1,5 @@
 import store from "../redux/store/index";
+import clone from "lodash.clonedeep";
 
 import Constants from "../constants/index";
 import SkillData from "../constants/SkillData";
@@ -274,10 +275,11 @@ class GameDataProcessor  {
 	parseSpellLogLine(data, state) {
 		data = data.line;
 		
-		let in_use = false;
-		let date   = new Date();
+		let in_use     = clone(state.internal.spells.in_use);
+		let date       = new Date();
+		let event_code = +data[0];
 
-		switch (+data[0]) {
+		switch (event_code) {
 			case 21:
 			case 22:
 				let skill_id        = String(parseInt(data[4], 16));
@@ -325,6 +327,7 @@ class GameDataProcessor  {
 				return in_use;
 
 			case 26:
+			case 30:
 				let effect_id = String(parseInt(data[2], 16));
 
 				if (!SkillData.Effects[effect_id]) {
@@ -372,16 +375,22 @@ class GameDataProcessor  {
 				if (in_use === false) {
 					in_use = {};
 				}
+				
+				effect_key = `effect-${effect_id}${effect_suffix}`;
 
-				in_use[`effect-${effect_id}${effect_suffix}`] = {
-					type     : "effect",
-					id       : effect_id,
-					time     : date,
-					name     : data[3],
-					duration : +data[4],
-					log_type : effect_char_type + "-" + ((dot) ? "dot" : "effect"),
-					party    : (effect_char_type === "you")
-				};
+				if (event_code === 26) {
+					in_use[effect_key] = {
+						type     : "effect",
+						id       : effect_id,
+						time     : date,
+						name     : data[3],
+						duration : +data[4],
+						log_type : effect_char_type + "-" + ((dot) ? "dot" : "effect"),
+						party    : (effect_char_type === "you")
+					};
+				} else {
+					delete in_use[effect_key];
+				}
 
 				return in_use;
 
