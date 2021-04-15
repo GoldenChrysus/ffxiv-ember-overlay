@@ -970,6 +970,16 @@
 			"fr" : "Use Text to Speech",
 			"kr" : "Use Text to Speech"
 		},
+		"spells_mode.tts_trigger" : {
+			"en" : "Text to Speech Trigger",
+			"pt" : "Text to Speech Trigger",
+			"cn" : "Text to Speech Trigger",
+			"jp" : "Text to Speech Trigger",
+			"de" : "Text to Speech Trigger",
+			"es" : "Text to Speech Trigger",
+			"fr" : "Text to Speech Trigger",
+			"kr" : "Text to Speech Trigger"
+		},
 		"spells_mode.minimal_layout" : {
 			"en" : "Minimal Layout",
 			"pt" : "Layout Minimalista",
@@ -1319,6 +1329,40 @@
 					"es" : "DOT",
 					"fr" : "DOT",
 					"kr" : "DOT"
+				}
+			},
+			"tts_trigger_options" : {
+				"en" : {
+					"zero"    : "When timer reaches 0",
+					"warning" : "When timer reaches warning threshold"
+				},
+				"pt" : {
+					"zero"    : "When timer reaches 0",
+					"warning" : "When timer reaches warning threshold"
+				},
+				"cn" : {
+					"zero"    : "When timer reaches 0",
+					"warning" : "When timer reaches warning threshold"
+				},
+				"jp" : {
+					"zero"    : "When timer reaches 0",
+					"warning" : "When timer reaches warning threshold"
+				},
+				"de" : {
+					"zero"    : "When timer reaches 0",
+					"warning" : "When timer reaches warning threshold"
+				},
+				"es" : {
+					"zero"    : "When timer reaches 0",
+					"warning" : "When timer reaches warning threshold"
+				},
+				"fr" : {
+					"zero"    : "When timer reaches 0",
+					"warning" : "When timer reaches warning threshold"
+				},
+				"kr" : {
+					"zero"    : "When timer reaches 0",
+					"warning" : "When timer reaches warning threshold"
 				}
 			}
 		},

@@ -262,11 +262,15 @@ class SpellGrid extends React.Component {
 		for (let i in this.spells) {
 			let diff = this.spells[i].time - now;
 
-			if (diff <= 0) {
-				if (this.props.settings.use_tts) {
+			if (this.props.settings.use_tts) {
+				let threshold = (this.props.settings.tts_trigger === "zero") ? 0 : this.props.settings.warning_threshold * 1000;
+
+				if (diff <= threshold) {
 					this.doTTS(i);
 				}
+			}
 
+			if (diff <= 0) {
 				delete this.spells[i];
 				delete this.state.spells[i];
 				continue;

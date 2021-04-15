@@ -240,6 +240,22 @@ class LocalizationService {
 
 		return options;
 	}
+
+	getSpellsTTSTriggerOptions() {
+		let language = this.getLanguage();
+		let data_set = SettingsLocales.misc.spells.tts_trigger_options[language] || SettingsLocales.misc.spells.tts_trigger_options.en;
+		let options  = [];
+
+		for (let key in data_set) {
+			options.push({
+				key  : key,
+				value : key,
+				text  : data_set[key]
+			});
+		}
+		
+		return options;
+	}
 }
 
 export default new LocalizationService();

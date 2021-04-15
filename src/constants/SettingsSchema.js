@@ -638,6 +638,14 @@ const SettingsSchema = {
 								}
 							},
 							{
+								key_path : "spells_mode.tts_trigger",
+								type     : "select",
+								options  : () => LocalizationService.getSpellsTTSTriggerOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.tts_trigger;
+								}
+							},
+							{
 								key_path : "spells_mode.warning_threshold",
 								type     : "slider",
 								range    : "min",

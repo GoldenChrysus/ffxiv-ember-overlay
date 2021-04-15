@@ -173,6 +173,7 @@ const default_settings = {
 		spells_per_row       : 1,
 		show_icon            : true,
 		use_tts              : false,
+		tts_trigger          : "zero",
 		minimal_layout       : false,
 		invert_vertical      : false,
 		invert_horizontal    : false,
