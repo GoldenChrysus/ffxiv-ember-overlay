@@ -10,7 +10,7 @@
 ### Features
 - Added setting "Text to Speech Trigger" to allow choosing when the TTS alert should trigger
 - Added new setting tab "Party Spell Timers" to set spells that should be tracked for other party members
-- Added UI builder:
+- Added spells timer UI builder
     - New setting tab "UI Builder" allows creation of spell timer sections that track only the spell types you choose
     - Setting "Use UI Builder" in the UI Builder tab must be enabled for changes to take effect
     - In the overlay, right clicking and choosing "Edit UI" will allow you to drag and resize the spell timer sections you created

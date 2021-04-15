@@ -293,7 +293,7 @@ class GameDataProcessor  {
 						return in_use;
 					}
 
-					let job = state.internal.game.Combatant[data[3]].Job;
+					let job = (state.internal.game.Combatant[data[3]].Job || "").toUpperCase();
 
 					if (!Constants.GameJobs[job]) {
 						return in_use;
@@ -349,7 +349,7 @@ class GameDataProcessor  {
 						return in_use;
 					}
 
-					let job = state.internal.game.Combatant[data[player_name_index]].Job;
+					let job = (state.internal.game.Combatant[data[player_name_index]].Job || "").toUpperCase();
 
 					if (!Constants.GameJobs[job]) {
 						return in_use;

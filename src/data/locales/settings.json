@@ -1278,7 +1278,7 @@
 					"fr" : "DPS",
 					"kr" : "DPS"
 				},
-				"healer" : {
+				"heal" : {
 					"en" : "Healer",
 					"pt" : "Healer",
 					"cn" : "Healer",

@@ -94,7 +94,7 @@ class Parser extends React.Component {
 		`;
 
 		if (collapsed) {
-			if (!this.props.using_ui_builder) {
+			if (!is_spells || !this.props.using_ui_builder) {
 				root_inner_classes.push("auto-height");
 			}
 
