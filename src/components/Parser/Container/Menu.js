@@ -27,7 +27,7 @@ class Menu extends React.Component {
 	}
 
 	getUIBuilderSection() {
-		if (this.props.overlayplugin_author !== "ngld" || !this.props.use_ui_builder) {
+		if (this.props.overlayplugin_author !== "ngld" || !this.props.use_ui_builder || this.props.mode !== "spells") {
 			return;
 		}
 

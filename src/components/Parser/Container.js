@@ -238,7 +238,7 @@ class Container extends React.Component {
 		if (!e.detail.isLocked) {
 			body.classList.add("resizeHandle");
 
-			if (this.props.settings.spells_mode.ui.use) {
+			if (this.props.settings.spells_mode.ui.use && this.props.internal.mode === "spells") {
 				body.classList.add("white-background");
 			}
 		} else {

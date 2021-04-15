@@ -212,9 +212,13 @@ class LocalizationService {
 	}
 
 	getSpellTrackingOption(role, type, language) {
-		language = language || this.getLanguage();
-
 		let misc = SettingsLocales.misc.spells;
+
+		if (!misc.roles[role]) {
+			return false;
+		}
+
+		language = language || this.getLanguage();
 
 		role = misc.roles[role][language] || misc.roles[role].en;
 		type = misc.types[type][language] || misc.types[type].en;

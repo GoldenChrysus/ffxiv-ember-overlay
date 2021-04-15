@@ -138,8 +138,13 @@ class SpellGrid extends React.Component {
 
 			for (let value of this.props.section.types) {
 				value = value.split("-");
+				value = LocalizationService.getSpellTrackingOption(value[0], value[1]);
 
-				text.push(LocalizationService.getSpellTrackingOption(value[0], value[1]))
+				if (value === false) {
+					continue;
+				}
+
+				text.push(value)
 			}
 
 			return <span>{text.join(", ")}</span>;

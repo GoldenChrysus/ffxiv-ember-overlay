@@ -88,8 +88,7 @@ class PluginService extends PluginServiceAbstract {
 			combat : UsageService.usingCombatData(mode, settings)
 		};
 		let events   = [
-			"ChangePrimaryPlayer",
-			"PartyChanged"
+			"ChangePrimaryPlayer"
 		];
 
 		if (data.combat) {

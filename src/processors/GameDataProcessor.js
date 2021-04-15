@@ -415,13 +415,19 @@ class GameDataProcessor  {
 			}
 		};
 
-		for (let uuid in state.settings.spells_mode.ui.sections) {
-			let section = state.settings.spells_mode.ui.sections[uuid];
+		if (state.settings.spells_mode.ui.use) {
+			types.skill.you  = false;
+			types.effect.you = false;
+			types.dot.you    = false;
 
-			for (let type of section.types) {
-				let data = type.split("-");
+			for (let uuid in state.settings.spells_mode.ui.sections) {
+				let section = state.settings.spells_mode.ui.sections[uuid];
 
-				types[data[1]][data[0]] = true;
+				for (let type of section.types) {
+					let data = type.split("-");
+
+					types[data[1]][data[0]] = true;
+				}
 			}
 		}
 
