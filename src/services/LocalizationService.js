@@ -248,7 +248,7 @@ class LocalizationService {
 
 		for (let key in data_set) {
 			options.push({
-				key  : key,
+				key   : key,
 				value : key,
 				text  : data_set[key]
 			});

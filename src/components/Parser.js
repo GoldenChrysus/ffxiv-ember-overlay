@@ -68,11 +68,20 @@ class Parser extends React.Component {
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
 		let zoom               = this.props.zoom / 100;
+		let context_zoom       = 1 / zoom;
 		let display            = (this.state.visible) ? "block" : "none";
 		let setting_style      = `
 			body {
 				zoom: ${zoom};
 				display: ${display};
+			}
+
+			.container-context-menu {
+				zoom: ${context_zoom};
+			}
+
+			.container-context-menu .item-group {
+				zoom: ${zoom};
 			}
 
 			#container {

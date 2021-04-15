@@ -5,7 +5,7 @@
 **Released: [in development]**
 
 ### Bug Fixes
-- ?
+- Resolved issue where context menu was misplaced when using a non-100 zoom setting
 
 ### Features
 - Added setting "Text to Speech Trigger" to allow choosing when the TTS alert should trigger

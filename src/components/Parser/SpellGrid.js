@@ -117,6 +117,7 @@ class SpellGrid extends React.Component {
 		delete props.settings;
 		delete props.section;
 		delete props.is_draggable;
+		delete props.from_builder;
 
 		return (
 			<React.Fragment>
