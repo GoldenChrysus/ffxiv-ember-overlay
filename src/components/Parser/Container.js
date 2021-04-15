@@ -50,7 +50,10 @@ class Container extends React.Component {
 	}
 
 	componentDidMount() {
-		TTSService.start();
+		if (this.props.internal.mode === "stats") {
+			TTSService.start();
+		}
+
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
 		this.props.plugin_service.subscribe();
 	}

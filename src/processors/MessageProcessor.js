@@ -66,7 +66,6 @@ class MessageProcessor {
 				break;
 
 			case "PartyChanged":
-				console.log(data);
 				store.dispatch(parseParty(data));
 				break;
 

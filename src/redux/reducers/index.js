@@ -97,8 +97,10 @@ function rootReducer(state, action) {
 				+action.payload.Encounter.DURATION < +state.internal.encounter_history[0].game.Encounter.DURATION
 			);
 
-			action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language, (new_history) ? undefined : state);
-			action.payload = GameDataProcessor.injectEnmity(action.payload, state);
+			if (state.internal.mode === "stats") {
+				action.payload = GameDataProcessor.normalizeLocales(action.payload, state.settings.interface.language, (new_history) ? undefined : state);
+				action.payload = GameDataProcessor.injectEnmity(action.payload, state);
+			}
 
 			new_state = createNewState(state, full_key, action);
 
