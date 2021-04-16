@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { ContextMenuTrigger } from "react-contextmenu";
 import ReactTooltip from "react-tooltip";
 import { Rnd } from "react-rnd";
+import clone from "lodash.clonedeep";
 
 import ContextMenu from "./Container/Menu";
 import Import from "./Container/Import";
@@ -101,6 +102,8 @@ class Container extends React.Component {
 						break;
 
 					default:
+						let settings = this.props.settings.spells_mode;
+
 						if (this.props.settings.spells_mode.ui.use) {
 							content = [];
 
@@ -111,13 +114,22 @@ class Container extends React.Component {
 									continue;
 								}
 
-								let layout = section.layout;
+								let section_settings = clone(settings);
+								let layout           = section.layout;
+
+								if (layout.spells_per_row !== -1) {
+									section_settings.spells_per_row = layout.spells_per_row;
+								}
+								
+								if (layout.layout !== "default") {
+									section_settings.layout = layout.layout;
+								}
 
 								if (this.props.internal.ui_builder) {
 									if (this.state.locked) {
 										content.push(
 											<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[10, 10]} dragGrid={[10, 10]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)} data-key={uuid}>
-												<SpellGrid key={"spell-grid-" + uuid} from_builder="true" is_draggable={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode} style={{position: "absolute", width: "100%", height: "100%"}}/>
+												<SpellGrid key={"spell-grid-" + uuid} from_builder={true} is_draggable={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={section_settings} style={{position: "absolute", width: "100%", height: "100%"}}/>
 											</Rnd>
 										);
 									} else {
@@ -130,7 +142,7 @@ class Container extends React.Component {
 									}
 								} else {
 									content.push(
-										<SpellGrid key={"spell-grid-" + uuid} from_builder="true" section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
+										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={section_settings} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
 									);
 								}
 							}

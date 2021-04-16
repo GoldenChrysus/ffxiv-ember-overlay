@@ -660,16 +660,17 @@ const SettingsSchema = {
 								type     : "slider",
 								range    : "min",
 								minimum  : 1,
-								maximum  : 5,
+								maximum  : 20,
 								value    : function() {
 									return this.props.settings.spells_mode.spells_per_row;
 								}
 							},
 							{
-								key_path : "spells_mode.minimal_layout",
-								type     : "checkbox",
+								key_path : "spells_mode.layout",
+								type     : "select",
+								options  : () => LocalizationService.getSpellLayoutOptions(),
 								value    : function() {
-									return this.props.settings.spells_mode.minimal_layout;
+									return this.props.settings.spells_mode.layout;
 								}
 							},
 							{
@@ -762,6 +763,7 @@ const SettingsSchema = {
 				path : "spells-ui",
 				sections : [
 					{
+						info     : () => LocalizationService.getMisc("spells_ui_builder_info"),
 						settings : [
 							{
 								key_path : "spells_mode.ui.use",

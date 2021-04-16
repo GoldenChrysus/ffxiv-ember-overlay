@@ -260,6 +260,30 @@ class LocalizationService {
 		
 		return options;
 	}
+
+	getSpellLayoutOptions(include_default) {
+		let language = this.getLanguage();
+		let data_set = SettingsLocales.misc.spells.layout_options[language] || SettingsLocales.misc.spells.layout_options.en;
+		let options  = [];
+
+		if (include_default) {
+			options.push({
+				key   : "default",
+				value : "default",
+				text  : this.getMisc("default")
+			});
+		}
+
+		for (let key in data_set) {
+			options.push({
+				key   : key,
+				value : key,
+				text  : data_set[key]
+			});
+		}
+		
+		return options;
+	}
 }
 
 export default new LocalizationService();

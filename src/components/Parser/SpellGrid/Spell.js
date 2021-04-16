@@ -10,8 +10,11 @@ class Spell extends React.Component {
 		let type      = (this.props.spell.dot) ? "dot" : real_type;
 		let bg_x      = (this.props.settings[`reverse_${type}`]) ? "100%" : "0";
 		let classes   = ["spell-container"];
+		let breaker   = (this.props.settings.layout === "icon" && +this.props.order % +this.props.settings.spells_per_row === 0)
+			? <span className="breaker" style={{order: this.props.order}}></span>
+			: "";
 		let icon      = () => {
-			if (!this.props.settings.show_icon) {
+			if (!this.props.settings.show_icon && this.props.settings.layout !== "icon") {
 				return "";
 			}
 
@@ -22,8 +25,8 @@ class Spell extends React.Component {
 			);
 		};
 
-		if (this.props.settings.minimal_layout) {
-			classes.push("minimal");
+		if (this.props.settings.layout !== "default") {
+			classes.push(this.props.settings.layout);
 		}
 
 		if (this.props.cooldown <= this.props.settings.warning_threshold) {
@@ -31,13 +34,16 @@ class Spell extends React.Component {
 		}
 
 		return(
-			<div className={classes.join(" ")} style={{order: this.props.order}}>
-				{icon()}
-				<div className="row" style={{backgroundSize: width + " 100%", backgroundPosition: bg_x + " 0"}}>
-					<span className="name">{this.getName(real_type)}</span>
-					<span className="cooldown">{this.props.cooldown}</span>
+			<React.Fragment>
+				<div className={classes.join(" ")} style={{order: this.props.order}}>
+					{icon()}
+					<div className="row" style={{backgroundSize: width + " 100%", backgroundPosition: bg_x + " 0"}}>
+						<span className="name">{this.getName(real_type)}</span>
+						<span className="cooldown">{this.props.cooldown}</span>
+					</div>
 				</div>
-			</div>
+				{breaker}
+			</React.Fragment>
 		);
 	}
 

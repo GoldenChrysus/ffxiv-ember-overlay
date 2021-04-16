@@ -10,19 +10,20 @@
 ### Features
 - Added setting "Text to Speech Trigger" to allow choosing when the TTS alert should trigger
 - Added new setting tab "Party Spell Timers" to set spells that should be tracked for other party members
-- Added spells timer UI builder
+- Added icon-only spell timer layout; this will override the setting to show/hide spell icons
+- Added spell timer UI builder
     - New setting tab "UI Builder" allows creation of spell timer sections that track only the spell types you choose
     - Setting "Use UI Builder" in the UI Builder tab must be enabled for changes to take effect
     - In the overlay, right clicking and choosing "Edit UI" will allow you to drag and resize the spell timer sections you created
     - UI position/size edits are saved after right clicking and choosing "Save UI"
     - If you are unable to right click on your overlay (i.e. the overlay is empty), you can either:
         - Cast a spell that you're already tracking, then you will be able to right click on the spell timer
-        - Turn off the "Lock overlay" or turn on the "Force white background" options in OverlayPlugin
+        - In OverlayPlugin, turn off the "Lock overlay" option or turn on the "Force white background" option
             - Be sure to turn off the white background or lock your overlay once you've chosen "Edit UI" or opened your settings
             - A warning will appear asking you to lock your overlay again once you choose "Edit UI" after unlocking the overlay
 
 ### UI Changes
-- ?
+- Setting at Spell Timers > Use Minimal Layout has been renamed to "Layout" to allow for the icon-only layout
 
 ### Code Changes
 - ?

@@ -41,6 +41,9 @@ class Section extends React.Component {
 
 	render() {
 		let settings = [];
+		let info     = (this.props.data.info)
+			? <p>{this.props.data.info()}</p>
+			: "";
 		// let language = this.props.settings.interface.language;
 
 		for (let setting_data of this.props.data.settings) {
@@ -154,6 +157,7 @@ class Section extends React.Component {
 		return(
 			<React.Fragment>
 				<Header as="h2">{LocalizationService.getSettingsSubsectionText(this.props.parent_path, this.props.index)}</Header>
+				{info}
 				<div>
 					{settings}
 				</div>

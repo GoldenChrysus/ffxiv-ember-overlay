@@ -321,7 +321,7 @@ class GameDataProcessor  {
 					time     : date,
 					name     : data[5],
 					log_type : `${skill_char_type}-skill`,
-					party    : (skill_char_type === "you")
+					party    : (skill_char_type !== "you")
 				};
 
 				return in_use;
@@ -386,7 +386,7 @@ class GameDataProcessor  {
 						name     : data[3],
 						duration : +data[4],
 						log_type : effect_char_type + "-" + ((dot) ? "dot" : "effect"),
-						party    : (effect_char_type === "you")
+						party    : (effect_char_type !== "you")
 					};
 				} else {
 					delete in_use[effect_key];

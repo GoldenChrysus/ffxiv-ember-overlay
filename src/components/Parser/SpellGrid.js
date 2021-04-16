@@ -72,7 +72,7 @@ class SpellGrid extends React.Component {
 
 	render() {
 		let overlay_info = (
-			this.props.from_builder === "true" ||
+			this.props.from_builder ||
 			(this.props.encounter && Object.keys(this.props.encounter).length) ||
 			Object.keys(this.props.spells).length
 		)
@@ -87,7 +87,7 @@ class SpellGrid extends React.Component {
 				margin-right: 5px;
 			}
 
-			#root-inner:not(.right) #container #inner #content .spell-grid .spell-container:nth-child(${row_limit}n) {
+			#root-inner:not(.right) #container #inner #content .spell-grid .spell-container:nth-of-type(${row_limit}n) {
 				width: ${width}%;
 				margin-right: 0;
 			}
@@ -97,7 +97,7 @@ class SpellGrid extends React.Component {
 				margin-left: 5px;
 			}
 
-			#root-inner.right #container #inner #content .spell-grid .spell-container:nth-child(${row_limit}n) {
+			#root-inner.right #container #inner #content .spell-grid .spell-container:nth-of-type(${row_limit}n) {
 				width: ${width}%;
 				margin-left: 0px;
 			}
@@ -176,7 +176,7 @@ class SpellGrid extends React.Component {
 		}
 
 		let state     = this.state;
-		let builder   = (this.props.from_builder === "true");
+		let builder   = (this.props.from_builder);
 		let true_date = new Date();
 
 		if (lost_spells) {
@@ -262,8 +262,9 @@ class SpellGrid extends React.Component {
 	}
 
 	updateCooldowns() {
-		let now   = new Date();
-		let state = this.state;
+		let now              = new Date();
+		let state            = this.state;
+		let decimal_accuracy = (this.props.settings.layout === "icon") ? 0 : 1;
 
 		for (let i in this.spells) {
 			let diff = this.spells[i].time - now;
@@ -282,7 +283,7 @@ class SpellGrid extends React.Component {
 				continue;
 			}
 
-			state.spells[i] = (diff / 1000).toFixed(1);
+			state.spells[i] = (diff / 1000).toFixed(decimal_accuracy);
 		}
 
 		if (!Object.keys(this.state.spells).length) {

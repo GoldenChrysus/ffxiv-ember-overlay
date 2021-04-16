@@ -980,15 +980,15 @@
 			"fr" : "Text to Speech Trigger",
 			"kr" : "Text to Speech Trigger"
 		},
-		"spells_mode.minimal_layout" : {
-			"en" : "Minimal Layout",
-			"pt" : "Layout Minimalista",
-			"cn" : "紧凑布局",
-			"jp" : "ミニマルレイアウト",
-			"de" : "Mimimales Layout",
-			"es" : "Minimal Layout",
-			"fr" : "Minimal Layout",
-			"kr" : "Minimal Layout"
+		"spells_mode.layout" : {
+			"en" : "Layout",
+			"pt" : "Layout",
+			"cn" : "布局",
+			"jp" : "レイアウト",
+			"de" : "Layout",
+			"es" : "Layout",
+			"fr" : "Layout",
+			"kr" : "Layout"
 		},
 		"spells_mode.invert_vertical" : {
 			"en" : "Invert Vertical",
@@ -1331,6 +1331,48 @@
 					"kr" : "DOT"
 				}
 			},
+			"layout_options" : {
+				"en" : {
+					"normal"  : "Normal",
+					"compact" : "Compact",
+					"icon"    : "Icon Only"
+				},
+				"pt" : {
+					"normal"  : "Normal",
+					"compact" : "Compact",
+					"icon"    : "Icon Only"
+				},
+				"cn" : {
+					"normal"  : "Normal",
+					"compact" : "紧凑",
+					"icon"    : "Icon Only"
+				},
+				"jp" : {
+					"normal"  : "Normal",
+					"compact" : "Compact",
+					"icon"    : "Icon Only"
+				},
+				"de" : {
+					"normal"  : "Normal",
+					"compact" : "Compact",
+					"icon"    : "Icon Only"
+				},
+				"es" : {
+					"normal"  : "Normal",
+					"compact" : "Compact",
+					"icon"    : "Icon Only"
+				},
+				"fr" : {
+					"normal"  : "Normal",
+					"compact" : "Compact",
+					"icon"    : "Icon Only"
+				},
+				"kr" : {
+					"normal"  : "Normal",
+					"compact" : "Compact",
+					"icon"    : "Icon Only"
+				}
+			},
 			"tts_trigger_options" : {
 				"en" : {
 					"zero"    : "When timer reaches 0",
@@ -1648,6 +1690,36 @@
 			"es" : "Value",
 			"fr" : "Value",
 			"kr" : "Value"
+		},
+		"default" : {
+			"en" : "Default",
+			"pt" : "Default",
+			"cn" : "Default",
+			"jp" : "Default",
+			"de" : "Default",
+			"es" : "Default",
+			"fr" : "Default",
+			"kr" : "Default"
+		},
+		"track" : {
+			"en" : "Track",
+			"pt" : "Track",
+			"cn" : "Track",
+			"jp" : "Track",
+			"de" : "Track",
+			"es" : "Track",
+			"fr" : "Track",
+			"kr" : "Track"
+		},
+		"spells_ui_builder_info" : {
+			"en" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
+			"pt" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
+			"cn" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
+			"jp" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
+			"de" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
+			"es" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
+			"fr" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
+			"kr" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\""
 		}
 	}
 }
