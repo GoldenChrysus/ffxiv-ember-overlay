@@ -122,7 +122,7 @@ class SpellsUITable extends Table {
 		let options = {
 			types    : this.state._insert.types,
 			layout   : {
-				layout : this.state._insert.layout.layout,
+				layout         : this.state._insert.layout.layout,
 				spells_per_row : this.state._insert.layout.spells_per_row,
 			},
 			key      : null,

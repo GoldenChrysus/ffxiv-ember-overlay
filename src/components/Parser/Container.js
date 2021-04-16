@@ -125,10 +125,12 @@ class Container extends React.Component {
 									section_settings.layout = layout.layout;
 								}
 
+								section_settings.uuid = uuid;
+
 								if (this.props.internal.ui_builder) {
 									if (this.state.locked) {
 										content.push(
-											<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[10, 10]} dragGrid={[10, 10]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)} data-key={uuid}>
+											<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[10, 10]} dragGrid={[10, 10]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)}>
 												<SpellGrid key={"spell-grid-" + uuid} from_builder={true} is_draggable={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={section_settings} style={{position: "absolute", width: "100%", height: "100%"}}/>
 											</Rnd>
 										);
@@ -264,7 +266,11 @@ class Container extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-	return state;
+	return {
+		internal       : state.internal,
+		settings       : state.settings,
+		plugin_service : state.plugin_service
+	}
 };
 
 export default connect(mapStateToProps)(Container);

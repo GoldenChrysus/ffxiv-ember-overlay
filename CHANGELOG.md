@@ -2,16 +2,16 @@
 
 ## 0.26.0-alpha
 
-**Released: [in development]**
+**Released: [in staging]**
 
 ### Bug Fixes
 - Resolved issue where context menu was misplaced when using a non-100 zoom setting
 
 ### Features
 - Added setting "Text to Speech Trigger" to allow choosing when the TTS alert should trigger
-- Added new setting tab "Party Spell Timers" to set spells that should be tracked for other party members
-- Added icon-only spell timer layout; this will override the setting to show/hide spell icons
-- Added spell timer UI builder
+- Added new setting tab "Party Spell Timers" to set spells that should be tracked for other party/alliance members
+- Added icon-only spell timer layout at Spell Timers > Layout; enabling this will override the setting to show/hide spell icons
+- Added spell timer custom UI builder
     - New setting tab "UI Builder" allows creation of spell timer sections that track only the spell types you choose
     - Setting "Use UI Builder" in the UI Builder tab must be enabled for changes to take effect
     - In the overlay, right clicking and choosing "Edit UI" will allow you to drag and resize the spell timer sections you created
@@ -26,10 +26,10 @@
 - Setting at Spell Timers > Use Minimal Layout has been renamed to "Layout" to allow for the icon-only layout
 
 ### Code Changes
-- ?
+- N/A
 
 ### Miscellaneous
-- ?
+- N/A
 
 ## 0.25.1-alpha
 

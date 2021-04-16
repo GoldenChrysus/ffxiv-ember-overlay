@@ -25,7 +25,7 @@ class Spell extends React.Component {
 			);
 		};
 
-		if (this.props.settings.layout !== "default") {
+		if (this.props.settings.layout !== "normal") {
 			classes.push(this.props.settings.layout);
 		}
 

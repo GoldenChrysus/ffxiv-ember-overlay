@@ -19,6 +19,9 @@ class TTSService {
 		aggro     : {},
 		encounter : []
 	};
+	last  = {
+		spells : {}
+	};
 
 	start() {
 		setInterval(
@@ -159,6 +162,33 @@ class TTSService {
 
 	sayNow(message) {
 		store.getState().plugin_service.tts(message);
+	}
+
+	saySpell(key, id, type, name) {
+		let date = new Date();
+
+		if (this.last.spells[key] && date.getTime() - this.last.spells[key].getTime() <= 500) {
+			return;
+		}
+
+		if (!name) {
+			switch (type) {
+				case "skill":
+					name = LocalizationService.getoGCDSkillName(id);
+					break;
+
+				case "effect":
+					name = LocalizationService.getEffectName(id);
+					break;
+
+				default:
+					break;
+			}
+		}
+
+		this.last.spells[key] = date;
+
+		this.sayNow(name);
 	}
 
 	processQueue() {

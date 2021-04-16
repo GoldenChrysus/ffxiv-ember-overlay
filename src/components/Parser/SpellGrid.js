@@ -79,25 +79,26 @@ class SpellGrid extends React.Component {
 			? ""
 			: <OverlayInfo mode="spells" settings={this.props.settings}/>;
 		let row_limit    = this.props.settings.spells_per_row;
+		let uuid         = this.props.settings.uuid || "default";
 		let width        = (100 / row_limit);
 		let spells       = this.buildSpells();
 		let style        = `
-			#root-inner:not(.right) #container #inner #content .spell-grid .spell-container {
+			#root-inner:not(.right) #container #inner #content .spell-grid[data-key="${uuid}"] .spell-container {
 				width: calc(${width}% - 5px);
 				margin-right: 5px;
 			}
 
-			#root-inner:not(.right) #container #inner #content .spell-grid .spell-container:nth-of-type(${row_limit}n) {
+			#root-inner:not(.right) #container #inner #content .spell-grid[data-key="${uuid}"] .spell-container:nth-of-type(${row_limit}n) {
 				width: ${width}%;
 				margin-right: 0;
 			}
 
-			#root-inner.right #container #inner #content .spell-grid .spell-container {
+			#root-inner.right #container #inner #content .spell-grid[data-key="${uuid}"] .spell-container {
 				width: calc(${width}% - 5px);
 				margin-left: 5px;
 			}
 
-			#root-inner.right #container #inner #content .spell-grid .spell-container:nth-of-type(${row_limit}n) {
+			#root-inner.right #container #inner #content .spell-grid[data-key="${uuid}"] .spell-container:nth-of-type(${row_limit}n) {
 				width: ${width}%;
 				margin-left: 0px;
 			}
@@ -124,7 +125,7 @@ class SpellGrid extends React.Component {
 				<style type="text/css">
 					{style}
 				</style>
-				<div {...props} className={classes.join(" ")} ref="spell_grid">
+				<div {...props} className={classes.join(" ")} data-key={uuid} ref="spell_grid">
 					{spells}
 				</div>
 				{overlay_info}
@@ -300,24 +301,7 @@ class SpellGrid extends React.Component {
 
 		this.spells[i].tts = true;
 
-		let name = this.spells[i].name;
-
-		if (!name) {
-			switch (this.spells[i].type) {
-				case "skill":
-					TTSService.sayNow(LocalizationService.getoGCDSkillName(this.spells[i].id));
-					break;
-
-				case "effect":
-					TTSService.sayNow(LocalizationService.getEffectName(this.spells[i].id));
-					break;
-
-				default:
-					break;
-			}
-		}
-
-		TTSService.sayNow(name);
+		TTSService.saySpell(i, this.spells[i].id, this.spells[i].type, this.spells[i].name);
 	}
 }
 

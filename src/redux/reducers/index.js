@@ -86,7 +86,12 @@ function rootReducer(state, action) {
 				new_state = createNewState(new_state, full_key, setting);
 			}
 
-			new_state.settings_data.saveSettings(true).then(() => TabSyncService.saveAction(action));
+			if (!action.skip_sync) {
+				new_state.settings_data.saveSettings(true).then(() => TabSyncService.saveAction(action));
+			} else {
+				new_state.settings_data.saveSettings(true);
+			}
+
 			break;
 
 		case "parseGameData":
@@ -453,7 +458,7 @@ function createNewState(state, full_key, action) {
 		}
 	}
 
-	if (["settings", "settings.spells_mode.ui.sections"].indexOf(full_key) !== -1) {
+	if (["settings", "settings.spells_mode.ui.sections", "settings.spells_mode.ui.use"].indexOf(full_key) !== -1) {
 		new_state.internal.spells.allowed_types = GameDataProcessor.getAllowedSpellTypes(new_state);
 	}
 

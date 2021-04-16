@@ -59,9 +59,26 @@ class Screen extends React.Component {
 				100
 			);
 		} else {
-			let new_value = data.value || data.checked;
+			switch (key_path) {
+				case "spells_mode.ui.sections":
+					for (let uuid in data.value) {
+						let tmp_data     = data.value[uuid];
+						let tmp_key_path = `${key_path}.${uuid}`;
+
+						this.props.new_settings[`${tmp_key_path}.types`]                 = tmp_data.types;
+						this.props.new_settings[`${tmp_key_path}.layout.layout`]         = tmp_data.layout.layout;
+						this.props.new_settings[`${tmp_key_path}.layout.spells_per_row`] = tmp_data.layout.spells_per_row;
+					}
+
+					break;
+
+				default:
+					let new_value = data.value || data.checked;
 			
-			this.props.new_settings[key_path] = new_value;
+					this.props.new_settings[key_path] = new_value;
+					
+					break;
+			}
 		}
 	}
 	

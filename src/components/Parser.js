@@ -62,8 +62,8 @@ class Parser extends React.Component {
 	}
 
 	render() {
-		let collapsed          = ((this.props.collapsed && this.props.viewing === "tables") || this.state.collapsed_modes[this.props.mode]);
 		let is_spells          = (this.props.mode === "spells");
+		let collapsed          = ((!is_spells && this.props.collapsed && this.props.viewing === "tables") || this.state.collapsed_modes[this.props.mode]);
 		let collapse_down      = this.shouldCollapseDown(is_spells);
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
