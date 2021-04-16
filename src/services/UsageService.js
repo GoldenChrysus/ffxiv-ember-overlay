@@ -17,7 +17,13 @@ class UsageService {
 	}
 
 	usingCombatData(mode, settings) {
-		return (mode === "stats" || settings.getSetting("spells_mode.ui.use"));
+		return (
+			mode === "stats" ||
+			settings.getSetting("spells_mode.ui.use") ||
+			settings.getSetting("spells_mode.party_spells").length ||
+			settings.getSetting("spells_mode.party_effects").length ||
+			settings.getSetting("spells_mode.party_dots").length
+		);
 	}
 
 	usingLog(mode, settings) {

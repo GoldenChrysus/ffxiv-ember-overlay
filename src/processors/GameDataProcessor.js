@@ -294,6 +294,7 @@ class GameDataProcessor  {
 					}
 
 					let job = (state.internal.game.Combatant[data[3]].Job || "").toUpperCase();
+				
 
 					if (!Constants.GameJobs[job]) {
 						return in_use;
