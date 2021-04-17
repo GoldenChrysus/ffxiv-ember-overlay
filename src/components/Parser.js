@@ -142,7 +142,7 @@ const mapStateToProps = (state) => {
 		theme                    : state.settings.interface.theme,
 		auto_hide                : state.settings.interface.auto_hide,
 		auto_hide_delay          : state.settings.interface.auto_hide_delay,
-		last_activity            : state.last_activity,
+		last_activity            : (state.settings.interface.auto_hide) ? state.last_activity : 0,
 		mode                     : state.internal.mode,
 		invert_spells_vertical   : state.settings.spells_mode.invert_vertical,
 		invert_spells_horizontal : state.settings.spells_mode.invert_horizontal,

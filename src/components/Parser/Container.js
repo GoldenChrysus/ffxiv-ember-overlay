@@ -5,6 +5,7 @@ import ReactTooltip from "react-tooltip";
 import { Rnd } from "react-rnd";
 import clone from "lodash.clonedeep";
 
+import EmberComponent from "../EmberComponent";
 import ContextMenu from "./Container/Menu";
 import Import from "./Container/Import";
 import GameState from "./GameState";
@@ -17,7 +18,7 @@ import AggroTable from "./AggroTable";
 import TTSService from "../../services/TTSService";
 import SpellGrid from "./SpellGrid";
 
-class Container extends React.Component {
+class Container extends EmberComponent {
 	constructor(props) {
 		super(props);
 
@@ -25,9 +26,11 @@ class Container extends React.Component {
 			"spells"
 		];
 
+		this.mounted = false;
+
 		this.state = {
 			locked          : true,
-			spells_sections : this.props.settings.spells_mode.ui.sections
+			spells_sections : this.props.spells_sections
 		};
 	}
 
@@ -35,7 +38,7 @@ class Container extends React.Component {
 		let state      = this.state;
 		let need_state = false;
 
-		for (let uuid in this.props.settings.spells_mode.ui.sections) {
+		for (let uuid in this.props.spells_sections) {
 			if (!state.spells_sections[uuid]) {
 				need_state = true;
 
@@ -43,7 +46,7 @@ class Container extends React.Component {
 			}
 		}
 
-		state.spells_sections = this.props.settings.spells_mode.ui.sections;
+		state.spells_sections = this.props.spells_sections;
 
 		if (need_state) {
 			this.setState(state);
@@ -51,35 +54,37 @@ class Container extends React.Component {
 	}
 
 	componentDidMount() {
-		if (this.props.internal.mode === "stats") {
+		if (this.props.mode === "stats") {
 			TTSService.start();
 		}
 
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
 		this.props.plugin_service.subscribe();
+
+		this.mounted = true;
 	}
 
 	render() {
-		let encounter = this.props.internal.game.Encounter || {};
-		let active    = (["true", true].indexOf(this.props.internal.game.isActive) !== -1);
-		let viewing   = this.props.internal.viewing;
+		let encounter = this.props.encounter || {};
+		let active    = (["true", true].indexOf(this.props.encounter_active) !== -1);
+		let viewing   = this.props.viewing;
 
 		let content;
 
-		switch (this.props.internal.mode) {
+		switch (this.props.mode) {
 			case "stats":
 				switch (viewing) {
 					case "tables":
-						if (this.props.settings.intrinsic.table_type !== "aggro") {
-							content = <PlayerTable players={this.props.internal.game.Combatant} encounter={encounter} type={this.props.settings.intrinsic.table_type}/>;
+						if (this.props.table_type !== "aggro") {
+							content = <PlayerTable players={this.props.combatants} encounter={encounter} type={this.props.table_type}/>;
 						} else {
-							content = <AggroTable monsters={this.props.internal.aggro}/>
+							content = <AggroTable monsters={this.props.aggro}/>
 						}
 
 						break;
 
 					case "player":
-						content = <PlayerDetail player={this.props.internal.detail_player} players={this.props.internal.game.Combatant} encounter={encounter}/>;
+						content = <PlayerDetail player={this.props.detail_player} players={this.props.combatants} encounter={encounter}/>;
 
 						break;
 
@@ -102,12 +107,12 @@ class Container extends React.Component {
 						break;
 
 					default:
-						let settings = this.props.settings.spells_mode;
+						let settings = this.props.spells_settings;
 
-						if (this.props.settings.spells_mode.ui.use) {
+						if (this.props.spells_settings.ui.use) {
 							content = [];
 
-							for (let uuid in this.props.settings.spells_mode.ui.sections) {
+							for (let uuid in this.props.spells_sections) {
 								let section = this.state.spells_sections[uuid];
 
 								if (!section) {
@@ -127,11 +132,11 @@ class Container extends React.Component {
 
 								section_settings.uuid = uuid;
 
-								if (this.props.internal.ui_builder) {
+								if (this.props.ui_builder) {
 									if (this.state.locked) {
 										content.push(
 											<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[10, 10]} dragGrid={[10, 10]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)}>
-												<SpellGrid key={"spell-grid-" + uuid} from_builder={true} is_draggable={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={section_settings} style={{position: "absolute", width: "100%", height: "100%"}}/>
+												<SpellGrid key={"spell-grid-" + uuid} from_builder={true} is_draggable={true} section={section} encounter={encounter} spells={this.props.spells_in_use} settings={section_settings} style={{position: "absolute", width: "100%", height: "100%"}}/>
 											</Rnd>
 										);
 									} else {
@@ -144,12 +149,12 @@ class Container extends React.Component {
 									}
 								} else {
 									content.push(
-										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={this.props.internal.spells.in_use} settings={section_settings} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
+										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={this.props.spells_in_use} settings={section_settings} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
 									);
 								}
 							}
 						} else {
-							content = <SpellGrid key="spell-grid" encounter={encounter} spells={this.props.internal.spells.in_use} settings={this.props.settings.spells_mode}/>;
+							content = <SpellGrid key="spell-grid" encounter={encounter} spells={this.props.spells_in_use} settings={this.props.spells_settings}/>;
 						}
 
 						break;
@@ -164,11 +169,11 @@ class Container extends React.Component {
 		let footer = [];
 
 		if (
-			this.no_footer_modes.indexOf(this.props.internal.mode) === -1 && 
+			this.no_footer_modes.indexOf(this.props.mode) === -1 && 
 			(
-				!this.props.settings.intrinsic.collapsed ||
+				!this.props.collapsed ||
 				viewing !== "tables" ||
-				this.props.settings.interface.footer_when_collapsed
+				this.props.footer_when_collapsed
 			)
 		) {
 			footer = [
@@ -179,7 +184,7 @@ class Container extends React.Component {
 
 		let container_classes = [];
 
-		if (this.props.internal.ui_builder) {
+		if (this.props.ui_builder) {
 			container_classes.push("ui-builder-active");
 		}
 
@@ -232,12 +237,12 @@ class Container extends React.Component {
 	}
 
 	getGameState(encounter, active) {
-		if (this.props.internal.mode === "spells" && (this.props.settings.interface.hide_top_bar || this.props.settings.spells_mode.ui.use)) {
+		if (this.props.mode === "spells" && (this.props.hide_top_bar || this.props.spells_settings.ui.use)) {
 			return "";
 		}
 
 		return(
-			<GameState encounter={encounter} active={active} rank={this.props.internal.rank} show_rank={this.props.settings.interface.top_right_rank}/>
+			<GameState encounter={encounter} active={active} rank={this.props.rank} show_rank={this.props.top_right_rank}/>
 		);
 	}
 
@@ -252,13 +257,13 @@ class Container extends React.Component {
 		if (!e.detail.isLocked) {
 			body.classList.add("resizeHandle");
 
-			if (this.props.settings.spells_mode.ui.use && this.props.internal.mode === "spells") {
+			if (this.props.spells_settings.ui.use && this.props.mode === "spells") {
 				body.classList.add("white-background");
 			}
 		} else {
 			body.classList.remove("resizeHandle");
 
-			if (this.props.settings.spells_mode.ui.use || body.classList.contains("white-background")) {
+			if (this.props.spells_settings.ui.use || body.classList.contains("white-background")) {
 				body.classList.remove("white-background");
 			}
 		}
@@ -267,9 +272,24 @@ class Container extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		internal       : state.internal,
-		settings       : state.settings,
-		plugin_service : state.plugin_service
+		plugin_service        : state.plugin_service,
+		mode                  : state.internal.mode,
+		encounter             : state.internal.game.Encounter,
+		encounter_active      : state.internal.game.isActive,
+		combatants            : state.internal.game.Combatant,
+		collapsed             : state.settings.intrinsic.collapsed,
+		footer_when_collapsed : state.settings.interface.footer_when_collapsed,
+		rank                  : state.internal.rank,
+		top_right_rank        : state.settings.interface.top_right_rank,
+		viewing               : state.internal.viewing,
+		table_type            : state.settings.intrinsic.table_type,
+		detail_player         : state.internal.detail_player,
+		aggro                 : state.internal.aggro,
+		spells_sections       : state.settings.spells_mode.ui.sections,
+		spells_in_use         : state.internal.spells.in_use,
+		spells_settings       : state.settings.spells_mode,
+		hide_top_bar          : state.settings.interface.hide_top_bar,
+		ui_builder            : state.internal.ui_builder
 	}
 };
 

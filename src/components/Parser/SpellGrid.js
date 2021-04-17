@@ -1,6 +1,7 @@
 import React from "react";
 import clone from "lodash.clonedeep";
 
+import EmberComponent from "../EmberComponent";
 import SkillData from "../../constants/SkillData";
 import LocalizationService from "../../services/LocalizationService";
 import TTSService from "../../services/TTSService";
@@ -8,7 +9,7 @@ import TTSService from "../../services/TTSService";
 import OverlayInfo from "./PlayerTable/OverlayInfo";
 import Spell from "./SpellGrid/Spell";
 
-class SpellGrid extends React.Component {
+class SpellGrid extends EmberComponent {
 	timer          = null;
 	spells         = null;
 	pending_update = false;
@@ -163,9 +164,10 @@ class SpellGrid extends React.Component {
 		});
 
 		for (let i in spells) {
-			let key = spells[i];
+			let key  = spells[i];
+			let type = (this.spells[key].dot) ? "dot" : this.spells[key].type;
 
-			items.push(<Spell key={key} order={+i + 1} spell={this.spells[key]} cooldown={this.state.spells[key]} settings={this.props.settings}/>);
+			items.push(<Spell key={key} base_key={key} order={+i + 1} spell={this.spells[key]} cooldown={this.state.spells[key]} reverse={this.props.settings[`reverse_${type}`]} layout={this.props.settings.layout} spells_per_row={this.props.settings.spells_per_row} show_icon={this.props.settings.show_icon} warning_threshold={this.props.settings.warning_threshold}/>);
 		}
 
 		return items;
@@ -176,7 +178,7 @@ class SpellGrid extends React.Component {
 			return;
 		}
 
-		let state     = this.state;
+		let state     = clone(this.state);
 		let builder   = (this.props.from_builder);
 		let true_date = new Date();
 
@@ -258,13 +260,13 @@ class SpellGrid extends React.Component {
 	startTimer() {
 		this.timer = setInterval(
 			this.updateCooldowns.bind(this),
-			100
+			250
 		);
 	}
 
 	updateCooldowns() {
 		let now              = new Date();
-		let state            = this.state;
+		let state            = clone(this.state);
 		let decimal_accuracy = (this.props.settings.layout === "icon") ? 0 : 1;
 
 		for (let i in this.spells) {
@@ -280,7 +282,7 @@ class SpellGrid extends React.Component {
 
 			if (diff <= 0) {
 				delete this.spells[i];
-				delete this.state.spells[i];
+				delete state.spells[i];
 				continue;
 			}
 

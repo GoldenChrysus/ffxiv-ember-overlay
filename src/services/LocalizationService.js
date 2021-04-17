@@ -296,7 +296,7 @@ class LocalizationService {
 		let info     = this.getMisc("spells_ui_builder_info", language);
 
 		for (let match of info.match(/\{\{[\w.]+}}/g)) {
-			let key = match.replaceAll(/\{|}/g, "");
+			let key = match.replace(/\{|}/g, "");
 
 			info = info.replace(match, this.getMisc(key, language) || this.getSettingText(key, language));
 		}
