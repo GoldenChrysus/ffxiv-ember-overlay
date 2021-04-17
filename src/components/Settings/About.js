@@ -23,7 +23,7 @@ class About extends React.Component {
 				});
 			})
 			.catch((e) => {
-				console.log(e);
+				console.error(e);
 			});
 	}
 

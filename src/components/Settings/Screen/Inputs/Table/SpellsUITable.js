@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Select } from "semantic-ui-react";
+import clone from "lodash.clonedeep";
 import $ from "jquery";
 
 import LocalizationService from "../../../../../services/LocalizationService";
@@ -28,7 +29,10 @@ class SpellsUITable extends Table {
 			rows    : {},
 			_insert : {
 				types  : [],
-				layout : {}
+				layout : {
+					layout         : "default",
+					spells_per_row : -1
+				}
 			}
 		};
 	}
@@ -158,7 +162,7 @@ class SpellsUITable extends Table {
 		let key   = this.getDeleteKey(e);
 
 		if (key === "_insert") {
-			let state = this.state;
+			let state = clone(this.state);
 
 			ObjectService.setByKeyPath(state._insert, field, value);
 			this.setState(state);

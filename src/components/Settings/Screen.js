@@ -60,7 +60,7 @@ class Screen extends React.Component {
 			);
 		} else {
 			switch (key_path) {
-				case "spells_mode.ui.sections":
+				case "spells_mode.ui.sectionsz":
 					for (let uuid in data.value) {
 						let tmp_data     = data.value[uuid];
 						let tmp_key_path = `${key_path}.${uuid}`;

@@ -35,21 +35,20 @@ class Container extends EmberComponent {
 	}
 
 	componentDidUpdate(prev_props) {
-		let state      = this.state;
 		let need_state = false;
 
 		for (let uuid in this.props.spells_sections) {
-			if (!state.spells_sections[uuid]) {
+			if (!this.state.spells_sections[uuid]) {
 				need_state = true;
 
 				break;
 			}
 		}
 
-		state.spells_sections = this.props.spells_sections;
-
 		if (need_state) {
-			this.setState(state);
+			this.setState({
+				spells_sections : this.props.spells_sections
+			});
 		}
 	}
 
@@ -212,7 +211,7 @@ class Container extends EmberComponent {
 	}
 
 	onDrag(uuid, e, data) {
-		let state = this.state;
+		let state = clone(this.state);
 
 		state.spells_sections[uuid].layout.x = Math.round(data.x / 10) * 10;
 		state.spells_sections[uuid].layout.y = Math.round(data.y / 10) * 10;
@@ -221,7 +220,7 @@ class Container extends EmberComponent {
 	}
 
 	onResize(uuid, e, side, elem, delta) {
-		let state = this.state;
+		let state = clone(this.state);
 
 		state.spells_sections[uuid].layout.width  += delta.width;
 		state.spells_sections[uuid].layout.height += delta.height;
@@ -247,12 +246,11 @@ class Container extends EmberComponent {
 	}
 
 	toggleHandle(e) {
-		let state = this.state;
-		let body  = document.getElementsByTagName("body")[0];
+		let body = document.getElementsByTagName("body")[0];
 
-		state.locked = e.detail.isLocked;
-
-		this.setState(state);
+		this.setState({
+			locked : e.detail.isLocked
+		});
 
 		if (!e.detail.isLocked) {
 			body.classList.add("resizeHandle");

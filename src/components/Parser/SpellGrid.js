@@ -140,7 +140,7 @@ class SpellGrid extends EmberComponent {
 
 			for (let value of this.props.section.types) {
 				value = value.split("-");
-				value = LocalizationService.getSpellTrackingOption(value[0], value[1]);
+				value = LocalizationService.getSpellTrackingOption(value[0], value[1]) || LocalizationService.getSpellTrackingOption(value[0], value[1], undefined, true);
 
 				if (value === false) {
 					continue;
@@ -184,7 +184,9 @@ class SpellGrid extends EmberComponent {
 
 		if (lost_spells) {
 			for (let i in lost_spells) {
-				this.doTTS(i);
+				if (this.props.settings.use_tts) {
+					this.doTTS(i);
+				}
 
 				delete this.spells[i];
 				delete state.spells[i];
@@ -241,7 +243,7 @@ class SpellGrid extends EmberComponent {
 		if (this.mounted) {
 			this.setState(state);
 
-			if (this.timer === null && Object.keys(this.state.spells).length) {
+			if (this.timer === null && Object.keys(state.spells).length) {
 				this.startTimer();
 			}
 		} else {
@@ -286,7 +288,15 @@ class SpellGrid extends EmberComponent {
 				continue;
 			}
 
-			state.spells[i] = (diff / 1000).toFixed(decimal_accuracy);
+			let cooldown = diff / 1000;
+
+			if (cooldown <= 9.9) {
+				cooldown = cooldown.toFixed(1);
+			} else {
+				cooldown = cooldown.toFixed(decimal_accuracy);
+			}
+
+			state.spells[i] = cooldown;
 		}
 
 		if (!Object.keys(this.state.spells).length) {

@@ -368,20 +368,18 @@ class GameDataProcessor  {
 			in_use = {};
 		}
 
-		if (event_code === 30) {
-			log_data.in_use_key = `${log_data.type}-${log_data.spell_id}${log_data.suffix}`;
+		let suffixes = [log_data.suffix];
 
-			delete in_use[log_data.in_use_key];
-		} else {
-			let suffixes = [log_data.suffix];
+		if (state.settings.spells_mode.ui.use && log_data.party) {
+			suffixes.push(log_data.job);
+		}
 
-			if (log_data.party) {
-				suffixes.push(log_data.job);
-			}
+		for (let suffix of suffixes) {
+			log_data.in_use_key = `${log_data.type}-${log_data.spell_id}${suffix}`;
 
-			for (let suffix of suffixes) {
-				log_data.in_use_key = `${log_data.type}-${log_data.spell_id}${suffix}`;
-
+			if (event_code === 30) {
+				delete in_use[log_data.in_use_key];
+			} else {
 				in_use[log_data.in_use_key] = {
 					type     : log_data.type,
 					id       : log_data.spell_id,

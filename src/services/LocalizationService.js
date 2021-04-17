@@ -217,16 +217,16 @@ class LocalizationService {
 		return options;
 	}
 
-	getSpellTrackingOption(role, type, language) {
+	getSpellTrackingOption(role, type, language, is_job) {
 		let misc = SettingsLocales.misc.spells;
 
-		if (!misc.roles[role]) {
+		if ((!is_job && !misc.roles[role]) || (is_job && !Constants.GameJobs[role])) {
 			return false;
 		}
 
 		language = language || this.getLanguage();
 
-		role = misc.roles[role][language] || misc.roles[role].en;
+		role = (is_job) ? role : (misc.roles[role][language] || misc.roles[role].en);
 		type = misc.types[type][language] || misc.types[type].en;
 
 		return `${role}: ${type}`;
@@ -241,12 +241,48 @@ class LocalizationService {
 				let key = `${role}-${type}`;
 
 				options.push({
-					key   : key,
-					value : key,
-					text  : this.getSpellTrackingOption(role, type, language)
+					key     : key,
+					value   : key,
+					is_role : true,
+					role    : role,
+					text    : this.getSpellTrackingOption(role, type, language)
 				});
 			}
 		}
+
+		for (let job in Constants.GameJobs) {
+			for (let type in SettingsLocales.misc.spells.types) {
+				let key = `${job}-${type}`;
+
+				options.push({
+					key     : key,
+					value   : key,
+					is_role : false,
+					role    : job,
+					text    : this.getSpellTrackingOption(job, type, language, true)
+				});
+			}
+		}
+
+		options.sort((a, b) => {
+			if (a.role === b.role) {
+				return (a.text < b.text) ? -1 : 1;
+			}
+
+			if (a.role === "you") {
+				return -1;
+			} else if (b.role === "you") {
+				return 1;
+			}
+
+			if (a.is_role && !b.is_role) {
+				return -1;
+			} else if (!a.is_role && b.is_role) {
+				return 1;
+			}
+
+			return (a.role < b.role) ? -1 : 1;
+		});
 
 		return options;
 	}

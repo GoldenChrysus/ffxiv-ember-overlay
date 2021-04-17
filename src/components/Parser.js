@@ -34,11 +34,12 @@ class Parser extends React.Component {
 	componentDidUpdate() {
 		if (this.props.mode === "spells") {
 			if (this.props.has_spells !== this.state.collapsed_modes.spells) {
-				let state = this.state;
-
-				state.collapsed_modes.spells = this.props.has_spells;
-
-				this.setState(state);
+				this.setState({
+					collapsed_modes : {
+						...this.state.collapsed_modes,
+						spells : this.props.has_spells
+					}
+				});
 			}
 		}
 	}
