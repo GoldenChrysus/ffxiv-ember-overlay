@@ -135,6 +135,8 @@ class SpellGrid extends EmberComponent {
 	}
 
 	buildSpells() {
+		let uuid = this.props.settings.uuid || "default";
+
 		if (this.props.is_draggable) {
 			let text = [];
 
@@ -167,7 +169,7 @@ class SpellGrid extends EmberComponent {
 			let key  = spells[i];
 			let type = (this.spells[key].dot) ? "dot" : this.spells[key].type;
 
-			items.push(<Spell key={key} base_key={key} order={+i + 1} spell={this.spells[key]} cooldown={this.state.spells[key]} reverse={this.props.settings[`reverse_${type}`]} layout={this.props.settings.layout} spells_per_row={this.props.settings.spells_per_row} show_icon={this.props.settings.show_icon} warning_threshold={this.props.settings.warning_threshold}/>);
+			items.push(<Spell key={key} base_key={key} order={+i + 1} grid_uuid={uuid} spell={this.spells[key]} cooldown={this.state.spells[key]} reverse={this.props.settings[`reverse_${type}`]} layout={this.props.settings.layout} spells_per_row={this.props.settings.spells_per_row} show_icon={this.props.settings.show_icon} warning_threshold={this.props.settings.warning_threshold}/>);
 		}
 
 		return items;
