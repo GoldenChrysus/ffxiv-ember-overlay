@@ -763,7 +763,7 @@ const SettingsSchema = {
 				path : "spells-ui",
 				sections : [
 					{
-						info     : () => LocalizationService.getMisc("spells_ui_builder_info"),
+						info     : () => LocalizationService.getSpellUIBuilderInfo(),
 						settings : [
 							{
 								key_path : "spells_mode.ui.use",

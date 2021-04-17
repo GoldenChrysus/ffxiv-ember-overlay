@@ -77,7 +77,7 @@
 				"de" : "Text zu Sprache",
 				"es" : "Text to Speech",
 				"fr" : "Text to Speech",
-				"kr" : "Text to Speech"
+				"kr" : "보이스웨어 사용"
 			},
 			"subsections" : [
 				{
@@ -88,7 +88,7 @@
 					"de" : "Text zu Sprache Setup",
 					"es" : "Text to Speech Setup",
 					"fr" : "Text to Speech Setup",
-					"kr" : "Text to Speech Setup"
+					"kr" : "보이스웨어 사용 Setup"
 				}
 			]
 		},
@@ -346,7 +346,7 @@
 					"de" : "Effekte/Buffs",
 					"es" : "Efectos/Buffs",
 					"fr" : "Effets/Buffs",
-					"kr" : "이펙트/Buffs"
+					"kr" : "이펙트/버프"
 				},
 				{
 					"en" : "DOT's",
@@ -356,7 +356,7 @@
 					"de" : "DOT's",
 					"es" : "DOT's",
 					"fr" : "DOT's",
-					"kr" : "DOT's"
+					"kr" : "도트기"
 				},
 				{
 					"en" : "General",
@@ -379,7 +379,7 @@
 				"de" : "Party Zauber Timer",
 				"es" : "Party Spell Timers",
 				"fr" : "Party Spell Timers",
-				"kr" : "Party 스펠 타이머"
+				"kr" : "파티 스펠 타이머"
 			},
 			"subsections" : [
 				{
@@ -400,7 +400,7 @@
 					"de" : "Effekte/Buffs",
 					"es" : "Efectos/Buffs",
 					"fr" : "Effets/Buffs",
-					"kr" : "이펙트/Buffs"
+					"kr" : "이펙트/버프"
 				},
 				{
 					"en" : "DOT's",
@@ -410,7 +410,7 @@
 					"de" : "DOT's",
 					"es" : "DOT's",
 					"fr" : "DOT's",
-					"kr" : "DOT's"
+					"kr" : "도트기"
 				}
 			]
 		},
@@ -423,7 +423,7 @@
 				"de" : "UI Builder",
 				"es" : "UI Builder",
 				"fr" : "UI Builder",
-				"kr" : "UI Builder"
+				"kr" : "UI 빌더"
 			},
 			"subsections" : [
 				{
@@ -444,7 +444,7 @@
 					"de" : "UI Sections",
 					"es" : "UI Sections",
 					"fr" : "UI Sections",
-					"kr" : "UI Sections"
+					"kr" : "UI 섹션"
 				}
 			]
 		}
@@ -548,7 +548,7 @@
 			"de" : "Hide Top Bar",
 			"es" : "Hide Top Bar",
 			"fr" : "Hide Top Bar",
-			"kr" : "Hide Top Bar"
+			"kr" : "상위 바 가리기"
 		},
 		"interface.decimal_accuracy" : {
 			"en" : "Decimal Accuracy",
@@ -587,7 +587,7 @@
 			"jp" : "ミニマルテーマ",
 			"de" : "Minimal Farbschema benutzen",
 			"es" : "Usar Mínimo Theme",
-			"fr" : "Utiliser le thème minimale/la version minimale de l'Overlay",
+			"fr" : "Utiliser le thème minimale",
 			"kr" : "간소화 테마 사용하기"
 		},
 		"interface.auto_hide" : {
@@ -637,8 +637,8 @@
 			"jp" : "ルール",
 			"de" : "Regeln",
 			"es" : "Rules",
-			"fr" : "Rules",
-			"kr" : "Rules"
+			"fr" : "Régles",
+			"kr" : "룰"
 		},
 		"table_settings.general.table.short_names" : {
 			"en" : "Shorten Player Names",
@@ -672,10 +672,10 @@
 		},
 		"table_settings.general.table.prioritize_party" : {
 			"en" : "Prioritize Party Members at Top of List",
-			"pt" : "Prioritize Party Members at Top of List",
+			"pt" : "Priorizar membros do grupo no topo da lista",
 			"cn" : "优先显示小队成员",
 			"jp" : "パーティーメンバーを最初に表示",
-			"de" : "Prioritize Party Members at Top of List",
+			"de" : "Liste soll Gruppenmitglieder oberhalb priorisieren",
 			"es" : "Prioritize Party Members at Top of List",
 			"fr" : "Prioritize Party Members at Top of List",
 			"kr" : "같은 파티 멤버를 최우선으로 정렬"
@@ -888,7 +888,7 @@
 			"de" : "Zauber im Überblick",
 			"es" : "Spells to Track",
 			"fr" : "Spells to Track",
-			"kr" : "확인할 스펠들"
+			"kr" : "확인할 스펠"
 		},
 		"spells_mode.effects" : {
 			"en" : "Effects to Track",
@@ -898,7 +898,7 @@
 			"de" : "Effekte im Überblick",
 			"es" : "Effects to Track",
 			"fr" : "Effects to Track",
-			"kr" : "확인할 이펙트들"
+			"kr" : "확인할 이펙트"
 		},
 		"spells_mode.dots" : {
 			"en" : "DOT's to Track",
@@ -908,7 +908,7 @@
 			"de" : "DOT's to Track",
 			"es" : "DOT's to Track",
 			"fr" : "DOT's to Track",
-			"kr" : "DOT's to Track"
+			"kr" : "확인할 도트기"
 		},
 		"spells_mode.party_spells" : {
 			"en" : "Spells to Track",
@@ -918,7 +918,7 @@
 			"de" : "Zauber im Überblick",
 			"es" : "Spells to Track",
 			"fr" : "Spells to Track",
-			"kr" : "확인할 스펠들"
+			"kr" : "확인할 스펠"
 		},
 		"spells_mode.party_effects" : {
 			"en" : "Effects to Track",
@@ -928,7 +928,7 @@
 			"de" : "Effekte im Überblick",
 			"es" : "Effects to Track",
 			"fr" : "Effects to Track",
-			"kr" : "확인할 이펙트들"
+			"kr" : "확인할 이펙트"
 		},
 		"spells_mode.party_dots" : {
 			"en" : "DOT's to Track",
@@ -938,7 +938,7 @@
 			"de" : "DOT's to Track",
 			"es" : "DOT's to Track",
 			"fr" : "DOT's to Track",
-			"kr" : "DOT's to Track"
+			"kr" : "확인할 도트기"
 		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
@@ -948,7 +948,7 @@
 			"de" : "Zauber pro Reihe",
 			"es" : "Spells Per Row",
 			"fr" : "Spells Per Row",
-			"kr" : "Spells Per Row"
+			"kr" : "열마다 표시할 스펠 갯수"
 		},
 		"spells_mode.show_icon" : {
 			"en" : "Show Spell Icon",
@@ -968,7 +968,7 @@
 			"de" : "Text zu Sprache verwenden",
 			"es" : "Use Text to Speech",
 			"fr" : "Use Text to Speech",
-			"kr" : "Use Text to Speech"
+			"kr" : "TTS 사용"
 		},
 		"spells_mode.tts_trigger" : {
 			"en" : "Text to Speech Trigger",
@@ -978,7 +978,7 @@
 			"de" : "Text to Speech Trigger",
 			"es" : "Text to Speech Trigger",
 			"fr" : "Text to Speech Trigger",
-			"kr" : "Text to Speech Trigger"
+			"kr" : "TTS 트리거"
 		},
 		"spells_mode.layout" : {
 			"en" : "Layout",
@@ -988,7 +988,7 @@
 			"de" : "Layout",
 			"es" : "Layout",
 			"fr" : "Layout",
-			"kr" : "Layout"
+			"kr" : "레이아웃"
 		},
 		"spells_mode.invert_vertical" : {
 			"en" : "Invert Vertical",
@@ -998,7 +998,7 @@
 			"de" : "Invert Vertical",
 			"es" : "Invert Vertical",
 			"fr" : "Invert Vertical",
-			"kr" : "Invert Vertical"
+			"kr" : "세로 반전"
 		},
 		"spells_mode.invert_horizontal" : {
 			"en" : "Invert Horizontal",
@@ -1008,7 +1008,7 @@
 			"de" : "Invert Horizontal",
 			"es" : "Invert Horizontal",
 			"fr" : "Invert Horizontal",
-			"kr" : "Invert Horizontal"
+			"kr" : "가로 반전"
 		},
 		"spells_mode.reverse_skill" : {
 			"en" : "Reverse Indicator for Spells",
@@ -1018,7 +1018,7 @@
 			"de" : "Indikator für Zauber umdrehen",
 			"es" : "Reverse Indicator for Spells",
 			"fr" : "Reverse Indicator for Spells",
-			"kr" : "Reverse Indicator for Spells"
+			"kr" : "스펠 역표시"
 		},
 		"spells_mode.reverse_effect" : {
 			"en" : "Reverse Indicator for Effects",
@@ -1028,7 +1028,7 @@
 			"de" : "Idikator für Effekte umdrehen",
 			"es" : "Reverse Indicator for Effects",
 			"fr" : "Reverse Indicator for Effects",
-			"kr" : "Reverse Indicator for Effects"
+			"kr" : "이펙트 역표시"
 		},
 		"spells_mode.reverse_dot" : {
 			"en" : "Reverse Indicator for DOT's",
@@ -1038,7 +1038,7 @@
 			"de" : "Idikator für DOT umdrehen",
 			"es" : "Reverse Indicator for DOT's",
 			"fr" : "Reverse Indicator for DOT's",
-			"kr" : "Reverse Indicator for DOT's"
+			"kr" : "도트기 역표시"
 		},
 		"spells_mode.party_reverse_skill" : {
 			"en" : "Reverse Indicator for Spells",
@@ -1048,7 +1048,7 @@
 			"de" : "Indikator für Zauber umdrehen",
 			"es" : "Reverse Indicator for Spells",
 			"fr" : "Reverse Indicator for Spells",
-			"kr" : "Reverse Indicator for Spells"
+			"kr" : "스펠 역표시"
 		},
 		"spells_mode.party_reverse_effect" : {
 			"en" : "Reverse Indicator for Effects",
@@ -1058,7 +1058,7 @@
 			"de" : "Idikator für Effekte umdrehen",
 			"es" : "Reverse Indicator for Effects",
 			"fr" : "Reverse Indicator for Effects",
-			"kr" : "Reverse Indicator for Effects"
+			"kr" : "이펙트 역표시"
 		},
 		"spells_mode.party_reverse_dot" : {
 			"en" : "Reverse Indicator for DOT's",
@@ -1068,7 +1068,7 @@
 			"de" : "Idikator für DOT umdrehen",
 			"es" : "Reverse Indicator for DOT's",
 			"fr" : "Reverse Indicator for DOT's",
-			"kr" : "Reverse Indicator for DOT's"
+			"kr" : "도트기 역표시"
 		},
 		"spells_mode.warning_threshold" : {
 			"en" : "Warning Threshold (In Seconds)",
@@ -1078,7 +1078,7 @@
 			"de" : "Warnungen maximal anzeigen für (in Sekunden)",
 			"es" : "Warning Threshold (In Seconds)",
 			"fr" : "Warning Threshold (In Seconds)",
-			"kr" : "Warning Threshold (In Seconds)"
+			"kr" : "경고 구간 (초 로 입력)"
 		},
 		"spells_mode.ui.use" : {
 			"en" : "Use UI Builder",
@@ -1088,7 +1088,7 @@
 			"de" : "Use UI Builder",
 			"es" : "Use UI Builder",
 			"fr" : "Use UI Builder",
-			"kr" : "Use UI Builder"
+			"kr" : "UI 빌더 사용하기"
 		},
 		"spells_mode.ui.sections" : {
 			"en" : "",
@@ -1162,7 +1162,7 @@
 				"de" : "HP eines Verteidigers beträgt weniger als:",
 				"es" : "A tank's HP is below:",
 				"fr" : "A tank's HP is below:",
-				"kr" : "A tank's HP is below:"
+				"kr" : "탱커의 체력이 이정도 미만 일 때:"
 			},
 			"critical.dps" : {
 				"en" : "A DPS' HP is below:",
@@ -1172,7 +1172,7 @@
 				"de" : "HP eines DPS beträgt weniger als:",
 				"es" : "A DPS' HP is below:",
 				"fr" : "A DPS' HP is below:",
-				"kr" : "A DPS' HP is below:"
+				"kr" : "딜러의 체력이 이정도 미만 일 때:"
 			},
 			"critical.heal" : {
 				"en" : "A healer's HP is below:",
@@ -1182,7 +1182,7 @@
 				"de" : "HP eines Heilers beträgt weniger als:",
 				"es" : "A healer's HP is below:",
 				"fr" : "A healer's HP is below:",
-				"kr" : "A healer's HP is below:"
+				"kr" : "힐러의 체력이 이정도 미만 일 때:"
 			},
 			"critical.all" : {
 				"en" : "Anyone's HP is below:",
@@ -1192,7 +1192,7 @@
 				"de" : "HP eines beliebigen Spielers beträgt unter:",
 				"es" : "Anyone's HP is below:",
 				"fr" : "Anyone's HP is below:",
-				"kr" : "Anyone's HP is below:"
+				"kr" : "아무나의 체력이 이정도 미만일 떄:"
 			},
 			"aggro" : {
 				"en" : "You obtain aggro",
@@ -1201,8 +1201,8 @@
 				"jp" : "タゲを取りました",
 				"de" : "Du hast Aggro erhalten",
 				"es" : "You obtain aggro",
-				"fr" : "You obtain aggro",
-				"kr" : "You obtain aggro"
+				"fr" : "Tu as l'aggro",
+				"kr" : "본인이 적개심 1위가 됨"
 			},
 			"top.dps" : {
 				"en" : "You obtain top DPS",
@@ -1211,8 +1211,8 @@
 				"jp" : "DPSトップになりました",
 				"de" : "Du hast den meisten DPS",
 				"es" : "You obtain top DPS",
-				"fr" : "You obtain top DPS",
-				"kr" : "You obtain top DPS"
+				"fr" : "Tu es top DPS",
+				"kr" : "본인이 딜 순위 1위가 됨"
 			},
 			"top.hps" : {
 				"en" : "You obtain top HPS",
@@ -1221,8 +1221,8 @@
 				"jp" : "HPSトップになりました",
 				"de" : "Du hast die meisten HPS",
 				"es" : "You obtain top HPS",
-				"fr" : "You obtain top HPS",
-				"kr" : "You obtain top HPS"
+				"fr" : "Tu es top SPS",
+				"kr" : "본인이 힐량 1순위가 됨"
 			},
 			"top.tps" : {
 				"en" : "You obtain top DTPS",
@@ -1231,8 +1231,8 @@
 				"jp" : "被DPSトップになりました",
 				"de" : "Du hast den meisten erlittenen DPS",
 				"es" : "You obtain top DTPS",
-				"fr" : "You obtain top DTPS",
-				"kr" : "You obtain top DTPS"
+				"fr" : "Tu es top DRPS",
+				"kr" : "본인이 DTPS 1위가 됨"
 			},
 			"encounter.start" : {
 				"en" : "An encounter starts",
@@ -1241,8 +1241,8 @@
 				"jp" : "戦闘開始",
 				"de" : "Kampf hat begonnen",
 				"es" : "An encounter starts",
-				"fr" : "An encounter starts",
-				"kr" : "An encounter starts"
+				"fr" : "Le combat commence",
+				"kr" : "전투 개시"
 			},
 			"encounter.end" : {
 				"en" : "An encounter ends",
@@ -1251,8 +1251,8 @@
 				"jp" : "戦闘終了",
 				"de" : "Kampf wurde beendet",
 				"es" : "An encounter ends",
-				"fr" : "An encounter ends",
-				"kr" : "An encounter ends"
+				"fr" : "Le combat finit",
+				"kr" : "전투 종료"
 			}
 		},
 
@@ -1282,11 +1282,11 @@
 					"en" : "Healer",
 					"pt" : "Healer",
 					"cn" : "Healer",
-					"jp" : "Healer",
+					"jp" : "ヒーラー",
 					"de" : "Healer",
-					"es" : "Healer",
+					"es" : "Heiler",
 					"fr" : "Healer",
-					"kr" : "Healer"
+					"kr" : "힐러"
 				},
 				"tank" : {
 					"en" : "Tank",
@@ -1368,9 +1368,9 @@
 					"icon"    : "Icon Only"
 				},
 				"kr" : {
-					"normal"  : "Normal",
-					"compact" : "Compact",
-					"icon"    : "Icon Only"
+					"normal"  : "노멀",
+					"compact" : "간결",
+					"icon"    : "아이콘만 표시"
 				}
 			},
 			"tts_trigger_options" : {
@@ -1403,8 +1403,8 @@
 					"warning" : "When timer reaches warning threshold"
 				},
 				"kr" : {
-					"zero"    : "When timer reaches 0",
-					"warning" : "When timer reaches warning threshold"
+					"zero"    : "타이머가 0초가 될경우",
+					"warning" : "타이머가 경고 구간에 도달할 경우"
 				}
 			}
 		},
@@ -1481,10 +1481,10 @@
 		},
 		"copy"               : {
 			"en" : "Copy",
-			"pt" : "Copy",
+			"pt" : "Copiar",
 			"cn" : "复制",
 			"jp" : "コピー",
-			"de" : "Copy",
+			"de" : "Kopieren",
 			"es" : "Copy",
 			"fr" : "Copy",
 			"kr" : "복사"
@@ -1679,7 +1679,7 @@
 			"de" : "Kriterien",
 			"es" : "Criteria",
 			"fr" : "Criteria",
-			"kr" : "Criteria"
+			"kr" : "기준"
 		},
 		"value" : {
 			"en" : "Value",
@@ -1688,8 +1688,8 @@
 			"jp" : "価値",
 			"de" : "Wert",
 			"es" : "Value",
-			"fr" : "Value",
-			"kr" : "Value"
+			"fr" : "Valeur",
+			"kr" : "값"
 		},
 		"default" : {
 			"en" : "Default",
@@ -1699,7 +1699,7 @@
 			"de" : "Default",
 			"es" : "Default",
 			"fr" : "Default",
-			"kr" : "Default"
+			"kr" : "기본"
 		},
 		"track" : {
 			"en" : "Track",
@@ -1709,17 +1709,37 @@
 			"de" : "Track",
 			"es" : "Track",
 			"fr" : "Track",
-			"kr" : "Track"
+			"kr" : "트랙"
+		},
+		"edit_ui" : {
+			"en" : "Edit UI",
+			"pt" : "Edit UI",
+			"cn" : "Edit UI",
+			"jp" : "Edit UI",
+			"de" : "Edit UI",
+			"es" : "Edit UI",
+			"fr" : "Edit UI",
+			"kr" : "UI 수정"
+		},
+		"save_ui" : {
+			"en" : "Save UI",
+			"pt" : "Save UI",
+			"cn" : "Save UI",
+			"jp" : "Save UI",
+			"de" : "Save UI",
+			"es" : "Save UI",
+			"fr" : "Save UI",
+			"kr" : "UI 저장"
 		},
 		"spells_ui_builder_info" : {
-			"en" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
-			"pt" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
-			"cn" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
-			"jp" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
-			"de" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
-			"es" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
-			"fr" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\"",
-			"kr" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"Use UI Builder\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"Edit UI.\" Once you enter \"Edit UI\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"Save UI.\""
+			"en" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
+			"pt" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
+			"cn" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
+			"jp" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
+			"de" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
+			"es" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
+			"fr" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
+			"kr" : "UI 빌더는 스펠 타이머를 본인 입맛에 맞게 만들 수 있습니다.(아래) 본인의 쿨타임, 탱커의 쿨타임들 혹은 힐러 쿨타임또한 따로 표시시켜주는 섹션을 만드는것이 예로 들 수 있습니다. 아래의 테이블에 섹션을 만든 후 어떤것을 표기할지 따로 설정해주시면 되며 완성후 반드시 \"{{spells_mode.ui.use}}\"이 활성화된것을 확인한 후 저장하시면 됩니다. 오버레이를 파판 화면을 모두 덮게끔 사이즈를 조절하세요. 만약 사이즈 조절이 불가능하다면 오버레이 플러그인에서 잠금해제가 됬는지 확인하시거나 이미 잠금해제가 되있는 상태라면 하얀 바탕을 활성화 시키신 후 오버레이에서 우클릭후 \"{{edit_ui}}\" 선택을 하시면 됩니다. \"{{edit_ui}}\" 모드 진입하신 이후 반드시 오버레이를 재갱신하시거나 하얀 바탕을 비활성화 시키세요. 이 후 스펠 타이머 섹션을 따로 사이즈 조절하거나 화면 내 이동시키실 수 있습니다. 각 섹션마다 이름이 표시되어있으므로 구별이 가능하므로 세팅을 마치셨다면 우클릭 후 \"{{save_ui}}\"를 선택하여 저장하시면 마무리됩니다."
 		}
 	}
 }

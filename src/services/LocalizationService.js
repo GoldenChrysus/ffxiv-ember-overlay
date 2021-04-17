@@ -110,8 +110,10 @@ class LocalizationService {
 		return SettingsLocales.sections[section].subsections[index][this.getLanguage()] || SettingsLocales.sections[section].subsections[index].en; 
 	}
 
-	getSettingText(key_path) {
-		return SettingsLocales.setting_labels[key_path][this.getLanguage()] || SettingsLocales.setting_labels[key_path].en;
+	getSettingText(key_path, language) {
+		language = language || this.getLanguage();
+
+		return SettingsLocales.setting_labels[key_path][language] || SettingsLocales.setting_labels[key_path].en;
 	}
 
 	getPlayerShortNameOptions() {
@@ -142,8 +144,12 @@ class LocalizationService {
 		];
 	}
 
-	getMisc(key) {
-		let language = this.getLanguage();
+	getMisc(key, language) {
+		if (!SettingsLocales.misc[key]) {
+			return false;
+		}
+
+		language = language || this.getLanguage();
 
 		return SettingsLocales.misc[key][language] || SettingsLocales.misc[key].en;
 	}
@@ -283,6 +289,21 @@ class LocalizationService {
 		}
 		
 		return options;
+	}
+
+	getSpellUIBuilderInfo() {
+		let language = this.getLanguage();
+		let info     = this.getMisc("spells_ui_builder_info", language);
+
+		for (let match of info.match(/\{\{[\w.]+}}/g)) {
+			let key = match.replaceAll(/\{|}/g, "");
+
+			console.log(key);
+
+			info = info.replace(match, this.getMisc(key, language) || this.getSettingText(key, language));
+		}
+
+		return info;
 	}
 }
 

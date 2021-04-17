@@ -221,10 +221,10 @@
 	},
 	"paste"               : {
 		"en" : "Paste",
-		"pt" : "Paste",
+		"pt" : "Colar",
 		"cn" : "粘贴",
 		"jp" : "貼り付け",
-		"de" : "Paste",
+		"de" : "Einfügen",
 		"es" : "Paste",
 		"fr" : "Paste",
 		"kr" : "붙여넣기"
@@ -237,7 +237,7 @@
 		"de" : "Modus",
 		"es" : "Modo",
 		"fr" : "Mode",
-		"kr" : "방법"
+		"kr" : "모드"
 	},
 	"parser" : {
 		"en" : "Parser",
@@ -247,7 +247,7 @@
 		"de" : "Parser",
 		"es" : "Analizador",
 		"fr" : "Analyseur",
-		"kr" : "파서"
+		"kr" : "미터기"
 	},
 	"spell_timers" : {
 		"en" : "Spell Timers",
@@ -312,20 +312,20 @@
 				"text"     : "{{players}}{{connector}}critical health."
 			},
 			"fr" : {
-				"joiner"   : " and ",
-				"several"  : "Several players",
-				"plural"   : " are ",
-				"singular" : " is ",
-				"you"      : "You",
-				"text"     : "{{players}}{{connector}}critical health."
+				"joiner"   : " et ",
+				"several"  : "Des joueurs",
+				"plural"   : " sont ",
+				"singular" : " est ",
+				"you"      : "Vous",
+				"text"     : "{{players}}{{connector}}dans un état critique."
 			},
 			"kr" : {
-				"joiner"   : " and ",
-				"several"  : "Several players",
-				"plural"   : " are ",
-				"singular" : " is ",
-				"you"      : "You",
-				"text"     : "{{players}}{{connector}}critical health."
+				"joiner"   : " 및 ",
+				"several"  : "파티원 대부분",
+				"plural"   : "이 ",
+				"singular" : "이 ",
+				"you"      : "당신",
+				"text"     : "{{players}}{{connector}}사망 직전입니다."
 			}
 		},
 		"aggro" : {
@@ -354,12 +354,12 @@
 				"text"   : "You have aggro from {{monsters}}."
 			},
 			"fr" : {
-				"joiner" : ", ",
-				"text"   : "You have aggro from {{monsters}}."
+				"joiner" : " et ",
+				"text"   : "Vous avez aggro {{monsters}}."
 			},
 			"kr" : {
-				"joiner" : ", ",
-				"text"   : "You have aggro from {{monsters}}."
+				"joiner" : " 및 ",
+				"text"   : "{{monsters}}의 어그로를 받았습니다."
 			}
 		},
 		"top" : {
@@ -385,7 +385,7 @@
 				"text" : "You are top {{metric}}."
 			},
 			"kr" : {
-				"text" : "You are top {{metric}}."
+				"text" : "{{metric}} 상위권입니다."
 			}
 		},
 		"encounter" : {
@@ -426,16 +426,16 @@
 				"text"          : "{{encounter}} has {{verb}}."
 			},
 			"fr" : {
-				"start"         : "started",
-				"end"           : "ended",
+				"start"         : "a commencé",
+				"end"           : "est fini",
 				"default_title" : "Combat",
-				"text"          : "{{encounter}} has {{verb}}."
+				"text"          : "{{encounter}} {{verb}}."
 			},
 			"kr" : {
-				"start"         : "started",
-				"end"           : "ended",
+				"start"         : "개시되었습니다",
+				"end"           : "종료되었습니다",
 				"default_title" : "전투",
-				"text"          : "{{encounter}} has {{verb}}."
+				"text"          : "{{encounter}} {{verb}}."
 			}
 		}
 	}
