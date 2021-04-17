@@ -298,8 +298,6 @@ class LocalizationService {
 		for (let match of info.match(/\{\{[\w.]+}}/g)) {
 			let key = match.replaceAll(/\{|}/g, "");
 
-			console.log(key);
-
 			info = info.replace(match, this.getMisc(key, language) || this.getSettingText(key, language));
 		}
 
