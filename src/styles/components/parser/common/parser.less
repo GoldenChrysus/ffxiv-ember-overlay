@@ -1219,6 +1219,7 @@ body.mode-spells {
 	float: left;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	position: relative;
 
 	.setThemeStyle(
 		{
@@ -1236,57 +1237,93 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content .spell-grid .spell-container.border::before {
-	width: inherit;
-	height: inherit;
-	display: block;
-	content: "";
-	z-index: 2;
+#container #inner #content .spell-grid .spell-container .border {
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	/* background-image: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(31,255,0,1) 100%), radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(31,255,0,1) 100%), radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(31,255,0,1) 100%), radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(31,255,0,1) 100%); */
-	background-size: 20px 2px, 20px 2px, 2px 20px, 2px 20px;
-	background-position: 0 0, 0 100%, 0 0, 100% 0;
-	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+	overflow: hidden;
+	z-index: 1;
 }
 
-#container #inner #content .spell-grid .spell-container.border.effect:not(.off-cooldown)::before {
-	animation: march 1s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-play-state: paused;
-	animation-play-state: running;
-	
+#container #inner #content .spell-grid .spell-container .border div {
+	display: block;
+	position: absolute;
+}
+
+#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div {
 	.setThemeStyle(
 		@defaultTheme: {
-			background-image: radial-gradient(circle, @dark_borderInner 0%, @dark_toggleBackground 35%, @dark_importantText 100%), radial-gradient(circle, @dark_borderInner 0%, @dark_toggleBackground 35%, @dark_importantText 100%), radial-gradient(circle, @dark_borderInner 0%, @dark_toggleBackground 35%, @dark_importantText 100%), radial-gradient(circle, @dark_borderInner 0%, @dark_toggleBackground 35%, @dark_importantText 100%);
+			background-image: radial-gradient(circle, @dark_effectBorder1 0%, @dark_effectBorder2 35%, @dark_effectBorder3 100%);
 		},
 		@lightTheme: {
-			background-image: radial-gradient(circle, @light_borderInner 0%, @light_toggleBackground 35%, @light_importantText 100%), radial-gradient(circle, @light_borderInner 0%, @light_toggleBackground 35%, @light_importantText 100%), radial-gradient(circle, @light_borderInner 0%, @light_toggleBackground 35%, @light_importantText 100%), radial-gradient(circle, @light_borderInner 0%, @light_toggleBackground 35%, @light_importantText 100%);
+			background-image: radial-gradient(circle, @light_effectBorder1 0%, @light_effectBorder2 35%, @light_effectBorder3 100%);
 		},
 		@classicTheme: {
-			background-image: radial-gradient(circle, @classic_borderInner 0%, @classic_toggleBackground 35%, @classic_importantText 100%), radial-gradient(circle, @classic_borderInner 0%, @classic_toggleBackground 35%, @classic_importantText 100%), radial-gradient(circle, @classic_borderInner 0%, @classic_toggleBackground 35%, @classic_importantText 100%), radial-gradient(circle, @classic_borderInner 0%, @classic_toggleBackground 35%, @classic_importantText 100%);
+			background-image: radial-gradient(circle, @classic_borderInner 0%, @classic_toggleBackground 35%, @classic_importantText 100%);
 		}
 	);
 }
 
-#container #inner #content .spell-grid .spell-container.border.dot:not(.off-cooldown)::before {
-	animation: march-reverse 1s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-play-state: paused;
-	animation-play-state: running;
-	
+#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div {
 	.setThemeStyle(
 		@defaultTheme: {
-			background-image: radial-gradient(circle, @dark_gridItemBackground 0%, @dark_dotBorder 60%), radial-gradient(circle, @dark_gridItemBackground 0%, @dark_dotBorder 60%), radial-gradient(circle, @dark_gridItemBackground 0%, @dark_dotBorder 60%), radial-gradient(circle, @dark_gridItemBackground 0%, @dark_dotBorder 60%);
+			background-image: radial-gradient(circle, @dark_dotBorder1 0%, @dark_dotBorder2 100%);
 		},
 		@lightTheme: {
-			background-image: radial-gradient(circle, @light_gridItemBackground 30%, @light_dotBorder 100%), radial-gradient(circle, @light_gridItemBackground 30%, @light_dotBorder 100%), radial-gradient(circle, @light_gridItemBackground 30%, @light_dotBorder 100%), radial-gradient(circle, @light_gridItemBackground 30%, @light_dotBorder 100%);
+			background-image: radial-gradient(circle, @light_dotBorder1 30%, @light_dotBorder2 100%);
 		},
 		@classicTheme: {
-			background-image: radial-gradient(circle, @classic_detailItemBackground 0%, @classic_dotBorder 60%), radial-gradient(circle, @classic_detailItemBackground 0%, @classic_dotBorder 60%), radial-gradient(circle, @classic_detailItemBackground 0%, @classic_dotBorder 60%), radial-gradient(circle, @classic_detailItemBackground 0%, @classic_dotBorder 60%);
+			background-image: radial-gradient(circle, @classic_detailItemBackground 0%, @classic_dotBorder 60%);
 		}
 	);
+}
+
+#container #inner #content .spell-grid .spell-container .border div.top,
+#container #inner #content .spell-grid .spell-container .border div.bottom {
+	width: 200%;
+	height: 2px;
+	background-size: 20px 2.5px;
+	background-repeat: repeat-x;
+}
+
+#container #inner #content .spell-grid .spell-container .border div.bottom {
+	bottom: -0.1px;
+}
+
+#container #inner #content .spell-grid .spell-container .border div.left,
+#container #inner #content .spell-grid .spell-container .border div.right {
+	width: 2px;
+	height: 200%;
+	background-size: 2.4px 20px;
+	background-repeat: repeat-y;
+}
+
+#container #inner #content .spell-grid .spell-container .border div.right {
+	right: -0.2px;
+}
+
+#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div.top,
+#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div.bottom {
+	animation: march-top 1s linear;
+	animation-iteration-count: infinite;
+}
+
+#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div.bottom,
+#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div.top {
+	animation: march-bottom 1s linear;
+	animation-iteration-count: infinite;
+}
+
+#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div.left,
+#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div.right {
+	animation: march-left 1s linear;
+	animation-iteration-count: infinite;
+}
+
+#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div.right,
+#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div.left {
+	animation: march-right 1s linear;
+	animation-iteration-count: infinite;
 }
 
 #container #inner #content .spell-grid .spell-container.icon.border::before {
@@ -1536,7 +1573,7 @@ body.mode-spells {
 	top: 100%;
 	transform: translateY(-100%);
 	width: auto;
-	padding-left: 2px;
+	padding-left: 4px;
 }
 
 #container #inner #content .spell-grid .breaker {
@@ -1786,33 +1823,43 @@ body.mode-spells {
 	}
 }
 
-@keyframes horizontal {
+@keyframes march-top {
 	0% {
-		background-size: 100% 100%;
+		transform: translateX(-50%);
 	}
 
 	100% {
-		background-size: 0% 100%;
+		transform: translateX(0px);
 	}
 }
 
-@keyframes march {
+@keyframes march-bottom {
 	0% {
-		background-position: 0 0, 0 100%, 0 0, 100% 0;
+		transform: translateX(0px);
 	}
 
 	100% {
-		background-position: 40px 0, -40px 100%, 0 -40px, 100% 40px;
+		transform: translateX(-50%);
 	}
 }
 
-@keyframes march-reverse {
+@keyframes march-left {
 	0% {
-		background-position: 40px 0, -40px 100%, 0 -40px, 100% 40px;
+		transform: translateY(0px);
 	}
 
 	100% {
-		background-position: 0 0, 0 100%, 0 0, 100% 0;
+		transform: translateY(-50%);
+	}
+}
+
+@keyframes march-right {
+	0% {
+		transform: translateY(-50%);
+	}
+
+	100% {
+		transform: translateY(0px);
 	}
 }
 

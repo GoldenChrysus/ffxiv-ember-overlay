@@ -220,7 +220,6 @@ class SpellGrid extends EmberComponent {
 					this.doTTS(i);
 				}
 
-
 				delete this.spells[i];
 				delete state.spells[i];
 			}
@@ -308,7 +307,9 @@ class SpellGrid extends EmberComponent {
 
 	updateCooldowns() {
 		let now              = new Date();
-		let state            = clone(this.state);
+		let state            = {
+			spells : {}
+		};
 		let decimal_accuracy = (this.props.settings.layout === "icon") ? 0 : 1;
 
 		for (let i in this.spells) {

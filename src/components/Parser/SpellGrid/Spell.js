@@ -7,8 +7,9 @@ class Spell extends EmberComponent {
 	constructor(props) {
 		super(props);
 
-		this.animate_ref = React.createRef();
-		this.rendered    = false;
+		this.animate_ref   = React.createRef();
+		this.container_ref = React.createRef();
+		this.rendered      = false;
 	}
 
 	componentDidUpdate(prev_props) {
@@ -22,6 +23,13 @@ class Spell extends EmberComponent {
 
 				this.animate_ref.current.classList.add("animate");
 			}
+		}
+	}
+
+	componentDidMount() {
+		if (this.container_ref.current && this.props.border) {
+			this.updateBorderAnimationDuration();
+			window.addEventListener("resize", this.updateBorderAnimationDuration.bind(this));
 		}
 	}
 
@@ -44,6 +52,7 @@ class Spell extends EmberComponent {
 		let inverse     = (this.props.reverse) ? "-inverse" : "";
 		let left_delay  = (this.props.reverse) ? half_cd : 0;
 		let right_delay = (!this.props.reverse) ? half_cd : 0;
+		let border      = "";
 		let style       = (!is_zero)
 			? `
 				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.icon.${this.props.base_key} .timer.animate .container.left .block {
@@ -95,7 +104,13 @@ class Spell extends EmberComponent {
 		}
 
 		if (this.props.border) {
-			classes.push("border");
+			border =
+				<div className="border">
+					<div className="horizontal top"></div>
+					<div className="left"></div>
+					<div className="horizontal bottom"></div>
+					<div className="right"></div>
+				</div>;
 		}
 
 		if (icon && this.props.bottom_left) {
@@ -108,7 +123,7 @@ class Spell extends EmberComponent {
 
 		return(
 			<React.Fragment>
-				<div key={"spell-container-" + this.props.base_key} className={classes.join(" ")} style={{order: this.props.order}}>
+				<div key={"spell-container-" + this.props.base_key} className={classes.join(" ")} style={{order: this.props.order}} ref={this.container_ref}>
 					<style type="text/css" key={"spell-container-style-" + this.props.base_key}>
 						{style}
 					</style>
@@ -117,11 +132,24 @@ class Spell extends EmberComponent {
 						<span key={"spell-name-" + this.props.base_key} className="name">{this.getName(real_type)}</span>
 						<span key={"spell-cooldown-" + this.props.base_key} className="cooldown">{(!is_zero) ? this.props.cooldown : ""}</span>
 					</div>
+					{border}
 					{timer}
 				</div>
 				{breaker}
 			</React.Fragment>
 		);
+	}
+
+	updateBorderAnimationDuration() {
+		if (!this.container_ref.current) {
+			return;
+		}
+
+		let seconds = (this.container_ref.current.offsetWidth / 40) + "s";
+
+		for (let border of this.container_ref.current.getElementsByClassName("horizontal")) {
+			border.style = `animation-duration: ${seconds}`;
+		}
 	}
 
 	getName(type) {
