@@ -15,7 +15,7 @@ class SettingsService {
 		querystring = `${querystring}${joiner}mode=${state.internal.mode}`;
 
 		store.dispatch(updateState(new_data));
-		window.open(`${querystring}#/settings/about`, "", "width=600,height=430,location=no,menubar=no");
+		window.open(`${querystring}#/settings/about`, "", "width=1000,height=630,location=no,menubar=no");
 	}
 
 	openSettingsImport() {
