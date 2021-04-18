@@ -6,6 +6,7 @@ import PluginService from "../../services/PluginService";
 import OverlayPluginService from "../../services/PluginService/OverlayPluginService";
 import ObjectService from "../../services/ObjectService";
 import GameDataProcessor from "../../processors/GameDataProcessor";
+import LocalizationService from "../../services/LocalizationService";
 import ThemeService from "../../services/ThemeService";
 import SampleGameData from "../../constants/SampleGameData";
 import SampleHistoryData from "../../constants/SampleHistoryData";
@@ -41,6 +42,7 @@ const initial_state = {
 		party                : [],
 		spells               : {
 			in_use        : {},
+			defaulted     : {},
 			allowed_types : {
 				skill  : {},
 				effect : {},
@@ -158,21 +160,21 @@ function rootReducer(state, action) {
 				case "spells":
 					tmp_action = {
 						payload : {
-							"spell-7499"  : {
+							"skill-7499"  : {
 								type     : "skill",
 								id       : 7499,
 								time     : new Date(),
 								log_type : "you-skill",
 								party    : false,
 							},
-							"spell-16481" :  {
+							"skill-16481" :  {
 								type     : "skill",
 								id       : 16481,
 								time     : new Date(),
 								log_type : "you-skill",
 								party    : false,
 							},
-							"spell-16482" : {
+							"skill-16482" : {
 								type     : "skill",
 								id       : 16482,
 								time     : new Date(),
@@ -357,12 +359,13 @@ function rootReducer(state, action) {
 					break;
 
 				case "spells":
-					let in_use = GameDataProcessor.parseSpellLogLine(action.payload, state);
+					let state_data = GameDataProcessor.parseSpellLogLine(action.payload, state);
 
-					if (in_use !== false) {
+					if (state_data !== false) {
 						new_state = clone(state);
 
-						new_state.internal.spells.in_use = in_use;
+						new_state.internal.spells.in_use    = state_data.in_use;
+						new_state.internal.spells.defaulted = state_data.defaulted;
 					}
 
 					break;
@@ -460,6 +463,92 @@ function createNewState(state, full_key, action) {
 
 	if (["settings", "settings.spells_mode.ui.sections", "settings.spells_mode.ui.use"].indexOf(full_key) !== -1) {
 		new_state.internal.spells.allowed_types = GameDataProcessor.getAllowedSpellTypes(new_state);
+	}
+
+	if (
+		[
+			"settings",
+			"settings.spells_mode.spells",
+			"new_state.settings.spells_mode.effects",
+			"new_state.settings.spells_mode.dots",
+			"new_state.settings.spells_mode.always_skill",
+			"new_state.settings.spells_mode.always_effect",
+			"new_state.settings.spells_mode.always_dot",
+		].indexOf(full_key) !== -1
+	) {
+		let data         = {
+			skill  : new_state.settings.spells_mode.spells,
+			effect : new_state.settings.spells_mode.effects,
+			dot    : new_state.settings.spells_mode.dots
+		}
+		let in_use_names = [];
+
+		for (let i in new_state.internal.spells.in_use) {
+			if (new_state.internal.spells.in_use[i].time.getFullYear() === 1970) {
+				delete new_state.internal.spells.in_use[i];
+				continue;
+			}
+
+			let item = new_state.internal.spells.in_use[i];
+
+			switch (item.type) {
+				case "skill":
+					in_use_names.push(item.type + "-" + LocalizationService.getoGCDSkillName(item.id, "en"));
+					break;
+	
+				case "effect":
+					let type = (item.dot) ? "dot" : "effect";
+
+					in_use_names.push(type + "-" + LocalizationService.getEffectName(item.id, "en"));
+					break;
+	
+				default:
+					break;
+			}
+		}
+
+		for (let type in data) {
+			if (!new_state.settings.spells_mode[`always_${type}`]) {
+				continue;
+			}
+
+			for (let id of data[type]) {
+				let name = type + "-";
+
+				switch (type) {
+					case "skill":
+						name += LocalizationService.getoGCDSkillName(id, "en");
+						break;
+		
+					case "effect":	
+						name += LocalizationService.getEffectName(id, "en");
+
+						break;
+		
+					default:
+						break;
+				}
+
+				if (in_use_names.indexOf(name) !== -1) {
+					continue;
+				}
+
+				let key = `${type}-${id}`;
+
+				new_state.internal.spells.defaulted[name] = {
+					id  : id,
+					key : key
+				};
+				new_state.internal.spells.in_use[key]     = {
+					type     : type,
+					id       : +id,
+					time     : new Date("1970-01-01"),
+					duration : 0,
+					log_type : `you-${type}`,
+					party    : false
+				};
+			}
+		}
 	}
 
 	return new_state;

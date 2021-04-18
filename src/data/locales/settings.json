@@ -1084,6 +1084,36 @@
 			"fr" : "Reverse Indicator for DOT's",
 			"kr" : "도트기 역표시"
 		},
+		"spells_mode.always_skill" : {
+			"en" : "Always Show",
+			"pt" : "Always Show",
+			"cn" : "Always Show",
+			"jp" : "Always Show",
+			"de" : "Always Show",
+			"es" : "Always Show",
+			"fr" : "Always Show",
+			"kr" : "Always Show"
+		},
+		"spells_mode.always_effect" : {
+			"en" : "Always Show",
+			"pt" : "Always Show",
+			"cn" : "Always Show",
+			"jp" : "Always Show",
+			"de" : "Always Show",
+			"es" : "Always Show",
+			"fr" : "Always Show",
+			"kr" : "Always Show"
+		},
+		"spells_mode.always_dot" : {
+			"en" : "Always Show",
+			"pt" : "Always Show",
+			"cn" : "Always Show",
+			"jp" : "Always Show",
+			"de" : "Always Show",
+			"es" : "Always Show",
+			"fr" : "Always Show",
+			"kr" : "Always Show"
+		},
 		"spells_mode.party_reverse_skill" : {
 			"en" : "Reverse Indicator for Spells",
 			"pt" : "Reverse Indicator for Spells",

@@ -301,7 +301,7 @@ class GameDataProcessor  {
 				let effect_id = String(parseInt(data[log_data.spell_index], 16));
 
 				if (!SkillData.Effects[effect_id]) {
-					return state.internal.spells.in_use;
+					return false;
 				}
 
 				log_data.type             = "effect";
@@ -316,7 +316,7 @@ class GameDataProcessor  {
 				break;
 
 			default:
-				return state.internal.spells.in_use;
+				return false;
 		}
 
 		log_data.spell_id  = String(parseInt(data[log_data.spell_index], 16));
@@ -328,13 +328,13 @@ class GameDataProcessor  {
 			log_data.char_name = data[log_data.char_name_index];
 
 			if (!state.internal.game.Combatant || !state.internal.game.Combatant[log_data.char_name]) {
-				return state.internal.spells.in_use;
+				return false;
 			}
 
 			log_data.job = (state.internal.game.Combatant[log_data.char_name].Job || "").toUpperCase();
 
 			if (!Constants.GameJobs[log_data.job]) {
-				return state.internal.spells.in_use;
+				return false;
 			}
 
 			log_data.char_type  = (state.settings.spells_mode.ui.use) ? Constants.GameJobs[log_data.job].role : "party";
@@ -343,7 +343,7 @@ class GameDataProcessor  {
 		}
 
 		if (!state.internal.spells.allowed_types[log_data.subtype][log_data.char_type]) {
-			return state.internal.spells.in_use;
+			return false;
 		}
 
 		if (log_data.type === "effect") {
@@ -353,20 +353,21 @@ class GameDataProcessor  {
 				valid_names.push(LocalizationService.getEffectName(id, "en"));
 			}
 
-			if (valid_names.indexOf(LocalizationService.getEffectName(log_data.spell_id, "en")) === -1) {
-				return state.internal.spells.in_use;
+			log_data.english_name = LocalizationService.getEffectName(log_data.spell_id, "en");
+
+			if (valid_names.indexOf(log_data.english_name) === -1) {
+				return false;
 			}
 		} else {
 			if (state.settings.spells_mode[log_data.lookup_key].indexOf(log_data.spell_id) === -1) {
-				return state.internal.spells.in_use;
+				return false;
 			}
+
+			log_data.english_name = LocalizationService.getoGCDSkillName(log_data.spell_id, "en");
 		}
 
-		let in_use = clone(state.internal.spells.in_use);
-
-		if (in_use === false) {
-			in_use = {};
-		}
+		let state_data    = clone(state.internal.spells);
+		let defaulted_key = `${log_data.type}-${log_data.english_name}`;
 
 		let suffixes = [log_data.suffix];
 
@@ -374,13 +375,31 @@ class GameDataProcessor  {
 			suffixes.push(log_data.job);
 		}
 
+		if (!log_data.party) {
+			if (event_code === 30) {
+				if (state_data.defaulted[defaulted_key]) {
+					if (state_data.defaulted[defaulted_key].id !== log_data.spell_id) {
+						delete state_data.defaulted[state_data.defaulted[defaulted_key].key];
+
+						state_data.defaulted[defaulted_key].id = log_data.spell_id;
+					}
+
+					return state_data;
+				}
+			} else {
+				if (state_data.defaulted[defaulted_key] && state_data.defaulted[defaulted_key].id !== log_data.spell_id) {
+					delete state_data.defaulted[state_data.defaulted[defaulted_key].key];
+				}
+			}
+		}
+
 		for (let suffix of suffixes) {
 			log_data.in_use_key = `${log_data.type}-${log_data.spell_id}${suffix}`;
 
 			if (event_code === 30) {
-				delete in_use[log_data.in_use_key];
+				delete state_data.in_use[log_data.in_use_key];
 			} else {
-				in_use[log_data.in_use_key] = {
+				state_data.in_use[log_data.in_use_key] = {
 					type     : log_data.type,
 					id       : log_data.spell_id,
 					time     : date,
@@ -392,7 +411,7 @@ class GameDataProcessor  {
 			}
 		}
 
-		return in_use;
+		return state_data;
 	}
 
 	getAllowedSpellTypes(state) {

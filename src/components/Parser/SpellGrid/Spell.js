@@ -29,7 +29,8 @@ class Spell extends EmberComponent {
 		let id          = this.props.spell.id;
 		let real_type   = this.props.spell.type;
 		let type        = (this.props.spell.dot) ? "dot" : real_type;
-		let animate     = (this.props.indicator === "ticking") ? "animate" : false;
+		let is_zero     = (+this.props.cooldown === 0);
+		let animate     = (!is_zero && this.props.indicator === "ticking") ? "animate" : false;
 		let classes     = [
 			"spell-container",
 			this.props.base_key,
@@ -43,22 +44,24 @@ class Spell extends EmberComponent {
 		let inverse     = (this.props.reverse) ? "-inverse" : "";
 		let left_delay  = (this.props.reverse) ? half_cd : 0;
 		let right_delay = (!this.props.reverse) ? half_cd : 0;
-		let style       = `
-			.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.icon.${this.props.base_key} .timer.animate .container.left .block {
-				animation: right${inverse} ${half_cd}s linear;
-				animation-delay: ${left_delay}s;
-			}
+		let style       = (!is_zero)
+			? `
+				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.icon.${this.props.base_key} .timer.animate .container.left .block {
+					animation: right${inverse} ${half_cd}s linear;
+					animation-delay: ${left_delay}s;
+				}
 
-			.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.icon.${this.props.base_key} .timer.animate .container.right .block {
-				animation: left${inverse} ${half_cd}s linear;
-				animation-delay: ${right_delay}s;
-			}
+				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.icon.${this.props.base_key} .timer.animate .container.right .block {
+					animation: left${inverse} ${half_cd}s linear;
+					animation-delay: ${right_delay}s;
+				}
 
-			.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.${this.props.base_key}:not(.icon) .row.animate {
-				animation: horizontal ${this.props.spell.recast}s linear !important;
-			}
-		`;
-		let timer     = (this.props.layout === "icon")
+				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.${this.props.base_key}:not(.icon) .row.animate {
+					animation: horizontal ${this.props.spell.recast}s linear !important;
+				}
+			`
+			: "";
+		let timer     = (!is_zero && this.props.layout === "icon")
 			? 
 				<div key={"spell-timer-" + this.props.base_key} className={"timer " + animate} ref={(animate) ? this.animate_ref : ""}>
 					<div className="container left">
@@ -87,7 +90,7 @@ class Spell extends EmberComponent {
 			classes.push("no-icon");
 		}
 
-		if (this.props.warning && this.props.cooldown <= this.props.warning_threshold) {
+		if (this.props.warning && this.props.cooldown <= this.props.warning_threshold && this.props.cooldown > 0) {
 			classes.push("warning");
 		}
 
@@ -99,6 +102,10 @@ class Spell extends EmberComponent {
 			classes.push("bottom-left");
 		}
 
+		if (is_zero) {
+			classes.push("off-cooldown");
+		}
+
 		return(
 			<React.Fragment>
 				<div key={"spell-container-" + this.props.base_key} className={classes.join(" ")} style={{order: this.props.order}}>
@@ -108,7 +115,7 @@ class Spell extends EmberComponent {
 					{icon}
 					<div key={"spell-row-" + this.props.base_key} className={"row " + animate} ref={animate && this.props.layout !== "icon" ? this.animate_ref : ""}>
 						<span key={"spell-name-" + this.props.base_key} className="name">{this.getName(real_type)}</span>
-						<span key={"spell-cooldown-" + this.props.base_key} className="cooldown">{this.props.cooldown}</span>
+						<span key={"spell-cooldown-" + this.props.base_key} className="cooldown">{(!is_zero) ? this.props.cooldown : ""}</span>
 					</div>
 					{timer}
 				</div>

@@ -22,6 +22,7 @@ class SpellGrid extends EmberComponent {
 		this.state  = {
 			spells : {}
 		};
+		this.mounted = false;
 
 		this.processSpells(this.props.spells);
 	}
@@ -55,16 +56,10 @@ class SpellGrid extends EmberComponent {
 		}
 	}
 
-	componentWillMount() {
-		this.mounted = true;
-	}
-
 	componentDidMount() {
-		if (this.pending_update) {
-			this.pending_update = false;
+		this.mounted = true;
 
-			this.processSpells();
-		}
+		this.processSpells();
 	}
 
 	componentWillUnmount() {
@@ -159,7 +154,23 @@ class SpellGrid extends EmberComponent {
 
 		spells.sort((a, b) => {
 			if (+this.state.spells[a] === +this.state.spells[b]) {
-				return 0;
+				if (this.spells[a].type !== this.spells[b].type || this.spells[a].dot || this.spells[b].dot) {
+					if (this.spells[a].type === "skill") {
+						return -1;
+					} else if (this.spells[b].type === "skill") {
+						return 1;
+					}
+
+					if (!this.spells[a].dot) {
+						return -1;
+					} else if (!this.spells[b].dot) {
+						return 1;
+					}
+
+					return (this.spells[a].name < this.spells[b].name) ? -1 : 1;
+				} else {
+					return (this.spells[a].name < this.spells[b].name) ? -1 : 1;
+				}
 			}
 
 			return (+this.state.spells[a] < +this.state.spells[b]) ? -1 : 1;
@@ -209,6 +220,7 @@ class SpellGrid extends EmberComponent {
 					this.doTTS(i);
 				}
 
+
 				delete this.spells[i];
 				delete state.spells[i];
 			}
@@ -224,26 +236,33 @@ class SpellGrid extends EmberComponent {
 				let new_date = new Date(date);
 				let recast   = 0;
 				let dot      = false;
+				let type     = spells[i].type;
 
-				switch (spells[i].type) {
-					case "skill":
-						recast = SkillData.oGCDSkills[spells[i].id].recast;
+				if (new_date.getFullYear() !== 1970) {
+					switch (type) {
+						case "skill":
+							recast = SkillData.oGCDSkills[spells[i].id].recast;
 
-						break;
+							break;
 
-					case "effect":
-						recast = spells[i].duration;
-						dot    = SkillData.Effects[spells[i].id].dot;
+						case "effect":
+							recast = spells[i].duration;
+							dot    = SkillData.Effects[spells[i].id].dot;
 
-						break;
+							if (dot) {
+								type = "dot";
+							}
 
-					default:
-						break;
+							break;
+
+						default:
+							break;
+					}
+					
+					new_date.setSeconds(date.getSeconds() + recast);
 				}
-				
-				new_date.setSeconds(date.getSeconds() + recast);
 
-				if (new_date < true_date) {
+				if (new_date < true_date && !this.props.settings[`always_${type}`]) {
 					continue;
 				}
 
@@ -263,12 +282,12 @@ class SpellGrid extends EmberComponent {
 		
 		if (this.mounted) {
 			this.setState(state);
-
-			if (this.timer === null && Object.keys(state.spells).length) {
-				this.startTimer();
-			}
 		} else {
-			this.pending_update = true;
+			this.state = state;
+		}
+
+		if (this.timer === null && Object.keys(state.spells).length) {
+			this.startTimer();
 		}
 	}
 
@@ -295,7 +314,7 @@ class SpellGrid extends EmberComponent {
 		for (let i in this.spells) {
 			let diff = this.spells[i].time - now;
 
-			if (this.props.settings.use_tts) {
+			if (this.props.settings.use_tts && diff > -10000000) {
 				let threshold = (this.props.settings.tts_trigger === "zero") ? 0 : this.props.settings.warning_threshold * 1000;
 
 				if (diff <= threshold) {
@@ -304,9 +323,15 @@ class SpellGrid extends EmberComponent {
 			}
 
 			if (diff <= 0) {
-				delete this.spells[i];
-				delete state.spells[i];
-				continue;
+				let type = (this.spells[i].dot) ? "dot" : this.spells[i].type;
+
+				if (!this.props.settings[`always_${type}`]) {
+					delete this.spells[i];
+					delete state.spells[i];
+					continue;
+				} else {
+					diff = 0;
+				}
 			}
 
 			let cooldown = diff / 1000;

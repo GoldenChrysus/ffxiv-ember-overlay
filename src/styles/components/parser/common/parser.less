@@ -1249,7 +1249,7 @@ body.mode-spells {
 	background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
 }
 
-#container #inner #content .spell-grid .spell-container.border.effect::before {
+#container #inner #content .spell-grid .spell-container.border.effect:not(.off-cooldown)::before {
 	animation: march 1s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
@@ -1269,7 +1269,7 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content .spell-grid .spell-container.border.dot::before {
+#container #inner #content .spell-grid .spell-container.border.dot:not(.off-cooldown)::before {
 	animation: march-reverse 1s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
