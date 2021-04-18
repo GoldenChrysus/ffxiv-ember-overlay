@@ -1384,13 +1384,9 @@ body.mode-spells {
 	position: absolute;
 }
 
-#container #inner #content .spell-grid .spell-container.warning .icon,
-#container #inner #content .spell-grid .spell-container.warning .row {
-	animation-name: pulsate;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	animation-delay: 0s;
+#container #inner #content .spell-grid .spell-container.warning {
+	animation: pulsate 2s linear;
+	animation-iteration-count: 5;
 }
 
 #container #inner #content .spell-grid .spell-container .row {
@@ -1451,51 +1447,6 @@ body.mode-spells {
 
 #container #inner #content .spell-grid .spell-container.icon.darkened .timer {
 	background: rgba(0, 0, 0, 0.7);
-}
-
-#container #inner #content .spell-grid .spell-container.icon:not(.ticking) .timer * {
-	display: none !important;
-}
-
-#container #inner #content .spell-grid .spell-container.icon .timer .container {
-	position: absolute;
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-}
-
-#container #inner #content .spell-grid .spell-container.icon .timer .container.left {
-	left: 50%;
-}
-
-#container #inner #content .spell-grid .spell-container.icon .timer .container.right {
-	left: 0;
-}
-
-#container #inner #content .spell-grid .spell-container.icon .timer .container .block {
-	position: absolute;
-	background: rgba(0, 0, 0, 0.7);
-	height: 150%;
-	width: 200%;
-	animation-fill-mode: forwards;
-}
-
-#container #inner #content .spell-grid .spell-container.icon .timer .container.left .block {
-	left: -200%;
-	top: -25%;
-	transform-origin: right center;
-	animation-fill-mode: forwards;
-}
-
-#container #inner #content .spell-grid .spell-container.icon.reverse .timer .container.left .block {
-	transform: rotate(-180deg);
-}
-
-#container #inner #content .spell-grid .spell-container.icon .timer .container.right .block {
-	top: -25%;
-	left: -100%;
-	transform-origin: right center;
-	animation-fill-mode: forwards;
 }
 
 #container #inner #content .spell-grid .spell-container.warning .row {
@@ -1780,6 +1731,16 @@ body.mode-spells {
 
 	25%, 75% {
 		opacity: 0.2;
+	}
+}
+
+@keyframes horizontal {
+	0% {
+		background-size: 100% 100%;
+	}
+
+	100% {
+		background-size: 0% 100%;
 	}
 }
 

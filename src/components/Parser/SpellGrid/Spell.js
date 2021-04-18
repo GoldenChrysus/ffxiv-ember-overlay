@@ -2,6 +2,7 @@ import React from "react";
 
 import EmberComponent from "../../EmberComponent";
 import LocalizationService from "../../../services/LocalizationService";
+import AnimateService from "../../../services/AnimateService";
 
 class Spell extends EmberComponent {
 	constructor(props) {
@@ -15,13 +16,7 @@ class Spell extends EmberComponent {
 	componentDidUpdate(prev_props) {
 		if (prev_props.cooldown && +this.props.cooldown > +prev_props.cooldown) {
 			if (this.animate_ref.current) {
-				this.animate_ref.current.classList.remove("animate");
-
-				// this forces DOM refresh so the animate add has effect
-				// eslint-disable-next-line
-				let foo = this.animate_ref.current.offsetHeight;
-
-				this.animate_ref.current.classList.add("animate");
+				this.animateTicker();
 			}
 		}
 	}
@@ -30,6 +25,10 @@ class Spell extends EmberComponent {
 		if (this.container_ref.current && this.props.border) {
 			this.updateBorderAnimationDuration();
 			window.addEventListener("resize", this.updateBorderAnimationDuration.bind(this));
+		}
+
+		if (this.animate_ref.current) {
+			this.animateTicker();
 		}
 	}
 
@@ -45,41 +44,22 @@ class Spell extends EmberComponent {
 			type,
 			this.props.indicator
 		];
-		let half_cd     = this.props.spell.recast / 2;
 		let breaker     = (this.props.layout === "icon" && +this.props.order % +this.props.spells_per_row === 0)
 			? <span key={"spell-breaker-" + this.props.base_key} className="breaker" style={{order: this.props.order}}></span>
 			: "";
-		let inverse     = (this.props.reverse) ? "-inverse" : "";
-		let left_delay  = (this.props.reverse) ? half_cd : 0;
-		let right_delay = (!this.props.reverse) ? half_cd : 0;
 		let border      = "";
 		let style       = (!is_zero)
 			? `
-				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.icon.${this.props.base_key} .timer.animate .container.left .block {
-					animation: right${inverse} ${half_cd}s linear;
-					animation-delay: ${left_delay}s;
-				}
-
-				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.icon.${this.props.base_key} .timer.animate .container.right .block {
-					animation: left${inverse} ${half_cd}s linear;
-					animation-delay: ${right_delay}s;
-				}
-
 				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.${this.props.base_key}:not(.icon) .row.animate {
 					animation: horizontal ${this.props.spell.recast}s linear !important;
 				}
 			`
 			: "";
 		let timer     = (!is_zero && this.props.layout === "icon")
-			? 
-				<div key={"spell-timer-" + this.props.base_key} className={"timer " + animate} ref={(animate) ? this.animate_ref : ""}>
-					<div className="container left">
-						<div className="block"></div>
-					</div>
-					<div className="container right">
-						<div className="block"></div>
-					</div>
-				</div>
+			? ((animate)
+				? <canvas key={"spell-timer-" + this.props.base_key} className="timer" ref={(animate) ? this.animate_ref : ""}></canvas>
+				: <div key={"spell-timer-" + this.props.base_key} className="timer"></div>
+			)
 			: "";
 		let icon      = (!this.props.show_icon && this.props.layout !== "icon")
 			? ""
@@ -138,6 +118,14 @@ class Spell extends EmberComponent {
 				{breaker}
 			</React.Fragment>
 		);
+	}
+
+	animateTicker() {
+		if (this.props.layout !== "icon") {
+			return;
+		}
+
+		AnimateService.animateTicker(this.animate_ref.current, this.props.spell.recast, this.props.reverse);
 	}
 
 	updateBorderAnimationDuration() {

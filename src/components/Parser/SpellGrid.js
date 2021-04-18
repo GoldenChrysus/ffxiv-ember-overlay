@@ -326,7 +326,7 @@ class SpellGrid extends EmberComponent {
 			if (diff <= 0) {
 				let type = (this.spells[i].dot) ? "dot" : this.spells[i].type;
 
-				if (!this.props.settings[`always_${type}`]) {
+				if (!this.props.settings[`always_${type}`] || this.spells[i].party) {
 					delete this.spells[i];
 					delete state.spells[i];
 					continue;
