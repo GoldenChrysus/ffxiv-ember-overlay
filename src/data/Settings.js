@@ -177,6 +177,25 @@ const default_settings = {
 		minimal_layout       : false,
 		invert_vertical      : false,
 		invert_horizontal    : false,
+		designer             : {
+			skill : {
+				warning              : true,
+				indicator            : "ticking",
+				cooldown_bottom_left : false
+			},
+			effect : {
+				border               : false,
+				warning              : true,
+				indicator            : "ticking",
+				cooldown_bottom_left : false
+			},
+			dot : {
+				border               : false,
+				warning              : true,
+				indicator            : "ticking",
+				cooldown_bottom_left : false
+			}
+		},
 		ui                   : {
 			use      : false,
 			sections : {}

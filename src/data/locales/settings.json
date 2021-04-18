@@ -414,6 +414,50 @@
 				}
 			]
 		},
+		"spells-designer" : {
+			"title" : {
+				"en" : "Spell Designer",
+				"pt" : "Spell Designer",
+				"cn" : "Spell Designer",
+				"jp" : "Spell Designer",
+				"de" : "Spell Designer",
+				"es" : "Spell Designer",
+				"fr" : "Spell Designer",
+				"kr" : "Spell Designer"
+			},
+			"subsections" : [
+				{
+					"en" : "Spells",
+					"pt" : "Magias",
+					"cn" : "技能",
+					"jp" : "スペル",
+					"de" : "Zauber",
+					"es" : "Hechizos",
+					"fr" : "Sorts",
+					"kr" : "스펠"
+				},
+				{
+					"en" : "Effects/Buffs",
+					"pt" : "Efeitos/Buffs",
+					"cn" : "效果/Buff",
+					"jp" : "効果/バフ",
+					"de" : "Effekte/Buffs",
+					"es" : "Efectos/Buffs",
+					"fr" : "Effets/Buffs",
+					"kr" : "이펙트/버프"
+				},
+				{
+					"en" : "DOT's",
+					"pt" : "DOT's",
+					"cn" : "DOT's",
+					"jp" : "DOT's",
+					"de" : "DOT's",
+					"es" : "DOT's",
+					"fr" : "DOT's",
+					"kr" : "도트기"
+				}
+			]
+		},
 		"spells-ui" : {
 			"title" : {
 				"en" : "UI Builder",
@@ -1080,6 +1124,116 @@
 			"fr" : "Warning Threshold (In Seconds)",
 			"kr" : "경고 구간 (초 로 입력)"
 		},
+		"spells_mode.designer.skill.warning" : {
+			"en" : "Show Warning Animation",
+			"pt" : "Show Warning Animation",
+			"cn" : "Show Warning Animation",
+			"jp" : "Show Warning Animation",
+			"de" : "Show Warning Animation",
+			"es" : "Show Warning Animation",
+			"fr" : "Show Warning Animation",
+			"kr" : "Show Warning Animation"
+		},
+		"spells_mode.designer.skill.indicator" : {
+			"en" : "Visual Indicator",
+			"pt" : "Visual Indicator",
+			"cn" : "Visual Indicator",
+			"jp" : "Visual Indicator",
+			"de" : "Visual Indicator",
+			"es" : "Visual Indicator",
+			"fr" : "Visual Indicator",
+			"kr" : "Visual Indicator"
+		},
+		"spells_mode.designer.skill.cooldown_bottom_left" : {
+			"en" : "Cooldowns in Bottom Left (Icons Only)",
+			"pt" : "Cooldowns in Bottom Left (Icons Only)",
+			"cn" : "Cooldowns in Bottom Left (Icons Only)",
+			"jp" : "Cooldowns in Bottom Left (Icons Only)",
+			"de" : "Cooldowns in Bottom Left (Icons Only)",
+			"es" : "Cooldowns in Bottom Left (Icons Only)",
+			"fr" : "Cooldowns in Bottom Left (Icons Only)",
+			"kr" : "Cooldowns in Bottom Left (Icons Only)"
+		},
+		"spells_mode.designer.effect.warning" : {
+			"en" : "Show Warning Animation",
+			"pt" : "Show Warning Animation",
+			"cn" : "Show Warning Animation",
+			"jp" : "Show Warning Animation",
+			"de" : "Show Warning Animation",
+			"es" : "Show Warning Animation",
+			"fr" : "Show Warning Animation",
+			"kr" : "Show Warning Animation"
+		},
+		"spells_mode.designer.effect.border" : {
+			"en" : "Show Moving Border",
+			"pt" : "Show Moving Border",
+			"cn" : "Show Moving Border",
+			"jp" : "Show Moving Border",
+			"de" : "Show Moving Border",
+			"es" : "Show Moving Border",
+			"fr" : "Show Moving Border",
+			"kr" : "Show Moving Border"
+		},
+		"spells_mode.designer.effect.indicator" : {
+			"en" : "Visual Indicator",
+			"pt" : "Visual Indicator",
+			"cn" : "Visual Indicator",
+			"jp" : "Visual Indicator",
+			"de" : "Visual Indicator",
+			"es" : "Visual Indicator",
+			"fr" : "Visual Indicator",
+			"kr" : "Visual Indicator"
+		},
+		"spells_mode.designer.effect.cooldown_bottom_left" : {
+			"en" : "Cooldowns in Bottom Left (Icons Only)",
+			"pt" : "Cooldowns in Bottom Left (Icons Only)",
+			"cn" : "Cooldowns in Bottom Left (Icons Only)",
+			"jp" : "Cooldowns in Bottom Left (Icons Only)",
+			"de" : "Cooldowns in Bottom Left (Icons Only)",
+			"es" : "Cooldowns in Bottom Left (Icons Only)",
+			"fr" : "Cooldowns in Bottom Left (Icons Only)",
+			"kr" : "Cooldowns in Bottom Left (Icons Only)"
+		},
+		"spells_mode.designer.dot.warning" : {
+			"en" : "Show Warning Animation",
+			"pt" : "Show Warning Animation",
+			"cn" : "Show Warning Animation",
+			"jp" : "Show Warning Animation",
+			"de" : "Show Warning Animation",
+			"es" : "Show Warning Animation",
+			"fr" : "Show Warning Animation",
+			"kr" : "Show Warning Animation"
+		},
+		"spells_mode.designer.dot.border" : {
+			"en" : "Show Moving Border",
+			"pt" : "Show Moving Border",
+			"cn" : "Show Moving Border",
+			"jp" : "Show Moving Border",
+			"de" : "Show Moving Border",
+			"es" : "Show Moving Border",
+			"fr" : "Show Moving Border",
+			"kr" : "Show Moving Border"
+		},
+		"spells_mode.designer.dot.indicator" : {
+			"en" : "Visual Indicator",
+			"pt" : "Visual Indicator",
+			"cn" : "Visual Indicator",
+			"jp" : "Visual Indicator",
+			"de" : "Visual Indicator",
+			"es" : "Visual Indicator",
+			"fr" : "Visual Indicator",
+			"kr" : "Visual Indicator"
+		},
+		"spells_mode.designer.dot.cooldown_bottom_left" : {
+			"en" : "Cooldowns in Bottom Left (Icons Only)",
+			"pt" : "Cooldowns in Bottom Left (Icons Only)",
+			"cn" : "Cooldowns in Bottom Left (Icons Only)",
+			"jp" : "Cooldowns in Bottom Left (Icons Only)",
+			"de" : "Cooldowns in Bottom Left (Icons Only)",
+			"es" : "Cooldowns in Bottom Left (Icons Only)",
+			"fr" : "Cooldowns in Bottom Left (Icons Only)",
+			"kr" : "Cooldowns in Bottom Left (Icons Only)"
+		},
 		"spells_mode.ui.use" : {
 			"en" : "Use UI Builder",
 			"pt" : "Use UI Builder",
@@ -1371,6 +1525,48 @@
 					"normal"  : "노멀",
 					"compact" : "간결",
 					"icon"    : "아이콘만 표시"
+				}
+			},
+			"indicator_options" : {
+				"en" : {
+					"ticking"  : "Ticking",
+					"darkened" : "Darkened/Gray",
+					"none"     : "None"
+				},
+				"pt" : {
+					"ticking"  : "Ticking",
+					"darkened" : "Darkened/Gray",
+					"none"     : "None"
+				},
+				"cn" : {
+					"ticking"  : "Ticking",
+					"darkened" : "Darkened/Gray",
+					"none"     : "None"
+				},
+				"jp" : {
+					"ticking"  : "Ticking",
+					"darkened" : "Darkened/Gray",
+					"none"     : "None"
+				},
+				"de" : {
+					"ticking"  : "Ticking",
+					"darkened" : "Darkened/Gray",
+					"none"     : "None"
+				},
+				"es" : {
+					"ticking"  : "Ticking",
+					"darkened" : "Darkened/Gray",
+					"none"     : "None"
+				},
+				"fr" : {
+					"ticking"  : "Ticking",
+					"darkened" : "Darkened/Gray",
+					"none"     : "None"
+				},
+				"kr" : {
+					"ticking"  : "Ticking",
+					"darkened" : "Darkened/Gray",
+					"none"     : "None"
 				}
 			},
 			"tts_trigger_options" : {

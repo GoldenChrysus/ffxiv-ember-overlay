@@ -34,7 +34,7 @@ class Container extends EmberComponent {
 		};
 	}
 
-	componentDidUpdate(prev_props) {
+	componentDidUpdate() {
 		let need_state = false;
 
 		for (let uuid in this.props.spells_sections) {

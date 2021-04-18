@@ -339,6 +339,22 @@ class LocalizationService {
 
 		return info;
 	}
+
+	getSpellDesignerIndicatorOptions() {
+		let language = this.getLanguage();
+		let data_set = SettingsLocales.misc.spells.indicator_options[language] || SettingsLocales.misc.spells.indicator_options.en;
+		let options  = [];
+
+		for (let key in data_set) {
+			options.push({
+				key   : key,
+				value : key,
+				text  : data_set[key]
+			});
+		}
+		
+		return options;
+	}
 }
 
 export default new LocalizationService();

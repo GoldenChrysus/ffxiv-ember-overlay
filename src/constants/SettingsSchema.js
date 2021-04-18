@@ -760,6 +760,103 @@ const SettingsSchema = {
 				]
 			},
 			{
+				path : "spells-designer",
+				sections : [
+					{
+						settings : [
+							{
+								key_path : "spells_mode.designer.skill.warning",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.skill.warning;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.skill.cooldown_bottom_left",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.skill.cooldown_bottom_left;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.skill.indicator",
+								type     : "select",
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.designer.skill.indicator;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.designer.effect.warning",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.effect.warning;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.effect.border",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.effect.border;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.effect.cooldown_bottom_left",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.effect.cooldown_bottom_left;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.effect.indicator",
+								type     : "select",
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.designer.effect.indicator;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.designer.dot.warning",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.dot.warning;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.dot.border",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.dot.border;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.dot.cooldown_bottom_left",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.dot.cooldown_bottom_left;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.dot.indicator",
+								type     : "select",
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.designer.dot.indicator;
+								}
+							}
+						]
+					}
+				]
+			},
+			{
 				path : "spells-ui",
 				sections : [
 					{

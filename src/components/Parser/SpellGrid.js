@@ -166,10 +166,29 @@ class SpellGrid extends EmberComponent {
 		});
 
 		for (let i in spells) {
-			let key  = spells[i];
-			let type = (this.spells[key].dot) ? "dot" : this.spells[key].type;
+			let key   = spells[i];
+			let type  = (this.spells[key].dot) ? "dot" : this.spells[key].type;
+			let party = (this.spells[key].party) ? "party_" : "";
 
-			items.push(<Spell key={key} base_key={key} order={+i + 1} grid_uuid={uuid} spell={this.spells[key]} cooldown={this.state.spells[key]} reverse={this.props.settings[`reverse_${type}`]} layout={this.props.settings.layout} spells_per_row={this.props.settings.spells_per_row} show_icon={this.props.settings.show_icon} warning_threshold={this.props.settings.warning_threshold}/>);
+			items.push(
+				<Spell
+					key={key}
+					base_key={key}
+					order={+i + 1}
+					grid_uuid={uuid}
+					spell={this.spells[key]}
+					cooldown={this.state.spells[key]}
+					reverse={this.props.settings[`${party}reverse_${type}`]}
+					layout={this.props.settings.layout}
+					spells_per_row={this.props.settings.spells_per_row}
+					show_icon={this.props.settings.show_icon}
+					warning_threshold={this.props.settings.warning_threshold}
+					warning={this.props.settings.designer[type].warning}
+					border={this.props.settings.designer[type].border}
+					indicator={this.props.settings.designer[type].indicator}
+					bottom_left={this.props.settings.designer[type].cooldown_bottom_left}
+				/>
+			);
 		}
 
 		return items;
