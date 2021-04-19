@@ -2,70 +2,12 @@ import React from "react";
 import clone from "lodash.clonedeep";
 
 import EmberComponent from "../EmberComponent";
-import SkillData from "../../constants/SkillData";
 import LocalizationService from "../../services/LocalizationService";
-import TTSService from "../../services/TTSService";
 
 import OverlayInfo from "./PlayerTable/OverlayInfo";
 import Spell from "./SpellGrid/Spell";
 
 class SpellGrid extends EmberComponent {
-	timer          = null;
-	spells         = null;
-	pending_update = false;
-	mounted        = false;
-
-	constructor(props) {
-		super(props);
-
-		this.spells = {};
-		this.state  = {
-			spells : {}
-		};
-		this.mounted = false;
-
-		this.processSpells(this.props.spells);
-	}
-
-	componentDidUpdate(prev_props) {
-		let new_spells  = false;
-		let lost_spells = false;
-
-		for (let i in this.props.spells) {
-			if (!prev_props.spells[i] || prev_props.spells[i].time < this.props.spells[i].time) {
-				if (!new_spells) {
-					new_spells = {};
-				}
-
-				new_spells[i] = this.props.spells[i];
-			}
-		}
-
-		for (let i in prev_props.spells) {
-			if (!this.props.spells[i]) {
-				if (!lost_spells) {
-					lost_spells = {};
-				}
-
-				lost_spells[i] = true;
-			}
-		}
-
-		if (new_spells || lost_spells) {
-			this.processSpells(new_spells, lost_spells);
-		}
-	}
-
-	componentDidMount() {
-		this.mounted = true;
-
-		this.processSpells();
-	}
-
-	componentWillUnmount() {
-		this.cancelTimer();
-	}
-
 	render() {
 		let overlay_info = (
 			this.props.from_builder ||
@@ -149,37 +91,56 @@ class SpellGrid extends EmberComponent {
 			return <span>{text.join(", ")}</span>;
 		}
 
-		let spells = Object.keys(this.state.spells);
-		let items  = [];
+		let spells           = Object.keys(this.props.spells);
+		let items            = [];
+		let decimal_accuracy = (this.props.settings.layout === "icon") ? 0 : 1;
 
 		spells.sort((a, b) => {
-			if (+this.state.spells[a] === +this.state.spells[b]) {
-				if (this.spells[a].type !== this.spells[b].type || this.spells[a].dot || this.spells[b].dot) {
-					if (this.spells[a].type === "skill") {
+			if (+this.props.spells[a].remaining === +this.props.spells[b].remaining) {
+				if (this.props.spells[a].type !== this.props.spells[b].type || this.props.spells[a].dot || this.props.spells[b].dot) {
+					if (this.props.spells[a].type === "skill") {
 						return -1;
-					} else if (this.spells[b].type === "skill") {
+					} else if (this.props.spells[b].type === "skill") {
 						return 1;
 					}
 
-					if (!this.spells[a].dot) {
+					if (!this.props.spells[a].dot) {
 						return -1;
-					} else if (!this.spells[b].dot) {
+					} else if (!this.props.spells[b].dot) {
 						return 1;
 					}
 
-					return (this.spells[a].name < this.spells[b].name) ? -1 : 1;
+					return (this.props.spells[a].name < this.props.spells[b].name) ? -1 : 1;
 				} else {
-					return (this.spells[a].name < this.spells[b].name) ? -1 : 1;
+					return (this.props.spells[a].name < this.props.spells[b].name) ? -1 : 1;
 				}
 			}
 
-			return (+this.state.spells[a] < +this.state.spells[b]) ? -1 : 1;
+			return (+this.props.spells[a].remaining < +this.props.spells[b].remaining) ? -1 : 1;
 		});
 
 		for (let i in spells) {
-			let key   = spells[i];
-			let type  = (this.spells[key].dot) ? "dot" : this.spells[key].type;
-			let party = (this.spells[key].party) ? "party_" : "";
+			let key = spells[i];
+
+			if (this.props.from_builder && this.props.section.types.indexOf(this.props.spells[key].log_type) === -1) {
+				continue;
+			}
+
+			let spell = this.props.spells[key];
+			let type  = spell.subtype;
+
+			if (spell.cooldown <= 0 && !this.props.settings[`always_${type}`]) {
+				continue;
+			}
+
+			let party    = (spell.party) ? "party_" : "";
+			let cooldown = spell.cooldown;
+
+			if (cooldown <= 9.9) {
+				cooldown = cooldown.toFixed(1);
+			} else {
+				cooldown = cooldown.toFixed(decimal_accuracy);
+			}
 
 			items.push(
 				<Spell
@@ -187,8 +148,8 @@ class SpellGrid extends EmberComponent {
 					base_key={key}
 					order={+i + 1}
 					grid_uuid={uuid}
-					spell={this.spells[key]}
-					cooldown={this.state.spells[key]}
+					spell={spell}
+					cooldown={cooldown}
 					reverse={this.props.settings[`${party}reverse_${type}`]}
 					layout={this.props.settings.layout}
 					spells_per_row={this.props.settings.spells_per_row}
@@ -203,164 +164,6 @@ class SpellGrid extends EmberComponent {
 		}
 
 		return items;
-	}
-
-	processSpells(spells, lost_spells) {
-		if (this.props.is_draggable) {
-			return;
-		}
-
-		let state     = clone(this.state);
-		let builder   = (this.props.from_builder);
-		let true_date = new Date();
-
-		if (lost_spells) {
-			for (let i in lost_spells) {
-				if (this.props.settings.use_tts) {
-					this.doTTS(i);
-				}
-
-				delete this.spells[i];
-				delete state.spells[i];
-			}
-		}
-
-		if (spells) {
-			for (let i in spells) {
-				if (builder && this.props.section.types.indexOf(spells[i].log_type) === -1) {
-					continue;
-				}
-
-				let date     = spells[i].time;
-				let new_date = new Date(date);
-				let recast   = 0;
-				let dot      = false;
-				let type     = spells[i].type;
-
-				if (new_date.getFullYear() !== 1970) {
-					switch (type) {
-						case "skill":
-							recast = SkillData.oGCDSkills[spells[i].id].recast;
-
-							break;
-
-						case "effect":
-							recast = spells[i].duration;
-							dot    = SkillData.Effects[spells[i].id].dot;
-
-							if (dot) {
-								type = "dot";
-							}
-
-							break;
-
-						default:
-							break;
-					}
-					
-					new_date.setSeconds(date.getSeconds() + recast);
-				}
-
-				if (new_date < true_date && !this.props.settings[`always_${type}`]) {
-					continue;
-				}
-
-				this.spells[i] = {
-					type   : spells[i].type,
-					id     : spells[i].id,
-					time   : new_date,
-					name   : spells[i].name,
-					recast : recast,
-					dot    : dot,
-					party  : spells[i].party
-				};
-
-				state.spells[i] = recast;
-			}
-		}
-		
-		if (this.mounted) {
-			this.setState(state);
-		} else {
-			this.state = state;
-		}
-
-		if (this.timer === null && Object.keys(state.spells).length) {
-			this.startTimer();
-		}
-	}
-
-	cancelTimer() {
-		if (this.timer) {
-			clearInterval(this.timer);
-
-			this.timer = null;
-		}
-	}
-
-	startTimer() {
-		this.timer = setInterval(
-			this.updateCooldowns.bind(this),
-			250
-		);
-	}
-
-	updateCooldowns() {
-		let now              = new Date();
-		let state            = {
-			spells : {}
-		};
-		let decimal_accuracy = (this.props.settings.layout === "icon") ? 0 : 1;
-
-		for (let i in this.spells) {
-			let diff = this.spells[i].time - now;
-
-			if (this.props.settings.use_tts && diff > -10000000) {
-				let threshold = (this.props.settings.tts_trigger === "zero") ? 0 : this.props.settings.warning_threshold * 1000;
-
-				if (diff <= threshold) {
-					this.doTTS(i);
-				}
-			}
-
-			if (diff <= 0) {
-				let type = (this.spells[i].dot) ? "dot" : this.spells[i].type;
-
-				if (!this.props.settings[`always_${type}`] || this.spells[i].party) {
-					delete this.spells[i];
-					delete state.spells[i];
-					continue;
-				} else {
-					diff = 0;
-				}
-			}
-
-			let cooldown = diff / 1000;
-
-			if (cooldown <= 9.9) {
-				cooldown = cooldown.toFixed(1);
-			} else {
-				cooldown = cooldown.toFixed(decimal_accuracy);
-			}
-
-			state.spells[i] = cooldown;
-		}
-
-		if (!Object.keys(this.state.spells).length) {
-			this.cancelTimer();
-		}
-
-		this.setState(state);
-	}
-
-	doTTS(i) {
-		if (!this.spells[i] || this.spells[i].tts) {
-			return;
-		}
-
-		this.spells[i].tts = true;
-
-		TTSService.saySpell(i, this.spells[i].id, this.spells[i].type, this.spells[i].name);
 	}
 }
 

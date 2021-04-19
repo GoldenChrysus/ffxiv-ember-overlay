@@ -14,53 +14,130 @@ import PlayerDetail from "./PlayerDetail";
 import Footer from "./Footer";
 import PlaceholderToggle from "./Placeholder/Toggle";
 import AggroTable from "./AggroTable";
-
-import TTSService from "../../services/TTSService";
 import SpellGrid from "./SpellGrid";
 
-class Container extends EmberComponent {
+import SpellService from "../../services/SpellService";
+import TTSService from "../../services/TTSService";
+
+class Container extends React.Component {
 	constructor(props) {
 		super(props);
 
+		this.timer           = null;
 		this.no_footer_modes = [
 			"spells"
 		];
 
 		this.mounted = false;
-
-		this.state = {
+		this.state   = {
 			locked          : true,
-			spells_sections : this.props.spells_sections
+			spells_sections : this.props.spells_sections,
+			spells          : SpellService.processSpells(this.props.spells_in_use)
 		};
 	}
 
-	componentDidUpdate() {
+	componentDidUpdate(prev_props) {
 		let need_state = false;
+		let state      = {};
 
 		for (let uuid in this.props.spells_sections) {
 			if (!this.state.spells_sections[uuid]) {
 				need_state = true;
 
+				state.spells_sections = this.props.spells_sections;
+
 				break;
 			}
 		}
 
+		if (prev_props.mode !== this.props.mode) {
+			this.clearTimer();
+
+			if (this.props.mode === "spells") {
+				TTSService.stop();
+
+				need_state = true;
+
+				state.spells = SpellService.processSpells(this.props.spells_in_use);
+
+				this.startSpellsTimer();
+			} else if (this.props.mode === "stats") {
+				TTSService.start();
+			}
+		} else if (this.props.mode === "spells") {
+			this.setSpellsSettings();
+
+			let new_spells  = false;
+			let lost_spells = false;
+
+			for (let i in this.props.spells_in_use) {
+				if (!prev_props.spells_in_use[i] || prev_props.spells_in_use[i].time < this.props.spells_in_use[i].time) {
+					if (!new_spells) {
+						new_spells = {};
+					}
+
+					new_spells[i] = this.props.spells_in_use[i];
+				}
+			}
+
+			for (let i in prev_props.spells_in_use) {
+				if (!this.props.spells_in_use[i]) {
+					if (!lost_spells) {
+						lost_spells = {};
+					}
+
+					lost_spells[i] = true;
+				}
+			}
+
+			if (new_spells || lost_spells) {
+				need_state = true;
+
+				state.spells = SpellService.processSpells(new_spells, lost_spells);
+			}
+		}
+
 		if (need_state) {
-			this.setState({
-				spells_sections : this.props.spells_sections
-			});
+			this.setState(state);
 		}
 	}
 
 	componentDidMount() {
 		if (this.props.mode === "stats") {
 			TTSService.start();
+		} else if (this.props.mode === "spells") {
+			this.startSpellsTimer();
 		}
 
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
 		this.props.plugin_service.subscribe();
 
 		this.mounted = true;
+	}
+
+	clearTimer() {
+		if (this.timer !== null) {
+			clearInterval(this.timer);
+
+			this.timer = null;
+		}
+	}
+
+	startSpellsTimer() {
+		this.setSpellsSettings();
+
+		this.timer = setInterval(
+			() => {
+				this.setState({
+					spells : Object.assign({}, this.state.spells, clone(SpellService.updateCooldowns()))
+				});
+			},
+			250
+		);
+	}
+
+	setSpellsSettings() {
+		SpellService.setSettings(this.props.spells_settings.tts_trigger, this.props.spells_settings.warning_threshold);
 	}
 
 	render() {
@@ -135,7 +212,7 @@ class Container extends EmberComponent {
 									if (this.state.locked) {
 										content.push(
 											<Rnd key={"spell-grid-rnd-" + uuid} bounds="body" minWidth={100} minHeight={100} resizeGrid={[10, 10]} dragGrid={[10, 10]} position={{x : layout.x, y : layout.y}} size={{width : layout.width, height : layout.height}} onDragStop={this.onDrag.bind(this, uuid)} onResizeStop={this.onResize.bind(this, uuid)}>
-												<SpellGrid key={"spell-grid-" + uuid} from_builder={true} is_draggable={true} section={section} encounter={encounter} spells={this.props.spells_in_use} settings={section_settings} style={{position: "absolute", width: "100%", height: "100%"}}/>
+												<SpellGrid key={"spell-grid-" + uuid} from_builder={true} is_draggable={true} section={section} encounter={encounter} spells={this.state.spells} settings={section_settings} style={{position: "absolute", width: "100%", height: "100%"}}/>
 											</Rnd>
 										);
 									} else {
@@ -148,12 +225,12 @@ class Container extends EmberComponent {
 									}
 								} else {
 									content.push(
-										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={this.props.spells_in_use} settings={section_settings} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
+										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={this.state.spells} settings={section_settings} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
 									);
 								}
 							}
 						} else {
-							content = <SpellGrid key="spell-grid" encounter={encounter} spells={this.props.spells_in_use} settings={this.props.spells_settings}/>;
+							content = <SpellGrid key="spell-grid" encounter={encounter} spells={this.state.spells} settings={this.props.spells_settings}/>;
 						}
 
 						break;

@@ -4,6 +4,7 @@ import LocalizationService from "./LocalizationService";
 import UsageService from "./UsageService";
 
 class TTSService {
+	timer = null;
 	state = {
 		top                : {},
 		critical           : [],
@@ -24,10 +25,18 @@ class TTSService {
 	};
 
 	start() {
-		setInterval(
+		this.timer = setInterval(
 			this.processQueue.bind(this),
 			1500
 		);
+	}
+
+	stop() {
+		if (this.timer !== null) {
+			clearInterval(this.timer);
+
+			this.timer = null;
+		}
 	}
 
 	updateRules(rules) {
