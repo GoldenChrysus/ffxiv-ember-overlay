@@ -1,3 +1,5 @@
+import clone from "lodash.clonedeep";
+
 import SkillData from "../constants/SkillData";
 
 import TTSService from "./TTSService";
@@ -100,6 +102,26 @@ class SpellService {
 
 			TTSService.saySpell(key, this.spells[key].id, this.spells[key].type, this.spells[key].name);
 		}
+	}
+
+	filterSpells(spells, section, settings, builder) {
+		spells = clone(spells);
+
+		for (let i in spells) {
+			if (builder && section.types.indexOf(spells[i].log_type) === -1) {
+				delete spells[i];
+
+				continue;
+			}
+
+			if (spells[i].cooldown <= 0 && !settings[`always_${spells[i].subtype}`]) {
+				delete spells[i];
+
+				continue;
+			}
+		}
+
+		return spells;
 	}
 }
 

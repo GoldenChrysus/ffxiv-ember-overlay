@@ -96,7 +96,7 @@ class SpellGrid extends EmberComponent {
 		let decimal_accuracy = (this.props.settings.layout === "icon") ? 0 : 1;
 
 		spells.sort((a, b) => {
-			if (+this.props.spells[a].remaining === +this.props.spells[b].remaining) {
+			if (+this.props.spells[a].cooldown === +this.props.spells[b].cooldown) {
 				if (this.props.spells[a].type !== this.props.spells[b].type || this.props.spells[a].dot || this.props.spells[b].dot) {
 					if (this.props.spells[a].type === "skill") {
 						return -1;
@@ -116,23 +116,13 @@ class SpellGrid extends EmberComponent {
 				}
 			}
 
-			return (+this.props.spells[a].remaining < +this.props.spells[b].remaining) ? -1 : 1;
+			return (+this.props.spells[a].cooldown < +this.props.spells[b].cooldown) ? -1 : 1;
 		});
 
 		for (let i in spells) {
-			let key = spells[i];
-
-			if (this.props.from_builder && this.props.section.types.indexOf(this.props.spells[key].log_type) === -1) {
-				continue;
-			}
-
-			let spell = this.props.spells[key];
-			let type  = spell.subtype;
-
-			if (spell.cooldown <= 0 && !this.props.settings[`always_${type}`]) {
-				continue;
-			}
-
+			let key      = spells[i];
+			let spell    = this.props.spells[key];
+			let type     = spell.subtype;
 			let party    = (spell.party) ? "party_" : "";
 			let cooldown = spell.cooldown;
 

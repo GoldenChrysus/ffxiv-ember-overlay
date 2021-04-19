@@ -19,7 +19,7 @@ import SpellGrid from "./SpellGrid";
 import SpellService from "../../services/SpellService";
 import TTSService from "../../services/TTSService";
 
-class Container extends React.Component {
+class Container extends EmberComponent {
 	constructor(props) {
 		super(props);
 
@@ -224,13 +224,17 @@ class Container extends React.Component {
 										break;
 									}
 								} else {
+									let spells = SpellService.filterSpells(this.state.spells, section, section_settings, true);
+
 									content.push(
-										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={this.state.spells} settings={section_settings} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
+										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={spells} settings={section_settings} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
 									);
 								}
 							}
 						} else {
-							content = <SpellGrid key="spell-grid" encounter={encounter} spells={this.state.spells} settings={this.props.spells_settings}/>;
+							let spells = SpellService.filterSpells(this.state.spells, {}, settings, false);
+
+							content = <SpellGrid key="spell-grid" encounter={encounter} spells={spells} settings={this.props.spells_settings}/>;
 						}
 
 						break;
