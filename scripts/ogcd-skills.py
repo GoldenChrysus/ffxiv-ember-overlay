@@ -49,9 +49,11 @@ while (True):
 		id = skill["ID"]
 
 		skill_data = getSkill(id)
+		classes    = skill_data["ClassJobCategory"]["Name_en"]
 
 		skills[id] = {
 			"recast"  : skill_data["Recast100ms"] / 10.0,
+			"jobs"    : ("*", classes.split())[classes != "All Classes"],
 			"locales" : {
 				"name" : {
 					"en" : skill_data["Name_en"],
