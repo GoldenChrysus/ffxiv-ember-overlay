@@ -339,10 +339,13 @@ class GameDataProcessor  {
 
 			log_data.char_type  = (state.settings.spells_mode.ui.use) ? Constants.GameJobs[log_data.job].role : "party";
 			log_data.lookup_key = "party_" + log_data.lookup_key;
-			log_data.suffix     = "-party";
+			log_data.suffix     = "party";
 		}
 
-		if (!state.internal.spells.allowed_types[log_data.subtype][log_data.char_type]) {
+		if (
+			!state.internal.spells.allowed_types[log_data.subtype][log_data.char_type] &&
+			!state.internal.spells.allowed_types[log_data.subtype][log_data.job]
+		) {
 			return false;
 		}
 
@@ -368,11 +371,18 @@ class GameDataProcessor  {
 
 		let state_data    = clone(state.internal.spells);
 		let defaulted_key = `${log_data.type}-${log_data.english_name}`;
+		let suffixes      = [];
 
-		let suffixes = [log_data.suffix];
+		if (!log_data.party) {
+			suffixes.push("");
+		} else {
+			if (state.internal.spells.allowed_types[log_data.subtype][log_data.char_type]) {
+				suffixes.push(log_data.char_type);
+			}
 
-		if (state.settings.spells_mode.ui.use && log_data.party) {
-			suffixes.push(log_data.job);
+			if (state.settings.spells_mode.ui.use && state.internal.spells.allowed_types[log_data.subtype][log_data.job]) {
+				suffixes.push(log_data.job);
+			}
 		}
 
 		if (!log_data.party) {
@@ -394,7 +404,15 @@ class GameDataProcessor  {
 		}
 
 		for (let suffix of suffixes) {
-			log_data.in_use_key = `${log_data.type}-${log_data.spell_id}${suffix}`;
+			log_data.in_use_key = `${log_data.type}-${log_data.spell_id}`;
+
+			if (suffix) {
+				log_data.in_use_key += `-${suffix}`;
+
+				if (suffix !== "party") {
+					log_data.char_type = suffix;
+				}
+			}
 
 			if (event_code === 30) {
 				delete state_data.in_use[log_data.in_use_key];

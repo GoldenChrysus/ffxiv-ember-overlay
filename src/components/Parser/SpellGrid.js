@@ -8,14 +8,28 @@ import OverlayInfo from "./PlayerTable/OverlayInfo";
 import Spell from "./SpellGrid/Spell";
 
 class SpellGrid extends EmberComponent {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			active : false
+		};
+	}
+
+	componentDidUpdate() {
+		if (!this.state.active) {
+			this.setState({
+				active : (
+					this.props.from_builder ||
+					(this.props.encounter && Object.keys(this.props.encounter).length) ||
+					Object.keys(this.props.spells).length
+				)
+			});
+		}
+	}
+
 	render() {
-		let overlay_info = (
-			this.props.from_builder ||
-			(this.props.encounter && Object.keys(this.props.encounter).length) ||
-			Object.keys(this.props.spells).length
-		)
-			? ""
-			: <OverlayInfo mode="spells" settings={this.props.settings}/>;
+		let overlay_info = this.state.active ? "" : <OverlayInfo mode="spells" settings={this.props.settings}/>;
 		let row_limit    = this.props.settings.spells_per_row;
 		let uuid         = this.props.settings.uuid || "default";
 		let width        = (100 / row_limit);

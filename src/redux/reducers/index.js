@@ -205,14 +205,14 @@ function rootReducer(state, action) {
 								log_type : "you-dot",
 								party    : false,
 							},
-							"skill-3571" : {
+							"skill-3571-party" : {
 								type     : "skill",
 								id       : 3571,
 								time     : new Date(),
 								log_type : "heal-skill",
 								party    : true,
 							},
-							"effect-1218" : {
+							"effect-1218-party" : {
 								type     : "effect",
 								id       : 1218,
 								time     : new Date(),
@@ -220,7 +220,7 @@ function rootReducer(state, action) {
 								log_type : "heal-effect",
 								party    : true,
 							},
-							"effect-1871" : {
+							"effect-1871-party" : {
 								type     : "effect",
 								id       : 1871,
 								time     : new Date(),
@@ -228,14 +228,14 @@ function rootReducer(state, action) {
 								log_type : "heal-dot",
 								party    : true,
 							},
-							"skill-3557" : {
+							"skill-3557-party" : {
 								type     : "skill",
 								id       : 3557,
 								time     : new Date(),
 								log_type : "dps-skill",
 								party    : true,
 							},
-							"effect-1414" : {
+							"effect-1414-party" : {
 								type     : "effect",
 								id       : 1414,
 								time     : new Date(),
@@ -243,7 +243,7 @@ function rootReducer(state, action) {
 								log_type : "dps-effect",
 								party    : true,
 							},
-							"effect-118" : {
+							"effect-118-party" : {
 								type     : "effect",
 								id       : 118,
 								time     : new Date(),
@@ -251,14 +251,14 @@ function rootReducer(state, action) {
 								log_type : "dps-dot",
 								party    : true,
 							},
-							"skill-44" : {
+							"skill-44-party" : {
 								type     : "skill",
 								id       : 44,
 								time     : new Date(),
 								log_type : "tank-skill",
 								party    : true,
 							},
-							"effect-89" : {
+							"effect-89-party" : {
 								type     : "effect",
 								id       : 89,
 								time     : new Date(),
@@ -266,7 +266,7 @@ function rootReducer(state, action) {
 								log_type : "tank-effect",
 								party    : true,
 							},
-							"effect-1837" : {
+							"effect-1837-party" : {
 								type     : "effect",
 								id       : 1837,
 								time     : new Date(),

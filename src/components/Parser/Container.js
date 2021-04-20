@@ -51,18 +51,16 @@ class Container extends EmberComponent {
 		}
 
 		if (prev_props.mode !== this.props.mode) {
-			this.clearTimer();
+			this.stopAll();
 
 			if (this.props.mode === "spells") {
-				TTSService.stop();
-
 				need_state = true;
 
-				state.spells = clone(SpellService.processSpells(this.props.spells_in_use));
+				state.spells = (new Date()).getTime();
 
-				this.startSpellsTimer();
+				this.startSpells();
 			} else if (this.props.mode === "stats") {
-				TTSService.start();
+				this.startStats();
 			}
 		} else if (this.props.mode === "spells") {
 			this.setSpellsSettings();
@@ -106,9 +104,9 @@ class Container extends EmberComponent {
 
 	componentDidMount() {
 		if (this.props.mode === "stats") {
-			TTSService.start();
+			this.startStats();
 		} else if (this.props.mode === "spells") {
-			this.startSpellsTimer();
+			this.startSpells();
 		}
 
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));
@@ -125,18 +123,31 @@ class Container extends EmberComponent {
 		}
 	}
 
-	startSpellsTimer() {
+	startStats() {
+		TTSService.start();
+	}
+
+	startSpells() {
 		this.setSpellsSettings();
 
 		this.timer = setInterval(
 			() => {
-				SpellService.updateCooldowns();
+				if (!SpellService.updateCooldowns()) {
+					return;
+				}
+
 				this.setState({
 					spells : (new Date()).getTime()
 				});
 			},
 			250
 		);
+	}
+
+	stopAll() {
+		this.clearTimer();
+		TTSService.stop();
+		SpellService.stop();
 	}
 
 	setSpellsSettings() {

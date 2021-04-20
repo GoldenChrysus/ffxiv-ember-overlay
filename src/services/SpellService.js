@@ -6,7 +6,12 @@ import TTSService from "./TTSService";
 
 class SpellService {
 	spells   = {};
+	tts_log  = {};
 	settings = {};
+
+	stop() {
+		this.spells = {};
+	}
 
 	setSettings(use_tts, tts_trigger, warning_threshold) {
 		this.settings.use_tts           = use_tts;
@@ -72,39 +77,50 @@ class SpellService {
 
 			this.processTTS(i);
 		}
-
-		return this.spells;
 	}
 
 	updateCooldowns() {
-		let now = new Date();
+		let now       = new Date();
+		let changed   = false;
+		let threshold = (this.settings.tts_trigger === "zero") ? 0 : this.settings.warning_threshold;
 
 		for (let i in this.spells) {
 			if (this.spells[i].cooldown === 0) {
 				continue;
 			}
 
+			changed = true;
+
 			this.spells[i].remaining = (this.spells[i].time - now) / 1000;
 			this.spells[i].cooldown  = Math.max(0, this.spells[i].remaining);
 
-			this.processTTS(i);
+			if (this.settings.use_tts && this.spells[i].remaining > -10000000 && this.spells[i].remaining <= threshold) {
+				this.processTTS(i);
+			}
 		}
 
-		return this.spells;
+		return changed;
 	}
 
 	processTTS(key) {
-		if (!this.settings.use_tts || this.spells[key].tts) {
+		if (this.spells[key].tts) {
+			return;
+		}
+
+		let log_key = `${this.spells[key].subtype}-${this.spells[key].id}`;
+		let time    = (new Date()).getTime();
+
+		if ((time - (this.tts_log[log_key] || 0)) <= 500) {
+			this.tts_log[log_key] = time;
+
 			return false;
 		}
 
-		let threshold = (this.settings.tts_trigger === "zero") ? 0 : this.settings.warning_threshold;
+		this.spells[key].tts = true;
 
-		if (this.spells[key].remaining > -10000000 && this.spells[key].remaining <= threshold) {
-			this.spells[key].tts = true;
+		this.tts_log[log_key] = time;
 
-			TTSService.saySpell(key, this.spells[key].id, this.spells[key].type, this.spells[key].name);
-		}
+		TTSService.saySpell(key, this.spells[key].id, this.spells[key].type, this.spells[key].name);
 	}
 
 	filterSpells(section, settings, builder) {
