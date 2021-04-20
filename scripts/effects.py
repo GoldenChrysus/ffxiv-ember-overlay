@@ -38,8 +38,16 @@ def saveEffects(effects):
 		json.dump(effects, file, indent = "\t", separators = (",", " : "), ensure_ascii = False)
 		file.close()
 
+def loadDots():
+	with open("../src/data/game/dot-jobs.json") as file:
+		data = json.load(file)
+
+		file.close()
+		return data
+
 page    = 1
 effects = {}
+dots    = loadDots()
 
 while (True):
 	page_data = getPage(page)
@@ -59,6 +67,7 @@ while (True):
 
 		effects[id] = {
 			"dot"     : dot,
+			"jobs"    : [],
 			"locales" : {
 				"name" : {
 					"en" : effect_data["Name_en"],
@@ -68,6 +77,9 @@ while (True):
 				}
 			}
 		}
+
+		if effect_data["Name_en"] in dots:
+			effects[id]["jobs"] = dots[effect_data["Name_en"]]
 
 		saveImage(id, effect_data["Icon"])
 
