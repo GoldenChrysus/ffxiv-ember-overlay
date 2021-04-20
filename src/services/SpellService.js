@@ -9,9 +9,9 @@ class SpellService {
 	settings = {};
 
 	setSettings(use_tts, tts_trigger, warning_threshold) {
-		this.settings.use_tts     = use_tts;
-		this.settings.tts_trigger = tts_trigger;
-		this.warning_threshold    = warning_threshold;
+		this.settings.use_tts           = use_tts;
+		this.settings.tts_trigger       = tts_trigger;
+		this.settings.warning_threshold = warning_threshold;
 	}
 
 	processSpells(used, lost) {
@@ -95,7 +95,7 @@ class SpellService {
 			return false;
 		}
 
-		let threshold = (this.settings.tts_trigger === "zero") ? 0 : this.settings.warning_threshold * 1000;
+		let threshold = (this.settings.tts_trigger === "zero") ? 0 : this.settings.warning_threshold;
 
 		if (this.spells[key].remaining > -10000000 && this.spells[key].remaining <= threshold) {
 			this.spells[key].tts = true;

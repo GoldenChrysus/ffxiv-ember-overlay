@@ -137,7 +137,7 @@ class Container extends EmberComponent {
 	}
 
 	setSpellsSettings() {
-		SpellService.setSettings(this.props.spells_settings.tts_trigger, this.props.spells_settings.warning_threshold);
+		SpellService.setSettings(this.props.spells_settings.use_tts, this.props.spells_settings.tts_trigger, this.props.spells_settings.warning_threshold);
 	}
 
 	render() {
