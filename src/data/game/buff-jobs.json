@@ -1,0 +1,529 @@
+{
+	"Rampart" : [
+		"tank"
+	],
+	"Arm's Length" : [
+		"tank", 
+		"PGL", 
+		"MNK", 
+		"LNC", 
+		"DRG", 
+		"ROG", 
+		"NIN", 
+		"SAM", 
+		"ARC", 
+		"BRD", 
+		"MCH", 
+		"DNC"
+	],
+	"Swiftcast" : [
+		"heal", 
+		"THM", 
+		"BLM", 
+		"ACN", 
+		"SMN", 
+		"RDM", 
+		"BLM"
+	],
+	"Lucid Dreaming" : [
+		"heal", 
+		"THM", 
+		"BLM", 
+		"ACN", 
+		"SMN", 
+		"RDM", 
+		"BLM"
+	],
+	"Surecast" : [
+		"heal", 
+		"THM", 
+		"BLM", 
+		"ACN", 
+		"SMN", 
+		"RDM", 
+		"BLM"
+	],
+	"Bloodbath" : [
+		"PGL", 
+		"MNK", 
+		"LNC", 
+		"DRG", 
+		"ROG", 
+		"NIN", 
+		"SAM"
+	],
+	"True North" : [
+		"PGL", 
+		"MNK", 
+		"LNC", 
+		"DRG", 
+		"ROG", 
+		"NIN", 
+		"SAM"
+	],
+	"Peloton" : [
+		"ARC", 
+		"BRD", 
+		"MCH", 
+		"DNC"
+	],
+	"Fight or Flight" : [
+		"GLD", 
+		"PLD"
+	],
+	"Sheltron" : [
+		"PLD"
+	],
+	"Sentinel" : [
+		"GLD", 
+		"PLD"
+	],
+	"Cover" : [
+		"PLD"
+	],
+	"Hallowed Ground" : [
+		"PLD"
+	],
+	"Sword Oath" : [
+		"PLD"
+	],
+	"Requiescat" : [
+		"PLD"
+	],
+	"Passage of Arms" : [
+		"PLD"
+	],
+	"Berserk" : [
+		"MRD", 
+		"WAR"
+	],
+	"Thrill of Battle" : [
+		"MRD", 
+		"WAR"
+	],
+	"Vengeance" : [
+		"MRD", 
+		"WAR"
+	],
+	"Holmgang" : [
+		"MRD", 
+		"WAR"
+	],
+	"Storm's Eye" : [
+		"MRD", 
+		"WAR"
+	],
+	"Nascent Chaos" : [
+		"WAR"
+	],
+	"Raw Intuiton" : [
+		"WAR"
+	],
+	"Shake It Off" : [
+		"WAR"
+	],
+	"Inner Release" : [
+		"WAR"
+	],
+	"Nascent Flash" : [
+		"WAR"
+	],
+	"Darkside" : [
+		"DRK"
+	],
+	"Blood Weapon" : [
+		"DRK"
+	],
+	"Shadow Wall" : [
+		"DRK"
+	],
+	"Dark Mind" : [
+		"DRK"
+	],
+	"Living Dead" : [
+		"DRK"
+	],
+	"Walking Dead" : [
+		"DRK"
+	],
+	"Salted Earth" : [
+		"DRK"
+	],
+	"Delirium" : [
+		"DRK"
+	],
+	"Living Shadow" : [
+		"DRK"
+	],
+	"No Mercy" : [
+		"GNB"
+	],
+	"Brutal Shell" : [
+		"GNB"
+	],
+	"Camouflage" : [
+		"GNB"
+	],
+	"Nebula" : [
+		"GNB"
+	],
+	"Superbolide" : [
+		"GNB"
+	],
+	"Ready to Rip" : [
+		"GNB"
+	],
+	"Ready to Tear" : [
+		"GNB"
+	],
+	"Ready to Gouge" : [
+		"GNB"
+	],
+	"Heart of Light" : [
+		"GNB"
+	],
+	"Presence of Mind" : [
+		"WHM"
+	],
+	"Thin Air" : [
+		"WHM"
+	],
+	"Whispering Dawn" : [
+		"SCH"
+	],
+	"Angel's Whisper" : [
+		"SCH"
+	],
+	"Succor" : [
+		"SCH"
+	],
+	"Fey Illumination" : [
+		"SCH"
+	],
+	"Seraphic Illumination" : [
+		"SCH"
+	],
+	"Sacred Soil" : [
+		"SCH"
+	],
+	"Emergency Tactics" : [
+		"SCH"
+	],
+	"Dissipation" : [
+		"SCH"
+	],
+	"Excogitation" : [
+		"SCH"
+	],
+	"Recitation" : [
+		"SCH"
+	],
+	"Summon Seraph" : [
+		"SCH"
+	],
+	"Consolation" : [
+		"SCH"
+	],
+	"Seraphic Veil" : [
+		"SCH"
+	],
+	"Lightspeed" : [
+		"AST"
+	],
+	"Divination" : [
+		"AST"
+	],
+	"Wheel of Fortune" : [
+		"AST"
+	],
+	"Nocturnal Sect" : [
+		"AST"
+	],
+	"Diurnal Sect" : [
+		"AST"
+	],
+	"The Balance" : [
+		"AST"
+	],
+	"The Arrow" : [
+		"AST"
+	],
+	"The Spear" : [
+		"AST"
+	],
+	"The Bole" : [
+		"AST"
+	],
+	"The Ewer" : [
+		"AST"
+	],
+	"The Spire" : [
+		"AST"
+	],
+	"Lord of Crowns" : [
+		"AST"
+	],
+	"Lady of Crowns" : [
+		"AST"
+	],
+	"Raptor Form" : [
+		"PGL", 
+		"MNK"
+	],
+	"Coeurl Form" : [
+		"PGL", 
+		"MNK"
+	],
+	"Opo-opo Form" : [
+		"PGL", 
+		"MNK"
+	],
+	"Twin Snakes" : [
+		"PGL", 
+		"MNK"
+	],
+	"Mantra" : [
+		"PGL", 
+		"MNK"
+	],
+	"Perfect Balance" : [
+		"PGL", 
+		"MNK"
+	],
+	"Leaden Fist" : [
+		"MNK"
+	],
+	"Formless Fist" : [
+		"MNK"
+	],
+	"Riddle of Earth" : [
+		"MNK"
+	],
+	"Riddle of Fire" : [
+		"MNK"
+	],
+	"Six-sided Star" : [
+		"MNK"
+	],
+	"Life Surge" : [
+		"LNC", 
+		"DRG"
+	],
+	"Disembowel" : [
+		"LNC", 
+		"DRG"
+	],
+	"Sharper Fang and Claw" : [
+		"LNC", 
+		"DRG"
+	],
+	"Lance Charge" : [
+		"LNC", 
+		"DRG"
+	],
+	"Dive Ready" : [
+		"DRG"
+	],
+	"Enhanced Wheeling Thrust" : [
+		"LNC", 
+		"DRG"
+	],
+	"Battle Litany" : [
+		"DRG"
+	],
+	"Blood of the Dragon" : [
+		"DRG"
+	],
+	"Life of the Dragon" : [
+		"DRG"
+	],
+	"Right Eye" : [
+		"DRG"
+	],
+	"Shade Shift" : [
+		"ROG", 
+		"NIN"
+	],
+	"Ten" : [
+		"NIN"
+	],
+	"Chi" : [
+		"NIN"
+	],
+	"Jin" : [
+		"NIN"
+	],
+	"Kassatsu" : [
+		"NIN"
+	],
+	"Assassinate Ready" : [
+		"NIN"
+	],
+	"Ten Chi Jin" : [
+		"NIN"
+	],
+	"Bunshin" : [
+		"NIN"
+	],
+	"Huton" : [
+		"NIN"
+	],
+	"Suiton" : [
+		"NIN"
+	],
+	"Jinpu" : [
+		"SAM"
+	],
+	"Third Eye" : [
+		"SAM"
+	],
+	"Shifu" : [
+		"SAM"
+	],
+	"Meikyo Shisui" : [
+		"SAM"
+	],
+	"Enhanced Enpi" : [
+		"SAM"
+	],
+	"Meditate" : [
+		"SAM"
+	],
+	"Straight Shot Ready" : [
+		"ARC", 
+		"BRD"
+	],
+	"Raging Strikes" : [
+		"ARC", 
+		"BRD"
+	],
+	"Barrage" : [
+		"ARC", 
+		"BRD"
+	],
+	"Troubador" : [
+		"ARC", 
+		"BRD"
+	],
+	"Nature's Minne" : [
+		"ARC", 
+		"BRD"
+	],
+	"Reassemble" : [
+		"MCH"
+	],
+	"Hypercharge" : [
+		"MCH"
+	],
+	"Tactician" : [
+		"MCH"
+	],
+	"Flourishing Cascade" : [
+		"DNC"
+	],
+	"Flourishing Fountain" : [
+		"DNC"
+	],
+	"Flourishing Windmill" : [
+		"DNC"
+	],
+	"Standard Step" : [
+		"DNC"
+	],
+	"Standard Finish" : [
+		"DNC"
+	],
+	"Flourishing Shower" : [
+		"DNC"
+	],
+	"Flourishing Fan Dance" : [
+		"DNC"
+	],
+	"Shield Samba" : [
+		"DNC"
+	],
+	"Devilment" : [
+		"DNC"
+	],
+	"Technical Step" : [
+		"DNC"
+	],
+	"Technical Finish" : [
+		"DNC"
+	],
+	"Improvisation" : [
+		"DNC"
+	],
+	"Umbral Ice" : [
+		"THM", 
+		"BLM"
+	],
+	"Astral Fire" : [
+		"THM", 
+		"BLM"
+	],
+	"Manaward" : [
+		"THM", 
+		"BLM"
+	],
+	"Umbral Ice II" : [
+		"BLM"
+	],
+	"Umbral Ice III" : [
+		"BLM"
+	],
+	"Astral Fire II" : [
+		"BLM"
+	],
+	"Astral Fire III" : [
+		"BLM"
+	],
+	"Ley Lines" : [
+		"BLM"
+	],
+	"Sharpcast" : [
+		"BLM"
+	],
+	"Triplecast" : [
+		"BLM"
+	],
+	"Thundercloud" : [
+		"BLM"
+	],
+	"Firestarter" : [
+		"BLM"
+	],
+	"Dreadwyrm Trance" : [
+		"SMN"
+	],
+	"Firebird Trance" : [
+		"SMN"
+	],
+	"Hellish Conduit" : [
+		"SMN"
+	],
+	"Everlasting Flight" : [
+		"SMN"
+	],
+	"Glittering Topaz" : [
+		"SMN"
+	],
+	"Earthen Armor" : [
+		"SMN"
+	],
+	"Verfire Ready" : [
+		"RDM"
+	],
+	"Verstone Ready" : [
+		"RDM"
+	],
+	"Acceleration" : [
+		"RDM"
+	],
+	"Embolden" : [
+		"RDM"
+	],
+	"Manafication" : [
+		"RDM"
+	]
+}

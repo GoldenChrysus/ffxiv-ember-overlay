@@ -337,7 +337,9 @@
 	},
 	"71" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"tank"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Rampart",
@@ -373,7 +375,10 @@
 	},
 	"74" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GLD",
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sentinel",
@@ -397,7 +402,10 @@
 	},
 	"76" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GLD",
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Fight or Flight",
@@ -421,7 +429,9 @@
 	},
 	"80" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Cover",
@@ -445,7 +455,9 @@
 	},
 	"82" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hallowed Ground",
@@ -469,7 +481,15 @@
 	},
 	"84" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PGL",
+			"MNK",
+			"LNC",
+			"DRG",
+			"ROG",
+			"NIN",
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Bloodbath",
@@ -493,7 +513,10 @@
 	},
 	"86" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Berserk",
@@ -505,7 +528,10 @@
 	},
 	"87" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Thrill of Battle",
@@ -517,7 +543,10 @@
 	},
 	"89" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Vengeance",
@@ -529,7 +558,10 @@
 	},
 	"90" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Storm's Eye",
@@ -637,7 +669,10 @@
 	},
 	"101" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PGL",
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Twin Snakes",
@@ -649,7 +684,10 @@
 	},
 	"102" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PGL",
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Mantra",
@@ -673,7 +711,10 @@
 	},
 	"107" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PGL",
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Opo-opo Form",
@@ -685,7 +726,10 @@
 	},
 	"108" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PGL",
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Raptor Form",
@@ -697,7 +741,10 @@
 	},
 	"109" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PGL",
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Coeurl Form",
@@ -709,7 +756,10 @@
 	},
 	"110" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PGL",
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Perfect Balance",
@@ -781,7 +831,10 @@
 	},
 	"116" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Life Surge",
@@ -844,7 +897,10 @@
 	},
 	"122" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Straight Shot Ready",
@@ -883,7 +939,10 @@
 	},
 	"125" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Raging Strikes",
@@ -907,7 +966,10 @@
 	},
 	"128" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Barrage",
@@ -1154,7 +1216,9 @@
 	},
 	"157" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WHM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Presence of Mind",
@@ -1190,7 +1254,15 @@
 	},
 	"160" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"heal",
+			"THM",
+			"BLM",
+			"ACN",
+			"SMN",
+			"RDM",
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Surecast",
@@ -1246,7 +1318,9 @@
 	},
 	"164" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Thundercloud",
@@ -1258,7 +1332,9 @@
 	},
 	"165" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Firestarter",
@@ -1270,7 +1346,9 @@
 	},
 	"166" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Succor",
@@ -1282,7 +1360,15 @@
 	},
 	"167" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"heal",
+			"THM",
+			"BLM",
+			"ACN",
+			"SMN",
+			"RDM",
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Swiftcast",
@@ -1294,7 +1380,10 @@
 	},
 	"168" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"THM",
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Manaward",
@@ -1330,7 +1419,10 @@
 	},
 	"173" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"THM",
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Astral Fire",
@@ -1342,7 +1434,9 @@
 	},
 	"174" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Astral Fire II",
@@ -1354,7 +1448,9 @@
 	},
 	"175" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Astral Fire III",
@@ -1366,7 +1462,10 @@
 	},
 	"176" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"THM",
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Umbral Ice",
@@ -1378,7 +1477,9 @@
 	},
 	"177" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Umbral Ice II",
@@ -1390,7 +1491,9 @@
 	},
 	"178" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Umbral Ice III",
@@ -2114,7 +2217,9 @@
 	},
 	"298" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sacred Soil",
@@ -2126,7 +2231,9 @@
 	},
 	"299" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sacred Soil",
@@ -2212,7 +2319,9 @@
 	},
 	"315" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Whispering Dawn",
@@ -2236,7 +2345,9 @@
 	},
 	"317" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Fey Illumination",
@@ -2488,7 +2599,10 @@
 	},
 	"409" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Holmgang",
@@ -2692,7 +2806,10 @@
 	},
 	"488" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ROG",
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Shade Shift",
@@ -2740,7 +2857,9 @@
 	},
 	"497" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Kassatsu",
@@ -2752,7 +2871,9 @@
 	},
 	"500" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Huton",
@@ -2800,7 +2921,9 @@
 	},
 	"507" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Suiton",
@@ -3379,7 +3502,9 @@
 	},
 	"688" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hypercharge",
@@ -3513,7 +3638,9 @@
 	},
 	"728" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sheltron",
@@ -3597,7 +3724,9 @@
 	},
 	"736" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Blood of the Dragon",
@@ -3609,7 +3738,9 @@
 	},
 	"737" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ley Lines",
@@ -3669,7 +3800,9 @@
 	},
 	"742" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Blood Weapon",
@@ -3705,7 +3838,9 @@
 	},
 	"746" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dark Mind",
@@ -3717,7 +3852,9 @@
 	},
 	"747" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Shadow Wall",
@@ -3729,7 +3866,9 @@
 	},
 	"749" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Salted Earth",
@@ -3813,7 +3952,9 @@
 	},
 	"786" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Battle Litany",
@@ -3873,7 +4014,9 @@
 	},
 	"791" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dissipation",
@@ -3885,7 +4028,9 @@
 	},
 	"792" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Emergency Tactics",
@@ -3933,7 +4078,10 @@
 	},
 	"802" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sharper Fang and Claw",
@@ -3945,7 +4093,10 @@
 	},
 	"803" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Wheeling Thrust",
@@ -3981,7 +4132,9 @@
 	},
 	"808" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dreadwyrm Trance",
@@ -3993,7 +4146,9 @@
 	},
 	"810" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Living Dead",
@@ -4089,7 +4244,9 @@
 	},
 	"829" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Balance",
@@ -4101,7 +4258,9 @@
 	},
 	"830" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Bole",
@@ -4113,7 +4272,9 @@
 	},
 	"831" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Arrow",
@@ -4125,7 +4286,9 @@
 	},
 	"832" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Spear",
@@ -4137,7 +4300,9 @@
 	},
 	"833" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Ewer",
@@ -4149,7 +4314,9 @@
 	},
 	"834" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Spire",
@@ -4211,7 +4378,9 @@
 	},
 	"841" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Lightspeed",
@@ -4435,7 +4604,9 @@
 	},
 	"867" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sharpcast",
@@ -4579,7 +4750,9 @@
 	},
 	"956" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Wheel of Fortune",
@@ -5227,7 +5400,9 @@
 	},
 	"1175" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Passage of Arms",
@@ -5251,7 +5426,9 @@
 	},
 	"1177" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Inner Release",
@@ -5275,7 +5452,9 @@
 	},
 	"1179" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Earth",
@@ -5299,7 +5478,9 @@
 	},
 	"1181" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Fire",
@@ -5323,7 +5504,9 @@
 	},
 	"1183" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Right Eye",
@@ -5359,7 +5542,9 @@
 	},
 	"1186" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ten Chi Jin",
@@ -5419,7 +5604,9 @@
 	},
 	"1191" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"tank"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Rampart",
@@ -5467,7 +5654,9 @@
 	},
 	"1197" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Tactician",
@@ -5491,7 +5680,12 @@
 	},
 	"1199" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"BRD",
+			"MCH",
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Peloton",
@@ -5531,7 +5725,10 @@
 	},
 	"1202" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nature's Minne",
@@ -5543,7 +5740,15 @@
 	},
 	"1204" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"heal",
+			"THM",
+			"BLM",
+			"ACN",
+			"SMN",
+			"RDM",
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Lucid Dreaming",
@@ -5569,7 +5774,9 @@
 	},
 	"1206" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Wheel of Fortune",
@@ -5593,7 +5800,20 @@
 	},
 	"1209" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"tank",
+			"PGL",
+			"MNK",
+			"LNC",
+			"DRG",
+			"ROG",
+			"NIN",
+			"SAM",
+			"ARC",
+			"BRD",
+			"MCH",
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Arm's Length",
@@ -5619,7 +5839,9 @@
 	},
 	"1211" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Triplecast",
@@ -5671,7 +5893,9 @@
 	},
 	"1217" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WHM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Thin Air",
@@ -5707,7 +5931,9 @@
 	},
 	"1220" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Excogitation",
@@ -5793,7 +6019,9 @@
 	},
 	"1231" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Meditate",
@@ -5805,7 +6033,9 @@
 	},
 	"1232" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Third Eye",
@@ -5817,7 +6047,9 @@
 	},
 	"1233" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Meikyo Shisui",
@@ -5829,7 +6061,9 @@
 	},
 	"1234" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Verfire Ready",
@@ -5841,7 +6075,9 @@
 	},
 	"1235" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Verstone Ready",
@@ -5853,7 +6089,9 @@
 	},
 	"1236" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Enpi",
@@ -5877,7 +6115,9 @@
 	},
 	"1238" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Acceleration",
@@ -5889,7 +6129,9 @@
 	},
 	"1239" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Embolden",
@@ -5913,7 +6155,9 @@
 	},
 	"1243" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dive Ready",
@@ -5973,7 +6217,15 @@
 	},
 	"1250" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PGL",
+			"MNK",
+			"LNC",
+			"DRG",
+			"ROG",
+			"NIN",
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "True North",
@@ -6033,7 +6285,9 @@
 	},
 	"1297" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Embolden",
@@ -6045,7 +6299,9 @@
 	},
 	"1298" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Jinpu",
@@ -6057,7 +6313,9 @@
 	},
 	"1299" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Shifu",
@@ -6069,7 +6327,9 @@
 	},
 	"1300" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Cover",
@@ -6093,7 +6353,9 @@
 	},
 	"1302" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hallowed Ground",
@@ -6105,7 +6367,9 @@
 	},
 	"1303" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Inner Release",
@@ -6144,7 +6408,9 @@
 	},
 	"1310" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Earth",
@@ -6260,7 +6526,9 @@
 	},
 	"1320" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Meikyo Shisui",
@@ -6315,7 +6583,15 @@
 	},
 	"1325" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"heal",
+			"THM",
+			"BLM",
+			"ACN",
+			"SMN",
+			"RDM",
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Swiftcast",
@@ -6415,7 +6691,9 @@
 	},
 	"1338" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Balance",
@@ -6427,7 +6705,9 @@
 	},
 	"1339" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Bole",
@@ -6439,7 +6719,9 @@
 	},
 	"1340" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Ewer",
@@ -6451,7 +6733,9 @@
 	},
 	"1341" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Spire",
@@ -6571,7 +6855,9 @@
 	},
 	"1365" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Thundercloud",
@@ -6595,7 +6881,9 @@
 	},
 	"1368" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Requiescat",
@@ -6607,7 +6895,9 @@
 	},
 	"1369" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Requiescat",
@@ -6679,7 +6969,9 @@
 	},
 	"1403" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Lightspeed",
@@ -6703,7 +6995,10 @@
 	},
 	"1407" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Barrage",
@@ -6715,7 +7010,9 @@
 	},
 	"1413" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Fire",
@@ -6727,7 +7024,9 @@
 	},
 	"1414" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Battle Litany",
@@ -6799,7 +7098,9 @@
 	},
 	"1451" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Lord of Crowns",
@@ -6811,7 +7112,9 @@
 	},
 	"1452" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Lady of Crowns",
@@ -6823,7 +7126,9 @@
 	},
 	"1453" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Right Eye",
@@ -6873,7 +7178,9 @@
 	},
 	"1457" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Shake It Off",
@@ -7809,7 +8116,9 @@
 	},
 	"1814" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Cascade",
@@ -7821,7 +8130,9 @@
 	},
 	"1815" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Fountain",
@@ -7833,7 +8144,9 @@
 	},
 	"1816" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Windmill",
@@ -7845,7 +8158,9 @@
 	},
 	"1817" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Shower",
@@ -7857,7 +8172,9 @@
 	},
 	"1818" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Standard Step",
@@ -7869,7 +8186,9 @@
 	},
 	"1819" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Technical Step",
@@ -7881,7 +8200,9 @@
 	},
 	"1820" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Fan Dance",
@@ -7893,7 +8214,9 @@
 	},
 	"1821" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Standard Finish",
@@ -7905,7 +8228,9 @@
 	},
 	"1822" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Technical Finish",
@@ -7917,7 +8242,9 @@
 	},
 	"1825" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Devilment",
@@ -7929,7 +8256,9 @@
 	},
 	"1826" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Shield Samba",
@@ -7941,7 +8270,9 @@
 	},
 	"1827" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Improvisation",
@@ -7953,7 +8284,9 @@
 	},
 	"1828" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Improvisation",
@@ -7965,7 +8298,9 @@
 	},
 	"1831" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "No Mercy",
@@ -7977,7 +8312,9 @@
 	},
 	"1832" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Camouflage",
@@ -7989,7 +8326,9 @@
 	},
 	"1834" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nebula",
@@ -8013,7 +8352,9 @@
 	},
 	"1836" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Superbolide",
@@ -8053,7 +8394,9 @@
 	},
 	"1839" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Heart of Light",
@@ -8077,7 +8420,9 @@
 	},
 	"1842" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Rip",
@@ -8089,7 +8434,9 @@
 	},
 	"1843" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Tear",
@@ -8101,7 +8448,9 @@
 	},
 	"1844" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Gouge",
@@ -8137,7 +8486,9 @@
 	},
 	"1856" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sheltron",
@@ -8149,7 +8500,9 @@
 	},
 	"1857" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Flash",
@@ -8173,7 +8526,9 @@
 	},
 	"1861" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Leaden Fist",
@@ -8209,7 +8564,10 @@
 	},
 	"1864" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Lance Charge",
@@ -8235,7 +8593,9 @@
 	},
 	"1867" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hellish Conduit",
@@ -8247,7 +8607,9 @@
 	},
 	"1868" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Everlasting Flight",
@@ -8309,7 +8671,9 @@
 	},
 	"1874" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Angel's Whisper",
@@ -8321,7 +8685,9 @@
 	},
 	"1875" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Seraphic Illumination",
@@ -8333,7 +8699,9 @@
 	},
 	"1876" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Lord of Crowns",
@@ -8345,7 +8713,9 @@
 	},
 	"1877" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Lady of Crowns",
@@ -8357,7 +8727,9 @@
 	},
 	"1878" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Divination",
@@ -8407,7 +8779,9 @@
 	},
 	"1882" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Balance",
@@ -8419,7 +8793,9 @@
 	},
 	"1883" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Bole",
@@ -8431,7 +8807,9 @@
 	},
 	"1884" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Arrow",
@@ -8443,7 +8821,9 @@
 	},
 	"1885" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Spear",
@@ -8455,7 +8835,9 @@
 	},
 	"1886" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Ewer",
@@ -8467,7 +8849,9 @@
 	},
 	"1887" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Spire",
@@ -8565,7 +8949,9 @@
 	},
 	"1896" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Recitation",
@@ -8577,7 +8963,9 @@
 	},
 	"1897" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Chaos",
@@ -8589,7 +8977,9 @@
 	},
 	"1898" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Brutal Shell",
@@ -8625,7 +9015,9 @@
 	},
 	"1902" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sword Oath",
@@ -8661,7 +9053,9 @@
 	},
 	"1910" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Right Eye",
@@ -8697,7 +9091,10 @@
 	},
 	"1914" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Disembowel",
@@ -8721,7 +9118,9 @@
 	},
 	"1917" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Seraphic Veil",
@@ -8865,7 +9264,9 @@
 	},
 	"1944" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sacred Soil",
@@ -8889,7 +9290,9 @@
 	},
 	"1951" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Tactician",
@@ -8901,7 +9304,9 @@
 	},
 	"1954" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Bunshin",
@@ -8913,7 +9318,9 @@
 	},
 	"1955" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Assassinate Ready",
@@ -8961,7 +9368,9 @@
 	},
 	"1971" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Manafication",
@@ -8973,7 +9382,9 @@
 	},
 	"1972" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Delirium",
@@ -9009,7 +9420,9 @@
 	},
 	"1978" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"tank"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Rampart",
@@ -9033,7 +9446,15 @@
 	},
 	"1982" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PGL",
+			"MNK",
+			"LNC",
+			"DRG",
+			"ROG",
+			"NIN",
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Bloodbath",
@@ -9057,7 +9478,20 @@
 	},
 	"1984" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"tank",
+			"PGL",
+			"MNK",
+			"LNC",
+			"DRG",
+			"ROG",
+			"NIN",
+			"SAM",
+			"ARC",
+			"BRD",
+			"MCH",
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Arm's Length",
@@ -9069,7 +9503,12 @@
 	},
 	"1985" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"BRD",
+			"MCH",
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Peloton",
@@ -9081,7 +9520,15 @@
 	},
 	"1987" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"heal",
+			"THM",
+			"BLM",
+			"ACN",
+			"SMN",
+			"RDM",
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Swiftcast",
@@ -9093,7 +9540,10 @@
 	},
 	"1989" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"THM",
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Manaward",
@@ -9117,7 +9567,9 @@
 	},
 	"1991" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sword Oath",
@@ -9129,7 +9581,9 @@
 	},
 	"1992" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Chaos",
@@ -9141,7 +9595,9 @@
 	},
 	"1993" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Shake It Off",
@@ -9153,7 +9609,9 @@
 	},
 	"1996" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Delirium",
@@ -9165,7 +9623,9 @@
 	},
 	"1997" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Brutal Shell",
@@ -9177,7 +9637,9 @@
 	},
 	"2000" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Heart of Light",
@@ -9201,7 +9663,9 @@
 	},
 	"2002" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Rip",
@@ -9213,7 +9677,9 @@
 	},
 	"2003" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Tear",
@@ -9225,7 +9691,9 @@
 	},
 	"2004" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Gouge",
@@ -9261,7 +9729,9 @@
 	},
 	"2008" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Earth",
@@ -9285,7 +9755,9 @@
 	},
 	"2010" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Bunshin",
@@ -9297,7 +9769,10 @@
 	},
 	"2011" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ROG",
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Shade Shift",
@@ -9393,7 +9868,9 @@
 	},
 	"2021" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Flourishing Fan Dance",
@@ -9417,7 +9894,9 @@
 	},
 	"2023" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Standard Step",
@@ -9429,7 +9908,9 @@
 	},
 	"2024" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Standard Finish",
@@ -9477,7 +9958,9 @@
 	},
 	"2030" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Everlasting Flight",
@@ -9501,7 +9984,9 @@
 	},
 	"2034" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Divination",
@@ -9549,7 +10034,9 @@
 	},
 	"2040" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Seraphic Veil",
@@ -9621,7 +10108,9 @@
 	},
 	"2049" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Technical Step",
@@ -9633,7 +10122,9 @@
 	},
 	"2050" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Technical Finish",
@@ -9681,7 +10172,9 @@
 	},
 	"2061" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Flash",
@@ -9753,7 +10246,9 @@
 	},
 	"2069" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dissipation",
@@ -9996,7 +10491,9 @@
 	},
 	"2105" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Standard Finish",
@@ -10008,7 +10505,9 @@
 	},
 	"2113" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Standard Finish",
@@ -10152,7 +10651,20 @@
 	},
 	"2172" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"tank",
+			"PGL",
+			"MNK",
+			"LNC",
+			"DRG",
+			"ROG",
+			"NIN",
+			"SAM",
+			"ARC",
+			"BRD",
+			"MCH",
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Arm's Length",
@@ -10188,7 +10700,10 @@
 	},
 	"2175" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Life Surge",
@@ -10212,7 +10727,9 @@
 	},
 	"2177" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Tactician",
@@ -10224,7 +10741,10 @@
 	},
 	"2178" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nature's Minne",
@@ -10260,7 +10780,9 @@
 	},
 	"2182" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Excogitation",
@@ -10428,7 +10950,9 @@
 	},
 	"2227" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Flash",
@@ -10500,7 +11024,9 @@
 	},
 	"2282" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Embolden",
@@ -11052,7 +11578,9 @@
 	},
 	"2412" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Cover",
@@ -11280,7 +11808,9 @@
 	},
 	"2513" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Formless Fist",
@@ -11292,7 +11822,9 @@
 	},
 	"2514" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Six-sided Star",

@@ -45,9 +45,17 @@ def loadDots():
 		file.close()
 		return data
 
+def loadBuffs():
+	with open("../src/data/game/buff-jobs.json") as file:
+		data = json.load(file)
+
+		file.close()
+		return data		
+
 page    = 1
 effects = {}
 dots    = loadDots()
+buffs   = loadBuffs()
 
 while (True):
 	page_data = getPage(page)
@@ -80,6 +88,8 @@ while (True):
 
 		if effect_data["Name_en"] in dots:
 			effects[id]["jobs"] = dots[effect_data["Name_en"]]
+		elif effect_data["Name_en"] in buffs:
+			effects[id]["jobs"] = buffs[effect_data["Name_en"]]
 
 		saveImage(id, effect_data["Icon"])
 
