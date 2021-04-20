@@ -32,7 +32,7 @@ class Container extends EmberComponent {
 		this.state   = {
 			locked          : true,
 			spells_sections : this.props.spells_sections,
-			spells          : SpellService.processSpells(this.props.spells_in_use)
+			spells          : (new Date()).getTime()
 		};
 	}
 
@@ -58,7 +58,7 @@ class Container extends EmberComponent {
 
 				need_state = true;
 
-				state.spells = SpellService.processSpells(this.props.spells_in_use);
+				state.spells = clone(SpellService.processSpells(this.props.spells_in_use));
 
 				this.startSpellsTimer();
 			} else if (this.props.mode === "stats") {
@@ -93,7 +93,9 @@ class Container extends EmberComponent {
 			if (new_spells || lost_spells) {
 				need_state = true;
 
-				state.spells = SpellService.processSpells(new_spells, lost_spells);
+				SpellService.processSpells(new_spells, lost_spells);
+
+				state.spells = (new Date()).getTime();
 			}
 		}
 
@@ -128,8 +130,9 @@ class Container extends EmberComponent {
 
 		this.timer = setInterval(
 			() => {
+				SpellService.updateCooldowns();
 				this.setState({
-					spells : Object.assign({}, this.state.spells, clone(SpellService.updateCooldowns()))
+					spells : (new Date()).getTime()
 				});
 			},
 			250
@@ -224,7 +227,7 @@ class Container extends EmberComponent {
 										break;
 									}
 								} else {
-									let spells = SpellService.filterSpells(this.state.spells, section, section_settings, true);
+									let spells = SpellService.filterSpells(section, section_settings, true);
 
 									content.push(
 										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={spells} settings={section_settings} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
@@ -232,7 +235,7 @@ class Container extends EmberComponent {
 								}
 							}
 						} else {
-							let spells = SpellService.filterSpells(this.state.spells, {}, settings, false);
+							let spells = SpellService.filterSpells({}, settings, false);
 
 							content = <SpellGrid key="spell-grid" encounter={encounter} spells={spells} settings={this.props.spells_settings}/>;
 						}

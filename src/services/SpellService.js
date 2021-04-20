@@ -68,11 +68,10 @@ class SpellService {
 			}
 
 			this.spells[i].remaining = 0;
+			this.spells[i].cooldown  = 0;
 
 			this.processTTS(i);
 		}
-
-		this.processing = false;
 
 		return this.spells;
 	}
@@ -81,6 +80,10 @@ class SpellService {
 		let now = new Date();
 
 		for (let i in this.spells) {
+			if (this.spells[i].cooldown === 0) {
+				continue;
+			}
+
 			this.spells[i].remaining = (this.spells[i].time - now) / 1000;
 			this.spells[i].cooldown  = Math.max(0, this.spells[i].remaining);
 
@@ -104,8 +107,8 @@ class SpellService {
 		}
 	}
 
-	filterSpells(spells, section, settings, builder) {
-		spells = clone(spells);
+	filterSpells(section, settings, builder) {
+		let spells = clone(this.spells);
 
 		for (let i in spells) {
 			if (builder && section.types.indexOf(spells[i].log_type) === -1) {
