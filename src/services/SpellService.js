@@ -103,7 +103,7 @@ class SpellService {
 	}
 
 	processTTS(key) {
-		if (this.spells[key].tts) {
+		if (!this.settings.use_tts || this.spells[key].tts) {
 			return;
 		}
 
