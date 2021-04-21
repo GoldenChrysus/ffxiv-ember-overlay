@@ -1225,14 +1225,14 @@
 			"kr" : "Show Warning Animation"
 		},
 		"spells_mode.designer.effect.border" : {
-			"en" : "Show Moving Border",
-			"pt" : "Show Moving Border",
-			"cn" : "Show Moving Border",
-			"jp" : "Show Moving Border",
-			"de" : "Show Moving Border",
-			"es" : "Show Moving Border",
-			"fr" : "Show Moving Border",
-			"kr" : "Show Moving Border"
+			"en" : "Show Glowing Border",
+			"pt" : "Show Glowing Border",
+			"cn" : "Show Glowing Border",
+			"jp" : "Show Glowing Border",
+			"de" : "Show Glowing Border",
+			"es" : "Show Glowing Border",
+			"fr" : "Show Glowing Border",
+			"kr" : "Show Glowing Border"
 		},
 		"spells_mode.designer.effect.indicator" : {
 			"en" : "Visual Indicator",
@@ -1265,14 +1265,14 @@
 			"kr" : "Show Warning Animation"
 		},
 		"spells_mode.designer.dot.border" : {
-			"en" : "Show Moving Border",
-			"pt" : "Show Moving Border",
-			"cn" : "Show Moving Border",
-			"jp" : "Show Moving Border",
-			"de" : "Show Moving Border",
-			"es" : "Show Moving Border",
-			"fr" : "Show Moving Border",
-			"kr" : "Show Moving Border"
+			"en" : "Show Glowing Border",
+			"pt" : "Show Glowing Border",
+			"cn" : "Show Glowing Border",
+			"jp" : "Show Glowing Border",
+			"de" : "Show Glowing Border",
+			"es" : "Show Glowing Border",
+			"fr" : "Show Glowing Border",
+			"kr" : "Show Glowing Border"
 		},
 		"spells_mode.designer.dot.indicator" : {
 			"en" : "Visual Indicator",
