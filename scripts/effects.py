@@ -93,6 +93,6 @@ while (True):
 
 		saveImage(id, effect_data["Icon"])
 
-	if (page == None):
+	if (page == None or page <= page_data["Pagination"]["Page"]):
 		saveEffects(effects)
 		break

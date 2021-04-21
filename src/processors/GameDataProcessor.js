@@ -323,7 +323,7 @@ class GameDataProcessor  {
 					return false;
 				}
 
-				log_data.char_job = Constants.GameJobsID[data[3]] || null;
+				log_data.char_job = Constants.GameJobsID[parseInt(data[3], 16)] || null;
 
 				return log_data;
 
@@ -361,9 +361,9 @@ class GameDataProcessor  {
 			return false;
 		}
 
-		log_data.english_name = LocalizationService.getSpellName(log_data.subtype, log_data.spell_id, "en");
-
 		if (log_data.type === "effect") {
+			log_data.english_name = LocalizationService.getSpellName(log_data.subtype, log_data.spell_id, "en");
+
 			if (!SpellService.isValidName(log_data.lookup_key, log_data.english_name)) {
 				return false;
 			}
@@ -371,6 +371,8 @@ class GameDataProcessor  {
 			if (state.settings.spells_mode[log_data.lookup_key].indexOf(log_data.spell_id) === -1) {
 				return false;
 			}
+
+			log_data.english_name = LocalizationService.getSpellName(log_data.subtype, log_data.spell_id, "en");
 		}
 
 		let state_data    = clone(state.internal.spells);
@@ -389,27 +391,34 @@ class GameDataProcessor  {
 			}
 		}
 
-		if (!log_data.party) {
-			if (event_code === 30) {
-				if (state_data.defaulted[defaulted_key]) {
-					if (state_data.defaulted[defaulted_key].id !== log_data.spell_id) {
-						delete state_data.defaulted[state_data.defaulted[defaulted_key].key];
+		log_data.in_use_key = `${log_data.type}-${log_data.spell_id}`;
 
-						state_data.defaulted[defaulted_key].id = log_data.spell_id;
-					}
+		if (!log_data.party && state_data.defaulted[defaulted_key]) {
+			let defaulted = state_data.defaulted[defaulted_key];
 
-					return state_data;
+			log_data.defaulted     = true;
+			log_data.type_position = defaulted.position;
+
+			if (defaulted.id !== log_data.spell_id) {
+				if (event_code === 30) {
+					state_data.in_use[log_data.in_use_key] = clone(state_data.in_use[defaulted.key]);
+
+					state_data.in_use[log_data.in_use_key].spell_id = log_data.spell_id;
+					state_data.in_use[log_data.in_use_key].duration = 0;
 				}
-			} else {
-				if (state_data.defaulted[defaulted_key] && state_data.defaulted[defaulted_key].id !== log_data.spell_id) {
-					delete state_data.defaulted[state_data.defaulted[defaulted_key].key];
+
+				delete state_data.in_use[defaulted.key];
+
+				state_data.defaulted[defaulted_key].id  = log_data.spell_id;
+				state_data.defaulted[defaulted_key].key = log_data.in_use_key;
+
+				if (event_code === 30) {
+					return state_data;
 				}
 			}
 		}
 
 		for (let suffix of suffixes) {
-			log_data.in_use_key = `${log_data.type}-${log_data.spell_id}`;
-
 			if (suffix) {
 				log_data.in_use_key += `-${suffix}`;
 
@@ -422,14 +431,16 @@ class GameDataProcessor  {
 				delete state_data.in_use[log_data.in_use_key];
 			} else {
 				state_data.in_use[log_data.in_use_key] = {
-					type     : log_data.type,
-					subtype  : log_data.subtype,
-					id       : log_data.spell_id,
-					time     : date,
-					name     : data[log_data.spell_name_index],
-					duration : (log_data.duration_index) ? +data[log_data.duration_index] : 0,
-					log_type : log_data.char_type + "-" + log_data.subtype,
-					party    : log_data.party,
+					type          : log_data.type,
+					subtype       : log_data.subtype,
+					id            : log_data.spell_id,
+					time          : date,
+					name          : data[log_data.spell_name_index],
+					duration      : (log_data.duration_index) ? +data[log_data.duration_index] : 0,
+					log_type      : log_data.char_type + "-" + log_data.subtype,
+					party         : log_data.party,
+					defaulted     : log_data.defaulted,
+					type_position : log_data.type_position
 				};
 			}
 		}

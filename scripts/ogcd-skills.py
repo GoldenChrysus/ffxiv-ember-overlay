@@ -66,6 +66,6 @@ while (True):
 
 		saveImage(id, skill_data["Icon"])
 
-	if (page == None):
+	if (page == None or page <= page_data["Pagination"]["Page"]):
 		saveSkills(skills)
 		break

@@ -125,6 +125,11 @@ class SpellGrid extends EmberComponent {
 		let spells           = Object.keys(this.props.spells);
 		let items            = [];
 		let decimal_accuracy = (this.props.settings.layout === "icon") ? 0 : 1;
+		let default_types    = [
+			"you-skill",
+			"you-effect",
+			"you-dot"
+		];
 
 		spells.sort((a, b) => {
 			let a_spell  = this.props.spells[a];
@@ -146,9 +151,11 @@ class SpellGrid extends EmberComponent {
 
 					if (static_a && static_b) {
 						if (a_spell.subtype === b_spell.subtype) {
-							return (a_spell.type_position > b_spell.type_position) ? -1 : 1;
+							return (a_spell.type_position > b_spell.type_position) ? 1 : -1;
 						} else {
-							return (this.props.section.types.indexOf(a_spell.log_type) > this.props.section.types.indexOf(b_spell.log_type)) ? -1 : 1;
+							let types = (this.props.section) ? this.props.section.types : default_types;
+
+							return (types.indexOf(a_spell.log_type) > types.indexOf(b_spell.log_type)) ? 1 : -1;
 						}
 					}
 				}

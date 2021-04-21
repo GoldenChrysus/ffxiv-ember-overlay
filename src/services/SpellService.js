@@ -1,4 +1,5 @@
 import clone from "lodash.clonedeep";
+import Constants from "../constants";
 
 import SkillData from "../constants/SkillData";
 
@@ -86,6 +87,10 @@ class SpellService {
 		}
 	}
 
+	resetSpell(i) {
+		delete this.spells[i];
+	}
+
 	updateCooldowns() {
 		let now       = new Date();
 		let changed   = false;
@@ -161,8 +166,13 @@ class SpellService {
 		};
 
 		for (let key in this.valid_names) {
-			for (let id in state.settings.spells_mode[key]) {
-				this.valid_names[key][LocalizationService.getEffectName(id, "en")] = true;
+			let type = key.split("_");
+
+			type = (type.length === 1) ? type[0] : type[1];
+			type = type.substring(0, type.length - 1);
+
+			for (let id of state.settings.spells_mode[key]) {
+				this.valid_names[key][LocalizationService.getSpellName(type, id, "en")] = true;
 			}
 		}
 	}
@@ -171,10 +181,40 @@ class SpellService {
 		return (this.valid_names[key] && this.valid_names[key][name]);
 	}
 
+	isValidJob(type, id, job_abbreviation) {
+		let job = Constants.GameJobs[job_abbreviation];
+
+		if (!job) {
+			return;
+		}
+
+		let role = job.role;
+		let data = [];
+
+		switch (type) {
+			case "spell":
+			case "skill":
+				data = (SkillData.oGCDSkills[id]) ? SkillData.oGCDSkills[id].jobs : false;
+
+				break;
+
+			case "effect":
+			case "dot":
+				data = (SkillData.Effects[id]) ? SkillData.Effects[id].jobs : false;
+
+				break;
+
+			default:
+				return false;
+		}
+
+		return (data) ? (data.indexOf(job_abbreviation) !== -1 || data.indexOf(role) !== -1) : false;
+	}
+
 	injectDefaults(state) {
 		let job = state.internal.character_job;
 
-		if (!job && false) {
+		if (!job) {
 			return state;
 		}
 
@@ -184,7 +224,7 @@ class SpellService {
 			dot    : state.settings.spells_mode.dots
 		};
 		let data_names   = [];
-		let in_use_names = [];
+		let in_use_names = {};
 
 		for (let type in data) {
 			for (let id of data[type]) {
@@ -204,7 +244,7 @@ class SpellService {
 			if (data_names.indexOf(name) === -1) {
 				state.internal.spells.in_use[i].defaulted = false;
 			} else {
-				in_use_names.push(name);
+				in_use_names[name] = i;
 			}
 		}
 
@@ -216,9 +256,18 @@ class SpellService {
 			let type_position = 0;
 
 			for (let id of data[type]) {
+				if (!this.isValidJob(type, id, job)) {
+					continue;
+				}
+
 				let name = type + "-" + LocalizationService.getSpellName(type, id, "en");
 
-				if (in_use_names.indexOf(name) !== -1) {
+				type_position++;
+
+				if (in_use_names[name]) {
+					state.internal.spells.in_use[in_use_names[name]].type_position = type_position;
+
+					state.internal.spells.defaulted[name].position = type_position;
 					continue;
 				}
 
@@ -228,7 +277,7 @@ class SpellService {
 				state.internal.spells.defaulted[name] = {
 					id       : id,
 					key      : key,
-					position : ++type_position
+					position : type_position
 				};
 				state.internal.spells.in_use[key]     = {
 					type          : main_type,

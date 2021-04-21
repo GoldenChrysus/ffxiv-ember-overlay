@@ -38,6 +38,6 @@ while (True):
 			"abbreviation" : job_data["Abbreviation_en"]
 		}
 
-	if (page == None or page == page_data["Pagination"]["Page"]):
+	if (page == None or page <= page_data["Pagination"]["Page"]):
 		saveJobs(jobs)
 		break

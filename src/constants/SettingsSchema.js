@@ -583,6 +583,13 @@ const SettingsSchema = {
 								value    : function() {
 									return this.props.settings.spells_mode.always_skill;
 								}
+							},
+							{
+								key_path : "spells_mode.always_skill_static",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.always_skill_static;
+								}
 							}
 						]
 					},
@@ -611,6 +618,13 @@ const SettingsSchema = {
 								value    : function() {
 									return this.props.settings.spells_mode.always_effect;
 								}
+							},
+							{
+								key_path : "spells_mode.always_effect_static",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.always_effect_static;
+								}
 							}
 						]
 					},
@@ -638,6 +652,13 @@ const SettingsSchema = {
 								type     : "checkbox",
 								value    : function() {
 									return this.props.settings.spells_mode.always_dot;
+								}
+							},
+							{
+								key_path : "spells_mode.always_dot_static",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.always_dot_static;
 								}
 							}
 						]

@@ -378,9 +378,13 @@ function rootReducer(state, action) {
 					let state_data = GameDataProcessor.parseSpellLogLine(action.payload, state);
 
 					if (state_data.char_job || state_data.char_job === null) {
-						new_state = clone(state);
-
-						new_state.internal.character_job = state_data.char_job;
+						new_state = createNewState(
+							state,
+							"internal.character_job",
+							{
+								payload : (state_data.char_job) ? state_data.char_job.abbreviation : state_data.char_job
+							}
+						);
 					} else if (state_data !== false) {
 						new_state = clone(state);
 
@@ -409,14 +413,15 @@ function rootReducer(state, action) {
 						}
 					}
 				}
-
-				state.settings_data.setSetting("spells_mode.ui.sections", action.payload);
 			}
 
 			new_state = (state.internal.ui_builder) ? createNewState(state, "settings.spells_mode.ui.sections", action) : clone(state);
 
+			new_state.settings_data.setSetting("spells_mode.ui.sections", action.payload, true);
+
 			new_state.internal.ui_builder = !new_state.internal.ui_builder;
 
+			new_state.settings_data.saveSettings(true);
 			break;
 
 		default:
@@ -501,11 +506,19 @@ function createNewState(state, full_key, action) {
 		].indexOf(full_key) !== -1
 	) {
 		if (full_key === "internal.character_job") {
+			for (let i in new_state.internal.spells.in_use) {
+				SpellService.resetSpell(i);
+			}
+
 			new_state.internal.spells.in_use = {};
 		}
 
 		SpellService.updateValidNames(new_state);
 		SpellService.injectDefaults(new_state);
+	}
+
+	if (full_key === "internal.character_id") {
+		new_state.plugin_service.getCombatants();
 	}
 
 	return new_state;

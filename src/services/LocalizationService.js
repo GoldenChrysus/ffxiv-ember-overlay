@@ -161,6 +161,7 @@ class LocalizationService {
 				return this.getEffectName(id, language);
 
 			case "skill":
+			case "spell":
 				return this.getoGCDSkillName(id, language);
 
 			default:
@@ -169,7 +170,11 @@ class LocalizationService {
 	}
 
 	getoGCDSkillName(id, language) {
-		language = language || this.getLanguage();
+		if (!SkillData.oGCDSkills[id]) {
+			return "";
+		}
+
+		language = language || this.getLanguage();		
 
 		return SkillData.oGCDSkills[id].locales.name[language] || SkillData.oGCDSkills[id].locales.name.en;
 	}

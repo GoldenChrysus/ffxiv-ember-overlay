@@ -1,21 +1,35 @@
 import store from "../redux/store/index";
 import { parseGameData, parseEnmity, parseAggroList, parseParty, parseLogLine, updateState } from "../redux/actions/index";
+import Constants from "../constants";
 
 class MessageProcessor {
 	processMessage(e) {
 		let data = e;
+		let type = false;
 
 		if (typeof data !== "object" || (data !== null && data.data)) {
 			try {
 				data = JSON.parse(e.data);
-			} catch (e) { }
+			} catch (e) {}
 		}
 
 		if (typeof data !== "object" || data === null) {
-			return;
+			if (data) {
+				try {
+					data = JSON.parse(data);
+
+					if (data.combatants) {
+						type = "GetCombatants";
+					}
+				} catch {}
+			}
+
+			if (!type) {
+				return;
+			}
 		}
 
-		let type = data.msgtype || data.type;
+		type = type || data.msgtype || data.type;
 
 		if (
 			[
@@ -26,7 +40,8 @@ class MessageProcessor {
 				"EnmityTargetData",
 				"ChangePrimaryPlayer",
 				"PartyChanged",
-				"LogLine"
+				"LogLine",
+				"GetCombatants"
 			].indexOf(type) === -1
 		) {
 			return;
@@ -76,12 +91,35 @@ class MessageProcessor {
 				store.dispatch(updateState(state_data));
 				break;
 
+			case "GetCombatants":
+				let char_id = store.getState().internal.character_id;
+
+				for (let combatant of data.combatants) {
+					if (char_id === combatant.ID) {
+						let job = Constants.GameJobsID[combatant.Job];
+
+						if (!job) {
+							break;
+						}
+
+						let state_data = {
+							key   : "internal.character_job",
+							value : job.abbreviation
+						};
+
+						store.dispatch(updateState(state_data));
+						break;
+					}
+				}
+
+				break;
+
 			case "PartyChanged":
 				store.dispatch(parseParty(data));
 				break;
 
 			case "LogLine":
-				const allowed_codes = [21, 22, 26, 30, 31];
+				const allowed_codes = [1, 21, 22, 26, 30, 31];
 
 				if (allowed_codes.indexOf(+data.line[0]) === -1) {
 					break;
