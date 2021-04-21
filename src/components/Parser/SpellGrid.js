@@ -11,25 +11,42 @@ class SpellGrid extends EmberComponent {
 	constructor(props) {
 		super(props);
 
-		this.state = {
+		this.mounted = false;
+		this.state   = {
 			active : false
 		};
 	}
 
 	componentDidUpdate() {
+		this.determineState();
+	}
+
+	componentDidMount() {
+		this.mounted = true;
+
+		this.determineState();
+	}
+
+	determineState() {
 		if (!this.state.active) {
-			this.setState({
+			let state = {
 				active : (
 					this.props.from_builder ||
 					(this.props.encounter && Object.keys(this.props.encounter).length) ||
 					Object.keys(this.props.spells).length
 				)
-			});
+			};
+
+			if (this.mounted) {
+				this.setState(state);
+			} else {
+				this.state = state;
+			}
 		}
 	}
 
 	render() {
-		let overlay_info = this.state.active ? "" : <OverlayInfo mode="spells" settings={this.props.settings}/>;
+		let overlay_info = (this.state.active) ? "" : <OverlayInfo mode="spells" settings={this.props.settings}/>;
 		let row_limit    = this.props.settings.spells_per_row;
 		let uuid         = this.props.settings.uuid || "default";
 		let width        = (100 / row_limit);
