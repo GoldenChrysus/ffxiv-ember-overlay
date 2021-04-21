@@ -1,6 +1,7 @@
 {
 	"3" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -13,6 +14,7 @@
 	},
 	"6" : {
 		"recast" : 900.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -25,6 +27,7 @@
 	},
 	"17" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"PLD"
@@ -40,6 +43,7 @@
 	},
 	"20" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"PLD"
@@ -55,6 +59,7 @@
 	},
 	"23" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"PLD"
@@ -70,6 +75,7 @@
 	},
 	"27" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -84,6 +90,7 @@
 	},
 	"28" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"PLD"
@@ -99,6 +106,7 @@
 	},
 	"29" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -113,6 +121,7 @@
 	},
 	"30" : {
 		"recast" : 420.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -127,6 +136,7 @@
 	},
 	"38" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -142,6 +152,7 @@
 	},
 	"40" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -157,6 +168,7 @@
 	},
 	"43" : {
 		"recast" : 240.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -172,6 +184,7 @@
 	},
 	"44" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -187,6 +200,7 @@
 	},
 	"48" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -202,6 +216,7 @@
 	},
 	"52" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -216,6 +231,7 @@
 	},
 	"65" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PGL",
 			"MNK"
@@ -231,6 +247,7 @@
 	},
 	"69" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PGL",
 			"MNK"
@@ -246,6 +263,7 @@
 	},
 	"71" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -260,6 +278,7 @@
 	},
 	"83" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"LNC",
 			"DRG"
@@ -275,6 +294,7 @@
 	},
 	"85" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"LNC",
 			"DRG"
@@ -290,6 +310,7 @@
 	},
 	"92" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -304,6 +325,7 @@
 	},
 	"94" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -318,6 +340,7 @@
 	},
 	"95" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -332,6 +355,7 @@
 	},
 	"96" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -346,6 +370,7 @@
 	},
 	"101" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ARC",
 			"BRD"
@@ -361,6 +386,7 @@
 	},
 	"107" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ARC",
 			"BRD"
@@ -376,6 +402,7 @@
 	},
 	"110" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ARC",
 			"BRD"
@@ -391,6 +418,7 @@
 	},
 	"112" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ARC",
 			"BRD"
@@ -406,6 +434,7 @@
 	},
 	"114" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -420,6 +449,7 @@
 	},
 	"116" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -434,6 +464,7 @@
 	},
 	"117" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -448,6 +479,7 @@
 	},
 	"118" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -462,6 +494,7 @@
 	},
 	"134" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"CNJ",
 			"WHM"
@@ -477,6 +510,7 @@
 	},
 	"136" : {
 		"recast" : 150.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -491,6 +525,7 @@
 	},
 	"140" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -505,6 +540,7 @@
 	},
 	"155" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"THM",
 			"BLM"
@@ -520,6 +556,7 @@
 	},
 	"157" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"THM",
 			"BLM"
@@ -535,6 +572,7 @@
 	},
 	"158" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -549,6 +587,7 @@
 	},
 	"166" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -563,6 +602,7 @@
 	},
 	"174" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -578,6 +618,7 @@
 	},
 	"184" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -592,6 +633,7 @@
 	},
 	"188" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -606,6 +648,7 @@
 	},
 	"211" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -623,6 +666,7 @@
 	},
 	"228" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -640,6 +684,7 @@
 	},
 	"268" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"FSH"
 		],
@@ -654,6 +699,7 @@
 	},
 	"290" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -671,6 +717,7 @@
 	},
 	"291" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -688,6 +735,7 @@
 	},
 	"1695" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -700,6 +748,7 @@
 	},
 	"2238" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -712,6 +761,7 @@
 	},
 	"2241" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ROG",
 			"NIN"
@@ -727,6 +777,7 @@
 	},
 	"2245" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ROG",
 			"NIN"
@@ -742,6 +793,7 @@
 	},
 	"2248" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ROG",
 			"NIN"
@@ -757,6 +809,7 @@
 	},
 	"2257" : {
 		"recast" : 70.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ROG",
 			"NIN"
@@ -772,6 +825,7 @@
 	},
 	"2258" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ROG",
 			"NIN"
@@ -787,6 +841,7 @@
 	},
 	"2259" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -801,6 +856,7 @@
 	},
 	"2261" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -815,6 +871,7 @@
 	},
 	"2262" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -829,6 +886,7 @@
 	},
 	"2263" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -843,6 +901,7 @@
 	},
 	"2264" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -857,6 +916,7 @@
 	},
 	"2872" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -871,6 +931,7 @@
 	},
 	"2874" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -885,6 +946,7 @@
 	},
 	"2876" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -899,6 +961,7 @@
 	},
 	"2878" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -913,6 +976,7 @@
 	},
 	"2890" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -927,6 +991,7 @@
 	},
 	"2894" : {
 		"recast" : 600.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -939,6 +1004,7 @@
 	},
 	"3378" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -951,6 +1017,7 @@
 	},
 	"3379" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -963,6 +1030,7 @@
 	},
 	"3506" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -975,6 +1043,7 @@
 	},
 	"3540" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -989,6 +1058,7 @@
 	},
 	"3543" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -1003,6 +1073,7 @@
 	},
 	"3545" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -1017,6 +1088,7 @@
 	},
 	"3551" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1031,6 +1103,7 @@
 	},
 	"3552" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1045,6 +1118,7 @@
 	},
 	"3553" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -1059,6 +1133,7 @@
 	},
 	"3555" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -1073,6 +1148,7 @@
 	},
 	"3557" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -1087,6 +1163,7 @@
 	},
 	"3558" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1101,6 +1178,7 @@
 	},
 	"3559" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1115,6 +1193,7 @@
 	},
 	"3561" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1129,6 +1208,7 @@
 	},
 	"3562" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1143,6 +1223,7 @@
 	},
 	"3566" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -1157,6 +1238,7 @@
 	},
 	"3569" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -1171,6 +1253,7 @@
 	},
 	"3570" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -1185,6 +1268,7 @@
 	},
 	"3571" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -1199,6 +1283,7 @@
 	},
 	"3573" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -1213,6 +1298,12 @@
 	},
 	"3574" : {
 		"recast" : 60.0,
+		"level_recasts" : [
+			{
+				"level" : 74,
+				"recast" : 30.0
+			}
+		],
 		"jobs" : [
 			"BLM"
 		],
@@ -1227,6 +1318,7 @@
 	},
 	"3575" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -1241,6 +1333,7 @@
 	},
 	"3580" : {
 		"recast" : 50.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -1255,6 +1348,7 @@
 	},
 	"3581" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -1269,6 +1363,7 @@
 	},
 	"3582" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -1283,6 +1378,7 @@
 	},
 	"3583" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1297,6 +1393,7 @@
 	},
 	"3585" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1311,6 +1408,7 @@
 	},
 	"3586" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1325,6 +1423,7 @@
 	},
 	"3587" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1339,6 +1438,7 @@
 	},
 	"3590" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1353,6 +1453,7 @@
 	},
 	"3593" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1367,6 +1468,7 @@
 	},
 	"3606" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1381,6 +1483,7 @@
 	},
 	"3612" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1395,6 +1498,7 @@
 	},
 	"3613" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1409,6 +1513,7 @@
 	},
 	"3614" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1423,6 +1528,7 @@
 	},
 	"3625" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1437,6 +1543,7 @@
 	},
 	"3629" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1451,6 +1558,7 @@
 	},
 	"3634" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1465,6 +1573,7 @@
 	},
 	"3636" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1479,6 +1588,7 @@
 	},
 	"3638" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1493,6 +1603,7 @@
 	},
 	"3639" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1507,6 +1618,7 @@
 	},
 	"3640" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1521,6 +1633,7 @@
 	},
 	"3641" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1535,6 +1648,7 @@
 	},
 	"3643" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1549,6 +1663,7 @@
 	},
 	"4589" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MIN"
 		],
@@ -1563,6 +1678,7 @@
 	},
 	"4590" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BTN"
 		],
@@ -1577,6 +1693,7 @@
 	},
 	"5136" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -1589,6 +1706,7 @@
 	},
 	"7382" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -1603,6 +1721,7 @@
 	},
 	"7383" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -1617,6 +1736,7 @@
 	},
 	"7385" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -1631,6 +1751,7 @@
 	},
 	"7386" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1645,6 +1766,7 @@
 	},
 	"7387" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1659,6 +1781,7 @@
 	},
 	"7388" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1673,6 +1796,7 @@
 	},
 	"7389" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1687,6 +1811,7 @@
 	},
 	"7390" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1701,6 +1826,7 @@
 	},
 	"7393" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1715,6 +1841,7 @@
 	},
 	"7394" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -1729,6 +1856,7 @@
 	},
 	"7395" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -1743,6 +1871,7 @@
 	},
 	"7396" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -1757,6 +1886,7 @@
 	},
 	"7398" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -1771,6 +1901,7 @@
 	},
 	"7400" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -1785,6 +1916,7 @@
 	},
 	"7403" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -1799,6 +1931,7 @@
 	},
 	"7405" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1813,6 +1946,7 @@
 	},
 	"7408" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1827,6 +1961,7 @@
 	},
 	"7414" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -1841,6 +1976,7 @@
 	},
 	"7415" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -1855,6 +1991,7 @@
 	},
 	"7418" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -1869,6 +2006,7 @@
 	},
 	"7421" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -1883,6 +2021,7 @@
 	},
 	"7423" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -1897,6 +2036,7 @@
 	},
 	"7427" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -1911,6 +2051,7 @@
 	},
 	"7429" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -1925,6 +2066,7 @@
 	},
 	"7430" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -1939,6 +2081,7 @@
 	},
 	"7432" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -1953,6 +2096,7 @@
 	},
 	"7433" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -1967,6 +2111,7 @@
 	},
 	"7434" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1981,6 +2126,7 @@
 	},
 	"7436" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1995,6 +2141,7 @@
 	},
 	"7439" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -2009,6 +2156,7 @@
 	},
 	"7448" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -2023,6 +2171,7 @@
 	},
 	"7492" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2037,6 +2186,7 @@
 	},
 	"7493" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2051,6 +2201,7 @@
 	},
 	"7496" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2065,6 +2216,7 @@
 	},
 	"7497" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2079,6 +2231,7 @@
 	},
 	"7498" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2093,6 +2246,7 @@
 	},
 	"7499" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2107,6 +2261,7 @@
 	},
 	"7506" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2121,6 +2276,7 @@
 	},
 	"7515" : {
 		"recast" : 35.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2135,6 +2291,7 @@
 	},
 	"7517" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2149,6 +2306,7 @@
 	},
 	"7518" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2163,6 +2321,12 @@
 	},
 	"7519" : {
 		"recast" : 45.0,
+		"level_recasts" : [
+			{
+				"level" : 78,
+				"recast" : 35.0
+			}
+		],
 		"jobs" : [
 			"RDM"
 		],
@@ -2177,6 +2341,7 @@
 	},
 	"7520" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2191,6 +2356,12 @@
 	},
 	"7521" : {
 		"recast" : 120.0,
+		"level_recasts" : [
+			{
+				"level" : 74,
+				"recast" : 110.0
+			}
+		],
 		"jobs" : [
 			"RDM"
 		],
@@ -2205,6 +2376,7 @@
 	},
 	"7531" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2224,6 +2396,7 @@
 	},
 	"7533" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2243,6 +2416,7 @@
 	},
 	"7535" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2262,6 +2436,7 @@
 	},
 	"7537" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2281,6 +2456,7 @@
 	},
 	"7538" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2300,6 +2476,7 @@
 	},
 	"7540" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2319,6 +2496,7 @@
 	},
 	"7541" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2343,6 +2521,7 @@
 	},
 	"7542" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2363,6 +2542,7 @@
 	},
 	"7546" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2383,6 +2563,7 @@
 	},
 	"7548" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
 			"PGL",
@@ -2413,6 +2594,7 @@
 	},
 	"7549" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2433,6 +2615,7 @@
 	},
 	"7551" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ARC",
 			"BRD",
@@ -2450,6 +2633,7 @@
 	},
 	"7553" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ARC",
 			"BRD",
@@ -2467,6 +2651,7 @@
 	},
 	"7554" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ARC",
 			"BRD",
@@ -2484,6 +2669,7 @@
 	},
 	"7559" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"CNJ",
 			"THM",
@@ -2507,6 +2693,7 @@
 	},
 	"7560" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"THM",
 			"ACN",
@@ -2526,6 +2713,7 @@
 	},
 	"7561" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"CNJ",
 			"THM",
@@ -2549,6 +2737,7 @@
 	},
 	"7562" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"CNJ",
 			"THM",
@@ -2572,6 +2761,7 @@
 	},
 	"7571" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"CNJ",
 			"WHM",
@@ -2589,6 +2779,7 @@
 	},
 	"7621" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -2601,6 +2792,7 @@
 	},
 	"7622" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -2613,6 +2805,7 @@
 	},
 	"7863" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2633,6 +2826,7 @@
 	},
 	"7904" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -2650,6 +2844,7 @@
 	},
 	"7905" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -2667,6 +2862,7 @@
 	},
 	"8624" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -2679,6 +2875,7 @@
 	},
 	"11411" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -2693,6 +2890,7 @@
 	},
 	"11421" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -2707,6 +2905,7 @@
 	},
 	"11426" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -2721,6 +2920,7 @@
 	},
 	"11427" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -2735,6 +2935,7 @@
 	},
 	"11428" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -2749,6 +2950,7 @@
 	},
 	"11429" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -2763,6 +2965,7 @@
 	},
 	"11430" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -2777,6 +2980,7 @@
 	},
 	"11431" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -2791,6 +2995,7 @@
 	},
 	"12958" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -2807,6 +3012,7 @@
 	},
 	"12959" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -2824,6 +3030,7 @@
 	},
 	"12960" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -2850,6 +3057,7 @@
 	},
 	"12961" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -2867,6 +3075,7 @@
 	},
 	"12962" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -2883,6 +3092,7 @@
 	},
 	"12963" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -2906,6 +3116,7 @@
 	},
 	"12964" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -2923,6 +3134,7 @@
 	},
 	"12965" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -2939,6 +3151,7 @@
 	},
 	"12966" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -2962,6 +3175,7 @@
 	},
 	"12967" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -2992,6 +3206,7 @@
 	},
 	"12968" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3022,6 +3237,7 @@
 	},
 	"12971" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3052,6 +3268,7 @@
 	},
 	"12975" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3082,6 +3299,7 @@
 	},
 	"12976" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3112,6 +3330,7 @@
 	},
 	"12978" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3136,6 +3355,7 @@
 	},
 	"12981" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3165,6 +3385,7 @@
 	},
 	"12984" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3195,6 +3416,7 @@
 	},
 	"12985" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3225,6 +3447,7 @@
 	},
 	"12986" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3255,6 +3478,7 @@
 	},
 	"12987" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -3272,6 +3496,7 @@
 	},
 	"12988" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3299,6 +3524,7 @@
 	},
 	"12995" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -3325,6 +3551,7 @@
 	},
 	"12998" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -3351,6 +3578,7 @@
 	},
 	"12999" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -3377,6 +3605,7 @@
 	},
 	"13001" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -3394,6 +3623,7 @@
 	},
 	"13005" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM",
 			"BLM",
@@ -3413,6 +3643,7 @@
 	},
 	"13006" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3434,6 +3665,7 @@
 	},
 	"13426" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -3446,6 +3678,7 @@
 	},
 	"14477" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLM",
 			"SMN",
@@ -3462,6 +3695,7 @@
 	},
 	"14478" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -3479,6 +3713,7 @@
 	},
 	"14479" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -3495,6 +3730,7 @@
 	},
 	"14480" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -3512,6 +3748,7 @@
 	},
 	"14842" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -3524,6 +3761,7 @@
 	},
 	"14843" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -3536,6 +3774,7 @@
 	},
 	"15375" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -3548,6 +3787,7 @@
 	},
 	"15870" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -3560,6 +3800,7 @@
 	},
 	"15997" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -3574,6 +3815,7 @@
 	},
 	"15998" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -3588,6 +3830,7 @@
 	},
 	"16006" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -3602,6 +3845,7 @@
 	},
 	"16010" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -3616,6 +3860,7 @@
 	},
 	"16011" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -3630,6 +3875,7 @@
 	},
 	"16012" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -3644,6 +3890,7 @@
 	},
 	"16013" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -3658,6 +3905,7 @@
 	},
 	"16014" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -3672,6 +3920,7 @@
 	},
 	"16015" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -3686,6 +3935,7 @@
 	},
 	"16138" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3700,6 +3950,7 @@
 	},
 	"16140" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3714,6 +3965,7 @@
 	},
 	"16142" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3728,6 +3980,7 @@
 	},
 	"16144" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3742,6 +3995,7 @@
 	},
 	"16146" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3756,6 +4010,7 @@
 	},
 	"16148" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3770,6 +4025,7 @@
 	},
 	"16151" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3784,6 +4040,7 @@
 	},
 	"16152" : {
 		"recast" : 360.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3798,6 +4055,7 @@
 	},
 	"16153" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3812,6 +4070,7 @@
 	},
 	"16154" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3826,6 +4085,7 @@
 	},
 	"16159" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3840,6 +4100,7 @@
 	},
 	"16160" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3854,6 +4115,7 @@
 	},
 	"16161" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3868,6 +4130,7 @@
 	},
 	"16164" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3882,6 +4145,7 @@
 	},
 	"16165" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -3896,6 +4160,7 @@
 	},
 	"16436" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -3908,6 +4173,7 @@
 	},
 	"16461" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -3922,6 +4188,7 @@
 	},
 	"16464" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -3936,6 +4203,7 @@
 	},
 	"16471" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -3950,6 +4218,7 @@
 	},
 	"16472" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -3964,6 +4233,7 @@
 	},
 	"16475" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -3978,6 +4248,7 @@
 	},
 	"16478" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -3992,6 +4263,7 @@
 	},
 	"16480" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -4006,6 +4278,7 @@
 	},
 	"16481" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -4020,6 +4293,7 @@
 	},
 	"16482" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -4034,6 +4308,7 @@
 	},
 	"16483" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -4048,6 +4323,7 @@
 	},
 	"16484" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -4062,6 +4338,7 @@
 	},
 	"16485" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -4076,6 +4353,7 @@
 	},
 	"16486" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -4090,6 +4368,7 @@
 	},
 	"16487" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -4104,6 +4383,7 @@
 	},
 	"16489" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -4118,6 +4398,7 @@
 	},
 	"16493" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -4132,6 +4413,7 @@
 	},
 	"16494" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -4146,6 +4428,7 @@
 	},
 	"16498" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -4160,6 +4443,7 @@
 	},
 	"16499" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -4174,6 +4458,7 @@
 	},
 	"16500" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -4188,6 +4473,7 @@
 	},
 	"16502" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -4202,6 +4488,7 @@
 	},
 	"16508" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -4217,6 +4504,7 @@
 	},
 	"16509" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -4232,6 +4520,7 @@
 	},
 	"16510" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4246,6 +4535,7 @@
 	},
 	"16512" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -4261,6 +4551,7 @@
 	},
 	"16513" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4275,6 +4566,7 @@
 	},
 	"16516" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4289,6 +4581,7 @@
 	},
 	"16527" : {
 		"recast" : 35.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -4303,6 +4596,7 @@
 	},
 	"16536" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -4317,6 +4611,7 @@
 	},
 	"16537" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -4331,6 +4626,7 @@
 	},
 	"16538" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -4345,6 +4641,7 @@
 	},
 	"16542" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -4359,6 +4656,7 @@
 	},
 	"16543" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -4373,6 +4671,7 @@
 	},
 	"16545" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -4387,6 +4686,7 @@
 	},
 	"16546" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -4401,6 +4701,7 @@
 	},
 	"16549" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4415,6 +4716,7 @@
 	},
 	"16552" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -4429,6 +4731,7 @@
 	},
 	"16553" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -4443,6 +4746,7 @@
 	},
 	"16556" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -4457,6 +4761,7 @@
 	},
 	"16557" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -4471,6 +4776,7 @@
 	},
 	"16559" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -4485,6 +4791,7 @@
 	},
 	"16791" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -4500,6 +4807,7 @@
 	},
 	"16792" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -4515,6 +4823,7 @@
 	},
 	"16793" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -4530,6 +4839,7 @@
 	},
 	"16794" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -4545,6 +4855,7 @@
 	},
 	"16795" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4559,6 +4870,7 @@
 	},
 	"16796" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4573,6 +4885,7 @@
 	},
 	"16797" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4587,6 +4900,7 @@
 	},
 	"16798" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4601,6 +4915,7 @@
 	},
 	"16799" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4615,6 +4930,7 @@
 	},
 	"16800" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4629,6 +4945,7 @@
 	},
 	"16801" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4643,6 +4960,7 @@
 	},
 	"16802" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4657,6 +4975,7 @@
 	},
 	"16803" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -4671,6 +4990,7 @@
 	},
 	"16804" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -4683,6 +5003,7 @@
 	},
 	"16889" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -4697,6 +5018,7 @@
 	},
 	"17004" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -4709,6 +5031,7 @@
 	},
 	"17124" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -4721,6 +5044,7 @@
 	},
 	"17209" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -4735,6 +5059,7 @@
 	},
 	"17596" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -4747,6 +5072,7 @@
 	},
 	"17839" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -4759,6 +5085,7 @@
 	},
 	"17901" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -4771,6 +5098,7 @@
 	},
 	"18305" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -4785,6 +5113,7 @@
 	},
 	"18306" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -4799,6 +5128,7 @@
 	},
 	"18312" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -4813,6 +5143,7 @@
 	},
 	"18317" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -4827,6 +5158,7 @@
 	},
 	"18320" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -4841,6 +5173,7 @@
 	},
 	"18323" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -4855,6 +5188,7 @@
 	},
 	"18324" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -4869,6 +5203,7 @@
 	},
 	"18325" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -4883,6 +5218,7 @@
 	},
 	"18775" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -4895,6 +5231,7 @@
 	},
 	"19218" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -4907,6 +5244,7 @@
 	},
 	"20496" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -4919,6 +5257,7 @@
 	},
 	"20692" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4949,6 +5288,7 @@
 	},
 	"20693" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4979,6 +5319,7 @@
 	},
 	"20694" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5009,6 +5350,7 @@
 	},
 	"20695" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5039,6 +5381,7 @@
 	},
 	"20696" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5069,6 +5412,7 @@
 	},
 	"20697" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5099,6 +5443,7 @@
 	},
 	"20698" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5129,6 +5474,7 @@
 	},
 	"20699" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5159,6 +5505,7 @@
 	},
 	"20700" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5189,6 +5536,7 @@
 	},
 	"20703" : {
 		"recast" : 360.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5219,6 +5567,7 @@
 	},
 	"20705" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5248,6 +5597,7 @@
 	},
 	"20708" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5278,6 +5628,7 @@
 	},
 	"20715" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM",
 			"BLM",
@@ -5297,6 +5648,7 @@
 	},
 	"20716" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5327,6 +5679,7 @@
 	},
 	"20717" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5351,6 +5704,7 @@
 	},
 	"20718" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5375,6 +5729,7 @@
 	},
 	"20719" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5405,6 +5760,7 @@
 	},
 	"20720" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5435,6 +5791,7 @@
 	},
 	"20721" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5465,6 +5822,7 @@
 	},
 	"20722" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -5482,6 +5840,7 @@
 	},
 	"20723" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -5508,6 +5867,7 @@
 	},
 	"20724" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5538,6 +5898,7 @@
 	},
 	"20725" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5568,6 +5929,7 @@
 	},
 	"20731" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -5594,6 +5956,7 @@
 	},
 	"20734" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5624,6 +5987,7 @@
 	},
 	"20737" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5654,6 +6018,7 @@
 	},
 	"20738" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5684,6 +6049,7 @@
 	},
 	"20739" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5714,6 +6080,7 @@
 	},
 	"20740" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -5744,6 +6111,7 @@
 	},
 	"20940" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"jobs" : "*",
 		"locales" : {
 			"name" : {
@@ -5756,6 +6124,7 @@
 	},
 	"22353" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -5773,6 +6142,7 @@
 	},
 	"22354" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -5789,6 +6159,7 @@
 	},
 	"22355" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -5806,6 +6177,7 @@
 	},
 	"22356" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -5822,6 +6194,7 @@
 	},
 	"23264" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5836,6 +6209,7 @@
 	},
 	"23267" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5850,6 +6224,7 @@
 	},
 	"23272" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5864,6 +6239,7 @@
 	},
 	"23273" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5878,6 +6254,7 @@
 	},
 	"23275" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5892,6 +6269,7 @@
 	},
 	"23277" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5906,6 +6284,7 @@
 	},
 	"23280" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5920,6 +6299,7 @@
 	},
 	"23285" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5934,6 +6314,7 @@
 	},
 	"23287" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5948,6 +6329,7 @@
 	},
 	"23288" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -5962,6 +6344,7 @@
 	},
 	"23290" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"jobs" : [
 			"BLU"
 		],

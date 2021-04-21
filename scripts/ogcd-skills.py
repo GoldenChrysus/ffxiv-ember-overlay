@@ -1,18 +1,25 @@
 import json
 import os.path
+import re
 import requests
 import shutil
 
 from os import path
 
-def getPage(page_num):
+def getTraitPage(page_num):
+	url = "https://xivapi.com/search?page=" + str(page_num) + "&indexes=Trait&string=recast%20timer%20to&string_column=Description_en"
+	res = requests.get(url = url)
+
+	return res.json()
+
+def getActionPage(page_num):
 	url = "https://xivapi.com/search?page=" + str(page_num) + "&filters=ClassJobCategory!,Recast100ms>=100,IsPvP=0"
 	res = requests.get(url = url)
 
 	return res.json()
 
-def getSkill(id):
-	url = "https://xivapi.com/Action/" + str(id)
+def getItem(item_type, id):
+	url = "https://xivapi.com/" + item_type + "/" + str(id)
 	res = requests.get(url = url)
 
 	return res.json()
@@ -40,31 +47,61 @@ def saveSkills(skills):
 
 page   = 1
 skills = {}
+traits = {}
 
 while (True):
-	page_data = getPage(page)
+	page_data = getTraitPage(page)
 	page      = page_data["Pagination"]["PageNext"]
 
-	for skill in page_data["Results"]:
-		id = skill["ID"]
+	for item in page_data["Results"]:
+		id        = item["ID"]
+		item_data = getItem("Trait", id)
+		regex     = re.compile(r"<span.+>([:\w ]+)<\/span> recast timer to (\d+) seconds")
+		match     = regex.findall(item_data["Description_en"])
 
-		skill_data = getSkill(id)
-		classes    = skill_data["ClassJobCategory"]["Name_en"]
+		if (len(match) == 0):
+			continue
+
+		skill  = match[0][0]
+		recast = int(match[0][1]) / 1.0
+		level  = item_data["Level"]
+
+		if skill not in traits:
+			traits[skill] = []
+
+		traits[skill].append({
+			"level"  : level,
+			"recast" : recast
+		})
+
+	if (page == None or page <= page_data["Pagination"]["Page"]):
+		break
+
+while (True):
+	page_data = getActionPage(page)
+	page      = page_data["Pagination"]["PageNext"]
+
+	for item in page_data["Results"]:
+		id           = item["ID"]
+		item_data    = getItem("Action", id)
+		english_name = item_data["Name_en"]
+		classes      = item_data["ClassJobCategory"]["Name_en"]
 
 		skills[id] = {
-			"recast"  : skill_data["Recast100ms"] / 10.0,
-			"jobs"    : ("*", classes.split())[classes != "All Classes"],
-			"locales" : {
+			"recast"        : item_data["Recast100ms"] / 10.0,
+			"level_recasts" : sorted(traits[english_name], key = lambda item: item["level"], reverse = True) if english_name in traits else None,
+			"jobs"          : ("*", classes.split())[classes != "All Classes"],
+			"locales"       : {
 				"name" : {
-					"en" : skill_data["Name_en"],
-					"de" : skill_data["Name_de"],
-					"fr" : skill_data["Name_fr"],
-					"jp" : skill_data["Name_ja"]
+					"en" : item_data["Name_en"],
+					"de" : item_data["Name_de"],
+					"fr" : item_data["Name_fr"],
+					"jp" : item_data["Name_ja"]
 				}
 			}
 		}
 
-		saveImage(id, skill_data["Icon"])
+		saveImage(id, item_data["Icon"])
 
 	if (page == None or page <= page_data["Pagination"]["Page"]):
 		saveSkills(skills)
