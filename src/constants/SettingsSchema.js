@@ -577,13 +577,13 @@ const SettingsSchema = {
 									return this.props.settings.spells_mode.reverse_skill;
 								}
 							},
-							/* {
+							{
 								key_path : "spells_mode.always_skill",
 								type     : "checkbox",
 								value    : function() {
 									return this.props.settings.spells_mode.always_skill;
 								}
-							} */
+							}
 						]
 					},
 					{
@@ -605,13 +605,13 @@ const SettingsSchema = {
 									return this.props.settings.spells_mode.reverse_effect;
 								}
 							},
-							/* {
+							{
 								key_path : "spells_mode.always_effect",
 								type     : "checkbox",
 								value    : function() {
 									return this.props.settings.spells_mode.always_effect;
 								}
-							} */
+							}
 						]
 					},
 					{
@@ -633,13 +633,13 @@ const SettingsSchema = {
 									return this.props.settings.spells_mode.reverse_dot;
 								}
 							},
-							/* {
+							{
 								key_path : "spells_mode.always_dot",
 								type     : "checkbox",
 								value    : function() {
 									return this.props.settings.spells_mode.always_dot;
 								}
-							} */
+							}
 						]
 					},
 					{

@@ -2,12 +2,14 @@ import clone from "lodash.clonedeep";
 
 import SkillData from "../constants/SkillData";
 
+import LocalizationService from "./LocalizationService";
 import TTSService from "./TTSService";
 
 class SpellService {
-	spells   = {};
-	tts_log  = {};
-	settings = {};
+	valid_names = {};
+	spells      = {};
+	tts_log     = {};
+	settings    = {};
 
 	stop() {
 		this.spells = {};
@@ -36,11 +38,6 @@ class SpellService {
 
 					case "effect":
 						recast = used[i].duration;
-						dot    = SkillData.Effects[used[i].id].dot;
-
-						if (dot) {
-							type = "dot";
-						}
 
 						break;
 
@@ -52,18 +49,20 @@ class SpellService {
 			}
 
 			this.spells[i] = {
-				type      : used[i].type,
-				subtype   : type,
-				log_type  : used[i].log_type,
-				id        : used[i].id,
-				time      : new_date,
-				name      : used[i].name,
-				recast    : recast,
-				remaining : recast,
-				cooldown  : Math.max(0, recast),
-				dot       : dot,
-				party     : used[i].party,
-				tts       : false
+				type          : used[i].type,
+				subtype       : used[i].subtype,
+				log_type      : used[i].log_type,
+				id            : used[i].id,
+				time          : new_date,
+				name          : used[i].name,
+				recast        : recast,
+				remaining     : recast,
+				cooldown      : Math.max(0, recast),
+				dot           : (used[i].subtype === "dot"),
+				party         : used[i].party,
+				defaulted     : used[i].defaulted,
+				type_position : used[i].type_position,
+				tts           : false
 			};
 		}
 
@@ -141,6 +140,115 @@ class SpellService {
 		}
 
 		return spells;
+	}
+
+	updateValidNames(state) {
+		this.valid_names = {
+			spells        : {},
+			effects       : {},
+			dots          : {},
+			party_spells  : {},
+			party_effects : {},
+			party_dots    : {}
+		};
+
+		for (let key in this.valid_names) {
+			for (let id of state.settings.spells_mode[key]) {
+				this.valid_names[key][LocalizationService.getEffectName(id, "en")] = true;
+			}
+		}
+	}
+
+	isValidName(key, name) {
+		return (this.valid_names[key] && this.valid_names[key][name]);
+	}
+
+	injectDefaults(state) {
+		let job = state.internal.character_job;
+
+		if (!job) {
+			return state;
+		}
+
+		let data         = {
+			skill  : state.settings.spells_mode.spells,
+			effect : state.settings.spells_mode.effects,
+			dot    : state.settings.spells_mode.dots
+		}
+		let in_use_names = [];
+
+		for (let i in state.internal.spells.in_use) {
+			if (state.internal.spells.in_use[i].time.getFullYear() === 1970) {
+				delete state.internal.spells.in_use[i];
+				continue;
+			}
+
+			let item = state.internal.spells.in_use[i];
+
+			switch (item.type) {
+				case "skill":
+					in_use_names.push(item.type + "-" + LocalizationService.getoGCDSkillName(item.id, "en"));
+					break;
+	
+				case "effect":
+					type = item.subtype;
+
+					in_use_names.push(type + "-" + LocalizationService.getEffectName(item.id, "en"));
+					break;
+	
+				default:
+					break;
+			}
+		}
+
+		for (let type in data) {
+			if (!state.settings.spells_mode[`always_${type}`]) {
+				continue;
+			}
+
+			let type_position = 0;
+
+			for (let id of data[type]) {
+				let name = type + "-";
+
+				switch (type) {
+					case "skill":
+						name += LocalizationService.getoGCDSkillName(id, "en");
+						break;
+		
+					case "effect":	
+						name += LocalizationService.getEffectName(id, "en");
+
+						break;
+		
+					default:
+						break;
+				}
+
+				if (in_use_names.indexOf(name) !== -1) {
+					continue;
+				}
+
+				let main_type = (type === "dot") ? "effect" : type;
+				let key       = `${main_type}-${id}`;
+
+				state.internal.spells.defaulted[name] = {
+					id  : id,
+					key : key
+				};
+				state.internal.spells.in_use[key]     = {
+					type          : main_type,
+					subtype       : type,
+					id            : +id,
+					time          : new Date("1970-01-01"),
+					duration      : 0,
+					log_type      : `you-${type}`,
+					party         : false,
+					defaulted     : true,
+					type_position : ++type_position
+				};
+			}
+		}
 	}
 }
 

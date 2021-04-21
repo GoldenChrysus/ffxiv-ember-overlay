@@ -13,6 +13,7 @@ import SampleHistoryData from "../../constants/SampleHistoryData";
 import SampleAggroData from "../../constants/SampleAggroData";
 import TTSService from "../../services/TTSService";
 import TabSyncService from "../../services/TabSyncService";
+import SpellService from "../../services/SpellService";
 
 const querystring = require("querystring");
 
@@ -162,6 +163,7 @@ function rootReducer(state, action) {
 						payload : {
 							"skill-7499"  : {
 								type     : "skill",
+								subtype  : "skill",
 								id       : 7499,
 								time     : new Date(),
 								log_type : "you-skill",
@@ -169,6 +171,7 @@ function rootReducer(state, action) {
 							},
 							"skill-16481" :  {
 								type     : "skill",
+								subtype  : "skill",
 								id       : 16481,
 								time     : new Date(),
 								log_type : "you-skill",
@@ -176,6 +179,7 @@ function rootReducer(state, action) {
 							},
 							"skill-16482" : {
 								type     : "skill",
+								subtype  : "skill",
 								id       : 16482,
 								time     : new Date(),
 								log_type : "you-skill",
@@ -183,6 +187,7 @@ function rootReducer(state, action) {
 							},
 							"effect-1298" : {
 								type     : "effect",
+								subtype  : "effect",
 								id       : 1298,
 								time     : new Date(),
 								duration : 40,
@@ -191,6 +196,7 @@ function rootReducer(state, action) {
 							},
 							"effect-1299" : {
 								type     : "effect",
+								subtype  : "effect",
 								id       : 1299,
 								time     : new Date(),
 								duration : 40,
@@ -199,6 +205,7 @@ function rootReducer(state, action) {
 							},
 							"effect-1228" : {
 								type     : "effect",
+								subtype  : "dot",
 								id       : 1228,
 								time     : new Date(),
 								duration : 60,
@@ -207,6 +214,7 @@ function rootReducer(state, action) {
 							},
 							"skill-3571-party" : {
 								type     : "skill",
+								subtype  : "skill",
 								id       : 3571,
 								time     : new Date(),
 								log_type : "heal-skill",
@@ -214,6 +222,7 @@ function rootReducer(state, action) {
 							},
 							"effect-1218-party" : {
 								type     : "effect",
+								subtype  : "effect",
 								id       : 1218,
 								time     : new Date(),
 								duration : 15,
@@ -222,6 +231,7 @@ function rootReducer(state, action) {
 							},
 							"effect-1871-party" : {
 								type     : "effect",
+								subtype  : "dot",
 								id       : 1871,
 								time     : new Date(),
 								duration : 30,
@@ -230,6 +240,7 @@ function rootReducer(state, action) {
 							},
 							"skill-3557-party" : {
 								type     : "skill",
+								subtype  : "skill",
 								id       : 3557,
 								time     : new Date(),
 								log_type : "dps-skill",
@@ -237,6 +248,7 @@ function rootReducer(state, action) {
 							},
 							"effect-1414-party" : {
 								type     : "effect",
+								subtype  : "effect",
 								id       : 1414,
 								time     : new Date(),
 								duration : 20,
@@ -245,6 +257,7 @@ function rootReducer(state, action) {
 							},
 							"effect-118-party" : {
 								type     : "effect",
+								subtype  : "dot",
 								id       : 118,
 								time     : new Date(),
 								duration : 24,
@@ -253,6 +266,7 @@ function rootReducer(state, action) {
 							},
 							"skill-44-party" : {
 								type     : "skill",
+								subtype  : "skill",
 								id       : 44,
 								time     : new Date(),
 								log_type : "tank-skill",
@@ -260,6 +274,7 @@ function rootReducer(state, action) {
 							},
 							"effect-89-party" : {
 								type     : "effect",
+								subtype  : "effect",
 								id       : 89,
 								time     : new Date(),
 								duration : 15,
@@ -268,6 +283,7 @@ function rootReducer(state, action) {
 							},
 							"effect-1837-party" : {
 								type     : "effect",
+								subtype  : "dot",
 								id       : 1837,
 								time     : new Date(),
 								duration : 30,
@@ -468,87 +484,24 @@ function createNewState(state, full_key, action) {
 	if (
 		[
 			"settings",
+			"internal.character_job",
 			"settings.spells_mode.spells",
-			"new_state.settings.spells_mode.effects",
-			"new_state.settings.spells_mode.dots",
-			"new_state.settings.spells_mode.always_skill",
-			"new_state.settings.spells_mode.always_effect",
-			"new_state.settings.spells_mode.always_dot",
+			"settings.spells_mode.effects",
+			"settings.spells_mode.dots",
+			"settings.spells_mode.party_spells",
+			"settings.spells_mode.party_effects",
+			"settings.spells_mode.party_dots",
+			"settings.spells_mode.always_skill",
+			"settings.spells_mode.always_effect",
+			"settings.spells_mode.always_dot",
 		].indexOf(full_key) !== -1
 	) {
-		let data         = {
-			skill  : new_state.settings.spells_mode.spells,
-			effect : new_state.settings.spells_mode.effects,
-			dot    : new_state.settings.spells_mode.dots
-		}
-		let in_use_names = [];
-
-		for (let i in new_state.internal.spells.in_use) {
-			if (new_state.internal.spells.in_use[i].time.getFullYear() === 1970) {
-				delete new_state.internal.spells.in_use[i];
-				continue;
-			}
-
-			let item = new_state.internal.spells.in_use[i];
-
-			switch (item.type) {
-				case "skill":
-					in_use_names.push(item.type + "-" + LocalizationService.getoGCDSkillName(item.id, "en"));
-					break;
-	
-				case "effect":
-					let type = (item.dot) ? "dot" : "effect";
-
-					in_use_names.push(type + "-" + LocalizationService.getEffectName(item.id, "en"));
-					break;
-	
-				default:
-					break;
-			}
+		if (full_key === "internal.character_job") {
+			new_state.internal.spells.in_use = {};
 		}
 
-		for (let type in data) {
-			if (!new_state.settings.spells_mode[`always_${type}`]) {
-				continue;
-			}
-
-			for (let id of data[type]) {
-				let name = type + "-";
-
-				switch (type) {
-					case "skill":
-						name += LocalizationService.getoGCDSkillName(id, "en");
-						break;
-		
-					case "effect":	
-						name += LocalizationService.getEffectName(id, "en");
-
-						break;
-		
-					default:
-						break;
-				}
-
-				if (in_use_names.indexOf(name) !== -1) {
-					continue;
-				}
-
-				let key = `${type}-${id}`;
-
-				new_state.internal.spells.defaulted[name] = {
-					id  : id,
-					key : key
-				};
-				new_state.internal.spells.in_use[key]     = {
-					type     : type,
-					id       : +id,
-					time     : new Date("1970-01-01"),
-					duration : 0,
-					log_type : `you-${type}`,
-					party    : false
-				};
-			}
-		}
+		SpellService.updateValidNames(new_state);
+		SpellService.injectDefaults(new_state);
 	}
 
 	return new_state;

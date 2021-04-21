@@ -8,6 +8,7 @@ import PlayerProcessor from "./PlayerProcessor";
 import LocalizationService from "../services/LocalizationService";
 import TTSService from "../services/TTSService";
 import UsageService from "../services/UsageService";
+import SpellService from "../services/SpellService";
 
 class GameDataProcessor  {
 	normalizeFieldLocale(value) {
@@ -350,15 +351,9 @@ class GameDataProcessor  {
 		}
 
 		if (log_data.type === "effect") {
-			let valid_names = [];
-
-			for (let id of state.settings.spells_mode[log_data.lookup_key]) {
-				valid_names.push(LocalizationService.getEffectName(id, "en"));
-			}
-
 			log_data.english_name = LocalizationService.getEffectName(log_data.spell_id, "en");
 
-			if (valid_names.indexOf(log_data.english_name) === -1) {
+			if (!SpellService.isValidName(log_data.lookup_key, log_data.english_name)) {
 				return false;
 			}
 		} else {
@@ -419,6 +414,7 @@ class GameDataProcessor  {
 			} else {
 				state_data.in_use[log_data.in_use_key] = {
 					type     : log_data.type,
+					subtype  : log_data.subtype,
 					id       : log_data.spell_id,
 					time     : date,
 					name     : data[log_data.spell_name_index],

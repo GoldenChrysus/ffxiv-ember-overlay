@@ -34,8 +34,8 @@ class Spell extends EmberComponent {
 
 	render() {
 		let id          = this.props.spell.id;
-		let real_type   = this.props.spell.type;
-		let type        = (this.props.spell.dot) ? "dot" : real_type;
+		let main_type   = this.props.spell.type;
+		let type        = this.props.spell.subtype;
 		let is_zero     = (+this.props.cooldown === 0);
 		let animate     = (!is_zero && this.props.indicator === "ticking") ? "animate" : false;
 		let classes     = [
@@ -64,7 +64,7 @@ class Spell extends EmberComponent {
 		let icon      = (!this.props.show_icon && this.props.layout !== "icon")
 			? ""
 			: <div key={"spell-icon-" + this.props.base_key} className={"icon " + type}>
-				<img src={"img/icons/" + real_type + "s/" + id + ".jpg"} alt={real_type + "-" + id}/>
+				<img src={"img/icons/" + main_type + "s/" + id + ".jpg"} alt={main_type + "-" + id}/>
 			</div>;
 
 		if (this.props.layout !== "normal") {
@@ -109,7 +109,7 @@ class Spell extends EmberComponent {
 					</style>
 					{icon}
 					<div key={"spell-row-" + this.props.base_key} className={"row " + animate} ref={animate && this.props.layout !== "icon" ? this.animate_ref : ""}>
-						<span key={"spell-name-" + this.props.base_key} className="name">{this.getName(real_type)}</span>
+						<span key={"spell-name-" + this.props.base_key} className="name">{this.getName(main_type)}</span>
 						<span key={"spell-cooldown-" + this.props.base_key} className="cooldown">{(!is_zero) ? this.props.cooldown : ""}</span>
 					</div>
 					{border}
