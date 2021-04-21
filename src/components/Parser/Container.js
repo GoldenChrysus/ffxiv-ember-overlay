@@ -65,8 +65,9 @@ class Container extends EmberComponent {
 		} else if (this.props.mode === "spells") {
 			this.setSpellsSettings();
 
-			let new_spells  = false;
-			let lost_spells = false;
+			let new_spells   = false;
+			let lost_spells  = false;
+			let changed_default = false;
 
 			for (let i in this.props.spells_in_use) {
 				if (!prev_props.spells_in_use[i] || prev_props.spells_in_use[i].time < this.props.spells_in_use[i].time) {
@@ -75,6 +76,12 @@ class Container extends EmberComponent {
 					}
 
 					new_spells[i] = this.props.spells_in_use[i];
+				} else if (prev_props.spells_in_use[i].defaulted !== this.props.spells_in_use[i].defaulted) {
+					if (!changed_default) {
+						changed_default = {};
+					}
+
+					changed_default[i] = this.props.spells_in_use[i].defaulted;
 				}
 			}
 
@@ -88,10 +95,10 @@ class Container extends EmberComponent {
 				}
 			}
 
-			if (new_spells || lost_spells) {
+			if (new_spells || lost_spells || changed_default) {
 				need_state = true;
 
-				SpellService.processSpells(new_spells, lost_spells);
+				SpellService.processSpells(new_spells || {}, lost_spells || {}, changed_default || {});
 
 				state.spells = (new Date()).getTime();
 			}
@@ -106,7 +113,12 @@ class Container extends EmberComponent {
 		if (this.props.mode === "stats") {
 			this.startStats();
 		} else if (this.props.mode === "spells") {
+			SpellService.processSpells(this.props.spells_in_use);
 			this.startSpells();
+
+			this.setState({
+				spells : (new Date()).getTime()
+			});
 		}
 
 		document.addEventListener("onOverlayStateUpdate", this.toggleHandle.bind(this));

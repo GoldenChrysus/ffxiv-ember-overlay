@@ -141,16 +141,7 @@ class Spell extends EmberComponent {
 	}
 
 	getName(type) {
-		switch (type) {
-			case "skill":
-				return this.props.spell.name || LocalizationService.getoGCDSkillName(this.props.spell.id);
-
-			case "effect":
-				return this.props.spell.name || LocalizationService.getEffectName(this.props.spell.id);
-
-			default:
-				return this.props.spell.name;
-		}
+		return this.props.spell.name || LocalizationService.getSpellName(type, this.props.spell.id);
 	}
 }
 

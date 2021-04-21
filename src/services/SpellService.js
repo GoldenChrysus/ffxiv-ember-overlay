@@ -21,7 +21,7 @@ class SpellService {
 		this.settings.warning_threshold = warning_threshold;
 	}
 
-	processSpells(used, lost) {
+	processSpells(used, lost, changed_default) {
 		for (let i in used) {
 			let date     = used[i].time;
 			let new_date = new Date(date);
@@ -74,6 +74,14 @@ class SpellService {
 			this.spells[i].cooldown  = 0;
 
 			this.processTTS(i);
+		}
+
+		for (let i in changed_default) {
+			if (!this.spells[i]) {
+				continue;
+			}
+
+			this.spells[i].defaulted = changed_default[i];
 		}
 	}
 
@@ -152,7 +160,7 @@ class SpellService {
 		};
 
 		for (let key in this.valid_names) {
-			for (let id of state.settings.spells_mode[key]) {
+			for (let id in state.settings.spells_mode[key]) {
 				this.valid_names[key][LocalizationService.getEffectName(id, "en")] = true;
 			}
 		}
@@ -165,7 +173,7 @@ class SpellService {
 	injectDefaults(state) {
 		let job = state.internal.character_job;
 
-		if (!job) {
+		if (!job && false) {
 			return state;
 		}
 
@@ -173,28 +181,29 @@ class SpellService {
 			skill  : state.settings.spells_mode.spells,
 			effect : state.settings.spells_mode.effects,
 			dot    : state.settings.spells_mode.dots
-		}
+		};
+		let data_names   = [];
 		let in_use_names = [];
 
+		for (let type in data) {
+			for (let id of data[type]) {
+				data_names.push(type + "-" + LocalizationService.getSpellName(id, "en"));
+			}
+		}
+
 		for (let i in state.internal.spells.in_use) {
-			if (state.internal.spells.in_use[i].time.getFullYear() === 1970) {
-				delete state.internal.spells.in_use[i];
+			let item = state.internal.spells.in_use[i];
+
+			if (!item.defaulted) {
 				continue;
 			}
 
-			let item = state.internal.spells.in_use[i];
+			let name = item.subtype + "-" + LocalizationService.getSpellName(item.subtype, item.id, "en");
 
-			switch (item.type) {
-				case "skill":
-					in_use_names.push(item.type + "-" + LocalizationService.getoGCDSkillName(item.id, "en"));
-					break;
-	
-				case "effect":
-					in_use_names.push(item.subtype + "-" + LocalizationService.getEffectName(item.id, "en"));
-					break;
-	
-				default:
-					break;
+			if (data_names.indexOf(name) === -1) {
+				state.internal.spells.in_use[i].defaulted = false;
+			} else {
+				in_use_names.push(name);
 			}
 		}
 
@@ -206,21 +215,7 @@ class SpellService {
 			let type_position = 0;
 
 			for (let id of data[type]) {
-				let name = type + "-";
-
-				switch (type) {
-					case "skill":
-						name += LocalizationService.getoGCDSkillName(id, "en");
-						break;
-		
-					case "effect":	
-						name += LocalizationService.getEffectName(id, "en");
-
-						break;
-		
-					default:
-						break;
-				}
+				let name = type + "-" + LocalizationService.getSpellName(type, id, "en");
 
 				if (in_use_names.indexOf(name) !== -1) {
 					continue;
@@ -230,8 +225,9 @@ class SpellService {
 				let key       = `${main_type}-${id}`;
 
 				state.internal.spells.defaulted[name] = {
-					id  : id,
-					key : key
+					id       : id,
+					key      : key,
+					position : ++type_position
 				};
 				state.internal.spells.in_use[key]     = {
 					type          : main_type,
@@ -242,7 +238,7 @@ class SpellService {
 					log_type      : `you-${type}`,
 					party         : false,
 					defaulted     : true,
-					type_position : ++type_position
+					type_position : state.internal.spells.defaulted[name].position
 				};
 			}
 		}

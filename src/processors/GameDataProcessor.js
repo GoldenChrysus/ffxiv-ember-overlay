@@ -361,9 +361,9 @@ class GameDataProcessor  {
 			return false;
 		}
 
-		if (log_data.type === "effect") {
-			log_data.english_name = LocalizationService.getEffectName(log_data.spell_id, "en");
+		log_data.english_name = LocalizationService.getSpellName(log_data.subtype, log_data.spell_id, "en");
 
+		if (log_data.type === "effect") {
 			if (!SpellService.isValidName(log_data.lookup_key, log_data.english_name)) {
 				return false;
 			}
@@ -371,8 +371,6 @@ class GameDataProcessor  {
 			if (state.settings.spells_mode[log_data.lookup_key].indexOf(log_data.spell_id) === -1) {
 				return false;
 			}
-
-			log_data.english_name = LocalizationService.getoGCDSkillName(log_data.spell_id, "en");
 		}
 
 		let state_data    = clone(state.internal.spells);

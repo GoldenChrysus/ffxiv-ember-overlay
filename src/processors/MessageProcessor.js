@@ -17,7 +17,18 @@ class MessageProcessor {
 
 		let type = data.msgtype || data.type;
 
-		if (["onOverlayDataUpdate", "SendCharName", "CombatData", "EnmityAggroList", "EnmityTargetData", "ChangePrimaryPlayer", "PartyChanged", "LogLine"].indexOf(type) === -1) {
+		if (
+			[
+				"onOverlayDataUpdate",
+				"SendCharName",
+				"CombatData",
+				"EnmityAggroList",
+				"EnmityTargetData",
+				"ChangePrimaryPlayer",
+				"PartyChanged",
+				"LogLine"
+			].indexOf(type) === -1
+		) {
 			return;
 		}
 

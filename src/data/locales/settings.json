@@ -1085,34 +1085,64 @@
 			"kr" : "도트기 역표시"
 		},
 		"spells_mode.always_skill" : {
-			"en" : "Always Show",
-			"pt" : "Always Show",
-			"cn" : "Always Show",
-			"jp" : "Always Show",
-			"de" : "Always Show",
-			"es" : "Always Show",
-			"fr" : "Always Show",
-			"kr" : "Always Show"
+			"en" : "Display Permanently",
+			"pt" : "Display Permanently",
+			"cn" : "Display Permanently",
+			"jp" : "Display Permanently",
+			"de" : "Display Permanently",
+			"es" : "Display Permanently",
+			"fr" : "Display Permanently",
+			"kr" : "Display Permanently"
+		},
+		"spells_mode.always_skill_static" : {
+			"en" : "Use Static Positions for Permanent Items",
+			"pt" : "Use Static Positions for Permanent Items",
+			"cn" : "Use Static Positions for Permanent Items",
+			"jp" : "Use Static Positions for Permanent Items",
+			"de" : "Use Static Positions for Permanent Items",
+			"es" : "Use Static Positions for Permanent Items",
+			"fr" : "Use Static Positions for Permanent Items",
+			"kr" : "Use Static Positions for Permanent Items"
 		},
 		"spells_mode.always_effect" : {
-			"en" : "Always Show",
-			"pt" : "Always Show",
-			"cn" : "Always Show",
-			"jp" : "Always Show",
-			"de" : "Always Show",
-			"es" : "Always Show",
-			"fr" : "Always Show",
-			"kr" : "Always Show"
+			"en" : "Display Permanently",
+			"pt" : "Display Permanently",
+			"cn" : "Display Permanently",
+			"jp" : "Display Permanently",
+			"de" : "Display Permanently",
+			"es" : "Display Permanently",
+			"fr" : "Display Permanently",
+			"kr" : "Display Permanently"
+		},
+		"spells_mode.always_effect_static" : {
+			"en" : "Use Static Positions for Permanent Items",
+			"pt" : "Use Static Positions for Permanent Items",
+			"cn" : "Use Static Positions for Permanent Items",
+			"jp" : "Use Static Positions for Permanent Items",
+			"de" : "Use Static Positions for Permanent Items",
+			"es" : "Use Static Positions for Permanent Items",
+			"fr" : "Use Static Positions for Permanent Items",
+			"kr" : "Use Static Positions for Permanent Items"
 		},
 		"spells_mode.always_dot" : {
-			"en" : "Always Show",
-			"pt" : "Always Show",
-			"cn" : "Always Show",
-			"jp" : "Always Show",
-			"de" : "Always Show",
-			"es" : "Always Show",
-			"fr" : "Always Show",
-			"kr" : "Always Show"
+			"en" : "Display Permanently",
+			"pt" : "Display Permanently",
+			"cn" : "Display Permanently",
+			"jp" : "Display Permanently",
+			"de" : "Display Permanently",
+			"es" : "Display Permanently",
+			"fr" : "Display Permanently",
+			"kr" : "Display Permanently"
+		},
+		"spells_mode.always_dot_static" : {
+			"en" : "Use Static Positions for Permanent Items",
+			"pt" : "Use Static Positions for Permanent Items",
+			"cn" : "Use Static Positions for Permanent Items",
+			"jp" : "Use Static Positions for Permanent Items",
+			"de" : "Use Static Positions for Permanent Items",
+			"es" : "Use Static Positions for Permanent Items",
+			"fr" : "Use Static Positions for Permanent Items",
+			"kr" : "Use Static Positions for Permanent Items"
 		},
 		"spells_mode.party_reverse_skill" : {
 			"en" : "Reverse Indicator for Spells",

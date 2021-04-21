@@ -45,10 +45,10 @@ class Screen extends React.Component {
 	handleChange(e, data) {
 		let key_path = data.key_path;
 
-		if (data.selection && data.multiple) {
+		if (data.selection && (data.multiple || data.drag)) {
 			setTimeout(
 				() => {
-					let new_value = []
+					let new_value = [];
 					
 					Array.prototype.forEach.call(document.getElementById(key_path).getElementsByTagName("a"), (el) => {
 						new_value.push($(el).attr("value"));

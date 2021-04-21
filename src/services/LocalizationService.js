@@ -154,6 +154,20 @@ class LocalizationService {
 		return SettingsLocales.misc[key][language] || SettingsLocales.misc[key].en;
 	}
 
+	getSpellName(type, id, language) {
+		switch (type) {
+			case "dot":
+			case "effect":
+				return this.getEffectName(id, language);
+
+			case "skill":
+				return this.getoGCDSkillName(id, language);
+
+			default:
+				return "";
+		}	
+	}
+
 	getoGCDSkillName(id, language) {
 		language = language || this.getLanguage();
 

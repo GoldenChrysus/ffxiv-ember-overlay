@@ -35,7 +35,15 @@ class Section extends React.Component {
 	
 	componentDidMount() {
 		Array.prototype.forEach.call(document.querySelectorAll(".multiple.selection"), (el) => {
-			Sortable.create(el, {draggable: "a", onUpdate: (evt, originalEvent) => { this.handleChange(evt); }});
+			Sortable.create(
+				el,
+				{
+					draggable: "a",
+					onUpdate: (evt, originalEvent) => {
+						this.handleChange(evt, true);
+					}
+				}
+			);
 		});
 	}
 
@@ -165,9 +173,10 @@ class Section extends React.Component {
 		);
 	}
 	
-	handleChange(e) {
+	handleChange(e, drag) {
 		e.target.key_path  = e.target.id;
 		e.target.selection = true;
+		e.target.drag      = drag;
 		
 		this.props.changeCallback(e.target, e.target);
 	}
