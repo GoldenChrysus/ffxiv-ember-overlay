@@ -26,7 +26,6 @@ class SpellService {
 			let date     = used[i].time;
 			let new_date = new Date(date);
 			let recast   = 0;
-			let dot      = false;
 			let type     = used[i].type;
 
 			if (new_date.getFullYear() !== 1970) {
@@ -132,7 +131,7 @@ class SpellService {
 				continue;
 			}
 
-			if (spells[i].cooldown <= 0 && !settings[`always_${spells[i].subtype}`]) {
+			if (spells[i].cooldown <= 0 && (!spells[i].defaulted || !settings[`always_${spells[i].subtype}`])) {
 				delete spells[i];
 
 				continue;
@@ -191,9 +190,7 @@ class SpellService {
 					break;
 	
 				case "effect":
-					type = item.subtype;
-
-					in_use_names.push(type + "-" + LocalizationService.getEffectName(item.id, "en"));
+					in_use_names.push(item.subtype + "-" + LocalizationService.getEffectName(item.id, "en"));
 					break;
 	
 				default:

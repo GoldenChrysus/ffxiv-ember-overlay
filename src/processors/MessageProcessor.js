@@ -70,6 +70,12 @@ class MessageProcessor {
 				break;
 
 			case "LogLine":
+				const allowed_codes = [21, 22, 26, 30, 31];
+
+				if (allowed_codes.indexOf(+data.line[0]) === -1) {
+					break;
+				}
+
 				store.dispatch(parseLogLine(data));
 				break;
 

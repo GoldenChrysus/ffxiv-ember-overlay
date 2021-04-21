@@ -316,6 +316,17 @@ class GameDataProcessor  {
 
 				break;
 
+			case 31:
+				log_data.char_id = parseInt(data[2], 16);
+
+				if (log_data.char_id !== state.internal.character_id) {
+					return false;
+				}
+
+				log_data.char_job = Constants.GameJobsID[data[3]] || null;
+
+				return log_data;
+
 			default:
 				return false;
 		}

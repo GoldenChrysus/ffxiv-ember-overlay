@@ -6,7 +6,6 @@ import PluginService from "../../services/PluginService";
 import OverlayPluginService from "../../services/PluginService/OverlayPluginService";
 import ObjectService from "../../services/ObjectService";
 import GameDataProcessor from "../../processors/GameDataProcessor";
-import LocalizationService from "../../services/LocalizationService";
 import ThemeService from "../../services/ThemeService";
 import SampleGameData from "../../constants/SampleGameData";
 import SampleHistoryData from "../../constants/SampleHistoryData";
@@ -33,6 +32,7 @@ const initial_state = {
 		viewing              : "tables",
 		character_name       : "YOU",
 		character_id         : null,
+		character_job        : null,
 		rank                 : "N/A",
 		game                 : {},
 		enmity               : {},
@@ -377,7 +377,11 @@ function rootReducer(state, action) {
 				case "spells":
 					let state_data = GameDataProcessor.parseSpellLogLine(action.payload, state);
 
-					if (state_data !== false) {
+					if (state_data.char_job || state_data.char_job === null) {
+						new_state = clone(state);
+
+						new_state.internal.character_job = state_data.char_job;
+					} else if (state_data !== false) {
 						new_state = clone(state);
 
 						new_state.internal.spells.in_use    = state_data.in_use;
