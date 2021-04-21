@@ -81,7 +81,8 @@ class SpellService {
 				continue;
 			}
 
-			this.spells[i].defaulted = changed_default[i];
+			this.spells[i].defaulted     = changed_default[i].defaulted;
+			this.spells[i].type_position = changed_default[i].position;
 		}
 	}
 
@@ -187,7 +188,7 @@ class SpellService {
 
 		for (let type in data) {
 			for (let id of data[type]) {
-				data_names.push(type + "-" + LocalizationService.getSpellName(id, "en"));
+				data_names.push(type + "-" + LocalizationService.getSpellName(type, id, "en"));
 			}
 		}
 

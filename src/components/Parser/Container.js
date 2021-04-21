@@ -65,8 +65,8 @@ class Container extends EmberComponent {
 		} else if (this.props.mode === "spells") {
 			this.setSpellsSettings();
 
-			let new_spells   = false;
-			let lost_spells  = false;
+			let new_spells      = false;
+			let lost_spells     = false;
 			let changed_default = false;
 
 			for (let i in this.props.spells_in_use) {
@@ -76,12 +76,18 @@ class Container extends EmberComponent {
 					}
 
 					new_spells[i] = this.props.spells_in_use[i];
-				} else if (prev_props.spells_in_use[i].defaulted !== this.props.spells_in_use[i].defaulted) {
+				} else if (
+					prev_props.spells_in_use[i].defaulted !== this.props.spells_in_use[i].defaulted ||
+					prev_props.spells_in_use[i].type_position !== this.props.spells_in_use[i].type_position
+				) {
 					if (!changed_default) {
 						changed_default = {};
 					}
 
-					changed_default[i] = this.props.spells_in_use[i].defaulted;
+					changed_default[i] = {
+						defaulted : this.props.spells_in_use[i].defaulted,
+						position  : this.props.spells_in_use[i].type_position
+					};
 				}
 			}
 
