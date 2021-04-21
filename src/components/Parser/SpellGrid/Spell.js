@@ -22,11 +22,6 @@ class Spell extends EmberComponent {
 	}
 
 	componentDidMount() {
-		if (this.container_ref.current && this.props.border) {
-			this.updateBorderAnimationDuration();
-			window.addEventListener("resize", this.updateBorderAnimationDuration.bind(this));
-		}
-
 		if (this.animate_ref.current) {
 			this.animateTicker();
 		}
@@ -84,13 +79,7 @@ class Spell extends EmberComponent {
 		}
 
 		if (this.props.border) {
-			border =
-				<div className="border">
-					<div className="horizontal top"></div>
-					<div className="left"></div>
-					<div className="horizontal bottom"></div>
-					<div className="right"></div>
-				</div>;
+			classes.push("border");
 		}
 
 		if (icon && this.props.bottom_left) {
@@ -126,18 +115,6 @@ class Spell extends EmberComponent {
 		}
 
 		AnimateService.animateTicker(this.animate_ref.current, this.props.spell.recast, this.props.reverse);
-	}
-
-	updateBorderAnimationDuration() {
-		if (!this.container_ref.current) {
-			return;
-		}
-
-		let seconds = (this.container_ref.current.offsetWidth / 40) + "s";
-
-		for (let border of this.container_ref.current.getElementsByClassName("horizontal")) {
-			border.style = `animation-duration: ${seconds}`;
-		}
 	}
 
 	getName(type) {

@@ -1220,6 +1220,7 @@ body.mode-spells {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	position: relative;
+	border-radius: 5px;
 
 	.setThemeStyle(
 		{
@@ -1237,97 +1238,16 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content .spell-grid .spell-container .border {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	overflow: hidden;
-	z-index: 1;
+#container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
+	animation: pulsing-border-dark 3s infinite;
 }
 
-#container #inner #content .spell-grid .spell-container .border div {
-	display: block;
-	position: absolute;
+body[theme=ffxiv-light] #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
+	animation: pulsing-border-light 3s infinite !important;
 }
 
-#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div {
-	.setThemeStyle(
-		@defaultTheme: {
-			background-image: radial-gradient(circle, @dark_effectBorder1 0%, @dark_effectBorder2 35%, @dark_effectBorder3 100%);
-		},
-		@lightTheme: {
-			background-image: radial-gradient(circle, @light_effectBorder1 0%, @light_effectBorder2 35%, @light_effectBorder3 100%);
-		},
-		@classicTheme: {
-			background-image: radial-gradient(circle, @classic_borderInner 0%, @classic_toggleBackground 35%, @classic_importantText 100%);
-		}
-	);
-}
-
-#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div {
-	.setThemeStyle(
-		@defaultTheme: {
-			background-image: radial-gradient(circle, @dark_dotBorder1 0%, @dark_dotBorder2 100%);
-		},
-		@lightTheme: {
-			background-image: radial-gradient(circle, @light_dotBorder1 30%, @light_dotBorder2 100%);
-		},
-		@classicTheme: {
-			background-image: radial-gradient(circle, @classic_detailItemBackground 0%, @classic_dotBorder 60%);
-		}
-	);
-}
-
-#container #inner #content .spell-grid .spell-container .border div.top,
-#container #inner #content .spell-grid .spell-container .border div.bottom {
-	width: 200%;
-	height: 2px;
-	background-size: 20px 2.5px;
-	background-repeat: repeat-x;
-}
-
-#container #inner #content .spell-grid .spell-container .border div.bottom {
-	bottom: -0.1px;
-}
-
-#container #inner #content .spell-grid .spell-container .border div.left,
-#container #inner #content .spell-grid .spell-container .border div.right {
-	width: 2px;
-	height: 200%;
-	background-size: 2.4px 20px;
-	background-repeat: repeat-y;
-}
-
-#container #inner #content .spell-grid .spell-container .border div.right {
-	right: -0.2px;
-}
-
-#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div.top,
-#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div.bottom {
-	animation: march-top 1s linear;
-	animation-iteration-count: infinite;
-}
-
-#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div.bottom,
-#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div.top {
-	animation: march-bottom 1s linear;
-	animation-iteration-count: infinite;
-}
-
-#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div.left,
-#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div.right {
-	animation: march-left 1s linear;
-	animation-iteration-count: infinite;
-}
-
-#container #inner #content .spell-grid .spell-container.effect:not(.off-cooldown) .border div.right,
-#container #inner #content .spell-grid .spell-container.dot:not(.off-cooldown) .border div.left {
-	animation: march-right 1s linear;
-	animation-iteration-count: infinite;
-}
-
-#container #inner #content .spell-grid .spell-container.icon.border::before {
-	width: 40px;
+body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
+	animation: pulsing-border-classic 3s infinite !important;
 }
 
 #container #inner #content .spell-grid .spell-container.compact {
@@ -1371,7 +1291,7 @@ body.mode-spells {
 	max-height: 20px;
 }
 
-#container #inner #content .spell-grid .spell-container.darkened:not(.icon) .icon img {
+#container #inner #content .spell-grid .spell-container.darkened:not(.icon):not(.off-cooldown) .icon img {
 	opacity: 0.4;
 }
 
@@ -1392,7 +1312,7 @@ body.mode-spells {
 #container #inner #content .spell-grid .spell-container .row {
 	flex: 0 0 100%;
 	position: relative;
-	width: calc(100% - 43px);
+	width: calc(100% - 40px);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	padding: 0 0 0 6px;
@@ -1411,12 +1331,24 @@ body.mode-spells {
 	);
 }
 
+#container #inner #content .spell-grid .spell-container:not(.icon) .row {
+	background-position-x: 3px;
+}
+
+#container #inner #content .spell-grid .spell-container .row {
+	border-radius: 0 5px 5px 0;
+}
+
+#container #inner #content .spell-grid .spell-container.icon .row {
+	border-radius: 5px;
+}
+
 #container #inner #content .spell-grid .spell-container.reverse .row {
 	background-position: 100% 0;
 }
 
 #container #inner #content .spell-grid .spell-container.compact .row {
-	width: calc(100% - 23px);
+	width: calc(100% - 20px);
 }
 
 #container #inner #content .spell-grid .spell-container.reverse .row {
@@ -1442,7 +1374,8 @@ body.mode-spells {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 0.02px
+	top: 0.02px;
+	border-radius: 5px;
 }
 
 #container #inner #content .spell-grid .spell-container.icon.darkened .timer {
@@ -1744,83 +1677,33 @@ body.mode-spells {
 	}
 }
 
-@keyframes right {
-	0% {
-		transform: rotate(-180deg);
+@keyframes pulsing-border-dark {
+	0%, 100% {
+		box-shadow: 0 0 3px @dark_importantText;
 	}
 
-	100% {
-		transform: rotate(0deg);
-	}
-}
-
-@keyframes right-inverse {
-	0% {
-		transform: rotate(-180deg);
-	}
-
-	100% {
-		transform: rotate(-360deg);
+	50% {
+		box-shadow: 0 0 7px @dark_borderOuter;
 	}
 }
 
-@keyframes left {
-	0% {
-		transform: rotate(0deg);
+@keyframes pulsing-border-light {
+	0%, 100% {
+		box-shadow: 0 0 3px @light_placeholderInnerBackground;
 	}
 
-	100% {
-		transform: rotate(180deg);
-	}
-}
-
-@keyframes left-inverse {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	100% {
-		transform: rotate(-180deg);
+	50% {
+		box-shadow: 0 0 7px @light_borderOuter;
 	}
 }
 
-@keyframes march-top {
-	0% {
-		transform: translateX(-50%);
+@keyframes pulsing-border-classic {
+	0%, 100% {
+		box-shadow: 0 0 3px @classic_playerTableRowText;
 	}
 
-	100% {
-		transform: translateX(0px);
-	}
-}
-
-@keyframes march-bottom {
-	0% {
-		transform: translateX(0px);
-	}
-
-	100% {
-		transform: translateX(-50%);
-	}
-}
-
-@keyframes march-left {
-	0% {
-		transform: translateY(0px);
-	}
-
-	100% {
-		transform: translateY(-50%);
-	}
-}
-
-@keyframes march-right {
-	0% {
-		transform: translateY(-50%);
-	}
-
-	100% {
-		transform: translateY(0px);
+	50% {
+		box-shadow: 0 0 7px @classic_borderOuter;
 	}
 }
 
