@@ -11,7 +11,8 @@ class SpellGrid extends EmberComponent {
 	constructor(props) {
 		super(props);
 
-		this.state = {
+		this.mounted = false;
+		this.state   = {
 			active : false
 		};
 	}
@@ -21,18 +22,26 @@ class SpellGrid extends EmberComponent {
 	}
 
 	componentDidMount() {
+		this.mounted = true;
+
 		this.determineState();
 	}
 
 	determineState() {
 		if (!this.state.active) {
-			this.setState({
+			let state = {
 				active : (
 					this.props.from_builder ||
 					(this.props.encounter && Object.keys(this.props.encounter).length) ||
 					Object.keys(this.props.spells).length
 				)
-			});
+			};
+
+			if (this.mounted) {
+				this.setState(state);
+			} else {
+				this.state = state;
+			}
 		}
 	}
 
