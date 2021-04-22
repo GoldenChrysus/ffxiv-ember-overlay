@@ -103,8 +103,14 @@ class MessageProcessor {
 						}
 
 						let state_data = {
-							key   : "internal.character_job",
-							value : job.abbreviation
+							key   : [
+								"internal.character_job",
+								"internal.character_level"
+							],
+							value : [
+								job.abbreviation,
+								combatant.Level
+							]
 						};
 
 						store.dispatch(updateState(state_data));

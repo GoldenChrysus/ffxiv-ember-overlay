@@ -15,10 +15,11 @@
 - Added setting "Only Track in These Instances" at Settings > Party Spell Timers
 
 ### UI Changes
-- Setting at Spell Timers > Use Minimal Layout has been renamed to "Layout" to allow for the icon-only layout
+- N/A
 
 ### Code Changes
-- N/A
+- Consolidated duplicated localization texts
+- Removed unnecessary setting schema value lookup functions
 
 ### Miscellaneous
 - N/A

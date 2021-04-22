@@ -33,6 +33,7 @@ const initial_state = {
 		character_name       : "YOU",
 		character_id         : null,
 		character_job        : null,
+		character_level      : null,
 		rank                 : "N/A",
 		game                 : {},
 		enmity               : {},
@@ -385,6 +386,8 @@ function rootReducer(state, action) {
 								payload : (state_data.char_job) ? state_data.char_job.abbreviation : state_data.char_job
 							}
 						);
+
+						new_state.internal.character_level = state_data.char_level;
 					} else if (state_data !== false) {
 						new_state = clone(state);
 
@@ -425,7 +428,22 @@ function rootReducer(state, action) {
 			break;
 
 		default:
-			new_state = createNewState(state, full_key, action);
+			if (!Array.isArray(full_key)) {
+				new_state = createNewState(state, full_key, action);
+			} else {
+				for (let i in full_key) {
+					new_state = createNewState(
+						new_state || state,
+						full_key[i],
+						{
+							type    : action.type,
+							key     : full_key[i],
+							payload : action.payload[i]
+						}
+					);
+				}
+			}
+
 			break;
 	}
 

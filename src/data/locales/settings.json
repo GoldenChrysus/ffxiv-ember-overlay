@@ -664,16 +664,6 @@
 			"fr" : "",
 			"kr" : ""
 		},
-		"tts.language" : {
-			"en" : "Language",
-			"pt" : "Língua",
-			"cn" : "语言",
-			"jp" : "言語",
-			"de" : "Sprache",
-			"es" : "Idioma",
-			"fr" : "Langue",
-			"kr" : "언어"
-		},
 		"tts.rules" : {
 			"en" : "Rules",
 			"pt" : "Regras",
@@ -754,87 +744,7 @@
 			"fr" : "Afficher le Bas du Parse",
 			"kr" : "하단 표시"
 		},
-		"table_columns.heal" : {
-			"en" : "Table Columns",
-			"pt" : "Colunas da Tabela",
-			"cn" : "标签选择",
-			"jp" : "列選択",
-			"de" : "Tabellenspalte",
-			"es" : "Columnas de Tabla",
-			"fr" : "Colonne de Tableau",
-			"kr" : "열"
-		},
-		"sort_columns.heal" : {
-			"en" : "Default Sort Column",
-			"pt" : "Organizar tabela (padrão)",
-			"cn" : "默认排序",
-			"jp" : "既定な並べ替え",
-			"de" : "Spalten nach Standard sortieren",
-			"es" : "Ordenar por Defecto",
-			"fr" : "Colonne de tri par défaut",
-			"kr" : "열 순서를 기본으로 설정"
-		},
-		"table_settings.heal.show_footer" : {
-			"en" : "Show Footer",
-			"pt" : "Mostrar rodapé",
-			"cn" : "显示页脚选项",
-			"jp" : "フッターを表示",
-			"de" : "Fußzeile anzeigen",
-			"es" : "Mostrar parte inferior",
-			"fr" : "Afficher le Bas du Parse",
-			"kr" : "하단 표기하기"
-		},
-		"table_columns.tank" : {
-			"en" : "Table Columns",
-			"pt" : "Colunas da Tabela",
-			"cn" : "标签选择",
-			"jp" : "列選択",
-			"de" : "Tabellenspalte",
-			"es" : "Columnas de Tabla",
-			"fr" : "Colonne de Tableau",
-			"kr" : "열"
-		},
-		"sort_columns.tank" : {
-			"en" : "Default Sort Column",
-			"pt" : "Organizar tabela (padrão)",
-			"cn" : "默认排序",
-			"jp" : "既定な並べ替え",
-			"de" : "Spalten nach Standard sortieren",
-			"es" : "Ordenar por Defecto",
-			"fr" : "Colonne de tri par défaut",
-			"kr" : "열 순서를 기본으로 설정"
-		},
-		"table_settings.tank.show_footer" : {
-			"en" : "Show Footer",
-			"pt" : "Mostrar rodapé",
-			"cn" : "显示页脚选项",
-			"jp" : "フッターを表示",
-			"de" : "Fußzeile anzeigen",
-			"es" : "Mostrar parte inferior",
-			"fr" : "Afficher le Bas du Parse",
-			"kr" : "하단 표기하기"
-		},
 		"detail_data.dps" : {
-			"en" : "Player Metrics",
-			"pt" : "Métricas do Jogador",
-			"cn" : "玩家数据元素",
-			"jp" : "プレイヤーメトリック",
-			"de" : "Spieler Metriken",
-			"es" : "Métricas del Jugador",
-			"fr" : "Les Mesures du Joueur",
-			"kr" : "플레이어 스탯"
-		},
-		"detail_data.heal" : {
-			"en" : "Player Metrics",
-			"pt" : "Métricas do Jogador",
-			"cn" : "玩家数据元素",
-			"jp" : "プレイヤーメトリック",
-			"de" : "Spieler Metriken",
-			"es" : "Métricas del Jugador",
-			"fr" : "Les Mesures du Joueur",
-			"kr" : "플레이어 스탯"
-		},
-		"detail_data.tank" : {
 			"en" : "Player Metrics",
 			"pt" : "Métricas do Jogador",
 			"cn" : "玩家数据元素",
@@ -894,26 +804,6 @@
 			"fr" : "Les Mesures",
 			"kr" : "스탯"
 		},
-		"table_columns.raid.heal" : {
-			"en" : "Metrics",
-			"pt" : "Métricas",
-			"cn" : "数据元素",
-			"jp" : "メトリック",
-			"de" : "Metrik",
-			"es" : "Métricas",
-			"fr" : "Les Mesures",
-			"kr" : "스탯"
-		},
-		"table_columns.raid.tank" : {
-			"en" : "Metrics",
-			"pt" : "Métricas",
-			"cn" : "数据元素",
-			"jp" : "メトリック",
-			"de" : "Metrik",
-			"es" : "Métricas",
-			"fr" : "Les Mesures",
-			"kr" : "스탯"
-		},
 		"custom.css" : {
 			"en" : "User-provided CSS is at your own risk.",
 			"pt" : "Usar CSS de outros usuários é de responsabilidade própria.",
@@ -945,36 +835,6 @@
 			"kr" : "확인할 이펙트"
 		},
 		"spells_mode.dots" : {
-			"en" : "DOT's to Track",
-			"pt" : "DOT's to Track",
-			"cn" : "监控的DOT",
-			"jp" : "DOT's to Track",
-			"de" : "DOT's to Track",
-			"es" : "DOT's to Track",
-			"fr" : "DOT's to Track",
-			"kr" : "확인할 도트기"
-		},
-		"spells_mode.party_spells" : {
-			"en" : "Spells to Track",
-			"pt" : "Magias a Rastrear",
-			"cn" : "监控的技能",
-			"jp" : "選択中スペル",
-			"de" : "Zauber im Überblick",
-			"es" : "Spells to Track",
-			"fr" : "Spells to Track",
-			"kr" : "확인할 스펠"
-		},
-		"spells_mode.party_effects" : {
-			"en" : "Effects to Track",
-			"pt" : "Efeitos a Rastrear",
-			"cn" : "监控的效果",
-			"jp" : "Effects to Track",
-			"de" : "Effekte im Überblick",
-			"es" : "Effects to Track",
-			"fr" : "Effects to Track",
-			"kr" : "확인할 이펙트"
-		},
-		"spells_mode.party_dots" : {
 			"en" : "DOT's to Track",
 			"pt" : "DOT's to Track",
 			"cn" : "监控的DOT",
@@ -1104,76 +964,6 @@
 			"fr" : "Use Static Positions for Permanent Items",
 			"kr" : "Use Static Positions for Permanent Items"
 		},
-		"spells_mode.always_effect" : {
-			"en" : "Display Permanently",
-			"pt" : "Display Permanently",
-			"cn" : "Display Permanently",
-			"jp" : "Display Permanently",
-			"de" : "Display Permanently",
-			"es" : "Display Permanently",
-			"fr" : "Display Permanently",
-			"kr" : "Display Permanently"
-		},
-		"spells_mode.always_effect_static" : {
-			"en" : "Use Static Positions for Permanent Items",
-			"pt" : "Use Static Positions for Permanent Items",
-			"cn" : "Use Static Positions for Permanent Items",
-			"jp" : "Use Static Positions for Permanent Items",
-			"de" : "Use Static Positions for Permanent Items",
-			"es" : "Use Static Positions for Permanent Items",
-			"fr" : "Use Static Positions for Permanent Items",
-			"kr" : "Use Static Positions for Permanent Items"
-		},
-		"spells_mode.always_dot" : {
-			"en" : "Display Permanently",
-			"pt" : "Display Permanently",
-			"cn" : "Display Permanently",
-			"jp" : "Display Permanently",
-			"de" : "Display Permanently",
-			"es" : "Display Permanently",
-			"fr" : "Display Permanently",
-			"kr" : "Display Permanently"
-		},
-		"spells_mode.always_dot_static" : {
-			"en" : "Use Static Positions for Permanent Items",
-			"pt" : "Use Static Positions for Permanent Items",
-			"cn" : "Use Static Positions for Permanent Items",
-			"jp" : "Use Static Positions for Permanent Items",
-			"de" : "Use Static Positions for Permanent Items",
-			"es" : "Use Static Positions for Permanent Items",
-			"fr" : "Use Static Positions for Permanent Items",
-			"kr" : "Use Static Positions for Permanent Items"
-		},
-		"spells_mode.party_reverse_skill" : {
-			"en" : "Reverse Indicator for Spells",
-			"pt" : "Reverse Indicator for Spells",
-			"cn" : "反向指示技能进度条",
-			"jp" : "Reverse Indicator for Spells",
-			"de" : "Indikator für Zauber umdrehen",
-			"es" : "Reverse Indicator for Spells",
-			"fr" : "Reverse Indicator for Spells",
-			"kr" : "스펠 역표시"
-		},
-		"spells_mode.party_reverse_effect" : {
-			"en" : "Reverse Indicator for Effects",
-			"pt" : "Reverse Indicator for Effects",
-			"cn" : "反向指示效果进度条",
-			"jp" : "Reverse Indicator for Effects",
-			"de" : "Idikator für Effekte umdrehen",
-			"es" : "Reverse Indicator for Effects",
-			"fr" : "Reverse Indicator for Effects",
-			"kr" : "이펙트 역표시"
-		},
-		"spells_mode.party_reverse_dot" : {
-			"en" : "Reverse Indicator for DOT's",
-			"pt" : "Reverse Indicator for DOT's",
-			"cn" : "反向指示DOT进度条",
-			"jp" : "Reverse Indicator for DOT's",
-			"de" : "Idikator für DOT umdrehen",
-			"es" : "Reverse Indicator for DOT's",
-			"fr" : "Reverse Indicator for DOT's",
-			"kr" : "도트기 역표시"
-		},
 		"spells_mode.warning_threshold" : {
 			"en" : "Warning Threshold (In Seconds)",
 			"pt" : "Warning Threshold (In Seconds)",
@@ -1214,16 +1004,6 @@
 			"fr" : "Cooldowns in Bottom Left (Icons Only)",
 			"kr" : "Cooldowns in Bottom Left (Icons Only)"
 		},
-		"spells_mode.designer.effect.warning" : {
-			"en" : "Show Warning Animation",
-			"pt" : "Show Warning Animation",
-			"cn" : "Show Warning Animation",
-			"jp" : "Show Warning Animation",
-			"de" : "Show Warning Animation",
-			"es" : "Show Warning Animation",
-			"fr" : "Show Warning Animation",
-			"kr" : "Show Warning Animation"
-		},
 		"spells_mode.designer.effect.border" : {
 			"en" : "Show Glowing Border",
 			"pt" : "Show Glowing Border",
@@ -1233,66 +1013,6 @@
 			"es" : "Show Glowing Border",
 			"fr" : "Show Glowing Border",
 			"kr" : "Show Glowing Border"
-		},
-		"spells_mode.designer.effect.indicator" : {
-			"en" : "Visual Indicator",
-			"pt" : "Visual Indicator",
-			"cn" : "Visual Indicator",
-			"jp" : "Visual Indicator",
-			"de" : "Visual Indicator",
-			"es" : "Visual Indicator",
-			"fr" : "Visual Indicator",
-			"kr" : "Visual Indicator"
-		},
-		"spells_mode.designer.effect.cooldown_bottom_left" : {
-			"en" : "Cooldowns in Bottom Left (Icons Only)",
-			"pt" : "Cooldowns in Bottom Left (Icons Only)",
-			"cn" : "Cooldowns in Bottom Left (Icons Only)",
-			"jp" : "Cooldowns in Bottom Left (Icons Only)",
-			"de" : "Cooldowns in Bottom Left (Icons Only)",
-			"es" : "Cooldowns in Bottom Left (Icons Only)",
-			"fr" : "Cooldowns in Bottom Left (Icons Only)",
-			"kr" : "Cooldowns in Bottom Left (Icons Only)"
-		},
-		"spells_mode.designer.dot.warning" : {
-			"en" : "Show Warning Animation",
-			"pt" : "Show Warning Animation",
-			"cn" : "Show Warning Animation",
-			"jp" : "Show Warning Animation",
-			"de" : "Show Warning Animation",
-			"es" : "Show Warning Animation",
-			"fr" : "Show Warning Animation",
-			"kr" : "Show Warning Animation"
-		},
-		"spells_mode.designer.dot.border" : {
-			"en" : "Show Glowing Border",
-			"pt" : "Show Glowing Border",
-			"cn" : "Show Glowing Border",
-			"jp" : "Show Glowing Border",
-			"de" : "Show Glowing Border",
-			"es" : "Show Glowing Border",
-			"fr" : "Show Glowing Border",
-			"kr" : "Show Glowing Border"
-		},
-		"spells_mode.designer.dot.indicator" : {
-			"en" : "Visual Indicator",
-			"pt" : "Visual Indicator",
-			"cn" : "Visual Indicator",
-			"jp" : "Visual Indicator",
-			"de" : "Visual Indicator",
-			"es" : "Visual Indicator",
-			"fr" : "Visual Indicator",
-			"kr" : "Visual Indicator"
-		},
-		"spells_mode.designer.dot.cooldown_bottom_left" : {
-			"en" : "Cooldowns in Bottom Left (Icons Only)",
-			"pt" : "Cooldowns in Bottom Left (Icons Only)",
-			"cn" : "Cooldowns in Bottom Left (Icons Only)",
-			"jp" : "Cooldowns in Bottom Left (Icons Only)",
-			"de" : "Cooldowns in Bottom Left (Icons Only)",
-			"es" : "Cooldowns in Bottom Left (Icons Only)",
-			"fr" : "Cooldowns in Bottom Left (Icons Only)",
-			"kr" : "Cooldowns in Bottom Left (Icons Only)"
 		},
 		"spells_mode.ui.use" : {
 			"en" : "Use UI Builder",

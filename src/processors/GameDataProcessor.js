@@ -290,7 +290,8 @@ class GameDataProcessor  {
 					return false;
 				}
 
-				log_data.char_job = Constants.GameJobsID[parseInt(data[4], 16)] || null;
+				log_data.char_job   = Constants.GameJobsID[parseInt(data[4], 16)] || null;
+				log_data.char_level = parseInt(data[5], 16);
 
 				return log_data;
 

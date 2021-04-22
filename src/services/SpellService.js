@@ -1,6 +1,7 @@
 import clone from "lodash.clonedeep";
-import Constants from "../constants";
+import store from "../redux/store";
 
+import Constants from "../constants";
 import SkillData from "../constants/SkillData";
 
 import LocalizationService from "./LocalizationService";
@@ -22,7 +23,23 @@ class SpellService {
 		this.settings.warning_threshold = warning_threshold;
 	}
 
+	getSkillRecast(id, level) {
+		let skill = SkillData.oGCDSkills[id];
+
+		if (level && skill.level_recasts) {
+			for (let level_data of skill.level_recasts) {
+				if (level >= level_data.level) {
+					return level_data.recast;
+				}
+			}
+		}
+
+		return skill.recast;
+	}
+
 	processSpells(used, lost, changed_default) {
+		let current_level = store.getState().internal.character_level;
+
 		for (let i in used) {
 			let date     = used[i].time;
 			let new_date = new Date(date);
@@ -32,7 +49,7 @@ class SpellService {
 			if (new_date.getFullYear() !== 1970) {
 				switch (type) {
 					case "skill":
-						recast = SkillData.oGCDSkills[used[i].id].recast;
+						recast = this.getSkillRecast(used[i].id, (used[i].party) ? 0 : current_level);
 
 						break;
 
