@@ -1,5 +1,6 @@
 import Constants from "../constants/index";
 import SkillData from "../constants/SkillData";
+import ZoneData from "../constants/ZoneData";
 import { OverlayLocales, SettingsLocales } from "../constants/Locales";
 import store from "../redux/store/index";
 
@@ -372,6 +373,45 @@ class LocalizationService {
 			});
 		}
 		
+		return options;
+	}
+
+	getInstanceName(id, language) {
+		if (!ZoneData.Instances[id]) {
+			return "";
+		}
+
+		language = language || this.getLanguage();		
+
+		return ZoneData.Instances[id].locales.name[language] || ZoneData.Instances[id].locales.name.en;
+	}
+
+	getZoneOptions() {
+		let language  = this.getLanguage();
+		let options   = [];
+		let processed = [];
+
+		for (let id in ZoneData.Instances) {
+			let zone_id = ZoneData.Instances[id].zone_id;
+
+			if (processed.indexOf(zone_id) !== -1) {
+				continue;
+			}
+
+			options.push({
+				key   : String(zone_id),
+				value : String(zone_id),
+				text  : this.getInstanceName(id, language)
+			});
+			processed.push(zone_id);
+		}
+
+		options.sort((a, b) => {
+			return (a.text < b.text) ? -1 : 1;
+		});
+
+		processed = null;
+
 		return options;
 	}
 }

@@ -41,11 +41,14 @@ class MessageProcessor {
 				"ChangePrimaryPlayer",
 				"PartyChanged",
 				"LogLine",
-				"GetCombatants"
+				"GetCombatants",
+				"ChangeZone",
 			].indexOf(type) === -1
 		) {
 			return;
 		}
+
+		let state_data;
 
 		switch (type) {
 			case "onOverlayDataUpdate":
@@ -73,19 +76,24 @@ class MessageProcessor {
 
 			case "ChangePrimaryPlayer":
 			case "SendCharName":
-				let name       = (type === "ChangePrimaryPlayer") ? data.charName : data.msg.charName;
-				let state_data = {
-					key   : "internal.character_name",
-					value : name
+				state_data = {
+					key   : [
+						"internal.character_name",
+						"internal.character_id"
+					],
+					value : [
+						(type === "ChangePrimaryPlayer") ? data.charName : data.msg.charName,
+						(type === "ChangePrimaryPlayer") ? data.charID : data.msg.charID
+					]
 				};
 
 				store.dispatch(updateState(state_data));
+				break;
 
-				let id = (type === "ChangePrimaryPlayer") ? data.charID : data.msg.charID;
-				
+			case "ChangeZone":
 				state_data = {
-					key   : "internal.character_id",
-					value : id
+					key   : "internal.current_zone_id",
+					value : data.zoneID
 				};
 
 				store.dispatch(updateState(state_data));
@@ -102,7 +110,7 @@ class MessageProcessor {
 							break;
 						}
 
-						let state_data = {
+						state_data = {
 							key   : [
 								"internal.character_job",
 								"internal.character_level"

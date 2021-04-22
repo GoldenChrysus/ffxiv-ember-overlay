@@ -542,6 +542,7 @@ const SettingsSchema = {
 							},
 							{
 								key_path : "spells_mode.use_tts",
+								locale   : "spells_mode.use_tts",
 								type     : "checkbox"
 							},
 							{
@@ -631,6 +632,22 @@ const SettingsSchema = {
 								key_path : "spells_mode.party_reverse_dot",
 								locale   : "spells_mode.reverse_dot",
 								type     : "checkbox"
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.party_use_tts",
+								locale   : "spells_mode.use_tts",
+								type     : "checkbox"
+							},
+							{
+								key_path : "spells_mode.party_zones",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getZoneOptions()
 							}
 						]
 					}

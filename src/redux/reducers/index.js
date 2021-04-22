@@ -34,6 +34,7 @@ const initial_state = {
 		character_id         : null,
 		character_job        : null,
 		character_level      : null,
+		current_zone_id      : null,
 		rank                 : "N/A",
 		game                 : {},
 		enmity               : {},

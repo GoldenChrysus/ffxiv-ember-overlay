@@ -411,6 +411,16 @@
 					"es" : "DOT's",
 					"fr" : "DOT's",
 					"kr" : "도트기"
+				},
+				{
+					"en" : "General",
+					"pt" : "Geral",
+					"cn" : "通用",
+					"jp" : "一般",
+					"de" : "Allgemein",
+					"es" : "General",
+					"fr" : "Général",
+					"kr" : "일반 설정"
 				}
 			]
 		},
@@ -955,14 +965,14 @@
 			"kr" : "Display Permanently"
 		},
 		"spells_mode.always_skill_static" : {
-			"en" : "Use Static Positions for Permanent Items",
-			"pt" : "Use Static Positions for Permanent Items",
-			"cn" : "Use Static Positions for Permanent Items",
-			"jp" : "Use Static Positions for Permanent Items",
-			"de" : "Use Static Positions for Permanent Items",
-			"es" : "Use Static Positions for Permanent Items",
-			"fr" : "Use Static Positions for Permanent Items",
-			"kr" : "Use Static Positions for Permanent Items"
+			"en" : "Use Static Positions for Permanent Timers",
+			"pt" : "Use Static Positions for Permanent Timers",
+			"cn" : "Use Static Positions for Permanent Timers",
+			"jp" : "Use Static Positions for Permanent Timers",
+			"de" : "Use Static Positions for Permanent Timers",
+			"es" : "Use Static Positions for Permanent Timers",
+			"fr" : "Use Static Positions for Permanent Timers",
+			"kr" : "Use Static Positions for Permanent Timers"
 		},
 		"spells_mode.warning_threshold" : {
 			"en" : "Warning Threshold (In Seconds)",
@@ -973,6 +983,16 @@
 			"es" : "Warning Threshold (In Seconds)",
 			"fr" : "Warning Threshold (In Seconds)",
 			"kr" : "경고 구간 (초 로 입력)"
+		},
+		"spells_mode.party_zones" : {
+			"en" : "Only Track in These Instances",
+			"pt" : "Only Track in These Instances",
+			"cn" : "Only Track in These Instances",
+			"jp" : "Only Track in These Instances",
+			"de" : "Only Track in These Instances",
+			"es" : "Only Track in These Instances",
+			"fr" : "Only Track in These Instances",
+			"kr" : "Only Track in These Instances"
 		},
 		"spells_mode.designer.skill.warning" : {
 			"en" : "Show Warning Animation",
