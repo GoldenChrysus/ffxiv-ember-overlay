@@ -7,7 +7,7 @@
 ### Bug Fixes
 - Resolved issue with reordering multiple-select dropdowns in settings
 - Resolved issue where cooldowns would be inaccurate for Contre Sixte, Manafication, and Sharpcast if your character has the recast reduction traits
-- Resolved issue where timer indicator was shifted by right 3 pixels when setting to hide icons was enabled
+- Resolved issue where timer indicator was shifted right by 3 pixels when setting to hide icons was enabled
 - To-do: Left/right borders of glowing icons may be not be visible when UI builder is off and icon is touching edge of the window
 
 ### Features
