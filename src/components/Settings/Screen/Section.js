@@ -34,7 +34,7 @@ class Section extends React.Component {
 	}
 	
 	componentDidMount() {
-		Array.prototype.forEach.call(document.querySelectorAll(".multiple.selection"), (el) => {
+		Array.prototype.forEach.call(document.querySelectorAll(".multiple.selection.standalone"), (el) => {
 			Sortable.create(
 				el,
 				{
@@ -74,6 +74,7 @@ class Section extends React.Component {
 					let options = (typeof setting_data.options === "function") ? setting_data.options() : setting_data.options;
 
 					setting = <Select fluid labeled multiple={setting_data.multiple || false} search={setting_data.search || false}
+						className="standalone"
 						options={options}
 						defaultValue={value}
 						key_path={setting_data.key_path}
@@ -174,7 +175,7 @@ class Section extends React.Component {
 	}
 	
 	handleChange(e, drag) {
-		e.target.key_path  = e.target.id;
+		e.target.key_path  = e.target.id || e.target.getAttribute("key_path");
 		e.target.selection = true;
 		e.target.drag      = drag;
 		

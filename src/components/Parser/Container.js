@@ -41,7 +41,11 @@ class Container extends EmberComponent {
 		let state      = {};
 
 		for (let uuid in this.props.spells_sections) {
-			if (!this.state.spells_sections[uuid]) {
+			if (
+				!this.state.spells_sections[uuid] || 
+				this.state.spells_sections[uuid].layout.spells_per_row !== this.props.spells_sections[uuid].layout.spells_per_row ||
+				this.state.spells_sections[uuid].layout.layout !== this.props.spells_sections[uuid].layout.layout
+			) {
 				need_state = true;
 
 				state.spells_sections = this.props.spells_sections;
