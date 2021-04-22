@@ -340,7 +340,7 @@ class GameDataProcessor  {
 		if (
 			log_data.party &&
 			state.settings.spells_mode.party_zones.length &&
-			state.settings.spells_mode.party_zones.length.indexOf(state.internal.current_zone_id) === -1
+			state.settings.spells_mode.party_zones.indexOf(state.internal.current_zone_id) === -1
 		) {
 			return false;
 		}
