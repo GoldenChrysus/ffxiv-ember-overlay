@@ -505,7 +505,7 @@ function createNewState(state, full_key, action) {
 			"settings.spells_mode.always_dot", */
 		].indexOf(full_key) !== -1
 	) {
-		if (full_key === "internal.character_job") {
+		if (full_key === "internal.character_job" && state.internal.character_job !== new_state.internal.character_job) {
 			for (let i in new_state.internal.spells.in_use) {
 				SpellService.resetSpell(i);
 			}

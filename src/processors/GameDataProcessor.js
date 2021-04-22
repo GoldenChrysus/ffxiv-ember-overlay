@@ -283,6 +283,17 @@ class GameDataProcessor  {
 		};
 
 		switch (event_code) {
+			case 3:
+				log_data.char_id = parseInt(data[2], 16);
+
+				if (log_data.char_id !== state.internal.character_id) {
+					return false;
+				}
+
+				log_data.char_job = Constants.GameJobsID[parseInt(data[4], 16)] || null;
+
+				return log_data;
+
 			case 21:
 			case 22:
 				log_data.spell_index      = 4;
@@ -315,17 +326,6 @@ class GameDataProcessor  {
 				log_data.duration_index   = 4;
 
 				break;
-
-			case 31:
-				log_data.char_id = parseInt(data[2], 16);
-
-				if (log_data.char_id !== state.internal.character_id) {
-					return false;
-				}
-
-				log_data.char_job = Constants.GameJobsID[parseInt(data[3], 16)] || null;
-
-				return log_data;
 
 			default:
 				return false;
@@ -376,7 +376,7 @@ class GameDataProcessor  {
 		}
 
 		let state_data    = clone(state.internal.spells);
-		let defaulted_key = `${log_data.type}-${log_data.english_name}`;
+		let defaulted_key = `${log_data.subtype}-${log_data.english_name}`;
 		let suffixes      = [];
 
 		if (!log_data.party) {
