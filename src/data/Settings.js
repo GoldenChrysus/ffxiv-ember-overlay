@@ -157,19 +157,52 @@ const default_settings = {
 		]
 	},
 	spells_mode : {
-		spells            : [],
-		effects           : [],
-		dots              : [],
-		reverse_skill     : false,
-		reverse_effect    : false,
-		reverse_dot       : false,
-		warning_threshold : 0,
-		spells_per_row    : 1,
-		show_icon         : true,
-		use_tts           : false,
-		minimal_layout    : false,
-		invert_vertical   : false,
-		invert_horizontal : false
+		spells               : [],
+		effects              : [],
+		dots                 : [],
+		party_spells         : [],
+		party_effects        : [],
+		party_dots           : [],
+		reverse_skill        : false,
+		reverse_effect       : false,
+		reverse_dot          : false,
+		party_reverse_skill  : false,
+		party_reverse_effect : false,
+		party_reverse_dot    : false,
+		always_skill         : false,
+		always_effect        : false,
+		always_dot           : false,
+		warning_threshold    : 0,
+		spells_per_row       : 1,
+		show_icon            : true,
+		use_tts              : false,
+		tts_trigger          : "zero",
+		minimal_layout       : false,
+		invert_vertical      : false,
+		invert_horizontal    : false,
+		designer             : {
+			skill : {
+				warning              : true,
+				indicator            : "ticking",
+				cooldown_bottom_left : false
+			},
+			effect : {
+				border               : false,
+				warning              : true,
+				indicator            : "ticking",
+				cooldown_bottom_left : false
+			},
+			dot : {
+				border               : false,
+				warning              : true,
+				indicator            : "ticking",
+				cooldown_bottom_left : false
+			}
+		},
+		ui                   : {
+			use      : false,
+			sections : {}
+		}
 	}
 };
 

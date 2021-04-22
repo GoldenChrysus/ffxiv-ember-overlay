@@ -16,6 +16,20 @@ class UsageService {
 			.concat(settings.getSetting("detail_data.tank"));
 	}
 
+	usingCombatData(mode, settings) {
+		return (
+			mode === "stats" ||
+			settings.getSetting("spells_mode.ui.use") ||
+			settings.getSetting("spells_mode.party_spells").length ||
+			settings.getSetting("spells_mode.party_effects").length ||
+			settings.getSetting("spells_mode.party_dots").length
+		);
+	}
+
+	usingLog(mode, settings) {
+		return (mode === "spells" || this.usingLogTTS(settings));
+	}
+
 	usingLogTTS(settings) {
 		return (
 			settings.getSetting("tts.rules.critical.dps") ||

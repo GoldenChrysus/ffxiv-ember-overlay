@@ -1,6 +1,7 @@
 {
 	"3" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Sprint",
@@ -12,6 +13,7 @@
 	},
 	"6" : {
 		"recast" : 900.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Return",
@@ -23,6 +25,7 @@
 	},
 	"17" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Sentinel",
@@ -34,6 +37,7 @@
 	},
 	"20" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Fight or Flight",
@@ -45,6 +49,7 @@
 	},
 	"23" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Circle of Scorn",
@@ -56,6 +61,7 @@
 	},
 	"27" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Cover",
@@ -67,6 +73,7 @@
 	},
 	"28" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Iron Will",
@@ -78,6 +85,7 @@
 	},
 	"29" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Spirits Within",
@@ -89,6 +97,7 @@
 	},
 	"30" : {
 		"recast" : 420.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hallowed Ground",
@@ -100,6 +109,7 @@
 	},
 	"38" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Berserk",
@@ -111,6 +121,7 @@
 	},
 	"40" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Thrill of Battle",
@@ -122,6 +133,7 @@
 	},
 	"43" : {
 		"recast" : 240.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Holmgang",
@@ -133,6 +145,7 @@
 	},
 	"44" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Vengeance",
@@ -144,6 +157,7 @@
 	},
 	"48" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Defiance",
@@ -155,6 +169,7 @@
 	},
 	"52" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Infuriate",
@@ -166,6 +181,7 @@
 	},
 	"65" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Mantra",
@@ -177,6 +193,7 @@
 	},
 	"69" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Perfect Balance",
@@ -188,6 +205,7 @@
 	},
 	"71" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shoulder Tackle",
@@ -199,6 +217,7 @@
 	},
 	"83" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Life Surge",
@@ -210,6 +229,7 @@
 	},
 	"85" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lance Charge",
@@ -221,6 +241,7 @@
 	},
 	"92" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Jump",
@@ -232,6 +253,7 @@
 	},
 	"94" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Elusive Jump",
@@ -243,6 +265,7 @@
 	},
 	"95" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Spineshatter Dive",
@@ -254,6 +277,7 @@
 	},
 	"96" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dragonfire Dive",
@@ -265,6 +289,7 @@
 	},
 	"101" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Raging Strikes",
@@ -276,6 +301,7 @@
 	},
 	"107" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Barrage",
@@ -287,6 +313,7 @@
 	},
 	"110" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Bloodletter",
@@ -298,6 +325,7 @@
 	},
 	"112" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Repelling Shot",
@@ -309,6 +337,7 @@
 	},
 	"114" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Mage's Ballad",
@@ -320,6 +349,7 @@
 	},
 	"116" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Army's Paeon",
@@ -331,6 +361,7 @@
 	},
 	"117" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Rain of Death",
@@ -342,6 +373,7 @@
 	},
 	"118" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Battle Voice",
@@ -353,6 +385,7 @@
 	},
 	"134" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Fluid Aura",
@@ -364,6 +397,7 @@
 	},
 	"136" : {
 		"recast" : 150.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Presence of Mind",
@@ -375,6 +409,7 @@
 	},
 	"140" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Benediction",
@@ -386,6 +421,7 @@
 	},
 	"155" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Aetherial Manipulation",
@@ -397,6 +433,7 @@
 	},
 	"157" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Manaward",
@@ -408,6 +445,7 @@
 	},
 	"158" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Manafont",
@@ -419,6 +457,7 @@
 	},
 	"166" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Aetherflow",
@@ -430,6 +469,7 @@
 	},
 	"174" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Bane",
@@ -441,6 +481,7 @@
 	},
 	"184" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Enkindle",
@@ -452,6 +493,7 @@
 	},
 	"188" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Sacred Soil",
@@ -463,6 +505,7 @@
 	},
 	"211" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Arbor Call",
@@ -474,6 +517,7 @@
 	},
 	"228" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lay of the Land",
@@ -485,6 +529,7 @@
 	},
 	"268" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Mooch II",
@@ -496,6 +541,7 @@
 	},
 	"290" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Arbor Call II",
@@ -507,6 +553,7 @@
 	},
 	"291" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lay of the Land II",
@@ -518,6 +565,7 @@
 	},
 	"1695" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dig",
@@ -529,6 +577,7 @@
 	},
 	"2238" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Spindly Finger",
@@ -540,6 +589,7 @@
 	},
 	"2241" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shade Shift",
@@ -551,6 +601,7 @@
 	},
 	"2245" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hide",
@@ -562,6 +613,7 @@
 	},
 	"2248" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Mug",
@@ -573,6 +625,7 @@
 	},
 	"2257" : {
 		"recast" : 70.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shadow Fang",
@@ -584,6 +637,7 @@
 	},
 	"2258" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Trick Attack",
@@ -595,6 +649,7 @@
 	},
 	"2259" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Ten",
@@ -606,6 +661,7 @@
 	},
 	"2261" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Chi",
@@ -617,6 +673,7 @@
 	},
 	"2262" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shukuchi",
@@ -628,6 +685,7 @@
 	},
 	"2263" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Jin",
@@ -639,6 +697,7 @@
 	},
 	"2264" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Kassatsu",
@@ -650,6 +709,7 @@
 	},
 	"2872" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hot Shot",
@@ -661,6 +721,7 @@
 	},
 	"2874" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Gauss Round",
@@ -672,6 +733,7 @@
 	},
 	"2876" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Reassemble",
@@ -683,6 +745,7 @@
 	},
 	"2878" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wildfire",
@@ -694,6 +757,7 @@
 	},
 	"2890" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Ricochet",
@@ -705,6 +769,7 @@
 	},
 	"2894" : {
 		"recast" : 600.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Eternity Ring",
@@ -716,6 +781,7 @@
 	},
 	"3378" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Spindly Finger",
@@ -727,6 +793,7 @@
 	},
 	"3379" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Pitch Bomb",
@@ -738,6 +805,7 @@
 	},
 	"3506" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Low Voltage",
@@ -749,6 +817,7 @@
 	},
 	"3540" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Divine Veil",
@@ -760,6 +829,7 @@
 	},
 	"3543" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Tornado Kick",
@@ -771,6 +841,7 @@
 	},
 	"3545" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Elixir Field",
@@ -782,6 +853,7 @@
 	},
 	"3551" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Raw Intuition",
@@ -793,6 +865,7 @@
 	},
 	"3552" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Equilibrium",
@@ -804,6 +877,7 @@
 	},
 	"3553" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Blood of the Dragon",
@@ -815,6 +889,7 @@
 	},
 	"3555" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Geirskogul",
@@ -826,6 +901,7 @@
 	},
 	"3557" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Battle Litany",
@@ -837,6 +913,7 @@
 	},
 	"3558" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Empyreal Arrow",
@@ -848,6 +925,7 @@
 	},
 	"3559" : {
 		"recast" : 80.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "the Wanderer's Minuet",
@@ -859,6 +937,7 @@
 	},
 	"3561" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "the Warden's Paean",
@@ -870,6 +949,7 @@
 	},
 	"3562" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Sidewinder",
@@ -881,6 +961,7 @@
 	},
 	"3566" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dream Within a Dream",
@@ -892,6 +973,7 @@
 	},
 	"3569" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Asylum",
@@ -903,6 +985,7 @@
 	},
 	"3570" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Tetragrammaton",
@@ -914,6 +997,7 @@
 	},
 	"3571" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assize",
@@ -925,6 +1009,7 @@
 	},
 	"3573" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Ley Lines",
@@ -936,6 +1021,12 @@
 	},
 	"3574" : {
 		"recast" : 60.0,
+		"level_recasts" : [
+			{
+				"level" : 74,
+				"recast" : 30
+			}
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sharpcast",
@@ -947,6 +1038,7 @@
 	},
 	"3575" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Enochian",
@@ -958,6 +1050,7 @@
 	},
 	"3580" : {
 		"recast" : 50.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Tri-disaster",
@@ -969,6 +1062,7 @@
 	},
 	"3581" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dreadwyrm Trance",
@@ -980,6 +1074,7 @@
 	},
 	"3582" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Deathflare",
@@ -991,6 +1086,7 @@
 	},
 	"3583" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Indomitability",
@@ -1002,6 +1098,7 @@
 	},
 	"3585" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Deployment Tactics",
@@ -1013,6 +1110,7 @@
 	},
 	"3586" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Emergency Tactics",
@@ -1024,6 +1122,7 @@
 	},
 	"3587" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dissipation",
@@ -1035,6 +1134,7 @@
 	},
 	"3590" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Draw",
@@ -1046,6 +1146,7 @@
 	},
 	"3593" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Redraw",
@@ -1057,6 +1158,7 @@
 	},
 	"3606" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lightspeed",
@@ -1068,6 +1170,7 @@
 	},
 	"3612" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Synastry",
@@ -1079,6 +1182,7 @@
 	},
 	"3613" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Collective Unconscious",
@@ -1090,6 +1194,7 @@
 	},
 	"3614" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Essential Dignity",
@@ -1101,6 +1206,7 @@
 	},
 	"3625" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Blood Weapon",
@@ -1112,6 +1218,7 @@
 	},
 	"3629" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Grit",
@@ -1123,6 +1230,7 @@
 	},
 	"3634" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dark Mind",
@@ -1134,6 +1242,7 @@
 	},
 	"3636" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shadow Wall",
@@ -1145,6 +1254,7 @@
 	},
 	"3638" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Living Dead",
@@ -1156,6 +1266,7 @@
 	},
 	"3639" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Salted Earth",
@@ -1167,6 +1278,7 @@
 	},
 	"3640" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Plunge",
@@ -1178,6 +1290,7 @@
 	},
 	"3641" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Abyssal Drain",
@@ -1189,6 +1302,7 @@
 	},
 	"3643" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Carve and Spit",
@@ -1200,6 +1314,7 @@
 	},
 	"4589" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "The Giving Land",
@@ -1211,6 +1326,7 @@
 	},
 	"4590" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "The Giving Land",
@@ -1222,6 +1338,7 @@
 	},
 	"5136" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Starry Heavens",
@@ -1233,6 +1350,7 @@
 	},
 	"7382" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Intervention",
@@ -1244,6 +1362,7 @@
 	},
 	"7383" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Requiescat",
@@ -1255,6 +1374,7 @@
 	},
 	"7385" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Passage of Arms",
@@ -1266,6 +1386,7 @@
 	},
 	"7386" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Onslaught",
@@ -1277,6 +1398,7 @@
 	},
 	"7387" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Upheaval",
@@ -1288,6 +1410,7 @@
 	},
 	"7388" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shake It Off",
@@ -1299,6 +1422,7 @@
 	},
 	"7389" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Inner Release",
@@ -1310,6 +1434,7 @@
 	},
 	"7390" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Delirium",
@@ -1321,6 +1446,7 @@
 	},
 	"7393" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "The Blackest Night",
@@ -1332,6 +1458,7 @@
 	},
 	"7394" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Earth",
@@ -1343,6 +1470,7 @@
 	},
 	"7395" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Fire",
@@ -1354,6 +1482,7 @@
 	},
 	"7396" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Brotherhood",
@@ -1365,6 +1494,7 @@
 	},
 	"7398" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dragon Sight",
@@ -1376,6 +1506,7 @@
 	},
 	"7400" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Nastrond",
@@ -1387,6 +1518,7 @@
 	},
 	"7403" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Ten Chi Jin",
@@ -1398,6 +1530,7 @@
 	},
 	"7405" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Troubadour",
@@ -1409,6 +1542,7 @@
 	},
 	"7408" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Nature's Minne",
@@ -1420,6 +1554,7 @@
 	},
 	"7414" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Barrel Stabilizer",
@@ -1431,6 +1566,7 @@
 	},
 	"7415" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Rook Overdrive",
@@ -1442,6 +1578,7 @@
 	},
 	"7418" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Flamethrower",
@@ -1453,6 +1590,7 @@
 	},
 	"7421" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Triplecast",
@@ -1464,6 +1602,7 @@
 	},
 	"7423" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Aetherpact",
@@ -1475,6 +1614,7 @@
 	},
 	"7427" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Summon Bahamut",
@@ -1486,6 +1626,7 @@
 	},
 	"7429" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Enkindle Bahamut",
@@ -1497,6 +1638,7 @@
 	},
 	"7430" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Thin Air",
@@ -1508,6 +1650,7 @@
 	},
 	"7432" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Divine Benison",
@@ -1519,6 +1662,7 @@
 	},
 	"7433" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Plenary Indulgence",
@@ -1530,6 +1674,7 @@
 	},
 	"7434" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Excogitation",
@@ -1541,6 +1686,7 @@
 	},
 	"7436" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Chain Stratagem",
@@ -1552,6 +1698,7 @@
 	},
 	"7439" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Earthly Star",
@@ -1563,6 +1710,7 @@
 	},
 	"7448" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Sleeve Draw",
@@ -1574,6 +1722,7 @@
 	},
 	"7492" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hissatsu: Gyoten",
@@ -1585,6 +1734,7 @@
 	},
 	"7493" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hissatsu: Yaten",
@@ -1596,6 +1746,7 @@
 	},
 	"7496" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hissatsu: Guren",
@@ -1607,6 +1758,7 @@
 	},
 	"7497" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Meditate",
@@ -1618,6 +1770,7 @@
 	},
 	"7498" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Third Eye",
@@ -1629,6 +1782,7 @@
 	},
 	"7499" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Meikyo Shisui",
@@ -1640,6 +1794,7 @@
 	},
 	"7506" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Corps-a-corps",
@@ -1651,6 +1806,7 @@
 	},
 	"7515" : {
 		"recast" : 35.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Displacement",
@@ -1662,6 +1818,7 @@
 	},
 	"7517" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Fleche",
@@ -1673,6 +1830,7 @@
 	},
 	"7518" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Acceleration",
@@ -1684,6 +1842,12 @@
 	},
 	"7519" : {
 		"recast" : 45.0,
+		"level_recasts" : [
+			{
+				"level" : 78,
+				"recast" : 35
+			}
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Contre Sixte",
@@ -1695,6 +1859,7 @@
 	},
 	"7520" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Embolden",
@@ -1706,6 +1871,12 @@
 	},
 	"7521" : {
 		"recast" : 120.0,
+		"level_recasts" : [
+			{
+				"level" : 74,
+				"recast" : 110
+			}
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Manafication",
@@ -1717,6 +1888,7 @@
 	},
 	"7531" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Rampart",
@@ -1728,6 +1900,7 @@
 	},
 	"7533" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Provoke",
@@ -1739,6 +1912,7 @@
 	},
 	"7535" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Reprisal",
@@ -1750,6 +1924,7 @@
 	},
 	"7537" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shirk",
@@ -1761,6 +1936,7 @@
 	},
 	"7538" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Interject",
@@ -1772,6 +1948,7 @@
 	},
 	"7540" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Low Blow",
@@ -1783,6 +1960,7 @@
 	},
 	"7541" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Second Wind",
@@ -1794,6 +1972,7 @@
 	},
 	"7542" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Bloodbath",
@@ -1805,6 +1984,7 @@
 	},
 	"7546" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "True North",
@@ -1816,6 +1996,7 @@
 	},
 	"7548" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Arm's Length",
@@ -1827,6 +2008,7 @@
 	},
 	"7549" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Feint",
@@ -1838,6 +2020,7 @@
 	},
 	"7551" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Head Graze",
@@ -1849,6 +2032,7 @@
 	},
 	"7553" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Foot Graze",
@@ -1860,6 +2044,7 @@
 	},
 	"7554" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Leg Graze",
@@ -1871,6 +2056,7 @@
 	},
 	"7559" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Surecast",
@@ -1882,6 +2068,7 @@
 	},
 	"7560" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Addle",
@@ -1893,6 +2080,7 @@
 	},
 	"7561" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Swiftcast",
@@ -1904,6 +2092,7 @@
 	},
 	"7562" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lucid Dreaming",
@@ -1915,6 +2104,7 @@
 	},
 	"7571" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Rescue",
@@ -1926,6 +2116,7 @@
 	},
 	"7621" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Diffractive Magitek Cannon",
@@ -1937,6 +2128,7 @@
 	},
 	"7622" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "High-powered Magitek Cannon",
@@ -1948,6 +2140,7 @@
 	},
 	"7863" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Leg Sweep",
@@ -1959,6 +2152,7 @@
 	},
 	"7904" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shark Eye",
@@ -1970,6 +2164,7 @@
 	},
 	"7905" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shark Eye II",
@@ -1981,6 +2176,7 @@
 	},
 	"8624" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Magitek Pulse",
@@ -1992,6 +2188,7 @@
 	},
 	"11411" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Off-guard",
@@ -2003,6 +2200,7 @@
 	},
 	"11421" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Peculiar Light",
@@ -2014,6 +2212,7 @@
 	},
 	"11426" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Feather Rain",
@@ -2025,6 +2224,7 @@
 	},
 	"11427" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Eruption",
@@ -2036,6 +2236,7 @@
 	},
 	"11428" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Mountain Buster",
@@ -2047,6 +2248,7 @@
 	},
 	"11429" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shock Strike",
@@ -2058,6 +2260,7 @@
 	},
 	"11430" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Glass Dance",
@@ -2069,6 +2272,7 @@
 	},
 	"11431" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Veil of the Whorl",
@@ -2080,6 +2284,7 @@
 	},
 	"12958" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Aetherweaver",
@@ -2091,6 +2296,7 @@
 	},
 	"12959" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Martialist",
@@ -2102,6 +2308,7 @@
 	},
 	"12960" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Platebearer",
@@ -2113,6 +2320,7 @@
 	},
 	"12961" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Guardian",
@@ -2124,6 +2332,7 @@
 	},
 	"12962" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Ordained",
@@ -2135,6 +2344,7 @@
 	},
 	"12963" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Skirmisher",
@@ -2146,6 +2356,7 @@
 	},
 	"12964" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Watcher",
@@ -2157,6 +2368,7 @@
 	},
 	"12965" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Templar",
@@ -2168,6 +2380,7 @@
 	},
 	"12966" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Irregular",
@@ -2179,6 +2392,7 @@
 	},
 	"12967" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Breathtaker",
@@ -2190,6 +2404,7 @@
 	},
 	"12968" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Spirit of the Remembered",
@@ -2201,6 +2416,7 @@
 	},
 	"12971" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Death L",
@@ -2212,6 +2428,7 @@
 	},
 	"12975" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Swift L",
@@ -2223,6 +2440,7 @@
 	},
 	"12976" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Featherfoot L",
@@ -2234,6 +2452,7 @@
 	},
 	"12978" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Catastrophe L",
@@ -2245,6 +2464,7 @@
 	},
 	"12981" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Stealth L",
@@ -2256,6 +2476,7 @@
 	},
 	"12984" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Tranquilizer L",
@@ -2267,6 +2488,7 @@
 	},
 	"12985" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Bloodbath L",
@@ -2278,6 +2500,7 @@
 	},
 	"12986" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Rejuvenate L",
@@ -2289,6 +2512,7 @@
 	},
 	"12987" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Haymaker L",
@@ -2300,6 +2524,7 @@
 	},
 	"12988" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Rapid Recast L",
@@ -2311,6 +2536,7 @@
 	},
 	"12995" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Incense L",
@@ -2322,6 +2548,7 @@
 	},
 	"12998" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Solid Shield L",
@@ -2333,6 +2560,7 @@
 	},
 	"12999" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Spell Shield L",
@@ -2344,6 +2572,7 @@
 	},
 	"13001" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Smite L",
@@ -2355,6 +2584,7 @@
 	},
 	"13005" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Burst L",
@@ -2366,6 +2596,7 @@
 	},
 	"13006" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Double Edge L",
@@ -2377,6 +2608,7 @@
 	},
 	"13426" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Aetherwell",
@@ -2388,6 +2620,7 @@
 	},
 	"14477" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Elder",
@@ -2399,6 +2632,7 @@
 	},
 	"14478" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Duelist",
@@ -2410,6 +2644,7 @@
 	},
 	"14479" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Fiendhunter",
@@ -2421,6 +2656,7 @@
 	},
 	"14480" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Wisdom of the Indomitable",
@@ -2432,6 +2668,7 @@
 	},
 	"14842" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hissatsu: Gyoten",
@@ -2443,6 +2680,7 @@
 	},
 	"14843" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "冥界恐叫打",
@@ -2454,6 +2692,7 @@
 	},
 	"15375" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Second Wind",
@@ -2465,6 +2704,7 @@
 	},
 	"15870" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Fight or Flight",
@@ -2476,6 +2716,7 @@
 	},
 	"15997" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Standard Step",
@@ -2487,6 +2728,7 @@
 	},
 	"15998" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Technical Step",
@@ -2498,6 +2740,7 @@
 	},
 	"16006" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Closed Position",
@@ -2509,6 +2752,7 @@
 	},
 	"16010" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "En Avant",
@@ -2520,6 +2764,7 @@
 	},
 	"16011" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Devilment",
@@ -2531,6 +2776,7 @@
 	},
 	"16012" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shield Samba",
@@ -2542,6 +2788,7 @@
 	},
 	"16013" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Flourish",
@@ -2553,6 +2800,7 @@
 	},
 	"16014" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Improvisation",
@@ -2564,6 +2812,7 @@
 	},
 	"16015" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Curing Waltz",
@@ -2575,6 +2824,7 @@
 	},
 	"16138" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "No Mercy",
@@ -2586,6 +2836,7 @@
 	},
 	"16140" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Camouflage",
@@ -2597,6 +2848,7 @@
 	},
 	"16142" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Royal Guard",
@@ -2608,6 +2860,7 @@
 	},
 	"16144" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Danger Zone",
@@ -2619,6 +2872,7 @@
 	},
 	"16146" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Gnashing Fang",
@@ -2630,6 +2884,7 @@
 	},
 	"16148" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Nebula",
@@ -2641,6 +2896,7 @@
 	},
 	"16151" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Aurora",
@@ -2652,6 +2908,7 @@
 	},
 	"16152" : {
 		"recast" : 360.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Superbolide",
@@ -2663,6 +2920,7 @@
 	},
 	"16153" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Sonic Break",
@@ -2674,6 +2932,7 @@
 	},
 	"16154" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Rough Divide",
@@ -2685,6 +2944,7 @@
 	},
 	"16159" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Bow Shock",
@@ -2696,6 +2956,7 @@
 	},
 	"16160" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Heart of Light",
@@ -2707,6 +2968,7 @@
 	},
 	"16161" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Heart of Stone",
@@ -2718,6 +2980,7 @@
 	},
 	"16164" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Bloodfest",
@@ -2729,6 +2992,7 @@
 	},
 	"16165" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Blasting Zone",
@@ -2740,6 +3004,7 @@
 	},
 	"16436" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Soothing Potion",
@@ -2751,6 +3016,7 @@
 	},
 	"16461" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Intervene",
@@ -2762,6 +3028,7 @@
 	},
 	"16464" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Flash",
@@ -2773,6 +3040,7 @@
 	},
 	"16471" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dark Missionary",
@@ -2784,6 +3052,7 @@
 	},
 	"16472" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Living Shadow",
@@ -2795,6 +3064,7 @@
 	},
 	"16475" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Anatman",
@@ -2806,6 +3076,7 @@
 	},
 	"16478" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "High Jump",
@@ -2817,6 +3088,7 @@
 	},
 	"16480" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Stardiver",
@@ -2828,6 +3100,7 @@
 	},
 	"16481" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hissatsu: Senei",
@@ -2839,6 +3112,7 @@
 	},
 	"16482" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Ikishoten",
@@ -2850,6 +3124,7 @@
 	},
 	"16483" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Tsubame-gaeshi",
@@ -2861,6 +3136,7 @@
 	},
 	"16484" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Kaeshi: Higanbana",
@@ -2872,6 +3148,7 @@
 	},
 	"16485" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Kaeshi: Goken",
@@ -2883,6 +3160,7 @@
 	},
 	"16486" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Kaeshi: Setsugekka",
@@ -2894,6 +3172,7 @@
 	},
 	"16487" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shoha",
@@ -2905,6 +3184,7 @@
 	},
 	"16489" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Meisui",
@@ -2916,6 +3196,7 @@
 	},
 	"16493" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Bunshin",
@@ -2927,6 +3208,7 @@
 	},
 	"16494" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Shadowbite",
@@ -2938,6 +3220,7 @@
 	},
 	"16498" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Drill",
@@ -2949,6 +3232,7 @@
 	},
 	"16499" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Bioblaster",
@@ -2960,6 +3244,7 @@
 	},
 	"16500" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Air Anchor",
@@ -2971,6 +3256,7 @@
 	},
 	"16502" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Queen Overdrive",
@@ -2982,6 +3268,7 @@
 	},
 	"16508" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Energy Drain",
@@ -2993,6 +3280,7 @@
 	},
 	"16509" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Egi Assault",
@@ -3004,6 +3292,7 @@
 	},
 	"16510" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Energy Siphon",
@@ -3015,6 +3304,7 @@
 	},
 	"16512" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Egi Assault II",
@@ -3026,6 +3316,7 @@
 	},
 	"16513" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Firebird Trance",
@@ -3037,6 +3328,7 @@
 	},
 	"16516" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Enkindle Phoenix",
@@ -3048,6 +3340,7 @@
 	},
 	"16527" : {
 		"recast" : 35.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Engagement",
@@ -3059,6 +3352,7 @@
 	},
 	"16536" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Temperance",
@@ -3070,6 +3364,7 @@
 	},
 	"16537" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Whispering Dawn",
@@ -3081,6 +3376,7 @@
 	},
 	"16538" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Fey Illumination",
@@ -3092,6 +3388,7 @@
 	},
 	"16542" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Recitation",
@@ -3103,6 +3400,7 @@
 	},
 	"16543" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Fey Blessing",
@@ -3114,6 +3412,7 @@
 	},
 	"16545" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Summon Seraph",
@@ -3125,6 +3424,7 @@
 	},
 	"16546" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Consolation",
@@ -3136,6 +3436,7 @@
 	},
 	"16549" : {
 		"recast" : 55.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Firebird Trance",
@@ -3147,6 +3448,7 @@
 	},
 	"16552" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Divination",
@@ -3158,6 +3460,7 @@
 	},
 	"16553" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Celestial Opposition",
@@ -3169,6 +3472,7 @@
 	},
 	"16556" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Celestial Intersection",
@@ -3180,6 +3484,7 @@
 	},
 	"16557" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Horoscope",
@@ -3191,6 +3496,7 @@
 	},
 	"16559" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Neutral Sect",
@@ -3202,6 +3508,7 @@
 	},
 	"16791" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault I: Glittering Topaz",
@@ -3213,6 +3520,7 @@
 	},
 	"16792" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault II: Shining Topaz",
@@ -3224,6 +3532,7 @@
 	},
 	"16793" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault I: Downburst",
@@ -3235,6 +3544,7 @@
 	},
 	"16794" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault II: Glittering Emerald",
@@ -3246,6 +3556,7 @@
 	},
 	"16795" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault I: Earthen Armor",
@@ -3257,6 +3568,7 @@
 	},
 	"16796" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault II: Mountain Buster",
@@ -3268,6 +3580,7 @@
 	},
 	"16797" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault I: Aerial Slash",
@@ -3279,6 +3592,7 @@
 	},
 	"16798" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault II: Slipstream",
@@ -3290,6 +3604,7 @@
 	},
 	"16799" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault I: Crimson Cyclone",
@@ -3301,6 +3616,7 @@
 	},
 	"16800" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Assault II: Flaming Crush",
@@ -3312,6 +3628,7 @@
 	},
 	"16801" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Enkindle: Earthen Fury",
@@ -3323,6 +3640,7 @@
 	},
 	"16802" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Enkindle: Aerial Blast",
@@ -3334,6 +3652,7 @@
 	},
 	"16803" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Enkindle: Inferno",
@@ -3345,6 +3664,7 @@
 	},
 	"16804" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Rough Divide",
@@ -3356,6 +3676,7 @@
 	},
 	"16889" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Tactician",
@@ -3367,6 +3688,7 @@
 	},
 	"17004" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Ronkan Renew",
@@ -3378,6 +3700,7 @@
 	},
 	"17124" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Radiant Arrow",
@@ -3389,6 +3712,7 @@
 	},
 	"17209" : {
 		"recast" : 10.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hypercharge",
@@ -3400,6 +3724,7 @@
 	},
 	"17596" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Hunter's Prudence",
@@ -3411,6 +3736,7 @@
 	},
 	"17839" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Nebula",
@@ -3422,6 +3748,7 @@
 	},
 	"17901" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Smackdown",
@@ -3433,6 +3760,7 @@
 	},
 	"18305" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Magic Hammer",
@@ -3444,6 +3772,7 @@
 	},
 	"18306" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Avail",
@@ -3455,6 +3784,7 @@
 	},
 	"18312" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Level 5 Death",
@@ -3466,6 +3796,7 @@
 	},
 	"18317" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Angel Whisper",
@@ -3477,6 +3808,7 @@
 	},
 	"18320" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Devour",
@@ -3488,6 +3820,7 @@
 	},
 	"18323" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Surpanakha",
@@ -3499,6 +3832,7 @@
 	},
 	"18324" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Quasar",
@@ -3510,6 +3844,7 @@
 	},
 	"18325" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "J Kick",
@@ -3521,6 +3856,7 @@
 	},
 	"18775" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Skydragon Dive",
@@ -3532,6 +3868,7 @@
 	},
 	"19218" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Aqua Vitae",
@@ -3543,6 +3880,7 @@
 	},
 	"20496" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Aether Mine",
@@ -3554,6 +3892,7 @@
 	},
 	"20692" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3565,6 +3904,7 @@
 	},
 	"20693" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3576,6 +3916,7 @@
 	},
 	"20694" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3587,6 +3928,7 @@
 	},
 	"20695" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3598,6 +3940,7 @@
 	},
 	"20696" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3609,6 +3952,7 @@
 	},
 	"20697" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3620,6 +3964,7 @@
 	},
 	"20698" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3631,6 +3976,7 @@
 	},
 	"20699" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3642,6 +3988,7 @@
 	},
 	"20700" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3653,6 +4000,7 @@
 	},
 	"20703" : {
 		"recast" : 360.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Manawall",
@@ -3664,6 +4012,7 @@
 	},
 	"20705" : {
 		"recast" : 15.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Stealth",
@@ -3675,6 +4024,7 @@
 	},
 	"20708" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Swift",
@@ -3686,6 +4036,7 @@
 	},
 	"20715" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Font of Magic",
@@ -3697,6 +4048,7 @@
 	},
 	"20716" : {
 		"recast" : 300.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Font of Skill",
@@ -3708,6 +4060,7 @@
 	},
 	"20717" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Font of Power",
@@ -3719,6 +4072,7 @@
 	},
 	"20718" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Slash",
@@ -3730,6 +4084,7 @@
 	},
 	"20719" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Death",
@@ -3741,6 +4096,7 @@
 	},
 	"20720" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Noble Ends",
@@ -3752,6 +4108,7 @@
 	},
 	"20721" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Honored Sacrifice",
@@ -3763,6 +4120,7 @@
 	},
 	"20722" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Tireless Conviction",
@@ -3774,6 +4132,7 @@
 	},
 	"20723" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Firm Resolve",
@@ -3785,6 +4144,7 @@
 	},
 	"20724" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Solemn Clarity",
@@ -3796,6 +4156,7 @@
 	},
 	"20725" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Banner of Honed Acuity",
@@ -3807,6 +4168,7 @@
 	},
 	"20731" : {
 		"recast" : 20.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Incense",
@@ -3818,6 +4180,7 @@
 	},
 	"20734" : {
 		"recast" : 180.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dynamis Dice",
@@ -3829,6 +4192,7 @@
 	},
 	"20737" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Resistance Potion Kit",
@@ -3840,6 +4204,7 @@
 	},
 	"20738" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Resistance Ether Kit",
@@ -3851,6 +4216,7 @@
 	},
 	"20739" : {
 		"recast" : 45.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Resistance Medikit",
@@ -3862,6 +4228,7 @@
 	},
 	"20740" : {
 		"recast" : 40.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Resistance Potion",
@@ -3873,6 +4240,7 @@
 	},
 	"20940" : {
 		"recast" : 25.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Auto Restoration",
@@ -3884,6 +4252,7 @@
 	},
 	"22353" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Rend Armor",
@@ -3895,6 +4264,7 @@
 	},
 	"22354" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Seraph Strike",
@@ -3906,6 +4276,7 @@
 	},
 	"22355" : {
 		"recast" : 60.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Aethershield",
@@ -3917,6 +4288,7 @@
 	},
 	"22356" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Lost Dervish",
@@ -3928,6 +4300,7 @@
 	},
 	"23264" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Triple Trident",
@@ -3939,6 +4312,7 @@
 	},
 	"23267" : {
 		"recast" : 90.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Cold Fog",
@@ -3950,6 +4324,7 @@
 	},
 	"23272" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Angel's Snack",
@@ -3961,6 +4336,7 @@
 	},
 	"23273" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Chelonian Gate",
@@ -3972,6 +4348,7 @@
 	},
 	"23275" : {
 		"recast" : 30.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "The Rose of Destruction",
@@ -3983,6 +4360,7 @@
 	},
 	"23277" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Ultravibration",
@@ -3994,6 +4372,7 @@
 	},
 	"23280" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Dragon Force",
@@ -4005,6 +4384,7 @@
 	},
 	"23285" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Matra Magic",
@@ -4016,6 +4396,7 @@
 	},
 	"23287" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Both Ends",
@@ -4027,6 +4408,7 @@
 	},
 	"23288" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Phantom Flurry",
@@ -4038,6 +4420,7 @@
 	},
 	"23290" : {
 		"recast" : 120.0,
+		"level_recasts" : null,
 		"locales" : {
 			"name" : {
 				"en" : "Nightbloom",

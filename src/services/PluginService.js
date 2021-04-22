@@ -84,14 +84,18 @@ class PluginService extends PluginServiceAbstract {
 		let mode     = (internal || store.getState().internal).mode;
 		let data     = {
 			enmity : UsageService.usingEnmity(settings),
-			log    : UsageService.usingLogTTS(settings)
+			log    : UsageService.usingLog(mode, settings),
+			combat : UsageService.usingCombatData(mode, settings)
 		};
 		let events   = [
 			"ChangePrimaryPlayer"
 		];
 
-		if (mode === "stats") {
+		if (data.combat) {
 			events.push("CombatData");
+		}
+
+		if (mode === "stats") {
 			events.push("EnmityAggroList");
 			events.push("PartyChanged");
 		}
@@ -100,7 +104,7 @@ class PluginService extends PluginServiceAbstract {
 			events.push("EnmityTargetData");
 		}
 
-		if (data.log || mode === "spells") {
+		if (data.log) {
 			events.push("LogLine");
 		}
 

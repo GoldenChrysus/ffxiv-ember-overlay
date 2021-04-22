@@ -576,7 +576,14 @@ const SettingsSchema = {
 								value    : function() {
 									return this.props.settings.spells_mode.reverse_skill;
 								}
-							}
+							},
+							/* {
+								key_path : "spells_mode.always_skill",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.always_skill;
+								}
+							} */
 						]
 					},
 					{
@@ -597,7 +604,14 @@ const SettingsSchema = {
 								value    : function() {
 									return this.props.settings.spells_mode.reverse_effect;
 								}
-							}
+							},
+							/* {
+								key_path : "spells_mode.always_effect",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.always_effect;
+								}
+							} */
 						]
 					},
 					{
@@ -618,7 +632,14 @@ const SettingsSchema = {
 								value    : function() {
 									return this.props.settings.spells_mode.reverse_dot;
 								}
-							}
+							},
+							/* {
+								key_path : "spells_mode.always_dot",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.always_dot;
+								}
+							} */
 						]
 					},
 					{
@@ -638,6 +659,14 @@ const SettingsSchema = {
 								}
 							},
 							{
+								key_path : "spells_mode.tts_trigger",
+								type     : "select",
+								options  : () => LocalizationService.getSpellsTTSTriggerOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.tts_trigger;
+								}
+							},
+							{
 								key_path : "spells_mode.warning_threshold",
 								type     : "slider",
 								range    : "min",
@@ -652,16 +681,17 @@ const SettingsSchema = {
 								type     : "slider",
 								range    : "min",
 								minimum  : 1,
-								maximum  : 5,
+								maximum  : 20,
 								value    : function() {
 									return this.props.settings.spells_mode.spells_per_row;
 								}
 							},
 							{
-								key_path : "spells_mode.minimal_layout",
-								type     : "checkbox",
+								key_path : "spells_mode.layout",
+								type     : "select",
+								options  : () => LocalizationService.getSpellLayoutOptions(),
 								value    : function() {
-									return this.props.settings.spells_mode.minimal_layout;
+									return this.props.settings.spells_mode.layout;
 								}
 							},
 							{
@@ -676,6 +706,200 @@ const SettingsSchema = {
 								type     : "checkbox",
 								value    : function() {
 									return this.props.settings.spells_mode.invert_horizontal;
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				path : "spells-mode-party",
+				sections : [
+					{
+						settings : [
+							{
+								key_path : "spells_mode.party_spells",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getoGCDSkillOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.party_spells;
+								}
+							},
+							{
+								key_path : "spells_mode.party_reverse_skill",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.party_reverse_skill;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.party_effects",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getEffectOptions(false),
+								value    : function() {
+									return this.props.settings.spells_mode.party_effects;
+								}
+							},
+							{
+								key_path : "spells_mode.party_reverse_effect",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.party_reverse_effect;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.party_dots",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getEffectOptions(true),
+								value    : function() {
+									return this.props.settings.spells_mode.party_dots;
+								}
+							},
+							{
+								key_path : "spells_mode.party_reverse_dot",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.party_reverse_dot;
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				path : "spells-designer",
+				sections : [
+					{
+						settings : [
+							{
+								key_path : "spells_mode.designer.skill.warning",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.skill.warning;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.skill.cooldown_bottom_left",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.skill.cooldown_bottom_left;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.skill.indicator",
+								type     : "select",
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.designer.skill.indicator;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.designer.effect.warning",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.effect.warning;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.effect.border",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.effect.border;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.effect.cooldown_bottom_left",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.effect.cooldown_bottom_left;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.effect.indicator",
+								type     : "select",
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.designer.effect.indicator;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.designer.dot.warning",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.dot.warning;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.dot.border",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.dot.border;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.dot.cooldown_bottom_left",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.designer.dot.cooldown_bottom_left;
+								}
+							},
+							{
+								key_path : "spells_mode.designer.dot.indicator",
+								type     : "select",
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.designer.dot.indicator;
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				path : "spells-ui",
+				sections : [
+					{
+						info     : () => LocalizationService.getSpellUIBuilderInfo(),
+						settings : [
+							{
+								key_path : "spells_mode.ui.use",
+								type     : "checkbox",
+								value    : function() {
+									return this.props.settings.spells_mode.ui.use;
+								}
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.ui.sections",
+								type     : "SpellsUITable",
+								options  : () => LocalizationService.getSpellTrackingOptions(),
+								value    : function() {
+									return this.props.settings.spells_mode.ui.sections;
 								}
 							}
 						]

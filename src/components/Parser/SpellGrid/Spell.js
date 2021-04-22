@@ -1,44 +1,120 @@
 import React from "react";
 
+import EmberComponent from "../../EmberComponent";
 import LocalizationService from "../../../services/LocalizationService";
+import AnimateService from "../../../services/AnimateService";
 
-class Spell extends React.Component {
-	render() {
-		let id        = this.props.spell.id;
-		let width     = ((this.props.cooldown / this.props.spell.recast) * 100) + "%";
-		let real_type = this.props.spell.type;
-		let type      = (this.props.spell.dot) ? "dot" : real_type;
-		let bg_x      = (this.props.settings[`reverse_${type}`]) ? "100%" : "0";
-		let classes   = ["spell-container"];
-		let icon      = () => {
-			if (!this.props.settings.show_icon) {
-				return "";
+class Spell extends EmberComponent {
+	constructor(props) {
+		super(props);
+
+		this.animate_ref   = React.createRef();
+		this.container_ref = React.createRef();
+		this.rendered      = false;
+	}
+
+	componentDidUpdate(prev_props) {
+		if (prev_props.cooldown && +this.props.cooldown > +prev_props.cooldown) {
+			if (this.animate_ref.current) {
+				this.animateTicker();
 			}
+		}
+	}
 
-			return(
-				<div className={"icon " + type}>
-					<img src={"img/icons/" + real_type + "s/" + id + ".jpg"} alt={real_type + "-" + id}/>
-				</div>
-			);
-		};
+	componentDidMount() {
+		if (this.animate_ref.current) {
+			this.animateTicker();
+		}
+	}
 
-		if (this.props.settings.minimal_layout) {
-			classes.push("minimal");
+	render() {
+		let id          = this.props.spell.id;
+		let real_type   = this.props.spell.type;
+		let type        = (this.props.spell.dot) ? "dot" : real_type;
+		let is_zero     = (+this.props.cooldown === 0);
+		let animate     = (!is_zero && this.props.indicator === "ticking") ? "animate" : false;
+		let classes     = [
+			"spell-container",
+			this.props.base_key,
+			type,
+			this.props.indicator
+		];
+		let breaker     = (this.props.layout === "icon" && +this.props.order % +this.props.spells_per_row === 0)
+			? <span key={"spell-breaker-" + this.props.base_key} className="breaker" style={{order: this.props.order}}></span>
+			: "";
+		let border      = "";
+		let style       = (!is_zero)
+			? `
+				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.${this.props.base_key}:not(.icon) .row.animate {
+					animation: horizontal ${this.props.spell.recast}s linear !important;
+				}
+			`
+			: "";
+		let timer     = (!is_zero && this.props.layout === "icon")
+			? ((animate)
+				? <canvas key={"spell-timer-" + this.props.base_key} className="timer" ref={(animate) ? this.animate_ref : ""}></canvas>
+				: <div key={"spell-timer-" + this.props.base_key} className="timer"></div>
+			)
+			: "";
+		let icon      = (!this.props.show_icon && this.props.layout !== "icon")
+			? ""
+			: <div key={"spell-icon-" + this.props.base_key} className={"icon " + type}>
+				<img src={"img/icons/" + real_type + "s/" + id + ".jpg"} alt={real_type + "-" + id}/>
+			</div>;
+
+		if (this.props.layout !== "normal") {
+			classes.push(this.props.layout);
 		}
 
-		if (this.props.cooldown <= this.props.settings.warning_threshold) {
+		if (this.props.reverse) {
+			classes.push("reverse");
+		}
+
+		if (!icon) {
+			classes.push("no-icon");
+		}
+
+		if (this.props.warning && this.props.cooldown <= this.props.warning_threshold && this.props.cooldown > 0) {
 			classes.push("warning");
 		}
 
+		if (this.props.border) {
+			classes.push("border");
+		}
+
+		if (icon && this.props.bottom_left) {
+			classes.push("bottom-left");
+		}
+
+		if (is_zero) {
+			classes.push("off-cooldown");
+		}
+
 		return(
-			<div className={classes.join(" ")} style={{order: this.props.order}}>
-				{icon()}
-				<div className="row" style={{backgroundSize: width + " 100%", backgroundPosition: bg_x + " 0"}}>
-					<span className="name">{this.getName(real_type)}</span>
-					<span className="cooldown">{this.props.cooldown}</span>
+			<React.Fragment>
+				<div key={"spell-container-" + this.props.base_key} className={classes.join(" ")} style={{order: this.props.order}} ref={this.container_ref}>
+					<style type="text/css" key={"spell-container-style-" + this.props.base_key}>
+						{style}
+					</style>
+					{icon}
+					<div key={"spell-row-" + this.props.base_key} className={"row " + animate} ref={animate && this.props.layout !== "icon" ? this.animate_ref : ""}>
+						<span key={"spell-name-" + this.props.base_key} className="name">{this.getName(real_type)}</span>
+						<span key={"spell-cooldown-" + this.props.base_key} className="cooldown">{(!is_zero) ? this.props.cooldown : ""}</span>
+					</div>
+					{border}
+					{timer}
 				</div>
-			</div>
+				{breaker}
+			</React.Fragment>
 		);
+	}
+
+	animateTicker() {
+		if (this.props.layout !== "icon") {
+			return;
+		}
+
+		AnimateService.animateTicker(this.animate_ref.current, this.props.spell.recast, this.props.reverse);
 	}
 
 	getName(type) {

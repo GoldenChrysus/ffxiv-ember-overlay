@@ -1,92 +1,100 @@
 import React from "react";
+import clone from "lodash.clonedeep";
 
-import SkillData from "../../constants/SkillData";
+import EmberComponent from "../EmberComponent";
 import LocalizationService from "../../services/LocalizationService";
-import TTSService from "../../services/TTSService";
 
 import OverlayInfo from "./PlayerTable/OverlayInfo";
 import Spell from "./SpellGrid/Spell";
 
-class SpellGrid extends React.Component {
-	timer          = null;
-	spells         = null;
-	pending_update = false;
-	mounted        = false;
-
+class SpellGrid extends EmberComponent {
 	constructor(props) {
 		super(props);
 
-		this.spells = {};
-		this.state  = {
-			spells : {}
+		this.mounted = false;
+		this.state   = {
+			active : false
 		};
-
-		this.processSpells(this.props.spells);
 	}
 
-	componentDidUpdate(prev_props) {
-		let new_spells = {};
-
-		for (let i in this.props.spells) {
-			if (!prev_props.spells[i] || prev_props.spells[i].time < this.props.spells[i].time) {
-				new_spells[i] = this.props.spells[i];
-			}
-		}
-
-		if (Object.keys(new_spells).length) {
-			this.processSpells(new_spells);
-		}
-	}
-
-	componentWillMount() {
-		this.mounted = true;
+	componentDidUpdate() {
+		this.determineState();
 	}
 
 	componentDidMount() {
-		if (this.pending_update) {
-			this.pending_update = false;
+		this.mounted = true;
 
-			this.processSpells();
+		this.determineState();
+	}
+
+	determineState() {
+		if (!this.state.active) {
+			let state = {
+				active : (
+					this.props.from_builder ||
+					(this.props.encounter && Object.keys(this.props.encounter).length) ||
+					Object.keys(this.props.spells).length
+				)
+			};
+
+			if (this.mounted) {
+				this.setState(state);
+			} else {
+				this.state = state;
+			}
 		}
 	}
 
-	componentWillUnmount() {
-		this.cancelTimer();
-	}
-
 	render() {
-		let overlay_info = ((this.props.encounter && Object.keys(this.props.encounter).length) || Object.keys(this.props.spells).length) ? "" : <OverlayInfo mode="spells" settings={this.props.settings}/>;
+		let overlay_info = (this.state.active) ? "" : <OverlayInfo mode="spells" settings={this.props.settings}/>;
 		let row_limit    = this.props.settings.spells_per_row;
+		let uuid         = this.props.settings.uuid || "default";
 		let width        = (100 / row_limit);
 		let spells       = this.buildSpells();
 		let style        = `
-			#root-inner:not(.right) #container #inner #content #spell-grid .spell-container {
+			#root-inner:not(.right) #container #inner #content .spell-grid[data-key="${uuid}"] .spell-container {
 				width: calc(${width}% - 5px);
 				margin-right: 5px;
 			}
 
-			#root-inner:not(.right) #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
+			#root-inner:not(.right) #container #inner #content .spell-grid[data-key="${uuid}"] .spell-container:nth-of-type(${row_limit}n) {
 				width: ${width}%;
 				margin-right: 0;
 			}
 
-			#root-inner.right #container #inner #content #spell-grid .spell-container {
+			#root-inner.right #container #inner #content .spell-grid[data-key="${uuid}"] .spell-container {
 				width: calc(${width}% - 5px);
 				margin-left: 5px;
 			}
 
-			#root-inner.right #container #inner #content #spell-grid .spell-container:nth-child(${row_limit}n) {
+			#root-inner.right #container #inner #content .spell-grid[data-key="${uuid}"] .spell-container:nth-of-type(${row_limit}n) {
 				width: ${width}%;
 				margin-left: 0px;
 			}
 		`;
+
+		let props   = clone(this.props);
+		let classes = [props.className || ""];
+
+		classes.push("spell-grid");
+
+		if (this.props.is_draggable) {
+			classes.push("draggable");
+		}
+
+		delete props.spells;
+		delete props.encounter;
+		delete props.settings;
+		delete props.section;
+		delete props.is_draggable;
+		delete props.from_builder;
 
 		return (
 			<React.Fragment>
 				<style type="text/css">
 					{style}
 				</style>
-				<div id="spell-grid" className="spell-grid" ref="spell_grid">
+				<div {...props} className={classes.join(" ")} data-key={uuid} ref="spell_grid">
 					{spells}
 				</div>
 				{overlay_info}
@@ -95,133 +103,88 @@ class SpellGrid extends React.Component {
 	}
 
 	buildSpells() {
-		let spells = Object.keys(this.state.spells);
-		let items  = [];
+		let uuid = this.props.settings.uuid || "default";
 
-		spells.sort((a, b) => {
-			if (+this.state.spells[a] === +this.state.spells[b]) {
-				return 0;
+		if (this.props.is_draggable) {
+			let text = [];
+
+			for (let value of this.props.section.types) {
+				value = value.split("-");
+				value = LocalizationService.getSpellTrackingOption(value[0], value[1]) || LocalizationService.getSpellTrackingOption(value[0], value[1], undefined, true);
+
+				if (value === false) {
+					continue;
+				}
+
+				text.push(value)
 			}
 
-			return (+this.state.spells[a] < +this.state.spells[b]) ? -1 : 1;
+			return <span>{text.join(", ")}</span>;
+		}
+
+		let spells           = Object.keys(this.props.spells);
+		let items            = [];
+		let decimal_accuracy = (this.props.settings.layout === "icon") ? 0 : 1;
+
+		spells.sort((a, b) => {
+			if (+this.props.spells[a].cooldown === +this.props.spells[b].cooldown) {
+				if (this.props.spells[a].type !== this.props.spells[b].type || this.props.spells[a].dot || this.props.spells[b].dot) {
+					if (this.props.spells[a].type === "skill") {
+						return -1;
+					} else if (this.props.spells[b].type === "skill") {
+						return 1;
+					}
+
+					if (!this.props.spells[a].dot) {
+						return -1;
+					} else if (!this.props.spells[b].dot) {
+						return 1;
+					}
+
+					return (this.props.spells[a].name < this.props.spells[b].name) ? -1 : 1;
+				} else {
+					return (this.props.spells[a].name < this.props.spells[b].name) ? -1 : 1;
+				}
+			}
+
+			return (+this.props.spells[a].cooldown < +this.props.spells[b].cooldown) ? -1 : 1;
 		});
 
 		for (let i in spells) {
-			let key = spells[i];
+			let key      = spells[i];
+			let spell    = this.props.spells[key];
+			let type     = spell.subtype;
+			let party    = (spell.party) ? "party_" : "";
+			let cooldown = spell.cooldown;
 
-			items.push(<Spell key={key} order={+i + 1} spell={this.spells[key]} cooldown={this.state.spells[key]} settings={this.props.settings}/>);
+			if (cooldown <= 9.9) {
+				cooldown = cooldown.toFixed(1);
+			} else {
+				cooldown = cooldown.toFixed(decimal_accuracy);
+			}
+
+			items.push(
+				<Spell
+					key={key}
+					base_key={key}
+					order={+i + 1}
+					grid_uuid={uuid}
+					spell={spell}
+					cooldown={cooldown}
+					reverse={this.props.settings[`${party}reverse_${type}`]}
+					layout={this.props.settings.layout}
+					spells_per_row={this.props.settings.spells_per_row}
+					show_icon={this.props.settings.show_icon}
+					warning_threshold={this.props.settings.warning_threshold}
+					warning={this.props.settings.designer[type].warning}
+					border={this.props.settings.designer[type].border}
+					indicator={this.props.settings.designer[type].indicator}
+					bottom_left={this.props.settings.designer[type].cooldown_bottom_left}
+				/>
+			);
 		}
 
 		return items;
-	}
-
-	processSpells(spells) {
-		let state = this.state;
-
-		for (let i in spells) {
-			let date     = spells[i].time;
-			let new_date = new Date(date);
-			let recast   = 0;
-			let dot      = false;
-
-			switch (spells[i].type) {
-				case "skill":
-					recast = SkillData.oGCDSkills[spells[i].id].recast;
-
-					break;
-
-				case "effect":
-					recast = spells[i].duration;
-					dot    = SkillData.Effects[spells[i].id].dot;
-
-					break;
-
-				default:
-					break;
-			}
-
-			new_date.setSeconds(date.getSeconds() + recast);
-
-			this.spells[i] = {
-				type   : spells[i].type,
-				id     : spells[i].id,
-				time   : new_date,
-				name   : spells[i].name,
-				recast : recast,
-				dot    : dot
-			};
-
-			state.spells[i] = recast;
-		}
-		
-		if (this.mounted) {
-			this.setState(state);
-
-			if (this.timer === null) {
-				this.startTimer();
-			}
-		} else {
-			this.pending_update = true;
-		}
-	}
-
-	cancelTimer() {
-		if (this.timer) {
-			clearInterval(this.timer);
-
-			this.timer = null;
-		}
-	}
-
-	startTimer() {
-		this.timer = setInterval(
-			this.updateCooldowns.bind(this),
-			100
-		);
-	}
-
-	updateCooldowns() {
-		let now   = new Date();
-		let state = this.state;
-
-		for (let i in this.spells) {
-			let diff = this.spells[i].time - now;
-
-			if (diff <= 0) {
-				if (this.props.settings.use_tts) {
-					let name = this.spells[i].name;
-
-					if (!name) {
-						switch (this.spells[i].type) {
-							case "skill":
-								TTSService.sayNow(LocalizationService.getoGCDSkillName(this.spells[i].id));
-								break;
-
-							case "effect":
-								TTSService.sayNow(LocalizationService.getEffectName(this.spells[i].id));
-								break;
-
-							default:
-								break;
-						}
-					}
-
-					TTSService.sayNow(name);
-				}
-
-				delete this.spells[i];
-				delete this.state.spells[i];
-				continue;
-			}
-
-			state.spells[i] = (diff / 1000).toFixed(1);
-		}
-
-		if (!Object.keys(this.state.spells)) {
-			this.cancelTimer();
-		}
-
-		this.setState(state);
 	}
 }
 

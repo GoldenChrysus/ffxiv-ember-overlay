@@ -4,6 +4,7 @@ import LocalizationService from "./LocalizationService";
 import UsageService from "./UsageService";
 
 class TTSService {
+	timer = null;
 	state = {
 		top                : {},
 		critical           : [],
@@ -19,12 +20,23 @@ class TTSService {
 		aggro     : {},
 		encounter : []
 	};
+	last  = {
+		spells : {}
+	};
 
 	start() {
-		setInterval(
+		this.timer = setInterval(
 			this.processQueue.bind(this),
 			1500
 		);
+	}
+
+	stop() {
+		if (this.timer !== null) {
+			clearInterval(this.timer);
+
+			this.timer = null;
+		}
 	}
 
 	updateRules(rules) {
@@ -159,6 +171,33 @@ class TTSService {
 
 	sayNow(message) {
 		store.getState().plugin_service.tts(message);
+	}
+
+	saySpell(key, id, type, name) {
+		let date = new Date();
+
+		if (this.last.spells[key] && date.getTime() - this.last.spells[key].getTime() <= 500) {
+			return;
+		}
+
+		if (!name) {
+			switch (type) {
+				case "skill":
+					name = LocalizationService.getoGCDSkillName(id);
+					break;
+
+				case "effect":
+					name = LocalizationService.getEffectName(id);
+					break;
+
+				default:
+					break;
+			}
+		}
+
+		this.last.spells[key] = date;
+
+		this.sayNow(name);
 	}
 
 	processQueue() {

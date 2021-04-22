@@ -34,11 +34,12 @@ class Parser extends React.Component {
 	componentDidUpdate() {
 		if (this.props.mode === "spells") {
 			if (this.props.has_spells !== this.state.collapsed_modes.spells) {
-				let state = this.state;
-
-				state.collapsed_modes.spells = this.props.has_spells;
-
-				this.setState(state);
+				this.setState({
+					collapsed_modes : {
+						...this.state.collapsed_modes,
+						spells : this.props.has_spells
+					}
+				});
 			}
 		}
 	}
@@ -62,17 +63,26 @@ class Parser extends React.Component {
 	}
 
 	render() {
-		let collapsed          = ((this.props.collapsed && this.props.viewing === "tables") || this.state.collapsed_modes[this.props.mode]);
 		let is_spells          = (this.props.mode === "spells");
+		let collapsed          = ((!is_spells && this.props.collapsed && this.props.viewing === "tables") || this.state.collapsed_modes[this.props.mode]);
 		let collapse_down      = this.shouldCollapseDown(is_spells);
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
 		let zoom               = this.props.zoom / 100;
+		let context_zoom       = 1 / zoom;
 		let display            = (this.state.visible) ? "block" : "none";
 		let setting_style      = `
 			body {
 				zoom: ${zoom};
 				display: ${display};
+			}
+
+			.container-context-menu {
+				zoom: ${context_zoom};
+			}
+
+			.container-context-menu .item-group {
+				zoom: ${zoom};
 			}
 
 			#container {
@@ -85,7 +95,9 @@ class Parser extends React.Component {
 		`;
 
 		if (collapsed) {
-			root_inner_classes.push("auto-height");
+			if (!is_spells || !this.props.using_ui_builder) {
+				root_inner_classes.push("auto-height");
+			}
 
 			if (collapse_down) {
 				root_inner_classes.push("down");
@@ -131,11 +143,12 @@ const mapStateToProps = (state) => {
 		theme                    : state.settings.interface.theme,
 		auto_hide                : state.settings.interface.auto_hide,
 		auto_hide_delay          : state.settings.interface.auto_hide_delay,
-		last_activity            : state.last_activity,
+		last_activity            : (state.settings.interface.auto_hide) ? state.last_activity : 0,
 		mode                     : state.internal.mode,
 		invert_spells_vertical   : state.settings.spells_mode.invert_vertical,
 		invert_spells_horizontal : state.settings.spells_mode.invert_horizontal,
 		has_spells               : (Object.keys(state.internal.spells.in_use).length > 0),
+		using_ui_builder         : state.settings.spells_mode.ui.use,
 	};
 };
 

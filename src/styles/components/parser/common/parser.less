@@ -13,6 +13,10 @@ body.mode-spells {
 	box-sizing          : border-box;
 }
 
+.white-background {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
 .icon-container {
 	display       : inline-block;
 	padding       : 2px 2px;
@@ -110,6 +114,10 @@ body.mode-spells {
 			box-shadow: inset 0 1px 1px 0 @classic_borderOuter, inset 0 0 1px 0 @classic_borderOuterShadow, 0 0 1px 1px @classic_borderOuterGlow, 0 1px 1px 1px @classic_borderOuterGlow;
 		}
 	);
+}
+
+#container.ui-builder-active {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFyGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDg4LCAyMDIwLzA3LzEwLTIyOjA2OjUzICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIxLTA0LTE0VDIzOjM5OjUxKzA5OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTA0LTE0VDIzOjM5OjUxKzA5OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMS0wNC0xNFQyMzozOTo1MSswOTowMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpiOGZmNjBhNy1mMjc4LWMzNDMtYmQzMS03OGY5ZjY1MDY0NDciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo4ZWEwYmVhNC05YTExLWVlNDUtYTllNS0wOTRjN2NmZjhlZGEiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplNTE0OWFlMC1hMWIwLTljNGEtYmMyMi00YWRjY2RkN2VhMDQiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDplNTE0OWFlMC1hMWIwLTljNGEtYmMyMi00YWRjY2RkN2VhMDQiIHN0RXZ0OndoZW49IjIwMjEtMDQtMTRUMjM6Mzk6NTErMDk6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi4wIChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YjhmZjYwYTctZjI3OC1jMzQzLWJkMzEtNzhmOWY2NTA2NDQ3IiBzdEV2dDp3aGVuPSIyMDIxLTA0LTE0VDIzOjM5OjUxKzA5OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuMCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8++f05zwAAAB5JREFUGBljCAwMLCQGM4CI////G+PDowqJU0gMBgDGD/4RIE0USgAAAABJRU5ErkJggg==');
 }
 
 #container #inner {
@@ -1124,20 +1132,84 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid {
+
+#root-inner #container #inner #content #lock-warning {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#root-inner #container #inner #content #lock-warning span {
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#container #inner #content .spell-grid {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-#root-inner.down #container #inner #content #spell-grid {
+#root-inner.down #container #inner #content .spell-grid {
 	flex-wrap: wrap-reverse;
 }
 
-#root-inner.right #container #inner #content #spell-grid {
+#root-inner.right #container #inner #content .spell-grid {
 	flex-direction: row-reverse;
 }
 
-#container #inner #content #spell-grid .spell-container {
+#root-inner #container #inner #content .spell-grid.draggable {
+	opacity: 0.7;
+	padding: 5px;
+
+	.setThemeStyle(
+		@defaultTheme: {
+			background-color: @dark_borderOuterShadow;
+		},
+		@lightTheme: {
+			background-color: @light_containerBackground;
+		},
+		@classicTheme: {
+			background-color: @classic_borderOuterShadow;
+		}
+	)
+}
+
+#root-inner #container #inner #content .spell-grid.draggable span {
+	cursor: move;
+}
+
+#root-inner #container #inner #content .spell-grid.draggable span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	overflow: hidden;
+
+	.setThemeStyle(
+		@defaultTheme: {
+			background-image: @dark_contentBackground;
+			color: @dark_headerAndLinkText;
+		},
+		@lightTheme: {
+			background-image: @light_contentBackground;
+			color: @light_headerAndLinkText;
+		},
+		@classicTheme: {
+			background-image: @classic_contentBackground;
+			color: @classic_headerAndLinkText;
+		}
+	);
+}
+
+#container #inner #content .spell-grid .spell-container {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -1147,6 +1219,8 @@ body.mode-spells {
 	float: left;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	position: relative;
+	border-radius: 5px;
 
 	.setThemeStyle(
 		{
@@ -1164,18 +1238,34 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid .spell-container.minimal {
+#container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
+	animation: pulsing-border-dark 3s infinite;
+}
+
+body[theme=ffxiv-light] #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
+	animation: pulsing-border-light 3s infinite !important;
+}
+
+body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
+	animation: pulsing-border-classic 3s infinite !important;
+}
+
+#container #inner #content .spell-grid .spell-container.compact {
 	height: 20px;
 }
 
-#container #inner #content #spell-grid .spell-container .icon {
+#container #inner #content .spell-grid .spell-container.icon {
+	flex: 1 0 33%;
+}
+
+#container #inner #content .spell-grid .spell-container .icon {
 	flex: 0 0 100%;
 	width: 40px;
 	height: 40px;
 	position: relative;
 }
 
-#container #inner #content #spell-grid .spell-container .icon img {
+#container #inner #content .spell-grid .spell-container .icon img {
 	max-width: 100%;
 	max-height: 40px;
 	display: block;
@@ -1185,35 +1275,44 @@ body.mode-spells {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-#container #inner #content #spell-grid .spell-container .icon.effect img {
+#container #inner #content .spell-grid .spell-container .icon.effect img {
 	transform: translateX(-50% + 4px) translateY(-50% + 6px);
 }
 
-#container #inner #content #spell-grid .spell-container .icon.dot img {
+#container #inner #content .spell-grid .spell-container .icon.dot img {
 	transform: translateX(-50% + 4px) translateY(-50% - 6px);
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .icon {
+#container #inner #content .spell-grid .spell-container.compact .icon {
 	width: 20px;
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .icon img {
+#container #inner #content .spell-grid .spell-container.compact .icon img {
 	max-height: 20px;
 }
 
-#container #inner #content #spell-grid .spell-container.warning .icon,
-#container #inner #content #spell-grid .spell-container.warning .row {
-	animation-name: pulsate;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	animation-delay: 0s;
+#container #inner #content .spell-grid .spell-container.darkened:not(.icon):not(.off-cooldown) .icon img {
+	opacity: 0.4;
 }
 
-#container #inner #content #spell-grid .spell-container .row {
+#container #inner #content .spell-grid .spell-container.icon {
+	max-width: 40px;
+	position: relative;
+}
+
+#container #inner #content .spell-grid .spell-container.icon .icon {
+	position: absolute;
+}
+
+#container #inner #content .spell-grid .spell-container.warning {
+	animation: pulsate 2s linear;
+	animation-iteration-count: 5;
+}
+
+#container #inner #content .spell-grid .spell-container .row {
 	flex: 0 0 100%;
 	position: relative;
-	width: calc(100% - 43px);
+	width: calc(100% - 40px);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	padding: 0 0 0 6px;
@@ -1232,11 +1331,58 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .row {
-	width: calc(100% - 23px);
+#container #inner #content .spell-grid .spell-container:not(.icon) .row {
+	background-position-x: 3px;
 }
 
-#container #inner #content #spell-grid .spell-container.warning .row {
+#container #inner #content .spell-grid .spell-container .row {
+	border-radius: 0 5px 5px 0;
+}
+
+#container #inner #content .spell-grid .spell-container.icon .row {
+	border-radius: 5px;
+}
+
+#container #inner #content .spell-grid .spell-container.reverse .row {
+	background-position: 100% 0;
+}
+
+#container #inner #content .spell-grid .spell-container.compact .row {
+	width: calc(100% - 20px);
+}
+
+#container #inner #content .spell-grid .spell-container.reverse .row {
+	background-position: 100% 0;
+}
+
+#container #inner #content .spell-grid .spell-container.no-icon .row {
+	width: 100% !important;
+}
+
+#container #inner #content .spell-grid .spell-container.icon .row {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	z-index: 1;
+}
+
+#container #inner #content .spell-grid .spell-container.icon:not(.warning) .row {
+	background-image: none !important;
+}
+
+#container #inner #content .spell-grid .spell-container.icon .timer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0.02px;
+	border-radius: 5px;
+}
+
+#container #inner #content .spell-grid .spell-container.icon.darkened .timer {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+#container #inner #content .spell-grid .spell-container.warning .row {
 	.setThemeStyle(
 		{
 			background-image: @dark_spellWarningBackground;
@@ -1250,27 +1396,31 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid .spell-container .row:nth-child(1) {
+#container #inner #content .spell-grid .spell-container .row:nth-child(1) {
 	width: 100%;
 }
 
-#container #inner #content #spell-grid .spell-container .row span {
+#container #inner #content .spell-grid .spell-container .row span {
 	display: block;
 }
 
-#container #inner #content #spell-grid .spell-container .row .name {
+#container #inner #content .spell-grid .spell-container .row .name {
 	font-weight: bold;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .row .name {
+#container #inner #content .spell-grid .spell-container.compact .row .name {
 	float: left;
 	max-width: 50%;
 }
 
-#container #inner #content #spell-grid .spell-container .row .cooldown {
+#container #inner #content .spell-grid .spell-container.icon .row .name {
+	display: none;
+}
+
+#container #inner #content .spell-grid .spell-container .row .cooldown {
 	.setThemeStyle(
 		{
 			color: @dark_headerAndLinkText
@@ -1284,9 +1434,36 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #spell-grid .spell-container.minimal .row .cooldown {
-	float: right;
+#container #inner #content .spell-grid .spell-container.compact .row .cooldown {
 	padding-right: 6px;
+	position: absolute;
+	right: 0;
+}
+
+#container #inner #content .spell-grid .spell-container.icon .row .cooldown {
+	color: @dark_headerAndLinkText !important;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	font-weight: bold;
+	/* text-shadow: 2px 2px 2px #000, 3px 3px 2px #000, -1px -1px 5px #000, -2px -1px 2px #000, -4px 0 4px #000, 4px 0 4px #000; */
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.9), -1px 1px 1px rgba(0, 0, 0, 0.9), 2px 2px 1px rgba(0, 0, 0, 0.9), 2px -2px 2px rgba(0, 0, 0, 0.9);
+}
+
+#container #inner #content .spell-grid .spell-container.icon.bottom-left .row .cooldown {
+	top: 100%;
+	transform: translateY(-100%);
+	width: auto;
+	padding-left: 4px;
+}
+
+#container #inner #content .spell-grid .breaker {
+	display: block;
+	flex: 1 0 100%;
+	height: 0;
 }
 
 .placeholder {
@@ -1487,6 +1664,46 @@ body.mode-spells {
 
 	25%, 75% {
 		opacity: 0.2;
+	}
+}
+
+@keyframes horizontal {
+	0% {
+		background-size: 100% 100%;
+	}
+
+	100% {
+		background-size: 0% 100%;
+	}
+}
+
+@keyframes pulsing-border-dark {
+	0%, 100% {
+		box-shadow: 0 0 3px @dark_importantText;
+	}
+
+	50% {
+		box-shadow: 0 0 7px @dark_borderOuter;
+	}
+}
+
+@keyframes pulsing-border-light {
+	0%, 100% {
+		box-shadow: 0 0 3px @light_placeholderInnerBackground;
+	}
+
+	50% {
+		box-shadow: 0 0 7px @light_borderOuter;
+	}
+}
+
+@keyframes pulsing-border-classic {
+	0%, 100% {
+		box-shadow: 0 0 3px @classic_playerTableRowText;
+	}
+
+	50% {
+		box-shadow: 0 0 7px @classic_borderOuter;
 	}
 }
 

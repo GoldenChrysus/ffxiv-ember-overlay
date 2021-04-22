@@ -1,4 +1,5 @@
 import React from "react";
+import clone from "lodash.clonedeep";
 import $ from "jquery";
 
 import LocalizationService from "../../../../services/LocalizationService";
@@ -78,8 +79,8 @@ class Table extends React.Component {
 	}
 
 	handleDelete(e) {
-		let key      = $(e.currentTarget).closest("tr").attr("data-select-value") || $(e.currentTarget).closest("tr").attr("data-key");
-		let rows     = this.state.rows;
+		let key      = this.getDeleteKey(e);
+		let rows     = clone(this.state.rows);
 		let key_data = key.split(".");
 
 		delete rows[key];
@@ -94,6 +95,10 @@ class Table extends React.Component {
 			rows : rows
 		});
 		this.syncData();
+	}
+
+	getDeleteKey(e) {
+		return $(e.currentTarget).closest("tr").attr("data-select-value")
 	}
 
 	syncData() {

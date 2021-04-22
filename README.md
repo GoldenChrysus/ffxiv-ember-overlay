@@ -26,6 +26,17 @@ Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and c
 ## Discord
 Join the Discord server to receive live updates, report bugs, or request features at: [https://discord.io/emberoverlay](https://discord.io/emberoverlay)
 
+## Navigation
+- <a href="#features">Features</a>
+- <a href="#installation">Installation</a>
+- <a href="#changelog">Changelog</a>
+- <a href="#staging-site">Staging Site</a>
+- <a href="#credits">Credits</a>
+- <a href="#building">Building</a>
+- <a href="#contributing">Contributing</a>
+- <a href="#license">License</a>
+- <a href="#copyright">Copyright</a>
+
 ## Features
 ### Informative tabs for damage, healing, tanking, raiding, and aggro.
 ![DPS tab](https://i.imgur.com/EjRWhdU.png "DPS tab")

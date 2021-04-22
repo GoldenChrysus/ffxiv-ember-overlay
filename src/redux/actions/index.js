@@ -90,6 +90,14 @@ export function changeCollapse(payload) {
 	};
 }
 
+export function changeUIBuilder(payload) {
+	return {
+		type   : "changeUIBuilder",
+		key    : "internal.ui_builder",
+		payload
+	};
+}
+
 export function changeTableType(payload) {
 	return {
 		type   : "setSetting",

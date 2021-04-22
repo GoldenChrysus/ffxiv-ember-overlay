@@ -1,4 +1,5 @@
 import store from "../redux/store/index";
+import clone from "lodash.clonedeep";
 
 import Constants from "../constants/index";
 import SkillData from "../constants/SkillData";
@@ -273,77 +274,197 @@ class GameDataProcessor  {
 
 	parseSpellLogLine(data, state) {
 		data = data.line;
-		
-		let in_use = false;
-		let date   = new Date();
 
-		switch (+data[0]) {
+		let date       = new Date();
+		let event_code = +data[0];
+		let log_data   = {
+			suffix : ""
+		};
+
+		switch (event_code) {
 			case 21:
 			case 22:
-				let skill_id = String(parseInt(data[4], 16));
+				log_data.spell_index      = 4;
+				log_data.char_id_index    = 2;
+				log_data.spell_name_index = 5;
+				log_data.char_name_index  = log_data.char_id_index + 1;
+				log_data.type             = "skill";
+				log_data.subtype          = log_data.type;
+				log_data.lookup_key       = "spells";
 
-				if (state.internal.character_id !== parseInt(data[2], 16)) {
-					return in_use;
-				}
-
-				if (state.settings.spells_mode.spells.indexOf(skill_id) === -1) {
-					return in_use;
-				}
-
-				if (in_use === false) {
-					in_use = {};
-				}
-
-				in_use[`skill-${skill_id}`] = {
-					type : "skill",
-					id   : skill_id,
-					time : date,
-					name : data[5]
-				};
-
-				return in_use;
+				break;
 
 			case 26:
-				let effect_id = String(parseInt(data[2], 16));
+			case 30:
+				log_data.spell_index = 2;
+
+				let effect_id = String(parseInt(data[log_data.spell_index], 16));
 
 				if (!SkillData.Effects[effect_id]) {
-					return in_use;
+					return false;
 				}
 
-				let valid_names  = [];
-				let dot          = SkillData.Effects[effect_id].dot;
-				let player_index = (dot) ? 5 : 7;
-				let setting_key  = (dot) ? "dots" : "effects";
+				log_data.type             = "effect";
+				log_data.dot              = SkillData.Effects[effect_id].dot;
+				log_data.subtype          = (log_data.dot) ? "dot" : log_data.type;
+				log_data.lookup_key       = log_data.subtype + "s";
+				log_data.char_id_index    = (log_data.dot) ? 5 : 7;
+				log_data.char_name_index  = log_data.char_id_index + 1;
+				log_data.spell_name_index = 3;
+				log_data.duration_index   = 4;
 
-				if (state.internal.character_id !== parseInt(data[player_index], 16)) {
-					return in_use;
-				}
-
-				for (let id of state.settings.spells_mode[setting_key]) {
-					valid_names.push(LocalizationService.getEffectName(id, "en"));
-				}
-
-				if (valid_names.indexOf(LocalizationService.getEffectName(effect_id, "en")) === -1) {
-					return in_use;
-				}
-
-				if (in_use === false) {
-					in_use = {};
-				}
-
-				in_use[`effect-${effect_id}`] = {
-					type     : "effect",
-					id       : effect_id,
-					time     : date,
-					name     : data[3],
-					duration : +data[4]
-				};
-
-				return in_use;
+				break;
 
 			default:
-				return in_use;
+				return false;
 		}
+
+		log_data.spell_id  = String(parseInt(data[log_data.spell_index], 16));
+		log_data.char_id   = parseInt(data[log_data.char_id_index], 16);
+		log_data.char_type = (state.internal.character_id === log_data.char_id) ? "you" : false;
+		log_data.party     = (log_data.char_type !== "you");
+
+		if (!log_data.char_type) {
+			log_data.char_name = data[log_data.char_name_index];
+
+			if (!state.internal.game.Combatant || !state.internal.game.Combatant[log_data.char_name]) {
+				return false;
+			}
+
+			log_data.job = (state.internal.game.Combatant[log_data.char_name].Job || "").toUpperCase();
+
+			if (!Constants.GameJobs[log_data.job]) {
+				return false;
+			}
+
+			log_data.char_type  = (state.settings.spells_mode.ui.use) ? Constants.GameJobs[log_data.job].role : "party";
+			log_data.lookup_key = "party_" + log_data.lookup_key;
+			log_data.suffix     = "party";
+		}
+
+		if (
+			!state.internal.spells.allowed_types[log_data.subtype][log_data.char_type] &&
+			!state.internal.spells.allowed_types[log_data.subtype][log_data.job]
+		) {
+			return false;
+		}
+
+		if (log_data.type === "effect") {
+			let valid_names = [];
+
+			for (let id of state.settings.spells_mode[log_data.lookup_key]) {
+				valid_names.push(LocalizationService.getEffectName(id, "en"));
+			}
+
+			log_data.english_name = LocalizationService.getEffectName(log_data.spell_id, "en");
+
+			if (valid_names.indexOf(log_data.english_name) === -1) {
+				return false;
+			}
+		} else {
+			if (state.settings.spells_mode[log_data.lookup_key].indexOf(log_data.spell_id) === -1) {
+				return false;
+			}
+
+			log_data.english_name = LocalizationService.getoGCDSkillName(log_data.spell_id, "en");
+		}
+
+		let state_data    = clone(state.internal.spells);
+		let defaulted_key = `${log_data.type}-${log_data.english_name}`;
+		let suffixes      = [];
+
+		if (!log_data.party) {
+			suffixes.push("");
+		} else {
+			if (state.internal.spells.allowed_types[log_data.subtype][log_data.char_type]) {
+				suffixes.push(log_data.char_type);
+			}
+
+			if (state.settings.spells_mode.ui.use && state.internal.spells.allowed_types[log_data.subtype][log_data.job]) {
+				suffixes.push(log_data.job);
+			}
+		}
+
+		if (!log_data.party) {
+			if (event_code === 30) {
+				if (state_data.defaulted[defaulted_key]) {
+					if (state_data.defaulted[defaulted_key].id !== log_data.spell_id) {
+						delete state_data.defaulted[state_data.defaulted[defaulted_key].key];
+
+						state_data.defaulted[defaulted_key].id = log_data.spell_id;
+					}
+
+					return state_data;
+				}
+			} else {
+				if (state_data.defaulted[defaulted_key] && state_data.defaulted[defaulted_key].id !== log_data.spell_id) {
+					delete state_data.defaulted[state_data.defaulted[defaulted_key].key];
+				}
+			}
+		}
+
+		for (let suffix of suffixes) {
+			log_data.in_use_key = `${log_data.type}-${log_data.spell_id}`;
+
+			if (suffix) {
+				log_data.in_use_key += `-${suffix}`;
+
+				if (suffix !== "party") {
+					log_data.char_type = suffix;
+				}
+			}
+
+			if (event_code === 30) {
+				delete state_data.in_use[log_data.in_use_key];
+			} else {
+				state_data.in_use[log_data.in_use_key] = {
+					type     : log_data.type,
+					id       : log_data.spell_id,
+					time     : date,
+					name     : data[log_data.spell_name_index],
+					duration : (log_data.duration_index) ? +data[log_data.duration_index] : 0,
+					log_type : log_data.char_type + "-" + log_data.subtype,
+					party    : log_data.party,
+				};
+			}
+		}
+
+		return state_data;
+	}
+
+	getAllowedSpellTypes(state) {
+		let types = {
+			skill  : {
+				you   : true,
+				party : true
+			},
+			effect : {
+				you   : true,
+				party : true
+			},
+			dot    : {
+				you   : true,
+				party : true
+			}
+		};
+
+		if (state.settings.spells_mode.ui.use) {
+			types.skill.you  = false;
+			types.effect.you = false;
+			types.dot.you    = false;
+
+			for (let uuid in state.settings.spells_mode.ui.sections) {
+				let section = state.settings.spells_mode.ui.sections[uuid];
+
+				for (let type of section.types) {
+					let data = type.split("-");
+
+					types[data[1]][data[0]] = true;
+				}
+			}
+		}
+
+		return types;
 	}
 }
 

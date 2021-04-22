@@ -110,8 +110,10 @@ class LocalizationService {
 		return SettingsLocales.sections[section].subsections[index][this.getLanguage()] || SettingsLocales.sections[section].subsections[index].en; 
 	}
 
-	getSettingText(key_path) {
-		return SettingsLocales.setting_labels[key_path][this.getLanguage()] || SettingsLocales.setting_labels[key_path].en;
+	getSettingText(key_path, language) {
+		language = language || this.getLanguage();
+
+		return SettingsLocales.setting_labels[key_path][language] || SettingsLocales.setting_labels[key_path].en;
 	}
 
 	getPlayerShortNameOptions() {
@@ -142,8 +144,12 @@ class LocalizationService {
 		];
 	}
 
-	getMisc(key) {
-		let language = this.getLanguage();
+	getMisc(key, language) {
+		if (!SettingsLocales.misc[key]) {
+			return false;
+		}
+
+		language = language || this.getLanguage();
 
 		return SettingsLocales.misc[key][language] || SettingsLocales.misc[key].en;
 	}
@@ -208,6 +214,145 @@ class LocalizationService {
 			return (a.text < b.text) ? -1 : 1;
 		});
 
+		return options;
+	}
+
+	getSpellTrackingOption(role, type, language, is_job) {
+		let misc = SettingsLocales.misc.spells;
+
+		if ((!is_job && !misc.roles[role]) || (is_job && !Constants.GameJobs[role])) {
+			return false;
+		}
+
+		language = language || this.getLanguage();
+
+		role = (is_job) ? role : (misc.roles[role][language] || misc.roles[role].en);
+		type = misc.types[type][language] || misc.types[type].en;
+
+		return `${role}: ${type}`;
+	}
+
+	getSpellTrackingOptions() {
+		let language = this.getLanguage();
+		let options  = [];
+
+		for (let role in SettingsLocales.misc.spells.roles) {
+			for (let type in SettingsLocales.misc.spells.types) {
+				let key = `${role}-${type}`;
+
+				options.push({
+					key     : key,
+					value   : key,
+					is_role : true,
+					role    : role,
+					text    : this.getSpellTrackingOption(role, type, language)
+				});
+			}
+		}
+
+		for (let job in Constants.GameJobs) {
+			for (let type in SettingsLocales.misc.spells.types) {
+				let key = `${job}-${type}`;
+
+				options.push({
+					key     : key,
+					value   : key,
+					is_role : false,
+					role    : job,
+					text    : this.getSpellTrackingOption(job, type, language, true)
+				});
+			}
+		}
+
+		options.sort((a, b) => {
+			if (a.role === b.role) {
+				return (a.text < b.text) ? -1 : 1;
+			}
+
+			if (a.role === "you") {
+				return -1;
+			} else if (b.role === "you") {
+				return 1;
+			}
+
+			if (a.is_role && !b.is_role) {
+				return -1;
+			} else if (!a.is_role && b.is_role) {
+				return 1;
+			}
+
+			return (a.role < b.role) ? -1 : 1;
+		});
+
+		return options;
+	}
+
+	getSpellsTTSTriggerOptions() {
+		let language = this.getLanguage();
+		let data_set = SettingsLocales.misc.spells.tts_trigger_options[language] || SettingsLocales.misc.spells.tts_trigger_options.en;
+		let options  = [];
+
+		for (let key in data_set) {
+			options.push({
+				key   : key,
+				value : key,
+				text  : data_set[key]
+			});
+		}
+		
+		return options;
+	}
+
+	getSpellLayoutOptions(include_default) {
+		let language = this.getLanguage();
+		let data_set = SettingsLocales.misc.spells.layout_options[language] || SettingsLocales.misc.spells.layout_options.en;
+		let options  = [];
+
+		if (include_default) {
+			options.push({
+				key   : "default",
+				value : "default",
+				text  : this.getMisc("default")
+			});
+		}
+
+		for (let key in data_set) {
+			options.push({
+				key   : key,
+				value : key,
+				text  : data_set[key]
+			});
+		}
+		
+		return options;
+	}
+
+	getSpellUIBuilderInfo() {
+		let language = this.getLanguage();
+		let info     = this.getMisc("spells_ui_builder_info", language);
+
+		for (let match of info.match(/\{\{[\w.]+}}/g)) {
+			let key = match.replace(/\{|}/g, "");
+
+			info = info.replace(match, this.getMisc(key, language) || this.getSettingText(key, language));
+		}
+
+		return info;
+	}
+
+	getSpellDesignerIndicatorOptions() {
+		let language = this.getLanguage();
+		let data_set = SettingsLocales.misc.spells.indicator_options[language] || SettingsLocales.misc.spells.indicator_options.en;
+		let options  = [];
+
+		for (let key in data_set) {
+			options.push({
+				key   : key,
+				value : key,
+				text  : data_set[key]
+			});
+		}
+		
 		return options;
 	}
 }

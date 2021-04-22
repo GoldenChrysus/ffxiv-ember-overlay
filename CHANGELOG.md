@@ -1,5 +1,37 @@
 # Changelog
 
+## 0.26.0-alpha
+
+**Released: 2021-04-22**
+
+### Bug Fixes
+- Resolved issue where context menu was misplaced when using a non-100 zoom setting
+
+### Features
+- Added setting "Text to Speech Trigger" to allow choosing when the TTS alert should trigger
+- Added new setting tab "Party Spell Timers" to set spells that should be tracked for other party/alliance members
+- Added icon-only spell timer layout at Spell Timers > Layout; enabling this will override the setting to show/hide spell icons
+- Add new setting tab "Spell Designer" for customizing the appearance of timers
+- Added spell timer custom UI builder
+    - New setting tab "UI Builder" allows creation of spell timer sections that track only the spell types you choose
+    - Setting "Use UI Builder" in the UI Builder tab must be enabled for changes to take effect
+    - In the overlay, right clicking and choosing "Edit UI" will allow you to drag and resize the spell timer sections you created
+    - UI position/size edits are saved after right clicking and choosing "Save UI"
+    - If you are unable to right click on your overlay (i.e. the overlay is empty), you can either:
+        - Cast a spell that you're already tracking, then you will be able to right click on the spell timer
+        - In OverlayPlugin, turn off the "Lock overlay" option or turn on the "Force white background" option
+            - Be sure to turn off the white background or lock your overlay once you've chosen "Edit UI" or opened your settings
+            - A warning will appear asking you to lock your overlay again once you choose "Edit UI" after unlocking the overlay
+
+### UI Changes
+- Setting at Spell Timers > Use Minimal Layout has been renamed to "Layout" to allow for the icon-only layout
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.25.1-alpha
 
 **Released: 2021-04-14**

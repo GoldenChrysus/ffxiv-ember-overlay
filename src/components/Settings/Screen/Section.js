@@ -7,6 +7,7 @@ import LocalizationService from "../../../services/LocalizationService";
 
 import MetricNameTable from "./Inputs/Table/MetricNameTable";
 import TTSRulesTable from "./Inputs/Table/TTSRulesTable";
+import SpellsUITable from "./Inputs/Table/SpellsUITable";
 import Slider from "./Inputs/Slider";
 
 class Section extends React.Component {
@@ -40,6 +41,9 @@ class Section extends React.Component {
 
 	render() {
 		let settings = [];
+		let info     = (this.props.data.info)
+			? <p>{this.props.data.info()}</p>
+			: "";
 		// let language = this.props.settings.interface.language;
 
 		for (let setting_data of this.props.data.settings) {
@@ -132,6 +136,12 @@ class Section extends React.Component {
 
 					break;
 
+				case "SpellsUITable":
+					label   = "";
+					setting = <SpellsUITable value={value} options={setting_data.options()} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
+
+					break;
+
 				default:
 					break;
 			}
@@ -147,6 +157,7 @@ class Section extends React.Component {
 		return(
 			<React.Fragment>
 				<Header as="h2">{LocalizationService.getSettingsSubsectionText(this.props.parent_path, this.props.index)}</Header>
+				{info}
 				<div>
 					{settings}
 				</div>

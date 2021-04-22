@@ -38,7 +38,7 @@ class OverlayInfo extends React.Component {
 				});
 			})
 			.catch((e) => {
-				console.log(e);
+				console.error(e);
 			});
 	}
 
