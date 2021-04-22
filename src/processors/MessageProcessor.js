@@ -21,7 +21,7 @@ class MessageProcessor {
 					if (data.combatants) {
 						type = "GetCombatants";
 					}
-				} catch {}
+				} catch (e) {}
 			}
 
 			if (!type) {
