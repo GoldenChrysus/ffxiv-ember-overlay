@@ -52,6 +52,17 @@ class Container extends EmberComponent {
 
 				state.spells_sections = this.props.spells_sections;
 
+				for (let tmp_uuid in state.spells_sections) {
+					if (!this.state.spells_sections[tmp_uuid]) {
+						continue;
+					}
+
+					state.spells_sections[tmp_uuid].layout.x      = this.state.spells_sections[tmp_uuid].layout.x;
+					state.spells_sections[tmp_uuid].layout.y      = this.state.spells_sections[tmp_uuid].layout.y;
+					state.spells_sections[tmp_uuid].layout.width  = this.state.spells_sections[tmp_uuid].layout.width;
+					state.spells_sections[tmp_uuid].layout.height = this.state.spells_sections[tmp_uuid].layout.height;
+				}
+
 				break;
 			}
 		}

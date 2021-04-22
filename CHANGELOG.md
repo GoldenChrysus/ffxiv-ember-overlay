@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.27.0-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- Resolved issue with reordering type selections in the UI Builder type
+- Resolved issue where cooldowns would be inaccurate for Contre Sixte, Manafication, and Sharpcast if a character has the recast reduction traits
+
+### Features
+- Added setting "Display Permanently" for each item type in Settings > Spell Timers
+- Added setting "Use Static Positions for Permanent Items" for each item type in Settings > Spell Timers
+- Added setting "Use Text to Speech" at Settings > Party Spell Timers
+- Added setting "Only Track in These Instances" at Settings > Party Spell Timers
+
+### UI Changes
+- Setting at Spell Timers > Use Minimal Layout has been renamed to "Layout" to allow for the icon-only layout
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.26.0-alpha
 
 **Released: [in staging]**
