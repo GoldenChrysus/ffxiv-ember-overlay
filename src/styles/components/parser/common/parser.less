@@ -1250,6 +1250,18 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 	animation: pulsing-border-classic 3s infinite !important;
 }
 
+#container #inner #content .spell-grid .spell-container.border:not(.off-cooldown).warning {
+	animation: pulsate 2s linear 0s 5, pulsing-border-classic 3s infinite;
+}
+
+body[theme=ffxiv-light] #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown).warning {
+	animation: pulsate 2s linear 0s 5, pulsing-border-light 3s infinite !important;
+}
+
+body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown).warning {
+	animation: pulsate 2s linear 0s 5, pulsing-border-classic 3s infinite !important;
+}
+
 #container #inner #content .spell-grid .spell-container.compact {
 	height: 20px;
 }
@@ -1305,8 +1317,7 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 }
 
 #container #inner #content .spell-grid .spell-container.warning {
-	animation: pulsate 2s linear;
-	animation-iteration-count: 5;
+	animation: pulsate 2s linear 0s 5;
 }
 
 #container #inner #content .spell-grid .spell-container .row {
@@ -1357,6 +1368,7 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 
 #container #inner #content .spell-grid .spell-container.no-icon .row {
 	width: 100% !important;
+	background-position-x: 0;
 }
 
 #container #inner #content .spell-grid .spell-container.icon .row {

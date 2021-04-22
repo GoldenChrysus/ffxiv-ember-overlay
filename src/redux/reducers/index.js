@@ -29,6 +29,7 @@ const initial_state = {
 	settings_data  : Settings,
 	last_activity  : (new Date()).getTime() / 1000,
 	internal       : {
+		last_settings_update : new Date(),
 		viewing              : "tables",
 		character_name       : "YOU",
 		character_id         : null,
@@ -79,6 +80,8 @@ function rootReducer(state, action) {
 			full_key  = `settings.${action.key}`;
 			new_state = createNewState(state, full_key, action);
 
+			new_state.internal.last_settings_update = new Date();
+
 			break;
 
 		case "setSettings":
@@ -88,8 +91,10 @@ function rootReducer(state, action) {
 				new_state.settings_data.setSetting(setting.key, setting.payload, true);
 
 				full_key  = `settings.${setting.key}`;
-				new_state = createNewState(new_state, full_key, setting);
+				new_state = createNewState(new_state || state, full_key, setting);
 			}
+
+			new_state.internal.last_settings_update = new Date();
 
 			if (!action.skip_sync) {
 				new_state.settings_data.saveSettings(true).then(() => TabSyncService.saveAction(action));

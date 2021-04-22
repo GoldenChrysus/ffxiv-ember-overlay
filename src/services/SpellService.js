@@ -17,8 +17,9 @@ class SpellService {
 		this.spells = {};
 	}
 
-	setSettings(use_tts, tts_trigger, warning_threshold) {
+	setSettings(use_tts, party_use_tts, tts_trigger, warning_threshold) {
 		this.settings.use_tts           = use_tts;
+		this.settings.party_use_tts     = party_use_tts;
 		this.settings.tts_trigger       = tts_trigger;
 		this.settings.warning_threshold = warning_threshold;
 	}
@@ -123,7 +124,9 @@ class SpellService {
 			this.spells[i].remaining = (this.spells[i].time - now) / 1000;
 			this.spells[i].cooldown  = Math.max(0, this.spells[i].remaining);
 
-			if (this.settings.use_tts && this.spells[i].remaining > -10000000 && this.spells[i].remaining <= threshold) {
+			let tts_key = (this.spells[i].party) ? "party_use_tts" : "use_tts";
+
+			if (this.settings[tts_key] && this.spells[i].remaining > -10000000 && this.spells[i].remaining <= threshold) {
 				this.processTTS(i);
 			}
 		}
@@ -132,7 +135,9 @@ class SpellService {
 	}
 
 	processTTS(key) {
-		if (!this.settings.use_tts || this.spells[key].tts) {
+		let tts_key = (this.spells[key].party) ? "party_use_tts" : "use_tts";
+
+		if (!this.settings[tts_key] || this.spells[key].tts) {
 			return;
 		}
 

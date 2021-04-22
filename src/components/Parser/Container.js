@@ -5,6 +5,7 @@ import ReactTooltip from "react-tooltip";
 import { Rnd } from "react-rnd";
 import clone from "lodash.clonedeep";
 import isEqual from "lodash.isequal";
+import { updateSetting } from "../../redux/actions/index";
 
 import EmberComponent from "../EmberComponent";
 import ContextMenu from "./Container/Menu";
@@ -41,30 +42,8 @@ class Container extends EmberComponent {
 		let need_state = false;
 		let state      = {};
 
-		for (let uuid in this.props.spells_sections) {
-			if (
-				!this.state.spells_sections[uuid] || 
-				this.state.spells_sections[uuid].layout.spells_per_row !== this.props.spells_sections[uuid].layout.spells_per_row ||
-				this.state.spells_sections[uuid].layout.layout !== this.props.spells_sections[uuid].layout.layout ||
-				!isEqual(this.state.spells_sections[uuid].types, this.props.spells_sections[uuid].types)
-			) {
-				need_state = true;
-
-				state.spells_sections = this.props.spells_sections;
-
-				for (let tmp_uuid in state.spells_sections) {
-					if (!this.state.spells_sections[tmp_uuid]) {
-						continue;
-					}
-
-					state.spells_sections[tmp_uuid].layout.x      = this.state.spells_sections[tmp_uuid].layout.x;
-					state.spells_sections[tmp_uuid].layout.y      = this.state.spells_sections[tmp_uuid].layout.y;
-					state.spells_sections[tmp_uuid].layout.width  = this.state.spells_sections[tmp_uuid].layout.width;
-					state.spells_sections[tmp_uuid].layout.height = this.state.spells_sections[tmp_uuid].layout.height;
-				}
-
-				break;
-			}
+		if (this.processSpellSectionProps(state)) {
+			need_state = true;
 		}
 
 		if (prev_props.mode !== this.props.mode) {
@@ -186,7 +165,12 @@ class Container extends EmberComponent {
 	}
 
 	setSpellsSettings() {
-		SpellService.setSettings(this.props.spells_settings.use_tts, this.props.spells_settings.tts_trigger, this.props.spells_settings.warning_threshold);
+		SpellService.setSettings(
+			this.props.spells_settings.use_tts,
+			this.props.spells_settings.party_use_tts,
+			this.props.spells_settings.tts_trigger,
+			this.props.spells_settings.warning_threshold
+		);
 	}
 
 	render() {
@@ -396,7 +380,85 @@ class Container extends EmberComponent {
 			}
 		}
 	}
+
+	processSpellSectionProps(state) {
+		let need_state = false;
+		let need_save  = false;
+
+		// Only run if settings have been updated in the past 20 seconds.
+		if ((((new Date()).getTime() - this.props.last_settings_update.getTime()) / 1000) > 20) {
+			return need_state;
+		}
+
+		for (let uuid in this.props.spells_sections) {
+			if (
+				!this.state.spells_sections[uuid] || 
+				this.state.spells_sections[uuid].layout.spells_per_row !== this.props.spells_sections[uuid].layout.spells_per_row ||
+				this.state.spells_sections[uuid].layout.layout !== this.props.spells_sections[uuid].layout.layout ||
+				!isEqual(this.state.spells_sections[uuid].types, this.props.spells_sections[uuid].types)
+			) {
+				need_state = true;
+
+				state.spells_sections = this.props.spells_sections;
+
+				break;
+			}
+		}
+
+		if (!need_state) {
+			for (let uuid in this.state.spells_sections) {
+				if (!this.props.spells_sections[uuid]) {
+					need_state = true;
+
+					state.spells_sections = this.props.spells_sections;
+
+					break;
+				}
+			}
+		}
+
+		if (need_state) {
+			for (let uuid in state.spells_sections) {
+				if (!this.state.spells_sections[uuid]) {
+					continue;
+				}
+
+				if (
+					state.spells_sections[uuid].layout.x !== this.state.spells_sections[uuid].layout.x ||
+					state.spells_sections[uuid].layout.y !== this.state.spells_sections[uuid].layout.y ||
+					state.spells_sections[uuid].layout.width !== this.state.spells_sections[uuid].layout.width ||
+					state.spells_sections[uuid].layout.height !== this.state.spells_sections[uuid].layout.height
+				) {
+					state.spells_sections[uuid].layout.x      = this.state.spells_sections[uuid].layout.x;
+					state.spells_sections[uuid].layout.y      = this.state.spells_sections[uuid].layout.y;
+					state.spells_sections[uuid].layout.width  = this.state.spells_sections[uuid].layout.width;
+					state.spells_sections[uuid].layout.height = this.state.spells_sections[uuid].layout.height;
+
+					need_save = !this.props.ui_builder;
+				}
+			}
+		}
+
+		if (need_save) {
+			let data = {
+				key   : "spells_mode.ui.sections",
+				value : state.spells_sections
+			}
+
+			this.props.updateSetting(data);
+		}
+
+		return need_state;
+	}
 }
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		updateSetting : (data) => {
+			dispatch(updateSetting(data));
+		}
+	}
+};
 
 const mapStateToProps = (state) => {
 	return {
@@ -417,8 +479,9 @@ const mapStateToProps = (state) => {
 		spells_in_use         : state.internal.spells.in_use,
 		spells_settings       : state.settings.spells_mode,
 		hide_top_bar          : state.settings.interface.hide_top_bar,
-		ui_builder            : state.internal.ui_builder
+		ui_builder            : state.internal.ui_builder,
+		last_settings_update  : state.internal.last_settings_update,
 	}
 };
 
-export default connect(mapStateToProps)(Container);
+export default connect(mapStateToProps, mapDispatchToProps)(Container);

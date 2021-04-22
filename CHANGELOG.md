@@ -7,14 +7,14 @@
 ### Bug Fixes
 - Resolved issue with reordering multiple-select dropdowns in settings
 - Resolved issue where cooldowns would be inaccurate for Contre Sixte, Manafication, and Sharpcast if your character has the recast reduction traits
-- To-do: Spell indicators are right-shifted by 3 pixels when setting to hide icons is enabled
+- Resolved issue where timer indicator was shifted by right 3 pixels when setting to hide icons was enabled
 - To-do: Left/right borders of glowing icons may be not be visible when UI builder is off and icon is touching edge of the window
 
 ### Features
 - Added setting "Display Permanently" for each timer type in Settings > Spell Timers
 - Added setting "Use Static Positions for Permanent Timers" for each timer type in Settings > Spell Timers
-- In progress: Add setting "Use Text to Speech" at Settings > Party Spell Timers
-- In progress: Add setting "Only Track in These Instances" at Settings > Party Spell Timers
+- Added setting "Use Text to Speech" at Settings > Party Spell Timers
+- Added setting "Only Track in These Instances" at Settings > Party Spell Timers
 - To-do: Add timer preview when in Edit UI mode
 
 ### UI Changes

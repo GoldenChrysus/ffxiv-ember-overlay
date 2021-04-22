@@ -337,6 +337,14 @@ class GameDataProcessor  {
 		log_data.char_type = (state.internal.character_id === log_data.char_id) ? "you" : false;
 		log_data.party     = (log_data.char_type !== "you");
 
+		if (
+			log_data.party &&
+			state.settings.spells_mode.party_zones.length &&
+			state.settings.spells_mode.party_zones.length.indexOf(state.internal.current_zone_id) === -1
+		) {
+			return false;
+		}
+
 		if (!log_data.char_type) {
 			log_data.char_name = data[log_data.char_name_index];
 
