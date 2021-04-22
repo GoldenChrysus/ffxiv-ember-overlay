@@ -8,9 +8,8 @@ class Spell extends EmberComponent {
 	constructor(props) {
 		super(props);
 
-		this.animate_ref   = React.createRef();
-		this.container_ref = React.createRef();
-		this.rendered      = false;
+		this.animate_ref = React.createRef();
+		this.rendered    = false;
 	}
 
 	componentDidUpdate(prev_props) {
@@ -92,7 +91,7 @@ class Spell extends EmberComponent {
 
 		return(
 			<React.Fragment>
-				<div key={"spell-container-" + this.props.base_key} className={classes.join(" ")} style={{order: this.props.order}} ref={this.container_ref}>
+				<div key={"spell-container-" + this.props.base_key} className={classes.join(" ")} style={{order: this.props.order}}>
 					<style type="text/css" key={"spell-container-style-" + this.props.base_key}>
 						{style}
 					</style>
