@@ -2,7 +2,7 @@
 
 ## 0.26.0-alpha
 
-**Released: [in staging]**
+**Released: 2021-04-22**
 
 ### Bug Fixes
 - Resolved issue where context menu was misplaced when using a non-100 zoom setting
