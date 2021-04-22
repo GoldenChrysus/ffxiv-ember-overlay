@@ -4,6 +4,7 @@ import { ContextMenuTrigger } from "react-contextmenu";
 import ReactTooltip from "react-tooltip";
 import { Rnd } from "react-rnd";
 import clone from "lodash.clonedeep";
+import isEqual from "lodash.isequal";
 
 import EmberComponent from "../EmberComponent";
 import ContextMenu from "./Container/Menu";
@@ -44,7 +45,8 @@ class Container extends EmberComponent {
 			if (
 				!this.state.spells_sections[uuid] || 
 				this.state.spells_sections[uuid].layout.spells_per_row !== this.props.spells_sections[uuid].layout.spells_per_row ||
-				this.state.spells_sections[uuid].layout.layout !== this.props.spells_sections[uuid].layout.layout
+				this.state.spells_sections[uuid].layout.layout !== this.props.spells_sections[uuid].layout.layout ||
+				!isEqual(this.state.spells_sections[uuid].types, this.props.spells_sections[uuid].types)
 			) {
 				need_state = true;
 
