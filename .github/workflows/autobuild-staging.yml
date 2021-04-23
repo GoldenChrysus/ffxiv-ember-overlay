@@ -10,7 +10,37 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: staging
-
+    env:
+      BUILD_NONSSL: ${{ secrets.BUILD_NONSSL}}
+      BUILD_SSL: ${{ secrets.BUILD_SSL}}
+      BUILD_TYPE: ${{ secrets.BUILD_TYPE}}
+      DESTINATION_SUBDIR: ${{ secrets.DESTINATION_SUBDIR}}
+      FTP_HOST: ${{ secrets.FTP_HOST}}
+      FTP_PASS: ${{ secrets.FTP_PASS}}
+      FTP_USER: ${{ secrets.FTP_USER}}
+      GIT_DESTINATION_REPO: ${{ secrets.GIT_DESTINATION_REPO}}
+      GIT_EMAIL: ${{ secrets.GIT_EMAIL}}
+      GIT_ORIGIN_BRANCH: ${{ secrets.GIT_ORIGIN_BRANCH}}
+      GIT_ORIGIN_REPO: ${{ secrets.GIT_ORIGIN_REPO}}
+      GIT_TOKEN: ${{ secrets.GIT_TOKEN}}
+      GIT_USER: ${{ secrets.GIT_USER}}
+      REACT_APP_AUTHOR_URL: ${{ secrets.REACT_APP_AUTHOR_URL}}
+      REACT_APP_CASH_DONATE_LINK: ${{ secrets.REACT_APP_CASH_DONATE_LINK}}
+      REACT_APP_CHANGELOG_URL: ${{ secrets.REACT_APP_CHANGELOG_URL}}
+      REACT_APP_DISCORD_URL: ${{ secrets.REACT_APP_DISCORD_URL}}
+      REACT_APP_GITHUB_URL: ${{ secrets.REACT_APP_GITHUB_URL}}
+      REACT_APP_GOOGLE_TAG_MANAGER_ID: ${{ secrets.REACT_APP_GOOGLE_TAG_MANAGER_ID}}
+      REACT_APP_HTTP_BASE: ${{ secrets.REACT_APP_HTTP_BASE}}
+      REACT_APP_KOFI_DONATE_LINK: ${{ secrets.REACT_APP_KOFI_DONATE_LINK}}
+      REACT_APP_PAGE_TITLE: ${{ secrets.REACT_APP_PAGE_TITLE}}
+      REACT_APP_PATREON_DONATE_LINK: ${{ secrets.REACT_APP_PATREON_DONATE_LINK}}
+      REACT_APP_PAYPAL_DONATE_LINK: ${{ secrets.REACT_APP_PAYPAL_DONATE_LINK}}
+      REACT_APP_PAYPAY_DONATE_ID: ${{ secrets.REACT_APP_PAYPAY_DONATE_ID}}
+      REACT_APP_PAYPAY_DONATE_LINK: ${{ secrets.REACT_APP_PAYPAY_DONATE_LINK}}
+      REACT_APP_REDIRECT_URL: ${{ secrets.REACT_APP_REDIRECT_URL}}
+      REACT_APP_STREAMLABS_DONATE_LINK: ${{ secrets.REACT_APP_STREAMLABS_DONATE_LINK}}
+      REACT_APP_TWITCH_API_CLIENT_ID: ${{ secrets.REACT_APP_TWITCH_API_CLIENT_ID}}
+      REACT_APP_VERSION: ${{ secrets.REACT_APP_VERSION}}
     steps:
       - name: Push to hosted environments
         uses: GoldenChrysus/autobuilder@0.1.0
