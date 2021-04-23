@@ -1,4 +1,4 @@
-name: Staging Autobuilder
+name: Auto Deployer
 
 on:
   push:
@@ -6,11 +6,8 @@ on:
   pull_request:
     branches : [ staging, bleeding-edge ]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    environment: staging
-    env:
+defaults:
+  env:
       BUILD_NONSSL: ${{ secrets.BUILD_NONSSL}}
       BUILD_SSL: ${{ secrets.BUILD_SSL}}
       BUILD_TYPE: ${{ secrets.BUILD_TYPE}}
@@ -41,6 +38,12 @@ jobs:
       REACT_APP_STREAMLABS_DONATE_LINK: ${{ secrets.REACT_APP_STREAMLABS_DONATE_LINK}}
       REACT_APP_TWITCH_API_CLIENT_ID: ${{ secrets.REACT_APP_TWITCH_API_CLIENT_ID}}
       REACT_APP_VERSION: ${{ secrets.REACT_APP_VERSION}}
+
+jobs:
+  build_staging:
+    if: ${{ github.ref == 'refs/heads/bleeding-edge' }}
+    runs-on: ubuntu-latest
+    environment: staging
     steps:
       - name: Push to hosted environments
         uses: GoldenChrysus/autobuilder@0.1.4
