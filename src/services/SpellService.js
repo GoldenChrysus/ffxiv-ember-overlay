@@ -315,6 +315,27 @@ class SpellService {
 			}
 		}
 	}
+
+	getDemoSpell() {
+		const id = 16486;
+
+		return {
+			type          : "skill",
+			subtype       : "skill",
+			log_type      : "you-skill",
+			id            : id,
+			time          : new Date(),
+			name          : LocalizationService.getSpellName("skill", id),
+			recast        : SkillData.oGCDSkills[id].recast,
+			remaining     : 0,
+			cooldown      : 0,
+			dot           : SkillData.oGCDSkills[id].dot,
+			party         : false,
+			defaulted     : false,
+			type_position : 0,
+			tts           : false
+		};
+	}
 }
 
 export default new SpellService();

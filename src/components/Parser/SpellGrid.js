@@ -6,6 +6,7 @@ import LocalizationService from "../../services/LocalizationService";
 
 import OverlayInfo from "./PlayerTable/OverlayInfo";
 import Spell from "./SpellGrid/Spell";
+import SpellService from "../../services/SpellService";
 
 class SpellGrid extends EmberComponent {
 	constructor(props) {
@@ -106,7 +107,10 @@ class SpellGrid extends EmberComponent {
 		let uuid = this.props.settings.uuid || "default";
 
 		if (this.props.is_draggable) {
-			let text = [];
+			const spell = SpellService.getDemoSpell();
+
+			let text   = [];
+			let spells = [];
 
 			for (let value of this.props.section.types) {
 				value = value.split("-");
@@ -119,7 +123,34 @@ class SpellGrid extends EmberComponent {
 				text.push(value)
 			}
 
-			return <span>{text.join(", ")}</span>;
+			for (let i = 1; i <= 5; i++) {
+				spells.push(
+					<Spell
+						key={"demo-spell-" + i}
+						base_key={"demo-spell-" + i}
+						order={i}
+						grid_uuid="demo"
+						spell={spell}
+						cooldown={spell.cooldown}
+						reverse={false}
+						layout={this.props.settings.layout}
+						spells_per_row={this.props.settings.spells_per_row}
+						show_icon={this.props.settings.show_icon}
+						warning_threshold={0}
+						warning={false}
+						border={false}
+						indicator={"none"}
+						bottom_left={false}
+					/>
+				);
+			}
+
+			return (
+				<React.Fragment>
+					{spells}
+					<span className="types">{text.join(", ")}</span>
+				</React.Fragment>
+			);
 		}
 
 		let spells           = Object.keys(this.props.spells);

@@ -1164,49 +1164,44 @@ body.mode-spells {
 
 #root-inner #container #inner #content .spell-grid.draggable {
 	opacity: 0.7;
-	padding: 5px;
-
-	.setThemeStyle(
-		@defaultTheme: {
-			background-color: @dark_borderOuterShadow;
-		},
-		@lightTheme: {
-			background-color: @light_containerBackground;
-		},
-		@classicTheme: {
-			background-color: @classic_borderOuterShadow;
-		}
-	)
-}
-
-#root-inner #container #inner #content .spell-grid.draggable span {
 	cursor: move;
-}
-
-#root-inner #container #inner #content .spell-grid.draggable span {
-	display: block;
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-	padding: 5px;
-	font-weight: bold;
-	font-size: 12px;
-	overflow: hidden;
+	align-content: flex-start;
 
 	.setThemeStyle(
 		@defaultTheme: {
 			background-image: @dark_contentBackground;
 			color: @dark_headerAndLinkText;
+			border: 1px solid @dark_borderOuterShadow;
 		},
 		@lightTheme: {
 			background-image: @light_contentBackground;
 			color: @light_headerAndLinkText;
+			border: 1px solid @light_containerBackground;
 		},
 		@classicTheme: {
 			background-image: @classic_contentBackground;
 			color: @classic_headerAndLinkText;
+			border: 1px solid @classic_borderOuterShadow;
 		}
-	);
+	)
+}
+
+#root-inner #container #inner #content .spell-grid.draggable span.types {
+	cursor: move;
+}
+
+#root-inner #container #inner #content .spell-grid.draggable span.types {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	overflow: hidden;
+	text-shadow: -3px 3px 2px black, 3px -2px 3px black;
+	position: absolute;
+	top: 97%;
+	transform: translateY(-97%);
+	text-align: center;
 }
 
 #container #inner #content .spell-grid .spell-container {
@@ -1236,6 +1231,11 @@ body.mode-spells {
 			color: @classic_importantText;
 		}
 	);
+}
+
+#root-inner #container #inner #content .spell-grid.draggable .spell-container {
+	z-index: 2;
+	opacity: 0.4;
 }
 
 #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
