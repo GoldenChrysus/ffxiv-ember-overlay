@@ -15,6 +15,14 @@ class Spell extends EmberComponent {
 	componentDidUpdate(prev_props) {
 		if (prev_props.cooldown && +this.props.cooldown > +prev_props.cooldown) {
 			if (this.animate_ref.current) {
+				this.animate_ref.current.classList.remove("animate");
+
+				// This forces DOM refresh so the animate add has effect
+				// eslint-disable-next-line
+				let foo = this.animate_ref.current.offsetHeight;
+
+				this.animate_ref.current.classList.add("animate");
+
 				this.animateTicker();
 			}
 		}

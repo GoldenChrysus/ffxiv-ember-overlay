@@ -13,6 +13,7 @@ class SpellsUITable extends Table {
 		super(props);
 
 		this.type_sort_data         = {};
+		this.bound_sortable         = [];
 		this.spells_per_row_options = [{
 			key   : -1,
 			value : -1,
@@ -71,30 +72,11 @@ class SpellsUITable extends Table {
 	}
 
 	componentDidMount() {
-		Array.prototype.forEach.call(document.querySelectorAll(".multiple.selection.ui-table"), (el) => {
-			Sortable.create(
-				el,
-				{
-					draggable: "a",
-					onUpdate: (evt, originalEvent) => {
-						let value = [];
-						let uuid  = evt.target.getAttribute("data-uuid");
+		this.processSortable();
+	}
 
-						Array.prototype.forEach.call(evt.target.getElementsByTagName("a"), (el) => {
-							value.push($(el).attr("value"));
-						});
-
-						this.type_sort_data[uuid] = {};
-
-						for (let i in value) {
-							this.type_sort_data[uuid][value[i]] = i;
-						}
-
-						this.handleSelectChange("types", evt, undefined, value);
-					}
-				}
-			);
-		});
+	componentDidUpdate() {
+		this.processSortable();
 	}
 
 	render() {
@@ -120,13 +102,14 @@ class SpellsUITable extends Table {
 	}
 
 	createRow(options) {
+		let key      = options.key || "_insert";
 		let button   = (options.insert)
 			? <Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button>
 			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
 		let row      = (
-			<tr id="insert-row" key={"spells-ui-key-" + (options.key || "_insert")} data-key={options.key || "_insert"}>
+			<tr id={"spells-ui-row-" + key} key={"spells-ui-key-" + key} data-key={key}>
 				<td>
-					<Select className="ui-table" data-uuid={options.key || "_insert"} multiple search options={this.props.options} defaultValue={options.types} onChange={this.handleSelectChange.bind(this, "types")}/>
+					<Select className="ui-table" data-uuid={key} multiple search options={this.props.options} defaultValue={options.types} onChange={this.handleSelectChange.bind(this, "types")}/>
 				</td>
 				<td>
 					<Select options={LocalizationService.getSpellLayoutOptions(true)} defaultValue={options.layout.layout || "default"} onChange={this.handleSelectChange.bind(this, "layout.layout")}/>
@@ -239,6 +222,43 @@ class SpellsUITable extends Table {
 			let v = (c === "x") ? r : (r & 0x3 | 0x8);
 
 			return v.toString(16);
+		});
+	}
+
+	processSortable() {
+		for (let uuid in this.state.rows) {
+			if (this.bound_sortable.indexOf(uuid) !== -1) {
+				continue;
+			}
+
+			this.bindSortable(uuid);
+		}
+	}
+
+	bindSortable(uuid) {
+		Array.prototype.forEach.call(document.getElementById(`spells-ui-row-${uuid}`).querySelectorAll(".multiple.selection.ui-table"), (el) => {
+			Sortable.create(
+				el,
+				{
+					draggable: "a",
+					onUpdate: (evt, originalEvent) => {
+						let value = [];
+						let uuid  = evt.target.getAttribute("data-uuid");
+
+						Array.prototype.forEach.call(evt.target.getElementsByTagName("a"), (el) => {
+							value.push($(el).attr("value"));
+						});
+
+						this.type_sort_data[uuid] = {};
+
+						for (let i in value) {
+							this.type_sort_data[uuid][value[i]] = i;
+						}
+
+						this.handleSelectChange("types", evt, undefined, value);
+					}
+				}
+			);
 		});
 	}
 }
