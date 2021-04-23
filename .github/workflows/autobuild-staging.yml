@@ -43,4 +43,4 @@ jobs:
       REACT_APP_VERSION: ${{ secrets.REACT_APP_VERSION}}
     steps:
       - name: Push to hosted environments
-        uses: GoldenChrysus/autobuilder@0.1.3
+        uses: GoldenChrysus/autobuilder@0.1.0
