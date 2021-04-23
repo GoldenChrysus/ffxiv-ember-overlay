@@ -2,9 +2,9 @@ name: Auto Deployer
 
 on:
   push:
-    branches : [ staging, bleeding-edge ]
+    branches : [ staging, master ]
   pull_request:
-    branches : [ staging, bleeding-edge ]
+    branches : [ staging, master ]
 
 env:
     BUILD_NONSSL: ${{ secrets.BUILD_NONSSL }}
@@ -41,7 +41,7 @@ env:
 
 jobs:
   build_staging:
-    if: ${{ github.ref == 'refs/heads/bleeding-edge' }}
+    if: ${{ github.ref == 'refs/heads/staging' }}
     runs-on: ubuntu-latest
     environment: staging
     steps:
