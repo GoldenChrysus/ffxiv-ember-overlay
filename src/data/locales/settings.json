@@ -244,6 +244,30 @@
 				}
 			]
 		},
+		"discord"    : {
+			"title"       : {
+				"en" : "Discord Webhook",
+				"pt" : "Discord Webhook",
+				"cn" : "Discord Webhook",
+				"jp" : "Discord Webhook",
+				"de" : "Discord Webhook",
+				"es" : "Discord Webhook",
+				"fr" : "Discord Webhook",
+				"kr" : "Discord Webhook"
+			},
+			"subsections" : [
+				{
+					"en" : "Webhook",
+					"pt" : "Webhook",
+					"cn" : "Webhook",
+					"jp" : "Webhook",
+					"de" : "Webhook",
+					"es" : "Webhook",
+					"fr" : "Webhook",
+					"kr" : "Webhook"
+				}
+			]
+		},
 		"custom-css"    : {
 			"title"       : {
 				"en" : "Custom CSS",
@@ -813,6 +837,16 @@
 			"es" : "Métricas",
 			"fr" : "Les Mesures",
 			"kr" : "스탯"
+		},
+		"discord.url" : {
+			"en" : "Webhook URL",
+			"pt" : "Webhook URL",
+			"cn" : "Webhook URL",
+			"jp" : "Webhook URL",
+			"de" : "Webhook URL",
+			"es" : "Webhook URL",
+			"fr" : "Webhook URL",
+			"kr" : "Webhook URL"
 		},
 		"custom.css" : {
 			"en" : "User-provided CSS is at your own risk.",
@@ -1736,6 +1770,16 @@
 			"es" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"fr" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"kr" : "UI 빌더는 스펠 타이머를 본인 입맛에 맞게 만들 수 있습니다.(아래) 본인의 쿨타임, 탱커의 쿨타임들 혹은 힐러 쿨타임또한 따로 표시시켜주는 섹션을 만드는것이 예로 들 수 있습니다. 아래의 테이블에 섹션을 만든 후 어떤것을 표기할지 따로 설정해주시면 되며 완성후 반드시 \"{{spells_mode.ui.use}}\"이 활성화된것을 확인한 후 저장하시면 됩니다. 오버레이를 파판 화면을 모두 덮게끔 사이즈를 조절하세요. 만약 사이즈 조절이 불가능하다면 오버레이 플러그인에서 잠금해제가 됬는지 확인하시거나 이미 잠금해제가 되있는 상태라면 하얀 바탕을 활성화 시키신 후 오버레이에서 우클릭후 \"{{edit_ui}}\" 선택을 하시면 됩니다. \"{{edit_ui}}\" 모드 진입하신 이후 반드시 오버레이를 재갱신하시거나 하얀 바탕을 비활성화 시키세요. 이 후 스펠 타이머 섹션을 따로 사이즈 조절하거나 화면 내 이동시키실 수 있습니다. 각 섹션마다 이름이 표시되어있으므로 구별이 가능하므로 세팅을 마치셨다면 우클릭 후 \"{{save_ui}}\"를 선택하여 저장하시면 마무리됩니다."
+		},
+		"discord_webhook_info": {
+			"en" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"pt" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"cn" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"jp" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"de" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"es" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"fr" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"kr" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel."
 		}
 	}
 }

@@ -15,6 +15,7 @@
 - Added setting "Use Text to Speech" at Settings > Party Spell Timers
 - Added setting "Only Track in These Instances" at Settings > Party Spell Timers
 - Added spell timer preview when in Edit UI mode
+- Added Discord webhook support at setting tab "Discord Webhook"
 
 ### UI Changes
 - N/A

@@ -87,7 +87,7 @@ class Section extends React.Component {
 					break;
 
 				case "textbox":
-					setting = <Input defaultValue={value} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
+					setting = <Input defaultValue={value} fluid={setting_data.fluid} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 
 					break;
 

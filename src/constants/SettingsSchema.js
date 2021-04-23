@@ -445,7 +445,22 @@ const SettingsSchema = {
 						]
 					}
 				]
-			}
+			},
+			{
+				path     : "discord",
+				sections : [
+					{
+						info     : () => LocalizationService.getDiscordWebhookInfo(),
+						settings : [
+							{
+								key_path : "discord.url",
+								type     : "textbox",
+								fluid    : true
+							}
+						]
+					}
+				]
+			},
 		]
 	},
 	spells : {

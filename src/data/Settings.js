@@ -156,6 +156,9 @@ const default_settings = {
 			"deaths"
 		]
 	},
+	discord : {
+		url : ""
+	},
 	spells_mode : {
 		spells               : [],
 		effects              : [],

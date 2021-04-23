@@ -414,6 +414,20 @@ class LocalizationService {
 
 		return options;
 	}
+
+	getDiscordWebhookInfo() {
+		const language = this.getLanguage();
+
+		let info = this.getMisc("discord_webhook_info", this.getLanguage());
+
+		for (let match of info.match(/\{\{[\w.]+}}/g)) {
+			let key = match.replace(/\{|}/g, "");
+
+			info = info.replace(match, this.getOverlayText(key, language) || this.getOverlayText(key, language));
+		}
+
+		return info;
+	}
 }
 
 export default new LocalizationService();
