@@ -74,8 +74,8 @@
 	},
 	"homepage": ".",
 	"devDependencies": {
-		"@craco/craco": "^5.2.4",
-		"craco-less": "^1.9.0",
-		"semantic-ui-less": "^2.4.1"
+		"@craco/craco": "5.2.4",
+		"craco-less": "1.9.0",
+		"semantic-ui-less": "2.4.1"
 	}
 }
