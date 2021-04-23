@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - name: Push to hosted environments
-        uses: GoldenChrysus/autobuilder@master
+        uses: GoldenChrysus/autobuilder@0.1.0
