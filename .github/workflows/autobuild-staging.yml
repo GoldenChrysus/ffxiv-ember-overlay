@@ -1,0 +1,16 @@
+name: Staging Autobuilder
+
+on:
+  push:
+    branches : [ staging, bleeding-edge ]
+  pull_request:
+    branches : [ staging, bleeding-edge ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+      - name: Push to hosted environments
+        uses: GoldenChrysus/autobuilder
