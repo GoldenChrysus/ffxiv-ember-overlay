@@ -8,6 +8,7 @@
 - Resolved issue with reordering multiple-select dropdowns in settings
 - Resolved issue where cooldowns would be inaccurate for Contre Sixte, Manafication, and Sharpcast if your character has the recast reduction traits
 - Resolved issue where timer indicator was shifted right by 3 pixels when setting to hide icons was enabled
+- Resolved issue where resizing a spell timer UI section would move it back to its original position
 
 ### Features
 - Added setting "Display Permanently" for each timer type in Settings > Spell Timers
@@ -18,11 +19,12 @@
 - Added Discord webhook support at setting tab "Discord Webhook"
 
 ### UI Changes
-- N/A
+- Made parser footer more responsive at small overlay sizes (less than or equal to 350 pixels)
 
 ### Code Changes
 - Consolidated duplicated localization texts
 - Removed unnecessary setting schema value lookup functions
+- Made settings saving more graceful
 
 ### Miscellaneous
 - N/A

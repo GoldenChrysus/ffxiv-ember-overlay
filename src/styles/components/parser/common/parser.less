@@ -1186,7 +1186,7 @@ body.mode-spells {
 	)
 }
 
-#root-inner #container #inner #content .spell-grid.draggable span.types {
+#root-inner #container #inner #content .spell-grid.draggable * {
 	cursor: move;
 }
 
@@ -1721,4 +1721,13 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 
 ::-webkit-scrollbar {
 	display: none;
+}
+
+@media screen and (max-width: 350px) {
+	#container #inner #footer #role-links,
+	#container #inner #footer #footer-actions {
+		width: 100%;
+		float: none;
+		text-align: left;
+	}
 }

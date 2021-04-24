@@ -333,7 +333,7 @@ class Container extends EmberComponent {
 		this.setState(state);
 	}
 
-	onResize(uuid, e, side, elem, delta) {
+	onResize(uuid, e, side, elem, delta, position) {
 		let state = clone(this.state);
 
 		state.spells_sections[uuid].layout.width  += delta.width;
@@ -341,6 +341,8 @@ class Container extends EmberComponent {
 
 		state.spells_sections[uuid].layout.width  = Math.round(state.spells_sections[uuid].layout.width / 10) * 10;
 		state.spells_sections[uuid].layout.height = Math.round(state.spells_sections[uuid].layout.height / 10) * 10;
+		state.spells_sections[uuid].layout.x      = Math.round(position.x / 10) * 10;
+		state.spells_sections[uuid].layout.y      = Math.round(position.y / 10) * 10;
 
 		this.setState(state);
 	}
@@ -438,14 +440,13 @@ class Container extends EmberComponent {
 				}
 			}
 		}
-
 		if (need_save) {
 			let data = {
 				key   : "spells_mode.ui.sections",
 				value : state.spells_sections
 			}
 
-			this.props.updateSetting(data);
+			setTimeout(() => { this.props.updateSetting(data); }, 50);
 		}
 
 		return need_state;

@@ -14,7 +14,7 @@ class TabSyncService {
 			switch (wrapped_action.action.type) {
 				case "setSetting":
 					valid_action = true;
-	
+
 					break;
 	
 				case "setSettings":

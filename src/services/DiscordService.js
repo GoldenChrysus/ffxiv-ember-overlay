@@ -17,14 +17,16 @@ class DiscordService {
 					"title"       : "Encounter: {{encounter}}",
 					"type"        : "rich",
 					"description" : "Powered by [Ember](" + process.env.REACT_APP_GITHUB_URL + ").\n\n*Duration: {{duration}}*",
-					"color"       : 15258703,
+					"color"       : 7419530,
 					"thumbnail"   : {
-						"url" : "https://i.imgur.com/sZSRJJK.png"
+						// "url" : "https://i.imgur.com/sZSRJJK.png"
+						"url" : "https://i.imgur.com/p6oH6xe.png"
 					},
 					"fields" : [],
 					"footer" : {
 						"text"     : "Total DPS: {{total_dps}}",
-						"icon_url" : "https://i.imgur.com/bBOcrTZ.png"
+						// "icon_url" : "https://i.imgur.com/bBOcrTZ.png"
+						"icon_url" : "https://i.imgur.com/ko7LnGw.png"
 					}
 				}
 			]
@@ -33,6 +35,11 @@ class DiscordService {
 		for (let name in state.internal.game.Combatant) {
 			let dps = (+state.internal.game.Combatant[name].encdps).toLocaleString(undefined, { minimumFractionDigits : 0, maximumFractionDigits: 0 });
 			let hps = (+state.internal.game.Combatant[name].enchps).toLocaleString(undefined, { minimumFractionDigits : 0, maximumFractionDigits: 0 });
+			let job = (state.internal.game.Combatant[name].Job || "").toUpperCase();
+
+			if (job) {
+				job = `${job}: `;
+			}
 
 			if (name === "YOU") {
 				name = state.internal.character_name;
@@ -47,7 +54,7 @@ class DiscordService {
 			}
 
 			data.embeds[0].fields.push({
-				"name": name,
+				"name": `${job}${name}`,
 				"value": `>>> DPS: ${dps}\nHPS: ${hps}`,
 				"inline": true
 			});

@@ -75,12 +75,39 @@ function rootReducer(state, action) {
 
 	switch (action.type) {
 		case "setSetting":
-			state.settings_data.setSetting(action.key, action.payload);
+			let set_setting = false;
 
-			full_key  = `settings.${action.key}`;
-			new_state = createNewState(state, full_key, action);
+			if (!Array.isArray(action.key)) {
+				state.settings_data.setSetting(action.key, action.payload, true);
 
-			new_state.internal.last_settings_update = new Date();
+				full_key    = `settings.${action.key}`;
+				new_state   = createNewState(state, full_key, action);
+				set_setting = true;
+			} else {
+				for (let i in action.key) {
+					set_setting = true;
+					full_key    = `settings.${action.key[i]}`;
+					new_state   = createNewState(
+						new_state || state,
+						full_key,
+						{
+							type    : action.type,
+							key     : full_key,
+							payload : action.payload[i]
+						}
+					);
+
+					new_state.settings_data.setSetting(action.key[i], action.payload[i], true);
+				}
+			}
+
+			if (!window.parser) {
+				TabSyncService.saveAction(action);
+			} else if (set_setting) {
+				new_state.internal.last_settings_update = new Date();
+
+				new_state.settings_data.saveSettings(true);
+			}
 
 			break;
 
