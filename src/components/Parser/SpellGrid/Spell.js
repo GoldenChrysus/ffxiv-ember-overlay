@@ -8,14 +8,21 @@ class Spell extends EmberComponent {
 	constructor(props) {
 		super(props);
 
-		this.animate_ref   = React.createRef();
-		this.container_ref = React.createRef();
-		this.rendered      = false;
+		this.animate_ref = React.createRef();
+		this.rendered    = false;
 	}
 
 	componentDidUpdate(prev_props) {
 		if (prev_props.cooldown && +this.props.cooldown > +prev_props.cooldown) {
 			if (this.animate_ref.current) {
+				this.animate_ref.current.classList.remove("animate");
+
+				// This forces DOM refresh so the animate add has effect
+				// eslint-disable-next-line
+				let foo = this.animate_ref.current.offsetHeight;
+
+				this.animate_ref.current.classList.add("animate");
+
 				this.animateTicker();
 			}
 		}
@@ -29,8 +36,8 @@ class Spell extends EmberComponent {
 
 	render() {
 		let id          = this.props.spell.id;
-		let real_type   = this.props.spell.type;
-		let type        = (this.props.spell.dot) ? "dot" : real_type;
+		let main_type   = this.props.spell.type;
+		let type        = this.props.spell.subtype;
 		let is_zero     = (+this.props.cooldown === 0);
 		let animate     = (!is_zero && this.props.indicator === "ticking") ? "animate" : false;
 		let classes     = [
@@ -59,7 +66,7 @@ class Spell extends EmberComponent {
 		let icon      = (!this.props.show_icon && this.props.layout !== "icon")
 			? ""
 			: <div key={"spell-icon-" + this.props.base_key} className={"icon " + type}>
-				<img src={"img/icons/" + real_type + "s/" + id + ".jpg"} alt={real_type + "-" + id}/>
+				<img src={"img/icons/" + main_type + "s/" + id + ".jpg"} alt={main_type + "-" + id}/>
 			</div>;
 
 		if (this.props.layout !== "normal") {
@@ -92,13 +99,13 @@ class Spell extends EmberComponent {
 
 		return(
 			<React.Fragment>
-				<div key={"spell-container-" + this.props.base_key} className={classes.join(" ")} style={{order: this.props.order}} ref={this.container_ref}>
+				<div key={"spell-container-" + this.props.base_key} className={classes.join(" ")} style={{order: this.props.order}}>
 					<style type="text/css" key={"spell-container-style-" + this.props.base_key}>
 						{style}
 					</style>
 					{icon}
 					<div key={"spell-row-" + this.props.base_key} className={"row " + animate} ref={animate && this.props.layout !== "icon" ? this.animate_ref : ""}>
-						<span key={"spell-name-" + this.props.base_key} className="name">{this.getName(real_type)}</span>
+						<span key={"spell-name-" + this.props.base_key} className="name">{this.getName(main_type)}</span>
 						<span key={"spell-cooldown-" + this.props.base_key} className="cooldown">{(!is_zero) ? this.props.cooldown : ""}</span>
 					</div>
 					{border}
@@ -118,16 +125,7 @@ class Spell extends EmberComponent {
 	}
 
 	getName(type) {
-		switch (type) {
-			case "skill":
-				return this.props.spell.name || LocalizationService.getoGCDSkillName(this.props.spell.id);
-
-			case "effect":
-				return this.props.spell.name || LocalizationService.getEffectName(this.props.spell.id);
-
-			default:
-				return this.props.spell.name;
-		}
+		return this.props.spell.name || LocalizationService.getSpellName(type, this.props.spell.id);
 	}
 }
 

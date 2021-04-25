@@ -194,6 +194,8 @@ const GameJobs = {
 	},
 };
 
+const GameJobsID = require("../data/game/jobs.json");
+
 const PlayerDataCustomValues = {
 	"healed%"            : calculateHealed,
 	"effective_heal_pct" : calculateEffectiveHealed,
@@ -275,6 +277,7 @@ const TTSRules = [
 
 export default {
 	GameJobs,
+	GameJobsID,
 	PlayerDataCustomValues,
 	PlayerDataTitles,
 	PlayerMetricTypeData,

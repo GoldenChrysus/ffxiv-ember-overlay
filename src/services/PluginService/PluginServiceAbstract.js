@@ -45,6 +45,21 @@ class PluginServiceAbstract {
 		this.callHandler(this.createMessage("unsubscribe", "events", events));
 	}
 
+	createMessage(type, key, data) {
+		let call = {
+			call : type
+		};
+
+		if (key) {
+			call[key] = data;
+
+			call.key  = key;
+			call.data = data;
+		}
+
+		return JSON.stringify(call);
+	}
+
 	callHandler(message, callback) {
 		window.OverlayPluginApi.callHandler(
 			message,

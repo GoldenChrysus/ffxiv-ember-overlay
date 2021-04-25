@@ -8,6 +8,7 @@ import PlayerProcessor from "./PlayerProcessor";
 import LocalizationService from "../services/LocalizationService";
 import TTSService from "../services/TTSService";
 import UsageService from "../services/UsageService";
+import SpellService from "../services/SpellService";
 
 class GameDataProcessor  {
 	normalizeFieldLocale(value) {
@@ -282,6 +283,18 @@ class GameDataProcessor  {
 		};
 
 		switch (event_code) {
+			case 3:
+				log_data.char_id = parseInt(data[2], 16);
+
+				if (log_data.char_id !== state.internal.character_id) {
+					return false;
+				}
+
+				log_data.char_job   = Constants.GameJobsID[parseInt(data[4], 16)] || null;
+				log_data.char_level = parseInt(data[5], 16);
+
+				return log_data;
+
 			case 21:
 			case 22:
 				log_data.spell_index      = 4;
@@ -324,6 +337,14 @@ class GameDataProcessor  {
 		log_data.char_type = (state.internal.character_id === log_data.char_id) ? "you" : false;
 		log_data.party     = (log_data.char_type !== "you");
 
+		if (
+			log_data.party &&
+			state.settings.spells_mode.party_zones.length &&
+			state.settings.spells_mode.party_zones.indexOf(String(state.internal.current_zone_id)) === -1
+		) {
+			return false;
+		}
+
 		if (!log_data.char_type) {
 			log_data.char_name = data[log_data.char_name_index];
 
@@ -350,15 +371,9 @@ class GameDataProcessor  {
 		}
 
 		if (log_data.type === "effect") {
-			let valid_names = [];
+			log_data.english_name = LocalizationService.getSpellName(log_data.subtype, log_data.spell_id, "en");
 
-			for (let id of state.settings.spells_mode[log_data.lookup_key]) {
-				valid_names.push(LocalizationService.getEffectName(id, "en"));
-			}
-
-			log_data.english_name = LocalizationService.getEffectName(log_data.spell_id, "en");
-
-			if (valid_names.indexOf(log_data.english_name) === -1) {
+			if (!SpellService.isValidName(log_data.lookup_key, log_data.english_name)) {
 				return false;
 			}
 		} else {
@@ -366,11 +381,11 @@ class GameDataProcessor  {
 				return false;
 			}
 
-			log_data.english_name = LocalizationService.getoGCDSkillName(log_data.spell_id, "en");
+			log_data.english_name = LocalizationService.getSpellName(log_data.subtype, log_data.spell_id, "en");
 		}
 
 		let state_data    = clone(state.internal.spells);
-		let defaulted_key = `${log_data.type}-${log_data.english_name}`;
+		let defaulted_key = `${log_data.subtype}-${log_data.english_name}`;
 		let suffixes      = [];
 
 		if (!log_data.party) {
@@ -385,27 +400,34 @@ class GameDataProcessor  {
 			}
 		}
 
-		if (!log_data.party) {
-			if (event_code === 30) {
-				if (state_data.defaulted[defaulted_key]) {
-					if (state_data.defaulted[defaulted_key].id !== log_data.spell_id) {
-						delete state_data.defaulted[state_data.defaulted[defaulted_key].key];
+		log_data.in_use_key = `${log_data.type}-${log_data.spell_id}`;
 
-						state_data.defaulted[defaulted_key].id = log_data.spell_id;
-					}
+		if (!log_data.party && state_data.defaulted[defaulted_key]) {
+			let defaulted = state_data.defaulted[defaulted_key];
 
-					return state_data;
+			log_data.defaulted     = true;
+			log_data.type_position = defaulted.position;
+
+			if (defaulted.id !== log_data.spell_id) {
+				if (event_code === 30) {
+					state_data.in_use[log_data.in_use_key] = clone(state_data.in_use[defaulted.key]);
+
+					state_data.in_use[log_data.in_use_key].spell_id = log_data.spell_id;
+					state_data.in_use[log_data.in_use_key].duration = 0;
 				}
-			} else {
-				if (state_data.defaulted[defaulted_key] && state_data.defaulted[defaulted_key].id !== log_data.spell_id) {
-					delete state_data.defaulted[state_data.defaulted[defaulted_key].key];
+
+				delete state_data.in_use[defaulted.key];
+
+				state_data.defaulted[defaulted_key].id  = log_data.spell_id;
+				state_data.defaulted[defaulted_key].key = log_data.in_use_key;
+
+				if (event_code === 30) {
+					return state_data;
 				}
 			}
 		}
 
 		for (let suffix of suffixes) {
-			log_data.in_use_key = `${log_data.type}-${log_data.spell_id}`;
-
 			if (suffix) {
 				log_data.in_use_key += `-${suffix}`;
 
@@ -418,13 +440,16 @@ class GameDataProcessor  {
 				delete state_data.in_use[log_data.in_use_key];
 			} else {
 				state_data.in_use[log_data.in_use_key] = {
-					type     : log_data.type,
-					id       : log_data.spell_id,
-					time     : date,
-					name     : data[log_data.spell_name_index],
-					duration : (log_data.duration_index) ? +data[log_data.duration_index] : 0,
-					log_type : log_data.char_type + "-" + log_data.subtype,
-					party    : log_data.party,
+					type          : log_data.type,
+					subtype       : log_data.subtype,
+					id            : log_data.spell_id,
+					time          : date,
+					name          : data[log_data.spell_name_index],
+					duration      : (log_data.duration_index) ? +data[log_data.duration_index] : 0,
+					log_type      : log_data.char_type + "-" + log_data.subtype,
+					party         : log_data.party,
+					defaulted     : log_data.defaulted,
+					type_position : log_data.type_position
 				};
 			}
 		}

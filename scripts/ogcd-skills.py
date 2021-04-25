@@ -63,7 +63,7 @@ while (True):
 			continue
 
 		skill  = match[0][0]
-		recast = int(match[0][1])
+		recast = int(match[0][1]) / 1.0
 		level  = item_data["Level"]
 
 		if skill not in traits:
@@ -85,10 +85,12 @@ while (True):
 		id           = item["ID"]
 		item_data    = getItem("Action", id)
 		english_name = item_data["Name_en"]
+		classes      = item_data["ClassJobCategory"]["Name_en"]
 
 		skills[id] = {
 			"recast"        : item_data["Recast100ms"] / 10.0,
 			"level_recasts" : sorted(traits[english_name], key = lambda item: item["level"], reverse = True) if english_name in traits else None,
+			"jobs"          : ("*", classes.split())[classes != "All Classes"],
 			"locales"       : {
 				"name" : {
 					"en" : item_data["Name_en"],
@@ -101,6 +103,6 @@ while (True):
 
 		saveImage(id, item_data["Icon"])
 
-	if (page == None):
+	if (page == None or page <= page_data["Pagination"]["Page"]):
 		saveSkills(skills)
 		break

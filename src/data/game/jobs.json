@@ -1,0 +1,122 @@
+{
+	"1" : {
+		"abbreviation" : "GLA"
+	},
+	"2" : {
+		"abbreviation" : "PGL"
+	},
+	"3" : {
+		"abbreviation" : "MRD"
+	},
+	"4" : {
+		"abbreviation" : "LNC"
+	},
+	"5" : {
+		"abbreviation" : "ARC"
+	},
+	"6" : {
+		"abbreviation" : "CNJ"
+	},
+	"7" : {
+		"abbreviation" : "THM"
+	},
+	"8" : {
+		"abbreviation" : "CRP"
+	},
+	"9" : {
+		"abbreviation" : "BSM"
+	},
+	"10" : {
+		"abbreviation" : "ARM"
+	},
+	"11" : {
+		"abbreviation" : "GSM"
+	},
+	"12" : {
+		"abbreviation" : "LTW"
+	},
+	"13" : {
+		"abbreviation" : "WVR"
+	},
+	"14" : {
+		"abbreviation" : "ALC"
+	},
+	"15" : {
+		"abbreviation" : "CUL"
+	},
+	"16" : {
+		"abbreviation" : "MIN"
+	},
+	"17" : {
+		"abbreviation" : "BTN"
+	},
+	"18" : {
+		"abbreviation" : "FSH"
+	},
+	"19" : {
+		"abbreviation" : "PLD"
+	},
+	"20" : {
+		"abbreviation" : "MNK"
+	},
+	"21" : {
+		"abbreviation" : "WAR"
+	},
+	"22" : {
+		"abbreviation" : "DRG"
+	},
+	"23" : {
+		"abbreviation" : "BRD"
+	},
+	"24" : {
+		"abbreviation" : "WHM"
+	},
+	"25" : {
+		"abbreviation" : "BLM"
+	},
+	"26" : {
+		"abbreviation" : "ACN"
+	},
+	"27" : {
+		"abbreviation" : "SMN"
+	},
+	"28" : {
+		"abbreviation" : "SCH"
+	},
+	"29" : {
+		"abbreviation" : "ROG"
+	},
+	"30" : {
+		"abbreviation" : "NIN"
+	},
+	"31" : {
+		"abbreviation" : "MCH"
+	},
+	"32" : {
+		"abbreviation" : "DRK"
+	},
+	"33" : {
+		"abbreviation" : "AST"
+	},
+	"34" : {
+		"abbreviation" : "SAM"
+	},
+	"35" : {
+		"abbreviation" : "RDM"
+	},
+	"36" : {
+		"abbreviation" : "BLU"
+	},
+	"37" : {
+		"abbreviation" : "GNB"
+	},
+	"38" : {
+		"abbreviation" : "DNC"
+	},
+	"39" : {
+		"abbreviation" : ""
+	},
+	"40" : {
+		"abbreviation" : ""
+	}
+}

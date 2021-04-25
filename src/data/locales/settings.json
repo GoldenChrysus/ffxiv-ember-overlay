@@ -244,6 +244,30 @@
 				}
 			]
 		},
+		"discord"    : {
+			"title"       : {
+				"en" : "Discord Webhook",
+				"pt" : "Discord Webhook",
+				"cn" : "Discord Webhook",
+				"jp" : "Discord Webhook",
+				"de" : "Discord Webhook",
+				"es" : "Discord Webhook",
+				"fr" : "Discord Webhook",
+				"kr" : "Discord Webhook"
+			},
+			"subsections" : [
+				{
+					"en" : "Webhook",
+					"pt" : "Webhook",
+					"cn" : "Webhook",
+					"jp" : "Webhook",
+					"de" : "Webhook",
+					"es" : "Webhook",
+					"fr" : "Webhook",
+					"kr" : "Webhook"
+				}
+			]
+		},
 		"custom-css"    : {
 			"title"       : {
 				"en" : "Custom CSS",
@@ -411,6 +435,16 @@
 					"es" : "DOT's",
 					"fr" : "DOT's",
 					"kr" : "도트기"
+				},
+				{
+					"en" : "General",
+					"pt" : "Geral",
+					"cn" : "通用",
+					"jp" : "一般",
+					"de" : "Allgemein",
+					"es" : "General",
+					"fr" : "Général",
+					"kr" : "일반 설정"
 				}
 			]
 		},
@@ -664,16 +698,6 @@
 			"fr" : "",
 			"kr" : ""
 		},
-		"tts.language" : {
-			"en" : "Language",
-			"pt" : "Língua",
-			"cn" : "语言",
-			"jp" : "言語",
-			"de" : "Sprache",
-			"es" : "Idioma",
-			"fr" : "Langue",
-			"kr" : "언어"
-		},
 		"tts.rules" : {
 			"en" : "Rules",
 			"pt" : "Regras",
@@ -754,87 +778,7 @@
 			"fr" : "Afficher le Bas du Parse",
 			"kr" : "하단 표시"
 		},
-		"table_columns.heal" : {
-			"en" : "Table Columns",
-			"pt" : "Colunas da Tabela",
-			"cn" : "标签选择",
-			"jp" : "列選択",
-			"de" : "Tabellenspalte",
-			"es" : "Columnas de Tabla",
-			"fr" : "Colonne de Tableau",
-			"kr" : "열"
-		},
-		"sort_columns.heal" : {
-			"en" : "Default Sort Column",
-			"pt" : "Organizar tabela (padrão)",
-			"cn" : "默认排序",
-			"jp" : "既定な並べ替え",
-			"de" : "Spalten nach Standard sortieren",
-			"es" : "Ordenar por Defecto",
-			"fr" : "Colonne de tri par défaut",
-			"kr" : "열 순서를 기본으로 설정"
-		},
-		"table_settings.heal.show_footer" : {
-			"en" : "Show Footer",
-			"pt" : "Mostrar rodapé",
-			"cn" : "显示页脚选项",
-			"jp" : "フッターを表示",
-			"de" : "Fußzeile anzeigen",
-			"es" : "Mostrar parte inferior",
-			"fr" : "Afficher le Bas du Parse",
-			"kr" : "하단 표기하기"
-		},
-		"table_columns.tank" : {
-			"en" : "Table Columns",
-			"pt" : "Colunas da Tabela",
-			"cn" : "标签选择",
-			"jp" : "列選択",
-			"de" : "Tabellenspalte",
-			"es" : "Columnas de Tabla",
-			"fr" : "Colonne de Tableau",
-			"kr" : "열"
-		},
-		"sort_columns.tank" : {
-			"en" : "Default Sort Column",
-			"pt" : "Organizar tabela (padrão)",
-			"cn" : "默认排序",
-			"jp" : "既定な並べ替え",
-			"de" : "Spalten nach Standard sortieren",
-			"es" : "Ordenar por Defecto",
-			"fr" : "Colonne de tri par défaut",
-			"kr" : "열 순서를 기본으로 설정"
-		},
-		"table_settings.tank.show_footer" : {
-			"en" : "Show Footer",
-			"pt" : "Mostrar rodapé",
-			"cn" : "显示页脚选项",
-			"jp" : "フッターを表示",
-			"de" : "Fußzeile anzeigen",
-			"es" : "Mostrar parte inferior",
-			"fr" : "Afficher le Bas du Parse",
-			"kr" : "하단 표기하기"
-		},
 		"detail_data.dps" : {
-			"en" : "Player Metrics",
-			"pt" : "Métricas do Jogador",
-			"cn" : "玩家数据元素",
-			"jp" : "プレイヤーメトリック",
-			"de" : "Spieler Metriken",
-			"es" : "Métricas del Jugador",
-			"fr" : "Les Mesures du Joueur",
-			"kr" : "플레이어 스탯"
-		},
-		"detail_data.heal" : {
-			"en" : "Player Metrics",
-			"pt" : "Métricas do Jogador",
-			"cn" : "玩家数据元素",
-			"jp" : "プレイヤーメトリック",
-			"de" : "Spieler Metriken",
-			"es" : "Métricas del Jugador",
-			"fr" : "Les Mesures du Joueur",
-			"kr" : "플레이어 스탯"
-		},
-		"detail_data.tank" : {
 			"en" : "Player Metrics",
 			"pt" : "Métricas do Jogador",
 			"cn" : "玩家数据元素",
@@ -894,25 +838,15 @@
 			"fr" : "Les Mesures",
 			"kr" : "스탯"
 		},
-		"table_columns.raid.heal" : {
-			"en" : "Metrics",
-			"pt" : "Métricas",
-			"cn" : "数据元素",
-			"jp" : "メトリック",
-			"de" : "Metrik",
-			"es" : "Métricas",
-			"fr" : "Les Mesures",
-			"kr" : "스탯"
-		},
-		"table_columns.raid.tank" : {
-			"en" : "Metrics",
-			"pt" : "Métricas",
-			"cn" : "数据元素",
-			"jp" : "メトリック",
-			"de" : "Metrik",
-			"es" : "Métricas",
-			"fr" : "Les Mesures",
-			"kr" : "스탯"
+		"discord.url" : {
+			"en" : "Webhook URL",
+			"pt" : "Webhook URL",
+			"cn" : "Webhook URL",
+			"jp" : "Webhook URL",
+			"de" : "Webhook URL",
+			"es" : "Webhook URL",
+			"fr" : "Webhook URL",
+			"kr" : "Webhook URL"
 		},
 		"custom.css" : {
 			"en" : "User-provided CSS is at your own risk.",
@@ -945,36 +879,6 @@
 			"kr" : "확인할 이펙트"
 		},
 		"spells_mode.dots" : {
-			"en" : "DOT's to Track",
-			"pt" : "DOT's to Track",
-			"cn" : "监控的DOT",
-			"jp" : "DOT's to Track",
-			"de" : "DOT's to Track",
-			"es" : "DOT's to Track",
-			"fr" : "DOT's to Track",
-			"kr" : "확인할 도트기"
-		},
-		"spells_mode.party_spells" : {
-			"en" : "Spells to Track",
-			"pt" : "Magias a Rastrear",
-			"cn" : "监控的技能",
-			"jp" : "選択中スペル",
-			"de" : "Zauber im Überblick",
-			"es" : "Spells to Track",
-			"fr" : "Spells to Track",
-			"kr" : "확인할 스펠"
-		},
-		"spells_mode.party_effects" : {
-			"en" : "Effects to Track",
-			"pt" : "Efeitos a Rastrear",
-			"cn" : "监控的效果",
-			"jp" : "Effects to Track",
-			"de" : "Effekte im Überblick",
-			"es" : "Effects to Track",
-			"fr" : "Effects to Track",
-			"kr" : "확인할 이펙트"
-		},
-		"spells_mode.party_dots" : {
 			"en" : "DOT's to Track",
 			"pt" : "DOT's to Track",
 			"cn" : "监控的DOT",
@@ -1085,64 +989,24 @@
 			"kr" : "도트기 역표시"
 		},
 		"spells_mode.always_skill" : {
-			"en" : "Always Show",
-			"pt" : "Always Show",
-			"cn" : "Always Show",
-			"jp" : "Always Show",
-			"de" : "Always Show",
-			"es" : "Always Show",
-			"fr" : "Always Show",
-			"kr" : "Always Show"
+			"en" : "Display Permanently",
+			"pt" : "Display Permanently",
+			"cn" : "Display Permanently",
+			"jp" : "Display Permanently",
+			"de" : "Display Permanently",
+			"es" : "Display Permanently",
+			"fr" : "Display Permanently",
+			"kr" : "Display Permanently"
 		},
-		"spells_mode.always_effect" : {
-			"en" : "Always Show",
-			"pt" : "Always Show",
-			"cn" : "Always Show",
-			"jp" : "Always Show",
-			"de" : "Always Show",
-			"es" : "Always Show",
-			"fr" : "Always Show",
-			"kr" : "Always Show"
-		},
-		"spells_mode.always_dot" : {
-			"en" : "Always Show",
-			"pt" : "Always Show",
-			"cn" : "Always Show",
-			"jp" : "Always Show",
-			"de" : "Always Show",
-			"es" : "Always Show",
-			"fr" : "Always Show",
-			"kr" : "Always Show"
-		},
-		"spells_mode.party_reverse_skill" : {
-			"en" : "Reverse Indicator for Spells",
-			"pt" : "Reverse Indicator for Spells",
-			"cn" : "反向指示技能进度条",
-			"jp" : "Reverse Indicator for Spells",
-			"de" : "Indikator für Zauber umdrehen",
-			"es" : "Reverse Indicator for Spells",
-			"fr" : "Reverse Indicator for Spells",
-			"kr" : "스펠 역표시"
-		},
-		"spells_mode.party_reverse_effect" : {
-			"en" : "Reverse Indicator for Effects",
-			"pt" : "Reverse Indicator for Effects",
-			"cn" : "反向指示效果进度条",
-			"jp" : "Reverse Indicator for Effects",
-			"de" : "Idikator für Effekte umdrehen",
-			"es" : "Reverse Indicator for Effects",
-			"fr" : "Reverse Indicator for Effects",
-			"kr" : "이펙트 역표시"
-		},
-		"spells_mode.party_reverse_dot" : {
-			"en" : "Reverse Indicator for DOT's",
-			"pt" : "Reverse Indicator for DOT's",
-			"cn" : "反向指示DOT进度条",
-			"jp" : "Reverse Indicator for DOT's",
-			"de" : "Idikator für DOT umdrehen",
-			"es" : "Reverse Indicator for DOT's",
-			"fr" : "Reverse Indicator for DOT's",
-			"kr" : "도트기 역표시"
+		"spells_mode.always_skill_static" : {
+			"en" : "Use Static Positions for Permanent Timers",
+			"pt" : "Use Static Positions for Permanent Timers",
+			"cn" : "Use Static Positions for Permanent Timers",
+			"jp" : "Use Static Positions for Permanent Timers",
+			"de" : "Use Static Positions for Permanent Timers",
+			"es" : "Use Static Positions for Permanent Timers",
+			"fr" : "Use Static Positions for Permanent Timers",
+			"kr" : "Use Static Positions for Permanent Timers"
 		},
 		"spells_mode.warning_threshold" : {
 			"en" : "Warning Threshold (In Seconds)",
@@ -1153,6 +1017,16 @@
 			"es" : "Warning Threshold (In Seconds)",
 			"fr" : "Warning Threshold (In Seconds)",
 			"kr" : "경고 구간 (초 로 입력)"
+		},
+		"spells_mode.party_zones" : {
+			"en" : "Only Track in These Instances",
+			"pt" : "Only Track in These Instances",
+			"cn" : "Only Track in These Instances",
+			"jp" : "Only Track in These Instances",
+			"de" : "Only Track in These Instances",
+			"es" : "Only Track in These Instances",
+			"fr" : "Only Track in These Instances",
+			"kr" : "Only Track in These Instances"
 		},
 		"spells_mode.designer.skill.warning" : {
 			"en" : "Show Warning Animation",
@@ -1184,16 +1058,6 @@
 			"fr" : "Cooldowns in Bottom Left (Icons Only)",
 			"kr" : "Cooldowns in Bottom Left (Icons Only)"
 		},
-		"spells_mode.designer.effect.warning" : {
-			"en" : "Show Warning Animation",
-			"pt" : "Show Warning Animation",
-			"cn" : "Show Warning Animation",
-			"jp" : "Show Warning Animation",
-			"de" : "Show Warning Animation",
-			"es" : "Show Warning Animation",
-			"fr" : "Show Warning Animation",
-			"kr" : "Show Warning Animation"
-		},
 		"spells_mode.designer.effect.border" : {
 			"en" : "Show Glowing Border",
 			"pt" : "Show Glowing Border",
@@ -1203,66 +1067,6 @@
 			"es" : "Show Glowing Border",
 			"fr" : "Show Glowing Border",
 			"kr" : "Show Glowing Border"
-		},
-		"spells_mode.designer.effect.indicator" : {
-			"en" : "Visual Indicator",
-			"pt" : "Visual Indicator",
-			"cn" : "Visual Indicator",
-			"jp" : "Visual Indicator",
-			"de" : "Visual Indicator",
-			"es" : "Visual Indicator",
-			"fr" : "Visual Indicator",
-			"kr" : "Visual Indicator"
-		},
-		"spells_mode.designer.effect.cooldown_bottom_left" : {
-			"en" : "Cooldowns in Bottom Left (Icons Only)",
-			"pt" : "Cooldowns in Bottom Left (Icons Only)",
-			"cn" : "Cooldowns in Bottom Left (Icons Only)",
-			"jp" : "Cooldowns in Bottom Left (Icons Only)",
-			"de" : "Cooldowns in Bottom Left (Icons Only)",
-			"es" : "Cooldowns in Bottom Left (Icons Only)",
-			"fr" : "Cooldowns in Bottom Left (Icons Only)",
-			"kr" : "Cooldowns in Bottom Left (Icons Only)"
-		},
-		"spells_mode.designer.dot.warning" : {
-			"en" : "Show Warning Animation",
-			"pt" : "Show Warning Animation",
-			"cn" : "Show Warning Animation",
-			"jp" : "Show Warning Animation",
-			"de" : "Show Warning Animation",
-			"es" : "Show Warning Animation",
-			"fr" : "Show Warning Animation",
-			"kr" : "Show Warning Animation"
-		},
-		"spells_mode.designer.dot.border" : {
-			"en" : "Show Glowing Border",
-			"pt" : "Show Glowing Border",
-			"cn" : "Show Glowing Border",
-			"jp" : "Show Glowing Border",
-			"de" : "Show Glowing Border",
-			"es" : "Show Glowing Border",
-			"fr" : "Show Glowing Border",
-			"kr" : "Show Glowing Border"
-		},
-		"spells_mode.designer.dot.indicator" : {
-			"en" : "Visual Indicator",
-			"pt" : "Visual Indicator",
-			"cn" : "Visual Indicator",
-			"jp" : "Visual Indicator",
-			"de" : "Visual Indicator",
-			"es" : "Visual Indicator",
-			"fr" : "Visual Indicator",
-			"kr" : "Visual Indicator"
-		},
-		"spells_mode.designer.dot.cooldown_bottom_left" : {
-			"en" : "Cooldowns in Bottom Left (Icons Only)",
-			"pt" : "Cooldowns in Bottom Left (Icons Only)",
-			"cn" : "Cooldowns in Bottom Left (Icons Only)",
-			"jp" : "Cooldowns in Bottom Left (Icons Only)",
-			"de" : "Cooldowns in Bottom Left (Icons Only)",
-			"es" : "Cooldowns in Bottom Left (Icons Only)",
-			"fr" : "Cooldowns in Bottom Left (Icons Only)",
-			"kr" : "Cooldowns in Bottom Left (Icons Only)"
 		},
 		"spells_mode.ui.use" : {
 			"en" : "Use UI Builder",
@@ -1966,6 +1770,16 @@
 			"es" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"fr" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"kr" : "UI 빌더는 스펠 타이머를 본인 입맛에 맞게 만들 수 있습니다.(아래) 본인의 쿨타임, 탱커의 쿨타임들 혹은 힐러 쿨타임또한 따로 표시시켜주는 섹션을 만드는것이 예로 들 수 있습니다. 아래의 테이블에 섹션을 만든 후 어떤것을 표기할지 따로 설정해주시면 되며 완성후 반드시 \"{{spells_mode.ui.use}}\"이 활성화된것을 확인한 후 저장하시면 됩니다. 오버레이를 파판 화면을 모두 덮게끔 사이즈를 조절하세요. 만약 사이즈 조절이 불가능하다면 오버레이 플러그인에서 잠금해제가 됬는지 확인하시거나 이미 잠금해제가 되있는 상태라면 하얀 바탕을 활성화 시키신 후 오버레이에서 우클릭후 \"{{edit_ui}}\" 선택을 하시면 됩니다. \"{{edit_ui}}\" 모드 진입하신 이후 반드시 오버레이를 재갱신하시거나 하얀 바탕을 비활성화 시키세요. 이 후 스펠 타이머 섹션을 따로 사이즈 조절하거나 화면 내 이동시키실 수 있습니다. 각 섹션마다 이름이 표시되어있으므로 구별이 가능하므로 세팅을 마치셨다면 우클릭 후 \"{{save_ui}}\"를 선택하여 저장하시면 마무리됩니다."
+		},
+		"discord_webhook_info": {
+			"en" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"pt" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"cn" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"jp" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"de" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"es" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"fr" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"kr" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel."
 		}
 	}
 }

@@ -5,6 +5,7 @@ import OverlayPluginService from "./PluginService/OverlayPluginService";
 import OverlayProcService from "./PluginService/OverlayProcService";
 import SocketService from "./PluginService/SocketService";
 import UsageService from "./UsageService";
+import MessageProcessor from "../processors/MessageProcessor";
 
 class PluginService extends PluginServiceAbstract {
 	constructor() {
@@ -88,7 +89,8 @@ class PluginService extends PluginServiceAbstract {
 			combat : UsageService.usingCombatData(mode, settings)
 		};
 		let events   = [
-			"ChangePrimaryPlayer"
+			"ChangePrimaryPlayer",
+			"ChangeZone"
 		];
 
 		if (data.combat) {
@@ -109,6 +111,10 @@ class PluginService extends PluginServiceAbstract {
 		}
 
 		return events;
+	}
+
+	getCombatants() {
+		this.plugin_service.callHandler(this.plugin_service.createMessage("getCombatants"), MessageProcessor.processMessage);
 	}
 
 	tts(messages) {

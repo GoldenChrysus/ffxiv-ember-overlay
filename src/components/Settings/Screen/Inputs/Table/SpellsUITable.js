@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Select } from "semantic-ui-react";
 import clone from "lodash.clonedeep";
 import $ from "jquery";
+import Sortable from "sortablejs/modular/sortable.core.esm.js";
 
 import LocalizationService from "../../../../../services/LocalizationService";
 import Table from "../Table";
@@ -11,6 +12,8 @@ class SpellsUITable extends Table {
 	constructor(props) {
 		super(props);
 
+		this.type_sort_data         = {};
+		this.bound_sortable         = [];
 		this.spells_per_row_options = [{
 			key   : -1,
 			value : -1,
@@ -68,6 +71,14 @@ class SpellsUITable extends Table {
 		});
 	}
 
+	componentDidMount() {
+		this.processSortable();
+	}
+
+	componentDidUpdate() {
+		this.processSortable();
+	}
+
 	render() {
 		let rows = (this.state && this.state.rows)
 			? Object.keys(this.state.rows).map(key => this.state.rows[key])
@@ -91,13 +102,14 @@ class SpellsUITable extends Table {
 	}
 
 	createRow(options) {
-		let button = (options.insert)
+		let key      = options.key || "_insert";
+		let button   = (options.insert)
 			? <Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button>
 			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
-		let row    = (
-			<tr id="insert-row" key={"spells-ui-key-" + (options.key || "_insert")} data-key={options.key || "_insert"}>
+		let row      = (
+			<tr id={"spells-ui-row-" + key} key={"spells-ui-key-" + key} data-key={key}>
 				<td>
-					<Select multiple search options={this.props.options} defaultValue={options.types} onChange={this.handleSelectChange.bind(this, "types")}/>
+					<Select className="ui-table" data-uuid={key} multiple search options={this.props.options} defaultValue={options.types} onChange={this.handleSelectChange.bind(this, "types")}/>
 				</td>
 				<td>
 					<Select options={LocalizationService.getSpellLayoutOptions(true)} defaultValue={options.layout.layout || "default"} onChange={this.handleSelectChange.bind(this, "layout.layout")}/>
@@ -157,9 +169,35 @@ class SpellsUITable extends Table {
 		this.syncData();
 	}
 
-	handleSelectChange(field, e, select) {
-		let value = select.value;
-		let key   = this.getDeleteKey(e);
+	handleSelectChange(field, e, select, custom_value) {
+		let value    = custom_value || select.value;
+		let key      = this.getDeleteKey(e);
+		let max_sort = 0;
+
+		if (field === "types") {
+			if (!this.type_sort_data[key]) {
+				this.type_sort_data[key] = {};
+			}
+
+			for (let tmp_value in this.type_sort_data[key]) {
+				if (value.indexOf(tmp_value) === -1) {
+					delete this.type_sort_data[key][tmp_value];
+					continue;
+				}
+
+				max_sort = Math.max(max_sort, this.type_sort_data[key][tmp_value]);
+			}
+
+			for (let tmp_value of value) {
+				if (!this.type_sort_data[key][tmp_value]) {
+					this.type_sort_data[key][tmp_value] = ++max_sort;
+				}
+			}
+
+			value.sort((a, b) => {
+				return (this.type_sort_data[key][a] < this.type_sort_data[key][b]) ? -1 : 1;
+			});
+		}
 
 		if (key === "_insert") {
 			let state = clone(this.state);
@@ -173,7 +211,7 @@ class SpellsUITable extends Table {
 	}
 
 	getDeleteKey(e) {
-		return $(e.currentTarget).closest("tr").attr("data-key");
+		return $(e.currentTarget || e.target).closest("tr").attr("data-key");
 	}
 
 	createUUID() {
@@ -184,6 +222,43 @@ class SpellsUITable extends Table {
 			let v = (c === "x") ? r : (r & 0x3 | 0x8);
 
 			return v.toString(16);
+		});
+	}
+
+	processSortable() {
+		for (let uuid in this.state.rows) {
+			if (this.bound_sortable.indexOf(uuid) !== -1) {
+				continue;
+			}
+
+			this.bindSortable(uuid);
+		}
+	}
+
+	bindSortable(uuid) {
+		Array.prototype.forEach.call(document.getElementById(`spells-ui-row-${uuid}`).querySelectorAll(".multiple.selection.ui-table"), (el) => {
+			Sortable.create(
+				el,
+				{
+					draggable: "a",
+					onUpdate: (evt, originalEvent) => {
+						let value = [];
+						let uuid  = evt.target.getAttribute("data-uuid");
+
+						Array.prototype.forEach.call(evt.target.getElementsByTagName("a"), (el) => {
+							value.push($(el).attr("value"));
+						});
+
+						this.type_sort_data[uuid] = {};
+
+						for (let i in value) {
+							this.type_sort_data[uuid][value[i]] = i;
+						}
+
+						this.handleSelectChange("types", evt, undefined, value);
+					}
+				}
+			);
 		});
 	}
 }

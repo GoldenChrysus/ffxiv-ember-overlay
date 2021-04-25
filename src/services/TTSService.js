@@ -180,24 +180,9 @@ class TTSService {
 			return;
 		}
 
-		if (!name) {
-			switch (type) {
-				case "skill":
-					name = LocalizationService.getoGCDSkillName(id);
-					break;
-
-				case "effect":
-					name = LocalizationService.getEffectName(id);
-					break;
-
-				default:
-					break;
-			}
-		}
-
 		this.last.spells[key] = date;
 
-		this.sayNow(name);
+		this.sayNow(name || LocalizationService.getSpellName(type, id));
 	}
 
 	processQueue() {

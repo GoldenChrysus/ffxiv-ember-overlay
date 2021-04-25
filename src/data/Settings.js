@@ -156,6 +156,9 @@ const default_settings = {
 			"deaths"
 		]
 	},
+	discord : {
+		url : ""
+	},
 	spells_mode : {
 		spells               : [],
 		effects              : [],
@@ -176,6 +179,8 @@ const default_settings = {
 		spells_per_row       : 1,
 		show_icon            : true,
 		use_tts              : false,
+		party_use_tts        : false,
+		party_zones          : [],
 		tts_trigger          : "zero",
 		minimal_layout       : false,
 		invert_vertical      : false,

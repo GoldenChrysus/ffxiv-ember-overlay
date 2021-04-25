@@ -59,6 +59,46 @@
 		"fr" : "Nettoyer les Données",
 		"kr" : "전투 데이터 삭제"
 	},
+	"encounter_history" : {
+		"en" : "Encounter History",
+		"pt" : "Encounter History",
+		"cn" : "Encounter History",
+		"jp" : "Encounter History",
+		"de" : "Encounter History",
+		"es" : "Encounter History",
+		"fr" : "Encounter History",
+		"kr" : "Encounter History"
+	},
+	"discord" : {
+		"en" : "Discord",
+		"pt" : "Discord",
+		"cn" : "Discord",
+		"jp" : "Discord",
+		"de" : "Discord",
+		"es" : "Discord",
+		"fr" : "Discord",
+		"kr" : "Discord"
+	},
+	"join_discord" : {
+		"en" : "Join Discord",
+		"pt" : "Join Discord",
+		"cn" : "Join Discord",
+		"jp" : "Join Discord",
+		"de" : "Join Discord",
+		"es" : "Join Discord",
+		"fr" : "Join Discord",
+		"kr" : "Join Discord"
+	},
+	"discord_webhook" : {
+		"en" : "Share Encounter",
+		"pt" : "Share Encounter",
+		"cn" : "Share Encounter",
+		"jp" : "Share Encounter",
+		"de" : "Share Encounter",
+		"es" : "Share Encounter",
+		"fr" : "Share Encounter",
+		"kr" : "Share Encounter"
+	},
 	"settings"            : {
 		"en" : "Settings",
 		"pt" : "Configurações",

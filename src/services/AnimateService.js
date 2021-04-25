@@ -4,10 +4,8 @@ class AnimateService {
 		let canvas_width  = canvas.width;
 		let canvas_height = canvas.height;
 		let percent       = 100;
-		// let increment     = (percent / duration);
 		let elapsed       = 0;
 		let start         = 0;
-		// let next_time     = 0;
 
 		requestAnimationFrame(animate);
 
@@ -25,23 +23,6 @@ class AnimateService {
 				requestAnimationFrame(animate);
 			}
 		}
-
-		/* function animate2(time) {
-			let first = (next_time === 0);
-			let diff  = (next_time === 0) ? 1 : time - next_time;
-
-			next_time = time;
-			
-			if (!first) {
-				percent -= (increment * diff / 10);
-			} 
-
-			draw(percent, reverse);
-
-			if (percent >= 0) {
-				requestAnimationFrame(animate2);
-			}
-		} */
 
 		function draw(percent, reverse) {
 			let end_radians = (!reverse) ? (-Math.PI / 2) - Math.PI * 2 * percent / 100 : (-Math.PI / 2) + (Math.PI * 2 * percent / 100);

@@ -6,6 +6,7 @@ import LocalizationService from "../../services/LocalizationService";
 
 import OverlayInfo from "./PlayerTable/OverlayInfo";
 import Spell from "./SpellGrid/Spell";
+import SpellService from "../../services/SpellService";
 
 class SpellGrid extends EmberComponent {
 	constructor(props) {
@@ -106,7 +107,10 @@ class SpellGrid extends EmberComponent {
 		let uuid = this.props.settings.uuid || "default";
 
 		if (this.props.is_draggable) {
-			let text = [];
+			const spell = SpellService.getDemoSpell();
+
+			let text   = [];
+			let spells = [];
 
 			for (let value of this.props.section.types) {
 				value = value.split("-");
@@ -119,35 +123,96 @@ class SpellGrid extends EmberComponent {
 				text.push(value)
 			}
 
-			return <span>{text.join(", ")}</span>;
+			for (let i = 1; i <= 5; i++) {
+				spells.push(
+					<Spell
+						key={"demo-spell-" + i}
+						base_key={"demo-spell-" + i}
+						order={i}
+						grid_uuid="demo"
+						spell={spell}
+						cooldown={spell.cooldown}
+						reverse={false}
+						layout={this.props.settings.layout}
+						spells_per_row={this.props.settings.spells_per_row}
+						show_icon={this.props.settings.show_icon}
+						warning_threshold={0}
+						warning={false}
+						border={false}
+						indicator={"none"}
+						bottom_left={false}
+					/>
+				);
+			}
+
+			return (
+				<React.Fragment>
+					{spells}
+					<span className="types">{text.join(", ")}</span>
+				</React.Fragment>
+			);
 		}
 
 		let spells           = Object.keys(this.props.spells);
 		let items            = [];
 		let decimal_accuracy = (this.props.settings.layout === "icon") ? 0 : 1;
+		let default_types    = [
+			"you-skill",
+			"you-effect",
+			"you-dot"
+		];
 
 		spells.sort((a, b) => {
-			if (+this.props.spells[a].cooldown === +this.props.spells[b].cooldown) {
-				if (this.props.spells[a].type !== this.props.spells[b].type || this.props.spells[a].dot || this.props.spells[b].dot) {
-					if (this.props.spells[a].type === "skill") {
-						return -1;
-					} else if (this.props.spells[b].type === "skill") {
-						return 1;
-					}
+			let a_spell  = this.props.spells[a];
+			let static_a = this.props.settings[`always_${a_spell.subtype}_static`];
+			let b_spell  = this.props.spells[b];
+			let static_b = this.props.settings[`always_${b_spell.subtype}_static`];
 
-					if (!this.props.spells[a].dot) {
-						return -1;
-					} else if (!this.props.spells[b].dot) {
-						return 1;
-					}
-
-					return (this.props.spells[a].name < this.props.spells[b].name) ? -1 : 1;
+			if (a_spell.defaulted || b_spell.defaulted) {
+				if (a_spell.defaulted && !b_spell.defaulted) {
+					return -1;
+				} else if (b_spell.defaulted && !a_spell.defaulted) {
+					return 1;
 				} else {
-					return (this.props.spells[a].name < this.props.spells[b].name) ? -1 : 1;
+					if (static_a && !static_b) {
+						return -1;
+					} if (static_b && !static_a) {
+						return 1;
+					}
+
+					if (static_a && static_b) {
+						if (a_spell.subtype === b_spell.subtype) {
+							return (a_spell.type_position > b_spell.type_position) ? 1 : -1;
+						} else {
+							let types = (this.props.section) ? this.props.section.types : default_types;
+
+							return (types.indexOf(a_spell.log_type) > types.indexOf(b_spell.log_type)) ? 1 : -1;
+						}
+					}
 				}
 			}
 
-			return (+this.props.spells[a].cooldown < +this.props.spells[b].cooldown) ? -1 : 1;
+			if (+a_spell.cooldown === +b_spell.cooldown) {
+				if (a_spell.type !== b_spell.type || a_spell.dot || b_spell.dot) {
+					if (a_spell.type === "skill") {
+						return -1;
+					} else if (b_spell.type === "skill") {
+						return 1;
+					}
+
+					if (!a_spell.dot) {
+						return -1;
+					} else if (!b_spell.dot) {
+						return 1;
+					}
+
+					return (a_spell.name < b_spell.name) ? -1 : 1;
+				} else {
+					return (a_spell.name < b_spell.name) ? -1 : 1;
+				}
+			}
+
+			return (+a_spell.cooldown < +b_spell.cooldown) ? -1 : 1;
 		});
 
 		for (let i in spells) {
