@@ -19,7 +19,7 @@
 - Added Discord webhook support at setting tab "Discord Webhook"
 
 ### UI Changes
-- Made parser footer more responsive at small overlay sizes (less than or equal to 350 pixels)
+- Made parser footer more responsive at small overlay sizes (less than or equal to 350 pixels wide)
 
 ### Code Changes
 - Consolidated duplicated localization texts
