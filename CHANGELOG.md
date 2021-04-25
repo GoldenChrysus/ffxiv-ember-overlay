@@ -2,7 +2,7 @@
 
 ## 0.27.0-alpha
 
-**Released: [in staging]**
+**Released: 2021-04-25**
 
 ### Bug Fixes
 - Resolved issue with reordering multiple-select dropdowns in settings
