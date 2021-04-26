@@ -40,6 +40,11 @@ const language_options = [
 		key   : "es",
 		value : "es",
 		text  : "Español"
+	},
+	{
+		key   : "ua",
+		value : "ua",
+		text  : "Українська"
 	}
 ];
 const decimal_options  = [

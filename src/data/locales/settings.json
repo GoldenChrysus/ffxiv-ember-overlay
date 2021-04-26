@@ -9,7 +9,8 @@
 				"de" : "Benutzeroberfläche",
 				"es" : "Interfaz",
 				"fr" : "Interface",
-				"kr" : "인터페이스"
+				"kr" : "인터페이스",
+				"ua" : "Інтерфейс"
 			},
 			"subsections" : [
 				{
@@ -20,7 +21,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Загальне"
 				},
 				{
 					"en" : "Data",
@@ -30,7 +32,8 @@
 					"de" : "Daten",
 					"es" : "Datos",
 					"fr" : "Données",
-					"kr" : "데이터"
+					"kr" : "데이터",
+					"ua" : "Дані"
 				},
 				{
 					"en" : "Theme",
@@ -40,7 +43,8 @@
 					"de" : "Farbschema",
 					"es" : "Theme",
 					"fr" : "Thème",
-					"kr" : "테마"
+					"kr" : "테마",
+					"ua" : "Тема"
 				}
 			]
 		},
@@ -53,7 +57,8 @@
 				"de" : "Metrik Namen",
 				"es" : "Metric Names",
 				"fr" : "Noms des Mesures",
-				"kr" : "항목 이름"
+				"kr" : "항목 이름",
+				"ua" : "Назви Метрик"
 			},
 			"subsections" : [
 				{
@@ -64,7 +69,8 @@
 					"de" : "Benutzerdefinierte Metrik Namen",
 					"es" : "Custom Metric Names",
 					"fr" : "Noms des Mesures Personnalisés",
-					"kr" : "임의 항목 설정"
+					"kr" : "임의 항목 설정",
+					"ua" : "Свої Назви Метрик"
 				}
 			]
 		},
@@ -77,7 +83,8 @@
 				"de" : "Spielertabelle",
 				"es" : "Tabla de Jugadores",
 				"fr" : "Onglet Joueur",
-				"kr" : "플레이어 표"
+				"kr" : "플레이어 표",
+				"ua" : "Таблиця гравців"
 			},
 			"subsections" : [
 				{
@@ -88,7 +95,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Загальне"
 				},
 				{
 					"en" : "DPS",
@@ -98,7 +106,8 @@
 					"de" : "DPS",
 					"es" : "DPS",
 					"fr" : "DPS",
-					"kr" : "DPS"
+					"kr" : "DPS",
+					"ua" : "DPS"
 				},
 				{
 					"en" : "Heal",
@@ -108,7 +117,8 @@
 					"de" : "Heilung",
 					"es" : "Cura",
 					"fr" : "Soin",
-					"kr" : "치유"
+					"kr" : "치유",
+					"ua" : "Цілитель"
 				},
 				{
 					"en" : "Tank",
@@ -118,7 +128,8 @@
 					"de" : "Verteidiger",
 					"es" : "Tank",
 					"fr" : "Tank",
-					"kr" : "탱커"
+					"kr" : "탱커",
+					"ua" : "Танк"
 				}
 			]
 		},
@@ -131,7 +142,8 @@
 				"de" : "Spieler Detail",
 				"es" : "Detalles del Jugador",
 				"fr" : "Détails du Joueur",
-				"kr" : "플레이어 상세 정보"
+				"kr" : "플레이어 상세 정보",
+				"ua" : "Деталі Гравця"
 			},
 			"subsections" : [
 				{
@@ -142,7 +154,8 @@
 					"de" : "DPS",
 					"es" : "DPS",
 					"fr" : "DPS",
-					"kr" : "DPS"
+					"kr" : "DPS",
+					"ua" : "DPS"
 				},
 				{
 					"en" : "Heal",
@@ -152,7 +165,8 @@
 					"de" : "Heilung",
 					"es" : "Cura",
 					"fr" : "Soin",
-					"kr" : "치유"
+					"kr" : "치유",
+					"ua" : "Цілитель"
 				},
 				{
 					"en" : "Tank",
@@ -162,7 +176,8 @@
 					"de" : "Verteidiger",
 					"es" : "Tank",
 					"fr" : "Tank",
-					"kr" : "탱커"
+					"kr" : "탱커",
+					"ua" : "Танк"
 				}
 			]
 		},
@@ -175,7 +190,8 @@
 				"de" : "Raid Ansicht",
 				"es" : "Vista de Raid",
 				"fr" : "Version Raid",
-				"kr" : "레이드 뷰"
+				"kr" : "레이드 뷰",
+				"ua" : "Вигляд Рейду"
 			},
 			"subsections" : [
 				{
@@ -186,7 +202,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Загальне"
 				},
 				{
 					"en" : "DPS",
@@ -196,7 +213,8 @@
 					"de" : "DPS",
 					"es" : "DPS",
 					"fr" : "DPS",
-					"kr" : "DPS"
+					"kr" : "DPS",
+					"ua" : "DPS"
 				},
 				{
 					"en" : "Heal",
@@ -206,7 +224,8 @@
 					"de" : "Heilung",
 					"es" : "Cura",
 					"fr" : "Soin",
-					"kr" : "치유"
+					"kr" : "치유",
+					"ua" : "Цілитель"
 				},
 				{
 					"en" : "Tank",
@@ -216,7 +235,8 @@
 					"de" : "Verteidiger",
 					"es" : "Tank",
 					"fr" : "Tank",
-					"kr" : "탱커"
+					"kr" : "탱커",
+					"ua" : "Захисник"
 				}
 			]
 		},
@@ -229,7 +249,8 @@
 				"de" : "Eigenes CSS",
 				"es" : "CSS Personalizado",
 				"fr" : "CSS Personnalisé",
-				"kr" : "커스텀 CSS"
+				"kr" : "커스텀 CSS",
+				"ua" : "Свій CSS"
 			},
 			"subsections" : [
 				{
@@ -240,7 +261,8 @@
 					"de" : "Eigenes CSS",
 					"es" : "CSS Personalizado",
 					"fr" : "CSS Personnalisé",
-					"kr" : "커스텀 CSS"
+					"kr" : "커스텀 CSS",
+					"ua" : "Свій CSS"
 				}
 			]
 		},
@@ -253,7 +275,8 @@
 				"de" : "Exportieren",
 				"es" : "Exportación",
 				"fr" : "Exporter",
-				"kr" : "저장하기"
+				"kr" : "저장하기",
+				"ua" : "Експорт"
 			},
 			"subsections" : [
 				{
@@ -264,7 +287,8 @@
 					"de" : "Einstellungen Exportieren",
 					"es" : "Opciones de Exportación",
 					"fr" : "Exporter les Configurations",
-					"kr" : "설정 저장하기"
+					"kr" : "설정 저장하기",
+					"ua" : "Експортувати Налаштування"
 				}
 			]
 		},
@@ -277,7 +301,8 @@
 				"de" : "Über",
 				"es" : "Acerca de",
 				"fr" : "A propos de ",
-				"kr" : "오버레이 정보"
+				"kr" : "오버레이 정보",
+				"ua" : "Про нас"
 			},
 			"subsections" : [
 				{
@@ -288,7 +313,8 @@
 					"de" : "Ember Overlay",
 					"es" : "Ember Overlay",
 					"fr" : "Ember Overlay",
-					"kr" : "엠버 오버레이"
+					"kr" : "엠버 오버레이",
+					"ua" : "Ember Overlay"
 				}
 			]
 		}
@@ -302,7 +328,8 @@
 			"de" : "Language",
 			"es" : "Language",
 			"fr" : "Language",
-			"kr" : "Language"
+			"kr" : "Language",
+			"ua" : "Language"
 		},
 		"interface.player_name" : {
 			"en" : "Player Name",
@@ -312,7 +339,8 @@
 			"de" : "Spielername",
 			"es" : "Nombre del Jugador",
 			"fr" : "Prénom du Joueur",
-			"kr" : "플레이어 이름"
+			"kr" : "플레이어 이름",
+			"ua" : "Ім'я Гравця"
 		},
 		"interface.opacity" : {
 			"en" : "Overlay Opacity",
@@ -322,7 +350,8 @@
 			"de" : "Overlay Deckkraft",
 			"es" : "Opacidad del Overlay",
 			"fr" : "Opacité de l'Overlay",
-			"kr" : "오버레이 투명도"
+			"kr" : "오버레이 투명도",
+			"ua" : "Прозорість Накладання"
 		},
 		"interface.zoom" : {
 			"en" : "Overlay Zoom",
@@ -332,7 +361,8 @@
 			"de" : "Overlay Zoom",
 			"es" : "Zoom del Overlay",
 			"fr" : "Zoom sur l'Overlay",
-			"kr" : "오버레이 확대 비율"
+			"kr" : "오버레이 확대 비율",
+			"ua" : "Масштаб Накладання"
 		},
 		"interface.top_right_rank" : {
 			"en" : "Display Rank in Top Right",
@@ -342,7 +372,8 @@
 			"de" : "Ranglistenplatz oben rechts anzeigen",
 			"es" : "Mostrar Rango en la esquina superior derecha",
 			"fr" : "Afficher le Classement en Haut à Droite",
-			"kr" : "상단 우측에 기여도 랭킹 표시"
+			"kr" : "상단 우측에 기여도 랭킹 표시",
+			"ua" : "Відображати Ранг справа зверху"
 		},
 		"interface.blur_job_icons" : {
 			"en" : "Blur Job Icons When Blurring Player Names",
@@ -352,7 +383,8 @@
 			"de" : "Job Icons zusammen mit Spielernamen trüben",
 			"es" : "Difuminar Íconos de clase al difuminar los Nombres de los Jugadores",
 			"fr" : "Cacher les Icônes de Classe Quand les Noms des Autres Joueurs sont Cachés",
-			"kr" : "플레이어 이름 가릴 때 잡 아이콘도 가리기"
+			"kr" : "플레이어 이름 가릴 때 잡 아이콘도 가리기",
+			"ua" : "Розмити Значки Роботи коли розмиваються Імена Гравців"
 		},
 		"interface.collapse_down" : {
 			"en" : "Collapse Downwards",
@@ -362,7 +394,8 @@
 			"de" : "Nach unten verkleinern",
 			"es" : "Esconder hacia abajo",
 			"fr" : "Réduire vers le Bas",
-			"kr" : "하단 기준으로 최소화"
+			"kr" : "하단 기준으로 최소화",
+			"ua" : "Згорнути вниз"
 		},
 		"interface.footer_when_collapsed" : {
 			"en" : "Show Overlay Footer When Collapsed",
@@ -372,7 +405,8 @@
 			"de" : "Overlay Fußzeile beim Verkleinern anzeigen",
 			"es" : "Mostrar parte inferior cuando el Overlay está Minimizado",
 			"fr" : "Afficher le Bas du Parse en ayant l'Affichage Réduit",
-			"kr" : "최소화시 오버레이 하단 표시하기"
+			"kr" : "최소화시 오버레이 하단 표시하기",
+			"ua" : "Показувати нижню панель Оверлея, коли згорнуто"
 		},
 		"interface.footer_dps" : {
 			"en" : "Display Raid DPS in Overlay Footer",
@@ -382,7 +416,8 @@
 			"de" : "Raid DPS in der Overlay Fußzeile anzeigen",
 			"es" : "Mostrar el DPS del raid en la parte Inferior del Overlay",
 			"fr" : "Afficher le Raid DPS sur le Bas du Parse",
-			"kr" : "오버레이 하단에 파티 합산딜 표시하기"
+			"kr" : "오버레이 하단에 파티 합산딜 표시하기",
+			"ua" : "Показувати DPS Рейду в нижній панелі"
 		},
 		"interface.decimal_accuracy" : {
 			"en" : "Decimal Accuracy",
@@ -392,7 +427,8 @@
 			"de" : "Dezimale Genauigkeit",
 			"es" : "Precisión Decimal",
 			"fr" : "Arrondir à Combien de Décimal",
-			"kr" : "소수점 표기 설정하기"
+			"kr" : "소수점 표기 설정하기",
+			"ua" : "Десяткова точність"
 		},
 		"interface.shorten_thousands" : {
 			"en" : "Shorten Thousands to 'K'",
@@ -402,7 +438,8 @@
 			"de" : "Tausend durch 'K' abkürzen",
 			"es" : "Acortar Unidad de mil con 'K'",
 			"fr" : "Remplacer les Milliers par 'K'",
-			"kr" : "천단위를 'K'로 축약하기"
+			"kr" : "천단위를 'K'로 축약하기",
+			"ua" : "Скорочувати тисячі до 'K'"
 		},
 		"interface.light_theme" : {
 			"en" : "Use Light Theme",
@@ -412,7 +449,8 @@
 			"de" : "Helles Farbschema benutzen",
 			"es" : "Usar Light Theme",
 			"fr" : "Utiliser le thème clair/la version clair de l'Overlay",
-			"kr" : "밝은 테마 사용하기"
+			"kr" : "밝은 테마 사용하기",
+			"ua" : "Використати Світлу Тему"
 		},
 		"interface.minimal_theme" : {
 			"en" : "Use Minimal Theme",
@@ -422,7 +460,8 @@
 			"de" : "Minimal Farbschema benutzen",
 			"es" : "Usar Mínimo Theme",
 			"fr" : "Utiliser le thème minimale/la version minimale de l'Overlay",
-			"kr" : "간소화 테마 사용하기"
+			"kr" : "간소화 테마 사용하기",
+			"ua" : "Використати Мінімізовану Тему"
 		},
 		"interface.auto_hide" : {
 			"en" : "Auto-Hide Overlay After Inactivity (Set Below)",
@@ -432,7 +471,8 @@
 			"de" : "Overlay automatisch bei Inaktivität ausblenden (unten einstellen)",
 			"es" : "Auto-Hide Overlay After Inactivity (Set Below)",
 			"fr" : "Cacher automatiquement l'Overlay après inactivité (à définir ci-dessous)",
-			"kr" : "일정 시간 기록이 없을 경우 자동으로 숨기기(아래에서 시간 설정)"
+			"kr" : "일정 시간 기록이 없을 경우 자동으로 숨기기(아래에서 시간 설정)",
+			"ua" : "Авто-приховування Оверлея після неактивності (Встановлюється нижче)"
 		},
 		"interface.auto_hide_delay" : {
 			"en" : "Auto-Hide Delay in Seconds",
@@ -442,7 +482,8 @@
 			"de" : "Verzögerung für automatisches Ausblenden in Sekunden",
 			"es" : "Auto-Hide Delay in Seconds",
 			"fr" : "Délai en Seconde",
-			"kr" : "자동 판단 시간 (초)"
+			"kr" : "자동 판단 시간 (초)",
+			"ua" : "Затримка авто-приховування в секундах"
 		},
 		"custom.metric_names" : {
 			"en" : "",
@@ -452,7 +493,8 @@
 			"de" : "",
 			"es" : "",
 			"fr" : "",
-			"kr" : ""
+			"kr" : "",
+			"ua" : ""
 		},
 		"table_settings.general.table.short_names" : {
 			"en" : "Shorten Player Names",
@@ -462,7 +504,8 @@
 			"de" : "Spielernamen abkürzen",
 			"es" : "Acortar Nombres",
 			"fr" : "Raccourcir le prénom des joueurs ",
-			"kr" : "플레이어 이름 축약"
+			"kr" : "플레이어 이름 축약",
+			"ua" : "Скорочені іменя граців"
 		},
 		"table_settings.general.table.footer_at_top" : {
 			"en" : "Move Totals (Footer) to Top of Table",
@@ -472,7 +515,8 @@
 			"de" : "Zusammenfassungen (Fußzeile) nach ganz oben in der Tabelle verschieben",
 			"es" : "Mover totales (parte inferior) a la parte superior de la tabla",
 			"fr" : "Mettre le 'Bas du Parse' en Haut",
-			"kr" : "하단에 표기되는 합딜을 상단으로 이동시키기"
+			"kr" : "하단에 표기되는 합딜을 상단으로 이동시키기",
+			"ua" : "Переміщати підсумки (нижню панель) до початку таблиці"
 		},
 		"table_settings.general.table.percent_bars" : {
 			"en" : "Show Performance Background Bars",
@@ -482,7 +526,8 @@
 			"de" : "Zeige Leistungsbalken im Hintergrund",
 			"es" : "Mostrar Barras de desempeño del fondo",
 			"fr" : "Afficher les Barres de Performance en Arrière-Plan",
-			"kr" : "플레이어 뒤에 기여도 비율 표기"
+			"kr" : "플레이어 뒤에 기여도 비율 표기",
+			"ua" : "Показувати панелі продуктивності у фоні"
 		},
 		"table_settings.general.table.prioritize_party" : {
 			"en" : "Prioritize Party Members at Top of List",
@@ -492,7 +537,8 @@
 			"de" : "Prioritize Party Members at Top of List",
 			"es" : "Prioritize Party Members at Top of List",
 			"fr" : "Prioritize Party Members at Top of List",
-			"kr" : "같은 파티 멤버를 최우선으로 정렬"
+			"kr" : "같은 파티 멤버를 최우선으로 정렬",
+			"ua" : "Спочатку члени команди"
 		},
 		"table_columns.dps" : {
 			"en" : "Table Columns",
@@ -502,7 +548,8 @@
 			"de" : "Tabellenspalte",
 			"es" : "Columnas de Tabla",
 			"fr" : "Colonne de Tableau",
-			"kr" : "항목열"
+			"kr" : "항목열",
+			"ua" : "Колонки таблиці"
 		},
 		"sort_columns.dps" : {
 			"en" : "Default Sort Column",
@@ -512,7 +559,8 @@
 			"de" : "Spalten nach Standard sortieren",
 			"es" : "Ordenar por Defecto",
 			"fr" : "Colonne de tri par défaut",
-			"kr" : "순서 기준"
+			"kr" : "순서 기준",
+			"ua" : "Колонки сортування по замовчуванню"
 		},
 		"table_settings.dps.show_footer" : {
 			"en" : "Show Footer",
@@ -522,7 +570,8 @@
 			"de" : "Fußzeile anzeigen",
 			"es" : "Mostrar parte inferior",
 			"fr" : "Afficher le Bas du Parse",
-			"kr" : "하단 표시"
+			"kr" : "하단 표시",
+			"ua" : "Показувати нижню панель"
 		},
 		"table_columns.heal" : {
 			"en" : "Table Columns",
@@ -532,7 +581,8 @@
 			"de" : "Tabellenspalte",
 			"es" : "Columnas de Tabla",
 			"fr" : "Colonne de Tableau",
-			"kr" : "열"
+			"kr" : "열",
+			"ua" : "Колонки таблиці"
 		},
 		"sort_columns.heal" : {
 			"en" : "Default Sort Column",
@@ -542,7 +592,8 @@
 			"de" : "Spalten nach Standard sortieren",
 			"es" : "Ordenar por Defecto",
 			"fr" : "Colonne de tri par défaut",
-			"kr" : "열 순서를 기본으로 설정"
+			"kr" : "열 순서를 기본으로 설정",
+			"ua" : "Колонки сортування по замовчуванню"
 		},
 		"table_settings.heal.show_footer" : {
 			"en" : "Show Footer",
@@ -552,7 +603,8 @@
 			"de" : "Fußzeile anzeigen",
 			"es" : "Mostrar parte inferior",
 			"fr" : "Afficher le Bas du Parse",
-			"kr" : "하단 표기하기"
+			"kr" : "하단 표기하기",
+			"ua" : "Показувати нижню панель"
 		},
 		"table_columns.tank" : {
 			"en" : "Table Columns",
@@ -562,7 +614,8 @@
 			"de" : "Tabellenspalte",
 			"es" : "Columnas de Tabla",
 			"fr" : "Colonne de Tableau",
-			"kr" : "열"
+			"kr" : "열",
+			"ua" : "Колонки таблиці"
 		},
 		"sort_columns.tank" : {
 			"en" : "Default Sort Column",
@@ -572,7 +625,8 @@
 			"de" : "Spalten nach Standard sortieren",
 			"es" : "Ordenar por Defecto",
 			"fr" : "Colonne de tri par défaut",
-			"kr" : "열 순서를 기본으로 설정"
+			"kr" : "열 순서를 기본으로 설정",
+			"ua" : "Колонки сортування по замовчуванню"
 		},
 		"table_settings.tank.show_footer" : {
 			"en" : "Show Footer",
@@ -582,7 +636,8 @@
 			"de" : "Fußzeile anzeigen",
 			"es" : "Mostrar parte inferior",
 			"fr" : "Afficher le Bas du Parse",
-			"kr" : "하단 표기하기"
+			"kr" : "하단 표기하기",
+			"ua" : "Показувати нижню панель"
 		},
 		"detail_data.dps" : {
 			"en" : "Player Metrics",
@@ -592,7 +647,8 @@
 			"de" : "Spieler Metriken",
 			"es" : "Métricas del Jugador",
 			"fr" : "Les Mesures du Joueur",
-			"kr" : "플레이어 스탯"
+			"kr" : "플레이어 스탯",
+			"ua" : "Метрики гравця"
 		},
 		"detail_data.heal" : {
 			"en" : "Player Metrics",
@@ -602,7 +658,8 @@
 			"de" : "Spieler Metriken",
 			"es" : "Métricas del Jugador",
 			"fr" : "Les Mesures du Joueur",
-			"kr" : "플레이어 스탯"
+			"kr" : "플레이어 스탯",
+			"ua" : "Метрики гравця"
 		},
 		"detail_data.tank" : {
 			"en" : "Player Metrics",
@@ -612,7 +669,8 @@
 			"de" : "Spieler Metriken",
 			"es" : "Métricas del Jugador",
 			"fr" : "Les Mesures du Joueur",
-			"kr" : "플레이어 스탯"
+			"kr" : "플레이어 스탯",
+			"ua" : "Метрики гравця"
 		},
 		"sort_columns.raid" : {
 			"en" : "Default Sort Metric",
@@ -622,7 +680,8 @@
 			"de" : "Metrik nach Standard sortieren",
 			"es" : "Organizar Métricas por Defecto",
 			"fr" : "Mesures de Tri par Défault",
-			"kr" : "스탯 기본 정렬"
+			"kr" : "스탯 기본 정렬",
+			"ua" : "Сортування метрик по замовчуванню"
 		},
 		"table_settings.general.raid.short_names" : {
 			"en" : "Shorten Player Names",
@@ -632,7 +691,8 @@
 			"de" : "Spielernamen abkürzen",
 			"es" : "Acortar Nombres",
 			"fr" : "Raccourcir le prénom des joueurs",
-			"kr" : "플레이어 이름 축약"
+			"kr" : "플레이어 이름 축약",
+			"ua" : "Скорочені імена гравців"
 		},
 		"table_settings.general.raid.percent_bars" : {
 			"en" : "Show Performance Background Bars",
@@ -642,7 +702,8 @@
 			"de" : "Zeige Leistungsbalken im Hintergrund",
 			"es" : "Mostrar Barras de desempeño del fondo",
 			"fr" : "Afficher les Barres de Performance en Arrière-Plan",
-			"kr" : "플레이어 뒤에 기여도 비율 표기"
+			"kr" : "플레이어 뒤에 기여도 비율 표기",
+			"ua" : "Показувати панелі продуктивності у фоні"
 		},
 		"table_settings.general.raid.prioritize_party" : {
 			"en" : "Prioritize Party Members at Top of List",
@@ -652,7 +713,8 @@
 			"de" : "Prioritize Party Members at Top of List",
 			"es" : "Prioritize Party Members at Top of List",
 			"fr" : "Prioritize Party Members at Top of List",
-			"kr" : "같은 파티 멤버를 최우선으로 정렬"
+			"kr" : "같은 파티 멤버를 최우선으로 정렬",
+			"ua" : "Спочатку члени команди"
 		},
 		"table_columns.raid.dps" : {
 			"en" : "Metrics",
@@ -662,7 +724,8 @@
 			"de" : "Metrik",
 			"es" : "Métricas",
 			"fr" : "Les Mesures",
-			"kr" : "스탯"
+			"kr" : "스탯",
+			"ua" : "Метрики"
 		},
 		"table_columns.raid.heal" : {
 			"en" : "Metrics",
@@ -672,7 +735,8 @@
 			"de" : "Metrik",
 			"es" : "Métricas",
 			"fr" : "Les Mesures",
-			"kr" : "스탯"
+			"kr" : "스탯",
+			"ua" : "Метрики"
 		},
 		"table_columns.raid.tank" : {
 			"en" : "Metrics",
@@ -682,7 +746,8 @@
 			"de" : "Metrik",
 			"es" : "Métricas",
 			"fr" : "Les Mesures",
-			"kr" : "스탯"
+			"kr" : "스탯",
+			"ua" : "Метрики"
 		},
 		"custom.css" : {
 			"en" : "User-provided CSS is at your own risk.",
@@ -692,7 +757,8 @@
 			"de" : "Verwenden von benutzerdefinierten CSS auf eigene Gefahr.",
 			"es" : "Utilizar CSS proporcionado por usuarios es bajo tu propio riesgo.",
 			"fr" : "Utilisé votre propre CSS est à vos risques.",
-			"kr" : "임의로 만들어진 CSS는 책임질 수 없습니다."
+			"kr" : "임의로 만들어진 CSS는 책임질 수 없습니다.",
+			"ua" : "Використовуйте свій CSS на власний ризик"
 		}
 	},
 	"misc" : {
@@ -744,7 +810,13 @@
 				"short_first" : "F. 이름",
 				"short_last"  : "성. N",
 				"short_both"  : "둘다 축약"
-			}
+			},
+			"ua" : {
+				"no_short"    : "Ні",
+				"short_first" : "І. Прізвище",
+				"short_last"  : "Ім'я П.",
+				"short_both"  : "І. П."
+			},
 		},
 
 		"metric" : {
@@ -755,7 +827,8 @@
 			"de" : "Metrik",
 			"es" : "Metric",
 			"fr" : "Mesure",
-			"kr" : "스탯"
+			"kr" : "스탯",
+			"ua" : "Метрика"
 		},
 		"short_name" : {
 			"en" : "Short Name",
@@ -765,7 +838,8 @@
 			"de" : "Abgekürzter Name",
 			"es" : "Short Name",
 			"fr" : "Abréviation",
-			"kr" : "축약"
+			"kr" : "축약",
+			"ua" : "Скорочене Ім'я"
 		},
 		"long_name" : {
 			"en" : "Long Name",
@@ -775,7 +849,8 @@
 			"de" : "Voller Name",
 			"es" : "Long Name",
 			"fr" : "Nom Complet",
-			"kr" : "원본"
+			"kr" : "원본",
+			"ua" : "Повне Ім'я"
 		},
 		"add" : {
 			"en" : "Add",
@@ -785,7 +860,8 @@
 			"de" : "Hinzufügen",
 			"es" : "Add",
 			"fr" : "Ajouter",
-			"kr" : "추가"
+			"kr" : "추가",
+			"ua" : "Додати"
 		},
 		"delete" : {
 			"en" : "Delete",
@@ -795,7 +871,8 @@
 			"de" : "Entfernen",
 			"es" : "Delete",
 			"fr" : "Supprimer",
-			"kr" : "삭제"
+			"kr" : "삭제",
+			"ua" : "Видалити"
 		},
 
 		"save"               : {
@@ -806,7 +883,8 @@
 			"de" : "Speichern",
 			"es" : "Guardar",
 			"fr" : "Sauvegarder",
-			"kr" : "저장"
+			"kr" : "저장",
+			"ua" : "Зберегти"
 		},
 
 		"export_info"        : {
@@ -817,7 +895,8 @@
 			"de" : "Den unteren Text auswählen und kopieren, um ihn in dein gewünschtes Overlay zu importieren. Klicke hierzu mit Rechtsklick auf das Overlay und wähle \"Importieren\" aus.",
 			"es" : "Selecciona y copia el texto debajo, posteriormente impórtalo hacia tu overlay deseado haciendo click derecho en el Overlay y seleccionando \"Importar\".",
 			"fr" : "Sélectionné et copié le texte ci-dessous puis importé dans l'Overlay desiré avec un clique-droit sur l'Overlay et \"Importer.\"",
-			"kr" : "아래의 텍스트를 복사 후 \"불러오기\"를 통해 원하는 오버레이에 설정을 불러오십시오."
+			"kr" : "아래의 텍스트를 복사 후 \"불러오기\"를 통해 원하는 오버레이에 설정을 불러오십시오.",
+			"ua" : "Виберіть та скопіюйте текст нижче, а потім імпортуйте його у потрібне накладання, клацнувши правою кнопкою миші на накладанні та вибравши \"Імпортувати.\""
 		},
 		"copy"               : {
 			"en" : "Copy",
@@ -827,7 +906,8 @@
 			"de" : "Copy",
 			"es" : "Copy",
 			"fr" : "Copy",
-			"kr" : "복사"
+			"kr" : "복사",
+			"ua" : "Копіювати"
 		},
 		"select_all"         : {
 			"en" : "Select All",
@@ -837,7 +917,8 @@
 			"de" : "Alles Auswählen",
 			"es" : "Seleccionar Todo",
 			"fr" : "Tout Sélectionner",
-			"kr" : "모두 선택"
+			"kr" : "모두 선택",
+			"ua" : "Вибрати все"
 		},
 
 		"developer_credit"   : {
@@ -848,7 +929,8 @@
 			"de" : "Entwickelt von {{developer}}.",
 			"es" : "Desarrollado por {{developer}}.",
 			"fr" : "Développé par {{developer}}.",
-			"kr" : "만든이: {{developer}}."
+			"kr" : "만든이: {{developer}}.",
+			"ua" : "Розроблено {{developer}}."
 		},
 		"changelog"          : {
 			"en" : "Changelog",
@@ -858,7 +940,8 @@
 			"de" : "Änderungsprotokoll",
 			"es" : "Historial de Cambios",
 			"fr" : "Historique des Données",
-			"kr" : "패치 내역"
+			"kr" : "패치 내역",
+			"ua" : "Список змін"
 		},
 		"discord_cta"        : {
 			"en" : "Join the Discord to receive live updates from the developer, submit feature suggestions, get help with a bug or issue, or discuss FFXIV in general with other users.",
@@ -868,7 +951,8 @@
 			"de" : "Trete dem Discord bei, um Aktualisierungen in Echtzeit vom Entwickler zu erhalten. Außerdem kannst du Feature Vorschläge abgeben, Hilfestellungen bei Bugs oder Problemen erhalten oder allgemein über FFXIV mit anderen Benutzern diskutieren.",
 			"es" : "Únete al servidor de discord para recibir actualizaciones en vivo del desarrollador, ingresar sugerencias, obtener ayuda con algún problema o bug, o discute acerca de FFXIV en general con otros usuarios.",
 			"fr" : "Rejoint le Discord pour recevoir les mises à jours des développeurs et soumettre des suggestions pour améliorer l'Overlay ou discuter de FFXIV avec les autres joueurs. En cas de problème, demander de l'aide.",
-			"kr" : "실시간 업데이트, 기능 추가 제안이나 버그 혹은 문제점을 공유를 원하신다면 디스코드는 언제나 열려있습니다. 그냥 파판 이야기 하고싶으셔도 들어오세요."
+			"kr" : "실시간 업데이트, 기능 추가 제안이나 버그 혹은 문제점을 공유를 원하신다면 디스코드는 언제나 열려있습니다. 그냥 파판 이야기 하고싶으셔도 들어오세요.",
+			"ua" : "Приєднуйтесь до Discord, щоб отримувати оновлення від розробника, надсилати пропозиції щодо функцій, отримувати допомогу при помилках чи проблемах, або обговорювати FFXIV з іншими користувачами."
 		},
 		"broken_link"        : {
 			"en" : "Link not working? Copy this link and paste it into your regular Web browser:",
@@ -878,7 +962,8 @@
 			"de" : "Funktioniert dein Link nicht? Kopiere diesen Link und füge ihn in einen Browser deiner Wahl ein:",
 			"es" : "No funciona el link? Copia el siguiente link y pégalo en cualquier navegador de internet:",
 			"fr" : "Un lien mort? Copié-collé le lien dans votre barre de recherche:",
-			"kr" : "링크가 연결되지 않습니까? 다음 링크 복사 후 웹 브라우저를 통해 시도해보세요."
+			"kr" : "링크가 연결되지 않습니까? 다음 링크 복사 후 웹 브라우저를 통해 시도해보세요.",
+			"ua" : "Посилання не працює? Скопіюйте це посилання та вставте його у свій веб-браузер:"
 		},
 		"github_cta"         : {
 			"en" : "See the latest code, changelog, and readme information on GitHub. You can also submit bug reports or feature requests.",
@@ -888,7 +973,8 @@
 			"de" : "Sieh dir den neuesten Code, Änderungsprotokolle und Readme Informationen auf GitHub an. Du kannst außerdem Bugs melden oder ein Feature vorschlagen.",
 			"es" : "Ve la última versión del código, historial de cambios e Información del Readme en Github. Puedes también ingresar reportes de bugs o solicitar funcionalidades.",
 			"fr" : "Les infomations (code,modification) les plus récentes sont sur GitHub. Tu peux aussi reporter les bugs ou faire une demande sur les fonctionnalités.",
-			"kr" : "깃허브를 통해 최근 패치 내역, 배포 정보 및 코드를 보실 수 있습니다. 버그 리포트 및 기능 추가 요청 또한 이를 통해 가능합니다."
+			"kr" : "깃허브를 통해 최근 패치 내역, 배포 정보 및 코드를 보실 수 있습니다. 버그 리포트 및 기능 추가 요청 또한 이를 통해 가능합니다.",
+			"ua" : "Дивіться свіжий код, список змін та readme на GitHub. Ви також можете подати звіти про помилки або запропонувати нову функцію."
 		},
 		"changelog_info"     : {
 			"en" : "The changelog listed here will show all the changes that have been made (if any) in the current version compared against the last version you used.",
@@ -898,7 +984,8 @@
 			"de" : "Dieses Änderungsprotokoll listet alle Änderungen auf, die in der aktuellen Version seit der von dir zuletzt verwendeten Version vorgenommen wurden (falls es welche gibt).",
 			"es" : "El historial de cambios de aquí mostrará todos los cambios que se han realizado (de haberse realizado) en la versión actual en comparación a la última versión que utilizaste.",
 			"fr" : "L'historique des données montrera tous les changements qui ont été faites (s'il y'en a eu) dans la version actuelle par rapport à la version que tu as utilisé.",
-			"kr" : "아래의 패치 내역은 현재 버젼과 가장 최근에 사용하셨던 버전과 비교하여 패치된 차이점들을 보여줍니다."
+			"kr" : "아래의 패치 내역은 현재 버젼과 가장 최근에 사용하셨던 버전과 비교하여 패치된 차이점들을 보여줍니다.",
+			"ua" : "У цьому списку змін відображатимуться всі зміни, внесені (якщо такі є) у поточну версію порівняно з останньою версією, яку ви використовували."
 		},
 		"changelog_cta"      : {
 			"en" : "You can always see the latest changes and read the more detailed official changelog {{changelog_link_open}}here{{changelog_link_close}}.",
@@ -908,7 +995,8 @@
 			"de" : "Du kannst die aktuellsten Änderungen und das detailliertere Änderungsprotokoll jederzeit hier {{changelog_link_open}}ansehen{{changelog_link_close}}.",
 			"es" : "Puedes revisar en cualquier momento los últimos cambios y leer el historial de cambios en mayor detalle {{changelog_link_open}}aquí{{changelog_link_close}}.",
 			"fr" : "Tu peux toujours voir les derniers changements et lire les détails {{changelog_link_open}}ici{{changelog_link_close}}.",
-			"kr" : "{{changelog_link_open}}가장 최근 패치 내역{{changelog_link_close}} 및 상세 정보를 보시고 싶으시다면 공식 패치 내역을 확인해주십시오."
+			"kr" : "{{changelog_link_open}}가장 최근 패치 내역{{changelog_link_close}} 및 상세 정보를 보시고 싶으시다면 공식 패치 내역을 확인해주십시오.",
+			"ua" : "Ви завжди можете подивитися останні зміни та прочитати докладніший офіційний список змін {{changelog_link_open}} тут {{changelog_link_close}}."
 		},
 		"latest_changes"     : {
 			"en" : "Latest Changes",
@@ -918,7 +1006,8 @@
 			"de" : "Aktuelle Änderungen",
 			"es" : "Últimas Actualizaciones",
 			"fr" : "Les Derniers Changements",
-			"kr" : "최근 패치 내역"
+			"kr" : "최근 패치 내역",
+			"ua" : "Останні зміни"
 		},
 		"features"           : {
 			"en" : "Features",
@@ -928,7 +1017,8 @@
 			"de" : "Features",
 			"es" : "Features",
 			"fr" : "Éléments",
-			"kr" : "기능들"
+			"kr" : "기능들",
+			"ua" : "Особливості",
 		},
 		"ui_changes"         : {
 			"en" : "UI Changes",
@@ -938,7 +1028,8 @@
 			"de" : "Änderungen an der Benutzeroberfläche",
 			"es" : "Cambios en la Interfaz de Usuario (UI)",
 			"fr" : "Changement d'Interface de l'Utilisateur (UI)",
-			"kr" : "UI 변경점"
+			"kr" : "UI 변경점",
+			"ua" : "Зміни інтерфейсу",
 		},
 		"bug_fixes"          : {
 			"en" : "Bug Fixes",
@@ -948,7 +1039,8 @@
 			"de" : "Fehlerbehebungen",
 			"es" : "Arreglo de Bugs",
 			"fr" : "Bug Fixé",
-			"kr" : "버그 픽스"
+			"kr" : "버그 픽스",
+			"ua" : "Виправлення помилок",
 		},
 
 		"streamers"          : {
@@ -959,7 +1051,8 @@
 			"de" : "Streamer",
 			"es" : "Streamers",
 			"fr" : "Streamers",
-			"kr" : "스트리머"
+			"kr" : "스트리머",
+			"ua" : "Стрімери"
 		},
 		"streamer_live"      : {
 			"en" : "{{number}} Streamer Live",
@@ -969,7 +1062,8 @@
 			"de" : "{{number}} Streamer Live",
 			"es" : "{{number}} Streamer en Vivo",
 			"fr" : "{{number}} Streamer en Live",
-			"kr" : "{{number}} 명이 방송중"
+			"kr" : "{{number}} 명이 방송중",
+			"ua" : "{{number}} Стрімер Онлайн"
 		},
 		"streamers_live"     : {
 			"en" : "{{number}} Streamers Live",
@@ -979,7 +1073,8 @@
 			"de" : "{{number}} Streamer Live",
 			"es" : "{{number}} Streamers en Vivo",
 			"fr" : "{{number}} Streamers en Live ",
-			"kr" : "{{number}} 명이 방송중"
+			"kr" : "{{number}} 명이 방송중",
+			"ua" : "{{number}} Стрімери Онлайн"
 		},
 		"streamer_info"      : {
 			"en" : "Twitch streamers who use Ember Overlay are featured here!",
@@ -989,7 +1084,8 @@
 			"de" : "Hier werden Twitch Streamer angezeigt, die Ember Overlay benutzen.",
 			"es" : "Los streamers de Twitch que utilizan Ember Overlay son mencionados aquí!",
 			"fr" : "Les streamers Twitch qui utilisent Ember Overlay sont ici!",
-			"kr" : "엠버 오버레이를 애용해주시는 트위치 스트리머분들은 여기에 특별히 표기됩니다!"
+			"kr" : "엠버 오버레이를 애용해주시는 트위치 스트리머분들은 여기에 특별히 표기됩니다!",
+			"ua" : "Тут представлені стрімери Twitch, які використовують Ember Overlay!"
 		},
 		"streamer_short_cta" : {
 			"en" : "Are you a streamer or do you know a streamer who uses Ember Overlay?",
@@ -999,7 +1095,8 @@
 			"de" : "Bist du ein Streamer oder kennst du einen Streamer, der Ember Overlay verwendet?",
 			"es" : "Eres un streamer o conoces a un streamer que utiliza Ember Overlay?",
 			"fr" : "Es-tu un streamer ou connais-tu un streamer utilisant Ember Overlay?",
-			"kr" : "엠버 오버레이를 사용해주시는 스트리머이시거나 혹은 해당하는 스트리머를 아시나요?"
+			"kr" : "엠버 오버레이를 사용해주시는 스트리머이시거나 혹은 해당하는 스트리머를 아시나요?",
+			"ua" : "Ви стрімер або знаєте стрімера, який використовує Ember Overlay?"
 		},
 		"streamer_long_cta"  : {
 			"en" : "Have the stream added to this list by joining our Discord at {{discord_link}} and posting the stream in #streamer-requests. You can also message {{twitch_link}} with your stream info. The stream is only eligible for inclusion if Ember Overlay is used on stream (will be verified via VOD's).",
@@ -1009,7 +1106,8 @@
 			"de" : "Füge den Stream dieser Liste hinzu, indem du unserem Discord unter {{discord_link}} beitrittst und den Stream in #streamer-requests postest. Du kannst außerdem {{twitch_link}} mit der Stream Info anschreiben. Der Stream wird jedoch nur in Betracht gezogen, falls das Ember Overlay im Stream benutzt wird (Verifizierung erfolgt über VODs).",
 			"es" : "Haz que el stream sea agregado a esta lista entrando a nuestro discord en {{discord_link}} y posteando el stream en #streamer-requests. Puedes también mandar un mensaje a {{twitch_link}} Con la información de tu stream. El stream es elegible si Ember Overlay es utilizado en el stream (será verificado via VOD's).",
 			"fr" : "Pour avoir son stream ajouté à la liste, il faut rejoindre notre Discord sur {{discord_link}} et poster le stream sur #streamer-requests. Tu peux aussi envoyer un message {{twitch_link}} avec tes renseignements de stream. Le stream sera inclus si Ember Overlay est utilisé sur le stream (sera vérifié via la VOD).",
-			"kr" : "엠버 오버레이 디스코드 링크 {{discord_link}} 에 들어오셔셔 #streamer-requests을 통해 알려주세요. 혹은 트위치 내에서 {{twitch_link}}를 통해 직접 메세지를 보내주셔도 좋스니다. 이는 오직 엠버 오버레이를 사용해주실 때만 적용됩니다. (방송 기록으로 확인 가능)"
+			"kr" : "엠버 오버레이 디스코드 링크 {{discord_link}} 에 들어오셔셔 #streamer-requests을 통해 알려주세요. 혹은 트위치 내에서 {{twitch_link}}를 통해 직접 메세지를 보내주셔도 좋스니다. 이는 오직 엠버 오버레이를 사용해주실 때만 적용됩니다. (방송 기록으로 확인 가능)",
+			"ua" : "Стрім буде доданий до цього списку після приєднання до нашого Discord серверу за адресою {{discord_link}} та опублікування стріму в # streamer-request. Ви також можете надіслати {{twitch_link}} інформацію про вашу трансляцію. Стрім може бути включений лише в тому випадку, якщо в трансляції використовується Ember Overlay (буде перевірено через VOD)."
 		}
 	}
 }

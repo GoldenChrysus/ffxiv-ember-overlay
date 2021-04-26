@@ -31,6 +31,10 @@
 		"kr" : {
 			"short" : "이름",
 			"long"  : "이름"
+		},
+		"ua" : {
+			"short" : "Ім'я",
+			"long"  : "Ім'я"
 		}
 	},
 	"CurrentHP"      : {
@@ -65,6 +69,10 @@
 		"kr" : {
 			"short" : "HP",
 			"long"  : "체력"
+		},
+		"ua" : {
+			"short" : "HP",
+			"long"  : "Здоров'я"
 		}
 	},
 	"health_percent" : {
@@ -99,6 +107,10 @@
 		"kr" : {
 			"short" : "HP",
 			"long"  : "체력 비율"
+		},
+		"ua" : {
+			"short" : "HP %",
+			"long"  : "Відсоток Здоров'я"
 		}
 	},
 	"player_Name"    : {
@@ -133,6 +145,10 @@
 		"kr" : {
 			"short" : "대상",
 			"long"  : "대상"
+		},
+		"ua" : {
+			"short" : "Ціль",
+			"long"  : "Ціль"
 		}
 	}
 }
