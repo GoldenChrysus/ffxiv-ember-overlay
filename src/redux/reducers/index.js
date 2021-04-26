@@ -545,7 +545,7 @@ function createNewState(state, full_key, action) {
 		[
 			"settings",
 			"internal.character_job",
-			/* "settings.spells_mode.spells",
+			"settings.spells_mode.spells",
 			"settings.spells_mode.effects",
 			"settings.spells_mode.dots",
 			"settings.spells_mode.party_spells",
@@ -553,7 +553,7 @@ function createNewState(state, full_key, action) {
 			"settings.spells_mode.party_dots",
 			"settings.spells_mode.always_skill",
 			"settings.spells_mode.always_effect",
-			"settings.spells_mode.always_dot", */
+			"settings.spells_mode.always_dot",
 		].indexOf(full_key) !== -1
 	) {
 		if (full_key === "internal.character_job" && state.internal.character_job !== new_state.internal.character_job) {
