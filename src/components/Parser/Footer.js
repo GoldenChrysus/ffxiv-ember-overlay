@@ -168,7 +168,7 @@ const mapStateToProps = (state) => {
 		encounter            : state.internal.game.Encounter,
 		show_dps             : state.settings.interface.footer_dps,
 		discord_webhook      : state.settings.discord.url,
-		new_ver              : state.internal.new_version, 
+		new_ver              : state.internal.new_version,
 	};
 };
 
