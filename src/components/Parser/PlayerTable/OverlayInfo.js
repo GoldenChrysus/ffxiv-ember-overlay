@@ -38,7 +38,7 @@ class OverlayInfo extends React.Component {
 				});
 			})
 			.catch((e) => {
-				console.log(e);
+				console.error(e);
 			});
 	}
 
@@ -46,12 +46,12 @@ class OverlayInfo extends React.Component {
 		return (
 			<div id="overlay-info">
 				<h3>Ember Overlay</h3>
-				<p>This section will disappear when an encounter begins.</p>
-				<p>Try out the new minimal theme in Settings -> Interface!</p>
+				{this.getInfoText()}
 
 				<div id="funding">
 					<span onClick={this.openFundingLink.bind(this, "cash")} ref="cash"><img src="img/buttons/funding/cash.svg" alt="Donate on Cash App" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "paypal")} ref="paypal"><img src="img/buttons/funding/paypal-resized.png" alt="Donate at PayPal" height="20"/></span>
+					<span onClick={this.openFundingLink.bind(this, "paypay")} ref="paypay"><img src="img/buttons/funding/paypay.svg" alt="ペイペイで施してください" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "kofi")} ref="kofi"><img src="img/buttons/funding/kofi.svg" alt="Donate at Ko-fi" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "patreon")} ref="patreon"><img src="img/buttons/funding/patreon.png" alt="Donate at Patreon" height="20"/></span>
 					<span onClick={this.openFundingLink.bind(this, "streamlabs")} ref="streamlabs"><img src="img/buttons/funding/streamlabs.svg" alt="Donate at Streamlabs" height="20"/></span>
@@ -61,6 +61,29 @@ class OverlayInfo extends React.Component {
 				{this.state.changelog}
 			</div>
 		);
+	}
+
+	getInfoText() {
+		switch (this.props.mode) {
+			case "spells":
+				let configure_text = (!this.props.settings.spells.length && !this.props.settings.effects.length)
+					? <p>You are not tracking any spells or effects. Please add some at Settings &gt; Spell Timers.</p>
+					: "";
+				return(
+					<React.Fragment>
+						{configure_text}
+						<p>This section will disappear when a tracked spell/effect is used.</p>
+					</React.Fragment>
+				);
+
+			default:
+				return(
+					<React.Fragment>
+						<p>This section will disappear when an encounter begins.</p>
+						<p>Try the new spell timers by right-clicking and choosing "Mode: Spell Timers"!</p>
+					</React.Fragment>
+				);
+		}
 	}
 
 	openFundingLink(rel) {
@@ -77,6 +100,7 @@ class OverlayInfo extends React.Component {
 					case "paypal":
 					case "kofi":
 					case "cash":
+					case "paypay":
 						url = DonationService.getRealDonationLink(rel);
 
 						break;

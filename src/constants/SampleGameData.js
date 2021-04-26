@@ -1,4 +1,4 @@
-let SampleGameData = {
+const SampleGameData = {
 	"type": "CombatData",
 	"Encounter": {
 		"n": "\n",

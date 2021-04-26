@@ -21,10 +21,11 @@ const default_settings = {
 		top_right_rank        : false,
 		blur_job_icons        : false,
 		collapse_down         : false,
-		light_theme           : false,
+		theme                 : "ffxiv-dark",
 		minimal_theme         : false,
 		footer_when_collapsed : false,
 		footer_dps            : false,
+		hide_top_bar          : false,
 		decimal_accuracy      : 2,
 		shorten_thousands     : false,
 		language              : "en",
@@ -34,6 +35,27 @@ const default_settings = {
 	custom : {
 		css          : "",
 		metric_names : {}
+	},
+	tts : {
+		language : "en",
+		rules    : {
+			critical  : {
+				tank : 0,
+				heal : 0,
+				dps  : 0,
+				all  : 0
+			},
+			top       : {
+				dps : false,
+				hps : false,
+				tps : false
+			},
+			aggro     : false,
+			encounter : {
+				start : false,
+				end   : false
+			}
+		}
 	},
 	table_settings : {
 		general : {
@@ -133,6 +155,59 @@ const default_settings = {
 			"BlockPct",
 			"deaths"
 		]
+	},
+	discord : {
+		url : ""
+	},
+	spells_mode : {
+		spells               : [],
+		effects              : [],
+		dots                 : [],
+		party_spells         : [],
+		party_effects        : [],
+		party_dots           : [],
+		reverse_skill        : false,
+		reverse_effect       : false,
+		reverse_dot          : false,
+		party_reverse_skill  : false,
+		party_reverse_effect : false,
+		party_reverse_dot    : false,
+		always_skill         : false,
+		always_effect        : false,
+		always_dot           : false,
+		warning_threshold    : 0,
+		spells_per_row       : 1,
+		show_icon            : true,
+		use_tts              : false,
+		party_use_tts        : false,
+		party_zones          : [],
+		tts_trigger          : "zero",
+		minimal_layout       : false,
+		invert_vertical      : false,
+		invert_horizontal    : false,
+		designer             : {
+			skill : {
+				warning              : true,
+				indicator            : "ticking",
+				cooldown_bottom_left : false
+			},
+			effect : {
+				border               : false,
+				warning              : true,
+				indicator            : "ticking",
+				cooldown_bottom_left : false
+			},
+			dot : {
+				border               : false,
+				warning              : true,
+				indicator            : "ticking",
+				cooldown_bottom_left : false
+			}
+		},
+		ui                   : {
+			use      : false,
+			sections : {}
+		}
 	}
 };
 
@@ -266,11 +341,13 @@ class Settings {
 			let key      = this.getOverlayPluginKey();
 			let message  = service.plugin_service.createMessage("loadData", key);
 			let callback = (data) => {
-				if (!data.data) {
+				if (data === null || (typeof data === "object" && !data.data)) {
+					service.plugin_service.resetCallback();
+					resolve();
 					return;
 				}
 
-				data = JSON.parse(data.data || {})
+				data = JSON.parse((typeof data === "object") ? data.data || "{}" : data);
 
 				if (data["$isNull"]) {
 					service.plugin_service.resetCallback();
@@ -279,6 +356,8 @@ class Settings {
 				}
 
 				if (!data.key || data.key !== key) {
+					service.plugin_service.resetCallback();
+					resolve();
 					return;
 				}
 

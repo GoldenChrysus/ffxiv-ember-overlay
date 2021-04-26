@@ -7,8 +7,10 @@ import PlayerProcessor from "../../processors/PlayerProcessor";
 import VersionService from "../../services/VersionService";
 import SettingsService from "../../services/SettingsService";
 import LocalizationService from "../../services/LocalizationService";
+import DiscordService from "../../services/DiscordService";
 import IconButton from "./Container/IconButton";
 import EncounterMenu from "./Container/EncounterMenu";
+import DiscordMenu from "./Container/DiscordMenu";
 
 class Footer extends React.Component {
 	componentDidMount() {
@@ -76,15 +78,15 @@ class Footer extends React.Component {
 				trigger.handleContextClick(e);
 			}
 		};
-		let actions    = function() {
-			let version_notice = (self.props.new_version && !window.obsstudio) ? "notice" : "";
-			let actions        = [
+		let actions    = () => {
+			let actions = [
+				this.getDiscordButton(toggleMenu, trigger),
 				<ContextMenuTrigger id="encounter-history-menu" key="encounter-history-trigger" ref={c => trigger = c} attributes={{className: "icon-container"}} holdToDisplay={-1}>
-					<IconButton icon="history" key="encounter-history-button" no_container={true} onClick={toggleMenu}/>
+					<IconButton icon="history" title={LocalizationService.getOverlayText("encounter_history")} key="encounter-history-button" no_container={true} onClick={toggleMenu}/>
 				</ContextMenuTrigger>,
-				<IconButton icon="eye slash" title={LocalizationService.getOverlayText("blur_names")} key="player-blur" onClick={self.togglePlayerBlur.bind(self)}/>,
+				<IconButton icon="eye slash" title={LocalizationService.getOverlayText("blur_names")} key="player-blur" onClick={this.togglePlayerBlur.bind(this)}/>,
 				<IconButton icon="cut" title={LocalizationService.getOverlayText("split_encounter")} key="split-encounter" onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
-				<IconButton icon="cog" title={LocalizationService.getOverlayText("settings")} key="settings" class={version_notice} onClick={SettingsService.openSettingsWindow}/>
+				<IconButton icon="cog" title={LocalizationService.getOverlayText("settings")} key="settings" class={SettingsService.getNoticeClass()} onClick={SettingsService.openSettingsWindow}/>
 			];
 
 			return actions;
@@ -96,9 +98,29 @@ class Footer extends React.Component {
 				<div id="footer-actions">
 					{actions()}
 					<EncounterMenu/>
+					<DiscordMenu webhook={this.props.discord_webhook}/>
 				</div>
 			</div>
 		);
+	}
+
+	getDiscordButton() {
+		let trigger      = null;
+		let toggleMenu = e => {
+			if (trigger) {
+				trigger.handleContextClick(e);
+			}
+		};
+
+		if (this.props.discord_webhook) {
+			return (
+				<ContextMenuTrigger id="discord-menu" key="discord-trigger" ref={c => trigger = c} attributes={{className: "icon-container"}} holdToDisplay={-1}>
+					<IconButton icon="discord" title={LocalizationService.getOverlayText("discord")} key="discord-button" no_container={true} onClick={toggleMenu}/>
+				</ContextMenuTrigger>
+			);
+		}
+
+		return <IconButton icon="discord" title={LocalizationService.getOverlayText("discord")} key="discord" onClick={DiscordService.openDiscordWindow}/>;
 	}
 
 	changeTableType(type) {
@@ -143,9 +165,10 @@ const mapStateToProps = (state) => {
 		viewing              : state.internal.viewing,
 		overlayplugin        : state.internal.overlayplugin,
 		overlayplugin_author : state.internal.overlayplugin_author,
-		new_version          : state.internal.new_version,
 		encounter            : state.internal.game.Encounter,
-		show_dps             : state.settings.interface.footer_dps
+		show_dps             : state.settings.interface.footer_dps,
+		discord_webhook      : state.settings.discord.url,
+		new_ver              : state.internal.new_version,
 	};
 };
 

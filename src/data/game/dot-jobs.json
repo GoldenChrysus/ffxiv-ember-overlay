@@ -1,0 +1,113 @@
+{
+	"Circle of Scorn" : [
+		"PLD"
+	],
+	"Goring Blade" : [
+		"PLD"
+	],
+	"Sonic Break" : [
+		"GNB"
+	],
+	"Bow Shock" : [
+		"GNB"
+	],
+	"Aero" : [
+		"WHM"
+	],
+	"Aero II" : [
+		"WHM"
+	],
+	"Dia" : [
+		"WHM"
+	],
+	"Bio" : [
+		"ACN",
+		"SMN",
+		"SCH"
+	],
+	"Bio II" : [
+		"ACN",
+		"SMN",
+		"SCH"
+	],
+	"Biolysis" : [
+		"SCH"
+	],
+	"Combust" : [
+		"AST"
+	],
+	"Combust II" : [
+		"AST"
+	],
+	"Collective Unconscious" : [
+		"AST"
+	],
+	"Combust III" : [
+		"AST"
+	],
+	"Demolish" : [
+		"PGL",
+		"MNK"
+	],
+	"Chaos Thrust" : [
+		"LNC",
+		"DRG"
+	],
+	"Shadow Fang" : [
+		"ROG",
+		"NIN"
+	],
+	"Higanbana" : [
+		"SAM"
+	],
+	"Kaeshi: Higanbana" : [
+		"SAM"
+	],
+	"Venomous Bite" : [
+		"ARC",
+		"BRD"
+	],
+	"Windbite" : [
+		"ARC",
+		"BRD"
+	],
+	"Caustic Bite" : [
+		"BRD"
+	],
+	"Stormbite" : [
+		"BRD"
+	],
+	"Flamethrower" : [
+		"MCH"
+	],
+	"Bioblaster" : [
+		"MCH"
+	],
+	"Thunder" : [
+		"THM",
+		"BLM"
+	],
+	"Thunder II" : [
+		"THM",
+		"BLM"
+	],
+	"Thunder III" : [
+		"BLM"
+	],
+	"Thunder IV" : [
+		"BLM"
+	],
+	"Miasma" : [
+		"ACN",
+		"SMN"
+	],
+	"Bio III" : [
+		"SMN"
+	],
+	"Miasma III" : [
+		"SMN"
+	],
+	"Inferno" : [
+		"SMN"
+	]
+}

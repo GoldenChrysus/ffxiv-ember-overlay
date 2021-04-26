@@ -5,6 +5,7 @@ import OverlayPluginService from "./PluginService/OverlayPluginService";
 import OverlayProcService from "./PluginService/OverlayProcService";
 import SocketService from "./PluginService/SocketService";
 import UsageService from "./UsageService";
+import MessageProcessor from "../processors/MessageProcessor";
 
 class PluginService extends PluginServiceAbstract {
 	constructor() {
@@ -22,7 +23,7 @@ class PluginService extends PluginServiceAbstract {
 		Object.assign(this, settings);
 
 		this.events         = [];
-		this.plugin_service = (this.is_websocket && this.is_overlayplugin)
+		this.plugin_service = (this.is_websocket && !this.is_overlayplugin)
 			? socket_service
 			: ((this.is_overlayplugin)
 				? new OverlayPluginService(settings)
@@ -72,30 +73,52 @@ class PluginService extends PluginServiceAbstract {
 		this.old_events = events;
 	}
 
-	updateSubscriptions(settings_object) {
-		let events = this.getSubscriptions(settings_object);
+	updateSubscriptions(settings_object, internal) {
+		let events = this.getSubscriptions(settings_object, internal);
 
 		this.subscribe(events);
 		this.unsubscribe(events);
 	}
 
-	getSubscriptions(settings_object) {
+	getSubscriptions(settings_object, internal) {
 		let settings = settings_object || store.getState().settings_data;
+		let mode     = (internal || store.getState().internal).mode;
 		let data     = {
-			enmity : UsageService.usingEnmity(settings)
+			enmity : UsageService.usingEnmity(settings),
+			log    : UsageService.usingLog(mode, settings),
+			combat : UsageService.usingCombatData(mode, settings)
 		};
 		let events   = [
-			"CombatData",
-			"EnmityAggroList",
 			"ChangePrimaryPlayer",
-			"PartyChanged"
+			"ChangeZone"
 		];
+
+		if (data.combat) {
+			events.push("CombatData");
+		}
+
+		if (mode === "stats") {
+			events.push("EnmityAggroList");
+			events.push("PartyChanged");
+		}
 
 		if (data.enmity) {
 			events.push("EnmityTargetData");
 		}
 
+		if (data.log) {
+			events.push("LogLine");
+		}
+
 		return events;
+	}
+
+	getCombatants() {
+		this.plugin_service.callHandler(this.plugin_service.createMessage("getCombatants"), MessageProcessor.processMessage);
+	}
+
+	tts(messages) {
+		this.plugin_service.tts(messages);
 	}
 }
 

@@ -14,7 +14,7 @@ class Placeholder extends React.Component {
 	}
 
 	render() {
-		let image_src = (this.props.light_theme) ? "img/icons/placeholder-light-theme.png" : "img/icons/placeholder-dark-theme.png";
+		let image_src = `img/icons/placeholder-${this.props.theme}-theme.png`;
 
 		return (
 			<div className={"placeholder " + this.props.type + " hidden"} onClick={this.togglePlaceholders.bind(this)}>

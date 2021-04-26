@@ -8,6 +8,7 @@
 - <a href="#installing-overlayplugin">Installing OverlayPlugin</a>
 - <a href="#using-the-web-socket">Using the Web Socket</a>
 - <a href="#using-in-obs">Using in OBS</a>
+    - <a href="#running-multiple-modes-in-obs">Running Multiple Modes in OBS</a>
 
 ## Installing ACT
 
@@ -144,3 +145,23 @@ If you are a streamer, you can display the overlay in OBS. The easiest way to do
     4. Done! In this example, I imported an overlay with the zoom setting at 150% so that it appears more clearly in OBS.
 
     ![](https://i.imgur.com/NgiggHz.png)
+
+### Running Multiple Modes in OBS
+
+When normally used in OverlayPlugin, Ember automatically handles running multiple instances in different modes. For example, you could have one overlay in parser/stats mode and one overlay in spell timer mode. However, when using multiple instances of Ember in OBS, the overlays will not be able to remember which mode they are supposed to be in. Therefore, you will need to modify the URL of each overlay a bit. Follow these steps:
+
+1. Get your existing OBS overlay url. It's usually something like: `https://goldenchrysus.github.io/ffxiv/ember-overlay/?HOST_PORT=ws://127.0.0.1/ws`
+
+2. Your URL will either say `?HOST_PORT` or `?OVERLAY_WS` somewhere in the URL. You will be changing this part.
+
+3. After the `?`, add the following: `mode=your_mode&`
+
+4. The URL should now look something like: `https://goldenchrysus.github.io/ffxiv/ember-overlay/?mode=your_mode&HOST_PORT=ws://127.0.0.1/ws`
+
+5. The available modes are `stats` (for the normal parsing overlay) and `spells` (for spell timers). Change `your_mode` to one of these options. For example, my final URL's for each mode would be:
+
+    1. Parsing overlay: `https://goldenchrysus.github.io/ffxiv/ember-overlay/?mode=stats&HOST_PORT=ws://127.0.0.1/ws`
+
+    2. Spell timers: `https://goldenchrysus.github.io/ffxiv/ember-overlay/?mode=spells&HOST_PORT=ws://127.0.0.1/ws`
+
+6. Use your final URL's in OBS to ensure your instances always load the mode you want them to be in.

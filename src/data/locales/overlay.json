@@ -65,6 +65,46 @@
 		"kr" : "전투 데이터 삭제",
 		"ua" : "Очистити Дані Бою"
 	},
+	"encounter_history" : {
+		"en" : "Encounter History",
+		"pt" : "Encounter History",
+		"cn" : "Encounter History",
+		"jp" : "Encounter History",
+		"de" : "Encounter History",
+		"es" : "Encounter History",
+		"fr" : "Encounter History",
+		"kr" : "Encounter History"
+	},
+	"discord" : {
+		"en" : "Discord",
+		"pt" : "Discord",
+		"cn" : "Discord",
+		"jp" : "Discord",
+		"de" : "Discord",
+		"es" : "Discord",
+		"fr" : "Discord",
+		"kr" : "Discord"
+	},
+	"join_discord" : {
+		"en" : "Join Discord",
+		"pt" : "Join Discord",
+		"cn" : "Join Discord",
+		"jp" : "Join Discord",
+		"de" : "Join Discord",
+		"es" : "Join Discord",
+		"fr" : "Join Discord",
+		"kr" : "Join Discord"
+	},
+	"discord_webhook" : {
+		"en" : "Share Encounter",
+		"pt" : "Share Encounter",
+		"cn" : "Share Encounter",
+		"jp" : "Share Encounter",
+		"de" : "Share Encounter",
+		"es" : "Share Encounter",
+		"fr" : "Share Encounter",
+		"kr" : "Share Encounter"
+	},
 	"settings"            : {
 		"en" : "Settings",
 		"pt" : "Configurações",
@@ -243,13 +283,247 @@
 	},
 	"paste"               : {
 		"en" : "Paste",
-		"pt" : "Paste",
+		"pt" : "Colar",
 		"cn" : "粘贴",
 		"jp" : "貼り付け",
-		"de" : "Paste",
+		"de" : "Einfügen",
 		"es" : "Paste",
 		"fr" : "Paste",
 		"kr" : "붙여넣기",
 		"ua" : "Вставити"
+	},
+	"mode" : {
+		"en" : "Mode",
+		"pt" : "Modo",
+		"cn" : "模式",
+		"jp" : "モード",
+		"de" : "Modus",
+		"es" : "Modo",
+		"fr" : "Mode",
+		"kr" : "모드",
+    "ua" : "Режим"
+	},
+	"parser" : {
+		"en" : "Parser",
+		"pt" : "Parser",
+		"cn" : "解析器",
+		"jp" : "パーサー",
+		"de" : "Parser",
+		"es" : "Analizador",
+		"fr" : "Analyseur",
+		"kr" : "미터기",
+    "ua" : "Аналізатор"
+	},
+	"spell_timers" : {
+		"en" : "Spell Timers",
+		"pt" : "Temporizadores das Magias",
+		"cn" : "冷却监控",
+		"jp" : "スペルタイマー",
+		"de" : "Zauber Timer",
+		"es" : "Spell Timers",
+		"fr" : "Spell Timers",
+		"kr" : "스펠 타이머",
+    "ua" : "Таймери Заклинань"
+	},
+	
+	"tts" : {
+		"critical" : {
+			"en" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"you"      : "You",
+				"text"     : "{{players}}{{connector}}critical health."
+			},
+			"pt" : {
+				"joiner"   : " e ",
+				"several"  : "Vários jogadores",
+				"plural"   : " estão ",
+				"singular" : " está ",
+				"you"      : "Você",
+				"text"     : "{{players}}{{connector}}critical health."
+			},
+			"cn" : {
+				"joiner"   : "和",
+				"several"  : "多个角色",
+				"plural"   : "处于",
+				"singular" : "处于",
+				"you"      : "你",
+				"text"     : "{{players}}{{connector}}临界血量."
+			},
+			"jp" : {
+				"joiner"   : "と",
+				"several"  : "多くの人",
+				"plural"   : "は",
+				"singular" : "は",
+				"you"      : "あなた",
+				"text"     : "{{players}}{{connector}}クリティカルHPです."
+			},
+			"de" : {
+				"joiner"           : " und ",
+				"several"          : "Etliche Spieler",
+				"plural"           : " sind ",
+				"singular"         : " ist ",
+				"you"              : "Du bist ",
+				"you_no_connector" : true,
+				"text"             : "{{players}}{{connector}}in einem kritischen Gesundheitszustand."
+			},
+			"es" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"you"      : "You",
+				"text"     : "{{players}}{{connector}}critical health."
+			},
+			"fr" : {
+				"joiner"   : " et ",
+				"several"  : "Des joueurs",
+				"plural"   : " sont ",
+				"singular" : " est ",
+				"you"      : "Vous",
+				"text"     : "{{players}}{{connector}}dans un état critique."
+			},
+			"kr" : {
+				"joiner"   : " 및 ",
+				"several"  : "파티원 대부분",
+				"plural"   : "이 ",
+				"singular" : "이 ",
+				"you"      : "당신",
+				"text"     : "{{players}}{{connector}}사망 직전입니다."
+			},
+      "ua" : {
+				"joiner"   : " та ",
+				"several"  : "Кілька граців",
+				"plural"   : " є ",
+				"singular" : " є ",
+				"you"      : "Ти",
+				"text"     : "{{players}}{{connector}}мають критичний рівень здоров'я."
+			}
+		},
+		"aggro" : {
+			"en" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			},
+			"pt" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			},
+			"cn" : {
+				"joiner" : ", ",
+				"text"   : "你拉到了{{monsters}}的仇恨."
+			},
+			"jp" : {
+				"joiner" : "と",
+				"text"   : "{{monsters}}のタゲを取りました."
+			},
+			"de" : {
+				"joiner" : ", ",
+				"text"   : "Du erhälst Aggro von {{monsters}}."
+			},
+			"es" : {
+				"joiner" : ", ",
+				"text"   : "You have aggro from {{monsters}}."
+			},
+			"fr" : {
+				"joiner" : " et ",
+				"text"   : "Vous avez aggro {{monsters}}."
+			},
+			"kr" : {
+				"joiner" : " 및 ",
+				"text"   : "{{monsters}}의 어그로를 받았습니다."
+			},
+      "en" : {
+				"joiner" : ", ",
+				"text"   : "Ви заагрили {{monsters}}."
+			},
+		},
+		"top" : {
+			"en" : {
+				"text" : "You are top {{metric}}."
+			},
+			"pt" : {
+				"text" : "Você está no topo do {{metric}}."
+			},
+			"cn" : {
+				"text" : "你当前{{metric}}最高."
+			},
+			"jp" : {
+				"text" : "あなたは最高な{{metric}}です."
+			},
+			"de" : {
+				"text" : "Du bist Spitzenreiter in {{metric}}."
+			},
+			"es" : {
+				"text" : "You are top {{metric}}."
+			},
+			"fr" : {
+				"text" : "You are top {{metric}}."
+			},
+			"kr" : {
+				"text" : "{{metric}} 상위권입니다."
+			},
+      "en" : {
+				"text" : "Ви в топі {{metric}}."
+			},
+		},
+		"encounter" : {
+			"en" : {
+				"start"         : "started",
+				"end"           : "ended",
+				"default_title" : "Encounter",
+				"text"          : "{{encounter}} has {{verb}}."
+			},
+			"pt" : {
+				"start"         : "começou",
+				"end"           : "terminou",
+				"default_title" : "Encontro",
+				"text"          : "{{encounter}} {{verb}}."
+			},
+			"cn" : {
+				"start"         : "开始",
+				"end"           : "结束",
+				"default_title" : "战斗",
+				"text"          : "{{encounter}}已{{verb}}."
+			},
+			"jp" : {
+				"start"         : "始まりました",
+				"end"           : "終わりました",
+				"default_title" : "戦闘",
+				"text"          : "{{encounter}}が{{verb}}."
+			},
+			"de" : {
+				"start"         : "hat begonnen",
+				"end"           : "wurde beendet",
+				"default_title" : "Kampf",
+				"text"          : "{{encounter}} {{verb}}."
+			},
+			"es" : {
+				"start"         : "started",
+				"end"           : "ended",
+				"default_title" : "Encuentro",
+				"text"          : "{{encounter}} has {{verb}}."
+			},
+			"fr" : {
+				"start"         : "a commencé",
+				"end"           : "est fini",
+				"default_title" : "Combat",
+				"text"          : "{{encounter}} {{verb}}."
+			},
+			"kr" : {
+				"start"         : "개시되었습니다",
+				"end"           : "종료되었습니다",
+				"default_title" : "전투",
+				"text"          : "{{encounter}} {{verb}}."
+			},
+      "en" : {
+				"start"         : "почався",
+				"end"           : "закінчився",
+				"default_title" : "Бій",
+				"text"          : "{{encounter}} {{verb}}."
+			},
+		}
 	}
 }

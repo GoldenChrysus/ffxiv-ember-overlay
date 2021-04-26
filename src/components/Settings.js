@@ -41,7 +41,13 @@ class Settings extends React.Component {
 			: LocalizationService.getMisc("streamers");
 		let streamer_text      = streamer_base_text.replace("{{number}}", streamer_count);
 
-		for (let section of SettingsSchema.sections) {
+		for (
+			let section of 
+			SettingsSchema.all_before.sections.concat(
+				SettingsSchema[this.props.mode].sections.concat(
+					SettingsSchema.all_after.sections)
+				)
+		) {
 			let section_path = section.path;
 			let path         = `${base_url}/${section_path}`;
 			let title        = LocalizationService.getSettingsSectionText(section_path);
@@ -51,7 +57,7 @@ class Settings extends React.Component {
 			);
 
 			routes.push(
-				<Route path={path} key={path} render={() => <Screen sections={section.sections} path={section_path}/>}/>
+				<Route path={path} key={path} render={() => <Screen sections={section.sections} path={section_path} mode={this.props.mode}/>}/>
 			);
 		}
 
@@ -89,7 +95,8 @@ class Settings extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		language : state.settings.interface.language
+		language : state.settings.interface.language,
+		mode     : state.internal.mode,
 	};
 };
 

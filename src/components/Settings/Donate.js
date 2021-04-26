@@ -45,6 +45,7 @@ class Donate extends React.Component {
 
 					<div className="donation-link" data-type="cash" ref="cash" id="donation-cash">{DonationService.getRealDonationLink("cash")}</div>
 					<div className="donation-link" data-type="paypal" ref="paypal" id="donation-paypal">{DonationService.getRealDonationLink("paypal")}</div>
+					<div className="donation-link" data-type="paypay" ref="paypay" id="donation-paypay">{DonationService.getRealDonationId("paypay")}</div>
 					<div className="donation-link" data-type="kofi" ref="kofi" id="donation-kofi">{DonationService.getRealDonationLink("kofi")}</div>
 					<div className="donation-link" data-type="patreon" ref="patreon" id="donation-patreon">{DonationService.getRealDonationLink("patreon")}</div>
 					<div className="donation-link" data-type="streamlabs" ref="streamlabs" id="donation-streamlabs">{DonationService.getRealDonationLink("streamlabs")}</div>
@@ -53,7 +54,7 @@ class Donate extends React.Component {
 					<p>Pimpy Shortstocking, FortiusTTV <SocialLink name="fortiusttv" type="twitch"/></p>
 
 					<h2>Donors</h2>
-					<p>Amneamnius, Vulasuw, Jessica</p>
+					<p>Amneamnius, Vulasuw, Jessica, mehdont</p>
 				</Container>
 			</React.Fragment>
 		);

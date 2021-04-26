@@ -1,5 +1,196 @@
 # Changelog
 
+## 0.27.2-alpha
+
+**Released: 2021-04-26**
+
+### Bug Fixes
+- Resolved issue where clicking the highlighted settings cog did not remove the highlight
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
+## 0.27.1-alpha
+
+**Released: 2021-04-26**
+
+### Bug Fixes
+- Resolved issue where adding timers may not work until the overlay is reloaded
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
+## 0.27.0-alpha
+
+**Released: 2021-04-25**
+
+### Bug Fixes
+- Resolved issue with reordering multiple-select dropdowns in settings
+- Resolved issue where cooldowns would be inaccurate for Contre Sixte, Manafication, and Sharpcast if your character has the recast reduction traits
+- Resolved issue where timer indicator was shifted right by 3 pixels when setting to hide icons was enabled
+- Resolved issue where resizing a spell timer UI section would move it back to its original position
+
+### Features
+- Added setting "Display Permanently" for each timer type in Settings > Spell Timers
+- Added setting "Use Static Positions for Permanent Timers" for each timer type in Settings > Spell Timers
+- Added setting "Use Text to Speech" at Settings > Party Spell Timers
+- Added setting "Only Track in These Instances" at Settings > Party Spell Timers
+- Added spell timer preview when in Edit UI mode
+- Added Discord webhook support at setting tab "Discord Webhook"
+
+### UI Changes
+- Made parser footer more responsive at small overlay sizes (less than or equal to 350 pixels wide)
+
+### Code Changes
+- Consolidated duplicated localization texts
+- Removed unnecessary setting schema value lookup functions
+- Made settings saving more graceful
+
+### Miscellaneous
+- N/A
+
+## 0.26.0-alpha
+
+**Released: 2021-04-22**
+
+### Bug Fixes
+- Resolved issue where context menu was misplaced when using a non-100 zoom setting
+
+### Features
+- Added setting "Text to Speech Trigger" to allow choosing when the TTS alert should trigger
+- Added new setting tab "Party Spell Timers" to set spells that should be tracked for other party/alliance members
+- Added icon-only spell timer layout at Spell Timers > Layout; enabling this will override the setting to show/hide spell icons
+- Added new setting tab "Spell Designer" for customizing the appearance of timers
+- Added spell timer custom UI builder
+    - New setting tab "UI Builder" allows creation of spell timer sections that track only the spell types you choose
+    - Setting "Use UI Builder" in the UI Builder tab must be enabled for changes to take effect
+    - In the overlay, right clicking and choosing "Edit UI" will allow you to drag and resize the spell timer sections you created
+    - UI position/size edits are saved after right clicking and choosing "Save UI"
+    - If you are unable to right click on your overlay (i.e. the overlay is empty), you can either:
+        - Cast a spell that you're already tracking, then you will be able to right click on the spell timer
+        - In OverlayPlugin, turn off the "Lock overlay" option or turn on the "Force white background" option
+            - Be sure to turn off the white background or lock your overlay once you've chosen "Edit UI" or opened your settings
+            - A warning will appear asking you to lock your overlay again once you choose "Edit UI" after unlocking the overlay
+
+### UI Changes
+- Setting at Spell Timers > Use Minimal Layout has been renamed to "Layout" to allow for the icon-only layout
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
+## 0.25.1-alpha
+
+**Released: 2021-04-14**
+
+### Bug Fixes
+- Resolved issue where spell timer cooldowns are incorrect when system time does not match game time
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
+## 0.25.0-alpha
+
+**Released: 2021-04-10**
+
+### Bug Fixes
+- Resolved issue where settings did not simultaneously distribute if multiple overlays were open
+
+### Features
+- Added spell timers (for skills, buffs, and DOT's)
+    - Right-click on overlay and choose "Mode: Spell Timers"
+    - Setup can be accessed at Settings > Spell Timers
+        - Settings cog is moved to the top right of the overlay when in spell timer mode
+    - "Use Text to Speech" setting causes the spell name to be said when it's ready
+    - "Minimal Layout" setting turns the spell timers into compact bars
+    - "Warning Threshold" setting causes the spell to begin flashing when the duration is expiring
+    - The "Reverse" options cause the cooldown bar to deplete left-to-right instead of right-to-left
+    - "Invert Vertical" causes the spells to stack bottom-to-top instead of top-to-bottom
+    - "Invert Horizontal" causes the spells to stack right-to-left instead of left-to-right
+- Added classic theme
+    - Setting to enable is located at Settings > Interface > Theme
+
+### UI Changes
+- Theme setting (Settings > Interface > Theme) is now a select dropdown
+    - Default theme is "FFXIV Dark"
+    - Previous "Use Light Theme" setting now corresponds to "FFXIV Light"
+    - New classic theme is "FFXIV Classic"
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
+## 0.24.0-alpha
+
+**Released: 2021-03-28**
+
+### Bug Fixes
+- Resolved issue where overlay would sometimes crash when restoring settings from OverlayPlugin
+
+### Features
+- Added text-to-speech alerts at Settings > Text to Speech
+- Added numeric-only max hit metric
+
+### UI Changes
+- N/A
+
+### Code Changes
+- Abstracted some `MetricNameTable` logic to `Table` in order to share it with the TTS rules table
+
+### Miscellaneous
+- Updated donor credits
+- Added PayPay donation option
+
+## 0.23.3-alpha
+
+**Released: 2021-01-02**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Updated donor credits
+
 ## 0.23.2-alpha
 
 **Released: 2020-11-05**

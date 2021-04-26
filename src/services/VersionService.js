@@ -143,7 +143,7 @@ class VersionService {
 
 		for (let item_type in final_data) {
 			final_data[item_type] = final_data[item_type].filter((item) => {
-				return (["N/A", "?"].indexOf(item) === -1);
+				return (["N/A", "?"].indexOf(item.trim()) === -1);
 			});
 
 			if (!has_changes) {

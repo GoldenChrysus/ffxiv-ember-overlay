@@ -2,13 +2,13 @@ const SampleAggroData = {
 	"type": "EnmityAggroList",
 	"AggroList": [
 		{
-			"ID": 1073814728,
-			"Name": "King Thordan",
-			"HateRate": 12,
+			"ID": 1074087459,
+			"Name": "Wood Eyes",
+			"HateRate": 100,
 			"Order": 0,
 			"isCurrentTarget": true,
-			"CurrentHP": 1511,
-			"MaxHP": 868000,
+			"CurrentHP": 75316,
+			"MaxHP": 100760,
 			"Target": {
 				"ID": -1,
 				"OwnerID": 0,
@@ -16,59 +16,47 @@ const SampleAggroData = {
 				"Enmity": 0,
 				"isMe": false,
 				"HateRate": 0,
-				"Job": 19
+				"Job": 0
 			},
-			"Effects": [
-				{
-					"BuffID": 215,
-					"Stack": 0,
-					"Timer": 0,
-					"ActorID": -2,
-					"isOwner": false
-				},
-				{
-					"BuffID": 129,
-					"Stack": 20,
-					"Timer": 24.9956188,
-					"ActorID": -3,
-					"isOwner": false
-				},
-				{
-					"BuffID": 124,
-					"Stack": 20,
-					"Timer": 25.576622,
-					"ActorID": -4,
-					"isOwner": false
-				},
-				{
-					"BuffID": 189,
-					"Stack": 0,
-					"Timer": 26.0226231,
-					"ActorID": -5,
-					"isOwner": false
-				},
-				{
-					"BuffID": 124,
-					"Stack": 20,
-					"Timer": 27.3828373,
-					"ActorID": -3,
-					"isOwner": false
-				},
-				{
-					"BuffID": 248,
-					"Stack": 0,
-					"Timer": 13.2993031,
-					"ActorID": -1,
-					"isOwner": false
-				},
-				{
-					"BuffID": 129,
-					"Stack": 20,
-					"Timer": 28.6495342,
-					"ActorID": -4,
-					"isOwner": false
-				}
-			]
+			"Effects": []
+		},
+		{
+			"ID": 1074087457,
+			"Name": "Wood Eyes",
+			"HateRate": 100,
+			"Order": 0,
+			"isCurrentTarget": false,
+			"CurrentHP": 56960,
+			"MaxHP": 100760,
+			"Target": {
+				"ID": -1,
+				"OwnerID": 0,
+				"Name": "Uther",
+				"Enmity": 0,
+				"isMe": false,
+				"HateRate": 0,
+				"Job": 0
+			},
+			"Effects": []
+		},
+		{
+			"ID": 1074087462,
+			"Name": "Island Rail",
+			"HateRate": 100,
+			"Order": 0,
+			"isCurrentTarget": false,
+			"CurrentHP": 80365,
+			"MaxHP": 100760,
+			"Target": {
+				"ID": -2,
+				"OwnerID": 0,
+				"Name": "Ashor",
+				"Enmity": 0,
+				"isMe": false,
+				"HateRate": 0,
+				"Job": 0
+			},
+			"Effects": []
 		}
 	]
 };

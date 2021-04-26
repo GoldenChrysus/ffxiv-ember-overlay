@@ -1,9 +1,22 @@
 import $ from "jquery";
 
 class ThemeService {
-	setTheme(options) {
-		for (let key of Object.keys(options)) {
-			$("body").toggleClass(key, options[key]);
+	mode_classes = [
+		"stats",
+		"spells"
+	];
+	
+	setTheme(theme) {
+		$("body").attr("theme", theme);
+	}
+
+	toggleMinimal(active) {
+		$("body").toggleClass("minimal", active);
+	}
+
+	setMode(new_mode) {
+		for (let mode of this.mode_classes) {
+			$("body").toggleClass(`mode-${mode}`, (mode === new_mode));
 		}
 	}
 }

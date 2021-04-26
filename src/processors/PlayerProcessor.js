@@ -5,6 +5,21 @@ import Constants from "../constants/index";
 import GameDataProcessor from "./GameDataProcessor";
 
 class PlayerProcessor  {
+	getValidPlayerNames(current_state) {
+		let state = current_state || store.getState();
+
+		let valid_player_names = [
+			"YOU",
+			state.settings.interface.player_name
+		];
+
+		if (state.settings.interface.player_name === "YOU") {
+			valid_player_names.push(state.internal.character_name);
+		}
+
+		return valid_player_names;
+	}
+
 	getShortName(name, type) {
 		name = (name || "").split(" ");
 
@@ -54,7 +69,7 @@ class PlayerProcessor  {
 		return value;
 	}
 
-	sortPlayers(players, encounter, sort_column) {
+	sortPlayers(players, encounter, sort_column, current_state) {
 		let sorted_players = [];
 		let self           = this;
 
@@ -65,8 +80,8 @@ class PlayerProcessor  {
 		let players_copy = JSON.parse(JSON.stringify(sorted_players));
 
 		sorted_players = sorted_players.sort(function(a, b) {
-			let val_a = self.getDataValue(sort_column, a, players_copy, encounter, true)
-			let val_b = self.getDataValue(sort_column, b, players_copy, encounter, true);
+			let val_a = self.getDataValue(sort_column, a, players_copy, encounter, true, current_state)
+			let val_b = self.getDataValue(sort_column, b, players_copy, encounter, true, current_state);
 
 			if (val_a > val_b) {
 				return -1
@@ -75,8 +90,8 @@ class PlayerProcessor  {
 			} else {
 				if (a.Job && b.Job) {
 					return self
-						.getDataValue("name", a)
-						.localeCompare(self.getDataValue("name", b));
+						.getDataValue("name", a, undefined, undefined, undefined, current_state)
+						.localeCompare(self.getDataValue("name", b, undefined, undefined, undefined, current_state));
 				} else if (!a.job) {
 					return -1;
 				} else {

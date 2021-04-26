@@ -1,8 +1,8 @@
-# FFXIV Ember Overlay
-React overlay for the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/releases) and [ACTWebSocket](https://github.com/ZCube/ACTWebSocket) plugins for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php) for use with Final Fantasy XIV.
+# FFXIV Ember Overlay & Spell Timers
+Powerful, data-focused DPS overlay and spell timers for Final Fantasy XIV. Can be used with the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/releases) and [ACTWebSocket](https://github.com/ZCube/ACTWebSocket) plugins for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php).
 
 [![GitHub](https://img.shields.io/github/license/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/master/LICENSE)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/GoldenChrysus/ffxiv-ember-overlay/master.svg?style=flat-square)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/ffxiv-ember-overlay/bleeding-edge.svg?style=flat-square)
 [![Works with OverlayPlugin](https://img.shields.io/badge/works%20with-OverlayPlugin-blue.svg?style=flat-square)](https://github.com/ngld/OverlayPlugin)
 [![Works with ACTWebSocket](https://img.shields.io/badge/works%20with-ACTWebSocket-blue.svg?style=flat-square)](https://github.com/ZCube/ACTWebSocket)
@@ -12,12 +12,13 @@ React overlay for the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/rele
 #### Funding
 <a href="https://cash.app/$chrysus"><img src="https://chrysus.xyz/projects/ffxiv-ember-overlay/public/img/buttons/funding/cash.svg" alt="Donate on Cash App" height="23"></a>
 <a href="https://paypal.me/goldenchrysus"><img src="https://i.imgur.com/BSwN4CJ.png" alt="Donate at PayPal" height="23"></a>
+<a href="https://chrysus.xyz/paypay"><img src="https://chrysus.xyz/projects/ffxiv-ember-overlay/public/img/buttons/funding/paypay.svg" alt="ペイペイで施してください" height="23"></a>
 <a href="https://ko-fi.com/S6S611OOG"><img src="https://i.imgur.com/txi1yLu.png" alt="Donate at Ko-fi" height="23"></a>
 <a href="https://patreon.com/Chrysus"><img src="https://i.imgur.com/y4z22XP.png" alt="Become a Patron" height="23"></a>
 <a href="https://chrysus.live/tip"><img src="https://chrysus.xyz/projects/ffxiv-ember-overlay/public/img/buttons/funding/streamlabs.svg" alt="Donate at Streamlabs" height="23"></a>
 
 ## Usage with OverlayPlugin
-Set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
+Create a new overlay from one of the Ember presets. Alternatively, set your OverlayPlugin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/
 
 ## Usage with ACTWebSocket with OverlayProc
 Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and create a new overlay window from this skin.
@@ -25,28 +26,60 @@ Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and c
 ## Discord
 Join the Discord server to receive live updates, report bugs, or request features at: [https://discord.io/emberoverlay](https://discord.io/emberoverlay)
 
+## Navigation
+- <a href="#features">Features</a>
+- <a href="#installation">Installation</a>
+- <a href="#changelog">Changelog</a>
+- <a href="#staging-site">Staging Site</a>
+- <a href="#credits">Credits</a>
+- <a href="#building">Building</a>
+- <a href="#contributing">Contributing</a>
+- <a href="#license">License</a>
+- <a href="#copyright">Copyright</a>
+
 ## Features
 ### Informative tabs for damage, healing, tanking, raiding, and aggro.
 ![DPS tab](https://i.imgur.com/EjRWhdU.png "DPS tab")
 ![Healing tab](https://i.imgur.com/TxqEJ1t.png "Healing tab")
 ![Tanking tab](https://i.imgur.com/uMXYkyu.png "Tanking tab")
 ![Raid tab](https://i.imgur.com/8pKG0uC.png "Raid tab")
-![Aggro tab](https://i.imgur.com/dP79Es6.png "Aggro tab")
+![Aggro tab](https://i.imgur.com/H79KkfB.png "Aggro tab")
 
 ### Click on any player's name to view detailed statistics.
 ![Detailed statistics](https://i.imgur.com/G3UOoFR.gif "Detailed statistics")
 
-### Optional minimal and light themes (can be combined).
+### Optional minimal, light, and classic themes (minimal can be combined with any theme).
 ![Minimal theme](https://i.imgur.com/psPV5yL.png "Minimal theme")
 ![Light theme](https://i.imgur.com/HJTyGqJ.png "Light theme")
+![Classic theme](https://i.imgur.com/wq65hM7.png "Classic theme")
 
-### Customize your experience.
-![Customizable overlay](https://i.imgur.com/W7DWVmu.gif "Customizable overlay")
+### Spell timers.
+**Spell, buff, and DOT timers.**
+
+![Spell, buff, and DOT timers](https://i.imgur.com/7qNwV06.gif "Spell, buff, and DOT timers")
+
+**Optional minimal layout.**
+
+![Minimal layout](https://i.imgur.com/KM1bQdr.png "Minimal layout")
+
+**Flexible layout options.**
+
+![Flexible layout](https://i.imgur.com/eluTIe2.png "Flexible layout")
+
+**Powerful but easy spell timer setup.**
+
+![Powerful but easy setup](https://i.imgur.com/z8UPg7u.png "Powerful but easy setup")
+
+### Text to speech alerts.
+![Customizable text to speech alerts](https://i.imgur.com/cMj0OJF.png "Customizable text to speech alerts")
+
+### Powerful overlay and data settings.
+![Customizable overlay](https://i.imgur.com/Kpq8ZPb.gif "Customizable overlay")
 
 ### Quality of life features.
 **Collapsible interface to save space and show only your stats.**
 
-![Collapsible interface](https://i.imgur.com/eS8h0KS.gif "Collapsible interface")
+![Collapsible interface](https://i.imgur.com/7MDEnJm.gif "Collapsible interface")
 
 **Blur player names for privacy (optionally blur job icons).**
 
@@ -60,19 +93,20 @@ Join the Discord server to receive live updates, report bugs, or request feature
 
 ![Minimize when not in use](https://i.imgur.com/HSiTNCF.gif "Minimize when not in use")
 
-### Easily see the recent changes since your last visit
+### Easily see the recent changes since your last visit.
 ![About and changelog](https://i.imgur.com/fgZgoN4.gif "About and changelog")
 
 ### Clear encounter data or load sample data to perfect your setup.
-![Clear encounter and load sample data](https://i.imgur.com/doMR26F.gif "Clear encounter and load sample data")
+![Clear encounter and load sample data](https://i.imgur.com/hfvn80v.gif "Clear encounter and load sample data")
+![Load sample spell data](https://i.imgur.com/FTVyfGt.gif "Load sample spell data")
 
 ## Installation
 
 #### Other Languages Available
 
-   - [日本語でOnlinegaming.life](https://onlinegaming.life/ff14/ember-overlay/)
+   - [日本語：Onlinegaming.life](https://onlinegaming.life/ff14/ember-overlay/)
 
-To use this overlay skin, you need Advanced Combat Tracker (ACT) and OverlayPlugin. Please follow the guide based on your situation:
+To use this overlay, you need Advanced Combat Tracker (ACT) and OverlayPlugin. Please follow the guide based on your situation:
 
 ### You don't have ACT or OverlayPlugin
 
@@ -121,7 +155,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 - [**ShadyWhite**](https://github.com/ShadyWhite) - Chinese
 - **Gusma** - Portuguese
 - **The_X** - Portuguese
-- **okuRaku** - [Twitter](https://twitter.com/okurakuu), [Twitch](https://www.twitch.tv/okuraku)  - Japanese
+- [**okuRaku**](https://github.com/okuRaku) - Japanese
 - **Astriel** - German
 - **Claud** - Spanish
 - **Okâme** - French
@@ -137,6 +171,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 - Amneamnius
 - Vulasuw
 - Jessica
+- mehdont
 
 ### Misc.
 
@@ -196,7 +231,7 @@ This list is not exhaustive and generally applies to formatting. Your merge requ
 [GNU General Public License v3.0 only](/LICENSE)
 
 ## Copyright
-Copyright (C) 2019-2020, Patrick Golden. All rights reserved.
+Copyright (C) 2019-2021, Patrick Golden. All rights reserved.
 
 Copyrights licensed under GNU General Public License v3.0 only.
 

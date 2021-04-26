@@ -44,7 +44,23 @@ export function parseParty(payload) {
 		type : "parseParty",
 		key  : "internal.party",
 		payload
-	}
+	};
+}
+
+export function changeMode(payload) {
+	return {
+		type : "changeMode",
+		key  : "internal.mode",
+		payload
+	};
+}
+
+export function parseLogLine(payload) {
+	return {
+		type : "parseLogLine",
+		key  : false,
+		payload
+	};
 }
 
 export function updateSetting(payload) {
@@ -70,6 +86,14 @@ export function changeCollapse(payload) {
 		type   : "setSetting",
 		key    : "intrinsic.collapsed",
 		source : "parser",
+		payload
+	};
+}
+
+export function changeUIBuilder(payload) {
+	return {
+		type   : "changeUIBuilder",
+		key    : "internal.ui_builder",
 		payload
 	};
 }

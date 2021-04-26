@@ -1,11 +1,21 @@
-.setThemeStyle(@defaultTheme: {}, @lightTheme: {}, @minimalTheme: {}) {
-	& { @defaultTheme(); }
+.setThemeStyle(@defaultTheme: {}, @lightTheme: {}, @minimalTheme: {}, @spellsMode: {}, @classicTheme: {}) {
+	& {
+		@defaultTheme();
+	}
 
-	body.light & {
+	body[theme=ffxiv-light] & {
 		@lightTheme();
+	}
+
+	body[theme=ffxiv-classic] & {
+		@classicTheme();
 	}
 
 	body.minimal & {
 		@minimalTheme();
+	}
+
+	body.mode-spells & {
+		@spellsMode();
 	}
 }

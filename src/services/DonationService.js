@@ -13,6 +13,12 @@ class DonationService {
 
 		return process.env[`REACT_APP_${rel}_DONATE_LINK`];
 	}
+
+	getRealDonationId(rel) {
+		rel = rel.toUpperCase();
+
+		return process.env[`REACT_APP_${rel}_DONATE_ID`];
+	}
 }
 
 export default new DonationService();

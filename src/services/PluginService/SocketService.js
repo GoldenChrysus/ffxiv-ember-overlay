@@ -114,6 +114,10 @@ class SocketService {
 	}
 
 	unsubscribe(events) {
+		if (!this.is_connected) {
+			return false;
+		}
+
 		return this.removeSubscriptions(events);
 	}
 
@@ -125,6 +129,14 @@ class SocketService {
 
 	splitEncounter() {
 		this.send("overlayAPI", this.id, "RequestEnd");
+	}
+
+	tts(messages) {
+		if (!this.is_ngld) {
+			return;
+		}
+
+		this.callHandler(this.createMessage("say", "text", messages));
 	}
 
 	resetCallback() {

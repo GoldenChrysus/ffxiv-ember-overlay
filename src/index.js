@@ -11,15 +11,12 @@ import store from "./redux/store";
 import "semantic-ui-less/semantic.less";
 import "./index.css";
 
-// Other React
-import * as serviceWorker from "./serviceWorker";
-
 // Custom
 import Parser from "./components/Parser";
 import Settings from "./components/Settings";
 import MigrationService from "./services/MigrationService";
 
-console.info(`Welcome and thank you for using Ember Overlay! Join the Discord at ${process.env.REACT_APP_DISCORD_URL}. GitHub is located at ${process.env.REACT_APP_GITHUB_URL}.`);
+console.info(`Welcome and thank you for using Ember Overlay & Spell Timers! Join the Discord at ${process.env.REACT_APP_DISCORD_URL}. GitHub is located at ${process.env.REACT_APP_GITHUB_URL}.`);
 
 let state = store.getState();
 
@@ -49,8 +46,3 @@ state
 	.catch((e) => {
 
 	});
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

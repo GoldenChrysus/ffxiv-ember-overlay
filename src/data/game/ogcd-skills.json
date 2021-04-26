@@ -1,0 +1,6360 @@
+{
+	"3" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Sprint",
+				"de" : "Sprint",
+				"fr" : "Sprint",
+				"jp" : "スプリント"
+			}
+		}
+	},
+	"6" : {
+		"recast" : 900.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Return",
+				"de" : "Rückführung",
+				"fr" : "Rapatriement",
+				"jp" : "デジョン"
+			}
+		}
+	},
+	"17" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Sentinel",
+				"de" : "Sentinel",
+				"fr" : "Sentinelle",
+				"jp" : "センチネル"
+			}
+		}
+	},
+	"20" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Fight or Flight",
+				"de" : "Verwegenheit",
+				"fr" : "Combat acharné",
+				"jp" : "ファイト・オア・フライト"
+			}
+		}
+	},
+	"23" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Circle of Scorn",
+				"de" : "Kreis der Verachtung",
+				"fr" : "Cercle du destin",
+				"jp" : "サークル・オブ・ドゥーム"
+			}
+		}
+	},
+	"27" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Cover",
+				"de" : "Deckung",
+				"fr" : "Couverture",
+				"jp" : "かばう"
+			}
+		}
+	},
+	"28" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Iron Will",
+				"de" : "Schild-Eid",
+				"fr" : "Volonté de fer",
+				"jp" : "アイアンウィル"
+			}
+		}
+	},
+	"29" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Spirits Within",
+				"de" : "Selbsterhaltungstrieb",
+				"fr" : "Esprits intérieurs",
+				"jp" : "スピリッツウィズイン"
+			}
+		}
+	},
+	"30" : {
+		"recast" : 420.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Hallowed Ground",
+				"de" : "Heiliger Boden",
+				"fr" : "Invincible",
+				"jp" : "インビンシブル"
+			}
+		}
+	},
+	"38" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Berserk",
+				"de" : "Tollwut",
+				"fr" : "Berserk",
+				"jp" : "バーサク"
+			}
+		}
+	},
+	"40" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Thrill of Battle",
+				"de" : "Kampfrausch",
+				"fr" : "Frisson de la bataille",
+				"jp" : "スリル・オブ・バトル"
+			}
+		}
+	},
+	"43" : {
+		"recast" : 240.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Holmgang",
+				"de" : "Holmgang",
+				"fr" : "Holmgang",
+				"jp" : "ホルムギャング"
+			}
+		}
+	},
+	"44" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Vengeance",
+				"de" : "Rachsucht",
+				"fr" : "Représailles",
+				"jp" : "ヴェンジェンス"
+			}
+		}
+	},
+	"48" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MRD",
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Defiance",
+				"de" : "Verteidiger",
+				"fr" : "Défi",
+				"jp" : "ディフェンダー"
+			}
+		}
+	},
+	"52" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Infuriate",
+				"de" : "Schlachtruf",
+				"fr" : "Cri de guerre",
+				"jp" : "ウォークライ"
+			}
+		}
+	},
+	"65" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PGL",
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Mantra",
+				"de" : "Mantra",
+				"fr" : "Mantra",
+				"jp" : "マントラ"
+			}
+		}
+	},
+	"69" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PGL",
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Perfect Balance",
+				"de" : "Improvisation",
+				"fr" : "Équilibre parfait",
+				"jp" : "踏鳴"
+			}
+		}
+	},
+	"71" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shoulder Tackle",
+				"de" : "Rakshasas Umarmung",
+				"fr" : "Coup d'épaule",
+				"jp" : "羅刹衝"
+			}
+		}
+	},
+	"83" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Life Surge",
+				"de" : "Vitalwallung",
+				"fr" : "Souffle de vie",
+				"jp" : "ライフサージ"
+			}
+		}
+	},
+	"85" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lance Charge",
+				"de" : "Lanzenschärfung",
+				"fr" : "Lance acérée",
+				"jp" : "ランスチャージ"
+			}
+		}
+	},
+	"92" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Jump",
+				"de" : "Sprung",
+				"fr" : "Saut",
+				"jp" : "ジャンプ"
+			}
+		}
+	},
+	"94" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Elusive Jump",
+				"de" : "Ausweichsprung",
+				"fr" : "Saut insaisissable",
+				"jp" : "イルーシブジャンプ"
+			}
+		}
+	},
+	"95" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Spineshatter Dive",
+				"de" : "Wirbelsprenger",
+				"fr" : "Piqué brise-échine",
+				"jp" : "スパインダイブ"
+			}
+		}
+	},
+	"96" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dragonfire Dive",
+				"de" : "Wyrmodem",
+				"fr" : "Piqué du dragon",
+				"jp" : "ドラゴンダイブ"
+			}
+		}
+	},
+	"101" : {
+		"recast" : 80.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Raging Strikes",
+				"de" : "Wütende Attacke",
+				"fr" : "Tir furieux",
+				"jp" : "猛者の撃"
+			}
+		}
+	},
+	"107" : {
+		"recast" : 80.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Barrage",
+				"de" : "Sperrfeuer",
+				"fr" : "Rafale de coups",
+				"jp" : "乱れ撃ち"
+			}
+		}
+	},
+	"110" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bloodletter",
+				"de" : "Aderlass",
+				"fr" : "Hémorragie",
+				"jp" : "ブラッドレッター"
+			}
+		}
+	},
+	"112" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Repelling Shot",
+				"de" : "Mannstopper",
+				"fr" : "Tir repoussant",
+				"jp" : "リペリングショット"
+			}
+		}
+	},
+	"114" : {
+		"recast" : 80.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Mage's Ballad",
+				"de" : "Ballade des Weisen",
+				"fr" : "Ballade du mage",
+				"jp" : "賢人のバラード"
+			}
+		}
+	},
+	"116" : {
+		"recast" : 80.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Army's Paeon",
+				"de" : "Hymne der Krieger",
+				"fr" : "Péan martial",
+				"jp" : "軍神のパイオン"
+			}
+		}
+	},
+	"117" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Rain of Death",
+				"de" : "Tödlicher Regen",
+				"fr" : "Pluie mortelle",
+				"jp" : "レイン・オブ・デス"
+			}
+		}
+	},
+	"118" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Battle Voice",
+				"de" : "Ode an die Seele",
+				"fr" : "Voix de combat",
+				"jp" : "バトルボイス"
+			}
+		}
+	},
+	"134" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"CNJ",
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Fluid Aura",
+				"de" : "Wasserstrahl",
+				"fr" : "Aura aquatique",
+				"jp" : "アクアオーラ"
+			}
+		}
+	},
+	"136" : {
+		"recast" : 150.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Presence of Mind",
+				"de" : "Geistesgegenwart",
+				"fr" : "Présence d'esprit",
+				"jp" : "神速魔"
+			}
+		}
+	},
+	"140" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Benediction",
+				"de" : "Benediktion",
+				"fr" : "Bénédiction",
+				"jp" : "ベネディクション"
+			}
+		}
+	},
+	"155" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"THM",
+			"BLM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Aetherial Manipulation",
+				"de" : "Äthermanipulation",
+				"fr" : "Manipulation de l'éther",
+				"jp" : "エーテリアルステップ"
+			}
+		}
+	},
+	"157" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"THM",
+			"BLM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Manaward",
+				"de" : "Mana-Schild",
+				"fr" : "Barrière de mana",
+				"jp" : "マバリア"
+			}
+		}
+	},
+	"158" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Manafont",
+				"de" : "Mana-Brunnen",
+				"fr" : "Vasque de mana",
+				"jp" : "マナフォント"
+			}
+		}
+	},
+	"166" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Aetherflow",
+				"de" : "Ätherfluss",
+				"fr" : "Flux d'éther",
+				"jp" : "エーテルフロー"
+			}
+		}
+	},
+	"174" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bane",
+				"de" : "Bann",
+				"fr" : "Fléau",
+				"jp" : "ベイン"
+			}
+		}
+	},
+	"184" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle",
+				"de" : "Entflammung",
+				"fr" : "Galvanisation",
+				"jp" : "エンキンドル"
+			}
+		}
+	},
+	"188" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Sacred Soil",
+				"de" : "Geweihte Erde",
+				"fr" : "Dogme de survie",
+				"jp" : "野戦治療の陣"
+			}
+		}
+	},
+	"211" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"Disciple",
+			"of",
+			"the",
+			"Land"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Arbor Call",
+				"de" : "Ruf des Waldes",
+				"fr" : "Dendrologie",
+				"jp" : "アーバーコール"
+			}
+		}
+	},
+	"228" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"Disciple",
+			"of",
+			"the",
+			"Land"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lay of the Land",
+				"de" : "Bodenbefund",
+				"fr" : "Géologie",
+				"jp" : "ランドサーベイ"
+			}
+		}
+	},
+	"268" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"FSH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Mooch II",
+				"de" : "Naturköder II",
+				"fr" : "Pêche au vif II",
+				"jp" : "泳がせ釣りII"
+			}
+		}
+	},
+	"290" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"Disciple",
+			"of",
+			"the",
+			"Land"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Arbor Call II",
+				"de" : "Ruf des Waldes II",
+				"fr" : "Dendrologie II",
+				"jp" : "アーバーコールII"
+			}
+		}
+	},
+	"291" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"Disciple",
+			"of",
+			"the",
+			"Land"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lay of the Land II",
+				"de" : "Bodenbefund II",
+				"fr" : "Géologie II",
+				"jp" : "ランドサーベイII"
+			}
+		}
+	},
+	"1695" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Dig",
+				"de" : "Ausgraben",
+				"fr" : "Excavation",
+				"jp" : "ディグ"
+			}
+		}
+	},
+	"2238" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Spindly Finger",
+				"de" : "Bombastik-Bombe",
+				"fr" : "Boulet-torpille",
+				"jp" : "雷撃弾"
+			}
+		}
+	},
+	"2241" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ROG",
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shade Shift",
+				"de" : "Superkniff",
+				"fr" : "Décalage d'ombre",
+				"jp" : "残影"
+			}
+		}
+	},
+	"2245" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ROG",
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Hide",
+				"de" : "Verstecken",
+				"fr" : "Dissimulation",
+				"jp" : "かくれる"
+			}
+		}
+	},
+	"2248" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ROG",
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Mug",
+				"de" : "Ausrauben",
+				"fr" : "Rapine",
+				"jp" : "ぶんどる"
+			}
+		}
+	},
+	"2257" : {
+		"recast" : 70.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ROG",
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shadow Fang",
+				"de" : "Schattenfang",
+				"fr" : "Croc d'ombre",
+				"jp" : "影牙"
+			}
+		}
+	},
+	"2258" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ROG",
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Trick Attack",
+				"de" : "Trickattacke",
+				"fr" : "Attaque sournoise",
+				"jp" : "だまし討ち"
+			}
+		}
+	},
+	"2259" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Ten",
+				"de" : "Ten",
+				"fr" : "Ten",
+				"jp" : "天の印"
+			}
+		}
+	},
+	"2261" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Chi",
+				"de" : "Chi",
+				"fr" : "Chi",
+				"jp" : "地の印"
+			}
+		}
+	},
+	"2262" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shukuchi",
+				"de" : "Shukuchi",
+				"fr" : "Shukuchi",
+				"jp" : "縮地"
+			}
+		}
+	},
+	"2263" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Jin",
+				"de" : "Jin",
+				"fr" : "Jin",
+				"jp" : "人の印"
+			}
+		}
+	},
+	"2264" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Kassatsu",
+				"de" : "Kassatsu",
+				"fr" : "Kassatsu",
+				"jp" : "活殺自在"
+			}
+		}
+	},
+	"2872" : {
+		"recast" : 40.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Hot Shot",
+				"de" : "Explosivgeschoss",
+				"fr" : "Tir déchaîné",
+				"jp" : "ホットショット"
+			}
+		}
+	},
+	"2874" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Gauss Round",
+				"de" : "Gauß-Geschoss",
+				"fr" : "Décharge Gauss",
+				"jp" : "ガウスラウンド"
+			}
+		}
+	},
+	"2876" : {
+		"recast" : 55.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Reassemble",
+				"de" : "Justieren",
+				"fr" : "Réassemblage",
+				"jp" : "整備"
+			}
+		}
+	},
+	"2878" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wildfire",
+				"de" : "Wildfeuer",
+				"fr" : "Flambée",
+				"jp" : "ワイルドファイア"
+			}
+		}
+	},
+	"2890" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Ricochet",
+				"de" : "Rikoschettschuss",
+				"fr" : "Ricochet",
+				"jp" : "リコシェット"
+			}
+		}
+	},
+	"2894" : {
+		"recast" : 600.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Eternity Ring",
+				"de" : "Ring der Ewigkeit",
+				"fr" : "Anneau du lien éternel",
+				"jp" : "エターナルリング"
+			}
+		}
+	},
+	"3378" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Spindly Finger",
+				"de" : "Bombastik-Bombe",
+				"fr" : "Boulet-torpille",
+				"jp" : "雷撃弾"
+			}
+		}
+	},
+	"3379" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Pitch Bomb",
+				"de" : "Pechbombe",
+				"fr" : "Obus gluant",
+				"jp" : "粘着弾"
+			}
+		}
+	},
+	"3506" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Low Voltage",
+				"de" : "Niedrigstrom",
+				"fr" : "Basse tension",
+				"jp" : "低圧電流"
+			}
+		}
+	},
+	"3540" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Divine Veil",
+				"de" : "Heiliger Quell",
+				"fr" : "Voile divin",
+				"jp" : "ディヴァインヴェール"
+			}
+		}
+	},
+	"3543" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Tornado Kick",
+				"de" : "Tornadotritt",
+				"fr" : "Coup de pied tornade",
+				"jp" : "闘魂旋風脚"
+			}
+		}
+	},
+	"3545" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Elixir Field",
+				"de" : "Elixier-Feld",
+				"fr" : "Champ-élixir",
+				"jp" : "蒼気砲"
+			}
+		}
+	},
+	"3551" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Raw Intuition",
+				"de" : "Ur-Instinkt",
+				"fr" : "Intuition pure",
+				"jp" : "原初の直感"
+			}
+		}
+	},
+	"3552" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Equilibrium",
+				"de" : "Äquilibrium",
+				"fr" : "Équilibre",
+				"jp" : "エクリブリウム"
+			}
+		}
+	},
+	"3553" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Blood of the Dragon",
+				"de" : "Drachenherz",
+				"fr" : "Sang du dragon",
+				"jp" : "蒼の竜血"
+			}
+		}
+	},
+	"3555" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Geirskogul",
+				"de" : "Geirskogul",
+				"fr" : "Geirskögul",
+				"jp" : "ゲイルスコグル"
+			}
+		}
+	},
+	"3557" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Battle Litany",
+				"de" : "Litanei der Schlacht",
+				"fr" : "Litanie combattante",
+				"jp" : "バトルリタニー"
+			}
+		}
+	},
+	"3558" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Empyreal Arrow",
+				"de" : "Empyreischer Pfeil",
+				"fr" : "Flèche empyréenne",
+				"jp" : "エンピリアルアロー"
+			}
+		}
+	},
+	"3559" : {
+		"recast" : 80.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "the Wanderer's Minuet",
+				"de" : "Menuett des Wanderers",
+				"fr" : "Menuet du Vagabond",
+				"jp" : "旅神のメヌエット"
+			}
+		}
+	},
+	"3561" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "the Warden's Paean",
+				"de" : "Päan des Hüters",
+				"fr" : "Péan du Contemplateur",
+				"jp" : "時神のピーアン"
+			}
+		}
+	},
+	"3562" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Sidewinder",
+				"de" : "Seitenschneider",
+				"fr" : "Vent venimeux",
+				"jp" : "サイドワインダー"
+			}
+		}
+	},
+	"3566" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dream Within a Dream",
+				"de" : "Ternäre Trance",
+				"fr" : "Rêve dans un rêve",
+				"jp" : "夢幻三段"
+			}
+		}
+	},
+	"3569" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Asylum",
+				"de" : "Refugium",
+				"fr" : "Asile",
+				"jp" : "アサイラム"
+			}
+		}
+	},
+	"3570" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Tetragrammaton",
+				"de" : "Tetragrammaton",
+				"fr" : "Tétragramme",
+				"jp" : "テトラグラマトン"
+			}
+		}
+	},
+	"3571" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assize",
+				"de" : "Assise",
+				"fr" : "Assises",
+				"jp" : "アサイズ"
+			}
+		}
+	},
+	"3573" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Ley Lines",
+				"de" : "Ley-Linien",
+				"fr" : "Manalignements",
+				"jp" : "黒魔紋"
+			}
+		}
+	},
+	"3574" : {
+		"recast" : 60.0,
+		"level_recasts" : [
+			{
+				"level" : 74,
+				"recast" : 30.0
+			}
+		],
+		"jobs" : [
+			"BLM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Sharpcast",
+				"de" : "Augmentierung ",
+				"fr" : "Dynamisation",
+				"jp" : "激成魔"
+			}
+		}
+	},
+	"3575" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enochian",
+				"de" : "Henochisch",
+				"fr" : "Énochien",
+				"jp" : "エノキアン"
+			}
+		}
+	},
+	"3580" : {
+		"recast" : 50.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Tri-disaster",
+				"de" : "Trisaster",
+				"fr" : "Tri-désastre",
+				"jp" : "トライディザスター"
+			}
+		}
+	},
+	"3581" : {
+		"recast" : 55.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dreadwyrm Trance",
+				"de" : "Bahamut-Trance",
+				"fr" : "Transe-Bahamut",
+				"jp" : "トランス・バハムート"
+			}
+		}
+	},
+	"3582" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Deathflare",
+				"de" : "Todesflamme",
+				"fr" : "Brasier de mort",
+				"jp" : "デスフレア"
+			}
+		}
+	},
+	"3583" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Indomitability",
+				"de" : "Unbezwingbarkeit",
+				"fr" : "Traité de la persévérance",
+				"jp" : "不撓不屈の策"
+			}
+		}
+	},
+	"3585" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Deployment Tactics",
+				"de" : "Dislokation",
+				"fr" : "Stratagème du déploiement",
+				"jp" : "展開戦術"
+			}
+		}
+	},
+	"3586" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Emergency Tactics",
+				"de" : "Apotropaion",
+				"fr" : "Stratagème de l'urgence",
+				"jp" : "応急戦術"
+			}
+		}
+	},
+	"3587" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dissipation",
+				"de" : "Dissipation",
+				"fr" : "Dissipation",
+				"jp" : "転化"
+			}
+		}
+	},
+	"3590" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Draw",
+				"de" : "Ziehen",
+				"fr" : "Tirage",
+				"jp" : "ドロー"
+			}
+		}
+	},
+	"3593" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Redraw",
+				"de" : "Mischen",
+				"fr" : "Retirage",
+				"jp" : "リドロー"
+			}
+		}
+	},
+	"3606" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lightspeed",
+				"de" : "Lichtgeschwindigkeit",
+				"fr" : "Vitesse de la lumière",
+				"jp" : "ライトスピード"
+			}
+		}
+	},
+	"3612" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Synastry",
+				"de" : "Synastrie",
+				"fr" : "Synastrie",
+				"jp" : "シナストリー"
+			}
+		}
+	},
+	"3613" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Collective Unconscious",
+				"de" : "Numinosum",
+				"fr" : "Inconscient collectif",
+				"jp" : "運命の輪"
+			}
+		}
+	},
+	"3614" : {
+		"recast" : 40.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Essential Dignity",
+				"de" : "Essenzielle Würde",
+				"fr" : "Dignité essentielle",
+				"jp" : "ディグニティ"
+			}
+		}
+	},
+	"3625" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Blood Weapon",
+				"de" : "Blutwaffe",
+				"fr" : "Arme de sang",
+				"jp" : "ブラッドウェポン"
+			}
+		}
+	},
+	"3629" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Grit",
+				"de" : "Zähigkeit",
+				"fr" : "Férocité",
+				"jp" : "グリットスタンス"
+			}
+		}
+	},
+	"3634" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dark Mind",
+				"de" : "Dunkler Geist",
+				"fr" : "Esprit ténébreux",
+				"jp" : "ダークマインド"
+			}
+		}
+	},
+	"3636" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shadow Wall",
+				"de" : "Schattenwand",
+				"fr" : "Mur d'ombre",
+				"jp" : "シャドウウォール"
+			}
+		}
+	},
+	"3638" : {
+		"recast" : 300.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Living Dead",
+				"de" : "Totenerweckung",
+				"fr" : "Mort-vivant",
+				"jp" : "リビングデッド"
+			}
+		}
+	},
+	"3639" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Salted Earth",
+				"de" : "Salzige Erde",
+				"fr" : "Terre salée",
+				"jp" : "ソルトアース"
+			}
+		}
+	},
+	"3640" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Plunge",
+				"de" : "Hiebsprung",
+				"fr" : "Coupe plongeante",
+				"jp" : "プランジカット"
+			}
+		}
+	},
+	"3641" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Abyssal Drain",
+				"de" : "Abyssale Blutung",
+				"fr" : "Drainage abyssal",
+				"jp" : "アビサルドレイン"
+			}
+		}
+	},
+	"3643" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Carve and Spit",
+				"de" : "Zweischnitt",
+				"fr" : "Tranchage-habillage",
+				"jp" : "カーヴ・アンド・スピット"
+			}
+		}
+	},
+	"4589" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "The Giving Land",
+				"de" : "Geschenk der Erde",
+				"fr" : "Bénédiction de la nature",
+				"jp" : "大地の恵み"
+			}
+		}
+	},
+	"4590" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BTN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "The Giving Land",
+				"de" : "Geschenk der Erde",
+				"fr" : "Bénédiction de la nature",
+				"jp" : "大地の恵み"
+			}
+		}
+	},
+	"5136" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Starry Heavens",
+				"de" : "Funkelnder Himmel",
+				"fr" : "Pétard céleste",
+				"jp" : "ヘヴンスクラッカー"
+			}
+		}
+	},
+	"7382" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Intervention",
+				"de" : "Intervention",
+				"fr" : "Intervention",
+				"jp" : "インターベンション"
+			}
+		}
+	},
+	"7383" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Requiescat",
+				"de" : "Requiescat",
+				"fr" : "Requiescat",
+				"jp" : "レクイエスカット"
+			}
+		}
+	},
+	"7385" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Passage of Arms",
+				"de" : "Waffengang",
+				"fr" : "Passe d'armes",
+				"jp" : "パッセージ・オブ・アームズ"
+			}
+		}
+	},
+	"7386" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Onslaught",
+				"de" : "Sturmlauf",
+				"fr" : "Assaut violent",
+				"jp" : "オンスロート"
+			}
+		}
+	},
+	"7387" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Upheaval",
+				"de" : "Umsturz",
+				"fr" : "Révolte",
+				"jp" : "アップヒーバル"
+			}
+		}
+	},
+	"7388" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shake It Off",
+				"de" : "Abschütteln",
+				"fr" : "Débarrassage",
+				"jp" : "シェイクオフ"
+			}
+		}
+	},
+	"7389" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Inner Release",
+				"de" : "Urbefreiung",
+				"fr" : "Relâchement bestial",
+				"jp" : "原初の解放"
+			}
+		}
+	},
+	"7390" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Delirium",
+				"de" : "Blutdelirium",
+				"fr" : "Delirium de sang",
+				"jp" : "ブラッドデリリアム"
+			}
+		}
+	},
+	"7393" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "The Blackest Night",
+				"de" : "Schwärzeste Nacht",
+				"fr" : "Nuit noirissime",
+				"jp" : "ブラックナイト"
+			}
+		}
+	},
+	"7394" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Earth",
+				"de" : "Steinernes Enigma",
+				"fr" : "Énigme de la terre",
+				"jp" : "金剛の極意"
+			}
+		}
+	},
+	"7395" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Fire",
+				"de" : "Flammendes Enigma",
+				"fr" : "Énigme du feu",
+				"jp" : "紅蓮の極意"
+			}
+		}
+	},
+	"7396" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Brotherhood",
+				"de" : "Bruderschaft",
+				"fr" : "Fraternité",
+				"jp" : "桃園結義"
+			}
+		}
+	},
+	"7398" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dragon Sight",
+				"de" : "Drachenblick",
+				"fr" : "Vue de dragon",
+				"jp" : "ドラゴンサイト"
+			}
+		}
+	},
+	"7400" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Nastrond",
+				"de" : "Nastrond",
+				"fr" : "Naströnd",
+				"jp" : "ナーストレンド"
+			}
+		}
+	},
+	"7403" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Ten Chi Jin",
+				"de" : "Ten Chi Jin",
+				"fr" : "Ten Chi Jin",
+				"jp" : "天地人"
+			}
+		}
+	},
+	"7405" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Troubadour",
+				"de" : "Troubadour",
+				"fr" : "Troubadour",
+				"jp" : "トルバドゥール"
+			}
+		}
+	},
+	"7408" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Nature's Minne",
+				"de" : "Nophicas Minne",
+				"fr" : "Minne de la nature",
+				"jp" : "地神のミンネ"
+			}
+		}
+	},
+	"7414" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Barrel Stabilizer",
+				"de" : "Laufstabilisator",
+				"fr" : "Stabilisateur de canon",
+				"jp" : "バレルヒーター"
+			}
+		}
+	},
+	"7415" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Rook Overdrive",
+				"de" : "TURM-Überhitzung",
+				"fr" : "Surmultiplication de Tour",
+				"jp" : "オーバードライブ・ルーク"
+			}
+		}
+	},
+	"7418" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Flamethrower",
+				"de" : "Flammenwerfer",
+				"fr" : "Lance-flammes",
+				"jp" : "フレイムスロアー"
+			}
+		}
+	},
+	"7421" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Triplecast",
+				"de" : "Tripelzauber",
+				"fr" : "Triple sort",
+				"jp" : "三連魔"
+			}
+		}
+	},
+	"7423" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Aetherpact",
+				"de" : "Ätherpakt",
+				"fr" : "Pacte d'éther",
+				"jp" : "エーテルパクト"
+			}
+		}
+	},
+	"7427" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Summon Bahamut",
+				"de" : "Bahamut-Beschwörung",
+				"fr" : "Invocation Bahamut",
+				"jp" : "サモン・バハムート"
+			}
+		}
+	},
+	"7429" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle Bahamut",
+				"de" : "Bahamut-Entflammung",
+				"fr" : "Galvanisation Bahamut",
+				"jp" : "エンキンドル・バハムート"
+			}
+		}
+	},
+	"7430" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Thin Air",
+				"de" : "Ex Machina",
+				"fr" : "Sponte",
+				"jp" : "シンエアー"
+			}
+		}
+	},
+	"7432" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Divine Benison",
+				"de" : "Göttlicher Segen",
+				"fr" : "Faveur divine",
+				"jp" : "ディヴァインベニゾン"
+			}
+		}
+	},
+	"7433" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Plenary Indulgence",
+				"de" : "Vollkommener Ablass",
+				"fr" : "Indulgence plénière",
+				"jp" : "インドゥルゲンティア"
+			}
+		}
+	},
+	"7434" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Excogitation",
+				"de" : "Weise Voraussicht",
+				"fr" : "Traité de l'excogitation",
+				"jp" : "深謀遠慮の策"
+			}
+		}
+	},
+	"7436" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Chain Stratagem",
+				"de" : "Kritische Strategie",
+				"fr" : "Stratagèmes entrelacés",
+				"jp" : "連環計"
+			}
+		}
+	},
+	"7439" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Earthly Star",
+				"de" : "Irdischer Stern",
+				"fr" : "Étoile terrestre",
+				"jp" : "アーサリースター"
+			}
+		}
+	},
+	"7448" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Sleeve Draw",
+				"de" : "Legeschema",
+				"fr" : "Grand sabot",
+				"jp" : "スリーヴドロー"
+			}
+		}
+	},
+	"7492" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Hissatsu: Gyoten",
+				"de" : "Hissatsu: Gyoten",
+				"fr" : "Hissatsu : Gyôten",
+				"jp" : "必殺剣・暁天"
+			}
+		}
+	},
+	"7493" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Hissatsu: Yaten",
+				"de" : "Hissatsu: Yaten",
+				"fr" : "Hissatsu : Yaten",
+				"jp" : "必殺剣・夜天"
+			}
+		}
+	},
+	"7496" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Hissatsu: Guren",
+				"de" : "Hissatsu: Guren",
+				"fr" : "Hissatsu : Guren",
+				"jp" : "必殺剣・紅蓮"
+			}
+		}
+	},
+	"7497" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Meditate",
+				"de" : "Meditieren",
+				"fr" : "Mokusô",
+				"jp" : "黙想"
+			}
+		}
+	},
+	"7498" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Third Eye",
+				"de" : "Drittes Auge",
+				"fr" : "Troisième œil",
+				"jp" : "心眼"
+			}
+		}
+	},
+	"7499" : {
+		"recast" : 55.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Meikyo Shisui",
+				"de" : "Meikyo Shisui",
+				"fr" : "Meikyô Shisui",
+				"jp" : "明鏡止水"
+			}
+		}
+	},
+	"7506" : {
+		"recast" : 40.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Corps-a-corps",
+				"de" : "Corps-a-corps",
+				"fr" : "Corps-à-corps",
+				"jp" : "コル・ア・コル"
+			}
+		}
+	},
+	"7515" : {
+		"recast" : 35.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Displacement",
+				"de" : "Körperparade",
+				"fr" : "Déplacement",
+				"jp" : "デプラスマン"
+			}
+		}
+	},
+	"7517" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Fleche",
+				"de" : "Fleche",
+				"fr" : "Flèche",
+				"jp" : "フレッシュ"
+			}
+		}
+	},
+	"7518" : {
+		"recast" : 55.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Acceleration",
+				"de" : "Präparation",
+				"fr" : "Accélération",
+				"jp" : "アクセラレーション"
+			}
+		}
+	},
+	"7519" : {
+		"recast" : 45.0,
+		"level_recasts" : [
+			{
+				"level" : 78,
+				"recast" : 35.0
+			}
+		],
+		"jobs" : [
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Contre Sixte",
+				"de" : "Contre Sixte",
+				"fr" : "Contre de sixte",
+				"jp" : "コントルシクスト"
+			}
+		}
+	},
+	"7520" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Embolden",
+				"de" : "Ermutigen",
+				"fr" : "Enhardissement",
+				"jp" : "エンボルデン"
+			}
+		}
+	},
+	"7521" : {
+		"recast" : 120.0,
+		"level_recasts" : [
+			{
+				"level" : 74,
+				"recast" : 110.0
+			}
+		],
+		"jobs" : [
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Manafication",
+				"de" : "Manafizierung",
+				"fr" : "Manafication",
+				"jp" : "マナフィケーション"
+			}
+		}
+	},
+	"7531" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"MRD",
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Rampart",
+				"de" : "Schutzwall",
+				"fr" : "Rempart",
+				"jp" : "ランパート"
+			}
+		}
+	},
+	"7533" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"MRD",
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Provoke",
+				"de" : "Herausforderung",
+				"fr" : "Provocation",
+				"jp" : "挑発"
+			}
+		}
+	},
+	"7535" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"MRD",
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Reprisal",
+				"de" : "Reflexion",
+				"fr" : "Rétorsion",
+				"jp" : "リプライザル"
+			}
+		}
+	},
+	"7537" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"MRD",
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shirk",
+				"de" : "Geteiltes Leid",
+				"fr" : "Dérobade",
+				"jp" : "シャーク"
+			}
+		}
+	},
+	"7538" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"MRD",
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Interject",
+				"de" : "Zwischenruf",
+				"fr" : "Interjection",
+				"jp" : "インタージェクト"
+			}
+		}
+	},
+	"7540" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"MRD",
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Low Blow",
+				"de" : "Tiefschlag",
+				"fr" : "Coup bas",
+				"jp" : "ロウブロウ"
+			}
+		}
+	},
+	"7541" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PGL",
+			"LNC",
+			"ARC",
+			"ROG",
+			"MNK",
+			"DRG",
+			"BRD",
+			"NIN",
+			"MCH",
+			"SAM",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Second Wind",
+				"de" : "Chakra",
+				"fr" : "Second souffle",
+				"jp" : "内丹"
+			}
+		}
+	},
+	"7542" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PGL",
+			"LNC",
+			"ROG",
+			"MNK",
+			"DRG",
+			"NIN",
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bloodbath",
+				"de" : "Blutbad",
+				"fr" : "Bain de sang",
+				"jp" : "ブラッドバス"
+			}
+		}
+	},
+	"7546" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PGL",
+			"LNC",
+			"ROG",
+			"MNK",
+			"DRG",
+			"NIN",
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "True North",
+				"de" : "Neuausrichtung",
+				"fr" : "Vrai Nord",
+				"jp" : "トゥルーノース"
+			}
+		}
+	},
+	"7548" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GLA",
+			"PGL",
+			"MRD",
+			"LNC",
+			"ARC",
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"ROG",
+			"NIN",
+			"MCH",
+			"DRK",
+			"SAM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Arm's Length",
+				"de" : "Abtausch",
+				"fr" : "Portée de bras",
+				"jp" : "アームズレングス"
+			}
+		}
+	},
+	"7549" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PGL",
+			"LNC",
+			"ROG",
+			"MNK",
+			"DRG",
+			"NIN",
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Feint",
+				"de" : "Zermürben",
+				"fr" : "Restreinte",
+				"jp" : "牽制"
+			}
+		}
+	},
+	"7551" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ARC",
+			"BRD",
+			"MCH",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Head Graze",
+				"de" : "Haarscharfer Schuss",
+				"fr" : "Écorche-tête",
+				"jp" : "ヘッドグレイズ"
+			}
+		}
+	},
+	"7553" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ARC",
+			"BRD",
+			"MCH",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Foot Graze",
+				"de" : "Stolperschuss",
+				"fr" : "Écorche-pied",
+				"jp" : "フットグレイズ"
+			}
+		}
+	},
+	"7554" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ARC",
+			"BRD",
+			"MCH",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Leg Graze",
+				"de" : "Beinschuss",
+				"fr" : "Écorche-jambe",
+				"jp" : "レッググレイズ"
+			}
+		}
+	},
+	"7559" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"CNJ",
+			"THM",
+			"ACN",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"AST",
+			"RDM",
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Surecast",
+				"de" : "Unbeirrbarkeit",
+				"fr" : "Stoïcisme",
+				"jp" : "堅実魔"
+			}
+		}
+	},
+	"7560" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"THM",
+			"ACN",
+			"BLM",
+			"SMN",
+			"RDM",
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Addle",
+				"de" : "Stumpfsinn",
+				"fr" : "Embrouillement",
+				"jp" : "アドル"
+			}
+		}
+	},
+	"7561" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"CNJ",
+			"THM",
+			"ACN",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"AST",
+			"RDM",
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Swiftcast",
+				"de" : "Spontaneität",
+				"fr" : "Magie prompte",
+				"jp" : "迅速魔"
+			}
+		}
+	},
+	"7562" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"CNJ",
+			"THM",
+			"ACN",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"AST",
+			"RDM",
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lucid Dreaming",
+				"de" : "Klartraum",
+				"fr" : "Rêve lucide",
+				"jp" : "ルーシッドドリーム"
+			}
+		}
+	},
+	"7571" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"CNJ",
+			"WHM",
+			"SCH",
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Rescue",
+				"de" : "Rettung",
+				"fr" : "Secours",
+				"jp" : "救出"
+			}
+		}
+	},
+	"7621" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Diffractive Magitek Cannon",
+				"de" : "Diffraktive Magitek-Kanone",
+				"fr" : "Canon diffractif magitek",
+				"jp" : "拡散魔導カノン"
+			}
+		}
+	},
+	"7622" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "High-powered Magitek Cannon",
+				"de" : "Hochenergie-Magitek-Kanone",
+				"fr" : "Canon surpuissant magitek",
+				"jp" : "高出力魔導カノン"
+			}
+		}
+	},
+	"7863" : {
+		"recast" : 40.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PGL",
+			"LNC",
+			"ROG",
+			"MNK",
+			"DRG",
+			"NIN",
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Leg Sweep",
+				"de" : "Stolperfalle",
+				"fr" : "Fauchage de jambe",
+				"jp" : "レッグスウィープ"
+			}
+		}
+	},
+	"7904" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"Disciple",
+			"of",
+			"the",
+			"Land"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shark Eye",
+				"de" : "Hai-Auge",
+				"fr" : "Œil de requin",
+				"jp" : "シャークアイ"
+			}
+		}
+	},
+	"7905" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"Disciple",
+			"of",
+			"the",
+			"Land"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shark Eye II",
+				"de" : "Hai-Auge II",
+				"fr" : "Œil de requin II",
+				"jp" : "シャークアイII"
+			}
+		}
+	},
+	"8624" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Magitek Pulse",
+				"de" : "Magitek-Puls",
+				"fr" : "Impulsion magitek",
+				"jp" : "魔導パルス"
+			}
+		}
+	},
+	"11411" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Off-guard",
+				"de" : "Einschüchtern",
+				"fr" : "Sans défense",
+				"jp" : "ガードオファ"
+			}
+		}
+	},
+	"11421" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Peculiar Light",
+				"de" : "Unheimliche Aura",
+				"fr" : "Lumière sinistre",
+				"jp" : "不思議な光"
+			}
+		}
+	},
+	"11426" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Feather Rain",
+				"de" : "Federregen",
+				"fr" : "Pluie de plumes",
+				"jp" : "フェザーレイン"
+			}
+		}
+	},
+	"11427" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Eruption",
+				"de" : "Eruption",
+				"fr" : "Éruption",
+				"jp" : "エラプション"
+			}
+		}
+	},
+	"11428" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Mountain Buster",
+				"de" : "Bergsprenger",
+				"fr" : "Casse-montagnes",
+				"jp" : "マウンテンバスター"
+			}
+		}
+	},
+	"11429" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shock Strike",
+				"de" : "Schockschlag",
+				"fr" : "Frappe de choc",
+				"jp" : "ショックストライク"
+			}
+		}
+	},
+	"11430" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Glass Dance",
+				"de" : "Gläserner Tanz",
+				"fr" : "Danse de glace",
+				"jp" : "氷雪乱舞"
+			}
+		}
+	},
+	"11431" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Veil of the Whorl",
+				"de" : "Wogenschleier",
+				"fr" : "Voile du Déchaîneur",
+				"jp" : "水神のヴェール"
+			}
+		}
+	},
+	"12958" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM",
+			"SCH",
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Aetherweaver",
+				"de" : "Vermächtnis des Zauberers",
+				"fr" : "Mémoire d'un prêtre guerrier",
+				"jp" : "術士の記憶"
+			}
+		}
+	},
+	"12959" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Martialist",
+				"de" : "Vermächtnis des Kämpfers",
+				"fr" : "Mémoire d'un protecteur intrépide",
+				"jp" : "闘士の記憶"
+			}
+		}
+	},
+	"12960" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"AST",
+			"SAM",
+			"RDM",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Platebearer",
+				"de" : "Vermächtnis des Ritters",
+				"fr" : "Mémoire d'un soldat cuirassé",
+				"jp" : "重騎兵の記憶"
+			}
+		}
+	},
+	"12961" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Guardian",
+				"de" : "Vermächtnis des Wächters",
+				"fr" : "Mémoire d'un gardien",
+				"jp" : "守護者の記憶"
+			}
+		}
+	},
+	"12962" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM",
+			"SCH",
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Ordained",
+				"de" : "Vermächtnis des Priesters",
+				"fr" : "Mémoire d'un prêtre",
+				"jp" : "司祭の記憶"
+			}
+		}
+	},
+	"12963" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"BRD",
+			"BLM",
+			"SMN",
+			"NIN",
+			"MCH",
+			"SAM",
+			"RDM",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Skirmisher",
+				"de" : "Vermächtnis des Kampfkünstlers",
+				"fr" : "Mémoire d'un combattant",
+				"jp" : "武人の記憶"
+			}
+		}
+	},
+	"12964" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Watcher",
+				"de" : "Vermächtnis des Spähers",
+				"fr" : "Mémoire d'un éclaireur",
+				"jp" : "斥候の記憶"
+			}
+		}
+	},
+	"12965" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM",
+			"SCH",
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Templar",
+				"de" : "Vermächtnis des heiligen Ritters",
+				"fr" : "Mémoire d'un chevalier sacré",
+				"jp" : "聖騎士の記憶"
+			}
+		}
+	},
+	"12966" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"BRD",
+			"BLM",
+			"SMN",
+			"NIN",
+			"MCH",
+			"SAM",
+			"RDM",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Irregular",
+				"de" : "Vermächtnis des Berserkers",
+				"fr" : "Mémoire d'un guerrier enragé",
+				"jp" : "狂戦士の記憶"
+			}
+		}
+	},
+	"12967" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Breathtaker",
+				"de" : "Vermächtnis des Diebes",
+				"fr" : "Mémoire d'un voleur",
+				"jp" : "盗賊の記憶"
+			}
+		}
+	},
+	"12968" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Spirit of the Remembered",
+				"de" : "Segen des Helden",
+				"fr" : "Égide des héros vaillants",
+				"jp" : "英傑の加護"
+			}
+		}
+	},
+	"12971" : {
+		"recast" : 300.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Death L",
+				"de" : "Logos-Tod",
+				"fr" : "Évocation Logos : Mort",
+				"jp" : "ロゴス・デス"
+			}
+		}
+	},
+	"12975" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Swift L",
+				"de" : "Logos-Eile",
+				"fr" : "Évocation Logos : Vélocité",
+				"jp" : "ロゴス・スウィフト"
+			}
+		}
+	},
+	"12976" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Featherfoot L",
+				"de" : "Logos-Leichtfuß",
+				"fr" : "Évocation Logos : Pieds légers",
+				"jp" : "ロゴス・フェザーステップ"
+			}
+		}
+	},
+	"12978" : {
+		"recast" : 300.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"NIN",
+			"MCH",
+			"DRK",
+			"SAM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Catastrophe L",
+				"de" : "Logos-Magieexplosion",
+				"fr" : "Évocation Logos : Catastrophe",
+				"jp" : "ロゴス・カタスト"
+			}
+		}
+	},
+	"12981" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Stealth L",
+				"de" : "Logos-Tarnung",
+				"fr" : "Évocation Logos : Furtivité",
+				"jp" : "ロゴス・ステルス"
+			}
+		}
+	},
+	"12984" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Tranquilizer L",
+				"de" : "Logos-Betäubung",
+				"fr" : "Évocation Logos : Tranquillisant",
+				"jp" : "ロゴス・トランキライザー"
+			}
+		}
+	},
+	"12985" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bloodbath L",
+				"de" : "Logos-Blutbad",
+				"fr" : "Évocation Logos : Bain de sang",
+				"jp" : "ロゴス・ブラッドバス"
+			}
+		}
+	},
+	"12986" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Rejuvenate L",
+				"de" : "Logos-Aufladung",
+				"fr" : "Évocation Logos : Restauration",
+				"jp" : "ロゴス・リチャージ"
+			}
+		}
+	},
+	"12987" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Haymaker L",
+				"de" : "Logos-Konter",
+				"fr" : "Évocation Logos : Haymaker",
+				"jp" : "ロゴス・カウンター"
+			}
+		}
+	},
+	"12988" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"BLM",
+			"SMN",
+			"NIN",
+			"MCH",
+			"DRK",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Rapid Recast L",
+				"de" : "Logos-Velocitas",
+				"fr" : "Évocation Logos : Recharge rapide",
+				"jp" : "ロゴス・ファストリキャスト"
+			}
+		}
+	},
+	"12995" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"AST",
+			"SAM",
+			"RDM",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Incense L",
+				"de" : "Logos-Hohn",
+				"fr" : "Évocation Logos : Incitation",
+				"jp" : "ロゴス・エンミティ"
+			}
+		}
+	},
+	"12998" : {
+		"recast" : 300.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"AST",
+			"SAM",
+			"RDM",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Solid Shield L",
+				"de" : "Logos-Schild",
+				"fr" : "Évocation Logos : Protection physique",
+				"jp" : "ロゴス・フィジカルシールド"
+			}
+		}
+	},
+	"12999" : {
+		"recast" : 300.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"AST",
+			"SAM",
+			"RDM",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Spell Shield L",
+				"de" : "Logos-Magieschild",
+				"fr" : "Évocation Logos : Protection magique",
+				"jp" : "ロゴス・マジックシールド"
+			}
+		}
+	},
+	"13001" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Smite L",
+				"de" : "Logos-Schattenhieb",
+				"fr" : "Évocation Logos : Châtiment",
+				"jp" : "ロゴス・スマイト"
+			}
+		}
+	},
+	"13005" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"AST",
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Magic Burst L",
+				"de" : "Logos-Magieexplosion",
+				"fr" : "Évocation Logos : Explosion magique",
+				"jp" : "ロゴス・マジックバースト"
+			}
+		}
+	},
+	"13006" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"NIN",
+			"DRK",
+			"SAM",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Double Edge L",
+				"de" : "Logos-Zweischneid",
+				"fr" : "Évocation Logos : Double tranchant",
+				"jp" : "ロゴス・ダブルエッジ"
+			}
+		}
+	},
+	"13426" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Aetherwell",
+				"de" : "Ätherquell",
+				"fr" : "Concentration d'éther",
+				"jp" : "マナチャージ"
+			}
+		}
+	},
+	"14477" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLM",
+			"SMN",
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Elder",
+				"de" : "Vermächtnis des Weisen",
+				"fr" : "Mémoire d'un sage",
+				"jp" : "賢者の記憶"
+			}
+		}
+	},
+	"14478" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"NIN",
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Duelist",
+				"de" : "Vermächtnis des Fechtmeisters",
+				"fr" : "Mémoire d'une fine lame",
+				"jp" : "剣豪の記憶"
+			}
+		}
+	},
+	"14479" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD",
+			"MCH",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Fiendhunter",
+				"de" : "Vermächtnis des Bogengeweihten",
+				"fr" : "Mémoire d'un archer émérite",
+				"jp" : "弓聖の記憶"
+			}
+		}
+	},
+	"14480" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Wisdom of the Indomitable",
+				"de" : "Vermächtnis des Helden",
+				"fr" : "Mémoire d'un héros illustre",
+				"jp" : "豪傑の記憶"
+			}
+		}
+	},
+	"14842" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Hissatsu: Gyoten",
+				"de" : "Hissatsu: Gyoten",
+				"fr" : "Hissatsu : Gyôten",
+				"jp" : "必殺剣・暁天"
+			}
+		}
+	},
+	"14843" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "冥界恐叫打",
+				"de" : "Jenseitsschrei",
+				"fr" : "Cri de l'au-delà",
+				"jp" : "冥界恐叫打"
+			}
+		}
+	},
+	"15375" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Second Wind",
+				"de" : "Chakra",
+				"fr" : "Second souffle",
+				"jp" : "内丹"
+			}
+		}
+	},
+	"15870" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Fight or Flight",
+				"de" : "Verwegenheit",
+				"fr" : "Combat acharné",
+				"jp" : "ファイト・オア・フライト"
+			}
+		}
+	},
+	"15997" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Standard Step",
+				"de" : "Einfache Choreographie",
+				"fr" : "Pas classique",
+				"jp" : "スタンダードステップ"
+			}
+		}
+	},
+	"15998" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Technical Step",
+				"de" : "Komplexe Choreographie",
+				"fr" : "Pas technique",
+				"jp" : "テクニカルステップ"
+			}
+		}
+	},
+	"16006" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Closed Position",
+				"de" : "Tanzpartner",
+				"fr" : "Position rapprochée",
+				"jp" : "クローズドポジション"
+			}
+		}
+	},
+	"16010" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "En Avant",
+				"de" : "En Avant",
+				"fr" : "En avant",
+				"jp" : "アン・アヴァン"
+			}
+		}
+	},
+	"16011" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Devilment",
+				"de" : "Todestango",
+				"fr" : "Tango endiablé",
+				"jp" : "攻めのタンゴ"
+			}
+		}
+	},
+	"16012" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shield Samba",
+				"de" : "Schildsamba",
+				"fr" : "Samba protectrice",
+				"jp" : "守りのサンバ"
+			}
+		}
+	},
+	"16013" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Flourish",
+				"de" : "Trance",
+				"fr" : "Apothéose",
+				"jp" : "フラリッシュ"
+			}
+		}
+	},
+	"16014" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Improvisation",
+				"de" : "Tanzimprovisation",
+				"fr" : "Improvisation",
+				"jp" : "インプロビゼーション"
+			}
+		}
+	},
+	"16015" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Curing Waltz",
+				"de" : "Heilender Walzer",
+				"fr" : "Valse revigorante",
+				"jp" : "癒やしのワルツ"
+			}
+		}
+	},
+	"16138" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "No Mercy",
+				"de" : "Ohne Gnade",
+				"fr" : "Sans pitié",
+				"jp" : "ノー・マーシー"
+			}
+		}
+	},
+	"16140" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Camouflage",
+				"de" : "Camouflage",
+				"fr" : "Camouflage",
+				"jp" : "カモフラージュ"
+			}
+		}
+	},
+	"16142" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Royal Guard",
+				"de" : "Eid der Leibgardisten",
+				"fr" : "Garde royale",
+				"jp" : "ロイヤルガード"
+			}
+		}
+	},
+	"16144" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Danger Zone",
+				"de" : "Sprengzone",
+				"fr" : "Zone de danger",
+				"jp" : "デンジャーゾーン"
+			}
+		}
+	},
+	"16146" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Gnashing Fang",
+				"de" : "Schlagfänge",
+				"fr" : "Croc pugnace",
+				"jp" : "ビートファング"
+			}
+		}
+	},
+	"16148" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Nebula",
+				"de" : "Nebula",
+				"fr" : "Nébuleuse",
+				"jp" : "ネビュラ"
+			}
+		}
+	},
+	"16151" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Aurora",
+				"de" : "Aurora",
+				"fr" : "Aurore",
+				"jp" : "オーロラ"
+			}
+		}
+	},
+	"16152" : {
+		"recast" : 360.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Superbolide",
+				"de" : "Meteoritenfall",
+				"fr" : "Bolide",
+				"jp" : "ボーライド"
+			}
+		}
+	},
+	"16153" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Sonic Break",
+				"de" : "Schallbrecher",
+				"fr" : "Rupture sonique",
+				"jp" : "ソニックブレイク"
+			}
+		}
+	},
+	"16154" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Rough Divide",
+				"de" : "Grobspalter",
+				"fr" : "Lamineur",
+				"jp" : "ラフディバイド"
+			}
+		}
+	},
+	"16159" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bow Shock",
+				"de" : "Schockpatrone",
+				"fr" : "Arc de choc",
+				"jp" : "バウショック"
+			}
+		}
+	},
+	"16160" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Heart of Light",
+				"de" : "Wackeres Herz",
+				"fr" : "Cœur de Lumière",
+				"jp" : "ハート・オブ・ライト"
+			}
+		}
+	},
+	"16161" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Heart of Stone",
+				"de" : "Steinernes Herz",
+				"fr" : "Cœur de pierre",
+				"jp" : "ハート・オブ・ストーン"
+			}
+		}
+	},
+	"16164" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bloodfest",
+				"de" : "Blutpatronen",
+				"fr" : "Cartouche de sang",
+				"jp" : "ブラッドソイル"
+			}
+		}
+	},
+	"16165" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Blasting Zone",
+				"de" : "Erda-Detonation",
+				"fr" : "Zone de destruction",
+				"jp" : "ブラスティングゾーン"
+			}
+		}
+	},
+	"16436" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Soothing Potion",
+				"de" : "Kristalltrank",
+				"fr" : "Potion parfumée",
+				"jp" : "セントポーション"
+			}
+		}
+	},
+	"16461" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Intervene",
+				"de" : "Einschreiten",
+				"fr" : "Irruption brutale",
+				"jp" : "インターヴィーン"
+			}
+		}
+	},
+	"16464" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Nascent Flash",
+				"de" : "Urflackern",
+				"fr" : "Exaltation naissante",
+				"jp" : "原初の猛り"
+			}
+		}
+	},
+	"16471" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dark Missionary",
+				"de" : "Dunkler Bote",
+				"fr" : "Missionnaire des Ténèbres",
+				"jp" : "ダークミッショナリー"
+			}
+		}
+	},
+	"16472" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Living Shadow",
+				"de" : "Schattenschemen",
+				"fr" : "Ombre vivante",
+				"jp" : "影身具現"
+			}
+		}
+	},
+	"16475" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Anatman",
+				"de" : "Anatman",
+				"fr" : "Anatman",
+				"jp" : "無我"
+			}
+		}
+	},
+	"16478" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "High Jump",
+				"de" : "Hochsprung",
+				"fr" : "Grand saut",
+				"jp" : "ハイジャンプ"
+			}
+		}
+	},
+	"16480" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Stardiver",
+				"de" : "Sternensturz",
+				"fr" : "Plongeon céleste",
+				"jp" : "スターダイバー"
+			}
+		}
+	},
+	"16481" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Hissatsu: Senei",
+				"de" : "Hissatsu: Senei",
+				"fr" : "Hissatsu : Sen'ei",
+				"jp" : "必殺剣・閃影"
+			}
+		}
+	},
+	"16482" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Ikishoten",
+				"de" : "Ikishoten",
+				"fr" : "Ikishôten",
+				"jp" : "意気衝天"
+			}
+		}
+	},
+	"16483" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Tsubame-gaeshi",
+				"de" : "Tsubamegaeshi",
+				"fr" : "Tsubamegaeshi",
+				"jp" : "燕返し"
+			}
+		}
+	},
+	"16484" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Kaeshi: Higanbana",
+				"de" : "Kaeshi Higanbana",
+				"fr" : "Kaeshi Higanbana",
+				"jp" : "返し彼岸花"
+			}
+		}
+	},
+	"16485" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Kaeshi: Goken",
+				"de" : "Kaeshi Goken",
+				"fr" : "Kaeshi Goken",
+				"jp" : "返し五剣"
+			}
+		}
+	},
+	"16486" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Kaeshi: Setsugekka",
+				"de" : "Kaeshi Setsugekka",
+				"fr" : "Kaeshi Setsugekka",
+				"jp" : "返し雪月花"
+			}
+		}
+	},
+	"16487" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shoha",
+				"de" : "Shoha",
+				"fr" : "Shôha",
+				"jp" : "照破"
+			}
+		}
+	},
+	"16489" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Meisui",
+				"de" : "Meisui",
+				"fr" : "Meisui",
+				"jp" : "命水"
+			}
+		}
+	},
+	"16493" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bunshin",
+				"de" : "Doppeltes Ich",
+				"fr" : "Bunshin",
+				"jp" : "分身の術"
+			}
+		}
+	},
+	"16494" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Shadowbite",
+				"de" : "Schattenbiss",
+				"fr" : "Morsure de l'ombre",
+				"jp" : "シャドウバイト"
+			}
+		}
+	},
+	"16498" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Drill",
+				"de" : "Bohrer",
+				"fr" : "Foreuse",
+				"jp" : "ドリル"
+			}
+		}
+	},
+	"16499" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bioblaster",
+				"de" : "Bioblaster",
+				"fr" : "Lance-toxine",
+				"jp" : "バイオブラスト"
+			}
+		}
+	},
+	"16500" : {
+		"recast" : 40.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Air Anchor",
+				"de" : "Luftanker",
+				"fr" : "Ancre aérienne",
+				"jp" : "エアアンカー"
+			}
+		}
+	},
+	"16502" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Queen Overdrive",
+				"de" : "DAME-Überhitzung",
+				"fr" : "Surmultiplication de Reine",
+				"jp" : "オーバードライブ・クイーン"
+			}
+		}
+	},
+	"16508" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Energy Drain",
+				"de" : "Energieentzug",
+				"fr" : "Aspiration d'énergie",
+				"jp" : "エナジードレイン"
+			}
+		}
+	},
+	"16509" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Egi Assault",
+				"de" : "Egi-Attacke I",
+				"fr" : "Frappe Egi I",
+				"jp" : "エギアサルトI"
+			}
+		}
+	},
+	"16510" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Energy Siphon",
+				"de" : "Energiesiphon",
+				"fr" : "Siphon d'énergie",
+				"jp" : "エナジーサイフォン"
+			}
+		}
+	},
+	"16512" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Egi Assault II",
+				"de" : "Egi-Attacke II",
+				"fr" : "Frappe Egi II",
+				"jp" : "エギアサルトII"
+			}
+		}
+	},
+	"16513" : {
+		"recast" : 55.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Firebird Trance",
+				"de" : "Phönix-Trance",
+				"fr" : "Transe-Phénix",
+				"jp" : "トランス・フェニックス"
+			}
+		}
+	},
+	"16516" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle Phoenix",
+				"de" : "Phönix-Entflammung",
+				"fr" : "Galvanisation Phénix",
+				"jp" : "エンキンドル・フェニックス"
+			}
+		}
+	},
+	"16527" : {
+		"recast" : 35.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Engagement",
+				"de" : "Arret-Stoß",
+				"fr" : "Engagement",
+				"jp" : "アンガジェマン"
+			}
+		}
+	},
+	"16536" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Temperance",
+				"de" : "Linderung",
+				"fr" : "Tempérance",
+				"jp" : "テンパランス"
+			}
+		}
+	},
+	"16537" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Whispering Dawn",
+				"de" : "Erhebendes Flüstern",
+				"fr" : "Murmure de l'aurore",
+				"jp" : "光の囁き"
+			}
+		}
+	},
+	"16538" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Fey Illumination",
+				"de" : "Illumination",
+				"fr" : "Illumination féérique",
+				"jp" : "フェイイルミネーション"
+			}
+		}
+	},
+	"16542" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Recitation",
+				"de" : "Raffinesse",
+				"fr" : "Récitation",
+				"jp" : "秘策"
+			}
+		}
+	},
+	"16543" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Fey Blessing",
+				"de" : "Gunst der Feen",
+				"fr" : "Bénédiction féérique",
+				"jp" : "フェイブレッシング"
+			}
+		}
+	},
+	"16545" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Summon Seraph",
+				"de" : "Seraph-Beschwörung",
+				"fr" : "Invocation Séraphin",
+				"jp" : "サモン・セラフィム"
+			}
+		}
+	},
+	"16546" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Consolation",
+				"de" : "Seelentrost",
+				"fr" : "Dictame",
+				"jp" : "コンソレイション"
+			}
+		}
+	},
+	"16549" : {
+		"recast" : 55.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Firebird Trance",
+				"de" : "Phönix-Trance",
+				"fr" : "Transe-Phénix",
+				"jp" : "トランス・フェニックス"
+			}
+		}
+	},
+	"16552" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Divination",
+				"de" : "Weissagung",
+				"fr" : "Divination",
+				"jp" : "ディヴィネーション"
+			}
+		}
+	},
+	"16553" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Celestial Opposition",
+				"de" : "Opposition",
+				"fr" : "Opposition céleste",
+				"jp" : "星天対抗"
+			}
+		}
+	},
+	"16556" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Celestial Intersection",
+				"de" : "Kongruenz",
+				"fr" : "Rencontre céleste",
+				"jp" : "星天交差"
+			}
+		}
+	},
+	"16557" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Horoscope",
+				"de" : "Horoskop",
+				"fr" : "Horoscope",
+				"jp" : "ホロスコープ"
+			}
+		}
+	},
+	"16559" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Neutral Sect",
+				"de" : "Neutral",
+				"fr" : "Adepte de la neutralité",
+				"jp" : "ニュートラルセクト"
+			}
+		}
+	},
+	"16791" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Glittering Topaz",
+				"de" : "Egi-Attacke I: Glimmertopas",
+				"fr" : "Frappe Egi I : Éclat de topaze",
+				"jp" : "エギアサルトI：トパーズの煌き"
+			}
+		}
+	},
+	"16792" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Shining Topaz",
+				"de" : "Egi-Attacke II: Glanztopas",
+				"fr" : "Frappe Egi II : Topaze scintillante",
+				"jp" : "エギアサルトII：トパーズの輝き"
+			}
+		}
+	},
+	"16793" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Downburst",
+				"de" : "Egi-Attacke I: Fallböe",
+				"fr" : "Frappe Egi I : Rafale descendante",
+				"jp" : "エギアサルトI：ダウンバースト"
+			}
+		}
+	},
+	"16794" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Glittering Emerald",
+				"de" : "Egi-Attacke II: Glimmersmaragd",
+				"fr" : "Frappe Egi II : Éclat d'émeraude",
+				"jp" : "エギアサルトII：エメラルドの煌き"
+			}
+		}
+	},
+	"16795" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Earthen Armor",
+				"de" : "Egi-Attacke I: Gaia-Panzer",
+				"fr" : "Frappe Egi I : Armure tellurique",
+				"jp" : "エギアサルトI：大地の鎧"
+			}
+		}
+	},
+	"16796" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Mountain Buster",
+				"de" : "Egi-Attacke II: Bergsprenger",
+				"fr" : "Frappe Egi II : Casse-montagnes",
+				"jp" : "エギアサルトII：マウンテンバスター"
+			}
+		}
+	},
+	"16797" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Aerial Slash",
+				"de" : "Egi-Attacke I: Lufthieb",
+				"fr" : "Frappe Egi I : Taillade aérienne",
+				"jp" : "エギアサルトI：エリアルスラッシュ"
+			}
+		}
+	},
+	"16798" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Slipstream",
+				"de" : "Egi-Attacke II: Wirbelströmung",
+				"fr" : "Frappe Egi II : Sillage",
+				"jp" : "エギアサルトII：スリップストリーム"
+			}
+		}
+	},
+	"16799" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault I: Crimson Cyclone",
+				"de" : "Egi-Attacke I: Zinnober-Zyklon",
+				"fr" : "Frappe Egi I : Cyclone écarlate",
+				"jp" : "エギアサルトI：クリムゾンサイクロン"
+			}
+		}
+	},
+	"16800" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Assault II: Flaming Crush",
+				"de" : "Egi-Attacke II: Flammenstoß",
+				"fr" : "Frappe Egi II : Fracassement flamboyant",
+				"jp" : "エギアサルトII：フレイミングクラッシュ"
+			}
+		}
+	},
+	"16801" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle: Earthen Fury",
+				"de" : "Entflammung: Gaias Zorn",
+				"fr" : "Galvanisation : Fureur tellurique",
+				"jp" : "エンキンドル：大地の怒り"
+			}
+		}
+	},
+	"16802" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle: Aerial Blast",
+				"de" : "Entflammung: Windschlag",
+				"fr" : "Galvanisation : Rafale aérienne",
+				"jp" : "エンキンドル：エリアルブラスト"
+			}
+		}
+	},
+	"16803" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enkindle: Inferno",
+				"de" : "Entflammung: Inferno",
+				"fr" : "Galvanisation : Flammes de l'enfer",
+				"jp" : "エンキンドル：地獄の火炎"
+			}
+		}
+	},
+	"16804" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Rough Divide",
+				"de" : "Grobspalter",
+				"fr" : "Lamineur",
+				"jp" : "ラフディバイド"
+			}
+		}
+	},
+	"16889" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Tactician",
+				"de" : "Taktiker",
+				"fr" : "Tacticien",
+				"jp" : "タクティシャン"
+			}
+		}
+	},
+	"17004" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Ronkan Renew",
+				"de" : "Ronka-Erneuerung",
+				"fr" : "Maxi Soin ronka",
+				"jp" : "ロンカ・フルケア"
+			}
+		}
+	},
+	"17124" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Radiant Arrow",
+				"de" : "Strahlenpfeil",
+				"fr" : "Flèche radiante",
+				"jp" : "レディアントアロー"
+			}
+		}
+	},
+	"17209" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Hypercharge",
+				"de" : "Hyperladung",
+				"fr" : "Hypercharge",
+				"jp" : "ハイパーチャージ"
+			}
+		}
+	},
+	"17596" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Hunter's Prudence",
+				"de" : "Jägerweisheit",
+				"fr" : "Sagesse du chasseur",
+				"jp" : "狩人の知恵"
+			}
+		}
+	},
+	"17839" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Nebula",
+				"de" : "Nebula",
+				"fr" : "Nébuleuse",
+				"jp" : "ネビュラ"
+			}
+		}
+	},
+	"17901" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Smackdown",
+				"de" : "Niederschmetterung",
+				"fr" : "Amour paternel",
+				"jp" : "スマックダウン"
+			}
+		}
+	},
+	"18305" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Magic Hammer",
+				"de" : "Zauberhammer",
+				"fr" : "Marteau magique",
+				"jp" : "マジックハンマー"
+			}
+		}
+	},
+	"18306" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Avail",
+				"de" : "Absichern",
+				"fr" : "Ordre défensif",
+				"jp" : "防御指示"
+			}
+		}
+	},
+	"18312" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Level 5 Death",
+				"de" : "Todesstufe 5",
+				"fr" : "Mort niveau 5",
+				"jp" : "レベル5デス"
+			}
+		}
+	},
+	"18317" : {
+		"recast" : 300.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Angel Whisper",
+				"de" : "Engelsflüstern",
+				"fr" : "Grâce angélique",
+				"jp" : "天使のささやき"
+			}
+		}
+	},
+	"18320" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Devour",
+				"de" : "Verschlingen",
+				"fr" : "Dévoration",
+				"jp" : "捕食"
+			}
+		}
+	},
+	"18323" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Surpanakha",
+				"de" : "Surpanakha",
+				"fr" : "Surpanakha",
+				"jp" : "徹甲散弾"
+			}
+		}
+	},
+	"18324" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Quasar",
+				"de" : "Quasar",
+				"fr" : "Quasar",
+				"jp" : "クエーサー"
+			}
+		}
+	},
+	"18325" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "J Kick",
+				"de" : "Gewissenstritt",
+				"fr" : "Pied justicier",
+				"jp" : "ジャスティスキック"
+			}
+		}
+	},
+	"18775" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Skydragon Dive",
+				"de" : "Azurner Drachensturz",
+				"fr" : "Piqué du Dragon céleste",
+				"jp" : "蒼空のドラゴンダイブ"
+			}
+		}
+	},
+	"19218" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Aqua Vitae",
+				"de" : "Aqua Vitae",
+				"fr" : "Aqua Vitae",
+				"jp" : "アクアヴィッテ"
+			}
+		}
+	},
+	"20496" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Aether Mine",
+				"de" : "Äthergranate",
+				"fr" : "Mine éthérée",
+				"jp" : "エーテルマイン"
+			}
+		}
+	},
+	"20692" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20693" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20694" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20695" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20696" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20697" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20698" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20699" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20700" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20703" : {
+		"recast" : 360.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Manawall",
+				"de" : "Verschollene Mana-Wand",
+				"fr" : "Mur de mana oublié",
+				"jp" : "ロスト・ウォール"
+			}
+		}
+	},
+	"20705" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Stealth",
+				"de" : "Verschollene Coeurl-Pfoten",
+				"fr" : "Furtivité oubliée",
+				"jp" : "ロスト・ステルス"
+			}
+		}
+	},
+	"20708" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Swift",
+				"de" : "Verschollene Eile",
+				"fr" : "Vélocité oubliée",
+				"jp" : "ロスト・スウィフト"
+			}
+		}
+	},
+	"20715" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"AST",
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Font of Magic",
+				"de" : "Verschollene Magiefontäne",
+				"fr" : "Fontaine de magie oubliée",
+				"jp" : "ロスト・マジックフォント"
+			}
+		}
+	},
+	"20716" : {
+		"recast" : 300.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Font of Skill",
+				"de" : "Verschollene Technikfontäne",
+				"fr" : "Fontaine de technique oubliée",
+				"jp" : "ロスト・スキルフォント"
+			}
+		}
+	},
+	"20717" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"NIN",
+			"MCH",
+			"DRK",
+			"SAM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Font of Power",
+				"de" : "Verschollene Machtfontäne",
+				"fr" : "Fontaine de puissance oubliée",
+				"jp" : "ロスト・パワーフォント"
+			}
+		}
+	},
+	"20718" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"NIN",
+			"MCH",
+			"DRK",
+			"SAM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Slash",
+				"de" : "Verschollener Schlitzer",
+				"fr" : "Taillade oubliée",
+				"jp" : "ロスト・スラッシュ"
+			}
+		}
+	},
+	"20719" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Death",
+				"de" : "Verschollener Tod",
+				"fr" : "Mort oubliée",
+				"jp" : "ロスト・デス"
+			}
+		}
+	},
+	"20720" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Noble Ends",
+				"de" : "Gemüt der Verdrossenheit",
+				"fr" : "Seuil de la frénésie",
+				"jp" : "背水の境地"
+			}
+		}
+	},
+	"20721" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Honored Sacrifice",
+				"de" : "Gemüt der Ungehaltenheit",
+				"fr" : "Seuil de l'abnégation",
+				"jp" : "捨身の境地"
+			}
+		}
+	},
+	"20722" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Tireless Conviction",
+				"de" : "Gemüt der Beharrlichkeit",
+				"fr" : "Seuil de la patience",
+				"jp" : "忍耐の境地"
+			}
+		}
+	},
+	"20723" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"AST",
+			"SAM",
+			"RDM",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Firm Resolve",
+				"de" : "Gemüt der Folgsamkeit",
+				"fr" : "Seuil de la préservation",
+				"jp" : "堅守の境地"
+			}
+		}
+	},
+	"20724" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Solemn Clarity",
+				"de" : "Gemüt der Besinnlichkeit",
+				"fr" : "Seuil de la contemplation",
+				"jp" : "瞑想の境地"
+			}
+		}
+	},
+	"20725" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Banner of Honed Acuity",
+				"de" : "Gemüt der Empfindsamkeit",
+				"fr" : "Seuil de la perception",
+				"jp" : "鋭敏の境地"
+			}
+		}
+	},
+	"20731" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"AST",
+			"SAM",
+			"RDM",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Incense",
+				"de" : "Verschollener Hohn",
+				"fr" : "Incitation oubliée",
+				"jp" : "ロスト・エンミティ"
+			}
+		}
+	},
+	"20734" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dynamis Dice",
+				"de" : "Würfel des Schicksals",
+				"fr" : "Dé du destin",
+				"jp" : "運命のダイス"
+			}
+		}
+	},
+	"20737" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Potion Kit",
+				"de" : "Tränkesammlung des Widerstands",
+				"fr" : "Kit de potion de la résistance",
+				"jp" : "レジスタンスポーションキット"
+			}
+		}
+	},
+	"20738" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Ether Kit",
+				"de" : "Äthersammlung des Widerstands",
+				"fr" : "Kit d'éther de la résistance",
+				"jp" : "レジスタンスエーテルキット"
+			}
+		}
+	},
+	"20739" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Medikit",
+				"de" : "Kräutersammlung des Widerstands",
+				"fr" : "Kit médical de la résistance",
+				"jp" : "レジスタンスレメディキット"
+			}
+		}
+	},
+	"20740" : {
+		"recast" : 40.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Potion",
+				"de" : "Heiltrank des Widerstands",
+				"fr" : "Potion de la résistance",
+				"jp" : "レジスタンスポーション"
+			}
+		}
+	},
+	"20940" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"locales" : {
+			"name" : {
+				"en" : "Auto Restoration",
+				"de" : "Selbstheilung",
+				"fr" : "Auto-réparation",
+				"jp" : "自己修復"
+			}
+		}
+	},
+	"22353" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"NIN",
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Rend Armor",
+				"de" : "Verschollener Panzerbruch",
+				"fr" : "Brise-armure oublié",
+				"jp" : "ロスト・アーマーブレイク"
+			}
+		}
+	},
+	"22354" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM",
+			"SCH",
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Seraph Strike",
+				"de" : "Verschollener Seraphenschlag",
+				"fr" : "Frappe séraphine oubliée",
+				"jp" : "ロスト・セラフストライク"
+			}
+		}
+	},
+	"22355" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Aethershield",
+				"de" : "Verschollener Ätherschild",
+				"fr" : "Égide d'éther oubliée",
+				"jp" : "ロスト・エーテルシールド"
+			}
+		}
+	},
+	"22356" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD",
+			"MCH",
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Dervish",
+				"de" : "Verschollener Rapidus",
+				"fr" : "Célérité extrême oubliée",
+				"jp" : "ロスト・スピードスター"
+			}
+		}
+	},
+	"23264" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Triple Trident",
+				"de" : "Dreizack",
+				"fr" : "Triple trident",
+				"jp" : "銛三段"
+			}
+		}
+	},
+	"23267" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Cold Fog",
+				"de" : "Eisiger Nebel",
+				"fr" : "Brume glaciale",
+				"jp" : "冷たい霧"
+			}
+		}
+	},
+	"23272" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Angel's Snack",
+				"de" : "Engelspeise",
+				"fr" : "Angélique",
+				"jp" : "天使のおやつ"
+			}
+		}
+	},
+	"23273" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Chelonian Gate",
+				"de" : "Barriere",
+				"fr" : "Barrière mystique",
+				"jp" : "玄結界"
+			}
+		}
+	},
+	"23275" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "The Rose of Destruction",
+				"de" : "Zermalmender Geist",
+				"fr" : "Rose de la destruction",
+				"jp" : "闘霊弾"
+			}
+		}
+	},
+	"23277" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Ultravibration",
+				"de" : "Ultravibration",
+				"fr" : "Ultravibration",
+				"jp" : "超振動"
+			}
+		}
+	},
+	"23280" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Dragon Force",
+				"de" : "Drachenkraft",
+				"fr" : "Dracoforce",
+				"jp" : "ドラゴンフォース"
+			}
+		}
+	},
+	"23285" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Matra Magic",
+				"de" : "Matra-Magie",
+				"fr" : "Magie Matra",
+				"jp" : "マトラマジック"
+			}
+		}
+	},
+	"23287" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Both Ends",
+				"de" : "Beide Enden",
+				"fr" : "Coup de bâton tournicotant",
+				"jp" : "如意大旋風"
+			}
+		}
+	},
+	"23288" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Phantom Flurry",
+				"de" : "Phantomhast",
+				"fr" : "Frénésie spectrale",
+				"jp" : "鬼宿脚"
+			}
+		}
+	},
+	"23290" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Nightbloom",
+				"de" : "Monddämmerung",
+				"fr" : "Lis araignée",
+				"jp" : "月下彼岸花"
+			}
+		}
+	}
+}

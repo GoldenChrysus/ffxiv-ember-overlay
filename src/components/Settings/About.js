@@ -23,7 +23,7 @@ class About extends React.Component {
 				});
 			})
 			.catch((e) => {
-				console.log(e);
+				console.error(e);
 			});
 	}
 
@@ -87,6 +87,7 @@ class About extends React.Component {
 							<li><strong>Amneamnius</strong> - Donor</li>
 							<li><strong>Vulasuw</strong> - Donor</li>
 							<li><strong>Jessica</strong> - Donor</li>
+							<li><strong>mehdont</strong> - Donor</li>
 						</ul>
 					</p>
 				</Container>
