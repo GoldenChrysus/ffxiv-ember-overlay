@@ -96,6 +96,7 @@ const mapStateToProps = (state) => {
 	return {
 		collapsed : state.settings.intrinsic.collapsed,
 		mode      : state.internal.mode,
+		new_ver   : state.internal.new_version,
 	};
 };
 

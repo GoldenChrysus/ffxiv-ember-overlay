@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.27.2-alpha
+
+**Released: 2021-04-26**
+
+### Bug Fixes
+- Resolved issue where clicking the highlighted settings cog did not remove the highlight
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.27.1-alpha
 
 **Released: 2021-04-26**
