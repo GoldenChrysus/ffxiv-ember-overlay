@@ -3,6 +3,7 @@ import store from "../redux/store";
 
 import Constants from "../constants";
 import SkillData from "../constants/SkillData";
+import PVPZoneData from "../constants/PVPZoneData";
 
 import LocalizationService from "./LocalizationService";
 import TTSService from "./TTSService";
@@ -247,6 +248,7 @@ class SpellService {
 		};
 		let data_names   = [];
 		let in_use_names = {};
+		let is_pvp_zone  = (PVPZoneData.Zones.indexOf(state.internal.current_zone_id) !== -1);
 
 		for (let type in data) {
 			for (let id of data[type]) {
@@ -279,6 +281,10 @@ class SpellService {
 
 			for (let id of data[type]) {
 				if (!this.isValidJob(type, id, job)) {
+					continue;
+				}
+
+				if (type === "skill" && SkillData.oGCDSkills[id].pvp !== is_pvp_zone) {
 					continue;
 				}
 

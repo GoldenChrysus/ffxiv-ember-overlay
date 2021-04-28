@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.28.0-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- N/A
+
+### Features
+- Add spell timer support for PVP skills
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.27.2-alpha
 
 **Released: 2021-04-26**
