@@ -110,6 +110,14 @@ class SpellService {
 		delete this.spells[i];
 	}
 
+	hasDefaultedSpell(key, spell) {
+		if (!spell.defaulted) {
+			return true;
+		}
+
+		return (this.spells[key]) ? true : false;
+	}
+
 	updateCooldowns() {
 		let now       = new Date();
 		let changed   = false;

@@ -66,7 +66,11 @@ class Container extends EmberComponent {
 			let changed_default = false;
 
 			for (let i in this.props.spells_in_use) {
-				if (!prev_props.spells_in_use[i] || prev_props.spells_in_use[i].time < this.props.spells_in_use[i].time) {
+				if (
+					!prev_props.spells_in_use[i] ||
+					prev_props.spells_in_use[i].time < this.props.spells_in_use[i].time ||
+					!SpellService.hasDefaultedSpell(i, this.props.spells_in_use[i])
+				) {
 					if (!new_spells) {
 						new_spells = {};
 					}

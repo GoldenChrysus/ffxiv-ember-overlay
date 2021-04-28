@@ -562,8 +562,8 @@ function createNewState(state, full_key, action) {
 		let reset = false;
 
 		if (full_key === "internal.current_zone_id") {
-			let old_is_pvp = (PVPZoneData.Zones.indexOf(state.current_zone_id) !== -1);
-			let new_is_pvp = (PVPZoneData.Zones.indexOf(new_state.current_zone_id) !== -1);
+			let old_is_pvp = (PVPZoneData.Zones.indexOf(state.internal.current_zone_id) !== -1);
+			let new_is_pvp = (PVPZoneData.Zones.indexOf(new_state.internal.current_zone_id) !== -1);
 
 			if (old_is_pvp === new_is_pvp) {
 				return new_state;
