@@ -13,7 +13,7 @@ def getTraitPage(page_num):
 	return res.json()
 
 def getActionPage(page_num):
-	url = "https://xivapi.com/search?page=" + str(page_num) + "&filters=ClassJobCategory!,Recast100ms>=100,IsPvP=0"
+	url = "https://xivapi.com/search?page=" + str(page_num) + "&filters=ClassJobCategory!,Recast100ms>=100"
 	res = requests.get(url = url)
 
 	return res.json()
@@ -86,17 +86,19 @@ while (True):
 		item_data    = getItem("Action", id)
 		english_name = item_data["Name_en"]
 		classes      = item_data["ClassJobCategory"]["Name_en"]
+		pvp          = ("", " (PVP)")[item_data["IsPvP"] == 1]
 
 		skills[id] = {
 			"recast"        : item_data["Recast100ms"] / 10.0,
 			"level_recasts" : sorted(traits[english_name], key = lambda item: item["level"], reverse = True) if english_name in traits else None,
 			"jobs"          : ("*", classes.split())[classes != "All Classes"],
+			"pvp"           : (False, True)[item_data["IsPvP"] == 1],
 			"locales"       : {
 				"name" : {
-					"en" : item_data["Name_en"],
-					"de" : item_data["Name_de"],
-					"fr" : item_data["Name_fr"],
-					"jp" : item_data["Name_ja"]
+					"en" : item_data["Name_en"] + pvp,
+					"de" : item_data["Name_de"] + pvp,
+					"fr" : item_data["Name_fr"] + pvp,
+					"jp" : item_data["Name_ja"] + pvp
 				}
 			}
 		}

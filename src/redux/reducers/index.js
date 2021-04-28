@@ -14,6 +14,8 @@ import TTSService from "../../services/TTSService";
 import TabSyncService from "../../services/TabSyncService";
 import SpellService from "../../services/SpellService";
 
+import PVPZoneData from "../../constants/PVPZoneData";
+
 const querystring = require("querystring");
 
 let params                = new querystring.parse(String(window.location.search).substring(1));
@@ -545,6 +547,7 @@ function createNewState(state, full_key, action) {
 		[
 			"settings",
 			"internal.character_job",
+			"internal.current_zone_id",
 			"settings.spells_mode.spells",
 			"settings.spells_mode.effects",
 			"settings.spells_mode.dots",
@@ -556,7 +559,20 @@ function createNewState(state, full_key, action) {
 			"settings.spells_mode.always_dot",
 		].indexOf(full_key) !== -1
 	) {
-		if (full_key === "internal.character_job" && state.internal.character_job !== new_state.internal.character_job) {
+		let reset = false;
+
+		if (full_key === "internal.current_zone_id") {
+			let old_is_pvp = (PVPZoneData.Zones.indexOf(state.current_zone_id) !== -1);
+			let new_is_pvp = (PVPZoneData.Zones.indexOf(new_state.current_zone_id) !== -1);
+
+			if (old_is_pvp === new_is_pvp) {
+				return new_state;
+			}
+
+			reset = true;
+		}
+
+		if (reset || (full_key === "internal.character_job" && state.internal.character_job !== new_state.internal.character_job)) {
 			for (let i in new_state.internal.spells.in_use) {
 				SpellService.resetSpell(i);
 			}

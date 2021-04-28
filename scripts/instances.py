@@ -29,8 +29,8 @@ while (True):
 	page_data = getPage(page)
 	page      = page_data["Pagination"]["PageNext"]
 
-	for job in page_data["Results"]:
-		id = job["ID"]
+	for record in page_data["Results"]:
+		id = record["ID"]
 
 		instance_data = getInstance(id)
 
