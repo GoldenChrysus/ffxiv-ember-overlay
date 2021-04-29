@@ -11,7 +11,7 @@
 - Add spell timer support for PVP skills
 
 ### UI Changes
-- N/A
+- Added translations for Ukrainian
 
 ### Code Changes
 - N/A
