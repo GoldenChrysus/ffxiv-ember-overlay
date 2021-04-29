@@ -301,7 +301,7 @@
 		"es" : "Modo",
 		"fr" : "Mode",
 		"kr" : "모드",
-    "ua" : "Режим"
+		"ua" : "Режим"
 	},
 	"parser" : {
 		"en" : "Parser",
@@ -312,7 +312,7 @@
 		"es" : "Analizador",
 		"fr" : "Analyseur",
 		"kr" : "미터기",
-    "ua" : "Аналізатор"
+		"ua" : "Аналізатор"
 	},
 	"spell_timers" : {
 		"en" : "Spell Timers",
@@ -323,7 +323,7 @@
 		"es" : "Spell Timers",
 		"fr" : "Spell Timers",
 		"kr" : "스펠 타이머",
-    "ua" : "Таймери Заклинань"
+		"ua" : "Таймери Заклинань"
 	},
 	
 	"tts" : {
@@ -393,7 +393,7 @@
 				"you"      : "당신",
 				"text"     : "{{players}}{{connector}}사망 직전입니다."
 			},
-      "ua" : {
+			"ua" : {
 				"joiner"   : " та ",
 				"several"  : "Кілька граців",
 				"plural"   : " є ",
@@ -435,10 +435,10 @@
 				"joiner" : " 및 ",
 				"text"   : "{{monsters}}의 어그로를 받았습니다."
 			},
-      "en" : {
+			"ua" : {
 				"joiner" : ", ",
 				"text"   : "Ви заагрили {{monsters}}."
-			},
+			}
 		},
 		"top" : {
 			"en" : {
@@ -465,9 +465,9 @@
 			"kr" : {
 				"text" : "{{metric}} 상위권입니다."
 			},
-      "en" : {
+			"ua" : {
 				"text" : "Ви в топі {{metric}}."
-			},
+			}
 		},
 		"encounter" : {
 			"en" : {
@@ -518,12 +518,12 @@
 				"default_title" : "전투",
 				"text"          : "{{encounter}} {{verb}}."
 			},
-      "en" : {
+			"ua" : {
 				"start"         : "почався",
 				"end"           : "закінчився",
 				"default_title" : "Бій",
 				"text"          : "{{encounter}} {{verb}}."
-			},
+			}
 		}
 	}
 }
