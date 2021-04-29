@@ -9,7 +9,8 @@
 				"de" : "Benutzeroberfläche",
 				"es" : "Interfaz",
 				"fr" : "Interface",
-				"kr" : "인터페이스"
+				"kr" : "인터페이스",
+				"ua" : "Інтерфейс"
 			},
 			"subsections" : [
 				{
@@ -20,7 +21,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Загальне"
 				},
 				{
 					"en" : "Data",
@@ -30,7 +32,8 @@
 					"de" : "Daten",
 					"es" : "Datos",
 					"fr" : "Données",
-					"kr" : "데이터"
+					"kr" : "데이터",
+					"ua" : "Дані"
 				},
 				{
 					"en" : "Theme",
@@ -40,7 +43,8 @@
 					"de" : "Farbschema",
 					"es" : "Theme",
 					"fr" : "Thème",
-					"kr" : "테마"
+					"kr" : "테마",
+					"ua" : "Тема"
 				}
 			]
 		},
@@ -53,7 +57,8 @@
 				"de" : "Metrik Namen",
 				"es" : "Metric Names",
 				"fr" : "Noms des Mesures",
-				"kr" : "항목 이름"
+				"kr" : "항목 이름",
+				"ua" : "Назви Метрик"
 			},
 			"subsections" : [
 				{
@@ -64,7 +69,8 @@
 					"de" : "Benutzerdefinierte Metrik Namen",
 					"es" : "Custom Metric Names",
 					"fr" : "Noms des Mesures Personnalisés",
-					"kr" : "임의 항목 설정"
+					"kr" : "임의 항목 설정",
+					"ua" : "Свої Назви Метрик"
 				}
 			]
 		},
@@ -101,7 +107,8 @@
 				"de" : "Spielertabelle",
 				"es" : "Tabla de Jugadores",
 				"fr" : "Onglet Joueur",
-				"kr" : "플레이어 표"
+				"kr" : "플레이어 표",
+				"ua" : "Таблиця гравців"
 			},
 			"subsections" : [
 				{
@@ -112,7 +119,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Загальне"
 				},
 				{
 					"en" : "DPS",
@@ -122,7 +130,8 @@
 					"de" : "DPS",
 					"es" : "DPS",
 					"fr" : "DPS",
-					"kr" : "DPS"
+					"kr" : "DPS",
+					"ua" : "DPS"
 				},
 				{
 					"en" : "Heal",
@@ -132,7 +141,8 @@
 					"de" : "Heilung",
 					"es" : "Cura",
 					"fr" : "Soin",
-					"kr" : "치유"
+					"kr" : "치유",
+					"ua" : "Цілитель"
 				},
 				{
 					"en" : "Tank",
@@ -142,7 +152,8 @@
 					"de" : "Verteidiger",
 					"es" : "Tank",
 					"fr" : "Tank",
-					"kr" : "탱커"
+					"kr" : "탱커",
+					"ua" : "Танк"
 				}
 			]
 		},
@@ -155,7 +166,8 @@
 				"de" : "Spieler Detail",
 				"es" : "Detalles del Jugador",
 				"fr" : "Détails du Joueur",
-				"kr" : "플레이어 상세 정보"
+				"kr" : "플레이어 상세 정보",
+				"ua" : "Деталі Гравця"
 			},
 			"subsections" : [
 				{
@@ -166,7 +178,8 @@
 					"de" : "DPS",
 					"es" : "DPS",
 					"fr" : "DPS",
-					"kr" : "DPS"
+					"kr" : "DPS",
+					"ua" : "DPS"
 				},
 				{
 					"en" : "Heal",
@@ -176,7 +189,8 @@
 					"de" : "Heilung",
 					"es" : "Cura",
 					"fr" : "Soin",
-					"kr" : "치유"
+					"kr" : "치유",
+					"ua" : "Цілитель"
 				},
 				{
 					"en" : "Tank",
@@ -186,7 +200,8 @@
 					"de" : "Verteidiger",
 					"es" : "Tank",
 					"fr" : "Tank",
-					"kr" : "탱커"
+					"kr" : "탱커",
+					"ua" : "Танк"
 				}
 			]
 		},
@@ -199,7 +214,8 @@
 				"de" : "Raid Ansicht",
 				"es" : "Vista de Raid",
 				"fr" : "Version Raid",
-				"kr" : "레이드 뷰"
+				"kr" : "레이드 뷰",
+				"ua" : "Вигляд Рейду"
 			},
 			"subsections" : [
 				{
@@ -210,7 +226,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Загальне"
 				},
 				{
 					"en" : "DPS",
@@ -220,7 +237,8 @@
 					"de" : "DPS",
 					"es" : "DPS",
 					"fr" : "DPS",
-					"kr" : "DPS"
+					"kr" : "DPS",
+					"ua" : "DPS"
 				},
 				{
 					"en" : "Heal",
@@ -230,7 +248,8 @@
 					"de" : "Heilung",
 					"es" : "Cura",
 					"fr" : "Soin",
-					"kr" : "치유"
+					"kr" : "치유",
+					"ua" : "Цілитель"
 				},
 				{
 					"en" : "Tank",
@@ -240,7 +259,8 @@
 					"de" : "Verteidiger",
 					"es" : "Tank",
 					"fr" : "Tank",
-					"kr" : "탱커"
+					"kr" : "탱커",
+					"ua" : "Захисник"
 				}
 			]
 		},
@@ -277,7 +297,8 @@
 				"de" : "Eigenes CSS",
 				"es" : "CSS Personalizado",
 				"fr" : "CSS Personnalisé",
-				"kr" : "커스텀 CSS"
+				"kr" : "커스텀 CSS",
+				"ua" : "Свій CSS"
 			},
 			"subsections" : [
 				{
@@ -288,7 +309,8 @@
 					"de" : "Eigenes CSS",
 					"es" : "CSS Personalizado",
 					"fr" : "CSS Personnalisé",
-					"kr" : "커스텀 CSS"
+					"kr" : "커스텀 CSS",
+					"ua" : "Свій CSS"
 				}
 			]
 		},
@@ -301,7 +323,8 @@
 				"de" : "Exportieren",
 				"es" : "Exportación",
 				"fr" : "Exporter",
-				"kr" : "저장하기"
+				"kr" : "저장하기",
+				"ua" : "Експорт"
 			},
 			"subsections" : [
 				{
@@ -312,7 +335,8 @@
 					"de" : "Einstellungen Exportieren",
 					"es" : "Opciones de Exportación",
 					"fr" : "Exporter les Configurations",
-					"kr" : "설정 저장하기"
+					"kr" : "설정 저장하기",
+					"ua" : "Експортувати Налаштування"
 				}
 			]
 		},
@@ -325,7 +349,8 @@
 				"de" : "Über",
 				"es" : "Acerca de",
 				"fr" : "A propos de",
-				"kr" : "오버레이 정보"
+				"kr" : "오버레이 정보",
+				"ua" : "Про нас"
 			},
 			"subsections" : [
 				{
@@ -336,7 +361,8 @@
 					"de" : "Ember Overlay",
 					"es" : "Ember Overlay",
 					"fr" : "Ember Overlay",
-					"kr" : "엠버 오버레이"
+					"kr" : "엠버 오버레이",
+					"ua" : "Ember Overlay"
 				}
 			]
 		},
@@ -536,7 +562,8 @@
 			"de" : "Sprache",
 			"es" : "Idioma",
 			"fr" : "Langue",
-			"kr" : "언어"
+			"kr" : "언어",
+			"ua" : "Мова"
 		},
 		"interface.player_name" : {
 			"en" : "Player Name",
@@ -546,7 +573,8 @@
 			"de" : "Spielername",
 			"es" : "Nombre del Jugador",
 			"fr" : "Prénom du Joueur",
-			"kr" : "플레이어 이름"
+			"kr" : "플레이어 이름",
+			"ua" : "Ім'я Гравця"
 		},
 		"interface.opacity" : {
 			"en" : "Overlay Opacity",
@@ -556,7 +584,8 @@
 			"de" : "Overlay Deckkraft",
 			"es" : "Opacidad del Overlay",
 			"fr" : "Opacité de l'Overlay",
-			"kr" : "오버레이 투명도"
+			"kr" : "오버레이 투명도",
+			"ua" : "Прозорість Накладання"
 		},
 		"interface.zoom" : {
 			"en" : "Overlay Zoom",
@@ -566,7 +595,8 @@
 			"de" : "Overlay Zoom",
 			"es" : "Zoom del Overlay",
 			"fr" : "Zoom sur l'Overlay",
-			"kr" : "오버레이 확대 비율"
+			"kr" : "오버레이 확대 비율",
+			"ua" : "Масштаб Накладання"
 		},
 		"interface.top_right_rank" : {
 			"en" : "Display Rank in Top Right",
@@ -576,7 +606,8 @@
 			"de" : "Ranglistenplatz oben rechts anzeigen",
 			"es" : "Mostrar Rango en la esquina superior derecha",
 			"fr" : "Afficher le Classement en Haut à Droite",
-			"kr" : "상단 우측에 기여도 랭킹 표시"
+			"kr" : "상단 우측에 기여도 랭킹 표시",
+			"ua" : "Відображати Ранг справа зверху"
 		},
 		"interface.blur_job_icons" : {
 			"en" : "Blur Job Icons When Blurring Player Names",
@@ -586,7 +617,8 @@
 			"de" : "Job Icons zusammen mit Spielernamen trüben",
 			"es" : "Difuminar Íconos de clase al difuminar los Nombres de los Jugadores",
 			"fr" : "Cacher les Icônes de Classe Quand les Noms des Autres Joueurs sont Cachés",
-			"kr" : "플레이어 이름 가릴 때 잡 아이콘도 가리기"
+			"kr" : "플레이어 이름 가릴 때 잡 아이콘도 가리기",
+			"ua" : "Розмити Значки Роботи коли розмиваються Імена Гравців"
 		},
 		"interface.collapse_down" : {
 			"en" : "Collapse Downwards",
@@ -596,7 +628,8 @@
 			"de" : "Nach unten verkleinern",
 			"es" : "Esconder hacia abajo",
 			"fr" : "Réduire vers le Bas",
-			"kr" : "하단 기준으로 최소화"
+			"kr" : "하단 기준으로 최소화",
+			"ua" : "Згорнути вниз"
 		},
 		"interface.footer_when_collapsed" : {
 			"en" : "Show Overlay Footer When Collapsed",
@@ -606,7 +639,8 @@
 			"de" : "Overlay Fußzeile beim Verkleinern anzeigen",
 			"es" : "Mostrar parte inferior cuando el Overlay está Minimizado",
 			"fr" : "Afficher le Bas du Parse en ayant l'Affichage Réduit",
-			"kr" : "최소화시 오버레이 하단 표시하기"
+			"kr" : "최소화시 오버레이 하단 표시하기",
+			"ua" : "Показувати нижню панель Оверлея, коли згорнуто"
 		},
 		"interface.footer_dps" : {
 			"en" : "Display Raid DPS in Overlay Footer",
@@ -616,7 +650,8 @@
 			"de" : "Raid DPS in der Overlay Fußzeile anzeigen",
 			"es" : "Mostrar el DPS del raid en la parte Inferior del Overlay",
 			"fr" : "Afficher le Raid DPS sur le Bas du Parse",
-			"kr" : "오버레이 하단에 파티 합산딜 표시하기"
+			"kr" : "오버레이 하단에 파티 합산딜 표시하기",
+			"ua" : "Показувати DPS Рейду в нижній панелі"
 		},
 		"interface.hide_top_bar" : {
 			"en" : "Hide Top Bar",
@@ -636,7 +671,8 @@
 			"de" : "Dezimale Genauigkeit",
 			"es" : "Precisión Decimal",
 			"fr" : "Arrondir à Combien de Décimal",
-			"kr" : "소수점 표기 설정하기"
+			"kr" : "소수점 표기 설정하기",
+			"ua" : "Десяткова точність"
 		},
 		"interface.shorten_thousands" : {
 			"en" : "Shorten Thousands to 'K'",
@@ -646,7 +682,8 @@
 			"de" : "Tausend durch 'K' abkürzen",
 			"es" : "Acortar Unidad de mil con 'K'",
 			"fr" : "Remplacer les Milliers par 'K'",
-			"kr" : "천단위를 'K'로 축약하기"
+			"kr" : "천단위를 'K'로 축약하기",
+			"ua" : "Скорочувати тисячі до 'K'"
 		},
 		"interface.theme" : {
 			"en" : "Theme",
@@ -656,7 +693,8 @@
 			"de" : "Farbschema",
 			"es" : "Theme",
 			"fr" : "Thème",
-			"kr" : "테마"
+			"kr" : "테마",
+			"ua" : "Тема"
 		},
 		"interface.minimal_theme" : {
 			"en" : "Use Minimal Theme",
@@ -666,7 +704,8 @@
 			"de" : "Minimal Farbschema benutzen",
 			"es" : "Usar Mínimo Theme",
 			"fr" : "Utiliser le thème minimale",
-			"kr" : "간소화 테마 사용하기"
+			"kr" : "간소화 테마 사용하기",
+			"ua" : "Використати Мінімізовану Тему"
 		},
 		"interface.auto_hide" : {
 			"en" : "Auto-Hide Overlay After Inactivity (Set Below)",
@@ -676,7 +715,8 @@
 			"de" : "Overlay automatisch bei Inaktivität ausblenden (unten einstellen)",
 			"es" : "Auto-Hide Overlay After Inactivity (Set Below)",
 			"fr" : "Cacher automatiquement l'Overlay après inactivité (à définir ci-dessous)",
-			"kr" : "일정 시간 기록이 없을 경우 자동으로 숨기기(아래에서 시간 설정)"
+			"kr" : "일정 시간 기록이 없을 경우 자동으로 숨기기(아래에서 시간 설정)",
+			"ua" : "Авто-приховування Оверлея після неактивності (Встановлюється нижче)"
 		},
 		"interface.auto_hide_delay" : {
 			"en" : "Auto-Hide Delay in Seconds",
@@ -686,7 +726,8 @@
 			"de" : "Verzögerung für automatisches Ausblenden in Sekunden",
 			"es" : "Auto-Hide Delay in Seconds",
 			"fr" : "Délai en Seconde",
-			"kr" : "자동 판단 시간 (초)"
+			"kr" : "자동 판단 시간 (초)",
+			"ua" : "Затримка авто-приховування в секундах"
 		},
 		"custom.metric_names" : {
 			"en" : "",
@@ -696,7 +737,8 @@
 			"de" : "",
 			"es" : "",
 			"fr" : "",
-			"kr" : ""
+			"kr" : "",
+			"ua" : ""
 		},
 		"tts.rules" : {
 			"en" : "Rules",
@@ -716,7 +758,8 @@
 			"de" : "Spielernamen abkürzen",
 			"es" : "Acortar Nombres",
 			"fr" : "Raccourcir le prénom des joueurs ",
-			"kr" : "플레이어 이름 축약"
+			"kr" : "플레이어 이름 축약",
+			"ua" : "Скорочені іменя граців"
 		},
 		"table_settings.general.table.footer_at_top" : {
 			"en" : "Move Totals (Footer) to Top of Table",
@@ -726,7 +769,8 @@
 			"de" : "Zusammenfassungen (Fußzeile) nach ganz oben in der Tabelle verschieben",
 			"es" : "Mover totales (parte inferior) a la parte superior de la tabla",
 			"fr" : "Mettre le 'Bas du Parse' en Haut",
-			"kr" : "하단에 표기되는 합딜을 상단으로 이동시키기"
+			"kr" : "하단에 표기되는 합딜을 상단으로 이동시키기",
+			"ua" : "Переміщати підсумки (нижню панель) до початку таблиці"
 		},
 		"table_settings.general.table.percent_bars" : {
 			"en" : "Show Performance Background Bars",
@@ -736,7 +780,8 @@
 			"de" : "Zeige Leistungsbalken im Hintergrund",
 			"es" : "Mostrar Barras de desempeño del fondo",
 			"fr" : "Afficher les Barres de Performance en Arrière-Plan",
-			"kr" : "플레이어 뒤에 기여도 비율 표기"
+			"kr" : "플레이어 뒤에 기여도 비율 표기",
+			"ua" : "Показувати панелі продуктивності у фоні"
 		},
 		"table_settings.general.table.prioritize_party" : {
 			"en" : "Prioritize Party Members at Top of List",
@@ -746,7 +791,8 @@
 			"de" : "Liste soll Gruppenmitglieder oberhalb priorisieren",
 			"es" : "Prioritize Party Members at Top of List",
 			"fr" : "Prioritize Party Members at Top of List",
-			"kr" : "같은 파티 멤버를 최우선으로 정렬"
+			"kr" : "같은 파티 멤버를 최우선으로 정렬",
+			"ua" : "Спочатку члени команди"
 		},
 		"table_columns.dps" : {
 			"en" : "Table Columns",
@@ -756,7 +802,8 @@
 			"de" : "Tabellenspalte",
 			"es" : "Columnas de Tabla",
 			"fr" : "Colonne de Tableau",
-			"kr" : "항목열"
+			"kr" : "항목열",
+			"ua" : "Колонки таблиці"
 		},
 		"sort_columns.dps" : {
 			"en" : "Default Sort Column",
@@ -766,7 +813,8 @@
 			"de" : "Spalten nach Standard sortieren",
 			"es" : "Ordenar por Defecto",
 			"fr" : "Colonne de tri par défaut",
-			"kr" : "순서 기준"
+			"kr" : "순서 기준",
+			"ua" : "Колонки сортування по замовчуванню"
 		},
 		"table_settings.dps.show_footer" : {
 			"en" : "Show Footer",
@@ -776,7 +824,8 @@
 			"de" : "Fußzeile anzeigen",
 			"es" : "Mostrar parte inferior",
 			"fr" : "Afficher le Bas du Parse",
-			"kr" : "하단 표시"
+			"kr" : "하단 표시",
+			"ua" : "Показувати нижню панель"
 		},
 		"detail_data.dps" : {
 			"en" : "Player Metrics",
@@ -786,7 +835,8 @@
 			"de" : "Spieler Metriken",
 			"es" : "Métricas del Jugador",
 			"fr" : "Les Mesures du Joueur",
-			"kr" : "플레이어 스탯"
+			"kr" : "플레이어 스탯",
+			"ua" : "Метрики гравця"
 		},
 		"sort_columns.raid" : {
 			"en" : "Default Sort Metric",
@@ -796,7 +846,8 @@
 			"de" : "Metrik nach Standard sortieren",
 			"es" : "Organizar Métricas por Defecto",
 			"fr" : "Mesures de Tri par Défault",
-			"kr" : "스탯 기본 정렬"
+			"kr" : "스탯 기본 정렬",
+			"ua" : "Сортування метрик по замовчуванню"
 		},
 		"table_settings.general.raid.short_names" : {
 			"en" : "Shorten Player Names",
@@ -806,7 +857,8 @@
 			"de" : "Spielernamen abkürzen",
 			"es" : "Acortar Nombres",
 			"fr" : "Raccourcir le prénom des joueurs",
-			"kr" : "플레이어 이름 축약"
+			"kr" : "플레이어 이름 축약",
+			"ua" : "Скорочені імена гравців"
 		},
 		"table_settings.general.raid.percent_bars" : {
 			"en" : "Show Performance Background Bars",
@@ -816,7 +868,8 @@
 			"de" : "Zeige Leistungsbalken im Hintergrund",
 			"es" : "Mostrar Barras de desempeño del fondo",
 			"fr" : "Afficher les Barres de Performance en Arrière-Plan",
-			"kr" : "플레이어 뒤에 기여도 비율 표기"
+			"kr" : "플레이어 뒤에 기여도 비율 표기",
+			"ua" : "Показувати панелі продуктивності у фоні"
 		},
 		"table_settings.general.raid.prioritize_party" : {
 			"en" : "Prioritize Party Members at Top of List",
@@ -826,7 +879,8 @@
 			"de" : "Prioritize Party Members at Top of List",
 			"es" : "Prioritize Party Members at Top of List",
 			"fr" : "Prioritize Party Members at Top of List",
-			"kr" : "같은 파티 멤버를 최우선으로 정렬"
+			"kr" : "같은 파티 멤버를 최우선으로 정렬",
+			"ua" : "Спочатку члени команди"
 		},
 		"table_columns.raid.dps" : {
 			"en" : "Metrics",
@@ -836,7 +890,8 @@
 			"de" : "Metrik",
 			"es" : "Métricas",
 			"fr" : "Les Mesures",
-			"kr" : "스탯"
+			"kr" : "스탯",
+			"ua" : "Метрики"
 		},
 		"discord.url" : {
 			"en" : "Webhook URL",
@@ -846,7 +901,8 @@
 			"de" : "Webhook URL",
 			"es" : "Webhook URL",
 			"fr" : "Webhook URL",
-			"kr" : "Webhook URL"
+			"kr" : "Webhook URL",
+			"ua" : "Webhook URL"
 		},
 		"custom.css" : {
 			"en" : "User-provided CSS is at your own risk.",
@@ -856,7 +912,8 @@
 			"de" : "Verwenden von benutzerdefinierten CSS auf eigene Gefahr.",
 			"es" : "Utilizar CSS proporcionado por usuarios es bajo tu propio riesgo.",
 			"fr" : "Utilisé votre propre CSS est à vos risques.",
-			"kr" : "임의로 만들어진 CSS는 책임질 수 없습니다."
+			"kr" : "임의로 만들어진 CSS는 책임질 수 없습니다.",
+			"ua" : "Використовуйте свій CSS на власний ризик"
 		},
 		"spells_mode.spells" : {
 			"en" : "Spells to Track",
@@ -866,7 +923,8 @@
 			"de" : "Zauber im Überblick",
 			"es" : "Spells to Track",
 			"fr" : "Spells to Track",
-			"kr" : "확인할 스펠"
+			"kr" : "확인할 스펠",
+			"ua" : "Заклинання для відстеження"
 		},
 		"spells_mode.effects" : {
 			"en" : "Effects to Track",
@@ -876,7 +934,8 @@
 			"de" : "Effekte im Überblick",
 			"es" : "Effects to Track",
 			"fr" : "Effects to Track",
-			"kr" : "확인할 이펙트"
+			"kr" : "확인할 이펙트",
+			"ua" : "Ефекти для відстеження"
 		},
 		"spells_mode.dots" : {
 			"en" : "DOT's to Track",
@@ -886,7 +945,8 @@
 			"de" : "DOT's to Track",
 			"es" : "DOT's to Track",
 			"fr" : "DOT's to Track",
-			"kr" : "확인할 도트기"
+			"kr" : "확인할 도트기",
+			"ua" : "DOT-и для відстеження"
 		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
@@ -896,7 +956,8 @@
 			"de" : "Zauber pro Reihe",
 			"es" : "Spells Per Row",
 			"fr" : "Spells Per Row",
-			"kr" : "열마다 표시할 스펠 갯수"
+			"kr" : "열마다 표시할 스펠 갯수",
+			"ua" : "Заклинань на рядок"
 		},
 		"spells_mode.show_icon" : {
 			"en" : "Show Spell Icon",
@@ -906,7 +967,8 @@
 			"de" : "Zaubericons anzeigen",
 			"es" : "Show Spell Icon",
 			"fr" : "Show Spell Icon",
-			"kr" : "스펠 아이콘 표시"
+			"kr" : "스펠 아이콘 표시",
+			"ua" : "Показувати Іконку Заклинання"
 		},
 		"spells_mode.use_tts" : {
 			"en" : "Use Text to Speech",
@@ -916,7 +978,8 @@
 			"de" : "Text zu Sprache verwenden",
 			"es" : "Use Text to Speech",
 			"fr" : "Use Text to Speech",
-			"kr" : "TTS 사용"
+			"kr" : "TTS 사용",
+			"ua" : "Читати вголос"
 		},
 		"spells_mode.tts_trigger" : {
 			"en" : "Text to Speech Trigger",
@@ -926,7 +989,8 @@
 			"de" : "Text to Speech Trigger",
 			"es" : "Text to Speech Trigger",
 			"fr" : "Text to Speech Trigger",
-			"kr" : "TTS 트리거"
+			"kr" : "TTS 트리거",
+			"ua" : "Тригер читання вголос"
 		},
 		"spells_mode.layout" : {
 			"en" : "Layout",
@@ -936,7 +1000,8 @@
 			"de" : "Layout",
 			"es" : "Layout",
 			"fr" : "Layout",
-			"kr" : "레이아웃"
+			"kr" : "레이아웃",
+			"ua" : "Макет"
 		},
 		"spells_mode.invert_vertical" : {
 			"en" : "Invert Vertical",
@@ -946,7 +1011,8 @@
 			"de" : "Invert Vertical",
 			"es" : "Invert Vertical",
 			"fr" : "Invert Vertical",
-			"kr" : "세로 반전"
+			"kr" : "세로 반전",
+			"ua" : "Інвертувати вертикально"
 		},
 		"spells_mode.invert_horizontal" : {
 			"en" : "Invert Horizontal",
@@ -956,7 +1022,8 @@
 			"de" : "Invert Horizontal",
 			"es" : "Invert Horizontal",
 			"fr" : "Invert Horizontal",
-			"kr" : "가로 반전"
+			"kr" : "가로 반전",
+			"ua" : "Інвертувати горизонтально"
 		},
 		"spells_mode.reverse_skill" : {
 			"en" : "Reverse Indicator for Spells",
@@ -966,7 +1033,8 @@
 			"de" : "Indikator für Zauber umdrehen",
 			"es" : "Reverse Indicator for Spells",
 			"fr" : "Reverse Indicator for Spells",
-			"kr" : "스펠 역표시"
+			"kr" : "스펠 역표시",
+			"ua" : "Індикатор реверсії заклинань"
 		},
 		"spells_mode.reverse_effect" : {
 			"en" : "Reverse Indicator for Effects",
@@ -976,7 +1044,8 @@
 			"de" : "Idikator für Effekte umdrehen",
 			"es" : "Reverse Indicator for Effects",
 			"fr" : "Reverse Indicator for Effects",
-			"kr" : "이펙트 역표시"
+			"kr" : "이펙트 역표시",
+			"ua" : "Індикатор реверсії ефектів"
 		},
 		"spells_mode.reverse_dot" : {
 			"en" : "Reverse Indicator for DOT's",
@@ -986,7 +1055,8 @@
 			"de" : "Idikator für DOT umdrehen",
 			"es" : "Reverse Indicator for DOT's",
 			"fr" : "Reverse Indicator for DOT's",
-			"kr" : "도트기 역표시"
+			"kr" : "도트기 역표시",
+			"ua" : "Індикатор реверсії DOT-ів"
 		},
 		"spells_mode.always_skill" : {
 			"en" : "Display Permanently",
@@ -996,7 +1066,8 @@
 			"de" : "Display Permanently",
 			"es" : "Display Permanently",
 			"fr" : "Display Permanently",
-			"kr" : "Display Permanently"
+			"kr" : "Display Permanently",
+			"ua" : "Постійне відображення"
 		},
 		"spells_mode.always_skill_static" : {
 			"en" : "Use Static Positions for Permanent Timers",
@@ -1006,7 +1077,8 @@
 			"de" : "Use Static Positions for Permanent Timers",
 			"es" : "Use Static Positions for Permanent Timers",
 			"fr" : "Use Static Positions for Permanent Timers",
-			"kr" : "Use Static Positions for Permanent Timers"
+			"kr" : "Use Static Positions for Permanent Timers",
+			"ua" : "Використовуйте статичні позиції для постійних таймерів"
 		},
 		"spells_mode.warning_threshold" : {
 			"en" : "Warning Threshold (In Seconds)",
@@ -1016,7 +1088,8 @@
 			"de" : "Warnungen maximal anzeigen für (in Sekunden)",
 			"es" : "Warning Threshold (In Seconds)",
 			"fr" : "Warning Threshold (In Seconds)",
-			"kr" : "경고 구간 (초 로 입력)"
+			"kr" : "경고 구간 (초 로 입력)",
+			"ua" : "Поріг попередження (в секундах)"
 		},
 		"spells_mode.party_zones" : {
 			"en" : "Only Track in These Instances",
@@ -1026,7 +1099,8 @@
 			"de" : "Only Track in These Instances",
 			"es" : "Only Track in These Instances",
 			"fr" : "Only Track in These Instances",
-			"kr" : "Only Track in These Instances"
+			"kr" : "Only Track in These Instances",
+			"ua" : "Відстежувати тільки в цих зонах"
 		},
 		"spells_mode.designer.skill.warning" : {
 			"en" : "Show Warning Animation",
@@ -1036,7 +1110,8 @@
 			"de" : "Show Warning Animation",
 			"es" : "Show Warning Animation",
 			"fr" : "Show Warning Animation",
-			"kr" : "Show Warning Animation"
+			"kr" : "Show Warning Animation",
+			"ua" : "Показувати анімоване попередження"
 		},
 		"spells_mode.designer.skill.indicator" : {
 			"en" : "Visual Indicator",
@@ -1046,7 +1121,8 @@
 			"de" : "Visual Indicator",
 			"es" : "Visual Indicator",
 			"fr" : "Visual Indicator",
-			"kr" : "Visual Indicator"
+			"kr" : "Visual Indicator",
+			"ua" : "Візуальний індикатор"
 		},
 		"spells_mode.designer.skill.cooldown_bottom_left" : {
 			"en" : "Cooldowns in Bottom Left (Icons Only)",
@@ -1056,7 +1132,8 @@
 			"de" : "Cooldowns in Bottom Left (Icons Only)",
 			"es" : "Cooldowns in Bottom Left (Icons Only)",
 			"fr" : "Cooldowns in Bottom Left (Icons Only)",
-			"kr" : "Cooldowns in Bottom Left (Icons Only)"
+			"kr" : "Cooldowns in Bottom Left (Icons Only)",
+			"ua" : "Кулдауни внизу зліва (тільки іконки)"
 		},
 		"spells_mode.designer.effect.border" : {
 			"en" : "Show Glowing Border",
@@ -1066,7 +1143,8 @@
 			"de" : "Show Glowing Border",
 			"es" : "Show Glowing Border",
 			"fr" : "Show Glowing Border",
-			"kr" : "Show Glowing Border"
+			"kr" : "Show Glowing Border",
+			"ua" : "Показувати мигаючі грані"
 		},
 		"spells_mode.ui.use" : {
 			"en" : "Use UI Builder",
@@ -1076,7 +1154,8 @@
 			"de" : "Use UI Builder",
 			"es" : "Use UI Builder",
 			"fr" : "Use UI Builder",
-			"kr" : "UI 빌더 사용하기"
+			"kr" : "UI 빌더 사용하기",
+			"ua" : "Використовувати UI Конструктор"
 		},
 		"spells_mode.ui.sections" : {
 			"en" : "",
@@ -1086,7 +1165,8 @@
 			"de" : "",
 			"es" : "",
 			"fr" : "",
-			"kr" : ""
+			"kr" : "",
+			"ua" : ""
 		}
 	},
 	"misc" : {
@@ -1138,9 +1218,14 @@
 				"short_first" : "F. 이름",
 				"short_last"  : "성. N",
 				"short_both"  : "둘다 축약"
+			},
+			"ua" : {
+				"no_short"    : "Ні",
+				"short_first" : "І. Прізвище",
+				"short_last"  : "Ім'я П.",
+				"short_both"  : "І. П."
 			}
 		},
-
 		"tts" : {
 			"critical.tank" : {
 				"en" : "A tank's HP is below:",
@@ -1150,7 +1235,8 @@
 				"de" : "HP eines Verteidigers beträgt weniger als:",
 				"es" : "A tank's HP is below:",
 				"fr" : "A tank's HP is below:",
-				"kr" : "탱커의 체력이 이정도 미만 일 때:"
+				"kr" : "탱커의 체력이 이정도 미만 일 때:",
+				"ua" : "HP Захисника менше:"
 			},
 			"critical.dps" : {
 				"en" : "A DPS' HP is below:",
@@ -1160,7 +1246,8 @@
 				"de" : "HP eines DPS beträgt weniger als:",
 				"es" : "A DPS' HP is below:",
 				"fr" : "A DPS' HP is below:",
-				"kr" : "딜러의 체력이 이정도 미만 일 때:"
+				"kr" : "딜러의 체력이 이정도 미만 일 때:",
+				"ua" : "DPS' HP менше:"
 			},
 			"critical.heal" : {
 				"en" : "A healer's HP is below:",
@@ -1170,7 +1257,8 @@
 				"de" : "HP eines Heilers beträgt weniger als:",
 				"es" : "A healer's HP is below:",
 				"fr" : "A healer's HP is below:",
-				"kr" : "힐러의 체력이 이정도 미만 일 때:"
+				"kr" : "힐러의 체력이 이정도 미만 일 때:",
+				"ua" : "HP Цілителя менше:"
 			},
 			"critical.all" : {
 				"en" : "Anyone's HP is below:",
@@ -1180,7 +1268,8 @@
 				"de" : "HP eines beliebigen Spielers beträgt unter:",
 				"es" : "Anyone's HP is below:",
 				"fr" : "Anyone's HP is below:",
-				"kr" : "아무나의 체력이 이정도 미만일 떄:"
+				"kr" : "아무나의 체력이 이정도 미만일 떄:",
+				"ua" : "Чиєсь HP менше:"
 			},
 			"aggro" : {
 				"en" : "You obtain aggro",
@@ -1190,7 +1279,8 @@
 				"de" : "Du hast Aggro erhalten",
 				"es" : "You obtain aggro",
 				"fr" : "Tu as l'aggro",
-				"kr" : "본인이 적개심 1위가 됨"
+				"kr" : "본인이 적개심 1위가 됨",
+				"ua" : "Ви когось заагрили"
 			},
 			"top.dps" : {
 				"en" : "You obtain top DPS",
@@ -1200,7 +1290,8 @@
 				"de" : "Du hast den meisten DPS",
 				"es" : "You obtain top DPS",
 				"fr" : "Tu es top DPS",
-				"kr" : "본인이 딜 순위 1위가 됨"
+				"kr" : "본인이 딜 순위 1위가 됨",
+				"ua" : "У вас найкращий DPS"
 			},
 			"top.hps" : {
 				"en" : "You obtain top HPS",
@@ -1210,7 +1301,8 @@
 				"de" : "Du hast die meisten HPS",
 				"es" : "You obtain top HPS",
 				"fr" : "Tu es top SPS",
-				"kr" : "본인이 힐량 1순위가 됨"
+				"kr" : "본인이 힐량 1순위가 됨",
+				"ua" : "У вас найкращий HPS"
 			},
 			"top.tps" : {
 				"en" : "You obtain top DTPS",
@@ -1220,7 +1312,8 @@
 				"de" : "Du hast den meisten erlittenen DPS",
 				"es" : "You obtain top DTPS",
 				"fr" : "Tu es top DRPS",
-				"kr" : "본인이 DTPS 1위가 됨"
+				"kr" : "본인이 DTPS 1위가 됨",
+				"ua" : "У вас найкращий DTPS"
 			},
 			"encounter.start" : {
 				"en" : "An encounter starts",
@@ -1230,7 +1323,8 @@
 				"de" : "Kampf hat begonnen",
 				"es" : "An encounter starts",
 				"fr" : "Le combat commence",
-				"kr" : "전투 개시"
+				"kr" : "전투 개시",
+				"ua" : "Бій починається"
 			},
 			"encounter.end" : {
 				"en" : "An encounter ends",
@@ -1240,7 +1334,8 @@
 				"de" : "Kampf wurde beendet",
 				"es" : "An encounter ends",
 				"fr" : "Le combat finit",
-				"kr" : "전투 종료"
+				"kr" : "전투 종료",
+				"ua" : "Бій закінчується"
 			}
 		},
 
@@ -1254,7 +1349,8 @@
 					"de" : "You",
 					"es" : "You",
 					"fr" : "You",
-					"kr" : "You"
+					"kr" : "You",
+					"ua" : "Ви"
 				},
 				"dps" : {
 					"en" : "DPS",
@@ -1264,7 +1360,8 @@
 					"de" : "DPS",
 					"es" : "DPS",
 					"fr" : "DPS",
-					"kr" : "DPS"
+					"kr" : "DPS",
+					"ua" : "DPS"
 				},
 				"heal" : {
 					"en" : "Healer",
@@ -1274,7 +1371,8 @@
 					"de" : "Healer",
 					"es" : "Heiler",
 					"fr" : "Healer",
-					"kr" : "힐러"
+					"kr" : "힐러",
+					"ua" : "Цілитель"
 				},
 				"tank" : {
 					"en" : "Tank",
@@ -1284,7 +1382,8 @@
 					"de" : "Verteidiger",
 					"es" : "Tank",
 					"fr" : "Tank",
-					"kr" : "탱커"
+					"kr" : "탱커",
+					"ua" : "Захисник"
 				}
 			},
 			"types" : {
@@ -1296,7 +1395,8 @@
 					"de" : "Spell",
 					"es" : "Spell",
 					"fr" : "Spell",
-					"kr" : "Spell"
+					"kr" : "Spell",
+					"ua" : "Заклинання"
 				},
 				"effect" : {
 					"en" : "Buff",
@@ -1306,7 +1406,8 @@
 					"de" : "Buff",
 					"es" : "Buff",
 					"fr" : "Buff",
-					"kr" : "Buff"
+					"kr" : "Buff",
+					"ua" : "Ефект"
 				},
 				"dot" : {
 					"en" : "DOT",
@@ -1316,7 +1417,8 @@
 					"de" : "DOT",
 					"es" : "DOT",
 					"fr" : "DOT",
-					"kr" : "DOT"
+					"kr" : "DOT",
+					"ua" : "DOT"
 				}
 			},
 			"layout_options" : {
@@ -1359,6 +1461,11 @@
 					"normal"  : "노멀",
 					"compact" : "간결",
 					"icon"    : "아이콘만 표시"
+				},
+				"ua" : {
+					"normal"  : "Нормальний",
+					"compact" : "Зменшений",
+					"icon"    : "Тільки іконки"
 				}
 			},
 			"indicator_options" : {
@@ -1401,6 +1508,11 @@
 					"ticking"  : "Ticking",
 					"darkened" : "Darkened/Gray",
 					"none"     : "None"
+				},
+				"ua" : {
+					"ticking"  : "Мигання",
+					"darkened" : "Затемнений/Сірий",
+					"none"     : "Немає"
 				}
 			},
 			"tts_trigger_options" : {
@@ -1435,10 +1547,13 @@
 				"kr" : {
 					"zero"    : "타이머가 0초가 될경우",
 					"warning" : "타이머가 경고 구간에 도달할 경우"
+				},
+				"ua" : {
+					"zero"    : "Коли таймер досягне 0 ",
+					"warning" : "Коли таймер досягне попереджувального порогу"
 				}
 			}
 		},
-
 		"metric" : {
 			"en" : "Metric",
 			"pt" : "Metric",
@@ -1447,7 +1562,8 @@
 			"de" : "Metrik",
 			"es" : "Metric",
 			"fr" : "Mesure",
-			"kr" : "스탯"
+			"kr" : "스탯",
+			"ua" : "Метрика"
 		},
 		"short_name" : {
 			"en" : "Short Name",
@@ -1457,7 +1573,8 @@
 			"de" : "Abgekürzter Name",
 			"es" : "Short Name",
 			"fr" : "Abréviation",
-			"kr" : "축약"
+			"kr" : "축약",
+			"ua" : "Скорочене Ім'я"
 		},
 		"long_name" : {
 			"en" : "Long Name",
@@ -1467,7 +1584,8 @@
 			"de" : "Voller Name",
 			"es" : "Long Name",
 			"fr" : "Nom Complet",
-			"kr" : "원본"
+			"kr" : "원본",
+			"ua" : "Повне Ім'я"
 		},
 		"add" : {
 			"en" : "Add",
@@ -1477,7 +1595,8 @@
 			"de" : "Hinzufügen",
 			"es" : "Add",
 			"fr" : "Ajouter",
-			"kr" : "추가"
+			"kr" : "추가",
+			"ua" : "Додати"
 		},
 		"delete" : {
 			"en" : "Delete",
@@ -1487,7 +1606,8 @@
 			"de" : "Entfernen",
 			"es" : "Delete",
 			"fr" : "Supprimer",
-			"kr" : "삭제"
+			"kr" : "삭제",
+			"ua" : "Видалити"
 		},
 		"save"               : {
 			"en" : "Save",
@@ -1497,7 +1617,8 @@
 			"de" : "Speichern",
 			"es" : "Guardar",
 			"fr" : "Sauvegarder",
-			"kr" : "저장"
+			"kr" : "저장",
+			"ua" : "Зберегти"
 		},
 		"export_info"        : {
 			"en" : "Select and copy the text below, then import it into your desired overlay by right-clicking on the overlay and choosing \"Import.\"",
@@ -1507,7 +1628,8 @@
 			"de" : "Den unteren Text auswählen und kopieren, um ihn in dein gewünschtes Overlay zu importieren. Klicke hierzu mit Rechtsklick auf das Overlay und wähle \"Importieren\" aus.",
 			"es" : "Selecciona y copia el texto debajo, posteriormente impórtalo hacia tu overlay deseado haciendo click derecho en el Overlay y seleccionando \"Importar\".",
 			"fr" : "Sélectionné et copié le texte ci-dessous puis importé dans l'Overlay desiré avec un clique-droit sur l'Overlay et \"Importer.\"",
-			"kr" : "아래의 텍스트를 복사 후 \"불러오기\"를 통해 원하는 오버레이에 설정을 불러오십시오."
+			"kr" : "아래의 텍스트를 복사 후 \"불러오기\"를 통해 원하는 오버레이에 설정을 불러오십시오.",
+			"ua" : "Виберіть та скопіюйте текст нижче, а потім імпортуйте його у потрібне накладання, клацнувши правою кнопкою миші на накладанні та вибравши \"Імпортувати.\""
 		},
 		"copy"               : {
 			"en" : "Copy",
@@ -1517,7 +1639,8 @@
 			"de" : "Kopieren",
 			"es" : "Copy",
 			"fr" : "Copy",
-			"kr" : "복사"
+			"kr" : "복사",
+			"ua" : "Копіювати"
 		},
 		"select_all"         : {
 			"en" : "Select All",
@@ -1527,7 +1650,8 @@
 			"de" : "Alles Auswählen",
 			"es" : "Seleccionar Todo",
 			"fr" : "Tout Sélectionner",
-			"kr" : "모두 선택"
+			"kr" : "모두 선택",
+			"ua" : "Вибрати все"
 		},
 
 		"developer_credit"   : {
@@ -1538,7 +1662,8 @@
 			"de" : "Entwickelt von {{developer}}.",
 			"es" : "Desarrollado por {{developer}}.",
 			"fr" : "Développé par {{developer}}.",
-			"kr" : "만든이: {{developer}}."
+			"kr" : "만든이: {{developer}}.",
+			"ua" : "Розроблено {{developer}}."
 		},
 		"changelog"          : {
 			"en" : "Changelog",
@@ -1548,7 +1673,8 @@
 			"de" : "Änderungsprotokoll",
 			"es" : "Historial de Cambios",
 			"fr" : "Historique des Données",
-			"kr" : "패치 내역"
+			"kr" : "패치 내역",
+			"ua" : "Список змін"
 		},
 		"discord_cta"        : {
 			"en" : "Join the Discord to receive live updates from the developer, submit feature suggestions, get help with a bug or issue, or discuss FFXIV in general with other users.",
@@ -1558,7 +1684,8 @@
 			"de" : "Trete dem Discord bei, um Aktualisierungen in Echtzeit vom Entwickler zu erhalten. Außerdem kannst du Feature Vorschläge abgeben, Hilfestellungen bei Bugs oder Problemen erhalten oder allgemein über FFXIV mit anderen Benutzern diskutieren.",
 			"es" : "Únete al servidor de discord para recibir actualizaciones en vivo del desarrollador, ingresar sugerencias, obtener ayuda con algún problema o bug, o discute acerca de FFXIV en general con otros usuarios.",
 			"fr" : "Rejoint le Discord pour recevoir les mises à jours des développeurs et soumettre des suggestions pour améliorer l'Overlay ou discuter de FFXIV avec les autres joueurs. En cas de problème, demander de l'aide.",
-			"kr" : "실시간 업데이트, 기능 추가 제안이나 버그 혹은 문제점을 공유를 원하신다면 디스코드는 언제나 열려있습니다. 그냥 파판 이야기 하고싶으셔도 들어오세요."
+			"kr" : "실시간 업데이트, 기능 추가 제안이나 버그 혹은 문제점을 공유를 원하신다면 디스코드는 언제나 열려있습니다. 그냥 파판 이야기 하고싶으셔도 들어오세요.",
+			"ua" : "Приєднуйтесь до Discord, щоб отримувати оновлення від розробника, надсилати пропозиції щодо функцій, отримувати допомогу при помилках чи проблемах, або обговорювати FFXIV з іншими користувачами."
 		},
 		"broken_link"        : {
 			"en" : "Link not working? Copy this link and paste it into your regular Web browser:",
@@ -1568,7 +1695,8 @@
 			"de" : "Funktioniert dein Link nicht? Kopiere diesen Link und füge ihn in einen Browser deiner Wahl ein:",
 			"es" : "No funciona el link? Copia el siguiente link y pégalo en cualquier navegador de internet:",
 			"fr" : "Un lien mort? Copié-collé le lien dans votre barre de recherche:",
-			"kr" : "링크가 연결되지 않습니까? 다음 링크 복사 후 웹 브라우저를 통해 시도해보세요."
+			"kr" : "링크가 연결되지 않습니까? 다음 링크 복사 후 웹 브라우저를 통해 시도해보세요.",
+			"ua" : "Посилання не працює? Скопіюйте це посилання та вставте його у свій веб-браузер:"
 		},
 		"github_cta"         : {
 			"en" : "See the latest code, changelog, and readme information on GitHub. You can also submit bug reports or feature requests.",
@@ -1578,7 +1706,8 @@
 			"de" : "Sieh dir den neuesten Code, Änderungsprotokolle und Readme Informationen auf GitHub an. Du kannst außerdem Bugs melden oder ein Feature vorschlagen.",
 			"es" : "Ve la última versión del código, historial de cambios e Información del Readme en Github. Puedes también ingresar reportes de bugs o solicitar funcionalidades.",
 			"fr" : "Les infomations (code,modification) les plus récentes sont sur GitHub. Tu peux aussi reporter les bugs ou faire une demande sur les fonctionnalités.",
-			"kr" : "깃허브를 통해 최근 패치 내역, 배포 정보 및 코드를 보실 수 있습니다. 버그 리포트 및 기능 추가 요청 또한 이를 통해 가능합니다."
+			"kr" : "깃허브를 통해 최근 패치 내역, 배포 정보 및 코드를 보실 수 있습니다. 버그 리포트 및 기능 추가 요청 또한 이를 통해 가능합니다.",
+			"ua" : "Дивіться свіжий код, список змін та readme на GitHub. Ви також можете подати звіти про помилки або запропонувати нову функцію."
 		},
 		"changelog_info"     : {
 			"en" : "The changelog listed here will show all the changes that have been made (if any) in the current version compared against the last version you used.",
@@ -1588,7 +1717,8 @@
 			"de" : "Dieses Änderungsprotokoll listet alle Änderungen auf, die in der aktuellen Version seit der von dir zuletzt verwendeten Version vorgenommen wurden (falls es welche gibt).",
 			"es" : "El historial de cambios de aquí mostrará todos los cambios que se han realizado (de haberse realizado) en la versión actual en comparación a la última versión que utilizaste.",
 			"fr" : "L'historique des données montrera tous les changements qui ont été faites (s'il y'en a eu) dans la version actuelle par rapport à la version que tu as utilisé.",
-			"kr" : "아래의 패치 내역은 현재 버젼과 가장 최근에 사용하셨던 버전과 비교하여 패치된 차이점들을 보여줍니다."
+			"kr" : "아래의 패치 내역은 현재 버젼과 가장 최근에 사용하셨던 버전과 비교하여 패치된 차이점들을 보여줍니다.",
+			"ua" : "У цьому списку змін відображатимуться всі зміни, внесені (якщо такі є) у поточну версію порівняно з останньою версією, яку ви використовували."
 		},
 		"changelog_cta"      : {
 			"en" : "You can always see the latest changes and read the more detailed official changelog {{changelog_link_open}}here{{changelog_link_close}}.",
@@ -1598,7 +1728,8 @@
 			"de" : "Du kannst die aktuellsten Änderungen und das detailliertere Änderungsprotokoll jederzeit hier {{changelog_link_open}}ansehen{{changelog_link_close}}.",
 			"es" : "Puedes revisar en cualquier momento los últimos cambios y leer el historial de cambios en mayor detalle {{changelog_link_open}}aquí{{changelog_link_close}}.",
 			"fr" : "Tu peux toujours voir les derniers changements et lire les détails {{changelog_link_open}}ici{{changelog_link_close}}.",
-			"kr" : "{{changelog_link_open}}가장 최근 패치 내역{{changelog_link_close}} 및 상세 정보를 보시고 싶으시다면 공식 패치 내역을 확인해주십시오."
+			"kr" : "{{changelog_link_open}}가장 최근 패치 내역{{changelog_link_close}} 및 상세 정보를 보시고 싶으시다면 공식 패치 내역을 확인해주십시오.",
+			"ua" : "Ви завжди можете подивитися останні зміни та прочитати докладніший офіційний список змін {{changelog_link_open}} тут {{changelog_link_close}}."
 		},
 		"latest_changes"     : {
 			"en" : "Latest Changes",
@@ -1608,7 +1739,8 @@
 			"de" : "Aktuelle Änderungen",
 			"es" : "Últimas Actualizaciones",
 			"fr" : "Les Derniers Changements",
-			"kr" : "최근 패치 내역"
+			"kr" : "최근 패치 내역",
+			"ua" : "Останні зміни"
 		},
 		"features"           : {
 			"en" : "Features",
@@ -1618,7 +1750,8 @@
 			"de" : "Features",
 			"es" : "Features",
 			"fr" : "Éléments",
-			"kr" : "기능들"
+			"kr" : "기능들",
+			"ua" : "Особливості"
 		},
 		"ui_changes"         : {
 			"en" : "UI Changes",
@@ -1628,7 +1761,8 @@
 			"de" : "Änderungen an der Benutzeroberfläche",
 			"es" : "Cambios en la Interfaz de Usuario (UI)",
 			"fr" : "Changement d'Interface de l'Utilisateur (UI)",
-			"kr" : "UI 변경점"
+			"kr" : "UI 변경점",
+			"ua" : "Зміни інтерфейсу"
 		},
 		"bug_fixes"          : {
 			"en" : "Bug Fixes",
@@ -1638,9 +1772,9 @@
 			"de" : "Fehlerbehebungen",
 			"es" : "Arreglo de Bugs",
 			"fr" : "Bug Fixé",
-			"kr" : "버그 픽스"
+			"kr" : "버그 픽스",
+			"ua" : "Виправлення помилок"
 		},
-
 		"streamers"          : {
 			"en" : "Streamers",
 			"pt" : "Streamers",
@@ -1649,7 +1783,8 @@
 			"de" : "Streamer",
 			"es" : "Streamers",
 			"fr" : "Streamers",
-			"kr" : "스트리머"
+			"kr" : "스트리머",
+			"ua" : "Стрімери"
 		},
 		"streamer_live"      : {
 			"en" : "{{number}} Streamer Live",
@@ -1659,7 +1794,8 @@
 			"de" : "{{number}} Streamer Live",
 			"es" : "{{number}} Streamer en Vivo",
 			"fr" : "{{number}} Streamer en Live",
-			"kr" : "{{number}} 명이 방송중"
+			"kr" : "{{number}} 명이 방송중",
+			"ua" : "{{number}} Стрімер Онлайн"
 		},
 		"streamers_live"     : {
 			"en" : "{{number}} Streamers Live",
@@ -1669,7 +1805,8 @@
 			"de" : "{{number}} Streamer Live",
 			"es" : "{{number}} Streamers en Vivo",
 			"fr" : "{{number}} Streamers en Live ",
-			"kr" : "{{number}} 명이 방송중"
+			"kr" : "{{number}} 명이 방송중",
+			"ua" : "{{number}} Стрімери Онлайн"
 		},
 		"streamer_info"      : {
 			"en" : "Twitch streamers who use Ember Overlay are featured here!",
@@ -1679,7 +1816,8 @@
 			"de" : "Hier werden Twitch Streamer angezeigt, die Ember Overlay benutzen.",
 			"es" : "Los streamers de Twitch que utilizan Ember Overlay son mencionados aquí!",
 			"fr" : "Les streamers Twitch qui utilisent Ember Overlay sont ici!",
-			"kr" : "엠버 오버레이를 애용해주시는 트위치 스트리머분들은 여기에 특별히 표기됩니다!"
+			"kr" : "엠버 오버레이를 애용해주시는 트위치 스트리머분들은 여기에 특별히 표기됩니다!",
+			"ua" : "Тут представлені стрімери Twitch, які використовують Ember Overlay!"
 		},
 		"streamer_short_cta" : {
 			"en" : "Are you a streamer or do you know a streamer who uses Ember Overlay?",
@@ -1689,7 +1827,8 @@
 			"de" : "Bist du ein Streamer oder kennst du einen Streamer, der Ember Overlay verwendet?",
 			"es" : "Eres un streamer o conoces a un streamer que utiliza Ember Overlay?",
 			"fr" : "Es-tu un streamer ou connais-tu un streamer utilisant Ember Overlay?",
-			"kr" : "엠버 오버레이를 사용해주시는 스트리머이시거나 혹은 해당하는 스트리머를 아시나요?"
+			"kr" : "엠버 오버레이를 사용해주시는 스트리머이시거나 혹은 해당하는 스트리머를 아시나요?",
+			"ua" : "Ви стрімер або знаєте стрімера, який використовує Ember Overlay?"
 		},
 		"streamer_long_cta"  : {
 			"en" : "Have the stream added to this list by joining our Discord at {{discord_link}} and posting the stream in #streamer-requests. You can also message {{twitch_link}} with your stream info. The stream is only eligible for inclusion if Ember Overlay is used on stream (will be verified via VOD's).",
@@ -1699,7 +1838,8 @@
 			"de" : "Füge den Stream dieser Liste hinzu, indem du unserem Discord unter {{discord_link}} beitrittst und den Stream in #streamer-requests postest. Du kannst außerdem {{twitch_link}} mit der Stream Info anschreiben. Der Stream wird jedoch nur in Betracht gezogen, falls das Ember Overlay im Stream benutzt wird (Verifizierung erfolgt über VODs).",
 			"es" : "Haz que el stream sea agregado a esta lista entrando a nuestro discord en {{discord_link}} y posteando el stream en #streamer-requests. Puedes también mandar un mensaje a {{twitch_link}} Con la información de tu stream. El stream es elegible si Ember Overlay es utilizado en el stream (será verificado via VOD's).",
 			"fr" : "Pour avoir son stream ajouté à la liste, il faut rejoindre notre Discord sur {{discord_link}} et poster le stream sur #streamer-requests. Tu peux aussi envoyer un message {{twitch_link}} avec tes renseignements de stream. Le stream sera inclus si Ember Overlay est utilisé sur le stream (sera vérifié via la VOD).",
-			"kr" : "엠버 오버레이 디스코드 링크 {{discord_link}} 에 들어오셔셔 #streamer-requests을 통해 알려주세요. 혹은 트위치 내에서 {{twitch_link}}를 통해 직접 메세지를 보내주셔도 좋스니다. 이는 오직 엠버 오버레이를 사용해주실 때만 적용됩니다. (방송 기록으로 확인 가능)"
+			"kr" : "엠버 오버레이 디스코드 링크 {{discord_link}} 에 들어오셔셔 #streamer-requests을 통해 알려주세요. 혹은 트위치 내에서 {{twitch_link}}를 통해 직접 메세지를 보내주셔도 좋스니다. 이는 오직 엠버 오버레이를 사용해주실 때만 적용됩니다. (방송 기록으로 확인 가능)",
+			"ua" : "Стрім буде доданий до цього списку після приєднання до нашого Discord серверу за адресою {{discord_link}} та опублікування стріму в # streamer-request. Ви також можете надіслати {{twitch_link}} інформацію про вашу трансляцію. Стрім може бути включений лише в тому випадку, якщо в трансляції використовується Ember Overlay (буде перевірено через VOD)."
 		},
 		"criteria" : {
 			"en" : "Criteria",
@@ -1709,7 +1849,8 @@
 			"de" : "Kriterien",
 			"es" : "Criteria",
 			"fr" : "Criteria",
-			"kr" : "기준"
+			"kr" : "기준",
+			"ua" : "Критерія"
 		},
 		"value" : {
 			"en" : "Value",
@@ -1719,7 +1860,8 @@
 			"de" : "Wert",
 			"es" : "Value",
 			"fr" : "Valeur",
-			"kr" : "값"
+			"kr" : "값",
+			"ua" : "Значення"
 		},
 		"default" : {
 			"en" : "Default",
@@ -1729,7 +1871,8 @@
 			"de" : "Default",
 			"es" : "Default",
 			"fr" : "Default",
-			"kr" : "기본"
+			"kr" : "기본",
+			"ua" : "За замовчуванням"
 		},
 		"track" : {
 			"en" : "Track",
@@ -1739,7 +1882,8 @@
 			"de" : "Track",
 			"es" : "Track",
 			"fr" : "Track",
-			"kr" : "트랙"
+			"kr" : "트랙",
+			"ua" : "Стеження"
 		},
 		"edit_ui" : {
 			"en" : "Edit UI",
@@ -1749,7 +1893,8 @@
 			"de" : "Edit UI",
 			"es" : "Edit UI",
 			"fr" : "Edit UI",
-			"kr" : "UI 수정"
+			"kr" : "UI 수정",
+			"ua" : "Редагувати UI"
 		},
 		"save_ui" : {
 			"en" : "Save UI",
@@ -1759,7 +1904,8 @@
 			"de" : "Save UI",
 			"es" : "Save UI",
 			"fr" : "Save UI",
-			"kr" : "UI 저장"
+			"kr" : "UI 저장",
+			"ua" : "Зберегти UI"
 		},
 		"spells_ui_builder_info" : {
 			"en" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
@@ -1769,7 +1915,8 @@
 			"de" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"es" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"fr" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
-			"kr" : "UI 빌더는 스펠 타이머를 본인 입맛에 맞게 만들 수 있습니다.(아래) 본인의 쿨타임, 탱커의 쿨타임들 혹은 힐러 쿨타임또한 따로 표시시켜주는 섹션을 만드는것이 예로 들 수 있습니다. 아래의 테이블에 섹션을 만든 후 어떤것을 표기할지 따로 설정해주시면 되며 완성후 반드시 \"{{spells_mode.ui.use}}\"이 활성화된것을 확인한 후 저장하시면 됩니다. 오버레이를 파판 화면을 모두 덮게끔 사이즈를 조절하세요. 만약 사이즈 조절이 불가능하다면 오버레이 플러그인에서 잠금해제가 됬는지 확인하시거나 이미 잠금해제가 되있는 상태라면 하얀 바탕을 활성화 시키신 후 오버레이에서 우클릭후 \"{{edit_ui}}\" 선택을 하시면 됩니다. \"{{edit_ui}}\" 모드 진입하신 이후 반드시 오버레이를 재갱신하시거나 하얀 바탕을 비활성화 시키세요. 이 후 스펠 타이머 섹션을 따로 사이즈 조절하거나 화면 내 이동시키실 수 있습니다. 각 섹션마다 이름이 표시되어있으므로 구별이 가능하므로 세팅을 마치셨다면 우클릭 후 \"{{save_ui}}\"를 선택하여 저장하시면 마무리됩니다."
+			"kr" : "UI 빌더는 스펠 타이머를 본인 입맛에 맞게 만들 수 있습니다.(아래) 본인의 쿨타임, 탱커의 쿨타임들 혹은 힐러 쿨타임또한 따로 표시시켜주는 섹션을 만드는것이 예로 들 수 있습니다. 아래의 테이블에 섹션을 만든 후 어떤것을 표기할지 따로 설정해주시면 되며 완성후 반드시 \"{{spells_mode.ui.use}}\"이 활성화된것을 확인한 후 저장하시면 됩니다. 오버레이를 파판 화면을 모두 덮게끔 사이즈를 조절하세요. 만약 사이즈 조절이 불가능하다면 오버레이 플러그인에서 잠금해제가 됬는지 확인하시거나 이미 잠금해제가 되있는 상태라면 하얀 바탕을 활성화 시키신 후 오버레이에서 우클릭후 \"{{edit_ui}}\" 선택을 하시면 됩니다. \"{{edit_ui}}\" 모드 진입하신 이후 반드시 오버레이를 재갱신하시거나 하얀 바탕을 비활성화 시키세요. 이 후 스펠 타이머 섹션을 따로 사이즈 조절하거나 화면 내 이동시키실 수 있습니다. 각 섹션마다 이름이 표시되어있으므로 구별이 가능하므로 세팅을 마치셨다면 우클릭 후 \"{{save_ui}}\"를 선택하여 저장하시면 마무리됩니다.",
+			"ua" : "Конструктор UI дозволяє створювати власні розділи таймера заклинань (нижче). Наприклад, ви можете створити секцію таймера для власних кулдаунів та секцію таймерів для кулдаунів вашого захисника або цілителя. У таблиці нижче створіть розділи, вибравши те, що потрібно відстежувати в кожному розділі. Після завершення переконайтеся, що ввімкнено \"{{spells_mode.ui.use}}\", а потім натисніть 'Зберегти'. Змініть розмір накладання так, щоб воно охоплювало всю вашу гру FFXIV. Якщо вам не вдається змінити розмір або знайти накладене зображення, перейдіть до OverlayPlugin і розблокуйте накладене зображення або ввімкніть білий фон, якщо він уже розблокований. У накладенні клацніть правою кнопкою миші та виберіть \"{{edit_ui}}.\" Після переходу в режим \"{{edit_ui}}\" обов’язково переблокуйте накладку або вимкніть білий фон. Потім ви зможете перетягувати та змінювати розмір створених вами розділів таймера заклинань. Кожен розділ позначений так, щоб ви знали, що він міститиме. Після завершення клацніть правою кнопкою миші та виберіть \"{{save_ui}}.\""
 		},
 		"discord_webhook_info": {
 			"en" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
@@ -1779,7 +1926,8 @@
 			"de" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
 			"es" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
 			"fr" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
-			"kr" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel."
+			"kr" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"ua" : "Discord Webhook дозволяє Ember надсилати дані про ваші зустрічі на ваш канал Discord. Щоб отримати URL-адресу веб-хука, відкрийте налаштування для потрібного каналу в розділі Discord та виберіть \"Інтеграції.\" Клацніть \"Створити вебхук\" (або \"Переглянути вебхуки\" → \"Новий вебхук\", якщо у вас уже є веб-хуки). Потім натисніть \"Скопіювати URL вебхука\" та вставте його в текстове поле нижче. У Ember Overlay, після зустрічі, клацніть піктограму Discord внизу праворуч і виберіть \"{{discord_webhook}}.\" Результати зустрічі будуть надіслані на ваш канал Discord."
 		}
 	}
 }

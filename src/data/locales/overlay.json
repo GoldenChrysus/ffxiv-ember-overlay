@@ -7,7 +7,8 @@
 		"de" : "Verkleinern",
 		"es" : "Minimizar",
 		"fr" : "Minimiser",
-		"kr" : "최소화"
+		"kr" : "최소화",
+		"ua" : "Згорнути"
 	},
 	"uncollapse"          : {
 		"en" : "Uncollapse",
@@ -17,7 +18,8 @@
 		"de" : "Vergrößern",
 		"es" : "Maximizar",
 		"fr" : "élargir",
-		"kr" : "최대화"
+		"kr" : "최대화",
+		"ua" : "Розгорнути"
 	},
 	"split_encounter"     : {
 		"en" : "Split Encounter",
@@ -27,7 +29,8 @@
 		"de" : "Kampf Aufteilen",
 		"es" : "Dividir Encuentro",
 		"fr" : "Sciendé le Combat",
-		"kr" : "전투 휴식 구간 추가"
+		"kr" : "전투 휴식 구간 추가",
+		"ua" : "Розділення Бою"
 	},
 	"view_encounter"      : {
 		"en" : "View Encounter Detail",
@@ -37,7 +40,8 @@
 		"de" : "Kampf Details Ansehen",
 		"es" : "Ver Detalles del Encuentro",
 		"fr" : "Voir les Détails du Combat",
-		"kr" : "전투 상세 정보"
+		"kr" : "전투 상세 정보",
+		"ua" : "Переглянути Деталі Бою"
 	},
 	"load_sample"         : {
 		"en" : "Load Sample Data",
@@ -47,7 +51,8 @@
 		"de" : "Musterdaten Laden",
 		"es" : "Cargar Datos de Muestra",
 		"fr" : "Charger la Donnée d'échantillon",
-		"kr" : "예제 전투 불러오기"
+		"kr" : "예제 전투 불러오기",
+		"ua" : "Завантажити приклади боїв"
 	},
 	"clear_encounter"     : {
 		"en" : "Clear Encounter Data",
@@ -57,7 +62,8 @@
 		"de" : "Kampfdaten Beseitigen",
 		"es" : "Borrar Datos del Encuentro",
 		"fr" : "Nettoyer les Données",
-		"kr" : "전투 데이터 삭제"
+		"kr" : "전투 데이터 삭제",
+		"ua" : "Очистити Дані Бою"
 	},
 	"encounter_history" : {
 		"en" : "Encounter History",
@@ -107,7 +113,8 @@
 		"de" : "Einstellungen",
 		"es" : "Opciones",
 		"fr" : "Paramètres",
-		"kr" : "설정"
+		"kr" : "설정",
+		"ua" : "Налаштування"
 	},
 	"blur_names"          : {
 		"en" : "Blur player names",
@@ -117,7 +124,8 @@
 		"de" : "Spielernamen Trüben",
 		"es" : "Difuminar Nombres de los Jugadores",
 		"fr" : "Cacher le nom des joueurs",
-		"kr" : "플레이어 이름 가리기"
+		"kr" : "플레이어 이름 가리기",
+		"ua" : "Розмивати імена гравців"
 	},
 	"toggle_collapse"     : {
 		"en" : "Toggle collapse",
@@ -127,7 +135,8 @@
 		"de" : "Verkleinern/Vergrößern",
 		"es" : "Minimizar/Maximizar",
 		"fr" : "Minimiser/Afficher",
-		"kr" : "최소화 토글"
+		"kr" : "최소화 토글",
+		"ua" : "Згорнути/Розгорнути"
 	},
 	"back"                : {
 		"en" : "Back",
@@ -137,7 +146,8 @@
 		"de" : "Zurück",
 		"es" : "Volver",
 		"fr" : "Revenir",
-		"kr" : "뒤로가기"
+		"kr" : "뒤로가기",
+		"ua" : "Назад"
 	},
 	"not_applicable"      : {
 		"en" : "N/A",
@@ -147,7 +157,8 @@
 		"de" : "N/A",
 		"es" : "N/A",
 		"fr" : "N/A",
-		"kr" : "N/A"
+		"kr" : "N/A",
+		"ua" : "Н/Д"
 	},
 	"inactive"            : {
 		"en" : "Inactive",
@@ -157,7 +168,8 @@
 		"de" : "Inaktiv",
 		"es" : "Inactivo",
 		"fr" : "Inactif",
-		"kr" : "비활성화"
+		"kr" : "비활성화",
+		"ua" : "Неактивний"
 	},
 	"encounter"           : {
 		"en" : "Encounter",
@@ -167,7 +179,8 @@
 		"de" : "Im Kampf",
 		"es" : "Encuentro",
 		"fr" : "Combat",
-		"kr" : "전투"
+		"kr" : "전투",
+		"ua" : "Бій"
 	},
 	"awaiting_encounter"  : {
 		"en" : "Awaiting encounter data...",
@@ -177,7 +190,8 @@
 		"de" : "Warte auf Kampfdaten...",
 		"es" : "Esperando datos del encuentro...",
 		"fr" : "En attente d'une donnée de combat...",
-		"kr" : "전투 기록 대기 중..."
+		"kr" : "전투 기록 대기 중...",
+		"ua" : "Очікування даних про бій..."
 	},
 	"player_name"         : {
 		"en" : "Name",
@@ -187,7 +201,8 @@
 		"de" : "Name",
 		"es" : "Nombre",
 		"fr" : "Prénom",
-		"kr" : "이름"
+		"kr" : "이름",
+		"ua" : "Ім'я"
 	},
 	"dps"                 : {
 		"en" : "DPS",
@@ -197,7 +212,8 @@
 		"de" : "DPS",
 		"es" : "DPS",
 		"fr" : "DPS",
-		"kr" : "DPS"
+		"kr" : "DPS",
+		"ua" : "DPS"
 	},
 	"heal"                : {
 		"en" : "Heal",
@@ -207,7 +223,8 @@
 		"de" : "Heilung",
 		"es" : "Cura",
 		"fr" : "Soin",
-		"kr" : "치유"
+		"kr" : "치유",
+		"ua" : "Цілитель"
 	},
 	"tank"                : {
 		"en" : "Tank",
@@ -217,7 +234,8 @@
 		"de" : "Verteidiger",
 		"es" : "Tank",
 		"fr" : "Tank",
-		"kr" : "탱커"
+		"kr" : "탱커",
+		"ua" : "Захисник"
 	},
 	"aggro"              : {
 		"en" : "Agg",
@@ -227,7 +245,8 @@
 		"de" : "Agg",
 		"es" : "Agg",
 		"fr" : "Agg",
-		"kr" : "적개심"
+		"kr" : "적개심",
+		"ua" : "Агр"
 	},
 	"import"              : {
 		"en" : "Import",
@@ -237,7 +256,8 @@
 		"de" : "Importieren",
 		"es" : "Importar",
 		"fr" : "Importer",
-		"kr" : "설정 불러오기"
+		"kr" : "설정 불러오기",
+		"ua" : "Імпорт"
 	},
 	"import_settings"     : {
 		"en" : "Import Settings",
@@ -247,7 +267,8 @@
 		"de" : "Einstellungen Importieren",
 		"es" : "Opciones de Importación",
 		"fr" : "Importer les Paramètres",
-		"kr" : "설정 불러오기"
+		"kr" : "설정 불러오기",
+		"ua" : "Імпорт Налаштувань"
 	},
 	"import_instructions" : {
 		"en" : "Paste your exported setting key below and click \"Import.\"",
@@ -257,7 +278,8 @@
 		"de" : "Füge unten deinen exportierten Einstellungsschlüssel ein und klicke auf \"Importieren.\"",
 		"es" : "Pega tus configuraciones exportadas debajo y después presiona \"Importar.\"",
 		"fr" : "Collé votre clé de réglage exportée ci dessous et cliquer sur \"Importer.\"",
-		"kr" : "설정의 고유 키 텍스트를 붙여넣으신 후 \"불러오기\"를 누르십시오."
+		"kr" : "설정의 고유 키 텍스트를 붙여넣으신 후 \"불러오기\"를 누르십시오.",
+		"ua" : "Вставте експортований ключ налаштувань нижче та натисніть \"Імпортувати.\""
 	},
 	"paste"               : {
 		"en" : "Paste",
@@ -267,7 +289,8 @@
 		"de" : "Einfügen",
 		"es" : "Paste",
 		"fr" : "Paste",
-		"kr" : "붙여넣기"
+		"kr" : "붙여넣기",
+		"ua" : "Вставити"
 	},
 	"mode" : {
 		"en" : "Mode",
@@ -277,7 +300,8 @@
 		"de" : "Modus",
 		"es" : "Modo",
 		"fr" : "Mode",
-		"kr" : "모드"
+		"kr" : "모드",
+		"ua" : "Режим"
 	},
 	"parser" : {
 		"en" : "Parser",
@@ -287,7 +311,8 @@
 		"de" : "Parser",
 		"es" : "Analizador",
 		"fr" : "Analyseur",
-		"kr" : "미터기"
+		"kr" : "미터기",
+		"ua" : "Аналізатор"
 	},
 	"spell_timers" : {
 		"en" : "Spell Timers",
@@ -297,7 +322,8 @@
 		"de" : "Zauber Timer",
 		"es" : "Spell Timers",
 		"fr" : "Spell Timers",
-		"kr" : "스펠 타이머"
+		"kr" : "스펠 타이머",
+		"ua" : "Таймери Заклинань"
 	},
 	
 	"tts" : {
@@ -366,6 +392,14 @@
 				"singular" : "이 ",
 				"you"      : "당신",
 				"text"     : "{{players}}{{connector}}사망 직전입니다."
+			},
+			"ua" : {
+				"joiner"   : " та ",
+				"several"  : "Кілька граців",
+				"plural"   : " є ",
+				"singular" : " є ",
+				"you"      : "Ти",
+				"text"     : "{{players}}{{connector}}мають критичний рівень здоров'я."
 			}
 		},
 		"aggro" : {
@@ -400,6 +434,10 @@
 			"kr" : {
 				"joiner" : " 및 ",
 				"text"   : "{{monsters}}의 어그로를 받았습니다."
+			},
+			"ua" : {
+				"joiner" : ", ",
+				"text"   : "Ви заагрили {{monsters}}."
 			}
 		},
 		"top" : {
@@ -426,6 +464,9 @@
 			},
 			"kr" : {
 				"text" : "{{metric}} 상위권입니다."
+			},
+			"ua" : {
+				"text" : "Ви в топі {{metric}}."
 			}
 		},
 		"encounter" : {
@@ -475,6 +516,12 @@
 				"start"         : "개시되었습니다",
 				"end"           : "종료되었습니다",
 				"default_title" : "전투",
+				"text"          : "{{encounter}} {{verb}}."
+			},
+			"ua" : {
+				"start"         : "почався",
+				"end"           : "закінчився",
+				"default_title" : "Бій",
 				"text"          : "{{encounter}} {{verb}}."
 			}
 		}
