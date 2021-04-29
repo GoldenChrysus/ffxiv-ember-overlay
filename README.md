@@ -160,6 +160,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 - **Claud** - Spanish
 - **Okâme** - French
 - **Tsunari96** - Tsunari96#8491 (Discord) - Korean
+- [**justscribe**](https://github.com/justscribe) - [Twitch](https://www.twitch.tv/justscribe), [Website](https://ffxiv.gaming4eternity.online/) - Ukrainian
 
 ### Featured Donors
 

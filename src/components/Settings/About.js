@@ -81,6 +81,7 @@ class About extends React.Component {
 							<li><strong>Claud</strong> - Spanish translation</li>
 							<li><strong>Okâme</strong> - French translation</li>
 							<li><strong>Tsunari96</strong> - Tsunari96#8491 (Discord) - Korean translation</li>
+							<li><strong>justscribe</strong> <SocialLink name="justscribe" type="twitch"/><SocialLink type="globe" url="https://ffxiv.gaming4eternity.online/"/> - Ukrainian translation</li>
 						</ul>
 
 						<ul>
