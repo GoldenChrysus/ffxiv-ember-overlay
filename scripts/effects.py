@@ -6,7 +6,7 @@ import shutil
 from os import path
 
 def getPage(page_num):
-	url = "https://xivapi.com/search?page=" + str(page_num) + "&indexes=Status&filters=InflictedByActor=0"
+	url = "https://xivapi.com/search?page=" + str(page_num) + "&indexes=Status"
 	res = requests.get(url = url)
 
 	return res.json()
@@ -15,7 +15,11 @@ def getEffect(id):
 	url = "https://xivapi.com/Status/" + str(id)
 	res = requests.get(url = url)
 
-	return res.json()
+	try:
+		return res.json()
+	except E:
+		print(id)
+		raise E
 
 def saveImage(id, xiv_path):
 	local_path = "../public/img/icons/effects/" + str(id) + ".jpg"
@@ -38,6 +42,13 @@ def saveEffects(effects):
 		json.dump(effects, file, indent = "\t", separators = (",", " : "), ensure_ascii = False)
 		file.close()
 
+def loadEffects():
+	with open("../src/data/game/effects.json") as file:
+		data = json.load(file)
+
+		file.close()
+		return data
+
 def loadDots():
 	with open("../src/data/game/dot-jobs.json") as file:
 		data = json.load(file)
@@ -52,10 +63,11 @@ def loadBuffs():
 		file.close()
 		return data		
 
-page    = 1
-effects = {}
-dots    = loadDots()
-buffs   = loadBuffs()
+page             = 1
+effects          = {}
+existing_effects = loadEffects()
+dots             = loadDots()
+buffs            = loadBuffs()
 
 while (True):
 	page_data = getPage(page)
@@ -64,11 +76,20 @@ while (True):
 	for effect in page_data["Results"]:
 		id = effect["ID"]
 
+		if str(id) in existing_effects:
+			if (existing_effects[str(id)]["locales"]["name"]["en"] != existing_effects[str(id)]["locales"]["name"]["jp"]):
+				effects[id] = existing_effects[str(id)]
+
+			continue
+
 		effect_data = getEffect(id)
 		dot         = False
 
+		if (effect_data["Name_en"] == effect_data["Name_ja"]):
+			continue
+
 		if (effect_data["Category"] == 2):
-			if ("over time" not in effect_data["Description_en"]):
+			if ("over time" not in effect_data["Description_en"] or effect_data["InflictedByActor"] == 1):
 				continue
 			else:
 				dot = True

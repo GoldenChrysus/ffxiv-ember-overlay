@@ -629,7 +629,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(false)
+								options  : () => LocalizationService.getEffectOptions(false, true)
 							},
 							{
 								key_path : "spells_mode.party_reverse_effect",
@@ -646,7 +646,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(true)
+								options  : () => LocalizationService.getEffectOptions(true, true)
 							},
 							{
 								key_path : "spells_mode.party_reverse_dot",

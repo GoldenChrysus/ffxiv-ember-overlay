@@ -209,10 +209,33 @@ class LocalizationService {
 		return SkillData.Effects[id].locales.name[language] || SkillData.Effects[id].locales.name.en;
 	}
 
-	getEffectOptions(dot) {
+	getEffectOptions(dot, party) {
 		let language = this.getLanguage();
 		let options  = [];
 		let used     = {};
+		let key      = (dot) ? "dots" : "effects";
+
+		if (party) {
+			key = `party_${key}`;
+		}
+
+		let existing = store.getState().settings.spells_mode[key];
+
+		for (let id of existing) {
+			if (!SkillData.Effects[id]) {
+				continue;
+			}
+
+			let name = this.getEffectName(id, "en");
+
+			options.push({
+				key   : id,
+				value : id,
+				text  : this.getEffectName(id, language)
+			});
+
+			used[name] = true;
+		}
 
 		for (let id in SkillData.Effects) {
 			let name = this.getEffectName(id, "en");

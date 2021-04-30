@@ -334,7 +334,7 @@
 				"plural"   : " are ",
 				"singular" : " is ",
 				"you"      : "You",
-				"text"     : "{{players}}{{connector}}critical health."
+				"text"     : "{{players}}{{connector}}critical health"
 			},
 			"pt" : {
 				"joiner"   : " e ",
@@ -342,7 +342,7 @@
 				"plural"   : " estão ",
 				"singular" : " está ",
 				"you"      : "Você",
-				"text"     : "{{players}}{{connector}}critical health."
+				"text"     : "{{players}}{{connector}}critical health"
 			},
 			"cn" : {
 				"joiner"   : "和",
@@ -350,7 +350,7 @@
 				"plural"   : "处于",
 				"singular" : "处于",
 				"you"      : "你",
-				"text"     : "{{players}}{{connector}}临界血量."
+				"text"     : "{{players}}{{connector}}临界血量"
 			},
 			"jp" : {
 				"joiner"   : "と",
@@ -358,7 +358,7 @@
 				"plural"   : "は",
 				"singular" : "は",
 				"you"      : "あなた",
-				"text"     : "{{players}}{{connector}}クリティカルHPです."
+				"text"     : "{{players}}{{connector}}クリティカルHPです"
 			},
 			"de" : {
 				"joiner"           : " und ",
@@ -367,7 +367,7 @@
 				"singular"         : " ist ",
 				"you"              : "Du bist ",
 				"you_no_connector" : true,
-				"text"             : "{{players}}{{connector}}in einem kritischen Gesundheitszustand."
+				"text"             : "{{players}}{{connector}}in einem kritischen Gesundheitszustand"
 			},
 			"es" : {
 				"joiner"   : " and ",
@@ -375,7 +375,7 @@
 				"plural"   : " are ",
 				"singular" : " is ",
 				"you"      : "You",
-				"text"     : "{{players}}{{connector}}critical health."
+				"text"     : "{{players}}{{connector}}critical health"
 			},
 			"fr" : {
 				"joiner"   : " et ",
@@ -383,7 +383,7 @@
 				"plural"   : " sont ",
 				"singular" : " est ",
 				"you"      : "Vous",
-				"text"     : "{{players}}{{connector}}dans un état critique."
+				"text"     : "{{players}}{{connector}}dans un état critique"
 			},
 			"kr" : {
 				"joiner"   : " 및 ",
@@ -391,7 +391,7 @@
 				"plural"   : "이 ",
 				"singular" : "이 ",
 				"you"      : "당신",
-				"text"     : "{{players}}{{connector}}사망 직전입니다."
+				"text"     : "{{players}}{{connector}}사망 직전입니다"
 			},
 			"ua" : {
 				"joiner"   : " та ",
@@ -399,74 +399,74 @@
 				"plural"   : " є ",
 				"singular" : " є ",
 				"you"      : "Ти",
-				"text"     : "{{players}}{{connector}}мають критичний рівень здоров'я."
+				"text"     : "{{players}}{{connector}}мають критичний рівень здоров'я"
 			}
 		},
 		"aggro" : {
 			"en" : {
 				"joiner" : ", ",
-				"text"   : "You have aggro from {{monsters}}."
+				"text"   : "You have aggro from {{monsters}}"
 			},
 			"pt" : {
 				"joiner" : ", ",
-				"text"   : "You have aggro from {{monsters}}."
+				"text"   : "You have aggro from {{monsters}}"
 			},
 			"cn" : {
 				"joiner" : ", ",
-				"text"   : "你拉到了{{monsters}}的仇恨."
+				"text"   : "你拉到了{{monsters}}的仇恨"
 			},
 			"jp" : {
 				"joiner" : "と",
-				"text"   : "{{monsters}}のタゲを取りました."
+				"text"   : "{{monsters}}のタゲを取りました"
 			},
 			"de" : {
 				"joiner" : ", ",
-				"text"   : "Du erhälst Aggro von {{monsters}}."
+				"text"   : "Du erhälst Aggro von {{monsters}}"
 			},
 			"es" : {
 				"joiner" : ", ",
-				"text"   : "You have aggro from {{monsters}}."
+				"text"   : "You have aggro from {{monsters}}"
 			},
 			"fr" : {
 				"joiner" : " et ",
-				"text"   : "Vous avez aggro {{monsters}}."
+				"text"   : "Vous avez aggro {{monsters}}"
 			},
 			"kr" : {
 				"joiner" : " 및 ",
-				"text"   : "{{monsters}}의 어그로를 받았습니다."
+				"text"   : "{{monsters}}의 어그로를 받았습니다"
 			},
 			"ua" : {
 				"joiner" : ", ",
-				"text"   : "Ви заагрили {{monsters}}."
+				"text"   : "Ви заагрили {{monsters}}"
 			}
 		},
 		"top" : {
 			"en" : {
-				"text" : "You are top {{metric}}."
+				"text" : "You are top {{metric}}"
 			},
 			"pt" : {
-				"text" : "Você está no topo do {{metric}}."
+				"text" : "Você está no topo do {{metric}}"
 			},
 			"cn" : {
-				"text" : "你当前{{metric}}最高."
+				"text" : "你当前{{metric}}最高"
 			},
 			"jp" : {
-				"text" : "あなたは最高な{{metric}}です."
+				"text" : "あなたは最高な{{metric}}です"
 			},
 			"de" : {
-				"text" : "Du bist Spitzenreiter in {{metric}}."
+				"text" : "Du bist Spitzenreiter in {{metric}}"
 			},
 			"es" : {
-				"text" : "You are top {{metric}}."
+				"text" : "You are top {{metric}}"
 			},
 			"fr" : {
-				"text" : "You are top {{metric}}."
+				"text" : "You are top {{metric}}"
 			},
 			"kr" : {
-				"text" : "{{metric}} 상위권입니다."
+				"text" : "{{metric}} 상위권입니다"
 			},
 			"ua" : {
-				"text" : "Ви в топі {{metric}}."
+				"text" : "Ви в топі {{metric}}"
 			}
 		},
 		"encounter" : {
@@ -474,55 +474,55 @@
 				"start"         : "started",
 				"end"           : "ended",
 				"default_title" : "Encounter",
-				"text"          : "{{encounter}} has {{verb}}."
+				"text"          : "{{encounter}} has {{verb}}"
 			},
 			"pt" : {
 				"start"         : "começou",
 				"end"           : "terminou",
 				"default_title" : "Encontro",
-				"text"          : "{{encounter}} {{verb}}."
+				"text"          : "{{encounter}} {{verb}}"
 			},
 			"cn" : {
 				"start"         : "开始",
 				"end"           : "结束",
 				"default_title" : "战斗",
-				"text"          : "{{encounter}}已{{verb}}."
+				"text"          : "{{encounter}}已{{verb}}"
 			},
 			"jp" : {
 				"start"         : "始まりました",
 				"end"           : "終わりました",
 				"default_title" : "戦闘",
-				"text"          : "{{encounter}}が{{verb}}."
+				"text"          : "{{encounter}}が{{verb}}"
 			},
 			"de" : {
 				"start"         : "hat begonnen",
 				"end"           : "wurde beendet",
 				"default_title" : "Kampf",
-				"text"          : "{{encounter}} {{verb}}."
+				"text"          : "{{encounter}} {{verb}}"
 			},
 			"es" : {
 				"start"         : "started",
 				"end"           : "ended",
 				"default_title" : "Encuentro",
-				"text"          : "{{encounter}} has {{verb}}."
+				"text"          : "{{encounter}} has {{verb}}"
 			},
 			"fr" : {
 				"start"         : "a commencé",
 				"end"           : "est fini",
 				"default_title" : "Combat",
-				"text"          : "{{encounter}} {{verb}}."
+				"text"          : "{{encounter}} {{verb}}"
 			},
 			"kr" : {
 				"start"         : "개시되었습니다",
 				"end"           : "종료되었습니다",
 				"default_title" : "전투",
-				"text"          : "{{encounter}} {{verb}}."
+				"text"          : "{{encounter}} {{verb}}"
 			},
 			"ua" : {
 				"start"         : "почався",
 				"end"           : "закінчився",
 				"default_title" : "Бій",
-				"text"          : "{{encounter}} {{verb}}."
+				"text"          : "{{encounter}} {{verb}}"
 			}
 		}
 	}
