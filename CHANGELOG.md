@@ -9,7 +9,7 @@
 - Resolved issue where some buffs were missing from the available options
 
 ### Features
-- Add spell timer support for PVP skills
+- Added spell timer support for PVP skills
 
 ### UI Changes
 - Added translations for Ukrainian

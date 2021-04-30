@@ -240,7 +240,7 @@ class TTSService {
 		}
 
 		if (messages.length) {
-			store.getState().plugin_service.tts(messages);
+			store.getState().plugin_service.tts(messages.join(" "));
 		}
 	}
 }
