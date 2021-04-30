@@ -47,23 +47,6 @@ const language_options = [
 		text  : "Українська"
 	}
 ];
-const decimal_options  = [
-	{
-		key   : "0",
-		value : "0",
-		text  : "0"
-	},
-	{
-		key   : "1",
-		value : 1,
-		text  : "1"
-	},
-	{
-		key   : "2",
-		value : 2,
-		text  : "2"
-	},
-];
 const theme_options = [
 	{
 		key   : "ffxiv-dark",
@@ -165,8 +148,10 @@ const SettingsSchema = {
 							},
 							{
 								key_path : "interface.decimal_accuracy",
-								type     : "select",
-								options  : decimal_options
+								type     : "slider",
+								range    : "min",
+								minimum  : 0,
+								maximum  : 2
 							},
 							{
 								key_path : "interface.shorten_thousands",

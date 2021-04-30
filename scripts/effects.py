@@ -15,11 +15,7 @@ def getEffect(id):
 	url = "https://xivapi.com/Status/" + str(id)
 	res = requests.get(url = url)
 
-	try:
-		return res.json()
-	except E:
-		print(id)
-		raise E
+	return res.json()
 
 def saveImage(id, xiv_path):
 	local_path = "../public/img/icons/effects/" + str(id) + ".jpg"

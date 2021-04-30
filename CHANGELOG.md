@@ -5,14 +5,15 @@
 **Released: [in staging]**
 
 ### Bug Fixes
-- Resolved issue where TTS alerts would include punctuation in some Windows voices
 - Resolved issue where some buffs were missing from the available options
+- Resolved issue where TTS alerts would include punctuation in some Windows voices
 
 ### Features
 - Added spell timer support for PVP skills
 
 ### UI Changes
 - Added translations for Ukrainian
+- Changed Interface > Decimal Accuracy setting to slider for UI consistency
 
 ### Code Changes
 - N/A
