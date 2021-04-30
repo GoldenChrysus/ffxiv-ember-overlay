@@ -2,7 +2,7 @@
 
 ## 0.28.0-alpha
 
-**Released: [in development]**
+**Released: [in staging]**
 
 ### Bug Fixes
 - Resolved issue where TTS alerts would include punctuation in some Windows voices
