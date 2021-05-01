@@ -245,6 +245,7 @@ class SpellGrid extends EmberComponent {
 					border={this.props.settings.designer[type].border}
 					indicator={this.props.settings.designer[type].indicator}
 					bottom_left={this.props.settings.designer[type].cooldown_bottom_left}
+					show_hover_names={this.props.settings.designer.general.show_hover_names}
 				/>
 			);
 		}

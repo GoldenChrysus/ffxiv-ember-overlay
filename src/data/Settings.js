@@ -202,6 +202,9 @@ const default_settings = {
 				warning              : true,
 				indicator            : "ticking",
 				cooldown_bottom_left : false
+			},
+			general : {
+				show_hover_names : false
 			}
 		},
 		ui                   : {

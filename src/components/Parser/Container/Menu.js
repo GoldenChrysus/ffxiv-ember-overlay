@@ -31,7 +31,7 @@ class Menu extends React.Component {
 			return;
 		}
 
-		let text  = (this.props.ui_builder) ? "Save UI" : "Edit UI";
+		let text  = (this.props.ui_builder) ? LocalizationService.getMisc("save_ui") : LocalizationService.getMisc("edit_ui");
 		let items = [
 			<MenuItem key="menu-spell-ui-builder" onClick={this.changeUIBuilder.bind(this)}>
 				{text}

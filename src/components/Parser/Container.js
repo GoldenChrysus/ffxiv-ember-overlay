@@ -20,6 +20,7 @@ import SpellGrid from "./SpellGrid";
 
 import SpellService from "../../services/SpellService";
 import TTSService from "../../services/TTSService";
+import LocalizationService from "../../services/LocalizationService";
 
 class Container extends EmberComponent {
 	constructor(props) {
@@ -256,7 +257,7 @@ class Container extends EmberComponent {
 									} else {
 										content =
 											<div id="lock-warning">
-												<span>Please lock the overlay in OverlayPlugin.</span>
+												<span>{LocalizationService.getMisc("please_lock")}</span>
 											</div>;
 
 										break;

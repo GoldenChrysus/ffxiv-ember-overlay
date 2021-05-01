@@ -730,6 +730,14 @@ const SettingsSchema = {
 								options  : () => LocalizationService.getSpellDesignerIndicatorOptions()
 							}
 						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.designer.general.show_hover_names",
+								type     : "checkbox"
+							}
+						]
 					}
 				]
 			},

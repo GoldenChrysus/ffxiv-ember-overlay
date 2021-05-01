@@ -9,12 +9,15 @@
 - Resolved issue where "Invert Vertical" setting did not align timers to bottom of UI Builder sections
 - Resolved issue where TTS alerts would include punctuation in some Windows voices
 - Resolved issue where disable UI Builder while in "Edit UI" did not remove the UI Builder grid
+- Resolved issue where Dualcast would not be included in permanent timers for Red Mage
 
 ### Features
+- Added setting "Show Names When Hovering Over Timer" in Spell Designer > General to enable timer name tooltips
 - Added spell timer support for PVP skills
 
 ### UI Changes
 - Added translations for Ukrainian
+- Updated translations for German
 - Changed Interface > Decimal Accuracy setting to slider for UI consistency
 
 ### Code Changes

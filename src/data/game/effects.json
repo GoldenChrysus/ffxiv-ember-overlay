@@ -9803,7 +9803,9 @@
 	},
 	"1249" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dualcast",
@@ -10807,7 +10809,9 @@
 	},
 	"1378" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dualcast",
@@ -10867,7 +10871,9 @@
 	},
 	"1393" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dualcast",
@@ -13922,7 +13928,9 @@
 	},
 	"1798" : {
 		"dot" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dualcast",

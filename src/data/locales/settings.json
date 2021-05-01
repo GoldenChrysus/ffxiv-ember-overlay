@@ -393,7 +393,7 @@
 					"pt" : "Efeitos/Buffs",
 					"cn" : "效果/Buff",
 					"jp" : "効果/バフ",
-					"de" : "Effekte/Buffs",
+					"de" : "Effekte/Verstärkungen",
 					"es" : "Efectos/Buffs",
 					"fr" : "Effets/Buffs",
 					"kr" : "이펙트/버프"
@@ -426,7 +426,7 @@
 				"pt" : "Party Temporizadores das Magias",
 				"cn" : "Party 冷却监控",
 				"jp" : "Party スペルタイマー",
-				"de" : "Party Zauber Timer",
+				"de" : "Gruppenzauber-Timer",
 				"es" : "Party Spell Timers",
 				"fr" : "Party Spell Timers",
 				"kr" : "파티 스펠 타이머"
@@ -480,7 +480,7 @@
 				"pt" : "Spell Designer",
 				"cn" : "Spell Designer",
 				"jp" : "Spell Designer",
-				"de" : "Spell Designer",
+				"de" : "Zaubergestaltung",
 				"es" : "Spell Designer",
 				"fr" : "Spell Designer",
 				"kr" : "Spell Designer"
@@ -515,6 +515,16 @@
 					"es" : "DOT's",
 					"fr" : "DOT's",
 					"kr" : "도트기"
+				},
+				{
+					"en" : "General",
+					"pt" : "Geral",
+					"cn" : "通用",
+					"jp" : "一般",
+					"de" : "Allgemein",
+					"es" : "General",
+					"fr" : "Général",
+					"kr" : "일반 설정"
 				}
 			]
 		},
@@ -524,7 +534,7 @@
 				"pt" : "UI Builder",
 				"cn" : "UI Builder",
 				"jp" : "UI Builder",
-				"de" : "UI Builder",
+				"de" : "UI-Baukasten",
 				"es" : "UI Builder",
 				"fr" : "UI Builder",
 				"kr" : "UI 빌더"
@@ -545,7 +555,7 @@
 					"pt" : "UI Sections",
 					"cn" : "UI Sections",
 					"jp" : "UI Sections",
-					"de" : "UI Sections",
+					"de" : "UI-Bereiche",
 					"es" : "UI Sections",
 					"fr" : "UI Sections",
 					"kr" : "UI 섹션"
@@ -658,7 +668,7 @@
 			"pt" : "Hide Top Bar",
 			"cn" : "隐藏顶栏",
 			"jp" : "Hide Top Bar",
-			"de" : "Hide Top Bar",
+			"de" : "Obere Leiste ausblenden",
 			"es" : "Hide Top Bar",
 			"fr" : "Hide Top Bar",
 			"kr" : "상위 바 가리기"
@@ -942,7 +952,7 @@
 			"pt" : "DOT's to Track",
 			"cn" : "监控的DOT",
 			"jp" : "DOT's to Track",
-			"de" : "DOT's to Track",
+			"de" : "Zu überwachende DOTs",
 			"es" : "DOT's to Track",
 			"fr" : "DOT's to Track",
 			"kr" : "확인할 도트기",
@@ -986,7 +996,7 @@
 			"pt" : "Text to Speech Trigger",
 			"cn" : "Text to Speech Trigger",
 			"jp" : "Text to Speech Trigger",
-			"de" : "Text to Speech Trigger",
+			"de" : "Text zu Sprache Trigger",
 			"es" : "Text to Speech Trigger",
 			"fr" : "Text to Speech Trigger",
 			"kr" : "TTS 트리거",
@@ -1008,7 +1018,7 @@
 			"pt" : "Invert Vertical",
 			"cn" : "上下颠倒",
 			"jp" : "Invert Vertical",
-			"de" : "Invert Vertical",
+			"de" : "Vertikal invertieren",
 			"es" : "Invert Vertical",
 			"fr" : "Invert Vertical",
 			"kr" : "세로 반전",
@@ -1019,7 +1029,7 @@
 			"pt" : "Invert Horizontal",
 			"cn" : "左右颠倒",
 			"jp" : "Invert Horizontal",
-			"de" : "Invert Horizontal",
+			"de" : "Horizontal invertieren",
 			"es" : "Invert Horizontal",
 			"fr" : "Invert Horizontal",
 			"kr" : "가로 반전",
@@ -1052,7 +1062,7 @@
 			"pt" : "Reverse Indicator for DOT's",
 			"cn" : "反向指示DOT进度条",
 			"jp" : "Reverse Indicator for DOT's",
-			"de" : "Idikator für DOT umdrehen",
+			"de" : "Indikator für DOTs umdrehen",
 			"es" : "Reverse Indicator for DOT's",
 			"fr" : "Reverse Indicator for DOT's",
 			"kr" : "도트기 역표시",
@@ -1063,7 +1073,7 @@
 			"pt" : "Display Permanently",
 			"cn" : "Display Permanently",
 			"jp" : "Display Permanently",
-			"de" : "Display Permanently",
+			"de" : "Dauerhaft anzeigen",
 			"es" : "Display Permanently",
 			"fr" : "Display Permanently",
 			"kr" : "Display Permanently",
@@ -1074,7 +1084,7 @@
 			"pt" : "Use Static Positions for Permanent Timers",
 			"cn" : "Use Static Positions for Permanent Timers",
 			"jp" : "Use Static Positions for Permanent Timers",
-			"de" : "Use Static Positions for Permanent Timers",
+			"de" : "Statische Positionen für permanente Timer benutzen",
 			"es" : "Use Static Positions for Permanent Timers",
 			"fr" : "Use Static Positions for Permanent Timers",
 			"kr" : "Use Static Positions for Permanent Timers",
@@ -1096,7 +1106,7 @@
 			"pt" : "Only Track in These Instances",
 			"cn" : "Only Track in These Instances",
 			"jp" : "Only Track in These Instances",
-			"de" : "Only Track in These Instances",
+			"de" : "Nur in folgenden Instanzen überwachen",
 			"es" : "Only Track in These Instances",
 			"fr" : "Only Track in These Instances",
 			"kr" : "Only Track in These Instances",
@@ -1107,7 +1117,7 @@
 			"pt" : "Show Warning Animation",
 			"cn" : "Show Warning Animation",
 			"jp" : "Show Warning Animation",
-			"de" : "Show Warning Animation",
+			"de" : "Warnungsanimation anzeigen",
 			"es" : "Show Warning Animation",
 			"fr" : "Show Warning Animation",
 			"kr" : "Show Warning Animation",
@@ -1118,7 +1128,7 @@
 			"pt" : "Visual Indicator",
 			"cn" : "Visual Indicator",
 			"jp" : "Visual Indicator",
-			"de" : "Visual Indicator",
+			"de" : "Visueller Indikator",
 			"es" : "Visual Indicator",
 			"fr" : "Visual Indicator",
 			"kr" : "Visual Indicator",
@@ -1129,7 +1139,7 @@
 			"pt" : "Cooldowns in Bottom Left (Icons Only)",
 			"cn" : "Cooldowns in Bottom Left (Icons Only)",
 			"jp" : "Cooldowns in Bottom Left (Icons Only)",
-			"de" : "Cooldowns in Bottom Left (Icons Only)",
+			"de" : "Abklingzeit unten links (nur Icons)",
 			"es" : "Cooldowns in Bottom Left (Icons Only)",
 			"fr" : "Cooldowns in Bottom Left (Icons Only)",
 			"kr" : "Cooldowns in Bottom Left (Icons Only)",
@@ -1140,18 +1150,29 @@
 			"pt" : "Show Glowing Border",
 			"cn" : "Show Glowing Border",
 			"jp" : "Show Glowing Border",
-			"de" : "Show Glowing Border",
+			"de" : "Leuchtenden Rahmen anzeigen",
 			"es" : "Show Glowing Border",
 			"fr" : "Show Glowing Border",
 			"kr" : "Show Glowing Border",
 			"ua" : "Показувати мигаючі грані"
+		},
+		"spells_mode.designer.general.show_hover_names" : {
+			"en" : "Show Name When Hovering Over Timer",
+			"pt" : "Show Name When Hovering Over Timer",
+			"cn" : "Show Name When Hovering Over Timer",
+			"jp" : "Show Name When Hovering Over Timer",
+			"de" : "Show Name When Hovering Over Timer",
+			"es" : "Show Name When Hovering Over Timer",
+			"fr" : "Show Name When Hovering Over Timer",
+			"kr" : "Show Name When Hovering Over Timer",
+			"ua" : "Show Name When Hovering Over Timer"
 		},
 		"spells_mode.ui.use" : {
 			"en" : "Use UI Builder",
 			"pt" : "Use UI Builder",
 			"cn" : "Use UI Builder",
 			"jp" : "Use UI Builder",
-			"de" : "Use UI Builder",
+			"de" : "UI-Baukasten verwenden",
 			"es" : "Use UI Builder",
 			"fr" : "Use UI Builder",
 			"kr" : "UI 빌더 사용하기",
@@ -1444,8 +1465,8 @@
 				},
 				"de" : {
 					"normal"  : "Normal",
-					"compact" : "Compact",
-					"icon"    : "Icon Only"
+					"compact" : "Kompakt",
+					"icon"    : "Nur Icons"
 				},
 				"es" : {
 					"normal"  : "Normal",
@@ -1490,9 +1511,9 @@
 					"none"     : "None"
 				},
 				"de" : {
-					"ticking"  : "Ticking",
-					"darkened" : "Darkened/Gray",
-					"none"     : "None"
+					"ticking"  : "Ticken",
+					"darkened" : "Verdunkelt/Grau",
+					"none"     : "Keine"
 				},
 				"es" : {
 					"ticking"  : "Ticking",
@@ -1533,8 +1554,8 @@
 					"warning" : "When timer reaches warning threshold"
 				},
 				"de" : {
-					"zero"    : "When timer reaches 0",
-					"warning" : "When timer reaches warning threshold"
+					"zero"    : "Wenn Timer auf 0",
+					"warning" : "Wenn Timer Warnungsbereich erreicht"
 				},
 				"es" : {
 					"zero"    : "When timer reaches 0",
@@ -1868,7 +1889,7 @@
 			"pt" : "Default",
 			"cn" : "Default",
 			"jp" : "Default",
-			"de" : "Default",
+			"de" : "Standard",
 			"es" : "Default",
 			"fr" : "Default",
 			"kr" : "기본",
@@ -1879,7 +1900,7 @@
 			"pt" : "Track",
 			"cn" : "Track",
 			"jp" : "Track",
-			"de" : "Track",
+			"de" : "Überwachen",
 			"es" : "Track",
 			"fr" : "Track",
 			"kr" : "트랙",
@@ -1890,7 +1911,7 @@
 			"pt" : "Edit UI",
 			"cn" : "Edit UI",
 			"jp" : "Edit UI",
-			"de" : "Edit UI",
+			"de" : "UI bearbeiten",
 			"es" : "Edit UI",
 			"fr" : "Edit UI",
 			"kr" : "UI 수정",
@@ -1901,18 +1922,29 @@
 			"pt" : "Save UI",
 			"cn" : "Save UI",
 			"jp" : "Save UI",
-			"de" : "Save UI",
+			"de" : "UI speichern",
 			"es" : "Save UI",
 			"fr" : "Save UI",
 			"kr" : "UI 저장",
 			"ua" : "Зберегти UI"
+		},
+		"please_lock" : {
+			"en" : "Please lock the overlay in OverlayPlugin.",
+			"pt" : "Please lock the overlay in OverlayPlugin.",
+			"cn" : "Please lock the overlay in OverlayPlugin.",
+			"jp" : "Please lock the overlay in OverlayPlugin.",
+			"de" : "Bitte das Overlay unter OverlayPlugin sperren.",
+			"es" : "Please lock the overlay in OverlayPlugin.",
+			"fr" : "Please lock the overlay in OverlayPlugin.",
+			"kr" : "Please lock the overlay in OverlayPlugin.",
+			"ua" : "Please lock the overlay in OverlayPlugin."
 		},
 		"spells_ui_builder_info" : {
 			"en" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"pt" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"cn" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"jp" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
-			"de" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
+			"de" : "Der UI-Baukasten erlaubt dir, deine eigenen Zauber-Timer Bereiche (unten) zu erstellen. Zum Beispiel kannst du einen Timer Bereich für deine eigenen Abklingzeiten und einen weiteren für die deiner Verteidiger und Heiler. In der Tabelle unten kannst du Bereiche erstellen, indem du auswählst, was du in jeweiligen Bereich überwachen willst. Stelle sicher, dass \"{{spells_mode.ui.use}}\" aktiviert ist, sobald du fertig bist, und klicke auf \"Speichern\". Ändere die Größe deines Overlays so, dass es das ganze FF XIV Spiel abdeckt. Falls du die Größe nicht ändern kannst oder dein Overlay nicht findest, gehe auf OverlayPlugin und entsperre dein Overlay bzw. aktiviere den weißen Hintergrund, falls es bereits entsperrt ist. Klicke mit deinem Rechtsklick auf das Overlay und wähle \"{{edit_ui}}\". Sobald du im \"{{edit_ui}}\"-Modus bist, stelle sicher, dass du das Overlay wieder sperrst bzw. den weißen Hintergrund deakivierst. Nun kannst du deine erstellten Zauber-Timer Bereiche verschieben und deren Größe ändern. Jeder Bereich ist beschriftet, damit du weißt, was er enthält. Bist du fertig, Rechtsklicke erneut und wähle \"{{save_ui}}\".",
 			"es" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"fr" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"kr" : "UI 빌더는 스펠 타이머를 본인 입맛에 맞게 만들 수 있습니다.(아래) 본인의 쿨타임, 탱커의 쿨타임들 혹은 힐러 쿨타임또한 따로 표시시켜주는 섹션을 만드는것이 예로 들 수 있습니다. 아래의 테이블에 섹션을 만든 후 어떤것을 표기할지 따로 설정해주시면 되며 완성후 반드시 \"{{spells_mode.ui.use}}\"이 활성화된것을 확인한 후 저장하시면 됩니다. 오버레이를 파판 화면을 모두 덮게끔 사이즈를 조절하세요. 만약 사이즈 조절이 불가능하다면 오버레이 플러그인에서 잠금해제가 됬는지 확인하시거나 이미 잠금해제가 되있는 상태라면 하얀 바탕을 활성화 시키신 후 오버레이에서 우클릭후 \"{{edit_ui}}\" 선택을 하시면 됩니다. \"{{edit_ui}}\" 모드 진입하신 이후 반드시 오버레이를 재갱신하시거나 하얀 바탕을 비활성화 시키세요. 이 후 스펠 타이머 섹션을 따로 사이즈 조절하거나 화면 내 이동시키실 수 있습니다. 각 섹션마다 이름이 표시되어있으므로 구별이 가능하므로 세팅을 마치셨다면 우클릭 후 \"{{save_ui}}\"를 선택하여 저장하시면 마무리됩니다.",
