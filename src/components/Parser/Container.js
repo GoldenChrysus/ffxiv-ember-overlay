@@ -220,7 +220,8 @@ class Container extends EmberComponent {
 						break;
 
 					default:
-						let settings = this.props.spells_settings;
+						let settings        = this.props.spells_settings;
+						let invert_vertical = settings.invert_vertical;
 
 						if (this.props.spells_settings.ui.use) {
 							content = [];
@@ -262,9 +263,14 @@ class Container extends EmberComponent {
 									}
 								} else {
 									let spells = SpellService.filterSpells(section, section_settings, true);
+									let css    = {position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"};
+
+									if (invert_vertical) {
+										css.height = layout.height + "px";
+									}
 
 									content.push(
-										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={spells} settings={section_settings} style={{position: "absolute", top: layout.y + "px", left: layout.x + "px", width: layout.width + "px", maxHeight: layout.height + "px"}}/>
+										<SpellGrid key={"spell-grid-" + uuid} from_builder={true} section={section} encounter={encounter} spells={spells} settings={section_settings} style={css}/>
 									);
 								}
 							}
@@ -301,7 +307,7 @@ class Container extends EmberComponent {
 
 		let container_classes = [];
 
-		if (this.props.ui_builder) {
+		if (this.props.ui_builder && this.props.spells_settings.ui.use) {
 			container_classes.push("ui-builder-active");
 		}
 
