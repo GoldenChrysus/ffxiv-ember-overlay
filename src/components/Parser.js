@@ -71,6 +71,7 @@ class Parser extends React.Component {
 		let zoom               = this.props.zoom / 100;
 		let context_zoom       = 1 / zoom;
 		let display            = (this.state.visible) ? "block" : "none";
+		let max_width          = (this.props.footer_dps) ? "325" : "0";
 		let setting_style      = `
 			body {
 				zoom: ${zoom};
@@ -91,6 +92,15 @@ class Parser extends React.Component {
 
 			.resizeHandle {
 				background-image: url("img/handle.png");
+			}
+
+			@media screen and (max-width: ${max_width}px) {
+				#container #inner #footer #role-links,
+				#container #inner #footer #footer-actions {
+					width: 100%;
+					float: none;
+					text-align: center;
+				}
 			}
 		`;
 
@@ -144,6 +154,7 @@ const mapStateToProps = (state) => {
 		auto_hide                : state.settings.interface.auto_hide,
 		auto_hide_delay          : state.settings.interface.auto_hide_delay,
 		last_activity            : (state.settings.interface.auto_hide) ? state.last_activity : 0,
+		footer_dps               : state.settings.interface.footer_dps,
 		mode                     : state.internal.mode,
 		invert_spells_vertical   : state.settings.spells_mode.invert_vertical,
 		invert_spells_horizontal : state.settings.spells_mode.invert_horizontal,

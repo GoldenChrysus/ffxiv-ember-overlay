@@ -1725,10 +1725,13 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 }
 
 @media screen and (max-width: 350px) {
-	#container #inner #footer #role-links,
-	#container #inner #footer #footer-actions {
-		width: 100%;
-		float: none;
-		text-align: center;
+	#container #inner #footer {
+		padding: 0 4px 0 4px;
+	}
+
+	#container #inner #footer #role-links .role-link,
+	#container #inner #footer #role-links .info-item,
+	#container #inner #footer #navigation-links .navigation-link {
+		margin-right: 2px;
 	}
 }

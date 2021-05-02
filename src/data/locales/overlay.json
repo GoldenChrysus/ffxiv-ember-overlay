@@ -22,13 +22,13 @@
 		"ua" : "Розгорнути"
 	},
 	"split_encounter"     : {
-		"en" : "Split Encounter",
-		"pt" : "Dividir Encontro",
+		"en" : "Split encounter",
+		"pt" : "Dividir encontro",
 		"cn" : "拆分战斗记录",
 		"jp" : "戦闘の区切り",
-		"de" : "Kampf Aufteilen",
-		"es" : "Dividir Encuentro",
-		"fr" : "Sciendé le Combat",
+		"de" : "Kampf aufteilen",
+		"es" : "Dividir encuentro",
+		"fr" : "Sciendé le combat",
 		"kr" : "전투 휴식 구간 추가",
 		"ua" : "Розділення Бою"
 	},
@@ -66,14 +66,14 @@
 		"ua" : "Очистити Дані Бою"
 	},
 	"encounter_history" : {
-		"en" : "Encounter History",
-		"pt" : "Encounter History",
-		"cn" : "Encounter History",
-		"jp" : "Encounter History",
-		"de" : "Encounter History",
-		"es" : "Encounter History",
-		"fr" : "Encounter History",
-		"kr" : "Encounter History"
+		"en" : "Encounter history",
+		"pt" : "Encounter history",
+		"cn" : "Encounter history",
+		"jp" : "Encounter history",
+		"de" : "Encounter history",
+		"es" : "Encounter history",
+		"fr" : "Encounter history",
+		"kr" : "Encounter history"
 	},
 	"discord" : {
 		"en" : "Discord",
