@@ -93,7 +93,7 @@ class VersionService {
 						resolve(this.processChangelog(data, last_user_version));
 					})
 					.catch((e) => {
-						reject();
+						reject(e);
 					});
 				return;
 			}
@@ -110,7 +110,7 @@ class VersionService {
 					resolve(this.processChangelog(data, undefined, count));
 				})
 				.catch((e) => {
-					reject();
+					reject(e);
 				});
 		});
 	}
@@ -201,7 +201,7 @@ class VersionService {
 						resolve(result);
 					})
 					.catch((e) => {
-						reject();
+						reject(e);
 					});
 				});
 		});

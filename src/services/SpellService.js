@@ -106,6 +106,10 @@ class SpellService {
 		}
 	}
 
+	resetAllSpells() {
+		this.spells = {};
+	}
+
 	resetSpell(i) {
 		delete this.spells[i];
 	}
@@ -296,7 +300,8 @@ class SpellService {
 					continue;
 				}
 
-				let name = type + "-" + LocalizationService.getSpellName(type, id, "en");
+				let english_name = LocalizationService.getSpellName(type, id, "en");
+				let name         = type + "-" + english_name;
 
 				type_position++;
 
@@ -308,7 +313,7 @@ class SpellService {
 				}
 
 				let main_type = (type === "dot") ? "effect" : type;
-				let key       = `${main_type}-${id}`;
+				let key       = (main_type === "effect") ? `${main_type}-${english_name}` : `${main_type}-${id}`;
 
 				state.internal.spells.defaulted[name] = {
 					id       : id,
@@ -321,6 +326,7 @@ class SpellService {
 					id            : +id,
 					time          : new Date("1970-01-01"),
 					duration      : 0,
+					stacks        : 0,
 					log_type      : `you-${type}`,
 					party         : false,
 					defaulted     : true,
@@ -343,6 +349,7 @@ class SpellService {
 			recast        : SkillData.oGCDSkills[id].recast,
 			remaining     : 0,
 			cooldown      : 0,
+			stacks        : 0,
 			dot           : SkillData.oGCDSkills[id].dot,
 			party         : false,
 			defaulted     : false,

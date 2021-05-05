@@ -230,7 +230,7 @@ class Settings {
 					resolve(result);
 				})
 				.catch((e) => {
-					reject();
+					reject(e);
 				});
 		});
 	}
@@ -248,7 +248,7 @@ class Settings {
 					resolve();
 				})
 				.catch((e) => {
-					reject();
+					reject(e);
 				});
 		});
 	}
@@ -354,7 +354,7 @@ class Settings {
 
 				if (data["$isNull"]) {
 					service.plugin_service.resetCallback();
-					reject();
+					reject("OverlayPlugin settings are null.");
 					return;
 				}
 
@@ -366,7 +366,7 @@ class Settings {
 
 				if (!data.data) {
 					service.plugin_service.resetCallback();
-					reject();
+					reject("OverlayPlugin settings have no restorable data.");
 					return;
 				}
 
@@ -376,9 +376,9 @@ class Settings {
 						service.plugin_service.resetCallback();
 						resolve();
 					})
-					.catch(() => {
+					.catch((e) => {
 						service.plugin_service.resetCallback();
-						reject();
+						reject(e);
 					});
 			};
 

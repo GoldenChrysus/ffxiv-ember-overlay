@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.28.1-alpha
+
+**Released: 2021-05-05**
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Bug Fixes
+- Resolved issue where some effect timers appeared too many times
+- Resolved issue where some stack-based effects would reset to the maximum duration when a stack was lost
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.28.0-alpha
 
 **Released: 2021-05-02**

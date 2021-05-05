@@ -221,7 +221,7 @@ function rootReducer(state, action) {
 								log_type : "you-skill",
 								party    : false,
 							},
-							"effect-1298" : {
+							"effect-Jinpu" : {
 								type     : "effect",
 								subtype  : "effect",
 								id       : 1298,
@@ -230,7 +230,7 @@ function rootReducer(state, action) {
 								log_type : "you-effect",
 								party    : false,
 							},
-							"effect-1299" : {
+							"effect-Shifu" : {
 								type     : "effect",
 								subtype  : "effect",
 								id       : 1299,
@@ -239,7 +239,7 @@ function rootReducer(state, action) {
 								log_type : "you-effect",
 								party    : false,
 							},
-							"effect-1228" : {
+							"effect-Higanbana" : {
 								type     : "effect",
 								subtype  : "dot",
 								id       : 1228,
@@ -256,7 +256,7 @@ function rootReducer(state, action) {
 								log_type : "heal-skill",
 								party    : true,
 							},
-							"effect-1218-party" : {
+							"effect-Divine Benison-party" : {
 								type     : "effect",
 								subtype  : "effect",
 								id       : 1218,
@@ -265,7 +265,7 @@ function rootReducer(state, action) {
 								log_type : "heal-effect",
 								party    : true,
 							},
-							"effect-1871-party" : {
+							"effect-Dia-party" : {
 								type     : "effect",
 								subtype  : "dot",
 								id       : 1871,
@@ -282,7 +282,7 @@ function rootReducer(state, action) {
 								log_type : "dps-skill",
 								party    : true,
 							},
-							"effect-1414-party" : {
+							"effect-Battle Litany-party" : {
 								type     : "effect",
 								subtype  : "effect",
 								id       : 1414,
@@ -291,7 +291,7 @@ function rootReducer(state, action) {
 								log_type : "dps-effect",
 								party    : true,
 							},
-							"effect-118-party" : {
+							"effect-Chaos Thrust-party" : {
 								type     : "effect",
 								subtype  : "dot",
 								id       : 118,
@@ -308,7 +308,7 @@ function rootReducer(state, action) {
 								log_type : "tank-skill",
 								party    : true,
 							},
-							"effect-89-party" : {
+							"effect-Vengeance-party" : {
 								type     : "effect",
 								subtype  : "effect",
 								id       : 89,
@@ -317,7 +317,7 @@ function rootReducer(state, action) {
 								log_type : "tank-effect",
 								party    : true,
 							},
-							"effect-1837-party" : {
+							"effect-Sonic Break-party" : {
 								type     : "effect",
 								subtype  : "dot",
 								id       : 1837,
@@ -573,11 +573,10 @@ function createNewState(state, full_key, action) {
 		}
 
 		if (reset || (full_key === "internal.character_job" && state.internal.character_job !== new_state.internal.character_job)) {
-			for (let i in new_state.internal.spells.in_use) {
-				SpellService.resetSpell(i);
-			}
+			SpellService.resetAllSpells();
 
-			new_state.internal.spells.in_use = {};
+			new_state.internal.spells.defaulted = {};
+			new_state.internal.spells.in_use    = {};
 		}
 
 		SpellService.updateValidNames(new_state);

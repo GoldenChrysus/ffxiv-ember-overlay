@@ -325,6 +325,7 @@ class GameDataProcessor  {
 				log_data.char_name_index  = log_data.char_id_index + 1;
 				log_data.spell_name_index = 3;
 				log_data.duration_index   = 4;
+				log_data.stacks           = +data[9];
 
 				break;
 
@@ -400,7 +401,7 @@ class GameDataProcessor  {
 			}
 		}
 
-		log_data.in_use_key = `${log_data.type}-${log_data.spell_id}`;
+		log_data.in_use_key = (log_data.type === "effect") ? `${log_data.type}-${log_data.english_name}` : `${log_data.type}-${log_data.spell_id}`;
 
 		if (!log_data.party && state_data.defaulted[defaulted_key]) {
 			let defaulted = state_data.defaulted[defaulted_key];
@@ -428,8 +429,10 @@ class GameDataProcessor  {
 		}
 
 		for (let suffix of suffixes) {
+			log_data.current_in_use_key = log_data.in_use_key;
+
 			if (suffix) {
-				log_data.in_use_key += `-${suffix}`;
+				log_data.current_in_use_key += `-${suffix}`;
 
 				if (suffix !== "party") {
 					log_data.char_type = suffix;
@@ -437,15 +440,20 @@ class GameDataProcessor  {
 			}
 
 			if (event_code === 30) {
-				delete state_data.in_use[log_data.in_use_key];
+				delete state_data.in_use[log_data.current_in_use_key];
 			} else {
-				state_data.in_use[log_data.in_use_key] = {
+				if (state_data.in_use[log_data.current_in_use_key] && +state_data.in_use[log_data.current_in_use_key].stacks > log_data.stacks) {
+					return false;
+				}
+
+				state_data.in_use[log_data.current_in_use_key] = {
 					type          : log_data.type,
 					subtype       : log_data.subtype,
 					id            : log_data.spell_id,
 					time          : date,
 					name          : data[log_data.spell_name_index],
 					duration      : (log_data.duration_index) ? +data[log_data.duration_index] : 0,
+					stacks        : log_data.stacks,
 					log_type      : log_data.char_type + "-" + log_data.subtype,
 					party         : log_data.party,
 					defaulted     : log_data.defaulted,
@@ -474,9 +482,12 @@ class GameDataProcessor  {
 		};
 
 		if (state.settings.spells_mode.ui.use) {
-			types.skill.you  = false;
-			types.effect.you = false;
-			types.dot.you    = false;
+			types.skill.you    = false;
+			types.effect.you   = false;
+			types.dot.you      = false;
+			types.skill.party  = false;
+			types.effect.party = false;
+			types.dot.party    = false;
 
 			for (let uuid in state.settings.spells_mode.ui.sections) {
 				let section = state.settings.spells_mode.ui.sections[uuid];
