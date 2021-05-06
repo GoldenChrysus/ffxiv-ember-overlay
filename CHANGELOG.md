@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.28.2-alpha
+
+**Released: 2021-05-06**
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Bug Fixes
+- Resolved issue where some jobless combatants would appear in the overlay when collapsed
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.28.1-alpha
 
 **Released: 2021-05-05**

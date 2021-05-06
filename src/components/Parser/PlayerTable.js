@@ -73,6 +73,8 @@ class PlayerTable extends React.Component {
 				let matches = name.match(/[^()]+\(([^()]+)\)/i);
 
 				if (!matches || !matches.length || !matches[1]) {
+					player._skip = true;
+
 					continue;
 				}
 
