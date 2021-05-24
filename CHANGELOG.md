@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.28.3-alpha
+
+**Released: 2021-05-24**
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Bug Fixes
+- Resolved issue where a jobless combatant (i.e. Limit Breaks) would sometimes crash the overlay
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.28.2-alpha
 
 **Released: 2021-05-06**
