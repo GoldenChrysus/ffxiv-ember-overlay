@@ -11,7 +11,7 @@ def getPage(page_num):
 
 	return res.json()
 
-def getZone(id):
+def getItem(id):
 	url = "https://xivapi.com/Map/" + str(id)
 	res = requests.get(url = url)
 
@@ -32,7 +32,7 @@ while (True):
 	for record in page_data["Results"]:
 		id = record["ID"]
 
-		record_data = getZone(id)
+		record_data = getItem(id)
 
 		records.append(record_data["TerritoryType"]["ID"])
 

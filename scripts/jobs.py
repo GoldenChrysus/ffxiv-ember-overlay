@@ -11,19 +11,19 @@ def getPage(page_num):
 
 	return res.json()
 
-def getJob(id):
+def getItem(id):
 	url = "https://xivapi.com/ClassJob/" + str(id)
 	res = requests.get(url = url)
 
 	return res.json()
 
-def saveJobs(jobs):
+def saveData(records):
 	with open("../src/data/game/jobs.json", "w", encoding = "utf8") as file:
-		json.dump(jobs, file, indent = "\t", separators = (",", " : "), ensure_ascii = False)
+		json.dump(records, file, indent = "\t", separators = (",", " : "), ensure_ascii = False)
 		file.close()
 
-page = 1
-jobs = {}
+page    = 1
+records = {}
 
 while (True):
 	page_data = getPage(page)
@@ -32,12 +32,12 @@ while (True):
 	for job in page_data["Results"]:
 		id = job["ID"]
 
-		job_data = getJob(id)
+		record_data = getItem(id)
 
-		jobs[id] = {
-			"abbreviation" : job_data["Abbreviation_en"]
+		records[id] = {
+			"abbreviation" : record_data["Abbreviation_en"]
 		}
 
 	if (page == None or page <= page_data["Pagination"]["Page"]):
-		saveJobs(jobs)
+		saveData(records)
 		break

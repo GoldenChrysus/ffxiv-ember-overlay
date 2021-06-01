@@ -273,7 +273,7 @@ class GameDataProcessor  {
 		}
 	}
 
-	parseSpellLogLine(data, state) {
+	parseSpellLogLine(data, state, processed_state) {
 		data = data.line;
 
 		let date       = new Date();
@@ -379,13 +379,17 @@ class GameDataProcessor  {
 			}
 		} else {
 			if (state.settings.spells_mode[log_data.lookup_key].indexOf(log_data.spell_id) === -1) {
+				if (this.isValidIndirection(log_data)) {
+					return this.processIndirection(log_data, data, state, false);
+				}
+
 				return false;
 			}
 
 			log_data.english_name = LocalizationService.getSpellName(log_data.subtype, log_data.spell_id, "en");
 		}
 
-		let state_data    = clone(state.internal.spells);
+		let state_data    = (processed_state) ? state : clone(state.internal.spells);
 		let defaulted_key = `${log_data.subtype}-${log_data.english_name}`;
 		let suffixes      = [];
 
@@ -462,7 +466,24 @@ class GameDataProcessor  {
 			}
 		}
 
+		if (this.isValidIndirection(log_data)) {
+			return this.processIndirection(log_data, data, state_data, true);
+		}
+
 		return state_data;
+	}
+
+	isValidIndirection(log_data) {
+		return (log_data.type === "skill" && SkillData.SkillIndirections[log_data.spell_id]);
+	}
+
+	processIndirection(log_data, data, state_data, processed_state) {
+		let indirect_id = SkillData.SkillIndirections[log_data.spell_id];
+
+		data[log_data.spell_index]      = indirect_id;
+		data[log_data.spell_name_index] = null;
+
+		return this.parseSpellLogLine(data, state_data, processed_state);
 	}
 
 	getAllowedSpellTypes(state) {
