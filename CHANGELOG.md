@@ -2,7 +2,7 @@
 
 ## 0.29.0-alpha
 
-**Released: [in development]**
+**Released: [in staging]**
 
 ### Features
 - Added spell timer support for actions that change into other actions (e.g. a Samurai can now track Tsubame-gaeshi instead of Kaeshi: Setsugekka)
@@ -11,7 +11,7 @@
 - N/A
 
 ### Bug Fixes
-- N/A
+- Resolved issue where health-based TTS alerts would never trigger
 
 ### Code Changes
 - N/A
@@ -30,7 +30,7 @@
 - N/A
 
 ### Bug Fixes
-- Resolved issue where a jobless combatant (i.e. Limit Breaks) would sometimes crash the overlay
+- Resolved issue where a jobless combatant (e.g. Limit Breaks) would sometimes crash the overlay
 
 ### Code Changes
 - N/A
