@@ -2,7 +2,7 @@
 
 ## 0.29.0-alpha
 
-**Released: [in staging]**
+**Released: 2021-06-13**
 
 ### Features
 - Added spell timer support for actions that change into other actions (e.g. a Samurai can now track Tsubame-gaeshi instead of Kaeshi: Setsugekka)
