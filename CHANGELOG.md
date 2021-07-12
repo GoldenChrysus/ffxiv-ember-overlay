@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.29.1-alpha
+
+**Released: 2021-07-12**
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Bug Fixes
+- N/A
+
+### Code Changes
+- Increased verbosity of Promise errors
+
+### Miscellaneous
+- N/A
+
 ## 0.29.0-alpha
 
 **Released: 2021-06-13**

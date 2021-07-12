@@ -40,6 +40,10 @@ class MigrationService {
 									.then(() => {
 										resolve();
 									})
+							})
+							.catch((e) => {
+								console.error(e);
+								reject(e);
 							});
 					});
 				});
@@ -61,6 +65,10 @@ class MigrationService {
 				.then(() => {
 					this.history.push(migration_name);
 					resolve();
+				})
+				.catch((e) => {
+					console.error(e);
+					reject(e);
 				});
 		});
 	}

@@ -230,6 +230,7 @@ class Settings {
 					resolve(result);
 				})
 				.catch((e) => {
+					console.error(e);
 					reject(e);
 				});
 		});
@@ -248,6 +249,7 @@ class Settings {
 					resolve();
 				})
 				.catch((e) => {
+					console.error(e);
 					reject(e);
 				});
 		});
@@ -295,6 +297,10 @@ class Settings {
 						})
 					);
 					resolve();
+				})
+				.catch((e) => {
+					console.error(e);
+					reject(e);
 				});
 		});
 	}
@@ -399,6 +405,10 @@ class Settings {
 				.restoreFromOverlayPlugin()
 				.then(() => {
 					resolve();
+				})
+				.catch((e) => {
+					console.error(e);
+					reject(e);
 				});
 		});
 	}
