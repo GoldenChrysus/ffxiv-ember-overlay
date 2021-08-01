@@ -230,7 +230,7 @@ class Settings {
 					resolve(result);
 				})
 				.catch((e) => {
-					console.error(e);
+					console.error(JSON.stringify(e));
 					reject(e);
 				});
 		});
@@ -249,7 +249,7 @@ class Settings {
 					resolve();
 				})
 				.catch((e) => {
-					console.error(e);
+					console.error(JSON.stringify(e));
 					reject(e);
 				});
 		});
@@ -299,7 +299,7 @@ class Settings {
 					resolve();
 				})
 				.catch((e) => {
-					console.error(e);
+					console.error(JSON.stringify(e));
 					reject(e);
 				});
 		});
@@ -407,7 +407,7 @@ class Settings {
 					resolve();
 				})
 				.catch((e) => {
-					console.error(e);
+					console.error(JSON.stringify(e));
 					reject(e);
 				});
 		});

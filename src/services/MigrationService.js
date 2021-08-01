@@ -42,7 +42,7 @@ class MigrationService {
 									})
 							})
 							.catch((e) => {
-								console.error(e);
+								console.error(JSON.stringify(e));
 								reject(e);
 							});
 					});
@@ -67,7 +67,7 @@ class MigrationService {
 					resolve();
 				})
 				.catch((e) => {
-					console.error(e);
+					console.error(JSON.stringify(e));
 					reject(e);
 				});
 		});

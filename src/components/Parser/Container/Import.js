@@ -96,7 +96,7 @@ class Import extends React.Component {
 				setTimeout(this.enableButtons.bind(this, $button, initial_text), 4000);
 			})
 			.catch((e) => {
-				console.error(e);
+				console.error(JSON.stringify(e));
 				$button.text("Import has failed...");
 				setTimeout(this.enableButtons.bind(this, $button, initial_text), 4000);
 			});
