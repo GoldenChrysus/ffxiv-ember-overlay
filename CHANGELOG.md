@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.30.0-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- Resolve issue where visual timer does not tick down for some buffs
+
+### Features
+- Add swing metric
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.29.1-alpha
 
 **Released: 2021-07-12**
