@@ -390,7 +390,7 @@ class GameDataProcessor  {
 		}
 
 		let state_data    = processed_state || clone(state.internal.spells);
-		let defaulted_key = `${log_data.subtype}-${log_data.english_name}`;
+		let defaulted_key = `${log_data.subtype}-${log_data.english_name}`.replace(" ", "-");
 		let suffixes      = [];
 
 		if (!log_data.party) {
@@ -405,7 +405,9 @@ class GameDataProcessor  {
 			}
 		}
 
-		log_data.in_use_key = (log_data.type === "effect") ? `${log_data.type}-${log_data.english_name}` : `${log_data.type}-${log_data.spell_id}`;
+		log_data.in_use_key = (log_data.type === "effect")
+			? `${log_data.type}-${log_data.english_name}`.replace(" ", "-")
+			: `${log_data.type}-${log_data.spell_id}`;
 
 		if (!log_data.party && state_data.defaulted[defaulted_key]) {
 			let defaulted = state_data.defaulted[defaulted_key];

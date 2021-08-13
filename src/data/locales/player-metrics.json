@@ -1058,5 +1058,43 @@
 			"short" : "SPS",
 			"long"  : "Щит За Секунду"
 		}
+	},
+	"swings"  : {
+		"en" : {
+			"short" : "Swing",
+			"long"  : "Swings"
+		},
+		"pt" : {
+			"short" : "Swing",
+			"long"  : "Swings"
+		},
+		"cn" : {
+			"short" : "Swing",
+			"long"  : "Swings"
+		},
+		"jp" : {
+			"short" : "Swing",
+			"long"  : "Swings"
+		},
+		"de" : {
+			"short" : "Swing",
+			"long"  : "Swings"
+		},
+		"es" : {
+			"short" : "Swing",
+			"long"  : "Swings"
+		},
+		"fr" : {
+			"short" : "Swing",
+			"long"  : "Swings"
+		},
+		"kr" : {
+			"short" : "Swing",
+			"long"  : "Swings"
+		},
+		"ua" : {
+			"short" : "Swing",
+			"long"  : "Swings"
+		}
 	}
 }

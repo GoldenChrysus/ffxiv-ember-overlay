@@ -5,16 +5,16 @@
 **Released: [in development]**
 
 ### Bug Fixes
-- Resolve issue where visual timer does not tick down for some buffs
+- Resolved issue where visual timer does not tick down for items with spaces in their name
 
 ### Features
-- Add swing metric
+- Added "Swings" metric
 
 ### UI Changes
 - ?
 
 ### Code Changes
-- ?
+- Updated error logging
 
 ### Miscellaneous
 - ?
