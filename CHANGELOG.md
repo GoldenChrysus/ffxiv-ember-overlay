@@ -2,7 +2,7 @@
 
 ## 0.30.0-alpha
 
-**Released: [in staging]**
+**Released: 2021-08-16**
 
 ### Bug Fixes
 - Resolved issue where visual timer does not tick down for items with spaces in their name when in compact or normal mode
