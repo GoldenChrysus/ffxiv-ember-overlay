@@ -42,9 +42,19 @@ class OverlayInfo extends React.Component {
 			});
 	}
 
+	componentDidMount() {
+		const at1 = document.createElement("script");
+
+		at1.type = "text/javascript";
+		at1.async = true;
+		at1.src = "js/at1.js";
+
+		this.instance.appendChild(at1);
+	}
+
 	render() {
 		return (
-			<div id="overlay-info">
+			<div id="overlay-info" ref={el => (this.instance = el)}>
 				<h3>Ember Overlay</h3>
 				{this.getInfoText()}
 
@@ -59,6 +69,8 @@ class OverlayInfo extends React.Component {
 
 				<h3>Latest Changes</h3>
 				{this.state.changelog}
+
+				<div id="at1"></div>
 			</div>
 		);
 	}
