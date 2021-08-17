@@ -43,6 +43,10 @@ class OverlayInfo extends React.Component {
 	}
 
 	componentDidMount() {
+		if (window.obsstudio) {
+			return;
+		}
+
 		const at1 = document.createElement("script");
 
 		at1.type = "text/javascript";
