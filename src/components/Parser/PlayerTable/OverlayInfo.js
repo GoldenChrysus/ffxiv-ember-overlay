@@ -43,7 +43,7 @@ class OverlayInfo extends React.Component {
 	}
 
 	componentDidMount() {
-		if (window.obsstudio) {
+		if (window.obsstudio || true) {
 			return;
 		}
 
