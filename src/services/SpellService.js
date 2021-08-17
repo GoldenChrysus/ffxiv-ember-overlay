@@ -246,6 +246,10 @@ class SpellService {
 		return (data) ? (data.indexOf(job_abbreviation) !== -1 || data.indexOf(role) !== -1) : false;
 	}
 
+	getKeyName(english_name) {
+		return english_name.replace(/[^a-zA-Z\d]/g, "");
+	}
+
 	injectDefaults(state) {
 		let job = state.internal.character_job;
 
@@ -301,7 +305,7 @@ class SpellService {
 				}
 
 				let english_name = LocalizationService.getSpellName(type, id, "en");
-				let name         = type + "-" + english_name;
+				let name         = type + "-" + this.getKeyName(english_name);
 
 				type_position++;
 

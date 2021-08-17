@@ -42,20 +42,6 @@ class OverlayInfo extends React.Component {
 			});
 	}
 
-	componentDidMount() {
-		if (window.obsstudio || true) {
-			return;
-		}
-
-		const at1 = document.createElement("script");
-
-		at1.type = "text/javascript";
-		at1.async = true;
-		at1.src = "js/at1.js";
-
-		this.instance.appendChild(at1);
-	}
-
 	render() {
 		return (
 			<div id="overlay-info" ref={el => (this.instance = el)}>

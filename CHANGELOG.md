@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.30.1-alpha
+
+**Released: 2021-08-17**
+
+### Bug Fixes
+- Resolved issue where visual timer does not tick down for items with special characters in their name
+- Resolved issue where permanent timers would not retain their static positions or permanency once invoked
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.30.0-alpha
 
 **Released: 2021-08-16**
