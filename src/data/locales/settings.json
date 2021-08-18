@@ -991,6 +991,17 @@
 			"kr" : "TTS 사용",
 			"ua" : "Читати вголос"
 		},
+		"spells_mode.tts_on_effect" : {
+			"en" : "Use Text to Speech on Buff Received",
+			"pt" : "Usar Texto em Voz (Buff Received)",
+			"cn" : "开启TTS (Buff Received)",
+			"jp" : "音声読み上げ (Buff Received)",
+			"de" : "Text zu Sprache verwenden (Buff Received)",
+			"es" : "Use Text to Speech on Buff Received",
+			"fr" : "Use Text to Speech on Buff Received",
+			"kr" : "TTS 사용 (Buff Received)",
+			"ua" : "Читати вголос (Buff Received)"
+		},
 		"spells_mode.tts_trigger" : {
 			"en" : "Text to Speech Trigger",
 			"pt" : "Text to Speech Trigger",
@@ -1111,6 +1122,17 @@
 			"fr" : "Only Track in These Instances",
 			"kr" : "Only Track in These Instances",
 			"ua" : "Відстежувати тільки в цих зонах"
+		},
+		"spells_mode.party_tts_on_skill" : {
+			"en" : "Use Text to Speech on Spell Used",
+			"pt" : "Usar Texto em Voz (Spell Used)",
+			"cn" : "开启TTS (Spell Used)",
+			"jp" : "音声読み上げ (Spell Used)",
+			"de" : "Text zu Sprache verwenden (Spell Used)",
+			"es" : "Use Text to Speech on Spell Used",
+			"fr" : "Use Text to Speech on Spell Used",
+			"kr" : "TTS 사용 (Spell Used)",
+			"ua" : "Читати вголос (Spell Used)"
 		},
 		"spells_mode.designer.skill.warning" : {
 			"en" : "Show Warning Animation",

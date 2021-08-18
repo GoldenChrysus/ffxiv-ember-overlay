@@ -174,7 +174,10 @@ class Container extends EmberComponent {
 			this.props.spells_settings.use_tts,
 			this.props.spells_settings.party_use_tts,
 			this.props.spells_settings.tts_trigger,
-			this.props.spells_settings.warning_threshold
+			this.props.spells_settings.warning_threshold,
+			this.props.spells_settings.tts_on_effect,
+			this.props.spells_settings.party_tts_on_effect,
+			this.props.spells_settings.party_tts_on_skill
 		);
 	}
 

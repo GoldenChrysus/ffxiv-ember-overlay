@@ -173,7 +173,7 @@ class TTSService {
 		store.getState().plugin_service.tts(message);
 	}
 
-	saySpell(key, id, type, name) {
+	saySpell(key, id, type, name, extra) {
 		let date = new Date();
 
 		if (this.last.spells[key] && date.getTime() - this.last.spells[key].getTime() <= 500) {
@@ -182,7 +182,9 @@ class TTSService {
 
 		this.last.spells[key] = date;
 
-		this.sayNow(name || LocalizationService.getSpellName(type, id));
+		extra = extra || "";
+
+		this.sayNow((name || LocalizationService.getSpellName(type, id)) + extra);
 	}
 
 	processQueue() {
