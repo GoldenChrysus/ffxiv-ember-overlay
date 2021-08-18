@@ -2,22 +2,22 @@
 
 ## 0.31.0-alpha
 
-**Released: [in development]**
+**Released: 2021-08-18**
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
 - Added ability to trigger TTS alerts when self buffs or party buffs are received or when a party member casts a spell
 
 ### UI Changes
-- ?
+- Added ad support option
 
 ### Code Changes
-- ?
+- N/A
 
 ### Miscellaneous
-- ?
+- N/A
 
 ## 0.30.1-alpha
 

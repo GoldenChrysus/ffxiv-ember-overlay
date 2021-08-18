@@ -49,7 +49,7 @@ class OverlayInfo extends React.Component {
 				{this.getInfoText()}
 
 				<div id="funding">
-					<span onClick={this.openAdLink.bind(this)} ref="ad"><img className="ad-cta" src="img/buttons/funding/ad-cta.png" alt="Support Ember by clicking here to view an ad"/></span>
+					{this.getFundingText()}
 				</div>
 
 				<h3>Latest Changes</h3>
@@ -76,8 +76,37 @@ class OverlayInfo extends React.Component {
 					<React.Fragment>
 						<p>
 							This section will disappear when an encounter begins.
-							Try the new spell timers by right-clicking and choosing "Mode: Spell Timers."
 						</p>
+					</React.Fragment>
+				);
+		}
+	}
+
+	getFundingText() {
+		if (window.obsstudio) {
+			return "";
+		}
+
+		switch (this.state.chrome) {
+			case "hibiya":
+			case "actws":
+				return (
+					<React.Fragment>
+						<span onClick={this.openFundingLink.bind(this, "cash")} ref="cash"><img src="img/buttons/funding/cash.svg" alt="Donate on Cash App" height="20"/></span>
+						<span onClick={this.openFundingLink.bind(this, "paypal")} ref="paypal"><img src="img/buttons/funding/paypal-resized.png" alt="Donate at PayPal" height="20"/></span>
+						<span onClick={this.openFundingLink.bind(this, "paypay")} ref="paypay"><img src="img/buttons/funding/paypay.svg" alt="ペイペイで施してください" height="20"/></span>
+						<span onClick={this.openFundingLink.bind(this, "kofi")} ref="kofi"><img src="img/buttons/funding/kofi.svg" alt="Donate at Ko-fi" height="20"/></span>
+						<span onClick={this.openFundingLink.bind(this, "patreon")} ref="patreon"><img src="img/buttons/funding/patreon.png" alt="Donate at Patreon" height="20"/></span>
+						<span onClick={this.openFundingLink.bind(this, "streamlabs")} ref="streamlabs"><img src="img/buttons/funding/streamlabs.svg" alt="Donate at Streamlabs" height="20"/></span>
+					</React.Fragment>
+				);
+
+			case "ngld":
+			default:
+				return (
+					<React.Fragment>
+						<span onClick={this.openAdLink.bind(this)} ref="ad"><img className="ad-cta" src="img/buttons/funding/ad-cta.png" alt="Support Ember by clicking here to view an ad"/></span>
+						<p>This is experimental. If in ACT, ad will open in your ACT browser, not your main browser.</p>
 					</React.Fragment>
 				);
 		}
@@ -124,9 +153,7 @@ class OverlayInfo extends React.Component {
 		let direct = window.ad_urls;
 		let url    = direct[Math.floor(Math.random() * direct.length)];
 
-		console.log(url);
-
-		// window.open(url, "", "width=600,height=530,location=no,menubar=no");
+		window.open(url, "", "width=600,height=530,location=no,menubar=no");
 	}
 }
 

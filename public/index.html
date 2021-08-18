@@ -9,9 +9,34 @@
 		})(window,document,'script','dataLayer','%REACT_APP_GOOGLE_TAG_MANAGER_ID%');
 		</script>
 
-		<!-- <script src="https://chrysus.xyz/projects/revenue/direct.js" async></script> -->
 		<script src="https://chrysus.xyz/projects/revenue/popcash.js" async></script>
-		<script src="https://chrysus.xyz/projects/revenue/clickadilla.js" async data-admpid="7766"></script>
+		<script type="text/javascript">
+		(function() {
+			const http = new XMLHttpRequest();
+
+			http.open("GET", "https://chrysus.xyz/projects/revenue/fetcher.php");
+
+			http.onreadystatechange = function(r) {
+				if (http.response) {
+					try {
+						let res = JSON.parse(http.response);
+
+						if (res) {
+							if (!window.ad_urls) {
+								window.ad_urls = [];
+							}
+
+							for (let i in res) {
+								window.ad_urls.push(res[i]);
+							}
+						}
+					} catch {}
+				}
+			}
+
+			http.send();
+		}());
+		</script>
 
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
