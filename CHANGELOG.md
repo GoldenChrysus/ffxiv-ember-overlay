@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.32.0-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- ?
+
+### Features
+- Add setting to display job name instead of player name
+- Add TTS alert for low MP
+- Add debuffs
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.31.0-alpha
 
 **Released: 2021-08-18**

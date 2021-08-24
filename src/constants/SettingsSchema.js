@@ -493,7 +493,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(false)
+								options  : () => LocalizationService.getEffectOptions()
 							},
 							{
 								key_path : "spells_mode.reverse_effect",
@@ -525,7 +525,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(true)
+								options  : () => LocalizationService.getEffectOptions("dot")
 							},
 							{
 								key_path : "spells_mode.reverse_dot",
@@ -624,7 +624,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(false, true)
+								options  : () => LocalizationService.getEffectOptions(undefined, true)
 							},
 							{
 								key_path : "spells_mode.party_reverse_effect",
@@ -646,7 +646,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(true, true)
+								options  : () => LocalizationService.getEffectOptions("dot", true)
 							},
 							{
 								key_path : "spells_mode.party_reverse_dot",

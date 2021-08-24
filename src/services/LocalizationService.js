@@ -209,11 +209,13 @@ class LocalizationService {
 		return SkillData.Effects[id].locales.name[language] || SkillData.Effects[id].locales.name.en;
 	}
 
-	getEffectOptions(dot, party) {
+	getEffectOptions(type, party) {
+		type = type || "effect";
+
 		let language = this.getLanguage();
 		let options  = [];
 		let used     = {};
-		let key      = (dot) ? "dots" : "effects";
+		let key      = type + "s"
 
 		if (party) {
 			key = `party_${key}`;
@@ -240,7 +242,7 @@ class LocalizationService {
 		for (let id in SkillData.Effects) {
 			let name = this.getEffectName(id, "en");
 
-			if (used[name] || SkillData.Effects[id].dot !== dot) {
+			if (used[name] || SkillData.Effects[id].type !== type) {
 				continue;
 			}
 
