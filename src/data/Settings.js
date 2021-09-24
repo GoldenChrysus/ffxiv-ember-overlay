@@ -30,7 +30,8 @@ const default_settings = {
 		shorten_thousands     : false,
 		language              : "en",
 		auto_hide             : false,
-		auto_hide_delay       : 0
+		auto_hide_delay       : 0,
+		display_job_names     : false
 	},
 	custom : {
 		css          : "",
@@ -39,7 +40,13 @@ const default_settings = {
 	tts : {
 		language : "en",
 		rules    : {
-			critical  : {
+			critical_hp : {
+				tank : 0,
+				heal : 0,
+				dps  : 0,
+				all  : 0
+			},
+			critical_mp : {
 				tank : 0,
 				heal : 0,
 				dps  : 0,

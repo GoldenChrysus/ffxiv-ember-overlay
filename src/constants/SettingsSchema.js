@@ -130,7 +130,14 @@ const SettingsSchema = {
 								range   : "min",
 								minimum : 0,
 								maximum : 600
-							}
+							},
+							{
+								key_path      : "interface.display_job_names",
+								type          : "checkbox",
+								exclude_modes : [
+									"spells"
+								]
+							},
 						]
 					},
 					{

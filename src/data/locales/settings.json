@@ -739,6 +739,17 @@
 			"kr" : "자동 판단 시간 (초)",
 			"ua" : "Затримка авто-приховування в секундах"
 		},
+		"interface.display_job_names" : {
+			"en" : "Use Job Names Instead of Player Names",
+			"pt" : "Use Job Names Instead of Player Names",
+			"cn" : "Use Job Names Instead of Player Names",
+			"jp" : "Use Job Names Instead of Player Names",
+			"de" : "Use Job Names Instead of Player Names",
+			"es" : "Use Job Names Instead of Player Names",
+			"fr" : "Use Job Names Instead of Player Names",
+			"kr" : "Use Job Names Instead of Player Names",
+			"ua" : "Use Job Names Instead of Player Names"
+		},
 		"custom.metric_names" : {
 			"en" : "",
 			"pt" : "",
@@ -1270,7 +1281,7 @@
 			}
 		},
 		"tts" : {
-			"critical.tank" : {
+			"critical_hp.tank" : {
 				"en" : "A tank's HP is below:",
 				"pt" : "O PV de um tank está abaixo de:",
 				"cn" : "坦克血量低于：",
@@ -1281,7 +1292,7 @@
 				"kr" : "탱커의 체력이 이정도 미만 일 때:",
 				"ua" : "HP Захисника менше:"
 			},
-			"critical.dps" : {
+			"critical_hp.dps" : {
 				"en" : "A DPS' HP is below:",
 				"pt" : "O PV de um DPS está abaixo de:",
 				"cn" : "DPS血量低于：",
@@ -1292,7 +1303,7 @@
 				"kr" : "딜러의 체력이 이정도 미만 일 때:",
 				"ua" : "DPS' HP менше:"
 			},
-			"critical.heal" : {
+			"critical_hp.heal" : {
 				"en" : "A healer's HP is below:",
 				"pt" : "O PV de um healer está abaixo de:",
 				"cn" : "治疗血量低于：",
@@ -1303,7 +1314,7 @@
 				"kr" : "힐러의 체력이 이정도 미만 일 때:",
 				"ua" : "HP Цілителя менше:"
 			},
-			"critical.all" : {
+			"critical_hp.all" : {
 				"en" : "Anyone's HP is below:",
 				"pt" : "O PV de alguém está abaixo de:",
 				"cn" : "任何角色血量低于：",
@@ -1313,6 +1324,50 @@
 				"fr" : "Anyone's HP is below:",
 				"kr" : "아무나의 체력이 이정도 미만일 떄:",
 				"ua" : "Чиєсь HP менше:"
+			},
+			"critical_mp.tank" : {
+				"en" : "A tank's MP is below:",
+				"pt" : "O MP de um tank está abaixo de:",
+				"cn" : "坦克法力低于：",
+				"jp" : "マナが%以下になっているタンクがいます:",
+				"de" : "MP eines Verteidigers beträgt weniger als:",
+				"es" : "A tank's MP is below:",
+				"fr" : "A tank's MP is below:",
+				"kr" : "탱커의 마나 이정도 미만 일 때:",
+				"ua" : "MP Захисника менше:"
+			},
+			"critical_mp.dps" : {
+				"en" : "A DPS' MP is below:",
+				"pt" : "O MP de um DPS está abaixo de:",
+				"cn" : "DPS法力低于：",
+				"jp" : "マナが%以下になっているDPSがいます:",
+				"de" : "MP eines DPS beträgt weniger als:",
+				"es" : "A DPS' MP is below:",
+				"fr" : "A DPS' MP is below:",
+				"kr" : "딜러의 마나 이정도 미만 일 때:",
+				"ua" : "DPS' MP менше:"
+			},
+			"critical_mp.heal" : {
+				"en" : "A healer's MP is below:",
+				"pt" : "O MP de um healer está abaixo de:",
+				"cn" : "治疗法力低于：",
+				"jp" : "マナが%以下になっているヒーラーがいます:",
+				"de" : "MP eines Heilers beträgt weniger als:",
+				"es" : "A healer's MP is below:",
+				"fr" : "A healer's MP is below:",
+				"kr" : "힐러의 마나 이정도 미만 일 때:",
+				"ua" : "MP Цілителя менше:"
+			},
+			"critical_mp.all" : {
+				"en" : "Anyone's MP is below:",
+				"pt" : "O MP de alguém está abaixo de:",
+				"cn" : "任何角色法力低于：",
+				"jp" : "マナが%以下になっている人がいます:",
+				"de" : "MP eines beliebigen Spielers beträgt unter:",
+				"es" : "Anyone's MP is below:",
+				"fr" : "Anyone's MP is below:",
+				"kr" : "아무나의 마나 이정도 미만일 떄:",
+				"ua" : "Чиєсь MP менше:"
 			},
 			"aggro" : {
 				"en" : "You obtain aggro",
