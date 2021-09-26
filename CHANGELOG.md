@@ -5,7 +5,7 @@
 **Released: [in development]**
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
 - Added setting at Settings > Interface > "Use Job Names Instead of Player Names" to display job name instead of player name
