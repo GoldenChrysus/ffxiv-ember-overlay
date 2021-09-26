@@ -2,10 +2,10 @@
 
 ## 0.32.0-alpha
 
-**Released: 2021-08-16**
+**Released: [in staging]**
 
 ### Bug Fixes
-- N/A
+- ?
 
 ### Features
 - Added setting at Settings > Interface > "Use Job Names Instead of Player Names" to display job name instead of player name
