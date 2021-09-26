@@ -42,12 +42,19 @@ class PlayerProcessor  {
 		let key_function = Constants.PlayerDataCustomValues[key];
 		let value        = (key_function) ? key_function(player, players, encounter) : player[key];
 
-		if (key === "name" && value === "YOU") {
+		if (key === "name") {
 			state = state || store.getState();
 
-			let setting_name = state.settings.interface.player_name;
+			if (state.settings.interface.display_job_names) {
+				const job  = player.Job.toUpperCase();
+				const lang = state.settings.interface.language;
 
-			value = (setting_name && setting_name === "YOU") ? state.internal.character_name : setting_name;
+				value = Constants.GameJobs[job]["Name_" + lang] || Constants.GameJobs[job]["Name_en"];
+			} else if (value === "YOU") {
+				let setting_name = state.settings.interface.player_name;
+
+				value = (setting_name && setting_name === "YOU") ? state.internal.character_name : setting_name;
+			}
 		}
 
 		if (!return_sortable_value && !isNaN(value)) {

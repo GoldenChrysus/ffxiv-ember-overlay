@@ -18,11 +18,14 @@ class SpellService {
 		this.spells = {};
 	}
 
-	setSettings(use_tts, party_use_tts, tts_trigger, warning_threshold) {
-		this.settings.use_tts           = use_tts;
-		this.settings.party_use_tts     = party_use_tts;
-		this.settings.tts_trigger       = tts_trigger;
-		this.settings.warning_threshold = warning_threshold;
+	setSettings(use_tts, party_use_tts, tts_trigger, warning_threshold, tts_on_effect, party_tts_on_effect, party_tts_on_skill) {
+		this.settings.use_tts             = use_tts;
+		this.settings.party_use_tts       = party_use_tts;
+		this.settings.tts_trigger         = tts_trigger;
+		this.settings.warning_threshold   = warning_threshold;
+		this.settings.tts_on_effect       = tts_on_effect;
+		this.settings.party_tts_on_effect = party_tts_on_effect;
+		this.settings.party_tts_on_skill  = party_tts_on_skill;
 	}
 
 	getSkillRecast(id, level) {
@@ -43,12 +46,13 @@ class SpellService {
 		let current_level = store.getState().internal.character_level;
 
 		for (let i in used) {
-			let date     = used[i].time;
-			let new_date = new Date(date);
-			let recast   = 0;
-			let type     = used[i].type;
+			let date      = used[i].time;
+			let new_date  = new Date(date);
+			let recast    = 0;
+			let type      = used[i].type;
+			let defaulted = (new_date.getFullYear() === 1970);
 
-			if (new_date.getFullYear() !== 1970) {
+			if (!defaulted) {
 				switch (type) {
 					case "skill":
 						recast = this.getSkillRecast(used[i].id, (used[i].party) ? 0 : current_level);
@@ -83,6 +87,10 @@ class SpellService {
 				type_position : used[i].type_position,
 				tts           : false
 			};
+
+			if (!defaulted && ["effect", "skill"].indexOf(this.spells[i].type) !== -1) {
+				this.processProcTTS(i);
+			}
 		}
 
 		for (let i in lost) {
@@ -170,6 +178,18 @@ class SpellService {
 		TTSService.saySpell(key, this.spells[key].id, this.spells[key].type, this.spells[key].name);
 	}
 
+	processProcTTS(key) {
+		let tts_key = (this.spells[key].party) ? `party_tts_on_${this.spells[key].type}` : `tts_on_${this.spells[key].type}`;
+
+		if (!this.settings[tts_key]) {
+			return;
+		}
+
+		let extra = (this.spells[key].type === "skill") ? " used" : " received";
+
+		TTSService.saySpell(key, this.spells[key].id, this.spells[key].type, this.spells[key].name, extra);
+	}
+
 	filterSpells(section, settings, builder) {
 		let spells = clone(this.spells);
 
@@ -246,6 +266,10 @@ class SpellService {
 		return (data) ? (data.indexOf(job_abbreviation) !== -1 || data.indexOf(role) !== -1) : false;
 	}
 
+	getKeyName(english_name) {
+		return english_name.replace(/[^a-zA-Z\d]/g, "");
+	}
+
 	injectDefaults(state) {
 		let job = state.internal.character_job;
 
@@ -264,7 +288,7 @@ class SpellService {
 
 		for (let type in data) {
 			for (let id of data[type]) {
-				data_names.push(type + "-" + LocalizationService.getSpellName(type, id, "en"));
+				data_names.push(type + "-" + this.getKeyName(LocalizationService.getSpellName(type, id, "en")));
 			}
 		}
 
@@ -275,7 +299,7 @@ class SpellService {
 				continue;
 			}
 
-			let name = item.subtype + "-" + LocalizationService.getSpellName(item.subtype, item.id, "en");
+			let name = item.subtype + "-" + this.getKeyName(LocalizationService.getSpellName(item.subtype, item.id, "en"));
 
 			if (data_names.indexOf(name) === -1) {
 				state.internal.spells.in_use[i].defaulted = false;
@@ -300,7 +324,7 @@ class SpellService {
 					continue;
 				}
 
-				let english_name = LocalizationService.getSpellName(type, id, "en");
+				let english_name = this.getKeyName(LocalizationService.getSpellName(type, id, "en"));
 				let name         = type + "-" + english_name;
 
 				type_position++;

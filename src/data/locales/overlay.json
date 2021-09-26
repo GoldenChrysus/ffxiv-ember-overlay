@@ -327,7 +327,7 @@
 	},
 	
 	"tts" : {
-		"critical" : {
+		"critical_hp" : {
 			"en" : {
 				"joiner"   : " and ",
 				"several"  : "Several players",
@@ -400,6 +400,81 @@
 				"singular" : " є ",
 				"you"      : "Ти",
 				"text"     : "{{players}}{{connector}}мають критичний рівень здоров'я."
+			}
+		},
+		"critical_mp" : {
+			"en" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"you"      : "You",
+				"text"     : "{{players}}{{connector}}critical mana."
+			},
+			"pt" : {
+				"joiner"   : " e ",
+				"several"  : "Vários jogadores",
+				"plural"   : " estão ",
+				"singular" : " está ",
+				"you"      : "Você",
+				"text"     : "{{players}}{{connector}}com MP crítico."
+			},
+			"cn" : {
+				"joiner"   : "和",
+				"several"  : "多个角色",
+				"plural"   : "处于",
+				"singular" : "处于",
+				"you"      : "你",
+				"text"     : "{{players}}{{connector}}临界法力."
+			},
+			"jp" : {
+				"joiner"   : "と",
+				"several"  : "多くの人",
+				"plural"   : "は",
+				"singular" : "は",
+				"you"      : "あなた",
+				"text"     : "{{players}}{{connector}}クリティカルマナです."
+			},
+			"de" : {
+				"joiner"           : " und ",
+				"several"          : "Etliche Spieler",
+				"plural"           : " sind ",
+				"singular"         : " ist ",
+				"you"              : "Du bist ",
+				"you_no_connector" : true,
+				"text"             : "{{players}}{{connector}}in einem kritischen MP."
+			},
+			"es" : {
+				"joiner"   : " and ",
+				"several"  : "Several players",
+				"plural"   : " are ",
+				"singular" : " is ",
+				"you"      : "You",
+				"text"     : "{{players}}{{connector}}critical mana."
+			},
+			"fr" : {
+				"joiner"   : " et ",
+				"several"  : "Des joueurs",
+				"plural"   : " sont ",
+				"singular" : " est ",
+				"you"      : "Vous",
+				"text"     : "{{players}}{{connector}}dans un MP critique."
+			},
+			"kr" : {
+				"joiner"   : " 및 ",
+				"several"  : "파티원 대부분",
+				"plural"   : "이 ",
+				"singular" : "이 ",
+				"you"      : "당신",
+				"text"     : "{{players}}{{connector}}마나가 낮습니다."
+			},
+			"ua" : {
+				"joiner"   : " та ",
+				"several"  : "Кілька граців",
+				"plural"   : " є ",
+				"singular" : " є ",
+				"you"      : "Ти",
+				"text"     : "{{players}}{{connector}}мають критичний рівень MP."
 			}
 		},
 		"aggro" : {

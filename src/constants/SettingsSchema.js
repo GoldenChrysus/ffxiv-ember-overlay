@@ -130,7 +130,14 @@ const SettingsSchema = {
 								range   : "min",
 								minimum : 0,
 								maximum : 600
-							}
+							},
+							{
+								key_path      : "interface.display_job_names",
+								type          : "checkbox",
+								exclude_modes : [
+									"spells"
+								]
+							},
 						]
 					},
 					{
@@ -493,7 +500,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(false)
+								options  : () => LocalizationService.getEffectOptions()
 							},
 							{
 								key_path : "spells_mode.reverse_effect",
@@ -509,6 +516,11 @@ const SettingsSchema = {
 								key_path : "spells_mode.always_effect_static",
 								locale   : "spells_mode.always_skill_static",
 								type     : "checkbox"
+							},
+							{
+								key_path : "spells_mode.tts_on_effect",
+								locale   : "spells_mode.tts_on_effect",
+								type     : "checkbox"
 							}
 						]
 					},
@@ -520,7 +532,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(true)
+								options  : () => LocalizationService.getEffectOptions("dot")
 							},
 							{
 								key_path : "spells_mode.reverse_dot",
@@ -603,6 +615,11 @@ const SettingsSchema = {
 								key_path : "spells_mode.party_reverse_skill",
 								locale   : "spells_mode.reverse_skill",
 								type     : "checkbox"
+							},
+							{
+								key_path : "spells_mode.party_tts_on_skill",
+								locale   : "spells_mode.party_tts_on_skill",
+								type     : "checkbox"
 							}
 						]
 					},
@@ -614,11 +631,16 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(false, true)
+								options  : () => LocalizationService.getEffectOptions(undefined, true)
 							},
 							{
 								key_path : "spells_mode.party_reverse_effect",
 								locale   : "spells_mode.reverse_effect",
+								type     : "checkbox"
+							},
+							{
+								key_path : "spells_mode.party_tts_on_effect",
+								locale   : "spells_mode.tts_on_effect",
 								type     : "checkbox"
 							}
 						]
@@ -631,7 +653,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(true, true)
+								options  : () => LocalizationService.getEffectOptions("dot", true)
 							},
 							{
 								key_path : "spells_mode.party_reverse_dot",

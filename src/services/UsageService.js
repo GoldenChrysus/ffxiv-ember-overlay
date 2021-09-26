@@ -27,15 +27,19 @@ class UsageService {
 	}
 
 	usingLog(mode, settings) {
-		return (mode === "spells" || this.usingLogTTS(settings));
+		return (mode === "spells" || !!this.usingLogTTS(settings));
 	}
 
 	usingLogTTS(settings) {
 		return (
-			settings.getSetting("tts.rules.critical.dps") ||
-			settings.getSetting("tts.rules.critical.heal") ||
-			settings.getSetting("tts.rules.critical.tank") ||
-			settings.getSetting("tts.rules.critical.all")
+			settings.getSetting("tts.rules.critical_hp.dps") ||
+			settings.getSetting("tts.rules.critical_hp.heal") ||
+			settings.getSetting("tts.rules.critical_hp.tank") ||
+			settings.getSetting("tts.rules.critical_hp.all") ||
+			settings.getSetting("tts.rules.critical_mp.dps") ||
+			settings.getSetting("tts.rules.critical_mp.heal") ||
+			settings.getSetting("tts.rules.critical_mp.tank") ||
+			settings.getSetting("tts.rules.critical_mp.all")
 		);
 	}
 

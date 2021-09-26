@@ -57,13 +57,21 @@ def loadBuffs():
 		data = json.load(file)
 
 		file.close()
-		return data		
+		return data
+
+def loadDebuffs():
+	with open("../src/data/game/debuff-jobs.json") as file:
+		data = json.load(file)
+
+		file.close()
+		return data	
 
 page             = 1
 effects          = {}
 existing_effects = loadEffects()
 dots             = loadDots()
 buffs            = loadBuffs()
+debuffs          = loadDebuffs()
 
 while (True):
 	page_data = getPage(page)
@@ -79,19 +87,23 @@ while (True):
 			continue
 
 		effect_data = getEffect(id)
-		dot         = False
+		item_type   = "effect"
 
 		if (effect_data["Name_en"] == effect_data["Name_ja"]):
 			continue
 
 		if (effect_data["Category"] == 2):
-			if ("over time" not in effect_data["Description_en"] or effect_data["InflictedByActor"] == 1):
+			if effect_data["InflictedByActor"] == 1:
 				continue
+			elif "over time" not in effect_data["Description_en"]:
+				item_type = "debuff"
 			else:
-				dot = True
+				item_type = "dot"
 
 		effects[id] = {
-			"dot"     : dot,
+			"type"    : item_type,
+			"dot"     : (item_type == "dot"),
+			"debuff"  : (item_type == "debuff"),
 			"jobs"    : [],
 			"locales" : {
 				"name" : {
@@ -107,6 +119,8 @@ while (True):
 			effects[id]["jobs"] = dots[effect_data["Name_en"]]
 		elif effect_data["Name_en"] in buffs:
 			effects[id]["jobs"] = buffs[effect_data["Name_en"]]
+		elif effect_data["Name_en"] in debuffs:
+			effects[id]["jobs"] = debuffs[effect_data["Name_en"]]
 
 		saveImage(id, effect_data["Icon"])
 

@@ -112,85 +112,193 @@ let calculateShieldPerSecond = function(player, players, encounter) {
 
 const GameJobs = {
 	ARC : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Waldläufer",
+		Name_en : "Archer",
+		Name_fr : "Archer",
+		Name_jp : "弓術士",
 	},
 	GLA : {
-		role : "tank"
+		role    : "tank",
+		Name_de : "Gladiator",
+		Name_en : "Gladiator",
+		Name_fr : "Gladiateur",
+		Name_jp : "剣術士",
 	},
 	LNC : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Pikenier",
+		Name_en : "Lancer",
+		Name_fr : "Maître d'hast",
+		Name_jp : "槍術士",
 	},
 	MRD : {
-		role : "tank"
+		role    : "tank",
+		Name_de : "Marodeur",
+		Name_en : "Marauder",
+		Name_fr : "Maraudeur",
+		Name_jp : "斧術士",
 	},
 	PGL : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Faustkämpfer",
+		Name_en : "Pugilist",
+		Name_fr : "Pugiliste",
+		Name_jp : "格闘士",
 	},
 	ACN : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Hermetiker",
+		Name_en : "Arcanist",
+		Name_fr : "Arcaniste",
+		Name_jp : "巴術士",
 	},
 	CNJ : {
-		role : "heal"
+		role    : "heal",
+		Name_de : "Druide",
+		Name_en : "Conjurer",
+		Name_fr : "Élémentaliste",
+		Name_jp : "幻術士",
 	},
 	THM : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Thaumaturg",
+		Name_en : "Thaumaturge",
+		Name_fr : "Occultiste",
+		Name_jp : "呪術士",
 	},
 	ROG : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Schurke",
+		Name_en : "Rogue",
+		Name_fr : "Surineur",
+		Name_jp : "双剣士",
 	},
 	BRD : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Barde",
+		Name_en : "Bard",
+		Name_fr : "Barde",
+		Name_jp : "吟遊詩人",
 	},
 	DRG : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Dragoon",
+		Name_en : "Dragoon",
+		Name_fr : "Chevalier Dragon",
+		Name_jp : "竜騎士",
 	},
 	MNK : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Mönch",
+		Name_en : "Monk",
+		Name_fr : "Moine",
+		Name_jp : "モンク",
 	},
 	PLD : {
-		role : "tank"
+		role    : "tank",
+		Name_de : "Paladin",
+		Name_en : "Paladin",
+		Name_fr : "Paladin",
+		Name_jp : "ナイト",
 	},
 	WAR : {
-		role : "tank"
+		role    : "tank",
+		Name_de : "Krieger",
+		Name_en : "Warrior",
+		Name_fr : "Guerrier",
+		Name_jp : "戦士",
 	},
 	BLM : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Schwarzmagier",
+		Name_en : "Black Bage",
+		Name_fr : "Mage Noir",
+		Name_jp : "黒魔道士",
 	},
 	WHM : {
-		role : "heal"
+		role    : "heal",
+		Name_de : "Weißmagier",
+		Name_en : "White Mage",
+		Name_fr : "Mage Blanc",
+		Name_jp : "白魔道士",
 	},
 	SCH : {
-		role : "heal"
+		role    : "heal",
+		Name_de : "Gelehrter",
+		Name_en : "Scholar",
+		Name_fr : "Érudit",
+		Name_jp : "学者",
 	},
 	SMN : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Beschwörer",
+		Name_en : "Summoner",
+		Name_fr : "Invocateur",
+		Name_jp : "召喚士",
 	},
 	NIN : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Ninja",
+		Name_en : "Ninja",
+		Name_fr : "Ninja",
+		Name_jp : "忍者",
 	},
 	AST : {
-		role : "heal"
+		role : "heal",
+		Name_de : "Astrologe",
+		Name_en : "Astrologian",
+		Name_fr : "Astromancien",
+		Name_jp : "占星術師",
 	},
 	DRK : {
-		role : "tank"
+		role    : "tank",
+		Name_de : "Dunkelritter",
+		Name_en : "Dark Knight",
+		Name_fr : "Chevalier Noir",
+		Name_jp : "暗黒騎士",
 	},
 	MCH : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Maschinist",
+		Name_en : "Machinist",
+		Name_fr : "Machiniste",
+		Name_jp : "機工士",
 	},
 	RDM : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Rotmagier",
+		Name_en : "Red Mage",
+		Name_fr : "Mage Rouge",
+		Name_jp : "赤魔道士",
 	},
 	SAM : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Samurai",
+		Name_en : "Samurai",
+		Name_fr : "Samouraï",
+		Name_jp : "侍",
 	},
 	BLU : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Blaumagier",
+		Name_en : "Blue Mage",
+		Name_fr : "Mage Bleu",
+		Name_jp : "青魔道士",
 	},
 	GNB : {
-		role : "tank"
+		role    : "tank",
+		Name_de : "Revolverklinge",
+		Name_en : "Gunbreaker",
+		Name_fr : "Pistosabreur",
+		Name_jp : "ガンブレイカー",
 	},
 	DNC : {
-		role : "dps"
+		role    : "dps",
+		Name_de : "Tänzer",
+		Name_en : "Dancer",
+		Name_fr : "Danseur",
+		Name_jp : "踊り子",
 	},
 };
 
@@ -263,10 +371,14 @@ const PlayerMetricsSummable = [
 ];
 
 const TTSRules = [
-	"critical.tank",
-	"critical.dps",
-	"critical.heal",
-	"critical.all",
+	"critical_hp.tank",
+	"critical_hp.dps",
+	"critical_hp.heal",
+	"critical_hp.all",
+	"critical_mp.tank",
+	"critical_mp.dps",
+	"critical_mp.heal",
+	"critical_mp.all",
 	"aggro",
 	"top.dps",
 	"top.hps",

@@ -1,5 +1,64 @@
 # Changelog
 
+## 0.32.0-alpha
+
+**Released: 2021-08-16**
+
+### Bug Fixes
+- N/A
+
+### Features
+- Added setting at Settings > Interface > "Use Job Names Instead of Player Names" to display job name instead of player name
+- Added TTS alert for low mana
+
+### UI Changes
+- N/A
+
+### Code Changes
+- Added debuff data
+
+### Miscellaneous
+- N/A
+
+## 0.31.0-alpha
+
+**Released: 2021-08-18**
+
+### Bug Fixes
+- N/A
+
+### Features
+- Added ability to trigger TTS alerts when self buffs or party buffs are received or when a party member casts a spell
+
+### UI Changes
+- Added ad support option
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
+## 0.30.1-alpha
+
+**Released: 2021-08-17**
+
+### Bug Fixes
+- Resolved issue where visual timer does not tick down for items with special characters in their name
+- Resolved issue where permanent timers would not retain their static positions or permanency once invoked
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.30.0-alpha
 
 **Released: 2021-08-16**

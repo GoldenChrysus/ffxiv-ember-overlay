@@ -7,10 +7,15 @@ import Table from "../Table";
 
 class TTSRulesTable extends Table {
 	rule_data_types = {
-		aggro     : {
+		aggro : {
 			type : "bool"
 		},
-		critical  : {
+		critical_hp : {
+			type : "numeric",
+			min  : 0,
+			max  : 100
+		},
+		critical_mp : {
 			type : "numeric",
 			min  : 0,
 			max  : 100
@@ -18,7 +23,7 @@ class TTSRulesTable extends Table {
 		encounter : {
 			type : "bool"
 		},
-		top       : {
+		top : {
 			type : "bool"
 		}
 	};
@@ -135,7 +140,8 @@ class TTSRulesTable extends Table {
 
 		for (let rule_type in rules) {
 			switch (rule_type) {
-				case "critical":
+				case "critical_hp":
+				case "critical_mp":
 				case "top":
 				case "encounter":
 					if (!this.data.value[rule_type]) {

@@ -7,7 +7,8 @@ class TTSService {
 	timer = null;
 	state = {
 		top                : {},
-		critical           : [],
+		critical_hp        : [],
+		critical_mp        : [],
 		aggro              : [],
 		combatants         : {},
 		encounter          : false,
@@ -15,10 +16,11 @@ class TTSService {
 		rules              : {}
 	};
 	queue = {
-		critical  : {},
-		top       : {},
-		aggro     : {},
-		encounter : []
+		critical_hp : {},
+		critical_mp : {},
+		top         : {},
+		aggro       : {},
+		encounter   : []
 	};
 	last  = {
 		spells : {}
@@ -61,12 +63,14 @@ class TTSService {
 			case 37:
 				player_data.name       = data[3];
 				player_data.hp_percent = (+data[5] / +data[6]) * 100;
+				player_data.mp_percent = (+data[7] / +data[8]) * 100;
 
 				break;
 
 			case 39:
 				player_data.name       = data[3];
 				player_data.hp_percent = (+data[4] / +data[5]) * 100;
+				player_data.mp_percent = (+data[6] / +data[7]) * 100;
 				
 				break;
 
@@ -90,25 +94,46 @@ class TTSService {
 			return;
 		}
 
-		let critical_threshold = Math.max(
-			this.state.rules.critical[player_data.job_type] ? this.state.rules.critical[player_data.job_type] : 0,
-			this.state.rules.critical.all ? this.state.rules.critical.all : 0
+		let critical_hp_threshold = Math.max(
+			this.state.rules.critical_hp[player_data.job_type] ? this.state.rules.critical_hp[player_data.job_type] : 0,
+			this.state.rules.critical_hp.all ? this.state.rules.critical_hp.all : 0
 		);
 
 		if (
-			critical_threshold &&
-			player_data.hp_percent < critical_threshold &&
-			this.state.critical.indexOf(player_data.name) === -1
+			critical_hp_threshold &&
+			player_data.hp_percent < critical_hp_threshold &&
+			this.state.critical_hp.indexOf(player_data.name) === -1
 		) {
-			this.state.critical.push(player_data.name);
+			this.state.critical_hp.push(player_data.name);
 
-			this.queue.critical[player_data.name] = true;
+			this.queue.critical_hp[player_data.name] = true;
 		} else if (
-			critical_threshold &&
-			player_data.hp_percent >= critical_threshold &&
-			this.state.critical.indexOf(player_data.name) !== -1
+			critical_hp_threshold &&
+			player_data.hp_percent >= critical_hp_threshold &&
+			this.state.critical_hp.indexOf(player_data.name) !== -1
 		) {
-			this.state.critical.splice(this.state.critical.indexOf(player_data.name), 1);
+			this.state.critical_hp.splice(this.state.critical_hp.indexOf(player_data.name), 1);
+		}
+
+		let critical_mp_threshold = Math.max(
+			this.state.rules.critical_mp[player_data.job_type] ? this.state.rules.critical_mp[player_data.job_type] : 0,
+			this.state.rules.critical_mp.all ? this.state.rules.critical_mp.all : 0
+		);
+
+		if (
+			critical_mp_threshold &&
+			player_data.mp_percent < critical_mp_threshold &&
+			this.state.critical_mp.indexOf(player_data.name) === -1
+		) {
+			this.state.critical_mp.push(player_data.name);
+
+			this.queue.critical_mp[player_data.name] = true;
+		} else if (
+			critical_mp_threshold &&
+			player_data.mp_percent >= critical_mp_threshold &&
+			this.state.critical_mp.indexOf(player_data.name) !== -1
+		) {
+			this.state.critical_mp.splice(this.state.critical_mp.indexOf(player_data.name), 1);
 		}
 	}
 
@@ -173,7 +198,7 @@ class TTSService {
 		store.getState().plugin_service.tts(message);
 	}
 
-	saySpell(key, id, type, name) {
+	saySpell(key, id, type, name, extra) {
 		let date = new Date();
 
 		if (this.last.spells[key] && date.getTime() - this.last.spells[key].getTime() <= 500) {
@@ -182,23 +207,25 @@ class TTSService {
 
 		this.last.spells[key] = date;
 
-		this.sayNow(name || LocalizationService.getSpellName(type, id));
+		extra = extra || "";
+
+		this.sayNow((name || LocalizationService.getSpellName(type, id)) + extra);
 	}
 
 	processQueue() {
 		let messages = [];
 
-		if (Object.keys(this.queue.critical).length) {
-			let locale_data = LocalizationService.getTTSTextData("critical");
-			let has_you     = (this.queue.critical.YOU);
+		if (Object.keys(this.queue.critical_hp).length) {
+			let locale_data = LocalizationService.getTTSTextData("critical_hp");
+			let has_you     = (this.queue.critical_hp.YOU);
 
 			if (has_you) {
-				delete this.queue.critical.YOU;
+				delete this.queue.critical_hp.YOU;
 
-				this.queue.critical[locale_data.you] = true;
+				this.queue.critical_hp[locale_data.you] = true;
 			}
 
-			let keys      = Object.keys(this.queue.critical);
+			let keys      = Object.keys(this.queue.critical_hp);
 			let connector = (has_you || keys.length > 1) ? locale_data.plural : locale_data.singular;
 			let players   = (keys.length <= 2)
 				? keys.join(locale_data.joiner)
@@ -215,7 +242,37 @@ class TTSService {
 					.replace("{{connector}}", connector)
 			);
 
-			this.queue.critical = {};
+			this.queue.critical_hp = {};
+		}
+
+		if (Object.keys(this.queue.critical_mp).length) {
+			let locale_data = LocalizationService.getTTSTextData("critical_mp");
+			let has_you     = (this.queue.critical_mp.YOU);
+
+			if (has_you) {
+				delete this.queue.critical_mp.YOU;
+
+				this.queue.critical_mp[locale_data.you] = true;
+			}
+
+			let keys      = Object.keys(this.queue.critical_mp);
+			let connector = (has_you || keys.length > 1) ? locale_data.plural : locale_data.singular;
+			let players   = (keys.length <= 2)
+				? keys.join(locale_data.joiner)
+				: locale_data.several;
+
+			if (has_you && locale_data.you_no_connector && keys.length === 1) {
+				connector = "";
+			}
+
+			messages.push(
+				locale_data
+					.text
+					.replace("{{players}}", players)
+					.replace("{{connector}}", connector)
+			);
+
+			this.queue.critical_mp = {};
 		}
 
 		if (Object.keys(this.queue.top).length) {
