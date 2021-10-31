@@ -68,7 +68,7 @@
 	"encounter_history" : {
 		"en" : "Encounter history",
 		"pt" : "Encounter history",
-		"cn" : "Encounter history",
+		"cn" : "历史战斗数据",
 		"jp" : "Encounter history",
 		"de" : "Encounter history",
 		"es" : "Encounter history",
@@ -88,7 +88,7 @@
 	"join_discord" : {
 		"en" : "Join Discord",
 		"pt" : "Join Discord",
-		"cn" : "Join Discord",
+		"cn" : "加入Discord频道",
 		"jp" : "Join Discord",
 		"de" : "Join Discord",
 		"es" : "Join Discord",
@@ -98,7 +98,7 @@
 	"discord_webhook" : {
 		"en" : "Share Encounter",
 		"pt" : "Share Encounter",
-		"cn" : "Share Encounter",
+		"cn" : "分享战斗数据",
 		"jp" : "Share Encounter",
 		"de" : "Share Encounter",
 		"es" : "Share Encounter",
