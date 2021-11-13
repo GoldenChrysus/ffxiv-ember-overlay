@@ -49,7 +49,9 @@ class PlayerProcessor  {
 				const job  = player.Job.toUpperCase();
 				const lang = state.settings.interface.language;
 
-				value = Constants.GameJobs[job]["Name_" + lang] || Constants.GameJobs[job]["Name_en"];
+				value = (Constants.GameJobs[job])
+					? Constants.GameJobs[job]["Name_" + lang] || Constants.GameJobs[job]["Name_en"]
+					: "N/A";
 			} else if (value === "YOU") {
 				let setting_name = state.settings.interface.player_name;
 

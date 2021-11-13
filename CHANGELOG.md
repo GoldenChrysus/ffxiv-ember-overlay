@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.32.1-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- Fix Lightspeed cooldown for characters with Hyper Lightspeed
+- Fix issue with overlay crashing in certain scenarios when job name display is enabled
+
+### Features
+- M/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.32.0-alpha
 
 **Released: 2021-10-08**
