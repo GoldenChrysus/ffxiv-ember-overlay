@@ -2,7 +2,7 @@
 
 ## 0.32.1-alpha
 
-**Released: [in development]**
+**Released: 2021-11-15**
 
 ### Bug Fixes
 - Fix Lightspeed cooldown for characters with Hyper Lightspeed
