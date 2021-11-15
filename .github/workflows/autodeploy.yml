@@ -46,7 +46,7 @@ jobs:
     environment: staging
     steps:
       - name: Push to hosted environments
-        uses: GoldenChrysus/autobuilder@0.1.6
+        uses: GoldenChrysus/autobuilder@0.1.7
 
   build_production:
     if: ${{ github.ref == 'refs/heads/master' }}
@@ -54,4 +54,4 @@ jobs:
     environment: production
     steps:
       - name: Push to hosted environments
-        uses: GoldenChrysus/autobuilder@0.1.6
+        uses: GoldenChrysus/autobuilder@0.1.7
