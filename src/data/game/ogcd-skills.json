@@ -658,7 +658,12 @@
 	},
 	"184" : {
 		"recast" : 180.0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 68,
+				"recast" : 120.0
+			}
+		],
 		"jobs" : [
 			"SMN"
 		],
@@ -1582,7 +1587,12 @@
 	},
 	"3606" : {
 		"recast" : 120.0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 68,
+				"recast" : 90.0
+			}
+		],
 		"jobs" : [
 			"AST"
 		],
@@ -8679,6 +8689,81 @@
 			}
 		}
 	},
+	"21494" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Fleche",
+				"de" : "Fleche",
+				"fr" : "Flèche",
+				"jp" : "フレッシュ"
+			}
+		}
+	},
+	"21495" : {
+		"recast" : 45.0,
+		"level_recasts" : [
+			{
+				"level" : 78,
+				"recast" : 35.0
+			}
+		],
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Contre Sixte",
+				"de" : "Contre Sixte",
+				"fr" : "Contre de sixte",
+				"jp" : "コントルシクスト"
+			}
+		}
+	},
+	"21496" : {
+		"recast" : 35.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Displacement",
+				"de" : "Körperparade",
+				"fr" : "Déplacement",
+				"jp" : "デプラスマン"
+			}
+		}
+	},
+	"21499" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Destiny Drawn",
+				"de" : "Schicksalskarten",
+				"fr" : "Tirage du destin",
+				"jp" : "デスティニードロー"
+			}
+		}
+	},
+	"21611" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Fixed Sign",
+				"de" : "Schrein des Stillstands",
+				"fr" : "Signe fixe",
+				"jp" : "不動宮"
+			}
+		}
+	},
 	"22353" : {
 		"recast" : 60.0,
 		"level_recasts" : null,
@@ -8926,6 +9011,207 @@
 				"de" : "Monddämmerung",
 				"fr" : "Lis araignée",
 				"jp" : "月下彼岸花"
+			}
+		}
+	},
+	"23913" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"AST",
+			"RDM"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Chainspell",
+				"de" : "Verschollene Zauberkette",
+				"fr" : "Avalanche de sorts oubliée",
+				"jp" : "ロスト・チェインスペル"
+			}
+		}
+	},
+	"23914" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"NIN",
+			"MCH",
+			"DRK",
+			"SAM",
+			"GNB",
+			"DNC"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Assassination",
+				"de" : "Verschollener Meuchelmord",
+				"fr" : "Assassinat oublié",
+				"jp" : "ロスト・アサシネイト"
+			}
+		}
+	},
+	"23918" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Impetus",
+				"de" : "Verschollener Impuls",
+				"fr" : "Impulsion oubliée",
+				"jp" : "ロスト・インペタス"
+			}
+		}
+	},
+	"23919" : {
+		"recast" : 300.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK",
+			"DRG",
+			"BRD",
+			"BLM",
+			"SMN",
+			"NIN",
+			"MCH",
+			"SAM",
+			"RDM",
+			"DNC"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Excellence",
+				"de" : "Verschollene Exzellenz",
+				"fr" : "Excellence oubliée",
+				"jp" : "ロスト・エクセレンス"
+			}
+		}
+	},
+	"23920" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM",
+			"SCH",
+			"AST"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Full Cure",
+				"de" : "Verschollene Erneuerung",
+				"fr" : "Maxi Soin oublié",
+				"jp" : "ロスト・フルケア"
+			}
+		}
+	},
+	"23921" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"WAR",
+			"DRK",
+			"GNB"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Lost Blood Rage",
+				"de" : "Verschollener Blutzorn",
+				"fr" : "Rage sanguinaire oubliée",
+				"jp" : "ロスト・ブラッドレイジ"
+			}
+		}
+	},
+	"23922" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"DRK",
+			"AST",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Resistance Elixir",
+				"de" : "Elixier des Widerstands",
+				"fr" : "Élixir de la résistance",
+				"jp" : "レジスタンスエリクサー"
+			}
+		}
+	},
+	"24066" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Destiny's Sleeve",
+				"de" : "Legeschema des Schicksals",
+				"fr" : "Grand sabot du destin",
+				"jp" : "デスティニースリーヴドロー"
+			}
+		}
+	},
+	"24917" : {
+		"recast" : 40.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Corps-a-corps",
+				"de" : "Corps-a-corps",
+				"fr" : "Corps-à-corps",
+				"jp" : "コル・ア・コル"
 			}
 		}
 	}

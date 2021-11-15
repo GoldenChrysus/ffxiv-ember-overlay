@@ -7,7 +7,7 @@ import shutil
 from os import path
 
 def getTraitPage(page_num):
-	url = "https://xivapi.com/search?page=" + str(page_num) + "&indexes=Trait&string=recast%20timer%20to&string_column=Description_en"
+	url = "https://xivapi.com/search?page=" + str(page_num) + "&indexes=Trait&string=recast%20time&string_column=Description_en"
 	res = requests.get(url = url)
 
 	return res.json()
@@ -56,7 +56,7 @@ while (True):
 	for item in page_data["Results"]:
 		id        = item["ID"]
 		item_data = getItem("Trait", id)
-		regex     = re.compile(r"<span.+>([:\w ]+)<\/span> recast timer to (\d+) seconds")
+		regex     = re.compile(r"<span.+>([:\w ]+)<\/span> recast timer? to (\d+) seconds")
 		match     = regex.findall(item_data["Description_en"])
 
 		if (len(match) == 0):
