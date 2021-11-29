@@ -1069,8 +1069,8 @@
 			"long"  : "Swings"
 		},
 		"cn" : {
-			"short" : "Swing",
-			"long"  : "Swings"
+			"short" : "命中",
+			"long"  : "命中数"
 		},
 		"jp" : {
 			"short" : "Swing",

@@ -401,7 +401,7 @@
 				{
 					"en" : "DOT's",
 					"pt" : "DOT's",
-					"cn" : "DOT's",
+					"cn" : "DOT",
 					"jp" : "DOT's",
 					"de" : "DOT's",
 					"es" : "DOT's",
@@ -424,7 +424,7 @@
 			"title" : {
 				"en" : "Party Spell Timers",
 				"pt" : "Party Temporizadores das Magias",
-				"cn" : "Party 冷却监控",
+				"cn" : "团队冷却监控",
 				"jp" : "Party スペルタイマー",
 				"de" : "Gruppenzauber-Timer",
 				"es" : "Party Spell Timers",
@@ -455,7 +455,7 @@
 				{
 					"en" : "DOT's",
 					"pt" : "DOT's",
-					"cn" : "DOT's",
+					"cn" : "DOT",
 					"jp" : "DOT's",
 					"de" : "DOT's",
 					"es" : "DOT's",
@@ -478,7 +478,7 @@
 			"title" : {
 				"en" : "Spell Designer",
 				"pt" : "Spell Designer",
-				"cn" : "Spell Designer",
+				"cn" : "监控设计器",
 				"jp" : "Spell Designer",
 				"de" : "Zaubergestaltung",
 				"es" : "Spell Designer",
@@ -509,7 +509,7 @@
 				{
 					"en" : "DOT's",
 					"pt" : "DOT's",
-					"cn" : "DOT's",
+					"cn" : "DOT",
 					"jp" : "DOT's",
 					"de" : "DOT's",
 					"es" : "DOT's",
@@ -532,7 +532,7 @@
 			"title" : {
 				"en" : "UI Builder",
 				"pt" : "UI Builder",
-				"cn" : "UI Builder",
+				"cn" : "界面构建器",
 				"jp" : "UI Builder",
 				"de" : "UI-Baukasten",
 				"es" : "UI Builder",
@@ -553,7 +553,7 @@
 				{
 					"en" : "UI Sections",
 					"pt" : "UI Sections",
-					"cn" : "UI Sections",
+					"cn" : "界面分段",
 					"jp" : "UI Sections",
 					"de" : "UI-Bereiche",
 					"es" : "UI Sections",
@@ -742,7 +742,7 @@
 		"interface.display_job_names" : {
 			"en" : "Use Job Names Instead of Player Names",
 			"pt" : "Use Job Names Instead of Player Names",
-			"cn" : "Use Job Names Instead of Player Names",
+			"cn" : "使用职业名称替换玩家名称",
 			"jp" : "Use Job Names Instead of Player Names",
 			"de" : "Use Job Names Instead of Player Names",
 			"es" : "Use Job Names Instead of Player Names",
@@ -917,7 +917,7 @@
 		"discord.url" : {
 			"en" : "Webhook URL",
 			"pt" : "Webhook URL",
-			"cn" : "Webhook URL",
+			"cn" : "Webhook链接",
 			"jp" : "Webhook URL",
 			"de" : "Webhook URL",
 			"es" : "Webhook URL",
@@ -1016,7 +1016,7 @@
 		"spells_mode.tts_trigger" : {
 			"en" : "Text to Speech Trigger",
 			"pt" : "Text to Speech Trigger",
-			"cn" : "Text to Speech Trigger",
+			"cn" : "TTS触发器",
 			"jp" : "Text to Speech Trigger",
 			"de" : "Text zu Sprache Trigger",
 			"es" : "Text to Speech Trigger",
@@ -1093,7 +1093,7 @@
 		"spells_mode.always_skill" : {
 			"en" : "Display Permanently",
 			"pt" : "Display Permanently",
-			"cn" : "Display Permanently",
+			"cn" : "永久显示",
 			"jp" : "Display Permanently",
 			"de" : "Dauerhaft anzeigen",
 			"es" : "Display Permanently",
@@ -1104,7 +1104,7 @@
 		"spells_mode.always_skill_static" : {
 			"en" : "Use Static Positions for Permanent Timers",
 			"pt" : "Use Static Positions for Permanent Timers",
-			"cn" : "Use Static Positions for Permanent Timers",
+			"cn" : "永久计时器固定位置",
 			"jp" : "Use Static Positions for Permanent Timers",
 			"de" : "Statische Positionen für permanente Timer benutzen",
 			"es" : "Use Static Positions for Permanent Timers",
@@ -1126,7 +1126,7 @@
 		"spells_mode.party_zones" : {
 			"en" : "Only Track in These Instances",
 			"pt" : "Only Track in These Instances",
-			"cn" : "Only Track in These Instances",
+			"cn" : "仅在以下场景启用监控",
 			"jp" : "Only Track in These Instances",
 			"de" : "Nur in folgenden Instanzen überwachen",
 			"es" : "Only Track in These Instances",
@@ -1137,7 +1137,7 @@
 		"spells_mode.party_tts_on_skill" : {
 			"en" : "Use Text to Speech on Spell Used",
 			"pt" : "Usar Texto em Voz (Spell Used)",
-			"cn" : "开启TTS (Spell Used)",
+			"cn" : "发动技能时播报TTS",
 			"jp" : "音声読み上げ (Spell Used)",
 			"de" : "Text zu Sprache verwenden (Spell Used)",
 			"es" : "Use Text to Speech on Spell Used",
@@ -1148,7 +1148,7 @@
 		"spells_mode.designer.skill.warning" : {
 			"en" : "Show Warning Animation",
 			"pt" : "Show Warning Animation",
-			"cn" : "Show Warning Animation",
+			"cn" : "显示警告动画",
 			"jp" : "Show Warning Animation",
 			"de" : "Warnungsanimation anzeigen",
 			"es" : "Show Warning Animation",
@@ -1159,7 +1159,7 @@
 		"spells_mode.designer.skill.indicator" : {
 			"en" : "Visual Indicator",
 			"pt" : "Visual Indicator",
-			"cn" : "Visual Indicator",
+			"cn" : "视觉指示器",
 			"jp" : "Visual Indicator",
 			"de" : "Visueller Indikator",
 			"es" : "Visual Indicator",
@@ -1170,7 +1170,7 @@
 		"spells_mode.designer.skill.cooldown_bottom_left" : {
 			"en" : "Cooldowns in Bottom Left (Icons Only)",
 			"pt" : "Cooldowns in Bottom Left (Icons Only)",
-			"cn" : "Cooldowns in Bottom Left (Icons Only)",
+			"cn" : "在左下角显示冷却时间 (仅图标)",
 			"jp" : "Cooldowns in Bottom Left (Icons Only)",
 			"de" : "Abklingzeit unten links (nur Icons)",
 			"es" : "Cooldowns in Bottom Left (Icons Only)",
@@ -1181,7 +1181,7 @@
 		"spells_mode.designer.effect.border" : {
 			"en" : "Show Glowing Border",
 			"pt" : "Show Glowing Border",
-			"cn" : "Show Glowing Border",
+			"cn" : "显示发光边框",
 			"jp" : "Show Glowing Border",
 			"de" : "Leuchtenden Rahmen anzeigen",
 			"es" : "Show Glowing Border",
@@ -1192,7 +1192,7 @@
 		"spells_mode.designer.general.show_hover_names" : {
 			"en" : "Show Name When Hovering Over Timer",
 			"pt" : "Show Name When Hovering Over Timer",
-			"cn" : "Show Name When Hovering Over Timer",
+			"cn" : "悬停在计时器上时显示名称",
 			"jp" : "Show Name When Hovering Over Timer",
 			"de" : "Show Name When Hovering Over Timer",
 			"es" : "Show Name When Hovering Over Timer",
@@ -1203,7 +1203,7 @@
 		"spells_mode.ui.use" : {
 			"en" : "Use UI Builder",
 			"pt" : "Use UI Builder",
-			"cn" : "Use UI Builder",
+			"cn" : "启用界面构建器",
 			"jp" : "Use UI Builder",
 			"de" : "UI-Baukasten verwenden",
 			"es" : "Use UI Builder",
@@ -1442,7 +1442,7 @@
 				"you" : {
 					"en" : "You",
 					"pt" : "You",
-					"cn" : "You",
+					"cn" : "你",
 					"jp" : "You",
 					"de" : "You",
 					"es" : "You",
@@ -1464,7 +1464,7 @@
 				"heal" : {
 					"en" : "Healer",
 					"pt" : "Healer",
-					"cn" : "Healer",
+					"cn" : "治疗",
 					"jp" : "ヒーラー",
 					"de" : "Healer",
 					"es" : "Heiler",
@@ -1488,7 +1488,7 @@
 				"skill" : {
 					"en" : "Spell",
 					"pt" : "Spell",
-					"cn" : "Spell",
+					"cn" : "技能",
 					"jp" : "Spell",
 					"de" : "Spell",
 					"es" : "Spell",
@@ -1531,9 +1531,9 @@
 					"icon"    : "Icon Only"
 				},
 				"cn" : {
-					"normal"  : "Normal",
+					"normal"  : "普通",
 					"compact" : "紧凑",
-					"icon"    : "Icon Only"
+					"icon"    : "仅图标"
 				},
 				"jp" : {
 					"normal"  : "Normal",
@@ -1578,9 +1578,9 @@
 					"none"     : "None"
 				},
 				"cn" : {
-					"ticking"  : "Ticking",
-					"darkened" : "Darkened/Gray",
-					"none"     : "None"
+					"ticking"  : "计时条",
+					"darkened" : "暗淡",
+					"none"     : "无"
 				},
 				"jp" : {
 					"ticking"  : "Ticking",
@@ -1623,8 +1623,8 @@
 					"warning" : "When timer reaches warning threshold"
 				},
 				"cn" : {
-					"zero"    : "When timer reaches 0",
-					"warning" : "When timer reaches warning threshold"
+					"zero"    : "当计时器到达0时",
+					"warning" : "当计时器到达警告阈值时"
 				},
 				"jp" : {
 					"zero"    : "When timer reaches 0",
@@ -1964,7 +1964,7 @@
 		"default" : {
 			"en" : "Default",
 			"pt" : "Default",
-			"cn" : "Default",
+			"cn" : "默认",
 			"jp" : "Default",
 			"de" : "Standard",
 			"es" : "Default",
@@ -1975,7 +1975,7 @@
 		"track" : {
 			"en" : "Track",
 			"pt" : "Track",
-			"cn" : "Track",
+			"cn" : "监控",
 			"jp" : "Track",
 			"de" : "Überwachen",
 			"es" : "Track",
@@ -1986,7 +1986,7 @@
 		"edit_ui" : {
 			"en" : "Edit UI",
 			"pt" : "Edit UI",
-			"cn" : "Edit UI",
+			"cn" : "编辑界面",
 			"jp" : "Edit UI",
 			"de" : "UI bearbeiten",
 			"es" : "Edit UI",
@@ -1997,7 +1997,7 @@
 		"save_ui" : {
 			"en" : "Save UI",
 			"pt" : "Save UI",
-			"cn" : "Save UI",
+			"cn" : "保存界面",
 			"jp" : "Save UI",
 			"de" : "UI speichern",
 			"es" : "Save UI",
@@ -2008,7 +2008,7 @@
 		"please_lock" : {
 			"en" : "Please lock the overlay in OverlayPlugin.",
 			"pt" : "Please lock the overlay in OverlayPlugin.",
-			"cn" : "Please lock the overlay in OverlayPlugin.",
+			"cn" : "请在OverlayPlugin中锁定悬浮窗.",
 			"jp" : "Please lock the overlay in OverlayPlugin.",
 			"de" : "Bitte das Overlay unter OverlayPlugin sperren.",
 			"es" : "Please lock the overlay in OverlayPlugin.",
@@ -2019,7 +2019,7 @@
 		"spells_ui_builder_info" : {
 			"en" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"pt" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
-			"cn" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
+			"cn" : "界面构建器使你能够创建你自己的技能监控分段 (如下)。例如，你可以为你自己的冷却时间创建一个计时器分段，再为你的坦克或治疗者的冷却时间创建一个计时器分段。在下方的表格中，在每个栏目中选择你想要监控的内容来创建分段。设置完成后，确保 \"{{spells_mode.ui.use}}\" 已启用，然后点击保存。调整你的悬浮窗的大小，使它覆盖整个最终幻想XIV游戏界面。如果你无法调整悬浮窗大小或找不到你的悬浮窗，请在OverlayPlugin中解锁悬浮窗，如已解锁，请启用白色背景选项。在你的覆盖层中右击并选择 \"{{edit_ui}}。\" 当你进入到 \"{{edit_ui}}\" 模式, 请确保重新锁定了悬浮窗并关闭白色背景选项。然后你就可以拖动并调整你创建的技能监控分段的大小。每个分段都有独立标签，以便你知道它包含了什么。调整结束后，右击并选择 \"{{save_ui}}。\"",
 			"jp" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
 			"de" : "Der UI-Baukasten erlaubt dir, deine eigenen Zauber-Timer Bereiche (unten) zu erstellen. Zum Beispiel kannst du einen Timer Bereich für deine eigenen Abklingzeiten und einen weiteren für die deiner Verteidiger und Heiler. In der Tabelle unten kannst du Bereiche erstellen, indem du auswählst, was du in jeweiligen Bereich überwachen willst. Stelle sicher, dass \"{{spells_mode.ui.use}}\" aktiviert ist, sobald du fertig bist, und klicke auf \"Speichern\". Ändere die Größe deines Overlays so, dass es das ganze FF XIV Spiel abdeckt. Falls du die Größe nicht ändern kannst oder dein Overlay nicht findest, gehe auf OverlayPlugin und entsperre dein Overlay bzw. aktiviere den weißen Hintergrund, falls es bereits entsperrt ist. Klicke mit deinem Rechtsklick auf das Overlay und wähle \"{{edit_ui}}\". Sobald du im \"{{edit_ui}}\"-Modus bist, stelle sicher, dass du das Overlay wieder sperrst bzw. den weißen Hintergrund deakivierst. Nun kannst du deine erstellten Zauber-Timer Bereiche verschieben und deren Größe ändern. Jeder Bereich ist beschriftet, damit du weißt, was er enthält. Bist du fertig, Rechtsklicke erneut und wähle \"{{save_ui}}\".",
 			"es" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
@@ -2030,7 +2030,7 @@
 		"discord_webhook_info": {
 			"en" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
 			"pt" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
-			"cn" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"cn" : "Discord Webhook允许Ember将你的战斗数据发送到你的Discord频道。如果你想要获得Webhook链接，请在Discord中打开所选频道的设置界面，选择 \"整合。\" 点击 \"创建Webhook\" (如果你已经创建过Webhook，则点击 \"查看Webhooks\" → \"新Webhook\")。然后点击 \"复制Webhook URL\" 并将其粘贴到下方的文本框中。战斗结束后，在Ember Overlay中点击右下角的Discord图标，并选择 \"{{discord_webhook}}。\" 你的战斗结果将被发送到你的Discord频道中。",
 			"jp" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
 			"de" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
 			"es" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
