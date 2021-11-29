@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.32.2-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- ?
+
+### Features
+- ?
+
+### UI Changes
+- Updated Chinese translations
+
+### Code Changes
+- Add Reaper and Sage jobs
+
+### Miscellaneous
+- ?
+
 ## 0.32.1-alpha
 
 **Released: 2021-11-15**
@@ -9,7 +28,7 @@
 - Fix issue with overlay crashing in certain scenarios when job name display is enabled
 
 ### Features
-- M/A
+- N/A
 
 ### UI Changes
 - N/A
