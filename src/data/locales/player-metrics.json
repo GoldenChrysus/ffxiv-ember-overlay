@@ -1077,7 +1077,7 @@
 			"long"  : "Swings"
 		},
 		"de" : {
-			"short" : "Swing",
+			"short" : "Trefferanzahl",
 			"long"  : "Swings"
 		},
 		"es" : {
@@ -1089,12 +1089,12 @@
 			"long"  : "Swings"
 		},
 		"kr" : {
-			"short" : "Swing",
-			"long"  : "Swings"
+			"short" : "횟수",
+			"long"  : "횟수"
 		},
 		"ua" : {
-			"short" : "Swing",
-			"long"  : "Swings"
+			"short" : "Кількість атак",
+			"long"  : "Атак"
 		}
 	}
 }

@@ -67,13 +67,14 @@
 	},
 	"encounter_history" : {
 		"en" : "Encounter history",
-		"pt" : "Encounter history",
+		"pt" : "Histórico de Encontros",
 		"cn" : "历史战斗数据",
 		"jp" : "Encounter history",
-		"de" : "Encounter history",
+		"de" : "Kampfverlauf",
 		"es" : "Encounter history",
 		"fr" : "Encounter history",
-		"kr" : "Encounter history"
+		"kr" : "전투 기록 히스토리",
+		"ua" : "Історія Боїв"
 	},
 	"discord" : {
 		"en" : "Discord",
@@ -87,23 +88,25 @@
 	},
 	"join_discord" : {
 		"en" : "Join Discord",
-		"pt" : "Join Discord",
+		"pt" : "Entre no Discord",
 		"cn" : "加入Discord频道",
 		"jp" : "Join Discord",
-		"de" : "Join Discord",
+		"de" : "Discord beitreten",
 		"es" : "Join Discord",
 		"fr" : "Join Discord",
-		"kr" : "Join Discord"
+		"kr" : "디스코드 참여하기",
+		"ua" : "Доєднатися до Discord"
 	},
 	"discord_webhook" : {
 		"en" : "Share Encounter",
-		"pt" : "Share Encounter",
+		"pt" : "Compartilhar Encontro",
 		"cn" : "分享战斗数据",
 		"jp" : "Share Encounter",
-		"de" : "Share Encounter",
+		"de" : "Kampf teilen",
 		"es" : "Share Encounter",
 		"fr" : "Share Encounter",
-		"kr" : "Share Encounter"
+		"kr" : "전투 기록 공유",
+		"ua" : "Поділитись Боєм"
 	},
 	"settings"            : {
 		"en" : "Settings",
@@ -239,7 +242,7 @@
 	},
 	"aggro"              : {
 		"en" : "Agg",
-		"pt" : "Agg",
+		"pt" : "Ameaça",
 		"cn" : "仇恨",
 		"jp" : "敵視",
 		"de" : "Agg",

@@ -22,7 +22,7 @@
 					"es" : "General",
 					"fr" : "Général",
 					"kr" : "일반 설정",
-					"ua" : "Загальне"
+					"ua" : "Основне"
 				},
 				{
 					"en" : "Data",
@@ -83,7 +83,8 @@
 				"de" : "Text zu Sprache",
 				"es" : "Text to Speech",
 				"fr" : "Text to Speech",
-				"kr" : "보이스웨어 사용"
+				"kr" : "보이스웨어 사용",
+				"ua" : "Читання вголос"
 			},
 			"subsections" : [
 				{
@@ -91,10 +92,11 @@
 					"pt" : "Texto em Voz Setup",
 					"cn" : "TTS设置",
 					"jp" : "音声読み上げ Setup",
-					"de" : "Text zu Sprache Setup",
+					"de" : "Text zu Sprache Einstellungen",
 					"es" : "Text to Speech Setup",
 					"fr" : "Text to Speech Setup",
-					"kr" : "보이스웨어 사용 Setup"
+					"kr" : "보이스웨어 세팅",
+					"ua" : "Налаштування Читання вголос"
 				}
 			]
 		},
@@ -120,7 +122,7 @@
 					"es" : "General",
 					"fr" : "Général",
 					"kr" : "일반 설정",
-					"ua" : "Загальне"
+					"ua" : "Основне"
 				},
 				{
 					"en" : "DPS",
@@ -227,7 +229,7 @@
 					"es" : "General",
 					"fr" : "Général",
 					"kr" : "일반 설정",
-					"ua" : "Загальне"
+					"ua" : "Основне"
 				},
 				{
 					"en" : "DPS",
@@ -273,7 +275,7 @@
 				"de" : "Discord Webhook",
 				"es" : "Discord Webhook",
 				"fr" : "Discord Webhook",
-				"kr" : "Discord Webhook"
+				"kr" : "디스코드 웹후크"
 			},
 			"subsections" : [
 				{
@@ -284,7 +286,7 @@
 					"de" : "Webhook",
 					"es" : "Webhook",
 					"fr" : "Webhook",
-					"kr" : "Webhook"
+					"kr" : "웹후크"
 				}
 			]
 		},
@@ -375,7 +377,8 @@
 				"de" : "Zauber Timer",
 				"es" : "Spell Timers",
 				"fr" : "Spell Timers",
-				"kr" : "스펠 타이머"
+				"kr" : "스펠 타이머",
+				"ua" : "Таймери Заклинань"
 			},
 			"subsections" : [
 				{
@@ -386,7 +389,8 @@
 					"de" : "Zauber",
 					"es" : "Hechizos",
 					"fr" : "Sorts",
-					"kr" : "스펠"
+					"kr" : "스펠",
+					"ua" : "Заклинань"
 				},
 				{
 					"en" : "Effects/Buffs",
@@ -396,7 +400,8 @@
 					"de" : "Effekte/Verstärkungen",
 					"es" : "Efectos/Buffs",
 					"fr" : "Effets/Buffs",
-					"kr" : "이펙트/버프"
+					"kr" : "이펙트/버프",
+					"ua" : "Ефекти/Бафи"
 				},
 				{
 					"en" : "DOT's",
@@ -406,7 +411,8 @@
 					"de" : "DOT's",
 					"es" : "DOT's",
 					"fr" : "DOT's",
-					"kr" : "도트기"
+					"kr" : "도트기",
+					"ua" : "DOT'и"
 				},
 				{
 					"en" : "General",
@@ -416,7 +422,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Основне"
 				}
 			]
 		},
@@ -429,7 +436,8 @@
 				"de" : "Gruppenzauber-Timer",
 				"es" : "Party Spell Timers",
 				"fr" : "Party Spell Timers",
-				"kr" : "파티 스펠 타이머"
+				"kr" : "파티 스펠 타이머",
+				"ua" : "Таймери Групових Заклинань"
 			},
 			"subsections" : [
 				{
@@ -440,7 +448,8 @@
 					"de" : "Zauber",
 					"es" : "Hechizos",
 					"fr" : "Sorts",
-					"kr" : "스펠"
+					"kr" : "스펠",
+					"ua" : "Заклинань"
 				},
 				{
 					"en" : "Effects/Buffs",
@@ -450,7 +459,8 @@
 					"de" : "Effekte/Buffs",
 					"es" : "Efectos/Buffs",
 					"fr" : "Effets/Buffs",
-					"kr" : "이펙트/버프"
+					"kr" : "이펙트/버프",
+					"ua" : "Ефекти/Бафи"
 				},
 				{
 					"en" : "DOT's",
@@ -460,7 +470,8 @@
 					"de" : "DOT's",
 					"es" : "DOT's",
 					"fr" : "DOT's",
-					"kr" : "도트기"
+					"kr" : "도트기",
+					"ua" : "DOT'и"
 				},
 				{
 					"en" : "General",
@@ -470,7 +481,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Основне"
 				}
 			]
 		},
@@ -483,7 +495,8 @@
 				"de" : "Zaubergestaltung",
 				"es" : "Spell Designer",
 				"fr" : "Spell Designer",
-				"kr" : "Spell Designer"
+				"kr" : "스펠 디자이너",
+				"ua" : "Дизайнер Заклинань"
 			},
 			"subsections" : [
 				{
@@ -494,7 +507,8 @@
 					"de" : "Zauber",
 					"es" : "Hechizos",
 					"fr" : "Sorts",
-					"kr" : "스펠"
+					"kr" : "스펠",
+					"ua" : "Заклинань"
 				},
 				{
 					"en" : "Effects/Buffs",
@@ -504,7 +518,8 @@
 					"de" : "Effekte/Buffs",
 					"es" : "Efectos/Buffs",
 					"fr" : "Effets/Buffs",
-					"kr" : "이펙트/버프"
+					"kr" : "이펙트/버프",
+					"ua" : "Ефекти/Бафи"
 				},
 				{
 					"en" : "DOT's",
@@ -514,7 +529,8 @@
 					"de" : "DOT's",
 					"es" : "DOT's",
 					"fr" : "DOT's",
-					"kr" : "도트기"
+					"kr" : "도트기",
+					"ua" : "DOT'и"
 				},
 				{
 					"en" : "General",
@@ -524,7 +540,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Основне"
 				}
 			]
 		},
@@ -537,7 +554,8 @@
 				"de" : "UI-Baukasten",
 				"es" : "UI Builder",
 				"fr" : "UI Builder",
-				"kr" : "UI 빌더"
+				"kr" : "UI 빌더",
+				"ua" : "Конструктор UI"
 			},
 			"subsections" : [
 				{
@@ -548,7 +566,8 @@
 					"de" : "Allgemein",
 					"es" : "General",
 					"fr" : "Général",
-					"kr" : "일반 설정"
+					"kr" : "일반 설정",
+					"ua" : "Основне"
 				},
 				{
 					"en" : "UI Sections",
@@ -558,7 +577,8 @@
 					"de" : "UI-Bereiche",
 					"es" : "UI Sections",
 					"fr" : "UI Sections",
-					"kr" : "UI 섹션"
+					"kr" : "UI 섹션",
+					"ua" : "Секції UI"
 				}
 			]
 		}
@@ -665,13 +685,14 @@
 		},
 		"interface.hide_top_bar" : {
 			"en" : "Hide Top Bar",
-			"pt" : "Hide Top Bar",
+			"pt" : "Esconder barra superior",
 			"cn" : "隐藏顶栏",
 			"jp" : "Hide Top Bar",
 			"de" : "Obere Leiste ausblenden",
 			"es" : "Hide Top Bar",
 			"fr" : "Hide Top Bar",
-			"kr" : "상위 바 가리기"
+			"kr" : "상위 바 가리기",
+			"ua" : "Сховати Верхню Панель"
 		},
 		"interface.decimal_accuracy" : {
 			"en" : "Decimal Accuracy",
@@ -741,14 +762,14 @@
 		},
 		"interface.display_job_names" : {
 			"en" : "Use Job Names Instead of Player Names",
-			"pt" : "Use Job Names Instead of Player Names",
+			"pt" : "Usar nomes dos Jobs em vez de nomes dos Jogadores",
 			"cn" : "使用职业名称替换玩家名称",
 			"jp" : "Use Job Names Instead of Player Names",
-			"de" : "Use Job Names Instead of Player Names",
+			"de" : "Jobnamen anstelle von Spielernamen verwenden",
 			"es" : "Use Job Names Instead of Player Names",
 			"fr" : "Use Job Names Instead of Player Names",
-			"kr" : "Use Job Names Instead of Player Names",
-			"ua" : "Use Job Names Instead of Player Names"
+			"kr" : "플레이어 이름 대신 잡 이름 표시",
+			"ua" : "Назви Класів замість Імен Гравців"
 		},
 		"custom.metric_names" : {
 			"en" : "",
@@ -769,7 +790,8 @@
 			"de" : "Regeln",
 			"es" : "Rules",
 			"fr" : "Régles",
-			"kr" : "룰"
+			"kr" : "룰",
+			"ua" : "Правила"
 		},
 		"table_settings.general.table.short_names" : {
 			"en" : "Shorten Player Names",
@@ -922,7 +944,7 @@
 			"de" : "Webhook URL",
 			"es" : "Webhook URL",
 			"fr" : "Webhook URL",
-			"kr" : "Webhook URL",
+			"kr" : "웹후크 URL",
 			"ua" : "Webhook URL"
 		},
 		"custom.css" : {
@@ -945,7 +967,7 @@
 			"es" : "Spells to Track",
 			"fr" : "Spells to Track",
 			"kr" : "확인할 스펠",
-			"ua" : "Заклинання для відстеження"
+			"ua" : "Заклинання для Відстеження"
 		},
 		"spells_mode.effects" : {
 			"en" : "Effects to Track",
@@ -967,7 +989,7 @@
 			"es" : "DOT's to Track",
 			"fr" : "DOT's to Track",
 			"kr" : "확인할 도트기",
-			"ua" : "DOT-и для відстеження"
+			"ua" : "DOT'и для Відстеження"
 		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
@@ -1007,11 +1029,11 @@
 			"pt" : "Usar Texto em Voz (Buff Received)",
 			"cn" : "开启TTS (Buff Received)",
 			"jp" : "音声読み上げ (Buff Received)",
-			"de" : "Text zu Sprache verwenden (Buff Received)",
+			"de" : "Text-zu-Sprache beim Erhalten von Verstärkung verwenden",
 			"es" : "Use Text to Speech on Buff Received",
 			"fr" : "Use Text to Speech on Buff Received",
-			"kr" : "TTS 사용 (Buff Received)",
-			"ua" : "Читати вголос (Buff Received)"
+			"kr" : "버프 받을 시 TTS 사용",
+			"ua" : "Читати вголос коли отримано Баф"
 		},
 		"spells_mode.tts_trigger" : {
 			"en" : "Text to Speech Trigger",
@@ -1037,7 +1059,7 @@
 		},
 		"spells_mode.invert_vertical" : {
 			"en" : "Invert Vertical",
-			"pt" : "Invert Vertical",
+			"pt" : "Inverter Verticalmente",
 			"cn" : "上下颠倒",
 			"jp" : "Invert Vertical",
 			"de" : "Vertikal invertieren",
@@ -1048,7 +1070,7 @@
 		},
 		"spells_mode.invert_horizontal" : {
 			"en" : "Invert Horizontal",
-			"pt" : "Invert Horizontal",
+			"pt" : "Inverter Horizontalmente",
 			"cn" : "左右颠倒",
 			"jp" : "Invert Horizontal",
 			"de" : "Horizontal invertieren",
@@ -1098,7 +1120,7 @@
 			"de" : "Dauerhaft anzeigen",
 			"es" : "Display Permanently",
 			"fr" : "Display Permanently",
-			"kr" : "Display Permanently",
+			"kr" : "영구 표시",
 			"ua" : "Постійне відображення"
 		},
 		"spells_mode.always_skill_static" : {
@@ -1109,7 +1131,7 @@
 			"de" : "Statische Positionen für permanente Timer benutzen",
 			"es" : "Use Static Positions for Permanent Timers",
 			"fr" : "Use Static Positions for Permanent Timers",
-			"kr" : "Use Static Positions for Permanent Timers",
+			"kr" : "영구 표시되는 스펠 타이머들을 고정 위치시키기",
 			"ua" : "Використовуйте статичні позиції для постійних таймерів"
 		},
 		"spells_mode.warning_threshold" : {
@@ -1153,7 +1175,7 @@
 			"de" : "Warnungsanimation anzeigen",
 			"es" : "Show Warning Animation",
 			"fr" : "Show Warning Animation",
-			"kr" : "Show Warning Animation",
+			"kr" : "경고 애니메이션 표시",
 			"ua" : "Показувати анімоване попередження"
 		},
 		"spells_mode.designer.skill.indicator" : {
@@ -1164,18 +1186,18 @@
 			"de" : "Visueller Indikator",
 			"es" : "Visual Indicator",
 			"fr" : "Visual Indicator",
-			"kr" : "Visual Indicator",
+			"kr" : "표시 방식",
 			"ua" : "Візуальний індикатор"
 		},
 		"spells_mode.designer.skill.cooldown_bottom_left" : {
 			"en" : "Cooldowns in Bottom Left (Icons Only)",
-			"pt" : "Cooldowns in Bottom Left (Icons Only)",
+			"pt" : "Recarga no canto inferior esquerdo (Apenas ícones)",
 			"cn" : "在左下角显示冷却时间 (仅图标)",
 			"jp" : "Cooldowns in Bottom Left (Icons Only)",
 			"de" : "Abklingzeit unten links (nur Icons)",
 			"es" : "Cooldowns in Bottom Left (Icons Only)",
 			"fr" : "Cooldowns in Bottom Left (Icons Only)",
-			"kr" : "Cooldowns in Bottom Left (Icons Only)",
+			"kr" : "좌측 하단에 쿨타임 표시(아이콘 전용)",
 			"ua" : "Кулдауни внизу зліва (тільки іконки)"
 		},
 		"spells_mode.designer.effect.border" : {
@@ -1186,7 +1208,7 @@
 			"de" : "Leuchtenden Rahmen anzeigen",
 			"es" : "Show Glowing Border",
 			"fr" : "Show Glowing Border",
-			"kr" : "Show Glowing Border",
+			"kr" : "테두리 빛 표시",
 			"ua" : "Показувати мигаючі грані"
 		},
 		"spells_mode.designer.general.show_hover_names" : {
@@ -1194,11 +1216,11 @@
 			"pt" : "Show Name When Hovering Over Timer",
 			"cn" : "悬停在计时器上时显示名称",
 			"jp" : "Show Name When Hovering Over Timer",
-			"de" : "Show Name When Hovering Over Timer",
+			"de" : "Namen anzeigen wenn Cursor über Zeit schwebt",
 			"es" : "Show Name When Hovering Over Timer",
 			"fr" : "Show Name When Hovering Over Timer",
-			"kr" : "Show Name When Hovering Over Timer",
-			"ua" : "Show Name When Hovering Over Timer"
+			"kr" : "쿨타임위에 커서를 올려 놓을 경우 이름 표시",
+			"ua" : "Показувати Ім'я при наведенні на час"
 		},
 		"spells_mode.ui.use" : {
 			"en" : "Use UI Builder",
@@ -1527,8 +1549,8 @@
 				},
 				"pt" : {
 					"normal"  : "Normal",
-					"compact" : "Compact",
-					"icon"    : "Icon Only"
+					"compact" : "Compacto",
+					"icon"    : "Apenas ícone"
 				},
 				"cn" : {
 					"normal"  : "普通",
@@ -1603,9 +1625,9 @@
 					"none"     : "None"
 				},
 				"kr" : {
-					"ticking"  : "Ticking",
-					"darkened" : "Darkened/Gray",
-					"none"     : "None"
+					"ticking"  : "시계 틱",
+					"darkened" : "낮은 명도/회색 ",
+					"none"     : "비적용"
 				},
 				"ua" : {
 					"ticking"  : "Мигання",
@@ -1619,7 +1641,7 @@
 					"warning" : "When timer reaches warning threshold"
 				},
 				"pt" : {
-					"zero"    : "When timer reaches 0",
+					"zero"    : "Quando o temporizador chegar em 0",
 					"warning" : "When timer reaches warning threshold"
 				},
 				"cn" : {
@@ -1654,14 +1676,14 @@
 		},
 		"metric" : {
 			"en" : "Metric",
-			"pt" : "Metric",
+			"pt" : "Métricas",
 			"cn" : "数据元素",
 			"jp" : "Metric",
 			"de" : "Metrik",
 			"es" : "Metric",
 			"fr" : "Mesure",
 			"kr" : "스탯",
-			"ua" : "Метрика"
+			"ua" : "Показник"
 		},
 		"short_name" : {
 			"en" : "Short Name",
@@ -1963,7 +1985,7 @@
 		},
 		"default" : {
 			"en" : "Default",
-			"pt" : "Default",
+			"pt" : "Padrão",
 			"cn" : "默认",
 			"jp" : "Default",
 			"de" : "Standard",
@@ -2007,14 +2029,14 @@
 		},
 		"please_lock" : {
 			"en" : "Please lock the overlay in OverlayPlugin.",
-			"pt" : "Please lock the overlay in OverlayPlugin.",
+			"pt" : "Por favor trave o Overlay em OverlayPlugin.",
 			"cn" : "请在OverlayPlugin中锁定悬浮窗.",
 			"jp" : "Please lock the overlay in OverlayPlugin.",
 			"de" : "Bitte das Overlay unter OverlayPlugin sperren.",
 			"es" : "Please lock the overlay in OverlayPlugin.",
 			"fr" : "Please lock the overlay in OverlayPlugin.",
-			"kr" : "Please lock the overlay in OverlayPlugin.",
-			"ua" : "Please lock the overlay in OverlayPlugin."
+			"kr" : "오버레이 플러그인 설정에서 반드시 오버레이 고정을 선택해주세요.",
+			"ua" : "Будь ласка, закріпіть оверлей в OverlayPlugin."
 		},
 		"spells_ui_builder_info" : {
 			"en" : "The UI builder enables you to create your own spell timer sections (below). For example, you can create a timer section for your own cooldowns, and a timer section for your tank's or healer's cooldowns. In the table below, create sections by choosing what you want to track in each section. Once complete, be sure \"{{spells_mode.ui.use}}\" is enabled, then click save. Resize your overlay so that it covers your entire FFXIV game. If you are unable to resize or find your overlay, go to OverlayPlugin and unlock the overlay or enable the white background if it's already unlocked. In your overlay, right click and choose \"{{edit_ui}}.\" Once you enter \"{{edit_ui}}\" mode, be sure to relock the overlay or turn off the white background. You will then be able to drag and resize the spell timer sections you created. Each section is labeled so that you know what it will contain. Once complete, right click and choose \"{{save_ui}}.\"",
@@ -2029,13 +2051,13 @@
 		},
 		"discord_webhook_info": {
 			"en" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
-			"pt" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"pt" : "O Discord Webhook permite que o Ember envie seus dados de encontro para seu canal de Discord. Para receber seu webhook URL, abra as configurações do canal de Discord desejado e escolha \"Integrações\". Clique \"Criar Webhook\" (ou \"Vizualizar Webhooks\" → \"Novo Webhook\" se já houver um webhook existente). Depois clique em \"Copiar Webhook URL\" e cole na caixa de texto abaixo. No Ember Overlay, depois do encontro, clique no ícone do Discord no canto inferior direito e escolha \"{{discord_webhook}}\". Os resultados do seu encontro serão enviados para o seu canal do Discord.",
 			"cn" : "Discord Webhook允许Ember将你的战斗数据发送到你的Discord频道。如果你想要获得Webhook链接，请在Discord中打开所选频道的设置界面，选择 \"整合。\" 点击 \"创建Webhook\" (如果你已经创建过Webhook，则点击 \"查看Webhooks\" → \"新Webhook\")。然后点击 \"复制Webhook URL\" 并将其粘贴到下方的文本框中。战斗结束后，在Ember Overlay中点击右下角的Discord图标，并选择 \"{{discord_webhook}}。\" 你的战斗结果将被发送到你的Discord频道中。",
 			"jp" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
-			"de" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"de" : "Die Discord Webhook erlaubt es Ember, deine Kampfdaten in einem Discordkanal zu schicken. Klicke auf \"Einstellungen\" in einem Discord Textkanal deiner Wahl und gehe auf \"Integrationen\" → \"Webhook erstellen\" (oder \"Webhooks einsehen\" → \"Neue Webhook\", falls bereits welche vorhanden sind), um deinen Webhook URL zu erhalten. Klicke nun auf \"Webhook URL kopieren\" und füge ihn in die untenstehende Textbox ein. Nach einem Kampf kannst du dann im Ember Overlay auf das Discordlogo und dann auf \"{{discord_webhook}}\" klicken, um dein Kampfergebnis in deinen Discordkanal senden zu lassen.",
 			"es" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
 			"fr" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
-			"kr" : "Discord Webhook allows Ember to send your encounter data to your Discord channel. To get your webhook URL, open the settings for the desired channel in Discord and choose \"Integrations.\" Click \"Create Webhook\" (or \"View Webhooks\" → \"New Webhook\" if you already have existing webhooks). Then click \"Copy Webhook URL\" and paste it into the text box below. In Ember Overlay, after an encounter, click the Discord icon in the bottom right and choose \"{{discord_webhook}}.\" Your encounter results will be sent to your Discord channel.",
+			"kr" : "디스코드 웹후크를 통해 엠버 오버레이가 디코 채널에 전투 기록을 연동하여 올릴 수 있게 합니다. 웹훅 URL은 원하시는 채널의 설정에서 \"연동\" 선택 후 \"웹후크 만들기\"를  (혹은 \"웹후크 보기\" → \"새 웹후크\"를) 선택하시면 됩니다. 이 후 \"웹후크 URL 복사\"를 선택하여 아래의 입력창에 붙여넣으십시오. 전투가 끝나면 우측 하단에 있는 디스코드 아이콘을 선택하여 \"{{discord_webhook}}\" 를 선택하십시오. 해당 디스코드 채널에 전투 기록이 연동되어 뜰 것입니다.",
 			"ua" : "Discord Webhook дозволяє Ember надсилати дані про ваші зустрічі на ваш канал Discord. Щоб отримати URL-адресу веб-хука, відкрийте налаштування для потрібного каналу в розділі Discord та виберіть \"Інтеграції.\" Клацніть \"Створити вебхук\" (або \"Переглянути вебхуки\" → \"Новий вебхук\", якщо у вас уже є веб-хуки). Потім натисніть \"Скопіювати URL вебхука\" та вставте його в текстове поле нижче. У Ember Overlay, після зустрічі, клацніть піктограму Discord внизу праворуч і виберіть \"{{discord_webhook}}.\" Результати зустрічі будуть надіслані на ваш канал Discord."
 		}
 	}
