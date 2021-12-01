@@ -1069,15 +1069,15 @@
 			"long"  : "Swings"
 		},
 		"cn" : {
-			"short" : "Swing",
-			"long"  : "Swings"
+			"short" : "命中",
+			"long"  : "命中数"
 		},
 		"jp" : {
 			"short" : "Swing",
 			"long"  : "Swings"
 		},
 		"de" : {
-			"short" : "Swing",
+			"short" : "Trefferanzahl",
 			"long"  : "Swings"
 		},
 		"es" : {
@@ -1089,12 +1089,12 @@
 			"long"  : "Swings"
 		},
 		"kr" : {
-			"short" : "Swing",
-			"long"  : "Swings"
+			"short" : "횟수",
+			"long"  : "횟수"
 		},
 		"ua" : {
-			"short" : "Swing",
-			"long"  : "Swings"
+			"short" : "Кількість атак",
+			"long"  : "Атак"
 		}
 	}
 }

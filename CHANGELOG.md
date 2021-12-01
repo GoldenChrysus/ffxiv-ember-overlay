@@ -1,15 +1,34 @@
 # Changelog
 
-## 0.32.1-alpha
+## 0.32.2-alpha
 
-**Released: [in development]**
+**Released: [in staging]**
 
 ### Bug Fixes
-- Fix Lightspeed cooldown for characters with Hyper Lightspeed
-- Fix issue with overlay crashing in certain scenarios when job name display is enabled
+- N/A
 
 ### Features
-- M/A
+- N/A
+
+### UI Changes
+- Updated Chinese, Portuguese, German, Korean, and Ukrainian translations
+
+### Code Changes
+- Added Reaper and Sage job icons
+
+### Miscellaneous
+- N/A
+
+## 0.32.1-alpha
+
+**Released: 2021-11-15**
+
+### Bug Fixes
+- Fixed Lightspeed cooldown for characters with Hyper Lightspeed
+- Fixed issue with overlay crashing in certain scenarios when job name display is enabled
+
+### Features
+- N/A
 
 ### UI Changes
 - N/A

@@ -300,6 +300,20 @@ const GameJobs = {
 		Name_fr : "Danseur",
 		Name_jp : "踊り子",
 	},
+	RPR : {
+		role    : "dps",
+		Name_de : "Reaper",
+		Name_en : "Reaper",
+		Name_fr : "Reaper",
+		Name_jp : "リーパー",
+	},
+	SGE : {
+		role    : "heal",
+		Name_de : "Sage",
+		Name_en : "Sage",
+		Name_fr : "Sage",
+		Name_jp : "賢者",
+	},
 };
 
 const GameJobsID = require("../data/game/jobs.json");
