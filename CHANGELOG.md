@@ -2,7 +2,7 @@
 
 ## 0.32.2-alpha
 
-**Released: [in staging]**
+**Released: 2021-12-02**
 
 ### Bug Fixes
 - N/A
