@@ -1423,7 +1423,7 @@
 				"fr" : "A tank's HP is below:",
 				"kr" : "탱커의 체력이 이정도 미만 일 때:",
 				"ua" : "HP Захисника менше:",
-				"ru" : "pending"
+				"ru" : "Здоровье танка меньше:"
 			},
 			"critical_hp.dps" : {
 				"en" : "A DPS' HP is below:",
@@ -1435,7 +1435,7 @@
 				"fr" : "A DPS' HP is below:",
 				"kr" : "딜러의 체력이 이정도 미만 일 때:",
 				"ua" : "DPS' HP менше:",
-				"ru" : "pending"
+				"ru" : "Здоровье DPS меньше:"
 			},
 			"critical_hp.heal" : {
 				"en" : "A healer's HP is below:",
@@ -1447,7 +1447,7 @@
 				"fr" : "A healer's HP is below:",
 				"kr" : "힐러의 체력이 이정도 미만 일 때:",
 				"ua" : "HP Цілителя менше:",
-				"ru" : "pending"
+				"ru" : "Здоровье целителя меньше:"
 			},
 			"critical_hp.all" : {
 				"en" : "Anyone's HP is below:",
@@ -1459,7 +1459,7 @@
 				"fr" : "Anyone's HP is below:",
 				"kr" : "아무나의 체력이 이정도 미만일 떄:",
 				"ua" : "Чиєсь HP менше:",
-				"ru" : "pending"
+				"ru" : "Здоровье любого игрока меньше:"
 			},
 			"critical_mp.tank" : {
 				"en" : "A tank's MP is below:",
@@ -1471,7 +1471,7 @@
 				"fr" : "A tank's MP is below:",
 				"kr" : "탱커의 마나 이정도 미만 일 때:",
 				"ua" : "MP Захисника менше:",
-				"ru" : "pending"
+				"ru" : "мана танка меньше:"
 			},
 			"critical_mp.dps" : {
 				"en" : "A DPS' MP is below:",
@@ -1483,7 +1483,7 @@
 				"fr" : "A DPS' MP is below:",
 				"kr" : "딜러의 마나 이정도 미만 일 때:",
 				"ua" : "DPS' MP менше:",
-				"ru" : "pending"
+				"ru" : "мана DPS меньше:"
 			},
 			"critical_mp.heal" : {
 				"en" : "A healer's MP is below:",
@@ -1495,7 +1495,7 @@
 				"fr" : "A healer's MP is below:",
 				"kr" : "힐러의 마나 이정도 미만 일 때:",
 				"ua" : "MP Цілителя менше:",
-				"ru" : "pending"
+				"ru" : "мана целителя меньше:"
 			},
 			"critical_mp.all" : {
 				"en" : "Anyone's MP is below:",
@@ -1507,7 +1507,7 @@
 				"fr" : "Anyone's MP is below:",
 				"kr" : "아무나의 마나 이정도 미만일 떄:",
 				"ua" : "Чиєсь MP менше:",
-				"ru" : "pending"
+				"ru" : "мана любого игрока меньше:"
 			},
 			"aggro" : {
 				"en" : "You obtain aggro",
@@ -1519,7 +1519,7 @@
 				"fr" : "Tu as l'aggro",
 				"kr" : "본인이 적개심 1위가 됨",
 				"ua" : "Ви когось заагрили",
-				"ru" : "pending"
+				"ru" : "Вы получили аггро"
 			},
 			"top.dps" : {
 				"en" : "You obtain top DPS",
@@ -1531,7 +1531,7 @@
 				"fr" : "Tu es top DPS",
 				"kr" : "본인이 딜 순위 1위가 됨",
 				"ua" : "У вас найкращий DPS",
-				"ru" : "pending"
+				"ru" : "Вы топ DPS"
 			},
 			"top.hps" : {
 				"en" : "You obtain top HPS",
@@ -1543,7 +1543,7 @@
 				"fr" : "Tu es top SPS",
 				"kr" : "본인이 힐량 1순위가 됨",
 				"ua" : "У вас найкращий HPS",
-				"ru" : "pending"
+				"ru" : "Вы топ HPS"
 			},
 			"top.tps" : {
 				"en" : "You obtain top DTPS",
@@ -1555,7 +1555,7 @@
 				"fr" : "Tu es top DRPS",
 				"kr" : "본인이 DTPS 1위가 됨",
 				"ua" : "У вас найкращий DTPS",
-				"ru" : "pending"
+				"ru" : "Вы топ DTPS"
 			},
 			"encounter.start" : {
 				"en" : "An encounter starts",
@@ -1567,7 +1567,7 @@
 				"fr" : "Le combat commence",
 				"kr" : "전투 개시",
 				"ua" : "Бій починається",
-				"ru" : "pending"
+				"ru" : "Бой начинается"
 			},
 			"encounter.end" : {
 				"en" : "An encounter ends",
@@ -1579,7 +1579,7 @@
 				"fr" : "Le combat finit",
 				"kr" : "전투 종료",
 				"ua" : "Бій закінчується",
-				"ru" : "pending"
+				"ru" : "Бой заканчивается"
 			}
 		},
 
@@ -1595,7 +1595,7 @@
 					"fr" : "You",
 					"kr" : "You",
 					"ua" : "Ви",
-					"ru" : "pending"
+					"ru" : "Вы"
 				},
 				"dps" : {
 					"en" : "DPS",
@@ -1607,7 +1607,7 @@
 					"fr" : "DPS",
 					"kr" : "DPS",
 					"ua" : "DPS",
-					"ru" : "pending"
+					"ru" : "DPS"
 				},
 				"heal" : {
 					"en" : "Healer",
@@ -1619,7 +1619,7 @@
 					"fr" : "Healer",
 					"kr" : "힐러",
 					"ua" : "Цілитель",
-					"ru" : "pending"
+					"ru" : "целителя"
 				},
 				"tank" : {
 					"en" : "Tank",
@@ -1631,7 +1631,7 @@
 					"fr" : "Tank",
 					"kr" : "탱커",
 					"ua" : "Захисник",
-					"ru" : "pending"
+					"ru" : "Танк"
 				}
 			},
 			"types" : {
