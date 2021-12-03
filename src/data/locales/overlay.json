@@ -8,7 +8,8 @@
 		"es" : "Minimizar",
 		"fr" : "Minimiser",
 		"kr" : "최소화",
-		"ua" : "Згорнути"
+		"ua" : "Згорнути",
+		"ru" : "Свернуть"
 	},
 	"uncollapse"          : {
 		"en" : "Uncollapse",
@@ -19,7 +20,8 @@
 		"es" : "Maximizar",
 		"fr" : "élargir",
 		"kr" : "최대화",
-		"ua" : "Розгорнути"
+		"ua" : "Розгорнути",
+		"ru" : "Развернуть"
 	},
 	"split_encounter"     : {
 		"en" : "Split encounter",
@@ -30,7 +32,8 @@
 		"es" : "Dividir encuentro",
 		"fr" : "Sciendé le combat",
 		"kr" : "전투 휴식 구간 추가",
-		"ua" : "Розділення Бою"
+		"ua" : "Розділення Бою",
+		"ru" : "Разделить Бой"
 	},
 	"view_encounter"      : {
 		"en" : "View Encounter Detail",
@@ -41,7 +44,8 @@
 		"es" : "Ver Detalles del Encuentro",
 		"fr" : "Voir les Détails du Combat",
 		"kr" : "전투 상세 정보",
-		"ua" : "Переглянути Деталі Бою"
+		"ua" : "Переглянути Деталі Бою",
+		"ru" : "Просмотреть Детали Боя"
 	},
 	"load_sample"         : {
 		"en" : "Load Sample Data",
@@ -52,7 +56,8 @@
 		"es" : "Cargar Datos de Muestra",
 		"fr" : "Charger la Donnée d'échantillon",
 		"kr" : "예제 전투 불러오기",
-		"ua" : "Завантажити приклади боїв"
+		"ua" : "Завантажити приклади боїв",
+		"ru" : "Загрузить Пример Данных"
 	},
 	"clear_encounter"     : {
 		"en" : "Clear Encounter Data",
@@ -63,7 +68,8 @@
 		"es" : "Borrar Datos del Encuentro",
 		"fr" : "Nettoyer les Données",
 		"kr" : "전투 데이터 삭제",
-		"ua" : "Очистити Дані Бою"
+		"ua" : "Очистити Дані Бою",
+		"ru" : "Очистить Данные Боя"
 	},
 	"encounter_history" : {
 		"en" : "Encounter history",
@@ -74,7 +80,8 @@
 		"es" : "Encounter history",
 		"fr" : "Encounter history",
 		"kr" : "전투 기록 히스토리",
-		"ua" : "Історія Боїв"
+		"ua" : "Історія Боїв",
+		"ru" : "История Боев"
 	},
 	"discord" : {
 		"en" : "Discord",
@@ -84,7 +91,8 @@
 		"de" : "Discord",
 		"es" : "Discord",
 		"fr" : "Discord",
-		"kr" : "Discord"
+		"kr" : "Discord",
+		"ru" : "Discord"
 	},
 	"join_discord" : {
 		"en" : "Join Discord",
@@ -95,7 +103,8 @@
 		"es" : "Join Discord",
 		"fr" : "Join Discord",
 		"kr" : "디스코드 참여하기",
-		"ua" : "Доєднатися до Discord"
+		"ua" : "Доєднатися до Discord",
+		"ru" : "Присоединиться к Discord"
 	},
 	"discord_webhook" : {
 		"en" : "Share Encounter",
@@ -106,7 +115,8 @@
 		"es" : "Share Encounter",
 		"fr" : "Share Encounter",
 		"kr" : "전투 기록 공유",
-		"ua" : "Поділитись Боєм"
+		"ua" : "Поділитись Боєм",
+		"ru" : "Поделиться Боем"
 	},
 	"settings"            : {
 		"en" : "Settings",
@@ -117,7 +127,8 @@
 		"es" : "Opciones",
 		"fr" : "Paramètres",
 		"kr" : "설정",
-		"ua" : "Налаштування"
+		"ua" : "Налаштування",
+		"ru" : "Настройки"
 	},
 	"blur_names"          : {
 		"en" : "Blur player names",
@@ -128,7 +139,8 @@
 		"es" : "Difuminar Nombres de los Jugadores",
 		"fr" : "Cacher le nom des joueurs",
 		"kr" : "플레이어 이름 가리기",
-		"ua" : "Розмивати імена гравців"
+		"ua" : "Розмивати імена гравців",
+		"ru" : "Размыть имена игроков"
 	},
 	"toggle_collapse"     : {
 		"en" : "Toggle collapse",
@@ -139,7 +151,8 @@
 		"es" : "Minimizar/Maximizar",
 		"fr" : "Minimiser/Afficher",
 		"kr" : "최소화 토글",
-		"ua" : "Згорнути/Розгорнути"
+		"ua" : "Згорнути/Розгорнути",
+		"ru" : "Переключить сворачивание"
 	},
 	"back"                : {
 		"en" : "Back",
@@ -150,7 +163,8 @@
 		"es" : "Volver",
 		"fr" : "Revenir",
 		"kr" : "뒤로가기",
-		"ua" : "Назад"
+		"ua" : "Назад",
+		"ru" : "Назад"
 	},
 	"not_applicable"      : {
 		"en" : "N/A",
@@ -161,7 +175,8 @@
 		"es" : "N/A",
 		"fr" : "N/A",
 		"kr" : "N/A",
-		"ua" : "Н/Д"
+		"ua" : "Н/Д",
+		"ru" : "Н/Д"
 	},
 	"inactive"            : {
 		"en" : "Inactive",
@@ -172,7 +187,8 @@
 		"es" : "Inactivo",
 		"fr" : "Inactif",
 		"kr" : "비활성화",
-		"ua" : "Неактивний"
+		"ua" : "Неактивний",
+		"ru" : "Неактивно"
 	},
 	"encounter"           : {
 		"en" : "Encounter",
@@ -183,7 +199,8 @@
 		"es" : "Encuentro",
 		"fr" : "Combat",
 		"kr" : "전투",
-		"ua" : "Бій"
+		"ua" : "Бій",
+		"ru" : "Бой"
 	},
 	"awaiting_encounter"  : {
 		"en" : "Awaiting encounter data...",
@@ -194,7 +211,8 @@
 		"es" : "Esperando datos del encuentro...",
 		"fr" : "En attente d'une donnée de combat...",
 		"kr" : "전투 기록 대기 중...",
-		"ua" : "Очікування даних про бій..."
+		"ua" : "Очікування даних про бій...",
+		"ru" : "Ожидание данных о бое..."
 	},
 	"player_name"         : {
 		"en" : "Name",
@@ -205,7 +223,8 @@
 		"es" : "Nombre",
 		"fr" : "Prénom",
 		"kr" : "이름",
-		"ua" : "Ім'я"
+		"ua" : "Ім'я",
+		"ru" : "Имя"
 	},
 	"dps"                 : {
 		"en" : "DPS",
@@ -216,7 +235,8 @@
 		"es" : "DPS",
 		"fr" : "DPS",
 		"kr" : "DPS",
-		"ua" : "DPS"
+		"ua" : "DPS",
+		"ru" : "DPS"
 	},
 	"heal"                : {
 		"en" : "Heal",
@@ -227,7 +247,8 @@
 		"es" : "Cura",
 		"fr" : "Soin",
 		"kr" : "치유",
-		"ua" : "Цілитель"
+		"ua" : "Цілитель",
+		"ru" : "Исцеление"
 	},
 	"tank"                : {
 		"en" : "Tank",
@@ -238,7 +259,8 @@
 		"es" : "Tank",
 		"fr" : "Tank",
 		"kr" : "탱커",
-		"ua" : "Захисник"
+		"ua" : "Захисник",
+		"ru" : "Танк"
 	},
 	"aggro"              : {
 		"en" : "Agg",
@@ -249,7 +271,8 @@
 		"es" : "Agg",
 		"fr" : "Agg",
 		"kr" : "적개심",
-		"ua" : "Агр"
+		"ua" : "Агро",
+		"ru" : "Агро"
 	},
 	"import"              : {
 		"en" : "Import",
@@ -260,7 +283,8 @@
 		"es" : "Importar",
 		"fr" : "Importer",
 		"kr" : "설정 불러오기",
-		"ua" : "Імпорт"
+		"ua" : "Імпорт",
+		"ru" : "Импорт"
 	},
 	"import_settings"     : {
 		"en" : "Import Settings",
@@ -271,7 +295,8 @@
 		"es" : "Opciones de Importación",
 		"fr" : "Importer les Paramètres",
 		"kr" : "설정 불러오기",
-		"ua" : "Імпорт Налаштувань"
+		"ua" : "Імпорт Налаштувань",
+		"ru" : "Импорт Настроек"
 	},
 	"import_instructions" : {
 		"en" : "Paste your exported setting key below and click \"Import.\"",
@@ -282,7 +307,8 @@
 		"es" : "Pega tus configuraciones exportadas debajo y después presiona \"Importar.\"",
 		"fr" : "Collé votre clé de réglage exportée ci dessous et cliquer sur \"Importer.\"",
 		"kr" : "설정의 고유 키 텍스트를 붙여넣으신 후 \"불러오기\"를 누르십시오.",
-		"ua" : "Вставте експортований ключ налаштувань нижче та натисніть \"Імпортувати.\""
+		"ua" : "Вставте експортований ключ налаштувань нижче та натисніть \"Імпортувати.\"",
+		"ru" : "Вставьте ваш экспортированный ключ настроек ниже и нажмите \"Импорт\"."
 	},
 	"paste"               : {
 		"en" : "Paste",
@@ -293,7 +319,8 @@
 		"es" : "Paste",
 		"fr" : "Paste",
 		"kr" : "붙여넣기",
-		"ua" : "Вставити"
+		"ua" : "Вставити",
+		"ru" : "Вставить"
 	},
 	"mode" : {
 		"en" : "Mode",
@@ -304,7 +331,8 @@
 		"es" : "Modo",
 		"fr" : "Mode",
 		"kr" : "모드",
-		"ua" : "Режим"
+		"ua" : "Режим",
+		"ru" : "Режим"
 	},
 	"parser" : {
 		"en" : "Parser",
@@ -315,7 +343,8 @@
 		"es" : "Analizador",
 		"fr" : "Analyseur",
 		"kr" : "미터기",
-		"ua" : "Аналізатор"
+		"ua" : "Аналізатор",
+		"ru" : "Парсер"
 	},
 	"spell_timers" : {
 		"en" : "Spell Timers",
@@ -326,7 +355,8 @@
 		"es" : "Spell Timers",
 		"fr" : "Spell Timers",
 		"kr" : "스펠 타이머",
-		"ua" : "Таймери Заклинань"
+		"ua" : "Таймери Заклинань",
+		"ru" : "Таймеры Заклинаний"
 	},
 	
 	"tts" : {
@@ -403,6 +433,14 @@
 				"singular" : " є ",
 				"you"      : "Ти",
 				"text"     : "{{players}}{{connector}}мають критичний рівень здоров'я."
+			},
+			"ru" : {
+				"joiner"   : " и ",
+				"several"  : "Несколько игроков",
+				"plural"   : " имеют ",
+				"singular" : " имеет ",
+				"you"      : "У вас",
+				"text"     : "{{players}}{{connector}}критическое здоровье."
 			}
 		},
 		"critical_mp" : {
@@ -478,6 +516,14 @@
 				"singular" : " є ",
 				"you"      : "Ти",
 				"text"     : "{{players}}{{connector}}мають критичний рівень MP."
+			},
+			"ru" : {
+				"joiner"   : " и ",
+				"several"  : "Несколько игроков",
+				"plural"   : " имеют ",
+				"singular" : " имеет ",
+				"you"      : "У вас",
+				"text"     : "{{players}}{{connector}}критическое мана."
 			}
 		},
 		"aggro" : {
@@ -516,6 +562,10 @@
 			"ua" : {
 				"joiner" : ", ",
 				"text"   : "Ви заагрили {{monsters}}."
+			},
+			"ru" : {
+				"joiner" : ", ",
+				"text"   : "Вы заагрили {{monsters}}."
 			}
 		},
 		"top" : {
@@ -545,6 +595,9 @@
 			},
 			"ua" : {
 				"text" : "Ви в топі {{metric}}."
+			},
+			"ru" : {
+				"text" : "Вы топ {{metric}}."
 			}
 		},
 		"encounter" : {
@@ -600,6 +653,12 @@
 				"start"         : "почався",
 				"end"           : "закінчився",
 				"default_title" : "Бій",
+				"text"          : "{{encounter}} {{verb}}."
+			},
+			"ru" : {
+				"start"         : "начался",
+				"end"           : "закончился",
+				"default_title" : "Боев",
 				"text"          : "{{encounter}} {{verb}}."
 			}
 		}
