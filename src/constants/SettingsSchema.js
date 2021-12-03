@@ -9,42 +9,47 @@ const language_options = [
 	{
 		key   : "cn",
 		value : "cn",
-		text  : "中文"
-	},
-	{
-		key   : "de",
-		value : "de",
-		text  : "Deutsch"
+		text  : "中文 (Chinese)"
 	},
 	{
 		key   : "fr",
 		value : "fr",
-		text  : "Français"
+		text  : "Français (French)"
+	},
+	{
+		key   : "de",
+		value : "de",
+		text  : "Deutsch (German)"
 	},
 	{
 		key   : "jp",
 		value : "jp",
-		text  : "日本語"
+		text  : "日本語 (Japanese)"
 	},
 	{
 		key   : "kr",
 		value : "kr",
-		text  : "한국어"
+		text  : "한국어 (Korean)"
 	},
 	{
 		key   : "pt",
 		value : "pt",
-		text  : "Português"
+		text  : "Português (Portuguese)"
+	},
+	{
+		key   : "ru",
+		value : "ru",
+		text  : "Русский язык (Russian)"
 	},
 	{
 		key   : "es",
 		value : "es",
-		text  : "Español"
+		text  : "Español (Spanish)"
 	},
 	{
 		key   : "ua",
 		value : "ua",
-		text  : "Українська"
+		text  : "Українська (Ukrainian)"
 	}
 ];
 const theme_options = [
