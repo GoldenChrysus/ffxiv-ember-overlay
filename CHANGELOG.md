@@ -13,6 +13,7 @@
 ### UI Changes
 - Add Russian translations
 - Updated French translations
+- Updated Reaper and Sage job icons
 
 ### Code Changes
 - ?
