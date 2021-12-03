@@ -11,7 +11,8 @@
 - ?
 
 ### UI Changes
-- ?
+- Add Russian translations
+- Updated French translations
 
 ### Code Changes
 - ?

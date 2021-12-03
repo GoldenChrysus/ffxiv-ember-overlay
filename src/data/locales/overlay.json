@@ -538,7 +538,7 @@
 				"text" : "You are top {{metric}}."
 			},
 			"fr" : {
-				"text" : "You are top {{metric}}."
+				"text" : "Tu es premier {{metric}}."
 			},
 			"kr" : {
 				"text" : "{{metric}} 상위권입니다."
