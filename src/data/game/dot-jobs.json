@@ -109,5 +109,20 @@
 	],
 	"Inferno" : [
 		"SMN"
+	],
+	"Blade of Valor" : [
+		"PLD"
+	],
+	"Chaotic Spring" : [
+		"DRG"
+	],
+	"Eukrasian Dosis" : [
+		"SGE"
+	],
+	"Eukrasian Dosis II" : [
+		"SGE"
+	],
+	"Eukrasian Dosis III" : [
+		"SGE"
 	]
 }
