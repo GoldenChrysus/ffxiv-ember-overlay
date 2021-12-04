@@ -62,7 +62,7 @@
 		}
 	},
 	"23" : {
-		"recast" : 25.0,
+		"recast" : 30.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"GLA",
@@ -144,7 +144,7 @@
 		}
 	},
 	"38" : {
-		"recast" : 90.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"MRD",
@@ -262,10 +262,9 @@
 		}
 	},
 	"69" : {
-		"recast" : 90.0,
+		"recast" : 40.0,
 		"level_recasts" : null,
 		"jobs" : [
-			"PGL",
 			"MNK"
 		],
 		"pvp" : false,
@@ -275,22 +274,6 @@
 				"de" : "Improvisation",
 				"fr" : "Équilibre parfait",
 				"jp" : "踏鳴"
-			}
-		}
-	},
-	"71" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"MNK"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Shoulder Tackle",
-				"de" : "Rakshasas Umarmung",
-				"fr" : "Coup d'épaule",
-				"jp" : "羅刹衝"
 			}
 		}
 	},
@@ -312,7 +295,7 @@
 		}
 	},
 	"85" : {
-		"recast" : 90.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"LNC",
@@ -393,7 +376,7 @@
 		}
 	},
 	"101" : {
-		"recast" : 80.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"ARC",
@@ -410,7 +393,7 @@
 		}
 	},
 	"107" : {
-		"recast" : 80.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"ARC",
@@ -461,7 +444,7 @@
 		}
 	},
 	"114" : {
-		"recast" : 80.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
@@ -477,7 +460,7 @@
 		}
 	},
 	"116" : {
-		"recast" : 80.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
@@ -509,7 +492,7 @@
 		}
 	},
 	"118" : {
-		"recast" : 180.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
@@ -524,25 +507,8 @@
 			}
 		}
 	},
-	"134" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"CNJ",
-			"WHM"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Fluid Aura",
-				"de" : "Wasserstrahl",
-				"fr" : "Aura aquatique",
-				"jp" : "アクアオーラ"
-			}
-		}
-	},
 	"136" : {
-		"recast" : 150.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
@@ -609,7 +575,12 @@
 	},
 	"158" : {
 		"recast" : 180.0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 84,
+				"recast" : 120.0
+			}
+		],
 		"jobs" : [
 			"BLM"
 		],
@@ -636,44 +607,6 @@
 				"de" : "Ätherfluss",
 				"fr" : "Flux d'éther",
 				"jp" : "エーテルフロー"
-			}
-		}
-	},
-	"174" : {
-		"recast" : 10.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"ACN",
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Bane",
-				"de" : "Bann",
-				"fr" : "Fléau",
-				"jp" : "ベイン"
-			}
-		}
-	},
-	"184" : {
-		"recast" : 180.0,
-		"level_recasts" : [
-			{
-				"level" : 68,
-				"recast" : 120.0
-			}
-		],
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Enkindle",
-				"de" : "Entflammung",
-				"fr" : "Galvanisation",
-				"jp" : "エンキンドル"
 			}
 		}
 	},
@@ -791,7 +724,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -865,6 +799,22 @@
 			}
 		}
 	},
+	"2246" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Assassinate",
+				"de" : "Meuchelsprung",
+				"fr" : "Assassinement",
+				"jp" : "終撃"
+			}
+		}
+	},
 	"2248" : {
 		"recast" : 120.0,
 		"level_recasts" : null,
@@ -879,23 +829,6 @@
 				"de" : "Ausrauben",
 				"fr" : "Rapine",
 				"jp" : "ぶんどる"
-			}
-		}
-	},
-	"2257" : {
-		"recast" : 70.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"ROG",
-			"NIN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Shadow Fang",
-				"de" : "Schattenfang",
-				"fr" : "Croc d'ombre",
-				"jp" : "影牙"
 			}
 		}
 	},
@@ -1148,38 +1081,6 @@
 			}
 		}
 	},
-	"3543" : {
-		"recast" : 45.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"MNK"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Tornado Kick",
-				"de" : "Tornadotritt",
-				"fr" : "Coup de pied tornade",
-				"jp" : "闘魂旋風脚"
-			}
-		}
-	},
-	"3545" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"MNK"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Elixir Field",
-				"de" : "Elixier-Feld",
-				"fr" : "Champ-élixir",
-				"jp" : "蒼気砲"
-			}
-		}
-	},
 	"3551" : {
 		"recast" : 25.0,
 		"level_recasts" : null,
@@ -1190,7 +1091,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Raw Intuition",
-				"de" : "Ur-Instinkt",
+				"de" : "Urinstinkt",
 				"fr" : "Intuition pure",
 				"jp" : "原初の直感"
 			}
@@ -1212,22 +1113,6 @@
 			}
 		}
 	},
-	"3553" : {
-		"recast" : 25.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"DRG"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Blood of the Dragon",
-				"de" : "Drachenherz",
-				"fr" : "Sang du dragon",
-				"jp" : "蒼の竜血"
-			}
-		}
-	},
 	"3555" : {
 		"recast" : 30.0,
 		"level_recasts" : null,
@@ -1245,7 +1130,7 @@
 		}
 	},
 	"3557" : {
-		"recast" : 180.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"DRG"
@@ -1277,7 +1162,7 @@
 		}
 	},
 	"3559" : {
-		"recast" : 80.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"BRD"
@@ -1389,7 +1274,7 @@
 		}
 	},
 	"3573" : {
-		"recast" : 90.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"BLM"
@@ -1425,40 +1310,8 @@
 			}
 		}
 	},
-	"3575" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"BLM"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Enochian",
-				"de" : "Henochisch",
-				"fr" : "Énochien",
-				"jp" : "エノキアン"
-			}
-		}
-	},
-	"3580" : {
-		"recast" : 50.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Tri-disaster",
-				"de" : "Trisaster",
-				"fr" : "Tri-désastre",
-				"jp" : "トライディザスター"
-			}
-		}
-	},
 	"3581" : {
-		"recast" : 55.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
@@ -1474,7 +1327,7 @@
 		}
 	},
 	"3582" : {
-		"recast" : 15.0,
+		"recast" : 20.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
@@ -1507,7 +1360,12 @@
 	},
 	"3585" : {
 		"recast" : 120.0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 88,
+				"recast" : 90.0
+			}
+		],
 		"jobs" : [
 			"SCH"
 		],
@@ -1566,22 +1424,6 @@
 				"de" : "Ziehen",
 				"fr" : "Tirage",
 				"jp" : "ドロー"
-			}
-		}
-	},
-	"3593" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"AST"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Redraw",
-				"de" : "Mischen",
-				"fr" : "Retirage",
-				"jp" : "リドロー"
 			}
 		}
 	},
@@ -1893,7 +1735,7 @@
 		}
 	},
 	"7386" : {
-		"recast" : 10.0,
+		"recast" : 30.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
@@ -1941,7 +1783,7 @@
 		}
 	},
 	"7389" : {
-		"recast" : 90.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"WAR"
@@ -1957,7 +1799,7 @@
 		}
 	},
 	"7390" : {
-		"recast" : 90.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"DRK"
@@ -2005,7 +1847,7 @@
 		}
 	},
 	"7395" : {
-		"recast" : 90.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"MNK"
@@ -2021,7 +1863,7 @@
 		}
 	},
 	"7396" : {
-		"recast" : 90.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"MNK"
@@ -2086,7 +1928,12 @@
 	},
 	"7405" : {
 		"recast" : 120.0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 88,
+				"recast" : 90.0
+			}
+		],
 		"jobs" : [
 			"BRD"
 		],
@@ -2180,24 +2027,8 @@
 			}
 		}
 	},
-	"7423" : {
-		"recast" : 180.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Aetherpact",
-				"de" : "Ätherpakt",
-				"fr" : "Pacte d'éther",
-				"jp" : "エーテルパクト"
-			}
-		}
-	},
 	"7427" : {
-		"recast" : 30.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
@@ -2213,7 +2044,7 @@
 		}
 	},
 	"7429" : {
-		"recast" : 10.0,
+		"recast" : 20.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
@@ -2229,7 +2060,7 @@
 		}
 	},
 	"7430" : {
-		"recast" : 120.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"WHM"
@@ -2324,8 +2155,8 @@
 			}
 		}
 	},
-	"7448" : {
-		"recast" : 180.0,
+	"7443" : {
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"AST"
@@ -2333,10 +2164,10 @@
 		"pvp" : false,
 		"locales" : {
 			"name" : {
-				"en" : "Sleeve Draw",
-				"de" : "Legeschema",
-				"fr" : "Grand sabot",
-				"jp" : "スリーヴドロー"
+				"en" : "Minor Arcana",
+				"de" : "Kleine Arkana",
+				"fr" : "Arcane mineur",
+				"jp" : "マイナーアルカナ"
 			}
 		}
 	},
@@ -2437,7 +2268,7 @@
 		}
 	},
 	"7506" : {
-		"recast" : 40.0,
+		"recast" : 35.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"RDM"
@@ -2504,7 +2335,7 @@
 		"recast" : 45.0,
 		"level_recasts" : [
 			{
-				"level" : 78,
+				"level" : 74,
 				"recast" : 35.0
 			}
 		],
@@ -2541,7 +2372,7 @@
 		"recast" : 120.0,
 		"level_recasts" : [
 			{
-				"level" : 74,
+				"level" : 78,
 				"recast" : 110.0
 			}
 		],
@@ -2698,7 +2529,8 @@
 			"NIN",
 			"MCH",
 			"SAM",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -2720,7 +2552,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -2742,7 +2575,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -2774,7 +2608,8 @@
 			"DRK",
 			"SAM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -2796,7 +2631,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -2878,7 +2714,8 @@
 			"SCH",
 			"AST",
 			"RDM",
-			"BLU"
+			"BLU",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -2924,7 +2761,8 @@
 			"SCH",
 			"AST",
 			"RDM",
-			"BLU"
+			"BLU",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -2949,7 +2787,8 @@
 			"SCH",
 			"AST",
 			"RDM",
-			"BLU"
+			"BLU",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -2968,7 +2807,8 @@
 			"CNJ",
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -3050,7 +2890,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -3097,20 +2938,6 @@
 				"de" : "Hai-Auge II",
 				"fr" : "Œil de requin II",
 				"jp" : "シャークアイII"
-			}
-		}
-	},
-	"8624" : {
-		"recast" : 10.0,
-		"level_recasts" : null,
-		"jobs" : "*",
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Magitek Pulse",
-				"de" : "Magitek-Puls",
-				"fr" : "Impulsion magitek",
-				"jp" : "魔導パルス"
 			}
 		}
 	},
@@ -3926,7 +3753,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -3973,7 +3801,9 @@
 			"AST",
 			"SAM",
 			"RDM",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4010,7 +3840,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4035,7 +3866,8 @@
 			"MCH",
 			"SAM",
 			"RDM",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4072,7 +3904,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4097,7 +3930,8 @@
 			"MCH",
 			"SAM",
 			"RDM",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4129,7 +3963,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4161,7 +3997,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4193,7 +4031,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4225,7 +4065,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4257,7 +4099,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4283,7 +4127,8 @@
 			"DRK",
 			"SAM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4314,7 +4159,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4346,7 +4193,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4378,7 +4227,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4410,7 +4261,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4458,7 +4311,8 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4486,7 +4340,9 @@
 			"AST",
 			"SAM",
 			"RDM",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4514,7 +4370,9 @@
 			"AST",
 			"SAM",
 			"RDM",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4542,7 +4400,9 @@
 			"AST",
 			"SAM",
 			"RDM",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4582,7 +4442,8 @@
 			"SMN",
 			"SCH",
 			"AST",
-			"RDM"
+			"RDM",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4605,7 +4466,8 @@
 			"NIN",
 			"DRK",
 			"SAM",
-			"GNB"
+			"GNB",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4672,7 +4534,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -4777,6 +4640,20 @@
 			}
 		}
 	},
+	"15871" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "",
+				"de" : "",
+				"fr" : "",
+				"jp" : ""
+			}
+		}
+	},
 	"15997" : {
 		"recast" : 30.0,
 		"level_recasts" : null,
@@ -4859,7 +4736,12 @@
 	},
 	"16012" : {
 		"recast" : 120.0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 88,
+				"recast" : 90.0
+			}
+		],
 		"jobs" : [
 			"DNC"
 		],
@@ -5304,7 +5186,7 @@
 		}
 	},
 	"16482" : {
-		"recast" : 60.0,
+		"recast" : 120.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"SAM"
@@ -5431,22 +5313,6 @@
 			}
 		}
 	},
-	"16494" : {
-		"recast" : 60.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"BRD"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Shadowbite",
-				"de" : "Schattenbiss",
-				"fr" : "Morsure de l'ombre",
-				"jp" : "シャドウバイト"
-			}
-		}
-	},
 	"16498" : {
 		"recast" : 20.0,
 		"level_recasts" : null,
@@ -5512,7 +5378,7 @@
 		}
 	},
 	"16508" : {
-		"recast" : 30.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"ACN",
@@ -5528,25 +5394,8 @@
 			}
 		}
 	},
-	"16509" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"ACN",
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Egi Assault",
-				"de" : "Egi-Attacke I",
-				"fr" : "Frappe Egi I",
-				"jp" : "エギアサルトI"
-			}
-		}
-	},
 	"16510" : {
-		"recast" : 30.0,
+		"recast" : 60.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
@@ -5561,41 +5410,8 @@
 			}
 		}
 	},
-	"16512" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"ACN",
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Egi Assault II",
-				"de" : "Egi-Attacke II",
-				"fr" : "Frappe Egi II",
-				"jp" : "エギアサルトII"
-			}
-		}
-	},
-	"16513" : {
-		"recast" : 55.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Firebird Trance",
-				"de" : "Phönix-Trance",
-				"fr" : "Transe-Phénix",
-				"jp" : "トランス・フェニックス"
-			}
-		}
-	},
 	"16516" : {
-		"recast" : 10.0,
+		"recast" : 20.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"SMN"
@@ -5738,22 +5554,6 @@
 			}
 		}
 	},
-	"16549" : {
-		"recast" : 55.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Firebird Trance",
-				"de" : "Phönix-Trance",
-				"fr" : "Transe-Phénix",
-				"jp" : "トランス・フェニックス"
-			}
-		}
-	},
 	"16552" : {
 		"recast" : 120.0,
 		"level_recasts" : null,
@@ -5834,218 +5634,6 @@
 			}
 		}
 	},
-	"16791" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"ACN",
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault I: Glittering Topaz",
-				"de" : "Egi-Attacke I: Glimmertopas",
-				"fr" : "Frappe Egi I : Éclat de topaze",
-				"jp" : "エギアサルトI：トパーズの煌き"
-			}
-		}
-	},
-	"16792" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"ACN",
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault II: Shining Topaz",
-				"de" : "Egi-Attacke II: Glanztopas",
-				"fr" : "Frappe Egi II : Topaze scintillante",
-				"jp" : "エギアサルトII：トパーズの輝き"
-			}
-		}
-	},
-	"16793" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"ACN",
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault I: Downburst",
-				"de" : "Egi-Attacke I: Fallböe",
-				"fr" : "Frappe Egi I : Rafale descendante",
-				"jp" : "エギアサルトI：ダウンバースト"
-			}
-		}
-	},
-	"16794" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"ACN",
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault II: Glittering Emerald",
-				"de" : "Egi-Attacke II: Glimmersmaragd",
-				"fr" : "Frappe Egi II : Éclat d'émeraude",
-				"jp" : "エギアサルトII：エメラルドの煌き"
-			}
-		}
-	},
-	"16795" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault I: Earthen Armor",
-				"de" : "Egi-Attacke I: Gaia-Panzer",
-				"fr" : "Frappe Egi I : Armure tellurique",
-				"jp" : "エギアサルトI：大地の鎧"
-			}
-		}
-	},
-	"16796" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault II: Mountain Buster",
-				"de" : "Egi-Attacke II: Bergsprenger",
-				"fr" : "Frappe Egi II : Casse-montagnes",
-				"jp" : "エギアサルトII：マウンテンバスター"
-			}
-		}
-	},
-	"16797" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault I: Aerial Slash",
-				"de" : "Egi-Attacke I: Lufthieb",
-				"fr" : "Frappe Egi I : Taillade aérienne",
-				"jp" : "エギアサルトI：エリアルスラッシュ"
-			}
-		}
-	},
-	"16798" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault II: Slipstream",
-				"de" : "Egi-Attacke II: Wirbelströmung",
-				"fr" : "Frappe Egi II : Sillage",
-				"jp" : "エギアサルトII：スリップストリーム"
-			}
-		}
-	},
-	"16799" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault I: Crimson Cyclone",
-				"de" : "Egi-Attacke I: Zinnober-Zyklon",
-				"fr" : "Frappe Egi I : Cyclone écarlate",
-				"jp" : "エギアサルトI：クリムゾンサイクロン"
-			}
-		}
-	},
-	"16800" : {
-		"recast" : 30.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Assault II: Flaming Crush",
-				"de" : "Egi-Attacke II: Flammenstoß",
-				"fr" : "Frappe Egi II : Fracassement flamboyant",
-				"jp" : "エギアサルトII：フレイミングクラッシュ"
-			}
-		}
-	},
-	"16801" : {
-		"recast" : 180.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Enkindle: Earthen Fury",
-				"de" : "Entflammung: Gaias Zorn",
-				"fr" : "Galvanisation : Fureur tellurique",
-				"jp" : "エンキンドル：大地の怒り"
-			}
-		}
-	},
-	"16802" : {
-		"recast" : 180.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Enkindle: Aerial Blast",
-				"de" : "Entflammung: Windschlag",
-				"fr" : "Galvanisation : Rafale aérienne",
-				"jp" : "エンキンドル：エリアルブラスト"
-			}
-		}
-	},
-	"16803" : {
-		"recast" : 180.0,
-		"level_recasts" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Enkindle: Inferno",
-				"de" : "Entflammung: Inferno",
-				"fr" : "Galvanisation : Flammes de l'enfer",
-				"jp" : "エンキンドル：地獄の火炎"
-			}
-		}
-	},
 	"16804" : {
 		"recast" : 30.0,
 		"level_recasts" : null,
@@ -6062,7 +5650,12 @@
 	},
 	"16889" : {
 		"recast" : 120.0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 88,
+				"recast" : 90.0
+			}
+		],
 		"jobs" : [
 			"MCH"
 		],
@@ -6214,7 +5807,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -6233,7 +5827,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -6252,7 +5847,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -6325,7 +5921,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -6451,7 +6048,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -6469,7 +6067,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -6487,7 +6086,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -7017,7 +6617,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -7382,7 +6983,12 @@
 	},
 	"18934" : {
 		"recast" : 45.0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 88,
+				"recast" : 90.0
+			}
+		],
 		"jobs" : [
 			"MCH"
 		],
@@ -7580,7 +7186,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -7634,7 +7241,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -7663,7 +7271,7 @@
 		}
 	},
 	"18990" : {
-		"recast" : 60.0,
+		"recast" : 45.0,
 		"level_recasts" : null,
 		"jobs" : [
 			"PLD",
@@ -7688,7 +7296,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : true,
 		"locales" : {
@@ -7812,7 +7421,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -7844,7 +7455,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -7876,7 +7489,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -7908,7 +7523,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -7940,7 +7557,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -7972,7 +7591,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8004,7 +7625,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8036,7 +7659,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8068,7 +7693,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8100,7 +7727,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8131,7 +7760,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8163,7 +7794,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8184,7 +7817,8 @@
 			"SMN",
 			"SCH",
 			"AST",
-			"RDM"
+			"RDM",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8216,7 +7850,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8242,7 +7878,8 @@
 			"DRK",
 			"SAM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8268,7 +7905,8 @@
 			"DRK",
 			"SAM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8300,7 +7938,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8332,7 +7972,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8364,7 +8006,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8411,7 +8055,9 @@
 			"AST",
 			"SAM",
 			"RDM",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8443,7 +8089,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8475,7 +8123,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8503,7 +8153,9 @@
 			"AST",
 			"SAM",
 			"RDM",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8535,7 +8187,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8567,7 +8221,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8599,7 +8255,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8631,7 +8289,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8663,7 +8323,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8707,7 +8369,7 @@
 		"recast" : 45.0,
 		"level_recasts" : [
 			{
-				"level" : 78,
+				"level" : 74,
 				"recast" : 35.0
 			}
 		],
@@ -8719,20 +8381,6 @@
 				"de" : "Contre Sixte",
 				"fr" : "Contre de sixte",
 				"jp" : "コントルシクスト"
-			}
-		}
-	},
-	"21496" : {
-		"recast" : 35.0,
-		"level_recasts" : null,
-		"jobs" : "*",
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Displacement",
-				"de" : "Körperparade",
-				"fr" : "Déplacement",
-				"jp" : "デプラスマン"
 			}
 		}
 	},
@@ -8771,7 +8419,8 @@
 			"MNK",
 			"DRG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -8789,7 +8438,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -9023,7 +8673,8 @@
 			"SMN",
 			"SCH",
 			"AST",
-			"RDM"
+			"RDM",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -9049,7 +8700,8 @@
 			"DRK",
 			"SAM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -9081,7 +8733,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -9106,7 +8760,8 @@
 			"MCH",
 			"SAM",
 			"RDM",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -9124,7 +8779,8 @@
 		"jobs" : [
 			"WHM",
 			"SCH",
-			"AST"
+			"AST",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -9175,7 +8831,9 @@
 			"SAM",
 			"RDM",
 			"GNB",
-			"DNC"
+			"DNC",
+			"RPR",
+			"SGE"
 		],
 		"pvp" : false,
 		"locales" : {
@@ -9201,6 +8859,443 @@
 			}
 		}
 	},
+	"24288" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Physis",
+				"de" : "Physis",
+				"fr" : "Physis",
+				"jp" : "ピュシス"
+			}
+		}
+	},
+	"24289" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Phlegma",
+				"de" : "Phlegma",
+				"fr" : "Phlegma",
+				"jp" : "フレグマ"
+			}
+		}
+	},
+	"24294" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Soteria",
+				"de" : "Soteria",
+				"fr" : "Soteria",
+				"jp" : "ソーテリア"
+			}
+		}
+	},
+	"24295" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Icarus",
+				"de" : "Ikarus",
+				"fr" : "Ikaros",
+				"jp" : "イカロス"
+			}
+		}
+	},
+	"24298" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Kerachole",
+				"de" : "Kerachole",
+				"fr" : "Kerachole",
+				"jp" : "ケーラコレ"
+			}
+		}
+	},
+	"24299" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Ixochole",
+				"de" : "Ixochole",
+				"fr" : "Ixochole",
+				"jp" : "イックソコレ"
+			}
+		}
+	},
+	"24300" : {
+		"recast" : 120.0,
+		"level_recasts" : [
+			{
+				"level" : 88,
+				"recast" : 90.0
+			}
+		],
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Zoe",
+				"de" : "Zoe",
+				"fr" : "Zoe",
+				"jp" : "ゾーエ"
+			}
+		}
+	},
+	"24301" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Pepsis",
+				"de" : "Pepsis",
+				"fr" : "Pepsis",
+				"jp" : "ペプシス"
+			}
+		}
+	},
+	"24302" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Physis II",
+				"de" : "Physis II",
+				"fr" : "Physis II",
+				"jp" : "ピュシスII"
+			}
+		}
+	},
+	"24303" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Taurochole",
+				"de" : "Taurochole",
+				"fr" : "Taurochole",
+				"jp" : "タウロコレ"
+			}
+		}
+	},
+	"24305" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Haima",
+				"de" : "Haima",
+				"fr" : "Haima",
+				"jp" : "ハイマ"
+			}
+		}
+	},
+	"24307" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Phlegma II",
+				"de" : "Phlegma II",
+				"fr" : "Phlegma II",
+				"jp" : "フレグマII"
+			}
+		}
+	},
+	"24309" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Rhizomata",
+				"de" : "Rizomata",
+				"fr" : "Rizomata",
+				"jp" : "リゾーマタ"
+			}
+		}
+	},
+	"24310" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Holos",
+				"de" : "Holos",
+				"fr" : "Holos",
+				"jp" : "ホーリズム"
+			}
+		}
+	},
+	"24311" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Panhaima",
+				"de" : "Panhaima",
+				"fr" : "Panhaima",
+				"jp" : "パンハイマ"
+			}
+		}
+	},
+	"24313" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Phlegma III",
+				"de" : "Phlegma III",
+				"fr" : "Phlegma III",
+				"jp" : "フレグマIII"
+			}
+		}
+	},
+	"24317" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Krasis",
+				"de" : "Krasis",
+				"fr" : "Krasis",
+				"jp" : "クラーシス"
+			}
+		}
+	},
+	"24318" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Pneuma",
+				"de" : "Pneuma",
+				"fr" : "Pneuma",
+				"jp" : "プネウマ"
+			}
+		}
+	},
+	"24380" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Soul Slice",
+				"de" : "Seelenschlitzer",
+				"fr" : "Tranchage animique",
+				"jp" : "ソウルスライス"
+			}
+		}
+	},
+	"24381" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Soul Scythe",
+				"de" : "Seelensense",
+				"fr" : "Faux animique",
+				"jp" : "ソウルサイズ"
+			}
+		}
+	},
+	"24393" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Gluttony",
+				"de" : "Völlerei",
+				"fr" : "Gloutonnerie",
+				"jp" : "グラトニー"
+			}
+		}
+	},
+	"24394" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Enshroud",
+				"de" : "Lemurenschleier",
+				"fr" : "Linceul du lémure",
+				"jp" : "レムールシュラウド"
+			}
+		}
+	},
+	"24401" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Hell's Ingress",
+				"de" : "Höllischer Auftritt",
+				"fr" : "Intrusion de l'enfer",
+				"jp" : "ヘルズイングレス"
+			}
+		}
+	},
+	"24402" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Hell's Egress",
+				"de" : "Höllischer Abgang",
+				"fr" : "Retraite de l'enfer",
+				"jp" : "ヘルズイーグレス"
+			}
+		}
+	},
+	"24403" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Regress",
+				"de" : "Rückkehr",
+				"fr" : "Repli",
+				"jp" : "リターン"
+			}
+		}
+	},
+	"24404" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Arcane Crest",
+				"de" : "Arkanes Wappen",
+				"fr" : "Blason arcanique",
+				"jp" : "アルケインクレスト"
+			}
+		}
+	},
+	"24405" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Arcane Circle",
+				"de" : "Arkaner Kreis",
+				"fr" : "Cercle arcanique",
+				"jp" : "アルケインサークル"
+			}
+		}
+	},
 	"24917" : {
 		"recast" : 40.0,
 		"level_recasts" : null,
@@ -9212,6 +9307,891 @@
 				"de" : "Corps-a-corps",
 				"fr" : "Corps-à-corps",
 				"jp" : "コル・ア・コル"
+			}
+		}
+	},
+	"25133" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Medical Kit",
+				"de" : "Frontentrank",
+				"fr" : "Potion militaire",
+				"jp" : "軍用ポーション"
+			}
+		}
+	},
+	"25747" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Expiacion",
+				"de" : "Expiacion",
+				"fr" : "Expiation",
+				"jp" : "エクスピアシオン"
+			}
+		}
+	},
+	"25751" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Bloodwhetting",
+				"de" : "Urimpuls",
+				"fr" : "Intuition fougueuse",
+				"jp" : "原初の血気"
+			}
+		}
+	},
+	"25752" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WAR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Orogeny",
+				"de" : "Orogenese",
+				"fr" : "Orogenèse",
+				"jp" : "オロジェネシス"
+			}
+		}
+	},
+	"25754" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Oblation",
+				"de" : "Opfergabe",
+				"fr" : "Oblation",
+				"jp" : "オブレーション"
+			}
+		}
+	},
+	"25755" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Salt and Darkness",
+				"de" : "Salz und Schwärze",
+				"fr" : "Sel et Ténèbres",
+				"jp" : "ソルト・アンド・ダーク"
+			}
+		}
+	},
+	"25757" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Shadowbringer",
+				"de" : "Schattenbringer",
+				"fr" : "Porteur d'ombre",
+				"jp" : "シャドウブリンガー"
+			}
+		}
+	},
+	"25758" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Heart of Corundum",
+				"de" : "Herz des Korunds",
+				"fr" : "Cœur de corindon",
+				"jp" : "ハート・オブ・コランダム"
+			}
+		}
+	},
+	"25760" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Double Down",
+				"de" : "Doppelpack",
+				"fr" : "Acharnement",
+				"jp" : "ダブルダウン"
+			}
+		}
+	},
+	"25762" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Thunderclap",
+				"de" : "Donnersprung",
+				"fr" : "Élan fulgurant",
+				"jp" : "抜重歩法"
+			}
+		}
+	},
+	"25766" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Wind",
+				"de" : "Stürmendes Enigma",
+				"fr" : "Énigme du vent",
+				"jp" : "疾風の極意"
+			}
+		}
+	},
+	"25773" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"DRG"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Wyrmwind Thrust",
+				"de" : "Zwillingswyrm",
+				"fr" : "Percée des dragons anciens",
+				"jp" : "天竜点睛"
+			}
+		}
+	},
+	"25779" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SAM"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Shoha II",
+				"de" : "Mumyo Shoha",
+				"fr" : "Mumyô Shôha",
+				"jp" : "無明照破"
+			}
+		}
+	},
+	"25785" : {
+		"recast" : 110.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Radiant Finale",
+				"de" : "Luminöses Finale",
+				"fr" : "Final radieux",
+				"jp" : "光神のフィナーレ"
+			}
+		}
+	},
+	"25788" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Chain Saw",
+				"de" : "Kreissäge",
+				"fr" : "Tronçonneuses rotatives",
+				"jp" : "回転のこぎり"
+			}
+		}
+	},
+	"25796" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"BLM"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Amplifier",
+				"de" : "Verstärker",
+				"fr" : "Amplificateur",
+				"jp" : "アンプリファイア"
+			}
+		}
+	},
+	"25799" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Radiant Aegis",
+				"de" : "Schimmerschild",
+				"fr" : "Égide rayonnante",
+				"jp" : "守りの光"
+			}
+		}
+	},
+	"25800" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"ACN",
+			"SMN"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Aethercharge",
+				"de" : "Ätherinfusion",
+				"fr" : "Infusion d'éther",
+				"jp" : "エーテルチャージ"
+			}
+		}
+	},
+	"25801" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Searing Light",
+				"de" : "Gleißender Schein",
+				"fr" : "Éclat ardent",
+				"jp" : "シアリングライト"
+			}
+		}
+	},
+	"25830" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Rekindle",
+				"de" : "Wiederaufleben",
+				"fr" : "Ravivement",
+				"jp" : "再生の炎"
+			}
+		}
+	},
+	"25831" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Summon Phoenix",
+				"de" : "Phönix-Beschwörung",
+				"fr" : "Invocation Phénix",
+				"jp" : "サモン・フェニックス"
+			}
+		}
+	},
+	"25857" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Magick Barrier",
+				"de" : "Magiebarriere",
+				"fr" : "Barrière anti-magie",
+				"jp" : "バマジク"
+			}
+		}
+	},
+	"25861" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Aquaveil",
+				"de" : "Wasserschleier",
+				"fr" : "Aquavoile",
+				"jp" : "アクアヴェール"
+			}
+		}
+	},
+	"25862" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"WHM"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Liturgy of the Bell",
+				"de" : "Glockenspiel",
+				"fr" : "Tintinnabule",
+				"jp" : "リタージー・オブ・ベル"
+			}
+		}
+	},
+	"25867" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Protraction",
+				"de" : "Protraktion",
+				"fr" : "Loi de la protraction",
+				"jp" : "生命回生法"
+			}
+		}
+	},
+	"25868" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Expedient",
+				"de" : "Sturm und Drang",
+				"fr" : "Thèse fluidique",
+				"jp" : "疾風怒濤の計"
+			}
+		}
+	},
+	"25873" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Exaltation",
+				"de" : "Exaltation",
+				"fr" : "Exaltation",
+				"jp" : "エクザルテーション"
+			}
+		}
+	},
+	"25874" : {
+		"recast" : 180.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"AST"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Macrocosmos",
+				"de" : "Makrokosmos",
+				"fr" : "Macrocosme",
+				"jp" : "マクロコスモス"
+			}
+		}
+	},
+	"26225" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Embolden",
+				"de" : "Ermutigen",
+				"fr" : "Enhardissement",
+				"jp" : "エンボルデン"
+			}
+		}
+	},
+	"26232" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Diffractive Magitek Cannon",
+				"de" : "Diffraktive Magitek-Kanone",
+				"fr" : "Canon diffractif magitek",
+				"jp" : "拡散魔導カノン"
+			}
+		}
+	},
+	"26233" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "High-powered Magitek Cannon",
+				"de" : "Hochenergie-Magitek-Kanone",
+				"fr" : "Canon surpuissant magitek",
+				"jp" : "高出力魔導カノン"
+			}
+		}
+	},
+	"26252" : {
+		"recast" : 60.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Fight or Flight",
+				"de" : "Verwegenheit",
+				"fr" : "Combat acharné",
+				"jp" : "ファイト・オア・フライト"
+			}
+		}
+	},
+	"26253" : {
+		"recast" : 90.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Rampart",
+				"de" : "Schutzwall",
+				"fr" : "Rempart",
+				"jp" : "ランパート"
+			}
+		}
+	},
+	"26890" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Fiendish Lantern",
+				"de" : "Monsterschreck-Laterne",
+				"fr" : "Lanterne repousse-démons",
+				"jp" : "退魔のランタン"
+			}
+		}
+	},
+	"27044" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Leveilleur Druochole",
+				"de" : "Leveilleur-Druochole",
+				"fr" : "Druochole des Leveilleur",
+				"jp" : "ルヴェユール・ドルオコレ"
+			}
+		}
+	},
+	"27046" : {
+		"recast" : 35.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "ルヴェユール・トキシコンII",
+				"de" : "ルヴェユール・トキシコンII",
+				"fr" : "Toxikon II des Leveilleur",
+				"jp" : "ルヴェユール・トキシコンII"
+			}
+		}
+	},
+	"27047" : {
+		"recast" : 25.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Leveilleur Toxikon",
+				"de" : "Leveilleur-Toxikon",
+				"fr" : "Toxikon des Leveilleur",
+				"jp" : "ルヴェユール・トキシコン"
+			}
+		}
+	},
+	"27054" : {
+		"recast" : 40.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Corps-a-corps",
+				"de" : "Corps-a-corps",
+				"fr" : "Corps-à-corps",
+				"jp" : "コル・ア・コル"
+			}
+		}
+	},
+	"27060" : {
+		"recast" : 45.0,
+		"level_recasts" : [
+			{
+				"level" : 74,
+				"recast" : 35.0
+			}
+		],
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Contre Sixte",
+				"de" : "Contre Sixte",
+				"fr" : "Contre de sixte",
+				"jp" : "コントルシクスト"
+			}
+		}
+	},
+	"27430" : {
+		"recast" : 120.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Nebula",
+				"de" : "Nebula",
+				"fr" : "Nébuleuse",
+				"jp" : "ネビュラ"
+			}
+		}
+	},
+	"27432" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Swift Deception",
+				"de" : "Leisetreter",
+				"fr" : "Invisibilité rapide",
+				"jp" : "スウィフトインビジブル"
+			}
+		}
+	},
+	"27433" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Silent Takedown",
+				"de" : "Ausschalten",
+				"fr" : "Coup décisif",
+				"jp" : "フィニッシュムーブ"
+			}
+		}
+	},
+	"27434" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Bewilderment Bomb",
+				"de" : "Verwirrperlen",
+				"fr" : "Grenade ahurissante",
+				"jp" : "嗅覚撹乱玉"
+			}
+		}
+	},
+	"27808" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Soul Slice (PVP)",
+				"de" : "Seelenschlitzer (PVP)",
+				"fr" : "Tranchage animique (PVP)",
+				"jp" : "ソウルスライス (PVP)"
+			}
+		}
+	},
+	"27809" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Soul Scythe (PVP)",
+				"de" : "Seelensense (PVP)",
+				"fr" : "Faux animique (PVP)",
+				"jp" : "ソウルサイズ (PVP)"
+			}
+		}
+	},
+	"27814" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Gluttony (PVP)",
+				"de" : "Völlerei (PVP)",
+				"fr" : "Gloutonnerie (PVP)",
+				"jp" : "グラトニー (PVP)"
+			}
+		}
+	},
+	"27817" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Hell's Ingress (PVP)",
+				"de" : "Höllischer Auftritt (PVP)",
+				"fr" : "Intrusion de l'enfer (PVP)",
+				"jp" : "ヘルズイングレス (PVP)"
+			}
+		}
+	},
+	"27818" : {
+		"recast" : 20.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Hell's Egress (PVP)",
+				"de" : "Höllischer Abgang (PVP)",
+				"fr" : "Retraite de l'enfer (PVP)",
+				"jp" : "ヘルズイーグレス (PVP)"
+			}
+		}
+	},
+	"27819" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Regress (PVP)",
+				"de" : "Rückkehr (PVP)",
+				"fr" : "Repli (PVP)",
+				"jp" : "リターン (PVP)"
+			}
+		}
+	},
+	"27820" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Arcane Crest (PVP)",
+				"de" : "Arkanes Wappen (PVP)",
+				"fr" : "Blason arcanique (PVP)",
+				"jp" : "アルケインクレスト (PVP)"
+			}
+		}
+	},
+	"27821" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Enshroud (PVP)",
+				"de" : "Lemurenschleier (PVP)",
+				"fr" : "Linceul du lémure (PVP)",
+				"jp" : "レムールシュラウド (PVP)"
+			}
+		}
+	},
+	"27829" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Phlegma III (PVP)",
+				"de" : "Phlegma III (PVP)",
+				"fr" : "Phlegma III (PVP)",
+				"jp" : "フレグマIII (PVP)"
+			}
+		}
+	},
+	"27830" : {
+		"recast" : 45.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Pneuma (PVP)",
+				"de" : "Pneuma (PVP)",
+				"fr" : "Pneuma (PVP)",
+				"jp" : "プネウマ (PVP)"
+			}
+		}
+	},
+	"27833" : {
+		"recast" : 30.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Haima (PVP)",
+				"de" : "Haima (PVP)",
+				"fr" : "Haima (PVP)",
+				"jp" : "ハイマ (PVP)"
+			}
+		}
+	},
+	"27834" : {
+		"recast" : 15.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Icarus (PVP)",
+				"de" : "Ikarus (PVP)",
+				"fr" : "Ikaros (PVP)",
+				"jp" : "イカロス (PVP)"
+			}
+		}
+	},
+	"27835" : {
+		"recast" : 10.0,
+		"level_recasts" : null,
+		"jobs" : [
+			"SGE"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Kardia (PVP)",
+				"de" : "Kardia (PVP)",
+				"fr" : "Kardia (PVP)",
+				"jp" : "カルディア (PVP)"
+			}
+		}
+	},
+	"28302" : {
+		"recast" : 11.0,
+		"level_recasts" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Family Outing",
+				"de" : "Ringelreigen",
+				"fr" : "Famille nombreuse",
+				"jp" : "家族サービス"
 			}
 		}
 	}

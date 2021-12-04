@@ -411,7 +411,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "the Aetherochemical Research Facility",
-				"de" : "Ätherochemisches Forschungslabor",
+				"de" : "Ätherochemisches For<SoftHyphen/>schungs<SoftHyphen/>labor",
 				"fr" : "le Laboratoire de magismologie",
 				"jp" : "蒼天聖戦 魔科学研究所"
 			}
@@ -450,882 +450,13 @@
 			}
 		}
 	},
-	"42" : {
-		"zone_id" : 519,
-		"locales" : {
-			"name" : {
-				"en" : "the Lost City of Amdapor (Hard)",
-				"de" : "Historisches Amdapor (schwer)",
-				"fr" : "les Vestiges de la cité d'Amdapor (brutal)",
-				"jp" : "神聖遺跡 古アムダプール市街 (Hard)"
-			}
-		}
-	},
-	"43" : {
-		"zone_id" : 516,
-		"locales" : {
-			"name" : {
-				"en" : "the Antitower",
-				"de" : "Antiturm",
-				"fr" : "L'Antitour",
-				"jp" : "星海観測 逆さの塔 "
-			}
-		}
-	},
-	"44" : {
-		"zone_id" : 555,
-		"locales" : {
-			"name" : {
-				"en" : "Sohr Khai",
-				"de" : "Sohr Khai",
-				"fr" : "Sohr Khai",
-				"jp" : "天竜宮殿 ソール・カイ"
-			}
-		}
-	},
-	"45" : {
-		"zone_id" : 557,
-		"locales" : {
-			"name" : {
-				"en" : "Hullbreaker Isle (Hard)",
-				"de" : "Schiffbrecher-Insel (schwer)",
-				"fr" : "l'Île de Crèvecarène (brutal)",
-				"jp" : "黒渦伝説 ハルブレーカー・アイル (Hard)"
-			}
-		}
-	},
-	"46" : {
-		"zone_id" : 572,
-		"locales" : {
-			"name" : {
-				"en" : "Xelphatol",
-				"de" : "Xelphatol",
-				"fr" : "Xelphatol",
-				"jp" : "峻厳渓谷 ゼルファトル"
-			}
-		}
-	},
-	"47" : {
-		"zone_id" : 578,
-		"locales" : {
-			"name" : {
-				"en" : "the Great Gubal Library (Hard)",
-				"de" : "Große Gubal-Bibliothek (schwer)",
-				"fr" : "la Grande bibliothèque de Gubal (brutal)",
-				"jp" : "稀書回収 グブラ幻想図書館 (Hard)"
-			}
-		}
-	},
-	"48" : {
-		"zone_id" : 615,
-		"locales" : {
-			"name" : {
-				"en" : "Baelsar's Wall",
-				"de" : "Baelsar-Wall",
-				"fr" : "la Muraille de Baelsar",
-				"jp" : "巨大防壁 バエサルの長城"
-			}
-		}
-	},
-	"49" : {
-		"zone_id" : 617,
-		"locales" : {
-			"name" : {
-				"en" : "Sohm Al (Hard)",
-				"de" : "Sohm Al (schwer)",
-				"fr" : "Sohm Al (brutal)",
-				"jp" : "霊峰浄化 ソーム・アル (Hard)"
-			}
-		}
-	},
-	"50" : {
-		"zone_id" : 616,
-		"locales" : {
-			"name" : {
-				"en" : "Shisui of the Violet Tides",
-				"de" : "Shisui",
-				"fr" : "le Palais aux Marées violettes",
-				"jp" : "海底宮殿 紫水宮"
-			}
-		}
-	},
-	"51" : {
-		"zone_id" : 663,
-		"locales" : {
-			"name" : {
-				"en" : "The Temple of the Fist",
-				"de" : "Tempel der Faust",
-				"fr" : "le Temple du Poing",
-				"jp" : "壊神修行 星導山寺院"
-			}
-		}
-	},
-	"52" : {
-		"zone_id" : 626,
-		"locales" : {
-			"name" : {
-				"en" : "The Sirensong Sea",
-				"de" : "Sirenen-See",
-				"fr" : "la Mer du Chant des sirènes",
-				"jp" : "漂流海域 セイレーン海"
-			}
-		}
-	},
-	"53" : {
-		"zone_id" : 623,
-		"locales" : {
-			"name" : {
-				"en" : "Bardam's Mettle",
-				"de" : "Bardams Probe",
-				"fr" : "la Force de Bardam",
-				"jp" : "伝統試練 バルダム覇道"
-			}
-		}
-	},
-	"54" : {
-		"zone_id" : 660,
-		"locales" : {
-			"name" : {
-				"en" : "Doma Castle",
-				"de" : "Burg Doma",
-				"fr" : "le Château de Doma",
-				"jp" : "解放決戦 ドマ城"
-			}
-		}
-	},
-	"55" : {
-		"zone_id" : 661,
-		"locales" : {
-			"name" : {
-				"en" : "Castrum Abania",
-				"de" : "Castrum Abania",
-				"fr" : "Castrum Abania",
-				"jp" : "巨砲要塞 カストルム・アバニア"
-			}
-		}
-	},
-	"56" : {
-		"zone_id" : 689,
-		"locales" : {
-			"name" : {
-				"en" : "Ala Mhigo",
-				"de" : "Ala Mhigo",
-				"fr" : "Ala Mhigo",
-				"jp" : "紅蓮決戦 アラミゴ"
-			}
-		}
-	},
-	"57" : {
-		"zone_id" : 662,
-		"locales" : {
-			"name" : {
-				"en" : "Kugane Castle",
-				"de" : "Schloss Kugane",
-				"fr" : "le Château de Kugane",
-				"jp" : "悪党成敗 クガネ城"
-			}
-		}
-	},
-	"58" : {
-		"zone_id" : 731,
-		"locales" : {
-			"name" : {
-				"en" : "the Drowned City of Skalla",
-				"de" : "Die versunkene Stadt Skalla",
-				"fr" : "la Cité engloutie de Skalla",
-				"jp" : "水没遺構 スカラ"
-			}
-		}
-	},
-	"59" : {
-		"zone_id" : 742,
-		"locales" : {
-			"name" : {
-				"en" : "Hells' Lid",
-				"de" : "Höllenspund",
-				"fr" : "le Couvercle des enfers",
-				"jp" : "紅玉火山 獄之蓋"
-			}
-		}
-	},
-	"60" : {
-		"zone_id" : 743,
-		"locales" : {
-			"name" : {
-				"en" : "the Fractal Continuum (Hard)",
-				"de" : "Die Fraktal-Kontinuum (schwer)",
-				"fr" : "le Continuum fractal (brutal)",
-				"jp" : "暴走戦艦 フラクタル・コンティニアム (Hard)"
-			}
-		}
-	},
-	"61" : {
-		"zone_id" : 768,
-		"locales" : {
-			"name" : {
-				"en" : "the Swallow's Compass",
-				"de" : "Kompass der Schwalbe",
-				"fr" : "le Compas de l'Hirondelle",
-				"jp" : "風水霊殿 ガンエン廟"
-			}
-		}
-	},
-	"62" : {
-		"zone_id" : 788,
-		"locales" : {
-			"name" : {
-				"en" : "Saint Mocianne's Arboretum (Hard)",
-				"de" : "Sankt Mocianne-Arboretum (schwer)",
-				"fr" : "l'Arboretum Sainte-Mocianne (brutal)",
-				"jp" : "草木汚染 聖モシャーヌ植物園 (Hard)"
-			}
-		}
-	},
-	"63" : {
-		"zone_id" : 789,
-		"locales" : {
-			"name" : {
-				"en" : "the Burn",
-				"de" : "Das Kargland",
-				"fr" : "L'Escarre",
-				"jp" : "永久焦土 ザ・バーン"
-			}
-		}
-	},
-	"64" : {
-		"zone_id" : 793,
-		"locales" : {
-			"name" : {
-				"en" : "the Ghimlyt Dark",
-				"de" : "Die Ghimlyt-Finsternis",
-				"fr" : "Les Ténèbres de Ghimlyt",
-				"jp" : "境界戦線 ギムリトダーク"
-			}
-		}
-	},
-	"65" : {
-		"zone_id" : 821,
-		"locales" : {
-			"name" : {
-				"en" : "Dohn Mheg",
-				"de" : "Dohn Mheg",
-				"fr" : "Dohn Mheg",
-				"jp" : "水妖幻園 ドォーヌ・メグ"
-			}
-		}
-	},
-	"66" : {
-		"zone_id" : 823,
-		"locales" : {
-			"name" : {
-				"en" : "the Qitana Ravel",
-				"de" : "Irrungen der Qitari",
-				"fr" : "L'Enchevêtrement des Qitari",
-				"jp" : "古跡探索 キタンナ神影洞"
-			}
-		}
-	},
-	"67" : {
-		"zone_id" : 838,
-		"locales" : {
-			"name" : {
-				"en" : "Amaurot",
-				"de" : "Amaurot",
-				"fr" : "Amaurote",
-				"jp" : "終末幻想 アーモロート"
-			}
-		}
-	},
-	"68" : {
-		"zone_id" : 840,
-		"locales" : {
-			"name" : {
-				"en" : "the Twinning",
-				"de" : "Der Kristallzwilling",
-				"fr" : "La Macle de Syrcus",
-				"jp" : "異界遺構 シルクス・ツイニング"
-			}
-		}
-	},
-	"69" : {
-		"zone_id" : 836,
-		"locales" : {
-			"name" : {
-				"en" : "Malikah's Well",
-				"de" : "Malikahs Brunnen",
-				"fr" : "le Puits de Malikah",
-				"jp" : "爽涼離宮 マリカの大井戸"
-			}
-		}
-	},
-	"70" : {
-		"zone_id" : 822,
-		"locales" : {
-			"name" : {
-				"en" : "Mt. Gulg",
-				"de" : "Der Gulg",
-				"fr" : "Mont Gulg",
-				"jp" : "偽造天界 グルグ火山"
-			}
-		}
-	},
-	"71" : {
-		"zone_id" : 841,
-		"locales" : {
-			"name" : {
-				"en" : "Akadaemia Anyder",
-				"de" : "Akadaemia Anyder",
-				"fr" : "Akadaemia Anydre",
-				"jp" : "創造機関 アナイダアカデミア"
-			}
-		}
-	},
-	"72" : {
-		"zone_id" : 837,
-		"locales" : {
-			"name" : {
-				"en" : "Holminster Switch",
-				"de" : "Holminster",
-				"fr" : "Holminster",
-				"jp" : "殺戮郷村 ホルミンスター"
-			}
-		}
-	},
-	"73" : {
-		"zone_id" : 884,
-		"locales" : {
-			"name" : {
-				"en" : "The Grand Cosmos",
-				"de" : "Chateau Cosmea",
-				"fr" : "le Cosmos coruscant",
-				"jp" : "魔法宮殿 グラン・コスモス"
-			}
-		}
-	},
-	"74" : {
-		"zone_id" : 898,
-		"locales" : {
-			"name" : {
-				"en" : "Anamnesis Anyder",
-				"de" : "Anamnesis Anyder",
-				"fr" : "Anamnesis Anydre",
-				"jp" : "黒風海底 アニドラス・アナムネーシス"
-			}
-		}
-	},
-	"75" : {
-		"zone_id" : 916,
-		"locales" : {
-			"name" : {
-				"en" : "the Heroes' Gauntlet",
-				"de" : "Schlacht um Norvrandt",
-				"fr" : "La Traversée de Norvrandt",
-				"jp" : "漆黒決戦 ノルヴラント"
-			}
-		}
-	},
-	"76" : {
-		"zone_id" : 933,
-		"locales" : {
-			"name" : {
-				"en" : "Matoya's Relict",
-				"de" : "Matoyas Atelier",
-				"fr" : "l'Atelier abandonné de Matoya",
-				"jp" : "魔術工房 マトーヤのアトリエ"
-			}
-		}
-	},
-	"77" : {
-		"zone_id" : 938,
-		"locales" : {
-			"name" : {
-				"en" : "Paglth'an",
-				"de" : "Die Goldene Ebene von Paglth'an",
-				"fr" : "La grande prairie de Paglth'an",
-				"jp" : "黄金平原 パガルザン"
-			}
-		}
-	},
-	"5001" : {
-		"zone_id" : 533,
-		"locales" : {
-			"name" : {
-				"en" : "a Spectacle for the Ages",
-				"de" : "Truppenübung der Eorzäischen Allianz",
-				"fr" : "La grande manœuvre éorzéenne",
-				"jp" : "四国合同演習"
-			}
-		}
-	},
-	"5002" : {
-		"zone_id" : 560,
-		"locales" : {
-			"name" : {
-				"en" : "a Bloody Reunion",
-				"de" : "Blutiges Wiedersehen",
-				"fr" : "Course-poursuite dans le laboratoire",
-				"jp" : "レグラ・ヴァン・ヒュドルス追撃戦"
-			}
-		}
-	},
-	"5003" : {
-		"zone_id" : 592,
-		"locales" : {
-			"name" : {
-				"en" : "One Life for One World",
-				"de" : "Weltenübergreifendes Schicksal",
-				"fr" : "Destins entrecroisés",
-				"jp" : "絡み合う宿命"
-			}
-		}
-	},
-	"5004" : {
-		"zone_id" : 633,
-		"locales" : {
-			"name" : {
-				"en" : "The Carteneau Flats: Heliodrome",
-				"de" : "Heliodrom",
-				"fr" : "Rixe à l'Héliodrome",
-				"jp" : "カルテノー平原遭遇戦"
-			}
-		}
-	},
-	"5005" : {
-		"zone_id" : 665,
-		"locales" : {
-			"name" : {
-				"en" : "It's Probably a Trap",
-				"de" : "Ein zweifelhaftes Angebot",
-				"fr" : "Un drôle de Namazu",
-				"jp" : "ギョドウ現る！"
-			}
-		}
-	},
-	"5006" : {
-		"zone_id" : 705,
-		"locales" : {
-			"name" : {
-				"en" : "In Thal's Name",
-				"de" : "Thal zu Ehren",
-				"fr" : "Le tournoi commémoratif du sultanat",
-				"jp" : "ウル王杯闘技会の始まり"
-			}
-		}
-	},
-	"5007" : {
-		"zone_id" : 707,
-		"locales" : {
-			"name" : {
-				"en" : "With Heart and Steel",
-				"de" : "Die Kraft des Widerstands",
-				"fr" : "Transmigration démoniaque",
-				"jp" : "抗う力"
-			}
-		}
-	},
-	"5008" : {
-		"zone_id" : 688,
-		"locales" : {
-			"name" : {
-				"en" : "Naadam",
-				"de" : "Naadam",
-				"fr" : "La grande bataille du Naadam",
-				"jp" : "終節の合戦"
-			}
-		}
-	},
-	"5009" : {
-		"zone_id" : 708,
-		"locales" : {
-			"name" : {
-				"en" : "Blood on the Deck",
-				"de" : "Mord ist sein Hobby",
-				"fr" : "La légende de Musosai: l'assassin de Limsa Lominsa",
-				"jp" : "海都を震わす人斬りの宴！"
-			}
-		}
-	},
-	"5010" : {
-		"zone_id" : 709,
-		"locales" : {
-			"name" : {
-				"en" : "The Face of True Evil",
-				"de" : "Der Inbegriff des Bösen",
-				"fr" : "L'abominable Kogarashi",
-				"jp" : "極悪人コガラシ"
-			}
-		}
-	},
-	"5011" : {
-		"zone_id" : 710,
-		"locales" : {
-			"name" : {
-				"en" : "Matsuba Mayhem",
-				"de" : "Vorfall auf dem Matsuba-Platz",
-				"fr" : "Règlement de compte au square Matsuba",
-				"jp" : "松葉門外の変"
-			}
-		}
-	},
-	"5012" : {
-		"zone_id" : 711,
-		"locales" : {
-			"name" : {
-				"en" : "The Battle on Bekko",
-				"de" : "Entscheidungsschlacht auf Bekko",
-				"fr" : "L'affrontement de deux justices",
-				"jp" : "ベッコウ島の決闘"
-			}
-		}
-	},
-	"5013" : {
-		"zone_id" : 717,
-		"locales" : {
-			"name" : {
-				"en" : "Curious Gorge Meets His Match",
-				"de" : "Die Urkraft in ihr",
-				"fr" : "L'épreuve de force",
-				"jp" : "原初的な彼女"
-			}
-		}
-	},
-	"5014" : {
-		"zone_id" : 722,
-		"locales" : {
-			"name" : {
-				"en" : "Our Unsung Heroes",
-				"de" : "Ein Wunsch aus alten Zeiten",
-				"fr" : "L'espoir en héritage",
-				"jp" : "時をかける願い"
-			}
-		}
-	},
-	"5015" : {
-		"zone_id" : 718,
-		"locales" : {
-			"name" : {
-				"en" : "The Heart of the Problem",
-				"de" : "Kriegerische Leidenschaft",
-				"fr" : "Passion guerrière",
-				"jp" : "燃えよゴージ！"
-			}
-		}
-	},
-	"5016" : {
-		"zone_id" : 713,
-		"locales" : {
-			"name" : {
-				"en" : "Dark as the Night Sky",
-				"de" : "Der tobende Drache",
-				"fr" : "Aussi sombre que la nuit",
-				"jp" : "漆黒の巨竜"
-			}
-		}
-	},
-	"5017" : {
-		"zone_id" : 684,
-		"locales" : {
-			"name" : {
-				"en" : "The Resonant",
-				"de" : "Wege zur Transzendenz",
-				"fr" : "La ruse d'Urianger",
-				"jp" : "ウリエンジェの秘策"
-			}
-		}
-	},
-	"5018" : {
-		"zone_id" : 706,
-		"locales" : {
-			"name" : {
-				"en" : "Raising the Sword",
-				"de" : "Die hohe Kunst des Schwertkampfs",
-				"fr" : "La finale des champions",
-				"jp" : "さらなる剣術の高みへ"
-			}
-		}
-	},
-	"5019" : {
-		"zone_id" : 715,
-		"locales" : {
-			"name" : {
-				"en" : "The Orphans and the Broken Blade",
-				"de" : "Probe des Meisters",
-				"fr" : "L'aspiration refoulée",
-				"jp" : "あと三度、遥かな憧憬"
-			}
-		}
-	},
-	"5020" : {
-		"zone_id" : 716,
-		"locales" : {
-			"name" : {
-				"en" : "Our Compromise",
-				"de" : "Aus der Tiefe des Herzens",
-				"fr" : "La dernière séparation",
-				"jp" : "あと一度、君に会えたら"
-			}
-		}
-	},
-	"5021" : {
-		"zone_id" : 714,
-		"locales" : {
-			"name" : {
-				"en" : "Dragon Sound",
-				"de" : "Der Rubin-Drachenreiter",
-				"fr" : "Le Dragon écarlate",
-				"jp" : "紅の竜騎士"
-			}
-		}
-	},
-	"5022" : {
-		"zone_id" : 723,
-		"locales" : {
-			"name" : {
-				"en" : "When Clans Collide",
-				"de" : "Aus dem Verborgenen",
-				"fr" : "La bataille des clans",
-				"jp" : "影隠忍法帖"
-			}
-		}
-	},
-	"5023" : {
-		"zone_id" : 690,
-		"locales" : {
-			"name" : {
-				"en" : "Interdimensional Rift",
-				"de" : "Interdimensionaler Riss",
-				"fr" : "Fissure interdimensionnelle",
-				"jp" : "次元の狭間：外縁"
-			}
-		}
-	},
-	"5024" : {
-		"zone_id" : 403,
-		"locales" : {
-			"name" : {
-				"en" : "Return of the Bull",
-				"de" : "Verrat der Qalyana",
-				"fr" : "Retour au bercail",
-				"jp" : "英雄の帰還"
-			}
-		}
-	},
-	"5025" : {
-		"zone_id" : 769,
-		"locales" : {
-			"name" : {
-				"en" : "Emissary of the Dawn",
-				"de" : "Der Knabe der Morgenröte",
-				"fr" : "Voyage en terre hostile",
-				"jp" : "「暁」の少年"
-			}
-		}
-	},
-	"5026" : {
-		"zone_id" : 797,
-		"locales" : {
-			"name" : {
-				"en" : "The Will of the Moon",
-				"de" : "Der Wille der Mondgöttin",
-				"fr" : "Ralliement dans la steppe",
-				"jp" : "楔石の虚"
-			}
-		}
-	},
-	"5027" : {
-		"zone_id" : 834,
-		"locales" : {
-			"name" : {
-				"en" : "Messenger of the Winds",
-				"de" : "Durch den Sturm und zurück",
-				"fr" : "La Messagère du vent",
-				"jp" : "来訪せし風の御使"
-			}
-		}
-	},
-	"5028" : {
-		"zone_id" : 830,
-		"locales" : {
-			"name" : {
-				"en" : "a Requiem for Heroes",
-				"de" : "Requiem der Helden",
-				"fr" : "Un requiem pour les héros",
-				"jp" : "英雄への鎮魂歌"
-			}
-		}
-	},
-	"5029" : {
-		"zone_id" : 873,
-		"locales" : {
-			"name" : {
-				"en" : "The Hardened Heart",
-				"de" : "Ob Mitleid oder Hass",
-				"fr" : "Naissance d'un bourreau",
-				"jp" : "揺れる天秤"
-			}
-		}
-	},
-	"5030" : {
-		"zone_id" : 874,
-		"locales" : {
-			"name" : {
-				"en" : "The Lost and the Found",
-				"de" : "Alter Zauber",
-				"fr" : "Magie ancestrale",
-				"jp" : "古の大再生魔法"
-			}
-		}
-	},
-	"5031" : {
-		"zone_id" : 860,
-		"locales" : {
-			"name" : {
-				"en" : "Coming Clean",
-				"de" : "Vater und Bruder",
-				"fr" : "Sur les rails de Nabaath Areng",
-				"jp" : "廃都ナバスアレン"
-			}
-		}
-	},
-	"5032" : {
-		"zone_id" : 859,
-		"locales" : {
-			"name" : {
-				"en" : "Legend of the Not-so-hidden Temple",
-				"de" : "Der Beichtstuhl von Toupasa dem Älteren",
-				"fr" : "Le Confessionnal de Toupasa l'ancien",
-				"jp" : "仕掛けと呪いと毒と"
-			}
-		}
-	},
-	"5033" : {
-		"zone_id" : 876,
-		"locales" : {
-			"name" : {
-				"en" : "Nyelbert's Lament",
-				"de" : "Ein großes Opfer",
-				"fr" : "Une cupidité bien généreuse",
-				"jp" : "ナイルベルトの後悔"
-			}
-		}
-	},
-	"5034" : {
-		"zone_id" : 875,
-		"locales" : {
-			"name" : {
-				"en" : "The Hunter's Legacy",
-				"de" : "Der Legende auf der Spur",
-				"fr" : "La chasseuse de légende",
-				"jp" : "勇気の狩人"
-			}
-		}
-	},
-	"5035" : {
-		"zone_id" : 893,
-		"locales" : {
-			"name" : {
-				"en" : "Vows of Virtue, Deeds of Cruelty",
-				"de" : "Der Wolf und der Drachenreiter",
-				"fr" : "Vœux de vertu, actes de cruauté",
-				"jp" : "白き誓約、黒き密約"
-			}
-		}
-	},
-	"5036" : {
-		"zone_id" : 894,
-		"locales" : {
-			"name" : {
-				"en" : "As the Heart Bids",
-				"de" : "Trubel im Traumland",
-				"fr" : "À l'écoute de soi",
-				"jp" : "この心が望むがままに"
-			}
-		}
-	},
-	"5037" : {
-		"zone_id" : 911,
-		"locales" : {
-			"name" : {
-				"en" : "the Bozja Incident",
-				"de" : "Der Bozja-Vorfall",
-				"fr" : "Prélude à la catastrophe",
-				"jp" : "シタデル・ボズヤ蒸発事変"
-			}
-		}
-	},
-	"5038" : {
-		"zone_id" : 914,
-		"locales" : {
-			"name" : {
-				"en" : "A Sleep Disturbed",
-				"de" : "Von schlafenden Helden",
-				"fr" : "L'épreuve ronka",
-				"jp" : "汝、英雄の眠り妨げるは"
-			}
-		}
-	},
-	"5039" : {
-		"zone_id" : 925,
-		"locales" : {
-			"name" : {
-				"en" : "Sleep Now in Sapphire",
-				"de" : "Luftangriff auf Werlyt",
-				"fr" : "Sur la mer de saphir",
-				"jp" : "飛べ！ ウェルリトへ "
-			}
-		}
-	},
-	"5040" : {
-		"zone_id" : 926,
-		"locales" : {
-			"name" : {
-				"en" : "Sleep Now in Sapphire",
-				"de" : "Luftangriff auf Werlyt",
-				"fr" : "Sur la mer de saphir",
-				"jp" : "飛べ！ ウェルリトへ "
-			}
-		}
-	},
-	"5041" : {
-		"zone_id" : 932,
-		"locales" : {
-			"name" : {
-				"en" : "Faded Memories",
-				"de" : "Verblasste Erinnerungen",
-				"fr" : "Souvenir périssable",
-				"jp" : "色あせた記憶"
-			}
-		}
-	},
-	"5042" : {
-		"zone_id" : 954,
-		"locales" : {
-			"name" : {
-				"en" : "The Great Ship Vylbrand",
-				"de" : "Gute Winde für Vylbrand",
-				"fr" : "Un navire nommé Vylbrand",
-				"jp" : "バイルブランドの船出"
-			}
-		}
-	},
-	"5043" : {
-		"zone_id" : 955,
-		"locales" : {
-			"name" : {
-				"en" : "Fit for a Queen",
-				"de" : "Hinab in die Ruinen",
-				"fr" : "Que les Dieux gardent la Reine",
-				"jp" : "ゴッド・セイブ・ザ・クイーン"
-			}
-		}
-	},
 	"10001" : {
 		"zone_id" : 214,
 		"locales" : {
 			"name" : {
 				"en" : "Basic Training: Enemy Parties",
 				"de" : "Einer für alle, alle für einen",
-				"fr" : "Entraînement: groupes d'ennemis",
+				"fr" : "Entraînement<Indent/>: groupes d'ennemis",
 				"jp" : "集団戦訓練をくぐり抜けろ！"
 			}
 		}
@@ -1347,7 +478,7 @@
 			"name" : {
 				"en" : "Basic Training: Enemy Strongholds",
 				"de" : "Sturmkommando",
-				"fr" : "Entraînement: infiltration en base ennemie",
+				"fr" : "Entraînement<Indent/>: in<SoftHyphen/>fil<SoftHyphen/>tra<SoftHyphen/>tion en base ennemie",
 				"jp" : "全関門を突破し、最深部の敵を討て！"
 			}
 		}
@@ -1470,182 +601,6 @@
 				"de" : "Wuchtige Dreifaltigkeit",
 				"fr" : "Trinité sinistre",
 				"jp" : "三つ巴の巨人族を制し、遺物を守れ！"
-			}
-		}
-	},
-	"15001" : {
-		"zone_id" : 537,
-		"locales" : {
-			"name" : {
-				"en" : "Avoid Area of Effect Attacks",
-				"de" : "Flächenangriffen ausweichen",
-				"fr" : "Éviter les attaques à aire d'effet",
-				"jp" : "範囲攻撃を避けよう！"
-			}
-		}
-	},
-	"15002" : {
-		"zone_id" : 538,
-		"locales" : {
-			"name" : {
-				"en" : "Execute a Combo to Increase Enmity",
-				"de" : "Mit Kombos Feindseligkeit auf sich ziehen",
-				"fr" : "Générer de l'inimitié avec un combo",
-				"jp" : "コンボで敵視を集めよう！"
-			}
-		}
-	},
-	"15003" : {
-		"zone_id" : 539,
-		"locales" : {
-			"name" : {
-				"en" : "Execute a Combo in Battle",
-				"de" : "Kombos im Kampf einsetzen",
-				"fr" : "Effectuer le combo en combat",
-				"jp" : "実戦でコンボに挑戦しよう！"
-			}
-		}
-	},
-	"15004" : {
-		"zone_id" : 540,
-		"locales" : {
-			"name" : {
-				"en" : "Accrue Enmity from Multiple Targets",
-				"de" : "Feindseligkeit mehrerer Gegner auf sich ziehen",
-				"fr" : "Attirer l'inimitié de plusieurs ennemis sur soi",
-				"jp" : "複数の敵から敵視を集めよう！"
-			}
-		}
-	},
-	"15005" : {
-		"zone_id" : 541,
-		"locales" : {
-			"name" : {
-				"en" : "Engage Multiple Targets",
-				"de" : "Gegen mehrere Gegner auf einmal kämpfen",
-				"fr" : "Affronter plusieurs ennemis",
-				"jp" : "実戦で複数の敵と戦ってみよう！"
-			}
-		}
-	},
-	"15006" : {
-		"zone_id" : 542,
-		"locales" : {
-			"name" : {
-				"en" : "Execute a Ranged Attack to Increase Enmity",
-				"de" : "Aus der Ferne Feindseligkeit auf sich ziehen",
-				"fr" : "Générer de l'inimitié à distance",
-				"jp" : "遠距離から敵視を集めよう！"
-			}
-		}
-	},
-	"15007" : {
-		"zone_id" : 543,
-		"locales" : {
-			"name" : {
-				"en" : "Engage Enemy Reinforcements",
-				"de" : "Feindliche Verstärkung aufhalten",
-				"fr" : "Faire face à des renforts ennemis",
-				"jp" : "敵の増援に対応しよう！"
-			}
-		}
-	},
-	"15008" : {
-		"zone_id" : 544,
-		"locales" : {
-			"name" : {
-				"en" : "Assist Allies in Defeating a Target",
-				"de" : "Gegner gemeinsam besiegen",
-				"fr" : "Vaincre un ennemi en assistant des alliés",
-				"jp" : "味方と協力して敵を倒そう！"
-			}
-		}
-	},
-	"15009" : {
-		"zone_id" : 545,
-		"locales" : {
-			"name" : {
-				"en" : "Defeat an Occupied Target",
-				"de" : "Den Gegner eines Verbündeten besiegen",
-				"fr" : "Vaincre un ennemi occupé par un allié",
-				"jp" : "味方が引きつけている敵を倒そう！"
-			}
-		}
-	},
-	"15010" : {
-		"zone_id" : 546,
-		"locales" : {
-			"name" : {
-				"en" : "Avoid Engaged Targets",
-				"de" : "Angriffen ausweichen",
-				"fr" : "Combattre en évitant les attaques ennemies",
-				"jp" : "敵の攻撃を避けながら戦おう！"
-			}
-		}
-	},
-	"15011" : {
-		"zone_id" : 547,
-		"locales" : {
-			"name" : {
-				"en" : "Engage Enemy Reinforcements",
-				"de" : "Feindliche Verstärkung aufhalten",
-				"fr" : "Éliminer les renforts ennemis",
-				"jp" : "敵の増援に対応しよう！"
-			}
-		}
-	},
-	"15012" : {
-		"zone_id" : 548,
-		"locales" : {
-			"name" : {
-				"en" : "Interact with the Battlefield",
-				"de" : "Mit dem Gelände interagieren",
-				"fr" : "Interagir avec le décor en combat",
-				"jp" : "ギミックを活用して戦おう！"
-			}
-		}
-	},
-	"15013" : {
-		"zone_id" : 549,
-		"locales" : {
-			"name" : {
-				"en" : "Heal an Ally",
-				"de" : "Verbündete heilen",
-				"fr" : "Soigner un allié",
-				"jp" : "味方を回復しよう！"
-			}
-		}
-	},
-	"15014" : {
-		"zone_id" : 550,
-		"locales" : {
-			"name" : {
-				"en" : "Heal Multiple Allies",
-				"de" : "Mehrere Verbündete heilen",
-				"fr" : "Soigner plusieurs alliés",
-				"jp" : "複数の味方を回復しよう！"
-			}
-		}
-	},
-	"15015" : {
-		"zone_id" : 551,
-		"locales" : {
-			"name" : {
-				"en" : "Avoid Engaged Targets",
-				"de" : "Angriffen ausweichen",
-				"fr" : "Combattre en évitant les attaques ennemies",
-				"jp" : "敵の攻撃を避けながら戦おう！"
-			}
-		}
-	},
-	"15016" : {
-		"zone_id" : 552,
-		"locales" : {
-			"name" : {
-				"en" : "Final Exercise",
-				"de" : "Letzte Übung",
-				"fr" : "Exercice final",
-				"jp" : "最終訓練！"
 			}
 		}
 	},
@@ -1829,7 +784,7 @@
 		"zone_id" : 281,
 		"locales" : {
 			"name" : {
-				"en" : "the Whorleater (Hard)",
+				"en" : "the <Emphasis>Whorleater</Emphasis> (Hard)",
 				"de" : "Götterdämmerung - Leviathan",
 				"fr" : "le Briseur de marées (brutal)",
 				"jp" : "真リヴァイアサン討滅戦"
@@ -1840,7 +795,7 @@
 		"zone_id" : 359,
 		"locales" : {
 			"name" : {
-				"en" : "the Whorleater (Extreme)",
+				"en" : "the <Emphasis>Whorleater</Emphasis> (Extreme)",
 				"de" : "Zenit der Götter - Leviathan",
 				"fr" : "le Briseur de marées (extrême)",
 				"jp" : "極リヴァイアサン討滅戦"
@@ -2042,490 +997,6 @@
 				"de" : "Heldenlied von Thordans Fall",
 				"fr" : "le règne de Thordan",
 				"jp" : "蒼天幻想 ナイツ・オブ・ラウンド討滅戦"
-			}
-		}
-	},
-	"20037" : {
-		"zone_id" : 517,
-		"locales" : {
-			"name" : {
-				"en" : "Containment Bay S1T7",
-				"de" : "Götterdämmerung - Sephirot",
-				"fr" : "Unité de contention S1P7",
-				"jp" : "魔神セフィロト討滅戦"
-			}
-		}
-	},
-	"20038" : {
-		"zone_id" : 524,
-		"locales" : {
-			"name" : {
-				"en" : "Containment Bay S1T7 (Extreme)",
-				"de" : "Zenit der Götter - Sephirot",
-				"fr" : "Unité de contention S1P7 (extrême)",
-				"jp" : "極魔神セフィロト討滅戦"
-			}
-		}
-	},
-	"20039" : {
-		"zone_id" : 559,
-		"locales" : {
-			"name" : {
-				"en" : "the Final Steps of Faith",
-				"de" : "Der letzte Schicksalsweg",
-				"fr" : "la Dernière avancée de la Foi",
-				"jp" : "ニーズヘッグ征竜戦"
-			}
-		}
-	},
-	"20040" : {
-		"zone_id" : 566,
-		"locales" : {
-			"name" : {
-				"en" : "the Minstrel's Ballad: Nidhogg's Rage",
-				"de" : "Das Lied von Nidhoggs letztem Ruf",
-				"fr" : "l'ire de Nidhogg",
-				"jp" : "極ニーズヘッグ征竜戦"
-			}
-		}
-	},
-	"20041" : {
-		"zone_id" : 576,
-		"locales" : {
-			"name" : {
-				"en" : "Containment Bay P1T6",
-				"de" : "Götterdämmerung - Sophia",
-				"fr" : "Unité de contention P1P6",
-				"jp" : "女神ソフィア討滅戦"
-			}
-		}
-	},
-	"20042" : {
-		"zone_id" : 577,
-		"locales" : {
-			"name" : {
-				"en" : "Containment Bay P1T6 (Extreme)",
-				"de" : "Zenit der Götter - Sophia",
-				"fr" : "Unité de contention P1P6 (extrême)",
-				"jp" : "極女神ソフィア討滅戦"
-			}
-		}
-	},
-	"20043" : {
-		"zone_id" : 637,
-		"locales" : {
-			"name" : {
-				"en" : "Containment Bay Z1T9",
-				"de" : "Götterdämmerung - Zurvan",
-				"fr" : "Unité de contention Z1P9",
-				"jp" : "鬼神ズルワーン討滅戦"
-			}
-		}
-	},
-	"20044" : {
-		"zone_id" : 638,
-		"locales" : {
-			"name" : {
-				"en" : "Containment Bay Z1T9 (Extreme)",
-				"de" : "Zenit der Götter - Zurvan",
-				"fr" : "Unité de contention Z1P9 (extrême)",
-				"jp" : "極鬼神ズルワーン討滅戦"
-			}
-		}
-	},
-	"20045" : {
-		"zone_id" : 679,
-		"locales" : {
-			"name" : {
-				"en" : "the Royal Menagerie",
-				"de" : "Königliche Menagerie",
-				"fr" : "la Ménagerie royale",
-				"jp" : "神龍討滅戦"
-			}
-		}
-	},
-	"20046" : {
-		"zone_id" : 674,
-		"locales" : {
-			"name" : {
-				"en" : "the Pool of Tribute",
-				"de" : "Götterdämmerung - Susano",
-				"fr" : "la Crique aux tributs",
-				"jp" : "スサノオ討滅戦"
-			}
-		}
-	},
-	"20047" : {
-		"zone_id" : 677,
-		"locales" : {
-			"name" : {
-				"en" : "the Pool of Tribute (Extreme)",
-				"de" : "Zenit der Götter - Susano",
-				"fr" : "la Crique aux tributs (extrême)",
-				"jp" : "極スサノオ討滅戦"
-			}
-		}
-	},
-	"20048" : {
-		"zone_id" : 719,
-		"locales" : {
-			"name" : {
-				"en" : "Emanation",
-				"de" : "Götterdämmerung - Lakshmi",
-				"fr" : "Émanation",
-				"jp" : "ラクシュミ討滅戦"
-			}
-		}
-	},
-	"20049" : {
-		"zone_id" : 720,
-		"locales" : {
-			"name" : {
-				"en" : "Emanation (Extreme)",
-				"de" : "Zenit der Götter - Lakshmi",
-				"fr" : "Émanation (extrême)",
-				"jp" : "極ラクシュミ討滅戦"
-			}
-		}
-	},
-	"20050" : {
-		"zone_id" : 730,
-		"locales" : {
-			"name" : {
-				"en" : "the Minstrel's Ballad: Shinryu's Domain",
-				"de" : "Heldenlied von Shinryu",
-				"fr" : "Le domaine de Shinryu",
-				"jp" : "極神龍討滅戦"
-			}
-		}
-	},
-	"20051" : {
-		"zone_id" : 746,
-		"locales" : {
-			"name" : {
-				"en" : "the Jade Stoa",
-				"de" : "Seelentanz - Byakko",
-				"fr" : "la Clairière de Jade",
-				"jp" : "白虎征魂戦"
-			}
-		}
-	},
-	"20052" : {
-		"zone_id" : 758,
-		"locales" : {
-			"name" : {
-				"en" : "the Jade Stoa (Extreme)",
-				"de" : "Seelensturm - Byakko",
-				"fr" : "la Clairière de Jade (extrême)",
-				"jp" : "極白虎征魂戦"
-			}
-		}
-	},
-	"20053" : {
-		"zone_id" : 761,
-		"locales" : {
-			"name" : {
-				"en" : "the Great Hunt",
-				"de" : "Jagd auf Rathalos",
-				"fr" : "Chasse au Rathalos",
-				"jp" : "リオレウス狩猟戦"
-			}
-		}
-	},
-	"20054" : {
-		"zone_id" : 762,
-		"locales" : {
-			"name" : {
-				"en" : "the Great Hunt (Extreme)",
-				"de" : "Jagd auf Rathalos (schwer)",
-				"fr" : "Chasse au Rathalos (extrême)",
-				"jp" : "極リオレウス狩猟戦"
-			}
-		}
-	},
-	"20055" : {
-		"zone_id" : 778,
-		"locales" : {
-			"name" : {
-				"en" : "Castrum Fluminis",
-				"de" : "Götterdämmerung - Tsukuyomi",
-				"fr" : "Castrum Fluminis",
-				"jp" : "ツクヨミ討滅戦"
-			}
-		}
-	},
-	"20056" : {
-		"zone_id" : 779,
-		"locales" : {
-			"name" : {
-				"en" : "the Minstrel's Ballad: Tsukuyomi's Pain",
-				"de" : "Zenit der Götter - Tsukuyomi",
-				"fr" : "Castrum Fluminis (extrême)",
-				"jp" : "極ツクヨミ討滅戦"
-			}
-		}
-	},
-	"20057" : {
-		"zone_id" : 810,
-		"locales" : {
-			"name" : {
-				"en" : "Hells' Kier",
-				"de" : "Seelentanz - Suzaku",
-				"fr" : "le Nid des Lamentations",
-				"jp" : "朱雀征魂戦"
-			}
-		}
-	},
-	"20058" : {
-		"zone_id" : 811,
-		"locales" : {
-			"name" : {
-				"en" : "Hells' Kier (Extreme)",
-				"de" : "Seelensturm - Suzaku",
-				"fr" : "le Nid des Lamentations (extrême)",
-				"jp" : "極朱雀征魂戦"
-			}
-		}
-	},
-	"20059" : {
-		"zone_id" : 806,
-		"locales" : {
-			"name" : {
-				"en" : "Kugane Ohashi",
-				"de" : "Duell auf der Kugane-Brücke",
-				"fr" : "le Pont Ohashi",
-				"jp" : "真ヨウジンボウ討滅戦"
-			}
-		}
-	},
-	"20060" : {
-		"zone_id" : 824,
-		"locales" : {
-			"name" : {
-				"en" : "the Wreath of Snakes",
-				"de" : "Seelentanz - Seiryu",
-				"fr" : "l'Îlot des Amertumes",
-				"jp" : "青龍征魂戦"
-			}
-		}
-	},
-	"20061" : {
-		"zone_id" : 825,
-		"locales" : {
-			"name" : {
-				"en" : "the Wreath of Snakes (Extreme)",
-				"de" : "Seelensturm - Seiryu",
-				"fr" : "l'Îlot des Amertumes (extrême)",
-				"jp" : "極青龍征魂戦"
-			}
-		}
-	},
-	"20062" : {
-		"zone_id" : 845,
-		"locales" : {
-			"name" : {
-				"en" : "The Dancing Plague",
-				"de" : "Offenbarung - Titania",
-				"fr" : "la Valse du Monarque",
-				"jp" : "ティターニア討滅戦"
-			}
-		}
-	},
-	"20063" : {
-		"zone_id" : 858,
-		"locales" : {
-			"name" : {
-				"en" : "the Dancing Plague (Extreme)",
-				"de" : "Letzte Läuterung - Titania",
-				"fr" : "la Valse du Monarque (extrême)",
-				"jp" : "極ティターニア討滅戦"
-			}
-		}
-	},
-	"20064" : {
-		"zone_id" : 846,
-		"locales" : {
-			"name" : {
-				"en" : "The Crown of the Immaculate",
-				"de" : "Offenbarung - Innozenz",
-				"fr" : "La Couronne de l'Immaculé",
-				"jp" : "イノセンス討滅戦"
-			}
-		}
-	},
-	"20065" : {
-		"zone_id" : 848,
-		"locales" : {
-			"name" : {
-				"en" : "the Crown of the Immaculate (Extreme)",
-				"de" : "Letzte Läuterung - Innozenz",
-				"fr" : "La Couronne de l'Immaculé (extrême)",
-				"jp" : "極イノセンス討滅戦"
-			}
-		}
-	},
-	"20066" : {
-		"zone_id" : 847,
-		"locales" : {
-			"name" : {
-				"en" : "The Dying Gasp",
-				"de" : "Offenbarung - Hades",
-				"fr" : "le Râle de l'Agonie",
-				"jp" : "ハーデス討滅戦"
-			}
-		}
-	},
-	"20067" : {
-		"zone_id" : 885,
-		"locales" : {
-			"name" : {
-				"en" : "The Minstrel's Ballad: Hades's Elegy",
-				"de" : "Letzte Läuterung - Hades",
-				"fr" : "Le Râle de l'Agonie (extrême)",
-				"jp" : "極ハーデス討滅戦"
-			}
-		}
-	},
-	"20068" : {
-		"zone_id" : 897,
-		"locales" : {
-			"name" : {
-				"en" : "Cinder Drift",
-				"de" : "Rubinfeuer - Entfesselung",
-				"fr" : "Les Nuées de Brandons",
-				"jp" : "ルビーウェポン破壊作戦"
-			}
-		}
-	},
-	"20069" : {
-		"zone_id" : 912,
-		"locales" : {
-			"name" : {
-				"en" : "Cinder Drift (Extreme)",
-				"de" : "Rubinfeuer - Trauma",
-				"fr" : "Les Nuées de Brandons (extrême)",
-				"jp" : "極ルビーウェポン破壊作戦"
-			}
-		}
-	},
-	"20070" : {
-		"zone_id" : 913,
-		"locales" : {
-			"name" : {
-				"en" : "Memoria Misera (Extreme)",
-				"de" : "Memoria Misera (extrem)",
-				"fr" : "Memoria Misera (extrême)",
-				"jp" : "極シタデル・ボズヤ追憶戦"
-			}
-		}
-	},
-	"20071" : {
-		"zone_id" : 922,
-		"locales" : {
-			"name" : {
-				"en" : "the Seat of Sacrifice",
-				"de" : "Krieger des Lichts",
-				"fr" : "Le Trône du Sacrifice",
-				"jp" : "ウォーリア・オブ・ライト討滅戦"
-			}
-		}
-	},
-	"20072" : {
-		"zone_id" : 923,
-		"locales" : {
-			"name" : {
-				"en" : "the Seat of Sacrifice (Extreme)",
-				"de" : "Krieger des Lichts (extrem)",
-				"fr" : "Le Trône du Sacrifice (extrême)",
-				"jp" : "極ウォーリア・オブ・ライト討滅戦"
-			}
-		}
-	},
-	"20073" : {
-		"zone_id" : 934,
-		"locales" : {
-			"name" : {
-				"en" : "Castrum Marinum",
-				"de" : "Smaragdsturm - Entfesselung",
-				"fr" : "Castrum Marinum",
-				"jp" : "エメラルドウェポン破壊作戦"
-			}
-		}
-	},
-	"20074" : {
-		"zone_id" : 935,
-		"locales" : {
-			"name" : {
-				"en" : "Castrum Marinum (Extreme)",
-				"de" : "Smaragdsturm - Trauma",
-				"fr" : "Castrum Marinum (extrême)",
-				"jp" : "極エメラルドウェポン破壊作戦"
-			}
-		}
-	},
-	"20075" : {
-		"zone_id" : 950,
-		"locales" : {
-			"name" : {
-				"en" : "The Cloud Deck",
-				"de" : "Diamantblitz - Entfesselung",
-				"fr" : "Le Tillac des Cirrus",
-				"jp" : "ダイヤウェポン捕獲作戦"
-			}
-		}
-	},
-	"20076" : {
-		"zone_id" : 951,
-		"locales" : {
-			"name" : {
-				"en" : "The Cloud Deck (Extreme)",
-				"de" : "Diamantblitz - Trauma",
-				"fr" : "Le Tillac des Cirrus (extrême)",
-				"jp" : "極ダイヤウェポン捕獲作戦"
-			}
-		}
-	},
-	"25001" : {
-		"zone_id" : 571,
-		"locales" : {
-			"name" : {
-				"en" : "the Haunted Manor",
-				"de" : "Das Geisterschloss",
-				"fr" : "le Manoir hanté",
-				"jp" : "亡霊屋敷 ホーンテッドマナー"
-			}
-		}
-	},
-	"25002" : {
-		"zone_id" : 741,
-		"locales" : {
-			"name" : {
-				"en" : "the Valentione's Ceremony",
-				"de" : "Valentionzeremonie",
-				"fr" : "la Cérémonie de la Valention",
-				"jp" : "ヴァレンティオンセレモニー"
-			}
-		}
-	},
-	"26001" : {
-		"zone_id" : 940,
-		"locales" : {
-			"name" : {
-				"en" : "Triple Triad Open Tournament",
-				"de" : "Triple Triad: Manderville-Turnier",
-				"fr" : "Tournoi officiel de Triple Triade",
-				"jp" : "トリプルトライアド：オフィシャルトーナメント"
-			}
-		}
-	},
-	"26002" : {
-		"zone_id" : 941,
-		"locales" : {
-			"name" : {
-				"en" : "Triple Triad Invitational Parlor",
-				"de" : "Triple Triad: Privatturnier",
-				"fr" : "Salle de tournoi libre de Triple Triade",
-				"jp" : "トリプルトライアド：カスタムトーナメントルーム"
 			}
 		}
 	},
@@ -2848,6 +1319,50 @@
 			}
 		}
 	},
+	"50001" : {
+		"zone_id" : 376,
+		"locales" : {
+			"name" : {
+				"en" : "the Borderland Ruins (Secure)",
+				"de" : "Äußere Ruinen (Sicherung)",
+				"fr" : "les Ruines frontalières (annexion)",
+				"jp" : "外縁遺跡群 (制圧戦)"
+			}
+		}
+	},
+	"50004" : {
+		"zone_id" : 431,
+		"locales" : {
+			"name" : {
+				"en" : "Seal Rock (Seize)",
+				"de" : "Robbenholm (Eroberung)",
+				"fr" : "le Rocher des tréfonds (invasion)",
+				"jp" : "シールロック (争奪戦)"
+			}
+		}
+	},
+	"20037" : {
+		"zone_id" : 517,
+		"locales" : {
+			"name" : {
+				"en" : "Containment Bay S1T7",
+				"de" : "Götterdämmerung - Sephirot",
+				"fr" : "Unité de contention S1P7",
+				"jp" : "魔神セフィロト討滅戦"
+			}
+		}
+	},
+	"20038" : {
+		"zone_id" : 524,
+		"locales" : {
+			"name" : {
+				"en" : "Containment Bay S1T7 (Extreme)",
+				"de" : "Zenit der Götter - Sephirot",
+				"fr" : "Unité de contention S1P7 (extrême)",
+				"jp" : "極魔神セフィロト討滅戦"
+			}
+		}
+	},
 	"30030" : {
 		"zone_id" : 520,
 		"locales" : {
@@ -2889,6 +1404,50 @@
 				"de" : "Alexander - Last des Sohnes",
 				"fr" : "Alexander - Le Fardeau du Fils",
 				"jp" : "機工城アレキサンダー：律動編4"
+			}
+		}
+	},
+	"42" : {
+		"zone_id" : 519,
+		"locales" : {
+			"name" : {
+				"en" : "the Lost City of Amdapor (Hard)",
+				"de" : "Historisches Amdapor (schwer)",
+				"fr" : "les Vestiges de la cité d'Amdapor (brutal)",
+				"jp" : "神聖遺跡 古アムダプール市街 (Hard)"
+			}
+		}
+	},
+	"43" : {
+		"zone_id" : 516,
+		"locales" : {
+			"name" : {
+				"en" : "the Antitower",
+				"de" : "Antiturm",
+				"fr" : "L'Antitour",
+				"jp" : "星海観測 逆さの塔 "
+			}
+		}
+	},
+	"40008" : {
+		"zone_id" : 525,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (4 on 4 - Training)",
+				"de" : "The Feast (4 gegen 4, Übungskampf)",
+				"fr" : "The Feast (4x4/en<SoftHyphen/>traî<SoftHyphen/>ne<SoftHyphen/>ment)",
+				"jp" : "ザ・フィースト (4対4 / カジュアルマッチ)"
+			}
+		}
+	},
+	"40010" : {
+		"zone_id" : 527,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (4 on 4 - Ranked)",
+				"de" : "The Feast (4 gegen 4, gewertet)",
+				"fr" : "The Feast (4x4/classé)",
+				"jp" : "ザ・フィースト (4対4 / ランクマッチ)"
 			}
 		}
 	},
@@ -2936,6 +1495,193 @@
 			}
 		}
 	},
+	"15001" : {
+		"zone_id" : 537,
+		"locales" : {
+			"name" : {
+				"en" : "Avoid Area of Effect Attacks",
+				"de" : "Flächenangriffen ausweichen",
+				"fr" : "Éviter les attaques à aire d'effet",
+				"jp" : "範囲攻撃を避けよう！"
+			}
+		}
+	},
+	"15002" : {
+		"zone_id" : 538,
+		"locales" : {
+			"name" : {
+				"en" : "Execute a Combo to Increase Enmity",
+				"de" : "Mit Kombos Feindseligkeit auf sich ziehen",
+				"fr" : "Générer de l'inimitié avec un combo",
+				"jp" : "コンボで敵視を集めよう！"
+			}
+		}
+	},
+	"15003" : {
+		"zone_id" : 539,
+		"locales" : {
+			"name" : {
+				"en" : "Execute a Combo in Battle",
+				"de" : "Kombos im Kampf einsetzen",
+				"fr" : "Effectuer le combo en combat",
+				"jp" : "実戦でコンボに挑戦しよう！"
+			}
+		}
+	},
+	"15004" : {
+		"zone_id" : 540,
+		"locales" : {
+			"name" : {
+				"en" : "Accrue Enmity from Multiple Targets",
+				"de" : "Feindseligkeit mehrerer Gegner auf sich ziehen",
+				"fr" : "Attirer l'inimitié de plusieurs ennemis sur soi",
+				"jp" : "複数の敵から敵視を集めよう！"
+			}
+		}
+	},
+	"15005" : {
+		"zone_id" : 541,
+		"locales" : {
+			"name" : {
+				"en" : "Engage Multiple Targets",
+				"de" : "Gegen mehrere Gegner auf einmal kämpfen",
+				"fr" : "Affronter plusieurs ennemis",
+				"jp" : "実戦で複数の敵と戦ってみよう！"
+			}
+		}
+	},
+	"15006" : {
+		"zone_id" : 542,
+		"locales" : {
+			"name" : {
+				"en" : "Execute a Ranged Attack to Increase Enmity",
+				"de" : "Aus der Ferne Feindseligkeit auf sich ziehen",
+				"fr" : "Générer de l'inimitié à distance",
+				"jp" : "遠距離から敵視を集めよう！"
+			}
+		}
+	},
+	"15007" : {
+		"zone_id" : 543,
+		"locales" : {
+			"name" : {
+				"en" : "Engage Enemy Reinforcements",
+				"de" : "Feindliche Verstärkung aufhalten",
+				"fr" : "Faire face à des renforts ennemis",
+				"jp" : "敵の増援に対応しよう！"
+			}
+		}
+	},
+	"15008" : {
+		"zone_id" : 544,
+		"locales" : {
+			"name" : {
+				"en" : "Assist Allies in Defeating a Target",
+				"de" : "Gegner gemeinsam besiegen",
+				"fr" : "Vaincre un ennemi en assistant des alliés",
+				"jp" : "味方と協力して敵を倒そう！"
+			}
+		}
+	},
+	"15009" : {
+		"zone_id" : 545,
+		"locales" : {
+			"name" : {
+				"en" : "Defeat an Occupied Target",
+				"de" : "Den Gegner eines Verbündeten besiegen",
+				"fr" : "Vaincre un ennemi occupé par un allié",
+				"jp" : "味方が引きつけている敵を倒そう！"
+			}
+		}
+	},
+	"15010" : {
+		"zone_id" : 546,
+		"locales" : {
+			"name" : {
+				"en" : "Avoid Engaged Targets",
+				"de" : "Angriffen ausweichen",
+				"fr" : "Combattre en évitant les attaques ennemies",
+				"jp" : "敵の攻撃を避けながら戦おう！"
+			}
+		}
+	},
+	"15011" : {
+		"zone_id" : 547,
+		"locales" : {
+			"name" : {
+				"en" : "Engage Enemy Reinforcements",
+				"de" : "Feindliche Verstärkung aufhalten",
+				"fr" : "Éliminer les renforts ennemis",
+				"jp" : "敵の増援に対応しよう！"
+			}
+		}
+	},
+	"15012" : {
+		"zone_id" : 548,
+		"locales" : {
+			"name" : {
+				"en" : "Interact with the Battlefield",
+				"de" : "Mit dem Gelände interagieren",
+				"fr" : "Interagir avec le décor en combat",
+				"jp" : "ギミックを活用して戦おう！"
+			}
+		}
+	},
+	"15013" : {
+		"zone_id" : 549,
+		"locales" : {
+			"name" : {
+				"en" : "Heal an Ally",
+				"de" : "Verbündete heilen",
+				"fr" : "Soigner un allié",
+				"jp" : "味方を回復しよう！"
+			}
+		}
+	},
+	"15014" : {
+		"zone_id" : 550,
+		"locales" : {
+			"name" : {
+				"en" : "Heal Multiple Allies",
+				"de" : "Mehrere Verbündete heilen",
+				"fr" : "Soigner plusieurs alliés",
+				"jp" : "複数の味方を回復しよう！"
+			}
+		}
+	},
+	"15015" : {
+		"zone_id" : 551,
+		"locales" : {
+			"name" : {
+				"en" : "Avoid Engaged Targets",
+				"de" : "Angriffen ausweichen",
+				"fr" : "Combattre en évitant les attaques ennemies",
+				"jp" : "敵の攻撃を避けながら戦おう！"
+			}
+		}
+	},
+	"15016" : {
+		"zone_id" : 552,
+		"locales" : {
+			"name" : {
+				"en" : "Final Exercise",
+				"de" : "Letzte Übung",
+				"fr" : "Exercice final",
+				"jp" : "最終訓練！"
+			}
+		}
+	},
+	"5001" : {
+		"zone_id" : 533,
+		"locales" : {
+			"name" : {
+				"en" : "a Spectacle for the Ages",
+				"de" : "Truppenübung der Eorzäischen Allianz",
+				"fr" : "La grande manœuvre éorzéenne",
+				"jp" : "四国合同演習"
+			}
+		}
+	},
 	"30038" : {
 		"zone_id" : 556,
 		"locales" : {
@@ -2944,6 +1690,182 @@
 				"de" : "Die Stadt der Tränen",
 				"fr" : "la Cité défendue de Mhach",
 				"jp" : "禁忌都市マハ"
+			}
+		}
+	},
+	"20039" : {
+		"zone_id" : 559,
+		"locales" : {
+			"name" : {
+				"en" : "the Final Steps of Faith",
+				"de" : "Der letzte Schicksalsweg",
+				"fr" : "la Dernière avancée de la Foi",
+				"jp" : "ニーズヘッグ征竜戦"
+			}
+		}
+	},
+	"20040" : {
+		"zone_id" : 566,
+		"locales" : {
+			"name" : {
+				"en" : "the Minstrel's Ballad: Nidhogg's Rage",
+				"de" : "Das Lied von Nidhoggs letztem Ruf",
+				"fr" : "l'ire de Nidhogg",
+				"jp" : "極ニーズヘッグ征竜戦"
+			}
+		}
+	},
+	"44" : {
+		"zone_id" : 555,
+		"locales" : {
+			"name" : {
+				"en" : "Sohr Khai",
+				"de" : "Sohr Khai",
+				"fr" : "Sohr Khai",
+				"jp" : "天竜宮殿 ソール・カイ"
+			}
+		}
+	},
+	"45" : {
+		"zone_id" : 557,
+		"locales" : {
+			"name" : {
+				"en" : "Hullbreaker Isle (Hard)",
+				"de" : "Schiffbrecher-Insel (schwer)",
+				"fr" : "l'Île de Crèvecarène (brutal)",
+				"jp" : "黒渦伝説 ハルブレーカー・アイル (Hard)"
+			}
+		}
+	},
+	"5002" : {
+		"zone_id" : 560,
+		"locales" : {
+			"name" : {
+				"en" : "a Bloody Reunion",
+				"de" : "Blutiges Wieder<SoftHyphen/>sehen",
+				"fr" : "Course-poursuite dans le laboratoire",
+				"jp" : "レグラ・ヴァン・ヒュドルス追撃戦"
+			}
+		}
+	},
+	"60001" : {
+		"zone_id" : 561,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 1-10)",
+				"de" : "Palast der Toten (Ebenen 1-10)",
+				"fr" : "le Palais des morts (sous-sols 1-10)",
+				"jp" : "死者の宮殿 B1～B10"
+			}
+		}
+	},
+	"60002" : {
+		"zone_id" : 562,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 11-20)",
+				"de" : "Palast der Toten (Ebenen 11-20)",
+				"fr" : "le Palais des morts (sous-sols 11-20)",
+				"jp" : "死者の宮殿 B11～B20"
+			}
+		}
+	},
+	"60003" : {
+		"zone_id" : 563,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 21-30)",
+				"de" : "Palast der Toten (Ebenen 21-30)",
+				"fr" : "le Palais des morts (sous-sols 21-30)",
+				"jp" : "死者の宮殿 B21～B30"
+			}
+		}
+	},
+	"60004" : {
+		"zone_id" : 564,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 31-40)",
+				"de" : "Palast der Toten (Ebenen 31-40)",
+				"fr" : "le Palais des morts (sous-sols 31-40)",
+				"jp" : "死者の宮殿 B31～B40"
+			}
+		}
+	},
+	"60005" : {
+		"zone_id" : 565,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 41-50)",
+				"de" : "Palast der Toten (Ebenen 41-50)",
+				"fr" : "le Palais des morts (sous-sols 41-50)",
+				"jp" : "死者の宮殿 B41～B50"
+			}
+		}
+	},
+	"55001" : {
+		"zone_id" : 558,
+		"locales" : {
+			"name" : {
+				"en" : "the Aquapolis",
+				"de" : "Aquapolis",
+				"fr" : "l'Aquapole",
+				"jp" : "宝物庫 アクアポリス"
+			}
+		}
+	},
+	"50005" : {
+		"zone_id" : 554,
+		"locales" : {
+			"name" : {
+				"en" : "the Fields of Glory (Shatter)",
+				"de" : "Feld der Ehre (Zersplitterung)",
+				"fr" : "les Champs de la Gloire (brise-glace)",
+				"jp" : "フィールド・オブ・グローリー (砕氷戦)"
+			}
+		}
+	},
+	"25001" : {
+		"zone_id" : 571,
+		"locales" : {
+			"name" : {
+				"en" : "the Haunted Manor",
+				"de" : "Das Geisterschloss",
+				"fr" : "le Manoir hanté",
+				"jp" : "亡霊屋敷 ホーンテッドマナー"
+			}
+		}
+	},
+	"46" : {
+		"zone_id" : 572,
+		"locales" : {
+			"name" : {
+				"en" : "Xelphatol",
+				"de" : "Xelphatol",
+				"fr" : "Xelphatol",
+				"jp" : "峻厳渓谷 ゼルファトル"
+			}
+		}
+	},
+	"20041" : {
+		"zone_id" : 576,
+		"locales" : {
+			"name" : {
+				"en" : "Containment Bay P1T6",
+				"de" : "Götterdämmerung - Sophia",
+				"fr" : "Unité de contention P1P6",
+				"jp" : "女神ソフィア討滅戦"
+			}
+		}
+	},
+	"20042" : {
+		"zone_id" : 577,
+		"locales" : {
+			"name" : {
+				"en" : "Containment Bay P1T6 (Extreme)",
+				"de" : "Zenit der Götter - Sophia",
+				"fr" : "Unité de contention P1P6 (extrême)",
+				"jp" : "極女神ソフィア討滅戦"
 			}
 		}
 	},
@@ -3035,6 +1957,215 @@
 			}
 		}
 	},
+	"5003" : {
+		"zone_id" : 592,
+		"locales" : {
+			"name" : {
+				"en" : "One Life for One World",
+				"de" : "Weltenübergreifendes Schicksal",
+				"fr" : "Destins entrecroisés",
+				"jp" : "絡み合う宿命"
+			}
+		}
+	},
+	"47" : {
+		"zone_id" : 578,
+		"locales" : {
+			"name" : {
+				"en" : "the Great Gubal Library (Hard)",
+				"de" : "Große Gubal-Bibliothek (schwer)",
+				"fr" : "la Grande bibliothèque de Gubal (brutal)",
+				"jp" : "稀書回収 グブラ幻想図書館 (Hard)"
+			}
+		}
+	},
+	"40014" : {
+		"zone_id" : 619,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (Custom Match - Feasting Grounds)",
+				"de" : "The Feast (Wolfshöhle: Schaukampf)",
+				"fr" : "The Feast (personnalisé/Festin des loups)",
+				"jp" : "ザ・フィースト (ウルヴズジェイル演習場：カスタムマッチ）"
+			}
+		}
+	},
+	"60006" : {
+		"zone_id" : 593,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 51-60)",
+				"de" : "Palast der Toten (Ebenen 51 - 60)",
+				"fr" : "le Palais des morts (sous-sols 51-60)",
+				"jp" : "死者の宮殿 B51～B60"
+			}
+		}
+	},
+	"60007" : {
+		"zone_id" : 594,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 61-70)",
+				"de" : "Palast der Toten (Ebenen 61 - 70)",
+				"fr" : "le Palais des morts (sous-sols 61-70)",
+				"jp" : "死者の宮殿 B61～B70"
+			}
+		}
+	},
+	"60008" : {
+		"zone_id" : 595,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 71-80)",
+				"de" : "Palast der Toten (Ebenen 71 - 80)",
+				"fr" : "le Palais des morts (sous-sols 71-80)",
+				"jp" : "死者の宮殿 B71～B80"
+			}
+		}
+	},
+	"60009" : {
+		"zone_id" : 596,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 81-90)",
+				"de" : "Palast der Toten (Ebenen 81 - 90)",
+				"fr" : "le Palais des morts (sous-sols 81-90)",
+				"jp" : "死者の宮殿 B81～B90"
+			}
+		}
+	},
+	"60010" : {
+		"zone_id" : 597,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 91-100)",
+				"de" : "Palast der Toten (Ebenen 91 - 100)",
+				"fr" : "le Palais des morts (sous-sols 91-100)",
+				"jp" : "死者の宮殿 B91～B100"
+			}
+		}
+	},
+	"60011" : {
+		"zone_id" : 598,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 101-110)",
+				"de" : "Palast der Toten (Ebenen 101 - 110)",
+				"fr" : "le Palais des morts (sous-sols 101-110)",
+				"jp" : "死者の宮殿 B101～B110"
+			}
+		}
+	},
+	"60012" : {
+		"zone_id" : 599,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 111-120)",
+				"de" : "Palast der Toten (Ebenen 111 - 120)",
+				"fr" : "le Palais des morts (sous-sols 111-120)",
+				"jp" : "死者の宮殿 B111～B120"
+			}
+		}
+	},
+	"60013" : {
+		"zone_id" : 600,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 121-130)",
+				"de" : "Palast der Toten (Ebenen 121 - 130)",
+				"fr" : "le Palais des morts (sous-sols 121-130)",
+				"jp" : "死者の宮殿 B121～B130"
+			}
+		}
+	},
+	"60014" : {
+		"zone_id" : 601,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 131-140)",
+				"de" : "Palast der Toten (Ebenen 131 - 140)",
+				"fr" : "le Palais des morts (sous-sols 131-140)",
+				"jp" : "死者の宮殿 B131～B140"
+			}
+		}
+	},
+	"60015" : {
+		"zone_id" : 602,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 141-150)",
+				"de" : "Palast der Toten (Ebenen 141 - 150)",
+				"fr" : "le Palais des morts (sous-sols 141-150)",
+				"jp" : "死者の宮殿 B141～B150"
+			}
+		}
+	},
+	"60016" : {
+		"zone_id" : 603,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 151-160)",
+				"de" : "Palast der Toten (Ebenen 151 - 160)",
+				"fr" : "le Palais des morts (sous-sols 151-160)",
+				"jp" : "死者の宮殿 B151～B160"
+			}
+		}
+	},
+	"60017" : {
+		"zone_id" : 604,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 161-170)",
+				"de" : "Palast der Toten (Ebenen 161 - 170)",
+				"fr" : "le Palais des morts (sous-sols 161-170)",
+				"jp" : "死者の宮殿 B161～B170"
+			}
+		}
+	},
+	"60018" : {
+		"zone_id" : 605,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 171-180)",
+				"de" : "Palast der Toten (Ebenen 171 - 180)",
+				"fr" : "le Palais des morts (sous-sols 171-180)",
+				"jp" : "死者の宮殿 B171～B180"
+			}
+		}
+	},
+	"60019" : {
+		"zone_id" : 606,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 181-190)",
+				"de" : "Palast der Toten (Ebenen 181 - 190)",
+				"fr" : "le Palais des morts (sous-sols 181-190)",
+				"jp" : "死者の宮殿 B181～B190"
+			}
+		}
+	},
+	"60020" : {
+		"zone_id" : 607,
+		"locales" : {
+			"name" : {
+				"en" : "the Palace of the Dead (Floors 191-200)",
+				"de" : "Palast der Toten (Ebenen 191 - 200)",
+				"fr" : "le Palais des morts (sous-sols 191-200)",
+				"jp" : "死者の宮殿 B191～B200"
+			}
+		}
+	},
+	"48" : {
+		"zone_id" : 615,
+		"locales" : {
+			"name" : {
+				"en" : "Baelsar's Wall",
+				"de" : "Baelsar-Wall",
+				"fr" : "la Muraille de Baelsar",
+				"jp" : "巨大防壁 バエサルの長城"
+			}
+		}
+	},
 	"30047" : {
 		"zone_id" : 627,
 		"locales" : {
@@ -3043,6 +2174,270 @@
 				"de" : "Dun Scaith",
 				"fr" : "Dun Scaith",
 				"jp" : "影の国ダン・スカー"
+			}
+		}
+	},
+	"49" : {
+		"zone_id" : 617,
+		"locales" : {
+			"name" : {
+				"en" : "Sohm Al (Hard)",
+				"de" : "Sohm Al (schwer)",
+				"fr" : "Sohm Al (brutal)",
+				"jp" : "霊峰浄化 ソーム・アル (Hard)"
+			}
+		}
+	},
+	"5004" : {
+		"zone_id" : 633,
+		"locales" : {
+			"name" : {
+				"en" : "The Carteneau Flats: Heliodrome",
+				"de" : "Heliodrom",
+				"fr" : "Rixe à l'Héliodrome",
+				"jp" : "カルテノー平原遭遇戦"
+			}
+		}
+	},
+	"20043" : {
+		"zone_id" : 637,
+		"locales" : {
+			"name" : {
+				"en" : "Containment Bay Z1T9",
+				"de" : "Götterdämmerung - Zurvan",
+				"fr" : "Unité de contention Z1P9",
+				"jp" : "鬼神ズルワーン討滅戦"
+			}
+		}
+	},
+	"20044" : {
+		"zone_id" : 638,
+		"locales" : {
+			"name" : {
+				"en" : "Containment Bay Z1T9 (Extreme)",
+				"de" : "Zenit der Götter - Zurvan",
+				"fr" : "Unité de contention Z1P9 (extrême)",
+				"jp" : "極鬼神ズルワーン討滅戦"
+			}
+		}
+	},
+	"40016" : {
+		"zone_id" : 632,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (4 on 4 - Training)",
+				"de" : "The Feast (4 gegen 4, Übungskampf)",
+				"fr" : "The Feast (4x4/en<SoftHyphen/>traî<SoftHyphen/>ne<SoftHyphen/>ment)",
+				"jp" : "ザ・フィースト (4対4 / カジュアルマッチ)"
+			}
+		}
+	},
+	"40018" : {
+		"zone_id" : 644,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (4 on 4 - Ranked)",
+				"de" : "The Feast (4 gegen 4, gewertet)",
+				"fr" : "The Feast (4x4/classé)",
+				"jp" : "ザ・フィースト (4対4 / ランクマッチ)"
+			}
+		}
+	},
+	"40021" : {
+		"zone_id" : 646,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (Custom Match - Lichenweed)",
+				"de" : "The Feast (Flechtenhain: Schaukampf)",
+				"fr" : "The Feast (personnalisé/Pré-de-lichen)",
+				"jp" : "ザ・フィースト (ライケンウィード演習場：カスタムマッチ）"
+			}
+		}
+	},
+	"50" : {
+		"zone_id" : 616,
+		"locales" : {
+			"name" : {
+				"en" : "Shisui of the Violet Tides",
+				"de" : "Shisui",
+				"fr" : "le Palais aux Marées violettes",
+				"jp" : "海底宮殿 紫水宮"
+			}
+		}
+	},
+	"51" : {
+		"zone_id" : 663,
+		"locales" : {
+			"name" : {
+				"en" : "The Temple of the Fist",
+				"de" : "Tempel der Faust",
+				"fr" : "le Temple du Poing",
+				"jp" : "壊神修行 星導山寺院"
+			}
+		}
+	},
+	"5005" : {
+		"zone_id" : 665,
+		"locales" : {
+			"name" : {
+				"en" : "It's Probably a Trap",
+				"de" : "Ein zweifelhaftes Angebot",
+				"fr" : "Un drôle de Namazu",
+				"jp" : "ギョドウ現る！"
+			}
+		}
+	},
+	"52" : {
+		"zone_id" : 626,
+		"locales" : {
+			"name" : {
+				"en" : "The Sirensong Sea",
+				"de" : "Sirenen-See",
+				"fr" : "la Mer du Chant des sirènes",
+				"jp" : "漂流海域 セイレーン海"
+			}
+		}
+	},
+	"20045" : {
+		"zone_id" : 679,
+		"locales" : {
+			"name" : {
+				"en" : "the Royal Menagerie",
+				"de" : "Königliche Menagerie",
+				"fr" : "la Ménagerie royale",
+				"jp" : "神龍討滅戦"
+			}
+		}
+	},
+	"53" : {
+		"zone_id" : 623,
+		"locales" : {
+			"name" : {
+				"en" : "Bardam's Mettle",
+				"de" : "Bardams Probe",
+				"fr" : "la Force de Bardam",
+				"jp" : "伝統試練 バルダム覇道"
+			}
+		}
+	},
+	"54" : {
+		"zone_id" : 660,
+		"locales" : {
+			"name" : {
+				"en" : "Doma Castle",
+				"de" : "Burg Doma",
+				"fr" : "le Château de Doma",
+				"jp" : "解放決戦 ドマ城"
+			}
+		}
+	},
+	"55" : {
+		"zone_id" : 661,
+		"locales" : {
+			"name" : {
+				"en" : "Castrum Abania",
+				"de" : "Castrum Abania",
+				"fr" : "Castrum Abania",
+				"jp" : "巨砲要塞 カストルム・アバニア"
+			}
+		}
+	},
+	"20046" : {
+		"zone_id" : 674,
+		"locales" : {
+			"name" : {
+				"en" : "the Pool of Tribute",
+				"de" : "Götterdämmerung - Susano",
+				"fr" : "la Crique aux tributs",
+				"jp" : "スサノオ討滅戦"
+			}
+		}
+	},
+	"20047" : {
+		"zone_id" : 677,
+		"locales" : {
+			"name" : {
+				"en" : "the Pool of Tribute (Extreme)",
+				"de" : "Zenit der Götter - Susano",
+				"fr" : "la Crique aux tributs (extrême)",
+				"jp" : "極スサノオ討滅戦"
+			}
+		}
+	},
+	"5007" : {
+		"zone_id" : 707,
+		"locales" : {
+			"name" : {
+				"en" : "With Heart and Steel",
+				"de" : "Die Kraft des Widerstands",
+				"fr" : "Transmigration démoniaque",
+				"jp" : "抗う力"
+			}
+		}
+	},
+	"5008" : {
+		"zone_id" : 688,
+		"locales" : {
+			"name" : {
+				"en" : "Naadam",
+				"de" : "Naadam",
+				"fr" : "La grande bataille du Naadam",
+				"jp" : "終節の合戦"
+			}
+		}
+	},
+	"56" : {
+		"zone_id" : 689,
+		"locales" : {
+			"name" : {
+				"en" : "Ala Mhigo",
+				"de" : "Ala Mhigo",
+				"fr" : "Ala Mhigo",
+				"jp" : "紅蓮決戦 アラミゴ"
+			}
+		}
+	},
+	"5009" : {
+		"zone_id" : 708,
+		"locales" : {
+			"name" : {
+				"en" : "Blood on the Deck",
+				"de" : "Mord ist sein Hobby",
+				"fr" : "La légende de Musosai<Indent/>: l'assassin de Limsa Lominsa",
+				"jp" : "海都を震わす人斬りの宴！"
+			}
+		}
+	},
+	"5010" : {
+		"zone_id" : 709,
+		"locales" : {
+			"name" : {
+				"en" : "The Face of True Evil",
+				"de" : "Der Inbegriff des Bösen",
+				"fr" : "L'abominable Kogarashi",
+				"jp" : "極悪人コガラシ"
+			}
+		}
+	},
+	"5011" : {
+		"zone_id" : 710,
+		"locales" : {
+			"name" : {
+				"en" : "Matsuba Mayhem",
+				"de" : "Vorfall auf dem Matsuba-Platz",
+				"fr" : "Règlement de compte au square Matsuba",
+				"jp" : "松葉門外の変"
+			}
+		}
+	},
+	"5012" : {
+		"zone_id" : 711,
+		"locales" : {
+			"name" : {
+				"en" : "The Battle on Bekko",
+				"de" : "Ent<SoftHyphen/>schei<SoftHyphen/>dungs<SoftHyphen/>schlacht auf Bekko",
+				"fr" : "L'af<SoftHyphen/>fron<SoftHyphen/>te<SoftHyphen/>ment de deux justices",
+				"jp" : "ベッコウ島の決闘"
 			}
 		}
 	},
@@ -3134,6 +2529,226 @@
 			}
 		}
 	},
+	"5013" : {
+		"zone_id" : 717,
+		"locales" : {
+			"name" : {
+				"en" : "Curious Gorge Meets His Match",
+				"de" : "Die Urkraft in ihr",
+				"fr" : "L'épreuve de force",
+				"jp" : "原初的な彼女"
+			}
+		}
+	},
+	"5006" : {
+		"zone_id" : 705,
+		"locales" : {
+			"name" : {
+				"en" : "In Thal's Name",
+				"de" : "Thal zu Ehren",
+				"fr" : "Le tournoi commémoratif du sultanat",
+				"jp" : "ウル王杯闘技会の始まり"
+			}
+		}
+	},
+	"57" : {
+		"zone_id" : 662,
+		"locales" : {
+			"name" : {
+				"en" : "Kugane Castle",
+				"de" : "Schloss Kugane",
+				"fr" : "le Château de Kugane",
+				"jp" : "悪党成敗 クガネ城"
+			}
+		}
+	},
+	"20048" : {
+		"zone_id" : 719,
+		"locales" : {
+			"name" : {
+				"en" : "Emanation",
+				"de" : "Götterdämmerung - Lakshmi",
+				"fr" : "Émanation",
+				"jp" : "ラクシュミ討滅戦"
+			}
+		}
+	},
+	"20049" : {
+		"zone_id" : 720,
+		"locales" : {
+			"name" : {
+				"en" : "Emanation (Extreme)",
+				"de" : "Zenit der Götter - Lakshmi",
+				"fr" : "Émanation (extrême)",
+				"jp" : "極ラクシュミ討滅戦"
+			}
+		}
+	},
+	"5014" : {
+		"zone_id" : 722,
+		"locales" : {
+			"name" : {
+				"en" : "Our Unsung Heroes",
+				"de" : "Ein Wunsch aus alten Zeiten",
+				"fr" : "L'espoir en héritage",
+				"jp" : "時をかける願い"
+			}
+		}
+	},
+	"5015" : {
+		"zone_id" : 718,
+		"locales" : {
+			"name" : {
+				"en" : "The Heart of the Problem",
+				"de" : "Kriegerische Leidenschaft",
+				"fr" : "Passion guerrière",
+				"jp" : "燃えよゴージ！"
+			}
+		}
+	},
+	"5016" : {
+		"zone_id" : 713,
+		"locales" : {
+			"name" : {
+				"en" : "Dark as the Night Sky",
+				"de" : "Der tobende Drache",
+				"fr" : "Aussi sombre que la nuit",
+				"jp" : "漆黒の巨竜"
+			}
+		}
+	},
+	"55002" : {
+		"zone_id" : 712,
+		"locales" : {
+			"name" : {
+				"en" : "the Lost Canals of Uznair",
+				"de" : "Kanäle von Uznair",
+				"fr" : "les Canaux perdus d'Uznair",
+				"jp" : "宝物庫 ウズネアカナル"
+			}
+		}
+	},
+	"5017" : {
+		"zone_id" : 684,
+		"locales" : {
+			"name" : {
+				"en" : "The Resonant",
+				"de" : "Wege zur Transzendenz",
+				"fr" : "La ruse d'Urianger",
+				"jp" : "ウリエンジェの秘策"
+			}
+		}
+	},
+	"5018" : {
+		"zone_id" : 706,
+		"locales" : {
+			"name" : {
+				"en" : "Raising the Sword",
+				"de" : "Die hohe Kunst des Schwertkampfs",
+				"fr" : "La finale des champions",
+				"jp" : "さらなる剣術の高みへ"
+			}
+		}
+	},
+	"5019" : {
+		"zone_id" : 715,
+		"locales" : {
+			"name" : {
+				"en" : "The Orphans and the Broken Blade",
+				"de" : "Probe des Meisters",
+				"fr" : "L'aspiration refoulée",
+				"jp" : "あと三度、遥かな憧憬"
+			}
+		}
+	},
+	"5020" : {
+		"zone_id" : 716,
+		"locales" : {
+			"name" : {
+				"en" : "Our Compromise",
+				"de" : "Aus der Tiefe des Herzens",
+				"fr" : "La dernière séparation",
+				"jp" : "あと一度、君に会えたら"
+			}
+		}
+	},
+	"5021" : {
+		"zone_id" : 714,
+		"locales" : {
+			"name" : {
+				"en" : "Dragon Sound",
+				"de" : "Der Rubin-Drachenreiter",
+				"fr" : "Le Dragon écarlate",
+				"jp" : "紅の竜騎士"
+			}
+		}
+	},
+	"5022" : {
+		"zone_id" : 723,
+		"locales" : {
+			"name" : {
+				"en" : "When Clans Collide",
+				"de" : "Aus dem Verborgenen",
+				"fr" : "La bataille des clans",
+				"jp" : "影隠忍法帖"
+			}
+		}
+	},
+	"5023" : {
+		"zone_id" : 690,
+		"locales" : {
+			"name" : {
+				"en" : "Interdimensional Rift",
+				"de" : "Interdimensionaler Riss",
+				"fr" : "Fissure interdimensionnelle",
+				"jp" : "次元の狭間：外縁"
+			}
+		}
+	},
+	"55003" : {
+		"zone_id" : 725,
+		"locales" : {
+			"name" : {
+				"en" : "the Hidden Canals of Uznair",
+				"de" : "Vergessene Kanäle von Uznair",
+				"fr" : "les Canaux cachés d'Uznair",
+				"jp" : "宝物庫 ウズネアカナル深層"
+			}
+		}
+	},
+	"51001" : {
+		"zone_id" : 729,
+		"locales" : {
+			"name" : {
+				"en" : "Astragalos",
+				"de" : "Astragalos",
+				"fr" : "Astragalos (machinerie)",
+				"jp" : "アストラガロス (機工戦)"
+			}
+		}
+	},
+	"20050" : {
+		"zone_id" : 730,
+		"locales" : {
+			"name" : {
+				"en" : "the Minstrel's Ballad: Shinryu's Domain",
+				"de" : "Heldenlied von Shinryu",
+				"fr" : "Le domaine de Shinryu",
+				"jp" : "極神龍討滅戦"
+			}
+		}
+	},
+	"58" : {
+		"zone_id" : 731,
+		"locales" : {
+			"name" : {
+				"en" : "the Drowned City of Skalla",
+				"de" : "Die versunkene Stadt Skalla",
+				"fr" : "la Cité engloutie de Skalla",
+				"jp" : "水没遺構 スカラ"
+			}
+		}
+	},
 	"30057" : {
 		"zone_id" : 733,
 		"locales" : {
@@ -3153,6 +2768,39 @@
 				"de" : "Rabanastre",
 				"fr" : "la Cité royale de Rabanastre",
 				"jp" : "失われた都 ラバナスタ"
+			}
+		}
+	},
+	"5024" : {
+		"zone_id" : 403,
+		"locales" : {
+			"name" : {
+				"en" : "Return of the Bull",
+				"de" : "Verrat der Qalyana",
+				"fr" : "Retour au bercail",
+				"jp" : "英雄の帰還"
+			}
+		}
+	},
+	"59" : {
+		"zone_id" : 742,
+		"locales" : {
+			"name" : {
+				"en" : "Hells' Lid",
+				"de" : "Höllenspund",
+				"fr" : "le Couvercle des enfers",
+				"jp" : "紅玉火山 獄之蓋"
+			}
+		}
+	},
+	"60" : {
+		"zone_id" : 743,
+		"locales" : {
+			"name" : {
+				"en" : "the Fractal Continuum (Hard)",
+				"de" : "Die Fraktal-Kontinuum (schwer)",
+				"fr" : "le Continuum fractal (brutal)",
+				"jp" : "暴走戦艦 フラクタル・コンティニアム (Hard)"
 			}
 		}
 	},
@@ -3200,6 +2848,28 @@
 			}
 		}
 	},
+	"20051" : {
+		"zone_id" : 746,
+		"locales" : {
+			"name" : {
+				"en" : "the Jade Stoa",
+				"de" : "Seelentanz - Byakko",
+				"fr" : "la Clairière de Jade",
+				"jp" : "白虎征魂戦"
+			}
+		}
+	},
+	"20052" : {
+		"zone_id" : 758,
+		"locales" : {
+			"name" : {
+				"en" : "the Jade Stoa (Extreme)",
+				"de" : "Seelensturm - Byakko",
+				"fr" : "la Clairière de Jade (extrême)",
+				"jp" : "極白虎征魂戦"
+			}
+		}
+	},
 	"30063" : {
 		"zone_id" : 752,
 		"locales" : {
@@ -3244,6 +2914,116 @@
 			}
 		}
 	},
+	"25002" : {
+		"zone_id" : 741,
+		"locales" : {
+			"name" : {
+				"en" : "the Valentione's Ceremony",
+				"de" : "Valentionzeremonie",
+				"fr" : "la Cérémonie de la Valention",
+				"jp" : "ヴァレンティオンセレモニー"
+			}
+		}
+	},
+	"20053" : {
+		"zone_id" : 761,
+		"locales" : {
+			"name" : {
+				"en" : "the Great Hunt",
+				"de" : "Jagd auf Rathalos",
+				"fr" : "Chasse au Rathalos",
+				"jp" : "リオレウス狩猟戦"
+			}
+		}
+	},
+	"20054" : {
+		"zone_id" : 762,
+		"locales" : {
+			"name" : {
+				"en" : "the Great Hunt (Extreme)",
+				"de" : "Jagd auf Rathalos (schwer)",
+				"fr" : "Chasse au Rathalos (extrême)",
+				"jp" : "極リオレウス狩猟戦"
+			}
+		}
+	},
+	"40022" : {
+		"zone_id" : 745,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (Team Ranked)",
+				"de" : "The Feast (Team, gewertet)",
+				"fr" : "The Feast (classé/équipe JcJ)",
+				"jp" : "ザ・フィースト (チーム用ランクマッチ)"
+			}
+		}
+	},
+	"40023" : {
+		"zone_id" : 765,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (Ranked)",
+				"de" : "The Feast (gewertet)",
+				"fr" : "The Feast (classé)",
+				"jp" : "ザ・フィースト (ランクマッチ)"
+			}
+		}
+	},
+	"40024" : {
+		"zone_id" : 766,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (Training)",
+				"de" : "The Feast (Übungskampf)",
+				"fr" : "The Feast (en<SoftHyphen/>traî<SoftHyphen/>ne<SoftHyphen/>ment)",
+				"jp" : "ザ・フィースト (カジュアルマッチ)"
+			}
+		}
+	},
+	"40025" : {
+		"zone_id" : 767,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (Custom Match - Crystal Tower)",
+				"de" : "The Feast (Kristallturm-Arena: Schaukampf)",
+				"fr" : "The Feast (personnalisé/Tour de Cristal)",
+				"jp" : "ザ・フィースト (クリスタルタワー演習場：カスタムマッチ）"
+			}
+		}
+	},
+	"61" : {
+		"zone_id" : 768,
+		"locales" : {
+			"name" : {
+				"en" : "the Swallow's Compass",
+				"de" : "Kompass der Schwalbe",
+				"fr" : "le Compas de l'Hirondelle",
+				"jp" : "風水霊殿 ガンエン廟"
+			}
+		}
+	},
+	"20055" : {
+		"zone_id" : 778,
+		"locales" : {
+			"name" : {
+				"en" : "Castrum Fluminis",
+				"de" : "Götterdämmerung - Tsukuyomi",
+				"fr" : "Castrum Fluminis",
+				"jp" : "ツクヨミ討滅戦"
+			}
+		}
+	},
+	"20056" : {
+		"zone_id" : 779,
+		"locales" : {
+			"name" : {
+				"en" : "the Minstrel's Ballad: Tsukuyomi's Pain",
+				"de" : "Zenit der Götter - Tsukuyomi",
+				"fr" : "Castrum Fluminis (extrême)",
+				"jp" : "極ツクヨミ討滅戦"
+			}
+		}
+	},
 	"30067" : {
 		"zone_id" : 777,
 		"locales" : {
@@ -3255,6 +3035,116 @@
 			}
 		}
 	},
+	"60021" : {
+		"zone_id" : 770,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 1-10)",
+				"de" : "Himmelssäule (Ebenen 1-10)",
+				"fr" : "le Pilier des Cieux (étages 1-10)",
+				"jp" : "アメノミハシラ 1～10層"
+			}
+		}
+	},
+	"60022" : {
+		"zone_id" : 771,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 11-20)",
+				"de" : "Himmelssäule (Ebenen 11-20)",
+				"fr" : "le Pilier des Cieux (étages 11-20)",
+				"jp" : "アメノミハシラ 11～20層"
+			}
+		}
+	},
+	"60023" : {
+		"zone_id" : 772,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 21-30)",
+				"de" : "Himmelssäule (Ebenen 21-30)",
+				"fr" : "le Pilier des Cieux (étages 21-30)",
+				"jp" : "アメノミハシラ 21～30層"
+			}
+		}
+	},
+	"60024" : {
+		"zone_id" : 782,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 31-40)",
+				"de" : "Himmelssäule (Ebenen 31-40)",
+				"fr" : "le Pilier des Cieux (étages 31-40)",
+				"jp" : "アメノミハシラ 31～40層"
+			}
+		}
+	},
+	"60025" : {
+		"zone_id" : 773,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 41-50)",
+				"de" : "Himmelssäule (Ebenen 41-50)",
+				"fr" : "le Pilier des Cieux (étages 41-50)",
+				"jp" : "アメノミハシラ 41～50層"
+			}
+		}
+	},
+	"60026" : {
+		"zone_id" : 783,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 51-60)",
+				"de" : "Himmelssäule (Ebenen 51-60)",
+				"fr" : "le Pilier des Cieux (étages 51-60)",
+				"jp" : "アメノミハシラ 51～60層"
+			}
+		}
+	},
+	"60027" : {
+		"zone_id" : 774,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 61-70)",
+				"de" : "Himmelssäule (Ebenen 61-70)",
+				"fr" : "le Pilier des Cieux (étages 61-70)",
+				"jp" : "アメノミハシラ 61～70層"
+			}
+		}
+	},
+	"60028" : {
+		"zone_id" : 784,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 71-80)",
+				"de" : "Himmelssäule (Ebenen 71-80)",
+				"fr" : "le Pilier des Cieux (étages 71-80)",
+				"jp" : "アメノミハシラ 71～80層"
+			}
+		}
+	},
+	"60029" : {
+		"zone_id" : 775,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 81-90)",
+				"de" : "Himmelssäule (Ebenen 81-90)",
+				"fr" : "le Pilier des Cieux (étages 81-90)",
+				"jp" : "アメノミハシラ 81～90層"
+			}
+		}
+	},
+	"60030" : {
+		"zone_id" : 785,
+		"locales" : {
+			"name" : {
+				"en" : "Heaven-on-High  (Floors 91-100)",
+				"de" : "Himmelssäule (Ebenen 91-100)",
+				"fr" : "le Pilier des Cieux (étages 91-100)",
+				"jp" : "アメノミハシラ 91～100層"
+			}
+		}
+	},
 	"30068" : {
 		"zone_id" : 776,
 		"locales" : {
@@ -3263,6 +3153,61 @@
 				"de" : "Richtfeuer von Ridorana",
 				"fr" : "le Phare de Ridorana",
 				"jp" : "封じられた聖塔 リドルアナ"
+			}
+		}
+	},
+	"40026" : {
+		"zone_id" : 767,
+		"locales" : {
+			"name" : {
+				"en" : "the Feast (Team Custom Match - Crystal Tower)",
+				"de" : "The Feast (Kristallturm-Arena: Team-Schaukampf) ",
+				"fr" : "The Feast (personnalisé/équipe JcJ/Tour de Cristal)",
+				"jp" : "ザ・フィースト (クリスタルタワー演習場：チーム用カスタムマッチ)"
+			}
+		}
+	},
+	"5025" : {
+		"zone_id" : 769,
+		"locales" : {
+			"name" : {
+				"en" : "Emissary of the Dawn",
+				"de" : "Der Knabe der Morgenröte",
+				"fr" : "Voyage en terre hostile",
+				"jp" : "「暁」の少年"
+			}
+		}
+	},
+	"62" : {
+		"zone_id" : 788,
+		"locales" : {
+			"name" : {
+				"en" : "Saint Mocianne's Arboretum (Hard)",
+				"de" : "Sankt Mocianne-Arboretum (schwer)",
+				"fr" : "l'Arboretum Sainte-Mocianne (brutal)",
+				"jp" : "草木汚染 聖モシャーヌ植物園 (Hard)"
+			}
+		}
+	},
+	"63" : {
+		"zone_id" : 789,
+		"locales" : {
+			"name" : {
+				"en" : "the Burn",
+				"de" : "Das Kargland",
+				"fr" : "L'Escarre",
+				"jp" : "永久焦土 ザ・バーン"
+			}
+		}
+	},
+	"55004" : {
+		"zone_id" : 794,
+		"locales" : {
+			"name" : {
+				"en" : "the Shifting Altars of Uznair",
+				"de" : "Glücksaltäre von Uznair",
+				"fr" : "le Temple sacré d'Uznair",
+				"jp" : "宝物庫 ウズネアカナル祭殿"
 			}
 		}
 	},
@@ -3354,322 +3299,58 @@
 			}
 		}
 	},
-	"30077" : {
-		"zone_id" : 826,
+	"20059" : {
+		"zone_id" : 806,
 		"locales" : {
 			"name" : {
-				"en" : "the Orbonne Monastery",
-				"de" : "Kloster von Orbonne",
-				"fr" : "le Monastère d'Orbonne",
-				"jp" : "楽欲の僧院 オーボンヌ"
+				"en" : "Kugane Ohashi",
+				"de" : "Duell auf der Kugane-Brücke",
+				"fr" : "le Pont Ohashi",
+				"jp" : "真ヨウジンボウ討滅戦"
 			}
 		}
 	},
-	"30078" : {
-		"zone_id" : 849,
+	"20057" : {
+		"zone_id" : 810,
 		"locales" : {
 			"name" : {
-				"en" : "Eden's Gate: Resurrection",
-				"de" : "Edens Erwachen - Auferstehung",
-				"fr" : "L'Éveil d'Éden - Résurrection",
-				"jp" : "希望の園エデン：覚醒編1"
+				"en" : "Hells' Kier",
+				"de" : "Seelentanz - Suzaku",
+				"fr" : "le Nid des Lamentations",
+				"jp" : "朱雀征魂戦"
 			}
 		}
 	},
-	"30079" : {
-		"zone_id" : 853,
+	"20058" : {
+		"zone_id" : 811,
 		"locales" : {
 			"name" : {
-				"en" : "Eden's Gate: Resurrection (Savage)",
-				"de" : "Edens Erwachen - Auferstehung (episch)",
-				"fr" : "L'Éveil d'Éden - Résurrection (sadique)",
-				"jp" : "希望の園エデン零式：覚醒編1"
+				"en" : "Hells' Kier (Extreme)",
+				"de" : "Seelensturm - Suzaku",
+				"fr" : "le Nid des Lamentations (extrême)",
+				"jp" : "極朱雀征魂戦"
 			}
 		}
 	},
-	"30080" : {
-		"zone_id" : 851,
+	"51002" : {
+		"zone_id" : 791,
 		"locales" : {
 			"name" : {
-				"en" : "Eden's Gate: Inundation",
-				"de" : "Edens Erwachen - Überflutung",
-				"fr" : "L'Éveil d'Éden - Déluge",
-				"jp" : "希望の園エデン：覚醒編3"
+				"en" : "Hidden Gorge",
+				"de" : "Verborgene Schlucht",
+				"fr" : "Gorge dérobée (machinerie)",
+				"jp" : "ヒドゥンゴージ (機工戦)"
 			}
 		}
 	},
-	"30081" : {
-		"zone_id" : 855,
+	"5026" : {
+		"zone_id" : 797,
 		"locales" : {
 			"name" : {
-				"en" : "Eden's Gate: Inundation (Savage)",
-				"de" : "Edens Erwachen - Überflutung (episch)",
-				"fr" : "L'Éveil d'Éden - Déluge (sadique)",
-				"jp" : "希望の園エデン零式：覚醒編3"
-			}
-		}
-	},
-	"30082" : {
-		"zone_id" : 850,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Gate: Descent",
-				"de" : "Edens Erwachen - Niederkunft",
-				"fr" : "L'Éveil d'Éden - Descente",
-				"jp" : "希望の園エデン：覚醒編2"
-			}
-		}
-	},
-	"30083" : {
-		"zone_id" : 854,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Gate: Descent (Savage)",
-				"de" : "Edens Erwachen - Niederkunft (episch)",
-				"fr" : "L'Éveil d'Éden - Descente (sadique)",
-				"jp" : "希望の園エデン零式：覚醒編2"
-			}
-		}
-	},
-	"30084" : {
-		"zone_id" : 852,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Gate: Sepulture",
-				"de" : "Edens Erwachen - Beerdigung",
-				"fr" : "L'Éveil d'Éden - Inhumation",
-				"jp" : "希望の園エデン：覚醒編4"
-			}
-		}
-	},
-	"30085" : {
-		"zone_id" : 856,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Gate: Sepulture (Savage)",
-				"de" : "Edens Erwachen - Beerdigung (episch)",
-				"fr" : "L'Éveil d'Éden - Inhumation (sadique)",
-				"jp" : "希望の園エデン零式：覚醒編4"
-			}
-		}
-	},
-	"30086" : {
-		"zone_id" : 887,
-		"locales" : {
-			"name" : {
-				"en" : "The Epic of Alexander (Ultimate)",
-				"de" : "Alexander (fatal)",
-				"fr" : "L'Odyssée d'Alexander (fatal)",
-				"jp" : "絶アレキサンダー討滅戦"
-			}
-		}
-	},
-	"30087" : {
-		"zone_id" : 882,
-		"locales" : {
-			"name" : {
-				"en" : "The Copied Factory",
-				"de" : "Die kopierte Fabrik",
-				"fr" : "La réplique de l'usine désaffectée",
-				"jp" : "複製サレタ工場廃墟"
-			}
-		}
-	},
-	"30088" : {
-		"zone_id" : 902,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Verse: Fulmination",
-				"de" : "Edens Resonanz - Entladung",
-				"fr" : "Les Accords d'Éden - Fulmination",
-				"jp" : "希望の園エデン：共鳴編1"
-			}
-		}
-	},
-	"30089" : {
-		"zone_id" : 906,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Verse: Fulmination (Savage)",
-				"de" : "Edens Resonanz - Entladung (episch)",
-				"fr" : "Les Accords d'Éden - Fulmination (sadique)",
-				"jp" : "希望の園エデン零式：共鳴編1"
-			}
-		}
-	},
-	"30090" : {
-		"zone_id" : 903,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Verse: Furor",
-				"de" : "Edens Resonanz - Raserei",
-				"fr" : "Les Accords d'Éden - Fureur",
-				"jp" : "希望の園エデン：共鳴編2"
-			}
-		}
-	},
-	"30091" : {
-		"zone_id" : 907,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Verse: Furor (Savage)",
-				"de" : "Edens Resonanz - Raserei (episch)",
-				"fr" : "Les Accords d'Éden - Fureur (sadique)",
-				"jp" : "希望の園エデン零式：共鳴編2"
-			}
-		}
-	},
-	"30092" : {
-		"zone_id" : 904,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Verse: Iconoclasm",
-				"de" : "Edens Resonanz - Bildersturm",
-				"fr" : "Les Accords d'Éden - Iconoclasme",
-				"jp" : "希望の園エデン：共鳴編3"
-			}
-		}
-	},
-	"30093" : {
-		"zone_id" : 908,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Verse: Iconoclasm (Savage)",
-				"de" : "Edens Resonanz - Bildersturm (episch)",
-				"fr" : "Les Accords d'Éden - Iconoclasme (sadique)",
-				"jp" : "希望の園エデン零式：共鳴編3"
-			}
-		}
-	},
-	"30094" : {
-		"zone_id" : 905,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Verse: Refulgence",
-				"de" : "Edens Resonanz - Erstarrung",
-				"fr" : "Les Accords d'Éden - Éclat",
-				"jp" : "希望の園エデン：共鳴編4"
-			}
-		}
-	},
-	"30095" : {
-		"zone_id" : 909,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Verse: Refulgence (Savage)",
-				"de" : "Edens Resonanz - Erstarrung (episch)",
-				"fr" : "Les Accords d'Éden - Éclat (sadique)",
-				"jp" : "希望の園エデン零式：共鳴編4"
-			}
-		}
-	},
-	"30096" : {
-		"zone_id" : 917,
-		"locales" : {
-			"name" : {
-				"en" : "the Puppets' Bunker",
-				"de" : "Die Puppenfestung",
-				"fr" : "La base militaire des Pantins",
-				"jp" : "人形タチノ軍事基地"
-			}
-		}
-	},
-	"30097" : {
-		"zone_id" : 942,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Promise: Umbra",
-				"de" : "Edens Verheißung - Umbra",
-				"fr" : "La Promesse d'Éden - Nuée",
-				"jp" : "希望の園エデン：再生編1"
-			}
-		}
-	},
-	"30098" : {
-		"zone_id" : 946,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Promise: Umbra (Savage)",
-				"de" : "Edens Verheißung - Umbra (episch)",
-				"fr" : "La Promesse d'Éden - Nuée (sadique)",
-				"jp" : "希望の園エデン零式：再生編1"
-			}
-		}
-	},
-	"30099" : {
-		"zone_id" : 943,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Promise: Litany",
-				"de" : "Edens Verheißung - Litanei",
-				"fr" : "La Promesse d'Éden - Litanie",
-				"jp" : "希望の園エデン：再生編2"
-			}
-		}
-	},
-	"30100" : {
-		"zone_id" : 947,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Promise: Litany (Savage)",
-				"de" : "Edens Verheißung - Litanei (episch)",
-				"fr" : "La Promesse d'Éden - Litanie (sadique)",
-				"jp" : "希望の園エデン零式：再生編2"
-			}
-		}
-	},
-	"30101" : {
-		"zone_id" : 944,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Promise: Anamorphosis",
-				"de" : "Edens Verheißung - Anamorphose",
-				"fr" : "La Promesse d'Éden - Anamorphose",
-				"jp" : "希望の園エデン：再生編3"
-			}
-		}
-	},
-	"30102" : {
-		"zone_id" : 948,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Promise: Anamorphosis (Savage)",
-				"de" : "Edens Verheißung - Anamorphose (episch)",
-				"fr" : "La Promesse d'Éden - Anamorphose (sadique)",
-				"jp" : "希望の園エデン零式：再生編3"
-			}
-		}
-	},
-	"30103" : {
-		"zone_id" : 945,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Promise: Eternity",
-				"de" : "Edens Verheißung - Ewigkeit",
-				"fr" : "La Promesse d'Éden - Éternité",
-				"jp" : "希望の園エデン：再生編4"
-			}
-		}
-	},
-	"30104" : {
-		"zone_id" : 949,
-		"locales" : {
-			"name" : {
-				"en" : "Eden's Promise: Eternity (Savage)",
-				"de" : "Edens Verheißung - Ewigkeit (episch)",
-				"fr" : "La Promesse d'Éden - Éternité (sadique)",
-				"jp" : "希望の園エデン零式：再生編4"
-			}
-		}
-	},
-	"30105" : {
-		"zone_id" : 966,
-		"locales" : {
-			"name" : {
-				"en" : "The Tower at Paradigm's Breach",
-				"de" : "Der Turm, Paradigmenbrecher",
-				"fr" : "La tour de la Contingence",
-				"jp" : "希望ノ砲台：「塔」"
+				"en" : "The Will of the Moon",
+				"de" : "Der Wille der Mondgöttin",
+				"fr" : "Ralliement dans la steppe",
+				"jp" : "楔石の虚"
 			}
 		}
 	},
@@ -3681,6 +3362,17 @@
 				"de" : "Debüt in der Himmlischen Arena",
 				"fr" : "Début du spectacle",
 				"jp" : "デビューマッチ"
+			}
+		}
+	},
+	"64" : {
+		"zone_id" : 793,
+		"locales" : {
+			"name" : {
+				"en" : "the Ghimlyt Dark",
+				"de" : "Die Ghimlyt-Finsternis",
+				"fr" : "Les Ténèbres de Ghimlyt",
+				"jp" : "境界戦線 ギムリトダーク"
 			}
 		}
 	},
@@ -3888,7 +3580,7 @@
 			"name" : {
 				"en" : "Miss Typhon",
 				"de" : "Ultros & Typhon - Zwei wie Rotz und Wasser",
-				"fr" : "Duo de choc: Orthros et maître Typhon",
+				"fr" : "Duo de choc<Indent/>: Orthros et maître Typhon",
 				"jp" : "名コンビ「オルトロス＆テュポーン」"
 			}
 		}
@@ -3948,6 +3640,479 @@
 			}
 		}
 	},
+	"30077" : {
+		"zone_id" : 826,
+		"locales" : {
+			"name" : {
+				"en" : "the Orbonne Monastery",
+				"de" : "Kloster von Orbonne",
+				"fr" : "le Monastère d'Orbonne",
+				"jp" : "楽欲の僧院 オーボンヌ"
+			}
+		}
+	},
+	"20060" : {
+		"zone_id" : 824,
+		"locales" : {
+			"name" : {
+				"en" : "the Wreath of Snakes",
+				"de" : "Seelentanz - Seiryu",
+				"fr" : "l'Îlot des Amertumes",
+				"jp" : "青龍征魂戦"
+			}
+		}
+	},
+	"20061" : {
+		"zone_id" : 825,
+		"locales" : {
+			"name" : {
+				"en" : "the Wreath of Snakes (Extreme)",
+				"de" : "Seelensturm - Seiryu",
+				"fr" : "l'Îlot des Amertumes (extrême)",
+				"jp" : "極青龍征魂戦"
+			}
+		}
+	},
+	"62000" : {
+		"zone_id" : 832,
+		"locales" : {
+			"name" : {
+				"en" : "Air Force One",
+				"de" : "Luftwaffe, Feuer frei!",
+				"fr" : "As de l'air",
+				"jp" : "出撃！ エアフォースパイロット"
+			}
+		}
+	},
+	"62001" : {
+		"zone_id" : 832,
+		"locales" : {
+			"name" : {
+				"en" : "Air Force One",
+				"de" : "Luftwaffe, Feuer frei!",
+				"fr" : "As de l'air",
+				"jp" : "出撃！ エアフォースパイロット"
+			}
+		}
+	},
+	"62002" : {
+		"zone_id" : 832,
+		"locales" : {
+			"name" : {
+				"en" : "Air Force One",
+				"de" : "Luftwaffe, Feuer frei!",
+				"fr" : "As de l'air",
+				"jp" : "出撃！ エアフォースパイロット"
+			}
+		}
+	},
+	"61001" : {
+		"zone_id" : 831,
+		"locales" : {
+			"name" : {
+				"en" : "Novice Mahjong (Full Ranked Match)",
+				"de" : "Anfänger-Mahjong (komplette Partie, gewertet)",
+				"fr" : "Mahjong domien<Indent/>: tous rangs (partie classée)",
+				"jp" : "ドマ式麻雀：半荘戦一般卓（段位変動有り）"
+			}
+		}
+	},
+	"61002" : {
+		"zone_id" : 831,
+		"locales" : {
+			"name" : {
+				"en" : "Advanced Mahjong (Full Ranked Match)",
+				"de" : "Fortgeschrittenen-Mahjong (komplette Partie, gewertet)",
+				"fr" : "Mahjong domien<Indent/>: dan seulement (partie classée)",
+				"jp" : "ドマ式麻雀：半荘戦有段卓（段位変動有り）"
+			}
+		}
+	},
+	"61003" : {
+		"zone_id" : 831,
+		"locales" : {
+			"name" : {
+				"en" : "Four-player Mahjong (Full Match, Kuitan Enabled)",
+				"de" : "4-Spieler-Mahjong (komplette Partie, Kuitan aktiviert)",
+				"fr" : "Mahjong domien<Indent/>: 4 joueurs (partie avec kuitan)",
+				"jp" : "ドマ式麻雀：半荘戦4人セット卓（クイタン有り）"
+			}
+		}
+	},
+	"5027" : {
+		"zone_id" : 834,
+		"locales" : {
+			"name" : {
+				"en" : "Messenger of the Winds",
+				"de" : "Durch den Sturm und zurück",
+				"fr" : "La Messagère du vent",
+				"jp" : "来訪せし風の御使"
+			}
+		}
+	},
+	"5028" : {
+		"zone_id" : 830,
+		"locales" : {
+			"name" : {
+				"en" : "a Requiem for Heroes",
+				"de" : "Requiem der Helden",
+				"fr" : "Un requiem pour les héros",
+				"jp" : "英雄への鎮魂歌"
+			}
+		}
+	},
+	"65" : {
+		"zone_id" : 821,
+		"locales" : {
+			"name" : {
+				"en" : "Dohn Mheg",
+				"de" : "Dohn Mheg",
+				"fr" : "Dohn Mheg",
+				"jp" : "水妖幻園 ドォーヌ・メグ"
+			}
+		}
+	},
+	"61004" : {
+		"zone_id" : 831,
+		"locales" : {
+			"name" : {
+				"en" : "Four-player Mahjong (Full Match, Kuitan Disabled)",
+				"de" : "4-Spieler-Mahjong (komplette Partie, Kuitan deaktiviert)",
+				"fr" : "Mahjong domien<Indent/>: 4 joueurs (partie sans kuitan)",
+				"jp" : "ドマ式麻雀：半荘戦4人セット卓（クイタン無し）"
+			}
+		}
+	},
+	"66" : {
+		"zone_id" : 823,
+		"locales" : {
+			"name" : {
+				"en" : "the Qitana Ravel",
+				"de" : "Irrungen der Qitari",
+				"fr" : "L'Enchevêtrement des Qitari",
+				"jp" : "古跡探索 キタンナ神影洞"
+			}
+		}
+	},
+	"67" : {
+		"zone_id" : 838,
+		"locales" : {
+			"name" : {
+				"en" : "Amaurot",
+				"de" : "Amaurot",
+				"fr" : "Amaurote",
+				"jp" : "終末幻想 アーモロート"
+			}
+		}
+	},
+	"30078" : {
+		"zone_id" : 849,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Gate: Resurrection",
+				"de" : "Edens Erwachen - Auferstehung",
+				"fr" : "L'Éveil d'Éden - Résurrection",
+				"jp" : "希望の園エデン：覚醒編1"
+			}
+		}
+	},
+	"30079" : {
+		"zone_id" : 853,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Gate: Resurrection (Savage)",
+				"de" : "Edens Erwachen - Auferstehung (episch)",
+				"fr" : "L'Éveil d'Éden - Résurrection (sadique)",
+				"jp" : "希望の園エデン零式：覚醒編1"
+			}
+		}
+	},
+	"68" : {
+		"zone_id" : 840,
+		"locales" : {
+			"name" : {
+				"en" : "the Twinning",
+				"de" : "Der Kristallzwilling",
+				"fr" : "La Macle de Syrcus",
+				"jp" : "異界遺構 シルクス・ツイニング"
+			}
+		}
+	},
+	"69" : {
+		"zone_id" : 836,
+		"locales" : {
+			"name" : {
+				"en" : "Malikah's Well",
+				"de" : "Malikahs Brunnen",
+				"fr" : "le Puits de Malikah",
+				"jp" : "爽涼離宮 マリカの大井戸"
+			}
+		}
+	},
+	"20062" : {
+		"zone_id" : 845,
+		"locales" : {
+			"name" : {
+				"en" : "The Dancing Plague",
+				"de" : "Offenbarung - Titania",
+				"fr" : "la Valse du Monarque",
+				"jp" : "ティターニア討滅戦"
+			}
+		}
+	},
+	"20063" : {
+		"zone_id" : 858,
+		"locales" : {
+			"name" : {
+				"en" : "the Dancing Plague (Extreme)",
+				"de" : "Letzte Läuterung - Titania",
+				"fr" : "la Valse du Monarque (extrême)",
+				"jp" : "極ティターニア討滅戦"
+			}
+		}
+	},
+	"70" : {
+		"zone_id" : 822,
+		"locales" : {
+			"name" : {
+				"en" : "Mt. Gulg",
+				"de" : "Der Gulg",
+				"fr" : "Mont Gulg",
+				"jp" : "偽造天界 グルグ火山"
+			}
+		}
+	},
+	"71" : {
+		"zone_id" : 841,
+		"locales" : {
+			"name" : {
+				"en" : "Akadaemia Anyder",
+				"de" : "Akadaemia Anyder",
+				"fr" : "Akadaemia Anydre",
+				"jp" : "創造機関 アナイダアカデミア"
+			}
+		}
+	},
+	"20064" : {
+		"zone_id" : 846,
+		"locales" : {
+			"name" : {
+				"en" : "The Crown of the Immaculate",
+				"de" : "Offenbarung - Innozenz",
+				"fr" : "La Couronne de l'Immaculé",
+				"jp" : "イノセンス討滅戦"
+			}
+		}
+	},
+	"20065" : {
+		"zone_id" : 848,
+		"locales" : {
+			"name" : {
+				"en" : "the Crown of the Immaculate (Extreme)",
+				"de" : "Letzte Läuterung - Innozenz",
+				"fr" : "La Couronne de l'Immaculé (extrême)",
+				"jp" : "極イノセンス討滅戦"
+			}
+		}
+	},
+	"72" : {
+		"zone_id" : 837,
+		"locales" : {
+			"name" : {
+				"en" : "Holminster Switch",
+				"de" : "Holminster",
+				"fr" : "Holminster",
+				"jp" : "殺戮郷村 ホルミンスター"
+			}
+		}
+	},
+	"5029" : {
+		"zone_id" : 873,
+		"locales" : {
+			"name" : {
+				"en" : "The Hardened Heart",
+				"de" : "Ob Mitleid oder Hass",
+				"fr" : "Naissance d'un bourreau",
+				"jp" : "揺れる天秤"
+			}
+		}
+	},
+	"5030" : {
+		"zone_id" : 874,
+		"locales" : {
+			"name" : {
+				"en" : "The Lost and the Found",
+				"de" : "Alter Zauber",
+				"fr" : "Magie ancestrale",
+				"jp" : "古の大再生魔法"
+			}
+		}
+	},
+	"5031" : {
+		"zone_id" : 860,
+		"locales" : {
+			"name" : {
+				"en" : "Coming Clean",
+				"de" : "Vater und Bruder",
+				"fr" : "Sur les rails de Nabaath Areng",
+				"jp" : "廃都ナバスアレン"
+			}
+		}
+	},
+	"5032" : {
+		"zone_id" : 859,
+		"locales" : {
+			"name" : {
+				"en" : "Legend of the Not-so-hidden Temple",
+				"de" : "Der Beichtstuhl von Toupasa dem Älteren",
+				"fr" : "Le Confessionnal de Toupasa l'ancien",
+				"jp" : "仕掛けと呪いと毒と"
+			}
+		}
+	},
+	"30080" : {
+		"zone_id" : 851,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Gate: Inundation",
+				"de" : "Edens Erwachen - Überflutung",
+				"fr" : "L'Éveil d'Éden - Déluge",
+				"jp" : "希望の園エデン：覚醒編3"
+			}
+		}
+	},
+	"30081" : {
+		"zone_id" : 855,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Gate: Inundation (Savage)",
+				"de" : "Edens Erwachen - Überflutung (episch)",
+				"fr" : "L'Éveil d'Éden - Déluge (sadique)",
+				"jp" : "希望の園エデン零式：覚醒編3"
+			}
+		}
+	},
+	"30082" : {
+		"zone_id" : 850,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Gate: Descent",
+				"de" : "Edens Erwachen - Niederkunft",
+				"fr" : "L'Éveil d'Éden - Descente",
+				"jp" : "希望の園エデン：覚醒編2"
+			}
+		}
+	},
+	"30083" : {
+		"zone_id" : 854,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Gate: Descent (Savage)",
+				"de" : "Edens Erwachen - Niederkunft (episch)",
+				"fr" : "L'Éveil d'Éden - Descente (sadique)",
+				"jp" : "希望の園エデン零式：覚醒編2"
+			}
+		}
+	},
+	"5033" : {
+		"zone_id" : 876,
+		"locales" : {
+			"name" : {
+				"en" : "Nyelbert's Lament",
+				"de" : "Ein großes Opfer",
+				"fr" : "Une cupidité bien généreuse",
+				"jp" : "ナイルベルトの後悔"
+			}
+		}
+	},
+	"20066" : {
+		"zone_id" : 847,
+		"locales" : {
+			"name" : {
+				"en" : "The Dying Gasp",
+				"de" : "Offenbarung - Hades",
+				"fr" : "le Râle de l'Agonie",
+				"jp" : "ハーデス討滅戦"
+			}
+		}
+	},
+	"55006" : {
+		"zone_id" : 879,
+		"locales" : {
+			"name" : {
+				"en" : "The Dungeons of Lyhe Ghiah",
+				"de" : "Verliese von Lyhe Ghiah",
+				"fr" : "le Donjon hypogéen du Lyhe Ghiah",
+				"jp" : "宝物庫 リェー・ギア・ダンジョン"
+			}
+		}
+	},
+	"30084" : {
+		"zone_id" : 852,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Gate: Sepulture",
+				"de" : "Edens Erwachen - Beerdigung",
+				"fr" : "L'Éveil d'Éden - Inhumation",
+				"jp" : "希望の園エデン：覚醒編4"
+			}
+		}
+	},
+	"30085" : {
+		"zone_id" : 856,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Gate: Sepulture (Savage)",
+				"de" : "Edens Erwachen - Beerdigung (episch)",
+				"fr" : "L'Éveil d'Éden - Inhumation (sadique)",
+				"jp" : "希望の園エデン零式：覚醒編4"
+			}
+		}
+	},
+	"5034" : {
+		"zone_id" : 875,
+		"locales" : {
+			"name" : {
+				"en" : "The Hunter's Legacy",
+				"de" : "Der Legende auf der Spur",
+				"fr" : "La chasseuse de légende",
+				"jp" : "勇気の狩人"
+			}
+		}
+	},
+	"73" : {
+		"zone_id" : 884,
+		"locales" : {
+			"name" : {
+				"en" : "The Grand Cosmos",
+				"de" : "Chateau Cosmea",
+				"fr" : "le Cosmos coruscant",
+				"jp" : "魔法宮殿 グラン・コスモス"
+			}
+		}
+	},
+	"20067" : {
+		"zone_id" : 885,
+		"locales" : {
+			"name" : {
+				"en" : "The Minstrel's Ballad: Hades's Elegy",
+				"de" : "Letzte Läuterung - Hades",
+				"fr" : "Le Râle de l'Agonie (extrême)",
+				"jp" : "極ハーデス討滅戦"
+			}
+		}
+	},
+	"30086" : {
+		"zone_id" : 887,
+		"locales" : {
+			"name" : {
+				"en" : "The Epic of Alexander (Ultimate)",
+				"de" : "Alexander (fatal)",
+				"fr" : "L'Odyssée d'Alexander (fatal)",
+				"jp" : "絶アレキサンダー討滅戦"
+			}
+		}
+	},
 	"35026" : {
 		"zone_id" : 796,
 		"locales" : {
@@ -3965,7 +4130,7 @@
 			"name" : {
 				"en" : "Lock up Your Snorters",
 				"de" : "Explosives Schnaufen",
-				"fr" : "Fungaaah! Et boum!",
+				"fr" : "Fungaaah<Indent/>! Et boum<Indent/>!",
 				"jp" : "はないき爆破デスマッチ"
 			}
 		}
@@ -4003,168 +4168,14 @@
 			}
 		}
 	},
-	"35031" : {
-		"zone_id" : 796,
+	"30087" : {
+		"zone_id" : 882,
 		"locales" : {
 			"name" : {
-				"en" : "Anything Gogo's",
-				"de" : "Gogo der Mime",
-				"fr" : "Gogo le mime",
-				"jp" : "黄金頭巾「ものまね士ゴゴ」"
-			}
-		}
-	},
-	"40008" : {
-		"zone_id" : 525,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (4 on 4 - Training)",
-				"de" : "The Feast (4 gegen 4, Übungskampf)",
-				"fr" : "The Feast (4x4/entraînement)",
-				"jp" : "ザ・フィースト (4対4 / カジュアルマッチ)"
-			}
-		}
-	},
-	"40010" : {
-		"zone_id" : 527,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (4 on 4 - Ranked)",
-				"de" : "The Feast (4 gegen 4, gewertet)",
-				"fr" : "The Feast (4x4/classé)",
-				"jp" : "ザ・フィースト (4対4 / ランクマッチ)"
-			}
-		}
-	},
-	"40014" : {
-		"zone_id" : 619,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Custom Match - Feasting Grounds)",
-				"de" : "The Feast (Wolfshöhle: Schaukampf)",
-				"fr" : "The Feast (personnalisé/Festin des loups)",
-				"jp" : "ザ・フィースト (ウルヴズジェイル演習場：カスタムマッチ）"
-			}
-		}
-	},
-	"40016" : {
-		"zone_id" : 632,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (4 on 4 - Training)",
-				"de" : "The Feast (4 gegen 4, Übungskampf)",
-				"fr" : "The Feast (4x4/entraînement)",
-				"jp" : "ザ・フィースト (4対4 / カジュアルマッチ)"
-			}
-		}
-	},
-	"40018" : {
-		"zone_id" : 644,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (4 on 4 - Ranked)",
-				"de" : "The Feast (4 gegen 4, gewertet)",
-				"fr" : "The Feast (4x4/classé)",
-				"jp" : "ザ・フィースト (4対4 / ランクマッチ)"
-			}
-		}
-	},
-	"40021" : {
-		"zone_id" : 646,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Custom Match - Lichenweed)",
-				"de" : "The Feast (Flechtenhain: Schaukampf)",
-				"fr" : "The Feast (personnalisé/Pré-de-lichen)",
-				"jp" : "ザ・フィースト (ライケンウィード演習場：カスタムマッチ）"
-			}
-		}
-	},
-	"40022" : {
-		"zone_id" : 745,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Team Ranked)",
-				"de" : "The Feast (Team, gewertet)",
-				"fr" : "The Feast (classé/équipe JcJ)",
-				"jp" : "ザ・フィースト (チーム用ランクマッチ)"
-			}
-		}
-	},
-	"40023" : {
-		"zone_id" : 765,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Ranked)",
-				"de" : "The Feast (gewertet)",
-				"fr" : "The Feast (classé)",
-				"jp" : "ザ・フィースト (ランクマッチ)"
-			}
-		}
-	},
-	"40024" : {
-		"zone_id" : 766,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Training)",
-				"de" : "The Feast (Übungskampf)",
-				"fr" : "The Feast (entraînement)",
-				"jp" : "ザ・フィースト (カジュアルマッチ)"
-			}
-		}
-	},
-	"40025" : {
-		"zone_id" : 767,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Custom Match - Crystal Tower)",
-				"de" : "The Feast (Kristallturm-Arena: Schaukampf)",
-				"fr" : "The Feast (personnalisé/Tour de Cristal)",
-				"jp" : "ザ・フィースト (クリスタルタワー演習場：カスタムマッチ）"
-			}
-		}
-	},
-	"40026" : {
-		"zone_id" : 767,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Team Custom Match - Crystal Tower)",
-				"de" : "The Feast (Kristallturm-Arena: Team-Schaukampf) ",
-				"fr" : "The Feast (personnalisé/équipe JcJ/Tour de Cristal)",
-				"jp" : "ザ・フィースト (クリスタルタワー演習場：チーム用カスタムマッチ)"
-			}
-		}
-	},
-	"50001" : {
-		"zone_id" : 376,
-		"locales" : {
-			"name" : {
-				"en" : "the Borderland Ruins (Secure)",
-				"de" : "Äußere Ruinen (Sicherung)",
-				"fr" : "les Ruines frontalières (annexion)",
-				"jp" : "外縁遺跡群 (制圧戦)"
-			}
-		}
-	},
-	"50004" : {
-		"zone_id" : 431,
-		"locales" : {
-			"name" : {
-				"en" : "Seal Rock (Seize)",
-				"de" : "Robbenholm (Eroberung)",
-				"fr" : "le Rocher des tréfonds (invasion)",
-				"jp" : "シールロック (争奪戦)"
-			}
-		}
-	},
-	"50005" : {
-		"zone_id" : 554,
-		"locales" : {
-			"name" : {
-				"en" : "the Fields of Glory (Shatter)",
-				"de" : "Feld der Ehre (Zersplitterung)",
-				"fr" : "les Champs de la Gloire (brise-glace)",
-				"jp" : "フィールド・オブ・グローリー (砕氷戦)"
+				"en" : "The Copied Factory",
+				"de" : "Die kopierte Fabrik",
+				"fr" : "La réplique de l'usine désaffectée",
+				"jp" : "複製サレタ工場廃墟"
 			}
 		}
 	},
@@ -4179,542 +4190,102 @@
 			}
 		}
 	},
-	"51001" : {
-		"zone_id" : 729,
+	"5035" : {
+		"zone_id" : 893,
 		"locales" : {
 			"name" : {
-				"en" : "Astragalos",
-				"de" : "Astragalos",
-				"fr" : "Astragalos (machinerie)",
-				"jp" : "アストラガロス (機工戦)"
+				"en" : "Vows of Virtue, Deeds of Cruelty",
+				"de" : "Der Wolf und der Drachenreiter",
+				"fr" : "Vœux de vertu, actes de cruauté",
+				"jp" : "白き誓約、黒き密約"
 			}
 		}
 	},
-	"51002" : {
-		"zone_id" : 791,
+	"5036" : {
+		"zone_id" : 894,
 		"locales" : {
 			"name" : {
-				"en" : "Hidden Gorge",
-				"de" : "Verborgene Schlucht",
-				"fr" : "Gorge dérobée (machinerie)",
-				"jp" : "ヒドゥンゴージ (機工戦)"
+				"en" : "As the Heart Bids",
+				"de" : "Trubel im Traumland",
+				"fr" : "À l'écoute de soi",
+				"jp" : "この心が望むがままに"
 			}
 		}
 	},
-	"55001" : {
-		"zone_id" : 558,
+	"74" : {
+		"zone_id" : 898,
 		"locales" : {
 			"name" : {
-				"en" : "the Aquapolis",
-				"de" : "Aquapolis",
-				"fr" : "l'Aquapole",
-				"jp" : "宝物庫 アクアポリス"
+				"en" : "Anamnesis Anyder",
+				"de" : "Anamnesis Anyder",
+				"fr" : "Anamnesis Anydre",
+				"jp" : "黒風海底 アニドラス・アナムネーシス"
 			}
 		}
 	},
-	"55002" : {
-		"zone_id" : 712,
+	"30088" : {
+		"zone_id" : 902,
 		"locales" : {
 			"name" : {
-				"en" : "the Lost Canals of Uznair",
-				"de" : "Kanäle von Uznair",
-				"fr" : "les Canaux perdus d'Uznair",
-				"jp" : "宝物庫 ウズネアカナル"
+				"en" : "Eden's Verse: Fulmination",
+				"de" : "Edens Resonanz - Entladung",
+				"fr" : "Les Accords d'Éden - Fulmination",
+				"jp" : "希望の園エデン：共鳴編1"
 			}
 		}
 	},
-	"55003" : {
-		"zone_id" : 725,
+	"30089" : {
+		"zone_id" : 906,
 		"locales" : {
 			"name" : {
-				"en" : "the Hidden Canals of Uznair",
-				"de" : "Vergessene Kanäle von Uznair",
-				"fr" : "les Canaux cachés d'Uznair",
-				"jp" : "宝物庫 ウズネアカナル深層"
+				"en" : "Eden's Verse: Fulmination (Savage)",
+				"de" : "Edens Resonanz - Entladung (episch)",
+				"fr" : "Les Accords d'Éden - Fulmination (sadique)",
+				"jp" : "希望の園エデン零式：共鳴編1"
 			}
 		}
 	},
-	"55004" : {
-		"zone_id" : 794,
+	"20068" : {
+		"zone_id" : 897,
 		"locales" : {
 			"name" : {
-				"en" : "the Shifting Altars of Uznair",
-				"de" : "Glücksaltäre von Uznair",
-				"fr" : "le Temple sacré d'Uznair",
-				"jp" : "宝物庫 ウズネアカナル祭殿"
+				"en" : "Cinder Drift",
+				"de" : "Rubinfeuer - Entfesselung",
+				"fr" : "Les Nuées de Brandons",
+				"jp" : "ルビーウェポン破壊作戦"
 			}
 		}
 	},
-	"55006" : {
-		"zone_id" : 879,
+	"20069" : {
+		"zone_id" : 912,
 		"locales" : {
 			"name" : {
-				"en" : "The Dungeons of Lyhe Ghiah",
-				"de" : "Verliese von Lyhe Ghiah",
-				"fr" : "le Donjon hypogéen du Lyhe Ghiah",
-				"jp" : "宝物庫 リェー・ギア・ダンジョン"
+				"en" : "Cinder Drift (Extreme)",
+				"de" : "Rubinfeuer - Trauma",
+				"fr" : "Les Nuées de Brandons (extrême)",
+				"jp" : "極ルビーウェポン破壊作戦"
 			}
 		}
 	},
-	"55008" : {
-		"zone_id" : 924,
+	"30090" : {
+		"zone_id" : 903,
 		"locales" : {
 			"name" : {
-				"en" : "the Shifting Oubliettes of Lyhe Ghiah",
-				"de" : "Das Karussell von Lyhe Ghiah",
-				"fr" : "le Jardin secret du Lyhe Ghiah",
-				"jp" : "宝物庫 リェー・ギア・ダンジョン祭殿"
+				"en" : "Eden's Verse: Furor",
+				"de" : "Edens Resonanz - Raserei",
+				"fr" : "Les Accords d'Éden - Fureur",
+				"jp" : "希望の園エデン：共鳴編2"
 			}
 		}
 	},
-	"60001" : {
-		"zone_id" : 561,
+	"30091" : {
+		"zone_id" : 907,
 		"locales" : {
 			"name" : {
-				"en" : "the Palace of the Dead (Floors 1-10)",
-				"de" : "Palast der Toten (Ebenen 1-10)",
-				"fr" : "le Palais des morts (sous-sols 1-10)",
-				"jp" : "死者の宮殿 B1～B10"
-			}
-		}
-	},
-	"60002" : {
-		"zone_id" : 562,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 11-20)",
-				"de" : "Palast der Toten (Ebenen 11-20)",
-				"fr" : "le Palais des morts (sous-sols 11-20)",
-				"jp" : "死者の宮殿 B11～B20"
-			}
-		}
-	},
-	"60003" : {
-		"zone_id" : 563,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 21-30)",
-				"de" : "Palast der Toten (Ebenen 21-30)",
-				"fr" : "le Palais des morts (sous-sols 21-30)",
-				"jp" : "死者の宮殿 B21～B30"
-			}
-		}
-	},
-	"60004" : {
-		"zone_id" : 564,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 31-40)",
-				"de" : "Palast der Toten (Ebenen 31-40)",
-				"fr" : "le Palais des morts (sous-sols 31-40)",
-				"jp" : "死者の宮殿 B31～B40"
-			}
-		}
-	},
-	"60005" : {
-		"zone_id" : 565,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 41-50)",
-				"de" : "Palast der Toten (Ebenen 41-50)",
-				"fr" : "le Palais des morts (sous-sols 41-50)",
-				"jp" : "死者の宮殿 B41～B50"
-			}
-		}
-	},
-	"60006" : {
-		"zone_id" : 593,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 51-60)",
-				"de" : "Palast der Toten (Ebenen 51 - 60)",
-				"fr" : "le Palais des morts (sous-sols 51-60)",
-				"jp" : "死者の宮殿 B51～B60"
-			}
-		}
-	},
-	"60007" : {
-		"zone_id" : 594,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 61-70)",
-				"de" : "Palast der Toten (Ebenen 61 - 70)",
-				"fr" : "le Palais des morts (sous-sols 61-70)",
-				"jp" : "死者の宮殿 B61～B70"
-			}
-		}
-	},
-	"60008" : {
-		"zone_id" : 595,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 71-80)",
-				"de" : "Palast der Toten (Ebenen 71 - 80)",
-				"fr" : "le Palais des morts (sous-sols 71-80)",
-				"jp" : "死者の宮殿 B71～B80"
-			}
-		}
-	},
-	"60009" : {
-		"zone_id" : 596,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 81-90)",
-				"de" : "Palast der Toten (Ebenen 81 - 90)",
-				"fr" : "le Palais des morts (sous-sols 81-90)",
-				"jp" : "死者の宮殿 B81～B90"
-			}
-		}
-	},
-	"60010" : {
-		"zone_id" : 597,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 91-100)",
-				"de" : "Palast der Toten (Ebenen 91 - 100)",
-				"fr" : "le Palais des morts (sous-sols 91-100)",
-				"jp" : "死者の宮殿 B91～B100"
-			}
-		}
-	},
-	"60011" : {
-		"zone_id" : 598,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 101-110)",
-				"de" : "Palast der Toten (Ebenen 101 - 110)",
-				"fr" : "le Palais des morts (sous-sols 101-110)",
-				"jp" : "死者の宮殿 B101～B110"
-			}
-		}
-	},
-	"60012" : {
-		"zone_id" : 599,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 111-120)",
-				"de" : "Palast der Toten (Ebenen 111 - 120)",
-				"fr" : "le Palais des morts (sous-sols 111-120)",
-				"jp" : "死者の宮殿 B111～B120"
-			}
-		}
-	},
-	"60013" : {
-		"zone_id" : 600,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 121-130)",
-				"de" : "Palast der Toten (Ebenen 121 - 130)",
-				"fr" : "le Palais des morts (sous-sols 121-130)",
-				"jp" : "死者の宮殿 B121～B130"
-			}
-		}
-	},
-	"60014" : {
-		"zone_id" : 601,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 131-140)",
-				"de" : "Palast der Toten (Ebenen 131 - 140)",
-				"fr" : "le Palais des morts (sous-sols 131-140)",
-				"jp" : "死者の宮殿 B131～B140"
-			}
-		}
-	},
-	"60015" : {
-		"zone_id" : 602,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 141-150)",
-				"de" : "Palast der Toten (Ebenen 141 - 150)",
-				"fr" : "le Palais des morts (sous-sols 141-150)",
-				"jp" : "死者の宮殿 B141～B150"
-			}
-		}
-	},
-	"60016" : {
-		"zone_id" : 603,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 151-160)",
-				"de" : "Palast der Toten (Ebenen 151 - 160)",
-				"fr" : "le Palais des morts (sous-sols 151-160)",
-				"jp" : "死者の宮殿 B151～B160"
-			}
-		}
-	},
-	"60017" : {
-		"zone_id" : 604,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 161-170)",
-				"de" : "Palast der Toten (Ebenen 161 - 170)",
-				"fr" : "le Palais des morts (sous-sols 161-170)",
-				"jp" : "死者の宮殿 B161～B170"
-			}
-		}
-	},
-	"60018" : {
-		"zone_id" : 605,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 171-180)",
-				"de" : "Palast der Toten (Ebenen 171 - 180)",
-				"fr" : "le Palais des morts (sous-sols 171-180)",
-				"jp" : "死者の宮殿 B171～B180"
-			}
-		}
-	},
-	"60019" : {
-		"zone_id" : 606,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 181-190)",
-				"de" : "Palast der Toten (Ebenen 181 - 190)",
-				"fr" : "le Palais des morts (sous-sols 181-190)",
-				"jp" : "死者の宮殿 B181～B190"
-			}
-		}
-	},
-	"60020" : {
-		"zone_id" : 607,
-		"locales" : {
-			"name" : {
-				"en" : "the Palace of the Dead (Floors 191-200)",
-				"de" : "Palast der Toten (Ebenen 191 - 200)",
-				"fr" : "le Palais des morts (sous-sols 191-200)",
-				"jp" : "死者の宮殿 B191～B200"
-			}
-		}
-	},
-	"60021" : {
-		"zone_id" : 770,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 1-10)",
-				"de" : "Himmelssäule (Ebenen 1-10)",
-				"fr" : "le Pilier des Cieux (étages 1-10)",
-				"jp" : "アメノミハシラ 1～10層"
-			}
-		}
-	},
-	"60022" : {
-		"zone_id" : 771,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 11-20)",
-				"de" : "Himmelssäule (Ebenen 11-20)",
-				"fr" : "le Pilier des Cieux (étages 11-20)",
-				"jp" : "アメノミハシラ 11～20層"
-			}
-		}
-	},
-	"60023" : {
-		"zone_id" : 772,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 21-30)",
-				"de" : "Himmelssäule (Ebenen 21-30)",
-				"fr" : "le Pilier des Cieux (étages 21-30)",
-				"jp" : "アメノミハシラ 21～30層"
-			}
-		}
-	},
-	"60024" : {
-		"zone_id" : 782,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 31-40)",
-				"de" : "Himmelssäule (Ebenen 31-40)",
-				"fr" : "le Pilier des Cieux (étages 31-40)",
-				"jp" : "アメノミハシラ 31～40層"
-			}
-		}
-	},
-	"60025" : {
-		"zone_id" : 773,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 41-50)",
-				"de" : "Himmelssäule (Ebenen 41-50)",
-				"fr" : "le Pilier des Cieux (étages 41-50)",
-				"jp" : "アメノミハシラ 41～50層"
-			}
-		}
-	},
-	"60026" : {
-		"zone_id" : 783,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 51-60)",
-				"de" : "Himmelssäule (Ebenen 51-60)",
-				"fr" : "le Pilier des Cieux (étages 51-60)",
-				"jp" : "アメノミハシラ 51～60層"
-			}
-		}
-	},
-	"60027" : {
-		"zone_id" : 774,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 61-70)",
-				"de" : "Himmelssäule (Ebenen 61-70)",
-				"fr" : "le Pilier des Cieux (étages 61-70)",
-				"jp" : "アメノミハシラ 61～70層"
-			}
-		}
-	},
-	"60028" : {
-		"zone_id" : 784,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 71-80)",
-				"de" : "Himmelssäule (Ebenen 71-80)",
-				"fr" : "le Pilier des Cieux (étages 71-80)",
-				"jp" : "アメノミハシラ 71～80層"
-			}
-		}
-	},
-	"60029" : {
-		"zone_id" : 775,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 81-90)",
-				"de" : "Himmelssäule (Ebenen 81-90)",
-				"fr" : "le Pilier des Cieux (étages 81-90)",
-				"jp" : "アメノミハシラ 81～90層"
-			}
-		}
-	},
-	"60030" : {
-		"zone_id" : 785,
-		"locales" : {
-			"name" : {
-				"en" : "Heaven-on-High  (Floors 91-100)",
-				"de" : "Himmelssäule (Ebenen 91-100)",
-				"fr" : "le Pilier des Cieux (étages 91-100)",
-				"jp" : "アメノミハシラ 91～100層"
-			}
-		}
-	},
-	"61001" : {
-		"zone_id" : 831,
-		"locales" : {
-			"name" : {
-				"en" : "Novice Mahjong (Full Ranked Match)",
-				"de" : "Anfänger-Mahjong (komplette Partie, gewertet)",
-				"fr" : "Mahjong domien: tous rangs (partie classée)",
-				"jp" : "ドマ式麻雀：半荘戦一般卓（段位変動有り）"
-			}
-		}
-	},
-	"61002" : {
-		"zone_id" : 831,
-		"locales" : {
-			"name" : {
-				"en" : "Advanced Mahjong (Full Ranked Match)",
-				"de" : "Fortgeschrittenen-Mahjong (komplette Partie, gewertet)",
-				"fr" : "Mahjong domien: dan seulement (partie classée)",
-				"jp" : "ドマ式麻雀：半荘戦有段卓（段位変動有り）"
-			}
-		}
-	},
-	"61003" : {
-		"zone_id" : 831,
-		"locales" : {
-			"name" : {
-				"en" : "Four-player Mahjong (Full Match, Kuitan Enabled)",
-				"de" : "4-Spieler-Mahjong (komplette Partie, Kuitan aktiviert)",
-				"fr" : "Mahjong domien: 4 joueurs (partie avec kuitan)",
-				"jp" : "ドマ式麻雀：半荘戦4人セット卓（クイタン有り）"
-			}
-		}
-	},
-	"61004" : {
-		"zone_id" : 831,
-		"locales" : {
-			"name" : {
-				"en" : "Four-player Mahjong (Full Match, Kuitan Disabled)",
-				"de" : "4-Spieler-Mahjong (komplette Partie, Kuitan deaktiviert)",
-				"fr" : "Mahjong domien: 4 joueurs (partie sans kuitan)",
-				"jp" : "ドマ式麻雀：半荘戦4人セット卓（クイタン無し）"
-			}
-		}
-	},
-	"61005" : {
-		"zone_id" : 831,
-		"locales" : {
-			"name" : {
-				"en" : "Novice Mahjong (Quick Ranked Match)",
-				"de" : "Anfänger-Mahjong (schnelle Partie, gewertet)",
-				"fr" : "Mahjong domien: tous rangs (partie rapide classée)",
-				"jp" : "ドマ式麻雀：東風戦一般卓（段位変動有り）"
-			}
-		}
-	},
-	"61006" : {
-		"zone_id" : 831,
-		"locales" : {
-			"name" : {
-				"en" : "Advanced Mahjong (Quick Ranked Match)",
-				"de" : "Fortgeschrittenen-Mahjong (schnelle Partie, gewertet)",
-				"fr" : "Mahjong domien: dan seulement (partie rapide classée)",
-				"jp" : "ドマ式麻雀：東風戦有段卓（段位変動有り）"
-			}
-		}
-	},
-	"61007" : {
-		"zone_id" : 831,
-		"locales" : {
-			"name" : {
-				"en" : "Four-player Mahjong (Quick Match, Kuitan Enabled)",
-				"de" : "4-Spieler-Mahjong (schnelle Partie, Kuitan aktiviert)",
-				"fr" : "Mahjong domien: 4 joueurs (partie rapide avec kuitan)",
-				"jp" : "ドマ式麻雀：東風戦4人セット卓（クイタン有り）"
-			}
-		}
-	},
-	"61008" : {
-		"zone_id" : 831,
-		"locales" : {
-			"name" : {
-				"en" : "Four-player Mahjong (Quick Match, Kuitan Disabled)",
-				"de" : "4-Spieler-Mahjong (schnelle Partie, Kuitan deaktiviert)",
-				"fr" : "Mahjong domien: 4 joueurs (partie rapide sans kuitan)",
-				"jp" : "ドマ式麻雀：東風戦4人セット卓（クイタン無し）"
-			}
-		}
-	},
-	"62000" : {
-		"zone_id" : 832,
-		"locales" : {
-			"name" : {
-				"en" : "Air Force One",
-				"de" : "Luftwaffe, Feuer frei!",
-				"fr" : "As de l'air",
-				"jp" : "出撃！ エアフォースパイロット"
-			}
-		}
-	},
-	"62001" : {
-		"zone_id" : 832,
-		"locales" : {
-			"name" : {
-				"en" : "Air Force One",
-				"de" : "Luftwaffe, Feuer frei!",
-				"fr" : "As de l'air",
-				"jp" : "出撃！ エアフォースパイロット"
-			}
-		}
-	},
-	"62002" : {
-		"zone_id" : 832,
-		"locales" : {
-			"name" : {
-				"en" : "Air Force One",
-				"de" : "Luftwaffe, Feuer frei!",
-				"fr" : "As de l'air",
-				"jp" : "出撃！ エアフォースパイロット"
+				"en" : "Eden's Verse: Furor (Savage)",
+				"de" : "Edens Resonanz - Raserei (episch)",
+				"fr" : "Les Accords d'Éden - Fureur (sadique)",
+				"jp" : "希望の園エデン零式：共鳴編2"
 			}
 		}
 	},
@@ -4726,6 +4297,83 @@
 				"de" : "Auf großer Fahrt",
 				"fr" : "Pêche en mer",
 				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"5037" : {
+		"zone_id" : 911,
+		"locales" : {
+			"name" : {
+				"en" : "the Bozja Incident",
+				"de" : "Der Bozja-Vorfall",
+				"fr" : "Prélude à la catastrophe",
+				"jp" : "シタデル・ボズヤ蒸発事変"
+			}
+		}
+	},
+	"5038" : {
+		"zone_id" : 914,
+		"locales" : {
+			"name" : {
+				"en" : "A Sleep Disturbed",
+				"de" : "Von schlafenden Helden",
+				"fr" : "L'épreuve ronka",
+				"jp" : "汝、英雄の眠り妨げるは"
+			}
+		}
+	},
+	"20070" : {
+		"zone_id" : 913,
+		"locales" : {
+			"name" : {
+				"en" : "Memoria Misera (Extreme)",
+				"de" : "Memoria Misera (extrem)",
+				"fr" : "Memoria Misera (extrême)",
+				"jp" : "極シタデル・ボズヤ追憶戦"
+			}
+		}
+	},
+	"30092" : {
+		"zone_id" : 904,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Verse: Iconoclasm",
+				"de" : "Edens Resonanz - Bildersturm",
+				"fr" : "Les Accords d'Éden - Iconoclasme",
+				"jp" : "希望の園エデン：共鳴編3"
+			}
+		}
+	},
+	"30093" : {
+		"zone_id" : 908,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Verse: Iconoclasm (Savage)",
+				"de" : "Edens Resonanz - Bildersturm (episch)",
+				"fr" : "Les Accords d'Éden - Iconoclasme (sadique)",
+				"jp" : "希望の園エデン零式：共鳴編3"
+			}
+		}
+	},
+	"30094" : {
+		"zone_id" : 905,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Verse: Refulgence",
+				"de" : "Edens Resonanz - Erstarrung",
+				"fr" : "Les Accords d'Éden - Éclat",
+				"jp" : "希望の園エデン：共鳴編4"
+			}
+		}
+	},
+	"30095" : {
+		"zone_id" : 909,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Verse: Refulgence (Savage)",
+				"de" : "Edens Resonanz - Erstarrung (episch)",
+				"fr" : "Les Accords d'Éden - Éclat (sadique)",
+				"jp" : "希望の園エデン零式：共鳴編4"
 			}
 		}
 	},
@@ -4781,6 +4429,314 @@
 				"de" : "Auf großer Fahrt",
 				"fr" : "Pêche en mer",
 				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"30096" : {
+		"zone_id" : 917,
+		"locales" : {
+			"name" : {
+				"en" : "the Puppets' Bunker",
+				"de" : "Die Puppenfestung",
+				"fr" : "La base militaire des Pantins",
+				"jp" : "人形タチノ軍事基地"
+			}
+		}
+	},
+	"75" : {
+		"zone_id" : 916,
+		"locales" : {
+			"name" : {
+				"en" : "the Heroes' Gauntlet",
+				"de" : "Schlacht um Norvrandt",
+				"fr" : "La Traversée de Norvrandt",
+				"jp" : "漆黒決戦 ノルヴラント"
+			}
+		}
+	},
+	"20071" : {
+		"zone_id" : 922,
+		"locales" : {
+			"name" : {
+				"en" : "the Seat of Sacrifice",
+				"de" : "Krieger des Lichts",
+				"fr" : "Le Trône du Sacrifice",
+				"jp" : "ウォーリア・オブ・ライト討滅戦"
+			}
+		}
+	},
+	"20072" : {
+		"zone_id" : 923,
+		"locales" : {
+			"name" : {
+				"en" : "the Seat of Sacrifice (Extreme)",
+				"de" : "Krieger des Lichts (extrem)",
+				"fr" : "Le Trône du Sacrifice (extrême)",
+				"jp" : "極ウォーリア・オブ・ライト討滅戦"
+			}
+		}
+	},
+	"5039" : {
+		"zone_id" : 925,
+		"locales" : {
+			"name" : {
+				"en" : "Sleep Now in Sapphire",
+				"de" : "Luftangriff auf Werlyt",
+				"fr" : "Sur la mer de saphir",
+				"jp" : "飛べ！ ウェルリトへ "
+			}
+		}
+	},
+	"5040" : {
+		"zone_id" : 926,
+		"locales" : {
+			"name" : {
+				"en" : "Sleep Now in Sapphire",
+				"de" : "Luftangriff auf Werlyt",
+				"fr" : "Sur la mer de saphir",
+				"jp" : "飛べ！ ウェルリトへ "
+			}
+		}
+	},
+	"5041" : {
+		"zone_id" : 932,
+		"locales" : {
+			"name" : {
+				"en" : "Faded Memories",
+				"de" : "Verblasste Erinnerungen",
+				"fr" : "Souvenir périssable",
+				"jp" : "色あせた記憶"
+			}
+		}
+	},
+	"55008" : {
+		"zone_id" : 924,
+		"locales" : {
+			"name" : {
+				"en" : "the Shifting Oubliettes of Lyhe Ghiah",
+				"de" : "Das Karussell von Lyhe Ghiah",
+				"fr" : "le Jardin secret du Lyhe Ghiah",
+				"jp" : "宝物庫 リェー・ギア・ダンジョン祭殿"
+			}
+		}
+	},
+	"76" : {
+		"zone_id" : 933,
+		"locales" : {
+			"name" : {
+				"en" : "Matoya's Relict",
+				"de" : "Matoyas Atelier",
+				"fr" : "l'Atelier abandonné de Matoya",
+				"jp" : "魔術工房 マトーヤのアトリエ"
+			}
+		}
+	},
+	"30099" : {
+		"zone_id" : 943,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Promise: Litany",
+				"de" : "Edens Verheißung - Litanei",
+				"fr" : "La Promesse d'Éden - Litanie",
+				"jp" : "希望の園エデン：再生編2"
+			}
+		}
+	},
+	"30100" : {
+		"zone_id" : 947,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Promise: Litany (Savage)",
+				"de" : "Edens Verheißung - Litanei (episch)",
+				"fr" : "La Promesse d'Éden - Litanie (sadique)",
+				"jp" : "希望の園エデン零式：再生編2"
+			}
+		}
+	},
+	"30097" : {
+		"zone_id" : 942,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Promise: Umbra",
+				"de" : "Edens Verheißung - Umbra",
+				"fr" : "La Promesse d'Éden - Nuée",
+				"jp" : "希望の園エデン：再生編1"
+			}
+		}
+	},
+	"30098" : {
+		"zone_id" : 946,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Promise: Umbra (Savage)",
+				"de" : "Edens Verheißung - Umbra (episch)",
+				"fr" : "La Promesse d'Éden - Nuée (sadique)",
+				"jp" : "希望の園エデン零式：再生編1"
+			}
+		}
+	},
+	"30101" : {
+		"zone_id" : 944,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Promise: Anamorphosis",
+				"de" : "Edens Verheißung - Anamorphose",
+				"fr" : "La Promesse d'Éden - Anamorphose",
+				"jp" : "希望の園エデン：再生編3"
+			}
+		}
+	},
+	"30102" : {
+		"zone_id" : 948,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Promise: Anamorphosis (Savage)",
+				"de" : "Edens Verheißung - Anamorphose (episch)",
+				"fr" : "La Promesse d'Éden - Anamorphose (sadique)",
+				"jp" : "希望の園エデン零式：再生編3"
+			}
+		}
+	},
+	"35031" : {
+		"zone_id" : 796,
+		"locales" : {
+			"name" : {
+				"en" : "Anything Gogo's",
+				"de" : "Gogo der Mime",
+				"fr" : "Gogo le mime",
+				"jp" : "黄金頭巾「ものまね士ゴゴ」"
+			}
+		}
+	},
+	"26001" : {
+		"zone_id" : 940,
+		"locales" : {
+			"name" : {
+				"en" : "Triple Triad Open Tournament",
+				"de" : "Triple Triad: Manderville-Turnier",
+				"fr" : "Tournoi officiel de Triple Triade",
+				"jp" : "トリプルトライアド：オフィシャルトーナメント"
+			}
+		}
+	},
+	"26002" : {
+		"zone_id" : 941,
+		"locales" : {
+			"name" : {
+				"en" : "Triple Triad Invitational Parlor",
+				"de" : "Triple Triad: Privatturnier",
+				"fr" : "Salle de tournoi libre de Triple Triade",
+				"jp" : "トリプルトライアド：カスタムトーナメントルーム"
+			}
+		}
+	},
+	"30103" : {
+		"zone_id" : 945,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Promise: Eternity",
+				"de" : "Edens Verheißung - Ewigkeit",
+				"fr" : "La Promesse d'Éden - Éternité",
+				"jp" : "希望の園エデン：再生編4"
+			}
+		}
+	},
+	"30104" : {
+		"zone_id" : 949,
+		"locales" : {
+			"name" : {
+				"en" : "Eden's Promise: Eternity (Savage)",
+				"de" : "Edens Verheißung - Ewigkeit (episch)",
+				"fr" : "La Promesse d'Éden - Éternité (sadique)",
+				"jp" : "希望の園エデン零式：再生編4"
+			}
+		}
+	},
+	"20073" : {
+		"zone_id" : 934,
+		"locales" : {
+			"name" : {
+				"en" : "Castrum Marinum",
+				"de" : "Smaragdsturm - Entfesselung",
+				"fr" : "Castrum Marinum",
+				"jp" : "エメラルドウェポン破壊作戦"
+			}
+		}
+	},
+	"20074" : {
+		"zone_id" : 935,
+		"locales" : {
+			"name" : {
+				"en" : "Castrum Marinum (Extreme)",
+				"de" : "Smaragdsturm - Trauma",
+				"fr" : "Castrum Marinum (extrême)",
+				"jp" : "極エメラルドウェポン破壊作戦"
+			}
+		}
+	},
+	"5042" : {
+		"zone_id" : 954,
+		"locales" : {
+			"name" : {
+				"en" : "The Great Ship Vylbrand",
+				"de" : "Gute Winde für Vylbrand",
+				"fr" : "Un navire nommé Vylbrand",
+				"jp" : "バイルブランドの船出"
+			}
+		}
+	},
+	"5043" : {
+		"zone_id" : 955,
+		"locales" : {
+			"name" : {
+				"en" : "Fit for a Queen",
+				"de" : "Hinab in die Ruinen",
+				"fr" : "Que les Dieux gardent la Reine",
+				"jp" : "ゴッド・セイブ・ザ・クイーン"
+			}
+		}
+	},
+	"61005" : {
+		"zone_id" : 831,
+		"locales" : {
+			"name" : {
+				"en" : "Novice Mahjong (Quick Ranked Match)",
+				"de" : "Anfänger-Mahjong (schnelle Partie, gewertet)",
+				"fr" : "Mahjong domien<Indent/>: tous rangs (partie rapide classée)",
+				"jp" : "ドマ式麻雀：東風戦一般卓（段位変動有り）"
+			}
+		}
+	},
+	"61006" : {
+		"zone_id" : 831,
+		"locales" : {
+			"name" : {
+				"en" : "Advanced Mahjong (Quick Ranked Match)",
+				"de" : "Fortgeschrittenen-Mahjong (schnelle Partie, gewertet)",
+				"fr" : "Mahjong domien<Indent/>: dan seulement (partie rapide classée)",
+				"jp" : "ドマ式麻雀：東風戦有段卓（段位変動有り）"
+			}
+		}
+	},
+	"61007" : {
+		"zone_id" : 831,
+		"locales" : {
+			"name" : {
+				"en" : "Four-player Mahjong (Quick Match, Kuitan Enabled)",
+				"de" : "4-Spieler-Mahjong (schnelle Partie, Kuitan aktiviert)",
+				"fr" : "Mahjong domien<Indent/>: 4 joueurs (partie rapide avec kuitan)",
+				"jp" : "ドマ式麻雀：東風戦4人セット卓（クイタン有り）"
+			}
+		}
+	},
+	"61008" : {
+		"zone_id" : 831,
+		"locales" : {
+			"name" : {
+				"en" : "Four-player Mahjong (Quick Match, Kuitan Disabled)",
+				"de" : "4-Spieler-Mahjong (schnelle Partie, Kuitan deaktiviert)",
+				"fr" : "Mahjong domien<Indent/>: 4 joueurs (partie rapide sans kuitan)",
+				"jp" : "ドマ式麻雀：東風戦4人セット卓（クイタン無し）"
 			}
 		}
 	},
@@ -4850,14 +4806,366 @@
 			}
 		}
 	},
-	"64003" : {
-		"zone_id" : 972,
+	"77" : {
+		"zone_id" : 938,
 		"locales" : {
 			"name" : {
-				"en" : "The Whorleater (Unreal)",
-				"de" : "Traumprüfung - Leviathan",
-				"fr" : "le Briseur de marées (irréel)",
-				"jp" : "幻リヴァイアサン討滅戦"
+				"en" : "Paglth'an",
+				"de" : "Die Goldene Ebene von Paglth'an",
+				"fr" : "La grande prairie de Paglth'an",
+				"jp" : "黄金平原 パガルザン"
+			}
+		}
+	},
+	"30105" : {
+		"zone_id" : 966,
+		"locales" : {
+			"name" : {
+				"en" : "The Tower at Paradigm's Breach",
+				"de" : "Der Turm, Paradigmenbrecher",
+				"fr" : "La tour de la Contingence",
+				"jp" : "希望ノ砲台：「塔」"
+			}
+		}
+	},
+	"5044" : {
+		"zone_id" : 977,
+		"locales" : {
+			"name" : {
+				"en" : "Death Unto Dawn",
+				"de" : "Kampf im Morgengrauen",
+				"fr" : "Aube meurtrière",
+				"jp" : "黎明の死闘"
+			}
+		}
+	},
+	"20075" : {
+		"zone_id" : 950,
+		"locales" : {
+			"name" : {
+				"en" : "The Cloud Deck",
+				"de" : "Diamantblitz - Entfesselung",
+				"fr" : "Le Tillac des Cirrus",
+				"jp" : "ダイヤウェポン捕獲作戦"
+			}
+		}
+	},
+	"20076" : {
+		"zone_id" : 951,
+		"locales" : {
+			"name" : {
+				"en" : "The Cloud Deck (Extreme)",
+				"de" : "Diamantblitz - Trauma",
+				"fr" : "Le Tillac des Cirrus (extrême)",
+				"jp" : "極ダイヤウェポン捕獲作戦"
+			}
+		}
+	},
+	"78" : {
+		"zone_id" : 952,
+		"locales" : {
+			"name" : {
+				"en" : "The Tower of Zot",
+				"de" : "Der Turm von Zot",
+				"fr" : "La tour de Zott",
+				"jp" : "異形楼閣 ゾットの塔"
+			}
+		}
+	},
+	"79" : {
+		"zone_id" : 986,
+		"locales" : {
+			"name" : {
+				"en" : "The Stigma Dreamscape",
+				"de" : "Stigma-Holometrie",
+				"fr" : "Rêve électrique de Stigma-4",
+				"jp" : "電脳夢想 スティグマ・フォー"
+			}
+		}
+	},
+	"80" : {
+		"zone_id" : 969,
+		"locales" : {
+			"name" : {
+				"en" : "The Tower of Babil",
+				"de" : "Der Turm von Babil",
+				"fr" : "La tour de Babil",
+				"jp" : "魔導神門 バブイルの塔"
+			}
+		}
+	},
+	"81" : {
+		"zone_id" : 978,
+		"locales" : {
+			"name" : {
+				"en" : "The Aitiascope",
+				"de" : "Das Aitiaskop",
+				"fr" : "le Prisme de l'Aitia",
+				"jp" : "星海潜航 アイティオン星晶鏡"
+			}
+		}
+	},
+	"82" : {
+		"zone_id" : 974,
+		"locales" : {
+			"name" : {
+				"en" : "Ktisis Hyperboreia",
+				"de" : "Ktisis Hyperboreia",
+				"fr" : "l'Hyperborée",
+				"jp" : "創造環境 ヒュペルボレア造物院"
+			}
+		}
+	},
+	"83" : {
+		"zone_id" : 970,
+		"locales" : {
+			"name" : {
+				"en" : "Vanaspati",
+				"de" : "Vanaspati",
+				"fr" : "Vanaspati",
+				"jp" : "終末樹海 ヴァナスパティ"
+			}
+		}
+	},
+	"20077" : {
+		"zone_id" : 995,
+		"locales" : {
+			"name" : {
+				"en" : "The Mothercrystal",
+				"de" : "Prophetie - Hydaelyn",
+				"fr" : "Le Cristal-mère",
+				"jp" : "ハイデリン討滅戦"
+			}
+		}
+	},
+	"20078" : {
+		"zone_id" : 996,
+		"locales" : {
+			"name" : {
+				"en" : "The Minstrel's Ballad: Hydaelyn's Call",
+				"de" : "Eschatos - Hydaelyn",
+				"fr" : "Le Cristal-mère (extrême)",
+				"jp" : "極ハイデリン討滅戦"
+			}
+		}
+	},
+	"84" : {
+		"zone_id" : 973,
+		"locales" : {
+			"name" : {
+				"en" : "The Dead Ends",
+				"de" : "Das Sternengrab",
+				"fr" : "L'Issue aux Impasses",
+				"jp" : "最終幻想 レムナント"
+			}
+		}
+	},
+	"5045" : {
+		"zone_id" : 1011,
+		"locales" : {
+			"name" : {
+				"en" : "In from the Cold",
+				"de" : "In fremder Haut",
+				"fr" : "Le voleur de corps",
+				"jp" : "寒夜のこと"
+			}
+		}
+	},
+	"85" : {
+		"zone_id" : 976,
+		"locales" : {
+			"name" : {
+				"en" : "Smileton",
+				"de" : "Smileton",
+				"fr" : "Risette-sur-lune",
+				"jp" : "楽園都市 スマイルトン"
+			}
+		}
+	},
+	"5046" : {
+		"zone_id" : 1014,
+		"locales" : {
+			"name" : {
+				"en" : "Worthy of His Back",
+				"de" : " Es reimt sich auf Gebell",
+				"fr" : "Le défi de l'ancienne Azem",
+				"jp" : "前代アゼムの手ほどき"
+			}
+		}
+	},
+	"20079" : {
+		"zone_id" : 997,
+		"locales" : {
+			"name" : {
+				"en" : "The Final Day",
+				"de" : "Prophetie - Endsängerin",
+				"fr" : "le Répons final",
+				"jp" : "終焉の戦い"
+			}
+		}
+	},
+	"25003" : {
+		"zone_id" : 994,
+		"locales" : {
+			"name" : {
+				"en" : "The Phantoms' Feast",
+				"de" : "Lustiges Bankett",
+				"fr" : "Le banquet cauchemardesque",
+				"jp" : "道化饗宴 ホーンテッドフィースト"
+			}
+		}
+	},
+	"5047" : {
+		"zone_id" : 1013,
+		"locales" : {
+			"name" : {
+				"en" : "Endwalker",
+				"de" : "Das Ende der Morgenröte",
+				"fr" : "Arpenteur des finitudes",
+				"jp" : "暁月のフィナーレ"
+			}
+		}
+	},
+	"5048" : {
+		"zone_id" : 1016,
+		"locales" : {
+			"name" : {
+				"en" : "To Calmer Seas",
+				"de" : "Im Hafen des Friedens",
+				"fr" : "Cap sur la paix",
+				"jp" : "融和への船出"
+			}
+		}
+	},
+	"20080" : {
+		"zone_id" : 992,
+		"locales" : {
+			"name" : {
+				"en" : "The Dark Inside",
+				"de" : "Prophetie - Zodiark",
+				"fr" : "Le Cratère des Martyrs",
+				"jp" : "ゾディアーク討滅戦"
+			}
+		}
+	},
+	"20081" : {
+		"zone_id" : 993,
+		"locales" : {
+			"name" : {
+				"en" : "The Minstrel's Ballad: Zodiark's Fall",
+				"de" : "Eschatos - Zodiark",
+				"fr" : "Le Cratère des Martyrs (extrême)",
+				"jp" : "極ゾディアーク討滅戦"
+			}
+		}
+	},
+	"5049" : {
+		"zone_id" : 1012,
+		"locales" : {
+			"name" : {
+				"en" : "As the Heavens Burn",
+				"de" : "Rote Himmel, roter Schnee",
+				"fr" : "L'arène des neiges",
+				"jp" : "拡がる終末"
+			}
+		}
+	},
+	"5050" : {
+		"zone_id" : 1015,
+		"locales" : {
+			"name" : {
+				"en" : "A Path Unveiled",
+				"de" : "Offen für neue Wege",
+				"fr" : "Des esprits et des hommes",
+				"jp" : "開かれた道の先へ"
+			}
+		}
+	},
+	"5051" : {
+		"zone_id" : 1010,
+		"locales" : {
+			"name" : {
+				"en" : "A Frosty Reception",
+				"de" : "Ein frostiger Empfang",
+				"fr" : "Un accueil glacial",
+				"jp" : "霜雪を踏みしめて"
+			}
+		}
+	},
+	"5052" : {
+		"zone_id" : 1022,
+		"locales" : {
+			"name" : {
+				"en" : "Sage's Focus",
+				"de" : "Des Weisen wundersames Werkzeug",
+				"fr" : "Les armes du sage",
+				"jp" : "賢者の短杖"
+			}
+		}
+	},
+	"5053" : {
+		"zone_id" : 1020,
+		"locales" : {
+			"name" : {
+				"en" : "The Harvest Begins",
+				"de" : "Die Bedeutung der Sense",
+				"fr" : "La vraie puissance de la faux",
+				"jp" : "大鎌の意味"
+			}
+		}
+	},
+	"5054" : {
+		"zone_id" : 1018,
+		"locales" : {
+			"name" : {
+				"en" : "Ever March Heavensward",
+				"de" : "Der Weg zur Erneuerung",
+				"fr" : "La voie du renouveau",
+				"jp" : "蒼天を仰ぎ、歩み続ける"
+			}
+		}
+	},
+	"5055" : {
+		"zone_id" : 1021,
+		"locales" : {
+			"name" : {
+				"en" : "The Killing Art",
+				"de" : "Die Kunst des Tötens",
+				"fr" : "La voie du néant",
+				"jp" : "暗殺道"
+			}
+		}
+	},
+	"5056" : {
+		"zone_id" : 1023,
+		"locales" : {
+			"name" : {
+				"en" : "Life Ephemeral, Path Eternal",
+				"de" : "Das Leben ist kurz, die Kunst ist lang",
+				"fr" : "Existences éphémères et savoir éternel",
+				"jp" : "人命は儚く、術のみちは永久に"
+			}
+		}
+	},
+	"5057" : {
+		"zone_id" : 1017,
+		"locales" : {
+			"name" : {
+				"en" : "Laid to Rest",
+				"de" : "Domanisches Begräbnis",
+				"fr" : "Des adieux domiens",
+				"jp" : "ドマの弔い"
+			}
+		}
+	},
+	"5058" : {
+		"zone_id" : 1019,
+		"locales" : {
+			"name" : {
+				"en" : "The Gift of Mercy",
+				"de" : "Trauer und Hoffnung",
+				"fr" : "Acceptation",
+				"jp" : "僕たちは還り、君を見送ろう"
 			}
 		}
 	}
