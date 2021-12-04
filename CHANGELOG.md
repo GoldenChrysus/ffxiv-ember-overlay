@@ -2,7 +2,7 @@
 
 ## 0.33.0-alpha
 
-**Released: [in development]**
+**Released: [in staging]**
 
 ### Bug Fixes
 - ?
