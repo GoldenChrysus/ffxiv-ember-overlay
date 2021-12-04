@@ -2016,7 +2016,7 @@
 			"fr" : "Tu peux toujours voir les derniers changements et lire les détails {{changelog_link_open}}ici{{changelog_link_close}}.",
 			"kr" : "{{changelog_link_open}}가장 최근 패치 내역{{changelog_link_close}} 및 상세 정보를 보시고 싶으시다면 공식 패치 내역을 확인해주십시오.",
 			"ua" : "Ви завжди можете подивитися останні зміни та прочитати докладніший офіційний список змін {{changelog_link_open}} тут {{changelog_link_close}}.",
-			"ru" : "Вы всегда можете ознакомиться с последними изменениями и прочитать более подробный официальный журнал изменений здесь."
+			"ru" : "Вы всегда можете ознакомиться с последними изменениями и прочитать более подробный официальный журнал изменений {{changelog_link_open}}здесь{{changelog_link_close}}."
 		},
 		"latest_changes"     : {
 			"en" : "Latest Changes",
