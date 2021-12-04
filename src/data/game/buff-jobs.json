@@ -14,7 +14,8 @@
 		"ARC", 
 		"BRD", 
 		"MCH", 
-		"DNC"
+		"DNC",
+		"RPR"
 	],
 	"Swiftcast" : [
 		"heal", 
@@ -23,7 +24,8 @@
 		"ACN", 
 		"SMN", 
 		"RDM", 
-		"BLM"
+		"BLM",
+		"SGE"
 	],
 	"Lucid Dreaming" : [
 		"heal", 
@@ -32,7 +34,8 @@
 		"ACN", 
 		"SMN", 
 		"RDM", 
-		"BLM"
+		"BLM",
+		"SGE"
 	],
 	"Surecast" : [
 		"heal", 
@@ -41,7 +44,8 @@
 		"ACN", 
 		"SMN", 
 		"RDM", 
-		"BLM"
+		"BLM",
+		"SGE"
 	],
 	"Bloodbath" : [
 		"PGL", 
@@ -50,7 +54,8 @@
 		"DRG", 
 		"ROG", 
 		"NIN", 
-		"SAM"
+		"SAM",
+		"RPR"
 	],
 	"True North" : [
 		"PGL", 
@@ -59,7 +64,8 @@
 		"DRG", 
 		"ROG", 
 		"NIN", 
-		"SAM"
+		"SAM",
+		"RPR"
 	],
 	"Peloton" : [
 		"ARC", 
@@ -528,5 +534,239 @@
 	],
 	"Manafication" : [
 		"RDM"
+	],
+	"Aquaveil" : [
+		"WHM"
+	],
+	"Protraction" : [
+		"SCH"
+	],
+	"Expedience" : [
+		"SCH"
+	],
+	"Desperate Measures" : [
+		"SCH"
+	],
+	"Exaltation" : [
+		"AST"
+	],
+	"Macrocosmos" : [
+		"AST"
+	],
+	"Intervention" : [
+		"PLD"
+	],
+	"Knight's Resolve" : [
+		"PLD"
+	],
+	"Knight's Benediction" : [
+		"PLD"
+	],
+	"Holy Sheltron" : [
+		"PLD"
+	],
+	"Surging Tempest" : [
+		"GLD",
+		"WAR"
+	],
+	"Equilibrium" : [
+		"WAR"
+	],
+	"Nascent Glint" : [
+		"WAR"
+	],
+	"Stem the Flow" : [
+		"WAR"
+	],
+	"Stem the Tide" : [
+		"WAR"
+	],
+	"Bloodwhetting" : [
+		"WAR"
+	],
+	"Oblation" : [
+		"DRK"
+	],
+	"Ready to Blast" : [
+		"GNB"
+	],
+	"Heart of Corundum" : [
+		"GNB"
+	],
+	"Clarity of Corundum" : [
+		"GNB"
+	],
+	"Catharsis of Corundum" : [
+		"GNB"
+	],
+	"Disciplined Fist" : [
+		"PGL",
+		"MNK"
+	],
+	"Riddle of Wind" : [
+		"MNK"
+	],
+	"Power Surge" : [
+		"LNC",
+		"DRG"
+	],
+	"Phantom Kamaitachi Ready" : [
+		"NIN"
+	],
+	"Fleeting Raiju Ready" : [
+		"NIN"
+	],
+	"Fugetsu" : [
+		"SAM"
+	],
+	"Fuka" : [
+		"SAM"
+	],
+	"Ogi Namikiri Ready" : [
+		"SAM"
+	],
+	"Mage's Ballad" : [
+		"BRD"
+	],
+	"Repertoire" : [
+		"BRD"
+	],
+	"Army's Paeon" : [
+		"BRD"
+	],
+	"Wanderer's Minuet" : [
+		"BRD"
+	],
+	"The Wanderer's Minuet" : [
+		"BRD"
+	],
+	"Blast Arrow Ready" : [
+		"BRD"
+	],
+	"Radiant Finale" : [
+		"BRD"
+	],
+	"Flourishing Symmetry" : [
+		"DNC"
+	],
+	"Flourishing Flow" : [
+		"DNC"
+	],
+	"Threefold Fan Dance" : [
+		"DNC"
+	],
+	"Flourishing Starfall" : [
+		"DNC"
+	],
+	"Flourishing Finish" : [
+		"DNC"
+	],
+	"Improvised Finish" : [
+		"DNC"
+	],
+	"Radiant Aegis" : [
+		"ARC",
+		"SMN"
+	],
+	"Aethercharge" : [
+		"ARC",
+		"SMN"
+	],
+	"Fire Attunement" : [
+		"ARC",
+		"SMN"
+	],
+	"Further Ruin" : [
+		"ARC",
+		"SMN"
+	],
+	"Earth Attunement" : [
+		"ARC",
+		"SMN"
+	],
+	"Wind Attunement" : [
+		"ARC",
+		"SMN"
+	],
+	"Searing Light" : [
+		"SMN"
+	],
+	"Rekindle" : [
+		"SMN"
+	],
+	"Magick Barrier" : [
+		"RDM"
+	],
+	"Physis" : [
+		"SGE"
+	],
+	"Eukrasian Diagnosis" : [
+		"SGE"
+	],
+	"Differential Diagnosis" : [
+		"SGE"
+	],
+	"Eukrasian Prognosis" : [
+		"SGE"
+	],
+	"Soteria" : [
+		"SGE"
+	],
+	"Kerachole" : [
+		"SGE"
+	],
+	"Zoe" : [
+		"SGE"
+	],
+	"Physis II" : [
+		"SGE"
+	],
+	"Taurochole" : [
+		"SGE"
+	],
+	"Holos" : [
+		"SGE"
+	],
+	"Krasis" : [
+		"SGE"
+	],
+	"Hell's Ingress" : [
+		"RPR"
+	],
+	"Threshold" : [
+		"RPR"
+	],
+	"Hell's Egress" : [
+		"RPR"
+	],
+	"Arcane Crest" : [
+		"RPR"
+	],
+	"Crest of Time Returned" : [
+		"RPR"
+	],
+	"Soul Reaver" : [
+		"RPR"
+	],
+	"Enhanced Gallows" : [
+		"RPR"
+	],
+	"Enhanced Gibbet" : [
+		"RPR"
+	],
+	"Arcane Circle" : [
+		"RPR"
+	],
+	"Circle of Sacrifice" : [
+		"RPR"
+	],
+	"Bloodsown Circle" : [
+		"RPR"
+	],
+	"Enshroud" : [
+		"RPR"
+	],
+	"Enhanced Void Reaping" : [
+		"RPR"
 	]
 }

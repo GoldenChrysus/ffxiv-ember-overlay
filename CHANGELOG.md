@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.32.3-alpha
+
+**Released: 2021-12-04**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- Added Russian translations
+- Updated French translations
+- Updated Reaper and Sage job icons
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 0.32.2-alpha
 
 **Released: 2021-12-02**
