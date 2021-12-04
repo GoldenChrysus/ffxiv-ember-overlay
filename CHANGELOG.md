@@ -1,23 +1,23 @@
 # Changelog
 
-## 0.33.0-alpha
+## 0.33.0-alpha.1
 
 **Released: [in staging]**
 
 ### Bug Fixes
-- ?
+- N/A
 
 ### Features
-- ?
+- Added Endwalker actions (spells), statuses (effects), and zones
 
 ### UI Changes
-- ?
+- N/A
 
 ### Code Changes
-- ?
+- N/A
 
 ### Miscellaneous
-- ?
+- N/A
 
 ## 0.32.3-alpha
 
