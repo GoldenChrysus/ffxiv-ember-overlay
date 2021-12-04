@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.33.0-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- ?
+
+### Features
+- ?
+
+### UI Changes
+- ?
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.32.3-alpha
 
 **Released: 2021-12-04**

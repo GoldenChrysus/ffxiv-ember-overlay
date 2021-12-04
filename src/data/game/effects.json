@@ -9732,6 +9732,20 @@
 			}
 		}
 	},
+	"759" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Gift of the Land II",
+				"de" : "Bessere Chancen II",
+				"fr" : "Récolte fertile II",
+				"jp" : "獲得数ボーナス発生率アップII"
+			}
+		}
+	},
 	"760" : {
 		"type" : "effect",
 		"dot" : false,
@@ -14950,6 +14964,20 @@
 				"de" : "Miasga",
 				"fr" : "Méga Miasmes",
 				"jp" : "ミアズガ"
+			}
+		}
+	},
+	"1216" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Load-bearing",
+				"de" : "Schwer beladen",
+				"fr" : "Charge lourde",
+				"jp" : "重運搬"
 			}
 		}
 	},
@@ -24184,6 +24212,20 @@
 			}
 		}
 	},
+	"1940" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Chilled to the Bone",
+				"de" : "Frieren",
+				"fr" : "Hypothermie",
+				"jp" : "体温低下"
+			}
+		}
+	},
 	"1941" : {
 		"type" : "dot",
 		"dot" : true,
@@ -31024,6 +31066,76 @@
 			}
 		}
 	},
+	"2543" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Gelatinous",
+				"de" : "Verweichlicht",
+				"fr" : "Tout mou",
+				"jp" : "軟体化"
+			}
+		}
+	},
+	"2545" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Duel or Die",
+				"de" : "Schlachtbefehl",
+				"fr" : "Gant relevé",
+				"jp" : "決闘指名"
+			}
+		}
+	},
+	"2547" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "On Fire",
+				"de" : "Flammenaxt",
+				"fr" : "Hache de feu",
+				"jp" : "炎の斧"
+			}
+		}
+	},
+	"2548" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Transfiguration",
+				"de" : "Verwandlung",
+				"fr" : "Transformation",
+				"jp" : "変身"
+			}
+		}
+	},
+	"2549" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Nasty Surprise",
+				"de" : "Spezialmunition",
+				"fr" : "Munitions spéciales",
+				"jp" : "特殊弾装填"
+			}
+		}
+	},
 	"2550" : {
 		"type" : "effect",
 		"dot" : false,
@@ -31035,6 +31147,34 @@
 				"de" : "Schaden +",
 				"fr" : "Bonus de dégâts",
 				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"2553" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "One Mind",
+				"de" : "Ishin Denshin",
+				"fr" : "Au diapason",
+				"jp" : "以心伝心"
+			}
+		}
+	},
+	"2554" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lunar Defensive",
+				"de" : "Luna-Defensivhaltung",
+				"fr" : "Luna-optimisation défensive",
+				"jp" : "防御形態：ルナ"
 			}
 		}
 	},
@@ -31080,6 +31220,146 @@
 			}
 		}
 	},
+	"2558" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Burst",
+				"de" : "Verschollener Schub",
+				"fr" : "Bouillonnement oublié",
+				"jp" : "ロスト・バースト"
+			}
+		}
+	},
+	"2559" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Rampage",
+				"de" : "Verschollener Amok",
+				"fr" : "Ravage oublié",
+				"jp" : "ロスト・ランページ"
+			}
+		}
+	},
+	"2560" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Chainspell",
+				"de" : "Verschollene Zauberkette",
+				"fr" : "Avalanche de sorts oubliée",
+				"jp" : "ロスト・チェインスペル"
+			}
+		}
+	},
+	"2561" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Protect II",
+				"de" : "Verschollenes Protes II",
+				"fr" : "Bouclier II oublié",
+				"jp" : "ロスト・プロテスII"
+			}
+		}
+	},
+	"2562" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Shell II",
+				"de" : "Verschollenes Vallum II",
+				"fr" : "Barrière II oubliée",
+				"jp" : "ロスト・シェルII"
+			}
+		}
+	},
+	"2563" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Bubble",
+				"de" : "Verschollene Blase",
+				"fr" : "Vitalité oubliée",
+				"jp" : "ロスト・バブル"
+			}
+		}
+	},
+	"2564" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Excellence",
+				"de" : "Verschollene Exzellenz",
+				"fr" : "Excellence oubliée",
+				"jp" : "ロスト・エクセレンス"
+			}
+		}
+	},
+	"2565" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Memorable",
+				"de" : "Heldenhaftigkeit",
+				"fr" : "Vaillance héroïque",
+				"jp" : "英傑"
+			}
+		}
+	},
+	"2566" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lost Blood Rage",
+				"de" : "Verschollener Blutzorn",
+				"fr" : "Rage sanguinaire oubliée",
+				"jp" : "ロスト・ブラッドレイジ"
+			}
+		}
+	},
+	"2567" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Blood Rush",
+				"de" : "Erwachtes Blut",
+				"fr" : "Éveil du sang",
+				"jp" : "血の覚醒"
+			}
+		}
+	},
 	"2568" : {
 		"type" : "effect",
 		"dot" : false,
@@ -31122,6 +31402,76 @@
 			}
 		}
 	},
+	"2571" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Destiny Drawn",
+				"de" : "Schicksalskarten",
+				"fr" : "Tirage du destin",
+				"jp" : "デスティニードロー"
+			}
+		}
+	},
+	"2572" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "The Scroll",
+				"de" : "Thaliaks Schriftrolle",
+				"fr" : "Parchemin de Thaliak",
+				"jp" : "サリャクの巻物"
+			}
+		}
+	},
+	"2573" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Break",
+				"de" : "Unterbrechung",
+				"fr" : "Brèche",
+				"jp" : "ブレイク"
+			}
+		}
+	},
+	"2575" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Right Arm Primed",
+				"de" : "Rechter Arm verstärkt",
+				"fr" : "Bras droit renforcé",
+				"jp" : "ライトアーム強化"
+			}
+		}
+	},
+	"2576" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Left Arm Primed",
+				"de" : "Linker Arm verstärkt",
+				"fr" : "Bras gauche renforcé",
+				"jp" : "レフトアーム強化"
+			}
+		}
+	},
 	"2577" : {
 		"type" : "effect",
 		"dot" : false,
@@ -31150,6 +31500,348 @@
 			}
 		}
 	},
+	"2579" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Guise",
+				"de" : "Verkleidet",
+				"fr" : "Déguisement",
+				"jp" : "衣替"
+			}
+		}
+	},
+	"2580" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: Feeling the Burn",
+				"de" : "Hilfsgesuch: Schwarzbrands Testflug",
+				"fr" : "Passe-droit d'interception<Indent/>: On arrête le progrès",
+				"jp" : "攻撃要請：試作飛行型魔導アーマー「ブラックバーン」"
+			}
+		}
+	},
+	"2581" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: On Serpents' Wings",
+				"de" : "Hilfsgesuch: Der Geistertrupp",
+				"fr" : "Passe-droit d'interception<Indent/>: Zirnitrop",
+				"jp" : "攻撃要請：妖霊使い「妖戦百人隊」"
+			}
+		}
+	},
+	"2582" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: Never Cry Wolf",
+				"de" : "Hilfsgesuch: Eiswolf Hrodvitnir",
+				"fr" : "Passe-droit d'interception<Indent/>: Et n'y Hród'viens plus<Indent/>!",
+				"jp" : "攻撃要請：邪悪なる氷狼「フローズヴィトニル」"
+			}
+		}
+	},
+	"2583" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: Here Comes the Cavalry",
+				"de" : "Hilfsgesuch: Halb Pferd, halb Garlear",
+				"fr" : "Passe-droit d'interception<Indent/>: Un cavalier qui surgit hors de la nuit",
+				"jp" : "攻撃要請：鋼鉄の人馬「魔導騎兵大隊」"
+			}
+		}
+	},
+	"2584" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: Worn to a Shadow",
+				"de" : "Hilfsgesuch: Alkonost, schön und gefiedert",
+				"fr" : "Passe-droit d'interception<Indent/>: Oiseau d'enfer",
+				"jp" : "攻撃要請：有角の凶鳥「アルコノスト」"
+			}
+		}
+	},
+	"2585" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Marching Orders: A Familiar Face",
+				"de" : "Hilfsgesuch: Hashmallim der Einiger",
+				"fr" : "Passe-droit d'interception<Indent/>: Le Grand Ordonnateur",
+				"jp" : "攻撃要請：模造統制者「IVレギオン・ハシュマリム」"
+			}
+		}
+	},
+	"2586" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Death's Design",
+				"de" : "Architekt des Todes",
+				"fr" : "Dessein de la Camarde",
+				"jp" : "デスデザイン"
+			}
+		}
+	},
+	"2587" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Soul Reaver",
+				"de" : "Nichtssense",
+				"fr" : "Moissonneur d'âmes",
+				"jp" : "妖異の鎌"
+			}
+		}
+	},
+	"2588" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Gibbet",
+				"de" : "Richten",
+				"fr" : "Gibet amélioré",
+				"jp" : "ジビトゥ効果アップ"
+			}
+		}
+	},
+	"2589" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Gallows",
+				"de" : "Hängen",
+				"fr" : "Potence améliorée",
+				"jp" : "ギャロウズ効果アップ"
+			}
+		}
+	},
+	"2590" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Void Reaping",
+				"de" : "Nichtsmahd",
+				"fr" : "Fauchage du néant amélioré",
+				"jp" : "ヴォイドリーパー効果アップ"
+			}
+		}
+	},
+	"2591" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Cross Reaping",
+				"de" : "Kreuzmahd",
+				"fr" : "Fauchage croisé amélioré",
+				"jp" : "クロスリーパー効果アップ"
+			}
+		}
+	},
+	"2592" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Immortal Sacrifice",
+				"de" : "Totenopfer",
+				"fr" : "Offrande à la Mort",
+				"jp" : "死の供物"
+			}
+		}
+	},
+	"2593" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Enshrouded",
+				"de" : "Lemure",
+				"fr" : "Lémure",
+				"jp" : "レムール"
+			}
+		}
+	},
+	"2594" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Soulsow",
+				"de" : "Seelensaat",
+				"fr" : "Semence d'âmes",
+				"jp" : "ソウルソウ"
+			}
+		}
+	},
+	"2595" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Threshold",
+				"de" : "Rückkehr möglich",
+				"fr" : "Repli préparé",
+				"jp" : "リターン実行可"
+			}
+		}
+	},
+	"2596" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Crest of Time Borrowed",
+				"de" : "Schutzwappen",
+				"fr" : "Blason protecteur",
+				"jp" : "守護のクレスト"
+			}
+		}
+	},
+	"2597" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Crest of Time Borrowed",
+				"de" : "Schutzwappen",
+				"fr" : "Blason protecteur",
+				"jp" : "守護のクレスト"
+			}
+		}
+	},
+	"2598" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Crest of Time Returned",
+				"de" : "Vitalisierendes Wappen",
+				"fr" : "Blason revigorant",
+				"jp" : "活性のクレスト"
+			}
+		}
+	},
+	"2599" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Arcane Circle",
+				"de" : "Arkaner Kreis",
+				"fr" : "Cercle arcanique",
+				"jp" : "アルケインサークル"
+			}
+		}
+	},
+	"2600" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Circle of Sacrifice",
+				"de" : "Kreis des Blutes",
+				"fr" : "Cercle sacrificiel",
+				"jp" : "供儀のサークル"
+			}
+		}
+	},
+	"2601" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bloodsown Circle",
+				"de" : "Kreis des Opfers",
+				"fr" : "Cercle de l'offrande",
+				"jp" : "供物のサークル"
+			}
+		}
+	},
 	"2602" : {
 		"type" : "effect",
 		"dot" : false,
@@ -31161,6 +31853,368 @@
 				"de" : "Eis-Aufladung",
 				"fr" : "Charge givrée",
 				"jp" : "冷気充填"
+			}
+		}
+	},
+	"2604" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Kardia",
+				"de" : "Kardia",
+				"fr" : "Kardia",
+				"jp" : "カルディア"
+			}
+		}
+	},
+	"2605" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Kardion",
+				"de" : "Kardion",
+				"fr" : "Kardion",
+				"jp" : "カルディア[被]"
+			}
+		}
+	},
+	"2606" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasia",
+				"de" : "Eukrasie",
+				"fr" : "Eukrasia",
+				"jp" : "エウクラシア"
+			}
+		}
+	},
+	"2607" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasian Diagnosis",
+				"de" : "Eukratische Diagnose",
+				"fr" : "Diagnosis eucrasique",
+				"jp" : "エウクラシア・ディアグノシス"
+			}
+		}
+	},
+	"2608" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Differential Diagnosis",
+				"de" : "Exakte Eukratische Diagnose",
+				"fr" : "Eudiagnosis eucrasique",
+				"jp" : "エウクラシア・ディアグノシス[強]"
+			}
+		}
+	},
+	"2609" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasian Prognosis",
+				"de" : "Eukratische Prognose",
+				"fr" : "Prognosis eucrasique",
+				"jp" : "エウクラシア・プログノシス"
+			}
+		}
+	},
+	"2610" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Soteria",
+				"de" : "Soteria",
+				"fr" : "Soteria",
+				"jp" : "ソーテリア"
+			}
+		}
+	},
+	"2611" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Zoe",
+				"de" : "Zoe",
+				"fr" : "Zoe",
+				"jp" : "ゾーエ"
+			}
+		}
+	},
+	"2612" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Haima",
+				"de" : "Haima",
+				"fr" : "Haima",
+				"jp" : "ハイマ"
+			}
+		}
+	},
+	"2613" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Panhaima",
+				"de" : "Panhaima",
+				"fr" : "Panhaima",
+				"jp" : "パンハイマ"
+			}
+		}
+	},
+	"2614" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasian Dosis",
+				"de" : "Eukratische Dosis",
+				"fr" : "Dosis eucrasique",
+				"jp" : "エウクラシア・ドシス"
+			}
+		}
+	},
+	"2615" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasian Dosis II",
+				"de" : "Eukratische Dosis II",
+				"fr" : "Dosis eucrasique II",
+				"jp" : "エウクラシア・ドシスII"
+			}
+		}
+	},
+	"2616" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasian Dosis III",
+				"de" : "Eukratische Dosis III",
+				"fr" : "Dosis eucrasique III",
+				"jp" : "エウクラシア・ドシスIII"
+			}
+		}
+	},
+	"2617" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Physis",
+				"de" : "Physis",
+				"fr" : "Physis",
+				"jp" : "ピュシス"
+			}
+		}
+	},
+	"2618" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Kerachole",
+				"de" : "Kerachole",
+				"fr" : "Kerachole",
+				"jp" : "ケーラコレ"
+			}
+		}
+	},
+	"2619" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Taurochole",
+				"de" : "Taurochole",
+				"fr" : "Taurochole",
+				"jp" : "タウロコレ"
+			}
+		}
+	},
+	"2620" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Physis II",
+				"de" : "Physis II",
+				"fr" : "Physis II",
+				"jp" : "ピュシスII"
+			}
+		}
+	},
+	"2621" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Autophysis",
+				"de" : "Autophysis",
+				"fr" : "Autophysis",
+				"jp" : "ピュシスII[被]"
+			}
+		}
+	},
+	"2622" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Krasis",
+				"de" : "Krasis",
+				"fr" : "Krasis",
+				"jp" : "クラーシス"
+			}
+		}
+	},
+	"2623" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Pneuma",
+				"de" : "Pneuma",
+				"fr" : "Pneuma",
+				"jp" : "プネウマ"
+			}
+		}
+	},
+	"2624" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Primal Rend Ready",
+				"de" : "Brachiale Gewalt",
+				"fr" : "Griffade primitive préparée",
+				"jp" : "プライマルレンド実行可"
+			}
+		}
+	},
+	"2625" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Ray of Fortitude",
+				"de" : "Eisenschild-Orden",
+				"fr" : "Comète de l'égide",
+				"jp" : "堅守彗星章"
+			}
+		}
+	},
+	"2626" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Ray of Valor",
+				"de" : "Blutrausch-Orden",
+				"fr" : "Comète de la furie",
+				"jp" : "勇猛彗星章"
+			}
+		}
+	},
+	"2627" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Ray of Succor",
+				"de" : "Lebensretter-Orden",
+				"fr" : "Comète du salut",
+				"jp" : "救命彗星章"
 			}
 		}
 	},
@@ -31234,6 +32288,276 @@
 			}
 		}
 	},
+	"2636" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Schmerz",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
+	"2637" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Sacred Soil",
+				"de" : "Geweihte Erde",
+				"fr" : "Dogme de survie",
+				"jp" : "野戦治療の陣"
+			}
+		}
+	},
+	"2638" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Sacred Soil",
+				"de" : "Geweihte Erde",
+				"fr" : "Dogme de survie",
+				"jp" : "野戦治療の陣：効果"
+			}
+		}
+	},
+	"2639" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fixed Sign",
+				"de" : "Schrein des Stillstands",
+				"fr" : "Signe fixe",
+				"jp" : "不動宮"
+			}
+		}
+	},
+	"2640" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fixed Sign",
+				"de" : "Schrein des Stillstands",
+				"fr" : "Signe fixe",
+				"jp" : "不動宮：効果"
+			}
+		}
+	},
+	"2641" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fixed Sign",
+				"de" : "Schrein des Stillstands",
+				"fr" : "Signe fixe",
+				"jp" : "不動宮"
+			}
+		}
+	},
+	"2642" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Haimatinon",
+				"de" : "Haimatinon",
+				"fr" : "Haimatinon",
+				"jp" : "ハイマの印"
+			}
+		}
+	},
+	"2643" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Panhaimatinon",
+				"de" : "Panhaimatinon",
+				"fr" : "Panhaimatinon",
+				"jp" : "パンハイマの印"
+			}
+		}
+	},
+	"2645" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Prey",
+				"de" : "Markierung",
+				"fr" : "Marquage",
+				"jp" : "マーキング"
+			}
+		}
+	},
+	"2646" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Electrocution",
+				"de" : "Stromschlag",
+				"fr" : "Électrocution",
+				"jp" : "感電"
+			}
+		}
+	},
+	"2647" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shadow of the Dragon",
+				"de" : "Schwarzes Drachenblut",
+				"fr" : "Sang noir du dragon",
+				"jp" : "黒の竜血"
+			}
+		}
+	},
+	"2648" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Transcendent",
+				"de" : "Wiederkunft",
+				"fr" : "Retour corporel",
+				"jp" : "生還"
+			}
+		}
+	},
+	"2649" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Empowered Beast",
+				"de" : "Maximal bestialisch",
+				"fr" : "Renforce-bête",
+				"jp" : "マキシマイズビースト"
+			}
+		}
+	},
+	"2650" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Leveilleur Dosis III",
+				"de" : "Leveilleur-Dosis III",
+				"fr" : "Dosis III des Leveilleur",
+				"jp" : "ルヴェユール・ドシスIII"
+			}
+		}
+	},
+	"2651" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Manusya Berserk",
+				"de" : "Manusya-Tollwut",
+				"fr" : "Berserk manusya",
+				"jp" : "マヌシャ・バーサク"
+			}
+		}
+	},
+	"2652" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Manusya Confuse",
+				"de" : "Manusya-Konfus",
+				"fr" : "Confusion manusya",
+				"jp" : "マヌシャ・コンフュ"
+			}
+		}
+	},
+	"2653" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Manusya Stop",
+				"de" : "Manusya-Stopp",
+				"fr" : "Stop manusya",
+				"jp" : "マヌシャ・ストップ"
+			}
+		}
+	},
+	"2654" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Who Is She",
+				"de" : "Dug?",
+				"fr" : "Samanta<Indent/>?",
+				"jp" : "ドグ？"
+			}
+		}
+	},
+	"2655" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Who Is She",
+				"de" : "Dug?",
+				"fr" : "Samanta<Indent/>?",
+				"jp" : "ドグ？"
+			}
+		}
+	},
 	"2656" : {
 		"type" : "debuff",
 		"dot" : false,
@@ -31245,6 +32569,2763 @@
 				"de" : "Betäubung",
 				"fr" : "Étourdissement",
 				"jp" : "スタン"
+			}
+		}
+	},
+	"2657" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Acceleration Bomb",
+				"de" : "Beschleunigungsbombe",
+				"fr" : "Bombe à accélération",
+				"jp" : "加速度爆弾"
+			}
+		}
+	},
+	"2658" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Deep Freeze",
+				"de" : "Tiefkühlung",
+				"fr" : "Congélation",
+				"jp" : "氷結"
+			}
+		}
+	},
+	"2665" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Heart and Soul",
+				"de" : "Mit Leib und Seele",
+				"fr" : "Attention totale",
+				"jp" : "一心不乱"
+			}
+		}
+	},
+	"2666" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Gift of the Land",
+				"de" : "Bessere Chancen",
+				"fr" : "Récolte fertile",
+				"jp" : "獲得数ボーナス発生率アップ"
+			}
+		}
+	},
+	"2667" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Gatherer's Bounty",
+				"de" : "Bessere Boni",
+				"fr" : "Récolte évangélique",
+				"jp" : "ボーナス発生時獲得数アップ"
+			}
+		}
+	},
+	"2668" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Collector's Focus",
+				"de" : "Intuitiver Fokus",
+				"fr" : "Œil du col<SoftHyphen/>lec<SoftHyphen/>tion<SoftHyphen/>neur",
+				"jp" : "バリューアップ発生率アップ"
+			}
+		}
+	},
+	"2669" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Klymenos",
+				"de" : "Klymenos",
+				"fr" : "Clyménos",
+				"jp" : "クリュメノス"
+			}
+		}
+	},
+	"2670" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Katabasis",
+				"de" : "Das Jenseits muss warten",
+				"fr" : "Aller aux Enfers",
+				"jp" : "冥界行"
+			}
+		}
+	},
+	"2671" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Toad",
+				"de" : "Frosch",
+				"fr" : "Crapaud",
+				"jp" : "トード"
+			}
+		}
+	},
+	"2674" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Holy Sheltron",
+				"de" : "Heiliges Schiltron",
+				"fr" : "Schiltron sacré",
+				"jp" : "ホーリーシェルトロン"
+			}
+		}
+	},
+	"2675" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Knight's Resolve",
+				"de" : "Trutz des Ritters",
+				"fr" : "Égide du paladin",
+				"jp" : "ナイトの堅守"
+			}
+		}
+	},
+	"2676" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Knight's Benediction",
+				"de" : "Schutz des Ritters",
+				"fr" : "Bénédiction du paladin",
+				"jp" : "ナイトの加護"
+			}
+		}
+	},
+	"2677" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"GLD",
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Surging Tempest",
+				"de" : "Tosender Sturm",
+				"fr" : "Vent de tempête",
+				"jp" : "戦嵐"
+			}
+		}
+	},
+	"2678" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bloodwhetting",
+				"de" : "Urimpuls",
+				"fr" : "Intuition fougueuse",
+				"jp" : "原初の血気"
+			}
+		}
+	},
+	"2679" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Stem the Flow",
+				"de" : "Blutgeruch",
+				"fr" : "Barrage au sang",
+				"jp" : "原初の血潮"
+			}
+		}
+	},
+	"2680" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Stem the Tide",
+				"de" : "Jagdtrieb",
+				"fr" : "Digue au sang",
+				"jp" : "原初の血煙"
+			}
+		}
+	},
+	"2681" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"WAR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Equilibrium",
+				"de" : "Äquilibrium",
+				"fr" : "Équilibre",
+				"jp" : "エクリブリウム"
+			}
+		}
+	},
+	"2682" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"DRK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Oblation",
+				"de" : "Opfergabe",
+				"fr" : "Oblation",
+				"jp" : "オブレーション"
+			}
+		}
+	},
+	"2683" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Heart of Corundum",
+				"de" : "Herz des Korunds",
+				"fr" : "Cœur de corindon",
+				"jp" : "ハート・オブ・コランダム"
+			}
+		}
+	},
+	"2684" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Clarity of Corundum",
+				"de" : "Klarheit des Korunds",
+				"fr" : "Clarté de corindon",
+				"jp" : "クラリティー・オブ・コランダム"
+			}
+		}
+	},
+	"2685" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Catharsis of Corundum",
+				"de" : "Katharsis des Korunds",
+				"fr" : "Catharsis de corindon",
+				"jp" : "カタルシス・オブ・コランダム"
+			}
+		}
+	},
+	"2686" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"GNB"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Ready to Blast",
+				"de" : "Knallender Stoß",
+				"fr" : "Hypervitesse préparée",
+				"jp" : "ハイパーヴェロシティ実行可"
+			}
+		}
+	},
+	"2687" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Riddle of Wind",
+				"de" : "Stürmendes Enigma",
+				"fr" : "Énigme du vent",
+				"jp" : "疾風の極意"
+			}
+		}
+	},
+	"2689" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Meisui",
+				"de" : "Meisui",
+				"fr" : "Meisui",
+				"jp" : "命水"
+			}
+		}
+	},
+	"2690" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Forked Raiju Ready",
+				"de" : "Raiju-Blitz",
+				"fr" : "Griffe de Raijû préparée",
+				"jp" : "月影雷獣爪実行可"
+			}
+		}
+	},
+	"2691" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Fleeting Raiju Ready",
+				"de" : "Raiju-Tanz",
+				"fr" : "Croc de Raijû préparé",
+				"jp" : "月影雷獣牙実行可"
+			}
+		}
+	},
+	"2692" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Blast Arrow Ready",
+				"de" : "Stoßpfeilbereit",
+				"fr" : "Flèche explosive préparée",
+				"jp" : "ブラストアロー実行可"
+			}
+		}
+	},
+	"2693" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Symmetry",
+				"de" : "Synchroner Wurf",
+				"fr" : "Lancer synchrone",
+				"jp" : "対称投擲"
+			}
+		}
+	},
+	"2694" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Flow",
+				"de" : "Asynchroner Wurf",
+				"fr" : "Lancer asynchrone",
+				"jp" : "非対称投擲"
+			}
+		}
+	},
+	"2695" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Improvisation",
+				"de" : "Tanzimprovisation (Heilung)",
+				"fr" : "Improvisation (bonus)",
+				"jp" : "インプロビゼーション：効果"
+			}
+		}
+	},
+	"2696" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rising Rhythm",
+				"de" : "Tanzekstase",
+				"fr" : "Frénésie des danseurs",
+				"jp" : "踊りの熱情"
+			}
+		}
+	},
+	"2697" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Improvised Finish",
+				"de" : "Improvisiertes Finale",
+				"fr" : "Final improvisé",
+				"jp" : "インプロビゼーション・フィニッシュ"
+			}
+		}
+	},
+	"2698" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Finish",
+				"de" : "Tillana",
+				"fr" : "Tillana préparé",
+				"jp" : "ティラナ実行可"
+			}
+		}
+	},
+	"2699" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fourfold Fan Dance",
+				"de" : "Fächertanz IV",
+				"fr" : "Danse de l'éventail IV préparée",
+				"jp" : "扇の舞い【終】実行可"
+			}
+		}
+	},
+	"2700" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"DNC"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Flourishing Starfall",
+				"de" : "Sternenfalltanz",
+				"fr" : "Danse de la pluie étoilée préparée",
+				"jp" : "流星の舞い実行可"
+			}
+		}
+	},
+	"2701" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"ARC",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Further Ruin",
+				"de" : "Rand des Ruins",
+				"fr" : "Giga Ruine préparée",
+				"jp" : "ルインジャ実行可"
+			}
+		}
+	},
+	"2702" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"ARC",
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Radiant Aegis",
+				"de" : "Schimmerschild",
+				"fr" : "Égide rayonnante",
+				"jp" : "守りの光"
+			}
+		}
+	},
+	"2703" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Searing Light",
+				"de" : "Gleißender Schein",
+				"fr" : "Éclat ardent",
+				"jp" : "シアリングライト"
+			}
+		}
+	},
+	"2704" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SMN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Rekindle",
+				"de" : "Wiederaufleben",
+				"fr" : "Ravivement",
+				"jp" : "再生の炎"
+			}
+		}
+	},
+	"2705" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Undying Flame",
+				"de" : "Immerflamme",
+				"fr" : "Flamme éternelle",
+				"jp" : "再生の炎：効果"
+			}
+		}
+	},
+	"2706" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Slipstream",
+				"de" : "Wirbelströmung",
+				"fr" : "Sillage",
+				"jp" : "スリップストリーム"
+			}
+		}
+	},
+	"2707" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RDM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Magick Barrier",
+				"de" : "Magiebarriere",
+				"fr" : "Barrière anti-magie",
+				"jp" : "バマジク"
+			}
+		}
+	},
+	"2708" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"WHM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Aquaveil",
+				"de" : "Wasserschleier",
+				"fr" : "Aquavoile",
+				"jp" : "アクアヴェール"
+			}
+		}
+	},
+	"2709" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Liturgy of the Bell",
+				"de" : "Glockenspiel",
+				"fr" : "Tintinnabule",
+				"jp" : "リタージー・オブ・ベル"
+			}
+		}
+	},
+	"2710" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Protraction",
+				"de" : "Protraktion",
+				"fr" : "Loi de la protraction",
+				"jp" : "生命回生法"
+			}
+		}
+	},
+	"2711" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Desperate Measures",
+				"de" : "Drang",
+				"fr" : "Thèse des flots impétueux",
+				"jp" : "怒濤の計"
+			}
+		}
+	},
+	"2712" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SCH"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Expedience",
+				"de" : "Sturm",
+				"fr" : "Thèse des rafales hurlantes",
+				"jp" : "疾風の計"
+			}
+		}
+	},
+	"2713" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Clarifying Draw",
+				"de" : "Mischbereit",
+				"fr" : "Retirage préparé",
+				"jp" : "リドロー実行可"
+			}
+		}
+	},
+	"2714" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Harmony of Spirit",
+				"de" : "Zeichen der Seele",
+				"fr" : "Maison du périsprit",
+				"jp" : "魂魄の座"
+			}
+		}
+	},
+	"2715" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Harmony of Body",
+				"de" : "Zeichen des Soma",
+				"fr" : "Maison du corps",
+				"jp" : "身体の座"
+			}
+		}
+	},
+	"2716" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Harmony of Mind",
+				"de" : "Zeichen des Geistes",
+				"fr" : "Maison de l'esprit",
+				"jp" : "精神の座"
+			}
+		}
+	},
+	"2717" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Exaltation",
+				"de" : "Exaltation",
+				"fr" : "Exaltation",
+				"jp" : "エクザルテーション"
+			}
+		}
+	},
+	"2718" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Macrocosmos",
+				"de" : "Makrokosmos",
+				"fr" : "Macrocosme",
+				"jp" : "マクロコスモス"
+			}
+		}
+	},
+	"2719" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Chaotic Spring",
+				"de" : "Chaotischer Sturm",
+				"fr" : "Floraison chaotique",
+				"jp" : "桜華繚乱"
+			}
+		}
+	},
+	"2720" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Power Surge",
+				"de" : "Drachenklaue",
+				"fr" : "Souffle de puissance",
+				"jp" : "竜槍"
+			}
+		}
+	},
+	"2721" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [
+			"PLD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Blade of Valor",
+				"de" : "Klinge der Tapferkeit",
+				"fr" : "Lame de vaillance",
+				"jp" : "ブレード・オブ・ヴァラー"
+			}
+		}
+	},
+	"2722" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Radiant Finale",
+				"de" : "Luminöses Finale",
+				"fr" : "Final radieux",
+				"jp" : "光神のフィナーレ"
+			}
+		}
+	},
+	"2723" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Phantom Kamaitachi Ready",
+				"de" : "Kamaitachi-bereit",
+				"fr" : "Kamaitachi fantôme préparé",
+				"jp" : "残影鎌鼬実行可"
+			}
+		}
+	},
+	"2724" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Ifrit's Favor",
+				"de" : "Ifrits Gunst",
+				"fr" : "Cyclone écarlate préparé",
+				"jp" : "クリムゾンサイクロン実行可"
+			}
+		}
+	},
+	"2725" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Garuda's Favor",
+				"de" : "Garudas Gunst",
+				"fr" : "Sillage préparé",
+				"jp" : "スリップストリーム実行可"
+			}
+		}
+	},
+	"2726" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Anguish",
+				"de" : "Schlimmer Schmerz",
+				"fr" : "Douleur atroce",
+				"jp" : "苦痛"
+			}
+		}
+	},
+	"2727" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Transfiguration",
+				"de" : "Verwandlung",
+				"fr" : "Transformation",
+				"jp" : "変身"
+			}
+		}
+	},
+	"2729" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Incorporeal",
+				"de" : "Flüchtige Gestalt",
+				"fr" : "Existence incertaine",
+				"jp" : "不確定性存在"
+			}
+		}
+	},
+	"2730" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Endwalker",
+				"de" : "Endwalker",
+				"fr" : "Arpenteur des finitudes",
+				"jp" : "エンドウォーカー"
+			}
+		}
+	},
+	"2731" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Aether Sickness",
+				"de" : "Ätherschwindel",
+				"fr" : "Ivresse éthérée",
+				"jp" : "エーテル酔い"
+			}
+		}
+	},
+	"2732" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Quadruple",
+				"de" : "Quadrupel",
+				"fr" : "Quadruple",
+				"jp" : "クアドラプル"
+			}
+		}
+	},
+	"2734" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Epic Echo",
+				"de" : "Starke Kraft des Transzendierens",
+				"fr" : "L'Écho+",
+				"jp" : "超える力［強］"
+			}
+		}
+	},
+	"2735" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Toxicosis",
+				"de" : "Gift",
+				"fr" : "Poison violent",
+				"jp" : "猛毒"
+			}
+		}
+	},
+	"2736" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Requisitioned Magitek",
+				"de" : "Magitek-Kampfmaschine",
+				"fr" : "Manœuvre d'armure magitek",
+				"jp" : "魔導アーマー搭乗"
+			}
+		}
+	},
+	"2751" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fire Alchemy",
+				"de" : "Manipuliertes Feuer",
+				"fr" : "Manipulation magique de feu",
+				"jp" : "魔力操作：火"
+			}
+		}
+	},
+	"2752" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Ice Alchemy",
+				"de" : "Manipuliertes Eis",
+				"fr" : "Manipulation magique de glace",
+				"jp" : "魔力操作：氷"
+			}
+		}
+	},
+	"2753" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Thunder Alchemy",
+				"de" : "Manipulierter Blitz",
+				"fr" : "Manipulation magique de foudre",
+				"jp" : "魔力操作：雷"
+			}
+		}
+	},
+	"2754" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Toxic Alchemy",
+				"de" : "Manipuliertes Gift",
+				"fr" : "Manipulation magique de poison",
+				"jp" : "魔力操作：毒"
+			}
+		}
+	},
+	"2760" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Borrowed Flesh",
+				"de" : "Körpertausch",
+				"fr" : "Chair empruntée",
+				"jp" : "強制憑依"
+			}
+		}
+	},
+	"2765" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Moment",
+				"de" : "Triumph des Wissens bereit",
+				"fr" : "Étalage des con<SoftHyphen/>nais<SoftHyphen/>san<SoftHyphen/>ces préparé",
+				"jp" : "理知興起実行可"
+			}
+		}
+	},
+	"2778" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Angler's Art",
+				"de" : "Fischversessen",
+				"fr" : "Féru de pêche",
+				"jp" : "ビッグフィッシャー"
+			}
+		}
+	},
+	"2779" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Makeshift Bait",
+				"de" : "Fischfinesse",
+				"fr" : "Pêche au vif facile",
+				"jp" : "泳がせ釣り条件無視"
+			}
+		}
+	},
+	"2780" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Prize Catch",
+				"de" : "Fetter Fang",
+				"fr" : "Pêche au gros",
+				"jp" : "次回ラージサイズ確定"
+			}
+		}
+	},
+	"2781" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Unlimited",
+				"de" : "Überwinden der Grenzen",
+				"fr" : "Transcendance ultime",
+				"jp" : "限界超絶"
+			}
+		}
+	},
+	"2783" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Vital Sight",
+				"de" : "Breitseite",
+				"fr" : "Pupilles dilatées",
+				"jp" : "選魚眼"
+			}
+		}
+	},
+	"2786" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Spark of Hope",
+				"de" : "Glanz des Dynamis",
+				"fr" : "Éclat du dynamis",
+				"jp" : "デュナミスの輝き"
+			}
+		}
+	},
+	"2787" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Ploutonos",
+				"de" : "Pluton",
+				"fr" : "Pluton",
+				"jp" : "プルトン"
+			}
+		}
+	},
+	"2788" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Eubuleus",
+				"de" : "Eubuleus",
+				"fr" : "Eubouleus",
+				"jp" : "エウブレウス"
+			}
+		}
+	},
+	"2789" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Bravery",
+				"de" : "Vollkommene Courage",
+				"fr" : "Courage véritable",
+				"jp" : "トゥルー・ブレイブ"
+			}
+		}
+	},
+	"2790" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Step",
+				"de" : "Vollkommener Schritt",
+				"fr" : "Pas véritable",
+				"jp" : "トゥルー・ステップ"
+			}
+		}
+	},
+	"2791" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Benison",
+				"de" : "Vollkommener Segen",
+				"fr" : "Faveur véritable",
+				"jp" : "トゥルー・ベニゾン"
+			}
+		}
+	},
+	"2792" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Medica II",
+				"de" : "Vollkommenes Resedra",
+				"fr" : "Extra Médica véritable",
+				"jp" : "トゥルー・メディカラ"
+			}
+		}
+	},
+	"2793" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Stoneskin",
+				"de" : "Vollkommene Steinhaut",
+				"fr" : "Cuirasse véritable",
+				"jp" : "トゥルー・ストンスキン"
+			}
+		}
+	},
+	"2794" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Hallowed Ground",
+				"de" : "Vollkommene Unbesiegbarkeit",
+				"fr" : "Invincibilité véritable",
+				"jp" : "トゥルー・インビンシブル"
+			}
+		}
+	},
+	"2795" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Circle of Clarity",
+				"de" : "Kreis der Leichtheit",
+				"fr" : "Cercle de clarté",
+				"jp" : "サークル・オブ・ライトネス"
+			}
+		}
+	},
+	"2796" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Sentinel",
+				"de" : "Vollkommener Sentinel",
+				"fr" : "Sentinelle véritable",
+				"jp" : "トゥルー・センチネル"
+			}
+		}
+	},
+	"2797" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Rampart",
+				"de" : "Vollkommener Schutzwall",
+				"fr" : "Rempart véritable",
+				"jp" : "トゥルー・ランパート"
+			}
+		}
+	},
+	"2798" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Reprisal",
+				"de" : "Vollkommene Reflexion",
+				"fr" : "Rétorsion véritable",
+				"jp" : "トゥルー・リプライザル"
+			}
+		}
+	},
+	"2805" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Carrot of Happiness",
+				"de" : "Glückskarotte",
+				"fr" : "Carotte du bonheur",
+				"jp" : "ハピネスキャロット"
+			}
+		}
+	},
+	"2806" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Philosopher's Carrot",
+				"de" : "Knobelkarotte",
+				"fr" : "Carotte de la vivacité",
+				"jp" : "スピードキャロット"
+			}
+		}
+	},
+	"2807" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lucky Carrot",
+				"de" : "Duselmöhre",
+				"fr" : "Carotte de la chance",
+				"jp" : "ラッキーキャロット"
+			}
+		}
+	},
+	"2808" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Iron Carrot",
+				"de" : "Kraftkarotte",
+				"fr" : "Carotte du tonus",
+				"jp" : "タフネスキャロット"
+			}
+		}
+	},
+	"2809" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Magic Damage Up",
+				"de" : "Magieschaden +",
+				"fr" : "Bonus de dégâts magiques",
+				"jp" : "魔法ダメージ上昇"
+			}
+		}
+	},
+	"2810" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Chorus Aligned",
+				"de" : "Tanzgesang",
+				"fr" : "Chant enivrant",
+				"jp" : "舞踏の歌声"
+			}
+		}
+	},
+	"2817" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Partygoer",
+				"de" : "Festteilnehmer",
+				"fr" : "Convive du banquet",
+				"jp" : "饗宴参加"
+			}
+		}
+	},
+	"2818" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Earth-aspected",
+				"de" : "Erd-Orientierung",
+				"fr" : "Alignement terrestre",
+				"jp" : "土属性化"
+			}
+		}
+	},
+	"2819" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lightning-aspected",
+				"de" : "Blitz-Orientierung",
+				"fr" : "Alignement électrique",
+				"jp" : "雷属性化"
+			}
+		}
+	},
+	"2820" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Wind-aspected",
+				"de" : "Wind-Orientierung",
+				"fr" : "Alignement éolien",
+				"jp" : "風属性化"
+			}
+		}
+	},
+	"2821" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "To the Dungeons",
+				"de" : "Ediktbruch",
+				"fr" : "Contrevenance",
+				"jp" : "勅令違反"
+			}
+		}
+	},
+	"2822" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Wicked Whim",
+				"de" : "Widerspenstig",
+				"fr" : "Côté lunatique",
+				"jp" : "あまのじゃく"
+			}
+		}
+	},
+	"2827" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Irmin Hedge",
+				"de" : "Kosmischer Bannkreis",
+				"fr" : "Lice cardinale",
+				"jp" : "六合結界"
+			}
+		}
+	},
+	"2828" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Prayers of Hope",
+				"de" : "Gebet der Morgenröte",
+				"fr" : "Prière des Héritiers",
+				"jp" : "暁の祈り"
+			}
+		}
+	},
+	"2829" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Last Vigil",
+				"de" : "Letzte Wacht",
+				"fr" : "Dernier Vigile",
+				"jp" : "ラストヴィジル"
+			}
+		}
+	},
+	"2830" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Last Vigil",
+				"de" : "Letzte Wacht",
+				"fr" : "Dernier Vigile",
+				"jp" : "ラストヴィジル：効果"
+			}
+		}
+	},
+	"2831" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shield of the Fury",
+				"de" : "Halones Schild",
+				"fr" : "Bouclier de la Conquérante",
+				"jp" : "シールド・オブ・ハルオーネ"
+			}
+		}
+	},
+	"2832" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Tenebrous Grasp",
+				"de" : "Bann der Dunkelheit",
+				"fr" : "Lien des Ténèbres",
+				"jp" : "闇の呪縛"
+			}
+		}
+	},
+	"2839" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Suiton",
+				"de" : "Suiton",
+				"fr" : "Suiton",
+				"jp" : "水遁の術"
+			}
+		}
+	},
+	"2840" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rightward Whimsy",
+				"de" : "Prinzessinnenlaune: rechts",
+				"fr" : "Caprice de princesse<Indent/>: à droite",
+				"jp" : "気まぐれ：右"
+			}
+		}
+	},
+	"2841" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Leftward Whimsy",
+				"de" : "Prinzessinnenlaune: links",
+				"fr" : "Caprice de princesse<Indent/>: à gauche",
+				"jp" : "気まぐれ：左"
+			}
+		}
+	},
+	"2842" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Backward Whimsy",
+				"de" : "Prinzessinnenlaune: hinten",
+				"fr" : "Caprice de princesse<Indent/>: en arrière",
+				"jp" : "気まぐれ：後"
+			}
+		}
+	},
+	"2843" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Iron Will",
+				"de" : "Schild-Eid",
+				"fr" : "Volonté de fer",
+				"jp" : "アイアンウィル"
+			}
+		}
+	},
+	"2844" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Somanoutic Barrier",
+				"de" : "Magiewall",
+				"fr" : "Barrière magique",
+				"jp" : "魔法障壁"
+			}
+		}
+	},
+	"2845" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Harpe",
+				"de" : "Schnelle Harpe",
+				"fr" : "Harpé améliorée",
+				"jp" : "ハルパー効果アップ"
+			}
+		}
+	},
+	"2851" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "In Event",
+				"de" : "In Ereignis",
+				"fr" : "Événement",
+				"jp" : "イベント中"
+			}
+		}
+	},
+	"2853" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Titan's Favor",
+				"de" : "Titans Gunst",
+				"fr" : "Casse-montagnes préparé",
+				"jp" : "マウンテンバスター実行可"
+			}
+		}
+	},
+	"2854" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Soul Reaver",
+				"de" : "Nichtssense",
+				"fr" : "Moissonneur d'âmes",
+				"jp" : "妖異の鎌"
+			}
+		}
+	},
+	"2855" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Gibbet",
+				"de" : "Richten",
+				"fr" : "Gibet amélioré",
+				"jp" : "ジビトゥ効果アップ"
+			}
+		}
+	},
+	"2856" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Gallows",
+				"de" : "Hängen",
+				"fr" : "Potence améliorée",
+				"jp" : "ギャロウズ効果アップ"
+			}
+		}
+	},
+	"2857" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Void Reaping",
+				"de" : "Nichtsmahd",
+				"fr" : "Fauchage du néant amélioré",
+				"jp" : "ヴォイドリーパー効果アップ"
+			}
+		}
+	},
+	"2858" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Cross Reaping",
+				"de" : "Kreuzmahd",
+				"fr" : "Fauchage croisé amélioré",
+				"jp" : "クロスリーパー効果アップ"
+			}
+		}
+	},
+	"2859" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Harpe",
+				"de" : "Schnelle Harpe",
+				"fr" : "Harpé améliorée",
+				"jp" : "ハルパー効果アップ"
+			}
+		}
+	},
+	"2860" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Threshold",
+				"de" : "Rückkehr möglich",
+				"fr" : "Repli préparé",
+				"jp" : "リターン実行可"
+			}
+		}
+	},
+	"2861" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Crest of Time Borrowed",
+				"de" : "Schutzwappen",
+				"fr" : "Blason protecteur",
+				"jp" : "守護のクレスト"
+			}
+		}
+	},
+	"2862" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Crest of Time Returned",
+				"de" : "Vitalisierendes Wappen",
+				"fr" : "Blason revigorant",
+				"jp" : "活性のクレスト"
+			}
+		}
+	},
+	"2863" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Enshrouded",
+				"de" : "Lemure",
+				"fr" : "Lémure",
+				"jp" : "レムール"
+			}
+		}
+	},
+	"2864" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasian Dosis III",
+				"de" : "Eukratische Dosis III",
+				"fr" : "Dosis eucrasique III",
+				"jp" : "エウクラシア・ドシスIII"
+			}
+		}
+	},
+	"2865" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasian Diagnosis",
+				"de" : "Eukratische Diagnose",
+				"fr" : "Diagnosis eucrasique",
+				"jp" : "エウクラシア・ディアグノシス"
+			}
+		}
+	},
+	"2866" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasian Prognosis",
+				"de" : "Eukratische Prognose",
+				"fr" : "Prognosis eucrasique",
+				"jp" : "エウクラシア・プログノシス"
+			}
+		}
+	},
+	"2867" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Eukrasia",
+				"de" : "Eukrasie",
+				"fr" : "Eukrasia",
+				"jp" : "エウクラシア"
+			}
+		}
+	},
+	"2868" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Pneuma",
+				"de" : "Pneuma",
+				"fr" : "Pneuma",
+				"jp" : "プネウマ"
+			}
+		}
+	},
+	"2869" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Haima",
+				"de" : "Haima",
+				"fr" : "Haima",
+				"jp" : "ハイマ"
+			}
+		}
+	},
+	"2870" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Haimatinon",
+				"de" : "Haimatinon",
+				"fr" : "Haimatinon",
+				"jp" : "ハイマの印"
+			}
+		}
+	},
+	"2871" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Kardia",
+				"de" : "Kardia",
+				"fr" : "Kardia",
+				"jp" : "カルディア"
+			}
+		}
+	},
+	"2872" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Kardion",
+				"de" : "Kardion",
+				"fr" : "Kardion",
+				"jp" : "カルディア[被]"
+			}
+		}
+	},
+	"2873" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Limit Breaker",
+				"de" : "Limitrausch",
+				"fr" : "Transcendance",
+				"jp" : "リミットブレイク"
+			}
+		}
+	},
+	"2876" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Heros's Mantle",
+				"de" : "Mantel des Heros",
+				"fr" : "Cape de héros",
+				"jp" : "ヘロイス・マント"
+			}
+		}
+	},
+	"2877" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Magos's Mantle",
+				"de" : "Mantel des Magos",
+				"fr" : "Cape de mage",
+				"jp" : "マゴス・マント"
+			}
+		}
+	},
+	"2878" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Mousa's Mantle",
+				"de" : "Mantel der Mousa",
+				"fr" : "Cape de muse",
+				"jp" : "ムーサ・マント"
+			}
+		}
+	},
+	"2879" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Adamantinon Thelema",
+				"de" : "Adamas Schleier",
+				"fr" : "Volonté Adamas",
+				"jp" : "アダマスウィル"
+			}
+		}
+	},
+	"2891" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Spearfisher's Intuition",
+				"de" : "Speergespür",
+				"fr" : "Instinct du harponneur",
+				"jp" : "銛師の直感"
+			}
+		}
+	},
+	"2904" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Unforgotten",
+				"de" : "Chronistin der Zeit",
+				"fr" : "Chronique élégiaque",
+				"jp" : "事象記録"
+			}
+		}
+	},
+	"2907" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Tizona's Bastion",
+				"de" : "Fluchwall Tizonas",
+				"fr" : "Mur enchanté de Tizona",
+				"jp" : "ティソーナの呪壁"
+			}
+		}
+	},
+	"2908" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Tizona's Bastion",
+				"de" : "Fluchwall Tizonas",
+				"fr" : "Mur enchanté de Tizona",
+				"jp" : "ティソーナの呪壁[被]"
+			}
+		}
+	},
+	"2909" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Umbral Rays",
+				"de" : "Impuls der Dunkelheit",
+				"fr" : "Déluge de Ténèbres",
+				"jp" : "闇の波動"
+			}
+		}
+	},
+	"2911" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Damage Down",
+				"de" : "Schaden -",
+				"fr" : "Malus de dégâts",
+				"jp" : "ダメージ低下"
+			}
+		}
+	},
+	"2912" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Up",
+				"de" : "Erhöhte Verwundbarkeit",
+				"fr" : "Vulnérabilité augmentée",
+				"jp" : "被ダメージ上昇"
+			}
+		}
+	},
+	"2932" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fleet-footed",
+				"de" : "Stadtsprint-Bonus",
+				"fr" : "La grande forme",
+				"jp" : "カンパニーアクション：都市内スプリント効果時間延長"
+			}
+		}
+	},
+	"2933" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "In Event",
+				"de" : "In Ereignis",
+				"fr" : "Événement",
+				"jp" : "イベント中"
+			}
+		}
+	},
+	"2936" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Temporary Misdirection",
+				"de" : "Plötzliche Panik",
+				"fr" : "Fulguration",
+				"jp" : "心神喪失"
+			}
+		}
+	},
+	"2938" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Kerakeia",
+				"de" : "Kerakeia",
+				"fr" : "Kerakeia",
+				"jp" : "ケーラコレ[回]"
+			}
+		}
+	},
+	"2939" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Prey",
+				"de" : "Markiert",
+				"fr" : "Marquage",
+				"jp" : "マーキング"
+			}
+		}
+	},
+	"2940" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Physical Vulnerability Up",
+				"de" : "Erhöhte physische Verwundbarkeit",
+				"fr" : "Vulnérabilité physique augmentée",
+				"jp" : "被物理ダメージ増加"
+			}
+		}
+	},
+	"2941" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Magic Vulnerability Up",
+				"de" : "Erhöhte Magie-Verwundbarkeit",
+				"fr" : "Vulnérabilité magique augmentée",
+				"jp" : "被魔法ダメージ増加"
+			}
+		}
+	},
+	"2942" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Flesh Wound",
+				"de" : "Fleischwunde",
+				"fr" : "Blessure physique",
+				"jp" : "切傷"
+			}
+		}
+	},
+	"2943" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Stab Wound",
+				"de" : "Stichwunde",
+				"fr" : "Perforation",
+				"jp" : "刺傷"
+			}
+		}
+	},
+	"2944" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Concussion",
+				"de" : "Prellung",
+				"fr" : "Concussion",
+				"jp" : "打撲傷"
+			}
+		}
+	},
+	"2945" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Burns",
+				"de" : "Brandwunde",
+				"fr" : "Brûlure",
+				"jp" : "火傷"
+			}
+		}
+	},
+	"2946" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Frostbite",
+				"de" : "Erfrierung",
+				"fr" : "Gelure",
+				"jp" : "凍傷"
+			}
+		}
+	},
+	"2947" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Windburn",
+				"de" : "Beißender Wind",
+				"fr" : "Brûlure du vent",
+				"jp" : "裂傷"
+			}
+		}
+	},
+	"2948" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Sludge",
+				"de" : "Schlamm",
+				"fr" : "Emboué",
+				"jp" : "汚泥"
+			}
+		}
+	},
+	"2949" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Electrocution",
+				"de" : "Stromschlag",
+				"fr" : "Électrocution",
+				"jp" : "感電"
+			}
+		}
+	},
+	"2950" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Dropsy",
+				"de" : "Wassersucht",
+				"fr" : "Œdème",
+				"jp" : "水毒"
+			}
+		}
+	},
+	"2951" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bleeding",
+				"de" : "Blutung",
+				"fr" : "Saignement",
+				"jp" : "ペイン"
+			}
+		}
+	},
+	"2952" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "True Finish",
+				"de" : "Vollkommenes Finale",
+				"fr" : "Final véritable",
+				"jp" : "トゥルー・フィニッシュ"
+			}
+		}
+	},
+	"2953" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Stun",
+				"de" : "Betäubung",
+				"fr" : "Étourdissement",
+				"jp" : "スタン"
+			}
+		}
+	},
+	"2954" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Willful",
+				"de" : "Unerschütterlicher Wille",
+				"fr" : "Volonté in<SoftHyphen/>é<SoftHyphen/>bran<SoftHyphen/>la<SoftHyphen/>ble",
+				"jp" : "不屈の意思"
+			}
+		}
+	},
+	"2955" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Will to Live",
+				"de" : "Eiserner Lebenswille",
+				"fr" : "Persévérance absolue",
+				"jp" : "再起の意思"
+			}
+		}
+	},
+	"2957" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Swift Deception",
+				"de" : "Leisetreter",
+				"fr" : "Invisibilité rapide",
+				"jp" : "スウィフトインビジブル"
+			}
+		}
+	},
+	"2958" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Forward Whimsy",
+				"de" : "Prinzessinnenlaune: vorne",
+				"fr" : "Caprice de princesse<Indent/>: en avant",
+				"jp" : "気まぐれ：前"
+			}
+		}
+	},
+	"2959" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SAM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Ogi Namikiri Ready",
+				"de" : "Ogi Namikiri",
+				"fr" : "Ôgi<Indent/>: Namikiri préparée",
+				"jp" : "奥義波切実行可"
+			}
+		}
+	},
+	"2960" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Enhanced Flare",
+				"de" : "Flare +",
+				"fr" : "Brasier amélioré",
+				"jp" : "フレア効果アップ"
+			}
+		}
+	},
+	"2962" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Twisting Viper",
+				"de" : "Singende Giftschlange",
+				"fr" : "Serpent sifflant au vent",
+				"jp" : "風と歌う蛇"
+			}
+		}
+	},
+	"2963" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Gnashing Wolf",
+				"de" : "Tanzender Windwolf",
+				"fr" : "Loup bondissant au vent",
+				"jp" : "風と踊る狼"
+			}
+		}
+	},
+	"2964" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"BRD"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Radiant Finale",
+				"de" : "Luminöses Finale",
+				"fr" : "Final radieux",
+				"jp" : "光神のフィナーレ"
+			}
+		}
+	},
+	"2965" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Necrosis",
+				"de" : "Todeshauch",
+				"fr" : "Toxine mortelle",
+				"jp" : "死腐毒"
+			}
+		}
+	},
+	"2966" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Craven Companionship",
+				"de" : "Einsamkeit",
+				"fr" : "Sentiment d'isolement",
+				"jp" : "孤独の予感"
+			}
+		}
+	},
+	"2967" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Sustained Damage",
+				"de" : "Schaden über Zeit",
+				"fr" : "Dégâts continus",
+				"jp" : "継続ダメージ"
+			}
+		}
+	},
+	"2969" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Sage's Wisdom",
+				"de" : "Wissen der Weisen",
+				"fr" : "Sapience de sage",
+				"jp" : "賢者の叡智"
+			}
+		}
+	},
+	"2971" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "HP Penalty",
+				"de" : "LP-Malus",
+				"fr" : "PV maximums réduits",
+				"jp" : "最大ＨＰダウン"
+			}
+		}
+	},
+	"2972" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"RPR"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Bloodsown Circle",
+				"de" : "Opfergeist",
+				"fr" : "Guide du rite sacrificiel",
+				"jp" : "死の供儀"
+			}
+		}
+	},
+	"2999" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "In Event",
+				"de" : "In Ereignis",
+				"fr" : "Événement",
+				"jp" : "イベント中"
+			}
+		}
+	},
+	"3001" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"PGL",
+			"MNK"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Disciplined Fist",
+				"de" : "Rechtschaffene Faust",
+				"fr" : "Poings vigoureux",
+				"jp" : "功力"
+			}
+		}
+	},
+	"3002" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shadowbite Ready",
+				"de" : "Schattenbissbereit",
+				"fr" : "Morsure de l'ombre préparée",
+				"jp" : "シャドウバイト実行可"
+			}
+		}
+	},
+	"3003" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"SGE"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Holos",
+				"de" : "Holos",
+				"fr" : "Holos",
+				"jp" : "ホーリズム"
 			}
 		}
 	}
