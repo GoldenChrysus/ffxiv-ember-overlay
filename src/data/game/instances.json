@@ -411,7 +411,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "the Aetherochemical Research Facility",
-				"de" : "Ätherochemisches For<SoftHyphen/>schungs<SoftHyphen/>labor",
+				"de" : "Ätherochemisches Forschungslabor",
 				"fr" : "le Laboratoire de magismologie",
 				"jp" : "蒼天聖戦 魔科学研究所"
 			}
@@ -456,7 +456,7 @@
 			"name" : {
 				"en" : "Basic Training: Enemy Parties",
 				"de" : "Einer für alle, alle für einen",
-				"fr" : "Entraînement<Indent/>: groupes d'ennemis",
+				"fr" : "Entraînement: groupes d'ennemis",
 				"jp" : "集団戦訓練をくぐり抜けろ！"
 			}
 		}
@@ -478,7 +478,7 @@
 			"name" : {
 				"en" : "Basic Training: Enemy Strongholds",
 				"de" : "Sturmkommando",
-				"fr" : "Entraînement<Indent/>: in<SoftHyphen/>fil<SoftHyphen/>tra<SoftHyphen/>tion en base ennemie",
+				"fr" : "Entraînement: infiltration en base ennemie",
 				"jp" : "全関門を突破し、最深部の敵を討て！"
 			}
 		}
@@ -1435,7 +1435,7 @@
 			"name" : {
 				"en" : "the Feast (4 on 4 - Training)",
 				"de" : "The Feast (4 gegen 4, Übungskampf)",
-				"fr" : "The Feast (4x4/en<SoftHyphen/>traî<SoftHyphen/>ne<SoftHyphen/>ment)",
+				"fr" : "The Feast (4x4/entraînement)",
 				"jp" : "ザ・フィースト (4対4 / カジュアルマッチ)"
 			}
 		}
@@ -1742,7 +1742,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "a Bloody Reunion",
-				"de" : "Blutiges Wieder<SoftHyphen/>sehen",
+				"de" : "Blutiges Wiedersehen",
 				"fr" : "Course-poursuite dans le laboratoire",
 				"jp" : "レグラ・ヴァン・ヒュドルス追撃戦"
 			}
@@ -2227,7 +2227,7 @@
 			"name" : {
 				"en" : "the Feast (4 on 4 - Training)",
 				"de" : "The Feast (4 gegen 4, Übungskampf)",
-				"fr" : "The Feast (4x4/en<SoftHyphen/>traî<SoftHyphen/>ne<SoftHyphen/>ment)",
+				"fr" : "The Feast (4x4/entraînement)",
 				"jp" : "ザ・フィースト (4対4 / カジュアルマッチ)"
 			}
 		}
@@ -2403,7 +2403,7 @@
 			"name" : {
 				"en" : "Blood on the Deck",
 				"de" : "Mord ist sein Hobby",
-				"fr" : "La légende de Musosai<Indent/>: l'assassin de Limsa Lominsa",
+				"fr" : "La légende de Musosai: l'assassin de Limsa Lominsa",
 				"jp" : "海都を震わす人斬りの宴！"
 			}
 		}
@@ -2435,8 +2435,8 @@
 		"locales" : {
 			"name" : {
 				"en" : "The Battle on Bekko",
-				"de" : "Ent<SoftHyphen/>schei<SoftHyphen/>dungs<SoftHyphen/>schlacht auf Bekko",
-				"fr" : "L'af<SoftHyphen/>fron<SoftHyphen/>te<SoftHyphen/>ment de deux justices",
+				"de" : "Entscheidungsschlacht auf Bekko",
+				"fr" : "L'affrontement de deux justices",
 				"jp" : "ベッコウ島の決闘"
 			}
 		}
@@ -2975,7 +2975,7 @@
 			"name" : {
 				"en" : "the Feast (Training)",
 				"de" : "The Feast (Übungskampf)",
-				"fr" : "The Feast (en<SoftHyphen/>traî<SoftHyphen/>ne<SoftHyphen/>ment)",
+				"fr" : "The Feast (entraînement)",
 				"jp" : "ザ・フィースト (カジュアルマッチ)"
 			}
 		}
@@ -3580,7 +3580,7 @@
 			"name" : {
 				"en" : "Miss Typhon",
 				"de" : "Ultros & Typhon - Zwei wie Rotz und Wasser",
-				"fr" : "Duo de choc<Indent/>: Orthros et maître Typhon",
+				"fr" : "Duo de choc: Orthros et maître Typhon",
 				"jp" : "名コンビ「オルトロス＆テュポーン」"
 			}
 		}
@@ -3712,7 +3712,7 @@
 			"name" : {
 				"en" : "Novice Mahjong (Full Ranked Match)",
 				"de" : "Anfänger-Mahjong (komplette Partie, gewertet)",
-				"fr" : "Mahjong domien<Indent/>: tous rangs (partie classée)",
+				"fr" : "Mahjong domien: tous rangs (partie classée)",
 				"jp" : "ドマ式麻雀：半荘戦一般卓（段位変動有り）"
 			}
 		}
@@ -3723,7 +3723,7 @@
 			"name" : {
 				"en" : "Advanced Mahjong (Full Ranked Match)",
 				"de" : "Fortgeschrittenen-Mahjong (komplette Partie, gewertet)",
-				"fr" : "Mahjong domien<Indent/>: dan seulement (partie classée)",
+				"fr" : "Mahjong domien: dan seulement (partie classée)",
 				"jp" : "ドマ式麻雀：半荘戦有段卓（段位変動有り）"
 			}
 		}
@@ -3734,7 +3734,7 @@
 			"name" : {
 				"en" : "Four-player Mahjong (Full Match, Kuitan Enabled)",
 				"de" : "4-Spieler-Mahjong (komplette Partie, Kuitan aktiviert)",
-				"fr" : "Mahjong domien<Indent/>: 4 joueurs (partie avec kuitan)",
+				"fr" : "Mahjong domien: 4 joueurs (partie avec kuitan)",
 				"jp" : "ドマ式麻雀：半荘戦4人セット卓（クイタン有り）"
 			}
 		}
@@ -3778,7 +3778,7 @@
 			"name" : {
 				"en" : "Four-player Mahjong (Full Match, Kuitan Disabled)",
 				"de" : "4-Spieler-Mahjong (komplette Partie, Kuitan deaktiviert)",
-				"fr" : "Mahjong domien<Indent/>: 4 joueurs (partie sans kuitan)",
+				"fr" : "Mahjong domien: 4 joueurs (partie sans kuitan)",
 				"jp" : "ドマ式麻雀：半荘戦4人セット卓（クイタン無し）"
 			}
 		}
@@ -4130,7 +4130,7 @@
 			"name" : {
 				"en" : "Lock up Your Snorters",
 				"de" : "Explosives Schnaufen",
-				"fr" : "Fungaaah<Indent/>! Et boum<Indent/>!",
+				"fr" : "Fungaaah! Et boum!",
 				"jp" : "はないき爆破デスマッチ"
 			}
 		}
@@ -4702,7 +4702,7 @@
 			"name" : {
 				"en" : "Novice Mahjong (Quick Ranked Match)",
 				"de" : "Anfänger-Mahjong (schnelle Partie, gewertet)",
-				"fr" : "Mahjong domien<Indent/>: tous rangs (partie rapide classée)",
+				"fr" : "Mahjong domien: tous rangs (partie rapide classée)",
 				"jp" : "ドマ式麻雀：東風戦一般卓（段位変動有り）"
 			}
 		}
@@ -4713,7 +4713,7 @@
 			"name" : {
 				"en" : "Advanced Mahjong (Quick Ranked Match)",
 				"de" : "Fortgeschrittenen-Mahjong (schnelle Partie, gewertet)",
-				"fr" : "Mahjong domien<Indent/>: dan seulement (partie rapide classée)",
+				"fr" : "Mahjong domien: dan seulement (partie rapide classée)",
 				"jp" : "ドマ式麻雀：東風戦有段卓（段位変動有り）"
 			}
 		}
@@ -4724,7 +4724,7 @@
 			"name" : {
 				"en" : "Four-player Mahjong (Quick Match, Kuitan Enabled)",
 				"de" : "4-Spieler-Mahjong (schnelle Partie, Kuitan aktiviert)",
-				"fr" : "Mahjong domien<Indent/>: 4 joueurs (partie rapide avec kuitan)",
+				"fr" : "Mahjong domien: 4 joueurs (partie rapide avec kuitan)",
 				"jp" : "ドマ式麻雀：東風戦4人セット卓（クイタン有り）"
 			}
 		}
@@ -4735,7 +4735,7 @@
 			"name" : {
 				"en" : "Four-player Mahjong (Quick Match, Kuitan Disabled)",
 				"de" : "4-Spieler-Mahjong (schnelle Partie, Kuitan deaktiviert)",
-				"fr" : "Mahjong domien<Indent/>: 4 joueurs (partie rapide sans kuitan)",
+				"fr" : "Mahjong domien: 4 joueurs (partie rapide sans kuitan)",
 				"jp" : "ドマ式麻雀：東風戦4人セット卓（クイタン無し）"
 			}
 		}

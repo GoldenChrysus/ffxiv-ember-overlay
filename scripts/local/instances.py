@@ -1,5 +1,6 @@
 import json
 import os.path
+import re
 import shutil
 
 from os import path
@@ -17,6 +18,9 @@ def loadLocal():
 		file.close()
 		return data
 
+def cleanText(s):
+	return re.sub("<[A-Za-z]+/>", "", s)
+
 instances = {}
 local     = loadLocal();
 
@@ -28,10 +32,10 @@ for key in local:
 		"zone_id" : record["ZoneID"],
 		"locales" : {
 			"name" : {
-				"en" : record["Name"]["en"],
-				"de" : record["Name"]["de"],
-				"fr" : record["Name"]["fr"],
-				"jp" : record["Name"]["ja"]
+				"en" : cleanText(record["Name"]["en"]),
+				"de" : cleanText(record["Name"]["de"]),
+				"fr" : cleanText(record["Name"]["fr"]),
+				"jp" : cleanText(record["Name"]["ja"])
 			}
 		}
 	}

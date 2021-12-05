@@ -1130,7 +1130,8 @@
 			"DRG",
 			"ROG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"locales" : {
 			"name" : {
@@ -1674,7 +1675,10 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"LNC",
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Power Surge",
@@ -1902,7 +1906,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Mage's Ballad",
@@ -1916,7 +1922,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Mage's Ballad",
@@ -1930,7 +1938,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Army's Paeon",
@@ -1944,7 +1954,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Army's Paeon",
@@ -2265,7 +2277,8 @@
 			"ACN",
 			"SMN",
 			"RDM",
-			"BLM"
+			"BLM",
+			"SGE"
 		],
 		"locales" : {
 			"name" : {
@@ -2385,7 +2398,8 @@
 			"ACN",
 			"SMN",
 			"RDM",
-			"BLM"
+			"BLM",
+			"SGE"
 		],
 		"locales" : {
 			"name" : {
@@ -4813,9 +4827,9 @@
 		"locales" : {
 			"name" : {
 				"en" : "What You See",
-				"de" : "Wahrnehmungsbonus",
+				"de" : "Expertise-Bonus",
 				"fr" : "Avoir le coup d'œil",
-				"jp" : "カンパニーアクション：識質力アップ"
+				"jp" : "カンパニーアクション：技術力アップ"
 			}
 		}
 	},
@@ -5460,7 +5474,7 @@
 			"name" : {
 				"en" : "Transporting",
 				"de" : "Transport",
-				"fr" : "Chargé",
+				"fr" : "Charge",
 				"jp" : "運搬"
 			}
 		}
@@ -9388,7 +9402,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Raw Intuition",
-				"de" : "Ur-Instinkt",
+				"de" : "Urinstinkt",
 				"fr" : "Intuition pure",
 				"jp" : "原初の直感"
 			}
@@ -10255,7 +10269,7 @@
 				"en" : "Sharper Fang and Claw",
 				"de" : "Fang und Klaue",
 				"fr" : "Croc-et-griffe préparé",
-				"jp" : "竜牙竜爪効果アップ"
+				"jp" : "竜牙竜爪実行可"
 			}
 		}
 	},
@@ -10272,7 +10286,7 @@
 				"en" : "Enhanced Wheeling Thrust",
 				"de" : "Fächerstoß",
 				"fr" : "Percée tournante préparée",
-				"jp" : "竜尾大車輪効果アップ"
+				"jp" : "竜尾大車輪実行可"
 			}
 		}
 	},
@@ -10891,10 +10905,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Gathering Fortune Up",
-				"de" : "Sammelglück erhöht",
-				"fr" : "Récolte de qualité",
-				"jp" : "採集HQ獲得率アップ"
+				"en" : "Angler's Fortune",
+				"de" : "Großfischen",
+				"fr" : "Énorme pêche",
+				"jp" : "ラージサイズ釣り上げ率アップ"
 			}
 		}
 	},
@@ -11098,7 +11112,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Wanderer's Minuet",
@@ -14322,7 +14338,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Intervention",
@@ -14491,7 +14509,7 @@
 			"name" : {
 				"en" : "Brotherhood",
 				"de" : "Bruderschaft",
-				"fr" : "Fraternité",
+				"fr" : "Fraternité combattante",
 				"jp" : "桃園結義：攻撃"
 			}
 		}
@@ -14777,7 +14795,8 @@
 			"ACN",
 			"SMN",
 			"RDM",
-			"BLM"
+			"BLM",
+			"SGE"
 		],
 		"locales" : {
 			"name" : {
@@ -14864,7 +14883,8 @@
 			"ARC",
 			"BRD",
 			"MCH",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"locales" : {
 			"name" : {
@@ -14911,7 +14931,10 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Further Ruin",
@@ -15243,7 +15266,7 @@
 				"en" : "Verfire Ready",
 				"de" : "Erzfeuer-bereit",
 				"fr" : "VerFeu préparé",
-				"jp" : "ヴァルファイア効果アップ"
+				"jp" : "ヴァルファイア実行可"
 			}
 		}
 	},
@@ -15259,7 +15282,7 @@
 				"en" : "Verstone Ready",
 				"de" : "Erzstein-bereit",
 				"fr" : "VerTerre préparée",
-				"jp" : "ヴァルストーン効果アップ"
+				"jp" : "ヴァルストーン実行可"
 			}
 		}
 	},
@@ -15373,7 +15396,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Wind",
@@ -15438,7 +15463,8 @@
 			"DRG",
 			"ROG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"locales" : {
 			"name" : {
@@ -16006,10 +16032,10 @@
 		],
 		"locales" : {
 			"name" : {
-				"en" : "Jinpu",
-				"de" : "Jinpu",
-				"fr" : "Jinpû",
-				"jp" : "陣風"
+				"en" : "Fugetsu",
+				"de" : "Fugetsu",
+				"fr" : "Fûgetsu",
+				"jp" : "風月"
 			}
 		}
 	},
@@ -16022,10 +16048,10 @@
 		],
 		"locales" : {
 			"name" : {
-				"en" : "Shifu",
-				"de" : "Shifu",
-				"fr" : "Shifû",
-				"jp" : "士風"
+				"en" : "Fuka",
+				"de" : "Fuka",
+				"fr" : "Fûka",
+				"jp" : "風花"
 			}
 		}
 	},
@@ -16424,7 +16450,8 @@
 			"ACN",
 			"SMN",
 			"RDM",
-			"BLM"
+			"BLM",
+			"SGE"
 		],
 		"locales" : {
 			"name" : {
@@ -16955,7 +16982,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Riddle of Wind",
@@ -17142,16 +17171,16 @@
 		}
 	},
 	"1379" : {
-		"type" : "debuff",
-		"dot" : false,
-		"debuff" : true,
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_1379_-1_1_C0_0Status",
-				"de" : "_rsv_1379_-1_2_C0_0Status",
-				"fr" : "_rsv_1379_-1_3_C0_0Status",
-				"jp" : "_rsv_1379_-1_0_C0_0Status"
+				"en" : "Almagest",
+				"de" : "Almagest",
+				"fr" : "Almageste",
+				"jp" : "アルマゲスト"
 			}
 		}
 	},
@@ -17533,10 +17562,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "The Road to 70",
+				"en" : "The Road to 80",
 				"de" : "Routine-Bonus",
-				"fr" : "En route vers 70",
-				"jp" : "Lv70経験値ブースト"
+				"fr" : "En route vers 80",
+				"jp" : "Lv80経験値ブースト"
 			}
 		}
 	},
@@ -19115,10 +19144,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "True Self",
-				"de" : "Wahres Selbst",
-				"fr" : "Ressources intérieures",
-				"jp" : "潜在能力"
+				"en" : "Indomitable Spirit",
+				"de" : "Eiserner Kampfeswille",
+				"fr" : "Volonté inflexible",
+				"jp" : "不屈の闘志"
 			}
 		}
 	},
@@ -22561,7 +22590,7 @@
 		],
 		"locales" : {
 			"name" : {
-				"en" : "Flourishing Fan Dance",
+				"en" : "Threefold Fan Dance",
 				"de" : "Fächertanz III",
 				"fr" : "Danse de l'éventail III préparée",
 				"jp" : "扇の舞い【急】実行可"
@@ -23070,7 +23099,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Glint",
@@ -23145,10 +23176,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Raiden Thrust Ready",
-				"de" : "Überfallsstoß bereit",
-				"fr" : "Percée Raiden préparée",
-				"jp" : "竜眼雷電実行可"
+				"en" : "Draconian Fire",
+				"de" : "Zornesfeuer",
+				"fr" : "Feu des dragons",
+				"jp" : "竜眼"
 			}
 		}
 	},
@@ -23376,10 +23407,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Diurnal Opposition",
-				"de" : "Opposition (Diurnal)",
-				"fr" : "Opposition céleste (diurne)",
-				"jp" : "星天対抗［日］"
+				"en" : "Opposition",
+				"de" : "Opposition",
+				"fr" : "Opposition céleste",
+				"jp" : "星天対抗"
 			}
 		}
 	},
@@ -23530,10 +23561,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Nocturnal Intersection",
-				"de" : "Kongruenz (Nocturnal)",
-				"fr" : "Rencontre céleste (nocturne)",
-				"jp" : "星天交差［夜］"
+				"en" : "Intersection",
+				"de" : "Kongruenz",
+				"fr" : "Rencontre céleste",
+				"jp" : "星天交差"
 			}
 		}
 	},
@@ -23981,10 +24012,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Nocturnal Balance",
-				"de" : "Neutral (Nocturnal)",
-				"fr" : "Adepte de la neutralité (nocturne)",
-				"jp" : "ニュートラルセクト［夜］"
+				"en" : "Neutral Sect",
+				"de" : "Neutral",
+				"fr" : "Adepte de la neutralité",
+				"jp" : "ニュートラルセクト"
 			}
 		}
 	},
@@ -24699,7 +24730,8 @@
 			"DRG",
 			"ROG",
 			"NIN",
-			"SAM"
+			"SAM",
+			"RPR"
 		],
 		"locales" : {
 			"name" : {
@@ -24740,7 +24772,8 @@
 			"ARC",
 			"BRD",
 			"MCH",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"locales" : {
 			"name" : {
@@ -24795,7 +24828,8 @@
 			"ACN",
 			"SMN",
 			"RDM",
-			"BLM"
+			"BLM",
+			"SGE"
 		],
 		"locales" : {
 			"name" : {
@@ -25057,7 +25091,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Wanderer's Minuet",
@@ -25179,7 +25215,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Intervention",
@@ -25651,7 +25689,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nascent Glint",
@@ -27044,7 +27084,8 @@
 			"ARC",
 			"BRD",
 			"MCH",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"locales" : {
 			"name" : {
@@ -27078,7 +27119,7 @@
 			"name" : {
 				"en" : "Brotherhood",
 				"de" : "Bruderschaft",
-				"fr" : "Fraternité",
+				"fr" : "Fraternité combattante",
 				"jp" : "桃園結義：攻撃"
 			}
 		}
@@ -27191,7 +27232,8 @@
 			"ARC",
 			"BRD",
 			"MCH",
-			"DNC"
+			"DNC",
+			"RPR"
 		],
 		"locales" : {
 			"name" : {
@@ -27516,7 +27558,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Army's Paeon",
@@ -27530,7 +27574,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Wanderer's Minuet",
@@ -27544,7 +27590,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "The Wanderer's Minuet",
@@ -27558,7 +27606,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Mage's Ballad",
@@ -27572,7 +27622,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Army's Paeon",
@@ -31523,7 +31575,7 @@
 			"name" : {
 				"en" : "Marching Orders: Feeling the Burn",
 				"de" : "Hilfsgesuch: Schwarzbrands Testflug",
-				"fr" : "Passe-droit d'interception<Indent/>: On arrête le progrès",
+				"fr" : "Passe-droit d'interception: On arrête le progrès",
 				"jp" : "攻撃要請：試作飛行型魔導アーマー「ブラックバーン」"
 			}
 		}
@@ -31537,7 +31589,7 @@
 			"name" : {
 				"en" : "Marching Orders: On Serpents' Wings",
 				"de" : "Hilfsgesuch: Der Geistertrupp",
-				"fr" : "Passe-droit d'interception<Indent/>: Zirnitrop",
+				"fr" : "Passe-droit d'interception: Zirnitrop",
 				"jp" : "攻撃要請：妖霊使い「妖戦百人隊」"
 			}
 		}
@@ -31551,7 +31603,7 @@
 			"name" : {
 				"en" : "Marching Orders: Never Cry Wolf",
 				"de" : "Hilfsgesuch: Eiswolf Hrodvitnir",
-				"fr" : "Passe-droit d'interception<Indent/>: Et n'y Hród'viens plus<Indent/>!",
+				"fr" : "Passe-droit d'interception: Et n'y Hród'viens plus!",
 				"jp" : "攻撃要請：邪悪なる氷狼「フローズヴィトニル」"
 			}
 		}
@@ -31565,7 +31617,7 @@
 			"name" : {
 				"en" : "Marching Orders: Here Comes the Cavalry",
 				"de" : "Hilfsgesuch: Halb Pferd, halb Garlear",
-				"fr" : "Passe-droit d'interception<Indent/>: Un cavalier qui surgit hors de la nuit",
+				"fr" : "Passe-droit d'interception: Un cavalier qui surgit hors de la nuit",
 				"jp" : "攻撃要請：鋼鉄の人馬「魔導騎兵大隊」"
 			}
 		}
@@ -31579,7 +31631,7 @@
 			"name" : {
 				"en" : "Marching Orders: Worn to a Shadow",
 				"de" : "Hilfsgesuch: Alkonost, schön und gefiedert",
-				"fr" : "Passe-droit d'interception<Indent/>: Oiseau d'enfer",
+				"fr" : "Passe-droit d'interception: Oiseau d'enfer",
 				"jp" : "攻撃要請：有角の凶鳥「アルコノスト」"
 			}
 		}
@@ -31593,7 +31645,7 @@
 			"name" : {
 				"en" : "Marching Orders: A Familiar Face",
 				"de" : "Hilfsgesuch: Hashmallim der Einiger",
-				"fr" : "Passe-droit d'interception<Indent/>: Le Grand Ordonnateur",
+				"fr" : "Passe-droit d'interception: Le Grand Ordonnateur",
 				"jp" : "攻撃要請：模造統制者「IVレギオン・ハシュマリム」"
 			}
 		}
@@ -32539,7 +32591,7 @@
 			"name" : {
 				"en" : "Who Is She",
 				"de" : "Dug?",
-				"fr" : "Samanta<Indent/>?",
+				"fr" : "Samanta?",
 				"jp" : "ドグ？"
 			}
 		}
@@ -32553,7 +32605,7 @@
 			"name" : {
 				"en" : "Who Is She",
 				"de" : "Dug?",
-				"fr" : "Samanta<Indent/>?",
+				"fr" : "Samanta?",
 				"jp" : "ドグ？"
 			}
 		}
@@ -32651,7 +32703,7 @@
 			"name" : {
 				"en" : "Collector's Focus",
 				"de" : "Intuitiver Fokus",
-				"fr" : "Œil du col<SoftHyphen/>lec<SoftHyphen/>tion<SoftHyphen/>neur",
+				"fr" : "Œil du collectionneur",
 				"jp" : "バリューアップ発生率アップ"
 			}
 		}
@@ -33697,7 +33749,7 @@
 			"name" : {
 				"en" : "Eureka Moment",
 				"de" : "Triumph des Wissens bereit",
-				"fr" : "Étalage des con<SoftHyphen/>nais<SoftHyphen/>san<SoftHyphen/>ces préparé",
+				"fr" : "Étalage des connaissances préparé",
 				"jp" : "理知興起実行可"
 			}
 		}
@@ -34231,7 +34283,7 @@
 			"name" : {
 				"en" : "Rightward Whimsy",
 				"de" : "Prinzessinnenlaune: rechts",
-				"fr" : "Caprice de princesse<Indent/>: à droite",
+				"fr" : "Caprice de princesse: à droite",
 				"jp" : "気まぐれ：右"
 			}
 		}
@@ -34245,7 +34297,7 @@
 			"name" : {
 				"en" : "Leftward Whimsy",
 				"de" : "Prinzessinnenlaune: links",
-				"fr" : "Caprice de princesse<Indent/>: à gauche",
+				"fr" : "Caprice de princesse: à gauche",
 				"jp" : "気まぐれ：左"
 			}
 		}
@@ -34259,7 +34311,7 @@
 			"name" : {
 				"en" : "Backward Whimsy",
 				"de" : "Prinzessinnenlaune: hinten",
-				"fr" : "Caprice de princesse<Indent/>: en arrière",
+				"fr" : "Caprice de princesse: en arrière",
 				"jp" : "気まぐれ：後"
 			}
 		}
@@ -35061,7 +35113,7 @@
 			"name" : {
 				"en" : "Willful",
 				"de" : "Unerschütterlicher Wille",
-				"fr" : "Volonté in<SoftHyphen/>é<SoftHyphen/>bran<SoftHyphen/>la<SoftHyphen/>ble",
+				"fr" : "Volonté inébranlable",
 				"jp" : "不屈の意思"
 			}
 		}
@@ -35103,7 +35155,7 @@
 			"name" : {
 				"en" : "Forward Whimsy",
 				"de" : "Prinzessinnenlaune: vorne",
-				"fr" : "Caprice de princesse<Indent/>: en avant",
+				"fr" : "Caprice de princesse: en avant",
 				"jp" : "気まぐれ：前"
 			}
 		}
@@ -35119,7 +35171,7 @@
 			"name" : {
 				"en" : "Ogi Namikiri Ready",
 				"de" : "Ogi Namikiri",
-				"fr" : "Ôgi<Indent/>: Namikiri préparée",
+				"fr" : "Ôgi: Namikiri préparée",
 				"jp" : "奥義波切実行可"
 			}
 		}

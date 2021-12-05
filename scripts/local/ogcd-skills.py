@@ -38,6 +38,9 @@ def loadTraits():
 		file.close()
 		return data
 
+def cleanText(s):
+	return re.sub("<[A-Za-z]+/>", "", s)
+
 skills       = {}
 traits       = {}
 local        = loadLocal();
@@ -75,10 +78,10 @@ for key in local:
 		"pvp"           : record["IsPVP"],
 		"locales"       : {
 			"name" : {
-				"en" : record["Name"]["en"] + pvp,
-				"de" : record["Name"]["de"] + pvp,
-				"fr" : record["Name"]["fr"] + pvp,
-				"jp" : record["Name"]["ja"] + pvp
+				"en" : cleanText(record["Name"]["en"]) + pvp,
+				"de" : cleanText(record["Name"]["de"]) + pvp,
+				"fr" : cleanText(record["Name"]["fr"]) + pvp,
+				"jp" : cleanText(record["Name"]["ja"]) + pvp
 			}
 		}
 	}

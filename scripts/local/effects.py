@@ -1,5 +1,6 @@
 import json
 import os.path
+import re
 import shutil
 
 from os import path
@@ -56,7 +57,10 @@ def loadDebuffs():
 		data = json.load(file)
 
 		file.close()
-		return data	
+		return data
+
+def cleanText(s):
+	return re.sub("<[A-Za-z]+/>", "", s)
 
 effects          = {}
 local            = loadLocal()
@@ -95,10 +99,10 @@ for key in local:
 		"jobs"    : [],
 		"locales" : {
 			"name" : {
-				"en" : record["Name"]["en"],
-				"de" : record["Name"]["de"],
-				"fr" : record["Name"]["fr"],
-				"jp" : record["Name"]["ja"]
+				"en" : cleanText(record["Name"]["en"]),
+				"de" : cleanText(record["Name"]["de"]),
+				"fr" : cleanText(record["Name"]["fr"]),
+				"jp" : cleanText(record["Name"]["ja"])
 			}
 		}
 	}
