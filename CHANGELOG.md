@@ -10,10 +10,9 @@
 ### Features
 - Added ability to track debuffs
 - Added Endwalker actions (spells), statuses (effects), and zones
-- Updated action and effect icons
 
 ### UI Changes
-- N/A
+- Updated action and effect icons
 
 ### Code Changes
 - N/A
