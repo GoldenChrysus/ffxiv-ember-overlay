@@ -82,6 +82,7 @@ class SpellService {
 				remaining     : recast,
 				cooldown      : Math.max(0, recast),
 				dot           : (used[i].subtype === "dot"),
+				debuff        : (used[i].subtype === "debuff"),
 				party         : used[i].party,
 				defaulted     : used[i].defaulted,
 				type_position : used[i].type_position,
@@ -147,7 +148,7 @@ class SpellService {
 
 			let tts_key = (this.spells[i].party) ? "party_use_tts" : "use_tts";
 
-			if (this.settings[tts_key] && this.spells[i].remaining > -10000000 && this.spells[i].remaining <= threshold) {
+			if (this.settings[tts_key] && this.spells[i].remaining > -10000000 && (this.spells[i].remaining <= threshold || this.spells[i].debuff)) {
 				this.processTTS(i);
 			}
 		}
@@ -215,9 +216,11 @@ class SpellService {
 			spells        : {},
 			effects       : {},
 			dots          : {},
+			debuffs       : {},
 			party_spells  : {},
 			party_effects : {},
-			party_dots    : {}
+			party_dots    : {},
+			party_debuffs : {}
 		};
 
 		for (let key in this.valid_names) {
@@ -255,6 +258,7 @@ class SpellService {
 
 			case "effect":
 			case "dot":
+			case "debuff":
 				data = (SkillData.Effects[id]) ? SkillData.Effects[id].jobs : false;
 
 				break;
@@ -280,7 +284,8 @@ class SpellService {
 		let data         = {
 			skill  : state.settings.spells_mode.spells,
 			effect : state.settings.spells_mode.effects,
-			dot    : state.settings.spells_mode.dots
+			dot    : state.settings.spells_mode.dots,
+			debuff : state.settings.spells_mode.debuffs
 		};
 		let data_names   = [];
 		let in_use_names = {};
@@ -336,7 +341,7 @@ class SpellService {
 					continue;
 				}
 
-				let main_type = (type === "dot") ? "effect" : type;
+				let main_type = (["dot", "debuff"].indexOf(type) !== -1) ? "effect" : type;
 				let key       = (main_type === "effect") ? `${main_type}-${english_name}` : `${main_type}-${id}`;
 
 				state.internal.spells.defaulted[name] = {
@@ -375,6 +380,7 @@ class SpellService {
 			cooldown      : 0,
 			stacks        : 0,
 			dot           : SkillData.oGCDSkills[id].dot,
+			debuff        : SkillData.oGCDSkills[id].debuff,
 			party         : false,
 			defaulted     : false,
 			type_position : 0,

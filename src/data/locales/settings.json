@@ -451,6 +451,18 @@
 					"ru" : "ДОТ'ы"
 				},
 				{
+					"en" : "Debuffs",
+					"pt" : "Debuffs",
+					"cn" : "Debuffs",
+					"jp" : "Debuffs",
+					"de" : "Debuffs",
+					"es" : "Debuffs",
+					"fr" : "Debuffs",
+					"kr" : "Debuffs",
+					"ua" : "Debuffs",
+					"ru" : "Debuffs"
+				},
+				{
 					"en" : "General",
 					"pt" : "Geral",
 					"cn" : "通用",
@@ -515,6 +527,18 @@
 					"ru" : "ДОТ'ы"
 				},
 				{
+					"en" : "Debuffs",
+					"pt" : "Debuffs",
+					"cn" : "Debuffs",
+					"jp" : "Debuffs",
+					"de" : "Debuffs",
+					"es" : "Debuffs",
+					"fr" : "Debuffs",
+					"kr" : "Debuffs",
+					"ua" : "Debuffs",
+					"ru" : "Debuffs"
+				},
+				{
 					"en" : "General",
 					"pt" : "Geral",
 					"cn" : "通用",
@@ -577,6 +601,18 @@
 					"kr" : "도트기",
 					"ua" : "DOT'и",
 					"ru" : "ДОТ'ы"
+				},
+				{
+					"en" : "Debuffs",
+					"pt" : "Debuffs",
+					"cn" : "Debuffs",
+					"jp" : "Debuffs",
+					"de" : "Debuffs",
+					"es" : "Debuffs",
+					"fr" : "Debuffs",
+					"kr" : "Debuffs",
+					"ua" : "Debuffs",
+					"ru" : "Debuffs"
 				},
 				{
 					"en" : "General",
@@ -1078,6 +1114,18 @@
 			"ua" : "DOT'и для Відстеження",
 			"ru" : "ДОТ'ы для Отслеживания"
 		},
+		"spells_mode.debuffs" : {
+			"en" : "Debuffs to Track",
+			"pt" : "Debuffs to Track",
+			"cn" : "Debuffs to Track",
+			"jp" : "Debuffs to Track",
+			"de" : "Debuffs to Track",
+			"es" : "Debuffs to Track",
+			"fr" : "Debuffs to Track",
+			"kr" : "Debuffs to Track",
+			"ua" : "Debuffs to Track",
+			"ru" : "Debuffs to Track"
+		},
 		"spells_mode.spells_per_row" : {
 			"en" : "Spells Per Row",
 			"pt" : "Magias Por Coluna",
@@ -1209,6 +1257,18 @@
 			"kr" : "도트기 역표시",
 			"ua" : "Індикатор реверсії DOT-ів",
 			"ru" : "Обратить индикатор для ДОТ"
+		},
+		"spells_mode.reverse_debuff" : {
+			"en" : "Reverse Indicator for Debuffs",
+			"pt" : "Reverse Indicator for Debuffs",
+			"cn" : "Reverse Indicator for Debuffs",
+			"jp" : "Reverse Indicator for Debuffs",
+			"de" : "Reverse Indicator for Debuffs",
+			"es" : "Reverse Indicator for Debuffs",
+			"fr" : "Reverse Indicator for Debuffs",
+			"kr" : "Reverse Indicator for Debuffs",
+			"ua" : "Reverse Indicator for Debuffs",
+			"ru" : "Reverse Indicator for Debuffs"
 		},
 		"spells_mode.always_skill" : {
 			"en" : "Display Permanently",
@@ -1676,6 +1736,18 @@
 					"kr" : "DOT",
 					"ua" : "DOT",
 					"ru" : "ДОТ"
+				},
+				"debuff" : {
+					"en" : "Debuff",
+					"pt" : "Debuff",
+					"cn" : "Debuff",
+					"jp" : "Debuff",
+					"de" : "Debuff",
+					"es" : "Debuff",
+					"fr" : "Debuff",
+					"kr" : "Debuff",
+					"ua" : "Debuff",
+					"ru" : "Debuff"
 				}
 			},
 			"layout_options" : {

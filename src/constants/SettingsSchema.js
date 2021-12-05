@@ -559,6 +559,33 @@ const SettingsSchema = {
 					{
 						settings : [
 							{
+								key_path : "spells_mode.debuffs",
+								locale   : "spells_mode.debuffs",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getEffectOptions("debuff")
+							},
+							{
+								key_path : "spells_mode.reverse_debuff",
+								locale   : "spells_mode.reverse_debuff",
+								type     : "checkbox"
+							},
+							{
+								key_path : "spells_mode.always_debuff",
+								locale   : "spells_mode.always_skill",
+								type     : "checkbox"
+							},
+							{
+								key_path : "spells_mode.always_debuff_static",
+								locale   : "spells_mode.always_skill_static",
+								type     : "checkbox"
+							}
+						]
+					},
+					{
+						settings : [
+							{
 								key_path : "spells_mode.show_icon",
 								type     : "checkbox"
 							},
@@ -670,6 +697,23 @@ const SettingsSchema = {
 					{
 						settings : [
 							{
+								key_path : "spells_mode.party_debuffs",
+								locale   : "spells_mode.debuffs",
+								type     : "select",
+								multiple : true,
+								search   : true,
+								options  : () => LocalizationService.getEffectOptions("debuff", true)
+							},
+							{
+								key_path : "spells_mode.party_reverse_debuff",
+								locale   : "spells_mode.reverse_debuff",
+								type     : "checkbox"
+							}
+						]
+					},
+					{
+						settings : [
+							{
 								key_path : "spells_mode.party_use_tts",
 								locale   : "spells_mode.use_tts",
 								type     : "checkbox"
@@ -752,6 +796,31 @@ const SettingsSchema = {
 							},
 							{
 								key_path : "spells_mode.designer.dot.indicator",
+								locale   : "spells_mode.designer.skill.indicator",
+								type     : "select",
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions()
+							}
+						]
+					},
+					{
+						settings : [
+							{
+								key_path : "spells_mode.designer.debuff.warning",
+								locale   : "spells_mode.designer.skill.warning",
+								type     : "checkbox"
+							},
+							{
+								key_path : "spells_mode.designer.debuff.border",
+								locale   : "spells_mode.designer.effect.border",
+								type     : "checkbox"
+							},
+							{
+								key_path : "spells_mode.designer.debuff.cooldown_bottom_left",
+								locale   : "spells_mode.designer.skill.cooldown_bottom_left",
+								type     : "checkbox"
+							},
+							{
+								key_path : "spells_mode.designer.debuff.indicator",
 								locale   : "spells_mode.designer.skill.indicator",
 								type     : "select",
 								options  : () => LocalizationService.getSpellDesignerIndicatorOptions()
