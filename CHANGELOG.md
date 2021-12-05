@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.33.0-alpha.3
+## 0.33.0-alpha.4
 
 **Released: [in staging]**
 
@@ -10,6 +10,7 @@
 ### Features
 - Added ability to track debuffs
 - Added Endwalker actions (spells), statuses (effects), and zones
+- Updated action and effect icons
 
 ### UI Changes
 - N/A
