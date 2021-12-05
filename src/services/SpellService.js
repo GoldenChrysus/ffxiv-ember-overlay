@@ -149,18 +149,28 @@ class SpellService {
 			let tts_key = (this.spells[i].party) ? "party_use_tts" : "use_tts";
 
 			if (this.settings[tts_key] && this.spells[i].remaining > -10000000 && (this.spells[i].remaining <= threshold || this.spells[i].debuff)) {
-				this.processTTS(i);
+				this.processTTS(i, threshold);
 			}
 		}
 
 		return changed;
 	}
 
-	processTTS(key) {
+	processTTS(key, threshold) {
 		let tts_key = (this.spells[key].party) ? "party_use_tts" : "use_tts";
 
 		if (!this.settings[tts_key] || this.spells[key].tts) {
 			return;
+		}
+
+		if (this.spells[key].debuff) {
+			if (this.spells[key].party && this.spells[key].remaining <= threshold)  {
+				return;
+			}
+
+			if (!this.spells[key].party && this.spells[key].remaining > threshold)  {
+				return;
+			}
 		}
 
 		let log_key = `${this.spells[key].subtype}-${this.spells[key].id}`;
@@ -180,6 +190,10 @@ class SpellService {
 	}
 
 	processProcTTS(key) {
+		if (["dot", "debuff"].indexOf(this.spells[key].subtype) !== -1) {
+			return;
+		}
+
 		let tts_key = (this.spells[key].party) ? `party_tts_on_${this.spells[key].type}` : `tts_on_${this.spells[key].type}`;
 
 		if (!this.settings[tts_key]) {
