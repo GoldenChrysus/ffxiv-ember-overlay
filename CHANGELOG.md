@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.33.0-alpha.1
+## 0.33.0-alpha.2
 
 **Released: [in staging]**
 
