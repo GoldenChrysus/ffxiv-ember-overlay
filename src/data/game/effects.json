@@ -329,7 +329,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Accuracy Up",
-				"de" : "Prä<SoftHyphen/>zi<SoftHyphen/>sions-Bo<SoftHyphen/>nus",
+				"de" : "Präzisions-Bonus",
 				"fr" : "Bonus de précision",
 				"jp" : "命中率アップ"
 			}
@@ -343,7 +343,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Accuracy Down",
-				"de" : "Prä<SoftHyphen/>zi<SoftHyphen/>sions-Ma<SoftHyphen/>lus",
+				"de" : "Präzisions-Malus",
 				"fr" : "Malus de précision",
 				"jp" : "命中率ダウン"
 			}
@@ -357,7 +357,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Defense Up",
-				"de" : "Ver<SoftHyphen/>tei<SoftHyphen/>di<SoftHyphen/>gungs-Bo<SoftHyphen/>nus",
+				"de" : "Verteidigungs-Bonus",
 				"fr" : "Bonus de défense",
 				"jp" : "物理防御力アップ"
 			}
@@ -371,7 +371,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Defense Down",
-				"de" : "Ver<SoftHyphen/>tei<SoftHyphen/>di<SoftHyphen/>gungs-Ma<SoftHyphen/>lus",
+				"de" : "Verteidigungs-Malus",
 				"fr" : "Malus de défense",
 				"jp" : "物理防御力ダウン"
 			}
@@ -469,7 +469,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Magic Defense Up",
-				"de" : "Ma<SoftHyphen/>gie<SoftHyphen/>ab<SoftHyphen/>wehr-Bo<SoftHyphen/>nus",
+				"de" : "Magieabwehr-Bonus",
 				"fr" : "Bonus de défense magique",
 				"jp" : "魔法防御力アップ"
 			}
@@ -483,7 +483,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Magic Defense Down",
-				"de" : "Ma<SoftHyphen/>gie<SoftHyphen/>ab<SoftHyphen/>wehr-Ma<SoftHyphen/>lus",
+				"de" : "Magieabwehr-Malus",
 				"fr" : "Malus de défense magique",
 				"jp" : "魔法防御力ダウン"
 			}
@@ -918,7 +918,7 @@
 			"name" : {
 				"en" : "Stunstrikes",
 				"de" : "Ausschalten",
-				"fr" : "Coups étour<SoftHyphen/>dis<SoftHyphen/>sants",
+				"fr" : "Coups étourdissants",
 				"jp" : "オートアタック強化：スタン"
 			}
 		}
@@ -3894,7 +3894,7 @@
 			"name" : {
 				"en" : "Recuperation",
 				"de" : "Segnung",
-				"fr" : "Réta<SoftHyphen/>blis<SoftHyphen/>se<SoftHyphen/>ment",
+				"fr" : "Rétablissement",
 				"jp" : "治癒"
 			}
 		}
@@ -4841,7 +4841,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Eat from the Hand",
-				"de" : "Kunst<SoftHyphen/>fer<SoftHyphen/>tig<SoftHyphen/>keits-Bonus",
+				"de" : "Kunstfertigkeits-Bonus",
 				"fr" : "La main qui nourrit",
 				"jp" : "カンパニーアクション：作業精度アップ"
 			}
@@ -7241,7 +7241,7 @@
 			"name" : {
 				"en" : "Facility Access: Production",
 				"de" : "Arbeitsstätte: Herstellung",
-				"fr" : "Installation<Indent/>: production",
+				"fr" : "Installation: production",
 				"jp" : "製作施設：部材工作"
 			}
 		}
@@ -7255,7 +7255,7 @@
 			"name" : {
 				"en" : "Facility Access: Finishing",
 				"de" : "Arbeitsstätte: Veredelung",
-				"fr" : "Installation<Indent/>: finition",
+				"fr" : "Installation: finition",
 				"jp" : "製作施設：精密工作"
 			}
 		}
@@ -7269,7 +7269,7 @@
 			"name" : {
 				"en" : "Facility Access: Detailing",
 				"de" : "Arbeitsstätte: Feinarbeit",
-				"fr" : "Installation<Indent/>: minutie",
+				"fr" : "Installation: minutie",
 				"jp" : "製作施設：難関工作"
 			}
 		}
@@ -7283,7 +7283,7 @@
 			"name" : {
 				"en" : "Facility Access: Production II",
 				"de" : "Arbeitsstätte: Herstellung II",
-				"fr" : "Installation<Indent/>: production II",
+				"fr" : "Installation: production II",
 				"jp" : "製作施設：部材工作II"
 			}
 		}
@@ -7297,7 +7297,7 @@
 			"name" : {
 				"en" : "Facility Access: Specialization",
 				"de" : "Arbeitsstätte: Spezialisierung",
-				"fr" : "Installation<Indent/>: spécialité",
+				"fr" : "Installation: spécialité",
 				"jp" : "製作施設：専門工作"
 			}
 		}
@@ -7311,7 +7311,7 @@
 			"name" : {
 				"en" : "Facility Access: Specialization II",
 				"de" : "Arbeitsstätte: Spezialisierung II",
-				"fr" : "Installation<Indent/>: spécialité II",
+				"fr" : "Installation: spécialité II",
 				"jp" : "製作施設：専門工作II"
 			}
 		}
@@ -7325,7 +7325,7 @@
 			"name" : {
 				"en" : "Facility Access: Detailing II",
 				"de" : "Arbeitsstätte: Feinarbeit II",
-				"fr" : "Installation<Indent/>: minutie II",
+				"fr" : "Installation: minutie II",
 				"jp" : "製作施設：難関工作II"
 			}
 		}
@@ -7339,7 +7339,7 @@
 			"name" : {
 				"en" : "Facility Access: Finishing II",
 				"de" : "Arbeitsstätte: Veredelung II",
-				"fr" : "Installation<Indent/>: finition II",
+				"fr" : "Installation: finition II",
 				"jp" : "製作施設：精密工作II"
 			}
 		}
@@ -7619,7 +7619,7 @@
 			"name" : {
 				"en" : "Erratic Blaster",
 				"de" : "Erratischer Puls",
-				"fr" : "Électrochoc im<SoftHyphen/>pré<SoftHyphen/>vi<SoftHyphen/>si<SoftHyphen/>ble",
+				"fr" : "Électrochoc imprévisible",
 				"jp" : "エラティックブラスター"
 			}
 		}
@@ -8599,7 +8599,7 @@
 			"name" : {
 				"en" : "Red Light",
 				"de" : "Stillgestanden",
-				"fr" : "Halte<Indent/>!",
+				"fr" : "Halte!",
 				"jp" : "動くな！"
 			}
 		}
@@ -8654,7 +8654,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Movement Speed Up",
-				"de" : "Ge<SoftHyphen/>schwindig<SoftHyphen/>keit +",
+				"de" : "Geschwindigkeit +",
 				"fr" : "Vitesse de déplacement accrue",
 				"jp" : "移動速度上昇"
 			}
@@ -8780,7 +8780,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Offensive Optimization",
-				"de" : "Of<SoftHyphen/>fen<SoftHyphen/>siv<SoftHyphen/>hal<SoftHyphen/>tung",
+				"de" : "Offensivhaltung",
 				"fr" : "Optimisation offensive",
 				"jp" : "攻撃形態"
 			}
@@ -10313,7 +10313,7 @@
 			"name" : {
 				"en" : "Collector's Glove",
 				"de" : "Sammlergespür",
-				"fr" : "Gant de col<SoftHyphen/>lec<SoftHyphen/>tion<SoftHyphen/>neur",
+				"fr" : "Gant de collectionneur",
 				"jp" : "収集品採集"
 			}
 		}
@@ -11527,7 +11527,7 @@
 			"name" : {
 				"en" : "Balance Drawn",
 				"de" : "Gezogen: Waage",
-				"fr" : "Tirage<Indent/>: la Balance",
+				"fr" : "Tirage: la Balance",
 				"jp" : "ドロー：アーゼマの均衡"
 			}
 		}
@@ -11541,7 +11541,7 @@
 			"name" : {
 				"en" : "Bole Drawn",
 				"de" : "Gezogen: Eiche",
-				"fr" : "Tirage<Indent/>: le Tronc",
+				"fr" : "Tirage: le Tronc",
 				"jp" : "ドロー：世界樹の幹"
 			}
 		}
@@ -11555,7 +11555,7 @@
 			"name" : {
 				"en" : "Arrow Drawn",
 				"de" : "Gezogen: Pfeil",
-				"fr" : "Tirage<Indent/>: la Flèche",
+				"fr" : "Tirage: la Flèche",
 				"jp" : "ドロー：オシュオンの矢"
 			}
 		}
@@ -11569,7 +11569,7 @@
 			"name" : {
 				"en" : "Spear Drawn",
 				"de" : "Gezogen: Speer",
-				"fr" : "Tirage<Indent/>: l'Épieu",
+				"fr" : "Tirage: l'Épieu",
 				"jp" : "ドロー：ハルオーネの槍"
 			}
 		}
@@ -11583,7 +11583,7 @@
 			"name" : {
 				"en" : "Ewer Drawn",
 				"de" : "Gezogen: Krug",
-				"fr" : "Tirage<Indent/>: l'Aiguière",
+				"fr" : "Tirage: l'Aiguière",
 				"jp" : "ドロー：サリャクの水瓶"
 			}
 		}
@@ -11597,7 +11597,7 @@
 			"name" : {
 				"en" : "Spire Drawn",
 				"de" : "Gezogen: Turm",
-				"fr" : "Tirage<Indent/>: la Tour",
+				"fr" : "Tirage: la Tour",
 				"jp" : "ドロー：ビエルゴの塔"
 			}
 		}
@@ -11625,7 +11625,7 @@
 			"name" : {
 				"en" : "Balance Held",
 				"de" : "Abgelegt: Waage",
-				"fr" : "Ajout<Indent/>: la Balance",
+				"fr" : "Ajout: la Balance",
 				"jp" : "キープ：アーゼマの均衡"
 			}
 		}
@@ -11639,7 +11639,7 @@
 			"name" : {
 				"en" : "Bole Held",
 				"de" : "Abgelegt: Eiche",
-				"fr" : "Ajout<Indent/>: le Tronc",
+				"fr" : "Ajout: le Tronc",
 				"jp" : "キープ：世界樹の幹"
 			}
 		}
@@ -11653,7 +11653,7 @@
 			"name" : {
 				"en" : "Arrow Held",
 				"de" : "Abgelegt: Pfeil",
-				"fr" : "Ajout<Indent/>: la Flèche",
+				"fr" : "Ajout: la Flèche",
 				"jp" : "キープ：オシュオンの矢"
 			}
 		}
@@ -11667,7 +11667,7 @@
 			"name" : {
 				"en" : "Spear Held",
 				"de" : "Abgelegt: Speer",
-				"fr" : "Ajout<Indent/>: l'Épieu",
+				"fr" : "Ajout: l'Épieu",
 				"jp" : "キープ：ハルオーネの槍"
 			}
 		}
@@ -11681,7 +11681,7 @@
 			"name" : {
 				"en" : "Ewer Held",
 				"de" : "Abgelegt: Krug",
-				"fr" : "Ajout<Indent/>: l'Aiguière",
+				"fr" : "Ajout: l'Aiguière",
 				"jp" : "キープ：サリャクの水瓶"
 			}
 		}
@@ -11695,7 +11695,7 @@
 			"name" : {
 				"en" : "Spire Held",
 				"de" : "Abgelegt: Turm",
-				"fr" : "Ajout<Indent/>: la Tour",
+				"fr" : "Ajout: la Tour",
 				"jp" : "キープ：ビエルゴの塔"
 			}
 		}
@@ -12648,7 +12648,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Goblixer Grumblygut",
-				"de" : "Neben<SoftHyphen/>wirkungen",
+				"de" : "Nebenwirkungen",
 				"fr" : "Effet secondaire",
 				"jp" : "ゴブリポーション副作用"
 			}
@@ -13698,7 +13698,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Movement Speed Up",
-				"de" : "Ge<SoftHyphen/>schwindig<SoftHyphen/>keit +",
+				"de" : "Geschwindigkeit +",
 				"fr" : "Vitesse de déplacement accrue",
 				"jp" : "移動速度上昇"
 			}
@@ -14480,7 +14480,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Right Eye",
-				"de" : "Rechtes Drachen<SoftHyphen/>auge",
+				"de" : "Rechtes Drachenauge",
 				"fr" : "Œil droit",
 				"jp" : "竜の右眼"
 			}
@@ -14494,7 +14494,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Left Eye",
-				"de" : "Linkes Drachen<SoftHyphen/>auge",
+				"de" : "Linkes Drachenauge",
 				"fr" : "Œil gauche",
 				"jp" : "竜の左眼"
 			}
@@ -15201,7 +15201,7 @@
 			"name" : {
 				"en" : "Recuperation",
 				"de" : "Segnung",
-				"fr" : "Réta<SoftHyphen/>blis<SoftHyphen/>se<SoftHyphen/>ment",
+				"fr" : "Rétablissement",
 				"jp" : "治癒"
 			}
 		}
@@ -15357,7 +15357,7 @@
 			"name" : {
 				"en" : "Chiten",
 				"de" : "Hissatsu: Chiten",
-				"fr" : "Hissatsu<Indent/>: Chiten",
+				"fr" : "Hissatsu: Chiten",
 				"jp" : "必殺剣・地天"
 			}
 		}
@@ -15960,7 +15960,7 @@
 			"name" : {
 				"en" : "Forward March",
 				"de" : "Geistlenkung vorwärts",
-				"fr" : "Contrainte mentale<Indent/>: avancer",
+				"fr" : "Contrainte mentale: avancer",
 				"jp" : "移動命令：前"
 			}
 		}
@@ -15974,7 +15974,7 @@
 			"name" : {
 				"en" : "About Face",
 				"de" : "Geistlenkung rückwärts",
-				"fr" : "Contrainte mentale<Indent/>: reculer",
+				"fr" : "Contrainte mentale: reculer",
 				"jp" : "移動命令：後"
 			}
 		}
@@ -15988,7 +15988,7 @@
 			"name" : {
 				"en" : "Left Face",
 				"de" : "Geistlenkung links",
-				"fr" : "Contrainte mentale<Indent/>: virage à gauche",
+				"fr" : "Contrainte mentale: virage à gauche",
 				"jp" : "移動命令：左"
 			}
 		}
@@ -16002,7 +16002,7 @@
 			"name" : {
 				"en" : "Right Face",
 				"de" : "Geistlenkung rechts",
-				"fr" : "Contrainte mentale<Indent/>: virage à droite",
+				"fr" : "Contrainte mentale: virage à droite",
 				"jp" : "移動命令：右"
 			}
 		}
@@ -17736,7 +17736,7 @@
 			"name" : {
 				"en" : "Divine Commandment: Flee",
 				"de" : "Wort Gottes: Hinfort!",
-				"fr" : "Révélation<Indent/>: Ne cesse pas de te mouvoir<Indent/>!",
+				"fr" : "Révélation: Ne cesse pas de te mouvoir!",
 				"jp" : "神の啓示：行動し続けよ"
 			}
 		}
@@ -17750,7 +17750,7 @@
 			"name" : {
 				"en" : "Divine Commandment: Turn",
 				"de" : "Wort Gottes: Sieh weg!",
-				"fr" : "Révélation<Indent/>: Détourne ton regard<Indent/>!",
+				"fr" : "Révélation: Détourne ton regard!",
 				"jp" : "神の啓示：見るなかれ"
 			}
 		}
@@ -18119,7 +18119,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Right Eye",
-				"de" : "Rechtes Drachen<SoftHyphen/>auge",
+				"de" : "Rechtes Drachenauge",
 				"fr" : "Œil droit",
 				"jp" : "竜の右眼"
 			}
@@ -18133,7 +18133,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Left Eye",
-				"de" : "Linkes Drachen<SoftHyphen/>auge",
+				"de" : "Linkes Drachenauge",
 				"fr" : "Œil gauche",
 				"jp" : "竜の左眼"
 			}
@@ -18222,7 +18222,7 @@
 			"name" : {
 				"en" : "Elemental Blessing: EXP",
 				"de" : "Elementarer Segen: Routine",
-				"fr" : "Bénédiction des esprits<Indent/>: bonus d'expérience",
+				"fr" : "Bénédiction des esprits: bonus d'expérience",
 				"jp" : "精霊の加護：経験値アップ"
 			}
 		}
@@ -18236,7 +18236,7 @@
 			"name" : {
 				"en" : "Elemental Blessing: Damage",
 				"de" : "Elementarer Segen: Schaden",
-				"fr" : "Bénédiction des esprits<Indent/>: bonus de combativité",
+				"fr" : "Bénédiction des esprits: bonus de combativité",
 				"jp" : "精霊の加護：戦闘能力アップ"
 			}
 		}
@@ -18964,7 +18964,7 @@
 			"name" : {
 				"en" : "Down the Rabbit Hole",
 				"de" : "Immer dem Hasen nach",
-				"fr" : "Lapinou<Indent/>!",
+				"fr" : "Lapinou!",
 				"jp" : "財宝誘導"
 			}
 		}
@@ -20280,7 +20280,7 @@
 			"name" : {
 				"en" : "Protect L",
 				"de" : "Logos-Protes",
-				"fr" : "Évocation Logos<Indent/>: Bouclier",
+				"fr" : "Évocation Logos: Bouclier",
 				"jp" : "ロゴス・プロテス"
 			}
 		}
@@ -20294,7 +20294,7 @@
 			"name" : {
 				"en" : "Shell L",
 				"de" : "Logos-Vallum",
-				"fr" : "Évocation Logos<Indent/>: Barrière",
+				"fr" : "Évocation Logos: Barrière",
 				"jp" : "ロゴス・シェル"
 			}
 		}
@@ -20308,7 +20308,7 @@
 			"name" : {
 				"en" : "Swift L",
 				"de" : "Logos-Eile",
-				"fr" : "Évocation Logos<Indent/>: Vélocité",
+				"fr" : "Évocation Logos: Vélocité",
 				"jp" : "ロゴス・スウィフト"
 			}
 		}
@@ -20336,7 +20336,7 @@
 			"name" : {
 				"en" : "Bravery L",
 				"de" : "Logos-Courage",
-				"fr" : "Évocation Logos<Indent/>: Bravoure",
+				"fr" : "Évocation Logos: Bravoure",
 				"jp" : "ロゴス・ブレイブ"
 			}
 		}
@@ -20378,7 +20378,7 @@
 			"name" : {
 				"en" : "Reflect L",
 				"de" : "Logos-Reflektion",
-				"fr" : "Évocation Logos<Indent/>: Miroir",
+				"fr" : "Évocation Logos: Miroir",
 				"jp" : "ロゴス・リフレク"
 			}
 		}
@@ -20392,7 +20392,7 @@
 			"name" : {
 				"en" : "Poison L",
 				"de" : "Logos-Gift",
-				"fr" : "Évocation Logos<Indent/>: Poison",
+				"fr" : "Évocation Logos: Poison",
 				"jp" : "ロゴス・ポイズン"
 			}
 		}
@@ -20406,7 +20406,7 @@
 			"name" : {
 				"en" : "Refresh L",
 				"de" : "Logos-Erfrischung",
-				"fr" : "Évocation Logos<Indent/>: Tonification",
+				"fr" : "Évocation Logos: Tonification",
 				"jp" : "ロゴス・リフレッシュ"
 			}
 		}
@@ -20434,7 +20434,7 @@
 			"name" : {
 				"en" : "Double Edge L",
 				"de" : "Logos-Zweischneid",
-				"fr" : "Évocation Logos<Indent/>: Double tranchant",
+				"fr" : "Évocation Logos: Double tranchant",
 				"jp" : "ロゴス・ダブルエッジ"
 			}
 		}
@@ -20448,7 +20448,7 @@
 			"name" : {
 				"en" : "Spirit Dart L",
 				"de" : "Logos-Geistpfeil",
-				"fr" : "Évocation Logos<Indent/>: Flèche spirituelle",
+				"fr" : "Évocation Logos: Flèche spirituelle",
 				"jp" : "ロゴス・スピリットダート"
 			}
 		}
@@ -20462,7 +20462,7 @@
 			"name" : {
 				"en" : "Banish L",
 				"de" : "Logos-Bann",
-				"fr" : "Évocation Logos<Indent/>: Bannissement",
+				"fr" : "Évocation Logos: Bannissement",
 				"jp" : "ロゴス・バニシュ"
 			}
 		}
@@ -20490,7 +20490,7 @@
 			"name" : {
 				"en" : "Incense L",
 				"de" : "Logos-Hohn",
-				"fr" : "Évocation Logos<Indent/>: Incitation",
+				"fr" : "Évocation Logos: Incitation",
 				"jp" : "ロゴス・エンミティ"
 			}
 		}
@@ -20532,7 +20532,7 @@
 			"name" : {
 				"en" : "Local Resonance",
 				"de" : "Resonanzprogramm: Nah",
-				"fr" : "Programme de résonance<Indent/>: proximité",
+				"fr" : "Programme de résonance: proximité",
 				"jp" : "レゾナンスプログラム：ニアー"
 			}
 		}
@@ -20546,7 +20546,7 @@
 			"name" : {
 				"en" : "Remote Resonance",
 				"de" : "Resonanzprogramm: Fern",
-				"fr" : "Programme de résonance<Indent/>: distance",
+				"fr" : "Programme de résonance: distance",
 				"jp" : "レゾナンスプログラム：ファー"
 			}
 		}
@@ -20560,7 +20560,7 @@
 			"name" : {
 				"en" : "Critical Synchronization Bug",
 				"de" : "Kritischer Bug: Synchronisierung",
-				"fr" : "Bogue critique<Indent/>: partage",
+				"fr" : "Bogue critique: partage",
 				"jp" : "クリティカルバグ：シェア"
 			}
 		}
@@ -20574,7 +20574,7 @@
 			"name" : {
 				"en" : "Critical Overflow Bug",
 				"de" : "Kritischer Bug: Überlauf",
-				"fr" : "Bogue critique<Indent/>: boucle",
+				"fr" : "Bogue critique: boucle",
 				"jp" : "クリティカルバグ：サークル"
 			}
 		}
@@ -20588,7 +20588,7 @@
 			"name" : {
 				"en" : "Critical Underflow Bug",
 				"de" : "Kritischer Bug: Unterlauf",
-				"fr" : "Bogue critique<Indent/>: dégradation",
+				"fr" : "Bogue critique: dégradation",
 				"jp" : "クリティカルバグ：デグレード"
 			}
 		}
@@ -20602,7 +20602,7 @@
 			"name" : {
 				"en" : "Synchronization Debugger",
 				"de" : "Bug-Korrektur: Synchronisierung",
-				"fr" : "Déboguage<Indent/>: partage",
+				"fr" : "Déboguage: partage",
 				"jp" : "バグフィックス：シェア"
 			}
 		}
@@ -20616,7 +20616,7 @@
 			"name" : {
 				"en" : "Overflow Debugger",
 				"de" : "Bug-Korrektur: Überlauf",
-				"fr" : "Déboguage<Indent/>: boucle",
+				"fr" : "Déboguage: boucle",
 				"jp" : "バグフィックス：サークル"
 			}
 		}
@@ -20630,7 +20630,7 @@
 			"name" : {
 				"en" : "Underflow Debugger",
 				"de" : "Bug-Korrektur: Unterlauf",
-				"fr" : "Déboguage<Indent/>: dégradation",
+				"fr" : "Déboguage: dégradation",
 				"jp" : "バグフィックス：デグレード"
 			}
 		}
@@ -20658,7 +20658,7 @@
 			"name" : {
 				"en" : "Cascading Latent Defect",
 				"de" : "Latenter Bug: Unterlauf",
-				"fr" : "Bogue latent<Indent/>: dégradation",
+				"fr" : "Bogue latent: dégradation",
 				"jp" : "レイテントバグ：デグレード"
 			}
 		}
@@ -20672,7 +20672,7 @@
 			"name" : {
 				"en" : "Local Regression",
 				"de" : "Regression: Nah",
-				"fr" : "Bogue intentionnel<Indent/>: proximité",
+				"fr" : "Bogue intentionnel: proximité",
 				"jp" : "エンバグ：ニアー"
 			}
 		}
@@ -20686,7 +20686,7 @@
 			"name" : {
 				"en" : "Remote Regression",
 				"de" : "Regression: Fern",
-				"fr" : "Bogue intentionnel<Indent/>: distance",
+				"fr" : "Bogue intentionnel: distance",
 				"jp" : "エンバグ：ファー"
 			}
 		}
@@ -20742,7 +20742,7 @@
 			"name" : {
 				"en" : "Bloodbath L",
 				"de" : "Logos-Blutbad",
-				"fr" : "Évocation Logos<Indent/>: Bain de sang",
+				"fr" : "Évocation Logos: Bain de sang",
 				"jp" : "ロゴス・ブラッドバス"
 			}
 		}
@@ -20756,7 +20756,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Return IV",
 				"de" : "Verzögerung: Giga-Rückführung",
-				"fr" : "Sort déphasé<Indent/>: Giga Retour",
+				"fr" : "Sort déphasé: Giga Retour",
 				"jp" : "ディレイスペル：リタンジャ"
 			}
 		}
@@ -20770,7 +20770,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Flare",
 				"de" : "Verzögerung: Flare",
-				"fr" : "Sort déphasé<Indent/>: Brasier",
+				"fr" : "Sort déphasé: Brasier",
 				"jp" : "ディレイスペル：フレア"
 			}
 		}
@@ -20826,7 +20826,7 @@
 			"name" : {
 				"en" : "Break III Edict",
 				"de" : "Kommando: Stillstandga",
-				"fr" : "Ordre<Indent/>: Méga Brèche",
+				"fr" : "Ordre: Méga Brèche",
 				"jp" : "号令：ブレクガ"
 			}
 		}
@@ -20840,7 +20840,7 @@
 			"name" : {
 				"en" : "Rush Edict",
 				"de" : "Kommando: Sturm",
-				"fr" : "Ordre<Indent/>: Plongeon",
+				"fr" : "Ordre: Plongeon",
 				"jp" : "号令：ラッシュ"
 			}
 		}
@@ -20854,7 +20854,7 @@
 			"name" : {
 				"en" : "Tornado Edict",
 				"de" : "Kommando: Tornado",
-				"fr" : "Ordre<Indent/>: Tornade",
+				"fr" : "Ordre: Tornade",
 				"jp" : "号令：トルネド"
 			}
 		}
@@ -21694,7 +21694,7 @@
 			"name" : {
 				"en" : "Soul of Fire",
 				"de" : "Elementarer Bias: Feuer",
-				"fr" : "Déséquilibre éthéré<Indent/>: feu",
+				"fr" : "Déséquilibre éthéré: feu",
 				"jp" : "属性偏向：火"
 			}
 		}
@@ -21708,7 +21708,7 @@
 			"name" : {
 				"en" : "Soul of Ice",
 				"de" : "Elementarer Bias: Eis",
-				"fr" : "Déséquilibre éthéré<Indent/>: glace",
+				"fr" : "Déséquilibre éthéré: glace",
 				"jp" : "属性偏向：氷"
 			}
 		}
@@ -22072,7 +22072,7 @@
 			"name" : {
 				"en" : "Soul of Fire",
 				"de" : "Elementarer Bias: Feuer",
-				"fr" : "Déséquilibre éthéré<Indent/>: feu",
+				"fr" : "Déséquilibre éthéré: feu",
 				"jp" : "属性偏向：火"
 			}
 		}
@@ -22086,7 +22086,7 @@
 			"name" : {
 				"en" : "Soul of Ice",
 				"de" : "Elementarer Bias: Eis",
-				"fr" : "Déséquilibre éthéré<Indent/>: glace",
+				"fr" : "Déséquilibre éthéré: glace",
 				"jp" : "属性偏向：氷"
 			}
 		}
@@ -22424,7 +22424,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Unholy Darkness",
 				"de" : "Verzögerung: Unheiliges Dunkel",
-				"fr" : "Sort déphasé<Indent/>: Miracle ténébreux",
+				"fr" : "Sort déphasé: Miracle ténébreux",
 				"jp" : "ディレイスペル：ダークホーリー"
 			}
 		}
@@ -22438,7 +22438,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Dark Fire III",
 				"de" : "Verzögerung: Dunkel-Feuga",
-				"fr" : "Sort déphasé<Indent/>: Méga Feu ténébreux",
+				"fr" : "Sort déphasé: Méga Feu ténébreux",
 				"jp" : "ディレイスペル：ダークファイガ"
 			}
 		}
@@ -22452,7 +22452,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Hell Wind",
 				"de" : "Verzögerung: Höllenwind",
-				"fr" : "Sort déphasé<Indent/>: Vent infernal",
+				"fr" : "Sort déphasé: Vent infernal",
 				"jp" : "ディレイスペル：ヘルウィンド"
 			}
 		}
@@ -22466,7 +22466,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Shadoweye",
 				"de" : "Verzögerung: Schattenauge",
-				"fr" : "Sort déphasé<Indent/>: Œil de l'ombre",
+				"fr" : "Sort déphasé: Œil de l'ombre",
 				"jp" : "ディレイスペル：シャドウアイ"
 			}
 		}
@@ -23854,7 +23854,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Right Eye",
-				"de" : "Rechtes Drachen<SoftHyphen/>auge",
+				"de" : "Rechtes Drachenauge",
 				"fr" : "Œil droit",
 				"jp" : "竜の右眼"
 			}
@@ -23928,7 +23928,7 @@
 			"name" : {
 				"en" : "Summon Order",
 				"de" : "Egi-Attacke I",
-				"fr" : "Action en attente<Indent/>: 1",
+				"fr" : "Action en attente: 1",
 				"jp" : "アクション実行待機I"
 			}
 		}
@@ -24280,7 +24280,7 @@
 			"name" : {
 				"en" : "Ranging",
 				"de" : "Auf Erkundung",
-				"fr" : "Recon<SoftHyphen/>nais<SoftHyphen/>san<SoftHyphen/>ce",
+				"fr" : "Reconnaissance",
 				"jp" : "偵察中"
 			}
 		}
@@ -24456,7 +24456,7 @@
 			"name" : {
 				"en" : "Forward March",
 				"de" : "Geistlenkung vorwärts",
-				"fr" : "Contrainte mentale<Indent/>: avancer",
+				"fr" : "Contrainte mentale: avancer",
 				"jp" : "移動命令：前"
 			}
 		}
@@ -24470,7 +24470,7 @@
 			"name" : {
 				"en" : "About Face",
 				"de" : "Geistlenkung rückwärts",
-				"fr" : "Contrainte mentale<Indent/>: reculer",
+				"fr" : "Contrainte mentale: reculer",
 				"jp" : "移動命令：後"
 			}
 		}
@@ -24484,7 +24484,7 @@
 			"name" : {
 				"en" : "Left Face",
 				"de" : "Geistlenkung links",
-				"fr" : "Contrainte mentale<Indent/>: virage à gauche",
+				"fr" : "Contrainte mentale: virage à gauche",
 				"jp" : "移動命令：左"
 			}
 		}
@@ -24498,7 +24498,7 @@
 			"name" : {
 				"en" : "Right Face",
 				"de" : "Geistlenkung rechts",
-				"fr" : "Contrainte mentale<Indent/>: virage à droite",
+				"fr" : "Contrainte mentale: virage à droite",
 				"jp" : "移動命令：右"
 			}
 		}
@@ -24526,7 +24526,7 @@
 			"name" : {
 				"en" : "Summon Order II",
 				"de" : "Egi-Attacke II",
-				"fr" : "Actions en attente<Indent/>: 2",
+				"fr" : "Actions en attente: 2",
 				"jp" : "アクション実行待機II"
 			}
 		}
@@ -24540,7 +24540,7 @@
 			"name" : {
 				"en" : "Summon Order III",
 				"de" : "Egi-Attacke III",
-				"fr" : "Actions en attente<Indent/>: 3",
+				"fr" : "Actions en attente: 3",
 				"jp" : "アクション実行待機III"
 			}
 		}
@@ -24554,7 +24554,7 @@
 			"name" : {
 				"en" : "Summon Order IV",
 				"de" : "Egi-Attacke IV",
-				"fr" : "Actions en attente<Indent/>: 4",
+				"fr" : "Actions en attente: 4",
 				"jp" : "アクション実行待機IV"
 			}
 		}
@@ -26319,7 +26319,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Flare",
 				"de" : "Verzögerung: Flare",
-				"fr" : "Sort déphasé<Indent/>: Brasier",
+				"fr" : "Sort déphasé: Brasier",
 				"jp" : "ディレイスペル：フレア"
 			}
 		}
@@ -26405,7 +26405,7 @@
 			"name" : {
 				"en" : "Conked",
 				"de" : "Stumpfsinn",
-				"fr" : "Malus d'in<SoftHyphen/>tel<SoftHyphen/>li<SoftHyphen/>gence et d'esprit",
+				"fr" : "Malus d'intelligence et d'esprit",
 				"jp" : "ＩＮＴ・ＭＮＤ低下"
 			}
 		}
@@ -26853,7 +26853,7 @@
 			"name" : {
 				"en" : "Final Word: Contact Prohibition",
 				"de" : "Urteil: Kontaktverbot",
-				"fr" : "Jugement<Indent/>: contact prohibé",
+				"fr" : "Jugement: contact prohibé",
 				"jp" : "確定判決：接触禁止命令"
 			}
 		}
@@ -26867,7 +26867,7 @@
 			"name" : {
 				"en" : "Final Word: Contact Regulation",
 				"de" : "Urteil: Kontakt-Order",
-				"fr" : "Jugement<Indent/>: contact forcé",
+				"fr" : "Jugement: contact forcé",
 				"jp" : "確定判決：接触保護命令"
 			}
 		}
@@ -26881,7 +26881,7 @@
 			"name" : {
 				"en" : "Final Word: Escape Prohibition",
 				"de" : "Urteil: Fluchtverbot",
-				"fr" : "Jugement<Indent/>: fuite prohibée",
+				"fr" : "Jugement: fuite prohibée",
 				"jp" : "確定判決：逃亡禁止命令"
 			}
 		}
@@ -26895,7 +26895,7 @@
 			"name" : {
 				"en" : "Final Word: Escape Detection",
 				"de" : "Urteil: Fluchtbeobachtung",
-				"fr" : "Jugement<Indent/>: fuite forcée",
+				"fr" : "Jugement: fuite forcée",
 				"jp" : "確定判決：逃亡監察命令"
 			}
 		}
@@ -26937,7 +26937,7 @@
 			"name" : {
 				"en" : "Red Light",
 				"de" : "Stillgestanden",
-				"fr" : "Halte<Indent/>!",
+				"fr" : "Halte!",
 				"jp" : "動くな！"
 			}
 		}
@@ -26951,7 +26951,7 @@
 			"name" : {
 				"en" : "Forward March",
 				"de" : "Geistlenkung vorwärts",
-				"fr" : "Contrainte mentale<Indent/>: avancer",
+				"fr" : "Contrainte mentale: avancer",
 				"jp" : "移動命令：前"
 			}
 		}
@@ -26965,7 +26965,7 @@
 			"name" : {
 				"en" : "About Face",
 				"de" : "Geistlenkung rückwärts",
-				"fr" : "Contrainte mentale<Indent/>: reculer",
+				"fr" : "Contrainte mentale: reculer",
 				"jp" : "移動命令：後"
 			}
 		}
@@ -26979,7 +26979,7 @@
 			"name" : {
 				"en" : "Left Face",
 				"de" : "Geistlenkung links",
-				"fr" : "Contrainte mentale<Indent/>: virage à gauche",
+				"fr" : "Contrainte mentale: virage à gauche",
 				"jp" : "移動命令：左"
 			}
 		}
@@ -26993,7 +26993,7 @@
 			"name" : {
 				"en" : "Right Face",
 				"de" : "Geistlenkung rechts",
-				"fr" : "Contrainte mentale<Indent/>: virage à droite",
+				"fr" : "Contrainte mentale: virage à droite",
 				"jp" : "移動命令：右"
 			}
 		}
@@ -27367,7 +27367,7 @@
 			"name" : {
 				"en" : "Final Appraisal",
 				"de" : "Letzte Kontrolle",
-				"fr" : "Dernières vé<SoftHyphen/>ri<SoftHyphen/>fi<SoftHyphen/>ca<SoftHyphen/>tions",
+				"fr" : "Dernières vérifications",
 				"jp" : "最終確認"
 			}
 		}
@@ -27507,7 +27507,7 @@
 			"name" : {
 				"en" : "Unwavering Will",
 				"de" : "Geistschild",
-				"fr" : "Barrière psy<SoftHyphen/>cho<SoftHyphen/>lo<SoftHyphen/>gi<SoftHyphen/>que",
+				"fr" : "Barrière psychologique",
 				"jp" : "心理障壁"
 			}
 		}
@@ -28349,7 +28349,7 @@
 			"name" : {
 				"en" : "Running Wild",
 				"de" : "Volle Kraft",
-				"fr" : "Déchaîne-toi<Indent/>!",
+				"fr" : "Déchaîne-toi!",
 				"jp" : "ふりしぼれ"
 			}
 		}
@@ -28839,7 +28839,7 @@
 			"name" : {
 				"en" : "Banner of Firm Resolve",
 				"de" : "Gemüt der Folgsamkeit",
-				"fr" : "Seuil de la pré<SoftHyphen/>ser<SoftHyphen/>va<SoftHyphen/>tion",
+				"fr" : "Seuil de la préservation",
 				"jp" : "堅守の境地"
 			}
 		}
@@ -29231,7 +29231,7 @@
 			"name" : {
 				"en" : "Marching Orders: Vigil for the Lost",
 				"de" : "Hilfsgesuch: Vigil, Feuerkraft hoch zehn",
-				"fr" : "Passe-droit d'interception<Indent/>: Vigile de feu",
+				"fr" : "Passe-droit d'interception: Vigile de feu",
 				"jp" : "攻撃要請：高火力陸戦魔導兵器「ヴィジル」"
 			}
 		}
@@ -29245,7 +29245,7 @@
 			"name" : {
 				"en" : "Marching Orders: Kill It with Fire",
 				"de" : "Hilfsgesuch: Peeriefool, das faule Gemüse",
-				"fr" : "Passe-droit d'interception<Indent/>: Grandeur et pestilence",
+				"fr" : "Passe-droit d'interception: Grandeur et pestilence",
 				"jp" : "攻撃要請：腐乱野菜「ピーリフール」"
 			}
 		}
@@ -29259,7 +29259,7 @@
 			"name" : {
 				"en" : "Marching Orders: The Hunt for Red Choctober",
 				"de" : "Hilfsgesuch: Der Rote Meteor und seine Meute",
-				"fr" : "Passe-droit d'interception<Indent/>: Une ruée en rouge",
+				"fr" : "Passe-droit d'interception: Une ruée en rouge",
 				"jp" : "攻撃要請：赤チョコボのヌシ「レッドコメット」"
 			}
 		}
@@ -29273,7 +29273,7 @@
 			"name" : {
 				"en" : "Marching Orders: The Final Furlong",
 				"de" : "Hilfsgesuch: Spartoi der Gefürchtete",
-				"fr" : "Passe-droit d'interception<Indent/>: Menace spectrale",
+				"fr" : "Passe-droit d'interception: Menace spectrale",
 				"jp" : "攻撃要請：怨念の死霊「スパルトイ」"
 			}
 		}
@@ -29287,7 +29287,7 @@
 			"name" : {
 				"en" : "Marching Orders: Rise of the Robots",
 				"de" : "Hilfsgesuch: Im Schatten von Modell X",
-				"fr" : "Passe-droit d'interception<Indent/>: Le soulèvement des machines",
+				"fr" : "Passe-droit d'interception: Le soulèvement des machines",
 				"jp" : "攻撃要請：新たなる鉄巨人「魔導レイバーX型」"
 			}
 		}
@@ -29301,7 +29301,7 @@
 			"name" : {
 				"en" : "Marching Orders: Metal Fox Chaos",
 				"de" : "Hilfsgesuch: Dáinsleif, Bestie aus Eisen",
-				"fr" : "Passe-droit d'interception<Indent/>: Le guerrier de métal",
+				"fr" : "Passe-droit d'interception: Le guerrier de métal",
 				"jp" : "攻撃要請：鋼鉄の魔獣「ダーインスレイヴ」"
 			}
 		}
@@ -29483,7 +29483,7 @@
 			"name" : {
 				"en" : "Forward March",
 				"de" : "Geistlenkung vorwärts",
-				"fr" : "Contrainte mentale<Indent/>: avancer",
+				"fr" : "Contrainte mentale: avancer",
 				"jp" : "移動命令：前"
 			}
 		}
@@ -29497,7 +29497,7 @@
 			"name" : {
 				"en" : "About Face",
 				"de" : "Geistlenkung rückwärts",
-				"fr" : "Contrainte mentale<Indent/>: reculer",
+				"fr" : "Contrainte mentale: reculer",
 				"jp" : "移動命令：後"
 			}
 		}
@@ -29511,7 +29511,7 @@
 			"name" : {
 				"en" : "Left Face",
 				"de" : "Geistlenkung links",
-				"fr" : "Contrainte mentale<Indent/>: virage à gauche",
+				"fr" : "Contrainte mentale: virage à gauche",
 				"jp" : "移動命令：左"
 			}
 		}
@@ -29525,7 +29525,7 @@
 			"name" : {
 				"en" : "Right Face",
 				"de" : "Geistlenkung rechts",
-				"fr" : "Contrainte mentale<Indent/>: virage à droite",
+				"fr" : "Contrainte mentale: virage à droite",
 				"jp" : "移動命令：右"
 			}
 		}
@@ -30199,7 +30199,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Unholy Darkness",
 				"de" : "Verzögerung: Unheiliges Dunkel",
-				"fr" : "Sort déphasé<Indent/>: Miracle ténébreux",
+				"fr" : "Sort déphasé: Miracle ténébreux",
 				"jp" : "ディレイスペル：ダークホーリー"
 			}
 		}
@@ -30213,7 +30213,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Dark Fire III",
 				"de" : "Verzögerung: Dunkel-Feuga",
-				"fr" : "Sort déphasé<Indent/>: Méga Feu ténébreux",
+				"fr" : "Sort déphasé: Méga Feu ténébreux",
 				"jp" : "ディレイスペル：ダークファイガ"
 			}
 		}
@@ -30227,7 +30227,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Shadoweye",
 				"de" : "Verzögerung: Schattenauge",
-				"fr" : "Sort déphasé<Indent/>: Œil de l'ombre",
+				"fr" : "Sort déphasé: Œil de l'ombre",
 				"jp" : "ディレイスペル：シャドウアイ"
 			}
 		}
@@ -30241,7 +30241,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Dark Eruption",
 				"de" : "Verzögerung: Dunkle Eruption",
-				"fr" : "Sort déphasé<Indent/>: Éruption ténébreuse",
+				"fr" : "Sort déphasé: Éruption ténébreuse",
 				"jp" : "ディレイスペル：ダークエラプション"
 			}
 		}
@@ -30255,7 +30255,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Dark Water III",
 				"de" : "Verzögerung: Dunkel-Aquaga",
-				"fr" : "Sort déphasé<Indent/>: Méga Eau ténébreuse",
+				"fr" : "Sort déphasé: Méga Eau ténébreuse",
 				"jp" : "ディレイスペル：ダークウォタガ"
 			}
 		}
@@ -30269,7 +30269,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Dark Blizzard III",
 				"de" : "Verzögerung: Dunkel-Eisga",
-				"fr" : "Sort déphasé<Indent/>: Méga Glace ténébreuse",
+				"fr" : "Sort déphasé: Méga Glace ténébreuse",
 				"jp" : "ディレイスペル：ダークブリザガ"
 			}
 		}
@@ -30283,7 +30283,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Dark Aero III",
 				"de" : "Verzögerung: Dunkel-Windga",
-				"fr" : "Sort déphasé<Indent/>: Méga Vent ténébreux",
+				"fr" : "Sort déphasé: Méga Vent ténébreux",
 				"jp" : "ディレイスペル：ダークエアロガ"
 			}
 		}
@@ -30297,7 +30297,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Return",
 				"de" : "Verzögerung: Rückgabe",
-				"fr" : "Sort déphasé<Indent/>: Retour",
+				"fr" : "Sort déphasé: Retour",
 				"jp" : "ディレイスペル：リターン"
 			}
 		}
@@ -30353,7 +30353,7 @@
 			"name" : {
 				"en" : "Junction Shiva",
 				"de" : "Kopplung: Shiva",
-				"fr" : "Association<Indent/>: Shiva",
+				"fr" : "Association: Shiva",
 				"jp" : "ジャンクション：シヴァ"
 			}
 		}
@@ -30367,7 +30367,7 @@
 			"name" : {
 				"en" : "Junction Titan",
 				"de" : "Kopplung: Titan",
-				"fr" : "Association<Indent/>: Titan",
+				"fr" : "Association: Titan",
 				"jp" : "ジャンクション：タイタン"
 			}
 		}
@@ -30381,7 +30381,7 @@
 			"name" : {
 				"en" : "Junction Loghrif",
 				"de" : "Kopplung: Loghrif",
-				"fr" : "Association<Indent/>: Loghrif",
+				"fr" : "Association: Loghrif",
 				"jp" : "ジャンクション：アログリフ"
 			}
 		}
@@ -30423,7 +30423,7 @@
 			"name" : {
 				"en" : "Movement Edict: 2 Squares",
 				"de" : "Edikt der Bewegung: 2 Felder",
-				"fr" : "Injonction reçue<Indent/>: déplacement de 2 cases",
+				"fr" : "Injonction reçue: déplacement de 2 cases",
 				"jp" : "移動の勅令：2マス"
 			}
 		}
@@ -30437,7 +30437,7 @@
 			"name" : {
 				"en" : "Movement Edict: 3 Squares",
 				"de" : "Edikt der Bewegung: 3 Felder",
-				"fr" : "Injonction reçue<Indent/>: déplacement de 3 cases",
+				"fr" : "Injonction reçue: déplacement de 3 cases",
 				"jp" : "移動の勅令：3マス"
 			}
 		}
@@ -30451,7 +30451,7 @@
 			"name" : {
 				"en" : "Movement Edict: 4 Squares",
 				"de" : "Edikt der Bewegung: 4 Felder",
-				"fr" : "Injonction reçue<Indent/>: déplacement de 4 cases",
+				"fr" : "Injonction reçue: déplacement de 4 cases",
 				"jp" : "移動の勅令：4マス"
 			}
 		}
@@ -30465,7 +30465,7 @@
 			"name" : {
 				"en" : "Movement Edict: 2 Squares",
 				"de" : "Edikt der Bewegung: 2 Felder",
-				"fr" : "Injonction reçue<Indent/>: déplacement de 2 cases",
+				"fr" : "Injonction reçue: déplacement de 2 cases",
 				"jp" : "移動の勅令：2マス"
 			}
 		}
@@ -30479,7 +30479,7 @@
 			"name" : {
 				"en" : "Movement Edict: 3 Squares",
 				"de" : "Edikt der Bewegung: 3 Felder",
-				"fr" : "Injonction reçue<Indent/>: déplacement de 3 cases",
+				"fr" : "Injonction reçue: déplacement de 3 cases",
 				"jp" : "移動の勅令：3マス"
 			}
 		}
@@ -30493,7 +30493,7 @@
 			"name" : {
 				"en" : "Movement Edict: 4 Squares",
 				"de" : "Edikt der Bewegung: 4 Felder",
-				"fr" : "Injonction reçue<Indent/>: déplacement de 4 cases",
+				"fr" : "Injonction reçue: déplacement de 4 cases",
 				"jp" : "移動の勅令：4マス"
 			}
 		}
@@ -30507,7 +30507,7 @@
 			"name" : {
 				"en" : "Your Move: 2 Squares",
 				"de" : "Ausführung des Edikts: 2 Felder",
-				"fr" : "Exécution d'injonction<Indent/>: déplacement de 2 cases",
+				"fr" : "Exécution d'injonction: déplacement de 2 cases",
 				"jp" : "移動実行：2マス"
 			}
 		}
@@ -30521,7 +30521,7 @@
 			"name" : {
 				"en" : "Your Move: 3 Squares",
 				"de" : "Ausführung des Edikts: 3 Felder",
-				"fr" : "Exécution d'injonction<Indent/>: déplacement de 3 cases",
+				"fr" : "Exécution d'injonction: déplacement de 3 cases",
 				"jp" : "移動実行：3マス"
 			}
 		}
@@ -30535,7 +30535,7 @@
 			"name" : {
 				"en" : "Your Move: 4 Squares",
 				"de" : "Ausführung des Edikts: 4 Felder",
-				"fr" : "Exécution d'injonction<Indent/>: déplacement de 4 cases",
+				"fr" : "Exécution d'injonction: déplacement de 4 cases",
 				"jp" : "移動実行：4マス"
 			}
 		}
@@ -31043,7 +31043,7 @@
 			"name" : {
 				"en" : "Spell-in-Waiting: Quietus",
 				"de" : "Verzögerung: Quietus",
-				"fr" : "Sort déphasé<Indent/>: Quietus",
+				"fr" : "Sort déphasé: Quietus",
 				"jp" : "ディレイスペル：クワイタス"
 			}
 		}
@@ -31575,7 +31575,7 @@
 			"name" : {
 				"en" : "Marching Orders: Feeling the Burn",
 				"de" : "Hilfsgesuch: Schwarzbrands Testflug",
-				"fr" : "Passe-droit d'interception<Indent/>: On arrête le progrès",
+				"fr" : "Passe-droit d'interception: On arrête le progrès",
 				"jp" : "攻撃要請：試作飛行型魔導アーマー「ブラックバーン」"
 			}
 		}
@@ -31589,7 +31589,7 @@
 			"name" : {
 				"en" : "Marching Orders: On Serpents' Wings",
 				"de" : "Hilfsgesuch: Der Geistertrupp",
-				"fr" : "Passe-droit d'interception<Indent/>: Zirnitrop",
+				"fr" : "Passe-droit d'interception: Zirnitrop",
 				"jp" : "攻撃要請：妖霊使い「妖戦百人隊」"
 			}
 		}
@@ -31603,7 +31603,7 @@
 			"name" : {
 				"en" : "Marching Orders: Never Cry Wolf",
 				"de" : "Hilfsgesuch: Eiswolf Hrodvitnir",
-				"fr" : "Passe-droit d'interception<Indent/>: Et n'y Hród'viens plus<Indent/>!",
+				"fr" : "Passe-droit d'interception: Et n'y Hród'viens plus!",
 				"jp" : "攻撃要請：邪悪なる氷狼「フローズヴィトニル」"
 			}
 		}
@@ -31617,7 +31617,7 @@
 			"name" : {
 				"en" : "Marching Orders: Here Comes the Cavalry",
 				"de" : "Hilfsgesuch: Halb Pferd, halb Garlear",
-				"fr" : "Passe-droit d'interception<Indent/>: Un cavalier qui surgit hors de la nuit",
+				"fr" : "Passe-droit d'interception: Un cavalier qui surgit hors de la nuit",
 				"jp" : "攻撃要請：鋼鉄の人馬「魔導騎兵大隊」"
 			}
 		}
@@ -31631,7 +31631,7 @@
 			"name" : {
 				"en" : "Marching Orders: Worn to a Shadow",
 				"de" : "Hilfsgesuch: Alkonost, schön und gefiedert",
-				"fr" : "Passe-droit d'interception<Indent/>: Oiseau d'enfer",
+				"fr" : "Passe-droit d'interception: Oiseau d'enfer",
 				"jp" : "攻撃要請：有角の凶鳥「アルコノスト」"
 			}
 		}
@@ -31645,7 +31645,7 @@
 			"name" : {
 				"en" : "Marching Orders: A Familiar Face",
 				"de" : "Hilfsgesuch: Hashmallim der Einiger",
-				"fr" : "Passe-droit d'interception<Indent/>: Le Grand Ordonnateur",
+				"fr" : "Passe-droit d'interception: Le Grand Ordonnateur",
 				"jp" : "攻撃要請：模造統制者「IVレギオン・ハシュマリム」"
 			}
 		}
@@ -32293,7 +32293,7 @@
 			"name" : {
 				"en" : "Program: #FFFFFFF",
 				"de" : "Weißes Programm",
-				"fr" : "Blanc<Indent/>: numérisation",
+				"fr" : "Blanc: numérisation",
 				"jp" : "プログラム化：白"
 			}
 		}
@@ -32307,7 +32307,7 @@
 			"name" : {
 				"en" : "Program: #000000",
 				"de" : "Schwarzes Programm",
-				"fr" : "Noir<Indent/>: numérisation",
+				"fr" : "Noir: numérisation",
 				"jp" : "プログラム化：黒"
 			}
 		}
@@ -32591,7 +32591,7 @@
 			"name" : {
 				"en" : "Who Is She",
 				"de" : "Dug?",
-				"fr" : "Samanta<Indent/>?",
+				"fr" : "Samanta?",
 				"jp" : "ドグ？"
 			}
 		}
@@ -32605,7 +32605,7 @@
 			"name" : {
 				"en" : "Who Is She",
 				"de" : "Dug?",
-				"fr" : "Samanta<Indent/>?",
+				"fr" : "Samanta?",
 				"jp" : "ドグ？"
 			}
 		}
@@ -32703,7 +32703,7 @@
 			"name" : {
 				"en" : "Collector's Focus",
 				"de" : "Intuitiver Fokus",
-				"fr" : "Œil du col<SoftHyphen/>lec<SoftHyphen/>tion<SoftHyphen/>neur",
+				"fr" : "Œil du collectionneur",
 				"jp" : "バリューアップ発生率アップ"
 			}
 		}
@@ -33749,7 +33749,7 @@
 			"name" : {
 				"en" : "Eureka Moment",
 				"de" : "Triumph des Wissens bereit",
-				"fr" : "Étalage des con<SoftHyphen/>nais<SoftHyphen/>san<SoftHyphen/>ces préparé",
+				"fr" : "Étalage des connaissances préparé",
 				"jp" : "理知興起実行可"
 			}
 		}
@@ -34283,7 +34283,7 @@
 			"name" : {
 				"en" : "Rightward Whimsy",
 				"de" : "Prinzessinnenlaune: rechts",
-				"fr" : "Caprice de princesse<Indent/>: à droite",
+				"fr" : "Caprice de princesse: à droite",
 				"jp" : "気まぐれ：右"
 			}
 		}
@@ -34297,7 +34297,7 @@
 			"name" : {
 				"en" : "Leftward Whimsy",
 				"de" : "Prinzessinnenlaune: links",
-				"fr" : "Caprice de princesse<Indent/>: à gauche",
+				"fr" : "Caprice de princesse: à gauche",
 				"jp" : "気まぐれ：左"
 			}
 		}
@@ -34311,7 +34311,7 @@
 			"name" : {
 				"en" : "Backward Whimsy",
 				"de" : "Prinzessinnenlaune: hinten",
-				"fr" : "Caprice de princesse<Indent/>: en arrière",
+				"fr" : "Caprice de princesse: en arrière",
 				"jp" : "気まぐれ：後"
 			}
 		}
@@ -35113,7 +35113,7 @@
 			"name" : {
 				"en" : "Willful",
 				"de" : "Unerschütterlicher Wille",
-				"fr" : "Volonté in<SoftHyphen/>é<SoftHyphen/>bran<SoftHyphen/>la<SoftHyphen/>ble",
+				"fr" : "Volonté inébranlable",
 				"jp" : "不屈の意思"
 			}
 		}
@@ -35155,7 +35155,7 @@
 			"name" : {
 				"en" : "Forward Whimsy",
 				"de" : "Prinzessinnenlaune: vorne",
-				"fr" : "Caprice de princesse<Indent/>: en avant",
+				"fr" : "Caprice de princesse: en avant",
 				"jp" : "気まぐれ：前"
 			}
 		}
@@ -35171,7 +35171,7 @@
 			"name" : {
 				"en" : "Ogi Namikiri Ready",
 				"de" : "Ogi Namikiri",
-				"fr" : "Ôgi<Indent/>: Namikiri préparée",
+				"fr" : "Ôgi: Namikiri préparée",
 				"jp" : "奥義波切実行可"
 			}
 		}
