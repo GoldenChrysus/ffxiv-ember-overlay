@@ -52,7 +52,8 @@ const initial_state = {
 			allowed_types : {
 				skill  : {},
 				effect : {},
-				dot    : {}
+				dot    : {},
+				debuff : {}
 			}
 		},
 		viewing_history      : false,
@@ -248,6 +249,15 @@ function rootReducer(state, action) {
 								log_type : "you-dot",
 								party    : false,
 							},
+							"effect-Trick Attack" : {
+								type     : "effect",
+								subtype  : "debuff",
+								id       : 2014,
+								time     : new Date(),
+								duration : 15,
+								log_type : "you-debuff",
+								party    : false,
+							},
 							"skill-3571-party" : {
 								type     : "skill",
 								subtype  : "skill",
@@ -298,6 +308,15 @@ function rootReducer(state, action) {
 								time     : new Date(),
 								duration : 24,
 								log_type : "dps-dot",
+								party    : true,
+							},
+							"effect-Death's Design-party" : {
+								type     : "effect",
+								subtype  : "debuff",
+								id       : 2586,
+								time     : new Date(),
+								duration : 30,
+								log_type : "dps-debuff",
 								party    : true,
 							},
 							"skill-44-party" : {
@@ -551,12 +570,15 @@ function createNewState(state, full_key, action) {
 			"settings.spells_mode.spells",
 			"settings.spells_mode.effects",
 			"settings.spells_mode.dots",
+			"settings.spells_mode.debuffs",
 			"settings.spells_mode.party_spells",
 			"settings.spells_mode.party_effects",
 			"settings.spells_mode.party_dots",
+			"settings.spells_mode.party_debuffs",
 			"settings.spells_mode.always_skill",
 			"settings.spells_mode.always_effect",
 			"settings.spells_mode.always_dot",
+			"settings.spells_mode.always_debuff",
 		].indexOf(full_key) !== -1
 	) {
 		let reset = false;

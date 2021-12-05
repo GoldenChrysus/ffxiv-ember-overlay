@@ -49,11 +49,17 @@ class GameDataProcessor  {
 			if (data.Encounter[key] !== undefined) {
 				data.Encounter[key] = this.normalizeFieldLocale(data.Encounter[key]);
 			}
+		}
 
-			for (let player_name in data.Combatant) {
+		for (let player_name in data.Combatant) {
+			for (let key in Constants.PlayerDataTitles) {
 				if (data.Combatant[player_name][key] !== undefined) {
 					data.Combatant[player_name][key] = this.normalizeFieldLocale(data.Combatant[player_name][key]);
 				}
+			}
+
+			if ((data.Combatant[player_name].Job || "").toLowerCase() === "limit break") {
+				data.Combatant[player_name].Job = "LMB";
 			}
 		}
 
@@ -319,9 +325,14 @@ class GameDataProcessor  {
 
 				log_data.type             = "effect";
 				log_data.dot              = SkillData.Effects[effect_id].dot;
-				log_data.subtype          = (log_data.dot) ? "dot" : log_data.type;
+				log_data.debuff           = SkillData.Effects[effect_id].debuff;
+				log_data.subtype          = (log_data.dot)
+					? "dot"
+					: ((log_data.debuff)
+						? "debuff"
+						: log_data.type);
 				log_data.lookup_key       = log_data.subtype + "s";
-				log_data.char_id_index    = (log_data.dot) ? 5 : 7;
+				log_data.char_id_index    = (log_data.dot || log_data.debuff) ? 5 : 7;
 				log_data.char_name_index  = log_data.char_id_index + 1;
 				log_data.spell_name_index = 3;
 				log_data.duration_index   = 4;
@@ -501,6 +512,10 @@ class GameDataProcessor  {
 			dot    : {
 				you   : true,
 				party : true
+			},
+			debuff : {
+				you   : true,
+				party : true
 			}
 		};
 
@@ -508,9 +523,10 @@ class GameDataProcessor  {
 			types.skill.you    = false;
 			types.effect.you   = false;
 			types.dot.you      = false;
+			types.debuff.you   = false;
 			types.skill.party  = false;
 			types.effect.party = false;
-			types.dot.party    = false;
+			types.debuff.party = false;
 
 			for (let uuid in state.settings.spells_mode.ui.sections) {
 				let section = state.settings.spells_mode.ui.sections[uuid];

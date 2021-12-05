@@ -22,7 +22,8 @@ class UsageService {
 			settings.getSetting("spells_mode.ui.use") ||
 			settings.getSetting("spells_mode.party_spells").length ||
 			settings.getSetting("spells_mode.party_effects").length ||
-			settings.getSetting("spells_mode.party_dots").length
+			settings.getSetting("spells_mode.party_dots").length ||
+			settings.getSetting("spells_mode.party_debuffs").length
 		);
 	}
 

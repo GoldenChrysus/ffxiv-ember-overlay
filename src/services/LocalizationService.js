@@ -158,6 +158,7 @@ class LocalizationService {
 	getSpellName(type, id, language) {
 		switch (type) {
 			case "dot":
+			case "debuff":
 			case "effect":
 				return this.getEffectName(id, language);
 

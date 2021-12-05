@@ -159,7 +159,8 @@ class SpellGrid extends EmberComponent {
 		let default_types    = [
 			"you-skill",
 			"you-effect",
-			"you-dot"
+			"you-dot",
+			"you-debuff"
 		];
 
 		spells.sort((a, b) => {
