@@ -54,9 +54,9 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Classic theme](https://i.imgur.com/wq65hM7.png "Classic theme")
 
 ### Spell timers.
-**Spell, buff, and DOT timers.**
+**Spell, buff, DOT, and debuff timers.**
 
-![Spell, buff, and DOT timers](https://i.imgur.com/7qNwV06.gif "Spell, buff, and DOT timers")
+![Spell, buff, DOT, and debuff timers](https://i.imgur.com/7qNwV06.gif "Spell, buff, DOT, and debuff timers")
 
 **Optional minimal layout.**
 
