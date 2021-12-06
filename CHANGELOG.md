@@ -1,8 +1,8 @@
 # Changelog
 
-## 0.33.0-alpha.5
+## 0.33.0-alpha
 
-**Released: [in staging]**
+**Released: 2021-12-06**
 
 ### Bug Fixes
 - N/A
