@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.34.0-alpha
+
+**Released: [in development]**
+
+### Bug Fixes
+- Fix cooldown calculation for spells with charges
+
+### Features
+- Add charge count to spell timers
+
+### UI Changes
+- Make spell timer glow more noticeable
+
+### Code Changes
+- ?
+
+### Miscellaneous
+- ?
+
 ## 0.33.0-alpha
 
 **Released: 2021-12-06**
