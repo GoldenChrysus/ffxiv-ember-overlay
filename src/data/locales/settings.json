@@ -1117,7 +1117,7 @@
 		"spells_mode.debuffs" : {
 			"en" : "Debuffs to Track",
 			"pt" : "Debuffs to Track",
-			"cn" : "Debuffs to Track",
+			"cn" : "监控的Debuff",
 			"jp" : "Debuffs to Track",
 			"de" : "Debuffs to Track",
 			"es" : "Debuffs to Track",
@@ -1261,7 +1261,7 @@
 		"spells_mode.reverse_debuff" : {
 			"en" : "Reverse Indicator for Debuffs",
 			"pt" : "Reverse Indicator for Debuffs",
-			"cn" : "Reverse Indicator for Debuffs",
+			"cn" : "反向指示Debuff进度条",
 			"jp" : "Reverse Indicator for Debuffs",
 			"de" : "Reverse Indicator for Debuffs",
 			"es" : "Reverse Indicator for Debuffs",
