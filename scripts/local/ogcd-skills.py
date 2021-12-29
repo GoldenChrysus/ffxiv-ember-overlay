@@ -73,6 +73,7 @@ for key in local:
 
 	skills[id] = {
 		"recast"        : record["RecastMs"] / 1000.0,
+		"charges"       : record["MaxCharges"],
 		"level_recasts" : sorted(traits[english_name], key = lambda item: item["level"], reverse = True) if english_name in traits else None,
 		"jobs"          : ("*", classes.split())[classes != "All Classes"],
 		"pvp"           : record["IsPVP"],
