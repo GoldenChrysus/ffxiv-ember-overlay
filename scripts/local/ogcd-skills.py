@@ -41,24 +41,35 @@ def loadTraits():
 def cleanText(s):
 	return re.sub("<[A-Za-z]+/>", "", s)
 
-skills       = {}
-traits       = {}
-local        = loadLocal();
-local_traits = loadTraits();
+skills        = {}
+recast_traits = {}
+charge_traits = {}
+local         = loadLocal()
+local_traits  = loadTraits()
 
 for key in local_traits:
 	record = local_traits[key]
 	skill  = record["Action"]
-	recast = int(record["Time"]) / 1.0
 	level  = record["Level"]
 
-	if skill not in traits:
-		traits[skill] = []
+	if record["Type"] == "Recast":
+		recast = int(record["Time"]) / 1.0
 
-	traits[skill].append({
-		"level"  : level,
-		"recast" : recast
-	})
+		if skill not in recast_traits:
+			recast_traits[skill] = []
+
+		recast_traits[skill].append({
+			"level"  : level,
+			"recast" : recast
+		})
+	elif record["Type"] == "Charge":
+		if skill not in charge_traits:
+			charge_traits[skill] = []
+
+		charge_traits[skill].append({
+			"level"   : level,
+			"charges" : record["Charges"]
+		})
 
 for key in local:
 	record = local[key]
@@ -73,7 +84,9 @@ for key in local:
 
 	skills[id] = {
 		"recast"        : record["RecastMs"] / 1000.0,
-		"level_recasts" : sorted(traits[english_name], key = lambda item: item["level"], reverse = True) if english_name in traits else None,
+		"charges"       : record["MaxCharges"],
+		"level_recasts" : sorted(recast_traits[english_name], key = lambda item: item["level"], reverse = True) if english_name in recast_traits else None,
+		"level_charges" : sorted(charge_traits[english_name], key = lambda item: item["level"], reverse = True) if english_name in charge_traits else None,
 		"jobs"          : ("*", classes.split())[classes != "All Classes"],
 		"pvp"           : record["IsPVP"],
 		"locales"       : {

@@ -1,6 +1,8 @@
 # FFXIV Ember Overlay & Spell Timers
 Powerful, data-focused DPS overlay and spell timers for Final Fantasy XIV. Can be used with the [OverlayPlugin](https://github.com/ngld/OverlayPlugin/releases) and [ACTWebSocket](https://github.com/ZCube/ACTWebSocket) plugins for [Advanced Combat Tracker](https://advancedcombattracker.com/download.php).
 
+### Updated for Endwalker.
+
 [![GitHub](https://img.shields.io/github/license/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/master/LICENSE)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/GoldenChrysus/ffxiv-ember-overlay/master.svg?style=flat-square)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/ffxiv-ember-overlay/bleeding-edge.svg?style=flat-square)
@@ -54,9 +56,9 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Classic theme](https://i.imgur.com/wq65hM7.png "Classic theme")
 
 ### Spell timers.
-**Spell, buff, and DOT timers.**
+**Spell, buff, DOT, and debuff timers.**
 
-![Spell, buff, and DOT timers](https://i.imgur.com/7qNwV06.gif "Spell, buff, and DOT timers")
+![Spell, buff, DOT, and debuff timers](https://i.imgur.com/7qNwV06.gif "Spell, buff, DOT, and debuff timers")
 
 **Optional minimal layout.**
 
@@ -174,6 +176,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 - Vulasuw
 - Jessica
 - mehdont
+- Tomo
 
 ### Misc.
 

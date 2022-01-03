@@ -566,6 +566,7 @@ function createNewState(state, full_key, action) {
 		[
 			"settings",
 			"internal.character_job",
+			"internal.character_level",
 			"internal.current_zone_id",
 			"settings.spells_mode.spells",
 			"settings.spells_mode.effects",
@@ -582,6 +583,10 @@ function createNewState(state, full_key, action) {
 		].indexOf(full_key) !== -1
 	) {
 		let reset = false;
+
+		if (full_key === "internal.character_level") {
+			reset = true;
+		}
 
 		if (full_key === "internal.current_zone_id") {
 			let old_is_pvp = (PVPZoneData.Zones.indexOf(state.internal.current_zone_id) !== -1);

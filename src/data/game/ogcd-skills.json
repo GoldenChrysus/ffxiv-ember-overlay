@@ -1,7 +1,9 @@
 {
 	"3" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -15,7 +17,9 @@
 	},
 	"6" : {
 		"recast" : 900.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -29,7 +33,9 @@
 	},
 	"17" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"PLD"
@@ -46,7 +52,9 @@
 	},
 	"20" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"PLD"
@@ -63,7 +71,9 @@
 	},
 	"23" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"PLD"
@@ -80,7 +90,9 @@
 	},
 	"27" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -96,7 +108,9 @@
 	},
 	"28" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"PLD"
@@ -113,7 +127,9 @@
 	},
 	"29" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -129,7 +145,9 @@
 	},
 	"30" : {
 		"recast" : 420.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -145,7 +163,9 @@
 	},
 	"38" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -162,7 +182,9 @@
 	},
 	"40" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -179,7 +201,9 @@
 	},
 	"43" : {
 		"recast" : 240.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -196,7 +220,9 @@
 	},
 	"44" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -213,7 +239,9 @@
 	},
 	"48" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MRD",
 			"WAR"
@@ -230,7 +258,9 @@
 	},
 	"52" : {
 		"recast" : 60.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -246,7 +276,9 @@
 	},
 	"65" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PGL",
 			"MNK"
@@ -263,7 +295,9 @@
 	},
 	"69" : {
 		"recast" : 40.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -279,7 +313,14 @@
 	},
 	"83" : {
 		"recast" : 45.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 88,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"LNC",
 			"DRG"
@@ -296,7 +337,9 @@
 	},
 	"85" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"LNC",
 			"DRG"
@@ -313,7 +356,9 @@
 	},
 	"92" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -329,7 +374,9 @@
 	},
 	"94" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -345,7 +392,14 @@
 	},
 	"95" : {
 		"recast" : 60.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"DRG"
 		],
@@ -361,7 +415,9 @@
 	},
 	"96" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -377,7 +433,9 @@
 	},
 	"101" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ARC",
 			"BRD"
@@ -394,7 +452,9 @@
 	},
 	"107" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ARC",
 			"BRD"
@@ -411,7 +471,9 @@
 	},
 	"110" : {
 		"recast" : 15.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ARC",
 			"BRD"
@@ -428,7 +490,9 @@
 	},
 	"112" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ARC",
 			"BRD"
@@ -445,7 +509,9 @@
 	},
 	"114" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -461,7 +527,9 @@
 	},
 	"116" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -477,7 +545,9 @@
 	},
 	"117" : {
 		"recast" : 15.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -493,7 +563,9 @@
 	},
 	"118" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -509,7 +581,9 @@
 	},
 	"136" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -525,7 +599,9 @@
 	},
 	"140" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -541,7 +617,9 @@
 	},
 	"155" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"THM",
 			"BLM"
@@ -558,7 +636,9 @@
 	},
 	"157" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"THM",
 			"BLM"
@@ -575,12 +655,14 @@
 	},
 	"158" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 84,
 				"recast" : 120.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -596,7 +678,9 @@
 	},
 	"166" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -612,7 +696,9 @@
 	},
 	"188" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -628,7 +714,9 @@
 	},
 	"211" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -647,7 +735,9 @@
 	},
 	"228" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -666,7 +756,9 @@
 	},
 	"268" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"FSH"
 		],
@@ -682,7 +774,9 @@
 	},
 	"290" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -701,7 +795,9 @@
 	},
 	"291" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -720,7 +816,9 @@
 	},
 	"1584" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -739,7 +837,9 @@
 	},
 	"1695" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -753,7 +853,9 @@
 	},
 	"2238" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -767,7 +869,9 @@
 	},
 	"2241" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ROG",
 			"NIN"
@@ -784,7 +888,9 @@
 	},
 	"2245" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ROG",
 			"NIN"
@@ -801,7 +907,9 @@
 	},
 	"2246" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -817,7 +925,9 @@
 	},
 	"2248" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ROG",
 			"NIN"
@@ -834,7 +944,9 @@
 	},
 	"2258" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ROG",
 			"NIN"
@@ -851,7 +963,9 @@
 	},
 	"2259" : {
 		"recast" : 20.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -867,7 +981,9 @@
 	},
 	"2261" : {
 		"recast" : 20.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -883,7 +999,14 @@
 	},
 	"2262" : {
 		"recast" : 60.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"NIN"
 		],
@@ -899,7 +1022,9 @@
 	},
 	"2263" : {
 		"recast" : 20.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -915,7 +1040,9 @@
 	},
 	"2264" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -931,7 +1058,9 @@
 	},
 	"2872" : {
 		"recast" : 40.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -947,7 +1076,9 @@
 	},
 	"2874" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -963,7 +1094,14 @@
 	},
 	"2876" : {
 		"recast" : 55.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"MCH"
 		],
@@ -979,7 +1117,9 @@
 	},
 	"2878" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -995,7 +1135,9 @@
 	},
 	"2890" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -1011,7 +1153,9 @@
 	},
 	"2894" : {
 		"recast" : 600.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -1025,7 +1169,9 @@
 	},
 	"3378" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -1039,7 +1185,9 @@
 	},
 	"3379" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -1053,7 +1201,9 @@
 	},
 	"3506" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -1067,7 +1217,9 @@
 	},
 	"3540" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -1083,7 +1235,9 @@
 	},
 	"3551" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1099,7 +1253,9 @@
 	},
 	"3552" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1115,7 +1271,9 @@
 	},
 	"3555" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -1131,7 +1289,9 @@
 	},
 	"3557" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -1147,7 +1307,9 @@
 	},
 	"3558" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1163,7 +1325,9 @@
 	},
 	"3559" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1179,7 +1343,9 @@
 	},
 	"3561" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1195,7 +1361,9 @@
 	},
 	"3562" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1211,7 +1379,9 @@
 	},
 	"3566" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -1227,7 +1397,9 @@
 	},
 	"3569" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -1243,7 +1415,9 @@
 	},
 	"3570" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -1259,7 +1433,9 @@
 	},
 	"3571" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -1275,7 +1451,9 @@
 	},
 	"3573" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -1291,10 +1469,17 @@
 	},
 	"3574" : {
 		"recast" : 60.0,
+		"charges" : 1,
 		"level_recasts" : [
 			{
 				"level" : 74,
 				"recast" : 30.0
+			}
+		],
+		"level_charges" : [
+			{
+				"level" : 88,
+				"charges" : 2
 			}
 		],
 		"jobs" : [
@@ -1312,7 +1497,9 @@
 	},
 	"3581" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -1328,7 +1515,9 @@
 	},
 	"3582" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -1344,7 +1533,9 @@
 	},
 	"3583" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1360,12 +1551,14 @@
 	},
 	"3585" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 88,
 				"recast" : 90.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1381,7 +1574,9 @@
 	},
 	"3586" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1397,7 +1592,9 @@
 	},
 	"3587" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -1413,7 +1610,9 @@
 	},
 	"3590" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1429,12 +1628,14 @@
 	},
 	"3606" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 68,
 				"recast" : 90.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1450,7 +1651,9 @@
 	},
 	"3612" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1466,7 +1669,9 @@
 	},
 	"3613" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -1482,7 +1687,14 @@
 	},
 	"3614" : {
 		"recast" : 40.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 78,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"AST"
 		],
@@ -1498,7 +1710,9 @@
 	},
 	"3625" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1514,7 +1728,9 @@
 	},
 	"3629" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1530,7 +1746,9 @@
 	},
 	"3634" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1546,7 +1764,9 @@
 	},
 	"3636" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1562,7 +1782,9 @@
 	},
 	"3638" : {
 		"recast" : 300.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1578,7 +1800,9 @@
 	},
 	"3639" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1594,7 +1818,14 @@
 	},
 	"3640" : {
 		"recast" : 30.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 78,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"DRK"
 		],
@@ -1610,7 +1841,9 @@
 	},
 	"3641" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1626,7 +1859,9 @@
 	},
 	"3643" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1642,7 +1877,9 @@
 	},
 	"4589" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MIN"
 		],
@@ -1658,7 +1895,9 @@
 	},
 	"4590" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BTN"
 		],
@@ -1674,7 +1913,9 @@
 	},
 	"5136" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -1688,7 +1929,9 @@
 	},
 	"7382" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -1704,7 +1947,9 @@
 	},
 	"7383" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -1720,7 +1965,9 @@
 	},
 	"7385" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -1736,7 +1983,9 @@
 	},
 	"7386" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1752,7 +2001,9 @@
 	},
 	"7387" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1768,7 +2019,9 @@
 	},
 	"7388" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1784,7 +2037,9 @@
 	},
 	"7389" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -1800,7 +2055,9 @@
 	},
 	"7390" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1816,7 +2073,9 @@
 	},
 	"7393" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -1832,7 +2091,9 @@
 	},
 	"7394" : {
 		"recast" : 30.0,
+		"charges" : 3,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -1848,7 +2109,9 @@
 	},
 	"7395" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -1864,7 +2127,9 @@
 	},
 	"7396" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -1880,7 +2145,9 @@
 	},
 	"7398" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -1896,7 +2163,9 @@
 	},
 	"7400" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -1912,7 +2181,9 @@
 	},
 	"7403" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -1928,12 +2199,14 @@
 	},
 	"7405" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 88,
 				"recast" : 90.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1949,7 +2222,9 @@
 	},
 	"7408" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -1965,7 +2240,9 @@
 	},
 	"7414" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -1981,7 +2258,9 @@
 	},
 	"7415" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -1997,7 +2276,9 @@
 	},
 	"7418" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -2013,7 +2294,9 @@
 	},
 	"7421" : {
 		"recast" : 60.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -2029,7 +2312,9 @@
 	},
 	"7427" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -2045,7 +2330,9 @@
 	},
 	"7429" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -2061,7 +2348,9 @@
 	},
 	"7430" : {
 		"recast" : 60.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -2077,7 +2366,14 @@
 	},
 	"7432" : {
 		"recast" : 30.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 88,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"WHM"
 		],
@@ -2093,7 +2389,9 @@
 	},
 	"7433" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -2109,7 +2407,9 @@
 	},
 	"7434" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -2125,7 +2425,9 @@
 	},
 	"7436" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -2141,7 +2443,9 @@
 	},
 	"7439" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -2157,7 +2461,9 @@
 	},
 	"7443" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -2173,7 +2479,9 @@
 	},
 	"7492" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2189,7 +2497,9 @@
 	},
 	"7493" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2205,7 +2515,9 @@
 	},
 	"7496" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2221,7 +2533,9 @@
 	},
 	"7497" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2237,7 +2551,9 @@
 	},
 	"7498" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2253,7 +2569,14 @@
 	},
 	"7499" : {
 		"recast" : 55.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 88,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"SAM"
 		],
@@ -2269,7 +2592,9 @@
 	},
 	"7506" : {
 		"recast" : 35.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2285,7 +2610,9 @@
 	},
 	"7515" : {
 		"recast" : 35.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2301,7 +2628,9 @@
 	},
 	"7517" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2317,7 +2646,14 @@
 	},
 	"7518" : {
 		"recast" : 55.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 88,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"RDM"
 		],
@@ -2333,12 +2669,14 @@
 	},
 	"7519" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 74,
 				"recast" : 35.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2354,7 +2692,9 @@
 	},
 	"7520" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2370,12 +2710,14 @@
 	},
 	"7521" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 78,
 				"recast" : 110.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -2391,7 +2733,9 @@
 	},
 	"7531" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2412,7 +2756,9 @@
 	},
 	"7533" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2433,7 +2779,9 @@
 	},
 	"7535" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2454,7 +2802,9 @@
 	},
 	"7537" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2475,7 +2825,9 @@
 	},
 	"7538" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2496,7 +2848,9 @@
 	},
 	"7540" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"MRD",
@@ -2517,7 +2871,9 @@
 	},
 	"7541" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2544,7 +2900,9 @@
 	},
 	"7542" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2567,7 +2925,9 @@
 	},
 	"7546" : {
 		"recast" : 45.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2590,7 +2950,9 @@
 	},
 	"7548" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GLA",
 			"PGL",
@@ -2623,7 +2985,9 @@
 	},
 	"7549" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2646,7 +3010,9 @@
 	},
 	"7551" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ARC",
 			"BRD",
@@ -2665,7 +3031,9 @@
 	},
 	"7553" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ARC",
 			"BRD",
@@ -2684,7 +3052,9 @@
 	},
 	"7554" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ARC",
 			"BRD",
@@ -2703,7 +3073,9 @@
 	},
 	"7559" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"CNJ",
 			"THM",
@@ -2729,7 +3101,9 @@
 	},
 	"7560" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"THM",
 			"ACN",
@@ -2750,7 +3124,9 @@
 	},
 	"7561" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"CNJ",
 			"THM",
@@ -2776,7 +3152,9 @@
 	},
 	"7562" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"CNJ",
 			"THM",
@@ -2802,7 +3180,9 @@
 	},
 	"7571" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"CNJ",
 			"WHM",
@@ -2822,7 +3202,9 @@
 	},
 	"7621" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -2836,7 +3218,9 @@
 	},
 	"7622" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -2850,7 +3234,9 @@
 	},
 	"7855" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2866,7 +3252,9 @@
 	},
 	"7857" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -2882,7 +3270,9 @@
 	},
 	"7863" : {
 		"recast" : 40.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PGL",
 			"LNC",
@@ -2905,7 +3295,9 @@
 	},
 	"7904" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -2924,7 +3316,9 @@
 	},
 	"7905" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"Disciple",
 			"of",
@@ -2943,7 +3337,9 @@
 	},
 	"8754" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -2959,7 +3355,9 @@
 	},
 	"8755" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -2975,7 +3373,9 @@
 	},
 	"8765" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -2991,7 +3391,9 @@
 	},
 	"8767" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -3007,7 +3409,9 @@
 	},
 	"8768" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -3023,7 +3427,14 @@
 	},
 	"8777" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 78,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"DRK"
 		],
@@ -3039,7 +3450,9 @@
 	},
 	"8779" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -3055,7 +3468,9 @@
 	},
 	"8787" : {
 		"recast" : 15.0,
+		"charges" : 3,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -3071,7 +3486,9 @@
 	},
 	"8788" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -3087,7 +3504,9 @@
 	},
 	"8789" : {
 		"recast" : 15.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -3103,7 +3522,14 @@
 	},
 	"8802" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"DRG"
 		],
@@ -3119,7 +3545,9 @@
 	},
 	"8803" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -3135,7 +3563,14 @@
 	},
 	"8812" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"NIN"
 		],
@@ -3151,7 +3586,9 @@
 	},
 	"8814" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -3167,7 +3604,9 @@
 	},
 	"8816" : {
 		"recast" : 15.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -3183,7 +3622,9 @@
 	},
 	"8820" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -3199,7 +3640,9 @@
 	},
 	"8830" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -3215,7 +3658,9 @@
 	},
 	"8831" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -3231,7 +3676,9 @@
 	},
 	"8838" : {
 		"recast" : 15.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -3247,7 +3694,9 @@
 	},
 	"8839" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -3263,7 +3712,9 @@
 	},
 	"8841" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -3279,7 +3730,9 @@
 	},
 	"8843" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -3295,7 +3748,9 @@
 	},
 	"8844" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -3311,7 +3766,9 @@
 	},
 	"8853" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -3327,7 +3784,9 @@
 	},
 	"8855" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -3343,7 +3802,9 @@
 	},
 	"8869" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -3359,7 +3820,9 @@
 	},
 	"8877" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -3375,7 +3838,9 @@
 	},
 	"8890" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -3391,7 +3856,9 @@
 	},
 	"8891" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -3407,7 +3874,9 @@
 	},
 	"8909" : {
 		"recast" : 15.0,
+		"charges" : 3,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -3423,7 +3892,14 @@
 	},
 	"8916" : {
 		"recast" : 15.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 78,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"AST"
 		],
@@ -3439,7 +3915,9 @@
 	},
 	"9013" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -3455,7 +3933,9 @@
 	},
 	"9014" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -3471,7 +3951,9 @@
 	},
 	"9620" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -3487,7 +3969,9 @@
 	},
 	"9639" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -3503,7 +3987,9 @@
 	},
 	"9974" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : true,
 		"locales" : {
@@ -3517,7 +4003,9 @@
 	},
 	"9975" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : true,
 		"locales" : {
@@ -3531,7 +4019,9 @@
 	},
 	"9978" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : true,
 		"locales" : {
@@ -3545,7 +4035,9 @@
 	},
 	"9980" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : true,
 		"locales" : {
@@ -3559,7 +4051,9 @@
 	},
 	"9981" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : true,
 		"locales" : {
@@ -3573,7 +4067,9 @@
 	},
 	"10028" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -3589,7 +4085,9 @@
 	},
 	"10029" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -3605,7 +4103,9 @@
 	},
 	"10032" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -3621,7 +4121,9 @@
 	},
 	"11411" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -3637,7 +4139,9 @@
 	},
 	"11421" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -3653,7 +4157,9 @@
 	},
 	"11426" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -3669,7 +4175,9 @@
 	},
 	"11427" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -3685,7 +4193,9 @@
 	},
 	"11428" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -3701,7 +4211,9 @@
 	},
 	"11429" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -3717,7 +4229,9 @@
 	},
 	"11430" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -3733,7 +4247,9 @@
 	},
 	"11431" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -3749,7 +4265,9 @@
 	},
 	"12958" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -3768,7 +4286,9 @@
 	},
 	"12959" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -3787,7 +4307,9 @@
 	},
 	"12960" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -3817,7 +4339,9 @@
 	},
 	"12961" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -3836,7 +4360,9 @@
 	},
 	"12962" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -3855,7 +4381,9 @@
 	},
 	"12963" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -3881,7 +4409,9 @@
 	},
 	"12964" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -3900,7 +4430,9 @@
 	},
 	"12965" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -3919,7 +4451,9 @@
 	},
 	"12966" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -3945,7 +4479,9 @@
 	},
 	"12967" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -3979,7 +4515,9 @@
 	},
 	"12968" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4013,7 +4551,9 @@
 	},
 	"12971" : {
 		"recast" : 300.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4047,7 +4587,9 @@
 	},
 	"12975" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4081,7 +4623,9 @@
 	},
 	"12976" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4115,7 +4659,9 @@
 	},
 	"12978" : {
 		"recast" : 300.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4142,7 +4688,9 @@
 	},
 	"12981" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4175,7 +4723,9 @@
 	},
 	"12984" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4209,7 +4759,9 @@
 	},
 	"12985" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4243,7 +4795,9 @@
 	},
 	"12986" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4277,7 +4831,9 @@
 	},
 	"12987" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -4296,7 +4852,9 @@
 	},
 	"12988" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4326,7 +4884,9 @@
 	},
 	"12995" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -4356,7 +4916,9 @@
 	},
 	"12998" : {
 		"recast" : 300.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -4386,7 +4948,9 @@
 	},
 	"12999" : {
 		"recast" : 300.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -4416,7 +4980,9 @@
 	},
 	"13001" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -4435,7 +5001,9 @@
 	},
 	"13005" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"BLM",
@@ -4457,7 +5025,9 @@
 	},
 	"13006" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -4481,7 +5051,9 @@
 	},
 	"13426" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -4495,7 +5067,9 @@
 	},
 	"13975" : {
 		"recast" : 15.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -4511,7 +5085,9 @@
 	},
 	"14477" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM",
 			"SMN",
@@ -4529,7 +5105,9 @@
 	},
 	"14478" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -4549,7 +5127,9 @@
 	},
 	"14479" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -4567,7 +5147,9 @@
 	},
 	"14480" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -4586,7 +5168,9 @@
 	},
 	"14842" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -4600,7 +5184,9 @@
 	},
 	"14843" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -4614,7 +5200,9 @@
 	},
 	"15375" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -4628,7 +5216,9 @@
 	},
 	"15870" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -4642,7 +5232,9 @@
 	},
 	"15871" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -4656,7 +5248,9 @@
 	},
 	"15997" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -4672,7 +5266,9 @@
 	},
 	"15998" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -4688,7 +5284,9 @@
 	},
 	"16006" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -4704,7 +5302,14 @@
 	},
 	"16010" : {
 		"recast" : 30.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 68,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"DNC"
 		],
@@ -4720,7 +5325,9 @@
 	},
 	"16011" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -4736,12 +5343,14 @@
 	},
 	"16012" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 88,
 				"recast" : 90.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -4757,7 +5366,9 @@
 	},
 	"16013" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -4773,7 +5384,9 @@
 	},
 	"16014" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -4789,7 +5402,9 @@
 	},
 	"16015" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -4805,7 +5420,9 @@
 	},
 	"16138" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4821,7 +5438,9 @@
 	},
 	"16140" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4837,7 +5456,9 @@
 	},
 	"16142" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4853,7 +5474,9 @@
 	},
 	"16144" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4869,7 +5492,9 @@
 	},
 	"16146" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4885,7 +5510,9 @@
 	},
 	"16148" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4901,7 +5528,14 @@
 	},
 	"16151" : {
 		"recast" : 60.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"GNB"
 		],
@@ -4917,7 +5551,9 @@
 	},
 	"16152" : {
 		"recast" : 360.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4933,7 +5569,9 @@
 	},
 	"16153" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4949,7 +5587,9 @@
 	},
 	"16154" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4965,7 +5605,9 @@
 	},
 	"16159" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4981,7 +5623,9 @@
 	},
 	"16160" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -4997,7 +5641,9 @@
 	},
 	"16161" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -5013,7 +5659,9 @@
 	},
 	"16164" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -5029,7 +5677,9 @@
 	},
 	"16165" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -5045,7 +5695,9 @@
 	},
 	"16436" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -5059,7 +5711,9 @@
 	},
 	"16461" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -5075,7 +5729,9 @@
 	},
 	"16464" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -5091,7 +5747,9 @@
 	},
 	"16471" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -5107,7 +5765,9 @@
 	},
 	"16472" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -5123,7 +5783,9 @@
 	},
 	"16475" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -5139,7 +5801,9 @@
 	},
 	"16478" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -5155,7 +5819,9 @@
 	},
 	"16480" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -5171,7 +5837,9 @@
 	},
 	"16481" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -5187,7 +5855,9 @@
 	},
 	"16482" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -5203,7 +5873,14 @@
 	},
 	"16483" : {
 		"recast" : 60.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"SAM"
 		],
@@ -5219,7 +5896,9 @@
 	},
 	"16484" : {
 		"recast" : 60.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -5235,7 +5914,9 @@
 	},
 	"16485" : {
 		"recast" : 60.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -5251,7 +5932,9 @@
 	},
 	"16486" : {
 		"recast" : 60.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -5267,7 +5950,9 @@
 	},
 	"16487" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -5283,7 +5968,9 @@
 	},
 	"16489" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -5299,7 +5986,9 @@
 	},
 	"16493" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -5315,7 +6004,9 @@
 	},
 	"16498" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -5331,7 +6022,9 @@
 	},
 	"16499" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -5347,7 +6040,9 @@
 	},
 	"16500" : {
 		"recast" : 40.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -5363,7 +6058,9 @@
 	},
 	"16502" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -5379,7 +6076,9 @@
 	},
 	"16508" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -5396,7 +6095,9 @@
 	},
 	"16510" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -5412,7 +6113,9 @@
 	},
 	"16516" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -5428,7 +6131,9 @@
 	},
 	"16527" : {
 		"recast" : 35.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -5444,7 +6149,9 @@
 	},
 	"16536" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -5460,7 +6167,9 @@
 	},
 	"16537" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -5476,7 +6185,9 @@
 	},
 	"16538" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -5492,7 +6203,9 @@
 	},
 	"16542" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -5508,7 +6221,9 @@
 	},
 	"16543" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -5524,7 +6239,9 @@
 	},
 	"16545" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -5540,7 +6257,9 @@
 	},
 	"16546" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -5556,7 +6275,9 @@
 	},
 	"16552" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -5572,7 +6293,9 @@
 	},
 	"16553" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -5588,7 +6311,14 @@
 	},
 	"16556" : {
 		"recast" : 30.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 88,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"AST"
 		],
@@ -5604,7 +6334,9 @@
 	},
 	"16557" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -5620,7 +6352,9 @@
 	},
 	"16559" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -5636,7 +6370,9 @@
 	},
 	"16804" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -5650,12 +6386,14 @@
 	},
 	"16889" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 88,
 				"recast" : 90.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -5671,7 +6409,9 @@
 	},
 	"17004" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -5685,7 +6425,9 @@
 	},
 	"17124" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -5699,7 +6441,9 @@
 	},
 	"17209" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -5715,7 +6459,9 @@
 	},
 	"17596" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -5729,7 +6475,9 @@
 	},
 	"17669" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -5748,7 +6496,9 @@
 	},
 	"17670" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -5764,7 +6514,9 @@
 	},
 	"17671" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -5783,7 +6535,9 @@
 	},
 	"17672" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -5802,7 +6556,9 @@
 	},
 	"17674" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -5822,7 +6578,9 @@
 	},
 	"17676" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -5842,7 +6600,9 @@
 	},
 	"17677" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -5862,7 +6622,9 @@
 	},
 	"17678" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -5880,7 +6642,9 @@
 	},
 	"17679" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -5898,7 +6662,9 @@
 	},
 	"17680" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -5916,7 +6682,9 @@
 	},
 	"17681" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -5936,7 +6704,9 @@
 	},
 	"17682" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -5954,7 +6724,9 @@
 	},
 	"17683" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM",
 			"SMN",
@@ -5972,7 +6744,9 @@
 	},
 	"17684" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM",
 			"SMN",
@@ -5990,7 +6764,9 @@
 	},
 	"17685" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM",
 			"SMN",
@@ -6008,7 +6784,9 @@
 	},
 	"17686" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM",
 			"SMN",
@@ -6026,7 +6804,9 @@
 	},
 	"17687" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM",
 			"SMN",
@@ -6044,7 +6824,9 @@
 	},
 	"17688" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -6063,7 +6845,9 @@
 	},
 	"17689" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -6082,7 +6866,9 @@
 	},
 	"17690" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -6101,7 +6887,9 @@
 	},
 	"17694" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -6117,7 +6905,9 @@
 	},
 	"17698" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -6133,7 +6923,9 @@
 	},
 	"17699" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -6149,7 +6941,9 @@
 	},
 	"17702" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -6165,7 +6959,9 @@
 	},
 	"17706" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -6181,7 +6977,9 @@
 	},
 	"17716" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -6197,7 +6995,9 @@
 	},
 	"17728" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -6213,7 +7013,9 @@
 	},
 	"17729" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -6229,7 +7031,9 @@
 	},
 	"17730" : {
 		"recast" : 15.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -6245,7 +7049,9 @@
 	},
 	"17734" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -6261,7 +7067,14 @@
 	},
 	"17740" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"SAM"
 		],
@@ -6277,7 +7090,9 @@
 	},
 	"17742" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -6293,7 +7108,9 @@
 	},
 	"17743" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -6309,7 +7126,9 @@
 	},
 	"17748" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -6325,7 +7144,9 @@
 	},
 	"17749" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -6341,7 +7162,9 @@
 	},
 	"17750" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -6357,7 +7180,9 @@
 	},
 	"17752" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -6373,7 +7198,9 @@
 	},
 	"17753" : {
 		"recast" : 15.0,
+		"charges" : 3,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -6389,7 +7216,9 @@
 	},
 	"17762" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -6405,7 +7234,9 @@
 	},
 	"17763" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -6421,7 +7252,14 @@
 	},
 	"17764" : {
 		"recast" : 30.0,
+		"charges" : 3,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 68,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"DNC"
 		],
@@ -6437,7 +7275,9 @@
 	},
 	"17765" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -6453,7 +7293,9 @@
 	},
 	"17766" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -6469,7 +7311,9 @@
 	},
 	"17775" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -6485,7 +7329,9 @@
 	},
 	"17780" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -6501,7 +7347,9 @@
 	},
 	"17781" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -6517,7 +7365,9 @@
 	},
 	"17786" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -6533,7 +7383,9 @@
 	},
 	"17794" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -6549,7 +7401,9 @@
 	},
 	"17797" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -6565,7 +7419,9 @@
 	},
 	"17807" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -6581,7 +7437,9 @@
 	},
 	"17809" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -6597,7 +7455,9 @@
 	},
 	"17824" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DNC"
 		],
@@ -6613,7 +7473,9 @@
 	},
 	"17832" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -6632,7 +7494,9 @@
 	},
 	"17839" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -6646,7 +7510,9 @@
 	},
 	"17866" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -6665,7 +7531,9 @@
 	},
 	"17889" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -6681,7 +7549,9 @@
 	},
 	"17890" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -6697,7 +7567,14 @@
 	},
 	"17891" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"GNB"
 		],
@@ -6713,7 +7590,9 @@
 	},
 	"17901" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -6727,7 +7606,9 @@
 	},
 	"17991" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -6743,7 +7624,9 @@
 	},
 	"18305" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -6759,7 +7642,9 @@
 	},
 	"18306" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -6775,7 +7660,9 @@
 	},
 	"18312" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -6791,7 +7678,9 @@
 	},
 	"18317" : {
 		"recast" : 300.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -6807,7 +7696,9 @@
 	},
 	"18320" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -6823,7 +7714,9 @@
 	},
 	"18323" : {
 		"recast" : 30.0,
+		"charges" : 4,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -6839,7 +7732,9 @@
 	},
 	"18324" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -6855,7 +7750,9 @@
 	},
 	"18325" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -6871,7 +7768,9 @@
 	},
 	"18775" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -6885,7 +7784,9 @@
 	},
 	"18909" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -6901,7 +7802,9 @@
 	},
 	"18915" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -6917,7 +7820,14 @@
 	},
 	"18920" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 88,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"DRG"
 		],
@@ -6933,7 +7843,9 @@
 	},
 	"18928" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -6951,7 +7863,9 @@
 	},
 	"18931" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -6967,7 +7881,9 @@
 	},
 	"18933" : {
 		"recast" : 15.0,
+		"charges" : 3,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -6983,12 +7899,14 @@
 	},
 	"18934" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 88,
 				"recast" : 90.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -7004,7 +7922,9 @@
 	},
 	"18938" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -7020,7 +7940,9 @@
 	},
 	"18939" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -7036,7 +7958,9 @@
 	},
 	"18940" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -7052,7 +7976,9 @@
 	},
 	"18941" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -7068,7 +7994,9 @@
 	},
 	"18942" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"Jobs",
 			"of",
@@ -7091,7 +8019,9 @@
 	},
 	"18943" : {
 		"recast" : 15.0,
+		"charges" : 3,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"Jobs",
 			"of",
@@ -7114,7 +8044,9 @@
 	},
 	"18948" : {
 		"recast" : 15.0,
+		"charges" : 3,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -7130,7 +8062,9 @@
 	},
 	"18949" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -7146,7 +8080,9 @@
 	},
 	"18952" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -7165,7 +8101,9 @@
 	},
 	"18953" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -7181,7 +8119,9 @@
 	},
 	"18954" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -7201,7 +8141,9 @@
 	},
 	"18955" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -7219,7 +8161,9 @@
 	},
 	"18956" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM",
 			"SMN",
@@ -7237,7 +8181,9 @@
 	},
 	"18957" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -7256,7 +8202,9 @@
 	},
 	"18987" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"NIN"
 		],
@@ -7272,7 +8220,9 @@
 	},
 	"18990" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -7291,7 +8241,9 @@
 	},
 	"18992" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -7311,7 +8263,9 @@
 	},
 	"19071" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -7327,7 +8281,9 @@
 	},
 	"19085" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -7343,7 +8299,9 @@
 	},
 	"19086" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -7359,7 +8317,9 @@
 	},
 	"19218" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -7373,7 +8333,9 @@
 	},
 	"20106" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -7389,7 +8351,9 @@
 	},
 	"20496" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -7403,7 +8367,9 @@
 	},
 	"20692" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7437,7 +8403,9 @@
 	},
 	"20693" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7471,7 +8439,9 @@
 	},
 	"20694" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7505,7 +8475,9 @@
 	},
 	"20695" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7539,7 +8511,9 @@
 	},
 	"20696" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7573,7 +8547,9 @@
 	},
 	"20697" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7607,7 +8583,9 @@
 	},
 	"20698" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7641,7 +8619,9 @@
 	},
 	"20699" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7675,7 +8655,9 @@
 	},
 	"20700" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7709,7 +8691,9 @@
 	},
 	"20703" : {
 		"recast" : 360.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7743,7 +8727,9 @@
 	},
 	"20705" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7776,7 +8762,9 @@
 	},
 	"20708" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7810,7 +8798,9 @@
 	},
 	"20715" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"BLM",
@@ -7832,7 +8822,9 @@
 	},
 	"20716" : {
 		"recast" : 300.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7866,7 +8858,9 @@
 	},
 	"20717" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7893,7 +8887,9 @@
 	},
 	"20718" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7920,7 +8916,9 @@
 	},
 	"20719" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7954,7 +8952,9 @@
 	},
 	"20720" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -7988,7 +8988,9 @@
 	},
 	"20721" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8022,7 +9024,9 @@
 	},
 	"20722" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -8041,7 +9045,9 @@
 	},
 	"20723" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -8071,7 +9077,9 @@
 	},
 	"20724" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8105,7 +9113,9 @@
 	},
 	"20725" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8139,7 +9149,9 @@
 	},
 	"20731" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -8169,7 +9181,9 @@
 	},
 	"20734" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8203,7 +9217,9 @@
 	},
 	"20737" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8237,7 +9253,9 @@
 	},
 	"20738" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8271,7 +9289,9 @@
 	},
 	"20739" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8305,7 +9325,9 @@
 	},
 	"20740" : {
 		"recast" : 40.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8339,7 +9361,9 @@
 	},
 	"20940" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -8353,7 +9377,9 @@
 	},
 	"21494" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -8367,12 +9393,14 @@
 	},
 	"21495" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 74,
 				"recast" : 35.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -8386,7 +9414,9 @@
 	},
 	"21499" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -8400,7 +9430,9 @@
 	},
 	"21611" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -8414,7 +9446,9 @@
 	},
 	"22353" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -8434,7 +9468,9 @@
 	},
 	"22354" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -8453,7 +9489,9 @@
 	},
 	"22355" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -8472,7 +9510,9 @@
 	},
 	"22356" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD",
 			"MCH",
@@ -8490,7 +9530,9 @@
 	},
 	"23264" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8506,7 +9548,9 @@
 	},
 	"23267" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8522,7 +9566,9 @@
 	},
 	"23272" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8538,7 +9584,9 @@
 	},
 	"23273" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8554,7 +9602,9 @@
 	},
 	"23275" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8570,7 +9620,9 @@
 	},
 	"23277" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8586,7 +9638,9 @@
 	},
 	"23280" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8602,7 +9656,9 @@
 	},
 	"23285" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8618,7 +9674,9 @@
 	},
 	"23287" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8634,7 +9692,9 @@
 	},
 	"23288" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8650,7 +9710,9 @@
 	},
 	"23290" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLU"
 		],
@@ -8666,7 +9728,9 @@
 	},
 	"23913" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"BLM",
@@ -8688,7 +9752,9 @@
 	},
 	"23914" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8715,7 +9781,9 @@
 	},
 	"23918" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8749,7 +9817,9 @@
 	},
 	"23919" : {
 		"recast" : 300.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK",
 			"DRG",
@@ -8775,7 +9845,9 @@
 	},
 	"23920" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM",
 			"SCH",
@@ -8794,7 +9866,9 @@
 	},
 	"23921" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"WAR",
@@ -8813,7 +9887,9 @@
 	},
 	"23922" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD",
 			"MNK",
@@ -8847,7 +9923,9 @@
 	},
 	"24066" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -8861,7 +9939,9 @@
 	},
 	"24288" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -8877,7 +9957,9 @@
 	},
 	"24289" : {
 		"recast" : 45.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -8893,7 +9975,9 @@
 	},
 	"24294" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -8909,7 +9993,9 @@
 	},
 	"24295" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -8925,7 +10011,9 @@
 	},
 	"24298" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -8941,7 +10029,9 @@
 	},
 	"24299" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -8957,12 +10047,14 @@
 	},
 	"24300" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 88,
 				"recast" : 90.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -8978,7 +10070,9 @@
 	},
 	"24301" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -8994,7 +10088,9 @@
 	},
 	"24302" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9010,7 +10106,9 @@
 	},
 	"24303" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9026,7 +10124,9 @@
 	},
 	"24305" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9042,7 +10142,9 @@
 	},
 	"24307" : {
 		"recast" : 45.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9058,7 +10160,9 @@
 	},
 	"24309" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9074,7 +10178,9 @@
 	},
 	"24310" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9090,7 +10196,9 @@
 	},
 	"24311" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9106,7 +10214,9 @@
 	},
 	"24313" : {
 		"recast" : 45.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9122,7 +10232,9 @@
 	},
 	"24317" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9138,7 +10250,9 @@
 	},
 	"24318" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -9154,7 +10268,9 @@
 	},
 	"24380" : {
 		"recast" : 30.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9170,7 +10286,9 @@
 	},
 	"24381" : {
 		"recast" : 30.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9186,7 +10304,9 @@
 	},
 	"24393" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9202,7 +10322,9 @@
 	},
 	"24394" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9218,7 +10340,9 @@
 	},
 	"24401" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9234,7 +10358,9 @@
 	},
 	"24402" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9250,7 +10376,9 @@
 	},
 	"24403" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9266,7 +10394,9 @@
 	},
 	"24404" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9282,7 +10412,9 @@
 	},
 	"24405" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9298,7 +10430,9 @@
 	},
 	"24917" : {
 		"recast" : 40.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9312,7 +10446,9 @@
 	},
 	"25133" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9326,7 +10462,9 @@
 	},
 	"25747" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"PLD"
 		],
@@ -9342,7 +10480,9 @@
 	},
 	"25751" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -9358,7 +10498,9 @@
 	},
 	"25752" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WAR"
 		],
@@ -9374,7 +10516,9 @@
 	},
 	"25754" : {
 		"recast" : 60.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -9390,7 +10534,9 @@
 	},
 	"25755" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -9406,7 +10552,9 @@
 	},
 	"25757" : {
 		"recast" : 60.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -9422,7 +10570,9 @@
 	},
 	"25758" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -9438,7 +10588,9 @@
 	},
 	"25760" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"GNB"
 		],
@@ -9454,7 +10606,9 @@
 	},
 	"25762" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -9470,7 +10624,9 @@
 	},
 	"25766" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MNK"
 		],
@@ -9486,7 +10642,9 @@
 	},
 	"25773" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"DRG"
 		],
@@ -9502,7 +10660,9 @@
 	},
 	"25779" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SAM"
 		],
@@ -9518,7 +10678,9 @@
 	},
 	"25785" : {
 		"recast" : 110.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BRD"
 		],
@@ -9534,7 +10696,9 @@
 	},
 	"25788" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"MCH"
 		],
@@ -9550,7 +10714,9 @@
 	},
 	"25796" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"BLM"
 		],
@@ -9566,7 +10732,14 @@
 	},
 	"25799" : {
 		"recast" : 60.0,
+		"charges" : 1,
 		"level_recasts" : null,
+		"level_charges" : [
+			{
+				"level" : 88,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -9583,7 +10756,9 @@
 	},
 	"25800" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"ACN",
 			"SMN"
@@ -9600,7 +10775,9 @@
 	},
 	"25801" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -9616,7 +10793,9 @@
 	},
 	"25830" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -9632,7 +10811,9 @@
 	},
 	"25831" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SMN"
 		],
@@ -9648,7 +10829,9 @@
 	},
 	"25857" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RDM"
 		],
@@ -9664,7 +10847,9 @@
 	},
 	"25861" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -9680,7 +10865,9 @@
 	},
 	"25862" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"WHM"
 		],
@@ -9696,7 +10883,9 @@
 	},
 	"25867" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -9712,7 +10901,9 @@
 	},
 	"25868" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SCH"
 		],
@@ -9728,7 +10919,9 @@
 	},
 	"25873" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -9744,7 +10937,9 @@
 	},
 	"25874" : {
 		"recast" : 180.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"AST"
 		],
@@ -9760,7 +10955,9 @@
 	},
 	"26225" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9774,7 +10971,9 @@
 	},
 	"26232" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9788,7 +10987,9 @@
 	},
 	"26233" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9802,7 +11003,9 @@
 	},
 	"26252" : {
 		"recast" : 60.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9816,7 +11019,9 @@
 	},
 	"26253" : {
 		"recast" : 90.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9830,7 +11035,9 @@
 	},
 	"26890" : {
 		"recast" : 15.0,
+		"charges" : 3,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9844,7 +11051,9 @@
 	},
 	"27044" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9858,7 +11067,9 @@
 	},
 	"27046" : {
 		"recast" : 35.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9872,7 +11083,9 @@
 	},
 	"27047" : {
 		"recast" : 25.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9886,7 +11099,9 @@
 	},
 	"27054" : {
 		"recast" : 40.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9900,12 +11115,14 @@
 	},
 	"27060" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : [
 			{
 				"level" : 74,
 				"recast" : 35.0
 			}
 		],
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9919,7 +11136,9 @@
 	},
 	"27430" : {
 		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9933,7 +11152,9 @@
 	},
 	"27432" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9947,7 +11168,9 @@
 	},
 	"27433" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9961,7 +11184,9 @@
 	},
 	"27434" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {
@@ -9975,7 +11200,9 @@
 	},
 	"27808" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -9991,7 +11218,9 @@
 	},
 	"27809" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -10007,7 +11236,9 @@
 	},
 	"27814" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -10023,7 +11254,9 @@
 	},
 	"27817" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -10039,7 +11272,9 @@
 	},
 	"27818" : {
 		"recast" : 20.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -10055,7 +11290,9 @@
 	},
 	"27819" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -10071,7 +11308,9 @@
 	},
 	"27820" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -10087,7 +11326,9 @@
 	},
 	"27821" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"RPR"
 		],
@@ -10103,7 +11344,9 @@
 	},
 	"27829" : {
 		"recast" : 30.0,
+		"charges" : 2,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -10119,7 +11362,9 @@
 	},
 	"27830" : {
 		"recast" : 45.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -10135,7 +11380,9 @@
 	},
 	"27833" : {
 		"recast" : 30.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -10151,7 +11398,9 @@
 	},
 	"27834" : {
 		"recast" : 15.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -10167,7 +11416,9 @@
 	},
 	"27835" : {
 		"recast" : 10.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : [
 			"SGE"
 		],
@@ -10183,7 +11434,9 @@
 	},
 	"28302" : {
 		"recast" : 11.0,
+		"charges" : 0,
 		"level_recasts" : null,
+		"level_charges" : null,
 		"jobs" : "*",
 		"pvp" : false,
 		"locales" : {

@@ -90,6 +90,7 @@ class About extends React.Component {
 							<li><strong>Vulasuw</strong> - Donor</li>
 							<li><strong>Jessica</strong> - Donor</li>
 							<li><strong>mehdont</strong> - Donor</li>
+							<li><strong>Tomo</strong> - Donor</li>
 						</ul>
 					</p>
 				</Container>
