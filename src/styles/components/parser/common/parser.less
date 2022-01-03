@@ -1245,15 +1245,18 @@ body.mode-spells {
 }
 
 #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
-	animation: pulsing-border-dark 3s infinite;
+	box-shadow: 0 0 7px #ffd73d;
+	animation: pulsing-border-dark 1.5s infinite;
 }
 
 body[theme=ffxiv-light] #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
-	animation: pulsing-border-light 3s infinite !important;
+	box-shadow: 0 0 7px #ffd73d;
+	animation: pulsing-border-light 1.5s infinite !important;
 }
 
 body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown) {
-	animation: pulsing-border-classic 3s infinite !important;
+	box-shadow: 0 0 7px @classic_playerTableRowText;
+	animation: pulsing-border-classic 1.5s infinite !important;
 }
 
 #container #inner #content .spell-grid .spell-container.border:not(.off-cooldown).warning {
@@ -1698,31 +1701,31 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 
 @keyframes pulsing-border-dark {
 	0%, 100% {
-		box-shadow: 0 0 3px @dark_importantText;
+		box-shadow: 0 0 7px #ffd73d;
 	}
 
 	50% {
-		box-shadow: 0 0 7px @dark_borderOuter;
+		box-shadow: 0 0 14px #ffd73d;
 	}
 }
 
 @keyframes pulsing-border-light {
 	0%, 100% {
-		box-shadow: 0 0 3px @light_placeholderInnerBackground;
+		box-shadow: 0 0 7px #ffd73d;
 	}
 
 	50% {
-		box-shadow: 0 0 7px @light_borderOuter;
+		box-shadow: 0 0 14px #ffd73d;
 	}
 }
 
 @keyframes pulsing-border-classic {
 	0%, 100% {
-		box-shadow: 0 0 3px @classic_playerTableRowText;
+		box-shadow: 0 0 7px @classic_playerTableRowText;
 	}
 
 	50% {
-		box-shadow: 0 0 7px @classic_borderOuter;
+		box-shadow: 0 0 14px @classic_borderOuter;
 	}
 }
 

@@ -1,23 +1,23 @@
 # Changelog
 
-## 0.34.0-alpha
+## 0.33.1-alpha
 
-**Released: [in development]**
+**Released: [in staging]**
 
 ### Bug Fixes
-- Fix cooldown calculation for spells with charges
+! - Fixed cooldown calculation for spells with charges
 
 ### Features
-- Add charge count to spell timers
+- N/A
 
 ### UI Changes
-- Make spell timer glow more noticeable
+! - Made spell timer glow more noticeable
 
 ### Code Changes
-- ?
+- N/A
 
 ### Miscellaneous
-- ?
+! - Updated donor credits
 
 ## 0.33.0-alpha
 
