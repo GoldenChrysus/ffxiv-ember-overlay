@@ -31118,6 +31118,20 @@
 			}
 		}
 	},
+	"2540" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Freezing Up",
+				"de" : "Kühlung",
+				"fr" : "Réfrigération",
+				"jp" : "冷却"
+			}
+		}
+	},
 	"2543" : {
 		"type" : "effect",
 		"dot" : false,
@@ -33670,6 +33684,104 @@
 			}
 		}
 	},
+	"2739" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Cold Spell",
+				"de" : "Zehrendes Eis",
+				"fr" : "Corrosion de glace",
+				"jp" : "氷の侵食"
+			}
+		}
+	},
+	"2740" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Hot Spell",
+				"de" : "Zehrendes Feuer",
+				"fr" : "Corrosion de feu",
+				"jp" : "火の侵食"
+			}
+		}
+	},
+	"2741" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Time",
+				"de" : "Aspektierende Ketten",
+				"fr" : "Chaîne à retardement",
+				"jp" : "時限の魔鎖"
+			}
+		}
+	},
+	"2742" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Companionship",
+				"de" : "Bindender Fluch",
+				"fr" : "Malédiction contigüe",
+				"jp" : "近呪の魔鎖"
+			}
+		}
+	},
+	"2743" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Loneliness",
+				"de" : "Treibender Fluch",
+				"fr" : "Malédiction lointaine",
+				"jp" : "遠呪の魔鎖"
+			}
+		}
+	},
+	"2744" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Inescapable Companionship",
+				"de" : "Bindende Ketten",
+				"fr" : "Chaîne contigüe",
+				"jp" : "近呪の魔鎖：発動"
+			}
+		}
+	},
+	"2745" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Inescapable Loneliness",
+				"de" : "Treibene Ketten",
+				"fr" : "Chaîne lointaine",
+				"jp" : "遠呪の魔鎖：発動"
+			}
+		}
+	},
 	"2751" : {
 		"type" : "effect",
 		"dot" : false,
@@ -33740,6 +33852,34 @@
 			}
 		}
 	},
+	"2761" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Darkened Fire",
+				"de" : "Schwarze Lohe",
+				"fr" : "Flamme sombre",
+				"jp" : "闇の炎"
+			}
+		}
+	},
+	"2762" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Death's Toll",
+				"de" : "Eid des Abschieds",
+				"fr" : "Destin mortel",
+				"jp" : "死の運命"
+			}
+		}
+	},
 	"2765" : {
 		"type" : "effect",
 		"dot" : false,
@@ -33751,6 +33891,90 @@
 				"de" : "Triumph des Wissens bereit",
 				"fr" : "Étalage des connaissances préparé",
 				"jp" : "理知興起実行可"
+			}
+		}
+	},
+	"2768" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Mark of the Tides",
+				"de" : "Mal des Stroms",
+				"fr" : "Marque du torrent",
+				"jp" : "激流の刻印"
+			}
+		}
+	},
+	"2769" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Mark of the Depths",
+				"de" : "Mal der Wucht",
+				"fr" : "Marque d'oppression",
+				"jp" : "重圧の刻印"
+			}
+		}
+	},
+	"2770" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fore Mark of the Tides",
+				"de" : "Mal des Abwärtsstroms",
+				"fr" : "Marque déferlante avant",
+				"jp" : "激動の刻印：前"
+			}
+		}
+	},
+	"2771" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rear Mark of the Tides",
+				"de" : "Mal des Aufwärtsstroms",
+				"fr" : "Marque déferlante arrière",
+				"jp" : "激動の刻印：後"
+			}
+		}
+	},
+	"2772" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Left Mark of the Tides",
+				"de" : "Mal des linken Stroms",
+				"fr" : "Marque déferlante gauche",
+				"jp" : "激動の刻印：左"
+			}
+		}
+	},
+	"2773" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Right Mark of the Tides",
+				"de" : "Mal des rechten Stroms",
+				"fr" : "Marque déferlante droite",
+				"jp" : "激動の刻印：右"
 			}
 		}
 	},
@@ -34006,6 +34230,90 @@
 			}
 		}
 	},
+	"2799" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Aethersucker",
+				"de" : "Ätherlabung",
+				"fr" : "Absorption d'éther",
+				"jp" : "エーテル吸収"
+			}
+		}
+	},
+	"2800" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_2800_-1_1_C0_0Status",
+				"de" : "_rsv_2800_-1_2_C0_0Status",
+				"fr" : "_rsv_2800_-1_3_C0_0Status",
+				"jp" : "_rsv_2800_-1_0_C0_0Status"
+			}
+		}
+	},
+	"2801" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_2801_-1_1_C0_0Status",
+				"de" : "_rsv_2801_-1_2_C0_0Status",
+				"fr" : "_rsv_2801_-1_3_C0_0Status",
+				"jp" : "_rsv_2801_-1_0_C0_0Status"
+			}
+		}
+	},
+	"2802" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_2802_-1_1_C0_0Status",
+				"de" : "_rsv_2802_-1_2_C0_0Status",
+				"fr" : "_rsv_2802_-1_3_C0_0Status",
+				"jp" : "_rsv_2802_-1_0_C0_0Status"
+			}
+		}
+	},
+	"2803" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_2803_-1_1_C0_0Status",
+				"de" : "_rsv_2803_-1_2_C0_0Status",
+				"fr" : "_rsv_2803_-1_3_C0_0Status",
+				"jp" : "_rsv_2803_-1_0_C0_0Status"
+			}
+		}
+	},
+	"2804" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_2804_-1_1_C0_0Status",
+				"de" : "_rsv_2804_-1_2_C0_0Status",
+				"fr" : "_rsv_2804_-1_3_C0_0Status",
+				"jp" : "_rsv_2804_-1_0_C0_0Status"
+			}
+		}
+	},
 	"2805" : {
 		"type" : "effect",
 		"dot" : false,
@@ -34258,6 +34566,62 @@
 			}
 		}
 	},
+	"2835" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Forward Bearing",
+				"de" : "Wende: Vorne",
+				"fr" : "Changement de cap: en avant",
+				"jp" : "方向転換：前"
+			}
+		}
+	},
+	"2836" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Backward Bearing",
+				"de" : "Wende: Hinten",
+				"fr" : "Changement de cap: en arrière",
+				"jp" : "方向転換：後"
+			}
+		}
+	},
+	"2837" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Leftward Bearing",
+				"de" : "Wende: Links",
+				"fr" : "Changement de cap: à gauche",
+				"jp" : "方向転換：左"
+			}
+		}
+	},
+	"2838" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rightward Bearing",
+				"de" : "Wende: Rechts",
+				"fr" : "Changement de cap: à droite",
+				"jp" : "方向転換：右"
+			}
+		}
+	},
 	"2839" : {
 		"type" : "effect",
 		"dot" : false,
@@ -34369,6 +34733,20 @@
 				"de" : "In Ereignis",
 				"fr" : "Événement",
 				"jp" : "イベント中"
+			}
+		}
+	},
+	"2852" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "HP Recovery Down",
+				"de" : "Heilung -",
+				"fr" : "Soins diminués",
+				"jp" : "被回復低下"
 			}
 		}
 	},
@@ -34684,6 +35062,34 @@
 			}
 		}
 	},
+	"2874" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Time",
+				"de" : "Aspektierende Ketten",
+				"fr" : "Chaîne à retardement",
+				"jp" : "時限の魔鎖"
+			}
+		}
+	},
+	"2875" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Time",
+				"de" : "Aspektierende Ketten",
+				"fr" : "Chaîne à retardement",
+				"jp" : "時限の魔鎖"
+			}
+		}
+	},
 	"2876" : {
 		"type" : "effect",
 		"dot" : false,
@@ -34740,6 +35146,90 @@
 			}
 		}
 	},
+	"2885" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Companionship",
+				"de" : "Bindender Fluch",
+				"fr" : "Malédiction contigüe",
+				"jp" : "近呪の魔鎖"
+			}
+		}
+	},
+	"2886" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Companionship",
+				"de" : "Bindender Fluch",
+				"fr" : "Malédiction contigüe",
+				"jp" : "近呪の魔鎖"
+			}
+		}
+	},
+	"2887" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Companionship",
+				"de" : "Bindender Fluch",
+				"fr" : "Malédiction contigüe",
+				"jp" : "近呪の魔鎖"
+			}
+		}
+	},
+	"2888" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Loneliness",
+				"de" : "Treibender Fluch",
+				"fr" : "Malédiction lointaine",
+				"jp" : "遠呪の魔鎖"
+			}
+		}
+	},
+	"2889" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Loneliness",
+				"de" : "Treibender Fluch",
+				"fr" : "Malédiction lointaine",
+				"jp" : "遠呪の魔鎖"
+			}
+		}
+	},
+	"2890" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Loneliness",
+				"de" : "Treibender Fluch",
+				"fr" : "Malédiction lointaine",
+				"jp" : "遠呪の魔鎖"
+			}
+		}
+	},
 	"2891" : {
 		"type" : "effect",
 		"dot" : false,
@@ -34765,6 +35255,20 @@
 				"de" : "Chronistin der Zeit",
 				"fr" : "Chronique élégiaque",
 				"jp" : "事象記録"
+			}
+		}
+	},
+	"2905" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Revolutionary",
+				"de" : "Inversionsmodus",
+				"fr" : "Renversant",
+				"jp" : "反転モード"
 			}
 		}
 	},
@@ -34838,6 +35342,104 @@
 			}
 		}
 	},
+	"2923" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Companionship",
+				"de" : "Bindender Fluch",
+				"fr" : "Malédiction contigüe",
+				"jp" : "近呪の魔鎖"
+			}
+		}
+	},
+	"2924" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Shackles of Loneliness",
+				"de" : "Treibender Fluch",
+				"fr" : "Malédiction lointaine",
+				"jp" : "遠呪の魔鎖"
+			}
+		}
+	},
+	"2925" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_2925_-1_1_C0_0Status",
+				"de" : "_rsv_2925_-1_2_C0_0Status",
+				"fr" : "_rsv_2925_-1_3_C0_0Status",
+				"jp" : "_rsv_2925_-1_0_C0_0Status"
+			}
+		}
+	},
+	"2926" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_2926_-1_1_C0_0Status",
+				"de" : "_rsv_2926_-1_2_C0_0Status",
+				"fr" : "_rsv_2926_-1_3_C0_0Status",
+				"jp" : "_rsv_2926_-1_0_C0_0Status"
+			}
+		}
+	},
+	"2927" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_2927_-1_1_C0_0Status",
+				"de" : "_rsv_2927_-1_2_C0_0Status",
+				"fr" : "_rsv_2927_-1_3_C0_0Status",
+				"jp" : "_rsv_2927_-1_0_C0_0Status"
+			}
+		}
+	},
+	"2928" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fountain of Fire",
+				"de" : "Quell des Feuers",
+				"fr" : "Flamme de la vie",
+				"jp" : "霊泉の炎"
+			}
+		}
+	},
+	"2929" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Trickle of Fire",
+				"de" : "Kleiner Quell des Feuers",
+				"fr" : "Flammèche de la vie",
+				"jp" : "霊泉の炎［弱］"
+			}
+		}
+	},
 	"2932" : {
 		"type" : "effect",
 		"dot" : false,
@@ -34866,6 +35468,20 @@
 			}
 		}
 	},
+	"2935" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Sustained Damage",
+				"de" : "Schaden über Zeit",
+				"fr" : "Dégâts continus",
+				"jp" : "継続ダメージ"
+			}
+		}
+	},
 	"2936" : {
 		"type" : "debuff",
 		"dot" : false,
@@ -34877,6 +35493,20 @@
 				"de" : "Plötzliche Panik",
 				"fr" : "Fulguration",
 				"jp" : "心神喪失"
+			}
+		}
+	},
+	"2937" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fire Resistance Down II",
+				"de" : "Feuerresistenz - (stark)",
+				"fr" : "Résistance au feu réduite+",
+				"jp" : "火属性耐性低下[強]"
 			}
 		}
 	},

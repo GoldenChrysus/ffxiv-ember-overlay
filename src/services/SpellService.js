@@ -87,8 +87,8 @@ class SpellService {
 				new_date.setSeconds(date.getSeconds() + recast);
 			}
 
-			if (max_charges && !this.spells[i].recharging) {
-				if (this.spells[i] && this.spells[i].charges && this.spells[i].charges < max_charges) {
+			if (max_charges) {
+				if (this.spells[i] && !this.spells[i].recharging && this.spells[i].charges && this.spells[i].charges < max_charges) {
 					this.spells[i].charges -= 1;
 
 					continue;

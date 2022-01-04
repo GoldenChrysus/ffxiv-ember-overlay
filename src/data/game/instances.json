@@ -5020,7 +5020,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Endwalker",
-				"de" : "Das Ende der Morgenröte",
+				"de" : "Endschreiter",
 				"fr" : "Arpenteur des finitudes",
 				"jp" : "暁月のフィナーレ"
 			}
@@ -5034,6 +5034,28 @@
 				"de" : "Im Hafen des Friedens",
 				"fr" : "Cap sur la paix",
 				"jp" : "融和への船出"
+			}
+		}
+	},
+	"30107" : {
+		"zone_id" : 1008,
+		"locales" : {
+			"name" : {
+				"en" : "Asphodelos: The Fourth Circle",
+				"de" : "Asphodelos - Vierter Kreis",
+				"fr" : "Les Limbes du Pandæmonium - Abîme",
+				"jp" : "万魔殿パンデモニウム：辺獄編4"
+			}
+		}
+	},
+	"30108" : {
+		"zone_id" : 1009,
+		"locales" : {
+			"name" : {
+				"en" : "Asphodelos: The Fourth Circle (Savage)",
+				"de" : "Asphodelos - Vierter Kreis (episch)",
+				"fr" : "Les Limbes du Pandæmonium - Abîme (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：辺獄編4"
 			}
 		}
 	},
@@ -5078,6 +5100,72 @@
 				"de" : "Offen für neue Wege",
 				"fr" : "Des esprits et des hommes",
 				"jp" : "開かれた道の先へ"
+			}
+		}
+	},
+	"30109" : {
+		"zone_id" : 1006,
+		"locales" : {
+			"name" : {
+				"en" : "Asphodelos: The Third Circle",
+				"de" : "Asphodelos - Dritter Kreis",
+				"fr" : "Les Limbes du Pandæmonium - Fournaise",
+				"jp" : "万魔殿パンデモニウム：辺獄編3"
+			}
+		}
+	},
+	"30110" : {
+		"zone_id" : 1007,
+		"locales" : {
+			"name" : {
+				"en" : "Asphodelos: The Third Circle (Savage)",
+				"de" : "Asphodelos - Dritter Kreis (episch)",
+				"fr" : "Les Limbes du Pandæmonium - Fournaise (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：辺獄編3"
+			}
+		}
+	},
+	"30111" : {
+		"zone_id" : 1002,
+		"locales" : {
+			"name" : {
+				"en" : "Asphodelos: The First Circle",
+				"de" : "Asphodelos - Erster Kreis",
+				"fr" : "Les Limbes du Pandæmonium - Parvis",
+				"jp" : "万魔殿パンデモニウム：辺獄編1"
+			}
+		}
+	},
+	"30112" : {
+		"zone_id" : 1003,
+		"locales" : {
+			"name" : {
+				"en" : "Asphodelos: The First Circle (Savage)",
+				"de" : "Asphodelos - Erster Kreis (episch)",
+				"fr" : "Les Limbes du Pandæmonium - Parvis (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：辺獄編1"
+			}
+		}
+	},
+	"30113" : {
+		"zone_id" : 1004,
+		"locales" : {
+			"name" : {
+				"en" : "Asphodelos: The Second Circle",
+				"de" : "Asphodelos - Zweiter Kreis",
+				"fr" : "Les Limbes du Pandæmonium - Cloaque",
+				"jp" : "万魔殿パンデモニウム：辺獄編2"
+			}
+		}
+	},
+	"30114" : {
+		"zone_id" : 1005,
+		"locales" : {
+			"name" : {
+				"en" : "Asphodelos: The Second Circle (Savage)",
+				"de" : "Asphodelos - Zweiter Kreis (episch)",
+				"fr" : "Les Limbes du Pandæmonium - Cloaque (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：辺獄編2"
 			}
 		}
 	},
@@ -5155,6 +5243,17 @@
 				"de" : "Domanisches Begräbnis",
 				"fr" : "Des adieux domiens",
 				"jp" : "ドマの弔い"
+			}
+		}
+	},
+	"55009" : {
+		"zone_id" : 1000,
+		"locales" : {
+			"name" : {
+				"en" : "The Excitatron 6000",
+				"de" : "Euphoratron",
+				"fr" : "Le Ludodrome",
+				"jp" : "宝物庫 エキサイトロン"
 			}
 		}
 	},

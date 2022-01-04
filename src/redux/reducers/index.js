@@ -584,11 +584,14 @@ function createNewState(state, full_key, action) {
 	) {
 		let reset = false;
 
-		if (full_key === "internal.character_level") {
+		if (
+			(full_key === "internal.character_level" && state.internal.character_level !== new_state.internal.character_level) ||
+			(full_key === "internal.character_job" && state.internal.character_job !== new_state.internal.character_job)
+		) {
 			reset = true;
 		}
 
-		if (full_key === "internal.current_zone_id") {
+		if (full_key === "internal.current_zone_id" && !reset) {
 			let old_is_pvp = (PVPZoneData.Zones.indexOf(state.internal.current_zone_id) !== -1);
 			let new_is_pvp = (PVPZoneData.Zones.indexOf(new_state.internal.current_zone_id) !== -1);
 
@@ -599,7 +602,7 @@ function createNewState(state, full_key, action) {
 			reset = true;
 		}
 
-		if (reset || (full_key === "internal.character_job" && state.internal.character_job !== new_state.internal.character_job)) {
+		if (reset) {
 			SpellService.resetAllSpells();
 
 			new_state.internal.spells.defaulted = {};
