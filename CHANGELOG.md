@@ -2,22 +2,23 @@
 
 ## 0.33.1-alpha
 
-**Released: [in staging]**
+**Released: 2022-01-04**
 
 ### Bug Fixes
-! - Fixed cooldown calculation for spells with charges
+- Fixed cooldown calculation for spells with charges
 
 ### Features
 - N/A
 
 ### UI Changes
-! - Made spell timer glow more noticeable
+- Made spell timer glow more noticeable
 
 ### Code Changes
 - N/A
 
 ### Miscellaneous
-! - Updated donor credits
+- Updated donor credits
+- Updated effect and instance data for FFXIV patch 6.05
 
 ## 0.33.0-alpha
 
