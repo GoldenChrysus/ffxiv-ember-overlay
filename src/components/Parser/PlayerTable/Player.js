@@ -23,13 +23,17 @@ class Player extends React.Component {
 
 		for (let key of stat_columns) {
 			let value  = PlayerProcessor.getDataValue(key, player, this.props.players, this.props.encounter);
-			let prefix = (is_raid) ? LocalizationService.getPlayerDataTitle(key, "short") + ": " : "";
+			let prefix = (is_raid || true) ? LocalizationService.getPlayerDataTitle(key, "short") : ""; // true for horizontal
+
+			if (is_raid) {
+				prefix += ": ";
+			}
 
 			if (key === "enmity_percent") {
 				columns.push(<div className="column" key={key}><PercentBar percent={value}/></div>);
 			} else {
 				columns.push(
-					<div className="column" key={key}><span>{prefix}</span>{value}</div>
+					<div className="column" key={key}><span className="metric-name">{prefix}</span>{value}</div>
 				);
 			}
 		}
@@ -92,7 +96,7 @@ class Player extends React.Component {
 		};
 
 		return (
-			<div className={"row player " + player_type} data-job={job} data-role={role} data-party={+(player._party || 0)} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>
+			<div className={"row player " + player_type} data-job={job} data-role={role} data-party={+(player._party || 0)} key={"player-" + player.UUID} data-percent={this.props.percent} data-uuid={player.UUID} onClick={this.props.onClick}>
 				{playerData()}
 				{statData()}
 				{percentBar()}

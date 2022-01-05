@@ -145,7 +145,7 @@ class PlayerTable extends React.Component {
 			}
 
 			let blur       = (player_blur && !player._is_current);
-			let player_obj = <Player key={player.name} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
+			let player_obj = <Player key={player.UUID} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
 
 			if (player._is_pet) {
 				pet_rows.push(player_obj);
@@ -237,7 +237,6 @@ class PlayerTable extends React.Component {
 			}
 
 			let height   = $row.outerHeight();
-			let width    = $row.outerWidth();
 			let position = $row.position();
 
 			if (is_grid) {
@@ -251,10 +250,9 @@ class PlayerTable extends React.Component {
 			$bar
 				.css("top", position.top + "px")
 				.css("left", position.left + "px")
-				.css("width", "100%")
 				.css("height", height + "px")
-				.css("width", width + "px")
-				.css("backgroundSize", $row.attr("data-percent") + "% 100%");
+				.css("width", $row.attr("data-percent") + "%")
+				.css("backgroundSize", "100% 100%");
 		});
 	}
 }
