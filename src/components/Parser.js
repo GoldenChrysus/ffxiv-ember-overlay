@@ -121,7 +121,7 @@ class Parser extends React.Component {
 		root_inner_classes = root_inner_classes.join(" ");
 
 		return (
-			<React.Fragment>
+			<React.Fragment key="parser-fragment">
 				<style type="text/css">
 					{setting_style}
 					{this.props.css}
@@ -130,8 +130,8 @@ class Parser extends React.Component {
 				<Placeholder type="top right" theme={this.props.theme}/>
 				<Placeholder type="bottom left" theme={this.props.theme}/>
 				<Placeholder type="bottom right" theme={this.props.theme}/>
-				<div id="root-inner" className={root_inner_classes}>
-					<Container/>
+				<div id="root-inner" key="root-inner" className={root_inner_classes}>
+					<Container key="container-component"/>
 				</div>
 			</React.Fragment>
 		);

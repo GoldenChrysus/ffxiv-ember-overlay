@@ -145,7 +145,7 @@ class PlayerTable extends React.Component {
 			}
 
 			let blur       = (player_blur && !player._is_current);
-			let player_obj = <Player key={player.UUID} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
+			let player_obj = <Player key={"player-component-" + player._name} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
 
 			if (player._is_pet) {
 				pet_rows.push(player_obj);
@@ -168,12 +168,18 @@ class PlayerTable extends React.Component {
 		}
 
 		if (!is_raid) {
-			header_row = 
-				<div className="row header">
-					<div className="column"></div>
-					<div className="column">{LocalizationService.getOverlayText("player_name")}</div>
-					{header}
-				</div>;
+			header_row = (!this.props.horizontal)
+				? (
+					<div className="row header">
+						<div className="column"></div>
+						<div className="column">{LocalizationService.getOverlayText("player_name")}</div>
+						{header}
+					</div>
+				) : (
+					<div className="row game">
+						<div className="column">{this.props.encounter.duration || "00:00"}</div>
+					</div>
+				)
 
 			if (this.props.table_settings[table_type].show_footer) {
 				footer_row =
@@ -199,11 +205,11 @@ class PlayerTable extends React.Component {
 				: null;
 		}
 
-		let overlay_info = (collapsed || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
+		let overlay_info = (collapsed || this.props.horizontal || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
 
 		return (
-			<React.Fragment>
-				<div id="player-table" className={table_class} ref="player_table">
+			<React.Fragment key="player-table-fragment">
+				<div id="player-table" key="player-table" className={table_class} ref="player_table">
 					{header_row}
 					{getFooterRow("top")}
 					{rows}
@@ -250,9 +256,8 @@ class PlayerTable extends React.Component {
 			$bar
 				.css("top", position.top + "px")
 				.css("left", position.left + "px")
-				.css("height", height + "px")
 				.css("width", $row.attr("data-percent") + "%")
-				.css("backgroundSize", "100% 100%");
+				.css("height", height + "px");
 		});
 	}
 }
@@ -276,6 +281,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
 	return {
 		internal_name  : state.internal.character_name,
+		horizontal     : state.settings.interface.horizontal,
 		language       : state.settings.interface.language,
 		player_name    : state.settings.interface.player_name,
 		icon_blur      : state.settings.interface.blur_job_icons,

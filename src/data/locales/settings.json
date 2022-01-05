@@ -838,6 +838,18 @@
 			"ua" : "Використати Мінімізовану Тему",
 			"ru" : "Минималистичная тема"
 		},
+		"interface.horizontal": {
+			"en" : "Use Horizontal Overlay",
+			"pt" : "Use Horizontal Overlay",
+			"cn" : "Use Horizontal Overlay",
+			"jp" : "Use Horizontal Overlay",
+			"de" : "Use Horizontal Overlay",
+			"es" : "Use Horizontal Overlay",
+			"fr" : "Use Horizontal Overlay",
+			"kr" : "Use Horizontal Overlay",
+			"ua" : "Use Horizontal Overlay",
+			"ru" : "Use Horizontal Overlay"
+		},
 		"interface.auto_hide" : {
 			"en" : "Auto-Hide Overlay After Inactivity (Set Below)",
 			"pt" : "Esconder Automáticamente o Overlay Após Inatividade (Defina Abaixo)",

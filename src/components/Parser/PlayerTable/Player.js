@@ -76,30 +76,25 @@ class Player extends React.Component {
 				</div>
 			);
 		};
-		let percentBar = () => {
-			if (!this.props.percent_bars) {
-				return "";
-			}
-
-			return (
-				<div className="percent-bar" key={"percent-bar-" + player_name} style={{
-					backgroundSize      : "0% 100%",
-					backgroundRepeat    : "no-repeat",
-					backgroundPositionY : "1px",
-					position            : "absolute",
-					top                 : "0",
-					left                : "0",
-					width               : "0",
-					height              : "0"
-				}}></div>
-			);
-		};
 
 		return (
-			<div className={"row player " + player_type} data-job={job} data-role={role} data-party={+(player._party || 0)} key={"player-" + player.UUID} data-percent={this.props.percent} data-uuid={player.UUID} onClick={this.props.onClick}>
+			<div className={"row player " + player_type} data-job={job} data-role={role} data-party={+(player._party || 0)} key={"player-row-" + player_name} data-uuid={player_name} onClick={this.props.onClick}>
 				{playerData()}
 				{statData()}
-				{percentBar()}
+				{
+					this.props.percent_bars &&
+					(
+						<div className="percent-bar" key={"percent-bar-" + player_name} style={{
+							backgroundRepeat    : "no-repeat",
+							backgroundPositionY : "1px",
+							position            : "absolute",
+							top                 : "0",
+							left                : "0",
+							width               : this.props.percent + "%",
+							height              : "100%"
+						}}/>
+					)
+				}
 			</div>
 		);
 	}

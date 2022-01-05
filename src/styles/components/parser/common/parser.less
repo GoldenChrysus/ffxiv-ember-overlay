@@ -505,6 +505,7 @@ body.mode-spells {
 }
 
 #container #inner #content #player-table .row .percent-bar {
+	width: 0px;
 	-webkit-transition: width 0.5s;
 	transition: width 0.5s;
 
@@ -580,6 +581,7 @@ body.mode-spells {
 	overflow        : hidden;
 	padding         : 4px 3px;
 	vertical-align  : middle;
+	box-sizing: content-box;
 
 	.setThemeStyle(
 		@minimalTheme: {
@@ -1699,10 +1701,28 @@ body.horizontal #container > #inner > #content > #player-table > .row {
 	flex: 0;
 	position: relative;
 	border-bottom: 0;
-	margin-right: 18px;
+	margin-right: 16px;
 }
 
-body.horizontal #container > #inner > #content > #player-table > .row.header,
+body.horizontal #container > #inner > #content > #player-table > .row.game {
+	display: flex;
+	align-items: center;
+}
+
+body.horizontal #container > #inner > #content > #player-table > .row.game > .column {
+	padding: 0 calc(1em - 9px) 0 1em;
+	font-size: 1.125rem;
+	line-height: 1.125rem;
+	font-weight: 500;
+	color: @dark_headerAndLinkText;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.game > .column {
+	color: @light_headerAndLinkText;
+}
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row.game > .column {
+	color: @classic_headerAndLinkText;
+}
+
 body.horizontal #container > #inner > #content > #player-table > .row.footer {
 	display: none;
 }
@@ -1726,13 +1746,14 @@ body.horizontal #container > #inner > #content > #player-table > .row.active.act
 	position: absolute;
 	height: 100%;
 	width: 20px;
-	background: initial;
+	background-image: initial !important;
+	background-color: initial !important;
 	content: "";
 	top: 0;
-	left: -9px;
 	transform: skew(-25deg);
+	transform-origin: top;
 	z-index: 0;
-	border-left: 1px solid hsla(0,0%, 100%, .05);
+	
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar::before {
@@ -1748,14 +1769,14 @@ body.horizontal #container > #inner > #content > #player-table > .row.active.act
 	width: 20px;
 	content: "";
 	top: 1px;
-	right: -8px;
+	right: 0;
 	transform: skew(-25deg);
+	transform-origin: bottom;
 	z-index: 0;
-	border-right: 1px solid rgba(0, 0 , 0, 0.2);
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::after {
-	right: -9px;
 	top: 0px;
 }
 
@@ -1766,30 +1787,76 @@ body.horizontal #container > #inner > #content > #player-table > .row > .percent
 body.horizontal #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::before,
 body.horizontal #container > #inner > #content > #player-table > .row > .percent-bar::before,
 body.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::before {
-	background: linear-gradient(65deg, rgba(255, 255, 255, 0.15) 50%, transparent 50%);
+	background-image: linear-gradient(65deg, @dark_playerTableActiveRowBackground 50%, transparent 50%) !important;
 	content: "";
-	width: 33px;
+	width: 32px;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
+}
+body.minimal.horizontal #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::before,
+body.minimal.horizontal #container > #inner > #content > #player-table > .row > .percent-bar::before,
+body.minimal.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::before {
+	width: 28px;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::before {
+	background-image: linear-gradient(65deg, @light_playerTableActiveRowBackground 50%, transparent 50%) !important;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row > .percent-bar::before,
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::before {
+	background-image: linear-gradient(65deg, @light_playerTableActiveRowBarBackground 50%, transparent 50%) !important;
+}
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::before,
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row > .percent-bar::before,
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::before {
+	background-image: linear-gradient(65deg, @classic_playerTableActiveRowBackground 50%, transparent 50%) !important;
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::after,
 body.horizontal #container > #inner > #content > #player-table > .row > .percent-bar::after,
 body.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::after {
-	background: linear-gradient(65deg, transparent 50%, rgba(255, 255, 255, 0.15) 50%);
+	background-image: linear-gradient(65deg, transparent 50%, @dark_playerTableActiveRowBackground 50%) !important;
 	content: "";
-	width: 33px;
+	width: 32px;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
 	background-position-x: 100%;
 }
+body.minimal.horizontal #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::after,
+body.minimal.horizontal #container > #inner > #content > #player-table > .row > .percent-bar::after,
+body.minimal.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::after {
+	width: 28px;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::after {
+	background-image: linear-gradient(65deg, transparent 50%, @light_playerTableActiveRowBackground 50%) !important;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row > .percent-bar::after,
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::after {
+	background-image: linear-gradient(65deg, transparent 50%, @light_playerTableActiveRowBarBackground 50%) !important;
+}
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::after,
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row > .percent-bar::after,
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::after {
+	background-image: linear-gradient(65deg, transparent 50%, @classic_playerTableActiveRowBackground 50%) !important;
+}
 
 body.horizontal #container > #inner > #content > #player-table > .row:not(.active-with-bar) > .percent-bar::before {
-	background-image: linear-gradient(65deg, rgba(255, 255, 255, 0.05) 50%, transparent 50%);
+	background-image: linear-gradient(65deg, @dark_playerTableRowBackground 50%, transparent 50%) !important;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row:not(.active-with-bar) > .percent-bar::before {
+	background-image: linear-gradient(65deg, @light_playerTableRowBarBackground 50%, transparent 50%) !important;
+}
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row:not(.active-with-bar) > .percent-bar::before {
+	background-image: linear-gradient(65deg, @classic_playerTableRowBackground 50%, transparent 50%) !important;
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row:not(.active-with-bar) > .percent-bar::after {
-	background-image: linear-gradient(65deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%);
+	background-image: linear-gradient(65deg, transparent 50%, @dark_playerTableRowBackground 50%) !important;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row:not(.active-with-bar) > .percent-bar::after {
+	background-image: linear-gradient(65deg, transparent 50%, @light_playerTableRowBarBackground 50%) !important;
+}
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row:not(.active-with-bar) > .percent-bar::after {
+	background-image: linear-gradient(65deg, transparent 50%, @classic_playerTableRowBackground 50%) !important;
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row > .column {
@@ -1801,6 +1868,43 @@ body.horizontal #container > #inner > #content > #player-table > .row .metric-na
 	text-transform: uppercase;
 	font-size: 7px;
 	color: @dark_importantText;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row .metric-name {
+	color: @light_importantText;
+}
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row .metric-name {
+	color: @classic_importantText;
+}
+
+body.horizontal #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::before {
+	background-image: linear-gradient(65deg, @dark_rowAndLinkHoverBackground 50%, transparent 50%) !important;
+	width: 16px;
+	left: 0px;
+	border-left: 0;
+}
+body.minimal.horizontal #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::before {
+	width: 14px;
+}
+body.horizontal #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::after {
+	background-image: linear-gradient(65deg, transparent 50%, @dark_rowAndLinkHoverBackground 50%) !important;
+	width: 14px;
+	right: 1px;
+	border-right: 0;
+}
+body.minimal.horizontal #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::after {
+	right: 0;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::before {
+	background-image: linear-gradient(65deg, @light_rowAndLinkHoverBackground 50%, transparent 50%) !important;
+}
+body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::after {
+	background-image: linear-gradient(65deg, transparent 50%, @light_rowAndLinkHoverBackground 50%) !important;
+}
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::before {
+	background-image: linear-gradient(65deg, @classic_rowAndLinkHoverBackground 50%, transparent 50%) !important;
+}
+body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::after {
+	background-image: linear-gradient(65deg, transparent 50%, @classic_rowAndLinkHoverBackground 50%) !important;
 }
 /* END HORIZONTAL LAYOUT */
 

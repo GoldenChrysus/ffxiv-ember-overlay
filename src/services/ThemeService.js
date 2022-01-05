@@ -10,6 +10,10 @@ class ThemeService {
 		$("body").attr("theme", theme);
 	}
 
+	toggleHorizontal(active) {
+		$("body").toggleClass("horizontal", active);
+	}
+
 	toggleMinimal(active) {
 		$("body").toggleClass("minimal", active);
 	}

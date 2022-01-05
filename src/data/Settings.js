@@ -23,6 +23,7 @@ const default_settings = {
 		collapse_down         : false,
 		theme                 : "ffxiv-dark",
 		minimal_theme         : false,
+		horizontal            : false,
 		footer_when_collapsed : false,
 		footer_dps            : false,
 		hide_top_bar          : false,

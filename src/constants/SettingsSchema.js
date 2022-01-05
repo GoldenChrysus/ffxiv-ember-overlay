@@ -198,6 +198,13 @@ const SettingsSchema = {
 								exclude_modes : [
 									"spells"
 								]
+							},
+							{
+								key_path      : "interface.horizontal",
+								type          : "checkbox",
+								exclude_modes : [
+									"spells"
+								]
 							}
 						]
 					}

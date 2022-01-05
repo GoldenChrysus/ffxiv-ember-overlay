@@ -193,7 +193,7 @@ class Container extends EmberComponent {
 				switch (viewing) {
 					case "tables":
 						if (this.props.table_type !== "aggro") {
-							content = <PlayerTable players={this.props.combatants} encounter={encounter} type={this.props.table_type}/>;
+							content = <PlayerTable key="player-table-component" players={this.props.combatants} encounter={encounter} type={this.props.table_type}/>;
 						} else {
 							content = <AggroTable monsters={this.props.aggro}/>
 						}
@@ -316,16 +316,16 @@ class Container extends EmberComponent {
 		}
 
 		return (
-			<React.Fragment>
-				<ContextMenuTrigger id="right-click-menu" holdToDisplay={-1}>
-					<div id="container" className={container_classes.join(" ")}>
+			<React.Fragment key="container-fragment">
+				<ContextMenuTrigger key="right-click-menu" id="right-click-menu" holdToDisplay={-1}>
+					<div id="container" className={container_classes.join(" ")} key="container">
 						<PlaceholderToggle type="top left"/>
 						<PlaceholderToggle type="top right"/>
 						<PlaceholderToggle type="bottom left"/>
 						<PlaceholderToggle type="bottom right"/>
-						<div id="inner">
+						<div id="inner" key="inner">
 							{this.getGameState(encounter, active)}
-							<div id="content">
+							<div id="content" key="content">
 								{content}
 							</div>
 							{footer}
