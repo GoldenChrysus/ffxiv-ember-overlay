@@ -1,6 +1,7 @@
 import React from "react";
 
 import DonationService from "../../../services/DonationService";
+import LocalizationService from "../../../services/LocalizationService";
 import VersionService from "../../../services/VersionService";
 
 class OverlayInfo extends React.Component {
@@ -83,13 +84,10 @@ class OverlayInfo extends React.Component {
 	}
 
 	getFundingText() {
-		if (window.obsstudio) {
-			return "";
-		}
+		const type = (["hibiya", "actws"].indexOf(this.state.chrome) === -1 || window.obsstudio) ? "new" : "old";
 
-		switch (this.state.chrome) {
-			case "hibiya":
-			case "actws":
+		switch (type) {
+			case "old":
 				return (
 					<React.Fragment>
 						<span onClick={this.openFundingLink.bind(this, "cash")} ref="cash"><img src="img/buttons/funding/cash.svg" alt="Donate on Cash App" height="20"/></span>
@@ -101,12 +99,14 @@ class OverlayInfo extends React.Component {
 					</React.Fragment>
 				);
 
-			case "ngld":
+			case "new":
 			default:
+				const lang = (LocalizationService.getLanguage() === "jp") ? "jp" : "en";
+
 				return (
 					<React.Fragment>
-						<span onClick={this.openAdLink.bind(this)} ref="ad"><img className="ad-cta" src="img/buttons/funding/ad-cta.png" alt="Support Ember by clicking here to view an ad"/></span>
-						<p>This is experimental. If in ACT, ad will open in your ACT browser, not your main browser.</p>
+						<span onClick={this.openAdLink.bind(this)} ref="ad"><img className="ad-cta" src={"img/buttons/funding/chesshq-" + lang + ".png"} alt="Support Ember by clicking here to view an ad"/></span>
+						<p>Support my other projects!</p>
 					</React.Fragment>
 				);
 		}
@@ -150,10 +150,9 @@ class OverlayInfo extends React.Component {
 	}
 
 	openAdLink() {
-		let direct = window.ad_urls;
-		let url    = direct[Math.floor(Math.random() * direct.length)];
+		let url = "https://chesshq.com/";
 
-		window.open(url, "", "width=600,height=530,location=no,menubar=no");
+		window.open(url, "", "width=1200,height=830,location=no,menubar=no");
 	}
 }
 

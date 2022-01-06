@@ -42,7 +42,7 @@ class Footer extends React.Component {
 					}
 					let links   = [];
 
-					if (self.props.overlayplugin_author !== "ngld") {
+					if (self.props.overlayplugin_author !== "ngld" || self.props.horizontal) {
 						delete types.aggro;
 					}
 
