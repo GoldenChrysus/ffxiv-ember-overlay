@@ -205,6 +205,10 @@ class PlayerTable extends React.Component {
 				: null;
 		}
 
+		if (this.props.horizontal) {
+			table_class += " " + (this.props.horizontal_alignment || "left");
+		}
+
 		let overlay_info = (collapsed || this.props.horizontal || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
 
 		return (
@@ -280,18 +284,19 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		internal_name  : state.internal.character_name,
-		horizontal     : state.settings.interface.horizontal,
-		language       : state.settings.interface.language,
-		player_name    : state.settings.interface.player_name,
-		icon_blur      : state.settings.interface.blur_job_icons,
-		table_columns  : state.settings.table_columns,
-		sort_columns   : state.settings.sort_columns,
-		collapsed      : state.settings.intrinsic.collapsed,
-		player_blur    : state.settings.intrinsic.player_blur,
-		table_settings : state.settings.table_settings,
-		rank           : state.internal.rank,
-		party          : state.internal.party
+		internal_name        : state.internal.character_name,
+		horizontal           : state.settings.interface.horizontal,
+		horizontal_alignment : state.settings.interface.horizontal_alignment,
+		language             : state.settings.interface.language,
+		player_name          : state.settings.interface.player_name,
+		icon_blur            : state.settings.interface.blur_job_icons,
+		table_columns        : state.settings.table_columns,
+		sort_columns         : state.settings.sort_columns,
+		collapsed            : state.settings.intrinsic.collapsed,
+		player_blur          : state.settings.intrinsic.player_blur,
+		table_settings       : state.settings.table_settings,
+		rank                 : state.internal.rank,
+		party                : state.internal.party
 	};
 };
 

@@ -198,13 +198,26 @@ const SettingsSchema = {
 								exclude_modes : [
 									"spells"
 								]
+							}
+						]
+					},
+					{
+						exclude_modes : [
+							"spells"
+						],
+						settings : [
+							{
+								key_path : "interface.horizontal",
+								type     : "checkbox"
 							},
 							{
-								key_path      : "interface.horizontal",
-								type          : "checkbox",
-								exclude_modes : [
-									"spells"
-								]
+								key_path : "interface.horizontal_shrink",
+								type     : "checkbox"
+							},
+							{
+								key_path : "interface.horizontal_alignment",
+								type     : "select",
+								options  : () => LocalizationService.getAlignmentOptions()
 							}
 						]
 					}

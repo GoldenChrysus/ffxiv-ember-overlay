@@ -145,6 +145,29 @@ class LocalizationService {
 		];
 	}
 
+	getAlignmentOptions() {
+		let language = this.getLanguage();
+		let data_set = SettingsLocales.misc.alignment_options[language] || SettingsLocales.misc.alignment_options.en;
+		
+		return [
+			{
+				key   : "left",
+				value : "left",
+				text  : data_set.left
+			},
+			{
+				key   : "center",
+				value : "center",
+				text  : data_set.center
+			},
+			{
+				key   : "right",
+				value : "right",
+				text  : data_set.right
+			}
+		];
+	}
+
 	getMisc(key, language) {
 		if (!SettingsLocales.misc[key]) {
 			return false;

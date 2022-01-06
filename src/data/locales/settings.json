@@ -49,6 +49,18 @@
 					"kr" : "테마",
 					"ua" : "Тема",
 					"ru" : "Тема"
+				},
+				{
+					"en" : "Horizontal",
+					"pt" : "Horizontal",
+					"cn" : "Horizontal",
+					"jp" : "Horizontal",
+					"de" : "Horizontal",
+					"es" : "Horizontal",
+					"fr" : "Horizontal",
+					"kr" : "Horizontal",
+					"ua" : "Horizontal",
+					"ru" : "Horizontal"
 				}
 			]
 		},
@@ -850,6 +862,30 @@
 			"ua" : "Use Horizontal Overlay",
 			"ru" : "Use Horizontal Overlay"
 		},
+		"interface.horizontal_shrink": {
+			"en" : "Shrink Width",
+			"pt" : "Shrink Width",
+			"cn" : "Shrink Width",
+			"jp" : "Shrink Width",
+			"de" : "Shrink Width",
+			"es" : "Shrink Width",
+			"fr" : "Shrink Width",
+			"kr" : "Shrink Width",
+			"ua" : "Shrink Width",
+			"ru" : "Shrink Width"
+		},
+		"interface.horizontal_alignment": {
+			"en" : "Alignment",
+			"pt" : "Alignment",
+			"cn" : "Alignment",
+			"jp" : "Alignment",
+			"de" : "Alignment",
+			"es" : "Alignment",
+			"fr" : "Alignment",
+			"kr" : "Alignment",
+			"ua" : "Alignment",
+			"ru" : "Alignment"
+		},
 		"interface.auto_hide" : {
 			"en" : "Auto-Hide Overlay After Inactivity (Set Below)",
 			"pt" : "Esconder Automáticamente o Overlay Após Inatividade (Defina Abaixo)",
@@ -1488,6 +1524,58 @@
 				"short_first" : "И. Фамилия",
 				"short_last"  : "Имя Ф.",
 				"short_both"  : "И. Ф."
+			}
+		},
+		"alignment_options" : {
+			"en" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"pt" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"cn" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"jp" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"de" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"es" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"fr" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"kr" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"ua" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"ru" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
 			}
 		},
 		"tts" : {

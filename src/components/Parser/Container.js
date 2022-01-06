@@ -315,6 +315,14 @@ class Container extends EmberComponent {
 			container_classes.push("ui-builder-active");
 		}
 
+		if (this.props.horizontal) {
+			if (this.props.horizontal_shrink) {
+				container_classes.push("shrink");
+			}
+
+			container_classes.push(this.props.horizontal_alignment || "left");
+		}
+
 		return (
 			<React.Fragment key="container-fragment">
 				<ContextMenuTrigger key="right-click-menu" id="right-click-menu" holdToDisplay={-1}>
@@ -484,6 +492,9 @@ const mapStateToProps = (state) => {
 		combatants            : state.internal.game.Combatant,
 		collapsed             : state.settings.intrinsic.collapsed,
 		footer_when_collapsed : state.settings.interface.footer_when_collapsed,
+		horizontal            : state.settings.interface.horizontal,
+		horizontal_shrink     : state.settings.interface.horizontal_shrink,
+		horizontal_alignment  : state.settings.interface.horizontal_alignment,
 		rank                  : state.internal.rank,
 		top_right_rank        : state.settings.interface.top_right_rank,
 		viewing               : state.internal.viewing,

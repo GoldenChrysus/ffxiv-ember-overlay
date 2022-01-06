@@ -24,6 +24,8 @@ const default_settings = {
 		theme                 : "ffxiv-dark",
 		minimal_theme         : false,
 		horizontal            : false,
+		horizontal_shrink     : false,
+		horizontal_alignment  : "left",
 		footer_when_collapsed : false,
 		footer_dps            : false,
 		hide_top_bar          : false,

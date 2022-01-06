@@ -1697,6 +1697,31 @@ body.horizontal #container > #inner > #content > #player-table {
 	margin: 0;
 }
 
+body.horizontal #container.shrink {
+	width: min-content;
+}
+
+body.horizontal #container.left {
+	float: left;
+}
+body.horizontal #container.right {
+	float: right;
+}
+body.horizontal #container.center {
+	margin: 0 auto;
+}
+
+body.horizontal #container > #inner > #content > #player-table.left {
+	justify-content: flex-start;
+}
+body.horizontal #container > #inner > #content > #player-table.right {
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+}
+body.horizontal #container > #inner > #content > #player-table.center {
+	justify-content: center;
+}
+
 body.horizontal #container > #inner > #content > #player-table > .row {
 	flex: 0;
 	position: relative;
