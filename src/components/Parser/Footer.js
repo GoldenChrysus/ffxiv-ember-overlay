@@ -46,6 +46,10 @@ class Footer extends React.Component {
 						delete types.aggro;
 					}
 
+					if (self.props.horizontal) {
+						delete types.raid;
+					}
+
 					for (let type_key in types) {
 						let name   = (type_key === "raid") ? types[type_key] : LocalizationService.getOverlayText(type_key);
 						let active = (table_type === type_key && viewing === "tables") ? "active" : "";
@@ -160,6 +164,7 @@ const mapStateToProps = (state) => {
 	return {
 		plugin_service       : state.plugin_service,
 		language             : state.settings.interface.language,
+		horizontal           : state.settings.interface.horizontal,
 		table_type           : state.settings.intrinsic.table_type,
 		player_blur          : state.settings.intrinsic.player_blur,
 		viewing              : state.internal.viewing,

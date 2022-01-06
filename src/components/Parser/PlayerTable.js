@@ -10,10 +10,16 @@ import Constants from "../../constants/index";
 
 import Player from "./PlayerTable/Player";
 import OverlayInfo from "./PlayerTable/OverlayInfo";
+import { getEncounterTitle } from "../../helpers/GameHelper";
+import ReactTooltip from "react-tooltip";
 
 class PlayerTable extends React.Component {
 	componentDidMount() {
 		this.updateBackgrounds();
+
+		if (this.props.horizontal) {
+			ReactTooltip.rebuild();
+		}
 	}
 
 	componentDidUpdate() {
@@ -145,7 +151,7 @@ class PlayerTable extends React.Component {
 			}
 
 			let blur       = (player_blur && !player._is_current);
-			let player_obj = <Player key={"player-component-" + player._name} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
+			let player_obj = <Player key={"player-component-" + player._name} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} horizontal={this.props.horizontal} detail_data={this.props.detail_data} onClick={this.changeViewing.bind(this, "player", player)}/>
 
 			if (player._is_pet) {
 				pet_rows.push(player_obj);
@@ -176,7 +182,7 @@ class PlayerTable extends React.Component {
 						{header}
 					</div>
 				) : (
-					<div className="row game">
+					<div className="row game" data-tip={getEncounterTitle(this.props.encounter, true)}>
 						<div className="column">{this.props.encounter.duration || "00:00"}</div>
 					</div>
 				)
@@ -194,6 +200,10 @@ class PlayerTable extends React.Component {
 		}
 
 		let getFooterRow = (location) => {
+			if (this.props.horizontal) {
+				return null;
+			}
+
 			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
 		}
 		let petRows      = () => {
@@ -292,6 +302,7 @@ const mapStateToProps = (state) => {
 		icon_blur            : state.settings.interface.blur_job_icons,
 		table_columns        : state.settings.table_columns,
 		sort_columns         : state.settings.sort_columns,
+		detail_data          : (state.settings.interface.horizontal) ? state.settings.detail_data : null,
 		collapsed            : state.settings.intrinsic.collapsed,
 		player_blur          : state.settings.intrinsic.player_blur,
 		table_settings       : state.settings.table_settings,

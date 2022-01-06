@@ -1667,7 +1667,7 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 	);
 }
 
-.react-tooltip:after {
+.react-tooltip.place-left:after {
 	.setThemeStyle(
 		{
 			border-left-color: @dark_toggleBackground !important;
@@ -1681,13 +1681,55 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 	);
 }
 
+.react-tooltip.place-right:after {
+	.setThemeStyle(
+		{
+			border-right-color: @dark_toggleBackground !important;
+		},
+		{
+			border-right-color: @light_toggleBackground !important;
+		},
+		@classicTheme: {
+			border-right-color: @classic_toggleBackground !important;
+		}
+	);
+}
+
+.react-tooltip.place-bottom:after {
+	.setThemeStyle(
+		{
+			border-bottom-color: @dark_toggleBackground !important;
+		},
+		{
+			border-bottom-color: @light_toggleBackground !important;
+		},
+		@classicTheme: {
+			border-bottom-color: @classic_toggleBackground !important;
+		}
+	);
+}
+
+.react-tooltip.place-top:after {
+	.setThemeStyle(
+		{
+			border-top-color: @dark_toggleBackground !important;
+		},
+		{
+			border-top-color: @light_toggleBackground !important;
+		},
+		@classicTheme: {
+			border-top-color: @classic_toggleBackground !important;
+		}
+	);
+}
+
 /* START HORIZONTAL LAYOUT */
 body.horizontal > #root {
 	height: auto;
 }
 
 body.horizontal #inner > #game-state,
-body.horizontal #inner > #footer,
+body.horizontal #inner:not(:hover) > #footer,
 body.horizontal #inner > .split {
 	display: none;
 }
@@ -1715,7 +1757,6 @@ body.horizontal #container > #inner > #content > #player-table.left {
 	justify-content: flex-start;
 }
 body.horizontal #container > #inner > #content > #player-table.right {
-	justify-content: flex-end;
 	flex-direction: row-reverse;
 }
 body.horizontal #container > #inner > #content > #player-table.center {
@@ -1729,6 +1770,16 @@ body.horizontal #container > #inner > #content > #player-table > .row {
 	margin-right: 16px;
 }
 
+body.horizontal #container > #inner > #content > #player-table.right > .row:first-of-type {
+	margin-right: 0;
+}
+body.horizontal #container > #inner > #content > #player-table.right > .row:last-of-type {
+	margin-left: 20px;
+}
+body.horizontal #container > #inner > #content > #player-table.right > .row.game:last-of-type {
+	margin-left: 16px;
+}
+
 body.horizontal #container > #inner > #content > #player-table > .row.game {
 	display: flex;
 	align-items: center;
@@ -1740,6 +1791,9 @@ body.horizontal #container > #inner > #content > #player-table > .row.game > .co
 	line-height: 1.125rem;
 	font-weight: 500;
 	color: @dark_headerAndLinkText;
+}
+body.horizontal.minimal #container > #inner > #content > #player-table > .row.game > .column {
+	padding-right: 1em;
 }
 body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.game > .column {
 	color: @light_headerAndLinkText;

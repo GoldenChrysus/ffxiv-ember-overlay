@@ -4,8 +4,13 @@ import PlayerProcessor from "../../../processors/PlayerProcessor";
 import LocalizationService from "../../../services/LocalizationService";
 import Constants from "../../../constants/index";
 import PercentBar from "../PercentBar";
+import ReactTooltip from "react-tooltip";
 
 class Player extends React.Component {
+	componentDidUpdate() {
+		ReactTooltip.rebuild();
+	}
+
 	render() {
 		let player       = this.props.player;
 		let player_type  = (player._is_current) ? "active" : "other";
@@ -23,7 +28,7 @@ class Player extends React.Component {
 
 		for (let key of stat_columns) {
 			let value  = PlayerProcessor.getDataValue(key, player, this.props.players, this.props.encounter);
-			let prefix = (is_raid || true) ? LocalizationService.getPlayerDataTitle(key, "short") : ""; // true for horizontal
+			let prefix = (is_raid || this.props.horizontal) ? LocalizationService.getPlayerDataTitle(key, "short") : "";
 
 			if (is_raid) {
 				prefix += ": ";
@@ -77,8 +82,23 @@ class Player extends React.Component {
 			);
 		};
 
+		let tooltip = null;
+		
+		if (this.props.horizontal && this.props.detail_data && this.props.detail_data[role]) {
+			tooltip = [];
+
+			for (const key of this.props.detail_data[role]) {
+				let value = PlayerProcessor.getDataValue(key, player, this.props.players, this.props.encounter);
+				let name  = LocalizationService.getPlayerDataTitle(key, "short").toUpperCase();
+
+				tooltip.push(name + ": " + value);
+			}
+
+			tooltip = tooltip.join("<br>");
+		}
+
 		return (
-			<div className={"row player " + player_type} data-job={job} data-role={role} data-party={+(player._party || 0)} key={"player-row-" + player_name} data-uuid={player_name} onClick={this.props.onClick}>
+			<div data-tip={tooltip} data-multiline={true} className={"row player " + player_type} data-job={job} data-role={role} data-party={+(player._party || 0)} key={"player-row-" + player_name} data-uuid={player_name} onClick={this.props.onClick}>
 				{playerData()}
 				{statData()}
 				{
