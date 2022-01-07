@@ -36,7 +36,7 @@
 		"react-scripts": "3.0.1",
 		"react-simple-code-editor": "^0.9.14",
 		"react-string-replace": "^0.4.4",
-		"react-tooltip": "^3.10.0",
+		"react-tooltip": "^4.2.7",
 		"redux": "^4.0.4",
 		"redux-promise-middleware": "^6.1.1",
 		"semantic-ui-react": "^0.87.3",
