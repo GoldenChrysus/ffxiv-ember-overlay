@@ -14,7 +14,7 @@
     - Added setting at Interface > Horizontal > "Alignment" to choose if the overlay should be left, right, or center aligned
         - Choosing "Right" also makes the overlay display from right to left
     - Metrics displayed in the overlay are controlled by the column settings at Player Table
-    - Metrics display in the player tooltips are controlled by the metric settings at Player Detail
+    - Metrics displayed in the player tooltips are controlled by the metric settings at Player Detail
 - Added setting at Interface > Theme > "Text Scale" to adjust the text zoom without affecting most of the UI elements
 
 ### UI Changes
