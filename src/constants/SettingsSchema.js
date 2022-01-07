@@ -188,6 +188,13 @@ const SettingsSchema = {
 								maximum  : 500
 							},
 							{
+								key_path : "interface.text_scale",
+								type     : "slider",
+								range    : "min",
+								minimum  : 1,
+								maximum  : 500
+							},
+							{
 								key_path : "interface.theme",
 								type     : "select",
 								options  : theme_options

@@ -1,5 +1,30 @@
 # Changelog
 
+## 1.0.0-alpha
+
+**Released: [in staging]**
+
+### Bug Fixes
+- ?
+
+### Features
+- Added horizontal overlay
+    - Added setting at Interface > Horizontal > "Use Horizontal Overlay" to enable overlay
+    - Added setting at Interface > Horizontal > "Shrink Width" to only use as much horizontal space as necessary to display game data
+    - Added setting at Interface > Horizontal > "Alignment" to choose if the overlay should be left, right, or center aligned
+        - Choosing "Right" also makes the overlay display from right to left
+- Added setting at Interface > Theme > "Text Scale" to adjust the text zoom without affecting most of the UI elements
+
+### UI Changes
+- ?
+
+### Code Changes
+- Updated most pixel-based font sizes to `rem` sizes
+- Changed performance bars from using `background-size` to using `width` to determine the size of the bar
+
+### Miscellaneous
+- ?
+
 ## 0.33.1-alpha
 
 **Released: 2022-01-04**

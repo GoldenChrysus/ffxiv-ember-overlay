@@ -60,9 +60,8 @@ body.mode-spells {
 }
 
 .icon-container i.icon {
-	font-size   : 13px;
-	line-height : 13px;
-	margin      : 0 auto;
+	font-size : 0.928rem;
+	margin    : 0 auto;
 }
 
 .icon-container.notice {
@@ -181,8 +180,8 @@ body.mode-spells {
 }
 
 #container #inner #header .title {
-	font-size      : 8px;
-	line-height    : 8px;
+	font-size      : 0.571rem;
+	line-height    : 0.571rem;
 	text-transform : uppercase;
 	letter-spacing : 1px;
 	font-weight    : bold;
@@ -203,8 +202,8 @@ body.mode-spells {
 
 #container #inner #header .subtitle {
 	padding-right  : 16px;
-	font-size      : 8px;
-	line-height    : 8px;
+	font-size      : 0.571rem;
+	line-height    : 0.571rem;
 	text-transform : uppercase;
 	float          : right;
 	font-style     : italic;
@@ -224,8 +223,8 @@ body.mode-spells {
 
 #container > .toggle {
 	position      : absolute;
-	width         : 12px;
-	height        : 12px;
+	width         : 0.857rem;
+	height        : 0.857rem;
 	border-radius : 50%;
 	cursor        : pointer;
 	cursor        : hand;
@@ -272,10 +271,12 @@ body.mode-spells {
 
 #container #inner #game-state {
 	padding        : 0 8px 2px 8px;
-	font-size      : 10px;
+	font-size      : 0.714rem;
 	text-transform : uppercase;
 	font-weight    : 600;
 	position       : relative;
+	display: flex;
+	align-items: center;
 
 	.setThemeStyle(
 		{
@@ -297,21 +298,17 @@ body.mode-spells {
 }
 
 #container #inner #game-state > span:first-child {
-	display       : inline-block;
-	width         : calc(100% - 65px - 5px);
+	flex          : 1;
+	max-width     : calc(100% - 4.462rem - 0.357rem);
 	overflow-x    : hidden;
 	white-space   : nowrap;
 	text-overflow : ellipsis;
-	line-height   : 10px;
-	padding-top   : 3px;
-	height        : 13px;
 	overflow-y    : hidden;
 }
 
 #container #inner #game-state > span:last-child {
-	display     : inline-block;
 	float       : right;
-	width       : 65px;
+	width       : 4.462rem;
 	text-align  : right;
 	white-space : nowrap;
 	overflow-x  : hidden;
@@ -319,19 +316,16 @@ body.mode-spells {
 
 #container #inner #game-state > span:last-child > span:first-child {
 	vertical-align : top;
-	padding-top    : 3px;
-	line-height    : 10px;
 	display        : inline-block;
 	margin-right   : 3px;
 }
 
 #container #inner #game-state > span:last-child > .icon-container {
-	padding     : 2px 2px 2px 2px;
-	line-height : 10px;
+	padding : 2px 2px 2px 2px;
 }
 
 #container #inner #game-state > span:last-child > .icon-container > i.icon {
-	font-size   : 10px;
+	font-size : 0.714rem;
 }
 
 #container #inner #game-state .inactive:before {
@@ -486,7 +480,7 @@ body.mode-spells {
 	width     : 100%;
 	display   : table-row;
 	padding   : 4px 0;
-	font-size : 11px;
+	font-size : 0.786rem;
 
 	.setThemeStyle(
 		{
@@ -630,7 +624,7 @@ body.mode-spells {
 			color: @light_headerAndLinkText;
 		},
 		{
-			font-size: 10px;
+			font-size: 0.714rem;
 		},
 		@classicTheme: {
 			color: @classic_headerAndLinkText;
@@ -723,23 +717,23 @@ body.mode-spells {
 
 #container #inner #content #player-table .row.player .column:first-child img,
 #container #inner #content #player-table .row.player .column.icon img {
-	width: 20px;
-	height: 20px;
+	width: 1.429rem;
+	height: 1.429rem;
 	position: relative;
 	z-index: 1;
 
 	.setThemeStyle(
 		@minimalTheme: {
-			width: 16px;
-			height: 16px;
+			width: 1.143rem;
+			height: 1.143rem;
 			top: 1px;
 		}
 	);
 }
 
 #container #inner #content #player-table.grid .row .player-data .column:first-child img {
-	width  : 16px;
-	height : 16px;
+	width  : 1.143rem;
+	height : 1.143rem;
 
 	.setThemeStyle(
 		@minimalTheme: {
@@ -760,7 +754,7 @@ body.mode-spells {
 
 #container #inner #content #player-table .row.player > .column > .column-percent-bar {
 	width: 98%;
-	height: 7px;
+	height: 0.500rem;
 	box-sizing: border-box;
 	background-color: rgba(255, 255, 255, 0.10);
 	background-image: linear-gradient(#3a6229, #3a6229);
@@ -795,15 +789,15 @@ body.mode-spells {
 	width: calc(100% - 23px - 3px);
 	min-width: 0;
 	padding: 0;
-	height: 16px;
-	line-height: 16px;
+	height: 1.143rem;
+	line-height: 1.143rem;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
 
 #container #inner #content #player-table.grid .row.player .stat-data > .column {
-	font-size      : 9px;
+	font-size      : 0.643rem;
 	padding-left   : 0;
 	padding-top    : 0;
 	padding-bottom : 0;
@@ -863,14 +857,14 @@ body.mode-spells {
 }
 
 #container #inner #content #player-detail .header .job img {
-	width  : 32px;
-	height : 32px;
+	width  : 2.286rem;
+	height : 2.286rem;
 }
 
 #container #inner #content #player-detail .header .name,
 #container #inner #content #import .header .name {
 	padding-left : 8px;
-	font-size    : 28px;
+	font-size    : 2.000rem;
 
 	.setThemeStyle(
 		{
@@ -901,7 +895,7 @@ body.mode-spells {
 #container #inner #content #player-detail .section > .title {
 	text-transform : uppercase;
 	font-weight    : bold;
-	font-size      : 19px;
+	font-size      : 1.357rem;
 	padding        : 6px 0 8px 0;
 
 	.setThemeStyle(
@@ -952,7 +946,7 @@ body.mode-spells {
 
 #container #inner #content #player-detail .section > .data .column > .title {
 	font-weight : bold;
-	font-size   : 12px;
+	font-size   : 0.857rem;
 
 	.setThemeStyle(
 		{
@@ -1056,20 +1050,23 @@ body.mode-spells {
 
 #container #inner #footer {
 	width   : 100%;
-	padding : 0 8px 0 8px;
+	padding : 0.142rem 8px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	row-gap: 0.071rem;
 }
 
 #container #inner #footer #role-links,
 #container #inner #footer #navigation-links {
-	float : left;
+	flex: 1;
+	display: flex;
 }
 
 #container #inner #footer #footer-actions {
-	float       : right;
 	text-align  : right;
 	box-sizing  : border-box;
 	padding     : 0;
-	line-height : 13px;
 }
 
 #container #inner #footer #role-links .role-link,
@@ -1079,8 +1076,8 @@ body.mode-spells {
 	display        : inline-block;
 	border-radius  : 4px;
 	text-transform : uppercase;
-	line-height    : 9px;
-	font-size      : 9px;
+	line-height    : 0.643rem;
+	font-size      : 0.643rem;
 	margin-right   : 5px;
 	transition     : 0.5s;
 	touch-action   : manipulation;
@@ -1145,7 +1142,7 @@ body.mode-spells {
 	height: 100%;
 	position: absolute;
 	text-align: center;
-	font-size: 40px;
+	font-size: 2.857rem;
 	font-weight: bold;
 }
 
@@ -1203,7 +1200,7 @@ body.mode-spells {
 	width: 100%;
 	padding: 5px;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 0.857rem;
 	overflow: hidden;
 	text-shadow: -3px 3px 2px black, 3px -2px 3px black;
 	position: absolute;
@@ -1216,7 +1213,7 @@ body.mode-spells {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	height: 40px;
+	height: 2.857rem;
 	margin: 3px 0 2px 0;
 	width: 33%;
 	float: left;
@@ -1274,7 +1271,7 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 }
 
 #container #inner #content .spell-grid .spell-container.compact {
-	height: 20px;
+	height: 1.429rem;
 }
 
 #container #inner #content .spell-grid .spell-container.icon {
@@ -1283,14 +1280,14 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 
 #container #inner #content .spell-grid .spell-container .icon {
 	flex: 0 0 100%;
-	width: 40px;
-	height: 40px;
+	width: 2.857rem;
+	height: 2.857rem;
 	position: relative;
 }
 
 #container #inner #content .spell-grid .spell-container .icon img {
 	max-width: 100%;
-	max-height: 40px;
+	max-height: 2.857rem;
 	display: block;
 	position: relative;
 	left: 50%;
@@ -1308,11 +1305,11 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 }
 
 #container #inner #content .spell-grid .spell-container.compact .icon {
-	width: 20px;
+	width: 1.429rem;
 }
 
 #container #inner #content .spell-grid .spell-container.compact .icon img {
-	max-height: 20px;
+	max-height: 1.429rem;
 }
 
 #container #inner #content .spell-grid .spell-container.darkened:not(.icon):not(.off-cooldown) .icon img {
@@ -1652,7 +1649,7 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 
 .react-tooltip {
 	padding   : 3px 6px;
-	font-size : 11px;
+	font-size : 0.786rem;
 
 	.setThemeStyle(
 		{
@@ -1729,7 +1726,7 @@ body.horizontal > #root {
 }
 
 body.horizontal #inner > #game-state,
-body.horizontal #inner:not(:hover) > #footer,
+body.horizontal #container > #inner:not(:hover) > #footer,
 body.horizontal #inner > .split {
 	display: none;
 }
@@ -1767,17 +1764,17 @@ body.horizontal #container > #inner > #content > #player-table > .row {
 	flex: 0;
 	position: relative;
 	border-bottom: 0;
-	margin-right: 16px;
+	margin-right: 1.429rem;
 }
 
 body.horizontal #container > #inner > #content > #player-table.right > .row:first-of-type {
 	margin-right: 0;
 }
 body.horizontal #container > #inner > #content > #player-table.right > .row:last-of-type {
-	margin-left: 20px;
+	margin-left: 1.429rem;
 }
 body.horizontal #container > #inner > #content > #player-table.right > .row.game:last-of-type {
-	margin-left: 16px;
+	margin-left: 1.429rem;
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row.game {
@@ -1786,7 +1783,7 @@ body.horizontal #container > #inner > #content > #player-table > .row.game {
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row.game > .column {
-	padding: 0 calc(1em - 9px) 0 1em;
+	padding: 0 calc(1em - 0.643rem) 0 1em;
 	font-size: 1.125rem;
 	line-height: 1.125rem;
 	font-weight: 500;
@@ -1824,7 +1821,7 @@ body.horizontal #container > #inner > #content > #player-table > .row.active.act
 	display: block;
 	position: absolute;
 	height: 100%;
-	width: 20px;
+	width: 1.429rem;
 	background-image: initial !important;
 	background-color: initial !important;
 	content: "";
@@ -1845,9 +1842,9 @@ body.horizontal #container > #inner > #content > #player-table > .row.active.act
 	display: block;
 	position: absolute;
 	height: 100%;
-	width: 20px;
+	width: 1.429rem;
 	content: "";
-	top: 1px;
+	top: 0;
 	right: 0;
 	transform: skew(-25deg);
 	transform-origin: bottom;
@@ -1855,8 +1852,9 @@ body.horizontal #container > #inner > #content > #player-table > .row.active.act
 	border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-body.horizontal #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::after {
-	top: 0px;
+body.horizontal #container > #inner > #content > #player-table > .row > .percent-bar::after,
+body.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::after {
+	top: 1px;
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row > .percent-bar::after {
@@ -1868,14 +1866,14 @@ body.horizontal #container > #inner > #content > #player-table > .row > .percent
 body.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::before {
 	background-image: linear-gradient(65deg, @dark_playerTableActiveRowBackground 50%, transparent 50%) !important;
 	content: "";
-	width: 32px;
+	width: 2.286rem;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
 }
 body.minimal.horizontal #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::before,
 body.minimal.horizontal #container > #inner > #content > #player-table > .row > .percent-bar::before,
 body.minimal.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::before {
-	width: 28px;
+	width: 2.000rem;
 }
 body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::before {
 	background-image: linear-gradient(65deg, @light_playerTableActiveRowBackground 50%, transparent 50%) !important;
@@ -1895,7 +1893,7 @@ body.horizontal #container > #inner > #content > #player-table > .row > .percent
 body.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::after {
 	background-image: linear-gradient(65deg, transparent 50%, @dark_playerTableActiveRowBackground 50%) !important;
 	content: "";
-	width: 32px;
+	width: 2.286rem;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
 	background-position-x: 100%;
@@ -1903,7 +1901,7 @@ body.horizontal #container > #inner > #content > #player-table > .row.active.act
 body.minimal.horizontal #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::after,
 body.minimal.horizontal #container > #inner > #content > #player-table > .row > .percent-bar::after,
 body.minimal.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar > .percent-bar::after {
-	width: 28px;
+	width: 2.000rem;
 }
 body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.active:not(.active-with-bar)::after {
 	background-image: linear-gradient(65deg, transparent 50%, @light_playerTableActiveRowBackground 50%) !important;
@@ -1939,13 +1937,13 @@ body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-ta
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row > .column {
-	font-size: 10.3px;
+	font-size: 0.736rem;
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row .metric-name {
 	padding-right: 3px;
 	text-transform: uppercase;
-	font-size: 7px;
+	font-size: 0.500rem;
 	color: @dark_importantText;
 }
 body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row .metric-name {
@@ -1957,16 +1955,16 @@ body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-ta
 
 body.horizontal #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::before {
 	background-image: linear-gradient(65deg, @dark_rowAndLinkHoverBackground 50%, transparent 50%) !important;
-	width: 16px;
+	width: 1.143rem;
 	left: 0px;
 	border-left: 0;
 }
 body.minimal.horizontal #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::before {
-	width: 14px;
+	width: 1.000rem;
 }
 body.horizontal #container > #inner > #content > #player-table > .row.player:not(.active-with-bar):not(.active):hover::after {
 	background-image: linear-gradient(65deg, transparent 50%, @dark_rowAndLinkHoverBackground 50%) !important;
-	width: 14px;
+	width: 1.000rem;
 	right: 1px;
 	border-right: 0;
 }
@@ -2043,7 +2041,8 @@ body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-ta
 
 @media screen and (max-width: 351px) {
 	#container #inner #footer {
-		padding: 0 4px 0 4px;
+		padding-right: 4px;
+		padding-left: 4px;
 	}
 
 	#container #inner #footer #role-links .role-link,

@@ -69,10 +69,15 @@ class Parser extends React.Component {
 		let root_inner_classes = [];
 		let opacity            = this.props.opacity / 100;
 		let zoom               = this.props.zoom / 100;
+		const font_size        = (14 * (this.props.text_scale / 100));
 		let context_zoom       = 1 / zoom;
 		let display            = (this.state.visible) ? "block" : "none";
 		let max_width          = (this.props.footer_dps) ? "325" : "0";
 		let setting_style      = `
+			html {
+				font-size: ${font_size}px;
+			}
+
 			body {
 				zoom: ${zoom};
 				display: ${display};
@@ -150,6 +155,7 @@ const mapStateToProps = (state) => {
 		css                      : state.settings.custom.css || "",
 		opacity                  : state.settings.interface.opacity,
 		zoom                     : state.settings.interface.zoom,
+		text_scale               : state.settings.interface.text_scale,
 		theme                    : state.settings.interface.theme,
 		auto_hide                : state.settings.interface.auto_hide,
 		auto_hide_delay          : state.settings.interface.auto_hide_delay,

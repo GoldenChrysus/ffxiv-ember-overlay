@@ -18,6 +18,7 @@ const default_settings = {
 		player_name           : "YOU",
 		opacity               : 100,
 		zoom                  : 100,
+		text_scale            : 100,
 		top_right_rank        : false,
 		blur_job_icons        : false,
 		collapse_down         : false,
