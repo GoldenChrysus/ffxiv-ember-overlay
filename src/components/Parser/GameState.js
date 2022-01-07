@@ -6,6 +6,7 @@ import IconButton from "./Container/IconButton";
 import LocalizationService from "../../services/LocalizationService";
 import SettingsService from "../../services/SettingsService";
 import VersionService from "../../services/VersionService";
+import { getEncounterTitle } from "../../helpers/GameHelper";
 
 class GameState extends React.Component {
 	componentDidMount() {
@@ -43,19 +44,7 @@ class GameState extends React.Component {
 
 		switch (this.props.mode) {
 			case "stats":
-				if (!encounter.title) {
-					encounter_state.push(LocalizationService.getOverlayText("awaiting_encounter"));
-				} else {
-					encounter_state.push(encounter.duration);
-
-					if (encounter.title !== "Encounter") {
-						encounter_state.push(encounter.title);
-					}
-
-					encounter_state.push(encounter.CurrentZoneName);
-				}
-
-				encounter_state = encounter_state.join(" - ");
+				encounter_state = getEncounterTitle(encounter);
 
 				break;
 

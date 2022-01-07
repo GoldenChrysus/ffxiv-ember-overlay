@@ -193,7 +193,7 @@ class Container extends EmberComponent {
 				switch (viewing) {
 					case "tables":
 						if (this.props.table_type !== "aggro") {
-							content = <PlayerTable players={this.props.combatants} encounter={encounter} type={this.props.table_type}/>;
+							content = <PlayerTable key="player-table-component" players={this.props.combatants} encounter={encounter} type={this.props.table_type}/>;
 						} else {
 							content = <AggroTable monsters={this.props.aggro}/>
 						}
@@ -315,17 +315,25 @@ class Container extends EmberComponent {
 			container_classes.push("ui-builder-active");
 		}
 
+		if (this.props.horizontal) {
+			if (this.props.horizontal_shrink) {
+				container_classes.push("shrink");
+			}
+
+			container_classes.push(this.props.horizontal_alignment || "left");
+		}
+
 		return (
-			<React.Fragment>
-				<ContextMenuTrigger id="right-click-menu" holdToDisplay={-1}>
-					<div id="container" className={container_classes.join(" ")}>
+			<React.Fragment key="container-fragment">
+				<ContextMenuTrigger key="right-click-menu" id="right-click-menu" holdToDisplay={-1}>
+					<div id="container" className={container_classes.join(" ")} key="container">
 						<PlaceholderToggle type="top left"/>
 						<PlaceholderToggle type="top right"/>
 						<PlaceholderToggle type="bottom left"/>
 						<PlaceholderToggle type="bottom right"/>
-						<div id="inner">
+						<div id="inner" key="inner">
 							{this.getGameState(encounter, active)}
-							<div id="content">
+							<div id="content" key="content">
 								{content}
 							</div>
 							{footer}
@@ -484,6 +492,9 @@ const mapStateToProps = (state) => {
 		combatants            : state.internal.game.Combatant,
 		collapsed             : state.settings.intrinsic.collapsed,
 		footer_when_collapsed : state.settings.interface.footer_when_collapsed,
+		horizontal            : state.settings.interface.horizontal,
+		horizontal_shrink     : state.settings.interface.horizontal_shrink,
+		horizontal_alignment  : state.settings.interface.horizontal_alignment,
 		rank                  : state.internal.rank,
 		top_right_rank        : state.settings.interface.top_right_rank,
 		viewing               : state.internal.viewing,

@@ -10,6 +10,8 @@ import TTSService from "../services/TTSService";
 import UsageService from "../services/UsageService";
 import SpellService from "../services/SpellService";
 
+import { createUUID } from "../helpers/UUIDHelper";
+
 class GameDataProcessor  {
 	normalizeFieldLocale(value) {
 		let foreign_number_regex = /[\d]+,[\d]{2}(%|K)?$/;
@@ -61,6 +63,8 @@ class GameDataProcessor  {
 			if ((data.Combatant[player_name].Job || "").toLowerCase() === "limit break") {
 				data.Combatant[player_name].Job = "LMB";
 			}
+
+			data.Combatant[player_name].UUID = createUUID();
 		}
 
 		data = this.injectMaxDPS(data, current_state, loading_sample);

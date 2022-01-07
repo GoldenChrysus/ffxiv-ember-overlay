@@ -188,6 +188,13 @@ const SettingsSchema = {
 								maximum  : 500
 							},
 							{
+								key_path : "interface.text_scale",
+								type     : "slider",
+								range    : "min",
+								minimum  : 1,
+								maximum  : 500
+							},
+							{
 								key_path : "interface.theme",
 								type     : "select",
 								options  : theme_options
@@ -198,6 +205,26 @@ const SettingsSchema = {
 								exclude_modes : [
 									"spells"
 								]
+							}
+						]
+					},
+					{
+						exclude_modes : [
+							"spells"
+						],
+						settings : [
+							{
+								key_path : "interface.horizontal",
+								type     : "checkbox"
+							},
+							{
+								key_path : "interface.horizontal_shrink",
+								type     : "checkbox"
+							},
+							{
+								key_path : "interface.horizontal_alignment",
+								type     : "select",
+								options  : () => LocalizationService.getAlignmentOptions()
 							}
 						]
 					}

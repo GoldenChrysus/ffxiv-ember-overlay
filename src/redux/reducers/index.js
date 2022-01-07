@@ -542,6 +542,20 @@ function createNewState(state, full_key, action) {
 		ThemeService.toggleMinimal(minimal_theme);
 	}
 
+	if (["settings", "settings.interface.horizontal", "internal.viewing", "interal.mode"].indexOf(full_key) !== -1) {
+		let horizontal = (full_key === "settings")
+			? action.payload.interface.horizontal
+			: ((full_key === "settings.interface.horizontal")
+				? action.payload
+				: new_state.settings.interface.horizontal);
+
+		if (new_state.internal.mode !== "stats" || new_state.internal.viewing !== "tables") {
+			horizontal = false;
+		}
+
+		ThemeService.toggleHorizontal(horizontal);
+	}
+
 	if (full_key === "internal.mode") {
 		ThemeService.setMode(action.payload);
 	}

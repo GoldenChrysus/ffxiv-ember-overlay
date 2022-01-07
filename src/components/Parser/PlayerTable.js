@@ -10,10 +10,16 @@ import Constants from "../../constants/index";
 
 import Player from "./PlayerTable/Player";
 import OverlayInfo from "./PlayerTable/OverlayInfo";
+import { getEncounterTitle } from "../../helpers/GameHelper";
+import ReactTooltip from "react-tooltip";
 
 class PlayerTable extends React.Component {
 	componentDidMount() {
 		this.updateBackgrounds();
+
+		if (this.props.horizontal) {
+			ReactTooltip.rebuild();
+		}
 	}
 
 	componentDidUpdate() {
@@ -145,7 +151,7 @@ class PlayerTable extends React.Component {
 			}
 
 			let blur       = (player_blur && !player._is_current);
-			let player_obj = <Player key={player.name} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} onClick={this.changeViewing.bind(this, "player", player)}/>
+			let player_obj = <Player key={"player-component-" + player._name} percent={player._percent} percent_bars={percent_bars} player={player} players={sorted_players} encounter={this.props.encounter} columns={this.props.table_columns[table_type]} type={this.props.type} blur={blur} icon_blur={this.props.icon_blur} short_names={short_names} horizontal={this.props.horizontal} detail_data={this.props.detail_data} onClick={this.changeViewing.bind(this, "player", player)}/>
 
 			if (player._is_pet) {
 				pet_rows.push(player_obj);
@@ -168,12 +174,18 @@ class PlayerTable extends React.Component {
 		}
 
 		if (!is_raid) {
-			header_row = 
-				<div className="row header">
-					<div className="column"></div>
-					<div className="column">{LocalizationService.getOverlayText("player_name")}</div>
-					{header}
-				</div>;
+			header_row = (!this.props.horizontal)
+				? (
+					<div className="row header">
+						<div className="column"></div>
+						<div className="column">{LocalizationService.getOverlayText("player_name")}</div>
+						{header}
+					</div>
+				) : (
+					<div className="row game" data-tip={getEncounterTitle(this.props.encounter, true)}>
+						<div className="column">{this.props.encounter.duration || "00:00"}</div>
+					</div>
+				)
 
 			if (this.props.table_settings[table_type].show_footer) {
 				footer_row =
@@ -188,6 +200,10 @@ class PlayerTable extends React.Component {
 		}
 
 		let getFooterRow = (location) => {
+			if (this.props.horizontal) {
+				return null;
+			}
+
 			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
 		}
 		let petRows      = () => {
@@ -199,11 +215,15 @@ class PlayerTable extends React.Component {
 				: null;
 		}
 
-		let overlay_info = (collapsed || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
+		if (this.props.horizontal) {
+			table_class += " " + (this.props.horizontal_alignment || "left");
+		}
+
+		let overlay_info = (collapsed || this.props.horizontal || (this.props.encounter && Object.keys(this.props.encounter).length)) ? "" : <OverlayInfo/>
 
 		return (
-			<React.Fragment>
-				<div id="player-table" className={table_class} ref="player_table">
+			<React.Fragment key="player-table-fragment">
+				<div id="player-table" key="player-table" className={table_class} ref="player_table">
 					{header_row}
 					{getFooterRow("top")}
 					{rows}
@@ -237,7 +257,6 @@ class PlayerTable extends React.Component {
 			}
 
 			let height   = $row.outerHeight();
-			let width    = $row.outerWidth();
 			let position = $row.position();
 
 			if (is_grid) {
@@ -251,10 +270,8 @@ class PlayerTable extends React.Component {
 			$bar
 				.css("top", position.top + "px")
 				.css("left", position.left + "px")
-				.css("width", "100%")
-				.css("height", height + "px")
-				.css("width", width + "px")
-				.css("backgroundSize", $row.attr("data-percent") + "% 100%");
+				.css("width", $row.attr("data-percent") + "%")
+				.css("height", height + "px");
 		});
 	}
 }
@@ -277,17 +294,20 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
 	return {
-		internal_name  : state.internal.character_name,
-		language       : state.settings.interface.language,
-		player_name    : state.settings.interface.player_name,
-		icon_blur      : state.settings.interface.blur_job_icons,
-		table_columns  : state.settings.table_columns,
-		sort_columns   : state.settings.sort_columns,
-		collapsed      : state.settings.intrinsic.collapsed,
-		player_blur    : state.settings.intrinsic.player_blur,
-		table_settings : state.settings.table_settings,
-		rank           : state.internal.rank,
-		party          : state.internal.party
+		internal_name        : state.internal.character_name,
+		horizontal           : state.settings.interface.horizontal,
+		horizontal_alignment : state.settings.interface.horizontal_alignment,
+		language             : state.settings.interface.language,
+		player_name          : state.settings.interface.player_name,
+		icon_blur            : state.settings.interface.blur_job_icons,
+		table_columns        : state.settings.table_columns,
+		sort_columns         : state.settings.sort_columns,
+		detail_data          : (state.settings.interface.horizontal) ? state.settings.detail_data : null,
+		collapsed            : state.settings.intrinsic.collapsed,
+		player_blur          : state.settings.intrinsic.player_blur,
+		table_settings       : state.settings.table_settings,
+		rank                 : state.internal.rank,
+		party                : state.internal.party
 	};
 };
 

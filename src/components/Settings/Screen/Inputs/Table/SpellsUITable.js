@@ -8,6 +8,8 @@ import LocalizationService from "../../../../../services/LocalizationService";
 import Table from "../Table";
 import ObjectService from "../../../../../services/ObjectService";
 
+import { createUUID } from "../../../../../helpers/UUIDHelper";
+
 class SpellsUITable extends Table {
 	constructor(props) {
 		super(props);
@@ -150,7 +152,7 @@ class SpellsUITable extends Table {
 		}
 
 		while (options.auto_add && (options.key === null || this.data.value[options.key])) {
-			options.key = this.createUUID();
+			options.key = createUUID();
 		}
 
 		this.data.value[options.key] = {
@@ -212,17 +214,6 @@ class SpellsUITable extends Table {
 
 	getDeleteKey(e) {
 		return $(e.currentTarget || e.target).closest("tr").attr("data-key");
-	}
-
-	createUUID() {
-		return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
-			let r = Math.random() * 16 | 0;
-
-			// eslint-disable-next-line
-			let v = (c === "x") ? r : (r & 0x3 | 0x8);
-
-			return v.toString(16);
-		});
 	}
 
 	processSortable() {

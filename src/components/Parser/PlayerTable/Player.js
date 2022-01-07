@@ -4,8 +4,13 @@ import PlayerProcessor from "../../../processors/PlayerProcessor";
 import LocalizationService from "../../../services/LocalizationService";
 import Constants from "../../../constants/index";
 import PercentBar from "../PercentBar";
+import ReactTooltip from "react-tooltip";
 
 class Player extends React.Component {
+	componentDidUpdate() {
+		ReactTooltip.rebuild();
+	}
+
 	render() {
 		let player       = this.props.player;
 		let player_type  = (player._is_current) ? "active" : "other";
@@ -23,13 +28,17 @@ class Player extends React.Component {
 
 		for (let key of stat_columns) {
 			let value  = PlayerProcessor.getDataValue(key, player, this.props.players, this.props.encounter);
-			let prefix = (is_raid) ? LocalizationService.getPlayerDataTitle(key, "short") + ": " : "";
+			let prefix = (is_raid || this.props.horizontal) ? LocalizationService.getPlayerDataTitle(key, "short") : "";
+
+			if (is_raid) {
+				prefix += ": ";
+			}
 
 			if (key === "enmity_percent") {
 				columns.push(<div className="column" key={key}><PercentBar percent={value}/></div>);
 			} else {
 				columns.push(
-					<div className="column" key={key}><span>{prefix}</span>{value}</div>
+					<div className="column" key={key}><span className="metric-name">{prefix}</span>{value}</div>
 				);
 			}
 		}
@@ -72,30 +81,40 @@ class Player extends React.Component {
 				</div>
 			);
 		};
-		let percentBar = () => {
-			if (!this.props.percent_bars) {
-				return "";
+
+		let tooltip = null;
+		
+		if (this.props.horizontal && this.props.detail_data && this.props.detail_data[role]) {
+			tooltip = [];
+
+			for (const key of this.props.detail_data[role]) {
+				let value = PlayerProcessor.getDataValue(key, player, this.props.players, this.props.encounter);
+				let name  = LocalizationService.getPlayerDataTitle(key, "short").toUpperCase();
+
+				tooltip.push(name + ": " + value);
 			}
 
-			return (
-				<div className="percent-bar" key={"percent-bar-" + player_name} style={{
-					backgroundSize      : "0% 100%",
-					backgroundRepeat    : "no-repeat",
-					backgroundPositionY : "1px",
-					position            : "absolute",
-					top                 : "0",
-					left                : "0",
-					width               : "0",
-					height              : "0"
-				}}></div>
-			);
-		};
+			tooltip = tooltip.join("<br>");
+		}
 
 		return (
-			<div className={"row player " + player_type} data-job={job} data-role={role} data-party={+(player._party || 0)} key={"player-" + player_name} data-percent={this.props.percent} onClick={this.props.onClick}>
+			<div data-tip={tooltip} data-multiline={true} className={"row player " + player_type} data-job={job} data-role={role} data-party={+(player._party || 0)} key={"player-row-" + player_name} data-uuid={player_name} onClick={this.props.onClick}>
 				{playerData()}
 				{statData()}
-				{percentBar()}
+				{
+					this.props.percent_bars &&
+					(
+						<div className="percent-bar" key={"percent-bar-" + player_name} style={{
+							backgroundRepeat    : "no-repeat",
+							backgroundPositionY : "1px",
+							position            : "absolute",
+							top                 : "0",
+							left                : "0",
+							width               : this.props.percent + "%",
+							height              : "100%"
+						}}/>
+					)
+				}
 			</div>
 		);
 	}

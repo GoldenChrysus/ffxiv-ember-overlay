@@ -49,6 +49,18 @@
 					"kr" : "테마",
 					"ua" : "Тема",
 					"ru" : "Тема"
+				},
+				{
+					"en" : "Horizontal",
+					"pt" : "Horizontal",
+					"cn" : "Horizontal",
+					"jp" : "Horizontal",
+					"de" : "Horizontal",
+					"es" : "Horizontal",
+					"fr" : "Horizontal",
+					"kr" : "Horizontal",
+					"ua" : "Horizontal",
+					"ru" : "Horizontal"
 				}
 			]
 		},
@@ -718,6 +730,18 @@
 			"ua" : "Масштаб Накладання",
 			"ru" : "Масштаб Оверлея"
 		},
+		"interface.text_scale" : {
+			"en" : "Text Scale",
+			"pt" : "",
+			"cn" : "",
+			"jp" : "",
+			"de" : "",
+			"es" : "",
+			"fr" : "",
+			"kr" : "",
+			"ua" : "",
+			"ru" : ""
+		},
 		"interface.top_right_rank" : {
 			"en" : "Display Rank in Top Right",
 			"pt" : "Mostrar Ranque no canto superior direito",
@@ -837,6 +861,42 @@
 			"kr" : "간소화 테마 사용하기",
 			"ua" : "Використати Мінімізовану Тему",
 			"ru" : "Минималистичная тема"
+		},
+		"interface.horizontal": {
+			"en" : "Use Horizontal Overlay",
+			"pt" : "",
+			"cn" : "",
+			"jp" : "",
+			"de" : "",
+			"es" : "",
+			"fr" : "",
+			"kr" : "",
+			"ua" : "",
+			"ru" : ""
+		},
+		"interface.horizontal_shrink": {
+			"en" : "Shrink Width",
+			"pt" : "",
+			"cn" : "",
+			"jp" : "",
+			"de" : "",
+			"es" : "",
+			"fr" : "",
+			"kr" : "",
+			"ua" : "",
+			"ru" : ""
+		},
+		"interface.horizontal_alignment": {
+			"en" : "Alignment",
+			"pt" : "",
+			"cn" : "",
+			"jp" : "",
+			"de" : "",
+			"es" : "",
+			"fr" : "",
+			"kr" : "",
+			"ua" : "",
+			"ru" : ""
 		},
 		"interface.auto_hide" : {
 			"en" : "Auto-Hide Overlay After Inactivity (Set Below)",
@@ -1476,6 +1536,58 @@
 				"short_first" : "И. Фамилия",
 				"short_last"  : "Имя Ф.",
 				"short_both"  : "И. Ф."
+			}
+		},
+		"alignment_options" : {
+			"en" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"pt" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"cn" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"jp" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"de" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"es" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"fr" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"kr" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"ua" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
+			},
+			"ru" : {
+				"left"   : "Left",
+				"center" : "Center",
+				"right"  : "Right"
 			}
 		},
 		"tts" : {
