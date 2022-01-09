@@ -5,7 +5,7 @@
 **Released: [in staging]**
 
 ### Bug Fixes
-- Resolved issue where spell timers do not reset on death or wipe
+- Resolved issue where spell timers do not reset on party wipe
 
 ### Features
 - Added horizontal overlay
