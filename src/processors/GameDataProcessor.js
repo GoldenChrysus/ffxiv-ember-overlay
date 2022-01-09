@@ -324,7 +324,8 @@ class GameDataProcessor  {
 					return false;
 				}
 
-				return "death";
+				// return "death";
+				return false;
 
 			case 26:
 			case 30:

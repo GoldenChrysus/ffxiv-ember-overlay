@@ -133,7 +133,7 @@ class MessageProcessor {
 				break;
 
 			case "LogLine":
-				const allowed_codes = [1, 3, 21, 22, 25, 26, 30, 33, 37, 39];
+				const allowed_codes = [1, 3, 21, 22, 26, 30, 33, 37, 39];
 
 				if (allowed_codes.indexOf(+data.line[0]) === -1) {
 					break;

@@ -442,7 +442,7 @@ function rootReducer(state, action) {
 						);
 
 						new_state.internal.character_level = state_data.char_level;
-					} else if (state_data === "death" || state_data === "wipe") {
+					} else if (state_data === "wipe") {
 						new_state = clone(state);
 
 						updateSpells(new_state, true);
