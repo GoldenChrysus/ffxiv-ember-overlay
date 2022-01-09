@@ -442,6 +442,10 @@ function rootReducer(state, action) {
 						);
 
 						new_state.internal.character_level = state_data.char_level;
+					} else if (state_data === "death" || state_data === "wipe") {
+						new_state = clone(state);
+
+						updateSpells(new_state, true);
 					} else if (state_data !== false) {
 						new_state = clone(state);
 
@@ -616,15 +620,7 @@ function createNewState(state, full_key, action) {
 			reset = true;
 		}
 
-		if (reset) {
-			SpellService.resetAllSpells();
-
-			new_state.internal.spells.defaulted = {};
-			new_state.internal.spells.in_use    = {};
-		}
-
-		SpellService.updateValidNames(new_state);
-		SpellService.injectDefaults(new_state);
+		updateSpells(new_state, reset);
 	}
 
 	if (full_key === "internal.character_id") {
@@ -632,6 +628,18 @@ function createNewState(state, full_key, action) {
 	}
 
 	return new_state;
+}
+
+function updateSpells(state, reset) {
+	if (reset) {
+		SpellService.resetAllSpells();
+
+		state.internal.spells.defaulted = {};
+		state.internal.spells.in_use    = {};
+	}
+
+	SpellService.updateValidNames(state);
+	SpellService.injectDefaults(state);
 }
 
 export default rootReducer;

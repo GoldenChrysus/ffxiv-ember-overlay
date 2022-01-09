@@ -317,6 +317,15 @@ class GameDataProcessor  {
 
 				break;
 
+			case 25:
+				log_data.char_id = parseInt(data[2], 16);
+
+				if (log_data.char_id !== state.internal.character_id) {
+					return false;
+				}
+
+				return "death";
+
 			case 26:
 			case 30:
 				log_data.spell_index = 2;
@@ -343,6 +352,9 @@ class GameDataProcessor  {
 				log_data.stacks           = +data[9];
 
 				break;
+
+			case 33:
+				return (data[3] === "40000005") ? "wipe" : false;
 
 			default:
 				return false;
