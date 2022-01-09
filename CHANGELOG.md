@@ -1,11 +1,11 @@
 # Changelog
 
-## 1.0.0-alpha
+## 1.0.0-alpha.1
 
 **Released: [in staging]**
 
 ### Bug Fixes
-- ?
+- Resolved issue where spell timers do not reset on death or wipe
 
 ### Features
 - Added horizontal overlay
