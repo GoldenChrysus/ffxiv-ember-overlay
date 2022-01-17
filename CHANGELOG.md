@@ -1,8 +1,8 @@
 # Changelog
 
-## 1.0.0-alpha.1
+## 1.0.0
 
-**Released: [in staging]**
+**Released: 2022-01-17**
 
 ### Bug Fixes
 - Resolved issue where spell timers do not reset on party wipe
@@ -18,14 +18,14 @@
 - Added setting at Interface > Theme > "Text Scale" to adjust the text zoom without affecting most of the UI elements
 
 ### UI Changes
-- ?
+- N/A
 
 ### Code Changes
 - Updated most pixel-based font sizes to `rem` sizes
 - Changed performance bars from using `background-size` to using `width` to determine the size of the bar
 
 ### Miscellaneous
-- ?
+- Updated donor credits
 
 ## 0.33.1-alpha
 

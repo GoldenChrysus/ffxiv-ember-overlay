@@ -169,6 +169,7 @@ When viewing the [changelog](/CHANGELOG.md), you will be able to determine which
 
 - Pimpy Shortstocking
 - FortiusTTV - [Twitch](https://www.twitch.tv/fortiusttv)
+- loski3
 
 ### Donors
 
