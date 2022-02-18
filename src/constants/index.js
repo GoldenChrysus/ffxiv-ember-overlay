@@ -212,7 +212,7 @@ const GameJobs = {
 	BLM : {
 		role    : "dps",
 		Name_de : "Schwarzmagier",
-		Name_en : "Black Bage",
+		Name_en : "Black Mage",
 		Name_fr : "Mage Noir",
 		Name_jp : "黒魔道士",
 	},
