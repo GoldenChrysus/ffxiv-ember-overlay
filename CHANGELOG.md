@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.2
+
+**Released: 2022-02-18**
+
+### Bug Fixes
+- Resolved typo in job names
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.0.0
 
 **Released: 2022-01-17**
