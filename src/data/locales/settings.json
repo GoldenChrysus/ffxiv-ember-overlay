@@ -53,7 +53,7 @@
 				{
 					"en" : "Horizontal",
 					"pt" : "Horizontal",
-					"cn" : "Horizontal",
+					"cn" : "水平模式",
 					"jp" : "Horizontal",
 					"de" : "Horizontal",
 					"es" : "Horizontal",
@@ -733,7 +733,7 @@
 		"interface.text_scale" : {
 			"en" : "Text Scale",
 			"pt" : "",
-			"cn" : "",
+			"cn" : "文本缩放",
 			"jp" : "",
 			"de" : "",
 			"es" : "",
@@ -865,7 +865,7 @@
 		"interface.horizontal": {
 			"en" : "Use Horizontal Overlay",
 			"pt" : "",
-			"cn" : "",
+			"cn" : "使用水平模式",
 			"jp" : "",
 			"de" : "",
 			"es" : "",
@@ -877,7 +877,7 @@
 		"interface.horizontal_shrink": {
 			"en" : "Shrink Width",
 			"pt" : "",
-			"cn" : "",
+			"cn" : "缩短宽度",
 			"jp" : "",
 			"de" : "",
 			"es" : "",
@@ -889,7 +889,7 @@
 		"interface.horizontal_alignment": {
 			"en" : "Alignment",
 			"pt" : "",
-			"cn" : "",
+			"cn" : "对齐方向",
 			"jp" : "",
 			"de" : "",
 			"es" : "",
@@ -1550,9 +1550,9 @@
 				"right"  : "Right"
 			},
 			"cn" : {
-				"left"   : "Left",
-				"center" : "Center",
-				"right"  : "Right"
+				"left"   : "左对齐",
+				"center" : "居中",
+				"right"  : "右对齐"
 			},
 			"jp" : {
 				"left"   : "Left",
