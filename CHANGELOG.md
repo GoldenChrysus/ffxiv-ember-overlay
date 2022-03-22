@@ -11,7 +11,7 @@
 - N/A
 
 ### UI Changes
-- Updated Chinese, Portuguese, German, Korean, and Ukrainian translations
+- Updated Chinese translations
 
 ### Code Changes
 - N/A
