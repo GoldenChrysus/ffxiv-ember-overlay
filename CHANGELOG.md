@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.3
+
+**Released: 2022-03-22**
+
+### Bug Fixes
+- Resolved misaligned rank in overlay header
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.0.2
 
 **Released: 2022-02-18**
