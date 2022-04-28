@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.4
+
+**Released: 2022-04-28**
+
+### Bug Fixes
+- Resolved issue where overlay does not auto hide due to ACT plugin constantly sending inactive encounter data
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.0.3
 
 **Released: 2022-03-22**

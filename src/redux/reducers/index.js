@@ -521,7 +521,9 @@ function createNewState(state, full_key, action) {
 	new_state.plugin_service = state.plugin_service;
 
 	if (["parseGameData", "loadSampleData"].indexOf(action.type) !== -1) {
-		new_state.last_activity = (new Date()).getTime() / 1000;
+		if (action.payload.isActive === "true" || action.payload.isActive === true) {
+			new_state.last_activity = (new Date()).getTime() / 1000;
+		}
 
 		if (action.type === "parseGameData") {
 			return new_state;
