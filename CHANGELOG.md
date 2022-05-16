@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.5
+
+**Released: 2022-05-16**
+
+### Bug Fixes
+- Resolved issue where performance bars were overlapping in raid view
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.0.4
 
 **Released: 2022-04-28**

@@ -13,8 +13,8 @@ A clear and concise description of what the bug is.
 **Reproduction steps**
 Exact steps, both in Ember and within FFXIV, to reproduce the behavior:
 1. Open '...'
-2. Enable '....'
-3. Cast '....' in game
+2. Enable '...'
+3. Cast '...' in game
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
