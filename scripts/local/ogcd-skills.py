@@ -48,28 +48,29 @@ local         = loadLocal()
 local_traits  = loadTraits()
 
 for key in local_traits:
-	record = local_traits[key]
-	skill  = record["Action"]
-	level  = record["Level"]
+	record       = local_traits[key]
+	trait_skills = record["Action"].split("::")
+	level        = record["Level"]
 
-	if record["Type"] == "Recast":
-		recast = int(record["Time"]) / 1.0
+	for skill in trait_skills:
+		if record["Type"] == "Recast":
+			recast = int(record["Time"]) / 1.0
 
-		if skill not in recast_traits:
-			recast_traits[skill] = []
+			if skill not in recast_traits:
+				recast_traits[skill] = []
 
-		recast_traits[skill].append({
-			"level"  : level,
-			"recast" : recast
-		})
-	elif record["Type"] == "Charge":
-		if skill not in charge_traits:
-			charge_traits[skill] = []
+			recast_traits[skill].append({
+				"level"  : level,
+				"recast" : recast
+			})
+		elif record["Type"] == "Charge":
+			if skill not in charge_traits:
+				charge_traits[skill] = []
 
-		charge_traits[skill].append({
-			"level"   : level,
-			"charges" : record["Charges"]
-		})
+			charge_traits[skill].append({
+				"level"   : level,
+				"charges" : record["Charges"]
+			})
 
 for key in local:
 	record = local[key]

@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.1.0
+
+**Released: [in staging]**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Updated game data through FFXIV patch 6.11a
+
 ## 1.0.5
 
 **Released: 2022-05-16**
