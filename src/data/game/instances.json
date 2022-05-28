@@ -1,6 +1,6 @@
 {
 	"1" : {
-		"zone_id" : 169,
+		"zone_id" : 1039,
 		"locales" : {
 			"name" : {
 				"en" : "the Thousand Maws of Toto–Rak",
@@ -11,7 +11,7 @@
 		}
 	},
 	"2" : {
-		"zone_id" : 164,
+		"zone_id" : 1037,
 		"locales" : {
 			"name" : {
 				"en" : "the Tam–Tara Deepcroft",
@@ -22,7 +22,7 @@
 		}
 	},
 	"3" : {
-		"zone_id" : 161,
+		"zone_id" : 1038,
 		"locales" : {
 			"name" : {
 				"en" : "Copperbell Mines",
@@ -33,7 +33,7 @@
 		}
 	},
 	"4" : {
-		"zone_id" : 157,
+		"zone_id" : 1036,
 		"locales" : {
 			"name" : {
 				"en" : "Sastasha",
@@ -55,7 +55,7 @@
 		}
 	},
 	"6" : {
-		"zone_id" : 166,
+		"zone_id" : 1040,
 		"locales" : {
 			"name" : {
 				"en" : "Haukke Manor",
@@ -77,7 +77,7 @@
 		}
 	},
 	"8" : {
-		"zone_id" : 158,
+		"zone_id" : 1041,
 		"locales" : {
 			"name" : {
 				"en" : "Brayflox's Longstop",
@@ -110,7 +110,7 @@
 		}
 	},
 	"11" : {
-		"zone_id" : 168,
+		"zone_id" : 1042,
 		"locales" : {
 			"name" : {
 				"en" : "the Stone Vigil",
@@ -154,7 +154,7 @@
 		}
 	},
 	"15" : {
-		"zone_id" : 217,
+		"zone_id" : 1043,
 		"locales" : {
 			"name" : {
 				"en" : "Castrum Meridianum",
@@ -164,8 +164,8 @@
 			}
 		}
 	},
-	"16" : {
-		"zone_id" : 224,
+	"86" : {
+		"zone_id" : 1044,
 		"locales" : {
 			"name" : {
 				"en" : "the Praetorium",
@@ -605,7 +605,7 @@
 		}
 	},
 	"20001" : {
-		"zone_id" : 202,
+		"zone_id" : 1045,
 		"locales" : {
 			"name" : {
 				"en" : "the Bowl of Embers",
@@ -616,7 +616,7 @@
 		}
 	},
 	"20002" : {
-		"zone_id" : 206,
+		"zone_id" : 1046,
 		"locales" : {
 			"name" : {
 				"en" : "the Navel",
@@ -627,7 +627,7 @@
 		}
 	},
 	"20003" : {
-		"zone_id" : 208,
+		"zone_id" : 1047,
 		"locales" : {
 			"name" : {
 				"en" : "the Howling Eye",
@@ -667,17 +667,6 @@
 				"de" : "Götterdämmerung - Garuda",
 				"fr" : "Hurlœil (brutal)",
 				"jp" : "真ガルーダ討滅戦"
-			}
-		}
-	},
-	"20007" : {
-		"zone_id" : 332,
-		"locales" : {
-			"name" : {
-				"en" : "Cape Westwind",
-				"de" : "Kap Westwind",
-				"fr" : "le Cap Vendouest",
-				"jp" : "リットアティン強襲戦"
 			}
 		}
 	},
@@ -1425,29 +1414,7 @@
 				"en" : "the Antitower",
 				"de" : "Antiturm",
 				"fr" : "L'Antitour",
-				"jp" : "星海観測 逆さの塔 "
-			}
-		}
-	},
-	"40008" : {
-		"zone_id" : 525,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (4 on 4 - Training)",
-				"de" : "The Feast (4 gegen 4, Übungskampf)",
-				"fr" : "The Feast (4x4/entraînement)",
-				"jp" : "ザ・フィースト (4対4 / カジュアルマッチ)"
-			}
-		}
-	},
-	"40010" : {
-		"zone_id" : 527,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (4 on 4 - Ranked)",
-				"de" : "The Feast (4 gegen 4, gewertet)",
-				"fr" : "The Feast (4x4/classé)",
-				"jp" : "ザ・フィースト (4対4 / ランクマッチ)"
+				"jp" : "星海観測 逆さの塔"
 			}
 		}
 	},
@@ -1979,17 +1946,6 @@
 			}
 		}
 	},
-	"40014" : {
-		"zone_id" : 619,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Custom Match - Feasting Grounds)",
-				"de" : "The Feast (Wolfshöhle: Schaukampf)",
-				"fr" : "The Feast (personnalisé/Festin des loups)",
-				"jp" : "ザ・フィースト (ウルヴズジェイル演習場：カスタムマッチ）"
-			}
-		}
-	},
 	"60006" : {
 		"zone_id" : 593,
 		"locales" : {
@@ -2218,39 +2174,6 @@
 				"de" : "Zenit der Götter - Zurvan",
 				"fr" : "Unité de contention Z1P9 (extrême)",
 				"jp" : "極鬼神ズルワーン討滅戦"
-			}
-		}
-	},
-	"40016" : {
-		"zone_id" : 632,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (4 on 4 - Training)",
-				"de" : "The Feast (4 gegen 4, Übungskampf)",
-				"fr" : "The Feast (4x4/entraînement)",
-				"jp" : "ザ・フィースト (4対4 / カジュアルマッチ)"
-			}
-		}
-	},
-	"40018" : {
-		"zone_id" : 644,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (4 on 4 - Ranked)",
-				"de" : "The Feast (4 gegen 4, gewertet)",
-				"fr" : "The Feast (4x4/classé)",
-				"jp" : "ザ・フィースト (4対4 / ランクマッチ)"
-			}
-		}
-	},
-	"40021" : {
-		"zone_id" : 646,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Custom Match - Lichenweed)",
-				"de" : "The Feast (Flechtenhain: Schaukampf)",
-				"fr" : "The Feast (personnalisé/Pré-de-lichen)",
-				"jp" : "ザ・フィースト (ライケンウィード演習場：カスタムマッチ）"
 			}
 		}
 	},
@@ -2947,50 +2870,6 @@
 			}
 		}
 	},
-	"40022" : {
-		"zone_id" : 745,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Team Ranked)",
-				"de" : "The Feast (Team, gewertet)",
-				"fr" : "The Feast (classé/équipe JcJ)",
-				"jp" : "ザ・フィースト (チーム用ランクマッチ)"
-			}
-		}
-	},
-	"40023" : {
-		"zone_id" : 765,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Ranked)",
-				"de" : "The Feast (gewertet)",
-				"fr" : "The Feast (classé)",
-				"jp" : "ザ・フィースト (ランクマッチ)"
-			}
-		}
-	},
-	"40024" : {
-		"zone_id" : 766,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Training)",
-				"de" : "The Feast (Übungskampf)",
-				"fr" : "The Feast (entraînement)",
-				"jp" : "ザ・フィースト (カジュアルマッチ)"
-			}
-		}
-	},
-	"40025" : {
-		"zone_id" : 767,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Custom Match - Crystal Tower)",
-				"de" : "The Feast (Kristallturm-Arena: Schaukampf)",
-				"fr" : "The Feast (personnalisé/Tour de Cristal)",
-				"jp" : "ザ・フィースト (クリスタルタワー演習場：カスタムマッチ）"
-			}
-		}
-	},
 	"61" : {
 		"zone_id" : 768,
 		"locales" : {
@@ -3153,17 +3032,6 @@
 				"de" : "Richtfeuer von Ridorana",
 				"fr" : "le Phare de Ridorana",
 				"jp" : "封じられた聖塔 リドルアナ"
-			}
-		}
-	},
-	"40026" : {
-		"zone_id" : 767,
-		"locales" : {
-			"name" : {
-				"en" : "the Feast (Team Custom Match - Crystal Tower)",
-				"de" : "The Feast (Kristallturm-Arena: Team-Schaukampf) ",
-				"fr" : "The Feast (personnalisé/équipe JcJ/Tour de Cristal)",
-				"jp" : "ザ・フィースト (クリスタルタワー演習場：チーム用カスタムマッチ)"
 			}
 		}
 	},
@@ -4916,6 +4784,17 @@
 			}
 		}
 	},
+	"30106" : {
+		"zone_id" : 968,
+		"locales" : {
+			"name" : {
+				"en" : "Dragonsong's Reprise (Ultimate)",
+				"de" : "Drachenkrieg (fatal)",
+				"fr" : "la Guerre du chant des dragons (fatal)",
+				"jp" : "絶竜詩戦争"
+			}
+		}
+	},
 	"83" : {
 		"zone_id" : 970,
 		"locales" : {
@@ -5265,6 +5144,193 @@
 				"de" : "Trauer und Hoffnung",
 				"fr" : "Acceptation",
 				"jp" : "僕たちは還り、君を見送ろう"
+			}
+		}
+	},
+	"64004" : {
+		"zone_id" : 1035,
+		"locales" : {
+			"name" : {
+				"en" : "Ultima's Bane (Unreal)",
+				"de" : "Traumprüfung - Ultima",
+				"fr" : "Le fléau d'Ultima (irréel)",
+				"jp" : "幻アルテマウェポン破壊作戦"
+			}
+		}
+	},
+	"20082" : {
+		"zone_id" : 1048,
+		"locales" : {
+			"name" : {
+				"en" : "The Porta Decumana",
+				"de" : "Porta Decumana",
+				"fr" : "Porta Decumana",
+				"jp" : "アルテマウェポン破壊作戦"
+			}
+		}
+	},
+	"40027" : {
+		"zone_id" : 1032,
+		"locales" : {
+			"name" : {
+				"en" : "The Palaistra",
+				"de" : "Die Palästra",
+				"fr" : "Le Palestre",
+				"jp" : "パライストラ"
+			}
+		}
+	},
+	"40028" : {
+		"zone_id" : 1033,
+		"locales" : {
+			"name" : {
+				"en" : "The Volcanic Heart",
+				"de" : "Das Herz des Vulkans",
+				"fr" : "Le Cœur volcanique",
+				"jp" : "ヴォルカニック・ハート"
+			}
+		}
+	},
+	"40029" : {
+		"zone_id" : 1034,
+		"locales" : {
+			"name" : {
+				"en" : "Cloud Nine",
+				"de" : "Wolke Sieben",
+				"fr" : "Le Petit Nuage",
+				"jp" : "クラウドナイン"
+			}
+		}
+	},
+	"87" : {
+		"zone_id" : 1050,
+		"locales" : {
+			"name" : {
+				"en" : "Alzadaal's Legacy",
+				"de" : "Alzadaals Vermächtnis",
+				"fr" : "Le legs d'Alzadaal",
+				"jp" : "近東秘宝 アルザダール海底遺跡群"
+			}
+		}
+	},
+	"5059" : {
+		"zone_id" : 1051,
+		"locales" : {
+			"name" : {
+				"en" : "Forlorn Glory",
+				"de" : "Nervas Reich",
+				"fr" : "Nerva, le patriote",
+				"jp" : "ネルウァの帝国"
+			}
+		}
+	},
+	"20083" : {
+		"zone_id" : 998,
+		"locales" : {
+			"name" : {
+				"en" : "The Minstrel's Ballad: Endsinger's Aria",
+				"de" : "Eschatos - Endsängerin",
+				"fr" : "le Répons final (extrême)",
+				"jp" : "終極の戦い"
+			}
+		}
+	},
+	"40030" : {
+		"zone_id" : 1032,
+		"locales" : {
+			"name" : {
+				"en" : "The Palaistra",
+				"de" : "Die Palästra",
+				"fr" : "Le Palestre",
+				"jp" : "パライストラ"
+			}
+		}
+	},
+	"40031" : {
+		"zone_id" : 1033,
+		"locales" : {
+			"name" : {
+				"en" : "The Volcanic Heart",
+				"de" : "Das Herz des Vulkans",
+				"fr" : "Le Cœur volcanique",
+				"jp" : "ヴォルカニック・ハート"
+			}
+		}
+	},
+	"40032" : {
+		"zone_id" : 1034,
+		"locales" : {
+			"name" : {
+				"en" : "Cloud Nine",
+				"de" : "Wolke Sieben",
+				"fr" : "Le Petit Nuage",
+				"jp" : "クラウドナイン"
+			}
+		}
+	},
+	"40033" : {
+		"zone_id" : 1058,
+		"locales" : {
+			"name" : {
+				"en" : "Crystalline Conflict (Custom Match - The Palaistra)",
+				"de" : "Crystalline Conflict: Die Palästra (Schaukampf)",
+				"fr" : "Crystalline Conflict (partie personnalisée - Le Palestre)",
+				"jp" : "クリスタルコンフリクト(パライストラ：カスタムマッチ)"
+			}
+		}
+	},
+	"40034" : {
+		"zone_id" : 1059,
+		"locales" : {
+			"name" : {
+				"en" : "Crystalline Conflict (Custom Match - The Volcanic Heart)",
+				"de" : "Crystalline Conflict: Das Herz des Vulkans (Schaukampf)",
+				"fr" : "Crystalline Conflict (partie personnalisée - Le Cœur volcanique)",
+				"jp" : "クリスタルコンフリクト(ヴォルカニック・ハート：カスタムマッチ)"
+			}
+		}
+	},
+	"40035" : {
+		"zone_id" : 1060,
+		"locales" : {
+			"name" : {
+				"en" : "Crystalline Conflict (Custom Match - Cloud Nine)",
+				"de" : "Crystalline Conflict: Wolke Sieben (Schaukampf)",
+				"fr" : "Crystalline Conflict (partie personnalisée - Le Petit Nuage)",
+				"jp" : "クリスタルコンフリクト(クラウドナイン：カスタムマッチ)"
+			}
+		}
+	},
+	"5060" : {
+		"zone_id" : 1049,
+		"locales" : {
+			"name" : {
+				"en" : "Cape Westwind",
+				"de" : "Kap Westwind",
+				"fr" : "le Cap Vendouest",
+				"jp" : "リットアティン強襲戦"
+			}
+		}
+	},
+	"30115" : {
+		"zone_id" : 1054,
+		"locales" : {
+			"name" : {
+				"en" : "Aglaia",
+				"de" : "Aglaia",
+				"fr" : "Domaine divin - Aglaé",
+				"jp" : "輝ける神域 アグライア"
+			}
+		}
+	},
+	"5061" : {
+		"zone_id" : 1052,
+		"locales" : {
+			"name" : {
+				"en" : "Devastation",
+				"de" : "Das Antlitz der Kaltblütigkeit",
+				"fr" : "le Praetorium en flammes",
+				"jp" : "アシエン・ラハブレア討伐戦"
 			}
 		}
 	}
