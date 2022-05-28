@@ -2,7 +2,7 @@
 
 ## 1.1.0
 
-**Released: [in development]**
+**Released: [in staging]**
 
 ### Bug Fixes
 - N/A
