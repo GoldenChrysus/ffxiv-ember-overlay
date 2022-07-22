@@ -135,6 +135,15 @@ function rootReducer(state, action) {
 			break;
 
 		case "parseGameData":
+			// When the encounter is inactive and the new data is also inactive, do nothing
+			if (
+				state.internal.game &&
+				state.internal.game.isActive === action.payload.isActive &&
+				(action.payload.isActive === false || action.payload.isActive === "false")
+			) {
+				break;
+			}
+
 			let new_history = (
 				!action.payload.Encounter ||
 				!state.internal.encounter_history.length ||
