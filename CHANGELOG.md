@@ -5,7 +5,7 @@
 **[in staging]**
 
 ### Bug Fixes
-- Resolved additional issues caused by ACT plugin constantly sending inactive encounter data
+- ! - Resolved additional issues caused by ACT plugin constantly sending inactive encounter data
 
 ### Features
 - N/A
