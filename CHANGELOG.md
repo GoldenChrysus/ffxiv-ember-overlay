@@ -2,10 +2,10 @@
 
 ## 1.1.1
 
-**[in staging]**
+**Released: 2022-08-13**
 
 ### Bug Fixes
-- ! - Resolved additional issues caused by ACT plugin constantly sending inactive encounter data
+- Resolved issue with inactive encounter replacing sample game data due to ACT plugin constantly sending inactive encounter data
 
 ### Features
 - N/A
