@@ -4845,7 +4845,7 @@
 		}
 	},
 	"16164" : {
-		"recast" : 90.0,
+		"recast" : 120.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9169,7 +9169,7 @@
 		}
 	},
 	"29124" : {
-		"recast" : 30.0,
+		"recast" : 20.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10433,7 +10433,7 @@
 		}
 	},
 	"29496" : {
-		"recast" : 30.0,
+		"recast" : 25.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10618,7 +10618,7 @@
 		}
 	},
 	"29533" : {
-		"recast" : 30.0,
+		"recast" : 25.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10935,7 +10935,7 @@
 	},
 	"29663" : {
 		"recast" : 15.0,
-		"charges" : 2,
+		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
@@ -11313,6 +11313,22 @@
 				"de" : "Quietus (PVP)",
 				"fr" : "Quietus (PVP)",
 				"jp" : "クワイタス (PVP)"
+			}
+		}
+	},
+	"31315" : {
+		"recast" : 60.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "",
+				"de" : "",
+				"fr" : "",
+				"jp" : ""
 			}
 		}
 	}
