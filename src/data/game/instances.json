@@ -286,7 +286,7 @@
 		}
 	},
 	"27" : {
-		"zone_id" : 371,
+		"zone_id" : 1062,
 		"locales" : {
 			"name" : {
 				"en" : "Snowcloak",
@@ -341,7 +341,7 @@
 		}
 	},
 	"32" : {
-		"zone_id" : 150,
+		"zone_id" : 1063,
 		"locales" : {
 			"name" : {
 				"en" : "the Keeper of the Lake",
@@ -363,7 +363,7 @@
 		}
 	},
 	"34" : {
-		"zone_id" : 421,
+		"zone_id" : 1066,
 		"locales" : {
 			"name" : {
 				"en" : "the Vault",
@@ -396,7 +396,7 @@
 		}
 	},
 	"37" : {
-		"zone_id" : 441,
+		"zone_id" : 1064,
 		"locales" : {
 			"name" : {
 				"en" : "Sohm Al",
@@ -418,7 +418,7 @@
 		}
 	},
 	"39" : {
-		"zone_id" : 435,
+		"zone_id" : 1065,
 		"locales" : {
 			"name" : {
 				"en" : "the Aery",
@@ -704,7 +704,7 @@
 		}
 	},
 	"20011" : {
-		"zone_id" : 207,
+		"zone_id" : 1067,
 		"locales" : {
 			"name" : {
 				"en" : "Thornmarch (Hard)",
@@ -887,17 +887,6 @@
 				"de" : "Jenseits Urths Quelle",
 				"fr" : "la Fontaine d'Urth",
 				"jp" : "闘神オーディン討滅戦"
-			}
-		}
-	},
-	"20028" : {
-		"zone_id" : 143,
-		"locales" : {
-			"name" : {
-				"en" : "the Steps of Faith",
-				"de" : "Der Schicksalsweg",
-				"fr" : "le Siège de la sainte Cité d'Ishgard",
-				"jp" : "皇都イシュガルド防衛戦"
 			}
 		}
 	},
@@ -5147,22 +5136,11 @@
 			}
 		}
 	},
-	"64004" : {
-		"zone_id" : 1035,
-		"locales" : {
-			"name" : {
-				"en" : "Ultima's Bane (Unreal)",
-				"de" : "Traumprüfung - Ultima",
-				"fr" : "Le fléau d'Ultima (irréel)",
-				"jp" : "幻アルテマウェポン破壊作戦"
-			}
-		}
-	},
 	"20082" : {
 		"zone_id" : 1048,
 		"locales" : {
 			"name" : {
-				"en" : "The Porta Decumana",
+				"en" : "the Porta Decumana",
 				"de" : "Porta Decumana",
 				"fr" : "Porta Decumana",
 				"jp" : "アルテマウェポン破壊作戦"
@@ -5331,6 +5309,160 @@
 				"de" : "Das Antlitz der Kaltblütigkeit",
 				"fr" : "le Praetorium en flammes",
 				"jp" : "アシエン・ラハブレア討伐戦"
+			}
+		}
+	},
+	"88" : {
+		"zone_id" : 1070,
+		"locales" : {
+			"name" : {
+				"en" : "the Fell Court of Troia",
+				"de" : "Der Schwarze Hof von Troia",
+				"fr" : "Le Château de Troïa",
+				"jp" : "異界孤城 トロイアコート"
+			}
+		}
+	},
+	"20084" : {
+		"zone_id" : 1071,
+		"locales" : {
+			"name" : {
+				"en" : "Storm's Crown",
+				"de" : "Prophetie - Barbarizia",
+				"fr" : "La Toison des tempêtes",
+				"jp" : "バルバリシア討滅戦"
+			}
+		}
+	},
+	"20085" : {
+		"zone_id" : 1072,
+		"locales" : {
+			"name" : {
+				"en" : "Storm's Crown (Extreme)",
+				"de" : "Eschatos - Barbarizia",
+				"fr" : "La Toison des tempêtes (extrême)",
+				"jp" : "極バルバリシア討滅戦"
+			}
+		}
+	},
+	"30116" : {
+		"zone_id" : 1081,
+		"locales" : {
+			"name" : {
+				"en" : "Abyssos: The Fifth Circle",
+				"de" : "Abyssos - Fünfter Kreis",
+				"fr" : "Le Purgatoire du Pandæmonium - Cages",
+				"jp" : "万魔殿パンデモニウム：煉獄編1"
+			}
+		}
+	},
+	"30117" : {
+		"zone_id" : 1082,
+		"locales" : {
+			"name" : {
+				"en" : "Abyssos: The Fifth Circle (Savage)",
+				"de" : "Abyssos - Fünfter Kreis (episch)",
+				"fr" : "Le Purgatoire du Pandæmonium - Cages (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：煉獄編1"
+			}
+		}
+	},
+	"5062" : {
+		"zone_id" : 1091,
+		"locales" : {
+			"name" : {
+				"en" : "Where Everything Begins",
+				"de" : "Wo alles seinen Anfang nimmt",
+				"fr" : "Au commencement était Zero",
+				"jp" : "失われた力"
+			}
+		}
+	},
+	"64005" : {
+		"zone_id" : 1090,
+		"locales" : {
+			"name" : {
+				"en" : "Containment Bay S1T7 (Unreal)",
+				"de" : "Traumprüfung - Sephirot",
+				"fr" : "Unité de contention S1P7 (irréel)",
+				"jp" : "幻魔神セフィロト討滅戦"
+			}
+		}
+	},
+	"30118" : {
+		"zone_id" : 1085,
+		"locales" : {
+			"name" : {
+				"en" : "Abyssos: The Seventh Circle",
+				"de" : "Abyssos - Siebter Kreis",
+				"fr" : "Le Purgatoire du Pandæmonium - Racines",
+				"jp" : "万魔殿パンデモニウム：煉獄編3"
+			}
+		}
+	},
+	"30119" : {
+		"zone_id" : 1086,
+		"locales" : {
+			"name" : {
+				"en" : "Abyssos: The Seventh Circle (Savage)",
+				"de" : "Abyssos - Siebter Kreis (episch)",
+				"fr" : "Le Purgatoire du Pandæmonium - Racines (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：煉獄編3"
+			}
+		}
+	},
+	"30120" : {
+		"zone_id" : 1083,
+		"locales" : {
+			"name" : {
+				"en" : "Abyssos: The Sixth Circle",
+				"de" : "Abyssos - Sechster Kreis",
+				"fr" : "Le Purgatoire du Pandæmonium - Croisements",
+				"jp" : "万魔殿パンデモニウム：煉獄編2"
+			}
+		}
+	},
+	"30121" : {
+		"zone_id" : 1084,
+		"locales" : {
+			"name" : {
+				"en" : "Abyssos: The Sixth Circle (Savage)",
+				"de" : "Abyssos - Sechster Kreis (episch)",
+				"fr" : "Le Purgatoire du Pandæmonium - Croisements (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：煉獄編2"
+			}
+		}
+	},
+	"30122" : {
+		"zone_id" : 1087,
+		"locales" : {
+			"name" : {
+				"en" : "Abyssos: The Eighth Circle",
+				"de" : "Abyssos - Achter Kreis",
+				"fr" : "Le Purgatoire du Pandæmonium - Hérédité",
+				"jp" : "万魔殿パンデモニウム：煉獄編4"
+			}
+		}
+	},
+	"30123" : {
+		"zone_id" : 1088,
+		"locales" : {
+			"name" : {
+				"en" : "Abyssos: The Eighth Circle (Savage)",
+				"de" : "Abyssos - Achter Kreis (episch)",
+				"fr" : "Le Purgatoire du Pandæmonium - Hérédité (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：煉獄編4"
+			}
+		}
+	},
+	"5063" : {
+		"zone_id" : 1068,
+		"locales" : {
+			"name" : {
+				"en" : "the Steps of Faith",
+				"de" : "Der Schicksalsweg",
+				"fr" : "Le Siège de la sainte Cité d'Ishgard",
+				"jp" : "皇都イシュガルド防衛戦"
 			}
 		}
 	}

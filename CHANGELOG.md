@@ -1,11 +1,30 @@
 # Changelog
 
-## 1.1.1
+## 1.2.0
 
-**[in staging]**
+**2022-08-26**
 
 ### Bug Fixes
-- ! - Resolved additional issues caused by ACT plugin constantly sending inactive encounter data
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Updated game data through FFXIV patch 6.2
+
+## 1.1.1
+
+**Released: 2022-08-13**
+
+### Bug Fixes
+- Resolved issue with inactive encounter replacing sample game data due to ACT plugin constantly sending inactive encounter data
 
 ### Features
 - N/A

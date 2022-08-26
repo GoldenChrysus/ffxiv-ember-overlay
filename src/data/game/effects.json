@@ -22021,6 +22021,20 @@
 			}
 		}
 	},
+	"1778" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Hoofing It",
+				"de" : "Reittier-Blockade",
+				"fr" : "Monte impossible",
+				"jp" : "マウント騎乗不可"
+			}
+		}
+	},
 	"1779" : {
 		"type" : "dot",
 		"dot" : true,
@@ -24229,6 +24243,20 @@
 			}
 		}
 	},
+	"1938" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Sprint",
+				"de" : "Sprint",
+				"fr" : "Sprint",
+				"jp" : "スプリント"
+			}
+		}
+	},
 	"1939" : {
 		"type" : "debuff",
 		"dot" : false,
@@ -24312,6 +24340,20 @@
 				"de" : "Geweihte Erde",
 				"fr" : "Dogme de survie",
 				"jp" : "野戦治療の陣"
+			}
+		}
+	},
+	"1945" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Hoofing It",
+				"de" : "Reittier-Blockade",
+				"fr" : "Monte impossible",
+				"jp" : "マウント騎乗不可"
 			}
 		}
 	},
@@ -37375,6 +37417,20 @@
 			}
 		}
 	},
+	"3080" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rhythmetic Fever",
+				"de" : "Rhythmus-Fieber",
+				"fr" : "Fièvre",
+				"jp" : "フィーバー"
+			}
+		}
+	},
 	"3082" : {
 		"type" : "dot",
 		"dot" : true,
@@ -39121,6 +39177,20 @@
 			}
 		}
 	},
+	"3226" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Slipstream",
+				"de" : "Wirbelströmung",
+				"fr" : "Sillage",
+				"jp" : "スリップストリーム"
+			}
+		}
+	},
 	"3227" : {
 		"type" : "dot",
 		"dot" : true,
@@ -39535,6 +39605,36 @@
 			}
 		}
 	},
+	"3261" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Concentrated Poison",
+				"de" : "Starkes Gift",
+				"fr" : "Poison concentré",
+				"jp" : "劇毒"
+			}
+		}
+	},
+	"3265" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"DRG"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Blood of the Dragon",
+				"de" : "Drachenherz",
+				"fr" : "Sang du dragon",
+				"jp" : "蒼の竜血"
+			}
+		}
+	},
 	"3267" : {
 		"type" : "dot",
 		"dot" : true,
@@ -39546,6 +39646,1146 @@
 				"de" : "Brandwunde",
 				"fr" : "Brûlure",
 				"jp" : "火傷"
+			}
+		}
+	},
+	"3280" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Blessing of Blight",
+				"de" : "Fauliger Segen",
+				"fr" : "Bénédiction nécromantique",
+				"jp" : "腐土の恵み"
+			}
+		}
+	},
+	"3281" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Warding Scale",
+				"de" : "Seelenwächter",
+				"fr" : "Écaille du dragon ancien",
+				"jp" : "星竜鱗"
+			}
+		}
+	},
+	"3282" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Brain Rot",
+				"de" : "Fluch der Fäulnis",
+				"fr" : "Malédiction nécromantique",
+				"jp" : "腐土の呪い"
+			}
+		}
+	},
+	"3283" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fetters",
+				"de" : "Gefesselt",
+				"fr" : "Attache",
+				"jp" : "拘束"
+			}
+		}
+	},
+	"3284" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Tangled",
+				"de" : "Fesselnde Strähnen",
+				"fr" : "Enchevêtrement",
+				"jp" : "呪髪呪縛"
+			}
+		}
+	},
+	"3285" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Awareness",
+				"de" : "Achtsamkeit",
+				"fr" : "Diligence",
+				"jp" : "アウェアネス"
+			}
+		}
+	},
+	"3286" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Frozen",
+				"de" : "Überfroren",
+				"fr" : "Glaciation",
+				"jp" : "凍結"
+			}
+		}
+	},
+	"3287" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Deep Freeze",
+				"de" : "Tiefkühlung",
+				"fr" : "Congélation",
+				"jp" : "氷結"
+			}
+		}
+	},
+	"3300" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Medica II of the Seventh Dawn",
+				"de" : "Resedra der Morgenröte",
+				"fr" : "Extra Médica des Héritiers",
+				"jp" : "サイオンズ・メディカラ"
+			}
+		}
+	},
+	"3301" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Excellence",
+				"de" : "Exzellenz",
+				"fr" : "Excellence",
+				"jp" : "エクセレンス"
+			}
+		}
+	},
+	"3302" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Warding Scale",
+				"de" : "Seelenwächter",
+				"fr" : "Écaille du dragon ancien",
+				"jp" : "星竜鱗"
+			}
+		}
+	},
+	"3303" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Supernal Guard",
+				"de" : "Himmelsschutz",
+				"fr" : "Mur astral",
+				"jp" : "星壁"
+			}
+		}
+	},
+	"3308" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3308_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3308_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3308_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3308_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3309" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3309_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3309_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3309_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3309_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3310" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3310_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3310_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3310_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3310_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3311" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3311_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3311_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3311_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3311_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3313" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Aetherial Exchange",
+				"de" : "Ätherwechsel",
+				"fr" : "Changement éthéréen",
+				"jp" : "エーテルチェンジ"
+			}
+		}
+	},
+	"3314" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Glossomorph",
+				"de" : "Glossomorph",
+				"fr" : "Mollusque parasite",
+				"jp" : "軟体寄生"
+			}
+		}
+	},
+	"3315" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3315_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3315_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3315_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3315_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3316" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Out of Control",
+				"de" : "Kontrollverlust",
+				"fr" : "Incontrôlable",
+				"jp" : "制御不能"
+			}
+		}
+	},
+	"3317" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Consumption",
+				"de" : "Zellulärer Verfall",
+				"fr" : "Rongement cellulaire",
+				"jp" : "細胞浸食"
+			}
+		}
+	},
+	"3318" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bodily Manipulation",
+				"de" : "Zwangshandlung",
+				"fr" : "Conduite forcée",
+				"jp" : "強制行動"
+			}
+		}
+	},
+	"3319" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3319_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3319_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3319_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3319_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3320" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3320_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3320_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3320_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3320_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3321" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3321_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3321_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3321_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3321_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3322" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Glossomorph",
+				"de" : "Glossomorph",
+				"fr" : "Mollusque parasite",
+				"jp" : "軟体寄生"
+			}
+		}
+	},
+	"3323" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Dark Resistance Down II",
+				"de" : "Dunkelresistenz - (stark)",
+				"fr" : "Résistance aux Ténèbres réduite",
+				"jp" : "闇属性耐性低下［強］"
+			}
+		}
+	},
+	"3325" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3325_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3325_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3325_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3325_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3326" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3326_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3326_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3326_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3326_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3327" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3327_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3327_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3327_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3327_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3330" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3330_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3330_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3330_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3330_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3331" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3331_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3331_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3331_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3331_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3332" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3332_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3332_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3332_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3332_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3333" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3333_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3333_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3333_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3333_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3334" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3334_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3334_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3334_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3334_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3335" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3335_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3335_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3335_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3335_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3336" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3336_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3336_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3336_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3336_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3337" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3337_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3337_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3337_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3337_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3338" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3338_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3338_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3338_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3338_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3339" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3339_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3339_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3339_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3339_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3340" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3340_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3340_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3340_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3340_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3341" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3341_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3341_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3341_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3341_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3342" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3342_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3342_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3342_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3342_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3343" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3343_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3343_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3343_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3343_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3344" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3344_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3344_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3344_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3344_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3345" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3345_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3345_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3345_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3345_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3346" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3346_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3346_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3346_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3346_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3347" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3347_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3347_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3347_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3347_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3348" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Targeting",
+				"de" : "Anvisiert",
+				"fr" : "Ciblage",
+				"jp" : "ターゲッティング"
+			}
+		}
+	},
+	"3350" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3350_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3350_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3350_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3350_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3351" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3351_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3351_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3351_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3351_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3352" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3352_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3352_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3352_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3352_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3361" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Up",
+				"de" : "Erhöhte Verwundbarkeit",
+				"fr" : "Vulnérabilité augmentée",
+				"jp" : "被ダメージ上昇"
+			}
+		}
+	},
+	"3362" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Out of Control",
+				"de" : "Keine Kontrolle",
+				"fr" : "Incontrôlable",
+				"jp" : "制御不能"
+			}
+		}
+	},
+	"3364" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Doom",
+				"de" : "Verhängnis",
+				"fr" : "Glas",
+				"jp" : "死の宣告"
+			}
+		}
+	},
+	"3365" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Holosakos",
+				"de" : "Holos (Barriere)",
+				"fr" : "Holos",
+				"jp" : "ホーリズム［バリア］"
+			}
+		}
+	},
+	"3372" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Earth Resistance Down II",
+				"de" : "Erdresistenz - (stark)",
+				"fr" : "Résistance à la terre réduite+",
+				"jp" : "土属性耐性低下［強］"
+			}
+		}
+	},
+	"3381" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"BLM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Astral Fire III",
+				"de" : "Lichtfeuer III",
+				"fr" : "Feu astral III",
+				"jp" : "アストラルファイアIII"
+			}
+		}
+	},
+	"3382" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"BLM"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Umbral Ice III",
+				"de" : "Schatteneis III",
+				"fr" : "Glace ombrale III",
+				"jp" : "アンブラルブリザードIII"
+			}
+		}
+	},
+	"3390" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Poison",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
+	"3391" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3391_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3391_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3391_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3391_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3392" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3392_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3392_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3392_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3392_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3393" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3393_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3393_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3393_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3393_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3394" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3394_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3394_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3394_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3394_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3395" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3395_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3395_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3395_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3395_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3396" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3396_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3396_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3396_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3396_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3397" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3397_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3397_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3397_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3397_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3398" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3398_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3398_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3398_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3398_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3399" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Poison",
+				"de" : "Gift",
+				"fr" : "Poison",
+				"jp" : "毒"
+			}
+		}
+	},
+	"3400" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Glossomorph",
+				"de" : "Glossomorph",
+				"fr" : "Mollusques parasites",
+				"jp" : "軟体寄生"
+			}
+		}
+	},
+	"3401" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "HP Penalty",
+				"de" : "LP-Malus",
+				"fr" : "Malus de PV",
+				"jp" : "最大ＨＰダウン"
+			}
+		}
+	},
+	"3402" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"AST"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "The Arrow",
+				"de" : "Pfeil",
+				"fr" : "La Flèche",
+				"jp" : "オシュオンの矢"
+			}
+		}
+	},
+	"3403" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bole Drawn",
+				"de" : "Gezogen: Eiche",
+				"fr" : "Tirage: le Tronc",
+				"jp" : "ドロー：世界樹の幹"
+			}
+		}
+	},
+	"3404" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Arrow Drawn",
+				"de" : "Gezogen: Pfeil",
+				"fr" : "Tirage: la Flèche",
+				"jp" : "ドロー：オシュオンの矢"
+			}
+		}
+	},
+	"3406" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3406_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3406_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3406_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3406_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3408" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Stun",
+				"de" : "Betäubung",
+				"fr" : "Étourdissement",
+				"jp" : "スタン"
+			}
+		}
+	},
+	"3412" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3412_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3412_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3412_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3412_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"3413" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bravery of the Seventh Dawn",
+				"de" : "Courage der Morgenröte",
+				"fr" : "Courage des Héritiers",
+				"jp" : "サイオンズ・ブレイブ"
+			}
+		}
+	},
+	"3414" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Magic Vulnerability Up",
+				"de" : "Erhöhte Magie-Verwundbarkeit",
+				"fr" : "Vulnérabilité magique augmentée",
+				"jp" : "被魔法ダメージ増加"
+			}
+		}
+	},
+	"3415" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Physical Vulnerability Up",
+				"de" : "Erhöhte physische Verwundbarkeit",
+				"fr" : "Vulnérabilité physique augmentée",
+				"jp" : "被物理ダメージ増加"
+			}
+		}
+	},
+	"3457" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bind",
+				"de" : "Fessel",
+				"fr" : "Entrave",
+				"jp" : "バインド"
 			}
 		}
 	}
