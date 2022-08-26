@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.2.0
+
+**[in development]**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Updated game data through FFXIV patch 6.2
+
 ## 1.1.1
 
 **Released: 2022-08-13**
