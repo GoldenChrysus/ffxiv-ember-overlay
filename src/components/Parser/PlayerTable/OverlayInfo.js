@@ -1,7 +1,6 @@
 import React from "react";
 
 import DonationService from "../../../services/DonationService";
-import LocalizationService from "../../../services/LocalizationService";
 import VersionService from "../../../services/VersionService";
 
 class OverlayInfo extends React.Component {
@@ -101,11 +100,9 @@ class OverlayInfo extends React.Component {
 
 			case "new":
 			default:
-				const lang = (LocalizationService.getLanguage() === "jp") ? "jp" : "en";
-
 				return (
 					<React.Fragment>
-						<span onClick={this.openAdLink.bind(this)} ref="ad"><img className="ad-cta" src={"img/buttons/funding/chesshq-" + lang + ".png"} alt="Support Ember by clicking here to view an ad"/></span>
+						<span onClick={this.openAdLink.bind(this)} ref="ad"><img className="ad-cta" src={"img/buttons/funding/sudoku-legends.png"} alt="Support Ember by clicking here to view an ad"/></span>
 						<p>Support my other projects!</p>
 					</React.Fragment>
 				);
@@ -150,7 +147,7 @@ class OverlayInfo extends React.Component {
 	}
 
 	openAdLink() {
-		let url = "https://chesshq.com/";
+		let url = "https://play.google.com/store/apps/details?id=com.chesshq.sudokuLegends";
 
 		window.open(url, "", "width=1200,height=830,location=no,menubar=no");
 	}

@@ -24,10 +24,12 @@ for key in local:
 	record = local[key]
 	id     = record["ID"]
 
-	if (record["RecastMs"] < 10000):
+	if (record["RecastMs"] < 10000 or record["IsPlayerAction"] == True or record["Indirection"] == None or record["Indirection"] == 0):
 		continue
 
-	if (record["Indirection"] == None or record["Indirection"] == 0 or local[str(record["Indirection"])]["RecastMs"] < 10000):
+	previous = local[str(record["Indirection"])]
+
+	if (previous["RecastMs"] < 10000 or previous["RecastMs"] != record["RecastMs"]):
 		continue
 
 	records[id] = record["Indirection"]
