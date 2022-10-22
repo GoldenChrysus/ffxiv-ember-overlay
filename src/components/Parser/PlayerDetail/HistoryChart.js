@@ -10,7 +10,7 @@ class HistoryChart extends React.Component {
 			defaults.global.defaultFontColor = "#d9d6dd";
 		}
 
-		ChartComponent.prototype.destroyChart = function () {
+		ChartComponent.prototype.destroyChart = function() {
 			this.saveCurrentDatasets();
 
 			const datasets = [];

@@ -40,18 +40,25 @@ class PlayerProcessor {
 
 	getDataValue(key, player, players, encounter, return_sortable_value, state) {
 		const key_function = Constants.PlayerDataCustomValues[key];
-		let value        = (key_function) ? key_function(player, players, encounter) : player[key];
+		let lang           = null;
+
+		if (key_function) {
+			state = state || store.getState();
+			lang = state.settings.interface.language;
+		}
+
+		let value = (key_function) ? key_function(player, players, encounter, lang) : player[key];
 
 		if (key === "name") {
 			state = state || store.getState();
+			lang = state.settings.interface.language;
 
 			if (state.settings.interface.display_job_names) {
-				const job  = player.Job.toUpperCase();
-				const lang = state.settings.interface.language;
+				const job = player.Job.toUpperCase();
 
-				value = (Constants.GameJobs[job]) ?
-					Constants.GameJobs[job]["Name_" + lang] || Constants.GameJobs[job].Name_en :
-					"N/A";
+				value = (Constants.GameJobs[job])
+					? Constants.GameJobs[job]["Name_" + lang] || Constants.GameJobs[job].Name_en
+					: "N/A";
 			} else if (value === "YOU") {
 				const setting_name = state.settings.interface.player_name;
 

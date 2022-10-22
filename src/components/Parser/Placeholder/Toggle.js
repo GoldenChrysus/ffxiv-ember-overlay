@@ -6,7 +6,7 @@ class Toggle extends React.Component {
 		const $container = $(document).find("#container");
 		const self       = this;
 
-		$(document).find(".placeholder").each(function () {
+		$(document).find(".placeholder").each(function() {
 			const hidden = (!$(this).hasClass(self.props.type));
 
 			$(this).toggleClass("hidden", hidden);

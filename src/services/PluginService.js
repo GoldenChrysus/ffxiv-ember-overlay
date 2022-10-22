@@ -23,11 +23,11 @@ class PluginService extends PluginServiceAbstract {
 		Object.assign(this, settings);
 
 		this.events = [];
-		this.plugin_service = (this.is_websocket && !this.is_overlayplugin) ?
-			socket_service :
-			((this.is_overlayplugin) ?
-				new OverlayPluginService(settings) :
-				new OverlayProcService(settings)
+		this.plugin_service = (this.is_websocket && !this.is_overlayplugin)
+			? socket_service
+			: ((this.is_overlayplugin)
+				? new OverlayPluginService(settings)
+				: new OverlayProcService(settings)
 			);
 	}
 

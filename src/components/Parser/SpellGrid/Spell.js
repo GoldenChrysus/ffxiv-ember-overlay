@@ -56,26 +56,26 @@ class Spell extends EmberComponent {
 			type,
 			this.props.indicator,
 		];
-		const breaker      = (this.props.layout === "icon" && Number(this.props.order) % Number(this.props.spells_per_row) === 0) ?
-			<span key={"spell-breaker-" + this.props.base_key} className='breaker' style={{ order : this.props.order }}></span> :
-			"";
+		const breaker      = (this.props.layout === "icon" && Number(this.props.order) % Number(this.props.spells_per_row) === 0)
+			? <span key={"spell-breaker-" + this.props.base_key} className='breaker' style={{ order : this.props.order }}></span>
+			: "";
 		const border       = "";
-		const style        = (!is_zero) ?
-			`
+		const style        = (!is_zero)
+			? `
 				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.${this.props.base_key}:not(.icon) .row.animate {
 					animation: horizontal ${this.props.spell.recast}s linear !important;
 				}
-			` :
-			"";
-		const timer      = (!is_zero && this.props.layout === "icon") ?
-			((animate) ?
-				<canvas key={"spell-timer-" + this.props.base_key} className='timer' ref={(animate) ? this.animate_ref : ""}></canvas> :
-				<div key={"spell-timer-" + this.props.base_key} className='timer'></div>
-			) :
-			"";
-		const icon       = (!this.props.show_icon && this.props.layout !== "icon") ?
-			"" :
-			<div key={"spell-icon-" + this.props.base_key} className={"icon " + type}>
+			`
+			: "";
+		const timer      = (!is_zero && this.props.layout === "icon")
+			? ((animate)
+				? <canvas key={"spell-timer-" + this.props.base_key} className='timer' ref={(animate) ? this.animate_ref : ""}></canvas>
+				: <div key={"spell-timer-" + this.props.base_key} className='timer'></div>
+			)
+			: "";
+		const icon       = (!this.props.show_icon && this.props.layout !== "icon")
+			? ""
+			: <div key={"spell-icon-" + this.props.base_key} className={"icon " + type}>
 				<img src={"img/icons/" + main_type + "s/" + id + ".jpg"} alt={main_type + "-" + id}/>
 			</div>;
 		const attributes = {

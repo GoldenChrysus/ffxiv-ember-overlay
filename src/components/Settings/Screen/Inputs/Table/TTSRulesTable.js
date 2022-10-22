@@ -45,9 +45,9 @@ class TTSRulesTable extends Table {
 	}
 
 	render() {
-		const rows = (this.state && this.state.rows) ?
-			Object.keys(this.state.rows).map(key => this.state.rows[key]) :
-			[];
+		const rows = (this.state && this.state.rows)
+			? Object.keys(this.state.rows).map(key => this.state.rows[key])
+			: [];
 
 		return (
 			<table key='tts-rules-table' ref='tts_rules_table' className='ui unstackable inverted celled table'>
@@ -66,15 +66,15 @@ class TTSRulesTable extends Table {
 	}
 
 	createRow(options) {
-		const button = (options.insert) ?
-			<Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button> :
-			<Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
-		const select = (!options.insert) ?
-			options.select_text :
-			<Select fluid search options={this.props.options} onChange={this.handleSelectChange.bind(this)}/>;
-		const input  = (options.rule_value === true) ?
-			"" :
-			<Input fluid className='rule-value disablable-input' key_path={options.rule_key} defaultValue={options.rule_value} onChange={this.handleInputChange.bind(this)} label={{ content : "%" }} labelPosition='right'/>;
+		const button = (options.insert)
+			? <Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button>
+			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
+		const select = (!options.insert)
+			? options.select_text
+			: <Select fluid search options={this.props.options} onChange={this.handleSelectChange.bind(this)}/>;
+		const input  = (options.rule_value === true)
+			? ""
+			: <Input fluid className='rule-value disablable-input' key_path={options.rule_key} defaultValue={options.rule_value} onChange={this.handleInputChange.bind(this)} label={{ content : "%" }} labelPosition='right'/>;
 		const row    = (
 			<tr id='insert-row' key={"metric-key-" + (options.select_value || "_insert")} data-key={options.rule_type} data-select-value={options.select_value}>
 				<td>{select}</td>

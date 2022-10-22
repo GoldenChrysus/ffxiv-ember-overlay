@@ -23,7 +23,7 @@ class Footer extends React.Component {
 		const self           = this;
 		const plugin_service = this.props.plugin_service;
 
-		const navigation = function () {
+		const navigation = function() {
 			switch (viewing) {
 				case "player":
 					return (

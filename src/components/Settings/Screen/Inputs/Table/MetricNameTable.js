@@ -35,9 +35,9 @@ class MetricNameTable extends Table {
 	}
 
 	render() {
-		const rows = (this.state && this.state.rows) ?
-			Object.keys(this.state.rows).map(key => this.state.rows[key]) :
-			[];
+		const rows = (this.state && this.state.rows)
+			? Object.keys(this.state.rows).map(key => this.state.rows[key])
+			: [];
 
 		return (
 			<table key='metric-name-table' ref='metric_name_table' className='ui unstackable inverted celled table'>
@@ -57,12 +57,12 @@ class MetricNameTable extends Table {
 	}
 
 	createRow(options) {
-		const button = (options.insert) ?
-			<Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button> :
-			<Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
-		const select = (!options.insert) ?
-			options.select_text :
-			<Select fluid search options={this.props.options} onChange={this.handleSelectChange.bind(this)}/>;
+		const button = (options.insert)
+			? <Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button>
+			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
+		const select = (!options.insert)
+			? options.select_text
+			: <Select fluid search options={this.props.options} onChange={this.handleSelectChange.bind(this)}/>;
 		const row    = (
 			<tr id='insert-row' key={"metric-key-" + (options.select_value || "_insert")} data-key={options.select_value}>
 				<td>{select}</td>

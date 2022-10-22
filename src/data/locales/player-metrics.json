@@ -1212,5 +1212,47 @@
 			"short" : "Всего",
 			"long"  : "Всего действий"
 		}
+	},
+	"job_name" : {
+		"en" : {
+			"short" : "Job",
+			"long"  : "Job"
+		},
+		"pt" : {
+			"short" : "Job",
+			"long"  : "Job"
+		},
+		"cn" : {
+			"short" : "Job",
+			"long"  : "Job"
+		},
+		"jp" : {
+			"short" : "Job",
+			"long"  : "Job"
+		},
+		"de" : {
+			"short" : "Job",
+			"long"  : "Job"
+		},
+		"es" : {
+			"short" : "Job",
+			"long"  : "Job"
+		},
+		"fr" : {
+			"short" : "Job",
+			"long"  : "Job"
+		},
+		"kr" : {
+			"short" : "Job",
+			"long"  : "Job"
+		},
+		"ua" : {
+			"short" : "Job",
+			"long"  : "Job"
+		},
+		"ru" : {
+			"short" : "Job",
+			"long"  : "Job"
+		}
 	}
 }

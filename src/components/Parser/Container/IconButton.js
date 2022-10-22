@@ -23,9 +23,9 @@ class IconButton extends React.Component {
 		const icon             = <Icon {...icon_attributes}/>;
 
 		return (
-			(this.props.no_container) ?
-				icon :
-				<div className={"icon-container " + additional_class} onClick={this.props.onClick}>
+			(this.props.no_container)
+				? icon
+				: <div className={"icon-container " + additional_class} onClick={this.props.onClick}>
 					{icon}
 				</div>
 		);

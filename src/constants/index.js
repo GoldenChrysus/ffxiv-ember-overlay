@@ -1,4 +1,4 @@
-const calculateHealed = function (player) {
+const calculateHealed = function(player) {
 	let value = player["healed%"];
 
 	if (value === "--") {
@@ -8,7 +8,7 @@ const calculateHealed = function (player) {
 	return value;
 };
 
-const calculateEffectiveHealed = function (player, players) {
+const calculateEffectiveHealed = function(player, players) {
 	let total_effective_heals  = 0;
 	let player_effective_heals = 0;
 
@@ -28,14 +28,14 @@ const calculateEffectiveHealed = function (player, players) {
 	return effective_ratio;
 };
 
-const calculateEffectiveHPS = function (player) {
+const calculateEffectiveHPS = function(player) {
 	const ratio = 1 - (Number(String(player.OverHealPct || 0).replace("%", "")) / 100);
 	const hps   = Number(player.enchps) * ratio;
 
 	return hps;
 };
 
-const calculateTankedDamagePercent = function (player, players) {
+const calculateTankedDamagePercent = function(player, players) {
 	let total_damage_taken  = 0;
 	let player_damage_taken = 0;
 
@@ -52,13 +52,13 @@ const calculateTankedDamagePercent = function (player, players) {
 	return effective_ratio;
 };
 
-const calculateTankPerSecond = function (player, players, encounter) {
+const calculateTankPerSecond = function(player, players, encounter) {
 	const duration = Number(encounter.DURATION) || 1;
 
 	return (Number(player.damagetaken) / duration).toFixed(2);
 };
 
-const formatMaxHit = function (player, players, encounter, only_number) {
+const formatMaxHit = function(player, players, encounter, only_number) {
 	if (!player.maxhit) {
 		return "N/A";
 	}
@@ -79,11 +79,11 @@ const formatMaxHit = function (player, players, encounter, only_number) {
 	return value;
 };
 
-const formatNumericMaxHit = function (player) {
+const formatNumericMaxHit = function(player) {
 	return formatMaxHit(player, undefined, undefined, true);
 };
 
-const formatMaxHeal = function (player) {
+const formatMaxHeal = function(player) {
 	if (!player.maxheal) {
 		return "N/A";
 	}
@@ -100,14 +100,22 @@ const formatMaxHeal = function (player) {
 	return value;
 };
 
-const calculateHealthPercent = function (unit) {
+const calculateHealthPercent = function(unit) {
 	return ((unit.CurrentHP / unit.MaxHP) * 100).toFixed(2);
 };
 
-const calculateShieldPerSecond = function (player, players, encounter) {
+const calculateShieldPerSecond = function(player, players, encounter) {
 	const duration = Number(encounter.DURATION) || 1;
 
 	return (Number(player.damageShield) / duration).toFixed(2);
+};
+
+const jobName = function(player, _players, _encounter, lang) {
+	const job = player.Job.toUpperCase();
+
+	return (GameJobs[job])
+		? GameJobs[job]["Name_" + lang] || GameJobs[job].Name_en
+		: "N/A";
 };
 
 const GameJobs = {
@@ -319,6 +327,7 @@ const GameJobs = {
 const GameJobsID = require("../data/game/jobs.json");
 
 const PlayerDataCustomValues = {
+	job_name           : jobName,
 	"healed%"          : calculateHealed,
 	effective_heal_pct : calculateEffectiveHealed,
 	effective_hps      : calculateEffectiveHPS,

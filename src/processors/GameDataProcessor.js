@@ -340,11 +340,11 @@ class GameDataProcessor {
 				log_data.type = "effect";
 				log_data.dot = SkillData.Effects[effect_id].dot;
 				log_data.debuff = SkillData.Effects[effect_id].debuff;
-				log_data.subtype = (log_data.dot) ?
-					"dot" :
-					((log_data.debuff) ?
-						"debuff" :
-						log_data.type);
+				log_data.subtype = (log_data.dot)
+					? "dot"
+					: ((log_data.debuff)
+						? "debuff"
+						: log_data.type);
 				log_data.lookup_key = log_data.subtype + "s";
 				log_data.char_id_index = (log_data.dot || log_data.debuff) ? 5 : 7;
 				log_data.char_name_index = log_data.char_id_index + 1;
@@ -433,9 +433,9 @@ class GameDataProcessor {
 			}
 		}
 
-		log_data.in_use_key = (log_data.type === "effect") ?
-			`${log_data.type}-` + SpellService.getKeyName(log_data.english_name) :
-			`${log_data.type}-${log_data.spell_id}`;
+		log_data.in_use_key = (log_data.type === "effect")
+			? `${log_data.type}-` + SpellService.getKeyName(log_data.english_name)
+			: `${log_data.type}-${log_data.spell_id}`;
 
 		if (!log_data.party && state_data.defaulted[defaulted_key]) {
 			const defaulted = state_data.defaulted[defaulted_key];

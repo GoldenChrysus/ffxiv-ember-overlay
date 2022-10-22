@@ -82,9 +82,9 @@ class SpellsUITable extends Table {
 	}
 
 	render() {
-		const rows = (this.state && this.state.rows) ?
-			Object.keys(this.state.rows).map(key => this.state.rows[key]) :
-			[];
+		const rows = (this.state && this.state.rows)
+			? Object.keys(this.state.rows).map(key => this.state.rows[key])
+			: [];
 
 		return (
 			<table key='spells-ui-table' ref='spells_ui_table' className='ui unstackable inverted celled table'>
@@ -105,9 +105,9 @@ class SpellsUITable extends Table {
 
 	createRow(options) {
 		const key      = options.key || "_insert";
-		const button   = (options.insert) ?
-			<Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button> :
-			<Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
+		const button   = (options.insert)
+			? <Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button>
+			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
 		const row      = (
 			<tr id={"spells-ui-row-" + key} key={"spells-ui-key-" + key} data-key={key}>
 				<td>

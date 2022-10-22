@@ -176,8 +176,8 @@ class PlayerTable extends React.Component {
 		}
 
 		if (!is_raid) {
-			header_row = (!this.props.horizontal) ?
-				(
+			header_row = (!this.props.horizontal)
+				? (
 					<div className='row header'>
 						<div className='column'></div>
 						<div className='column'>{LocalizationService.getOverlayText("player_name")}</div>
@@ -209,12 +209,12 @@ class PlayerTable extends React.Component {
 			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
 		};
 
-		const petRows      = () => (pet_rows.length) ?
-			<React.Fragment>
+		const petRows      = () => (pet_rows.length)
+			? <React.Fragment>
 				<br></br>
 				{pet_rows}
-			</React.Fragment> :
-			null;
+			</React.Fragment>
+			: null;
 
 		if (this.props.horizontal) {
 			table_class += " " + (this.props.horizontal_alignment || "left");
@@ -245,7 +245,7 @@ class PlayerTable extends React.Component {
 		const $table  = $(this.refs.player_table);
 		const is_grid = $table.hasClass("grid");
 
-		$table.find(".row").each(function () {
+		$table.find(".row").each(function() {
 			const $row = $(this);
 			const $bar = $row.find(".percent-bar");
 

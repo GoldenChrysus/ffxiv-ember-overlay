@@ -6,7 +6,7 @@ class Placeholder extends React.Component {
 		const $container = $(document).find("#container");
 		const active     = $container.hasClass("hidden");
 
-		$(document).find(".placeholder").each(function () {
+		$(document).find(".placeholder").each(function() {
 			$(this).toggleClass("hidden", active);
 		});
 

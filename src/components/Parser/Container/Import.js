@@ -8,12 +8,12 @@ import LocalizationService from "../../../services/LocalizationService";
 class Import extends React.Component {
 	render() {
 		const allow_overlayplugin_import = (this.props.plugin_service.is_websocket && this.props.author === "ngld");
-		const overlayplugin_button       = (!allow_overlayplugin_import) ?
-			"" :
-			<Button size='mini' className='import' onClick={this.handleImport.bind(this, true)}>{LocalizationService.getOverlayText("import")} from OverlayPlugin</Button>;
-		const overlayplugin_text         = (!allow_overlayplugin_import) ?
-			"" :
-			(
+		const overlayplugin_button       = (!allow_overlayplugin_import)
+			? ""
+			: <Button size='mini' className='import' onClick={this.handleImport.bind(this, true)}>{LocalizationService.getOverlayText("import")} from OverlayPlugin</Button>;
+		const overlayplugin_text         = (!allow_overlayplugin_import)
+			? ""
+			: (
 				<p>
 					Ember has detected you are using OverlayPlugin.
 					You can attempt to import automatically from OverlayPlugin by clicking &quot;{LocalizationService.getOverlayText("import")} from OverlayPlugin&quot; below.

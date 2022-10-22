@@ -229,9 +229,9 @@ class TTSService {
 
 			const keys      = Object.keys(this.queue.critical_hp);
 			let connector = (has_you || keys.length > 1) ? locale_data.plural : locale_data.singular;
-			const players   = (keys.length <= 2) ?
-				keys.join(locale_data.joiner) :
-				locale_data.several;
+			const players   = (keys.length <= 2)
+				? keys.join(locale_data.joiner)
+				: locale_data.several;
 
 			if (has_you && locale_data.you_no_connector && keys.length === 1) {
 				connector = "";
@@ -259,9 +259,9 @@ class TTSService {
 
 			const keys      = Object.keys(this.queue.critical_mp);
 			let connector = (has_you || keys.length > 1) ? locale_data.plural : locale_data.singular;
-			const players   = (keys.length <= 2) ?
-				keys.join(locale_data.joiner) :
-				locale_data.several;
+			const players   = (keys.length <= 2)
+				? keys.join(locale_data.joiner)
+				: locale_data.several;
 
 			if (has_you && locale_data.you_no_connector && keys.length === 1) {
 				connector = "";

@@ -19,9 +19,9 @@ class Section extends React.Component {
 	}
 
 	getSettingValue(setting_data) {
-		return (typeof setting_data.value === "function") ?
-			setting_data.value.call(this, this) :
-			ObjectService.getByKeyPath(this.props.settings, setting_data.key_path);
+		return (typeof setting_data.value === "function")
+			? setting_data.value.call(this, this)
+			: ObjectService.getByKeyPath(this.props.settings, setting_data.key_path);
 	}
 
 	UNSAFE_componentWillMount() {
@@ -52,9 +52,9 @@ class Section extends React.Component {
 
 	render() {
 		const settings = [];
-		const info     = (this.props.data.info) ?
-			<p>{this.props.data.info()}</p> :
-			"";
+		const info     = (this.props.data.info)
+			? <p>{this.props.data.info()}</p>
+			: "";
 		// Let language = this.props.settings.interface.language;
 
 		for (const setting_data of this.props.data.settings) {

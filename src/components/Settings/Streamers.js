@@ -34,9 +34,9 @@ class Streamers extends React.Component {
 
 		const discord_link = <span key='discord-link' className='discord-link'>{discord_url}</span>;
 		const author_link  = <span key='author-link' className='author-link'>{author_url}</span>;
-		const offline_text = (this.props.type === "offline") ?
-			<p className='offline'>Looks like no one is live. Check out some Ember Overlay users below and follow them to receive notifications when they are live!</p> :
-			"";
+		const offline_text = (this.props.type === "offline")
+			? <p className='offline'>Looks like no one is live. Check out some Ember Overlay users below and follow them to receive notifications when they are live!</p>
+			: "";
 		let long_cta     = LocalizationService.getMisc("streamer_long_cta");
 
 		long_cta = reactStringReplace(long_cta, "{{discord_link}}", () => discord_link);

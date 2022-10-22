@@ -34,9 +34,9 @@ class Settings extends React.Component {
 		const streamers          = (this.state && this.state.streamers) ? this.state.streamers : {};
 		const stream_type        = (this.state && this.state.stream_type) ? this.state.stream_type : "offline";
 		const streamer_count     = (streamers) ? Object.keys(streamers).length : 0;
-		const streamer_base_text = (streamer_count && stream_type === "live") ?
-			LocalizationService.getMisc((streamer_count > 1) ? "streamers_live" : "streamer_live") :
-			LocalizationService.getMisc("streamers");
+		const streamer_base_text = (streamer_count && stream_type === "live")
+			? LocalizationService.getMisc((streamer_count > 1) ? "streamers_live" : "streamer_live")
+			: LocalizationService.getMisc("streamers");
 		const streamer_text      = streamer_base_text.replace("{{number}}", streamer_count);
 
 		for (

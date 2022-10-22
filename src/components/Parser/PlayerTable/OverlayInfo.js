@@ -61,9 +61,9 @@ class OverlayInfo extends React.Component {
 	getInfoText() {
 		switch (this.props.mode) {
 			case "spells":
-				const configure_text = (!this.props.settings.spells.length && !this.props.settings.effects.length) ?
-					<p>You are not tracking any spells or effects. Please add some at Settings &gt; Spell Timers.</p> :
-					"";
+				const configure_text = (!this.props.settings.spells.length && !this.props.settings.effects.length)
+					? <p>You are not tracking any spells or effects. Please add some at Settings &gt; Spell Timers.</p>
+					: "";
 				return (
 					<React.Fragment>
 						{configure_text}
