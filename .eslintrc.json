@@ -55,5 +55,10 @@
         "no-return-assign": "off",
         "prefer-promise-reject-errors": "off",
         "max-depth": ["warn", 6]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }

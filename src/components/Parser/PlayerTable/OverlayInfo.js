@@ -147,11 +147,7 @@ class OverlayInfo extends React.Component {
 	}
 
 	openAdLink() {
-<<<<<<< HEAD
 		const url = "https://play.google.com/store/apps/details?id=com.chesshq.sudokuLegends";
-=======
-		let url = "https://play.google.com/store/apps/details?id=com.chesshq.sudokuLegends";
->>>>>>> adb705673a67e58d40516205198ff97739b502b5
 
 		window.open(url, "", "width=1200,height=830,location=no,menubar=no");
 	}
