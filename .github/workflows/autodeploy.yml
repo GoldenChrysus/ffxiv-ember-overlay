@@ -2,9 +2,7 @@ name: Auto Deployer
 
 on:
   push:
-    branches : [ staging, master ]
-  pull_request:
-    branches : [ staging, master ]
+    branches: [ staging, master ]
 
 env:
   BUILD_NONSSL: ${{ secrets.BUILD_NONSSL }}

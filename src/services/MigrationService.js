@@ -7,11 +7,11 @@ class MigrationService {
 	migrate() {
 		return new Promise((resolve, reject) => {
 			localForage.getItem("migration_history")
-				.then((history) => {
+				.then(history => {
 					if (history) {
 						try {
 							history = JSON.parse(history);
-						} catch (e) {}
+						} catch {}
 					}
 
 					if (!history) {
@@ -20,13 +20,11 @@ class MigrationService {
 
 					this.history = history;
 
-					let promise = Migrations.reduce(
-						(last_promise, migration_name) => {
-							return last_promise.then(() => {
-								this.executeMigration(migration_name);
-							});
-						},
-						Promise.resolve()
+					const promise = Migrations.reduce(
+						(last_promise, migration_name) => last_promise.then(() => {
+							this.executeMigration(migration_name);
+						}),
+						Promise.resolve(),
 					);
 
 					promise.then(() => {
@@ -39,9 +37,9 @@ class MigrationService {
 									.setItem("migration_history", JSON.stringify(history))
 									.then(() => {
 										resolve();
-									})
+									});
 							})
-							.catch((e) => {
+							.catch(e => {
 								console.error(JSON.stringify(e));
 								reject(e);
 							});
@@ -57,7 +55,7 @@ class MigrationService {
 				return;
 			}
 
-			let migration = require(`../migrations/${migration_name}.js`);
+			const migration = require(`../migrations/${migration_name}.js`);
 
 			migration
 				.default
@@ -66,7 +64,7 @@ class MigrationService {
 					this.history.push(migration_name);
 					resolve();
 				})
-				.catch((e) => {
+				.catch(e => {
 					console.error(JSON.stringify(e));
 					reject(e);
 				});

@@ -6,30 +6,28 @@ import LocalizationService from "../../../services/LocalizationService";
 
 class DiscordMenu extends React.Component {
 	render() {
-		let options = [
-			<MenuItem key="discord-menu-join" onClick={DiscordService.openDiscordWindow}>
+		const options = [
+			<MenuItem key='discord-menu-join' onClick={DiscordService.openDiscordWindow}>
 				{LocalizationService.getOverlayText("join_discord")}
-			</MenuItem>
+			</MenuItem>,
 		];
-		
+
 		if (this.props.webhook) {
 			options.push(
-				<MenuItem key="discord-menu-webhook" onClick={DiscordService.postToWebhook}>
+				<MenuItem key='discord-menu-webhook' onClick={DiscordService.postToWebhook}>
 					{LocalizationService.getOverlayText("discord_webhook")}
-				</MenuItem>
+				</MenuItem>,
 			);
 		}
 
 		return (
-			<ContextMenu id="discord-menu" className="container-context-menu">
-				<div className="item-group">
+			<ContextMenu id='discord-menu' className='container-context-menu'>
+				<div className='item-group'>
 					{options}
 				</div>
 			</ContextMenu>
 		);
 	}
 }
-
-
 
 export default DiscordMenu;

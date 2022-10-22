@@ -1,7 +1,7 @@
 import LocalizationService from "../services/LocalizationService";
 
 export function getEncounterTitle(encounter, exclude_duration) {
-	let encounter_state = [];
+	const encounter_state = [];
 
 	if (!encounter.title) {
 		encounter_state.push(LocalizationService.getOverlayText("awaiting_encounter"));

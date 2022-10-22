@@ -28,7 +28,7 @@ class UsageService {
 	}
 
 	usingLog(mode, settings) {
-		return (mode === "spells" || !!this.usingLogTTS(settings));
+		return (mode === "spells" || Boolean(this.usingLogTTS(settings)));
 	}
 
 	usingLogTTS(settings) {

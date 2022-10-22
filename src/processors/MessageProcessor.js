@@ -10,7 +10,7 @@ class MessageProcessor {
 		if (typeof data !== "object" || (data !== null && data.data)) {
 			try {
 				data = JSON.parse(e.data);
-			} catch (e) {}
+			} catch {}
 		}
 
 		if (typeof data !== "object" || data === null) {
@@ -21,7 +21,7 @@ class MessageProcessor {
 					if (data.combatants) {
 						type = "GetCombatants";
 					}
-				} catch (e) {}
+				} catch {}
 			}
 
 			if (!type) {
@@ -53,7 +53,7 @@ class MessageProcessor {
 		switch (type) {
 			case "onOverlayDataUpdate":
 			case "CombatData":
-				let detail = (type === "onOverlayDataUpdate") ? data.detail : data.msg || data;
+				const detail = (type === "onOverlayDataUpdate") ? data.detail : data.msg || data;
 
 				store.dispatch(parseGameData(detail));
 				break;
@@ -77,14 +77,14 @@ class MessageProcessor {
 			case "ChangePrimaryPlayer":
 			case "SendCharName":
 				state_data = {
-					key   : [
+					key : [
 						"internal.character_name",
-						"internal.character_id"
+						"internal.character_id",
 					],
 					value : [
 						(type === "ChangePrimaryPlayer") ? data.charName : data.msg.charName,
-						(type === "ChangePrimaryPlayer") ? data.charID : data.msg.charID
-					]
+						(type === "ChangePrimaryPlayer") ? data.charID : data.msg.charID,
+					],
 				};
 
 				store.dispatch(updateState(state_data));
@@ -93,32 +93,32 @@ class MessageProcessor {
 			case "ChangeZone":
 				state_data = {
 					key   : "internal.current_zone_id",
-					value : data.zoneID
+					value : data.zoneID,
 				};
 
 				store.dispatch(updateState(state_data));
 				break;
 
 			case "GetCombatants":
-				let char_id = store.getState().internal.character_id;
+				const char_id = store.getState().internal.character_id;
 
-				for (let combatant of data.combatants) {
+				for (const combatant of data.combatants) {
 					if (char_id === combatant.ID) {
-						let job = Constants.GameJobsID[combatant.Job];
+						const job = Constants.GameJobsID[combatant.Job];
 
 						if (!job) {
 							break;
 						}
 
 						state_data = {
-							key   : [
+							key : [
 								"internal.character_job",
-								"internal.character_level"
+								"internal.character_level",
 							],
 							value : [
 								job.abbreviation,
-								combatant.Level
-							]
+								combatant.Level,
+							],
 						};
 
 						store.dispatch(updateState(state_data));
@@ -135,7 +135,7 @@ class MessageProcessor {
 			case "LogLine":
 				const allowed_codes = [1, 3, 21, 22, 26, 30, 33, 37, 39];
 
-				if (allowed_codes.indexOf(+data.line[0]) === -1) {
+				if (allowed_codes.indexOf(Number(data.line[0])) === -1) {
 					break;
 				}
 

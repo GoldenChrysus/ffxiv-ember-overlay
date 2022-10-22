@@ -5,5 +5,5 @@ const SkillIndirections = require("../data/game/skill-indirections.json");
 export default {
 	oGCDSkills,
 	Effects,
-	SkillIndirections
+	SkillIndirections,
 };

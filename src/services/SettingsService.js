@@ -3,15 +3,15 @@ import { updateState } from "../redux/actions/index";
 
 class SettingsService {
 	openSettingsWindow() {
-		let new_data = {
+		const new_data = {
 			key   : "internal.new_version",
-			value : false
+			value : false,
 		};
 
-		let state       = store.getState();
+		const state       = store.getState();
 		let querystring = String(window.location.search);
-		let joiner      = (querystring.indexOf("?") !== -1) ? "&" : "?";
-		
+		const joiner      = (querystring.indexOf("?") !== -1) ? "&" : "?";
+
 		querystring = `${querystring}${joiner}mode=${state.internal.mode}`;
 
 		store.dispatch(updateState(new_data));
@@ -19,10 +19,10 @@ class SettingsService {
 	}
 
 	openSettingsImport() {
-		let new_data = {
+		const new_data = {
 			key   : "internal.viewing",
-			value : "import"
-		}
+			value : "import",
+		};
 
 		store.dispatch(updateState(new_data));
 	}

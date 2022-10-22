@@ -12,11 +12,11 @@ import SpellService from "../services/SpellService";
 
 import { createUUID } from "../helpers/UUIDHelper";
 
-class GameDataProcessor  {
+class GameDataProcessor {
 	normalizeFieldLocale(value) {
-		let foreign_number_regex = /[\d]+,[\d]{2}(%|K)?$/;
-		let matches              = String(value).match(foreign_number_regex);
-		let match                = (matches && matches.length) ? matches[0] : false;
+		const foreign_number_regex = /[\d]+,[\d]{2}(%|K)?$/;
+		const matches              = String(value).match(foreign_number_regex);
+		const match                = (matches && matches.length) ? matches[0] : false;
 
 		if (match === false) {
 			return value;
@@ -38,23 +38,23 @@ class GameDataProcessor  {
 	}
 
 	normalizeGameData(data, language, current_state, loading_sample) {
-		data.Encounter.name             = LocalizationService.getOverlayText("encounter", language);
-		data.Encounter.Job              = "ENC";
-		data.Encounter.OverHealPct      = "0%";
-		data.Encounter.BlockPct         = "0%";
-		data.Encounter.DirectHitPct     = "0%";
+		data.Encounter.name = LocalizationService.getOverlayText("encounter", language);
+		data.Encounter.Job = "ENC";
+		data.Encounter.OverHealPct = "0%";
+		data.Encounter.BlockPct = "0%";
+		data.Encounter.DirectHitPct = "0%";
 		data.Encounter.CritDirectHitPct = "0%";
-		data.Encounter["damage%"]       = "100%";
-		data.Encounter["healed%"]       = "100%";
+		data.Encounter["damage%"] = "100%";
+		data.Encounter["healed%"] = "100%";
 
-		for (let key in Constants.PlayerDataTitles) {
+		for (const key in Constants.PlayerDataTitles) {
 			if (data.Encounter[key] !== undefined) {
 				data.Encounter[key] = this.normalizeFieldLocale(data.Encounter[key]);
 			}
 		}
 
-		for (let player_name in data.Combatant) {
-			for (let key in Constants.PlayerDataTitles) {
+		for (const player_name in data.Combatant) {
+			for (const key in Constants.PlayerDataTitles) {
 				if (data.Combatant[player_name][key] !== undefined) {
 					data.Combatant[player_name][key] = this.normalizeFieldLocale(data.Combatant[player_name][key]);
 				}
@@ -77,13 +77,13 @@ class GameDataProcessor  {
 			return data;
 		}
 
-		let can_calculate_max = (!loading_sample && data.Encounter.DURATION >= 30);
+		const can_calculate_max = (!loading_sample && data.Encounter.DURATION >= 30);
 
-		for (let player_name in data.Combatant) {
+		for (const player_name in data.Combatant) {
 			data.Combatant[player_name].max_enc_dps = data.Combatant[player_name].max_enc_dps || 0;
 
-			if (can_calculate_max && (!current_state || !current_state.internal.game.Combatant || !current_state.internal.game.Combatant[player_name] || +data.Combatant[player_name].encdps > current_state.internal.game.Combatant[player_name].max_enc_dps)) {
-				data.Combatant[player_name].max_enc_dps = +data.Combatant[player_name].encdps;
+			if (can_calculate_max && (!current_state || !current_state.internal.game.Combatant || !current_state.internal.game.Combatant[player_name] || Number(data.Combatant[player_name].encdps) > current_state.internal.game.Combatant[player_name].max_enc_dps)) {
+				data.Combatant[player_name].max_enc_dps = Number(data.Combatant[player_name].encdps);
 			} else if (current_state && current_state.internal.game.Combatant && current_state.internal.game.Combatant[player_name]) {
 				data.Combatant[player_name].max_enc_dps = current_state.internal.game.Combatant[player_name].max_enc_dps || 0;
 			}
@@ -93,8 +93,8 @@ class GameDataProcessor  {
 	}
 
 	normalizeAggroList(data) {
-		for (let key of ["CurrentHP", "MaxHP"]) {
-			for (let i in data.AggroList) {
+		for (const key of ["CurrentHP", "MaxHP"]) {
+			for (const i in data.AggroList) {
 				if (data.AggroList[i][key] !== undefined) {
 					data.AggroList[i][key] = this.normalizeFieldLocale(data.AggroList[i][key]);
 				}
@@ -111,30 +111,30 @@ class GameDataProcessor  {
 
 		const interval = 15;
 
-		let current_history = state.internal.encounter_history[0].data_history;
-		let recent_time     = Object.keys(current_history).slice(-1)[0];
-		let current_time    = Math.round(new Date().getTime() / 1000);
+		const current_history = state.internal.encounter_history[0].data_history;
+		const recent_time     = Object.keys(current_history).slice(-1)[0];
+		const current_time    = Math.round(new Date().getTime() / 1000);
 
 		if (recent_time && (current_time - recent_time) < interval) {
 			return;
 		}
 
-		let new_data  = {};
-		let encounter = JSON.parse(JSON.stringify(data.Encounter));
+		const new_data  = {};
+		const encounter = JSON.parse(JSON.stringify(data.Encounter));
 
-		new_data["Encounter"] = {
+		new_data.Encounter = {
 			encdps : PlayerProcessor.getDataValue("encdps", encounter, undefined, undefined, true),
 			enchps : PlayerProcessor.getDataValue("enchps", encounter, undefined, undefined, true),
-			enctps : PlayerProcessor.getDataValue("enctps", encounter, undefined, encounter, true)
+			enctps : PlayerProcessor.getDataValue("enctps", encounter, undefined, encounter, true),
 		};
 
-		for (let player_name in data.Combatant) {
-			let player = JSON.parse(JSON.stringify(data.Combatant[player_name]));
+		for (const player_name in data.Combatant) {
+			const player = JSON.parse(JSON.stringify(data.Combatant[player_name]));
 
 			new_data[player_name] = {
 				encdps : PlayerProcessor.getDataValue("encdps", player, undefined, undefined, true),
 				enchps : PlayerProcessor.getDataValue("enchps", player, undefined, undefined, true),
-				enctps : PlayerProcessor.getDataValue("enctps", player, undefined, encounter, true)
+				enctps : PlayerProcessor.getDataValue("enctps", player, undefined, encounter, true),
 			};
 		}
 
@@ -144,20 +144,20 @@ class GameDataProcessor  {
 	}
 
 	processEnmity(data) {
-		for (let i in data.Entries) {
+		for (const i in data.Entries) {
 			data.Entries[i].name = data.Entries[i].Name;
 		}
 
-		let sorted_players = PlayerProcessor.sortPlayers(data.Entries, undefined, "Enmity");
+		const sorted_players = PlayerProcessor.sortPlayers(data.Entries, undefined, "Enmity");
 		let max_value      = 0;
-		let players        = {};
+		const players        = {};
 
-		for (let player of sorted_players) {
+		for (const player of sorted_players) {
 			if (!max_value) {
 				max_value = player.Enmity || 100;
 			}
 
-			let percent = ((player.Enmity / max_value) * 100).toFixed(2);
+			const percent = ((player.Enmity / max_value) * 100).toFixed(2);
 
 			players[player.Name] = percent;
 		}
@@ -167,7 +167,7 @@ class GameDataProcessor  {
 
 	injectEnmity(data, state) {
 		for (let player_name in data.Combatant) {
-			let real_player_name = player_name;
+			const real_player_name = player_name;
 
 			if (player_name === "YOU") {
 				player_name = PlayerProcessor.getDataValue("name", data.Combatant[player_name], undefined, undefined, undefined, state);
@@ -180,13 +180,13 @@ class GameDataProcessor  {
 	}
 
 	processParty(data) {
-		let party = [];
+		const party = [];
 
 		if (!data || !data.party) {
 			return party;
 		}
 
-		for (let i in data.party) {
+		for (const i in data.party) {
 			if (data.party[i].inParty) {
 				party.push(data.party[i].name);
 			}
@@ -198,21 +198,21 @@ class GameDataProcessor  {
 	convertToLocaleFormat(key, value) {
 		const state = store.getState();
 
-		let accuracy          = state.settings.interface.decimal_accuracy;
-		let shorten_thousands = state.settings.interface.shorten_thousands;
+		const accuracy          = state.settings.interface.decimal_accuracy;
+		const shorten_thousands = state.settings.interface.shorten_thousands;
 		let over_thousand     = false;
-		let fraction_rules    = Constants.PlayerMetricFractionRules[key];
-		let minimum_fraction  = (fraction_rules && fraction_rules.hasOwnProperty("min")) ? fraction_rules.min : accuracy;
-		let maximum_fraction  = (fraction_rules && fraction_rules.hasOwnProperty("max")) ? fraction_rules.max : accuracy;
-		
-		value = +value;
+		const fraction_rules    = Constants.PlayerMetricFractionRules[key];
+		const minimum_fraction  = (fraction_rules && "min" in fraction_rules) ? fraction_rules.min : accuracy;
+		const maximum_fraction  = (fraction_rules && "max" in fraction_rules) ? fraction_rules.max : accuracy;
+
+		value = Number(value);
 
 		if (shorten_thousands && value >= 1000) {
-			value         = +(value / 1000).toFixed(2);
+			value = Number((value / 1000).toFixed(2));
 			over_thousand = true;
 		}
 
-		value = value.toLocaleString(undefined, { minimumFractionDigits : minimum_fraction, maximumFractionDigits: maximum_fraction });
+		value = value.toLocaleString(undefined, { minimumFractionDigits : minimum_fraction, maximumFractionDigits : maximum_fraction });
 
 		if (over_thousand) {
 			value += "K";
@@ -222,7 +222,7 @@ class GameDataProcessor  {
 	}
 
 	processCombatDataTTS(data, current_state) {
-		let valid_player_names = PlayerProcessor.getValidPlayerNames(current_state);
+		const valid_player_names = PlayerProcessor.getValidPlayerNames(current_state);
 
 		if (data.Combatant) {
 			TTSService.updateCombatants(data.Combatant, valid_player_names);
@@ -235,10 +235,10 @@ class GameDataProcessor  {
 		}
 
 		if (UsageService.usingTopDPSTTS(current_state.settings_data)) {
-			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "encdps", current_state);
+			const sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "encdps", current_state);
 			let rank   = 0;
 
-			for (let player of sorted) {
+			for (const player of sorted) {
 				rank++;
 
 				if (valid_player_names.indexOf(player.name) !== -1) {
@@ -249,10 +249,10 @@ class GameDataProcessor  {
 		}
 
 		if (UsageService.usingTopHPSTTS(current_state.settings_data)) {
-			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enchps", current_state);
+			const sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enchps", current_state);
 			let rank   = 0;
 
-			for (let player of sorted) {
+			for (const player of sorted) {
 				rank++;
 
 				if (valid_player_names.indexOf(player.name) !== -1) {
@@ -263,10 +263,10 @@ class GameDataProcessor  {
 		}
 
 		if (UsageService.usingTopTPSTTS(current_state.settings_data)) {
-			let sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enctps", current_state);
+			const sorted = PlayerProcessor.sortPlayers(data.Combatant, data.Encounter, "enctps", current_state);
 			let rank   = 0;
 
-			for (let player of sorted) {
+			for (const player of sorted) {
 				rank++;
 
 				if (valid_player_names.indexOf(player.name) !== -1) {
@@ -286,10 +286,10 @@ class GameDataProcessor  {
 	parseSpellLogLine(data, state, processed_state) {
 		data = data.line;
 
-		let date       = new Date();
-		let event_code = +data[0];
-		let log_data   = {
-			suffix : ""
+		const date       = new Date();
+		const event_code = Number(data[0]);
+		const log_data   = {
+			suffix : "",
 		};
 
 		switch (event_code) {
@@ -300,20 +300,20 @@ class GameDataProcessor  {
 					return false;
 				}
 
-				log_data.char_job   = Constants.GameJobsID[parseInt(data[4], 16)] || null;
+				log_data.char_job = Constants.GameJobsID[parseInt(data[4], 16)] || null;
 				log_data.char_level = parseInt(data[5], 16);
 
 				return log_data;
 
 			case 21:
 			case 22:
-				log_data.spell_index      = 4;
-				log_data.char_id_index    = 2;
+				log_data.spell_index = 4;
+				log_data.char_id_index = 2;
 				log_data.spell_name_index = 5;
-				log_data.char_name_index  = log_data.char_id_index + 1;
-				log_data.type             = "skill";
-				log_data.subtype          = log_data.type;
-				log_data.lookup_key       = "spells";
+				log_data.char_name_index = log_data.char_id_index + 1;
+				log_data.type = "skill";
+				log_data.subtype = log_data.type;
+				log_data.lookup_key = "spells";
 
 				break;
 
@@ -324,33 +324,33 @@ class GameDataProcessor  {
 					return false;
 				}
 
-				// return "death";
+				// Return "death";
 				return false;
 
 			case 26:
 			case 30:
 				log_data.spell_index = 2;
 
-				let effect_id = String(parseInt(data[log_data.spell_index], 16));
+				const effect_id = String(parseInt(data[log_data.spell_index], 16));
 
 				if (!SkillData.Effects[effect_id]) {
 					return false;
 				}
 
-				log_data.type             = "effect";
-				log_data.dot              = SkillData.Effects[effect_id].dot;
-				log_data.debuff           = SkillData.Effects[effect_id].debuff;
-				log_data.subtype          = (log_data.dot)
+				log_data.type = "effect";
+				log_data.dot = SkillData.Effects[effect_id].dot;
+				log_data.debuff = SkillData.Effects[effect_id].debuff;
+				log_data.subtype = (log_data.dot)
 					? "dot"
 					: ((log_data.debuff)
 						? "debuff"
 						: log_data.type);
-				log_data.lookup_key       = log_data.subtype + "s";
-				log_data.char_id_index    = (log_data.dot || log_data.debuff) ? 5 : 7;
-				log_data.char_name_index  = log_data.char_id_index + 1;
+				log_data.lookup_key = log_data.subtype + "s";
+				log_data.char_id_index = (log_data.dot || log_data.debuff) ? 5 : 7;
+				log_data.char_name_index = log_data.char_id_index + 1;
 				log_data.spell_name_index = 3;
-				log_data.duration_index   = 4;
-				log_data.stacks           = +data[9];
+				log_data.duration_index = 4;
+				log_data.stacks = Number(data[9]);
 
 				break;
 
@@ -361,10 +361,10 @@ class GameDataProcessor  {
 				return false;
 		}
 
-		log_data.spell_id  = String(parseInt(data[log_data.spell_index], 16));
-		log_data.char_id   = parseInt(data[log_data.char_id_index], 16);
+		log_data.spell_id = String(parseInt(data[log_data.spell_index], 16));
+		log_data.char_id = parseInt(data[log_data.char_id_index], 16);
 		log_data.char_type = (state.internal.character_id === log_data.char_id) ? "you" : false;
-		log_data.party     = (log_data.char_type !== "you");
+		log_data.party = (log_data.char_type !== "you");
 
 		if (
 			log_data.party &&
@@ -387,9 +387,9 @@ class GameDataProcessor  {
 				return false;
 			}
 
-			log_data.char_type  = (state.settings.spells_mode.ui.use) ? Constants.GameJobs[log_data.job].role : "party";
+			log_data.char_type = (state.settings.spells_mode.ui.use) ? Constants.GameJobs[log_data.job].role : "party";
 			log_data.lookup_key = "party_" + log_data.lookup_key;
-			log_data.suffix     = "party";
+			log_data.suffix = "party";
 		}
 
 		if (
@@ -417,9 +417,9 @@ class GameDataProcessor  {
 			log_data.english_name = LocalizationService.getSpellName(log_data.subtype, log_data.spell_id, "en");
 		}
 
-		let state_data    = processed_state || clone(state.internal.spells);
-		let defaulted_key = `${log_data.subtype}-` + SpellService.getKeyName(log_data.english_name);
-		let suffixes      = [];
+		const state_data    = processed_state || clone(state.internal.spells);
+		const defaulted_key = `${log_data.subtype}-` + SpellService.getKeyName(log_data.english_name);
+		const suffixes      = [];
 
 		if (!log_data.party) {
 			suffixes.push("");
@@ -438,9 +438,9 @@ class GameDataProcessor  {
 			: `${log_data.type}-${log_data.spell_id}`;
 
 		if (!log_data.party && state_data.defaulted[defaulted_key]) {
-			let defaulted = state_data.defaulted[defaulted_key];
+			const defaulted = state_data.defaulted[defaulted_key];
 
-			log_data.defaulted     = true;
+			log_data.defaulted = true;
 			log_data.type_position = defaulted.position;
 
 			if (defaulted.id !== log_data.spell_id) {
@@ -453,7 +453,7 @@ class GameDataProcessor  {
 
 				delete state_data.in_use[defaulted.key];
 
-				state_data.defaulted[defaulted_key].id  = log_data.spell_id;
+				state_data.defaulted[defaulted_key].id = log_data.spell_id;
 				state_data.defaulted[defaulted_key].key = log_data.in_use_key;
 
 				if (event_code === 30) {
@@ -462,7 +462,7 @@ class GameDataProcessor  {
 			}
 		}
 
-		for (let suffix of suffixes) {
+		for (const suffix of suffixes) {
 			log_data.current_in_use_key = log_data.in_use_key;
 
 			if (suffix) {
@@ -476,7 +476,7 @@ class GameDataProcessor  {
 			if (event_code === 30) {
 				delete state_data.in_use[log_data.current_in_use_key];
 			} else {
-				if (state_data.in_use[log_data.current_in_use_key] && +state_data.in_use[log_data.current_in_use_key].stacks > log_data.stacks) {
+				if (state_data.in_use[log_data.current_in_use_key] && Number(state_data.in_use[log_data.current_in_use_key].stacks) > log_data.stacks) {
 					return false;
 				}
 
@@ -486,12 +486,12 @@ class GameDataProcessor  {
 					id            : log_data.spell_id,
 					time          : date,
 					name          : data[log_data.spell_name_index],
-					duration      : (log_data.duration_index) ? +data[log_data.duration_index] : 0,
+					duration      : (log_data.duration_index) ? Number(data[log_data.duration_index]) : 0,
 					stacks        : log_data.stacks,
 					log_type      : log_data.char_type + "-" + log_data.subtype,
 					party         : log_data.party,
 					defaulted     : log_data.defaulted,
-					type_position : log_data.type_position
+					type_position : log_data.type_position,
 				};
 			}
 		}
@@ -508,48 +508,48 @@ class GameDataProcessor  {
 	}
 
 	processIndirection(log_data, data, state, processed_state) {
-		let indirect_id = SkillData.SkillIndirections[log_data.spell_id];
+		const indirect_id = SkillData.SkillIndirections[log_data.spell_id];
 
-		data[log_data.spell_index]      = indirect_id.toString(16);
+		data[log_data.spell_index] = indirect_id.toString(16);
 		data[log_data.spell_name_index] = null;
 
-		return this.parseSpellLogLine({line : data}, state, processed_state);
+		return this.parseSpellLogLine({ line : data }, state, processed_state);
 	}
 
 	getAllowedSpellTypes(state) {
-		let types = {
-			skill  : {
+		const types = {
+			skill : {
 				you   : true,
-				party : true
+				party : true,
 			},
 			effect : {
 				you   : true,
-				party : true
+				party : true,
 			},
-			dot    : {
+			dot : {
 				you   : true,
-				party : true
+				party : true,
 			},
 			debuff : {
 				you   : true,
-				party : true
-			}
+				party : true,
+			},
 		};
 
 		if (state.settings.spells_mode.ui.use) {
-			types.skill.you    = false;
-			types.effect.you   = false;
-			types.dot.you      = false;
-			types.debuff.you   = false;
-			types.skill.party  = false;
+			types.skill.you = false;
+			types.effect.you = false;
+			types.dot.you = false;
+			types.debuff.you = false;
+			types.skill.party = false;
 			types.effect.party = false;
 			types.debuff.party = false;
 
-			for (let uuid in state.settings.spells_mode.ui.sections) {
-				let section = state.settings.spells_mode.ui.sections[uuid];
+			for (const uuid in state.settings.spells_mode.ui.sections) {
+				const section = state.settings.spells_mode.ui.sections[uuid];
 
-				for (let type of section.types) {
-					let data = type.split("-");
+				for (const type of section.types) {
+					const data = type.split("-");
 
 					types[data[1]][data[0]] = true;
 				}

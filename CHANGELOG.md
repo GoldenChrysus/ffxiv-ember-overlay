@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.3.0
+
+**[in staging]**
+
+### Bug Fixes
+- N/A
+
+### Features
+- ! - Added "Job" as a selectable column/metric at Settings > Player Table and Settings > Player Detail
+
+### UI Changes
+- N/A
+
+### Code Changes
+- All code in `src/` is now linted with ESLint
+
+### Miscellaneous
+- N/A
+
 ## 1.2.1
 
 **2022-09-04**

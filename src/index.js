@@ -18,12 +18,12 @@ import MigrationService from "./services/MigrationService";
 
 console.info(`Welcome and thank you for using Ember Overlay & Spell Timers! Join the Discord at ${process.env.REACT_APP_DISCORD_URL}. GitHub is located at ${process.env.REACT_APP_GITHUB_URL}.`);
 
-let state = store.getState();
+const state = store.getState();
 
 state
 	.settings_data
 	.loadSettings()
-	.then((settings_result) => {
+	.then(settings_result => {
 		MigrationService
 			.migrate()
 			.then(() => {
@@ -34,15 +34,13 @@ state
 						ReactDOM.render(
 							<Router basename={process.env.REACT_APP_ROUTER_BASE}>
 								<Provider store={store}>
-									<Route exact path="/" component={Parser}/>
-									<Route path="/settings" component={Settings}/>
+									<Route exact path='/' component={Parser}/>
+									<Route path='/settings' component={Settings}/>
 								</Provider>
 							</Router>,
-							document.getElementById("root")
+							document.getElementById("root"),
 						);
 					});
 			});
 	})
-	.catch((e) => {
-
-	});
+	.catch(() => {});

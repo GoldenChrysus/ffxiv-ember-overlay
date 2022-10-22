@@ -4,70 +4,70 @@ const language_options = [
 	{
 		key   : "en",
 		value : "en",
-		text  : "English"
+		text  : "English",
 	},
 	{
 		key   : "cn",
 		value : "cn",
-		text  : "中文 (Chinese)"
+		text  : "中文 (Chinese)",
 	},
 	{
 		key   : "fr",
 		value : "fr",
-		text  : "Français (French)"
+		text  : "Français (French)",
 	},
 	{
 		key   : "de",
 		value : "de",
-		text  : "Deutsch (German)"
+		text  : "Deutsch (German)",
 	},
 	{
 		key   : "jp",
 		value : "jp",
-		text  : "日本語 (Japanese)"
+		text  : "日本語 (Japanese)",
 	},
 	{
 		key   : "kr",
 		value : "kr",
-		text  : "한국어 (Korean)"
+		text  : "한국어 (Korean)",
 	},
 	{
 		key   : "pt",
 		value : "pt",
-		text  : "Português (Portuguese)"
+		text  : "Português (Portuguese)",
 	},
 	{
 		key   : "ru",
 		value : "ru",
-		text  : "Русский язык (Russian)"
+		text  : "Русский язык (Russian)",
 	},
 	{
 		key   : "es",
 		value : "es",
-		text  : "Español (Spanish)"
+		text  : "Español (Spanish)",
 	},
 	{
 		key   : "ua",
 		value : "ua",
-		text  : "Українська (Ukrainian)"
-	}
+		text  : "Українська (Ukrainian)",
+	},
 ];
 const theme_options = [
 	{
 		key   : "ffxiv-dark",
 		value : "ffxiv-dark",
-		text  : "FFXIV Dark"
+		text  : "FFXIV Dark",
 	},
 	{
 		key   : "ffxiv-light",
 		value : "ffxiv-light",
-		text  : "FFXIV Light"
+		text  : "FFXIV Light",
 	},
 	{
 		key   : "ffxiv-classic",
 		value : "ffxiv-classic",
-		text  : "FFXIV Classic"
-	}
+		text  : "FFXIV Classic",
+	},
 ];
 
 const SettingsSchema = {
@@ -82,94 +82,94 @@ const SettingsSchema = {
 								key_path : "interface.language",
 								locale   : "interface.language",
 								type     : "select",
-								options  : language_options
+								options  : language_options,
 							},
 							{
 								key_path      : "interface.player_name",
 								type          : "textbox",
 								exclude_modes : [
-									"spells"
-								]
+									"spells",
+								],
 							},
 							{
 								key_path      : "interface.blur_job_icons",
 								type          : "checkbox",
 								exclude_modes : [
-									"spells"
-								]
+									"spells",
+								],
 							},
 							{
 								key_path      : "interface.collapse_down",
 								type          : "checkbox",
 								exclude_modes : [
-									"spells"
-								]
+									"spells",
+								],
 							},
 							{
 								key_path      : "interface.footer_when_collapsed",
 								type          : "checkbox",
 								exclude_modes : [
-									"spells"
-								]
+									"spells",
+								],
 							},
 							{
 								key_path      : "interface.hide_top_bar",
 								type          : "checkbox",
 								exclude_modes : [
-									"stats"
-								]
+									"stats",
+								],
 							},
 							{
 								key_path      : "interface.auto_hide",
 								type          : "checkbox",
 								exclude_modes : [
-									"spells"
-								]
+									"spells",
+								],
 							},
 							{
 								key_path      : "interface.auto_hide_delay",
 								type          : "slider",
 								exclude_modes : [
-									"spells"
+									"spells",
 								],
 								range   : "min",
 								minimum : 0,
-								maximum : 600
+								maximum : 600,
 							},
 							{
 								key_path      : "interface.display_job_names",
 								type          : "checkbox",
 								exclude_modes : [
-									"spells"
-								]
+									"spells",
+								],
 							},
-						]
+						],
 					},
 					{
 						exclude_modes : [
-							"spells"
+							"spells",
 						],
 						settings : [
 							{
 								key_path : "interface.top_right_rank",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "interface.footer_dps",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "interface.decimal_accuracy",
 								type     : "slider",
 								range    : "min",
 								minimum  : 0,
-								maximum  : 2
+								maximum  : 2,
 							},
 							{
 								key_path : "interface.shorten_thousands",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -178,59 +178,59 @@ const SettingsSchema = {
 								type     : "slider",
 								range    : "min",
 								minimum  : 0,
-								maximum  : 100
+								maximum  : 100,
 							},
 							{
 								key_path : "interface.zoom",
 								type     : "slider",
 								range    : "min",
 								minimum  : 1,
-								maximum  : 500
+								maximum  : 500,
 							},
 							{
 								key_path : "interface.text_scale",
 								type     : "slider",
 								range    : "min",
 								minimum  : 1,
-								maximum  : 500
+								maximum  : 500,
 							},
 							{
 								key_path : "interface.theme",
 								type     : "select",
-								options  : theme_options
+								options  : theme_options,
 							},
 							{
 								key_path      : "interface.minimal_theme",
 								type          : "checkbox",
 								exclude_modes : [
-									"spells"
-								]
-							}
-						]
+									"spells",
+								],
+							},
+						],
 					},
 					{
 						exclude_modes : [
-							"spells"
+							"spells",
 						],
 						settings : [
 							{
 								key_path : "interface.horizontal",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "interface.horizontal_shrink",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "interface.horizontal_alignment",
 								type     : "select",
-								options  : () => LocalizationService.getAlignmentOptions()
-							}
-						]
-					}
-				]
-			}
-		]
+								options  : () => LocalizationService.getAlignmentOptions(),
+							},
+						],
+					},
+				],
+			},
+		],
 	},
 	stats : {
 		sections : [
@@ -242,11 +242,11 @@ const SettingsSchema = {
 							{
 								key_path : "custom.metric_names",
 								type     : "MetricNameTable",
-								options  : () => LocalizationService.getPlayerDataTitles(true, true)
-							}
-						]
-					}
-				]
+								options  : () => LocalizationService.getPlayerDataTitles(true, true),
+							},
+						],
+					},
+				],
 			},
 			{
 				path     : "tts",
@@ -257,16 +257,16 @@ const SettingsSchema = {
 								key_path : "tts.language",
 								locale   : "interface.language",
 								type     : "select",
-								options  : language_options
+								options  : language_options,
 							},
 							{
 								key_path : "tts.rules",
 								type     : "TTSRulesTable",
-								options  : () => LocalizationService.getTTSRuleOptions()
-							}
-						]
-					}
-				]
+								options  : () => LocalizationService.getTTSRuleOptions(),
+							},
+						],
+					},
+				],
 			},
 			{
 				path     : "player-table",
@@ -276,21 +276,21 @@ const SettingsSchema = {
 							{
 								key_path : "table_settings.general.table.short_names",
 								type     : "select",
-								options  : () => LocalizationService.getPlayerShortNameOptions()
+								options  : () => LocalizationService.getPlayerShortNameOptions(),
 							},
 							{
 								key_path : "table_settings.general.table.footer_at_top",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "table_settings.general.table.percent_bars",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "table_settings.general.table.prioritize_party",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -300,7 +300,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
+								options  : () => LocalizationService.getPlayerDataTitles(),
 							},
 							{
 								key_path : "sort_columns.dps",
@@ -308,14 +308,14 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : false,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
+								options  : () => LocalizationService.getPlayerDataTitles(),
 							},
 							{
 								key_path : "table_settings.dps.show_footer",
 								locale   : "table_settings.dps.show_footer",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -325,7 +325,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
+								options  : () => LocalizationService.getPlayerDataTitles(),
 							},
 							{
 								key_path : "sort_columns.heal",
@@ -333,14 +333,14 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : false,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
+								options  : () => LocalizationService.getPlayerDataTitles(),
 							},
 							{
 								key_path : "table_settings.heal.show_footer",
 								locale   : "table_settings.dps.show_footer",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -350,7 +350,7 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
+								options  : () => LocalizationService.getPlayerDataTitles(),
 							},
 							{
 								key_path : "sort_columns.tank",
@@ -358,16 +358,16 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : false,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
+								options  : () => LocalizationService.getPlayerDataTitles(),
 							},
 							{
 								key_path : "table_settings.tank.show_footer",
 								locale   : "table_settings.dps.show_footer",
-								type     : "checkbox"
-							}
-						]
-					}
-				]
+								type     : "checkbox",
+							},
+						],
+					},
+				],
 			},
 			{
 				path     : "player-detail",
@@ -380,9 +380,9 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
-							}
-						]
+								options  : () => LocalizationService.getPlayerDataTitles(),
+							},
+						],
 					},
 					{
 						settings : [
@@ -392,9 +392,9 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
-							}
-						]
+								options  : () => LocalizationService.getPlayerDataTitles(),
+							},
+						],
 					},
 					{
 						settings : [
@@ -404,11 +404,11 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
-							}
-						]
-					}
-				]
+								options  : () => LocalizationService.getPlayerDataTitles(),
+							},
+						],
+					},
+				],
 			},
 			{
 				path     : "raid-view",
@@ -420,22 +420,22 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : false,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
+								options  : () => LocalizationService.getPlayerDataTitles(),
 							},
 							{
 								key_path : "table_settings.general.raid.short_names",
 								type     : "select",
-								options  : () => LocalizationService.getPlayerShortNameOptions()
+								options  : () => LocalizationService.getPlayerShortNameOptions(),
 							},
 							{
 								key_path : "table_settings.general.raid.percent_bars",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "table_settings.general.raid.prioritize_party",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -445,9 +445,9 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
-							}
-						]
+								options  : () => LocalizationService.getPlayerDataTitles(),
+							},
+						],
 					},
 					{
 						settings : [
@@ -457,9 +457,9 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
-							}
-						]
+								options  : () => LocalizationService.getPlayerDataTitles(),
+							},
+						],
 					},
 					{
 						settings : [
@@ -469,11 +469,11 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getPlayerDataTitles()
-							}
-						]
-					}
-				]
+								options  : () => LocalizationService.getPlayerDataTitles(),
+							},
+						],
+					},
+				],
 			},
 			{
 				path     : "discord",
@@ -484,18 +484,18 @@ const SettingsSchema = {
 							{
 								key_path : "discord.url",
 								type     : "textbox",
-								fluid    : true
-							}
-						]
-					}
-				]
+								fluid    : true,
+							},
+						],
+					},
+				],
 			},
-		]
+		],
 	},
 	spells : {
 		sections : [
 			{
-				path : "spells-mode",
+				path     : "spells-mode",
 				sections : [
 					{
 						settings : [
@@ -505,24 +505,24 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getoGCDSkillOptions()
+								options  : () => LocalizationService.getoGCDSkillOptions(),
 							},
 							{
 								key_path : "spells_mode.reverse_skill",
 								locale   : "spells_mode.reverse_skill",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.always_skill",
 								locale   : "spells_mode.always_skill",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.always_skill_static",
 								locale   : "spells_mode.always_skill_static",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -532,29 +532,29 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions()
+								options  : () => LocalizationService.getEffectOptions(),
 							},
 							{
 								key_path : "spells_mode.reverse_effect",
 								locale   : "spells_mode.reverse_effect",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.always_effect",
 								locale   : "spells_mode.always_skill",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.always_effect_static",
 								locale   : "spells_mode.always_skill_static",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.tts_on_effect",
 								locale   : "spells_mode.tts_on_effect",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -564,24 +564,24 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions("dot")
+								options  : () => LocalizationService.getEffectOptions("dot"),
 							},
 							{
 								key_path : "spells_mode.reverse_dot",
 								locale   : "spells_mode.reverse_dot",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.always_dot",
 								locale   : "spells_mode.always_skill",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.always_dot_static",
 								locale   : "spells_mode.always_skill_static",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -591,74 +591,74 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions("debuff")
+								options  : () => LocalizationService.getEffectOptions("debuff"),
 							},
 							{
 								key_path : "spells_mode.reverse_debuff",
 								locale   : "spells_mode.reverse_debuff",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.always_debuff",
 								locale   : "spells_mode.always_skill",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.always_debuff_static",
 								locale   : "spells_mode.always_skill_static",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
 							{
 								key_path : "spells_mode.show_icon",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.use_tts",
 								locale   : "spells_mode.use_tts",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.tts_trigger",
 								type     : "select",
-								options  : () => LocalizationService.getSpellsTTSTriggerOptions()
+								options  : () => LocalizationService.getSpellsTTSTriggerOptions(),
 							},
 							{
 								key_path : "spells_mode.warning_threshold",
 								type     : "slider",
 								range    : "min",
 								minimum  : 0,
-								maximum  : 10
+								maximum  : 10,
 							},
 							{
 								key_path : "spells_mode.spells_per_row",
 								type     : "slider",
 								range    : "min",
 								minimum  : 1,
-								maximum  : 20
+								maximum  : 20,
 							},
 							{
 								key_path : "spells_mode.layout",
 								type     : "select",
-								options  : () => LocalizationService.getSpellLayoutOptions()
+								options  : () => LocalizationService.getSpellLayoutOptions(),
 							},
 							{
 								key_path : "spells_mode.invert_vertical",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.invert_horizontal",
-								type     : "checkbox"
-							}
-						]
-					}
-				]
+								type     : "checkbox",
+							},
+						],
+					},
+				],
 			},
 			{
-				path : "spells-mode-party",
+				path     : "spells-mode-party",
 				sections : [
 					{
 						settings : [
@@ -668,19 +668,19 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getoGCDSkillOptions()
+								options  : () => LocalizationService.getoGCDSkillOptions(),
 							},
 							{
 								key_path : "spells_mode.party_reverse_skill",
 								locale   : "spells_mode.reverse_skill",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.party_tts_on_skill",
 								locale   : "spells_mode.party_tts_on_skill",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -690,19 +690,19 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions(undefined, true)
+								options  : () => LocalizationService.getEffectOptions(undefined, true),
 							},
 							{
 								key_path : "spells_mode.party_reverse_effect",
 								locale   : "spells_mode.reverse_effect",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.party_tts_on_effect",
 								locale   : "spells_mode.tts_on_effect",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -712,14 +712,14 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions("dot", true)
+								options  : () => LocalizationService.getEffectOptions("dot", true),
 							},
 							{
 								key_path : "spells_mode.party_reverse_dot",
 								locale   : "spells_mode.reverse_dot",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
@@ -729,165 +729,165 @@ const SettingsSchema = {
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getEffectOptions("debuff", true)
+								options  : () => LocalizationService.getEffectOptions("debuff", true),
 							},
 							{
 								key_path : "spells_mode.party_reverse_debuff",
 								locale   : "spells_mode.reverse_debuff",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
 							{
 								key_path : "spells_mode.party_use_tts",
 								locale   : "spells_mode.use_tts",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.party_zones",
 								type     : "select",
 								multiple : true,
 								search   : true,
-								options  : () => LocalizationService.getZoneOptions()
-							}
-						]
-					}
-				]
+								options  : () => LocalizationService.getZoneOptions(),
+							},
+						],
+					},
+				],
 			},
 			{
-				path : "spells-designer",
+				path     : "spells-designer",
 				sections : [
 					{
 						settings : [
 							{
 								key_path : "spells_mode.designer.skill.warning",
 								locale   : "spells_mode.designer.skill.warning",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.skill.cooldown_bottom_left",
 								locale   : "spells_mode.designer.skill.cooldown_bottom_left",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.skill.indicator",
 								locale   : "spells_mode.designer.skill.indicator",
 								type     : "select",
-								options  : () => LocalizationService.getSpellDesignerIndicatorOptions()
-							}
-						]
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+							},
+						],
 					},
 					{
 						settings : [
 							{
 								key_path : "spells_mode.designer.effect.warning",
 								locale   : "spells_mode.designer.skill.warning",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.effect.border",
 								locale   : "spells_mode.designer.effect.border",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.effect.cooldown_bottom_left",
 								locale   : "spells_mode.designer.skill.cooldown_bottom_left",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.effect.indicator",
 								locale   : "spells_mode.designer.skill.indicator",
 								type     : "select",
-								options  : () => LocalizationService.getSpellDesignerIndicatorOptions()
-							}
-						]
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+							},
+						],
 					},
 					{
 						settings : [
 							{
 								key_path : "spells_mode.designer.dot.warning",
 								locale   : "spells_mode.designer.skill.warning",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.dot.border",
 								locale   : "spells_mode.designer.effect.border",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.dot.cooldown_bottom_left",
 								locale   : "spells_mode.designer.skill.cooldown_bottom_left",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.dot.indicator",
 								locale   : "spells_mode.designer.skill.indicator",
 								type     : "select",
-								options  : () => LocalizationService.getSpellDesignerIndicatorOptions()
-							}
-						]
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+							},
+						],
 					},
 					{
 						settings : [
 							{
 								key_path : "spells_mode.designer.debuff.warning",
 								locale   : "spells_mode.designer.skill.warning",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.debuff.border",
 								locale   : "spells_mode.designer.effect.border",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.debuff.cooldown_bottom_left",
 								locale   : "spells_mode.designer.skill.cooldown_bottom_left",
-								type     : "checkbox"
+								type     : "checkbox",
 							},
 							{
 								key_path : "spells_mode.designer.debuff.indicator",
 								locale   : "spells_mode.designer.skill.indicator",
 								type     : "select",
-								options  : () => LocalizationService.getSpellDesignerIndicatorOptions()
-							}
-						]
+								options  : () => LocalizationService.getSpellDesignerIndicatorOptions(),
+							},
+						],
 					},
 					{
 						settings : [
 							{
 								key_path : "spells_mode.designer.general.show_hover_names",
-								type     : "checkbox"
-							}
-						]
-					}
-				]
+								type     : "checkbox",
+							},
+						],
+					},
+				],
 			},
 			{
-				path : "spells-ui",
+				path     : "spells-ui",
 				sections : [
 					{
 						info     : () => LocalizationService.getSpellUIBuilderInfo(),
 						settings : [
 							{
 								key_path : "spells_mode.ui.use",
-								type     : "checkbox"
-							}
-						]
+								type     : "checkbox",
+							},
+						],
 					},
 					{
 						settings : [
 							{
 								key_path : "spells_mode.ui.sections",
 								type     : "SpellsUITable",
-								options  : () => LocalizationService.getSpellTrackingOptions()
-							}
-						]
-					}
-				]
-			}
-		]
+								options  : () => LocalizationService.getSpellTrackingOptions(),
+							},
+						],
+					},
+				],
+			},
+		],
 	},
 	all_after : {
 		sections : [
@@ -898,14 +898,14 @@ const SettingsSchema = {
 						settings : [
 							{
 								key_path : "custom.css",
-								type     : "code"
-							}
-						]
-					}
-				]
-			}
-		]
-	}
-}
+								type     : "code",
+							},
+						],
+					},
+				],
+			},
+		],
+	},
+};
 
 export default SettingsSchema;

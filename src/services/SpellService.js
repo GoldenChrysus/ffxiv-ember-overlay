@@ -10,29 +10,29 @@ import TTSService from "./TTSService";
 
 class SpellService {
 	valid_names = {};
-	spells      = {};
-	tts_log     = {};
-	settings    = {};
+	spells = {};
+	tts_log = {};
+	settings = {};
 
 	stop() {
 		this.spells = {};
 	}
 
 	setSettings(use_tts, party_use_tts, tts_trigger, warning_threshold, tts_on_effect, party_tts_on_effect, party_tts_on_skill) {
-		this.settings.use_tts             = use_tts;
-		this.settings.party_use_tts       = party_use_tts;
-		this.settings.tts_trigger         = tts_trigger;
-		this.settings.warning_threshold   = warning_threshold;
-		this.settings.tts_on_effect       = tts_on_effect;
+		this.settings.use_tts = use_tts;
+		this.settings.party_use_tts = party_use_tts;
+		this.settings.tts_trigger = tts_trigger;
+		this.settings.warning_threshold = warning_threshold;
+		this.settings.tts_on_effect = tts_on_effect;
 		this.settings.party_tts_on_effect = party_tts_on_effect;
-		this.settings.party_tts_on_skill  = party_tts_on_skill;
+		this.settings.party_tts_on_skill = party_tts_on_skill;
 	}
 
 	getSkillRecast(id, level) {
-		let skill = SkillData.oGCDSkills[id];
+		const skill = SkillData.oGCDSkills[id];
 
 		if (level && skill.level_recasts) {
-			for (let level_data of skill.level_recasts) {
+			for (const level_data of skill.level_recasts) {
 				if (level >= level_data.level) {
 					return level_data.recast;
 				}
@@ -43,10 +43,10 @@ class SpellService {
 	}
 
 	getSkillCharges(id, level) {
-		let skill = SkillData.oGCDSkills[id];
+		const skill = SkillData.oGCDSkills[id];
 
 		if (level && skill.level_charges) {
-			for (let level_data of skill.level_charges) {
+			for (const level_data of skill.level_charges) {
 				if (level >= level_data.level) {
 					return level_data.charges;
 				}
@@ -57,20 +57,20 @@ class SpellService {
 	}
 
 	processSpells(used, lost, changed_default) {
-		let current_level = store.getState().internal.character_level;
+		const current_level = store.getState().internal.character_level;
 
-		for (let i in used) {
-			let date        = used[i].time;
-			let new_date    = new Date(date);
+		for (const i in used) {
+			const date        = used[i].time;
+			const new_date    = new Date(date);
 			let recast      = 0;
 			let max_charges = 0;
-			let type        = used[i].type;
-			let defaulted   = (new_date.getFullYear() === 1970);
+			const type        = used[i].type;
+			const defaulted   = (new_date.getFullYear() === 1970);
 
 			if (!defaulted) {
 				switch (type) {
 					case "skill":
-						recast      = this.getSkillRecast(used[i].id, (used[i].party) ? 0 : current_level);
+						recast = this.getSkillRecast(used[i].id, (used[i].party) ? 0 : current_level);
 						max_charges = this.getSkillCharges(used[i].id, (used[i].party) ? 0 : current_level);
 
 						break;
@@ -83,7 +83,7 @@ class SpellService {
 					default:
 						break;
 				}
-				
+
 				new_date.setSeconds(date.getSeconds() + recast);
 			}
 
@@ -102,7 +102,7 @@ class SpellService {
 				id            : used[i].id,
 				time          : new_date,
 				name          : used[i].name,
-				recast        : recast,
+				recast,
 				charges       : (defaulted) ? used[i].max_charges : max_charges - 1,
 				max_charges   : (defaulted) ? used[i].max_charges : max_charges,
 				recharging    : false,
@@ -113,7 +113,7 @@ class SpellService {
 				party         : used[i].party,
 				defaulted     : used[i].defaulted,
 				type_position : used[i].type_position,
-				tts           : false
+				tts           : false,
 			};
 
 			if (!defaulted && ["effect", "skill"].indexOf(this.spells[i].type) !== -1) {
@@ -121,23 +121,23 @@ class SpellService {
 			}
 		}
 
-		for (let i in lost) {
+		for (const i in lost) {
 			if (!this.spells[i]) {
 				continue;
 			}
 
 			this.spells[i].remaining = 0;
-			this.spells[i].cooldown  = 0;
+			this.spells[i].cooldown = 0;
 
 			this.processTTS(i);
 		}
 
-		for (let i in changed_default) {
+		for (const i in changed_default) {
 			if (!this.spells[i]) {
 				continue;
 			}
 
-			this.spells[i].defaulted     = changed_default[i].defaulted;
+			this.spells[i].defaulted = changed_default[i].defaulted;
 			this.spells[i].type_position = changed_default[i].position;
 		}
 	}
@@ -155,15 +155,15 @@ class SpellService {
 			return true;
 		}
 
-		return (this.spells[key]) ? true : false;
+		return Boolean(this.spells[key]);
 	}
 
 	updateCooldowns() {
-		let now       = new Date();
+		const now       = new Date();
 		let changed   = false;
-		let threshold = (this.settings.tts_trigger === "zero") ? 0 : this.settings.warning_threshold;
+		const threshold = (this.settings.tts_trigger === "zero") ? 0 : this.settings.warning_threshold;
 
-		for (let i in this.spells) {
+		for (const i in this.spells) {
 			if (this.spells[i].cooldown === 0) {
 				continue;
 			}
@@ -171,9 +171,9 @@ class SpellService {
 			changed = true;
 
 			this.spells[i].remaining = (this.spells[i].time - now) / 1000;
-			this.spells[i].cooldown  = Math.max(0, this.spells[i].remaining);
+			this.spells[i].cooldown = Math.max(0, this.spells[i].remaining);
 
-			let tts_key = (this.spells[i].party) ? "party_use_tts" : "use_tts";
+			const tts_key = (this.spells[i].party) ? "party_use_tts" : "use_tts";
 
 			if (this.settings[tts_key] && this.spells[i].remaining > -10000000 && (this.spells[i].remaining <= threshold || this.spells[i].debuff)) {
 				this.processTTS(i, threshold);
@@ -185,9 +185,9 @@ class SpellService {
 				}
 
 				if (this.spells[i].charges < this.spells[i].max_charges) {
-					this.spells[i].time       = now;
-					this.spells[i].remaining  = this.spells[i].recast;
-					this.spells[i].cooldown   = this.spells[i].remaining;
+					this.spells[i].time = now;
+					this.spells[i].remaining = this.spells[i].recast;
+					this.spells[i].cooldown = this.spells[i].remaining;
 					this.spells[i].recharging = true;
 
 					const tmp_used = {};
@@ -203,24 +203,24 @@ class SpellService {
 	}
 
 	processTTS(key, threshold) {
-		let tts_key = (this.spells[key].party) ? "party_use_tts" : "use_tts";
+		const tts_key = (this.spells[key].party) ? "party_use_tts" : "use_tts";
 
 		if (!this.settings[tts_key] || this.spells[key].tts) {
 			return;
 		}
 
 		if (this.spells[key].debuff) {
-			if (this.spells[key].party && this.spells[key].remaining <= threshold)  {
+			if (this.spells[key].party && this.spells[key].remaining <= threshold) {
 				return;
 			}
 
-			if (!this.spells[key].party && this.spells[key].remaining > threshold)  {
+			if (!this.spells[key].party && this.spells[key].remaining > threshold) {
 				return;
 			}
 		}
 
-		let log_key = `${this.spells[key].subtype}-${this.spells[key].id}`;
-		let time    = (new Date()).getTime();
+		const log_key = `${this.spells[key].subtype}-${this.spells[key].id}`;
+		const time    = (new Date()).getTime();
 
 		if ((time - (this.tts_log[log_key] || 0)) <= 500) {
 			this.tts_log[log_key] = time;
@@ -240,21 +240,21 @@ class SpellService {
 			return;
 		}
 
-		let tts_key = (this.spells[key].party) ? `party_tts_on_${this.spells[key].type}` : `tts_on_${this.spells[key].type}`;
+		const tts_key = (this.spells[key].party) ? `party_tts_on_${this.spells[key].type}` : `tts_on_${this.spells[key].type}`;
 
 		if (!this.settings[tts_key]) {
 			return;
 		}
 
-		let extra = (this.spells[key].type === "skill") ? " used" : " received";
+		const extra = (this.spells[key].type === "skill") ? " used" : " received";
 
 		TTSService.saySpell(key, this.spells[key].id, this.spells[key].type, this.spells[key].name, extra);
 	}
 
 	filterSpells(section, settings, builder) {
-		let spells = clone(this.spells);
+		const spells = clone(this.spells);
 
-		for (let i in spells) {
+		for (const i in spells) {
 			if (builder && section.types.indexOf(spells[i].log_type) === -1) {
 				delete spells[i];
 
@@ -280,16 +280,16 @@ class SpellService {
 			party_spells  : {},
 			party_effects : {},
 			party_dots    : {},
-			party_debuffs : {}
+			party_debuffs : {},
 		};
 
-		for (let key in this.valid_names) {
+		for (const key in this.valid_names) {
 			let type = key.split("_");
 
 			type = (type.length === 1) ? type[0] : type[1];
 			type = type.substring(0, type.length - 1);
 
-			for (let id of state.settings.spells_mode[key]) {
+			for (const id of state.settings.spells_mode[key]) {
 				this.valid_names[key][LocalizationService.getSpellName(type, id, "en")] = true;
 			}
 		}
@@ -300,13 +300,13 @@ class SpellService {
 	}
 
 	isValidJob(type, id, job_abbreviation) {
-		let job = Constants.GameJobs[job_abbreviation];
+		const job = Constants.GameJobs[job_abbreviation];
 
 		if (!job) {
 			return;
 		}
 
-		let role = job.role;
+		const role = job.role;
 		let data = [];
 
 		switch (type) {
@@ -335,36 +335,36 @@ class SpellService {
 	}
 
 	injectDefaults(state) {
-		let job = state.internal.character_job;
+		const job = state.internal.character_job;
 
 		if (!job) {
 			return state;
 		}
 
-		let data         = {
+		const data         = {
 			skill  : state.settings.spells_mode.spells,
 			effect : state.settings.spells_mode.effects,
 			dot    : state.settings.spells_mode.dots,
-			debuff : state.settings.spells_mode.debuffs
+			debuff : state.settings.spells_mode.debuffs,
 		};
-		let data_names   = [];
-		let in_use_names = {};
-		let is_pvp_zone  = (PVPZoneData.Zones.indexOf(state.internal.current_zone_id) !== -1);
+		const data_names   = [];
+		const in_use_names = {};
+		const is_pvp_zone  = (PVPZoneData.Zones.indexOf(state.internal.current_zone_id) !== -1);
 
-		for (let type in data) {
-			for (let id of data[type]) {
+		for (const type in data) {
+			for (const id of data[type]) {
 				data_names.push(type + "-" + this.getKeyName(LocalizationService.getSpellName(type, id, "en")));
 			}
 		}
 
-		for (let i in state.internal.spells.in_use) {
-			let item = state.internal.spells.in_use[i];
+		for (const i in state.internal.spells.in_use) {
+			const item = state.internal.spells.in_use[i];
 
 			if (!item.defaulted) {
 				continue;
 			}
 
-			let name = item.subtype + "-" + this.getKeyName(LocalizationService.getSpellName(item.subtype, item.id, "en"));
+			const name = item.subtype + "-" + this.getKeyName(LocalizationService.getSpellName(item.subtype, item.id, "en"));
 
 			if (data_names.indexOf(name) === -1) {
 				state.internal.spells.in_use[i].defaulted = false;
@@ -373,14 +373,14 @@ class SpellService {
 			}
 		}
 
-		for (let type in data) {
+		for (const type in data) {
 			if (!state.settings.spells_mode[`always_${type}`]) {
 				continue;
 			}
 
 			let type_position = 0;
 
-			for (let id of data[type]) {
+			for (const id of data[type]) {
 				if (!this.isValidJob(type, id, job)) {
 					continue;
 				}
@@ -389,8 +389,8 @@ class SpellService {
 					continue;
 				}
 
-				let english_name = this.getKeyName(LocalizationService.getSpellName(type, id, "en"));
-				let name         = type + "-" + english_name;
+				const english_name = this.getKeyName(LocalizationService.getSpellName(type, id, "en"));
+				const name         = type + "-" + english_name;
 
 				type_position++;
 
@@ -401,8 +401,8 @@ class SpellService {
 					continue;
 				}
 
-				let main_type   = (["dot", "debuff"].indexOf(type) !== -1) ? "effect" : type;
-				let key         = (main_type === "effect") ? `${main_type}-${english_name}` : `${main_type}-${id}`;
+				const main_type   = (["dot", "debuff"].indexOf(type) !== -1) ? "effect" : type;
+				const key         = (main_type === "effect") ? `${main_type}-${english_name}` : `${main_type}-${id}`;
 				let max_charges = 0;
 
 				if (main_type === "skill") {
@@ -410,23 +410,23 @@ class SpellService {
 				}
 
 				state.internal.spells.defaulted[name] = {
-					id       : id,
-					key      : key,
-					position : type_position
+					id,
+					key,
+					position : type_position,
 				};
-				state.internal.spells.in_use[key]     = {
+				state.internal.spells.in_use[key] = {
 					type          : main_type,
 					subtype       : type,
-					id            : +id,
+					id            : Number(id),
 					time          : new Date("1970-01-01"),
 					charges       : max_charges,
-					max_charges   : max_charges,
+					max_charges,
 					duration      : 0,
 					stacks        : 0,
 					log_type      : `you-${type}`,
 					party         : false,
 					defaulted     : true,
-					type_position : state.internal.spells.defaulted[name].position
+					type_position : state.internal.spells.defaulted[name].position,
 				};
 			}
 		}
@@ -439,7 +439,7 @@ class SpellService {
 			type          : "skill",
 			subtype       : "skill",
 			log_type      : "you-skill",
-			id            : id,
+			id,
 			time          : new Date(),
 			name          : LocalizationService.getSpellName("skill", id),
 			recast        : SkillData.oGCDSkills[id].recast,
@@ -451,7 +451,7 @@ class SpellService {
 			party         : false,
 			defaulted     : false,
 			type_position : 0,
-			tts           : false
+			tts           : false,
 		};
 	}
 }
