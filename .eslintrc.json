@@ -1,0 +1,59 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "xo"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "camelcase": "off",
+        "object-curly-spacing": ["error", "always"],
+        "quotes": ["error", "double"],
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": true,
+                "align": {
+                    "beforeColon": true,
+                    "afterColon": true,
+                    "on": "colon"
+                }
+            }
+        ],
+        "no-multi-spaces": [
+            "error",
+            {
+                "exceptions": {
+                    "VariableDeclarator": true
+                }
+            }
+        ],
+        "operator-linebreak": [
+            "error",
+            "after"
+        ],
+        "guard-for-in": "off",
+        "prefer-destructuring": "off",
+        "react/prop-types": "off",
+        "no-negated-condition": "off",
+        "max-params": "off",
+        "new-cap": "off",
+        "no-case-declarations": "off",
+        "complexity": "off",
+        "react/no-string-refs": "off",
+        "no-return-assign": "off",
+        "prefer-promise-reject-errors": "off",
+        "max-depth": ["warn", 6]
+    }
+}

@@ -8,24 +8,24 @@ import Table from "../Table";
 class TTSRulesTable extends Table {
 	rule_data_types = {
 		aggro : {
-			type : "bool"
+			type : "bool",
 		},
 		critical_hp : {
 			type : "numeric",
 			min  : 0,
-			max  : 100
+			max  : 100,
 		},
 		critical_mp : {
 			type : "numeric",
 			min  : 0,
-			max  : 100
+			max  : 100,
 		},
 		encounter : {
-			type : "bool"
+			type : "bool",
 		},
 		top : {
-			type : "bool"
-		}
+			type : "bool",
+		},
 	};
 
 	constructor(props) {
@@ -33,31 +33,29 @@ class TTSRulesTable extends Table {
 		this.provideDataTypes(this.rule_data_types);
 	}
 
-	componentWillMount() {
-		let rows = Object.assign(
-			{
-				_insert : this.createRow({insert: true})
-			},
-			this.buildRows()
-		);
+	UNSAFE_componentWillMount() {
+		const rows = {
+			_insert : this.createRow({ insert : true }),
+			...this.buildRows(),
+		};
 
 		this.setState({
-			rows : rows
+			rows,
 		});
 	}
 
 	render() {
-		let rows = (this.state && this.state.rows)
-			? Object.keys(this.state.rows).map(key => this.state.rows[key])
-			: [];
+		const rows = (this.state && this.state.rows) ?
+			Object.keys(this.state.rows).map(key => this.state.rows[key]) :
+			[];
 
-		return(
-			<table key="tts-rules-table" ref="tts_rules_table" className="ui unstackable inverted celled table">
+		return (
+			<table key='tts-rules-table' ref='tts_rules_table' className='ui unstackable inverted celled table'>
 				<thead>
 					<tr>
 						<th>{LocalizationService.getMisc("criteria")}</th>
 						<th>{LocalizationService.getMisc("value")}</th>
-						<th className="collapsing"></th>
+						<th className='collapsing'></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -68,17 +66,17 @@ class TTSRulesTable extends Table {
 	}
 
 	createRow(options) {
-		let button = (options.insert)
-			? <Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button>
-			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
-		let select = (!options.insert)
-			? options.select_text
-			: <Select fluid search options={this.props.options} onChange={this.handleSelectChange.bind(this)}/>;
-		let input  = (options.rule_value === true)
-			? ""
-			: <Input fluid className="rule-value disablable-input" key_path={options.rule_key} defaultValue={options.rule_value} onChange={this.handleInputChange.bind(this)} label={{content: "%"}} labelPosition="right"/>;
-		let row    = (
-			<tr id="insert-row" key={"metric-key-" + (options.select_value || "_insert")} data-key={options.rule_type} data-select-value={options.select_value}>
+		const button = (options.insert) ?
+			<Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button> :
+			<Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
+		const select = (!options.insert) ?
+			options.select_text :
+			<Select fluid search options={this.props.options} onChange={this.handleSelectChange.bind(this)}/>;
+		const input  = (options.rule_value === true) ?
+			"" :
+			<Input fluid className='rule-value disablable-input' key_path={options.rule_key} defaultValue={options.rule_value} onChange={this.handleInputChange.bind(this)} label={{ content : "%" }} labelPosition='right'/>;
+		const row    = (
+			<tr id='insert-row' key={"metric-key-" + (options.select_value || "_insert")} data-key={options.rule_type} data-select-value={options.select_value}>
 				<td>{select}</td>
 				<td>{input}</td>
 				<td>{button}</td>
@@ -89,30 +87,30 @@ class TTSRulesTable extends Table {
 			return row;
 		}
 
-		let rows = this.state.rows;
+		const rows = this.state.rows;
 
 		rows[options.select_value] = row;
 
 		this.setState({
-			rows : rows
+			rows,
 		});
 	}
 
 	handleAdd(e) {
-		let $target = $(e.currentTarget);
-		let $row    = $target.closest("tr");
-		let $select = $row.find(".ui.dropdown");
-		let options = {
+		const $target = $(e.currentTarget);
+		const $row    = $target.closest("tr");
+		const $select = $row.find(".ui.dropdown");
+		const options = {
 			select_value : $select.attr("data-value"),
 			select_text  : $select.attr("data-text"),
 			rule_value   : $row.find("div.rule-value > input").val(),
-			auto_add     : true
+			auto_add     : true,
 		};
 
-		let rule_data = options.select_value.split(".");
+		const rule_data = options.select_value.split(".");
 
 		options.rule_type = rule_data[0];
-		options.rule_key  = rule_data[1] || "";
+		options.rule_key = rule_data[1] || "";
 
 		if (!options.select_value) {
 			return false;
@@ -135,10 +133,10 @@ class TTSRulesTable extends Table {
 	}
 
 	buildRows() {
-		let rules = this.props.value;
-		let rows  = {};
+		const rules = this.props.value;
+		const rows  = {};
 
-		for (let rule_type in rules) {
+		for (const rule_type in rules) {
 			switch (rule_type) {
 				case "critical_hp":
 				case "critical_mp":
@@ -148,30 +146,30 @@ class TTSRulesTable extends Table {
 						this.data.value[rule_type] = {};
 					}
 
-					for (let rule_key in rules[rule_type]) {
-						let value = rules[rule_type][rule_key];
+					for (const rule_key in rules[rule_type]) {
+						const value = rules[rule_type][rule_key];
 
 						this.data.value[rule_type][rule_key] = value;
-			
+
 						if (!value) {
 							continue;
 						}
-			
-						let key = `${rule_type}.${rule_key}`;
-			
+
+						const key = `${rule_type}.${rule_key}`;
+
 						rows[key] = this.createRow({
 							select_text  : LocalizationService.getTTSRuleTitle(key),
 							select_value : key,
-							rule_type    : rule_type,
-							rule_key     : rule_key,
-							rule_value   : value
+							rule_type,
+							rule_key,
+							rule_value   : value,
 						});
 					}
 
 					break;
 
 				case "aggro":
-					let value = rules[rule_type];
+					const value = rules[rule_type];
 
 					this.data.value[rule_type] = value;
 
@@ -182,9 +180,9 @@ class TTSRulesTable extends Table {
 					rows[rule_type] = this.createRow({
 						select_text  : LocalizationService.getTTSRuleTitle(rule_type),
 						select_value : rule_type,
-						rule_type    : rule_type,
+						rule_type,
 						rule_key     : "",
-						rule_value   : rules[rule_type]
+						rule_value   : rules[rule_type],
 					});
 
 					break;

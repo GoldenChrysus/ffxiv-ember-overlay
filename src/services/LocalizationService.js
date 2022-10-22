@@ -14,7 +14,7 @@ class LocalizationService {
 	}
 
 	getPlayerDataTitle(key, type, ignore_custom) {
-		let custom = (ignore_custom) ? {} : store.getState().settings.custom.metric_names;
+		const custom = (ignore_custom) ? {} : store.getState().settings.custom.metric_names;
 
 		if (!ignore_custom && custom[key] && custom[key][type]) {
 			return custom[key][type];
@@ -28,28 +28,28 @@ class LocalizationService {
 	}
 
 	getPlayerDataTitles(include_null, ignore_custom) {
-		let custom   = (ignore_custom) ? {} : store.getState().settings.custom.metric_names;
-		let language = this.getLanguage();
-		let options  = [];
+		const custom   = (ignore_custom) ? {} : store.getState().settings.custom.metric_names;
+		const language = this.getLanguage();
+		const options  = [];
 
 		if (include_null) {
 			options.push({
 				key   : "",
 				value : "",
-				text  : ""
+				text  : "",
 			});
 		}
 
-		for (let data_key in Constants.PlayerDataTitles) {
-			let data   = Constants.PlayerDataTitles[data_key];
-			let option = {
+		for (const data_key in Constants.PlayerDataTitles) {
+			const data   = Constants.PlayerDataTitles[data_key];
+			const option = {
 				key   : data_key,
 				value : data_key,
-				text  : ""
+				text  : "",
 			};
 
 			if (!ignore_custom && custom[data_key] && custom[data_key].long) {
-				option.text = custom[data_key].long
+				option.text = custom[data_key].long;
 			} else {
 				option.text = (data[language]) ? data[language].long : data.en.long;
 			}
@@ -69,14 +69,14 @@ class LocalizationService {
 	}
 
 	getTTSRuleOptions() {
-		let language = this.getLanguage();
-		let options  = [];
+		const language = this.getLanguage();
+		const options  = [];
 
-		for (let data_key of Constants.TTSRules) {
+		for (const data_key of Constants.TTSRules) {
 			options.push({
 				key   : data_key,
 				value : data_key,
-				text  : this.getTTSRuleTitle(data_key, language)
+				text  : this.getTTSRuleTitle(data_key, language),
 			});
 		}
 
@@ -90,7 +90,7 @@ class LocalizationService {
 	}
 
 	getTTSTextData(type, current_state) {
-		let language = (current_state) ? current_state.settings_data.getSetting("tts.language") : this.getTTSLanguage();
+		const language = (current_state) ? current_state.settings_data.getSetting("tts.language") : this.getTTSLanguage();
 
 		return OverlayLocales.tts[type][language];
 	}
@@ -108,7 +108,7 @@ class LocalizationService {
 	}
 
 	getSettingsSubsectionText(section, index) {
-		return SettingsLocales.sections[section].subsections[index][this.getLanguage()] || SettingsLocales.sections[section].subsections[index].en; 
+		return SettingsLocales.sections[section].subsections[index][this.getLanguage()] || SettingsLocales.sections[section].subsections[index].en;
 	}
 
 	getSettingText(key_path, language) {
@@ -118,53 +118,53 @@ class LocalizationService {
 	}
 
 	getPlayerShortNameOptions() {
-		let language = this.getLanguage();
-		let data_set = SettingsLocales.misc.short_name_options[language] || SettingsLocales.misc.short_name_options.en;
-		
+		const language = this.getLanguage();
+		const data_set = SettingsLocales.misc.short_name_options[language] || SettingsLocales.misc.short_name_options.en;
+
 		return [
 			{
 				key   : "no_short",
 				value : "no_short",
-				text  : data_set.no_short
+				text  : data_set.no_short,
 			},
 			{
 				key   : "short_first",
 				value : "short_first",
-				text  : data_set.short_first
+				text  : data_set.short_first,
 			},
 			{
 				key   : "short_last",
 				value : "short_last",
-				text  : data_set.short_last
+				text  : data_set.short_last,
 			},
 			{
 				key   : "short_both",
 				value : "short_both",
-				text  : data_set.short_both
-			}
+				text  : data_set.short_both,
+			},
 		];
 	}
 
 	getAlignmentOptions() {
-		let language = this.getLanguage();
-		let data_set = SettingsLocales.misc.alignment_options[language] || SettingsLocales.misc.alignment_options.en;
-		
+		const language = this.getLanguage();
+		const data_set = SettingsLocales.misc.alignment_options[language] || SettingsLocales.misc.alignment_options.en;
+
 		return [
 			{
 				key   : "left",
 				value : "left",
-				text  : data_set.left
+				text  : data_set.left,
 			},
 			{
 				key   : "center",
 				value : "center",
-				text  : data_set.center
+				text  : data_set.center,
 			},
 			{
 				key   : "right",
 				value : "right",
-				text  : data_set.right
-			}
+				text  : data_set.right,
+			},
 		];
 	}
 
@@ -191,7 +191,7 @@ class LocalizationService {
 
 			default:
 				return "";
-		}	
+		}
 	}
 
 	getoGCDSkillName(id, language) {
@@ -199,26 +199,24 @@ class LocalizationService {
 			return "";
 		}
 
-		language = language || this.getLanguage();		
+		language = language || this.getLanguage();
 
 		return SkillData.oGCDSkills[id].locales.name[language] || SkillData.oGCDSkills[id].locales.name.en;
 	}
 
 	getoGCDSkillOptions() {
-		let language = this.getLanguage();
-		let options  = [];
+		const language = this.getLanguage();
+		const options  = [];
 
-		for (let id in SkillData.oGCDSkills) {
+		for (const id in SkillData.oGCDSkills) {
 			options.push({
 				key   : id,
 				value : id,
-				text  : this.getoGCDSkillName(id, language)
+				text  : this.getoGCDSkillName(id, language),
 			});
 		}
 
-		options.sort((a, b) => {
-			return (a.text < b.text) ? -1 : 1;
-		});
+		options.sort((a, b) => (a.text < b.text) ? -1 : 1);
 
 		return options;
 	}
@@ -236,35 +234,35 @@ class LocalizationService {
 	getEffectOptions(type, party) {
 		type = type || "effect";
 
-		let language = this.getLanguage();
-		let options  = [];
-		let used     = {};
-		let key      = type + "s"
+		const language = this.getLanguage();
+		const options  = [];
+		const used     = {};
+		let key      = type + "s";
 
 		if (party) {
 			key = `party_${key}`;
 		}
 
-		let existing = store.getState().settings.spells_mode[key];
+		const existing = store.getState().settings.spells_mode[key];
 
-		for (let id of existing) {
+		for (const id of existing) {
 			if (!SkillData.Effects[id]) {
 				continue;
 			}
 
-			let name = this.getEffectName(id, "en");
+			const name = this.getEffectName(id, "en");
 
 			options.push({
 				key   : id,
 				value : id,
-				text  : this.getEffectName(id, language)
+				text  : this.getEffectName(id, language),
 			});
 
 			used[name] = true;
 		}
 
-		for (let id in SkillData.Effects) {
-			let name = this.getEffectName(id, "en");
+		for (const id in SkillData.Effects) {
+			const name = this.getEffectName(id, "en");
 
 			if (used[name] || SkillData.Effects[id].type !== type) {
 				continue;
@@ -273,21 +271,19 @@ class LocalizationService {
 			options.push({
 				key   : id,
 				value : id,
-				text  : this.getEffectName(id, language)
+				text  : this.getEffectName(id, language),
 			});
 
 			used[name] = true;
 		}
 
-		options.sort((a, b) => {
-			return (a.text < b.text) ? -1 : 1;
-		});
+		options.sort((a, b) => (a.text < b.text) ? -1 : 1);
 
 		return options;
 	}
 
 	getSpellTrackingOption(role, type, language, is_job) {
-		let misc = SettingsLocales.misc.spells;
+		const misc = SettingsLocales.misc.spells;
 
 		if ((!is_job && !misc.roles[role]) || (is_job && !Constants.GameJobs[role])) {
 			return false;
@@ -302,33 +298,33 @@ class LocalizationService {
 	}
 
 	getSpellTrackingOptions() {
-		let language = this.getLanguage();
-		let options  = [];
+		const language = this.getLanguage();
+		const options  = [];
 
-		for (let role in SettingsLocales.misc.spells.roles) {
-			for (let type in SettingsLocales.misc.spells.types) {
-				let key = `${role}-${type}`;
+		for (const role in SettingsLocales.misc.spells.roles) {
+			for (const type in SettingsLocales.misc.spells.types) {
+				const key = `${role}-${type}`;
 
 				options.push({
-					key     : key,
+					key,
 					value   : key,
 					is_role : true,
-					role    : role,
-					text    : this.getSpellTrackingOption(role, type, language)
+					role,
+					text    : this.getSpellTrackingOption(role, type, language),
 				});
 			}
 		}
 
-		for (let job in Constants.GameJobs) {
-			for (let type in SettingsLocales.misc.spells.types) {
-				let key = `${job}-${type}`;
+		for (const job in Constants.GameJobs) {
+			for (const type in SettingsLocales.misc.spells.types) {
+				const key = `${job}-${type}`;
 
 				options.push({
-					key     : key,
+					key,
 					value   : key,
 					is_role : false,
 					role    : job,
-					text    : this.getSpellTrackingOption(job, type, language, true)
+					text    : this.getSpellTrackingOption(job, type, language, true),
 				});
 			}
 		}
@@ -340,13 +336,17 @@ class LocalizationService {
 
 			if (a.role === "you") {
 				return -1;
-			} else if (b.role === "you") {
+			}
+
+			if (b.role === "you") {
 				return 1;
 			}
 
 			if (a.is_role && !b.is_role) {
 				return -1;
-			} else if (!a.is_role && b.is_role) {
+			}
+
+			if (!a.is_role && b.is_role) {
 				return 1;
 			}
 
@@ -357,51 +357,51 @@ class LocalizationService {
 	}
 
 	getSpellsTTSTriggerOptions() {
-		let language = this.getLanguage();
-		let data_set = SettingsLocales.misc.spells.tts_trigger_options[language] || SettingsLocales.misc.spells.tts_trigger_options.en;
-		let options  = [];
+		const language = this.getLanguage();
+		const data_set = SettingsLocales.misc.spells.tts_trigger_options[language] || SettingsLocales.misc.spells.tts_trigger_options.en;
+		const options  = [];
 
-		for (let key in data_set) {
+		for (const key in data_set) {
 			options.push({
-				key   : key,
+				key,
 				value : key,
-				text  : data_set[key]
+				text  : data_set[key],
 			});
 		}
-		
+
 		return options;
 	}
 
 	getSpellLayoutOptions(include_default) {
-		let language = this.getLanguage();
-		let data_set = SettingsLocales.misc.spells.layout_options[language] || SettingsLocales.misc.spells.layout_options.en;
-		let options  = [];
+		const language = this.getLanguage();
+		const data_set = SettingsLocales.misc.spells.layout_options[language] || SettingsLocales.misc.spells.layout_options.en;
+		const options  = [];
 
 		if (include_default) {
 			options.push({
 				key   : "default",
 				value : "default",
-				text  : this.getMisc("default")
+				text  : this.getMisc("default"),
 			});
 		}
 
-		for (let key in data_set) {
+		for (const key in data_set) {
 			options.push({
-				key   : key,
+				key,
 				value : key,
-				text  : data_set[key]
+				text  : data_set[key],
 			});
 		}
-		
+
 		return options;
 	}
 
 	getSpellUIBuilderInfo() {
-		let language = this.getLanguage();
+		const language = this.getLanguage();
 		let info     = this.getMisc("spells_ui_builder_info", language);
 
-		for (let match of info.match(/\{\{[\w.]+}}/g)) {
-			let key = match.replace(/\{|}/g, "");
+		for (const match of info.match(/\{\{[\w.]+}}/g)) {
+			const key = match.replace(/\{|}/g, "");
 
 			info = info.replace(match, this.getMisc(key, language) || this.getSettingText(key, language));
 		}
@@ -410,18 +410,18 @@ class LocalizationService {
 	}
 
 	getSpellDesignerIndicatorOptions() {
-		let language = this.getLanguage();
-		let data_set = SettingsLocales.misc.spells.indicator_options[language] || SettingsLocales.misc.spells.indicator_options.en;
-		let options  = [];
+		const language = this.getLanguage();
+		const data_set = SettingsLocales.misc.spells.indicator_options[language] || SettingsLocales.misc.spells.indicator_options.en;
+		const options  = [];
 
-		for (let key in data_set) {
+		for (const key in data_set) {
 			options.push({
-				key   : key,
+				key,
 				value : key,
-				text  : data_set[key]
+				text  : data_set[key],
 			});
 		}
-		
+
 		return options;
 	}
 
@@ -430,18 +430,18 @@ class LocalizationService {
 			return "";
 		}
 
-		language = language || this.getLanguage();		
+		language = language || this.getLanguage();
 
 		return ZoneData.Instances[id].locales.name[language] || ZoneData.Instances[id].locales.name.en;
 	}
 
 	getZoneOptions() {
-		let language  = this.getLanguage();
-		let options   = [];
+		const language  = this.getLanguage();
+		const options   = [];
 		let processed = [];
 
-		for (let id in ZoneData.Instances) {
-			let zone_id = ZoneData.Instances[id].zone_id;
+		for (const id in ZoneData.Instances) {
+			const zone_id = ZoneData.Instances[id].zone_id;
 
 			if (processed.indexOf(zone_id) !== -1) {
 				continue;
@@ -450,14 +450,12 @@ class LocalizationService {
 			options.push({
 				key   : String(zone_id),
 				value : String(zone_id),
-				text  : this.getInstanceName(id, language)
+				text  : this.getInstanceName(id, language),
 			});
 			processed.push(zone_id);
 		}
 
-		options.sort((a, b) => {
-			return (a.text < b.text) ? -1 : 1;
-		});
+		options.sort((a, b) => (a.text < b.text) ? -1 : 1);
 
 		processed = null;
 
@@ -469,8 +467,8 @@ class LocalizationService {
 
 		let info = this.getMisc("discord_webhook_info", this.getLanguage());
 
-		for (let match of info.match(/\{\{[\w.]+}}/g)) {
-			let key = match.replace(/\{|}/g, "");
+		for (const match of info.match(/\{\{[\w.]+}}/g)) {
+			const key = match.replace(/\{|}/g, "");
 
 			info = info.replace(match, this.getOverlayText(key, language) || this.getOverlayText(key, language));
 		}

@@ -10,9 +10,9 @@ class Table extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.data        = {
+		this.data = {
 			key_path : this.props.key_path,
-			value    : {}
+			value    : {},
 		};
 		this.delete_text = LocalizationService.getMisc("delete");
 	}
@@ -22,15 +22,15 @@ class Table extends React.Component {
 	}
 
 	handleSelectChange(e, data) {
-		let $row    = $(document).find("#insert-row");
-		let $target = (e.currentTarget.tagName === "DIV") ? $(e.currentTarget) : $row.find(".active.selected.item");
-		let $select = $target.closest(".ui.dropdown");
-		let type    = data.value.split(".")[0];
+		const $row    = $(document).find("#insert-row");
+		const $target = (e.currentTarget.tagName === "DIV") ? $(e.currentTarget) : $row.find(".active.selected.item");
+		const $select = $target.closest(".ui.dropdown");
+		const type    = data.value.split(".")[0];
 
 		if (this.data_types[type]) {
-			let data_type = this.data_types[type].type;
-			let disabled  = (data_type === "bool");
-			let $inputs   = $select
+			const data_type = this.data_types[type].type;
+			const disabled  = (data_type === "bool");
+			const $inputs   = $select
 				.closest("tr")
 				.find(".disablable-input > input");
 
@@ -49,15 +49,15 @@ class Table extends React.Component {
 	}
 
 	handleInputChange(e) {
-		let $this = $(e.currentTarget);
-		let $row  = $this.closest("tr[data-key]");
+		const $this = $(e.currentTarget);
+		const $row  = $this.closest("tr[data-key]");
 
 		if (!$row.length) {
 			return true;
 		}
 
-		let input_key = $this.closest(".ui.input").attr("key_path").split("_")[0];
-		let row_key   = $row.attr("data-key");
+		const input_key = $this.closest(".ui.input").attr("key_path").split("_")[0];
+		const row_key   = $row.attr("data-key");
 
 		if (row_key === "_insert") {
 			return true;
@@ -79,9 +79,9 @@ class Table extends React.Component {
 	}
 
 	handleDelete(e) {
-		let key      = this.getDeleteKey(e);
-		let rows     = clone(this.state.rows);
-		let key_data = key.split(".");
+		const key      = this.getDeleteKey(e);
+		const rows     = clone(this.state.rows);
+		const key_data = key.split(".");
 
 		delete rows[key];
 
@@ -92,13 +92,13 @@ class Table extends React.Component {
 		}
 
 		this.setState({
-			rows : rows
+			rows,
 		});
 		this.syncData();
 	}
 
 	getDeleteKey(e) {
-		return $(e.currentTarget).closest("tr").attr("data-select-value")
+		return $(e.currentTarget).closest("tr").attr("data-select-value");
 	}
 
 	syncData() {
@@ -106,8 +106,8 @@ class Table extends React.Component {
 	}
 
 	normalizeData(key, value, revert_on_bad) {
-		let data_type = this.data_types[key];
-		let new_value = undefined;
+		const data_type = this.data_types[key];
+		let new_value;
 
 		switch (data_type.type) {
 			case "numeric":
@@ -115,11 +115,11 @@ class Table extends React.Component {
 					new_value = undefined;
 				}
 
-				new_value = +value;
+				new_value = Number(value);
 
 				if (
-					(data_type.hasOwnProperty("min") && new_value < data_type.min) ||
-					(data_type.hasOwnProperty("max") && new_value > data_type.max)
+					("min" in data_type && new_value < data_type.min) ||
+					("max" in data_type && new_value > data_type.max)
 				) {
 					new_value = undefined;
 				}

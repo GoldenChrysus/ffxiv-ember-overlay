@@ -11,23 +11,23 @@ class PluginService extends PluginServiceAbstract {
 	constructor() {
 		super();
 
-		let socket_service        = new SocketService();
-		let overlayplugin_service = new OverlayPluginService();
-		let settings              = {
+		const socket_service        = new SocketService();
+		const overlayplugin_service = new OverlayPluginService();
+		const settings              = {
 			is_websocket     : socket_service.isSocketRequested(),
 			is_overlayplugin : overlayplugin_service.isOverlayPlugin(),
 			is_ngld          : overlayplugin_service.isNgld(),
-			socket_service   : socket_service
+			socket_service,
 		};
-		
+
 		Object.assign(this, settings);
 
-		this.events         = [];
-		this.plugin_service = (this.is_websocket && !this.is_overlayplugin)
-			? socket_service
-			: ((this.is_overlayplugin)
-				? new OverlayPluginService(settings)
-				: new OverlayProcService(settings)
+		this.events = [];
+		this.plugin_service = (this.is_websocket && !this.is_overlayplugin) ?
+			socket_service :
+			((this.is_overlayplugin) ?
+				new OverlayPluginService(settings) :
+				new OverlayProcService(settings)
 			);
 	}
 
@@ -74,23 +74,23 @@ class PluginService extends PluginServiceAbstract {
 	}
 
 	updateSubscriptions(settings_object, internal) {
-		let events = this.getSubscriptions(settings_object, internal);
+		const events = this.getSubscriptions(settings_object, internal);
 
 		this.subscribe(events);
 		this.unsubscribe(events);
 	}
 
 	getSubscriptions(settings_object, internal) {
-		let settings = settings_object || store.getState().settings_data;
-		let mode     = (internal || store.getState().internal).mode;
-		let data     = {
+		const settings = settings_object || store.getState().settings_data;
+		const mode     = (internal || store.getState().internal).mode;
+		const data     = {
 			enmity : UsageService.usingEnmity(settings),
 			log    : UsageService.usingLog(mode, settings),
-			combat : UsageService.usingCombatData(mode, settings)
+			combat : UsageService.usingCombatData(mode, settings),
 		};
-		let events   = [
+		const events   = [
 			"ChangePrimaryPlayer",
-			"ChangeZone"
+			"ChangeZone",
 		];
 
 		if (data.combat) {

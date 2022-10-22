@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.2.1
+
+**2022-09-04**
+
+### Bug Fixes
+- Resolved issue with some oGCD actions causing other actions to start their cooldown timers (via action indirections)
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.2.0
 
 **2022-08-26**

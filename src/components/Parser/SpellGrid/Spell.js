@@ -10,11 +10,11 @@ class Spell extends EmberComponent {
 		super(props);
 
 		this.animate_ref = React.createRef();
-		this.rendered    = false;
+		this.rendered = false;
 	}
 
 	componentDidUpdate(prev_props) {
-		if (prev_props.cooldown && +this.props.cooldown > +prev_props.cooldown) {
+		if (prev_props.cooldown && Number(this.props.cooldown) > Number(prev_props.cooldown)) {
 			if (this.animate_ref.current) {
 				this.animate_ref.current.classList.remove("animate");
 
@@ -44,46 +44,46 @@ class Spell extends EmberComponent {
 	}
 
 	render() {
-		let id           = this.props.spell.id;
-		let main_type    = this.props.spell.type;
-		let type         = this.props.spell.subtype;
-		let name         = this.getName(main_type);
-		let is_zero      = (+this.props.cooldown === 0);
-		let animate      = (!is_zero && this.props.indicator === "ticking") ? "animate" : false;
-		let classes      = [
+		const id           = this.props.spell.id;
+		const main_type    = this.props.spell.type;
+		const type         = this.props.spell.subtype;
+		const name         = this.getName(main_type);
+		const is_zero      = (Number(this.props.cooldown) === 0);
+		const animate      = (!is_zero && this.props.indicator === "ticking") ? "animate" : false;
+		const classes      = [
 			"spell-container",
 			this.props.base_key,
 			type,
-			this.props.indicator
+			this.props.indicator,
 		];
-		let breaker      = (this.props.layout === "icon" && +this.props.order % +this.props.spells_per_row === 0)
-			? <span key={"spell-breaker-" + this.props.base_key} className="breaker" style={{order: this.props.order}}></span>
-			: "";
-		let border       = "";
-		let style        = (!is_zero)
-			? `
+		const breaker      = (this.props.layout === "icon" && Number(this.props.order) % Number(this.props.spells_per_row) === 0) ?
+			<span key={"spell-breaker-" + this.props.base_key} className='breaker' style={{ order : this.props.order }}></span> :
+			"";
+		const border       = "";
+		const style        = (!is_zero) ?
+			`
 				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.${this.props.base_key}:not(.icon) .row.animate {
 					animation: horizontal ${this.props.spell.recast}s linear !important;
 				}
-			`
-			: "";
-		let timer      = (!is_zero && this.props.layout === "icon")
-			? ((animate)
-				? <canvas key={"spell-timer-" + this.props.base_key} className="timer" ref={(animate) ? this.animate_ref : ""}></canvas>
-				: <div key={"spell-timer-" + this.props.base_key} className="timer"></div>
-			)
-			: "";
-		let icon       = (!this.props.show_icon && this.props.layout !== "icon")
-			? ""
-			: <div key={"spell-icon-" + this.props.base_key} className={"icon " + type}>
+			` :
+			"";
+		const timer      = (!is_zero && this.props.layout === "icon") ?
+			((animate) ?
+				<canvas key={"spell-timer-" + this.props.base_key} className='timer' ref={(animate) ? this.animate_ref : ""}></canvas> :
+				<div key={"spell-timer-" + this.props.base_key} className='timer'></div>
+			) :
+			"";
+		const icon       = (!this.props.show_icon && this.props.layout !== "icon") ?
+			"" :
+			<div key={"spell-icon-" + this.props.base_key} className={"icon " + type}>
 				<img src={"img/icons/" + main_type + "s/" + id + ".jpg"} alt={main_type + "-" + id}/>
 			</div>;
-		let attributes = {
+		const attributes = {
 			key       : "spell-container-" + this.props.base_key,
 			className : "",
 			style     : {
-				order : this.props.order
-			}
+				order : this.props.order,
+			},
 		};
 
 		if (this.props.layout !== "normal") {
@@ -120,16 +120,16 @@ class Spell extends EmberComponent {
 			attributes["data-tip"] = name;
 		}
 
-		return(
+		return (
 			<React.Fragment>
 				<div {...attributes}>
-					<style type="text/css" key={"spell-container-style-" + this.props.base_key}>
+					<style type='text/css' key={"spell-container-style-" + this.props.base_key}>
 						{style}
 					</style>
 					{icon}
 					<div key={"spell-row-" + this.props.base_key} className={"row " + animate} ref={animate && this.props.layout !== "icon" ? this.animate_ref : ""}>
-						<span key={"spell-name-" + this.props.base_key} className="name">{name}</span>
-						<span key={"spell-cooldown-" + this.props.base_key} className="cooldown">{(!is_zero) ? this.props.cooldown : ""}</span>
+						<span key={"spell-name-" + this.props.base_key} className='name'>{name}</span>
+						<span key={"spell-cooldown-" + this.props.base_key} className='cooldown'>{(!is_zero) ? this.props.cooldown : ""}</span>
 					</div>
 					{border}
 					{timer}

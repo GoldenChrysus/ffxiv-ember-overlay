@@ -3,20 +3,20 @@ import { updateSetting } from "../redux/actions/index";
 
 class Migration {
 	migrate() {
-		return new Promise((resolve, reject) => {
-			let settings = store.getState().settings_data;
-			let data     = settings.getSetting("tts.rules.critical");
+		return new Promise((resolve, _reject) => {
+			const settings = store.getState().settings_data;
+			const data     = settings.getSetting("tts.rules.critical");
 
 			store.dispatch(
 				updateSetting({
 					key       : "tts.rules.critical_hp",
 					value     : data,
-					skip_save : true
-				})
+					skip_save : true,
+				}),
 			);
 			resolve();
 		});
-	}	
+	}
 }
 
 export default new Migration();

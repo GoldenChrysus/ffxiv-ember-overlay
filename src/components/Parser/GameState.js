@@ -16,22 +16,22 @@ class GameState extends React.Component {
 	}
 
 	render() {
-		let encounter_class = (this.props.active || this.props.mode === "spells") ? "active" : "inactive";
-		let rank_class      = (this.props.show_rank && this.props.mode === "stats") ? "" : "hidden";
-		let rank            = (this.props.rank === "N/A") ? LocalizationService.getOverlayText("not_applicable") : this.props.rank;
-		let button          = () => {
+		const encounter_class = (this.props.active || this.props.mode === "spells") ? "active" : "inactive";
+		const rank_class      = (this.props.show_rank && this.props.mode === "stats") ? "" : "hidden";
+		const rank            = (this.props.rank === "N/A") ? LocalizationService.getOverlayText("not_applicable") : this.props.rank;
+		const button          = () => {
 			switch (this.props.mode) {
 				case "stats":
-					let icon = (this.props.collapsed) ? "expand" : "compress";
-					let data = { state: !this.props.collapsed };
+					const icon = (this.props.collapsed) ? "expand" : "compress";
+					const data = { state : !this.props.collapsed };
 
-					return(
-						<IconButton icon={icon} title={LocalizationService.getOverlayText("toggle_collapse")} key="toggle-collapsed" onClick={this.changeCollapse.bind(this, data)}/>
+					return (
+						<IconButton icon={icon} title={LocalizationService.getOverlayText("toggle_collapse")} key='toggle-collapsed' onClick={this.changeCollapse.bind(this, data)}/>
 					);
 
 				case "spells":
-					return(
-						<IconButton icon="cog" title={LocalizationService.getOverlayText("settings")} key="settings" class={SettingsService.getNoticeClass()} onClick={SettingsService.openSettingsWindow}/>
+					return (
+						<IconButton icon='cog' title={LocalizationService.getOverlayText("settings")} key='settings' class={SettingsService.getNoticeClass()} onClick={SettingsService.openSettingsWindow}/>
 					);
 
 				default:
@@ -39,7 +39,7 @@ class GameState extends React.Component {
 			}
 		};
 
-		let encounter       = this.props.encounter;
+		const encounter       = this.props.encounter;
 		let encounter_state = [];
 
 		switch (this.props.mode) {
@@ -58,7 +58,7 @@ class GameState extends React.Component {
 		}
 
 		return (
-			<div id="game-state">
+			<div id='game-state'>
 				<span className={encounter_class}>{encounter_state}</span>
 				<span>
 					<span className={rank_class}>{rank}</span>
@@ -73,20 +73,16 @@ class GameState extends React.Component {
 	}
 }
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		changeCollapse : (data) => {
-			dispatch(changeCollapse(data));
-		}
-	}
-};
+const mapDispatchToProps = dispatch => ({
+	changeCollapse(data) {
+		dispatch(changeCollapse(data));
+	},
+});
 
-const mapStateToProps = (state) => {
-	return {
-		collapsed : state.settings.intrinsic.collapsed,
-		mode      : state.internal.mode,
-		new_ver   : state.internal.new_version,
-	};
-};
+const mapStateToProps = state => ({
+	collapsed : state.settings.intrinsic.collapsed,
+	mode      : state.internal.mode,
+	new_ver   : state.internal.new_version,
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(GameState);

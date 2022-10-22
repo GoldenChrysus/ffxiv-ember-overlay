@@ -3,10 +3,10 @@ import $ from "jquery";
 
 class Placeholder extends React.Component {
 	togglePlaceholders() {
-		let $container = $(document).find("#container");
-		let active     = $container.hasClass("hidden");
+		const $container = $(document).find("#container");
+		const active     = $container.hasClass("hidden");
 
-		$(document).find(".placeholder").each(function() {
+		$(document).find(".placeholder").each(function () {
 			$(this).toggleClass("hidden", active);
 		});
 
@@ -14,12 +14,12 @@ class Placeholder extends React.Component {
 	}
 
 	render() {
-		let image_src = `img/icons/placeholder-${this.props.theme}-theme.png`;
+		const image_src = `img/icons/placeholder-${this.props.theme}-theme.png`;
 
 		return (
 			<div className={"placeholder " + this.props.type + " hidden"} onClick={this.togglePlaceholders.bind(this)}>
-				<div className="inner">
-					<img src={image_src} alt="Minimized button"></img>
+				<div className='inner'>
+					<img src={image_src} alt='Minimized button'></img>
 				</div>
 			</div>
 		);

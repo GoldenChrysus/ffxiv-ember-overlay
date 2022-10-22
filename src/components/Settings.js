@@ -16,66 +16,64 @@ import Donate from "./Settings/Donate";
 import "./../styles/components/settings/settings-theme.less";
 
 class Settings extends React.Component {
-	componentWillMount() {
+	UNSAFE_componentWillMount() {
 		TwitchAPIService.getLiveStreamers()
-			.then((data) => {
+			.then(data => {
 				this.setState({
 					stream_type : data.type,
-					streamers   : data.streamers
+					streamers   : data.streamers,
 				});
 			})
-			.catch((e) => {
-
-			});
+			.catch(() => {});
 	}
 
 	render() {
-		let base_url           = this.props.match.url;
-		let nav_links          = [];
-		let routes             = [];
-		let streamers          = (this.state && this.state.streamers) ? this.state.streamers : {};
-		let stream_type        = (this.state && this.state.stream_type) ? this.state.stream_type : "offline";
-		let streamer_count     = (streamers) ? Object.keys(streamers).length : 0;
-		let streamer_base_text = (streamer_count && stream_type === "live")
-			? LocalizationService.getMisc((streamer_count > 1) ? "streamers_live" : "streamer_live")
-			: LocalizationService.getMisc("streamers");
-		let streamer_text      = streamer_base_text.replace("{{number}}", streamer_count);
+		const base_url           = this.props.match.url;
+		const nav_links          = [];
+		const routes             = [];
+		const streamers          = (this.state && this.state.streamers) ? this.state.streamers : {};
+		const stream_type        = (this.state && this.state.stream_type) ? this.state.stream_type : "offline";
+		const streamer_count     = (streamers) ? Object.keys(streamers).length : 0;
+		const streamer_base_text = (streamer_count && stream_type === "live") ?
+			LocalizationService.getMisc((streamer_count > 1) ? "streamers_live" : "streamer_live") :
+			LocalizationService.getMisc("streamers");
+		const streamer_text      = streamer_base_text.replace("{{number}}", streamer_count);
 
 		for (
-			let section of 
+			const section of
 			SettingsSchema.all_before.sections.concat(
 				SettingsSchema[this.props.mode].sections.concat(
-					SettingsSchema.all_after.sections)
-				)
+					SettingsSchema.all_after.sections),
+			)
 		) {
-			let section_path = section.path;
-			let path         = `${base_url}/${section_path}`;
-			let title        = LocalizationService.getSettingsSectionText(section_path);
+			const section_path = section.path;
+			const path         = `${base_url}/${section_path}`;
+			const title        = LocalizationService.getSettingsSectionText(section_path);
 
 			nav_links.push(
-				<NavLink to={path} className="item" key={section_path}>{title}</NavLink>
+				<NavLink to={path} className='item' key={section_path}>{title}</NavLink>,
 			);
 
 			routes.push(
-				<Route path={path} key={path} render={() => <Screen sections={section.sections} path={section_path} mode={this.props.mode}/>}/>
+				<Route path={path} key={path} render={() => <Screen sections={section.sections} path={section_path} mode={this.props.mode}/>}/>,
 			);
 		}
 
 		return (
 			<React.Fragment>
 				<Router>
-					<Grid celled id="settings-container">
+					<Grid celled id='settings-container'>
 						<Grid.Row>
-							<Grid.Column width={3} id="settings-sidebar">
-								<Menu vertical id="settings-menu">
+							<Grid.Column width={3} id='settings-sidebar'>
+								<Menu vertical id='settings-menu'>
 									{nav_links}
-									<NavLink to={base_url + "/export"} className="item">{LocalizationService.getSettingsSectionText("export")}</NavLink>
-									<NavLink to={base_url + "/about"} className="item">{LocalizationService.getSettingsSectionText("about")}</NavLink>
-									<NavLink to={base_url + "/streamers"} className="streamers item">{streamer_text}</NavLink>
-									<NavLink to={base_url + "/donate"} className="item">Donate</NavLink>
+									<NavLink to={base_url + "/export"} className='item'>{LocalizationService.getSettingsSectionText("export")}</NavLink>
+									<NavLink to={base_url + "/about"} className='item'>{LocalizationService.getSettingsSectionText("about")}</NavLink>
+									<NavLink to={base_url + "/streamers"} className='streamers item'>{streamer_text}</NavLink>
+									<NavLink to={base_url + "/donate"} className='item'>Donate</NavLink>
 								</Menu>
 							</Grid.Column>
-							<Grid.Column width={13} id="settings-screen">
+							<Grid.Column width={13} id='settings-screen'>
 								<Route exact path={base_url} render={() => (
 									<Redirect to={base_url + "/about"}/>
 								)}/>
@@ -93,11 +91,9 @@ class Settings extends React.Component {
 	}
 }
 
-const mapStateToProps = (state) => {
-	return {
-		language : state.settings.interface.language,
-		mode     : state.internal.mode,
-	};
-};
+const mapStateToProps = state => ({
+	language : state.settings.interface.language,
+	mode     : state.internal.mode,
+});
 
 export default connect(mapStateToProps)(Settings);

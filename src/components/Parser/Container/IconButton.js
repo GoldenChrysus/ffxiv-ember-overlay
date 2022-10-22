@@ -8,24 +8,24 @@ class IconButton extends React.Component {
 	}
 
 	render() {
-		let icon_attributes  = {
+		const icon_attributes  = {
 			name       : this.props.icon,
 			alt        : this.props.title,
 			"data-tip" : this.props.title,
-			title      : this.props.title
+			title      : this.props.title,
 		};
 
 		if (this.props.no_container) {
 			icon_attributes.onClick = this.props.onClick;
 		}
 
-		let additional_class = this.props.class || "";
-		let icon             = <Icon {...icon_attributes}/>;
+		const additional_class = this.props.class || "";
+		const icon             = <Icon {...icon_attributes}/>;
 
 		return (
-			(this.props.no_container)
-				? icon
-				: <div className={"icon-container " + additional_class} onClick={this.props.onClick}>
+			(this.props.no_container) ?
+				icon :
+				<div className={"icon-container " + additional_class} onClick={this.props.onClick}>
 					{icon}
 				</div>
 		);

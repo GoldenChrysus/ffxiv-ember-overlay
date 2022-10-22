@@ -5,10 +5,10 @@ import { loadHistoryEntry } from "../../../redux/actions/index";
 
 class EncounterMenu extends React.Component {
 	render() {
-		let options = [];
+		const options = [];
 		let i       = 0;
 
-		for (let encounter of this.props.history) {
+		for (const encounter of this.props.history) {
 			if (!encounter.game.Encounter) {
 				continue;
 			}
@@ -23,7 +23,7 @@ class EncounterMenu extends React.Component {
 			options.push(
 				<MenuItem key={"encounter-history-item-" + i} onClick={this.loadHistoryEntry.bind(this, i)}>
 					{title}
-				</MenuItem>
+				</MenuItem>,
 			);
 
 			i++;
@@ -31,15 +31,15 @@ class EncounterMenu extends React.Component {
 
 		if (!options.length) {
 			options.push(
-				<MenuItem key="no-encounter">
+				<MenuItem key='no-encounter'>
 					No encounters available.
-				</MenuItem>
+				</MenuItem>,
 			);
 		}
 
 		return (
-			<ContextMenu id="encounter-history-menu" className="container-context-menu">
-				<div className="item-group">
+			<ContextMenu id='encounter-history-menu' className='container-context-menu'>
+				<div className='item-group'>
 					{options}
 				</div>
 			</ContextMenu>
@@ -51,18 +51,14 @@ class EncounterMenu extends React.Component {
 	}
 }
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		loadHistoryEntry : (data) => {
-			dispatch(loadHistoryEntry(data));
-		}
-	}
-};
+const mapDispatchToProps = dispatch => ({
+	loadHistoryEntry(data) {
+		dispatch(loadHistoryEntry(data));
+	},
+});
 
-const mapStateToProps = (state) => {
-	return {
-		history : state.internal.encounter_history
-	};
-};
+const mapStateToProps = state => ({
+	history : state.internal.encounter_history,
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(EncounterMenu);

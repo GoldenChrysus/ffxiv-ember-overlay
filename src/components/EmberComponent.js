@@ -3,7 +3,7 @@ import isEqual from "lodash.isequal";
 
 class EmberComponent extends React.Component {
 	shouldComponentUpdate(next_props, next_state) {
-		for (let i in this.props) {
+		for (const i in this.props) {
 			if (typeof this.props[i] === "function") {
 				continue;
 			}

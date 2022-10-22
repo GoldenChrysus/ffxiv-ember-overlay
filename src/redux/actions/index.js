@@ -2,20 +2,20 @@ export function parseGameData(payload) {
 	return {
 		type : "parseGameData",
 		key  : "internal.game",
-		payload
+		payload,
 	};
 }
 
 export function loadSampleGameData() {
 	return {
-		type : "loadSampleData"
+		type : "loadSampleData",
 	};
 }
 
 export function loadHistoryEntry(payload) {
 	return {
 		type : "loadHistoryEntry",
-		payload
+		payload,
 	};
 }
 
@@ -27,7 +27,7 @@ export function parseEnmity(payload) {
 	return {
 		type : "parseEnmity",
 		key  : "internal.enmity",
-		payload
+		payload,
 	};
 }
 
@@ -35,7 +35,7 @@ export function parseAggroList(payload) {
 	return {
 		type : "parseAggroList",
 		key  : "internal.aggro",
-		payload
+		payload,
 	};
 }
 
@@ -43,7 +43,7 @@ export function parseParty(payload) {
 	return {
 		type : "parseParty",
 		key  : "internal.party",
-		payload
+		payload,
 	};
 }
 
@@ -51,7 +51,7 @@ export function changeMode(payload) {
 	return {
 		type : "changeMode",
 		key  : "internal.mode",
-		payload
+		payload,
 	};
 }
 
@@ -59,7 +59,7 @@ export function parseLogLine(payload) {
 	return {
 		type : "parseLogLine",
 		key  : false,
-		payload
+		payload,
 	};
 }
 
@@ -69,7 +69,7 @@ export function updateSetting(payload) {
 		key       : payload.key,
 		payload   : payload.value,
 		source    : payload.source,
-		skip_save : payload.skip_save
+		skip_save : payload.skip_save,
 	};
 }
 
@@ -77,7 +77,7 @@ export function updateSettings(payload) {
 	return {
 		type   : "setSettings",
 		data   : payload.data,
-		source : payload.source
+		source : payload.source,
 	};
 }
 
@@ -86,15 +86,15 @@ export function changeCollapse(payload) {
 		type   : "setSetting",
 		key    : "intrinsic.collapsed",
 		source : "parser",
-		payload
+		payload,
 	};
 }
 
 export function changeUIBuilder(payload) {
 	return {
-		type   : "changeUIBuilder",
-		key    : "internal.ui_builder",
-		payload
+		type : "changeUIBuilder",
+		key  : "internal.ui_builder",
+		payload,
 	};
 }
 
@@ -103,7 +103,7 @@ export function changeTableType(payload) {
 		type   : "setSetting",
 		key    : "intrinsic.table_type",
 		source : "parser",
-		payload
+		payload,
 	};
 }
 
@@ -112,7 +112,7 @@ export function changePlayerBlur(payload) {
 		type   : "setSetting",
 		key    : "intrinsic.player_blur",
 		source : "parser",
-		payload
+		payload,
 	};
 }
 
@@ -121,7 +121,7 @@ export function changeViewing(payload) {
 		type   : "changeViewing",
 		key    : "internal.viewing",
 		source : "parser",
-		payload
+		payload,
 	};
 }
 
@@ -129,7 +129,7 @@ export function changeDetailPlayer(payload) {
 	return {
 		type : "changeDetailPlayer",
 		key  : "internal.detail_player",
-		payload
+		payload,
 	};
 }
 
@@ -137,6 +137,6 @@ export function updateState(payload) {
 	return {
 		type    : "updateState",
 		key     : payload.key,
-		payload : payload.value
+		payload : payload.value,
 	};
 }

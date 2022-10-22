@@ -7,55 +7,55 @@ import HistoryChart from "./PlayerDetail/HistoryChart";
 
 class PlayerDetail extends React.Component {
 	render() {
-		let player      = this.props.player;
-		let players     = [];
-		let job         = (!player.Job && player.name !== "Limit Break") ? "PET" : player.Job.toUpperCase() || "LMB";
-		let detail_data = this.props.detail_data;
-		let sections    = [
-			<div className="split" key="chart-split"></div>,
-			<HistoryChart player={player} history={this.props.history} theme={this.props.theme} key="chart"/>
+		const player      = this.props.player;
+		const players     = [];
+		const job         = (!player.Job && player.name !== "Limit Break") ? "PET" : player.Job.toUpperCase() || "LMB";
+		const detail_data = this.props.detail_data;
+		const sections    = [
+			<div className='split' key='chart-split'></div>,
+			<HistoryChart player={player} history={this.props.history} theme={this.props.theme} key='chart'/>,
 		];
 
-		for (let i in this.props.players) {
+		for (const i in this.props.players) {
 			players.push(this.props.players[i]);
 		}
 
-		for (let section_type in detail_data) {
-			let detail  = detail_data[section_type];
-			let columns = [];
+		for (const section_type in detail_data) {
+			const detail  = detail_data[section_type];
+			const columns = [];
 
-			for (let key of detail) {
-				let title = LocalizationService.getPlayerDataTitle(key, "long");
-				let value = PlayerProcessor.getDataValue(key, player, players, this.props.encounter);
+			for (const key of detail) {
+				const title = LocalizationService.getPlayerDataTitle(key, "long");
+				const value = PlayerProcessor.getDataValue(key, player, players, this.props.encounter);
 
 				columns.push(
-					<div className="column" key={key}>
-						<div className="title" key={key + "-title"}>{title}</div>
-						<div className="value" key={key + "-value"}>{value}</div>
-					</div>
+					<div className='column' key={key}>
+						<div className='title' key={key + "-title"}>{title}</div>
+						<div className='value' key={key + "-value"}>{value}</div>
+					</div>,
 				);
 			}
 
 			sections.push(
-				<div className="split" key={section_type + "-split"}></div>
+				<div className='split' key={section_type + "-split"}></div>,
 			);
 			sections.push(
-				<div className="section" key={section_type}>
-					<div className="title" key={section_type + "-title"}>{LocalizationService.getOverlayText(section_type)}</div>
-					<div className="data" key={section_type + "-data"}>
+				<div className='section' key={section_type}>
+					<div className='title' key={section_type + "-title"}>{LocalizationService.getOverlayText(section_type)}</div>
+					<div className='data' key={section_type + "-data"}>
 						{columns}
 					</div>
-				</div>
+				</div>,
 			);
 		}
 
 		return (
-			<div id="player-detail">
-				<div className="header">
-					<div className="job">
+			<div id='player-detail'>
+				<div className='header'>
+					<div className='job'>
 						<img src={"img/icons/jobs/" + job + ".png"} alt={job + " icon"}></img>
 					</div>
-					<div className="name">
+					<div className='name'>
 						{PlayerProcessor.getDataValue("name", player)}
 					</div>
 				</div>
@@ -65,12 +65,10 @@ class PlayerDetail extends React.Component {
 	}
 }
 
-const mapStateToProps = (state) => {
-	return {
-		detail_data : state.settings.detail_data,
-		history     : state.internal.data_history,
-		theme       : state.settings.interface.theme
-	};
-};
+const mapStateToProps = state => ({
+	detail_data : state.settings.detail_data,
+	history     : state.internal.data_history,
+	theme       : state.settings.interface.theme,
+});
 
 export default connect(mapStateToProps)(PlayerDetail);

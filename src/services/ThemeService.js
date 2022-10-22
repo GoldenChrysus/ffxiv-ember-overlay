@@ -3,9 +3,9 @@ import $ from "jquery";
 class ThemeService {
 	mode_classes = [
 		"stats",
-		"spells"
+		"spells",
 	];
-	
+
 	setTheme(theme) {
 		$("body").attr("theme", theme);
 	}
@@ -19,7 +19,7 @@ class ThemeService {
 	}
 
 	setMode(new_mode) {
-		for (let mode of this.mode_classes) {
+		for (const mode of this.mode_classes) {
 			$("body").toggleClass(`mode-${mode}`, (mode === new_mode));
 		}
 	}

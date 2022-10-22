@@ -12,7 +12,7 @@ const default_settings = {
 		collapsed       : false,
 		current_version : null,
 		last_version    : null,
-		player_blur     : false
+		player_blur     : false,
 	},
 	interface : {
 		player_name           : "YOU",
@@ -35,11 +35,11 @@ const default_settings = {
 		language              : "en",
 		auto_hide             : false,
 		auto_hide_delay       : 0,
-		display_job_names     : false
+		display_job_names     : false,
 	},
 	custom : {
 		css          : "",
-		metric_names : {}
+		metric_names : {},
 	},
 	tts : {
 		language : "en",
@@ -48,25 +48,25 @@ const default_settings = {
 				tank : 0,
 				heal : 0,
 				dps  : 0,
-				all  : 0
+				all  : 0,
 			},
 			critical_mp : {
 				tank : 0,
 				heal : 0,
 				dps  : 0,
-				all  : 0
+				all  : 0,
 			},
-			top       : {
+			top : {
 				dps : false,
 				hps : false,
-				tps : false
+				tps : false,
 			},
 			aggro     : false,
 			encounter : {
 				start : false,
-				end   : false
-			}
-		}
+				end   : false,
+			},
+		},
 	},
 	table_settings : {
 		general : {
@@ -74,23 +74,23 @@ const default_settings = {
 				short_names      : "no_short",
 				footer_at_top    : false,
 				percent_bars     : true,
-				prioritize_party : false
+				prioritize_party : false,
 			},
-			raid  : {
+			raid : {
 				short_names      : "no_short",
 				percent_bars     : true,
-				prioritize_party : false
-			}
+				prioritize_party : false,
+			},
 		},
-		dps     : {
-			show_footer : true
+		dps : {
+			show_footer : true,
 		},
-		heal    : {
-			show_footer : true
+		heal : {
+			show_footer : true,
 		},
-		tank    : {
-			show_footer : true
-		}
+		tank : {
+			show_footer : true,
+		},
 	},
 	table_columns : {
 		dps : [
@@ -98,7 +98,7 @@ const default_settings = {
 			"encdps",
 			"crithit%",
 			"DirectHitPct",
-			"CritDirectHitPct"
+			"CritDirectHitPct",
 		],
 		heal : [
 			"healed%",
@@ -106,7 +106,7 @@ const default_settings = {
 			"enchps",
 			"effective_hps",
 			"OverHealPct",
-			"critheal%"
+			"critheal%",
 		],
 		tank : [
 			"damage_taken_pct",
@@ -115,28 +115,28 @@ const default_settings = {
 			"healstaken",
 			"BlockPct",
 			"ParryPct",
-			"deaths"
+			"deaths",
 		],
 		raid : {
-			dps  : [
+			dps : [
 				"encdps",
-				"enchps"
+				"enchps",
 			],
 			heal : [
 				"enchps",
-				"encdps"
+				"encdps",
 			],
 			tank : [
 				"encdps",
-				"enchps"
-			]
-		}
+				"enchps",
+			],
+		},
 	},
 	sort_columns : {
 		dps  : "damage",
 		heal : "healed",
 		tank : "damagetaken",
-		raid : "damage"
+		raid : "damage",
 	},
 	detail_data : {
 		dps : [
@@ -146,7 +146,7 @@ const default_settings = {
 			"crithit%",
 			"DirectHitPct",
 			"CritDirectHitPct",
-			"max_hit_format"
+			"max_hit_format",
 		],
 		heal : [
 			"healed%",
@@ -156,7 +156,7 @@ const default_settings = {
 			"healed",
 			"OverHealPct",
 			"critheal%",
-			"max_heal_format"
+			"max_heal_format",
 		],
 		tank : [
 			"damage_taken_pct",
@@ -164,11 +164,11 @@ const default_settings = {
 			"enctps",
 			"healstaken",
 			"BlockPct",
-			"deaths"
-		]
+			"deaths",
+		],
 	},
 	discord : {
-		url : ""
+		url : "",
 	},
 	spells_mode : {
 		spells               : [],
@@ -208,53 +208,53 @@ const default_settings = {
 			skill : {
 				warning              : true,
 				indicator            : "ticking",
-				cooldown_bottom_left : false
+				cooldown_bottom_left : false,
 			},
 			effect : {
 				border               : false,
 				warning              : true,
 				indicator            : "ticking",
-				cooldown_bottom_left : false
+				cooldown_bottom_left : false,
 			},
 			dot : {
 				border               : false,
 				warning              : true,
 				indicator            : "ticking",
-				cooldown_bottom_left : false
+				cooldown_bottom_left : false,
 			},
 			debuff : {
 				border               : false,
 				warning              : true,
 				indicator            : "ticking",
-				cooldown_bottom_left : false
+				cooldown_bottom_left : false,
 			},
 			general : {
-				show_hover_names : false
-			}
+				show_hover_names : false,
+			},
 		},
-		ui                   : {
+		ui : {
 			use      : false,
-			sections : {}
-		}
-	}
+			sections : {},
+		},
+	},
 };
 
 class Settings {
 	loadSettings() {
 		return new Promise((resolve, reject) => {
 			localForage.getItem("settings_cache")
-				.then((data) => {
-					let result = this.mergeSettings(data);
+				.then(data => {
+					const result = this.mergeSettings(data);
 
 					store.dispatch(
 						updateState({
 							key   : "settings",
-							value : this.settings
-						})
+							value : this.settings,
+						}),
 					);
 					resolve(result);
 				})
-				.catch((e) => {
+				.catch(e => {
 					console.error(JSON.stringify(e));
 					reject(e);
 				});
@@ -273,7 +273,7 @@ class Settings {
 					this.saveToOverlayPlugin();
 					resolve();
 				})
-				.catch((e) => {
+				.catch(e => {
 					console.error(JSON.stringify(e));
 					reject(e);
 				});
@@ -282,21 +282,21 @@ class Settings {
 
 	mergeSettings(data) {
 		let json                 = false;
-		let tmp_default_settings = Object.assign({}, JSON.parse(JSON.stringify(default_settings)));
-		let result               = {
-			used_default : false
+		const tmp_default_settings = { ...JSON.parse(JSON.stringify(default_settings)) };
+		const result               = {
+			used_default : false,
 		};
 
 		try {
 			json = JSON.parse(data);
-		} catch (e) {}
+		} catch {}
 
 		if (!json) {
 			json = tmp_default_settings;
 
 			result.used_default = true;
 		} else {
-			json = mergeWith(tmp_default_settings, json, function(obj_val, src_val) {
+			json = mergeWith(tmp_default_settings, json, (obj_val, src_val) => {
 				if (Array.isArray(obj_val)) {
 					return (src_val) ? src_val : obj_val;
 				}
@@ -310,7 +310,7 @@ class Settings {
 
 	importSettings(settings_key) {
 		return new Promise((resolve, reject) => {
-			let data = StringHelper.fromBinary(atob(settings_key));
+			const data = StringHelper.fromBinary(atob(settings_key));
 
 			this.mergeSettings(data);
 			this.saveSettings(true)
@@ -318,12 +318,12 @@ class Settings {
 					store.dispatch(
 						updateState({
 							key   : "settings",
-							value : this.settings
-						})
+							value : this.settings,
+						}),
 					);
 					resolve();
 				})
-				.catch((e) => {
+				.catch(e => {
 					console.error(JSON.stringify(e));
 					reject(e);
 				});
@@ -351,30 +351,30 @@ class Settings {
 	}
 
 	saveToOverlayPlugin() {
-		let service = store.getState().plugin_service;
+		const service = store.getState().plugin_service;
 
 		if (!service.plugin_service.isNgld() || service.is_websocket) {
 			return false;
 		}
 
-		let key     = this.getOverlayPluginKey();
-		let message = service.plugin_service.createMessage("saveData", key, this.getExportKey());
+		const key     = this.getOverlayPluginKey();
+		const message = service.plugin_service.createMessage("saveData", key, this.getExportKey());
 
 		service.callHandler(message);
 	}
 
 	restoreFromOverlayPlugin() {
 		return new Promise((resolve, reject) => {
-			let service = store.getState().plugin_service;
+			const service = store.getState().plugin_service;
 
 			if (!service.plugin_service.isNgld()) {
 				resolve();
 				return;
 			}
 
-			let key      = this.getOverlayPluginKey();
-			let message  = service.plugin_service.createMessage("loadData", key);
-			let callback = (data) => {
+			const key      = this.getOverlayPluginKey();
+			const message  = service.plugin_service.createMessage("loadData", key);
+			const callback = data => {
 				if (data === null || (typeof data === "object" && !data.data)) {
 					service.plugin_service.resetCallback();
 					resolve();
@@ -383,7 +383,7 @@ class Settings {
 
 				data = JSON.parse((typeof data === "object") ? data.data || "{}" : data);
 
-				if (data["$isNull"]) {
+				if (data.$isNull) {
 					service.plugin_service.resetCallback();
 					reject("OverlayPlugin settings are null.");
 					return;
@@ -407,7 +407,7 @@ class Settings {
 						service.plugin_service.resetCallback();
 						resolve();
 					})
-					.catch((e) => {
+					.catch(e => {
 						service.plugin_service.resetCallback();
 						reject(e);
 					});
@@ -431,7 +431,7 @@ class Settings {
 				.then(() => {
 					resolve();
 				})
-				.catch((e) => {
+				.catch(e => {
 					console.error(JSON.stringify(e));
 					reject(e);
 				});

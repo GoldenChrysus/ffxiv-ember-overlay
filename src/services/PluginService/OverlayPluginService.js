@@ -14,7 +14,7 @@ class OverlayPluginService extends PluginServiceAbstract {
 	}
 
 	isOverlayPlugin() {
-		return (!!window.OverlayPluginApi);
+		return (Boolean(window.OverlayPluginApi));
 	}
 
 	resetCallback() {

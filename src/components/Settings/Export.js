@@ -7,16 +7,16 @@ import LocalizationService from "../../services/LocalizationService";
 
 class Export extends React.Component {
 	render() {
-		return(
+		return (
 			<React.Fragment>
-				<Container fluid className="section-container">
+				<Container fluid className='section-container'>
 					<h2>{LocalizationService.getSettingsSubsectionText("export", 0)}</h2>
 					<p>{LocalizationService.getMisc("export_info")}</p>
 					<div>
 						<Form>
 							<Form.Field>
-								<Button size="mini" className="export" onClick={this.handleCopy.bind(this)}>{LocalizationService.getMisc("copy")}</Button>
-								<TextArea defaultValue={this.props.settings_data.getExportKey()} rows={20} readOnly="readonly"/>
+								<Button size='mini' className='export' onClick={this.handleCopy.bind(this)}>{LocalizationService.getMisc("copy")}</Button>
+								<TextArea defaultValue={this.props.settings_data.getExportKey()} rows={20} readOnly='readonly'/>
 							</Form.Field>
 						</Form>
 					</div>
@@ -25,9 +25,9 @@ class Export extends React.Component {
 		);
 	}
 
-	handleCopy(e, f, g) {
-		let $button = $(e.target);
-		let text    = $button.closest(".field").find("textarea")[0];
+	handleCopy(e) {
+		const $button = $(e.target);
+		const text    = $button.closest(".field").find("textarea")[0];
 
 		text.focus();
 		text.select();
@@ -35,10 +35,8 @@ class Export extends React.Component {
 	}
 }
 
-const mapStateToProps = (state) => {
-	return {
-		settings_data : state.settings_data
-	};
-};
+const mapStateToProps = state => ({
+	settings_data : state.settings_data,
+});
 
 export default connect(mapStateToProps)(Export);

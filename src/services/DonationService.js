@@ -1,7 +1,7 @@
 class DonationService {
 	buildLocalDonationLink(rel) {
 		let search     = window.location.search || "";
-		let search_add = (search.slice(0, 1) === "?") ? "&" : "?";
+		const search_add = (search.slice(0, 1) === "?") ? "&" : "?";
 
 		search += search_add + `default=${rel}`;
 
