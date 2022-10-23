@@ -13,7 +13,7 @@ class SpellGrid extends EmberComponent {
 		super(props);
 
 		this.mounted = false;
-		this.state = {
+		this.state   = {
 			active : false,
 		};
 	}
@@ -225,10 +225,10 @@ class SpellGrid extends EmberComponent {
 		});
 
 		for (const i in spells) {
-			const key      = spells[i];
-			const spell    = this.props.spells[key];
-			const type     = spell.subtype;
-			const party    = (spell.party) ? "party_" : "";
+			const key    = spells[i];
+			const spell  = this.props.spells[key];
+			const type   = spell.subtype;
+			const party  = (spell.party) ? "party_" : "";
 			let cooldown = spell.cooldown;
 
 			if (cooldown <= 9.9) {

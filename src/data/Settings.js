@@ -281,7 +281,7 @@ class Settings {
 	}
 
 	mergeSettings(data) {
-		let json                 = false;
+		let json                   = false;
 		const tmp_default_settings = { ...JSON.parse(JSON.stringify(default_settings)) };
 		const result               = {
 			used_default : false,

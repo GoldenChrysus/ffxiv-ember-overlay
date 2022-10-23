@@ -47,15 +47,15 @@ class HistoryChart extends React.Component {
 			},
 		];
 
-		const history        = this.props.history;
-		const player         = this.props.player;
-		const line_data      = {
+		const history     = this.props.history;
+		const player      = this.props.player;
+		const line_data   = {
 			labels   : [],
 			datasets : [],
 		};
-		const player_name    = player.name;
-		const base_time      = Number(Object.keys(history)[0]);
-		const max_values     = {};
+		const player_name = player.name;
+		const base_time   = Number(Object.keys(history)[0]);
+		const max_values  = {};
 
 		for (const i in metrics) {
 			max_values[i] = 0;
@@ -80,7 +80,7 @@ class HistoryChart extends React.Component {
 			}
 
 			const minutes = Math.floor(encounter_time / 60);
-			let seconds = encounter_time - (minutes * 60);
+			let seconds   = encounter_time - (minutes * 60);
 
 			if (seconds < 10) {
 				seconds = `0${seconds}`;
@@ -91,7 +91,7 @@ class HistoryChart extends React.Component {
 			const player = item[player_name];
 
 			for (const i in metrics) {
-				const key   = metrics[i].key;
+				const key = metrics[i].key;
 				let value = 0;
 
 				if (player) {

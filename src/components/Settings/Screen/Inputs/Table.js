@@ -14,6 +14,7 @@ class Table extends React.Component {
 			key_path : this.props.key_path,
 			value    : {},
 		};
+
 		this.delete_text = LocalizationService.getMisc("delete");
 	}
 

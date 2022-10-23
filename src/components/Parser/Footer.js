@@ -33,14 +33,14 @@ class Footer extends React.Component {
 					);
 
 				default:
-					const types   = {
+					const types = {
 						dps   : "",
 						heal  : "",
 						tank  : "",
 						raid  : "24",
 						aggro : "",
 					};
-					const links   = [];
+					const links = [];
 
 					if (self.props.overlayplugin_author !== "ngld" || self.props.horizontal) {
 						delete types.aggro;
@@ -76,14 +76,14 @@ class Footer extends React.Component {
 			}
 		};
 
-		let trigger    = null;
+		let trigger      = null;
 		const toggleMenu = e => {
 			if (trigger) {
 				trigger.handleContextClick(e);
 			}
 		};
 
-		const actions    = () => {
+		const actions = () => {
 			const actions = [
 				this.getDiscordButton(toggleMenu, trigger),
 				<ContextMenuTrigger id='encounter-history-menu' key='encounter-history-trigger' ref={c => trigger = c} attributes={{ className : "icon-container" }} holdToDisplay={-1}>

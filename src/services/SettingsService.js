@@ -8,9 +8,9 @@ class SettingsService {
 			value : false,
 		};
 
-		const state       = store.getState();
+		const state     = store.getState();
 		let querystring = String(window.location.search);
-		const joiner      = (querystring.indexOf("?") !== -1) ? "&" : "?";
+		const joiner    = (querystring.indexOf("?") !== -1) ? "&" : "?";
 
 		querystring = `${querystring}${joiner}mode=${state.internal.mode}`;
 

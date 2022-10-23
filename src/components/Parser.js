@@ -63,17 +63,17 @@ class Parser extends React.Component {
 	}
 
 	render() {
-		const is_spells          = (this.props.mode === "spells");
-		const collapsed          = ((!is_spells && this.props.collapsed && this.props.viewing === "tables") || this.state.collapsed_modes[this.props.mode]);
-		const collapse_down      = this.shouldCollapseDown(is_spells);
+		const is_spells        = (this.props.mode === "spells");
+		const collapsed        = ((!is_spells && this.props.collapsed && this.props.viewing === "tables") || this.state.collapsed_modes[this.props.mode]);
+		const collapse_down    = this.shouldCollapseDown(is_spells);
 		let root_inner_classes = [];
-		const opacity            = this.props.opacity / 100;
-		const zoom               = this.props.zoom / 100;
+		const opacity          = this.props.opacity / 100;
+		const zoom             = this.props.zoom / 100;
 		const font_size        = (14 * (this.props.text_scale / 100));
-		const context_zoom       = 1 / zoom;
-		const display            = (this.state.visible) ? "block" : "none";
-		const max_width          = (this.props.footer_dps) ? "325" : "0";
-		const setting_style      = `
+		const context_zoom     = 1 / zoom;
+		const display          = (this.state.visible) ? "block" : "none";
+		const max_width        = (this.props.footer_dps) ? "325" : "0";
+		const setting_style    = `
 			html {
 				font-size: ${font_size}px;
 			}

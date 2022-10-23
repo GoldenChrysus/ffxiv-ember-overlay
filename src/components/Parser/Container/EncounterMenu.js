@@ -6,7 +6,7 @@ import { loadHistoryEntry } from "../../../redux/actions/index";
 class EncounterMenu extends React.Component {
 	render() {
 		const options = [];
-		let i       = 0;
+		let i         = 0;
 
 		for (const encounter of this.props.history) {
 			if (!encounter.game.Encounter) {

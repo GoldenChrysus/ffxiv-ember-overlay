@@ -110,7 +110,7 @@ class TTSRulesTable extends Table {
 		const rule_data = options.select_value.split(".");
 
 		options.rule_type = rule_data[0];
-		options.rule_key = rule_data[1] || "";
+		options.rule_key  = rule_data[1] || "";
 
 		if (!options.select_value) {
 			return false;

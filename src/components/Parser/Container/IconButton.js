@@ -8,7 +8,7 @@ class IconButton extends React.Component {
 	}
 
 	render() {
-		const icon_attributes  = {
+		const icon_attributes = {
 			name       : this.props.icon,
 			alt        : this.props.title,
 			"data-tip" : this.props.title,

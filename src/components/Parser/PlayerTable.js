@@ -31,9 +31,9 @@ class PlayerTable extends React.Component {
 		const footer         = [];
 		const rows           = [];
 		const pet_rows       = [];
-		let count          = 0;
-		let rank           = 0;
-		let found          = false;
+		let count            = 0;
+		let rank             = 0;
+		let found            = false;
 		const table_type     = this.props.type;
 		const is_raid        = (table_type === "raid");
 		const player_blur    = (this.props.player_blur);
@@ -65,7 +65,7 @@ class PlayerTable extends React.Component {
 			}
 		}
 
-		let max_value          = 0;
+		let max_value            = 0;
 		const valid_player_names = PlayerProcessor.getValidPlayerNames();
 
 		for (const player of sorted_players) {
@@ -87,7 +87,7 @@ class PlayerTable extends React.Component {
 				pet_owner = matches[1];
 
 				player._is_pet = true;
-				player._name = pet_owner;
+				player._name   = pet_owner;
 			}
 
 			player._is_current = (valid_player_names.indexOf(player._name) !== -1);
@@ -209,7 +209,7 @@ class PlayerTable extends React.Component {
 			return ((footer_at_top && location === "top") || (!footer_at_top && location === "bottom")) ? footer_row : "";
 		};
 
-		const petRows      = () => (pet_rows.length)
+		const petRows = () => (pet_rows.length)
 			? <React.Fragment>
 				<br></br>
 				{pet_rows}
@@ -257,7 +257,7 @@ class PlayerTable extends React.Component {
 				return;
 			}
 
-			let height   = $row.outerHeight();
+			let height     = $row.outerHeight();
 			const position = $row.position();
 
 			if (is_grid) {

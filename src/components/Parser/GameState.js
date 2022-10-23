@@ -39,7 +39,7 @@ class GameState extends React.Component {
 			}
 		};
 
-		const encounter       = this.props.encounter;
+		const encounter     = this.props.encounter;
 		let encounter_state = [];
 
 		switch (this.props.mode) {

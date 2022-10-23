@@ -79,7 +79,7 @@ class Import extends React.Component {
 		const $buttons     = this.getButtons();
 		const value        = this.getInput(event, $button).val();
 		const initial_text = $button.text();
-		let promise      = null;
+		let promise        = null;
 
 		$buttons.attr("disabled", true);
 		$button.text("Importing...");

@@ -15,15 +15,15 @@ class Monster extends React.Component {
 		const stat_columns = this.props.columns;
 
 		for (let key of stat_columns) {
-			let processor = MonsterProcessor;
-			let object    = monster;
+			let processor   = MonsterProcessor;
+			let object      = monster;
 			const raw_key   = key;
 			const name_blur = (this.props.blur && key === "player_Name") ? "blur" : "";
 
 			if (key.substring(0, 7) === "player_") {
-				key = key.substring(7);
+				key       = key.substring(7);
 				processor = PlayerProcessor;
-				object = player;
+				object    = player;
 
 				object[key.toLowerCase()] = object[key];
 			}

@@ -35,7 +35,7 @@ class DiscordService {
 		for (let name in state.internal.game.Combatant) {
 			const dps = (Number(state.internal.game.Combatant[name].encdps)).toLocaleString(undefined, { minimumFractionDigits : 0, maximumFractionDigits : 0 });
 			const hps = (Number(state.internal.game.Combatant[name].enchps)).toLocaleString(undefined, { minimumFractionDigits : 0, maximumFractionDigits : 0 });
-			let job = (state.internal.game.Combatant[name].Job || "").toUpperCase();
+			let job   = (state.internal.game.Combatant[name].Job || "").toUpperCase();
 
 			if (job) {
 				job = `${job}: `;
@@ -60,14 +60,14 @@ class DiscordService {
 			});
 		}
 
-		let duration  = state.internal.game.Encounter.duration;
+		let duration    = state.internal.game.Encounter.duration;
 		const encounter = (state.internal.game.Encounter.title === "Encounter") ? state.internal.game.Encounter.CurrentZoneName : state.internal.game.Encounter.title;
 
 		if (duration[0] === "0" && duration[1] !== ":") {
 			duration = duration.substring(1);
 		}
 
-		data.embeds[0].title = data.embeds[0].title.replace("{{encounter}}", encounter);
+		data.embeds[0].title       = data.embeds[0].title.replace("{{encounter}}", encounter);
 		data.embeds[0].description = data.embeds[0].description.replace("{{duration}}", duration);
 
 		data.embeds[0].footer.text = data.embeds[0].footer.text.replace(

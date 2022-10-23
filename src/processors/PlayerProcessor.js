@@ -44,14 +44,14 @@ class PlayerProcessor {
 
 		if (key_function) {
 			state = state || store.getState();
-			lang = state.settings.interface.language;
+			lang  = state.settings.interface.language;
 		}
 
 		let value = (key_function) ? key_function(player, players, encounter, lang) : player[key];
 
 		if (key === "name") {
 			state = state || store.getState();
-			lang = state.settings.interface.language;
+			lang  = state.settings.interface.language;
 
 			if (state.settings.interface.display_job_names) {
 				const job = player.Job.toUpperCase();
@@ -87,7 +87,7 @@ class PlayerProcessor {
 
 	sortPlayers(players, encounter, sort_column, current_state) {
 		let sorted_players = [];
-		const self           = this;
+		const self         = this;
 
 		for (const key in players) {
 			sorted_players.push(players[key]);

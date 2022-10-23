@@ -14,7 +14,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "align-assignments"
     ],
     "rules": {
         "camelcase": "off",
@@ -31,14 +32,7 @@
                 }
             }
         ],
-        "no-multi-spaces": [
-            "error",
-            {
-                "exceptions": {
-                    "VariableDeclarator": true
-                }
-            }
-        ],
+        "no-multi-spaces": "off",
         "operator-linebreak": [
             "error",
             "after",
@@ -56,6 +50,12 @@
                 "anonymous": "never",
                 "named": "never",
                 "asyncArrow": "always"
+            }
+        ],
+        "align-assignments/align-assignments": [
+            "error",
+            {
+                "requiresOnly": false
             }
         ],
         "guard-for-in": "off",

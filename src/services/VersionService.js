@@ -30,8 +30,7 @@ class VersionService {
 	determineIfNewer() {
 		const system_version  = this.getSystemVersion();
 		const current_version = this.getCurrentUserVersion();
-
-		const settings_data = store.getState().settings_data;
+		const settings_data   = store.getState().settings_data;
 
 		if (!compareVersions.compare(system_version, current_version, ">")) {
 			return false;
@@ -62,7 +61,7 @@ class VersionService {
 			changelog = <p>{data}</p>;
 		} else {
 			for (const item_type in data) {
-				let count = 0;
+				let count   = 0;
 				const items = data[item_type].map(item => {
 					count++;
 

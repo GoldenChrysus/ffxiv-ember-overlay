@@ -83,14 +83,14 @@ function rootReducer(state, action) {
 			if (!Array.isArray(action.key)) {
 				state.settings_data.setSetting(action.key, action.payload, true);
 
-				full_key = `settings.${action.key}`;
-				new_state = createNewState(state, full_key, action);
+				full_key    = `settings.${action.key}`;
+				new_state   = createNewState(state, full_key, action);
 				set_setting = true;
 			} else {
 				for (const i in action.key) {
 					set_setting = true;
-					full_key = `settings.${action.key[i]}`;
-					new_state = createNewState(
+					full_key    = `settings.${action.key[i]}`;
+					new_state   = createNewState(
 						new_state || state,
 						full_key,
 						{
@@ -120,7 +120,7 @@ function rootReducer(state, action) {
 			for (const setting of action.data) {
 				new_state.settings_data.setSetting(setting.key, setting.payload, true);
 
-				full_key = `settings.${setting.key}`;
+				full_key  = `settings.${setting.key}`;
 				new_state = createNewState(new_state || state, full_key, setting);
 			}
 
@@ -176,7 +176,7 @@ function rootReducer(state, action) {
 			new_state.internal.encounter_history[0].game = action.payload;
 
 			if ((new_history && !new_state.internal.viewing_history) || !new_state.internal.viewing_history) {
-				new_state.internal.game = new_state.internal.encounter_history[0].game;
+				new_state.internal.game         = new_state.internal.encounter_history[0].game;
 				new_state.internal.data_history = new_state.internal.encounter_history[0].data_history;
 			}
 
@@ -196,10 +196,11 @@ function rootReducer(state, action) {
 
 					tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language, state, true);
 
-					new_state = createNewState(state, "internal.game", tmp_action);
+					new_state  = createNewState(state, "internal.game", tmp_action);
 					tmp_action = {
 						payload : GameDataProcessor.normalizeAggroList(SampleAggroData),
 					};
+
 					new_state = createNewState(new_state, "internal.aggro", tmp_action);
 
 					break;
@@ -356,6 +357,7 @@ function rootReducer(state, action) {
 							},
 						},
 					};
+
 					new_state = createNewState(state, "internal.spells.in_use", tmp_action);
 
 					break;
@@ -406,7 +408,7 @@ function rootReducer(state, action) {
 			}
 
 			action.payload = GameDataProcessor.normalizeAggroList(action.payload);
-			new_state = clone(state);
+			new_state      = clone(state);
 
 			new_state.internal.encounter_history[0].aggro = action.payload;
 
@@ -458,7 +460,7 @@ function rootReducer(state, action) {
 					} else if (state_data !== false) {
 						new_state = clone(state);
 
-						new_state.internal.spells.in_use = state_data.in_use;
+						new_state.internal.spells.in_use    = state_data.in_use;
 						new_state.internal.spells.defaulted = state_data.defaulted;
 					}
 
@@ -646,7 +648,7 @@ function updateSpells(state, reset) {
 		SpellService.resetAllSpells();
 
 		state.internal.spells.defaulted = {};
-		state.internal.spells.in_use = {};
+		state.internal.spells.in_use    = {};
 	}
 
 	SpellService.updateValidNames(state);
