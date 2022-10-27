@@ -123,18 +123,18 @@ class GameDataProcessor {
 		const encounter = JSON.parse(JSON.stringify(data.Encounter));
 
 		new_data.Encounter = {
-			encdps : PlayerProcessor.getDataValue("encdps", encounter, undefined, undefined, true),
-			enchps : PlayerProcessor.getDataValue("enchps", encounter, undefined, undefined, true),
-			enctps : PlayerProcessor.getDataValue("enctps", encounter, undefined, encounter, true),
+			encdps : PlayerProcessor.getDataValue("encdps", encounter, undefined, undefined, true, state),
+			enchps : PlayerProcessor.getDataValue("enchps", encounter, undefined, undefined, true, state),
+			enctps : PlayerProcessor.getDataValue("enctps", encounter, undefined, encounter, true, state),
 		};
 
 		for (const player_name in data.Combatant) {
 			const player = JSON.parse(JSON.stringify(data.Combatant[player_name]));
 
 			new_data[player_name] = {
-				encdps : PlayerProcessor.getDataValue("encdps", player, undefined, undefined, true),
-				enchps : PlayerProcessor.getDataValue("enchps", player, undefined, undefined, true),
-				enctps : PlayerProcessor.getDataValue("enctps", player, undefined, encounter, true),
+				encdps : PlayerProcessor.getDataValue("encdps", player, undefined, undefined, true, state),
+				enchps : PlayerProcessor.getDataValue("enchps", player, undefined, undefined, true, state),
+				enctps : PlayerProcessor.getDataValue("enctps", player, undefined, encounter, true, state),
 			};
 		}
 
