@@ -65,8 +65,8 @@ class Section extends React.Component {
 			let setting;
 
 			const label_text = LocalizationService.getSettingText(setting_data.locale || setting_data.key_path) || "";
-			let label      = (label_text) ? <label>{label_text}</label> : "";
-			let value      = this.getSettingValue(setting_data);
+			let label        = (label_text) ? <label>{label_text}</label> : "";
+			let value        = this.getSettingValue(setting_data);
 
 			switch (setting_data.type) {
 				case "select":
@@ -118,7 +118,7 @@ class Section extends React.Component {
 
 				case "checkbox":
 					setting = <Checkbox toggle label={label} defaultChecked={value} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
-					label = "";
+					label   = "";
 
 					break;
 
@@ -136,7 +136,7 @@ class Section extends React.Component {
 				case "MetricNameTable":
 					const metric_options = setting_data.options().sort((a, b) => (a.text > b.text) ? 1 : -1);
 
-					label = "";
+					label   = "";
 					setting = <MetricNameTable value={value} options={metric_options} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 
 					break;
@@ -149,7 +149,7 @@ class Section extends React.Component {
 					break;
 
 				case "SpellsUITable":
-					label = "";
+					label   = "";
 					setting = <SpellsUITable value={value} options={setting_data.options()} key_path={setting_data.key_path} onChange={this.props.changeCallback}/>;
 
 					break;
@@ -178,9 +178,9 @@ class Section extends React.Component {
 	}
 
 	handleChange(e, drag) {
-		e.target.key_path = e.target.id || e.target.getAttribute("key_path");
+		e.target.key_path  = e.target.id || e.target.getAttribute("key_path");
 		e.target.selection = true;
-		e.target.drag = drag;
+		e.target.drag      = drag;
 
 		this.props.changeCallback(e.target, e.target);
 	}

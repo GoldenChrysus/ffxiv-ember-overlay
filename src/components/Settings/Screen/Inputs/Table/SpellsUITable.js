@@ -14,8 +14,8 @@ class SpellsUITable extends Table {
 	constructor(props) {
 		super(props);
 
-		this.type_sort_data = {};
-		this.bound_sortable = [];
+		this.type_sort_data         = {};
+		this.bound_sortable         = [];
 		this.spells_per_row_options = [{
 			key   : -1,
 			value : -1,
@@ -104,11 +104,11 @@ class SpellsUITable extends Table {
 	}
 
 	createRow(options) {
-		const key      = options.key || "_insert";
-		const button   = (options.insert)
+		const key    = options.key || "_insert";
+		const button = (options.insert)
 			? <Button onClick={this.handleAdd.bind(this)}>{LocalizationService.getMisc("add")}</Button>
 			: <Button onClick={this.handleDelete.bind(this)}>{this.delete_text}</Button>;
-		const row      = (
+		const row    = (
 			<tr id={"spells-ui-row-" + key} key={"spells-ui-key-" + key} data-key={key}>
 				<td>
 					<Select className='ui-table' data-uuid={key} multiple search options={this.props.options} defaultValue={options.types} onChange={this.handleSelectChange.bind(this, "types")}/>
@@ -172,8 +172,8 @@ class SpellsUITable extends Table {
 	}
 
 	handleSelectChange(field, e, select, custom_value) {
-		const value    = custom_value || select.value;
-		const key      = this.getDeleteKey(e);
+		const value  = custom_value || select.value;
+		const key    = this.getDeleteKey(e);
 		let max_sort = 0;
 
 		if (field === "types") {

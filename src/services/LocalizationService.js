@@ -237,7 +237,7 @@ class LocalizationService {
 		const language = this.getLanguage();
 		const options  = [];
 		const used     = {};
-		let key      = type + "s";
+		let key        = type + "s";
 
 		if (party) {
 			key = `party_${key}`;
@@ -398,7 +398,7 @@ class LocalizationService {
 
 	getSpellUIBuilderInfo() {
 		const language = this.getLanguage();
-		let info     = this.getMisc("spells_ui_builder_info", language);
+		let info       = this.getMisc("spells_ui_builder_info", language);
 
 		for (const match of info.match(/\{\{[\w.]+}}/g)) {
 			const key = match.replace(/\{|}/g, "");
@@ -436,9 +436,9 @@ class LocalizationService {
 	}
 
 	getZoneOptions() {
-		const language  = this.getLanguage();
-		const options   = [];
-		let processed = [];
+		const language = this.getLanguage();
+		const options  = [];
+		let processed  = [];
 
 		for (const id in ZoneData.Instances) {
 			const zone_id = ZoneData.Instances[id].zone_id;

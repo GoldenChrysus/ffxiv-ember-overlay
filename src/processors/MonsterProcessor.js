@@ -5,7 +5,7 @@ import GameDataProcessor from "./GameDataProcessor";
 class MonsterProcessor {
 	getDataValue(key, monster) {
 		const key_function = Constants.MonsterDataCustomDataValues[key];
-		let value        = (key_function) ? key_function(monster) : monster[key];
+		let value          = (key_function) ? key_function(monster) : monster[key];
 
 		if (!isNaN(value)) {
 			value = GameDataProcessor.convertToLocaleFormat(key, value);

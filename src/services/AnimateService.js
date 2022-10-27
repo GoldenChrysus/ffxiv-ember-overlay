@@ -3,9 +3,9 @@ class AnimateService {
 		const ctx           = canvas.getContext("2d");
 		const canvas_width  = canvas.width;
 		const canvas_height = canvas.height;
-		let percent       = 100;
-		let elapsed       = 0;
-		let start         = 0;
+		let percent         = 100;
+		let elapsed         = 0;
+		let start           = 0;
 
 		requestAnimationFrame(animate);
 

@@ -48,7 +48,7 @@ class TTSService {
 	}
 
 	updateCombatants(combatants, valid_player_names) {
-		this.state.combatants = combatants;
+		this.state.combatants         = combatants;
 		this.state.valid_player_names = valid_player_names;
 	}
 
@@ -63,14 +63,14 @@ class TTSService {
 
 		switch (Number(data[0])) {
 			case 37:
-				player_data.name = data[3];
+				player_data.name       = data[3];
 				player_data.hp_percent = (Number(data[5]) / Number(data[6])) * 100;
 				player_data.mp_percent = (Number(data[7]) / Number(data[8])) * 100;
 
 				break;
 
 			case 39:
-				player_data.name = data[3];
+				player_data.name       = data[3];
 				player_data.hp_percent = (Number(data[4]) / Number(data[5])) * 100;
 				player_data.mp_percent = (Number(data[6]) / Number(data[7])) * 100;
 
@@ -227,9 +227,9 @@ class TTSService {
 				this.queue.critical_hp[locale_data.you] = true;
 			}
 
-			const keys      = Object.keys(this.queue.critical_hp);
+			const keys    = Object.keys(this.queue.critical_hp);
 			let connector = (has_you || keys.length > 1) ? locale_data.plural : locale_data.singular;
-			const players   = (keys.length <= 2)
+			const players = (keys.length <= 2)
 				? keys.join(locale_data.joiner)
 				: locale_data.several;
 
@@ -257,9 +257,9 @@ class TTSService {
 				this.queue.critical_mp[locale_data.you] = true;
 			}
 
-			const keys      = Object.keys(this.queue.critical_mp);
+			const keys    = Object.keys(this.queue.critical_mp);
 			let connector = (has_you || keys.length > 1) ? locale_data.plural : locale_data.singular;
-			const players   = (keys.length <= 2)
+			const players = (keys.length <= 2)
 				? keys.join(locale_data.joiner)
 				: locale_data.several;
 

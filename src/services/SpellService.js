@@ -19,13 +19,13 @@ class SpellService {
 	}
 
 	setSettings(use_tts, party_use_tts, tts_trigger, warning_threshold, tts_on_effect, party_tts_on_effect, party_tts_on_skill) {
-		this.settings.use_tts = use_tts;
-		this.settings.party_use_tts = party_use_tts;
-		this.settings.tts_trigger = tts_trigger;
-		this.settings.warning_threshold = warning_threshold;
-		this.settings.tts_on_effect = tts_on_effect;
+		this.settings.use_tts             = use_tts;
+		this.settings.party_use_tts       = party_use_tts;
+		this.settings.tts_trigger         = tts_trigger;
+		this.settings.warning_threshold   = warning_threshold;
+		this.settings.tts_on_effect       = tts_on_effect;
 		this.settings.party_tts_on_effect = party_tts_on_effect;
-		this.settings.party_tts_on_skill = party_tts_on_skill;
+		this.settings.party_tts_on_skill  = party_tts_on_skill;
 	}
 
 	getSkillRecast(id, level) {
@@ -60,17 +60,17 @@ class SpellService {
 		const current_level = store.getState().internal.character_level;
 
 		for (const i in used) {
-			const date        = used[i].time;
-			const new_date    = new Date(date);
+			const date      = used[i].time;
+			const new_date  = new Date(date);
 			let recast      = 0;
 			let max_charges = 0;
-			const type        = used[i].type;
-			const defaulted   = (new_date.getFullYear() === 1970);
+			const type      = used[i].type;
+			const defaulted = (new_date.getFullYear() === 1970);
 
 			if (!defaulted) {
 				switch (type) {
 					case "skill":
-						recast = this.getSkillRecast(used[i].id, (used[i].party) ? 0 : current_level);
+						recast      = this.getSkillRecast(used[i].id, (used[i].party) ? 0 : current_level);
 						max_charges = this.getSkillCharges(used[i].id, (used[i].party) ? 0 : current_level);
 
 						break;
@@ -127,7 +127,7 @@ class SpellService {
 			}
 
 			this.spells[i].remaining = 0;
-			this.spells[i].cooldown = 0;
+			this.spells[i].cooldown  = 0;
 
 			this.processTTS(i);
 		}
@@ -137,7 +137,7 @@ class SpellService {
 				continue;
 			}
 
-			this.spells[i].defaulted = changed_default[i].defaulted;
+			this.spells[i].defaulted     = changed_default[i].defaulted;
 			this.spells[i].type_position = changed_default[i].position;
 		}
 	}
@@ -160,7 +160,7 @@ class SpellService {
 
 	updateCooldowns() {
 		const now       = new Date();
-		let changed   = false;
+		let changed     = false;
 		const threshold = (this.settings.tts_trigger === "zero") ? 0 : this.settings.warning_threshold;
 
 		for (const i in this.spells) {
@@ -171,7 +171,7 @@ class SpellService {
 			changed = true;
 
 			this.spells[i].remaining = (this.spells[i].time - now) / 1000;
-			this.spells[i].cooldown = Math.max(0, this.spells[i].remaining);
+			this.spells[i].cooldown  = Math.max(0, this.spells[i].remaining);
 
 			const tts_key = (this.spells[i].party) ? "party_use_tts" : "use_tts";
 
@@ -185,9 +185,9 @@ class SpellService {
 				}
 
 				if (this.spells[i].charges < this.spells[i].max_charges) {
-					this.spells[i].time = now;
-					this.spells[i].remaining = this.spells[i].recast;
-					this.spells[i].cooldown = this.spells[i].remaining;
+					this.spells[i].time       = now;
+					this.spells[i].remaining  = this.spells[i].recast;
+					this.spells[i].cooldown   = this.spells[i].remaining;
 					this.spells[i].recharging = true;
 
 					const tmp_used = {};
@@ -307,7 +307,7 @@ class SpellService {
 		}
 
 		const role = job.role;
-		let data = [];
+		let data   = [];
 
 		switch (type) {
 			case "spell":
@@ -401,8 +401,8 @@ class SpellService {
 					continue;
 				}
 
-				const main_type   = (["dot", "debuff"].indexOf(type) !== -1) ? "effect" : type;
-				const key         = (main_type === "effect") ? `${main_type}-${english_name}` : `${main_type}-${id}`;
+				const main_type = (["dot", "debuff"].indexOf(type) !== -1) ? "effect" : type;
+				const key       = (main_type === "effect") ? `${main_type}-${english_name}` : `${main_type}-${id}`;
 				let max_charges = 0;
 
 				if (main_type === "skill") {
@@ -414,6 +414,7 @@ class SpellService {
 					key,
 					position : type_position,
 				};
+
 				state.internal.spells.in_use[key] = {
 					type          : main_type,
 					subtype       : type,

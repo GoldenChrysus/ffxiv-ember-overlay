@@ -10,7 +10,7 @@ class Spell extends EmberComponent {
 		super(props);
 
 		this.animate_ref = React.createRef();
-		this.rendered = false;
+		this.rendered    = false;
 	}
 
 	componentDidUpdate(prev_props) {
@@ -44,23 +44,23 @@ class Spell extends EmberComponent {
 	}
 
 	render() {
-		const id           = this.props.spell.id;
-		const main_type    = this.props.spell.type;
-		const type         = this.props.spell.subtype;
-		const name         = this.getName(main_type);
-		const is_zero      = (Number(this.props.cooldown) === 0);
-		const animate      = (!is_zero && this.props.indicator === "ticking") ? "animate" : false;
-		const classes      = [
+		const id         = this.props.spell.id;
+		const main_type  = this.props.spell.type;
+		const type       = this.props.spell.subtype;
+		const name       = this.getName(main_type);
+		const is_zero    = (Number(this.props.cooldown) === 0);
+		const animate    = (!is_zero && this.props.indicator === "ticking") ? "animate" : false;
+		const classes    = [
 			"spell-container",
 			this.props.base_key,
 			type,
 			this.props.indicator,
 		];
-		const breaker      = (this.props.layout === "icon" && Number(this.props.order) % Number(this.props.spells_per_row) === 0)
+		const breaker    = (this.props.layout === "icon" && Number(this.props.order) % Number(this.props.spells_per_row) === 0)
 			? <span key={"spell-breaker-" + this.props.base_key} className='breaker' style={{ order : this.props.order }}></span>
 			: "";
-		const border       = "";
-		const style        = (!is_zero)
+		const border     = "";
+		const style      = (!is_zero)
 			? `
 				.spell-grid[data-key="${this.props.grid_uuid}"] .spell-container.${this.props.base_key}:not(.icon) .row.animate {
 					animation: horizontal ${this.props.spell.recast}s linear !important;

@@ -8,7 +8,7 @@ class OverlayInfo extends React.Component {
 		// Hibiya OverlayPlugin: 45.0.2454.85
 		// ACTWS: 53.0.2785.148
 		// ngld OverlayPlugin: 78
-		const browser_data    = navigator.userAgent.match(/Chrome\/[\d.]+/g);
+		const browser_data  = navigator.userAgent.match(/Chrome\/[\d.]+/g);
 		let browser_version = "hibiya";
 
 		if (browser_data) {

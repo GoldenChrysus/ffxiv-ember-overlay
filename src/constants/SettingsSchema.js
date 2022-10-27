@@ -52,7 +52,7 @@ const language_options = [
 		text  : "Українська (Ukrainian)",
 	},
 ];
-const theme_options = [
+const theme_options    = [
 	{
 		key   : "ffxiv-dark",
 		value : "ffxiv-dark",

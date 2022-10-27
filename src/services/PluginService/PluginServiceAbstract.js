@@ -6,7 +6,7 @@ class PluginServiceAbstract {
 			Object.assign(this, settings);
 		}
 
-		this.subscribed = false;
+		this.subscribed   = false;
 		this.is_connected = true;
 	}
 
@@ -53,7 +53,7 @@ class PluginServiceAbstract {
 		if (key) {
 			call[key] = data;
 
-			call.key = key;
+			call.key  = key;
 			call.data = data;
 		}
 

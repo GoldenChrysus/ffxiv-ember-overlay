@@ -26,13 +26,13 @@ class Container extends EmberComponent {
 	constructor(props) {
 		super(props);
 
-		this.timer = null;
+		this.timer           = null;
 		this.no_footer_modes = [
 			"spells",
 		];
 
 		this.mounted = false;
-		this.state = {
+		this.state   = {
 			locked          : true,
 			spells_sections : this.props.spells_sections,
 			spells          : (new Date()).getTime(),
@@ -41,7 +41,7 @@ class Container extends EmberComponent {
 
 	componentDidUpdate(prev_props) {
 		let need_state = false;
-		const state      = {};
+		const state    = {};
 
 		if (this.processSpellSectionProps(state)) {
 			need_state = true;
@@ -358,13 +358,12 @@ class Container extends EmberComponent {
 	onResize(uuid, e, side, elem, delta, position) {
 		const state = clone(this.state);
 
-		state.spells_sections[uuid].layout.width += delta.width;
+		state.spells_sections[uuid].layout.width  += delta.width;
 		state.spells_sections[uuid].layout.height += delta.height;
-
-		state.spells_sections[uuid].layout.width = Math.round(state.spells_sections[uuid].layout.width / 10) * 10;
-		state.spells_sections[uuid].layout.height = Math.round(state.spells_sections[uuid].layout.height / 10) * 10;
-		state.spells_sections[uuid].layout.x = Math.round(position.x / 10) * 10;
-		state.spells_sections[uuid].layout.y = Math.round(position.y / 10) * 10;
+		state.spells_sections[uuid].layout.width   = Math.round(state.spells_sections[uuid].layout.width / 10) * 10;
+		state.spells_sections[uuid].layout.height  = Math.round(state.spells_sections[uuid].layout.height / 10) * 10;
+		state.spells_sections[uuid].layout.x       = Math.round(position.x / 10) * 10;
+		state.spells_sections[uuid].layout.y       = Math.round(position.y / 10) * 10;
 
 		this.setState(state);
 	}
@@ -453,9 +452,9 @@ class Container extends EmberComponent {
 					state.spells_sections[uuid].layout.width !== this.state.spells_sections[uuid].layout.width ||
 					state.spells_sections[uuid].layout.height !== this.state.spells_sections[uuid].layout.height
 				) {
-					state.spells_sections[uuid].layout.x = this.state.spells_sections[uuid].layout.x;
-					state.spells_sections[uuid].layout.y = this.state.spells_sections[uuid].layout.y;
-					state.spells_sections[uuid].layout.width = this.state.spells_sections[uuid].layout.width;
+					state.spells_sections[uuid].layout.x      = this.state.spells_sections[uuid].layout.x;
+					state.spells_sections[uuid].layout.y      = this.state.spells_sections[uuid].layout.y;
+					state.spells_sections[uuid].layout.width  = this.state.spells_sections[uuid].layout.width;
 					state.spells_sections[uuid].layout.height = this.state.spells_sections[uuid].layout.height;
 
 					need_save = !this.props.ui_builder;

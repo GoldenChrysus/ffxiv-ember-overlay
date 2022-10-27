@@ -10,16 +10,16 @@ const BASE_RECONNECT_DELAY = 300;
 class SocketService {
 	constructor(uri) {
 		this.reconnect_delay = BASE_RECONNECT_DELAY;
-		this.try_for_ngld = (String(window.location.search).indexOf("fake") === -1);
-		this.uri = uri || this.processUri();
-		this.plugin_service = new OverlayPluginService();
-		this.is_connected = false;
-		this.is_ngld = false;
+		this.try_for_ngld    = (String(window.location.search).indexOf("fake") === -1);
+		this.uri             = uri || this.processUri();
+		this.plugin_service  = new OverlayPluginService();
+		this.is_connected    = false;
+		this.is_ngld         = false;
 	}
 
 	processUri() {
 		const params = new querystring.parse(String(window.location.search).substring(1));
-		let uri    = params.HOST_PORT || params.OVERLAY_WS;
+		let uri      = params.HOST_PORT || params.OVERLAY_WS;
 
 		if (!uri) {
 			return false;
@@ -64,7 +64,7 @@ class SocketService {
 	reconnect() {
 		if (this.try_for_ngld) {
 			this.try_for_ngld = false;
-			this.uri = this.processUri();
+			this.uri          = this.processUri();
 		}
 
 		this.reconnect_delay = Math.min(this.reconnect_delay * 2, 3000);
@@ -84,8 +84,8 @@ class SocketService {
 			}));
 		}
 
-		this.is_connected = true;
-		this.try_for_ngld = false;
+		this.is_connected    = true;
+		this.try_for_ngld    = false;
 		this.reconnect_delay = BASE_RECONNECT_DELAY;
 
 		this.setId();
