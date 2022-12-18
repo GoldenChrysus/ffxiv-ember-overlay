@@ -2,13 +2,13 @@
 
 ## 1.3.0
 
-**[in staging]**
+**Released: 2022-12-18**
 
 ### Bug Fixes
 - N/A
 
 ### Features
-- ! - Added "Job" as a selectable column/metric at Settings > Player Table and Settings > Player Detail
+- Added "Job" as a selectable column/metric at Settings > Player Table and Settings > Player Detail
 
 ### UI Changes
 - N/A
@@ -21,7 +21,7 @@
 
 ## 1.2.1
 
-**2022-09-04**
+**Released: 2022-09-04**
 
 ### Bug Fixes
 - Resolved issue with some oGCD actions causing other actions to start their cooldown timers (via action indirections)
@@ -40,7 +40,7 @@
 
 ## 1.2.0
 
-**2022-08-26**
+**Released: 2022-08-26**
 
 ### Bug Fixes
 - N/A
