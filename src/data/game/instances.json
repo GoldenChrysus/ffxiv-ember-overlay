@@ -330,7 +330,7 @@
 		}
 	},
 	"31" : {
-		"zone_id" : 416,
+		"zone_id" : 1109,
 		"locales" : {
 			"name" : {
 				"en" : "the Great Gubal Library",
@@ -407,7 +407,7 @@
 		}
 	},
 	"38" : {
-		"zone_id" : 438,
+		"zone_id" : 1110,
 		"locales" : {
 			"name" : {
 				"en" : "the Aetherochemical Research Facility",
@@ -1397,7 +1397,7 @@
 		}
 	},
 	"43" : {
-		"zone_id" : 516,
+		"zone_id" : 1111,
 		"locales" : {
 			"name" : {
 				"en" : "the Antitower",
@@ -1672,7 +1672,7 @@
 		}
 	},
 	"44" : {
-		"zone_id" : 555,
+		"zone_id" : 1112,
 		"locales" : {
 			"name" : {
 				"en" : "Sohr Khai",
@@ -1793,7 +1793,7 @@
 		}
 	},
 	"46" : {
-		"zone_id" : 572,
+		"zone_id" : 1113,
 		"locales" : {
 			"name" : {
 				"en" : "Xelphatol",
@@ -2101,7 +2101,7 @@
 		}
 	},
 	"48" : {
-		"zone_id" : 615,
+		"zone_id" : 1114,
 		"locales" : {
 			"name" : {
 				"en" : "Baelsar's Wall",
@@ -2203,7 +2203,7 @@
 		"zone_id" : 626,
 		"locales" : {
 			"name" : {
-				"en" : "The Sirensong Sea",
+				"en" : "the Sirensong Sea",
 				"de" : "Sirenen-See",
 				"fr" : "la Mer du Chant des sirènes",
 				"jp" : "漂流海域 セイレーン海"
@@ -5312,6 +5312,17 @@
 			}
 		}
 	},
+	"36001" : {
+		"zone_id" : 1069,
+		"locales" : {
+			"name" : {
+				"en" : "The Sil'dihn Subterrane",
+				"de" : "Die Unterstadt von Sil'dih",
+				"fr" : "Les canalisations sildiennes - Donjon à embranchements",
+				"jp" : "ヴァリアントダンジョン シラディハ水道"
+			}
+		}
+	},
 	"88" : {
 		"zone_id" : 1070,
 		"locales" : {
@@ -5378,17 +5389,6 @@
 			}
 		}
 	},
-	"64005" : {
-		"zone_id" : 1090,
-		"locales" : {
-			"name" : {
-				"en" : "Containment Bay S1T7 (Unreal)",
-				"de" : "Traumprüfung - Sephirot",
-				"fr" : "Unité de contention S1P7 (irréel)",
-				"jp" : "幻魔神セフィロト討滅戦"
-			}
-		}
-	},
 	"30118" : {
 		"zone_id" : 1085,
 		"locales" : {
@@ -5408,6 +5408,28 @@
 				"de" : "Abyssos - Siebter Kreis (episch)",
 				"fr" : "Le Purgatoire du Pandæmonium - Racines (sadique)",
 				"jp" : "万魔殿パンデモニウム零式：煉獄編3"
+			}
+		}
+	},
+	"37001" : {
+		"zone_id" : 1075,
+		"locales" : {
+			"name" : {
+				"en" : "Another Sil'dihn Subterrane",
+				"de" : "Die kuriose Unterstadt von Sil'dih",
+				"fr" : "Les canalisations sildiennes annexes - Donjon alternatif",
+				"jp" : "アナザーダンジョン 異聞シラディハ水道"
+			}
+		}
+	},
+	"37002" : {
+		"zone_id" : 1076,
+		"locales" : {
+			"name" : {
+				"en" : "Another Sil'dihn Subterrane (Savage)",
+				"de" : "Die kuriose Unterstadt von Sil'dih (episch)",
+				"fr" : "Les canalisations sildiennes annexes - Donjon alternatif (sadique)",
+				"jp" : "アナザーダンジョン 異聞シラディハ水道 零式"
 			}
 		}
 	},
@@ -5463,6 +5485,116 @@
 				"de" : "Der Schicksalsweg",
 				"fr" : "Le Siège de la sainte Cité d'Ishgard",
 				"jp" : "皇都イシュガルド防衛戦"
+			}
+		}
+	},
+	"20086" : {
+		"zone_id" : 1095,
+		"locales" : {
+			"name" : {
+				"en" : "Mount Ordeals",
+				"de" : "Prophetie - Rubicante",
+				"fr" : "Le Mont du Supplice",
+				"jp" : "ルビカンテ討滅戦"
+			}
+		}
+	},
+	"89" : {
+		"zone_id" : 1097,
+		"locales" : {
+			"name" : {
+				"en" : "Lapis Manalis",
+				"de" : "Lapis Manalis",
+				"fr" : "Lapis Manalis",
+				"jp" : "雪山冥洞 ラピス・マナリス"
+			}
+		}
+	},
+	"55011" : {
+		"zone_id" : 1123,
+		"locales" : {
+			"name" : {
+				"en" : "The Shifting Gymnasion Agonon",
+				"de" : "Gymnasion Agonon",
+				"fr" : "Elpis Gymnasion",
+				"jp" : "宝物庫 エルピス・ギュムナシオン祭殿"
+			}
+		}
+	},
+	"5065" : {
+		"zone_id" : 1120,
+		"locales" : {
+			"name" : {
+				"en" : "An Unforeseen Bargain",
+				"de" : "Der Wert einer Buuds",
+				"fr" : "Pour une bouchée de pain",
+				"jp" : "パンひとつと引き換えに"
+			}
+		}
+	},
+	"30125" : {
+		"zone_id" : 1118,
+		"locales" : {
+			"name" : {
+				"en" : "Euphrosyne",
+				"de" : "Euphrosyne",
+				"fr" : "Domaine divin - Euphrosyne",
+				"jp" : "喜びの神域 エウプロシュネ"
+			}
+		}
+	},
+	"40036" : {
+		"zone_id" : 1116,
+		"locales" : {
+			"name" : {
+				"en" : "The Clockwork Castletown",
+				"de" : "Die Mechanische Menagerie",
+				"fr" : "Le Traquenard oriental",
+				"jp" : "東方絡繰御殿"
+			}
+		}
+	},
+	"40037" : {
+		"zone_id" : 1116,
+		"locales" : {
+			"name" : {
+				"en" : "The Clockwork Castletown",
+				"de" : "Die Mechanische Menagerie",
+				"fr" : "Le Traquenard oriental",
+				"jp" : "東方絡繰御殿"
+			}
+		}
+	},
+	"40038" : {
+		"zone_id" : 1117,
+		"locales" : {
+			"name" : {
+				"en" : "Crystalline Conflict (Custom Match - The Clockwork Castletown)",
+				"de" : "Crystalline Conflict: Die Mechanische Menagerie (Schaukampf)",
+				"fr" : "Crystalline Conflict (partie personnalisée - Le Traquenard oriental)",
+				"jp" : "クリスタルコンフリクト(東方絡繰御殿：カスタムマッチ)"
+			}
+		}
+	},
+	"20087" : {
+		"zone_id" : 1096,
+		"locales" : {
+			"name" : {
+				"en" : "Mount Ordeals (Extreme)",
+				"de" : "Eschatos - Rubicante",
+				"fr" : "Le Mont du Supplice (extrême)",
+				"jp" : "極ルビカンテ討滅戦"
+			}
+		}
+	},
+	"64006" : {
+		"zone_id" : 1121,
+		"locales" : {
+			"name" : {
+				"en" : "Containment Bay P1T6 (Unreal)",
+				"de" : "Traumprüfung - Sophia",
+				"fr" : "Unité de contention P1P6 (irréel)",
+				"jp" : "幻女神ソフィア討滅戦"
 			}
 		}
 	}
