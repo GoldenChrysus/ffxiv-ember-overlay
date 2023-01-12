@@ -58,7 +58,7 @@ const calculateTankPerSecond = function(player, players, encounter) {
 	return (Number(player.damagetaken) / duration).toFixed(2);
 };
 
-const formatMaxHit = function(player, players, encounter, only_number) {
+const formatMaxHit = function(player, players, encounter, lang, only_number) {
 	if (!player.maxhit) {
 		return "N/A";
 	}
@@ -80,7 +80,7 @@ const formatMaxHit = function(player, players, encounter, only_number) {
 };
 
 const formatNumericMaxHit = function(player) {
-	return formatMaxHit(player, undefined, undefined, true);
+	return formatMaxHit(player, undefined, undefined, undefined, true);
 };
 
 const formatMaxHeal = function(player) {

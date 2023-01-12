@@ -69,6 +69,24 @@
 			}
 		}
 	},
+	"22" : {
+		"recast" : 90.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Bulwark",
+				"de" : "Bollwerk",
+				"fr" : "Forteresse",
+				"jp" : "ブルワーク"
+			}
+		}
+	},
 	"23" : {
 		"recast" : 30.0,
 		"charges" : 0,
@@ -274,7 +292,7 @@
 		}
 	},
 	"83" : {
-		"recast" : 45.0,
+		"recast" : 40.0,
 		"charges" : 1,
 		"level_recasts" : null,
 		"level_charges" : [
@@ -1105,6 +1123,24 @@
 			}
 		}
 	},
+	"2887" : {
+		"recast" : 120.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Dismantle",
+				"de" : "Zerlegen",
+				"fr" : "Brise-arme",
+				"jp" : "ウェポンブレイク"
+			}
+		}
+	},
 	"2890" : {
 		"recast" : 30.0,
 		"charges" : 2,
@@ -1184,6 +1220,24 @@
 				"de" : "Niedrigstrom",
 				"fr" : "Basse tension",
 				"jp" : "低圧電流"
+			}
+		}
+	},
+	"3538" : {
+		"recast" : 60.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Goring Blade",
+				"de" : "Ausweiden",
+				"fr" : "Lame étripante",
+				"jp" : "ゴアブレード"
 			}
 		}
 	},
@@ -1404,7 +1458,7 @@
 		}
 	},
 	"3571" : {
-		"recast" : 45.0,
+		"recast" : 40.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -2049,8 +2103,8 @@
 		}
 	},
 	"7394" : {
-		"recast" : 30.0,
-		"charges" : 3,
+		"recast" : 120.0,
+		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
@@ -2180,7 +2234,7 @@
 		}
 	},
 	"7408" : {
-		"recast" : 90.0,
+		"recast" : 120.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -7475,7 +7529,7 @@
 		}
 	},
 	"24289" : {
-		"recast" : 45.0,
+		"recast" : 40.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -7660,7 +7714,7 @@
 		}
 	},
 	"24307" : {
-		"recast" : 45.0,
+		"recast" : 40.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -7732,7 +7786,7 @@
 		}
 	},
 	"24313" : {
-		"recast" : 45.0,
+		"recast" : 40.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10302,7 +10356,7 @@
 		}
 	},
 	"29482" : {
-		"recast" : 30.0,
+		"recast" : 25.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10541,7 +10595,7 @@
 		}
 	},
 	"29513" : {
-		"recast" : 15.0,
+		"recast" : 20.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : [
@@ -11298,6 +11352,111 @@
 			}
 		}
 	},
+	"29730" : {
+		"recast" : 15.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"Any",
+			"Disciple",
+			"of",
+			"War",
+			"or",
+			"Magic",
+			"(excluding",
+			"limited",
+			"jobs)"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Variant Ultimatum",
+				"de" : "Unstetes Ultimatum",
+				"fr" : "Ultimatum embranché",
+				"jp" : "ヴァリアント・アルティメイタム"
+			}
+		}
+	},
+	"29731" : {
+		"recast" : 30.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"GLA",
+			"MRD",
+			"PGL",
+			"LNC",
+			"ARC",
+			"ROG",
+			"THM",
+			"ACN",
+			"PLD",
+			"MNK",
+			"WAR",
+			"DRG",
+			"BRD",
+			"BLM",
+			"SMN",
+			"NIN",
+			"MCH",
+			"DRK",
+			"SAM",
+			"RDM",
+			"GNB",
+			"DNC",
+			"RPR"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Variant Raise",
+				"de" : "Unstetes Wiederbeleben",
+				"fr" : "Vie embranchée",
+				"jp" : "ヴァリアント・レイズ"
+			}
+		}
+	},
+	"29733" : {
+		"recast" : 15.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"PGL",
+			"LNC",
+			"ARC",
+			"ROG",
+			"CNJ",
+			"THM",
+			"ACN",
+			"MNK",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"AST",
+			"SAM",
+			"RDM",
+			"DNC",
+			"RPR",
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Variant Rampart",
+				"de" : "Unsteter Schutzwall",
+				"fr" : "Rempart embranché",
+				"jp" : "ヴァリアント・ランパート"
+			}
+		}
+	},
 	"29737" : {
 		"recast" : 15.0,
 		"charges" : 0,
@@ -11329,6 +11488,86 @@
 				"de" : "",
 				"fr" : "",
 				"jp" : ""
+			}
+		}
+	},
+	"31785" : {
+		"recast" : 15.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Engravement",
+				"de" : "Gravur",
+				"fr" : "Engravure",
+				"jp" : "エングレイバー"
+			}
+		}
+	},
+	"31793" : {
+		"recast" : 30.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Arcane Crest",
+				"de" : "Arkanes Wappen",
+				"fr" : "Blason arcanique",
+				"jp" : "アルケインクレスト"
+			}
+		}
+	},
+	"31794" : {
+		"recast" : 25.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Communio",
+				"de" : "Communio",
+				"fr" : "Communio",
+				"jp" : "コムニオ"
+			}
+		}
+	},
+	"32865" : {
+		"recast" : 60.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "",
+				"de" : "",
+				"fr" : "",
+				"jp" : ""
+			}
+		}
+	},
+	"33013" : {
+		"recast" : 40.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Bloodbath",
+				"de" : "Blutbad",
+				"fr" : "Bain de sang",
+				"jp" : "ブラッドバス"
 			}
 		}
 	}
