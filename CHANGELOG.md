@@ -2,7 +2,7 @@
 
 ## 1.4.0
 
-**Released: [in staging]**
+**Released: 2023-01-16**
 
 ### Bug Fixes
 - N/A
@@ -17,7 +17,7 @@
 - N/A
 
 ### Miscellaneous
-- ! - Updated game data through FFXIV patch 6.3
+- Updated game data through FFXIV patch 6.3
 
 ## 1.3.0
 
