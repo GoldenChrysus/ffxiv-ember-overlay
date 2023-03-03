@@ -148,7 +148,10 @@ function rootReducer(state, action) {
 				!action.payload.Encounter ||
 				!state.internal.encounter_history.length ||
 				!state.internal.encounter_history[0].game.Encounter ||
-				Number(action.payload.Encounter.DURATION) < Number(state.internal.encounter_history[0].game.Encounter.DURATION)
+				(
+					Number(action.payload.Encounter.DURATION) < Number(state.internal.encounter_history[0].game.Encounter.DURATION) &&
+					Number(action.payload.Encounter.DURATION) === 0
+				)
 			);
 
 			if (state.internal.mode === "stats") {

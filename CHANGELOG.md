@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.4.1
+
+**Released: [in staging]**
+
+### Bug Fixes
+- Resolved issue where player charts would disappear when an encounter ended
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.4.0
 
 **Released: 2023-01-16**
