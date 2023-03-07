@@ -2,7 +2,7 @@
 
 ## 1.4.1
 
-**Released: [in staging]**
+**Released: 2023-03-07**
 
 ### Bug Fixes
 - Resolved issue where player charts would disappear when an encounter ended
