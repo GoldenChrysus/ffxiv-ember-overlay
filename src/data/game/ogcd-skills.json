@@ -10875,7 +10875,7 @@
 		}
 	},
 	"29566" : {
-		"recast" : 20.0,
+		"recast" : 15.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : [
@@ -11475,6 +11475,38 @@
 			}
 		}
 	},
+	"31116" : {
+		"recast" : 10.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Hop-step",
+				"de" : "Moonbeat",
+				"fr" : "Dreamstep",
+				"jp" : "ホップステップ！"
+			}
+		}
+	},
+	"31117" : {
+		"recast" : 10.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Hop-step",
+				"de" : "Moonbeat",
+				"fr" : "Dreamstep",
+				"jp" : "ホップステップ！"
+			}
+		}
+	},
 	"31315" : {
 		"recast" : 60.0,
 		"charges" : 0,
@@ -11488,6 +11520,38 @@
 				"de" : "",
 				"fr" : "",
 				"jp" : ""
+			}
+		}
+	},
+	"31396" : {
+		"recast" : 10.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Manderdouble Lariat",
+				"de" : "Manderville-Lasso",
+				"fr" : "Double corde à ferraille des Manderville",
+				"jp" : "マンダヴィル・ダブルラリアット"
+			}
+		}
+	},
+	"31398" : {
+		"recast" : 15.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Manderville Sprint",
+				"de" : "Manderville-Sprint",
+				"fr" : "Sprint des Manderville",
+				"jp" : "マンダヴィルスプリント"
 			}
 		}
 	},
@@ -11568,6 +11632,22 @@
 				"de" : "Blutbad",
 				"fr" : "Bain de sang",
 				"jp" : "ブラッドバス"
+			}
+		}
+	},
+	"34493" : {
+		"recast" : 60.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "",
+				"de" : "",
+				"fr" : "",
+				"jp" : ""
 			}
 		}
 	}

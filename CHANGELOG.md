@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.5.0
+
+**Released: 2023-03-07**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Updated game data through FFXIV patch 6.4
+
 ## 1.4.1
 
 **Released: 2023-03-07**

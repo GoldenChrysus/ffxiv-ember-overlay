@@ -740,10 +740,10 @@
 		"zone_id" : 509,
 		"locales" : {
 			"name" : {
-				"en" : "Special Event III",
-				"de" : "Event-Inhalt 3",
-				"fr" : "Défi spécial III",
-				"jp" : "イベント用コンテンツ：3"
+				"en" : "The Gilded Araya",
+				"de" : "Arayas Palast",
+				"fr" : "Le temple doré d'Araya",
+				"jp" : "アスラ討滅戦"
 			}
 		}
 	},
@@ -2200,7 +2200,7 @@
 		}
 	},
 	"52" : {
-		"zone_id" : 626,
+		"zone_id" : 1142,
 		"locales" : {
 			"name" : {
 				"en" : "the Sirensong Sea",
@@ -2222,7 +2222,7 @@
 		}
 	},
 	"53" : {
-		"zone_id" : 623,
+		"zone_id" : 1143,
 		"locales" : {
 			"name" : {
 				"en" : "Bardam's Mettle",
@@ -2233,7 +2233,7 @@
 		}
 	},
 	"54" : {
-		"zone_id" : 660,
+		"zone_id" : 1144,
 		"locales" : {
 			"name" : {
 				"en" : "Doma Castle",
@@ -2244,7 +2244,7 @@
 		}
 	},
 	"55" : {
-		"zone_id" : 661,
+		"zone_id" : 1145,
 		"locales" : {
 			"name" : {
 				"en" : "Castrum Abania",
@@ -2299,7 +2299,7 @@
 		}
 	},
 	"56" : {
-		"zone_id" : 689,
+		"zone_id" : 1146,
 		"locales" : {
 			"name" : {
 				"en" : "Ala Mhigo",
@@ -4733,7 +4733,7 @@
 		"zone_id" : 986,
 		"locales" : {
 			"name" : {
-				"en" : "The Stigma Dreamscape",
+				"en" : "the Stigma Dreamscape",
 				"de" : "Stigma-Holometrie",
 				"fr" : "Rêve électrique de Stigma-4",
 				"jp" : "電脳夢想 スティグマ・フォー"
@@ -5136,6 +5136,17 @@
 			}
 		}
 	},
+	"90" : {
+		"zone_id" : 1126,
+		"locales" : {
+			"name" : {
+				"en" : "the Aetherfont",
+				"de" : "Ätherborn",
+				"fr" : "L'île de Haam",
+				"jp" : "星霊間欠 ハーム島"
+			}
+		}
+	},
 	"20082" : {
 		"zone_id" : 1048,
 		"locales" : {
@@ -5316,7 +5327,7 @@
 		"zone_id" : 1069,
 		"locales" : {
 			"name" : {
-				"en" : "The Sil'dihn Subterrane",
+				"en" : "the Sil'dihn Subterrane",
 				"de" : "Die Unterstadt von Sil'dih",
 				"fr" : "Les canalisations sildiennes - Donjon à embranchements",
 				"jp" : "ヴァリアントダンジョン シラディハ水道"
@@ -5510,6 +5521,138 @@
 			}
 		}
 	},
+	"60031" : {
+		"zone_id" : 1099,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 1-10)",
+				"de" : "Eureka Orthos (Ebenen 1-10)",
+				"fr" : "Eurêka Orthos (sous-sols 1-10)",
+				"jp" : "オルト・エウレカ B1～B10"
+			}
+		}
+	},
+	"60032" : {
+		"zone_id" : 1100,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 11-20)",
+				"de" : "Eureka Orthos (Ebenen 11-20)",
+				"fr" : "Eurêka Orthos (sous-sols 11-20)",
+				"jp" : "オルト・エウレカ B11～B20"
+			}
+		}
+	},
+	"60033" : {
+		"zone_id" : 1101,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 21-30)",
+				"de" : "Eureka Orthos (Ebenen 21-30)",
+				"fr" : "Eurêka Orthos (sous-sols 21-30)",
+				"jp" : "オルト・エウレカ B21～B30"
+			}
+		}
+	},
+	"60034" : {
+		"zone_id" : 1102,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 31-40)",
+				"de" : "Eureka Orthos (Ebenen 31-40)",
+				"fr" : "Eurêka Orthos (sous-sols 31-40)",
+				"jp" : "オルト・エウレカ B31～B40"
+			}
+		}
+	},
+	"60035" : {
+		"zone_id" : 1103,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 41-50)",
+				"de" : "Eureka Orthos (Ebenen 41-50)",
+				"fr" : "Eurêka Orthos (sous-sols 41-50)",
+				"jp" : "オルト・エウレカ B41～B50"
+			}
+		}
+	},
+	"60036" : {
+		"zone_id" : 1104,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 51-60)",
+				"de" : "Eureka Orthos (Ebenen 51-60)",
+				"fr" : "Eurêka Orthos (sous-sols 51-60)",
+				"jp" : "オルト・エウレカ B51～B60"
+			}
+		}
+	},
+	"60037" : {
+		"zone_id" : 1105,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 61-70)",
+				"de" : "Eureka Orthos (Ebenen 61-70)",
+				"fr" : "Eurêka Orthos (sous-sols 61-70)",
+				"jp" : "オルト・エウレカ B61～B70"
+			}
+		}
+	},
+	"60038" : {
+		"zone_id" : 1106,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 71-80)",
+				"de" : "Eureka Orthos (Ebenen 71-80)",
+				"fr" : "Eurêka Orthos (sous-sols 71-80)",
+				"jp" : "オルト・エウレカ B71～B80"
+			}
+		}
+	},
+	"60039" : {
+		"zone_id" : 1107,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 81-90)",
+				"de" : "Eureka Orthos (Ebenen 81-90)",
+				"fr" : "Eurêka Orthos (sous-sols 81-90)",
+				"jp" : "オルト・エウレカ B81～B90"
+			}
+		}
+	},
+	"60040" : {
+		"zone_id" : 1108,
+		"locales" : {
+			"name" : {
+				"en" : "Eureka Orthos (Floors 91-100)",
+				"de" : "Eureka Orthos (Ebenen 91-100)",
+				"fr" : "Eurêka Orthos (sous-sols 91-100)",
+				"jp" : "オルト・エウレカ B91～B100"
+			}
+		}
+	},
+	"5064" : {
+		"zone_id" : 1115,
+		"locales" : {
+			"name" : {
+				"en" : "Generational Bonding",
+				"de" : "Väterliche Liebe",
+				"fr" : "Tel gentilhomme, tel gentilhomme",
+				"jp" : "はつらつとした親子"
+			}
+		}
+	},
+	"30124" : {
+		"zone_id" : 1122,
+		"locales" : {
+			"name" : {
+				"en" : "The Omega Protocol (Ultimate)",
+				"de" : "Omega (fatal)",
+				"fr" : "le Protocole Oméga (fatal)",
+				"jp" : "絶オメガ検証戦"
+			}
+		}
+	},
 	"55011" : {
 		"zone_id" : 1123,
 		"locales" : {
@@ -5587,14 +5730,190 @@
 			}
 		}
 	},
-	"64006" : {
-		"zone_id" : 1121,
+	"30126" : {
+		"zone_id" : 1147,
 		"locales" : {
 			"name" : {
-				"en" : "Containment Bay P1T6 (Unreal)",
-				"de" : "Traumprüfung - Sophia",
-				"fr" : "Unité de contention P1P6 (irréel)",
-				"jp" : "幻女神ソフィア討滅戦"
+				"en" : "Anabaseios: The Ninth Circle",
+				"de" : "Anabaseios - Neunter Kreis",
+				"fr" : "Le Paradis du Pandæmonium - Métempsycose",
+				"jp" : "万魔殿パンデモニウム：天獄編1"
+			}
+		}
+	},
+	"30127" : {
+		"zone_id" : 1148,
+		"locales" : {
+			"name" : {
+				"en" : "Anabaseios: The Ninth Circle (Savage)",
+				"de" : "Anabaseios - Neunter Kreis (episch)",
+				"fr" : "Le Paradis du Pandæmonium - Métempsycose (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：天獄編1"
+			}
+		}
+	},
+	"30128" : {
+		"zone_id" : 1149,
+		"locales" : {
+			"name" : {
+				"en" : "Anabaseios: The Tenth Circle",
+				"de" : "Anabaseios - Zehnter Kreis",
+				"fr" : "Le Paradis du Pandæmonium - Monochrome",
+				"jp" : "万魔殿パンデモニウム：天獄編2"
+			}
+		}
+	},
+	"30129" : {
+		"zone_id" : 1150,
+		"locales" : {
+			"name" : {
+				"en" : "Anabaseios: The Tenth Circle (Savage)",
+				"de" : "Anabaseios - Zehnter Kreis (episch)",
+				"fr" : "Le Paradis du Pandæmonium - Monochrome (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：天獄編2"
+			}
+		}
+	},
+	"30130" : {
+		"zone_id" : 1151,
+		"locales" : {
+			"name" : {
+				"en" : "Anabaseios: The Eleventh Circle",
+				"de" : "Anabaseios - Elfter Kreis",
+				"fr" : "Le Paradis du Pandæmonium - Tribunal",
+				"jp" : "万魔殿パンデモニウム：天獄編3"
+			}
+		}
+	},
+	"30131" : {
+		"zone_id" : 1152,
+		"locales" : {
+			"name" : {
+				"en" : "Anabaseios: The Eleventh Circle (Savage)",
+				"de" : "Anabaseios - Elfter Kreis (episch)",
+				"fr" : "Le Paradis du Pandæmonium - Tribunal (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：天獄編3"
+			}
+		}
+	},
+	"30132" : {
+		"zone_id" : 1153,
+		"locales" : {
+			"name" : {
+				"en" : "Anabaseios: The Twelfth Circle",
+				"de" : "Anabaseios - Zwölfter Kreis",
+				"fr" : "Le Paradis du Pandæmonium - Apothéose",
+				"jp" : "万魔殿パンデモニウム：天獄編4"
+			}
+		}
+	},
+	"30133" : {
+		"zone_id" : 1154,
+		"locales" : {
+			"name" : {
+				"en" : "Anabaseios: The Twelfth Circle (Savage)",
+				"de" : "Anabaseios - Zwölfter Kreis (episch)",
+				"fr" : "Le Paradis du Pandæmonium - Apothéose (sadique)",
+				"jp" : "万魔殿パンデモニウム零式：天獄編4"
+			}
+		}
+	},
+	"20089" : {
+		"zone_id" : 1140,
+		"locales" : {
+			"name" : {
+				"en" : "The Voidcast Dais",
+				"de" : "Prophetie - Golbez",
+				"fr" : "La Chaire de l'Exilée",
+				"jp" : "ゴルベーザ討滅戦"
+			}
+		}
+	},
+	"20090" : {
+		"zone_id" : 1141,
+		"locales" : {
+			"name" : {
+				"en" : "The Voidcast Dais (Extreme)",
+				"de" : "Eschatos - Golbez",
+				"fr" : "La Chaire de l'Exilée (extrême)",
+				"jp" : "極ゴルベーザ討滅戦"
+			}
+		}
+	},
+	"64007" : {
+		"zone_id" : 1157,
+		"locales" : {
+			"name" : {
+				"en" : "Containment Bay Z1T9 (Unreal)",
+				"de" : "Traumprüfung - Zurvan",
+				"fr" : "Unité de contention Z1P9 (irréel)",
+				"jp" : "幻鬼神ズルワーン討滅戦"
+			}
+		}
+	},
+	"63012" : {
+		"zone_id" : 1163,
+		"locales" : {
+			"name" : {
+				"en" : "Ocean Fishing",
+				"de" : "Auf großer Fahrt",
+				"fr" : "Pêche en mer",
+				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"63013" : {
+		"zone_id" : 1163,
+		"locales" : {
+			"name" : {
+				"en" : "Ocean Fishing",
+				"de" : "Auf großer Fahrt",
+				"fr" : "Pêche en mer",
+				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"63014" : {
+		"zone_id" : 1163,
+		"locales" : {
+			"name" : {
+				"en" : "Ocean Fishing",
+				"de" : "Auf großer Fahrt",
+				"fr" : "Pêche en mer",
+				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"63015" : {
+		"zone_id" : 1163,
+		"locales" : {
+			"name" : {
+				"en" : "Ocean Fishing",
+				"de" : "Auf großer Fahrt",
+				"fr" : "Pêche en mer",
+				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"63016" : {
+		"zone_id" : 1163,
+		"locales" : {
+			"name" : {
+				"en" : "Ocean Fishing",
+				"de" : "Auf großer Fahrt",
+				"fr" : "Pêche en mer",
+				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"63017" : {
+		"zone_id" : 1163,
+		"locales" : {
+			"name" : {
+				"en" : "Ocean Fishing",
+				"de" : "Auf großer Fahrt",
+				"fr" : "Pêche en mer",
+				"jp" : "オーシャンフィッシング"
 			}
 		}
 	}
