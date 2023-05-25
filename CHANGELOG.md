@@ -2,7 +2,7 @@
 
 ## 1.5.0
 
-**Released: 2023-03-07**
+**Released: [in staging]**
 
 ### Bug Fixes
 - N/A
