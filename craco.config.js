@@ -1,31 +1,31 @@
-const { getLoader, loaderByName, throwUnexpectedConfigError } = require('@craco/craco')
+const { getLoader, loaderByName, throwUnexpectedConfigError } = require("@craco/craco");
 
 module.exports = {
-	webpack: {
-		alias: {
-			'../../theme.config$': require('path').join(__dirname, '/src/semantic-ui/theme.config'),
+	webpack : {
+		alias : {
+			"../../theme.config$" : require("path").join(__dirname, "/src/semantic-ui/theme.config"),
 		},
 	},
-	plugins: [
+	plugins : [
 		{
-			plugin  : require('craco-less'),
+			plugin  : require("craco-less"),
 			options : {
 				lessLoaderOptions : {
-					javascriptEnabled : true
-				}
-			}
+					javascriptEnabled : true,
+				},
+			},
 		},
 		{
-			plugin: {
-				overrideWebpackConfig: ({ context, webpackConfig }) => {
+			plugin : {
+				overrideWebpackConfig({ context, webpackConfig }) {
 					const { isFound, match: fileLoaderMatch } = getLoader(
 						webpackConfig,
-						loaderByName('file-loader'),
+						loaderByName("file-loader"),
 					);
 
 					if (!isFound) {
 						throwUnexpectedConfigError({
-							message: `Can't find file-loader in the ${context.env} webpack config!`,
+							message : `Can't find file-loader in the ${context.env} webpack config!`,
 						});
 					}
 
@@ -33,12 +33,24 @@ module.exports = {
 					fileLoaderMatch.loader.exclude.push(/\.variables$/);
 					fileLoaderMatch.loader.exclude.push(/\.overrides$/);
 
-					return webpackConfig
+					if (["development", "staging"].includes(process.env.REACT_APP_ENV)) {
+						webpackConfig.mode                      = "development";
+						webpackConfig.optimization.minimize     = false;
+						webpackConfig.optimization.runtimeChunk = false;
+						webpackConfig.optimization.splitChunks  = {
+							cacheGroups : {
+								default : false,
+							},
+						};
+						webpackConfig.output.filename           = "[name].js";
+					}
+
+					return webpackConfig;
 				},
 			},
 		},
 	],
-	eslint: {
-		enable: false
-	}
-}
+	eslint : {
+		enable : false,
+	},
+};
