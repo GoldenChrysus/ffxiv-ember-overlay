@@ -67,7 +67,7 @@ class PlayerProcessor {
 		}
 
 		if (!return_sortable_value && !isNaN(value)) {
-			value = GameDataProcessor.convertToLocaleFormat(key, value);
+			value = GameDataProcessor.convertToLocaleFormat(key, value, state);
 		} else if (return_sortable_value) {
 			const number_regex = /((([\d]{1,3},)?(([\d]{3},)+)?[\d]{3})|[\d]+)(\.[\d]+)?(%|K)?$/;
 			const matches      = String(value).match(number_regex);

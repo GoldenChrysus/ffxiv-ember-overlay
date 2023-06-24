@@ -195,8 +195,9 @@ class GameDataProcessor {
 		return party;
 	}
 
-	convertToLocaleFormat(key, value) {
-		const state             = store.getState();
+	convertToLocaleFormat(key, value, state) {
+		state = state || store.getState();
+
 		const accuracy          = state.settings.interface.decimal_accuracy;
 		const shorten_thousands = state.settings.interface.shorten_thousands;
 		let over_thousand       = false;
