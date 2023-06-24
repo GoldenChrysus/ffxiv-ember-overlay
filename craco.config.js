@@ -33,7 +33,7 @@ module.exports = {
 					fileLoaderMatch.loader.exclude.push(/\.variables$/);
 					fileLoaderMatch.loader.exclude.push(/\.overrides$/);
 
-					if (["development", "staging"].includes(process.env.REACT_APP_ENV)) {
+					if (["development", "staging"].indexOf(process.env.REACT_APP_ENV) !== -1) {
 						webpackConfig.mode                      = "development";
 						webpackConfig.optimization.minimize     = false;
 						webpackConfig.optimization.runtimeChunk = false;
