@@ -42987,6 +42987,20 @@
 			}
 		}
 	},
+	"3557" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Up",
+				"de" : "Erhöhte Verwundbarkeit",
+				"fr" : "Vulnérabilité augmentée",
+				"jp" : "被ダメージ上昇"
+			}
+		}
+	},
 	"3559" : {
 		"type" : "dot",
 		"dot" : true,
@@ -43012,6 +43026,104 @@
 				"de" : "Systemfehler",
 				"fr" : "Erreur système",
 				"jp" : "システムエラー"
+			}
+		}
+	},
+	"3563" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Scattered Wailing",
+				"de" : "Nues Heulen: Auseinander",
+				"fr" : "Hurlement contre nature: dispersion",
+				"jp" : "鵺の呪声：散"
+			}
+		}
+	},
+	"3564" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Intensified Wailing",
+				"de" : "Nues Heulen: Versammeln",
+				"fr" : "Hurlement contre nature: congrégation",
+				"jp" : "鵺の呪声：集"
+			}
+		}
+	},
+	"3565" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Variant Cure Set",
+				"de" : "Flüchtige Macht: Unstetes Vita",
+				"fr" : "Soin embranché",
+				"jp" : "ヴァリアント・ケアル設定"
+			}
+		}
+	},
+	"3566" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Variant Ultimatum Set",
+				"de" : "Flüchtige Macht: Unstetes Ultimatum",
+				"fr" : "Ultimatum embranché",
+				"jp" : "ヴァリアント・アルティメイタム設定"
+			}
+		}
+	},
+	"3567" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Variant Raise Set",
+				"de" : "Flüchtige Macht: Unstetes Wiederbeleben",
+				"fr" : "Vie embranchée",
+				"jp" : "ヴァリアント・レイズ設定"
+			}
+		}
+	},
+	"3568" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Variant Spirit Dart Set",
+				"de" : "Flüchtige Macht: Unsteter Geistpfeil",
+				"fr" : "Flèche spirituelle embranchée",
+				"jp" : "ヴァリアント・スピリットダート設定"
+			}
+		}
+	},
+	"3569" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Variant Rampart Set",
+				"de" : "Flüchtige Macht: Unsteter Schutzwall",
+				"fr" : "Rempart embranché",
+				"jp" : "ヴァリアント・ランパート設定"
 			}
 		}
 	},
@@ -43309,6 +43421,230 @@
 			}
 		}
 	},
+	"3595" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Drunk with Power",
+				"de" : "Kräftigender Schluck",
+				"fr" : "Esprits spiritueux",
+				"jp" : "般若湯"
+			}
+		}
+	},
+	"3597" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rodential Rebirth",
+				"de" : "Fluch des Flughörnchens",
+				"fr" : "Malédiction du momonga",
+				"jp" : "モモンガの呪い"
+			}
+		}
+	},
+	"3598" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rodential Rebirth",
+				"de" : "Fluch des Flughörnchens",
+				"fr" : "Malédiction du momonga",
+				"jp" : "モモンガの呪い"
+			}
+		}
+	},
+	"3599" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rodential Rebirth",
+				"de" : "Fluch des Flughörnchens",
+				"fr" : "Malédiction du momonga",
+				"jp" : "モモンガの呪い"
+			}
+		}
+	},
+	"3600" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rodential Rebirth",
+				"de" : "Fluch des Flughörnchens",
+				"fr" : "Malédiction du momonga",
+				"jp" : "モモンガの呪い"
+			}
+		}
+	},
+	"3601" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Odder Incarnation",
+				"de" : "Fluch des Otters",
+				"fr" : "Malédiction de la loutre choute",
+				"jp" : "ウソウソの呪い"
+			}
+		}
+	},
+	"3602" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Odder Incarnation",
+				"de" : "Fluch des Otters",
+				"fr" : "Malédiction de la loutre choute",
+				"jp" : "ウソウソの呪い"
+			}
+		}
+	},
+	"3603" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Odder Incarnation",
+				"de" : "Fluch des Otters",
+				"fr" : "Malédiction de la loutre choute",
+				"jp" : "ウソウソの呪い"
+			}
+		}
+	},
+	"3604" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Odder Incarnation",
+				"de" : "Fluch des Otters",
+				"fr" : "Malédiction de la loutre choute",
+				"jp" : "ウソウソの呪い"
+			}
+		}
+	},
+	"3605" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Squirrelly Prayer",
+				"de" : "Verflucht: Flughörnchen",
+				"fr" : "Prière difforme: momonga",
+				"jp" : "呪珠印：モモンガ"
+			}
+		}
+	},
+	"3606" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Odder Prayer",
+				"de" : "Verflucht: Otter",
+				"fr" : "Prière difforme: loutre choute",
+				"jp" : "呪珠印：ウソウソ"
+			}
+		}
+	},
+	"3607" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Live Brazier",
+				"de" : "Zeichen des Feuers",
+				"fr" : "Grand sceau de feu",
+				"jp" : "重火印"
+			}
+		}
+	},
+	"3608" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Live Candle",
+				"de" : "Zeichen der Flamme",
+				"fr" : "Sceau de feu",
+				"jp" : "火印"
+			}
+		}
+	},
+	"3609" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rat and Mouse",
+				"de" : "Im Visier",
+				"fr" : "Ciblage",
+				"jp" : "狙い付け"
+			}
+		}
+	},
+	"3610" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Vengeful Flame",
+				"de" : "Vergeltende Flamme",
+				"fr" : "Flamme vengeresse",
+				"jp" : "怨呪の火"
+			}
+		}
+	},
+	"3611" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Vengeful Pyre",
+				"de" : "Vergeltendes Feuer",
+				"fr" : "Bûcher vengeur",
+				"jp" : "怨呪の重火"
+			}
+		}
+	},
 	"3612" : {
 		"type" : "effect",
 		"dot" : false,
@@ -43362,6 +43698,22 @@
 				"de" : "Überlegene Aura",
 				"fr" : "Pose imposante",
 				"jp" : "豪の構え"
+			}
+		}
+	},
+	"3616" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [
+			"NIN"
+		],
+		"locales" : {
+			"name" : {
+				"en" : "Huton",
+				"de" : "Huton",
+				"fr" : "Fûton",
+				"jp" : "風遁の術"
 			}
 		}
 	},
@@ -43421,6 +43773,62 @@
 			}
 		}
 	},
+	"3621" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Magic Resistance",
+				"de" : "Immun gegen Magieattacken",
+				"fr" : "Invincibilité magique",
+				"jp" : "魔法無効"
+			}
+		}
+	},
+	"3622" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Storm's Succor",
+				"de" : "Segen des Gewitters",
+				"fr" : "Bénédiction de vent et de foudre",
+				"jp" : "風雷の加護"
+			}
+		}
+	},
+	"3623" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Seasons of the Fleeting",
+				"de" : "Shikunshi",
+				"fr" : "Quatre saisons",
+				"jp" : "四君子の術"
+			}
+		}
+	},
+	"3624" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Seduced",
+				"de" : "Versuchung",
+				"fr" : "Séduction",
+				"jp" : "誘惑"
+			}
+		}
+	},
 	"3626" : {
 		"type" : "effect",
 		"dot" : false,
@@ -43477,6 +43885,132 @@
 			}
 		}
 	},
+	"3631" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Schiltron",
+				"de" : "Skiltron",
+				"fr" : "Sheltron",
+				"jp" : "スキルトロン"
+			}
+		}
+	},
+	"3636" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Begrimed",
+				"de" : "Drecksspatz",
+				"fr" : "Bain de boue",
+				"jp" : "泥汚れ"
+			}
+		}
+	},
+	"3637" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Spick-and-span",
+				"de" : "Blitzblank",
+				"fr" : "Grand nettoyage",
+				"jp" : "大掃除"
+			}
+		}
+	},
+	"3638" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Physical Vulnerability Down",
+				"de" : "Verringerte physische Verwundbarkeit",
+				"fr" : "Vulnérabilité physique diminuée",
+				"jp" : "被物理ダメージ軽減"
+			}
+		}
+	},
+	"3639" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Magic Vulnerability Down",
+				"de" : "Verringerte Magie-Verwundbarkeit",
+				"fr" : "Vulnérabilité magique diminuée",
+				"jp" : "被魔法ダメージ軽減"
+			}
+		}
+	},
+	"3640" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Winged Reprobation",
+				"de" : "Schwinge des Urteils",
+				"fr" : "Réprobation ailée",
+				"jp" : "断罪の飛翔"
+			}
+		}
+	},
+	"3641" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Winged Redemption",
+				"de" : "Segen des Allmächtigen",
+				"fr" : "Bénédiction de l'Immaculé",
+				"jp" : "全能者の祝福"
+			}
+		}
+	},
+	"3642" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Candy Cane",
+				"de" : "Quietschehammer",
+				"fr" : "Canne en sucre d'orge",
+				"jp" : "キャンディケーン"
+			}
+		}
+	},
+	"3644" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Apokalypsis",
+				"de" : "Apokalypsis",
+				"fr" : "Apokalypsis",
+				"jp" : "アポカリュプシス"
+			}
+		}
+	},
 	"3692" : {
 		"type" : "debuff",
 		"dot" : false,
@@ -43530,6 +44064,48 @@
 				"de" : "Beißender Wind",
 				"fr" : "Brûlure du vent",
 				"jp" : "裂傷"
+			}
+		}
+	},
+	"3707" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Magic Damage Up",
+				"de" : "Magieschaden +",
+				"fr" : "Bonus de dégâts magiques",
+				"jp" : "魔法ダメージ上昇"
+			}
+		}
+	},
+	"3712" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Breath of Magic",
+				"de" : "Zauberatem",
+				"fr" : "Souffle magique",
+				"jp" : "マジカルブレス"
+			}
+		}
+	},
+	"3779" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Electrocution",
+				"de" : "Stromschlag",
+				"fr" : "Électrocution",
+				"jp" : "感電"
 			}
 		}
 	}

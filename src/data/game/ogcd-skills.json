@@ -9390,7 +9390,7 @@
 		}
 	},
 	"29228" : {
-		"recast" : 25.0,
+		"recast" : 30.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -11635,6 +11635,45 @@
 			}
 		}
 	},
+	"33864" : {
+		"recast" : 15.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"PGL",
+			"LNC",
+			"ARC",
+			"ROG",
+			"CNJ",
+			"THM",
+			"ACN",
+			"MNK",
+			"DRG",
+			"BRD",
+			"WHM",
+			"BLM",
+			"SMN",
+			"SCH",
+			"NIN",
+			"MCH",
+			"AST",
+			"SAM",
+			"RDM",
+			"DNC",
+			"RPR",
+			"SGE"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Variant Rampart",
+				"de" : "Unsteter Schutzwall",
+				"fr" : "Rempart embranché",
+				"jp" : "ヴァリアント・ランパート"
+			}
+		}
+	},
 	"34493" : {
 		"recast" : 60.0,
 		"charges" : 0,
@@ -11648,6 +11687,132 @@
 				"de" : "",
 				"fr" : "",
 				"jp" : ""
+			}
+		}
+	},
+	"34571" : {
+		"recast" : 30.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Ruby Dynamics",
+				"de" : "Rubin-Dynamo",
+				"fr" : "Générateur rubis",
+				"jp" : "ルビーダイナモ"
+			}
+		}
+	},
+	"34575" : {
+		"recast" : 120.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Force Field",
+				"de" : "Kraftfeld",
+				"fr" : "Champ de force",
+				"jp" : "フォースフィールド"
+			}
+		}
+	},
+	"34576" : {
+		"recast" : 90.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Winged Reprobation",
+				"de" : "Schwinge des Urteils",
+				"fr" : "Réprobation ailée",
+				"jp" : "断罪の飛翔"
+			}
+		}
+	},
+	"34578" : {
+		"recast" : 90.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Candy Cane",
+				"de" : "Zuckerstange",
+				"fr" : "Canne en sucre d'orge",
+				"jp" : "キャンディケーン"
+			}
+		}
+	},
+	"34580" : {
+		"recast" : 120.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Sea Shanty",
+				"de" : "Pitsche, patsche",
+				"fr" : "Explosion tournicoton",
+				"jp" : "グルグルザパーン"
+			}
+		}
+	},
+	"34581" : {
+		"recast" : 120.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Apokalypsis",
+				"de" : "Apokalypsis",
+				"fr" : "Apokalypsis",
+				"jp" : "アポカリュプシス"
+			}
+		}
+	},
+	"34582" : {
+		"recast" : 120.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLU"
+		],
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Being Mortal",
+				"de" : "Sterblichkeit",
+				"fr" : "Deuil des vivants",
+				"jp" : "死すべき定め"
 			}
 		}
 	}
