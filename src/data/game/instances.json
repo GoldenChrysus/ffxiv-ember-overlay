@@ -5327,7 +5327,7 @@
 		"zone_id" : 1069,
 		"locales" : {
 			"name" : {
-				"en" : "the Sil'dihn Subterrane",
+				"en" : "The Sil'dihn Subterrane",
 				"de" : "Die Unterstadt von Sil'dih",
 				"fr" : "Les canalisations sildiennes - Donjon à embranchements",
 				"jp" : "ヴァリアントダンジョン シラディハ水道"
@@ -5815,6 +5815,50 @@
 				"de" : "Anabaseios - Zwölfter Kreis (episch)",
 				"fr" : "Le Paradis du Pandæmonium - Apothéose (sadique)",
 				"jp" : "万魔殿パンデモニウム零式：天獄編4"
+			}
+		}
+	},
+	"36002" : {
+		"zone_id" : 1137,
+		"locales" : {
+			"name" : {
+				"en" : "Mount Rokkon",
+				"de" : "Der Rokkon",
+				"fr" : "Le mont Rokkon - Donjon à embranchements",
+				"jp" : "ヴァリアントダンジョン 六根山"
+			}
+		}
+	},
+	"37003" : {
+		"zone_id" : 1155,
+		"locales" : {
+			"name" : {
+				"en" : "Another Mount Rokkon",
+				"de" : "Der kuriose Rokkon",
+				"fr" : "Le mont Rokkon annexe - Donjon alternatif",
+				"jp" : "アナザーダンジョン 異聞六根山"
+			}
+		}
+	},
+	"37004" : {
+		"zone_id" : 1156,
+		"locales" : {
+			"name" : {
+				"en" : "Another Mount Rokkon (Savage)",
+				"de" : "Der kuriose Rokkon (episch)",
+				"fr" : "Le mont Rokkon annexe - Donjon alternatif (sadique)",
+				"jp" : "アナザーダンジョン 異聞六根山 零式"
+			}
+		}
+	},
+	"35032" : {
+		"zone_id" : 796,
+		"locales" : {
+			"name" : {
+				"en" : "A Golden Opportunity",
+				"de" : "Goldor der Güldene",
+				"fr" : "Goldor, le mage doré",
+				"jp" : "黄金闘士「ゴールドル」"
 			}
 		}
 	},

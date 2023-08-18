@@ -102,8 +102,8 @@ class OverlayInfo extends React.Component {
 			default:
 				return (
 					<React.Fragment>
-						<span onClick={this.openAdLink.bind(this)} ref='ad'><img className='ad-cta' src={"img/buttons/funding/sudoku-legends.png"} alt='Support Ember by clicking here to view an ad'/></span>
-						<p>Support my other projects!</p>
+						<span onClick={this.openAdLink.bind(this)} ref='ad'><img className='ad-cta' src='https://www.torn.com/sigs/3_1962321.png' alt='Support Ember by clicking here'/></span>
+						<p>Try out the text-based RPG Torn City.</p>
 					</React.Fragment>
 				);
 		}
@@ -147,7 +147,7 @@ class OverlayInfo extends React.Component {
 	}
 
 	openAdLink() {
-		const url = "https://play.google.com/store/apps/details?id=com.chesshq.sudokuLegends";
+		const url = "https://www.torn.com/1962321";
 
 		window.open(url, "", "width=1200,height=830,location=no,menubar=no");
 	}
