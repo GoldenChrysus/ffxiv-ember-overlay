@@ -84,6 +84,7 @@ class OverlayInfo extends React.Component {
 
 	getFundingText() {
 		const type = (["hibiya", "actws"].indexOf(this.state.chrome) === -1 || window.obsstudio) ? "new" : "old";
+		const torn = Math.floor((Math.random() * 2) + 1);
 
 		switch (type) {
 			case "old":
@@ -102,7 +103,7 @@ class OverlayInfo extends React.Component {
 			default:
 				return (
 					<React.Fragment>
-						<span onClick={this.openAdLink.bind(this)} ref='ad'><img className='ad-cta' src='https://www.torn.com/sigs/3_1962321.png' alt='Support Ember by clicking here'/></span>
+						<span onClick={this.openAdLink.bind(this)} ref='ad'><img className='ad-cta' src={`img/buttons/funding/torn${torn}.png`} alt='Support Ember by clicking here'/></span>
 						<p>Try out the text-based RPG Torn City.</p>
 					</React.Fragment>
 				);
