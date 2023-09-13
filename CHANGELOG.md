@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.5.3
+
+**Released: 2023-09-13**
+
+### Bug Fixes
+- Fixed broken Discord URL
+
+### Features
+- Updated max spell warning threshold to 30 seconds
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.5.2
 
 **Released: 2023-08-18**
