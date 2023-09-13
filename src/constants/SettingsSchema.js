@@ -631,7 +631,7 @@ const SettingsSchema = {
 								type     : "slider",
 								range    : "min",
 								minimum  : 0,
-								maximum  : 10,
+								maximum  : 30,
 							},
 							{
 								key_path : "spells_mode.spells_per_row",
