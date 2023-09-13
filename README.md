@@ -8,7 +8,7 @@ Powerful, data-focused DPS overlay and spell timers for Final Fantasy XIV. Can b
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/ffxiv-ember-overlay/bleeding-edge.svg?style=flat-square)
 [![Works with OverlayPlugin](https://img.shields.io/badge/works%20with-OverlayPlugin-blue.svg?style=flat-square)](https://github.com/ngld/OverlayPlugin)
 [![Works with ACTWebSocket](https://img.shields.io/badge/works%20with-ACTWebSocket-blue.svg?style=flat-square)](https://github.com/ZCube/ACTWebSocket)
-[![Discord](https://img.shields.io/discord/603399999723929600.svg?style=flat-square&logo=discord)](https://discord.io/emberoverlay)
+[![Discord](https://img.shields.io/discord/603399999723929600.svg?style=flat-square&logo=discord)](https://discord.gg/7Kdpw6C)
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)
 
 #### Funding
@@ -26,7 +26,7 @@ Create a new overlay from one of the Ember presets. Alternatively, set your Over
 Add a new skin URL to https://goldenchrysus.github.io/ffxiv/ember-overlay/ and create a new overlay window from this skin.
 
 ## Discord
-Join the Discord server to receive live updates, report bugs, or request features at: [https://discord.io/emberoverlay](https://discord.io/emberoverlay)
+Join the Discord server to receive live updates, report bugs, or request features at: [https://discord.gg/7Kdpw6C](https://discord.gg/7Kdpw6C)
 
 ## Navigation
 - <a href="#features">Features</a>
@@ -145,7 +145,7 @@ View the full changelog [here](/CHANGELOG.md).
 
 You can access and test features in advance by using the staging site. Instead of the regular URL, set your overlay to https://goldenchrysus.github.io/ffxiv/ember-overlay-dev/
 
-Please note that the staging site is for pre-release testing, so you may encounter errors. Please report these errors as GitHub issues or in the #bug-reports channel on the [Discord](https://discord.io/emberoverlay).
+Please note that the staging site is for pre-release testing, so you may encounter errors. Please report these errors as GitHub issues or in the #bug-reports channel on the [Discord](https://discord.gg/7Kdpw6C).
 
 When viewing the [changelog](/CHANGELOG.md), you will be able to determine which changes are available on the staging site because they will be prefixed with "!" in the changelog for the latest development version.
 
