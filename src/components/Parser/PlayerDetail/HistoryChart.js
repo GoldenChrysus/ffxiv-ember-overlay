@@ -10,6 +10,10 @@ class HistoryChart extends React.Component {
 			defaults.global.defaultFontColor = "#d9d6dd";
 		}
 
+		if (this.props.theme === "ffxiv-clear-blue") {
+			defaults.global.defaultFontColor = "#d1d1d1";
+		}
+
 		ChartComponent.prototype.destroyChart = function() {
 			this.saveCurrentDatasets();
 

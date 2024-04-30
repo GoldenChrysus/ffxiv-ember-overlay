@@ -1,4 +1,4 @@
-.setThemeStyle(@defaultTheme: {}, @lightTheme: {}, @minimalTheme: {}, @spellsMode: {}, @classicTheme: {}) {
+.setThemeStyle(@defaultTheme: {}, @lightTheme: {}, @minimalTheme: {}, @spellsMode: {}, @classicTheme: {}, @clearBlueTheme: {}) {
 	& {
 		@defaultTheme();
 	}
@@ -9,6 +9,10 @@
 
 	body[theme=ffxiv-classic] & {
 		@classicTheme();
+	}
+
+	body[theme=ffxiv-clear-blue] & {
+		@clearBlueTheme();
 	}
 
 	body.minimal & {
