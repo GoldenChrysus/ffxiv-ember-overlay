@@ -4,6 +4,8 @@ on:
   push:
     branches: [ staging, master ]
 
+  workflow_dispatch:
+
 env:
   BUILD_NONSSL: ${{ secrets.BUILD_NONSSL }}
   BUILD_SSL: ${{ secrets.BUILD_SSL }}
