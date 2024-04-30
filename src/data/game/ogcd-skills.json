@@ -9390,7 +9390,7 @@
 		}
 	},
 	"29228" : {
-		"recast" : 30.0,
+		"recast" : 45.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9897,7 +9897,7 @@
 		}
 	},
 	"29395" : {
-		"recast" : 20.0,
+		"recast" : 30.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9987,7 +9987,7 @@
 		}
 	},
 	"29400" : {
-		"recast" : 30.0,
+		"recast" : 25.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -11813,6 +11813,38 @@
 				"de" : "Sterblichkeit",
 				"fr" : "Deuil des vivants",
 				"jp" : "死すべき定め"
+			}
+		}
+	},
+	"34790" : {
+		"recast" : 30.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "Rising Flames",
+				"de" : "Lohenschwinge",
+				"fr" : "Flamme émergente",
+				"jp" : "ライジングフレイム"
+			}
+		}
+	},
+	"36120" : {
+		"recast" : 60.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : "*",
+		"pvp" : false,
+		"locales" : {
+			"name" : {
+				"en" : "",
+				"de" : "",
+				"fr" : "",
+				"jp" : ""
 			}
 		}
 	}

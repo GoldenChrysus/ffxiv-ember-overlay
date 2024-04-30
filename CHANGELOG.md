@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.6.0
+
+**[in staging]**
+
+### Bug Fixes
+- N/A
+
+### Features
+- ! Added FFXIV Clear Blue theme
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- ! Updated game data through FFXIV patch 6.58
+
 ## 1.5.3
 
 **Released: 2023-09-13**
