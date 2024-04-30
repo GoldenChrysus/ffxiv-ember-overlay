@@ -44053,6 +44053,76 @@
 			}
 		}
 	},
+	"3698" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Forward March",
+				"de" : "Geistlenkung vorwärts",
+				"fr" : "Contrainte mentale: avancer",
+				"jp" : "移動命令：前"
+			}
+		}
+	},
+	"3699" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "About Face",
+				"de" : "Geistlenkung rückwärts",
+				"fr" : "Contrainte mentale: reculer",
+				"jp" : "移動命令：後"
+			}
+		}
+	},
+	"3700" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Left Face",
+				"de" : "Geistlenkung links",
+				"fr" : "Contrainte mentale: virage à gauche",
+				"jp" : "移動命令：左"
+			}
+		}
+	},
+	"3701" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Right Face",
+				"de" : "Geistlenkung rechts",
+				"fr" : "Contrainte mentale: virage à droite",
+				"jp" : "移動命令：右"
+			}
+		}
+	},
+	"3704" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Crystal Courier",
+				"de" : "Kristallträger",
+				"fr" : "Cristal en mains",
+				"jp" : "クリスタル運搬"
+			}
+		}
+	},
 	"3706" : {
 		"type" : "dot",
 		"dot" : true,
@@ -44081,6 +44151,48 @@
 			}
 		}
 	},
+	"3708" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Spectator",
+				"de" : "Zuschauer",
+				"fr" : "Mode spectateur",
+				"jp" : "観戦中"
+			}
+		}
+	},
+	"3709" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Drop and Roll",
+				"de" : "Ausweichrolle",
+				"fr" : "Virevolte",
+				"jp" : "ドッジロール"
+			}
+		}
+	},
+	"3710" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Precision",
+				"de" : "Perfektes Ausweichen",
+				"fr" : "Esquive habile",
+				"jp" : "プレシジョンドッジ"
+			}
+		}
+	},
 	"3712" : {
 		"type" : "dot",
 		"dot" : true,
@@ -44095,6 +44207,566 @@
 			}
 		}
 	},
+	"3715" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Forward March",
+				"de" : "Geistlenkung vorwärts",
+				"fr" : "Contrainte mentale: avancer",
+				"jp" : "移動命令：前"
+			}
+		}
+	},
+	"3716" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "About Face",
+				"de" : "Geistlenkung rückwärts",
+				"fr" : "Contrainte mentale: reculer",
+				"jp" : "移動命令：後"
+			}
+		}
+	},
+	"3717" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Left Face",
+				"de" : "Geistlenkung links",
+				"fr" : "Contrainte mentale: virage à gauche",
+				"jp" : "移動命令：左"
+			}
+		}
+	},
+	"3718" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Right Face",
+				"de" : "Geistlenkung rechts",
+				"fr" : "Contrainte mentale: virage à droite",
+				"jp" : "移動命令：右"
+			}
+		}
+	},
+	"3719" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Forced March",
+				"de" : "Marschbefehl",
+				"fr" : "Marche forcée",
+				"jp" : "強制移動"
+			}
+		}
+	},
+	"3723" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Surge Vector",
+				"de" : "Schubziel",
+				"fr" : "Cible de bombardement",
+				"jp" : "爆撃目標"
+			}
+		}
+	},
+	"3724" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Subtractive Suppressor Alpha",
+				"de" : "Subtraktionstaktiken α",
+				"fr" : "Éthéroplasma diminutif α",
+				"jp" : "減算爆雷α"
+			}
+		}
+	},
+	"3725" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Subtractive Suppressor Beta",
+				"de" : "Subtraktionstaktiken β",
+				"fr" : "Éthéroplasma diminutif β",
+				"jp" : "減算爆雷β"
+			}
+		}
+	},
+	"3730" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Down for the Count",
+				"de" : "Am Boden",
+				"fr" : "Au tapis",
+				"jp" : "ノックダウン"
+			}
+		}
+	},
+	"3732" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Inscribed",
+				"de" : "Hieroglyphe des Gelehrten",
+				"fr" : "Hiéroglyphe de l'Érudit",
+				"jp" : "知神の聖刻"
+			}
+		}
+	},
+	"3733" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rite of the Sparrow",
+				"de" : "Pilger des Finken",
+				"fr" : "Révérence: oiseau sacré",
+				"jp" : "巡礼：霊鳥"
+			}
+		}
+	},
+	"3734" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rite of the Sea Turtle",
+				"de" : "Pilger der Schildkröte",
+				"fr" : "Révérence: tortue sacrée",
+				"jp" : "巡礼：霊亀"
+			}
+		}
+	},
+	"3735" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rite of the Great Whale",
+				"de" : "Pilger des Wals",
+				"fr" : "Révérence: baleine sacrée",
+				"jp" : "巡礼：霊鯨"
+			}
+		}
+	},
+	"3737" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Forced March",
+				"de" : "Marschbefehl",
+				"fr" : "Marche forcée",
+				"jp" : "強制移動"
+			}
+		}
+	},
+	"3739" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Time and Tide",
+				"de" : "Zeit und Gezeiten",
+				"fr" : "Manipulation temporelle",
+				"jp" : "時間操作"
+			}
+		}
+	},
+	"3740" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bright Pulse",
+				"de" : "Sichtblende",
+				"fr" : "Éblouissement",
+				"jp" : "閃光"
+			}
+		}
+	},
+	"3741" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Seventh Heaven",
+				"de" : "Macht des Astralen Himmels",
+				"fr" : "Pouvoir céleste",
+				"jp" : "星天の力"
+			}
+		}
+	},
+	"3742" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bull's-eye",
+				"de" : "Donnerdarts",
+				"fr" : "Fléchette de tonnerre",
+				"jp" : "サンダーダート"
+			}
+		}
+	},
+	"3743" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bubble Weave",
+				"de" : "Ahnung des Blasennetzes",
+				"fr" : "Filet de bulles: écho",
+				"jp" : "バブルネットエコー"
+			}
+		}
+	},
+	"3747" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Hydrofall Target",
+				"de" : "Ziel von Hydro-Sturz",
+				"fr" : "Cible de pilonnage hydrique",
+				"jp" : "ターゲッティング：ハイドロフォール"
+			}
+		}
+	},
+	"3748" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Hydrobullet Target",
+				"de" : "Ziel von Hydro-Kugel",
+				"fr" : "Cible de barillet hydrique",
+				"jp" : "ターゲッティング：ハイドロバレット"
+			}
+		}
+	},
+	"3751" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Needle Veil",
+				"de" : "Nadelschleier",
+				"fr" : "Barrière thérapeutique",
+				"jp" : "鍼バリア"
+			}
+		}
+	},
+	"3752" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Oasal Balm",
+				"de" : "Balsam der Oase",
+				"fr" : "Baume oasien",
+				"jp" : "憩いの水"
+			}
+		}
+	},
+	"3753" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Oasal Balm",
+				"de" : "Balsam der Oase",
+				"fr" : "Baume oasien",
+				"jp" : "憩いの水"
+			}
+		}
+	},
+	"3756" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Damage Up",
+				"de" : "Schaden +",
+				"fr" : "Bonus de dégâts",
+				"jp" : "ダメージ上昇"
+			}
+		}
+	},
+	"3757" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Vulnerability Down",
+				"de" : "Verringerte Verwundbarkeit",
+				"fr" : "Vulnérabilité diminuée",
+				"jp" : "被ダメージ低下"
+			}
+		}
+	},
+	"3758" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Raging Rroneek",
+				"de" : "Herz des Rroneek",
+				"fr" : "Ardeur du Rroneek",
+				"jp" : "ロネークの心熱"
+			}
+		}
+	},
+	"3759" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Impassioned",
+				"de" : "Raserei",
+				"fr" : "Psychose",
+				"jp" : "狂騒"
+			}
+		}
+	},
+	"3760" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Big Bang",
+				"de" : "Großer Knall",
+				"fr" : "Big bang",
+				"jp" : "ビッグバーン"
+			}
+		}
+	},
+	"3761" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Big Bounce",
+				"de" : "Großer Praller",
+				"fr" : "Big bounce",
+				"jp" : "ビッグバウンス"
+			}
+		}
+	},
+	"3762" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Divisive Dark",
+				"de" : "Fressende Finsternis: Zerschmetterung",
+				"fr" : "Ténèbres rongeuses: Pulvérisation",
+				"jp" : "闇の侵食：砕"
+			}
+		}
+	},
+	"3763" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Beckoning Dark",
+				"de" : "Fressende Finsternis: Last",
+				"fr" : "Ténèbres rongeuses: Gravité",
+				"jp" : "闇の侵食：重"
+			}
+		}
+	},
+	"3764" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Doubled Dark",
+				"de" : "Fressende Finsternis: Zwilling",
+				"fr" : "Ténèbres rongeuses: Dualité",
+				"jp" : "闇の侵食：双"
+			}
+		}
+	},
+	"3765" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Glowering Dark",
+				"de" : "Fressende Finsternis: Auge",
+				"fr" : "Ténèbres rongeuses: Regard",
+				"jp" : "闇の侵食：眼"
+			}
+		}
+	},
+	"3766" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Binding Dark",
+				"de" : "Fressende Finsternis: Kette",
+				"fr" : "Ténèbres rongeuses: Chaînes",
+				"jp" : "闇の侵食：鎖"
+			}
+		}
+	},
+	"3768" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Area of Influence Up",
+				"de" : "Erweiterter Wirkungsbereich",
+				"fr" : "Aire d'effet élargie",
+				"jp" : "アクション効果幅拡大"
+			}
+		}
+	},
+	"3770" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Towering Flame",
+				"de" : "Überhitzung",
+				"fr" : "Surchauffe",
+				"jp" : "過熱"
+			}
+		}
+	},
+	"3771" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Infernal Shroud",
+				"de" : "Höllenschleier",
+				"fr" : "Embrasement primordial",
+				"jp" : "炎影"
+			}
+		}
+	},
+	"3776" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bind",
+				"de" : "Fessel",
+				"fr" : "Entrave",
+				"jp" : "バインド"
+			}
+		}
+	},
+	"3778" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Dropsy",
+				"de" : "Wassersucht",
+				"fr" : "Œdème",
+				"jp" : "水毒"
+			}
+		}
+	},
 	"3779" : {
 		"type" : "dot",
 		"dot" : true,
@@ -44106,6 +44778,202 @@
 				"de" : "Stromschlag",
 				"fr" : "Électrocution",
 				"jp" : "感電"
+			}
+		}
+	},
+	"3783" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rroneek Pulse",
+				"de" : "Blutrausch des Rroneek",
+				"fr" : "Sang chaud du Rroneek",
+				"jp" : "ロネークの血潮"
+			}
+		}
+	},
+	"3784" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Br'aax Pulse",
+				"de" : "Blutrausch des Br'aax",
+				"fr" : "Sang chaud du Br'aax",
+				"jp" : "ブラーシャの血潮"
+			}
+		}
+	},
+	"3785" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Luwatena Pulse",
+				"de" : "Blutrausch der Luwatena",
+				"fr" : "Sang chaud du Luwatena",
+				"jp" : "ルワテナの血潮"
+			}
+		}
+	},
+	"3786" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Full-grown",
+				"de" : "Ausgewachsen",
+				"fr" : "Mature",
+				"jp" : "成形"
+			}
+		}
+	},
+	"3788" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Foamy Fetters",
+				"de" : "Blasenbindung",
+				"fr" : "Agglutination de bulles",
+				"jp" : "バブルフィッター"
+			}
+		}
+	},
+	"3791" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Movement Speed Up",
+				"de" : "Geschwindigkeit +",
+				"fr" : "Vitesse de déplacement accrue",
+				"jp" : "移動速度上昇"
+			}
+		}
+	},
+	"3793" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Acceleration Bomb",
+				"de" : "Beschleunigungsbombe",
+				"fr" : "Bombe à accélération",
+				"jp" : "加速度爆弾"
+			}
+		}
+	},
+	"3794" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Beckoning Dark",
+				"de" : "Fressende Finsternis: Last",
+				"fr" : "Ténèbres rongeuses: Gravité",
+				"jp" : "闇の侵食：重"
+			}
+		}
+	},
+	"3795" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Sustained Damage",
+				"de" : "Schaden über Zeit",
+				"fr" : "Dégâts continus",
+				"jp" : "継続ダメージ"
+			}
+		}
+	},
+	"3798" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Dropsy",
+				"de" : "Wassersucht",
+				"fr" : "Œdème",
+				"jp" : "水毒"
+			}
+		}
+	},
+	"3799" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Forked Lightning",
+				"de" : "Gabelblitz",
+				"fr" : "Éclair ramifié",
+				"jp" : "フォークライトニング"
+			}
+		}
+	},
+	"3802" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Acceleration Bomb",
+				"de" : "Beschleunigungsbombe",
+				"fr" : "Bombe à accélération",
+				"jp" : "加速度爆弾"
+			}
+		}
+	},
+	"3938" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Times Three",
+				"de" : "3-fache Winkeladdition",
+				"fr" : "Triple rotation",
+				"jp" : "回転角3倍"
+			}
+		}
+	},
+	"3939" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Times Five",
+				"de" : "5-fache Winkeladdition",
+				"fr" : "Quintuple rotation",
+				"jp" : "回転角5倍"
 			}
 		}
 	}

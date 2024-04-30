@@ -741,7 +741,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "The Gilded Araya",
-				"de" : "Arayas Palast",
+				"de" : "Prophetie - Asura",
 				"fr" : "Le temple doré d'Araya",
 				"jp" : "アスラ討滅戦"
 			}
@@ -2651,7 +2651,7 @@
 		}
 	},
 	"58" : {
-		"zone_id" : 731,
+		"zone_id" : 1172,
 		"locales" : {
 			"name" : {
 				"en" : "the Drowned City of Skalla",
@@ -3047,7 +3047,7 @@
 		}
 	},
 	"63" : {
-		"zone_id" : 789,
+		"zone_id" : 1173,
 		"locales" : {
 			"name" : {
 				"en" : "the Burn",
@@ -3223,7 +3223,7 @@
 		}
 	},
 	"64" : {
-		"zone_id" : 793,
+		"zone_id" : 1174,
 		"locales" : {
 			"name" : {
 				"en" : "the Ghimlyt Dark",
@@ -5147,6 +5147,17 @@
 			}
 		}
 	},
+	"91" : {
+		"zone_id" : 1164,
+		"locales" : {
+			"name" : {
+				"en" : "The Lunar Subterrane",
+				"de" : "Monduntergrund",
+				"fr" : "Le Souterrain lunaire",
+				"jp" : "深淵潜行 月の地下渓谷"
+			}
+		}
+	},
 	"20082" : {
 		"zone_id" : 1048,
 		"locales" : {
@@ -5714,7 +5725,7 @@
 			"name" : {
 				"en" : "Crystalline Conflict (Custom Match - The Clockwork Castletown)",
 				"de" : "Crystalline Conflict: Die Mechanische Menagerie (Schaukampf)",
-				"fr" : "Crystalline Conflict (partie personnalisée - Le Traquenard oriental)",
+				"fr" : "Crys. Conflict (partie perso. - Le Traquenard oriental)",
 				"jp" : "クリスタルコンフリクト(東方絡繰御殿：カスタムマッチ)"
 			}
 		}
@@ -5818,6 +5829,17 @@
 			}
 		}
 	},
+	"20088" : {
+		"zone_id" : 1136,
+		"locales" : {
+			"name" : {
+				"en" : "The Gilded Araya",
+				"de" : "Prophetie - Asura",
+				"fr" : "Le temple doré d'Araya",
+				"jp" : "アスラ討滅戦"
+			}
+		}
+	},
 	"36002" : {
 		"zone_id" : 1137,
 		"locales" : {
@@ -5884,17 +5906,6 @@
 			}
 		}
 	},
-	"64007" : {
-		"zone_id" : 1157,
-		"locales" : {
-			"name" : {
-				"en" : "Containment Bay Z1T9 (Unreal)",
-				"de" : "Traumprüfung - Zurvan",
-				"fr" : "Unité de contention Z1P9 (irréel)",
-				"jp" : "幻鬼神ズルワーン討滅戦"
-			}
-		}
-	},
 	"63012" : {
 		"zone_id" : 1163,
 		"locales" : {
@@ -5958,6 +5969,138 @@
 				"de" : "Auf großer Fahrt",
 				"fr" : "Pêche en mer",
 				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"5066" : {
+		"zone_id" : 1166,
+		"locales" : {
+			"name" : {
+				"en" : "Memory of Embers",
+				"de" : "Der Pfad der Flammen",
+				"fr" : "Flammes primordiales",
+				"jp" : "炎影の旅路"
+			}
+		}
+	},
+	"5067" : {
+		"zone_id" : 1177,
+		"locales" : {
+			"name" : {
+				"en" : "The Game Is Afoot",
+				"de" : "Die Jagd ist eröffnet",
+				"fr" : "Par-delà l'horizon",
+				"jp" : "その瞳が見据えるもの"
+			}
+		}
+	},
+	"36003" : {
+		"zone_id" : 1176,
+		"locales" : {
+			"name" : {
+				"en" : "Aloalo Island",
+				"de" : "Aloalo",
+				"fr" : "L'île d'Aloalo - Donjon à embranchements",
+				"jp" : "ヴァリアントダンジョン アロアロ島"
+			}
+		}
+	},
+	"30134" : {
+		"zone_id" : 1178,
+		"locales" : {
+			"name" : {
+				"en" : "Thaleia",
+				"de" : "Thaleia",
+				"fr" : "Domaine divin - Thalie",
+				"jp" : "華めく神域 タレイア"
+			}
+		}
+	},
+	"64008" : {
+		"zone_id" : 1175,
+		"locales" : {
+			"name" : {
+				"en" : "The Singularity Reactor (Unreal)",
+				"de" : "Traumprüfung - Singularitäts-Reaktor",
+				"fr" : "Le Réacteur de singularité (irréel)",
+				"jp" : "幻ナイツ・オブ・ラウンド討滅戦"
+			}
+		}
+	},
+	"20091" : {
+		"zone_id" : 1168,
+		"locales" : {
+			"name" : {
+				"en" : "The Abyssal Fracture",
+				"de" : "Prophetie - Zeromus",
+				"fr" : "La Fracture abyssale",
+				"jp" : "ゼロムス討滅戦"
+			}
+		}
+	},
+	"20092" : {
+		"zone_id" : 1169,
+		"locales" : {
+			"name" : {
+				"en" : "The Abyssal Fracture (Extreme)",
+				"de" : "Eschatos - Zeromus",
+				"fr" : "La Fracture abyssale (extrême)",
+				"jp" : "極ゼロムス討滅戦"
+			}
+		}
+	},
+	"40039" : {
+		"zone_id" : 1138,
+		"locales" : {
+			"name" : {
+				"en" : "The Red Sands",
+				"de" : "Die Roten Sande",
+				"fr" : "Les Sables sanglants",
+				"jp" : "レッド・サンズ"
+			}
+		}
+	},
+	"40040" : {
+		"zone_id" : 1138,
+		"locales" : {
+			"name" : {
+				"en" : "The Red Sands",
+				"de" : "Die Roten Sande",
+				"fr" : "Les Sables sanglants",
+				"jp" : "レッド・サンズ"
+			}
+		}
+	},
+	"40041" : {
+		"zone_id" : 1139,
+		"locales" : {
+			"name" : {
+				"en" : "Crystalline Conflict (Custom Match - The Red Sands)",
+				"de" : "Crystalline Conflict: Die Roten Sande (Schaukampf)",
+				"fr" : "Crystalline Conflict (partie personnalisée - Les Sables sanglants)",
+				"jp" : "クリスタルコンフリクト(レッド・サンズ：カスタムマッチ)"
+			}
+		}
+	},
+	"37005" : {
+		"zone_id" : 1179,
+		"locales" : {
+			"name" : {
+				"en" : "Another Aloalo Island",
+				"de" : "Kurioses Aloalo",
+				"fr" : "L'île d'Aloalo annexe - Donjon alternatif",
+				"jp" : "アナザーダンジョン 異聞アロアロ島"
+			}
+		}
+	},
+	"37006" : {
+		"zone_id" : 1180,
+		"locales" : {
+			"name" : {
+				"en" : "Another Aloalo Island (Savage)",
+				"de" : "Kurioses Aloalo (episch)",
+				"fr" : "L'île d'Aloalo annexe - Donjon alternatif (sadique)",
+				"jp" : "アナザーダンジョン 異聞アロアロ島 零式"
 			}
 		}
 	}

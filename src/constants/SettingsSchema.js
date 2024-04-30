@@ -68,6 +68,11 @@ const theme_options    = [
 		value : "ffxiv-classic",
 		text  : "FFXIV Classic",
 	},
+	{
+		key   : "ffxiv-clear-blue",
+		value : "ffxiv-clear-blue",
+		text  : "FFXIV Clear Blue",
+	},
 ];
 
 const SettingsSchema = {

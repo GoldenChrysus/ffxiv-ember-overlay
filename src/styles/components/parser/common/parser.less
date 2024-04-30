@@ -32,6 +32,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_headerAndLinkText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_headerAndLinkText;
 		}
 	);
 }
@@ -55,6 +58,10 @@ body.mode-spells {
 		@classicTheme: {
 			background: @classic_rowAndLinkHoverBackground;
 			box-shadow: inset 0 -1px 0 @classic_footerLinkInnerShadow, inset 0 1px 2px @classic_footerLinkOuterShadow;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_rowAndLinkHoverBackground;
+			box-shadow: inset 0 -1px 0 @clearBlue_footerLinkInnerShadow, inset 0 1px 2px @clearBlue_footerLinkOuterShadow;
 		}
 	);
 }
@@ -74,6 +81,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_borderOuter;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_borderOuter;
 		}
 	);
 }
@@ -111,6 +121,29 @@ body.mode-spells {
 		@classicTheme: {
 			background-color: @classic_containerBackground;
 			box-shadow: inset 0 1px 1px 0 @classic_borderOuter, inset 0 0 1px 0 @classic_borderOuterShadow, 0 0 1px 1px @classic_borderOuterGlow, 0 1px 1px 1px @classic_borderOuterGlow;
+		},
+		@clearBlueTheme: {
+			border-radius: 0;
+			background-color: transparent;
+			padding: 0;
+			box-shadow: none;
+		}
+	);
+}
+
+#container:before {
+	.setThemeStyle(
+		@clearBlueTheme: {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0.9;
+			background-color: @clearBlue_containerBackground;
+			background-size: 100% 100%;
+			background-position: 0px 0px;
+			background-image: radial-gradient(60% 15% at 0% 0%, @clearBlue_borderOuter 0%, transparent 100%), radial-gradient(at right top, @clearBlue_containerBackground, @clearBlue_contentBackground);
 		}
 	);
 }
@@ -148,6 +181,11 @@ body.mode-spells {
 		@classicTheme: {
 			background-image: @classic_contentBackground;
 			box-shadow: inset 0 0 0 1px @classic_borderInner, 0 0 0 2px @classic_borderInnerShadow, 0 3px 1px @classic_borderOuter, 0 0 2px 1px @classic_borderInnerGlow;
+		},
+		@clearBlueTheme: {
+			background-image: none;
+			box-shadow: none;
+			border-radius: 0;
 		}
 	);
 }
@@ -169,6 +207,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			box-shadow: 0 -1px 0 @classic_borderInnerGlow, inset 0 -1px 0 @classic_footerBorderInner;
+		},
+		@clearBlueTheme: {
+			box-shadow: 0 -1px 0 @clearBlue_borderInnerGlow, inset 0 -1px 0 @clearBlue_borderInner;
 		}
 	);
 }
@@ -196,6 +237,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_headerAndLinkText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_headerAndLinkText;
 		}
 	);
 }
@@ -217,6 +261,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_headerSubtitleText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_headerSubtitleText;
 		}
 	);
 }
@@ -245,6 +292,10 @@ body.mode-spells {
 		@classicTheme: {
 			background: @classic_toggleBackground;
 			box-shadow: inset 0 2px 2px 0 @classic_borderOuter, inset 0 0 2px 0 @classic_placeholderInsetBorder, 0 0 2px 2px @classic_toggleShadow, 0 2px 2px 2px @classic_toggleShadow;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_toggleBackground;
+			box-shadow: inset 0 2px 2px 0 @clearBlue_borderOuter, inset 0 0 2px 0 @clearBlue_placeholderInsetBorder, 0 0 2px 2px @clearBlue_toggleShadow, 0 2px 2px 2px @clearBlue_toggleShadow;
 		}
 	);
 }
@@ -293,6 +344,11 @@ body.mode-spells {
 			background: @classic_borderInnerGlow;
 			box-shadow: inset 0 -1px 0 @classic_borderInner;
 			color: @classic_importantText;
+		},
+		@clearBlueTheme: {
+			background: transparent;
+			box-shadow: none;
+			color: @clearBlue_importantText;
 		}
 	);
 }
@@ -364,6 +420,22 @@ body.mode-spells {
 	background-image: @classic_contentBackground;
 }
 
+.mode-spells[theme=ffxiv-clear-blue] #container #inner > #game-state {
+	background-color: @clearBlue_containerBackground;
+}
+
+.mode-spells[theme=ffxiv-clear-blue] #container #inner #content #overlay-info {
+	opacity: 0.9;
+	background-color: @clearBlue_containerBackground;
+	background-size: 100% 100%;
+	background-position: 0px 0px;
+	background-image: radial-gradient(60% 15% at 0% 0%, @clearBlue_borderOuter 0%, transparent 100%), radial-gradient(at right top, @clearBlue_containerBackground, @clearBlue_contentBackground);
+}
+
+.mode-spells[theme=ffxiv-clear-blue] #container:before {
+	background: none;
+}
+
 #container #inner #content #overlay-info > h3 {
 	margin-bottom: 0;
 
@@ -376,6 +448,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_importantText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_importantText;
 		}
 	);
 }
@@ -394,6 +469,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_aboutTopText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_playerDetailSectionDataValueText;
 		}
 	);
 }
@@ -432,6 +510,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_borderOuterShadow;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_distinguishedText;
 		}
 	);
 }
@@ -448,6 +529,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_headerSubtitleText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_headerSubtitleText;
 		}
 	);
 }
@@ -493,6 +577,10 @@ body.mode-spells {
 		@classicTheme: {
 			color: @classic_playerTableRowText;
 			border-bottom: none;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_playerTableRowText;
+			border-bottom: 1px solid @clearBlue_gridItemBackground;
 		}
 	);
 }
@@ -511,6 +599,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background-image: linear-gradient(@classic_playerTableRowBackground, @classic_playerTableRowBackground);
+		},
+		@clearBlueTheme: {
+			background-image: linear-gradient(@clearBlue_playerTableRowBackground, @clearBlue_playerTableRowBackground);
 		}
 	);
 }
@@ -533,6 +624,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_gridItemBackground;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_gridItemBackground;
 		}
 	);
 }
@@ -568,6 +662,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_playerTableRowBorderTop;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_playerTableRowBorderTop;
 		}
 	);
 }
@@ -599,6 +696,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_playerTableRowBackground;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_playerTableRowBackground;
 		}
 	);
 }
@@ -613,6 +713,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_playerTableHeaderRowBackground;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_playerTableHeaderRowBackground;
 		}
 	);
 }
@@ -633,6 +736,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_headerAndLinkText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_headerAndLinkText;
 		}
 	);
 }
@@ -647,6 +753,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_playerTableActiveRowBackground;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_playerTableActiveRowBackground;
 		}
 	);
 }
@@ -661,6 +770,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background-image: linear-gradient(@classic_playerTableActiveRowBackground, @classic_playerTableActiveRowBackground);
+		},
+		@clearBlueTheme: {
+			background-image: linear-gradient(@clearBlue_playerTableActiveRowBackground, @clearBlue_playerTableActiveRowBackground);
 		}
 	);
 }
@@ -680,6 +792,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_rowAndLinkHoverBackground;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_rowAndLinkHoverBackground;
 		}
 	);
 }
@@ -784,6 +899,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_importantText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_importantText;
 		}
 	);
 }
@@ -880,6 +998,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_importantText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_importantText;
 		}
 	);
 }
@@ -910,8 +1031,11 @@ body.mode-spells {
 		{
 			color: @light_playerDetailSectionTitleText;
 		},
-		@minimalTheme: {
+		@classicTheme: {
 			color: @classic_playerDetailSectionTitleText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_playerDetailSectionTitleText;
 		}
 	);
 }
@@ -940,6 +1064,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_detailItemBackground;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_gridItemBackground;
 		}
 	);
 }
@@ -962,6 +1089,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_playerDetailSectionDataTitleText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_playerDetailSectionDataTitleText;
 		}
 	);
 }
@@ -977,6 +1107,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_playerDetailSectionDataValueText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_playerDetailSectionDataValueText;
 		}
 	);
 }
@@ -1003,6 +1136,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_footerActiveLinkBackground !important;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_footerActiveLinkBackground !important;
 		}
 	);
 }
@@ -1019,6 +1155,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_playerDetailSectionTitleText !important;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_playerDetailSectionTitleText !important;
 		}
 	);
 }
@@ -1035,6 +1174,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_borderOuter;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_borderOuter;
 		}
 	);
 }
@@ -1049,6 +1191,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			background: @classic_importantText;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_importantText;
 		}
 	);
 }
@@ -1096,6 +1241,9 @@ body.mode-spells {
 		},
 		@classicTheme: {
 			color: @classic_headerAndLinkText;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_headerAndLinkText;
 		}
 	);
 }
@@ -1119,6 +1267,10 @@ body.mode-spells {
 		@classicTheme: {
 			background: @classic_footerActiveLinkBackground;
 			box-shadow: inset 0 -1px 0 @classic_borderInner, inset 0 1px 2px @classic_borderInnerGlow;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_footerActiveLinkBackground;
+			box-shadow: inset 0 -1px 0 @clearBlue_borderInner, inset 0 1px 2px @clearBlue_borderInnerGlow;
 		}
 	);
 }
@@ -1137,6 +1289,10 @@ body.mode-spells {
 		@classicTheme: {
 			background: @classic_rowAndLinkHoverBackground;
 			box-shadow: inset 0 -1px 0 @classic_footerLinkInnerShadow, inset 0 1px 2px @classic_footerLinkOuterShadow;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_rowAndLinkHoverBackground;
+			box-shadow: inset 0 -1px 0 @clearBlue_footerLinkInnerShadow, inset 0 1px 2px @clearBlue_footerLinkOuterShadow;
 		}
 	);
 }
@@ -1192,6 +1348,11 @@ body.mode-spells {
 			background-image: @classic_contentBackground;
 			color: @classic_headerAndLinkText;
 			border: 1px solid @classic_borderOuterShadow;
+		},
+		@clearBlueTheme: {
+			background-image: @clearBlue_contentBackground;
+			color: @clearBlue_headerAndLinkText;
+			border: 1px solid @clearBlue_borderOuterShadow;
 		}
 	)
 }
@@ -1239,6 +1400,10 @@ body.mode-spells {
 		@classicTheme: {
 			background-image: @classic_contentBackground;
 			color: @classic_importantText;
+		},
+		@clearBlueTheme: {
+			background-image: @clearBlue_contentBackground;
+			color: @clearBlue_importantText;
 		}
 	);
 }
@@ -1418,6 +1583,9 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		},
 		@classicTheme: {
 			background-image: @classic_spellWarningBackground;
+		},
+		@clearBlueTheme: {
+			background-image: @clearBlue_spellWarningBackground;
 		}
 	);
 }
@@ -1456,6 +1624,9 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		},
 		@classicTheme: {
 			color: @classic_headerAndLinkText
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_headerAndLinkText
 		}
 	);
 }
@@ -1512,6 +1683,10 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		@classicTheme: {
 			background: @classic_toggleBackground;
 			box-shadow: inset 0 1px 1px 0 @classic_borderOuter, inset 0 0 1px 0 @classic_placeholderInsetBorder, 0 0 1px 2px @classic_borderOuterGlow, 0 2px 2px 2px @classic_borderOuterGlow;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_toggleBackground;
+			box-shadow: inset 0 1px 1px 0 @clearBlue_borderOuter, inset 0 0 1px 0 @clearBlue_placeholderInsetBorder, 0 0 1px 2px @clearBlue_borderOuterGlow, 0 2px 2px 2px @clearBlue_borderOuterGlow;
 		}
 	);
 }
@@ -1559,6 +1734,10 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		@classicTheme: {
 			background: @classic_placeholderInnerBackground;
 			box-shadow: inset 0 0 0 1px @classic_borderInner, 0 0 0 2px @classic_borderInnerShadow, 0 3px 1px @classic_borderOuter, 0 0 2px 1px @classic_borderInnerGlow;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_placeholderInnerBackground;
+			box-shadow: inset 0 0 0 1px @clearBlue_borderInner, 0 0 0 2px @clearBlue_borderInnerShadow, 0 3px 1px @clearBlue_borderOuter, 0 0 2px 1px @clearBlue_borderInnerGlow;
 		}
 	);
 }
@@ -1595,6 +1774,13 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 			background: @classic_contextMenuBackground;
 			text-shadow: 0 1px @classic_contextMenuShadow;
 			box-shadow: 0 0 1px @classic_contextMenuShadow, 0 2px 3px @classic_contextMenuShadow;
+		},
+		@clearBlueTheme: {
+			border-top: 1px solid @clearBlue_borderInner;
+			border-bottom: 1px solid @clearBlue_borderInnerGlow;
+			background: @clearBlue_contextMenuBackground;
+			text-shadow: 0 1px @clearBlue_contextMenuShadow;
+			box-shadow: 0 0 1px @clearBlue_contextMenuShadow, 0 2px 3px @clearBlue_contextMenuShadow;
 		}
 	);
 }
@@ -1621,6 +1807,9 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		},
 		@classicTheme: {
 			color: @classic_contextMenuItemBackground;
+		},
+		@clearBlueTheme: {
+			color: @clearBlue_contextMenuItemBackground;
 		}
 	);
 }
@@ -1635,6 +1824,9 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		},
 		@classicTheme: {
 			background: linear-gradient(90deg, @classic_borderInnerGlow, transparent);
+		},
+		@clearBlueTheme: {
+			background: linear-gradient(90deg, @clearBlue_borderInnerGlow, transparent);
 		}
 	);
 }
@@ -1666,6 +1858,9 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		},
 		@classicTheme: {
 			background: @classic_toggleBackground !important;
+		},
+		@clearBlueTheme: {
+			background: @clearBlue_toggleBackground !important;
 		}
 	);
 }
@@ -1680,6 +1875,9 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		},
 		@classicTheme: {
 			border-left-color: @classic_toggleBackground !important;
+		},
+		@clearBlueTheme: {
+			border-left-color: @clearBlue_toggleBackground !important;
 		}
 	);
 }
@@ -1694,6 +1892,9 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		},
 		@classicTheme: {
 			border-right-color: @classic_toggleBackground !important;
+		},
+		@clearBlueTheme: {
+			border-right-color: @clearBlue_toggleBackground !important;
 		}
 	);
 }
@@ -1708,6 +1909,9 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		},
 		@classicTheme: {
 			border-bottom-color: @classic_toggleBackground !important;
+		},
+		@clearBlueTheme: {
+			border-bottom-color: @clearBlue_toggleBackground !important;
 		}
 	);
 }
@@ -1722,6 +1926,9 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 		},
 		@classicTheme: {
 			border-top-color: @classic_toggleBackground !important;
+		},
+		@clearBlueTheme: {
+			border-top-color: @clearBlue_toggleBackground !important;
 		}
 	);
 }
@@ -1835,7 +2042,6 @@ body.horizontal #container > #inner > #content > #player-table > .row.active.act
 	transform: skew(-25deg);
 	transform-origin: top;
 	z-index: 0;
-	
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar::before {
