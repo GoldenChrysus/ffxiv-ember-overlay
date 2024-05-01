@@ -2,13 +2,13 @@
 
 ## 1.6.0
 
-**[in staging]**
+**Released: 2024-05-01**
 
 ### Bug Fixes
 - N/A
 
 ### Features
-- ! Added FFXIV Clear Blue theme
+- Added FFXIV Clear Blue theme
 
 ### UI Changes
 - N/A
@@ -17,7 +17,7 @@
 - N/A
 
 ### Miscellaneous
-- ! Updated game data through FFXIV patch 6.58
+- Updated game data through FFXIV patch 6.58
 
 ## 1.5.3
 
