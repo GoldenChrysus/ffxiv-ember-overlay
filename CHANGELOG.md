@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.6.1
+
+**Released: 2024-05-09**
+
+### Bug Fixes
+- Fixed missing image issue in FFXIV Clear Blue theme minimized placeholder
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.6.0
 
 **Released: 2024-05-01**
