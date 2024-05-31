@@ -1,23 +1,18 @@
 import React from "react";
-import $ from "jquery";
+import { connect } from "react-redux";
+import { updateToggle } from "../../redux/actions";
 
 class Placeholder extends React.Component {
-	togglePlaceholders() {
-		const $container = $(document).find("#container");
-		const active     = $container.hasClass("hidden");
-
-		$(document).find(".placeholder").each(function() {
-			$(this).toggleClass("hidden", active);
-		});
-
-		$container.toggleClass("hidden", !active);
-	}
-
 	render() {
-		const image_src = `img/icons/placeholder-${this.props.theme}-theme.png`;
+		const image_src   = `img/icons/placeholder-${this.props.theme}-theme.png`;
+		const class_names = ["placeholder", this.props.location.replace("_", " ")];
+
+		if (!this.props.toggles[this.props.location]) {
+			class_names.push("hidden");
+		}
 
 		return (
-			<div className={"placeholder " + this.props.type + " hidden"} onClick={this.togglePlaceholders.bind(this)}>
+			<div className={class_names.join(" ")} onClick={() => this.props.untoggle(this.props.location)}>
 				<div className='inner'>
 					<img src={image_src} alt='Minimized button'></img>
 				</div>
@@ -26,4 +21,14 @@ class Placeholder extends React.Component {
 	}
 }
 
-export default Placeholder;
+const mapDispatchToProps = dispatch => ({
+	untoggle(location) {
+		dispatch(updateToggle({ location, enabled : false }));
+	},
+});
+
+const mapStateToProps = state => ({
+	toggles : state.internal.toggles,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Placeholder);

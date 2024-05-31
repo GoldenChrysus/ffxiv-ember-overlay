@@ -126,7 +126,8 @@ const SettingsSchema = {
 							},
 							{
 								key_path      : "interface.auto_hide",
-								type          : "checkbox",
+								type          : "select",
+								options       : () => LocalizationService.getAutoHideOptions(),
 								exclude_modes : [
 									"spells",
 								],

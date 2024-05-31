@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.7.0
+
+**Released: [in staging]**
+
+### Bug Fixes
+- N/A
+
+### Features
+- Added options to minimize overlay instead of fully hiding when inactive
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.6.1
 
 **Released: 2024-05-09**

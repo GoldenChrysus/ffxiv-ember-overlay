@@ -5,6 +5,7 @@ import "./../styles/components/parser/parser-theme.less";
 
 import Container from "./Parser/Container";
 import Placeholder from "./Parser/Placeholder";
+import { updateToggle } from "../redux/actions";
 
 class Parser extends React.Component {
 	constructor(props) {
@@ -18,6 +19,7 @@ class Parser extends React.Component {
 			always_visible : {
 				spells : true,
 			},
+			minimized_last_activity : 0,
 		};
 	}
 
@@ -47,7 +49,7 @@ class Parser extends React.Component {
 	processAutoHide() {
 		let visible = true;
 
-		if (this.state.always_visible[this.props.mode]) {
+		if (this.props.auto_hide === "disabled" || this.state.always_visible[this.props.mode]) {
 			return;
 		}
 
@@ -55,10 +57,22 @@ class Parser extends React.Component {
 			visible = false;
 		}
 
-		if (this.state.visible !== visible) {
-			this.setState({
-				visible,
-			});
+		if (!visible) {
+			if (this.props.auto_hide === "hide") {
+				if (this.state.visible !== visible) {
+					this.setState({
+						visible,
+						last_activity : this.props.last_activity,
+					});
+				}
+			} else if (this.props.auto_hide.startsWith("minimize_")) {
+				const location = this.props.auto_hide.substring(9);
+
+				if (!this.props.toggles[location] && this.props.last_activity !== this.state.minimized_last_activity) {
+					this.setState({ minimized_last_activity : this.props.last_activity });
+					this.props.autoHideMinimize(location);
+				}
+			}
 		}
 	}
 
@@ -131,10 +145,10 @@ class Parser extends React.Component {
 					{setting_style}
 					{this.props.css}
 				</style>
-				<Placeholder type='top left' theme={this.props.theme}/>
-				<Placeholder type='top right' theme={this.props.theme}/>
-				<Placeholder type='bottom left' theme={this.props.theme}/>
-				<Placeholder type='bottom right' theme={this.props.theme}/>
+				<Placeholder location='top_left' theme={this.props.theme}/>
+				<Placeholder location='top_right' theme={this.props.theme}/>
+				<Placeholder location='bottom_left' theme={this.props.theme}/>
+				<Placeholder location='bottom_right' theme={this.props.theme}/>
 				<div id='root-inner' key='root-inner' className={root_inner_classes}>
 					<Container key='container-component'/>
 				</div>
@@ -146,6 +160,12 @@ class Parser extends React.Component {
 		return ((!is_spells && this.props.collapse_down) || (is_spells && this.props.invert_spells_vertical));
 	}
 }
+
+const mapDispatchToProps = dispatch => ({
+	autoHideMinimize(location) {
+		dispatch(updateToggle({ location, enabled : true }));
+	},
+});
 
 const mapStateToProps = state => ({
 	collapsed                : state.settings.intrinsic.collapsed,
@@ -165,6 +185,7 @@ const mapStateToProps = state => ({
 	invert_spells_horizontal : state.settings.spells_mode.invert_horizontal,
 	has_spells               : (Object.keys(state.internal.spells.in_use).length > 0),
 	using_ui_builder         : state.settings.spells_mode.ui.use,
+	toggles                  : state.internal.toggles,
 });
 
-export default connect(mapStateToProps)(Parser);
+export default connect(mapStateToProps, mapDispatchToProps)(Parser);

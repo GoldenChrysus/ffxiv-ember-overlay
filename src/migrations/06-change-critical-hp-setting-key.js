@@ -6,14 +6,18 @@ class Migration {
 		return new Promise((resolve, _reject) => {
 			const settings = store.getState().settings_data;
 			const data     = settings.getSetting("tts.rules.critical");
+			const exists   = settings.getSetting("tts.rules.critical_hp");
 
-			store.dispatch(
-				updateSetting({
-					key       : "tts.rules.critical_hp",
-					value     : data,
-					skip_save : true,
-				}),
-			);
+			if (exists === undefined) {
+				store.dispatch(
+					updateSetting({
+						key       : "tts.rules.critical_hp",
+						value     : data,
+						skip_save : true,
+					}),
+				);
+			}
+
 			resolve();
 		});
 	}

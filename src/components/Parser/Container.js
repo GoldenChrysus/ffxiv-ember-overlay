@@ -323,14 +323,18 @@ class Container extends EmberComponent {
 			container_classes.push(this.props.horizontal_alignment || "left");
 		}
 
+		if (Object.values(this.props.toggles).some(x => x)) {
+			container_classes.push("hidden");
+		}
+
 		return (
 			<React.Fragment key='container-fragment'>
 				<ContextMenuTrigger key='right-click-menu' id='right-click-menu' holdToDisplay={-1}>
 					<div id='container' className={container_classes.join(" ")} key='container'>
-						<PlaceholderToggle type='top left'/>
-						<PlaceholderToggle type='top right'/>
-						<PlaceholderToggle type='bottom left'/>
-						<PlaceholderToggle type='bottom right'/>
+						<PlaceholderToggle location='top_left'/>
+						<PlaceholderToggle location='top_right'/>
+						<PlaceholderToggle location='bottom_left'/>
+						<PlaceholderToggle location='bottom_right'/>
 						<div id='inner' key='inner'>
 							{this.getGameState(encounter, active)}
 							<div id='content' key='content'>
@@ -506,6 +510,7 @@ const mapStateToProps = state => ({
 	hide_top_bar          : state.settings.interface.hide_top_bar,
 	ui_builder            : state.internal.ui_builder,
 	last_settings_update  : state.internal.last_settings_update,
+	toggles               : state.internal.toggles,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Container);

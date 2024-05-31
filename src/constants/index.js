@@ -410,6 +410,15 @@ const TTSRules = [
 	"encounter.end",
 ];
 
+const AutoHideOptions = [
+	"disabled",
+	"hide",
+	"minimize_top_left",
+	"minimize_top_right",
+	"minimize_bottom_left",
+	"minimize_bottom_right",
+];
+
 export default {
 	GameJobs,
 	GameJobsID,
@@ -421,4 +430,5 @@ export default {
 	MonsterDataCustomDataValues,
 	MonsterDataTitles,
 	TTSRules,
+	AutoHideOptions,
 };

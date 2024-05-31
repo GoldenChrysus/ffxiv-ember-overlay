@@ -95,6 +95,27 @@ class LocalizationService {
 		return OverlayLocales.tts[type][language];
 	}
 
+	getAutoHideOptionTitle(key, language) {
+		language = language || this.getLanguage();
+
+		return SettingsLocales.misc.auto_hide_options[language][key];
+	}
+
+	getAutoHideOptions() {
+		const language = this.getLanguage();
+		const options  = [];
+
+		for (const data_key of Constants.AutoHideOptions) {
+			options.push({
+				key   : data_key,
+				value : data_key,
+				text  : this.getAutoHideOptionTitle(data_key, language),
+			});
+		}
+
+		return options;
+	}
+
 	getOverlayText(key, language) {
 		if (!language) {
 			language = this.getLanguage();

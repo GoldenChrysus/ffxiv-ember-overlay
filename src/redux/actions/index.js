@@ -140,3 +140,11 @@ export function updateState(payload) {
 		payload : payload.value,
 	};
 }
+
+export function updateToggle(payload) {
+	return {
+		type : "updateToggle",
+		key  : "internal.toggles",
+		payload,
+	};
+}

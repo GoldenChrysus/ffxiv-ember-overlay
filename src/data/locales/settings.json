@@ -1538,6 +1538,88 @@
 				"short_both"  : "И. Ф."
 			}
 		},
+		"auto_hide_options" : {
+			"en" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			},
+			"pt" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			},
+			"cn" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			},
+			"jp" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			},
+			"de" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			},
+			"es" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			},
+			"fr" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			},
+			"kr" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			},
+			"ua" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			},
+			"ru" : {
+				"disabled"              : "Disabled",
+				"hide"                  : "Hide",
+				"minimize_top_left"     : "Minimize to Top Left",
+				"minimize_top_right"    : "Minimize to Top Right",
+				"minimize_bottom_left"  : "Minimize to Bottom Left",
+				"minimize_bottom_right" : "Minimize to Bottom Right"
+			}
+		},
 		"alignment_options" : {
 			"en" : {
 				"left"   : "Left",

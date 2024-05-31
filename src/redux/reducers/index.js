@@ -62,6 +62,12 @@ const initial_state = {
 		new_version          : false,
 		mode                 : params.mode || localStorage.getItem(`${uuid}-mode`) || "stats",
 		ui_builder           : false,
+		toggles              : {
+			top_left     : false,
+			top_right    : false,
+			bottom_left  : false,
+			bottom_right : false,
+		},
 	},
 	settings : {},
 };
@@ -497,6 +503,16 @@ function rootReducer(state, action) {
 			new_state.internal.ui_builder = !new_state.internal.ui_builder;
 
 			new_state.settings_data.saveSettings(true);
+			break;
+
+		case "updateToggle":
+			new_state                   = clone(state);
+			const { location, enabled } = action.payload;
+
+			for (const tmp_location in new_state.internal.toggles) {
+				new_state.internal.toggles[tmp_location] = (location === tmp_location) ? enabled : false;
+			}
+
 			break;
 
 		default:
