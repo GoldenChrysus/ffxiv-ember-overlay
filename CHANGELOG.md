@@ -2,7 +2,7 @@
 
 ## 1.7.0
 
-**Released: [in staging]**
+**Released: 2024-06-09**
 
 ### Bug Fixes
 - N/A
