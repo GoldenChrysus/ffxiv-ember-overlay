@@ -1126,6 +1126,30 @@
 			"ua" : "Webhook URL",
 			"ru" : "Webhook URL"
 		},
+		"discord.metrics" : {
+			"en" : "Player Metrics",
+			"pt" : "Métricas do Jogador",
+			"cn" : "玩家数据元素",
+			"jp" : "プレイヤーメトリック",
+			"de" : "Spieler Metriken",
+			"es" : "Métricas del Jugador",
+			"fr" : "Les Mesures du Joueur",
+			"kr" : "플레이어 스탯",
+			"ua" : "Метрики гравця",
+			"ru" : "Метрики Игрока"
+		},
+		"discord.sort" : {
+			"en" : "Default Sort Metric",
+			"pt" : "Organizar métricas (padrão)",
+			"cn" : "默认排序",
+			"jp" : "既定な並べ替え",
+			"de" : "Metrik nach Standard sortieren",
+			"es" : "Organizar Métricas por Defecto",
+			"fr" : "Mesures de Tri par Défault",
+			"kr" : "스탯 기본 정렬",
+			"ua" : "Сортування метрик по замовчуванню",
+			"ru" : "Метрика для сортировки по умолчанию"
+		},
 		"custom.css" : {
 			"en" : "User-provided CSS is at your own risk.",
 			"pt" : "Usar CSS de outros usuários é de responsabilidade própria.",

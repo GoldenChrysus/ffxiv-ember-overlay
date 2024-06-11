@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.8.0
+
+**Released: [in staging]**
+
+### Bug Fixes
+- N/A
+
+### Features
+- Added ability to specify metrics and sort order for Discord webhook
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.7.1
 
 **Released: 2024-06-11**

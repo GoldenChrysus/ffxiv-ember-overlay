@@ -1,5 +1,7 @@
+import PlayerProcessor from "../processors/PlayerProcessor";
 import store from "../redux/store";
 import $ from "jquery";
+import LocalizationService from "./LocalizationService";
 
 class DiscordService {
 	postToWebhook() {
@@ -8,6 +10,12 @@ class DiscordService {
 		if (!state.internal.game || !state.internal.game.Encounter) {
 			return;
 		}
+
+		const players        = state.internal.game.Combatant;
+		const encounter      = state.internal.game.Encounter;
+		const metrics        = state.settings.discord.metrics || ["encdps", "enchps"];
+		const sort_metric    = state.settings.discord.sort || "damage";
+		const sorted_players = PlayerProcessor.sortPlayers(players, encounter, sort_metric);
 
 		const data = {
 			username   : "Ember Overlay & Spell Timers",
@@ -32,42 +40,41 @@ class DiscordService {
 			],
 		};
 
-		for (let name in state.internal.game.Combatant) {
-			const dps = (Number(state.internal.game.Combatant[name].encdps)).toLocaleString(undefined, { minimumFractionDigits : 0, maximumFractionDigits : 0 });
-			const hps = (Number(state.internal.game.Combatant[name].enchps)).toLocaleString(undefined, { minimumFractionDigits : 0, maximumFractionDigits : 0 });
-			let job   = (state.internal.game.Combatant[name].Job || "").toUpperCase();
+		for (const player of sorted_players) {
+			let name             = PlayerProcessor.getDataValue("name", player);
+			let job              = (player._is_pet) ? "PET" : (player.Job || "LMB").toUpperCase();
+			const player_metrics = [];
+
+			for (const metric of metrics) {
+				const value = PlayerProcessor.getDataValue(metric, player, sorted_players, encounter);
+				const title = LocalizationService.getPlayerDataTitle(metric, "short");
+
+				player_metrics.push(`${title}: ${value}`);
+			}
 
 			if (job) {
 				job = `${job}: `;
 			}
 
 			if (name === "YOU") {
-				name = state.internal.character_name;
-
-				if (name === "YOU") {
-					name = state.settings.interface.player_name;
-				}
-
-				if (name === "YOU") {
-					name = "You";
-				}
+				name = "You";
 			}
 
 			data.embeds[0].fields.push({
 				name   : `${job}${name}`,
-				value  : `>>> DPS: ${dps}\nHPS: ${hps}`,
+				value  : `>>> ${player_metrics.join("\n")}`,
 				inline : true,
 			});
 		}
 
-		let duration    = state.internal.game.Encounter.duration;
-		const encounter = (state.internal.game.Encounter.title === "Encounter") ? state.internal.game.Encounter.CurrentZoneName : state.internal.game.Encounter.title;
+		let duration         = state.internal.game.Encounter.duration;
+		const encounter_name = (state.internal.game.Encounter.title === "Encounter") ? state.internal.game.Encounter.CurrentZoneName : state.internal.game.Encounter.title;
 
 		if (duration[0] === "0" && duration[1] !== ":") {
 			duration = duration.substring(1);
 		}
 
-		data.embeds[0].title       = data.embeds[0].title.replace("{{encounter}}", encounter);
+		data.embeds[0].title       = data.embeds[0].title.replace("{{encounter}}", encounter_name);
 		data.embeds[0].description = data.embeds[0].description.replace("{{duration}}", duration);
 
 		data.embeds[0].footer.text = data.embeds[0].footer.text.replace(

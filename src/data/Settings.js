@@ -33,7 +33,7 @@ const default_settings = {
 		decimal_accuracy      : 2,
 		shorten_thousands     : false,
 		language              : "en",
-		auto_hide             : false,
+		auto_hide             : "disabled",
 		auto_hide_delay       : 0,
 		display_job_names     : false,
 	},
@@ -168,7 +168,9 @@ const default_settings = {
 		],
 	},
 	discord : {
-		url : "",
+		url     : "",
+		metrics : ["encdps", "enchps"],
+		sort    : "damage",
 	},
 	spells_mode : {
 		spells               : [],
