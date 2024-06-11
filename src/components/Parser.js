@@ -57,18 +57,20 @@ class Parser extends React.Component {
 			visible = false;
 		}
 
-		if (!visible) {
-			if (this.props.auto_hide === "hide") {
-				if (this.state.visible !== visible) {
-					this.setState({
-						visible,
-						last_activity : this.props.last_activity,
-					});
-				}
-			} else if (this.props.auto_hide.startsWith("minimize_")) {
-				const location = this.props.auto_hide.substring(9);
+		if (this.props.auto_hide === "hide") {
+			if (this.state.visible !== visible) {
+				this.setState({
+					visible,
+					last_activity : this.props.last_activity,
+				});
+			}
+		} else if (this.props.auto_hide.startsWith("minimize_")) {
+			const location = this.props.auto_hide.substring(9);
 
-				if (!this.props.toggles[location] && this.props.last_activity !== this.state.minimized_last_activity) {
+			if (this.props.last_activity !== this.state.minimized_last_activity) {
+				if (visible) {
+					this.props.autoHideRestore(location);
+				} else {
 					this.setState({ minimized_last_activity : this.props.last_activity });
 					this.props.autoHideMinimize(location);
 				}
@@ -164,6 +166,9 @@ class Parser extends React.Component {
 const mapDispatchToProps = dispatch => ({
 	autoHideMinimize(location) {
 		dispatch(updateToggle({ location, enabled : true }));
+	},
+	autoHideRestore(location) {
+		dispatch(updateToggle({ location, enabled : false }));
 	},
 });
 
