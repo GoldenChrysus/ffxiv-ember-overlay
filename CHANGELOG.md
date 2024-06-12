@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.8.1
+
+**Released: [in development]**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Added Pictomancer and Viper jobs
+
 ## 1.8.0
 
 **Released: [in staging]**
@@ -8,7 +27,7 @@
 - N/A
 
 ### Features
-- Added ability to specify metrics and sort order for Discord webhook
+- ! Added ability to specify metrics and sort order for Discord webhook
 
 ### UI Changes
 - N/A
