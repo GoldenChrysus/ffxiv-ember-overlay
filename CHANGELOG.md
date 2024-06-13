@@ -2,7 +2,7 @@
 
 ## 1.8.1
 
-**Released: [in development]**
+**Released: 2024-06-13**
 
 ### Bug Fixes
 - N/A
@@ -21,13 +21,13 @@
 
 ## 1.8.0
 
-**Released: [in staging]**
+**Released: 2024-06-13**
 
 ### Bug Fixes
 - N/A
 
 ### Features
-- ! Added ability to specify metrics and sort order for Discord webhook
+- Added options to specify metrics and sort order at Settings > Discord Webhook
 
 ### UI Changes
 - N/A
@@ -65,7 +65,7 @@
 - N/A
 
 ### Features
-- Added options to minimize overlay instead of fully hiding when inactive
+- Added options to minimize overlay instead of fully hiding when inactive at Settings > Interface > "Auto-Hide Overlay After Inactivity"
 
 ### UI Changes
 - N/A
