@@ -3,6 +3,8 @@ Powerful, data-focused DPS overlay and spell timers for Final Fantasy XIV. Can b
 
 ### Updated for Endwalker.
 
+### Dawntrail updates in progress.
+
 [![GitHub](https://img.shields.io/github/license/GoldenChrysus/ffxiv-ember-overlay.svg?style=flat-square)](https://github.com/GoldenChrysus/ffxiv-ember-overlay/blob/master/LICENSE)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/GoldenChrysus/ffxiv-ember-overlay/master.svg?style=flat-square)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/GoldenChrysus/ffxiv-ember-overlay/bleeding-edge.svg?style=flat-square)
@@ -195,7 +197,7 @@ To build this yourself, do the following:
 4. To launch the server immediately:
     1. Run `npm start` to start the React app on your machine on port 3000.
     2. Navigate to your.server.host:3000 to view the app.
-    
+
 5. To build the app for usage on a Web server:
     1. Run one of the following build commands depending on your environment:
         - `npm run build:development` to build the development environment.

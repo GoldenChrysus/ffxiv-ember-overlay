@@ -5,13 +5,14 @@
 	"version": "1.8.1",
 	"keywords": [
 		"ffxiv",
-		"endwalker",
+		"dawntrail",
 		"ffxiv-overlays",
 		"ffxiv-act",
 		"overlayplugin",
 		"overlayplugin-skin",
 		"actwebsocket",
-		"ember"
+		"ember",
+		"endwalker"
 	],
 	"private": true,
 	"dependencies": {
