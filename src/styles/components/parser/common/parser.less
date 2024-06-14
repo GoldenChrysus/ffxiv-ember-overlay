@@ -681,7 +681,7 @@ body.mode-spells {
 
 	.setThemeStyle(
 		@minimalTheme: {
-			padding: 2px; 
+			padding: 2px;
 		}
 	);
 }
@@ -1521,10 +1521,6 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 	);
 }
 
-#container #inner #content .spell-grid .spell-container:not(.icon) .row {
-	background-position-x: 3px;
-}
-
 #container #inner #content .spell-grid .spell-container .row {
 	border-radius: 0 5px 5px 0;
 }
@@ -1562,11 +1558,12 @@ body[theme=ffxiv-classic] #container #inner #content .spell-grid .spell-containe
 }
 
 #container #inner #content .spell-grid .spell-container.icon .timer {
-	width: 100%;
-	height: 100%;
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
 	position: absolute;
 	top: 0.02px;
 	border-radius: 5px;
+	left: -1px;
 }
 
 #container #inner #content .spell-grid .spell-container.icon.darkened .timer {
@@ -1991,8 +1988,11 @@ body.horizontal #container > #inner > #content > #player-table.right > .row.game
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row.game {
-	display: flex;
 	align-items: center;
+}
+
+body.horizontal.minimal #container > #inner > #content > #player-table > .row.game {
+	display: flex;
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row.game > .column {
@@ -2002,12 +2002,19 @@ body.horizontal #container > #inner > #content > #player-table > .row.game > .co
 	font-weight: 500;
 	color: @dark_headerAndLinkText;
 }
+
+body.horizontal:not(.minimal) #container > #inner > #content > #player-table > .row.game > .column {
+	transform: translateY(25%);
+}
+
 body.horizontal.minimal #container > #inner > #content > #player-table > .row.game > .column {
 	padding-right: 1em;
 }
+
 body.horizontal[theme=ffxiv-light] #container > #inner > #content > #player-table > .row.game > .column {
 	color: @light_headerAndLinkText;
 }
+
 body.horizontal[theme=ffxiv-classic] #container > #inner > #content > #player-table > .row.game > .column {
 	color: @classic_headerAndLinkText;
 }

@@ -1,5 +1,22 @@
 # Changelog
 
+## [development]
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- Improvements to spell timer image and countdown positioning
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.8.1
 
 **Released: 2024-06-13**
