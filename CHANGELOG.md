@@ -1,6 +1,8 @@
 # Changelog
 
-## [development]
+## 1.9.0
+
+**Released: [in development]**
 
 ### Bug Fixes
 - Resolved issue where overlay became unusable when enabling horizontal mode while viewing the raid or aggro tabs
