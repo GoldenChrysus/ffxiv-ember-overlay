@@ -9,7 +9,8 @@
 - N/A
 
 ### UI Changes
-- Improvements to spell timer image and countdown positioning
+- Improved to spell timer image and countdown positioning
+- Improved appearance of encounter timer in right-aligned horizontal overlay
 
 ### Code Changes
 - N/A

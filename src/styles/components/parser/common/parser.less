@@ -799,7 +799,7 @@ body.mode-spells {
 	);
 }
 
-#container #inner #content #player-table .row > .column:first-child,
+#container #inner #content #player-table .row:not(.game) > .column:first-child,
 #container #inner #content #player-table .row > .column.icon,
 #container #inner #content #player-table.grid .row .player-data > .column:first-child {
 	width: 23px;
@@ -1989,9 +1989,6 @@ body.horizontal #container > #inner > #content > #player-table.right > .row.game
 
 body.horizontal #container > #inner > #content > #player-table > .row.game {
 	align-items: center;
-}
-
-body.horizontal.minimal #container > #inner > #content > #player-table > .row.game {
 	display: flex;
 }
 
@@ -2003,8 +2000,8 @@ body.horizontal #container > #inner > #content > #player-table > .row.game > .co
 	color: @dark_headerAndLinkText;
 }
 
-body.horizontal:not(.minimal) #container > #inner > #content > #player-table > .row.game > .column {
-	transform: translateY(25%);
+body.horizontal #container > #inner > #content > #player-table.right > .row.game > .column {
+	padding: 0 calc(1em - 0.643rem) 0 calc(1em + 0.643rem);
 }
 
 body.horizontal.minimal #container > #inner > #content > #player-table > .row.game > .column {
@@ -2051,6 +2048,20 @@ body.horizontal #container > #inner > #content > #player-table > .row.active.act
 	z-index: 0;
 }
 
+body.horizontal #container > #inner > #content > #player-table.right > .row.game::before {
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 1.429rem;
+	content: "";
+	top: 0;
+	left: 0;
+	transform: skew(-25deg);
+	transform-origin: bottom;
+	z-index: 0;
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 body.horizontal #container > #inner > #content > #player-table > .row.active.active-with-bar::before {
 	border-left: 0;
 }
@@ -2069,6 +2080,10 @@ body.horizontal #container > #inner > #content > #player-table > .row.active.act
 	transform-origin: bottom;
 	z-index: 0;
 	border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+body.horizontal #container > #inner > #content > #player-table.right > .row.game::after {
+	display: none;
 }
 
 body.horizontal #container > #inner > #content > #player-table > .row > .percent-bar::after,
