@@ -154,6 +154,18 @@
 		"ua" : "Згорнути/Розгорнути",
 		"ru" : "Переключить сворачивание"
 	},
+	"toggle_horizontal" : {
+		"en" : "Toggle horizontal",
+		"pt" : "Toggle horizontal",
+		"cn" : "水平模式",
+		"jp" : "Toggle horizontal",
+		"de" : "Toggle horizontal",
+		"es" : "Toggle horizontal",
+		"fr" : "Toggle horizontal",
+		"kr" : "Toggle horizontal",
+		"ua" : "Toggle horizontal",
+		"ru" : "Toggle horizontal"
+	},
 	"back"                : {
 		"en" : "Back",
 		"pt" : "Voltar",
@@ -358,7 +370,7 @@
 		"ua" : "Таймери Заклинань",
 		"ru" : "Таймеры Заклинаний"
 	},
-	
+
 	"tts" : {
 		"critical_hp" : {
 			"en" : {

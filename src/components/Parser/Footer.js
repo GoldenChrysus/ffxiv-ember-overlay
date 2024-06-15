@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { ContextMenuTrigger } from "react-contextmenu";
-import { changeTableType, changeViewing, changePlayerBlur } from "../../redux/actions/index";
+import { changeTableType, changeViewing, changePlayerBlur, changeHorizontal } from "../../redux/actions/index";
 
 import PlayerProcessor from "../../processors/PlayerProcessor";
 import VersionService from "../../services/VersionService";
@@ -89,6 +89,12 @@ class Footer extends React.Component {
 				<ContextMenuTrigger id='encounter-history-menu' key='encounter-history-trigger' ref={c => trigger = c} attributes={{ className : "icon-container" }} holdToDisplay={-1}>
 					<IconButton icon='history' title={LocalizationService.getOverlayText("encounter_history")} key='encounter-history-button' no_container={true} onClick={toggleMenu}/>
 				</ContextMenuTrigger>,
+				<IconButton
+					icon={(!this.props.horizontal) ? "arrows alternate horizontal" : "arrows alternate vertical"}
+					title={LocalizationService.getOverlayText("toggle_horizontal")}
+					key='toggle-horizontal'
+					onClick={this.toggleHorizontal.bind(this)}
+				/>,
 				<IconButton icon='eye slash' title={LocalizationService.getOverlayText("blur_names")} key='player-blur' onClick={this.togglePlayerBlur.bind(this)}/>,
 				<IconButton icon='cut' title={LocalizationService.getOverlayText("split_encounter")} key='split-encounter' onClick={plugin_service.splitEncounter.bind(plugin_service)}/>,
 				<IconButton icon='cog' title={LocalizationService.getOverlayText("settings")} key='settings' class={SettingsService.getNoticeClass()} onClick={SettingsService.openSettingsWindow}/>,
@@ -143,6 +149,10 @@ class Footer extends React.Component {
 	togglePlayerBlur() {
 		this.props.changePlayerBlur(!this.props.player_blur);
 	}
+
+	toggleHorizontal() {
+		this.props.changeHorizontal(!this.props.horizontal);
+	}
 }
 
 const mapDispatchToProps = dispatch => ({
@@ -156,6 +166,10 @@ const mapDispatchToProps = dispatch => ({
 
 	changePlayerBlur(data) {
 		dispatch(changePlayerBlur(data));
+	},
+
+	changeHorizontal(data) {
+		dispatch(changeHorizontal(data));
 	},
 });
 

@@ -589,6 +589,16 @@ function createNewState(state, full_key, action) {
 			horizontal = false;
 		}
 
+		if (
+			full_key === "settings.interface.horizontal" &&
+			horizontal &&
+			!["dps", "heal", "tank"].includes("settings.intrinsic.table_type")
+		) {
+			new_state.settings.intrinsic.table_type = "dps";
+
+			new_state.settings_data.setSetting("intrinsic.table_type", "dps", true);
+		}
+
 		ThemeService.toggleHorizontal(horizontal);
 	}
 

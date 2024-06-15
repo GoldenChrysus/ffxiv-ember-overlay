@@ -3,10 +3,10 @@
 ## [development]
 
 ### Bug Fixes
-- N/A
+- Resolved issue where overlay became unusable when enabling horizontal mode while viewing the raid or aggro tabs
 
 ### Features
-- N/A
+- Added footer button to toggle the horizontal overlay mode
 
 ### UI Changes
 - Improved to spell timer image and countdown positioning
