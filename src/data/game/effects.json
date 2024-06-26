@@ -1053,7 +1053,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Iron Will",
-				"de" : "Eiserner Wille",
+				"de" : "Schild-Eid",
 				"fr" : "Volonté de fer",
 				"jp" : "アイアンウィル"
 			}
@@ -4931,20 +4931,6 @@
 			}
 		}
 	},
-	"363" : {
-		"type" : "effect",
-		"dot" : false,
-		"debuff" : false,
-		"jobs" : [],
-		"locales" : {
-			"name" : {
-				"en" : "Back on Your Feet",
-				"de" : "Verkürzte Schwäche",
-				"fr" : "Prompt rétablissement",
-				"jp" : "カンパニーアクション：衰弱時間短縮"
-			}
-		}
-	},
 	"364" : {
 		"type" : "effect",
 		"dot" : false,
@@ -6918,7 +6904,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Reflect",
-				"de" : "Reflektion",
+				"de" : "Reflexion",
 				"fr" : "Miroir",
 				"jp" : "リフレク"
 			}
@@ -8304,7 +8290,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Choco Reflect",
-				"de" : "Chocobo-Reflektion",
+				"de" : "Chocobo-Reflexion",
 				"fr" : "Chocoboomerang",
 				"jp" : "弱体効果反射"
 			}
@@ -10260,13 +10246,10 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"LNC",
-			"DRG"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Sharper Fang and Claw",
+				"en" : "Fang and Claw Bared",
 				"de" : "Fang und Klaue",
 				"fr" : "Croc-et-griffe préparé",
 				"jp" : "竜牙竜爪実行可"
@@ -10277,13 +10260,10 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"LNC",
-			"DRG"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Enhanced Wheeling Thrust",
+				"en" : "Wheel in Motion",
 				"de" : "Fächerstoß",
 				"fr" : "Percée tournante préparée",
 				"jp" : "竜尾大車輪実行可"
@@ -11133,7 +11113,7 @@
 			"name" : {
 				"en" : "The Warden's Paean",
 				"de" : "Päan des Hüters",
-				"fr" : "Péan du Contemplateur",
+				"fr" : "Péon du Contemplateur",
 				"jp" : "時神のピーアン"
 			}
 		}
@@ -13445,7 +13425,7 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Squadron Rationing Manual",
+				"en" : "Rationing",
 				"de" : "Längere Nahrungseffekte",
 				"fr" : "À boire et à manger",
 				"jp" : "食事効果時間延長"
@@ -13910,7 +13890,7 @@
 				"en" : "Fire Resistance Down II",
 				"de" : "Feuerresistenz - (stark)",
 				"fr" : "Résistance au feu réduite+",
-				"jp" : "火属性耐性低下[強]"
+				"jp" : "火属性耐性低下［強］"
 			}
 		}
 	},
@@ -14433,9 +14413,9 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Earth's Reply",
+				"en" : "Earth's Resolve",
 				"de" : "Steinerne Klarheit",
-				"fr" : "Réaction de la terre",
+				"fr" : "Détermination de la terre",
 				"jp" : "金剛の決意"
 			}
 		}
@@ -15541,7 +15521,7 @@
 				"en" : "Fire Resistance Down II",
 				"de" : "Feuerresistenz - (stark)",
 				"fr" : "Résistance au feu réduite+",
-				"jp" : "火属性耐性低下[強]"
+				"jp" : "火属性耐性低下［強］"
 			}
 		}
 	},
@@ -15889,9 +15869,9 @@
 		"locales" : {
 			"name" : {
 				"en" : "Twist of Fate",
-				"de" : "FATE-Routinebonus",
+				"de" : "FATE-Bonus",
 				"fr" : "ALÉA de l'expérience",
-				"jp" : "F.A.T.E.経験値アップ"
+				"jp" : "F.A.T.E.報酬アップ"
 			}
 		}
 	},
@@ -15903,9 +15883,9 @@
 		"locales" : {
 			"name" : {
 				"en" : "Twist of Fate",
-				"de" : "FATE-Routinebonus",
+				"de" : "FATE-Bonus",
 				"fr" : "ALÉA de l'expérience",
-				"jp" : "F.A.T.E.経験値アップ"
+				"jp" : "F.A.T.E.報酬アップ"
 			}
 		}
 	},
@@ -16235,7 +16215,7 @@
 			"name" : {
 				"en" : "Earth's Reply",
 				"de" : "Steinerne Klarheit",
-				"fr" : "Réaction de la terre",
+				"fr" : "Détermination de la terre",
 				"jp" : "金剛の決意"
 			}
 		}
@@ -16705,10 +16685,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Bolt",
-				"de" : "Laufschritt",
-				"fr" : "Galopade",
-				"jp" : "疾走"
+				"en" : "Sprint",
+				"de" : "Sprint",
+				"fr" : "Sprint",
+				"jp" : "スプリント"
 			}
 		}
 	},
@@ -17576,10 +17556,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "The Road to 80",
+				"en" : "The Road to 90",
 				"de" : "Routine-Bonus",
-				"fr" : "En route vers 80",
-				"jp" : "Lv80経験値ブースト"
+				"fr" : "En route vers 90",
+				"jp" : "Lv90経験値ブースト"
 			}
 		}
 	},
@@ -17877,7 +17857,7 @@
 				"en" : "Piercing Resistance Down II",
 				"de" : "Stichresistenz - (stark)",
 				"fr" : "Résistance au perforant réduite+",
-				"jp" : "突属性耐性低下[強]"
+				"jp" : "突属性耐性低下［強］"
 			}
 		}
 	},
@@ -20391,7 +20371,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Reflect L",
-				"de" : "Logos-Reflektion",
+				"de" : "Logos-Reflexion",
 				"fr" : "Évocation Logos: Miroir",
 				"jp" : "ロゴス・リフレク"
 			}
@@ -23762,15 +23742,13 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"PLD"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Sword Oath",
-				"de" : "Schwert-Eid",
-				"fr" : "Serment de l'épée",
-				"jp" : "忠義の剣"
+				"en" : "Atonement Ready",
+				"de" : "Königliche Erhabenheit",
+				"fr" : "Absolution préparée",
+				"jp" : "ロイエ実行可"
 			}
 		}
 	},
@@ -24155,7 +24133,7 @@
 				"en" : "Light Beyond Darkness",
 				"de" : "Unzähmbares Licht",
 				"fr" : "Lumière salvatrice+",
-				"jp" : "光の解放[強]"
+				"jp" : "光の解放［強］"
 			}
 		}
 	},
@@ -25120,10 +25098,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Fists of Wind",
-				"de" : "Beflügelnde Aura",
-				"fr" : "Poings de vent",
-				"jp" : "疾風の構え"
+				"en" : "Wind Resonance",
+				"de" : "Wesen des Windes",
+				"fr" : "Quintessence de vent",
+				"jp" : "疾風の神髄"
 			}
 		}
 	},
@@ -25252,9 +25230,9 @@
 		}
 	},
 	"2019" : {
-		"type" : "debuff",
-		"dot" : false,
-		"debuff" : true,
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
 		"jobs" : [
 			"MCH"
 		],
@@ -25676,10 +25654,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Fan Dance III",
-				"de" : "Fächertanz III",
-				"fr" : "Danse de l'éventail III",
-				"jp" : "扇の舞い【急】"
+				"en" : "Fan Dance",
+				"de" : "Fächertanz",
+				"fr" : "Danse de l'éventail",
+				"jp" : "扇の舞い"
 			}
 		}
 	},
@@ -26262,7 +26240,7 @@
 				"en" : "Fire Resistance Down II",
 				"de" : "Feuerresistenz - (stark)",
 				"fr" : "Résistance au feu réduite+",
-				"jp" : "火属性耐性低下[強]"
+				"jp" : "火属性耐性低下［強］"
 			}
 		}
 	},
@@ -26390,7 +26368,7 @@
 				"en" : "Shake It Off (Over Time)",
 				"de" : "Abschütteln",
 				"fr" : "Débarrassé",
-				"jp" : "シェイクオフ[被]"
+				"jp" : "シェイクオフ［被］"
 			}
 		}
 	},
@@ -26599,7 +26577,7 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Aetherial Mimicry: Tank",
+				"en" : "Aetheric Mimicry: Tank",
 				"de" : "Äther-Mimikry: Verteidiger",
 				"fr" : "Éther de protecteur",
 				"jp" : "エーテルコピー：タンク"
@@ -26613,7 +26591,7 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Aetherial Mimicry: DPS",
+				"en" : "Aetheric Mimicry: DPS",
 				"de" : "Äther-Mimikry: Angreifer",
 				"fr" : "Éther de combattant",
 				"jp" : "エーテルコピー：ＤＰＳ"
@@ -26627,7 +26605,7 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Aetherial Mimicry: Healer",
+				"en" : "Aetheric Mimicry: Healer",
 				"de" : "Äther-Mimikry: Heiler",
 				"fr" : "Éther de soigneur",
 				"jp" : "エーテルコピー：ヒーラー"
@@ -27245,16 +27223,13 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"ARC",
-			"BRD"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Nature's Minne",
-				"de" : "Nophicas Minne",
-				"fr" : "Minne de la nature",
-				"jp" : "地神のミンネ"
+				"en" : "Warden's Grace",
+				"de" : "Gunst des Hüters",
+				"fr" : "Protection du Contemplateur",
+				"jp" : "時神の護り"
 			}
 		}
 	},
@@ -29034,7 +29009,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Lost Reflect",
-				"de" : "Verschollene Reflektion",
+				"de" : "Verschollene Reflexion",
 				"fr" : "Miroir oublié",
 				"jp" : "ロスト・リフレク"
 			}
@@ -29892,7 +29867,7 @@
 				"en" : "Light Beyond Darkness",
 				"de" : "Unzähmbares Licht",
 				"fr" : "Lumière salvatrice+",
-				"jp" : "光の解放[強]"
+				"jp" : "光の解放［強］"
 			}
 		}
 	},
@@ -32030,7 +32005,7 @@
 				"en" : "Kardion",
 				"de" : "Kardion",
 				"fr" : "Kardion",
-				"jp" : "カルディア[被]"
+				"jp" : "カルディア［被］"
 			}
 		}
 	},
@@ -32076,7 +32051,7 @@
 				"en" : "Differential Diagnosis",
 				"de" : "Exakte Eukratische Diagnose",
 				"fr" : "Eudiagnosis eucrasique",
-				"jp" : "エウクラシア・ディアグノシス[強]"
+				"jp" : "エウクラシア・ディアグノシス［強］"
 			}
 		}
 	},
@@ -32278,7 +32253,7 @@
 				"en" : "Autophysis",
 				"de" : "Autophysis",
 				"fr" : "Autophysis",
-				"jp" : "ピュシスII[被]"
+				"jp" : "ピュシスII［被］"
 			}
 		}
 	},
@@ -33178,10 +33153,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Forked Raiju Ready",
-				"de" : "Raiju-Blitz",
-				"fr" : "Griffe de Raijû préparée",
-				"jp" : "月影雷獣爪実行可"
+				"en" : "Raiju Ready",
+				"de" : "Raiju",
+				"fr" : "Technique de Raijû préparée",
+				"jp" : "月影雷獣実行可"
 			}
 		}
 	},
@@ -33221,12 +33196,10 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"DNC"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Flourishing Symmetry",
+				"en" : "Silken Symmetry",
 				"de" : "Synchroner Wurf",
 				"fr" : "Lancer synchrone",
 				"jp" : "対称投擲"
@@ -33237,12 +33210,10 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"DNC"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Flourishing Flow",
+				"en" : "Silken Flow",
 				"de" : "Asynchroner Wurf",
 				"fr" : "Lancer asynchrone",
 				"jp" : "非対称投擲"
@@ -33971,10 +33942,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2748_-1_1_C0_0Status",
-				"de" : "_rsv_2748_-1_2_C0_0Status",
-				"fr" : "_rsv_2748_-1_3_C0_0Status",
-				"jp" : "_rsv_2748_-1_0_C0_0Status"
+				"en" : "Soul of Friendship",
+				"de" : "Essenz der Freundschaft",
+				"fr" : "Amitié éternelle",
+				"jp" : "盟友の想い"
 			}
 		}
 	},
@@ -33985,10 +33956,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2749_-1_1_C0_0Status",
-				"de" : "_rsv_2749_-1_2_C0_0Status",
-				"fr" : "_rsv_2749_-1_3_C0_0Status",
-				"jp" : "_rsv_2749_-1_0_C0_0Status"
+				"en" : "Soul of Devotion",
+				"de" : "Essenz der Tugend",
+				"fr" : "Dévotion éternelle",
+				"jp" : "巫女の想い"
 			}
 		}
 	},
@@ -34111,10 +34082,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2758_-1_1_C0_0Status",
-				"de" : "_rsv_2758_-1_2_C0_0Status",
-				"fr" : "_rsv_2758_-1_3_C0_0Status",
-				"jp" : "_rsv_2758_-1_0_C0_0Status"
+				"en" : "Spreading Flames",
+				"de" : "Flammende Rache",
+				"fr" : "Vengeance consumante",
+				"jp" : "復讐の炎"
 			}
 		}
 	},
@@ -34125,10 +34096,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2759_-1_1_C0_0Status",
-				"de" : "_rsv_2759_-1_2_C0_0Status",
-				"fr" : "_rsv_2759_-1_3_C0_0Status",
-				"jp" : "_rsv_2759_-1_0_C0_0Status"
+				"en" : "Entangled Flames",
+				"de" : "Verwobene Flammen",
+				"fr" : "Flammes enchevêtrées",
+				"jp" : "道連れの炎"
 			}
 		}
 	},
@@ -34279,10 +34250,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2777_-1_1_C0_0Status",
-				"de" : "_rsv_2777_-1_2_C0_0Status",
-				"fr" : "_rsv_2777_-1_3_C0_0Status",
-				"jp" : "_rsv_2777_-1_0_C0_0Status"
+				"en" : "Bound and Determined",
+				"de" : "Nidhoggs Stigmata",
+				"fr" : "Stigmates de Nidhogg",
+				"jp" : "爪牙不変"
 			}
 		}
 	},
@@ -34559,10 +34530,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2800_-1_1_C0_0Status",
-				"de" : "_rsv_2800_-1_2_C0_0Status",
-				"fr" : "_rsv_2800_-1_3_C0_0Status",
-				"jp" : "_rsv_2800_-1_0_C0_0Status"
+				"en" : "Casting Chlamys",
+				"de" : "Faulende Chlamys",
+				"fr" : "Chlamyde maudite",
+				"jp" : "腐呪のクラミュス"
 			}
 		}
 	},
@@ -34573,10 +34544,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2801_-1_1_C0_0Status",
-				"de" : "_rsv_2801_-1_2_C0_0Status",
-				"fr" : "_rsv_2801_-1_3_C0_0Status",
-				"jp" : "_rsv_2801_-1_0_C0_0Status"
+				"en" : "Elemental Resistance Down",
+				"de" : "Resistenz -",
+				"fr" : "Résistance élémentaire réduite",
+				"jp" : "属性耐性低下"
 			}
 		}
 	},
@@ -34587,10 +34558,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2802_-1_1_C0_0Status",
-				"de" : "_rsv_2802_-1_2_C0_0Status",
-				"fr" : "_rsv_2802_-1_3_C0_0Status",
-				"jp" : "_rsv_2802_-1_0_C0_0Status"
+				"en" : "Role Call",
+				"de" : "Dreifäulenoper",
+				"fr" : "Rôle tragique",
+				"jp" : "三役の腐呪"
 			}
 		}
 	},
@@ -34601,10 +34572,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2803_-1_1_C0_0Status",
-				"de" : "_rsv_2803_-1_2_C0_0Status",
-				"fr" : "_rsv_2803_-1_3_C0_0Status",
-				"jp" : "_rsv_2803_-1_0_C0_0Status"
+				"en" : "Miscast",
+				"de" : "Zwischenakt",
+				"fr" : "Résistance tragique",
+				"jp" : "三役の抗呪"
 			}
 		}
 	},
@@ -34615,10 +34586,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2804_-1_1_C0_0Status",
-				"de" : "_rsv_2804_-1_2_C0_0Status",
-				"fr" : "_rsv_2804_-1_3_C0_0Status",
-				"jp" : "_rsv_2804_-1_0_C0_0Status"
+				"en" : "Thornpricked",
+				"de" : "Ätherdorn",
+				"fr" : "Épines d'éther",
+				"jp" : "エーテルソーン"
 			}
 		}
 	},
@@ -35122,15 +35093,13 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"RPR"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Enhanced Gallows",
+				"en" : "Gallows Oiled",
 				"de" : "Hängen",
-				"fr" : "Potence améliorée",
-				"jp" : "ギャロウズ効果アップ"
+				"fr" : "Potence préparée",
+				"jp" : "ギャロウズ実行可"
 			}
 		}
 	},
@@ -35157,10 +35126,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Enhanced Cross Reaping",
+				"en" : "Ripe for Reaping",
 				"de" : "Kreuzmahd",
-				"fr" : "Fauchage croisé amélioré",
-				"jp" : "クロスリーパー効果アップ"
+				"fr" : "Fauchage croisé préparé",
+				"jp" : "クロスリーパー実行可"
 			}
 		}
 	},
@@ -35366,7 +35335,7 @@
 				"en" : "Kardion",
 				"de" : "Kardion",
 				"fr" : "Kardion",
-				"jp" : "カルディア[被]"
+				"jp" : "カルディア［被］"
 			}
 		}
 	},
@@ -35573,24 +35542,24 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2895_-1_1_C0_0Status",
-				"de" : "_rsv_2895_-1_2_C0_0Status",
-				"fr" : "_rsv_2895_-1_3_C0_0Status",
-				"jp" : "_rsv_2895_-1_0_C0_0Status"
+				"en" : "Solemn Vow",
+				"de" : "Schwur des Friedens",
+				"fr" : "Serment de paix",
+				"jp" : "不殺の誓い"
 			}
 		}
 	},
 	"2896" : {
-		"type" : "debuff",
-		"dot" : false,
-		"debuff" : true,
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2896_-1_1_C0_0Status",
-				"de" : "_rsv_2896_-1_2_C0_0Status",
-				"fr" : "_rsv_2896_-1_3_C0_0Status",
-				"jp" : "_rsv_2896_-1_0_C0_0Status"
+				"en" : "Mortal Vow",
+				"de" : "Schwur der Vergeltung",
+				"fr" : "Vœu d'anéantissement",
+				"jp" : "滅殺の誓い"
 			}
 		}
 	},
@@ -35601,10 +35570,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2897_-1_1_C0_0Status",
-				"de" : "_rsv_2897_-1_2_C0_0Status",
-				"fr" : "_rsv_2897_-1_3_C0_0Status",
-				"jp" : "_rsv_2897_-1_0_C0_0Status"
+				"en" : "Mortal Atonement",
+				"de" : "Versiegte Vergeltung",
+				"fr" : "Vœu d'anéantissement rompu",
+				"jp" : "滅殺の償い"
 			}
 		}
 	},
@@ -35674,7 +35643,7 @@
 				"en" : "Fire Resistance Down II",
 				"de" : "Feuerresistenz - (stark)",
 				"fr" : "Résistance au feu réduite+",
-				"jp" : "火属性耐性低下[強]"
+				"jp" : "火属性耐性低下［強］"
 			}
 		}
 	},
@@ -35688,7 +35657,7 @@
 				"en" : "Ice Resistance Down II",
 				"de" : "Eisresistenz - (stark)",
 				"fr" : "Résistance à la glace réduite+",
-				"jp" : "氷属性耐性低下[強]"
+				"jp" : "氷属性耐性低下［強］"
 			}
 		}
 	},
@@ -35744,7 +35713,7 @@
 				"en" : "Tizona's Bastion",
 				"de" : "Fluchwall Tizonas",
 				"fr" : "Mur enchanté de Tizona",
-				"jp" : "ティソーナの呪壁[被]"
+				"jp" : "ティソーナの呪壁［被］"
 			}
 		}
 	},
@@ -35825,10 +35794,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2925_-1_1_C0_0Status",
-				"de" : "_rsv_2925_-1_2_C0_0Status",
-				"fr" : "_rsv_2925_-1_3_C0_0Status",
-				"jp" : "_rsv_2925_-1_0_C0_0Status"
+				"en" : "Acting DPS",
+				"de" : "Fluch des Schmerzes",
+				"fr" : "Malédiction des attaquants",
+				"jp" : "攻手の魔呪"
 			}
 		}
 	},
@@ -35839,10 +35808,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2926_-1_1_C0_0Status",
-				"de" : "_rsv_2926_-1_2_C0_0Status",
-				"fr" : "_rsv_2926_-1_3_C0_0Status",
-				"jp" : "_rsv_2926_-1_0_C0_0Status"
+				"en" : "Acting Healer",
+				"de" : "Fluch des Lebens",
+				"fr" : "Malédiction des guérisseurs",
+				"jp" : "癒手の魔呪"
 			}
 		}
 	},
@@ -35853,10 +35822,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2927_-1_1_C0_0Status",
-				"de" : "_rsv_2927_-1_2_C0_0Status",
-				"fr" : "_rsv_2927_-1_3_C0_0Status",
-				"jp" : "_rsv_2927_-1_0_C0_0Status"
+				"en" : "Acting Tank",
+				"de" : "Fluch des Schutzes",
+				"fr" : "Malédiction des protecteurs",
+				"jp" : "守手の魔呪"
 			}
 		}
 	},
@@ -35954,7 +35923,7 @@
 				"en" : "Fire Resistance Down II",
 				"de" : "Feuerresistenz - (stark)",
 				"fr" : "Résistance au feu réduite+",
-				"jp" : "火属性耐性低下[強]"
+				"jp" : "火属性耐性低下［強］"
 			}
 		}
 	},
@@ -35968,7 +35937,7 @@
 				"en" : "Kerakeia",
 				"de" : "Kerakeia",
 				"fr" : "Kerakeia",
-				"jp" : "ケーラコレ[回]"
+				"jp" : "ケーラコレ［回］"
 			}
 		}
 	},
@@ -36447,10 +36416,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2977_-1_1_C0_0Status",
-				"de" : "_rsv_2977_-1_2_C0_0Status",
-				"fr" : "_rsv_2977_-1_3_C0_0Status",
-				"jp" : "_rsv_2977_-1_0_C0_0Status"
+				"en" : "HP Recovery Down",
+				"de" : "Heilung -",
+				"fr" : "Soins diminués",
+				"jp" : "被回復低下"
 			}
 		}
 	},
@@ -36461,10 +36430,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_2978_-1_1_C0_0Status",
-				"de" : "_rsv_2978_-1_2_C0_0Status",
-				"fr" : "_rsv_2978_-1_3_C0_0Status",
-				"jp" : "_rsv_2978_-1_0_C0_0Status"
+				"en" : "HP Recovery Down",
+				"de" : "Heilung -",
+				"fr" : "Soins diminués",
+				"jp" : "被回復低下"
 			}
 		}
 	},
@@ -36820,10 +36789,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Blade of Faith Ready",
-				"de" : "Klinge der Frömmigkeit",
-				"fr" : "Lame de foi préparée",
-				"jp" : "ブレード・オブ・フェイス実行可"
+				"en" : "Confiteor Ready",
+				"de" : "Confiteor",
+				"fr" : "Confiteor préparé",
+				"jp" : "コンフィテオル実行可"
 			}
 		}
 	},
@@ -37198,7 +37167,7 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Eye Gauge",
+				"en" : "Eye Gouge",
 				"de" : "Augenstecher",
 				"fr" : "Perforation des yeux",
 				"jp" : "アイガウジ"
@@ -37737,7 +37706,7 @@
 				"en" : "Diurnal Benefic",
 				"de" : "Harmonischer Orbis (Diurnal)",
 				"fr" : "Bienfaisance aspectée (diurne)",
-				"jp" : "アスペクト・ベネフィク[日]"
+				"jp" : "アスペクト・ベネフィク［日］"
 			}
 		}
 	},
@@ -37751,7 +37720,7 @@
 				"en" : "Nocturnal Benefic",
 				"de" : "Harmonischer Orbis (Nocturnal)",
 				"fr" : "Bienfaisance aspectée (nocturne)",
-				"jp" : "アスペクト・ベネフィク[夜]"
+				"jp" : "アスペクト・ベネフィク［夜］"
 			}
 		}
 	},
@@ -37924,7 +37893,7 @@
 			"name" : {
 				"en" : "Toxikon",
 				"de" : "Toxikon",
-				"fr" : "Toxicon",
+				"fr" : "Toxikon",
 				"jp" : "トキシコン"
 			}
 		}
@@ -38191,7 +38160,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Frontline March",
-				"de" : "Marsch der Front",
+				"de" : "Frontenmarsch",
 				"fr" : "Marche des conquérants",
 				"jp" : "進撃のマーチ［被］"
 			}
@@ -38219,7 +38188,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Frontline Forte",
-				"de" : "Front Forte",
+				"de" : "Forte der Front",
 				"fr" : "Alpha mezzo forte",
 				"jp" : "エイペックス・フォルテ［被］"
 			}
@@ -39040,7 +39009,7 @@
 			}
 		}
 	},
-	"3212" : {
+	"3213" : {
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
@@ -39056,23 +39025,7 @@
 			}
 		}
 	},
-	"3213" : {
-		"type" : "effect",
-		"dot" : false,
-		"debuff" : false,
-		"jobs" : [
-			"BLM"
-		],
-		"locales" : {
-			"name" : {
-				"en" : "Astral Fire III",
-				"de" : "Lichtfeuer III",
-				"fr" : "Feu astral III",
-				"jp" : "アストラルファイアIII"
-			}
-		}
-	},
-	"3214" : {
+	"3215" : {
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
@@ -39085,22 +39038,6 @@
 				"de" : "Schatteneis II",
 				"fr" : "Glace ombrale II",
 				"jp" : "アンブラルブリザードII"
-			}
-		}
-	},
-	"3215" : {
-		"type" : "effect",
-		"dot" : false,
-		"debuff" : false,
-		"jobs" : [
-			"BLM"
-		],
-		"locales" : {
-			"name" : {
-				"en" : "Umbral Ice III",
-				"de" : "Schatteneis III",
-				"fr" : "Glace ombrale III",
-				"jp" : "アンブラルブリザードIII"
 			}
 		}
 	},
@@ -39257,7 +39194,7 @@
 				"en" : "Slipping",
 				"de" : "Im Wirbel",
 				"fr" : "Sillage (néfaste)",
-				"jp" : "スリップストリーム[害]"
+				"jp" : "スリップストリーム［害］"
 			}
 		}
 	},
@@ -40258,10 +40195,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3308_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3308_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3308_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3308_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Inviolate Winds",
+				"de" : "Zeichen des Windes",
+				"fr" : "Sigil du vent",
+				"jp" : "風の魔印"
 			}
 		}
 	},
@@ -40272,10 +40209,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3309_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3309_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3309_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3309_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Holy Bonds",
+				"de" : "Zeichen der Heiligkeit",
+				"fr" : "Sigil sacré",
+				"jp" : "聖の魔印"
 			}
 		}
 	},
@@ -40286,10 +40223,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3310_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3310_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3310_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3310_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Purgatory Winds",
+				"de" : "Doppeltes Zeichen des Windes",
+				"fr" : "Double sigil du vent",
+				"jp" : "風の二重印"
 			}
 		}
 	},
@@ -40300,10 +40237,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3311_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3311_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3311_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3311_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Holy Purgation",
+				"de" : "Doppeltes Zeichen der Heiligkeit",
+				"fr" : "Double sigil sacré",
+				"jp" : "聖の二重印"
 			}
 		}
 	},
@@ -40342,10 +40279,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3315_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3315_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3315_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3315_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Chelomorph",
+				"de" : "Chelomorph",
+				"fr" : "Crustacé parasite",
+				"jp" : "甲殻寄生"
 			}
 		}
 	},
@@ -40398,10 +40335,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3319_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3319_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3319_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3319_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Glossal Resistance Down",
+				"de" : "Glossaler Widerstand -",
+				"fr" : "Résistance aux attaques de mollusques réduite",
+				"jp" : "軟体攻撃耐性低下"
 			}
 		}
 	},
@@ -40412,10 +40349,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3320_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3320_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3320_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3320_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Chelic Resistance Down",
+				"de" : "Chelischer Widerstand -",
+				"fr" : "Résistance aux attaques de crustacés réduite",
+				"jp" : "甲殻攻撃耐性低下"
 			}
 		}
 	},
@@ -40426,10 +40363,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3321_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3321_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3321_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3321_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Aetheronecrosis",
+				"de" : "Explozelle",
+				"fr" : "Cellules magiques actives",
+				"jp" : "魔活細胞"
 			}
 		}
 	},
@@ -40468,10 +40405,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3325_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3325_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3325_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3325_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Conceptual Mastery",
+				"de" : "Magische Einnistung",
+				"fr" : "Conception magique",
+				"jp" : "マジックコンシーヴ"
 			}
 		}
 	},
@@ -40482,10 +40419,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3326_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3326_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3326_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3326_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Blood of the Gorgon",
+				"de" : "Gorgons Fluch: Schlangengift",
+				"fr" : "Malédiction de gorgone: venin reptilien",
+				"jp" : "ゴルゴンの呪詛：蛇毒"
 			}
 		}
 	},
@@ -40496,10 +40433,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3327_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3327_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3327_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3327_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Breath of the Gorgon",
+				"de" : "Gorgons Fluch: Übelgift",
+				"fr" : "Malédiction de gorgone: poison insidieux",
+				"jp" : "ゴルゴンの呪詛：邪毒"
 			}
 		}
 	},
@@ -40538,10 +40475,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3330_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3330_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3330_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3330_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Imperfection: Alpha",
+				"de" : "Unvollständiges Konzept α",
+				"fr" : "Concept immature: α",
+				"jp" : "未完概念：α"
 			}
 		}
 	},
@@ -40552,10 +40489,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3331_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3331_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3331_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3331_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Imperfection: Beta",
+				"de" : "Unvollständiges Konzept β",
+				"fr" : "Concept immature: β",
+				"jp" : "未完概念：β"
 			}
 		}
 	},
@@ -40566,10 +40503,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3332_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3332_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3332_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3332_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Imperfection: Gamma",
+				"de" : "Unvollständiges Konzept γ",
+				"fr" : "Concept immature: γ",
+				"jp" : "未完概念：γ"
 			}
 		}
 	},
@@ -40580,10 +40517,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3333_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3333_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3333_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3333_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Perfection: Alpha",
+				"de" : "Vollständiges Konzept α",
+				"fr" : "Concept mature: α",
+				"jp" : "完成概念：α"
 			}
 		}
 	},
@@ -40594,10 +40531,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3334_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3334_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3334_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3334_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Perfection: Beta",
+				"de" : "Vollständiges Konzept β",
+				"fr" : "Concept mature: β",
+				"jp" : "完成概念：β"
 			}
 		}
 	},
@@ -40608,10 +40545,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3335_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3335_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3335_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3335_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Perfection: Gamma",
+				"de" : "Vollständiges Konzept γ",
+				"fr" : "Concept mature: γ",
+				"jp" : "完成概念：γ"
 			}
 		}
 	},
@@ -40622,10 +40559,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3336_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3336_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3336_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3336_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Inconceivable",
+				"de" : "Konzeptablehnung",
+				"fr" : "Rejet conceptuel",
+				"jp" : "概念拒絶"
 			}
 		}
 	},
@@ -40636,10 +40573,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3337_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3337_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3337_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3337_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Winged Conception",
+				"de" : "Konzeptumsetzung: Flugwesen",
+				"fr" : "Conceptualisation: créature volante",
+				"jp" : "概念生成：飛行生物"
 			}
 		}
 	},
@@ -40650,10 +40587,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3338_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3338_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3338_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3338_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Aquatic Conception",
+				"de" : "Konzeptumsetzung: Wasserorganismus",
+				"fr" : "Conceptualisation: créature marine",
+				"jp" : "概念生成：水棲生物"
 			}
 		}
 	},
@@ -40664,52 +40601,52 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3339_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3339_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3339_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3339_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Shocking Conception",
+				"de" : "Konzeptumsetzung: Gewitterwesen",
+				"fr" : "Conceptualisation: Raijû",
+				"jp" : "概念生成：雷獣"
 			}
 		}
 	},
 	"3340" : {
-		"type" : "debuff",
-		"dot" : false,
-		"debuff" : true,
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3340_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3340_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3340_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3340_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Fiery Conception",
+				"de" : "Konzeptumsetzung: Flammengeist",
+				"fr" : "Conceptualisation: esprit des flammes",
+				"jp" : "概念生成：火精"
 			}
 		}
 	},
 	"3341" : {
-		"type" : "debuff",
-		"dot" : false,
-		"debuff" : true,
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3341_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3341_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3341_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3341_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Toxic Conception",
+				"de" : "Konzeptumsetzung: Gifttier",
+				"fr" : "Conceptualisation: créature venimeuse",
+				"jp" : "概念生成：有毒生物"
 			}
 		}
 	},
 	"3342" : {
-		"type" : "debuff",
-		"dot" : false,
-		"debuff" : true,
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3342_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3342_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3342_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3342_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Growing Conception",
+				"de" : "Konzeptumsetzung: Pflanzenwesen",
+				"fr" : "Conceptualisation: créature végétale",
+				"jp" : "概念生成：草木生物"
 			}
 		}
 	},
@@ -40720,10 +40657,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3343_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3343_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3343_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3343_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Immortal Spark",
+				"de" : "Konzeptfragment: Phoinix",
+				"fr" : "Concept fragmentaire: oiseau immortel",
+				"jp" : "概念の断片：不死鳥"
 			}
 		}
 	},
@@ -40734,10 +40671,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3344_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3344_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3344_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3344_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Immortal Conception",
+				"de" : "Konzeptumsetzung: Phoinix",
+				"fr" : "Conceptualisation: oiseau immortel",
+				"jp" : "概念生成：不死鳥"
 			}
 		}
 	},
@@ -40748,10 +40685,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3345_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3345_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3345_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3345_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Solosplice",
+				"de" : "Einfache Konzeptreflexion",
+				"fr" : "Concept adverse simple",
+				"jp" : "単相式反発概念"
 			}
 		}
 	},
@@ -40762,10 +40699,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3346_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3346_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3346_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3346_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Multisplice",
+				"de" : "Multiple Konzeptreflexion",
+				"fr" : "Concepts adverses multiples",
+				"jp" : "複相式反発概念"
 			}
 		}
 	},
@@ -40776,10 +40713,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3347_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3347_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3347_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3347_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Supersplice",
+				"de" : "Komplexe Konzeptreflexion",
+				"fr" : "Concept adverse puissant",
+				"jp" : "重相式反発概念"
 			}
 		}
 	},
@@ -40804,10 +40741,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3350_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3350_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3350_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3350_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Soul Stranded",
+				"de" : "Außerkörperlichkeit",
+				"fr" : "Dissociation corps-âme",
+				"jp" : "幽体離脱"
 			}
 		}
 	},
@@ -40818,10 +40755,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3351_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3351_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3351_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3351_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Eye of the Gorgon",
+				"de" : "Gorgons Fluch: Steinauge",
+				"fr" : "Malédiction de gorgone: œil pétrifiant",
+				"jp" : "ゴルゴンの呪詛：石眼"
 			}
 		}
 	},
@@ -40832,10 +40769,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3352_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3352_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3352_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3352_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Crown of the Gorgon",
+				"de" : "Gorgons Fluch: Steinlicht",
+				"fr" : "Malédiction de gorgone: lueur pétrifiante",
+				"jp" : "ゴルゴンの呪詛：石光"
 			}
 		}
 	},
@@ -40972,7 +40909,7 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Sewer-dweller",
+				"en" : "Powerful",
 				"de" : "Angepasstes Miasma",
 				"fr" : "Mithridatisation",
 				"jp" : "瘴気順応"
@@ -41144,10 +41081,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3391_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3391_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3391_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3391_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Purgatory Winds",
+				"de" : "Doppeltes Zeichen des Windes",
+				"fr" : "Double sigil du vent",
+				"jp" : "風の二重印"
 			}
 		}
 	},
@@ -41158,10 +41095,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3392_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3392_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3392_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3392_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Purgatory Winds",
+				"de" : "Doppeltes Zeichen des Windes",
+				"fr" : "Double sigil du vent",
+				"jp" : "風の二重印"
 			}
 		}
 	},
@@ -41172,10 +41109,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3393_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3393_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3393_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3393_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Purgatory Winds",
+				"de" : "Doppeltes Zeichen des Windes",
+				"fr" : "Double sigil du vent",
+				"jp" : "風の二重印"
 			}
 		}
 	},
@@ -41186,10 +41123,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3394_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3394_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3394_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3394_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Holy Purgation",
+				"de" : "Doppeltes Zeichen der Heiligkeit",
+				"fr" : "Double sigil sacré",
+				"jp" : "聖の二重印"
 			}
 		}
 	},
@@ -41200,10 +41137,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3395_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3395_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3395_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3395_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Holy Purgation",
+				"de" : "Doppeltes Zeichen der Heiligkeit",
+				"fr" : "Double sigil sacré",
+				"jp" : "聖の二重印"
 			}
 		}
 	},
@@ -41214,10 +41151,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3396_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3396_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3396_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3396_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Holy Purgation",
+				"de" : "Doppeltes Zeichen der Heiligkeit",
+				"fr" : "Double sigil sacré",
+				"jp" : "聖の二重印"
 			}
 		}
 	},
@@ -41228,10 +41165,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3397_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3397_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3397_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3397_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Inviolate Winds",
+				"de" : "Doppeltes Zeichen des Windes",
+				"fr" : "Sigil du vent",
+				"jp" : "風の魔印"
 			}
 		}
 	},
@@ -41242,10 +41179,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3398_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3398_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3398_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3398_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Holy Bonds",
+				"de" : "Doppeltes Zeichen der Heiligkeit",
+				"fr" : "Sigil sacré",
+				"jp" : "聖の魔印"
 			}
 		}
 	},
@@ -41356,10 +41293,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3406_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3406_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3406_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3406_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Everburn",
+				"de" : "Macht des Phoinix",
+				"fr" : "Puissance de l'oiseau immortel",
+				"jp" : "不死鳥の力"
 			}
 		}
 	},
@@ -41406,16 +41343,16 @@
 		}
 	},
 	"3412" : {
-		"type" : "debuff",
-		"dot" : false,
-		"debuff" : true,
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3412_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3412_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3412_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3412_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Natural Alignment",
+				"de" : "Rituelle Anpassung (empfangen)",
+				"fr" : "Description rituelle (ciblage)",
+				"jp" : "術式記述［被］"
 			}
 		}
 	},
@@ -41807,7 +41744,7 @@
 				"en" : "Brilliant Dynamis",
 				"de" : "Glanz des Dynamis +",
 				"fr" : "Éclat du dynamis+",
-				"jp" : "デュナミスの輝き[強]"
+				"jp" : "デュナミスの輝き［強］"
 			}
 		}
 	},
@@ -42000,7 +41937,7 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Dirty Claw",
+				"en" : "Paralysis",
 				"de" : "Paralyse",
 				"fr" : "Paralysie",
 				"jp" : "麻痺"
@@ -42952,10 +42889,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3545_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3545_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3545_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3545_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Chimeric Soul",
+				"de" : "Chimärenseele",
+				"fr" : "Âme de chimère",
+				"jp" : "キメリックソウル"
 			}
 		}
 	},
@@ -43008,10 +42945,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3550_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3550_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3550_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3550_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Dæmoniac Bonds",
+				"de" : "Dæmonische Fessel",
+				"fr" : "Lien pandæmoniaque",
+				"jp" : "パンデモニックボンド"
 			}
 		}
 	},
@@ -43022,10 +42959,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3551_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3551_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3551_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3551_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Duodæmoniac Bonds",
+				"de" : "Duodæmonische Fessel",
+				"fr" : "Double lien pandæmoniaque",
+				"jp" : "パンデモニックボンド・ダブル"
 			}
 		}
 	},
@@ -43246,10 +43183,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3576_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3576_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3576_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3576_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Umbral Tilt",
+				"de" : "Ätherbalance: Dunkel",
+				"fr" : "Polarisation ombrale",
+				"jp" : "極性偏向：霊"
 			}
 		}
 	},
@@ -43260,10 +43197,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3577_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3577_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3577_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3577_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Astral Tilt",
+				"de" : "Ätherbalance: Licht",
+				"fr" : "Polarisation astrale",
+				"jp" : "極性偏向：星"
 			}
 		}
 	},
@@ -43274,10 +43211,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3578_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3578_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3578_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3578_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Heavensflame Soul",
+				"de" : "Siegel des Feuers",
+				"fr" : "Marque de feu du ciel",
+				"jp" : "天火の刻印"
 			}
 		}
 	},
@@ -43288,10 +43225,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3579_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3579_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3579_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3579_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Umbralbright Soul",
+				"de" : "Siegel des Dunkelglühens",
+				"fr" : "Marque de manifestation ombrale",
+				"jp" : "霊臨の刻印"
 			}
 		}
 	},
@@ -43302,10 +43239,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3580_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3580_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3580_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3580_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Astralbright Soul",
+				"de" : "Siegel des Lichtglühens",
+				"fr" : "Marque de manifestation astrale",
+				"jp" : "星臨の刻印"
 			}
 		}
 	},
@@ -43316,10 +43253,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3581_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3581_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3581_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3581_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Umbralstrong Soul",
+				"de" : "Siegel des Dunkelschlags",
+				"fr" : "Marque d'attaque ombrale",
+				"jp" : "霊撃の刻印"
 			}
 		}
 	},
@@ -43330,10 +43267,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3582_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3582_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3582_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3582_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Astralstrong Soul",
+				"de" : "Siegel des Lichtschlags",
+				"fr" : "Marque d'attaque astrale",
+				"jp" : "星撃の刻印"
 			}
 		}
 	},
@@ -43344,10 +43281,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3583_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3583_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3583_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3583_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Quartered Soul",
+				"de" : "Siegel des Kreuzes",
+				"fr" : "Marque de croix",
+				"jp" : "十字の刻印"
 			}
 		}
 	},
@@ -43358,10 +43295,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3584_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3584_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3584_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3584_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "X-marked Soul",
+				"de" : "Siegel des Schrägkreuzes",
+				"fr" : "Marque de croix décussée",
+				"jp" : "交差の刻印"
 			}
 		}
 	},
@@ -43386,10 +43323,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3588_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3588_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3588_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3588_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Shackled Together",
+				"de" : "Schattenfesseln",
+				"fr" : "Chaînes d'union",
+				"jp" : "束縛の鎖"
 			}
 		}
 	},
@@ -43400,10 +43337,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3589_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3589_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3589_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3589_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Close Caloric",
+				"de" : "Phlogiston",
+				"fr" : "Chaleur matérielle",
+				"jp" : "熱素"
 			}
 		}
 	},
@@ -43414,10 +43351,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3590_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3590_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3590_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3590_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Pyrefaction",
+				"de" : "Omen des pyrischen Pulses",
+				"fr" : "Présage de grand feu",
+				"jp" : "重火の兆し"
 			}
 		}
 	},
@@ -43428,10 +43365,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3591_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3591_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3591_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3591_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Atmosfaction",
+				"de" : "Omen der dynamischen Atmosphäre",
+				"fr" : "Présage de courant d'air",
+				"jp" : "誘風の兆し"
 			}
 		}
 	},
@@ -43442,10 +43379,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3592_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3592_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3592_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3592_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Entropifaction",
+				"de" : "Omen des entropischen Exzesses",
+				"fr" : "Présage d'ignition",
+				"jp" : "発火の兆し"
 			}
 		}
 	},
@@ -43456,10 +43393,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3593_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3593_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3593_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3593_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Unstable Factor",
+				"de" : "Faktorausgleich",
+				"fr" : "Facteur d'extinction",
+				"jp" : "消滅因子"
 			}
 		}
 	},
@@ -43470,10 +43407,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3594_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3594_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3594_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3594_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Critical Factor",
+				"de" : "Faktorisiertes Tabu",
+				"fr" : "Facteur létal",
+				"jp" : "致命因子"
 			}
 		}
 	},
@@ -43780,10 +43717,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3617_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3617_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3617_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3617_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Entropy Resistance",
+				"de" : "Pyrische Resistenz",
+				"fr" : "Ininflammable",
+				"jp" : "発火耐性"
 			}
 		}
 	},
@@ -43794,10 +43731,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3618_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3618_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3618_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3618_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Stable System",
+				"de" : "Schutzfaktor X",
+				"fr" : "Anti-facteur d'extinction",
+				"jp" : "反消滅因子"
 			}
 		}
 	},
@@ -44047,7 +43984,7 @@
 		"locales" : {
 			"name" : {
 				"en" : "Candy Cane",
-				"de" : "Quietschehammer",
+				"de" : "Zuckerstange",
 				"fr" : "Canne en sucre d'orge",
 				"jp" : "キャンディケーン"
 			}
@@ -44550,10 +44487,10 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "_rsv_3696_-1_1_0_0_S74CFC3B0_E74CFC3B0",
-				"de" : "_rsv_3696_-1_2_0_0_S74CFC3B0_E74CFC3B0",
-				"fr" : "_rsv_3696_-1_3_0_0_S74CFC3B0_E74CFC3B0",
-				"jp" : "_rsv_3696_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+				"en" : "Tetradæmoniac Bonds",
+				"de" : "Tetradæmonische Fessel",
+				"fr" : "Quadruple lien pandæmoniaque",
+				"jp" : "パンデモニックボンド・クアドラ"
 			}
 		}
 	},
@@ -45083,8 +45020,8 @@
 		"locales" : {
 			"name" : {
 				"en" : "Raging Rroneek",
-				"de" : "Herz des Rroneek",
-				"fr" : "Ardeur du Rroneek",
+				"de" : "Seele des Rroneek",
+				"fr" : "Ardeur du rroneek",
 				"jp" : "ロネークの心熱"
 			}
 		}
@@ -45294,7 +45231,7 @@
 			"name" : {
 				"en" : "Rroneek Pulse",
 				"de" : "Blutrausch des Rroneek",
-				"fr" : "Sang chaud du Rroneek",
+				"fr" : "Sang chaud du rroneek",
 				"jp" : "ロネークの血潮"
 			}
 		}
@@ -45308,7 +45245,7 @@
 			"name" : {
 				"en" : "Br'aax Pulse",
 				"de" : "Blutrausch des Br'aax",
-				"fr" : "Sang chaud du Br'aax",
+				"fr" : "Sang chaud du br'aax",
 				"jp" : "ブラーシャの血潮"
 			}
 		}
@@ -45322,7 +45259,7 @@
 			"name" : {
 				"en" : "Luwatena Pulse",
 				"de" : "Blutrausch der Luwatena",
-				"fr" : "Sang chaud du Luwatena",
+				"fr" : "Sang chaud du luwatena",
 				"jp" : "ルワテナの血潮"
 			}
 		}
@@ -45398,8 +45335,8 @@
 		}
 	},
 	"3795" : {
-		"type" : "dot",
-		"dot" : true,
+		"type" : "effect",
+		"dot" : false,
 		"debuff" : false,
 		"jobs" : [],
 		"locales" : {
@@ -45407,7 +45344,7 @@
 				"en" : "Sustained Damage",
 				"de" : "Schaden über Zeit",
 				"fr" : "Dégâts continus",
-				"jp" : "継続ダメージ"
+				"jp" : ""
 			}
 		}
 	},
