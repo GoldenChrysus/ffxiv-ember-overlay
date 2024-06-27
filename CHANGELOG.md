@@ -12,7 +12,7 @@
 - Added footer button to toggle the horizontal overlay mode
 
 ### UI Changes
-- Improved to spell timer image and countdown positioning
+- Improved spell timer image and countdown positioning
 - Improved appearance of encounter timer in right-aligned horizontal overlay
 
 ### Code Changes
