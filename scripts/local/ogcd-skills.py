@@ -83,6 +83,9 @@ for key in local:
 	classes      = record["Jobs"]
 	pvp          = ("", " (PVP)")[record["IsPVP"] == True]
 
+	if cleanText(record["Name"]["en"]) == '':
+		continue
+
 	skills[id] = {
 		"recast"        : record["RecastMs"] / 1000.0,
 		"charges"       : record["MaxCharges"],
