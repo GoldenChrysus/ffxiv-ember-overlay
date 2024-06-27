@@ -1402,7 +1402,12 @@
 		"recast" : 60.0,
 		"charges" : 1,
 		"level_recasts" : null,
-		"level_charges" : null,
+		"level_charges" : [
+			{
+				"level" : 98,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"WHM"
 		],
@@ -1629,6 +1634,10 @@
 		"charges" : 1,
 		"level_recasts" : null,
 		"level_charges" : [
+			{
+				"level" : 98,
+				"charges" : 3
+			},
 			{
 				"level" : 78,
 				"charges" : 2
@@ -2422,7 +2431,7 @@
 		"level_recasts" : null,
 		"level_charges" : [
 			{
-				"level" : 88,
+				"level" : 76,
 				"charges" : 2
 			}
 		],
@@ -2981,7 +2990,12 @@
 	"7561" : {
 		"recast" : 60.0,
 		"charges" : 0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 94,
+				"recast" : 40.0
+			}
+		],
 		"level_charges" : null,
 		"jobs" : [
 			"CNJ",
@@ -5197,7 +5211,12 @@
 	"16542" : {
 		"recast" : 90.0,
 		"charges" : 0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 98,
+				"recast" : 60.0
+			}
+		],
 		"level_charges" : null,
 		"jobs" : [
 			"SCH"
@@ -7363,7 +7382,12 @@
 	"24294" : {
 		"recast" : 90.0,
 		"charges" : 0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 94,
+				"recast" : 60.0
+			}
+		],
 		"level_charges" : null,
 		"jobs" : [
 			"SGE"
@@ -8855,12 +8879,7 @@
 		"recast" : 15.0,
 		"charges" : 0,
 		"level_recasts" : null,
-		"level_charges" : [
-			{
-				"level" : 78,
-				"charges" : 2
-			}
-		],
+		"level_charges" : null,
 		"jobs" : [
 			"DRK"
 		],
@@ -10491,7 +10510,7 @@
 		"level_recasts" : null,
 		"level_charges" : [
 			{
-				"level" : 88,
+				"level" : 76,
 				"charges" : 2
 			}
 		],
@@ -11748,7 +11767,12 @@
 		"recast" : 60.0,
 		"charges" : 1,
 		"level_recasts" : null,
-		"level_charges" : null,
+		"level_charges" : [
+			{
+				"level" : 86,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"PCT"
 		],
@@ -11872,7 +11896,12 @@
 		"recast" : 40.0,
 		"charges" : 2,
 		"level_recasts" : null,
-		"level_charges" : null,
+		"level_charges" : [
+			{
+				"level" : 96,
+				"charges" : 3
+			}
+		],
 		"jobs" : [
 			"PCT"
 		],
@@ -12068,7 +12097,12 @@
 		"recast" : 60.0,
 		"charges" : 1,
 		"level_recasts" : null,
-		"level_charges" : null,
+		"level_charges" : [
+			{
+				"level" : 84,
+				"charges" : 2
+			}
+		],
 		"jobs" : [
 			"DRG"
 		],
@@ -12658,7 +12692,12 @@
 		"recast" : 20.0,
 		"charges" : 2,
 		"level_recasts" : null,
-		"level_charges" : null,
+		"level_charges" : [
+			{
+				"level" : 96,
+				"charges" : 3
+			}
+		],
 		"jobs" : [
 			"PCT"
 		],

@@ -2,12 +2,13 @@
 
 ## 1.9.0
 
-**Released: [in development]**
+**Released: 2024-06-27**
 
 ### Bug Fixes
 - Resolved issue where overlay became unusable when enabling horizontal mode while viewing the raid or aggro tabs
 
 ### Features
+- Added Dawntrail actions (spells), statuses (effects), and zones
 - Added footer button to toggle the horizontal overlay mode
 
 ### UI Changes
