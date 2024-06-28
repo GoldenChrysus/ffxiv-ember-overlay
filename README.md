@@ -48,7 +48,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ![Aggro tab](https://i.imgur.com/H79KkfB.png "Aggro tab")
 
 ### Click on any player's name to view detailed statistics.
-![Detailed statistics](https://i.imgur.com/G3UOoFR.gif "Detailed statistics")
+![Detailed statistics](https://i.imgur.com/EzR299y.gif "Detailed statistics")
 
 ### Optional minimal, Light, Classic, and Clear Blue themes (minimal can be combined with any theme).
 ![Minimal theme](https://i.imgur.com/psPV5yL.png "Minimal theme")
