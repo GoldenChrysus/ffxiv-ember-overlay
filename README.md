@@ -50,10 +50,14 @@ Join the Discord server to receive live updates, report bugs, or request feature
 ### Click on any player's name to view detailed statistics.
 ![Detailed statistics](https://i.imgur.com/G3UOoFR.gif "Detailed statistics")
 
-### Optional minimal, light, and classic themes (minimal can be combined with any theme).
+### Optional minimal, Light, Classic, and Clear Blue themes (minimal can be combined with any theme).
 ![Minimal theme](https://i.imgur.com/psPV5yL.png "Minimal theme")
 ![Light theme](https://i.imgur.com/HJTyGqJ.png "Light theme")
 ![Classic theme](https://i.imgur.com/wq65hM7.png "Classic theme")
+![Clear Blue theme](https://i.imgur.com/vHWhxp4.png "Clear Blue theme")
+
+### Compact yet fully-featured horizontal layout available for every theme combination.
+![Horizontal layout](https://i.imgur.com/S58QK2m.png "Horizontal layout")
 
 ### Spell timers.
 **Spell, buff, DOT, and debuff timers.**
@@ -67,6 +71,7 @@ Join the Discord server to receive live updates, report bugs, or request feature
 **Flexible layout options.**
 
 ![Flexible layout](https://i.imgur.com/eluTIe2.png "Flexible layout")
+![Icon layout](https://i.imgur.com/eEWwUfi.png "Icon layout")
 
 **Powerful but easy spell timer setup.**
 
@@ -94,6 +99,10 @@ Join the Discord server to receive live updates, report bugs, or request feature
 **Minimize the entire overlay to the left or right when not in use to free up screen space.**
 
 ![Minimize when not in use](https://i.imgur.com/HSiTNCF.gif "Minimize when not in use")
+
+**Share customizable stats with your party or raid group on Discord.**
+
+![Discord webhook](https://i.imgur.com/IX8w7Ly.png "Discord webhook")
 
 ### Easily see the recent changes since your last visit.
 ![About and changelog](https://i.imgur.com/fgZgoN4.gif "About and changelog")
