@@ -194,7 +194,7 @@ function rootReducer(state, action) {
 				!new_state.internal.did_auto_demo &&
 				new_state.internal.mode === "spells" &&
 				new_state.internal.game.Combatant["Watching Catscene"] &&
-				new_state.internal.game.Combatant["Why Mage"]
+				new_state.internal.game.Combatant["Why Maige"]
 			) {
 				new_state = populateSampleData(state, new_state);
 
