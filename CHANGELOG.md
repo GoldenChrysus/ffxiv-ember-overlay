@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.9.1
+
+**Released: 2024-07-01**
+
+### Bug Fixes
+- N/A
+
+### Features
+- Detect when overlay is being previewed in order to show sample spell timers
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.9.0
 
 **Released: 2024-06-27**

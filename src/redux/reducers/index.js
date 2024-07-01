@@ -68,6 +68,7 @@ const initial_state = {
 			bottom_left  : false,
 			bottom_right : false,
 		},
+		did_auto_demo : false,
 	},
 	settings : {},
 };
@@ -189,191 +190,22 @@ function rootReducer(state, action) {
 				new_state.internal.data_history = new_state.internal.encounter_history[0].data_history;
 			}
 
+			if (
+				!new_state.internal.did_auto_demo &&
+				new_state.internal.mode === "spells" &&
+				new_state.internal.game.Combatant["Watching Catscene"] &&
+				new_state.internal.game.Combatant["Why Mage"]
+			) {
+				new_state = populateSampleData(state, new_state);
+
+				new_state.internal.did_auto_demo = true;
+			}
+
 			GameDataProcessor.processCombatDataTTS(new_state.internal.game, new_state);
 			break;
 
 		case "loadSampleData":
-			let tmp_action;
-
-			switch (state.internal.mode) {
-				case "stats":
-					tmp_action = {
-						type : "loadSampleData",
-					};
-
-					state.internal.data_history = SampleHistoryData;
-
-					tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language, state, true);
-
-					new_state  = createNewState(state, "internal.game", tmp_action);
-					tmp_action = {
-						payload : GameDataProcessor.normalizeAggroList(SampleAggroData),
-					};
-
-					new_state = createNewState(new_state, "internal.aggro", tmp_action);
-
-					break;
-
-				case "spells":
-					tmp_action = {
-						payload : {
-							"skill-7499" : {
-								type     : "skill",
-								subtype  : "skill",
-								id       : 7499,
-								time     : new Date(),
-								log_type : "you-skill",
-								party    : false,
-							},
-							"skill-16481" : {
-								type     : "skill",
-								subtype  : "skill",
-								id       : 16481,
-								time     : new Date(),
-								log_type : "you-skill",
-								party    : false,
-							},
-							"skill-16482" : {
-								type     : "skill",
-								subtype  : "skill",
-								id       : 16482,
-								time     : new Date(),
-								log_type : "you-skill",
-								party    : false,
-							},
-							"effect-Jinpu" : {
-								type     : "effect",
-								subtype  : "effect",
-								id       : 1298,
-								time     : new Date(),
-								duration : 40,
-								log_type : "you-effect",
-								party    : false,
-							},
-							"effect-Shifu" : {
-								type     : "effect",
-								subtype  : "effect",
-								id       : 1299,
-								time     : new Date(),
-								duration : 40,
-								log_type : "you-effect",
-								party    : false,
-							},
-							"effect-Higanbana" : {
-								type     : "effect",
-								subtype  : "dot",
-								id       : 1228,
-								time     : new Date(),
-								duration : 60,
-								log_type : "you-dot",
-								party    : false,
-							},
-							"effect-Trick Attack" : {
-								type     : "effect",
-								subtype  : "debuff",
-								id       : 2014,
-								time     : new Date(),
-								duration : 15,
-								log_type : "you-debuff",
-								party    : false,
-							},
-							"skill-3571-party" : {
-								type     : "skill",
-								subtype  : "skill",
-								id       : 3571,
-								time     : new Date(),
-								log_type : "heal-skill",
-								party    : true,
-							},
-							"effect-Divine Benison-party" : {
-								type     : "effect",
-								subtype  : "effect",
-								id       : 1218,
-								time     : new Date(),
-								duration : 15,
-								log_type : "heal-effect",
-								party    : true,
-							},
-							"effect-Dia-party" : {
-								type     : "effect",
-								subtype  : "dot",
-								id       : 1871,
-								time     : new Date(),
-								duration : 30,
-								log_type : "heal-dot",
-								party    : true,
-							},
-							"skill-3557-party" : {
-								type     : "skill",
-								subtype  : "skill",
-								id       : 3557,
-								time     : new Date(),
-								log_type : "dps-skill",
-								party    : true,
-							},
-							"effect-Battle Litany-party" : {
-								type     : "effect",
-								subtype  : "effect",
-								id       : 1414,
-								time     : new Date(),
-								duration : 20,
-								log_type : "dps-effect",
-								party    : true,
-							},
-							"effect-Chaos Thrust-party" : {
-								type     : "effect",
-								subtype  : "dot",
-								id       : 118,
-								time     : new Date(),
-								duration : 24,
-								log_type : "dps-dot",
-								party    : true,
-							},
-							"effect-Death's Design-party" : {
-								type     : "effect",
-								subtype  : "debuff",
-								id       : 2586,
-								time     : new Date(),
-								duration : 30,
-								log_type : "dps-debuff",
-								party    : true,
-							},
-							"skill-44-party" : {
-								type     : "skill",
-								subtype  : "skill",
-								id       : 44,
-								time     : new Date(),
-								log_type : "tank-skill",
-								party    : true,
-							},
-							"effect-Vengeance-party" : {
-								type     : "effect",
-								subtype  : "effect",
-								id       : 89,
-								time     : new Date(),
-								duration : 15,
-								log_type : "tank-effect",
-								party    : true,
-							},
-							"effect-Sonic Break-party" : {
-								type     : "effect",
-								subtype  : "dot",
-								id       : 1837,
-								time     : new Date(),
-								duration : 30,
-								log_type : "tank-dot",
-								party    : true,
-							},
-						},
-					};
-
-					new_state = createNewState(state, "internal.spells.in_use", tmp_action);
-
-					break;
-
-				default:
-					break;
-			}
+			new_state = populateSampleData(state, new_state);
 
 			break;
 
@@ -682,6 +514,194 @@ function updateSpells(state, reset) {
 
 	SpellService.updateValidNames(state);
 	SpellService.injectDefaults(state);
+}
+
+function populateSampleData(state, new_state) {
+	let tmp_action;
+
+	const base_state = (new_state === false) ? state : new_state;
+
+	switch (state.internal.mode) {
+		case "stats":
+			tmp_action = {
+				type : "loadSampleData",
+			};
+
+			state.internal.data_history = SampleHistoryData;
+
+			tmp_action.payload = GameDataProcessor.normalizeLocales(SampleGameData, state.settings.interface.language, base_state, true);
+
+			new_state  = createNewState(base_state, "internal.game", tmp_action);
+			tmp_action = {
+				payload : GameDataProcessor.normalizeAggroList(SampleAggroData),
+			};
+
+			new_state = createNewState(new_state, "internal.aggro", tmp_action);
+
+			break;
+
+		case "spells":
+			tmp_action = {
+				payload : {
+					"skill-7499" : {
+						type     : "skill",
+						subtype  : "skill",
+						id       : 7499,
+						time     : new Date(),
+						log_type : "you-skill",
+						party    : false,
+					},
+					"skill-16481" : {
+						type     : "skill",
+						subtype  : "skill",
+						id       : 16481,
+						time     : new Date(),
+						log_type : "you-skill",
+						party    : false,
+					},
+					"skill-16482" : {
+						type     : "skill",
+						subtype  : "skill",
+						id       : 16482,
+						time     : new Date(),
+						log_type : "you-skill",
+						party    : false,
+					},
+					"effect-Jinpu" : {
+						type     : "effect",
+						subtype  : "effect",
+						id       : 1298,
+						time     : new Date(),
+						duration : 40,
+						log_type : "you-effect",
+						party    : false,
+					},
+					"effect-Shifu" : {
+						type     : "effect",
+						subtype  : "effect",
+						id       : 1299,
+						time     : new Date(),
+						duration : 40,
+						log_type : "you-effect",
+						party    : false,
+					},
+					"effect-Higanbana" : {
+						type     : "effect",
+						subtype  : "dot",
+						id       : 1228,
+						time     : new Date(),
+						duration : 60,
+						log_type : "you-dot",
+						party    : false,
+					},
+					"effect-Trick Attack" : {
+						type     : "effect",
+						subtype  : "debuff",
+						id       : 2014,
+						time     : new Date(),
+						duration : 15,
+						log_type : "you-debuff",
+						party    : false,
+					},
+					"skill-3571-party" : {
+						type     : "skill",
+						subtype  : "skill",
+						id       : 3571,
+						time     : new Date(),
+						log_type : "heal-skill",
+						party    : true,
+					},
+					"effect-Divine Benison-party" : {
+						type     : "effect",
+						subtype  : "effect",
+						id       : 1218,
+						time     : new Date(),
+						duration : 15,
+						log_type : "heal-effect",
+						party    : true,
+					},
+					"effect-Dia-party" : {
+						type     : "effect",
+						subtype  : "dot",
+						id       : 1871,
+						time     : new Date(),
+						duration : 30,
+						log_type : "heal-dot",
+						party    : true,
+					},
+					"skill-3557-party" : {
+						type     : "skill",
+						subtype  : "skill",
+						id       : 3557,
+						time     : new Date(),
+						log_type : "dps-skill",
+						party    : true,
+					},
+					"effect-Battle Litany-party" : {
+						type     : "effect",
+						subtype  : "effect",
+						id       : 1414,
+						time     : new Date(),
+						duration : 20,
+						log_type : "dps-effect",
+						party    : true,
+					},
+					"effect-Chaos Thrust-party" : {
+						type     : "effect",
+						subtype  : "dot",
+						id       : 118,
+						time     : new Date(),
+						duration : 24,
+						log_type : "dps-dot",
+						party    : true,
+					},
+					"effect-Death's Design-party" : {
+						type     : "effect",
+						subtype  : "debuff",
+						id       : 2586,
+						time     : new Date(),
+						duration : 30,
+						log_type : "dps-debuff",
+						party    : true,
+					},
+					"skill-44-party" : {
+						type     : "skill",
+						subtype  : "skill",
+						id       : 44,
+						time     : new Date(),
+						log_type : "tank-skill",
+						party    : true,
+					},
+					"effect-Vengeance-party" : {
+						type     : "effect",
+						subtype  : "effect",
+						id       : 89,
+						time     : new Date(),
+						duration : 15,
+						log_type : "tank-effect",
+						party    : true,
+					},
+					"effect-Sonic Break-party" : {
+						type     : "effect",
+						subtype  : "dot",
+						id       : 1837,
+						time     : new Date(),
+						duration : 30,
+						log_type : "tank-dot",
+						party    : true,
+					},
+				},
+			};
+
+			new_state = createNewState(state, "internal.spells.in_use", tmp_action);
+
+			break;
+
+		default:
+			break;
+	}
+
+	return new_state;
 }
 
 export default rootReducer;
