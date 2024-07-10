@@ -1,6 +1,9 @@
 const { getLoader, loaderByName, throwUnexpectedConfigError } = require("@craco/craco");
 
 module.exports = {
+	babel : {
+		plugins : ["@babel/plugin-transform-optional-chaining"],
+	},
 	webpack : {
 		alias : {
 			"../../theme.config$" : require("path").join(__dirname, "/src/semantic-ui/theme.config"),

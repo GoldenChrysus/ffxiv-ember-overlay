@@ -307,7 +307,15 @@ class GameDataProcessor {
 
 			case 21:
 			case 22:
-				log_data.spell_index      = 4;
+				log_data.spell_index = 4;
+
+				const skill_id = String(parseInt(data[log_data.spell_index], 16));
+
+				if (!SpellService.skillExists(skill_id)) {
+					return false;
+				}
+
+				log_data.spell_id         = skill_id;
 				log_data.char_id_index    = 2;
 				log_data.spell_name_index = 5;
 				log_data.char_name_index  = log_data.char_id_index + 1;
@@ -333,14 +341,15 @@ class GameDataProcessor {
 
 				const effect_id = String(parseInt(data[log_data.spell_index], 16));
 
-				if (!SkillData.Effects[effect_id]) {
+				if (!SpellService.effectExists(effect_id)) {
 					return false;
 				}
 
-				log_data.type    = "effect";
-				log_data.dot     = SkillData.Effects[effect_id].dot;
-				log_data.debuff  = SkillData.Effects[effect_id].debuff;
-				log_data.subtype = (log_data.dot)
+				log_data.spell_id = effect_id;
+				log_data.type     = "effect";
+				log_data.dot      = SkillData.Effects[effect_id].dot;
+				log_data.debuff   = SkillData.Effects[effect_id].debuff;
+				log_data.subtype  = (log_data.dot)
 					? "dot"
 					: ((log_data.debuff)
 						? "debuff"
@@ -362,7 +371,6 @@ class GameDataProcessor {
 				return false;
 		}
 
-		log_data.spell_id  = String(parseInt(data[log_data.spell_index], 16));
 		log_data.char_id   = parseInt(data[log_data.char_id_index], 16);
 		log_data.char_type = (state.internal.character_id === log_data.char_id) ? "you" : false;
 		log_data.party     = (log_data.char_type !== "you");

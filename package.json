@@ -2,7 +2,7 @@
 	"name": "ffxiv-ember-overlay",
 	"description": "React + Redux overlay for the OverlayPlugin and ACTWebSocket plugins for Advanced Combat Tracker for use with Final Fantasy XIV.",
 	"license": "GPL-3.0-only",
-	"version": "1.9.1",
+	"version": "1.9.2",
 	"keywords": [
 		"ffxiv",
 		"dawntrail",
@@ -16,6 +16,7 @@
 	],
 	"private": true,
 	"dependencies": {
+		"@babel/plugin-transform-optional-chaining": "^7.24.7",
 		"changelog-parser": "^2.8.0",
 		"chart.js": "^2.8.0",
 		"compare-versions": "^3.5.0",

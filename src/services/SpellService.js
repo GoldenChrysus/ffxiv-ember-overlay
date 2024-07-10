@@ -28,10 +28,18 @@ class SpellService {
 		this.settings.party_tts_on_skill  = party_tts_on_skill;
 	}
 
+	skillExists(id) {
+		return Boolean(SkillData.oGCDSkills[id]);
+	}
+
+	effectExists(id) {
+		return Boolean(SkillData.Effects[id]);
+	}
+
 	getSkillRecast(id, level) {
 		const skill = SkillData.oGCDSkills[id];
 
-		if (level && skill.level_recasts) {
+		if (level && skill?.level_recasts) {
 			for (const level_data of skill.level_recasts) {
 				if (level >= level_data.level) {
 					return level_data.recast;
@@ -39,13 +47,13 @@ class SpellService {
 			}
 		}
 
-		return skill.recast;
+		return skill?.recast;
 	}
 
 	getSkillCharges(id, level) {
 		const skill = SkillData.oGCDSkills[id];
 
-		if (level && skill.level_charges) {
+		if (level && skill?.level_charges) {
 			for (const level_data of skill.level_charges) {
 				if (level >= level_data.level) {
 					return level_data.charges;
@@ -53,7 +61,7 @@ class SpellService {
 			}
 		}
 
-		return skill.charges;
+		return skill?.charges;
 	}
 
 	processSpells(used, lost, changed_default) {
@@ -70,6 +78,10 @@ class SpellService {
 			if (!defaulted) {
 				switch (type) {
 					case "skill":
+						if (!this.skillExists(used[i].id)) {
+							continue;
+						}
+
 						recast      = this.getSkillRecast(used[i].id, (used[i].party) ? 0 : current_level);
 						max_charges = this.getSkillCharges(used[i].id, (used[i].party) ? 0 : current_level);
 
@@ -385,7 +397,7 @@ class SpellService {
 					continue;
 				}
 
-				if (type === "skill" && SkillData.oGCDSkills[id].pvp !== is_pvp_zone) {
+				if (type === "skill" && SkillData.oGCDSkills[id]?.pvp !== is_pvp_zone) {
 					continue;
 				}
 
@@ -406,7 +418,13 @@ class SpellService {
 				let max_charges = 0;
 
 				if (main_type === "skill") {
+					if (!this.skillExists(id)) {
+						continue;
+					}
+
 					max_charges = this.getSkillCharges(id, state.internal.character_level);
+				} else if (main_type === "effect" && !this.effectExists(id)) {
+					continue;
 				}
 
 				state.internal.spells.defaulted[name] = {
@@ -434,7 +452,7 @@ class SpellService {
 	}
 
 	getDemoSpell() {
-		const id = 16486;
+		const id = Object.keys(SkillData.oGCDSkills)[0];
 
 		return {
 			type          : "skill",

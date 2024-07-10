@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.9.2
+
+**Released: 2024-07-10**
+
+### Bug Fixes
+- Resolved issue with deprecated skills/effects causing spell timer overlay to fail
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.9.1
 
 **Released: 2024-07-01**
