@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.9.3
+
+**Released: 2024-07-13**
+
+### Bug Fixes
+- Resolved issue where some buffs, debuffs, and DOTs were not attributed to their relevant classes/jobs
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.9.2
 
 **Released: 2024-07-10**

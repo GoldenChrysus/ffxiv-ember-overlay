@@ -2,9 +2,6 @@
 	"Circle of Scorn" : [
 		"PLD"
 	],
-	"Goring Blade" : [
-		"PLD"
-	],
 	"Sonic Break" : [
 		"GNB"
 	],
@@ -22,12 +19,10 @@
 	],
 	"Bio" : [
 		"ACN",
-		"SMN",
 		"SCH"
 	],
 	"Bio II" : [
 		"ACN",
-		"SMN",
 		"SCH"
 	],
 	"Biolysis" : [
@@ -45,17 +40,9 @@
 	"Combust III" : [
 		"AST"
 	],
-	"Demolish" : [
-		"PGL",
-		"MNK"
-	],
 	"Chaos Thrust" : [
 		"LNC",
 		"DRG"
-	],
-	"Shadow Fang" : [
-		"ROG",
-		"NIN"
 	],
 	"Higanbana" : [
 		"SAM"
@@ -63,15 +50,8 @@
 	"Kaeshi: Higanbana" : [
 		"SAM"
 	],
-	"Venomous Bite" : [
-		"ARC",
-		"BRD"
-	],
 	"Windbite" : [
 		"ARC",
-		"BRD"
-	],
-	"Caustic Bite" : [
 		"BRD"
 	],
 	"Stormbite" : [
@@ -124,5 +104,17 @@
 	],
 	"Eukrasian Dosis III" : [
 		"SGE"
+	],
+	"Eukrasian Dyskrasia" : [
+		"SGE"
+	],
+	"Baneful Impaction" : [
+		"SCH"
+	],
+	"High Thunder" : [
+		"BLM"
+	],
+	"High Thunder II" : [
+		"BLM"
 	]
 }

@@ -1740,10 +1740,7 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [
-			"ARC",
-			"BRD"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Venomous Bite",
@@ -2587,7 +2584,6 @@
 		"debuff" : false,
 		"jobs" : [
 			"ACN",
-			"SMN",
 			"SCH"
 		],
 		"locales" : {
@@ -2734,7 +2730,6 @@
 		"debuff" : false,
 		"jobs" : [
 			"ACN",
-			"SMN",
 			"SCH"
 		],
 		"locales" : {
@@ -3492,10 +3487,7 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [
-			"PGL",
-			"MNK"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Demolish",
@@ -6799,10 +6791,7 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [
-			"ROG",
-			"NIN"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Shadow Fang",
@@ -8860,9 +8849,7 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"MCH"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Hypercharge",
@@ -9240,9 +9227,7 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [
-			"PLD"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Goring Blade",
@@ -9638,7 +9623,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dark Arts",
@@ -14410,7 +14397,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Earth's Resolve",
@@ -14440,7 +14429,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Meditative Brotherhood",
@@ -14484,7 +14475,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Brotherhood",
@@ -14705,9 +14698,7 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [
-			"BRD"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Caustic Bite",
@@ -15018,7 +15009,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WHM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Confession",
@@ -15090,7 +15083,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Earthly Dominance",
@@ -16177,10 +16172,7 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [
-			"PGL",
-			"MNK"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Demolish",
@@ -16241,10 +16233,7 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [
-			"ROG",
-			"NIN"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Shadow Fang",
@@ -16360,9 +16349,7 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [
-			"BRD"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Caustic Bite",
@@ -22641,7 +22628,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Closed Position",
@@ -22963,7 +22952,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Esprit",
@@ -22977,7 +22968,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Esprit",
@@ -23181,7 +23174,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Draconian Fire",
@@ -23212,7 +23207,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Meditation",
@@ -23742,7 +23739,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Atonement Ready",
@@ -25327,7 +25326,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Esprit",
@@ -25341,7 +25342,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Closed Position",
@@ -25637,7 +25640,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Esprit",
@@ -27148,7 +27153,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Meditative Brotherhood",
@@ -27162,7 +27169,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Brotherhood",
@@ -27193,7 +27202,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Meditation",
@@ -31807,7 +31818,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Cross Reaping",
@@ -31849,7 +31862,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Soulsow",
@@ -31879,7 +31894,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Crest of Time Borrowed",
@@ -31893,7 +31910,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Crest of Time Borrowed",
@@ -31985,7 +32004,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Kardia",
@@ -31999,7 +32020,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Kardion",
@@ -32291,7 +32314,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Primal Rend Ready",
@@ -32505,7 +32530,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Haimatinon",
@@ -32519,7 +32546,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Panhaimatinon",
@@ -32757,7 +32786,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Inner Strength",
@@ -32883,7 +32914,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Divine Might",
@@ -33122,7 +33155,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Overheated",
@@ -33136,7 +33171,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Meisui",
@@ -33150,7 +33187,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Raiju Ready",
@@ -33286,7 +33325,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Fourfold Fan Dance",
@@ -33442,7 +33483,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WHM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Liturgy of the Bell",
@@ -33673,7 +33716,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ifrit's Favor",
@@ -33687,7 +33732,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Garuda's Favor",
@@ -33967,7 +34014,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Soulsow",
@@ -35005,7 +35054,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Harpe",
@@ -35047,7 +35098,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Titan's Favor",
@@ -35137,7 +35190,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Enhanced Harpe",
@@ -35167,7 +35222,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Crest of Time Borrowed",
@@ -35301,7 +35358,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Haimatinon",
@@ -35315,7 +35374,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Kardia",
@@ -35329,7 +35390,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Kardion",
@@ -36786,7 +36849,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Confiteor Ready",
@@ -36960,7 +37025,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dark Arts",
@@ -37874,7 +37941,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Haimatinon",
@@ -37902,7 +37971,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Addersting",
@@ -38270,7 +38341,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Overheated",
@@ -38538,7 +38611,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Polyglot",
@@ -38799,7 +38874,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Meisui",
@@ -44008,7 +44085,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Flankstung Venom",
@@ -44022,7 +44101,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Flanksbane Venom",
@@ -44036,7 +44117,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hindstung Venom",
@@ -44050,7 +44133,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hindsbane Venom",
@@ -44064,7 +44149,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Grimhunter's Venom",
@@ -44078,7 +44165,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Grimskin's Venom",
@@ -44092,7 +44181,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hunter's Venom",
@@ -44120,7 +44211,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Fellhunter's Venom",
@@ -44134,7 +44227,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Fellskin's Venom",
@@ -44148,7 +44243,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Poised for Twinfang",
@@ -44162,7 +44259,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Poised for Twinblood",
@@ -44176,7 +44275,9 @@
 		"type" : "debuff",
 		"dot" : false,
 		"debuff" : true,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Noxious Gnash",
@@ -44190,7 +44291,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hunter's Instinct",
@@ -44204,7 +44307,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Swiftscaled",
@@ -44232,7 +44337,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Reawaken",
@@ -44260,7 +44367,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Aetherhues",
@@ -44274,7 +44383,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Aetherhues II",
@@ -44288,7 +44399,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Rainbow Bright",
@@ -44316,7 +44429,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Starstruck",
@@ -44400,7 +44515,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hyperphantasia",
@@ -44414,7 +44531,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Inspiration",
@@ -44428,7 +44547,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Subtractive Spectrum",
@@ -44442,7 +44563,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Monochrome Tones",
@@ -45718,7 +45841,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Supplication Ready",
@@ -45732,7 +45857,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sepulchre Ready",
@@ -45774,7 +45901,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Blade of Honor Ready",
@@ -45816,7 +45945,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Primal Ruination Ready",
@@ -45888,7 +46019,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Raze",
@@ -45902,7 +46035,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Reign",
@@ -45916,7 +46051,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Earth's Rumination",
@@ -45930,7 +46067,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Wind's Rumination",
@@ -45944,7 +46083,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MNK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Fire's Rumination",
@@ -45958,7 +46099,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Nastrond Ready",
@@ -45972,7 +46115,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dragon's Flight",
@@ -45986,7 +46131,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRG"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Starcross Ready",
@@ -46000,7 +46147,10 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GLD",
+			"PLD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Goring Blade Ready",
@@ -46014,7 +46164,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Shadow Walker",
@@ -46042,7 +46194,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Higi",
@@ -46056,7 +46210,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"NIN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Tenri Jindo Ready",
@@ -46070,7 +46226,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Tsubame-gaeshi Ready",
@@ -46098,7 +46256,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Tengetsu's Foresight",
@@ -46112,7 +46272,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Zanshin Ready",
@@ -46126,7 +46288,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SAM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Tendo",
@@ -46140,7 +46304,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Oblatio",
@@ -46154,7 +46320,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Executioner",
@@ -46168,7 +46336,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Perfectio Occulta",
@@ -46182,7 +46352,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Perfectio Parata",
@@ -46210,7 +46382,10 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"ARC",
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Resonant Arrow Ready",
@@ -46224,7 +46399,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BRD"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Radiant Encore Ready",
@@ -46238,7 +46415,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hypercharged",
@@ -46252,7 +46431,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Excavator Ready",
@@ -46266,7 +46447,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"MCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Full Metal Machinist",
@@ -46280,7 +46463,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Last Dance Ready",
@@ -46294,7 +46479,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Finishing Move Ready",
@@ -46308,7 +46495,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DNC"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Dance of the Dawn Ready",
@@ -46322,7 +46511,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Thunderhead",
@@ -46336,7 +46527,9 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "High Thunder",
@@ -46350,7 +46543,9 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"BLM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "High Thunder",
@@ -46364,7 +46559,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ruby's Glimmer",
@@ -46378,7 +46575,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SMN"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Refulgent Lux",
@@ -46392,7 +46591,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Magicked Swordplay",
@@ -46406,7 +46607,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Thorned Flourish",
@@ -46420,7 +46623,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Grand Impact Ready",
@@ -46434,7 +46639,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RDM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Prefulgence Ready",
@@ -46448,7 +46655,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WHM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Sacred Sight",
@@ -46476,7 +46685,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WHM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Divine Grace",
@@ -46490,7 +46701,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Impact Imminent",
@@ -46504,7 +46717,9 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SCH"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Baneful Impaction",
@@ -46546,7 +46761,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"GNB"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ready to Break",
@@ -46656,7 +46873,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Divining",
@@ -46684,7 +46903,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"AST"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Suntouched",
@@ -46712,7 +46933,9 @@
 		"type" : "dot",
 		"dot" : true,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Eukrasian Dyskrasia",
@@ -46740,7 +46963,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"SGE"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Eudaimonia",
@@ -46754,7 +46979,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WAR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Primeval Impulse",
@@ -46782,7 +47009,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"DRK"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Vigilant",
@@ -46810,7 +47039,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"WHM"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Divine Aura",
@@ -46824,7 +47055,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"RPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Ideal Host",
@@ -47976,7 +48209,9 @@
 		"type" : "debuff",
 		"dot" : false,
 		"debuff" : true,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Noxious Gnash",
@@ -47990,7 +48225,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Aetherhues",
@@ -48004,7 +48241,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Aetherhues II",
@@ -48242,7 +48481,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"PCT"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Starstruck",
@@ -48270,7 +48511,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Hunter's Instinct",
@@ -48284,7 +48527,9 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [],
+		"jobs" : [
+			"VPR"
+		],
 		"locales" : {
 			"name" : {
 				"en" : "Swiftscaled",

@@ -3,85 +3,85 @@
 		"tank"
 	],
 	"Arm's Length" : [
-		"tank", 
-		"PGL", 
-		"MNK", 
-		"LNC", 
-		"DRG", 
-		"ROG", 
-		"NIN", 
-		"SAM", 
-		"ARC", 
-		"BRD", 
-		"MCH", 
+		"tank",
+		"PGL",
+		"MNK",
+		"LNC",
+		"DRG",
+		"ROG",
+		"NIN",
+		"SAM",
+		"ARC",
+		"BRD",
+		"MCH",
 		"DNC",
 		"RPR"
 	],
 	"Swiftcast" : [
-		"heal", 
-		"THM", 
-		"BLM", 
-		"ACN", 
-		"SMN", 
-		"RDM", 
+		"heal",
+		"THM",
+		"BLM",
+		"ACN",
+		"SMN",
+		"RDM",
 		"BLM",
 		"SGE"
 	],
 	"Lucid Dreaming" : [
-		"heal", 
-		"THM", 
-		"BLM", 
-		"ACN", 
-		"SMN", 
-		"RDM", 
+		"heal",
+		"THM",
+		"BLM",
+		"ACN",
+		"SMN",
+		"RDM",
 		"BLM",
 		"SGE"
 	],
 	"Surecast" : [
-		"heal", 
-		"THM", 
-		"BLM", 
-		"ACN", 
-		"SMN", 
-		"RDM", 
+		"heal",
+		"THM",
+		"BLM",
+		"ACN",
+		"SMN",
+		"RDM",
 		"BLM",
 		"SGE"
 	],
 	"Bloodbath" : [
-		"PGL", 
-		"MNK", 
-		"LNC", 
-		"DRG", 
-		"ROG", 
-		"NIN", 
+		"PGL",
+		"MNK",
+		"LNC",
+		"DRG",
+		"ROG",
+		"NIN",
 		"SAM",
 		"RPR"
 	],
 	"True North" : [
-		"PGL", 
-		"MNK", 
-		"LNC", 
-		"DRG", 
-		"ROG", 
-		"NIN", 
+		"PGL",
+		"MNK",
+		"LNC",
+		"DRG",
+		"ROG",
+		"NIN",
 		"SAM",
 		"RPR"
 	],
 	"Peloton" : [
-		"ARC", 
-		"BRD", 
-		"MCH", 
+		"ARC",
+		"BRD",
+		"MCH",
 		"DNC"
 	],
 	"Fight or Flight" : [
-		"GLD", 
+		"GLD",
 		"PLD"
 	],
 	"Sheltron" : [
 		"PLD"
 	],
 	"Sentinel" : [
-		"GLD", 
+		"GLD",
 		"PLD"
 	],
 	"Cover" : [
@@ -100,23 +100,23 @@
 		"PLD"
 	],
 	"Berserk" : [
-		"MRD", 
+		"MRD",
 		"WAR"
 	],
 	"Thrill of Battle" : [
-		"MRD", 
+		"MRD",
 		"WAR"
 	],
 	"Vengeance" : [
-		"MRD", 
+		"MRD",
 		"WAR"
 	],
 	"Holmgang" : [
-		"MRD", 
+		"MRD",
 		"WAR"
 	],
 	"Storm's Eye" : [
-		"MRD", 
+		"MRD",
 		"WAR"
 	],
 	"Nascent Chaos" : [
@@ -273,27 +273,27 @@
 		"AST"
 	],
 	"Raptor Form" : [
-		"PGL", 
+		"PGL",
 		"MNK"
 	],
 	"Coeurl Form" : [
-		"PGL", 
+		"PGL",
 		"MNK"
 	],
 	"Opo-opo Form" : [
-		"PGL", 
+		"PGL",
 		"MNK"
 	],
 	"Twin Snakes" : [
-		"PGL", 
+		"PGL",
 		"MNK"
 	],
 	"Mantra" : [
-		"PGL", 
+		"PGL",
 		"MNK"
 	],
 	"Perfect Balance" : [
-		"PGL", 
+		"PGL",
 		"MNK"
 	],
 	"Leaden Fist" : [
@@ -312,26 +312,26 @@
 		"MNK"
 	],
 	"Life Surge" : [
-		"LNC", 
+		"LNC",
 		"DRG"
 	],
 	"Disembowel" : [
-		"LNC", 
+		"LNC",
 		"DRG"
 	],
 	"Sharper Fang and Claw" : [
-		"LNC", 
+		"LNC",
 		"DRG"
 	],
 	"Lance Charge" : [
-		"LNC", 
+		"LNC",
 		"DRG"
 	],
 	"Dive Ready" : [
 		"DRG"
 	],
 	"Enhanced Wheeling Thrust" : [
-		"LNC", 
+		"LNC",
 		"DRG"
 	],
 	"Battle Litany" : [
@@ -347,7 +347,7 @@
 		"DRG"
 	],
 	"Shade Shift" : [
-		"ROG", 
+		"ROG",
 		"NIN"
 	],
 	"Ten" : [
@@ -396,29 +396,29 @@
 		"SAM"
 	],
 	"Straight Shot Ready" : [
-		"ARC", 
+		"ARC",
 		"BRD"
 	],
 	"Raging Strikes" : [
-		"ARC", 
+		"ARC",
 		"BRD"
 	],
 	"Barrage" : [
-		"ARC", 
+		"ARC",
 		"BRD"
 	],
 	"Troubador" : [
-		"ARC", 
+		"ARC",
 		"BRD"
 	],
 	"Nature's Minne" : [
-		"ARC", 
+		"ARC",
 		"BRD"
 	],
 	"Reassemble" : [
 		"MCH"
 	],
-	"Hypercharge" : [
+	"Hypercharged" : [
 		"MCH"
 	],
 	"Tactician" : [
@@ -461,15 +461,15 @@
 		"DNC"
 	],
 	"Umbral Ice" : [
-		"THM", 
+		"THM",
 		"BLM"
 	],
 	"Astral Fire" : [
-		"THM", 
+		"THM",
 		"BLM"
 	],
 	"Manaward" : [
-		"THM", 
+		"THM",
 		"BLM"
 	],
 	"Umbral Ice II" : [
@@ -768,5 +768,402 @@
 	],
 	"Enhanced Void Reaping" : [
 		"RPR"
+	],
+
+	"Goring Blade Ready" : [
+		"GLD",
+		"PLD"
+	],
+	"Divine Might" : [
+		"PLD"
+	],
+	"Atonement Ready" : [
+		"PLD"
+	],
+	"Confiteor Ready" : [
+		"PLD"
+	],
+	"Supplication Ready" : [
+		"PLD"
+	],
+	"Sepulchre Ready" : [
+		"PLD"
+	],
+	"Blade of Honor Ready" : [
+		"PLD"
+	],
+
+	"Inner Strength" : [
+		"WAR"
+	],
+	"Primal Rend Ready" : [
+		"WAR"
+	],
+	"Primal Ruination Ready" : [
+		"WAR"
+	],
+	"Primeval Impulse" : [
+		"WAR"
+	],
+	"Dark Arts" : [
+		"DRK"
+	],
+	"Vigilant" : [
+		"DRK"
+	],
+	"Ready to Break" : [
+		"GNB"
+	],
+	"Ready to Raze" : [
+		"GNB"
+	],
+	"Ready to Reign" : [
+		"GNB"
+	],
+	"Raptor's Fury" : [
+		"PGL",
+		"MNK"
+	],
+	"Coeurl's Fury" : [
+		"PGL",
+		"MNK"
+	],
+	"Opo-opo's Fury" : [
+		"PGL",
+		"MNK"
+	],
+	"Raptor Chakra" : [
+		"MNK"
+	],
+	"Coeurl Chakra" : [
+		"MNK"
+	],
+	"Opo-opo Chakra" : [
+		"MNK"
+	],
+	"Earth's Resolve" : [
+		"MNK"
+	],
+	"Earth's Rumination" : [
+		"MNK"
+	],
+	"Brotherhood" : [
+		"MNK"
+	],
+	"Meditative Brotherhood" : [
+		"MNK"
+	],
+	"Wind's Rumination" : [
+		"MNK"
+	],
+	"Beast Chakra" : [
+		"MNK"
+	],
+	"Fire's Rumination" : [
+		"MNK"
+	],
+	"Dragon's Flight" : [
+		"DRG"
+	],
+	"Nastrond Ready" : [
+		"DRG"
+	],
+	"Draconian Fire" : [
+		"DRG"
+	],
+	"Starcross Ready" : [
+		"DRG"
+	],
+	"Kazematoi" : [
+		"NIN"
+	],
+	"Higi" : [
+		"NIN"
+	],
+	"Tenri Jindo Ready" : [
+		"NIN"
+	],
+	"Meisui" : [
+		"NIN"
+	],
+	"Raiju Ready" : [
+		"NIN"
+	],
+	"Shadow Walker" : [
+		"NIN"
+	],
+	"Getsu" : [
+		"SAM"
+	],
+	"Ka" : [
+		"SAM"
+	],
+	"Setsu" : [
+		"SAM"
+	],
+	"Tendo" : [
+		"SAM"
+	],
+	"Tsubame-gaeshi Ready" : [
+		"SAM"
+	],
+	"Meditation" : [
+		"SAM"
+	],
+	"Zanshin Ready" : [
+		"SAM"
+	],
+	"Tengetsu's Foresight" : [
+		"SAM"
+	],
+	"Enhanced Harpe" : [
+		"RPR"
+	],
+	"Crest of Time Borrowed" : [
+		"RPR"
+	],
+	"Executioner" : [
+		"RPR"
+	],
+	"Oblatio" : [
+		"RPR"
+	],
+	"Enhanced Cross Reaping" : [
+		"RPR"
+	],
+	"Void Shroud" : [
+		"RPR"
+	],
+	"Soulsow" : [
+		"RPR"
+	],
+	"Ideal Host" : [
+		"RPR"
+	],
+	"Perfectio Occulta" : [
+		"RPR"
+	],
+	"Perfectio Parata" : [
+		"RPR"
+	],
+	"Hunter's Instinct" : [
+		"VPR"
+	],
+	"Swiftscaled" : [
+		"VPR"
+	],
+	"Hindstung Venom" : [
+		"VPR"
+	],
+	"Hindsbane Venom" : [
+		"VPR"
+	],
+	"Flanksbane Venom" : [
+		"VPR"
+	],
+	"Flankstung Venom" : [
+		"VPR"
+	],
+	"Grimskin's Venom" : [
+		"VPR"
+	],
+	"Grimhunter's Venom" : [
+		"VPR"
+	],
+	"Rattling Coil" : [
+		"VPR"
+	],
+	"Fellhunter's Venom" : [
+		"VPR"
+	],
+	"Fellskin's Venom" : [
+		"VPR"
+	],
+	"Hunter's Venom" : [
+		"VPR"
+	],
+	"Poised for Twinfang" : [
+		"VPR"
+	],
+	"Ready to Reawaken" : [
+		"VPR"
+	],
+	"Anguine Tribute" : [
+		"VPR"
+	],
+	"Poised for Twinblood" : [
+		"VPR"
+	],
+	"Sacred Sight" : [
+		"WHM"
+	],
+	"Confession" : [
+		"WHM"
+	],
+	"Divine Grace" : [
+		"WHM"
+	],
+	"Liturgy of the Bell" : [
+		"WHM"
+	],
+	"Divine Aura" : [
+		"WHM"
+	],
+	"Impact Imminent" : [
+		"SCH"
+	],
+	"Divining" : [
+		"AST"
+	],
+	"Earthly Dominance" : [
+		"AST"
+	],
+	"Suntouched" : [
+		"AST"
+	],
+	"Kardia" : [
+		"SGE"
+	],
+	"Kardion" : [
+		"SGE"
+	],
+	"Haimatinon" : [
+		"SGE"
+	],
+	"Addersgall" : [
+		"SGE"
+	],
+	"Panhaimatinon" : [
+		"SGE"
+	],
+	"Eudaimonia" : [
+		"SGE"
+	],
+	"Addersting" : [
+		"SGE"
+	],
+	"Mage's Coda" : [
+		"BRD"
+	],
+	"Resonant Arrow Ready" : [
+		"ARC",
+		"BRD"
+	],
+	"Army's Coda" : [
+		"BRD"
+	],
+	"Wanderer's Coda" : [
+		"BRD"
+	],
+	"Radiant Encore Ready" : [
+		"BRD"
+	],
+	"Overheated" : [
+		"MCH"
+	],
+	"Full Metal Machinist" : [
+		"MCH"
+	],
+	"Excavator Ready" : [
+		"MCH"
+	],
+	"Last Dance Ready" : [
+		"DNC"
+	],
+	"Closed Position" : [
+		"DNC"
+	],
+	"Dance of the Dawn Ready" : [
+		"DNC"
+	],
+	"Finishing Move Ready" : [
+		"DNC"
+	],
+	"Fourfold Fan Dance" : [
+		"DNC"
+	],
+	"Esprit" : [
+		"DNC"
+	],
+	"Thunderhead" : [
+		"BLM"
+	],
+	"Umbral Heart" : [
+		"BLM"
+	],
+	"Paradox" : [
+		"BLM"
+	],
+	"Astral Soul" : [
+		"BLM"
+	],
+	"Polyglot" : [
+		"BLM"
+	],
+	"Ruby Arcanum" : [
+		"ARC",
+		"SMN"
+	],
+	"Topaz Arcanum" : [
+		"ARC",
+		"SMN"
+	],
+	"Emerald Arcanum" : [
+		"ARC",
+		"SMN"
+	],
+	"Ifrit's Favor" : [
+		"SMN"
+	],
+	"Garuda's Favor" : [
+		"SMN"
+	],
+	"Ruby's Glimmer" : [
+		"SMN"
+	],
+	"Titan's Favor" : [
+		"SMN"
+	],
+	"Refulgent Lux" : [
+		"SMN"
+	],
+	"Grand Impact Ready" : [
+		"RDM"
+	],
+	"Thorned Flourish" : [
+		"RDM"
+	],
+	"Magicked Swordplay" : [
+		"RDM"
+	],
+	"Prefulgence Ready" : [
+		"RDM"
+	],
+	"Aetherhues" : [
+		"PCT"
+	],
+	"Aetherhues II" : [
+		"PCT"
+	],
+	"White Paint" : [
+		"PCT"
+	],
+	"Monochrome Tones" : [
+		"PCT"
+	],
+	"Subtractive Spectrum" : [
+		"PCT"
+	],
+	"Inspiration" : [
+		"PCT"
+	],
+	"Hyperphantasia" : [
+		"PCT"
+	],
+	"Rainbow Bright" : [
+		"PCT"
+	],
+	"Starstruck" : [
+		"PCT"
 	]
 }
