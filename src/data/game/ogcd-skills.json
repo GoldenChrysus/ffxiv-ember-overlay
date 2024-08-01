@@ -626,7 +626,7 @@
 		"level_recasts" : [
 			{
 				"level" : 84,
-				"recast" : 120.0
+				"recast" : 100.0
 			}
 		],
 		"level_charges" : null,
@@ -2374,7 +2374,12 @@
 	"7496" : {
 		"recast" : 120.0,
 		"charges" : 0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 94,
+				"recast" : 60.0
+			}
+		],
 		"level_charges" : null,
 		"jobs" : [
 			"SAM"
@@ -4906,7 +4911,12 @@
 	"16481" : {
 		"recast" : 120.0,
 		"charges" : 0,
-		"level_recasts" : null,
+		"level_recasts" : [
+			{
+				"level" : 94,
+				"recast" : 60.0
+			}
+		],
 		"level_charges" : null,
 		"jobs" : [
 			"SAM"
