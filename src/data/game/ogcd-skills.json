@@ -12299,7 +12299,7 @@
 		}
 	},
 	"37017" : {
-		"recast" : 60.0,
+		"recast" : 55.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -12317,7 +12317,7 @@
 		}
 	},
 	"37018" : {
-		"recast" : 60.0,
+		"recast" : 55.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
