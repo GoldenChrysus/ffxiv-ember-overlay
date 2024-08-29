@@ -40027,6 +40027,20 @@
 			}
 		}
 	},
+	"3289" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fusefield",
+				"de" : "Luntenfeld",
+				"fr" : "Champs de mèches",
+				"jp" : "フューズフィールド"
+			}
+		}
+	},
 	"3290" : {
 		"type" : "debuff",
 		"dot" : false,
@@ -40220,6 +40234,20 @@
 				"de" : "Himmelsschutz",
 				"fr" : "Mur astral",
 				"jp" : "星壁"
+			}
+		}
+	},
+	"3304" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Damage Down",
+				"de" : "Schaden -",
+				"fr" : "Malus de dégâts",
+				"jp" : "ダメージ低下"
 			}
 		}
 	},
@@ -44349,6 +44377,20 @@
 			}
 		}
 	},
+	"3672" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Honed Steel",
+				"de" : "Tödliche Haltung",
+				"fr" : "Lacération d'acier",
+				"jp" : "蛇鋭牙【咬創】"
+			}
+		}
+	},
 	"3674" : {
 		"type" : "effect",
 		"dot" : false,
@@ -45303,6 +45345,20 @@
 			}
 		}
 	},
+	"3772" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Honed Reavers",
+				"de" : "Tückische Haltung",
+				"fr" : "Lacération mortelle",
+				"jp" : "蛇鋭牙【穿裂】"
+			}
+		}
+	},
 	"3776" : {
 		"type" : "debuff",
 		"dot" : false,
@@ -46245,7 +46301,7 @@
 		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Tengetsu",
+				"en" : "Tengentsu",
 				"de" : "Tengentsu",
 				"fr" : "Tengentsû",
 				"jp" : "天眼通"
@@ -46256,15 +46312,13 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"SAM"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
-				"en" : "Tengetsu's Foresight",
+				"en" : "Tengentsu's Foresight",
 				"de" : "Tengentsu: Sei",
 				"fr" : "Tengentsû: Sei",
-				"jp" : "天眼通:生"
+				"jp" : "天眼通：生"
 			}
 		}
 	},
@@ -46895,7 +46949,7 @@
 				"en" : "Helios Conjunction",
 				"de" : "Helios in Konjunktion",
 				"fr" : "Hélios combiné",
-				"jp" : "コンジャクション・ヘリオス"
+				"jp" : "コンジャンクション・ヘリオス"
 			}
 		}
 	},
@@ -47179,6 +47233,146 @@
 			}
 		}
 	},
+	"3915" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Lovely Poison",
+				"de" : "Liebliches Gift",
+				"fr" : "Affection empoisonnée",
+				"jp" : "B・ポイズン"
+			}
+		}
+	},
+	"3920" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Fatal Attraction",
+				"de" : "Liebeswahn",
+				"fr" : "À la folie",
+				"jp" : "熱狂"
+			}
+		}
+	},
+	"3921" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Drone",
+				"de" : "Darbietung",
+				"fr" : "Sacrifice d'amour",
+				"jp" : "献上"
+			}
+		}
+	},
+	"3931" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Nine Lives",
+				"de" : "Sieben Leben",
+				"fr" : "Neuf-Vies",
+				"jp" : "ナインライヴス"
+			}
+		}
+	},
+	"3932" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Beeloved Venom: α",
+				"de" : "Liebliches Gift: α",
+				"fr" : "Poison de l'amour α",
+				"jp" : "ラブポイズン：α"
+			}
+		}
+	},
+	"3933" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Beeloved Venom: β",
+				"de" : "Liebliches Gift: β",
+				"fr" : "Poison de l'amour β",
+				"jp" : "ラブポイズン：β"
+			}
+		}
+	},
+	"3934" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Poison 'n' Pop",
+				"de" : "Giftballon",
+				"fr" : "Ballon de poison",
+				"jp" : "ポイズンバルーン"
+			}
+		}
+	},
+	"3935" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Poison Resistance Down II",
+				"de" : "Giftresistenz - (stark)",
+				"fr" : "Résistance au poison réduite+",
+				"jp" : "毒耐性低下［強］"
+			}
+		}
+	},
+	"3936" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Queen Bee",
+				"de" : "Bienenkönigin",
+				"fr" : "Gelée royale",
+				"jp" : "クイーン・B"
+			}
+		}
+	},
+	"3937" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Honeyed Charms",
+				"de" : "Bienencharme",
+				"fr" : "Affection envoûtante",
+				"jp" : "B・チャーム"
+			}
+		}
+	},
 	"3938" : {
 		"type" : "effect",
 		"dot" : false,
@@ -47302,6 +47496,20 @@
 				"de" : "Herzgebunden",
 				"fr" : "Palpitations de rroneek",
 				"jp" : "ロネークの心臓［被］"
+			}
+		}
+	},
+	"3953" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Femme Fatale",
+				"de" : "Femme Fatale",
+				"fr" : "Femme fatale",
+				"jp" : "ファムファタル"
 			}
 		}
 	},
@@ -47715,6 +47923,160 @@
 			}
 		}
 	},
+	"3997" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Concealed",
+				"de" : "Verborgen",
+				"fr" : "Camouflage",
+				"jp" : "潜伏"
+			}
+		}
+	},
+	"3999" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_3999_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_3999_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_3999_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_3999_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"4000" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_4000_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_4000_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_4000_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_4000_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"4001" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_4001_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_4001_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_4001_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_4001_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"4002" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_4002_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_4002_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_4002_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_4002_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"4003" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_4003_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_4003_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_4003_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_4003_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"4004" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_4004_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_4004_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_4004_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_4004_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"4005" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_4005_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_4005_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_4005_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_4005_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"4006" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_4006_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_4006_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_4006_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_4006_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"4007" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_4007_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_4007_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_4007_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_4007_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
+	"4008" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "_rsv_4008_-1_1_0_0_S74CFC3B0_E74CFC3B0",
+				"de" : "_rsv_4008_-1_2_0_0_S74CFC3B0_E74CFC3B0",
+				"fr" : "_rsv_4008_-1_3_0_0_S74CFC3B0_E74CFC3B0",
+				"jp" : "_rsv_4008_-1_0_0_0_S74CFC3B0_E74CFC3B0"
+			}
+		}
+	},
 	"4009" : {
 		"type" : "effect",
 		"dot" : false,
@@ -47796,6 +48158,76 @@
 				"de" : "Vorhersage: Eissturm",
 				"fr" : "Prévisions météo: tempête de glace",
 				"jp" : "天気予報：吹雪"
+			}
+		}
+	},
+	"4019" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Chain Deathmatch",
+				"de" : "Ketten-Todeskampf",
+				"fr" : "Chaîne de la mort",
+				"jp" : "チェーンデスマッチ"
+			}
+		}
+	},
+	"4020" : {
+		"type" : "debuff",
+		"dot" : false,
+		"debuff" : true,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Bombarium",
+				"de" : "Bombarium",
+				"fr" : "Bombarium",
+				"jp" : "ボンバリウム"
+			}
+		}
+	},
+	"4021" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Doped",
+				"de" : "Aufgeputscht",
+				"fr" : "Dopage",
+				"jp" : "ドーピング"
+			}
+		}
+	},
+	"4022" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Dangerously Doped",
+				"de" : "Stark aufgeputscht",
+				"fr" : "Surdopage",
+				"jp" : "ドーピング［強］"
+			}
+		}
+	},
+	"4023" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Doped and Detonative",
+				"de" : "Maximal aufgeputscht",
+				"fr" : "Mégadopage",
+				"jp" : "ドーピング［極］"
 			}
 		}
 	},
@@ -48006,6 +48438,90 @@
 				"de" : "Vorhersage",
 				"fr" : "Projection",
 				"jp" : "プロジェクション［被］"
+			}
+		}
+	},
+	"4048" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "One-two Memory",
+				"de" : "Sieben Leben: Doppelklaue",
+				"fr" : "Neuf-Vies: un-deux",
+				"jp" : "ナインライヴス：デュアル"
+			}
+		}
+	},
+	"4049" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Four-crossed Memory",
+				"de" : "Sieben Leben: Vierfachklaue",
+				"fr" : "Neuf-Vies: Quadruple griffade",
+				"jp" : "ナインライヴス：クアドラプルネイル"
+			}
+		}
+	},
+	"4050" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rightward Memory",
+				"de" : "Sieben Leben: Rechts",
+				"fr" : "Neuf-Vies: droite",
+				"jp" : "ナインライヴス：ライト"
+			}
+		}
+	},
+	"4051" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Leftward Memory",
+				"de" : "Sieben Leben: Links",
+				"fr" : "Neuf-Vies: gauche",
+				"jp" : "ナインライヴス：レフト"
+			}
+		}
+	},
+	"4052" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Four-swipe Memory",
+				"de" : "Sieben Leben: Vierfache Kralle",
+				"fr" : "Neuf-Vies: Quadruple fauchage",
+				"jp" : "ナインライヴス：クァッド"
+			}
+		}
+	},
+	"4053" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Two-swipe Memory",
+				"de" : "Sieben Leben: Doppelte Kralle",
+				"fr" : "Neuf-Vies: Double fauchage",
+				"jp" : "ナインライヴス：ダブル"
 			}
 		}
 	},
@@ -48763,6 +49279,20 @@
 			}
 		}
 	},
+	"4143" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Top of the Hive",
+				"de" : "Liebliche Biene",
+				"fr" : "Charme mielleux",
+				"jp" : "ラブリーハニー"
+			}
+		}
+	},
 	"4144" : {
 		"type" : "debuff",
 		"dot" : false,
@@ -48774,6 +49304,20 @@
 				"de" : "Beschleunigungsbombe",
 				"fr" : "Bombe à accélération",
 				"jp" : "加速度爆弾"
+			}
+		}
+	},
+	"4145" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Rotten Honey",
+				"de" : "Verdorbener Honig",
+				"fr" : "Colère mielleuse",
+				"jp" : "ブラックハニー"
 			}
 		}
 	},
@@ -48802,6 +49346,20 @@
 				"de" : "Ferne Raserei",
 				"fr" : "Frénésie éloignée",
 				"jp" : "ファー・フレンジー"
+			}
+		}
+	},
+	"4149" : {
+		"type" : "dot",
+		"dot" : true,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Sustained Damage",
+				"de" : "Schaden über Zeit",
+				"fr" : "Dégâts continus",
+				"jp" : "継続ダメージ"
 			}
 		}
 	},
@@ -48944,6 +49502,48 @@
 				"de" : "Heißblut des Br'aax",
 				"fr" : "Ardeur du br'aax",
 				"jp" : "ブラーシャの熱血"
+			}
+		}
+	},
+	"4216" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Tsubame-gaeshi",
+				"de" : "Tsubamegaeshi",
+				"fr" : "Tsubamegaeshi préparé",
+				"jp" : "燕返し実行可"
+			}
+		}
+	},
+	"4217" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Tsubame-gaeshi",
+				"de" : "Tsubamegaeshi",
+				"fr" : "Tsubamegaeshi préparé",
+				"jp" : "燕返し実行可"
+			}
+		}
+	},
+	"4218" : {
+		"type" : "effect",
+		"dot" : false,
+		"debuff" : false,
+		"jobs" : [],
+		"locales" : {
+			"name" : {
+				"en" : "Tsubame-gaeshi",
+				"de" : "Tsubamegaeshi",
+				"fr" : "Tsubamegaeshi préparé",
+				"jp" : "燕返し実行可"
 			}
 		}
 	}

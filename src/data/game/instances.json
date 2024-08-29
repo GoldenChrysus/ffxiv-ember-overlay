@@ -6269,6 +6269,105 @@
 			}
 		}
 	},
+	"30135" : {
+		"zone_id" : 1225,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Light-heavyweight M1",
+				"de" : "Arkadion - Halbschwergewicht R1",
+				"fr" : "Poids mi-lourds CCA - match 1",
+				"jp" : "至天の座アルカディア：ライトヘビー級1"
+			}
+		}
+	},
+	"30136" : {
+		"zone_id" : 1226,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Light-heavyweight M1 (Savage)",
+				"de" : "Arkadion - Halbschwergewicht R1 (episch)",
+				"fr" : "Poids mi-lourds CCA - match 1 (sadique)",
+				"jp" : "至天の座アルカディア零式：ライトヘビー級1"
+			}
+		}
+	},
+	"30137" : {
+		"zone_id" : 1227,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Light-heavyweight M2",
+				"de" : "Arkadion - Halbschwergewicht R2",
+				"fr" : "Poids mi-lourds CCA - match 2",
+				"jp" : "至天の座アルカディア：ライトヘビー級2"
+			}
+		}
+	},
+	"30138" : {
+		"zone_id" : 1228,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Light-heavyweight M2 (Savage)",
+				"de" : "Arkadion - Halbschwergewicht R2 (episch)",
+				"fr" : "Poids mi-lourds CCA - match 2 (sadique)",
+				"jp" : "至天の座アルカディア零式：ライトヘビー級2"
+			}
+		}
+	},
+	"30139" : {
+		"zone_id" : 1229,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Light-heavyweight M3",
+				"de" : "Arkadion - Halbschwergewicht R3",
+				"fr" : "Poids mi-lourds CCA - match 3",
+				"jp" : "至天の座アルカディア：ライトヘビー級3"
+			}
+		}
+	},
+	"30140" : {
+		"zone_id" : 1230,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Light-heavyweight M3 (Savage)",
+				"de" : "Arkadion - Halbschwergewicht R3 (episch)",
+				"fr" : "Poids mi-lourds CCA - match 3 (sadique)",
+				"jp" : "至天の座アルカディア零式：ライトヘビー級3"
+			}
+		}
+	},
+	"30141" : {
+		"zone_id" : 1231,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Light-heavyweight M4",
+				"de" : "Arkadion - Halbschwergewicht R4",
+				"fr" : "Poids mi-lourds CCA - match 4",
+				"jp" : "至天の座アルカディア：ライトヘビー級4"
+			}
+		}
+	},
+	"30142" : {
+		"zone_id" : 1232,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Light-heavyweight M4 (Savage)",
+				"de" : "Arkadion - Halbschwergewicht R4 (episch)",
+				"fr" : "Poids mi-lourds CCA - match 4 (sadique)",
+				"jp" : "至天の座アルカディア零式：ライトヘビー級4"
+			}
+		}
+	},
+	"55012" : {
+		"zone_id" : 1209,
+		"locales" : {
+			"name" : {
+				"en" : "Cenote Ja Ja Gural",
+				"de" : "Cenote Ja Ja Gural",
+				"fr" : "Cénote Ja Ja Gural",
+				"jp" : "宝物庫 セノーテ・ジャジャグラル"
+			}
+		}
+	},
 	"5071" : {
 		"zone_id" : 1215,
 		"locales" : {

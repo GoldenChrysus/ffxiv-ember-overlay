@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.9.5
+
+**Released: 2024-08-29**
+
+### Bug Fixes
+- N/A
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- Updated game data through FFXIV patch 7.05
+
 ## 1.9.4
 
 **Released: 2024-08-01**

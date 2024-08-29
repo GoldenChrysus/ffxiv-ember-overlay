@@ -1571,8 +1571,8 @@
 		}
 	},
 	"3606" : {
-		"recast" : 120.0,
-		"charges" : 0,
+		"recast" : 90.0,
+		"charges" : 2,
 		"level_recasts" : [
 			{
 				"level" : 68,
@@ -11576,10 +11576,10 @@
 		"pvp" : false,
 		"locales" : {
 			"name" : {
-				"en" : "Dreadwinder",
-				"de" : "Tückischer Otterngriff",
+				"en" : "Vicewinder",
+				"de" : "Harter Otterngriff",
 				"fr" : "Anneaux de l'effroi",
-				"jp" : "壱の蛇【惨毒】"
+				"jp" : "壱の蛇【強砕】"
 			}
 		}
 	},
@@ -11594,10 +11594,10 @@
 		"pvp" : false,
 		"locales" : {
 			"name" : {
-				"en" : "Pit of Dread",
-				"de" : "Tückische Otterngrube",
+				"en" : "Vicepit",
+				"de" : "Harte Otterngrube",
 				"fr" : "Fosse de l'effroi",
-				"jp" : "壱の大蛇【惨毒】"
+				"jp" : "壱の大蛇【強砕】"
 			}
 		}
 	},
@@ -12093,7 +12093,7 @@
 		"pvp" : false,
 		"locales" : {
 			"name" : {
-				"en" : "Tengetsu",
+				"en" : "Tengentsu",
 				"de" : "Tengentsu",
 				"fr" : "Tengentsû",
 				"jp" : "天眼通"
