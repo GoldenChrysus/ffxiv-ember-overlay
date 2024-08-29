@@ -46312,9 +46312,7 @@
 		"type" : "effect",
 		"dot" : false,
 		"debuff" : false,
-		"jobs" : [
-			"SAM"
-		],
+		"jobs" : [],
 		"locales" : {
 			"name" : {
 				"en" : "Tengentsu's Foresight",
