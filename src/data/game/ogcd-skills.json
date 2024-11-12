@@ -1441,7 +1441,7 @@
 	},
 	"3573" : {
 		"recast" : 120.0,
-		"charges" : 0,
+		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
@@ -2332,24 +2332,6 @@
 				"de" : "Irdischer Stern",
 				"fr" : "Étoile terrestre",
 				"jp" : "アーサリースター"
-			}
-		}
-	},
-	"7492" : {
-		"recast" : 10.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"SAM"
-		],
-		"pvp" : false,
-		"locales" : {
-			"name" : {
-				"en" : "Hissatsu: Gyoten",
-				"de" : "Hissatsu: Gyoten",
-				"fr" : "Hissatsu : Gyôten",
-				"jp" : "必殺剣・暁天"
 			}
 		}
 	},
@@ -8624,7 +8606,7 @@
 		}
 	},
 	"29056" : {
-		"recast" : 30.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -8648,8 +8630,8 @@
 			}
 		}
 	},
-	"29064" : {
-		"recast" : 15.0,
+	"29062" : {
+		"recast" : 12.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -8659,16 +8641,16 @@
 		"pvp" : true,
 		"locales" : {
 			"name" : {
-				"en" : "Shield Bash (PVP)",
-				"de" : "Schildschlag (PVP)",
-				"fr" : "Coup de bouclier (PVP)",
-				"jp" : "シールドバッシュ (PVP)"
+				"en" : "Holy Spirit (PVP)",
+				"de" : "Heiliger Geist (PVP)",
+				"fr" : "Esprit saint (PVP)",
+				"jp" : "ホーリースピリット (PVP)"
 			}
 		}
 	},
 	"29065" : {
-		"recast" : 10.0,
-		"charges" : 2,
+		"recast" : 12.0,
+		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
@@ -8685,7 +8667,7 @@
 		}
 	},
 	"29066" : {
-		"recast" : 25.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -8703,7 +8685,7 @@
 		}
 	},
 	"29067" : {
-		"recast" : 20.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -8735,24 +8717,6 @@
 				"de" : "Phalanx (PVP)",
 				"fr" : "Phalanx (PVP)",
 				"jp" : "ファランクス (PVP)"
-			}
-		}
-	},
-	"29070" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"PLD"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Confiteor (PVP)",
-				"de" : "Confiteor (PVP)",
-				"fr" : "Confiteor (PVP)",
-				"jp" : "コンフィテオル (PVP)"
 			}
 		}
 	},
@@ -8798,7 +8762,7 @@
 		}
 	},
 	"29081" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -8852,7 +8816,7 @@
 		}
 	},
 	"29084" : {
-		"recast" : 15.0,
+		"recast" : 20.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -8870,7 +8834,7 @@
 		}
 	},
 	"29092" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -8888,8 +8852,8 @@
 		}
 	},
 	"29093" : {
-		"recast" : 15.0,
-		"charges" : 0,
+		"recast" : 16.0,
+		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
@@ -8906,7 +8870,7 @@
 		}
 	},
 	"29094" : {
-		"recast" : 30.0,
+		"recast" : 28.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -8960,7 +8924,7 @@
 		}
 	},
 	"29102" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -8977,26 +8941,8 @@
 			}
 		}
 	},
-	"29105" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"GNB"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Double Down (PVP)",
-				"de" : "Doppelpack (PVP)",
-				"fr" : "Acharnement (PVP)",
-				"jp" : "ダブルダウン (PVP)"
-			}
-		}
-	},
 	"29123" : {
-		"recast" : 15.0,
+		"recast" : 14.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9013,62 +8959,8 @@
 			}
 		}
 	},
-	"29124" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"GNB"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Draw and Junction (PVP)",
-				"de" : "Blut-Erda (PVP)",
-				"fr" : "Giclée de sang (PVP)",
-				"jp" : "ブラッドドロー (PVP)"
-			}
-		}
-	},
-	"29125" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"GNB"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Junctioned Cast (PVP)",
-				"de" : "Gekoppelter Zauber (PVP)",
-				"fr" : "Prise de sang (PVP)",
-				"jp" : "ブラッドキャスト (PVP)"
-			}
-		}
-	},
-	"29126" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"GNB"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Nebula (PVP)",
-				"de" : "Nebula (PVP)",
-				"fr" : "Nébuleuse (PVP)",
-				"jp" : "ネビュラ (PVP)"
-			}
-		}
-	},
 	"29128" : {
-		"recast" : 20.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9082,29 +8974,6 @@
 				"de" : "Erda-Detonation (PVP)",
 				"fr" : "Zone de destruction (PVP)",
 				"jp" : "ブラスティングゾーン (PVP)"
-			}
-		}
-	},
-	"29129" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : [
-			{
-				"level" : 84,
-				"charges" : 2
-			}
-		],
-		"jobs" : [
-			"GNB"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Aurora (PVP)",
-				"de" : "Aurora (PVP)",
-				"fr" : "Aurore (PVP)",
-				"jp" : "オーロラ (PVP)"
 			}
 		}
 	},
@@ -9127,7 +8996,7 @@
 		}
 	},
 	"29224" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9145,7 +9014,7 @@
 		}
 	},
 	"29226" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9181,7 +9050,7 @@
 		}
 	},
 	"29228" : {
-		"recast" : 45.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9235,7 +9104,7 @@
 		}
 	},
 	"29232" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9253,7 +9122,7 @@
 		}
 	},
 	"29233" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9271,7 +9140,7 @@
 		}
 	},
 	"29234" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 2,
 		"level_recasts" : [
 			{
@@ -9290,24 +9159,6 @@
 				"de" : "Dislokation (PVP)",
 				"fr" : "Stratagème du déploiement (PVP)",
 				"jp" : "展開戦術 (PVP)"
-			}
-		}
-	},
-	"29235" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"SCH"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Mummification (PVP)",
-				"de" : "Mumifizierung (PVP)",
-				"fr" : "Momification (PVP)",
-				"jp" : "枯骨法 (PVP)"
 			}
 		}
 	},
@@ -9330,7 +9181,7 @@
 		}
 	},
 	"29237" : {
-		"recast" : 10.0,
+		"recast" : 60.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9347,7 +9198,7 @@
 			}
 		}
 	},
-	"29238" : {
+	"29241" : {
 		"recast" : 20.0,
 		"charges" : 0,
 		"level_recasts" : null,
@@ -9366,7 +9217,7 @@
 		}
 	},
 	"29243" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9384,7 +9235,7 @@
 		}
 	},
 	"29244" : {
-		"recast" : 15.0,
+		"recast" : 20.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9402,7 +9253,7 @@
 		}
 	},
 	"29245" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9420,7 +9271,7 @@
 		}
 	},
 	"29246" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9438,7 +9289,7 @@
 		}
 	},
 	"29247" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9456,7 +9307,7 @@
 		}
 	},
 	"29248" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9470,24 +9321,6 @@
 				"de" : "Gravitra (PVP)",
 				"fr" : "Extra Gravité (PVP)",
 				"jp" : "グラビラ (PVP)"
-			}
-		}
-	},
-	"29249" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"AST"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Draw (PVP)",
-				"de" : "Ziehen (PVP)",
-				"fr" : "Tirage (PVP)",
-				"jp" : "ドロー (PVP)"
 			}
 		}
 	},
@@ -9528,7 +9361,7 @@
 		}
 	},
 	"29258" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9546,8 +9379,8 @@
 		}
 	},
 	"29259" : {
-		"recast" : 15.0,
-		"charges" : 2,
+		"recast" : 16.0,
+		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
@@ -9582,7 +9415,7 @@
 		}
 	},
 	"29261" : {
-		"recast" : 10.0,
+		"recast" : 12.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9600,7 +9433,7 @@
 		}
 	},
 	"29262" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9688,7 +9521,7 @@
 		}
 	},
 	"29395" : {
-		"recast" : 30.0,
+		"recast" : 20.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9705,62 +9538,8 @@
 			}
 		}
 	},
-	"29396" : {
-		"recast" : 15.0,
-		"charges" : 3,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"BRD"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Empyreal Arrow (PVP)",
-				"de" : "Empyreischer Pfeil (PVP)",
-				"fr" : "Flèche empyréenne (PVP)",
-				"jp" : "エンピリアルアロー (PVP)"
-			}
-		}
-	},
-	"29397" : {
-		"recast" : 15.0,
-		"charges" : 3,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"BRD"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Empyreal Arrow (PVP)",
-				"de" : "Empyreischer Pfeil (PVP)",
-				"fr" : "Flèche empyréenne (PVP)",
-				"jp" : "エンピリアルアロー (PVP)"
-			}
-		}
-	},
-	"29398" : {
-		"recast" : 15.0,
-		"charges" : 3,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"BRD"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Empyreal Arrow (PVP)",
-				"de" : "Empyreischer Pfeil (PVP)",
-				"fr" : "Flèche empyréenne (PVP)",
-				"jp" : "エンピリアルアロー (PVP)"
-			}
-		}
-	},
 	"29399" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9778,7 +9557,7 @@
 		}
 	},
 	"29400" : {
-		"recast" : 25.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9814,7 +9593,7 @@
 		}
 	},
 	"29404" : {
-		"recast" : 20.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -9904,7 +9683,7 @@
 		}
 	},
 	"29409" : {
-		"recast" : 20.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10092,44 +9871,8 @@
 			}
 		}
 	},
-	"29479" : {
-		"recast" : 15.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"MNK"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Six-sided Star (PVP)",
-				"de" : "Sechsstern-Tritt (PVP)",
-				"fr" : "Étoile à six branches (PVP)",
-				"jp" : "六合星導脚 (PVP)"
-			}
-		}
-	},
-	"29480" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"MNK"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Enlightenment (PVP)",
-				"de" : "Weg zur Erleuchtung (PVP)",
-				"fr" : "Illumination (PVP)",
-				"jp" : "万象闘気圏 (PVP)"
-			}
-		}
-	},
 	"29481" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10147,7 +9890,7 @@
 		}
 	},
 	"29482" : {
-		"recast" : 25.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10166,7 +9909,7 @@
 	},
 	"29484" : {
 		"recast" : 10.0,
-		"charges" : 3,
+		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : [
 			{
@@ -10206,7 +9949,7 @@
 		}
 	},
 	"29490" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10278,7 +10021,7 @@
 		}
 	},
 	"29496" : {
-		"recast" : 25.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10314,7 +10057,7 @@
 		}
 	},
 	"29505" : {
-		"recast" : 10.0,
+		"recast" : 12.0,
 		"charges" : 3,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10332,7 +10075,7 @@
 		}
 	},
 	"29507" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10346,24 +10089,6 @@
 				"de" : "Tri-Mudra (PVP)",
 				"fr" : "Trimudrâ (PVP)",
 				"jp" : "三印自在 (PVP)"
-			}
-		}
-	},
-	"29509" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"NIN"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Mug (PVP)",
-				"de" : "Ausrauben (PVP)",
-				"fr" : "Rapine (PVP)",
-				"jp" : "ぶんどる (PVP)"
 			}
 		}
 	},
@@ -10427,7 +10152,7 @@
 		}
 	},
 	"29530" : {
-		"recast" : 20.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10463,7 +10188,7 @@
 		}
 	},
 	"29533" : {
-		"recast" : 25.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10481,7 +10206,7 @@
 		}
 	},
 	"29535" : {
-		"recast" : 20.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10539,6 +10264,24 @@
 			}
 		}
 	},
+	"29545" : {
+		"recast" : 16.0,
+		"charges" : 2,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"RPR"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Harvest Moon (PVP)",
+				"de" : "Erntemond (PVP)",
+				"fr" : "Lune des moissons (PVP)",
+				"jp" : "ハーベストムーン (PVP)"
+			}
+		}
+	},
 	"29546" : {
 		"recast" : 60.0,
 		"charges" : 0,
@@ -10558,7 +10301,7 @@
 		}
 	},
 	"29547" : {
-		"recast" : 15.0,
+		"recast" : 12.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10576,7 +10319,7 @@
 		}
 	},
 	"29548" : {
-		"recast" : 15.0,
+		"recast" : 20.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10594,7 +10337,7 @@
 		}
 	},
 	"29549" : {
-		"recast" : 20.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10665,29 +10408,6 @@
 			}
 		}
 	},
-	"29566" : {
-		"recast" : 15.0,
-		"charges" : 2,
-		"level_recasts" : null,
-		"level_charges" : [
-			{
-				"level" : 78,
-				"charges" : 2
-			}
-		],
-		"jobs" : [
-			"RPR"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Soul Slice (PVP)",
-				"de" : "Seelenschlitzer (PVP)",
-				"fr" : "Tranchage animique (PVP)",
-				"jp" : "ソウルスライス (PVP)"
-			}
-		}
-	},
 	"29657" : {
 		"recast" : 20.0,
 		"charges" : 0,
@@ -10706,26 +10426,8 @@
 			}
 		}
 	},
-	"29659" : {
-		"recast" : 30.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"BLM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Night Wing (PVP)",
-				"de" : "Nachtschwinge (PVP)",
-				"fr" : "Aile nocturne (PVP)",
-				"jp" : "ナイトウィング (PVP)"
-			}
-		}
-	},
-	"29660" : {
-		"recast" : 10.0,
+	"29658" : {
+		"recast" : 16.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10735,28 +10437,10 @@
 		"pvp" : true,
 		"locales" : {
 			"name" : {
-				"en" : "Aetherial Manipulation (PVP)",
-				"de" : "Äthermanipulation (PVP)",
-				"fr" : "Manipulation de l'éther (PVP)",
-				"jp" : "エーテリアルステップ (PVP)"
-			}
-		}
-	},
-	"29661" : {
-		"recast" : 15.0,
-		"charges" : 2,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"BLM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Superflare (PVP)",
-				"de" : "Supereruption (PVP)",
-				"fr" : "Choc thermique (PVP)",
-				"jp" : "ヒートショック (PVP)"
+				"en" : "Xenoglossy (PVP)",
+				"de" : "Xenoglossie (PVP)",
+				"fr" : "Xénoglossie (PVP)",
+				"jp" : "ゼノグロシー (PVP)"
 			}
 		}
 	},
@@ -10778,26 +10462,8 @@
 			}
 		}
 	},
-	"29663" : {
-		"recast" : 15.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"BLM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Paradox (PVP)",
-				"de" : "Paradox (PVP)",
-				"fr" : "Paradoxe (PVP)",
-				"jp" : "パラドックス (PVP)"
-			}
-		}
-	},
 	"29667" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10815,7 +10481,7 @@
 		}
 	},
 	"29669" : {
-		"recast" : 30.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10856,7 +10522,7 @@
 		}
 	},
 	"29671" : {
-		"recast" : 15.0,
+		"recast" : 20.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -10870,24 +10536,6 @@
 				"de" : "Bergsprenger (PVP)",
 				"fr" : "Casse-montagnes (PVP)",
 				"jp" : "マウンテンバスター (PVP)"
-			}
-		}
-	},
-	"29672" : {
-		"recast" : 15.0,
-		"charges" : 2,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Fester (PVP)",
-				"de" : "Schwäre (PVP)",
-				"fr" : "Suppuration (PVP)",
-				"jp" : "ミアズマバースト (PVP)"
 			}
 		}
 	},
@@ -10909,24 +10557,6 @@
 			}
 		}
 	},
-	"29674" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Enkindle Bahamut (PVP)",
-				"de" : "Bahamut-Entflammung (PVP)",
-				"fr" : "Galvanisation Bahamut (PVP)",
-				"jp" : "エンキンドル・バハムート (PVP)"
-			}
-		}
-	},
 	"29678" : {
 		"recast" : 10.0,
 		"charges" : 0,
@@ -10945,134 +10575,8 @@
 			}
 		}
 	},
-	"29679" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"SMN"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Enkindle Phoenix (PVP)",
-				"de" : "Phönix-Entflammung (PVP)",
-				"fr" : "Galvanisation Phénix (PVP)",
-				"jp" : "エンキンドル・フェニックス (PVP)"
-			}
-		}
-	},
-	"29689" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"RDM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Enchanted Riposte (PVP)",
-				"de" : "Magische Riposte (PVP)",
-				"fr" : "Riposte enchantée (PVP)",
-				"jp" : "エンリポスト (PVP)"
-			}
-		}
-	},
-	"29692" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"RDM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Enchanted Riposte (PVP)",
-				"de" : "Magische Riposte (PVP)",
-				"fr" : "Riposte enchantée (PVP)",
-				"jp" : "エンリポスト (PVP)"
-			}
-		}
-	},
-	"29695" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"RDM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Resolution (PVP)",
-				"de" : "Entschlossenheit (PVP)",
-				"fr" : "Résolution (PVP)",
-				"jp" : "レゾリューション (PVP)"
-			}
-		}
-	},
-	"29696" : {
-		"recast" : 20.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"RDM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Resolution (PVP)",
-				"de" : "Entschlossenheit (PVP)",
-				"fr" : "Résolution (PVP)",
-				"jp" : "レゾリューション (PVP)"
-			}
-		}
-	},
-	"29697" : {
-		"recast" : 25.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"RDM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Magick Barrier (PVP)",
-				"de" : "Magiebarriere (PVP)",
-				"fr" : "Barrière anti-magie (PVP)",
-				"jp" : "バマジク (PVP)"
-			}
-		}
-	},
-	"29698" : {
-		"recast" : 25.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"RDM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Frazzle (PVP)",
-				"de" : "Fix und fertig (PVP)",
-				"fr" : "Éreintage (PVP)",
-				"jp" : "フラズル (PVP)"
-			}
-		}
-	},
 	"29699" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -11090,7 +10594,7 @@
 		}
 	},
 	"29700" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -11107,39 +10611,21 @@
 			}
 		}
 	},
-	"29704" : {
-		"recast" : 10.0,
+	"29716" : {
+		"recast" : 20.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
-			"RDM"
+			"SCH"
 		],
 		"pvp" : true,
 		"locales" : {
 			"name" : {
-				"en" : "Southern Cross (PVP)",
-				"de" : "Kreuz des Südens (PVP)",
-				"fr" : "Croix du sud (PVP)",
-				"jp" : "サザンクロス (PVP)"
-			}
-		}
-	},
-	"29705" : {
-		"recast" : 10.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"RDM"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Southern Cross (PVP)",
-				"de" : "Kreuz des Südens (PVP)",
-				"fr" : "Croix du sud (PVP)",
-				"jp" : "サザンクロス (PVP)"
+				"en" : "Chain Stratagem (PVP)",
+				"de" : "Kritische Strategie (PVP)",
+				"fr" : "Stratagèmes entrelacés (PVP)",
+				"jp" : "連環計 (PVP)"
 			}
 		}
 	},
@@ -11249,24 +10735,6 @@
 				"de" : "Unsteter Schutzwall",
 				"fr" : "Rempart embranché",
 				"jp" : "ヴァリアント・ランパート"
-			}
-		}
-	},
-	"29737" : {
-		"recast" : 15.0,
-		"charges" : 0,
-		"level_recasts" : null,
-		"level_charges" : null,
-		"jobs" : [
-			"DRK"
-		],
-		"pvp" : true,
-		"locales" : {
-			"name" : {
-				"en" : "Quietus (PVP)",
-				"de" : "Quietus (PVP)",
-				"fr" : "Quietus (PVP)",
-				"jp" : "クワイタス (PVP)"
 			}
 		}
 	},
@@ -12403,8 +11871,8 @@
 		}
 	},
 	"39166" : {
-		"recast" : 15.0,
-		"charges" : 2,
+		"recast" : 16.0,
+		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
@@ -12413,16 +11881,16 @@
 		"pvp" : true,
 		"locales" : {
 			"name" : {
-				"en" : "Hunter's Snap (PVP)",
-				"de" : "Blutiger Otterngriff (PVP)",
-				"fr" : "Anneaux du prédateur (PVP)",
-				"jp" : "壱の蛇【猛襲】 (PVP)"
+				"en" : "Bloodcoil (PVP)",
+				"de" : "Labender Otterngriff (PVP)",
+				"fr" : "Anneaux du saigneur (PVP)",
+				"jp" : "壱の蛇【血宴】 (PVP)"
 			}
 		}
 	},
 	"39168" : {
 		"recast" : 20.0,
-		"charges" : 0,
+		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
@@ -12439,8 +11907,8 @@
 		}
 	},
 	"39184" : {
-		"recast" : 15.0,
-		"charges" : 3,
+		"recast" : 12.0,
+		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
 		"jobs" : [
@@ -12511,7 +11979,7 @@
 		}
 	},
 	"39198" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -12529,7 +11997,7 @@
 		}
 	},
 	"39199" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 2,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -12642,7 +12110,7 @@
 		}
 	},
 	"39210" : {
-		"recast" : 15.0,
+		"recast" : 16.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -12660,7 +12128,7 @@
 		}
 	},
 	"39211" : {
-		"recast" : 25.0,
+		"recast" : 24.0,
 		"charges" : 0,
 		"level_recasts" : null,
 		"level_charges" : null,
@@ -12692,6 +12160,528 @@
 				"de" : "Mächtige Moppelmauer (PVP)",
 				"fr" : "Mur de gras (PVP)",
 				"jp" : "ウォール・オブ・ファット (PVP)"
+			}
+		}
+	},
+	"41430" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Shield Smite (PVP)",
+				"de" : "Schildhieb (PVP)",
+				"fr" : "Frappe de bouclier (PVP)",
+				"jp" : "シールドスマイト (PVP)"
+			}
+		}
+	},
+	"41431" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"PLD"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Imperator (PVP)",
+				"de" : "Imperator (PVP)",
+				"fr" : "Imperator (PVP)",
+				"jp" : "インペラトル (PVP)"
+			}
+		}
+	},
+	"41438" : {
+		"recast" : 16.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"DRK"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Impalement (PVP)",
+				"de" : "Blutige Pfählung (PVP)",
+				"fr" : "Empalement sanglant (PVP)",
+				"jp" : "インペイルメント (PVP)"
+			}
+		}
+	},
+	"41443" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Heart of Corundum (PVP)",
+				"de" : "Herz des Korunds (PVP)",
+				"fr" : "Cœur de corindon (PVP)",
+				"jp" : "ハート・オブ・コランダム (PVP)"
+			}
+		}
+	},
+	"41447" : {
+		"recast" : 12.0,
+		"charges" : 2,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Flint's Reply (PVP)",
+				"de" : "Rose der Überzeugung (PVP)",
+				"fr" : "Rose de la conviction (PVP)",
+				"jp" : "闘気弾 (PVP)"
+			}
+		}
+	},
+	"41451" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"NIN"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Dokumori (PVP)",
+				"de" : "Dokumori (PVP)",
+				"fr" : "Dokumori (PVP)",
+				"jp" : "毒盛の術 (PVP)"
+			}
+		}
+	},
+	"41464" : {
+		"recast" : 16.0,
+		"charges" : 4,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Harmonic Arrow (PVP)",
+				"de" : "Harmonischer Pfeil (PVP)",
+				"fr" : "Flèche harmonique (PVP)",
+				"jp" : "ハーモニックアロー (PVP)"
+			}
+		}
+	},
+	"41465" : {
+		"recast" : 16.0,
+		"charges" : 4,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Harmonic Arrow (PVP)",
+				"de" : "Harmonischer Pfeil (PVP)",
+				"fr" : "Flèche harmonique (PVP)",
+				"jp" : "ハーモニックアロー (PVP)"
+			}
+		}
+	},
+	"41466" : {
+		"recast" : 16.0,
+		"charges" : 4,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Harmonic Arrow (PVP)",
+				"de" : "Harmonischer Pfeil (PVP)",
+				"fr" : "Flèche harmonique (PVP)",
+				"jp" : "ハーモニックアロー (PVP)"
+			}
+		}
+	},
+	"41469" : {
+		"recast" : 40.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"MCH"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Full Metal Field (PVP)",
+				"de" : "Aus allen Rohren (PVP)",
+				"fr" : "Rafale de métal (PVP)",
+				"jp" : "フルメタルバースト (PVP)"
+			}
+		}
+	},
+	"41475" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLM"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Elemental Weave (PVP)",
+				"de" : "Elementarfluss (PVP)",
+				"fr" : "Tissage élémentaire (PVP)",
+				"jp" : "エレメントギフト (PVP)"
+			}
+		}
+	},
+	"41476" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLM"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Wreath of Fire (PVP)",
+				"de" : "Kranz des Feuers (PVP)",
+				"fr" : "Couronne de feu (PVP)",
+				"jp" : "リース・オブ・ファイア (PVP)"
+			}
+		}
+	},
+	"41478" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLM"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Wreath of Ice (PVP)",
+				"de" : "Kranz des Eises (PVP)",
+				"fr" : "Couronne de glace (PVP)",
+				"jp" : "リース・オブ・アイス (PVP)"
+			}
+		}
+	},
+	"41483" : {
+		"recast" : 12.0,
+		"charges" : 2,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Necrotize (PVP)",
+				"de" : "Miasma-Nova (PVP)",
+				"fr" : "Nécrose (PVP)",
+				"jp" : "ミアズマノヴァ (PVP)"
+			}
+		}
+	},
+	"41484" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Deathflare (PVP)",
+				"de" : "Todesflamme (PVP)",
+				"fr" : "Brasier de mort (PVP)",
+				"jp" : "デスフレア (PVP)"
+			}
+		}
+	},
+	"41485" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"SMN"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Brand of Purgatory (PVP)",
+				"de" : "Zeichen der Läuterung (PVP)",
+				"fr" : "Tison du purgatoire (PVP)",
+				"jp" : "煉獄の炎 (PVP)"
+			}
+		}
+	},
+	"41488" : {
+		"recast" : 16.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Enchanted Riposte (PVP)",
+				"de" : "Magische Riposte (PVP)",
+				"fr" : "Riposte enchantée (PVP)",
+				"jp" : "エンリポスト (PVP)"
+			}
+		}
+	},
+	"41492" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Resolution (PVP)",
+				"de" : "Entschlossenheit (PVP)",
+				"fr" : "Résolution (PVP)",
+				"jp" : "レゾリューション (PVP)"
+			}
+		}
+	},
+	"41494" : {
+		"recast" : 24.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Embolden (PVP)",
+				"de" : "Ermutigen (PVP)",
+				"fr" : "Enhardissement (PVP)",
+				"jp" : "エンボルデン (PVP)"
+			}
+		}
+	},
+	"41496" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Forte (PVP)",
+				"de" : "Forte (PVP)",
+				"fr" : "Fortius (PVP)",
+				"jp" : "フォルテ (PVP)"
+			}
+		}
+	},
+	"41498" : {
+		"recast" : 10.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"RDM"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Southern Cross (PVP)",
+				"de" : "Kreuz des Südens (PVP)",
+				"fr" : "Croix du sud (PVP)",
+				"jp" : "サザンクロス (PVP)"
+			}
+		}
+	},
+	"41501" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Accession (PVP)",
+				"de" : "Höchstes Gut (PVP)",
+				"fr" : "Accession (PVP)",
+				"jp" : "アクセッション (PVP)"
+			}
+		}
+	},
+	"41502" : {
+		"recast" : 10.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"SCH"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Seraphism (PVP)",
+				"de" : "Seraphenlehre (PVP)",
+				"fr" : "Séraphisme (PVP)",
+				"jp" : "セラフィズム (PVP)"
+			}
+		}
+	},
+	"41503" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"AST"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Minor Arcana (PVP)",
+				"de" : "Kleine Arkana (PVP)",
+				"fr" : "Arcane mineur (PVP)",
+				"jp" : "マイナーアルカナ (PVP)"
+			}
+		}
+	},
+	"41506" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"AST"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Epicycle (PVP)",
+				"de" : "Epizykel (PVP)",
+				"fr" : "Épicycle (PVP)",
+				"jp" : "エピサイクル (PVP)"
+			}
+		}
+	},
+	"41509" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"MNK"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Wind's Reply (PVP)",
+				"de" : "Himmelbrecher (PVP)",
+				"fr" : "Réaction du vent (PVP)",
+				"jp" : "絶空拳 (PVP)"
+			}
+		}
+	},
+	"41510" : {
+		"recast" : 16.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BLM"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Lethargy (PVP)",
+				"de" : "Lethargie (PVP)",
+				"fr" : "Léthargie (PVP)",
+				"jp" : "レサージー (PVP)"
+			}
+		}
+	},
+	"41511" : {
+		"recast" : 20.0,
+		"charges" : 0,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"GNB"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Fated Circle (PVP)",
+				"de" : "Schicksalszirkel (PVP)",
+				"fr" : "Tourbillon fatidique (PVP)",
+				"jp" : "フェイテッドサークル (PVP)"
+			}
+		}
+	},
+	"41964" : {
+		"recast" : 16.0,
+		"charges" : 4,
+		"level_recasts" : null,
+		"level_charges" : null,
+		"jobs" : [
+			"BRD"
+		],
+		"pvp" : true,
+		"locales" : {
+			"name" : {
+				"en" : "Harmonic Arrow (PVP)",
+				"de" : "Harmonischer Pfeil (PVP)",
+				"fr" : "Flèche harmonique (PVP)",
+				"jp" : "ハーモニックアロー (PVP)"
 			}
 		}
 	}

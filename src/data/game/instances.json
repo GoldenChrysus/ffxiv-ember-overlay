@@ -66,7 +66,7 @@
 		}
 	},
 	"7" : {
-		"zone_id" : 162,
+		"zone_id" : 1245,
 		"locales" : {
 			"name" : {
 				"en" : "Halatali",
@@ -6475,6 +6475,94 @@
 				"de" : "Neue Bande der Freundschaft",
 				"fr" : "Rêves éveillés",
 				"jp" : "寝ても覚めても"
+			}
+		}
+	},
+	"64009" : {
+		"zone_id" : 1239,
+		"locales" : {
+			"name" : {
+				"en" : "The Jade Stoa (Unreal)",
+				"de" : "Traumprüfung - Byakko",
+				"fr" : "La Clairière de Jade (irréel)",
+				"jp" : "幻白虎征魂戦"
+			}
+		}
+	},
+	"100" : {
+		"zone_id" : 1242,
+		"locales" : {
+			"name" : {
+				"en" : "Yuweyawata Field Station",
+				"de" : "Forschungsstation Yuweyawata",
+				"fr" : "Le centre de recherche de Yuweyawata",
+				"jp" : "廃地討究 ユウェヤーワータ"
+			}
+		}
+	},
+	"5081" : {
+		"zone_id" : 1244,
+		"locales" : {
+			"name" : {
+				"en" : "The Warmth of Family",
+				"de" : "Ein Land, eine Familie",
+				"fr" : "La famille de l'Aurarque",
+				"jp" : "王の家族"
+			}
+		}
+	},
+	"15017" : {
+		"zone_id" : 1127,
+		"locales" : {
+			"name" : {
+				"en" : "React to Attack Markers",
+				"de" : "Achte auf Attackenmarkierungen!",
+				"fr" : "Réagir à des marquages",
+				"jp" : "マーカーが出る攻撃に対処しよう！"
+			}
+		}
+	},
+	"15018" : {
+		"zone_id" : 1128,
+		"locales" : {
+			"name" : {
+				"en" : "React to Floor Markers",
+				"de" : "Achte auf Geländemarkierungen!",
+				"fr" : "Réagir à des indications au sol",
+				"jp" : "地面に予兆が出る攻撃に対処しよう！"
+			}
+		}
+	},
+	"15019" : {
+		"zone_id" : 1129,
+		"locales" : {
+			"name" : {
+				"en" : "React to Advanced Visual Indicators",
+				"de" : "Stelle dich allerlei Angriffsmanövern!",
+				"fr" : "Réagir à des mécaniques variées",
+				"jp" : "さまざまな攻撃に対処しよう！"
+			}
+		}
+	},
+	"30144" : {
+		"zone_id" : 1248,
+		"locales" : {
+			"name" : {
+				"en" : "Jeuno: The First Walk",
+				"de" : "Jeuno: Die erste Etappe",
+				"fr" : "Jeuno - La première perambulation",
+				"jp" : "ジュノ：ザ・ファーストウォーク"
+			}
+		}
+	},
+	"20099" : {
+		"zone_id" : 1243,
+		"locales" : {
+			"name" : {
+				"en" : "The Minstrel’s Ballad: Sphene's Burden",
+				"de" : "Gok Tajaal - Ewige Königin",
+				"fr" : "Interphos (extrême)",
+				"jp" : "極エターナルクイーン討滅戦"
 			}
 		}
 	}
