@@ -1249,7 +1249,7 @@
 		"spells_mode.tts_on_effect" : {
 			"en" : "Use Text to Speech on Buff Received",
 			"pt" : "Usar Texto em Voz (Buff Received)",
-			"cn" : "开启TTS (Buff Received)",
+			"cn" : "获得Buff时使用TTS播报",
 			"jp" : "音声読み上げ (Buff Received)",
 			"de" : "Text-zu-Sprache beim Erhalten von Verstärkung verwenden",
 			"es" : "Use Text to Speech on Buff Received",
@@ -1580,12 +1580,12 @@
 				"minimize_bottom_right" : "Minimize to Bottom Right"
 			},
 			"cn" : {
-				"disabled"              : "Disabled",
-				"hide"                  : "Hide",
-				"minimize_top_left"     : "Minimize to Top Left",
-				"minimize_top_right"    : "Minimize to Top Right",
-				"minimize_bottom_left"  : "Minimize to Bottom Left",
-				"minimize_bottom_right" : "Minimize to Bottom Right"
+				"disabled"              : "禁用",
+				"hide"                  : "隐藏",
+				"minimize_top_left"     : "最小化到顶部左侧",
+				"minimize_top_right"    : "最小化到顶部右侧",
+				"minimize_bottom_left"  : "最小化到底部左侧",
+				"minimize_bottom_right" : "最小化到底部右侧"
 			},
 			"jp" : {
 				"disabled"              : "Disabled",
