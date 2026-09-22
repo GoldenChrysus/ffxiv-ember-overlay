@@ -336,6 +336,13 @@ const GameJobs = {
 		Name_fr : "Pictomancer",
 		Name_jp : "ピクトマンサー",
 	},
+	BST : {
+		role    : "dps",
+		Name_de : "Bestienbändiger",
+		Name_en : "Beastmaster",
+		Name_fr : "Dresseur",
+		Name_jp : "魔獣使い",
+	},
 };
 
 const GameJobsID = require("../data/game/jobs.json");
