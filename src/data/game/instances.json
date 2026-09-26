@@ -3,7 +3,7 @@
 		"zone_id" : 1039,
 		"locales" : {
 			"name" : {
-				"en" : "the Thousand Maws of Toto–Rak",
+				"en" : "the Thousand Maws of Toto-Rak",
 				"de" : "Tausend Löcher von Toto-Rak",
 				"fr" : "les Mille Gueules de Toto-Rak",
 				"jp" : "監獄廃墟 トトラクの千獄"
@@ -14,7 +14,7 @@
 		"zone_id" : 1037,
 		"locales" : {
 			"name" : {
-				"en" : "the Tam–Tara Deepcroft",
+				"en" : "the Tam-Tara Deepcroft",
 				"de" : "Totenacker Tam-Tara",
 				"fr" : "l'Hypogée de Tam-Tara",
 				"jp" : "地下霊殿 タムタラの墓所"
@@ -44,7 +44,7 @@
 		}
 	},
 	"5" : {
-		"zone_id" : 172,
+		"zone_id" : 1331,
 		"locales" : {
 			"name" : {
 				"en" : "the Aurum Vale",
@@ -121,7 +121,7 @@
 		}
 	},
 	"12" : {
-		"zone_id" : 170,
+		"zone_id" : 1303,
 		"locales" : {
 			"name" : {
 				"en" : "Cutter's Cry",
@@ -132,7 +132,7 @@
 		}
 	},
 	"13" : {
-		"zone_id" : 171,
+		"zone_id" : 1330,
 		"locales" : {
 			"name" : {
 				"en" : "Dzemael Darkhold",
@@ -256,7 +256,7 @@
 		"zone_id" : 373,
 		"locales" : {
 			"name" : {
-				"en" : "the Tam–Tara Deepcroft (Hard)",
+				"en" : "the Tam-Tara Deepcroft (Hard)",
 				"de" : "Totenacker Tam-Tara (schwer)",
 				"fr" : "l'Hypogée de Tam-Tara (brutal)",
 				"jp" : "惨劇霊殿 タムタラの墓所 (Hard)"
@@ -385,7 +385,7 @@
 		}
 	},
 	"36" : {
-		"zone_id" : 434,
+		"zone_id" : 1366,
 		"locales" : {
 			"name" : {
 				"en" : "the Dusk Vigil",
@@ -456,7 +456,7 @@
 			"name" : {
 				"en" : "Basic Training: Enemy Parties",
 				"de" : "Einer für alle, alle für einen",
-				"fr" : "Entraînement: groupes d'ennemis",
+				"fr" : "Entraînement : groupes d'ennemis",
 				"jp" : "集団戦訓練をくぐり抜けろ！"
 			}
 		}
@@ -478,7 +478,7 @@
 			"name" : {
 				"en" : "Basic Training: Enemy Strongholds",
 				"de" : "Sturmkommando",
-				"fr" : "Entraînement: infiltration en base ennemie",
+				"fr" : "Entraînement : infiltration en base ennemie",
 				"jp" : "全関門を突破し、最深部の敵を討て！"
 			}
 		}
@@ -773,7 +773,7 @@
 		"zone_id" : 281,
 		"locales" : {
 			"name" : {
-				"en" : "the <Emphasis>Whorleater</Emphasis> (Hard)",
+				"en" : "the Whorleater (Hard)",
 				"de" : "Götterdämmerung - Leviathan",
 				"fr" : "le Briseur de marées (brutal)",
 				"jp" : "真リヴァイアサン討滅戦"
@@ -784,7 +784,7 @@
 		"zone_id" : 359,
 		"locales" : {
 			"name" : {
-				"en" : "the <Emphasis>Whorleater</Emphasis> (Extreme)",
+				"en" : "the Whorleater (Extreme)",
 				"de" : "Zenit der Götter - Leviathan",
 				"fr" : "le Briseur de marées (extrême)",
 				"jp" : "極リヴァイアサン討滅戦"
@@ -1297,7 +1297,7 @@
 			}
 		}
 	},
-	"50001" : {
+	"41001" : {
 		"zone_id" : 1273,
 		"locales" : {
 			"name" : {
@@ -1308,7 +1308,7 @@
 			}
 		}
 	},
-	"50004" : {
+	"41004" : {
 		"zone_id" : 431,
 		"locales" : {
 			"name" : {
@@ -1770,7 +1770,7 @@
 			}
 		}
 	},
-	"50005" : {
+	"41005" : {
 		"zone_id" : 554,
 		"locales" : {
 			"name" : {
@@ -2167,7 +2167,7 @@
 		}
 	},
 	"50" : {
-		"zone_id" : 616,
+		"zone_id" : 1367,
 		"locales" : {
 			"name" : {
 				"en" : "Shisui of the Violet Tides",
@@ -2315,7 +2315,7 @@
 			"name" : {
 				"en" : "Blood on the Deck",
 				"de" : "Mord ist sein Hobby",
-				"fr" : "La légende de Musosai: l'assassin de Limsa Lominsa",
+				"fr" : "La légende de Musosai : l'assassin de Limsa Lominsa",
 				"jp" : "海都を震わす人斬りの宴！"
 			}
 		}
@@ -2628,7 +2628,7 @@
 			}
 		}
 	},
-	"51001" : {
+	"42001" : {
 		"zone_id" : 729,
 		"locales" : {
 			"name" : {
@@ -3189,7 +3189,7 @@
 			}
 		}
 	},
-	"51002" : {
+	"42002" : {
 		"zone_id" : 791,
 		"locales" : {
 			"name" : {
@@ -3437,7 +3437,7 @@
 			"name" : {
 				"en" : "Miss Typhon",
 				"de" : "Ultros & Typhon - Zwei wie Rotz und Wasser",
-				"fr" : "Duo de choc: Orthros et maître Typhon",
+				"fr" : "Duo de choc : Orthros et maître Typhon",
 				"jp" : "名コンビ「オルトロス＆テュポーン」"
 			}
 		}
@@ -3569,8 +3569,8 @@
 			"name" : {
 				"en" : "Novice Mahjong (Full Ranked Match)",
 				"de" : "Anfänger-Mahjong (komplette Partie, gewertet)",
-				"fr" : "Mahjong domien: tous rangs (partie classée)",
-				"jp" : "ドマ式麻雀：半荘戦一般卓（段位変動有り）"
+				"fr" : "Mahjong domien : tous rangs (partie classée)",
+				"jp" : "ドマ式麻雀：半荘戦一般卓 (段位変動有り)"
 			}
 		}
 	},
@@ -3580,8 +3580,8 @@
 			"name" : {
 				"en" : "Advanced Mahjong (Full Ranked Match)",
 				"de" : "Fortgeschrittenen-Mahjong (komplette Partie, gewertet)",
-				"fr" : "Mahjong domien: dan seulement (partie classée)",
-				"jp" : "ドマ式麻雀：半荘戦有段卓（段位変動有り）"
+				"fr" : "Mahjong domien : dan seulement (partie classée)",
+				"jp" : "ドマ式麻雀：半荘戦有段卓 (段位変動有り)"
 			}
 		}
 	},
@@ -3591,8 +3591,8 @@
 			"name" : {
 				"en" : "Four-player Mahjong (Full Match, Kuitan Enabled)",
 				"de" : "4-Spieler-Mahjong (komplette Partie, Kuitan aktiviert)",
-				"fr" : "Mahjong domien: 4 joueurs (partie avec kuitan)",
-				"jp" : "ドマ式麻雀：半荘戦4人セット卓（クイタン有り）"
+				"fr" : "Mahjong domien : 4 joueurs (partie avec kuitan)",
+				"jp" : "ドマ式麻雀：半荘戦4人セット卓 (クイタン有り)"
 			}
 		}
 	},
@@ -3635,8 +3635,8 @@
 			"name" : {
 				"en" : "Four-player Mahjong (Full Match, Kuitan Disabled)",
 				"de" : "4-Spieler-Mahjong (komplette Partie, Kuitan deaktiviert)",
-				"fr" : "Mahjong domien: 4 joueurs (partie sans kuitan)",
-				"jp" : "ドマ式麻雀：半荘戦4人セット卓（クイタン無し）"
+				"fr" : "Mahjong domien : 4 joueurs (partie sans kuitan)",
+				"jp" : "ドマ式麻雀：半荘戦4人セット卓 (クイタン無し)"
 			}
 		}
 	},
@@ -3987,7 +3987,7 @@
 			"name" : {
 				"en" : "Lock up Your Snorters",
 				"de" : "Explosives Schnaufen",
-				"fr" : "Fungaaah! Et boum!",
+				"fr" : "Fungaaah ! Et boum !",
 				"jp" : "はないき爆破デスマッチ"
 			}
 		}
@@ -4036,7 +4036,7 @@
 			}
 		}
 	},
-	"50006" : {
+	"41006" : {
 		"zone_id" : 888,
 		"locales" : {
 			"name" : {
@@ -4559,8 +4559,8 @@
 			"name" : {
 				"en" : "Novice Mahjong (Quick Ranked Match)",
 				"de" : "Anfänger-Mahjong (schnelle Partie, gewertet)",
-				"fr" : "Mahjong domien: tous rangs (partie rapide classée)",
-				"jp" : "ドマ式麻雀：東風戦一般卓（段位変動有り）"
+				"fr" : "Mahjong domien : tous rangs (partie rapide classée)",
+				"jp" : "ドマ式麻雀：東風戦一般卓 (段位変動有り)"
 			}
 		}
 	},
@@ -4570,8 +4570,8 @@
 			"name" : {
 				"en" : "Advanced Mahjong (Quick Ranked Match)",
 				"de" : "Fortgeschrittenen-Mahjong (schnelle Partie, gewertet)",
-				"fr" : "Mahjong domien: dan seulement (partie rapide classée)",
-				"jp" : "ドマ式麻雀：東風戦有段卓（段位変動有り）"
+				"fr" : "Mahjong domien : dan seulement (partie rapide classée)",
+				"jp" : "ドマ式麻雀：東風戦有段卓 (段位変動有り)"
 			}
 		}
 	},
@@ -4581,8 +4581,8 @@
 			"name" : {
 				"en" : "Four-player Mahjong (Quick Match, Kuitan Enabled)",
 				"de" : "4-Spieler-Mahjong (schnelle Partie, Kuitan aktiviert)",
-				"fr" : "Mahjong domien: 4 joueurs (partie rapide avec kuitan)",
-				"jp" : "ドマ式麻雀：東風戦4人セット卓（クイタン有り）"
+				"fr" : "Mahjong domien : 4 joueurs (partie rapide avec kuitan)",
+				"jp" : "ドマ式麻雀：東風戦4人セット卓 (クイタン有り)"
 			}
 		}
 	},
@@ -4592,8 +4592,8 @@
 			"name" : {
 				"en" : "Four-player Mahjong (Quick Match, Kuitan Disabled)",
 				"de" : "4-Spieler-Mahjong (schnelle Partie, Kuitan deaktiviert)",
-				"fr" : "Mahjong domien: 4 joueurs (partie rapide sans kuitan)",
-				"jp" : "ドマ式麻雀：東風戦4人セット卓（クイタン無し）"
+				"fr" : "Mahjong domien : 4 joueurs (partie rapide sans kuitan)",
+				"jp" : "ドマ式麻雀：東風戦4人セット卓 (クイタン無し)"
 			}
 		}
 	},
@@ -6231,7 +6231,7 @@
 			"name" : {
 				"en" : "The Strayborough Deadwalk",
 				"de" : "Mahrlingen-Promenade",
-				"fr" : "le Parc-aux-Errants",
+				"fr" : "Le Parc-aux-Errants",
 				"jp" : "悪夢遊園 ストレイバロー"
 			}
 		}
@@ -6262,7 +6262,7 @@
 		"zone_id" : 1202,
 		"locales" : {
 			"name" : {
-				"en" : "The Interphos",
+				"en" : "the Interphos",
 				"de" : "Zel Tajaal - Ewige Königin",
 				"fr" : "Interphos",
 				"jp" : "エターナルクイーン討滅戦"
@@ -6515,10 +6515,21 @@
 		"zone_id" : 1241,
 		"locales" : {
 			"name" : {
-				"en" : "The Cloud of Darkness (Chaotic)",
+				"en" : "the Cloud of Darkness (Chaotic)",
 				"de" : "Die Wolke der Dunkelheit (chaotisch)",
 				"fr" : "La Tour de Ténèbres (chaotique)",
 				"jp" : "滅暗闇の雲激闘戦"
+			}
+		}
+	},
+	"104" : {
+		"zone_id" : 1345,
+		"locales" : {
+			"name" : {
+				"en" : "the Clyteum",
+				"de" : "Das Klyteum",
+				"fr" : "Le Clyteum",
+				"jp" : "妖異侵攻 クルティウス魔導工廠"
 			}
 		}
 	},
@@ -6581,7 +6592,7 @@
 		"zone_id" : 1243,
 		"locales" : {
 			"name" : {
-				"en" : "The Minstrel's Ballad: Sphene's Burden",
+				"en" : "the Minstrel's Ballad: Sphene's Burden",
 				"de" : "Gok Tajaal - Ewige Königin",
 				"fr" : "Interphos (extrême)",
 				"jp" : "極エターナルクイーン討滅戦"
@@ -6687,14 +6698,14 @@
 			}
 		}
 	},
-	"64010" : {
-		"zone_id" : 1272,
+	"102" : {
+		"zone_id" : 1292,
 		"locales" : {
 			"name" : {
-				"en" : "Hells' Kier (Unreal)",
-				"de" : "Traumprüfung - Suzaku",
-				"fr" : "Le Nid des Lamentations (irréel)",
-				"jp" : "幻朱雀征魂戦"
+				"en" : "the Meso Terminal",
+				"de" : "Das Meso-System",
+				"fr" : "Le Mésoterminal",
+				"jp" : "永久幽界 メインターミナル"
 			}
 		}
 	},
@@ -6717,6 +6728,666 @@
 				"de" : "Gok Tajaal - Zelenia",
 				"fr" : "Le Sanctuaire du Serment (extrême)",
 				"jp" : "極ゼレニア討滅戦"
+			}
+		}
+	},
+	"60041" : {
+		"zone_id" : 1281,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 1-10)",
+				"de" : "Pilgers Pfad (Ebenen 1-10)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 1-10)",
+				"jp" : "ピルグリム・トラバース 第1～10巡礼路"
+			}
+		}
+	},
+	"60042" : {
+		"zone_id" : 1282,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 11-20)",
+				"de" : "Pilgers Pfad (Ebenen 11-20)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 11-20)",
+				"jp" : "ピルグリム・トラバース 第11～20巡礼路"
+			}
+		}
+	},
+	"60043" : {
+		"zone_id" : 1283,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 21-30)",
+				"de" : "Pilgers Pfad (Ebenen 21-30)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 21-30)",
+				"jp" : "ピルグリム・トラバース 第21～30巡礼路"
+			}
+		}
+	},
+	"60044" : {
+		"zone_id" : 1284,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 31-40)",
+				"de" : "Pilgers Pfad (Ebenen 31-40)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 31-40)",
+				"jp" : "ピルグリム・トラバース 第31～40巡礼路"
+			}
+		}
+	},
+	"60045" : {
+		"zone_id" : 1285,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 41-50)",
+				"de" : "Pilgers Pfad (Ebenen 41-50)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 41-50)",
+				"jp" : "ピルグリム・トラバース 第41～50巡礼路"
+			}
+		}
+	},
+	"60046" : {
+		"zone_id" : 1286,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 51-60)",
+				"de" : "Pilgers Pfad (Ebenen 51-60)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 51-60)",
+				"jp" : "ピルグリム・トラバース 第51～60巡礼路"
+			}
+		}
+	},
+	"60047" : {
+		"zone_id" : 1287,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 61-70)",
+				"de" : "Pilgers Pfad (Ebenen 61-70)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 61-70)",
+				"jp" : "ピルグリム・トラバース 第61～70巡礼路"
+			}
+		}
+	},
+	"60048" : {
+		"zone_id" : 1288,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 71-80)",
+				"de" : "Pilgers Pfad (Ebenen 71-80)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 71-80)",
+				"jp" : "ピルグリム・トラバース 第71～80巡礼路"
+			}
+		}
+	},
+	"60049" : {
+		"zone_id" : 1289,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 81-90)",
+				"de" : "Pilgers Pfad (Ebenen 81-90)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 81-90)",
+				"jp" : "ピルグリム・トラバース 第81～90巡礼路"
+			}
+		}
+	},
+	"60050" : {
+		"zone_id" : 1290,
+		"locales" : {
+			"name" : {
+				"en" : "Pilgrim's Traverse (Stones 91-100)",
+				"de" : "Pilgers Pfad (Ebenen 91-100)",
+				"fr" : "Le Sanctuaire des pèlerins (zones 91-100)",
+				"jp" : "ピルグリム・トラバース 第91～100巡礼路"
+			}
+		}
+	},
+	"20102" : {
+		"zone_id" : 1300,
+		"locales" : {
+			"name" : {
+				"en" : "the Windward Wilds",
+				"de" : "Jagd auf Wächter-Arkveld",
+				"fr" : "Chasse à l'Arkveld Gardien",
+				"jp" : "護竜アルシュベルド狩猟戦"
+			}
+		}
+	},
+	"20103" : {
+		"zone_id" : 1306,
+		"locales" : {
+			"name" : {
+				"en" : "the Windward Wilds (Extreme)",
+				"de" : "Jagd auf Wächter-Arkveld (schwer)",
+				"fr" : "Chasse à l'Arkveld Gardien (extrême)",
+				"jp" : "極護竜アルシュベルド狩猟戦"
+			}
+		}
+	},
+	"25004" : {
+		"zone_id" : 1298,
+		"locales" : {
+			"name" : {
+				"en" : "the Pâtisserie",
+				"de" : "Die Pâtisserie",
+				"fr" : "La Pâtisserie de la Valention",
+				"jp" : "ヴァレンティオンパティスリー"
+			}
+		}
+	},
+	"40042" : {
+		"zone_id" : 1293,
+		"locales" : {
+			"name" : {
+				"en" : "the Bayside Battleground",
+				"de" : "Der Küstenkampf",
+				"fr" : "Le Rivage redoutable",
+				"jp" : "ベイサイド・バトルグラウンド"
+			}
+		}
+	},
+	"40043" : {
+		"zone_id" : 1293,
+		"locales" : {
+			"name" : {
+				"en" : "the Bayside Battleground",
+				"de" : "Der Küstenkampf",
+				"fr" : "Le Rivage redoutable",
+				"jp" : "ベイサイド・バトルグラウンド"
+			}
+		}
+	},
+	"40044" : {
+		"zone_id" : 1294,
+		"locales" : {
+			"name" : {
+				"en" : "Crystalline Conflict (Custom Match - The Bayside Battleground)",
+				"de" : "Crystalline Conflict: Der Küstenkampf (Schaukampf)",
+				"fr" : "Crys. Conflict (partie perso. - Le Rivage redoutable)",
+				"jp" : "クリスタルコンフリクト(ベイサイド・バトルグラウンド：カスタムマッチ)"
+			}
+		}
+	},
+	"30153" : {
+		"zone_id" : 1304,
+		"locales" : {
+			"name" : {
+				"en" : "San d'Oria: The Second Walk",
+				"de" : "San d'Oria: Die zweite Etappe",
+				"fr" : "San d'Oria - La deuxième perambulation",
+				"jp" : "サンドリア：ザ・セカンドウォーク"
+			}
+		}
+	},
+	"55013" : {
+		"zone_id" : 1279,
+		"locales" : {
+			"name" : {
+				"en" : "Vault Oneiron",
+				"de" : "Tresor Oneiron",
+				"fr" : "le coffre d'Oneiron",
+				"jp" : "宝物庫 ボルト・オネイロン"
+			}
+		}
+	},
+	"20104" : {
+		"zone_id" : 1295,
+		"locales" : {
+			"name" : {
+				"en" : "the Ageless Necropolis",
+				"de" : "Zel Tajaal - Das Ewige Dunkel",
+				"fr" : "La Nécropole intemporelle",
+				"jp" : "永遠の闇討滅戦"
+			}
+		}
+	},
+	"20105" : {
+		"zone_id" : 1296,
+		"locales" : {
+			"name" : {
+				"en" : "the Minstrel's Ballad: Necron's Embrace",
+				"de" : "Gok Tajaal - Das Ewige Dunkel",
+				"fr" : "La Nécropole intemporelle (extrême)",
+				"jp" : "極永遠の闇討滅戦"
+			}
+		}
+	},
+	"60051" : {
+		"zone_id" : 1311,
+		"locales" : {
+			"name" : {
+				"en" : "the Final Verse (Quantum)",
+				"de" : "Eminente Trauer (variabel)",
+				"fr" : "Le Verset final (quantique)",
+				"jp" : "詩想エミネントグリーフ討滅戦"
+			}
+		}
+	},
+	"103" : {
+		"zone_id" : 1314,
+		"locales" : {
+			"name" : {
+				"en" : "Mistwake",
+				"de" : "Die Nebeltrift",
+				"fr" : "Le Sillage brumeux",
+				"jp" : "遺忘行路 ミストウェイク"
+			}
+		}
+	},
+	"60052" : {
+		"zone_id" : 1333,
+		"locales" : {
+			"name" : {
+				"en" : "the Final Verse",
+				"de" : "Eminente Trauer",
+				"fr" : "Le Verset final",
+				"jp" : "エミネントグリーフ討滅戦"
+			}
+		}
+	},
+	"36004" : {
+		"zone_id" : 1315,
+		"locales" : {
+			"name" : {
+				"en" : "The Merchant's Tale",
+				"de" : "Des Händlers Liebesmüh",
+				"fr" : "Contes du Camelot - Donjon à embranchements",
+				"jp" : "ヴァリアントダンジョン 商客物語"
+			}
+		}
+	},
+	"30154" : {
+		"zone_id" : 1320,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Heavyweight M1",
+				"de" : "Arkadion - Superschwergewicht R1",
+				"fr" : "Poids lourds CCA - match 1",
+				"jp" : "至天の座アルカディア：ヘビー級1"
+			}
+		}
+	},
+	"30155" : {
+		"zone_id" : 1321,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Heavyweight M1 (Savage)",
+				"de" : "Arkadion - Superschwergewicht R1 (episch)",
+				"fr" : "Poids lourds CCA - match 1 (sadique)",
+				"jp" : "至天の座アルカディア零式：ヘビー級1"
+			}
+		}
+	},
+	"30156" : {
+		"zone_id" : 1322,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Heavyweight M2",
+				"de" : "Arkadion - Superschwergewicht R2",
+				"fr" : "Poids lourds CCA - match 2",
+				"jp" : "至天の座アルカディア：ヘビー級2"
+			}
+		}
+	},
+	"30157" : {
+		"zone_id" : 1323,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Heavyweight M2 (Savage)",
+				"de" : "Arkadion - Superschwergewicht R2 (episch)",
+				"fr" : "Poids lourds CCA - match 2 (sadique)",
+				"jp" : "至天の座アルカディア零式：ヘビー級2"
+			}
+		}
+	},
+	"30158" : {
+		"zone_id" : 1324,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Heavyweight M3",
+				"de" : "Arkadion - Superschwergewicht R3",
+				"fr" : "Poids lourds CCA - match 3",
+				"jp" : "至天の座アルカディア：ヘビー級3"
+			}
+		}
+	},
+	"30159" : {
+		"zone_id" : 1325,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Heavyweight M3 (Savage)",
+				"de" : "Arkadion - Superschwergewicht R3 (episch)",
+				"fr" : "Poids lourds CCA - match 3 (sadique)",
+				"jp" : "至天の座アルカディア零式：ヘビー級3"
+			}
+		}
+	},
+	"30160" : {
+		"zone_id" : 1326,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Heavyweight M4",
+				"de" : "Arkadion - Superschwergewicht R4",
+				"fr" : "Poids lourds CCA - match 4",
+				"jp" : "至天の座アルカディア：ヘビー級4"
+			}
+		}
+	},
+	"30161" : {
+		"zone_id" : 1327,
+		"locales" : {
+			"name" : {
+				"en" : "AAC Heavyweight M4 (Savage)",
+				"de" : "Arkadion - Superschwergewicht R4 (episch)",
+				"fr" : "Poids lourds CCA - match 4 (sadique)",
+				"jp" : "至天の座アルカディア零式：ヘビー級4"
+			}
+		}
+	},
+	"20106" : {
+		"zone_id" : 1307,
+		"locales" : {
+			"name" : {
+				"en" : "Hell on Rails",
+				"de" : "Zel Tajaal - Doomtrain",
+				"fr" : "Le Convoi maléfique",
+				"jp" : "グラシャラボラス討滅戦"
+			}
+		}
+	},
+	"20107" : {
+		"zone_id" : 1308,
+		"locales" : {
+			"name" : {
+				"en" : "Hell on Rails (Extreme)",
+				"de" : "Gok Tajaal - Doomtrain",
+				"fr" : "Le Convoi maléfique (extrême)",
+				"jp" : "極グラシャラボラス討滅戦"
+			}
+		}
+	},
+	"37007" : {
+		"zone_id" : 1317,
+		"locales" : {
+			"name" : {
+				"en" : "Another Merchant's Tale",
+				"de" : "Des Händlers kuriose Liebesmüh",
+				"fr" : "Contes du Camelot annexes - Donjon alternatif",
+				"jp" : "アナザーダンジョン 異聞商客物語"
+			}
+		}
+	},
+	"41007" : {
+		"zone_id" : 1313,
+		"locales" : {
+			"name" : {
+				"en" : "Worqor Chirteh (Triumph)",
+				"de" : "Worqor Chirteh (Triumph)",
+				"fr" : "Worqor Chirteh (manœuvre)",
+				"jp" : "ウォーコー・チーテ (演習戦)"
+			}
+		}
+	},
+	"62003" : {
+		"zone_id" : 1335,
+		"locales" : {
+			"name" : {
+				"en" : "Air Force One",
+				"de" : "Luftwaffe, Feuer frei!",
+				"fr" : "As de l'air",
+				"jp" : "出撃！ エアフォースパイロット"
+			}
+		}
+	},
+	"62004" : {
+		"zone_id" : 1335,
+		"locales" : {
+			"name" : {
+				"en" : "Air Force One",
+				"de" : "Luftwaffe, Feuer frei!",
+				"fr" : "As de l'air",
+				"jp" : "出撃！ エアフォースパイロット"
+			}
+		}
+	},
+	"62005" : {
+		"zone_id" : 1335,
+		"locales" : {
+			"name" : {
+				"en" : "Air Force One",
+				"de" : "Luftwaffe, Feuer frei!",
+				"fr" : "As de l'air",
+				"jp" : "出撃！ エアフォースパイロット"
+			}
+		}
+	},
+	"38001" : {
+		"zone_id" : 1316,
+		"locales" : {
+			"name" : {
+				"en" : "The Merchant's Tale (Advanced)",
+				"de" : "Des Händlers Liebesmüh (fortgeschritten)",
+				"fr" : "Contes du Camelot - Donjon à embranchements (avancé)",
+				"jp" : "アドバンスド・ヴァリアントダンジョン 商客物語"
+			}
+		}
+	},
+	"5083" : {
+		"zone_id" : 1328,
+		"locales" : {
+			"name" : {
+				"en" : "Where We Call Home",
+				"de" : "Die Hüterin Trenos",
+				"fr" : "Solidarité entre voisins",
+				"jp" : "隣人と手を取り合いて"
+			}
+		}
+	},
+	"5084" : {
+		"zone_id" : 1329,
+		"locales" : {
+			"name" : {
+				"en" : "Clotted Crime",
+				"de" : "Hartgesotten",
+				"fr" : "Les deux durs à cuire",
+				"jp" : "つわものふたり"
+			}
+		}
+	},
+	"56001" : {
+		"zone_id" : 1339,
+		"locales" : {
+			"name" : {
+				"en" : "First Board of the Unbroken",
+				"de" : "Erstes Brett der Bestie",
+				"fr" : "Dédale bestial - 1er plateau",
+				"jp" : "闘獣練 第一盤"
+			}
+		}
+	},
+	"56002" : {
+		"zone_id" : 1340,
+		"locales" : {
+			"name" : {
+				"en" : "Second Board of the Unbroken",
+				"de" : "Zweites Brett der Bestie",
+				"fr" : "Dédale bestial - 2e plateau",
+				"jp" : "闘獣練 第二盤"
+			}
+		}
+	},
+	"56003" : {
+		"zone_id" : 1341,
+		"locales" : {
+			"name" : {
+				"en" : "Third Board of the Unbroken",
+				"de" : "Drittes Brett der Bestie",
+				"fr" : "Dédale bestial - 3e plateau",
+				"jp" : "闘獣練 第三盤"
+			}
+		}
+	},
+	"56004" : {
+		"zone_id" : 1342,
+		"locales" : {
+			"name" : {
+				"en" : "First Master's Board",
+				"de" : "Erstes Meisterbrett der Bestie",
+				"fr" : "Dédale bestial - 1er plateau expert",
+				"jp" : "闘獣練 特一盤"
+			}
+		}
+	},
+	"56005" : {
+		"zone_id" : 1343,
+		"locales" : {
+			"name" : {
+				"en" : "Second Master's Board",
+				"de" : "Zweites Meisterbrett der Bestie",
+				"fr" : "Dédale bestial - 2e plateau expert",
+				"jp" : "闘獣練 特二盤"
+			}
+		}
+	},
+	"30162" : {
+		"zone_id" : 1363,
+		"locales" : {
+			"name" : {
+				"en" : "Dancing Mad (Ultimate)",
+				"de" : "Tanzender Wahn (fatal)",
+				"fr" : "Danse démente (fatal)",
+				"jp" : "絶妖星乱舞"
+			}
+		}
+	},
+	"57001" : {
+		"zone_id" : 1359,
+		"locales" : {
+			"name" : {
+				"en" : "Keybound Brawler",
+				"de" : "Tastenschläger",
+				"fr" : "Frappe Fatale",
+				"jp" : "キーバウンド・ブロウラー"
+			}
+		}
+	},
+	"63018" : {
+		"zone_id" : 1163,
+		"locales" : {
+			"name" : {
+				"en" : "Ocean Fishing",
+				"de" : "Auf großer Fahrt",
+				"fr" : "Pêche en mer",
+				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"63019" : {
+		"zone_id" : 1163,
+		"locales" : {
+			"name" : {
+				"en" : "Ocean Fishing",
+				"de" : "Auf großer Fahrt",
+				"fr" : "Pêche en mer",
+				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"63020" : {
+		"zone_id" : 1163,
+		"locales" : {
+			"name" : {
+				"en" : "Ocean Fishing",
+				"de" : "Auf großer Fahrt",
+				"fr" : "Pêche en mer",
+				"jp" : "オーシャンフィッシング"
+			}
+		}
+	},
+	"5085" : {
+		"zone_id" : 1371,
+		"locales" : {
+			"name" : {
+				"en" : "A Rush of Cold Wind",
+				"de" : "Wo die kalten Winde wehen",
+				"fr" : "L'heure de briser la glace",
+				"jp" : "寒風の吹くとき"
+			}
+		}
+	},
+	"40045" : {
+		"zone_id" : 1357,
+		"locales" : {
+			"name" : {
+				"en" : "Archeia Harmonias",
+				"de" : "Archeia Harmonias",
+				"fr" : "La Bibliothèque Harmonia",
+				"jp" : "ハルモニア戦争図書館"
+			}
+		}
+	},
+	"40046" : {
+		"zone_id" : 1357,
+		"locales" : {
+			"name" : {
+				"en" : "Archeia Harmonias",
+				"de" : "Archeia Harmonias",
+				"fr" : "La Bibliothèque Harmonia",
+				"jp" : "ハルモニア戦争図書館"
+			}
+		}
+	},
+	"40047" : {
+		"zone_id" : 1358,
+		"locales" : {
+			"name" : {
+				"en" : "Crystalline Conflict (Custom Match - Archeia Harmonias)",
+				"de" : "Crystalline Conflict: Archeia Harmonias (Schaukampf)",
+				"fr" : "Crys. Conflict (partie perso. - La Bibliothèque Harmonia)",
+				"jp" : "クリスタルコンフリクト(ハルモニア戦争図書館：カスタムマッチ)"
+			}
+		}
+	},
+	"20108" : {
+		"zone_id" : 1361,
+		"locales" : {
+			"name" : {
+				"en" : "the Unmaking",
+				"de" : "Zel Tajaal - Enuo",
+				"fr" : "L'Anticréation",
+				"jp" : "エヌオー討滅戦"
+			}
+		}
+	},
+	"20109" : {
+		"zone_id" : 1362,
+		"locales" : {
+			"name" : {
+				"en" : "the Unmaking (Extreme)",
+				"de" : "Gok Tajaal - Enuo",
+				"fr" : "L'Anticréation (extrême)",
+				"jp" : "極エヌオー討滅戦"
+			}
+		}
+	},
+	"30163" : {
+		"zone_id" : 1368,
+		"locales" : {
+			"name" : {
+				"en" : "Windurst: The Third Walk",
+				"de" : "Windurst: Die dritte Etappe",
+				"fr" : "Windurst - La troisième perambulation",
+				"jp" : "ウィンダス：ザ・サードウォーク"
+			}
+		}
+	},
+	"64013" : {
+		"zone_id" : 1372,
+		"locales" : {
+			"name" : {
+				"en" : "Shinryu's Domain (Unreal)",
+				"de" : "Traumprüfung - Heldenlied von Shinryu",
+				"fr" : "Le domaine de Shinryu (irréel)",
+				"jp" : "幻神龍討滅戦"
 			}
 		}
 	}

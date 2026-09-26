@@ -2,7 +2,7 @@
 
 ## 1.10.0
 
-**Released: 2026-09-22**
+**Released: 2026-09-26**
 
 ### Bug Fixes
 - N/A
@@ -17,7 +17,7 @@
 - N/A
 
 ### Miscellaneous
-- N/A
+- Updated game data through FFXIV patch 7.56
 
 ## 1.9.7
 
