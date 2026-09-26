@@ -11,7 +11,7 @@
 - Added Beastmaster (BST) job support
 
 ### UI Changes
-- N/A
+- Updated Chinese translations
 
 ### Code Changes
 - N/A
