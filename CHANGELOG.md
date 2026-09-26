@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.10.0
+
+**Released: 2026-09-22**
+
+### Bug Fixes
+- N/A
+
+### Features
+- Added Beastmaster (BST) job support
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.9.7
 
 **Released: 2025-04-03**
