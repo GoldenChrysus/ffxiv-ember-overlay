@@ -1,0 +1,30 @@
+{
+    "GLA": [
+        "PLD"
+    ],
+    "MRD": [
+        "WAR"
+    ],
+    "CNJ": [
+        "WHM"
+    ],
+    "ACN": [
+        "SCH",
+        "SMN"
+    ],
+    "PGL": [
+        "MNK"
+    ],
+    "LNC": [
+        "DRG"
+    ],
+    "ROG": [
+        "NIN"
+    ],
+    "ARC": [
+        "BRD"
+    ],
+    "THM": [
+        "BLM"
+    ]
+}

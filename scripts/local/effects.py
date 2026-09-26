@@ -1,5 +1,4 @@
 import json
-import os.path
 import re
 import shutil
 

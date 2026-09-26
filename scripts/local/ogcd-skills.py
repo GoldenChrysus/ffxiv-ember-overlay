@@ -38,6 +38,13 @@ def loadTraits():
 		file.close()
 		return data
 
+def loadClassJobs():
+	with open("../../src/data/game/class-jobs.json") as file:
+		data = json.load(file)
+
+		file.close()
+		return data
+
 def cleanText(s):
 	return re.sub("<[A-Za-z]+/>", "", s)
 
@@ -46,6 +53,7 @@ recast_traits = {}
 charge_traits = {}
 local         = loadLocal()
 local_traits  = loadTraits()
+class_jobs    = loadClassJobs()
 
 for key in local_traits:
 	record       = local_traits[key]
@@ -72,6 +80,14 @@ for key in local_traits:
 				"charges" : record["Charges"]
 			})
 
+def processJobs(jobs: list[str]):
+	if "*" in jobs:
+		return "*"
+
+	job_groups = [[x] if x not in class_jobs else [x, *class_jobs[x]] for x in jobs]
+
+	return list({y for x in job_groups for y in x})
+
 for key in local:
 	record = local[key]
 
@@ -83,7 +99,7 @@ for key in local:
 	classes      = record["Jobs"]
 	pvp          = ("", " (PVP)")[record["IsPVP"] == True]
 
-	if cleanText(record["Name"]["en"]) == '':
+	if cleanText(record["Name"]["en"]) == "":
 		continue
 
 	skills[id] = {

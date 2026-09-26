@@ -1,5 +1,4 @@
 import json
-import os.path
 import re
 import requests
 import shutil
@@ -40,14 +39,22 @@ def saveImage(id, xiv_path):
 			shutil.copyfileobj(res.raw, file)
 			file.close()
 
+def loadClassJobs():
+	with open("data/class-jobs.json") as file:
+		data = json.load(file)
+
+		file.close()
+		return data
+
 def saveSkills(skills):
 	with open("../src/data/game/ogcd-skills.json", "w", encoding = "utf8") as file:
 		json.dump(skills, file, indent = "\t", separators = (",", " : "), ensure_ascii = False)
 		file.close()
 
-page   = 1
+page = 1
 skills = {}
 traits = {}
+class_jobs = loadClassJobs()
 
 while (True):
 	page_data = getTraitPage(page)
