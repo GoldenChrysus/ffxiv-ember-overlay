@@ -27,8 +27,8 @@ yarn-error.log*
 public/logs/*
 
 # lock files
-yarn.lock
-package-lock.json
+# yarn.lock
+# package-lock.json
 
 # developer junkyard
 /misc
