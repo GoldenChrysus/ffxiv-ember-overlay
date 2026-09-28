@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.10.1
+
+**Released: 2026-09-28**
+
+### Bug Fixes
+- Resolved issue where spell timer cooldowns were 10x longer than expected
+
+### Features
+- N/A
+
+### UI Changes
+- N/A
+
+### Code Changes
+- N/A
+
+### Miscellaneous
+- N/A
+
 ## 1.10.0
 
 **Released: 2026-09-26**
