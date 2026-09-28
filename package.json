@@ -1,98 +1,98 @@
 {
-	"name": "ffxiv-ember-overlay",
-	"description": "React + Redux overlay for the OverlayPlugin and ACTWebSocket plugins for Advanced Combat Tracker for use with Final Fantasy XIV.",
-	"license": "GPL-3.0-only",
-	"version": "1.10.0",
-	"keywords": [
-		"ffxiv",
-		"dawntrail",
-		"ffxiv-overlays",
-		"ffxiv-act",
-		"overlayplugin",
-		"overlayplugin-skin",
-		"actwebsocket",
-		"ember",
-		"endwalker"
-	],
-	"private": true,
-	"dependencies": {
-		"@babel/plugin-transform-optional-chaining": "^7.24.7",
-		"changelog-parser": "^2.8.0",
-		"chart.js": "^2.8.0",
-		"compare-versions": "^3.5.0",
-		"env-cmd": "^9.0.3",
-		"jquery": "^3.4.1",
-		"jquery-ui": "^1.12.1",
-		"localforage": "^1.7.3",
-		"lodash.clonedeep": "^4.5.0",
-		"lodash.isequal": "^4.5.0",
-		"lodash.mergewith": "^4.6.2",
-		"lodash.shuffle": "^4.2.0",
-		"react": "^16.8.6",
-		"react-chartjs-2": "^2.7.6",
-		"react-contextmenu": "^2.11.0",
-		"react-dom": "^16.8.6",
-		"react-redux": "^7.1.0",
-		"react-rnd": "^10.2.4",
-		"react-router-dom": "^5.0.1",
-		"react-scripts": "3.0.1",
-		"react-simple-code-editor": "^0.9.14",
-		"react-string-replace": "^0.4.4",
-		"react-tooltip": "^4.2.7",
-		"redux": "^4.0.4",
-		"redux-promise-middleware": "^6.1.1",
-		"semantic-ui-react": "^0.87.3",
-		"sortablejs": "^1.10.2"
-	},
-	"scripts": {
-		"copy:changelog": "cp CHANGELOG.md public/logs/",
-		"prestart": "npm run copy:changelog",
-		"start": "env-cmd -e default,development craco start",
-		"prebuild:development": "npm run copy:changelog",
-		"build:development": "env-cmd -e default,development craco build",
-		"prebuild:staging": "npm run copy:changelog",
-		"build:staging": "env-cmd -e default,staging craco build",
-		"prebuild:nonssl-staging": "npm run copy:changelog",
-		"build:nonssl-staging": "env-cmd -e default,staging,nonssl craco build",
-		"prebuild:nonssl": "npm run copy:changelog",
-		"build:nonssl": "env-cmd -e default,production,nonssl craco build",
-		"prebuild": "npm run copy:changelog",
-		"build": "env-cmd -e default,production craco build",
-		"test": "craco test",
-		"eject": "craco eject",
-		"eslint": "npx eslint src"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"homepage": ".",
-	"devDependencies": {
-		"@commitlint/cli": "^17.1.2",
-		"@commitlint/config-conventional": "^17.1.0",
-		"@craco/craco": "5.2.4",
-		"craco-less": "1.9.0",
-		"eslint": "^8.26.0",
-		"eslint-config-xo": "^0.42.0",
-		"eslint-formatter-summary-chart": "^0.2.1",
-		"eslint-plugin-align-assignments": "^1.1.2",
-		"eslint-plugin-react": "^7.31.10",
-		"husky": "^8.0.1",
-		"pre-commit": "^1.2.2",
-		"semantic-ui-less": "2.4.1"
-	},
-	"pre-commit": [
-		"eslint"
-	]
+    "name": "ffxiv-ember-overlay",
+    "description": "React + Redux overlay for the OverlayPlugin and ACTWebSocket plugins for Advanced Combat Tracker for use with Final Fantasy XIV.",
+    "license": "GPL-3.0-only",
+    "version": "1.10.1",
+    "keywords": [
+        "ffxiv",
+        "dawntrail",
+        "ffxiv-overlays",
+        "ffxiv-act",
+        "overlayplugin",
+        "overlayplugin-skin",
+        "actwebsocket",
+        "ember",
+        "endwalker"
+    ],
+    "private": true,
+    "dependencies": {
+        "@babel/plugin-transform-optional-chaining": "^7.24.7",
+        "changelog-parser": "^2.8.0",
+        "chart.js": "^2.8.0",
+        "compare-versions": "^3.5.0",
+        "env-cmd": "^9.0.3",
+        "jquery": "^3.4.1",
+        "jquery-ui": "^1.12.1",
+        "localforage": "^1.7.3",
+        "lodash.clonedeep": "^4.5.0",
+        "lodash.isequal": "^4.5.0",
+        "lodash.mergewith": "^4.6.2",
+        "lodash.shuffle": "^4.2.0",
+        "react": "^16.8.6",
+        "react-chartjs-2": "^2.7.6",
+        "react-contextmenu": "^2.11.0",
+        "react-dom": "^16.8.6",
+        "react-redux": "^7.1.0",
+        "react-rnd": "^10.2.4",
+        "react-router-dom": "^5.0.1",
+        "react-scripts": "3.0.1",
+        "react-simple-code-editor": "^0.9.14",
+        "react-string-replace": "^0.4.4",
+        "react-tooltip": "^4.2.7",
+        "redux": "^4.0.4",
+        "redux-promise-middleware": "^6.1.1",
+        "semantic-ui-react": "^0.87.3",
+        "sortablejs": "^1.10.2"
+    },
+    "scripts": {
+        "copy:changelog": "cp CHANGELOG.md public/logs/",
+        "prestart": "npm run copy:changelog",
+        "start": "env-cmd -e default,development craco start",
+        "prebuild:development": "npm run copy:changelog",
+        "build:development": "env-cmd -e default,development craco build",
+        "prebuild:staging": "npm run copy:changelog",
+        "build:staging": "env-cmd -e default,staging craco build",
+        "prebuild:nonssl-staging": "npm run copy:changelog",
+        "build:nonssl-staging": "env-cmd -e default,staging,nonssl craco build",
+        "prebuild:nonssl": "npm run copy:changelog",
+        "build:nonssl": "env-cmd -e default,production,nonssl craco build",
+        "prebuild": "npm run copy:changelog",
+        "build": "env-cmd -e default,production craco build",
+        "test": "craco test",
+        "eject": "craco eject",
+        "eslint": "npx eslint src"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "homepage": ".",
+    "devDependencies": {
+        "@commitlint/cli": "^17.1.2",
+        "@commitlint/config-conventional": "^17.1.0",
+        "@craco/craco": "5.2.4",
+        "craco-less": "1.9.0",
+        "eslint": "^8.26.0",
+        "eslint-config-xo": "^0.42.0",
+        "eslint-formatter-summary-chart": "^0.2.1",
+        "eslint-plugin-align-assignments": "^1.1.2",
+        "eslint-plugin-react": "^7.31.10",
+        "husky": "^8.0.1",
+        "pre-commit": "^1.2.2",
+        "semantic-ui-less": "2.4.1"
+    },
+    "pre-commit": [
+        "eslint"
+    ]
 }
